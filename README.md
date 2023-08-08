@@ -4,7 +4,7 @@
 [![Helm](https://github.com/percona/pmm-doc/actions/workflows/helm-tests.yml/badge.svg?branch=main)](https://github.com/percona/pmm-doc/actions/workflows/helm-tests.yml)
 [![Podman](https://github.com/percona/pmm-doc/actions/workflows/podman-tests.yml/badge.svg?branch=main)](https://github.com/percona/pmm-doc/actions/workflows/podman-tests.yml)
 
-[Percona Monitoring and Management] (PMM) is a database monitoring solution that is free and open-source.
+Everest
 
 This repo holds the source files for the official [PMM technical documentation].
 
