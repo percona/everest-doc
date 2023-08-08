@@ -1,4 +1,4 @@
-# Percona Monitoring and Management (PMM) Documentation
+# Everest Documentation
 [![render](https://img.shields.io/badge/pmm--doc-render-Green)](https://pmm-doc.onrender.com/)
 [![Build](https://github.com/percona/pmm-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/pmm-doc/actions/workflows/build.yml)
 [![Helm](https://github.com/percona/pmm-doc/actions/workflows/helm-tests.yml/badge.svg?branch=main)](https://github.com/percona/pmm-doc/actions/workflows/helm-tests.yml)
