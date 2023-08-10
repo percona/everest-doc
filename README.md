@@ -6,7 +6,7 @@
 
 Everest
 
-This repo holds the source files for the official [PMM technical documentation].
+This repo holds the source files for the official [Everest technical documentation].
 
 To contribute to that documentation, you can:
 
