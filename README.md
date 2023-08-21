@@ -4,7 +4,8 @@
 [![Build](https://github.com/percona/pmm-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/everest-doc/actions/workflows/build.yml)
 
 
-Everest
+## Welcome to Percona Everest documentation
+Percona Everest is an open source Database-as-a-Service solution that automates day-one and day-two operations for Postgres, MySQL, and MongoDB databases within Kubernetes clusters.
 
 This repo holds the source files for the official [Everest technical documentation].
 
