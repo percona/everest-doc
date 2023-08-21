@@ -1,7 +1,7 @@
 # MkDocs configuration for HTML publishing to percona.com
 INHERIT: mkdocs-base.yml
 
-site_url: https://www.percona.com/percona-monitoring-and-management/
+site_url: https://www.percona.com/everest/
 
 plugins:
   section-index: {}
