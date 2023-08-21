@@ -1,4 +1,4 @@
-
+# Everest Documentation
 
 [![render](https://img.shields.io/badge/pmm--doc-render-Green)](https://everest-doc.onrender.com/)
 [![Build](https://github.com/percona/pmm-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/everest-doc/actions/workflows/build.yml)
@@ -31,7 +31,7 @@ Before you start, it helps to know what [Git], [Python] and [Docker](https://doc
 
 ## Building the documentation
 
-If you'd like to have a local copy of Everest documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
+If you'd like to have a local copy of PMM documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
 
 ### With Docker
 
@@ -146,7 +146,7 @@ View the site at <http://0.0.0.0:8000>
 
 - `requirements.txt`: Python package dependencies.
 
-- `variables.yml`: Values used throughout the Markdown, including the current Everest version/release number.
+- `variables.yml`: Values used throughout the Markdown, including the current PMM version/release number.
 
 - `.spelling`: Words regarded as correct by `mdspell` (See [Spelling and grammar](#spelling-and-grammar).)
 
@@ -160,7 +160,7 @@ View the site at <http://0.0.0.0:8000>
 
 ## Version switching
 
-We use [mike] to build different versions of the documentation. 
+We use [mike] to build different versions of the documentation. Currently, only two are built, the latest PMM 1 and PMM 2 versions.
 
 A [GitHub actions] workflow runs `mike` which in turn runs `mkdocs`. The HTML is committed and pushed to the `publish` branch. The whole branch is then copied (by an internal Percona Jenkins job) to our web server.
 
@@ -204,17 +204,17 @@ The plugin is installed in our [PMM documentation Docker image] and by the GitHu
 
 To enable it for local builds, uncomment the line with `htmlproofer` in the `plugins` section of `mkdocs.yml` and parse the build output for warnings.
 
-[Percona Monitoring and Management]: https://www.percona.com/software/database-tools/percona-monitoring-and-management
-[PMM technical documentation]: https://www.percona.com/doc/percona-monitoring-and-management/
-[Jira]: https://jira.percona.com/browse/PMM
+[Percona Monitoring and Management]: https://www.percona.com/software/database-tools/everest
+[PMM technical documentation]: https://www.percona.com/doc/everest/
+[Jira]: https://jira.percona.com/browse/everest
 [MkDocs]: https://www.mkdocs.org/
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Git]: https://git-scm.com
 [Python]: https://www.python.org/downloads/
 [Docker]: https://docs.docker.com/get-docker/
-[PMM documentation Docker image]: https://hub.docker.com/repository/docker/perconalab/pmm-doc-md
+[PMM documentation Docker image]: https://hub.docker.com/repository/docker/perconalab/everest-doc-md
 [mike]: https://github.com/jimporter/mike
-[GitHub actions]: https://github.com/percona/pmm-doc/actions
+[GitHub actions]: https://github.com/percona/everest-doc/actions
 [ImageMagick]: https://imagemagick.org/script/download.php
 [composite]: https://imagemagick.org/script/composite.php
 [Node.js]: https://nodejs.org/en/download/
