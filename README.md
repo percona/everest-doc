@@ -95,7 +95,7 @@ _How to create a PDF version of the documentation._
      ENABLE_PDF_EXPORT=1 mkdocs build -f mkdocs-pdf.yml
      ```
 
-3. The PDF is in `site/_pdf`.
+3. The PDF is in `site/pdf`.
 
 ## Directories and files
 

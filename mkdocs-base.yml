@@ -6,7 +6,7 @@ site_author: Percona LLC
 site_url: ""
 copyright: Percona LLC, &#169; 2023
 use_directory_urls: false
-repo_name: percona/pmm-doc
+repo_name: percona/everest-doc
 repo_url: https://github.com/percona/everest-doc
 edit_uri: edit/main/docs/
 
@@ -18,7 +18,6 @@ theme:
   font:
     text: Poppins
   palette:
-
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
@@ -33,7 +32,7 @@ theme:
         icon: material/toggle-switch
         name: Switch to light mode
 
-# Theme features
+  # Theme features
 
   features:
     - search.highlight
@@ -52,9 +51,8 @@ extra_css:
   - css/nocopy.css
 
 extra_javascript:
-#  - js/lightgallery.min.js
+  #  - js/lightgallery.min.js
   - js/promptremover.js
-
 
 markdown_extensions:
   attr_list: {}
@@ -74,11 +72,10 @@ markdown_extensions:
     linenums: false
   pymdownx.inlinehilite: {}
   pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+    emoji_index: !!python/name:materialx.emoji.twemoji
+    emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  search: {}
   section-index: {}
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -94,17 +91,15 @@ plugins:
       - "variables.yml"
   # https://pypi.org/project/mkdocs-exclude/
   exclude:
-    glob:
-      - "setting-up/client/docker.md"
+    glob: {}
   # https://github.com/orzih/mkdocs-with-pdf
   with-pdf:
-    output_path: '_pdf/Everest-0.1.0.pdf'
-    cover_title: 'Everest Documentation'
+    output_path: "pdf/Everest-0.1.0.pdf"
+    cover_title: "Everest Documentation"
     cover_subtitle: version (Date, Year)
 
     author: "Everest Team"
     cover_logo: docs/images/Percona_Logo_Color.png
-    custom_template_path: _resources/templates
     enabled_if_env: ENABLE_PDF_EXPORT
   # Check links - but extends build time significantly
   # https://pypi.org/project/mkdocs-htmlproofer-plugin/
@@ -116,8 +111,7 @@ plugins:
     canonical_version: null
 
 extra:
-  homepage:
-    https://docs.percona.com
+  homepage: https://docs.percona.com
   consent:
     title: Cookie consent
     description: >-
@@ -129,11 +123,11 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 nav:
   - Welcome: index.md
-  
+
   - Release Notes:
       - release-notes/index.md
       - "Everest version": release-notes/0.1.0.md
 
   - Reference:
-    - "Copyright and licensing information": copyright.md
-    - trademark-policy.md
+      - "Copyright and licensing information": copyright.md
+      - trademark-policy.md
