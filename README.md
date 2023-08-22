@@ -26,7 +26,7 @@ If you'd like to have a local copy of Everest documentation, or are thinking abo
 
 2. Clone this repository.
 
-3. Change directory to `pmm-doc`.
+3. Change directory to `everest-doc`.
 
 4. Use our [PMM documentation Docker image] to _build the documentation_:
 
@@ -163,7 +163,7 @@ Here's how it's done.
 
   3. Click _Open existing diagram_
 
-  4. Navigate to `pmm-doc/docs/images` and select `PMM_Home_Dashboard_Overlay.drawio`
+  4. Navigate to `everest-doc/docs/images` and select `PMM_Home_Dashboard_Overlay.drawio`
 
   5. If the dashboard layout has changed, replace the _Guide_ Layer with a new screenshot and adjust the elements on the _Overlay_ layer as required (To show layers, click View --> Layers). Untick the _Guide_ Layer so it is not exported.
 
@@ -187,7 +187,7 @@ Here's how it's done.
 
   9. Click _Device_
 
-  10. Navigate to `pmm-doc/docs/images` and click `PMM_Home_Dashboard_Overlay.png`
+  10. Navigate to `everest-doc/docs/images` and click `PMM_Home_Dashboard_Overlay.png`
 
   11. Click _Save_ and overwrite the current file
 
@@ -231,21 +231,19 @@ write-good docs/**/*.md
 
 We're using the `mkdocs-htmlproofer-plugin` link checking plugin to detect broken URLs. It works well, but increases the build time significantly (by between 10 and 50 times longer).
 
-The plugin is installed in our [PMM documentation Docker image] and by the GitHub action, but it is commented out in `mkdocs.yml`.
+The plugin is installed in our [Documentation Docker image] and by the GitHub action, but it is commented out in `mkdocs.yml`.
 
 To enable it for local builds, uncomment the line with `htmlproofer` in the `plugins` section of `mkdocs.yml` and parse the build output for warnings.
 
-[Percona Monitoring and Management]: https://www.percona.com/software/database-tools/percona-monitoring-and-management
-[PMM technical documentation]: https://www.percona.com/doc/percona-monitoring-and-management/
-[Jira]: https://jira.percona.com/browse/PMM
+[Jira]: https://jira.percona.com/browse/Everest
 [MkDocs]: https://www.mkdocs.org/
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Git]: https://git-scm.com
 [Python]: https://www.python.org/downloads/
 [Docker]: https://docs.docker.com/get-docker/
-[PMM documentation Docker image]: https://hub.docker.com/repository/docker/perconalab/pmm-doc-md
+[Documentation Docker image]: https://hub.docker.com/repository/docker/perconalab/pmm-doc-md
 [mike]: https://github.com/jimporter/mike
-[GitHub actions]: https://github.com/percona/pmm-doc/actions
+[GitHub actions]: https://github.com/percona/everest-doc/actions
 [ImageMagick]: https://imagemagick.org/script/download.php
 [composite]: https://imagemagick.org/script/composite.php
 [Node.js]: https://nodejs.org/en/download/
