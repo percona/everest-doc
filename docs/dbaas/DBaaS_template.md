@@ -10,7 +10,6 @@ Examples
 
 - **Environment**: Combination of database cluster and infrastructure that will affect the database cluster configuration.
 
-
 # Customize PXC DB configuration
 
 The following **example** shows how DBaaS users can create PXC DB clusters from a template that sets a custom MySQL configuration. The default MySQL configuration is the following:
@@ -19,9 +18,9 @@ The following **example** shows how DBaaS users can create PXC DB clusters from 
 [mysqld]
 wsrep_provider_options="gcache.size=600M"
 ```
-!!! note alert alert-primary "Note"   
-    PXC DB configuration can be customized based on your needs. This can be accomplished by creating a template and changing that field.
 
+!!! note alert alert-primary "Note"  
+ PXC DB configuration can be customized based on your needs. This can be accomplished by creating a template and changing that field.
 
 ## Create Custom Resource Definition (CRD) template
 
@@ -31,50 +30,50 @@ To create a template, do the following:
 
 2. Create a template CRD `pxctpl-crd-pxc-configuration.yaml` with just those small subset of fields.
 
-    ```sh
-        apiVersion: apiextensions.k8s.io/v1
-        kind: CustomResourceDefinition
-        metadata:
-        annotations:
-            controller-gen.kubebuilder.io/version: v0.8.0
-        creationTimestamp: null
-        name: pxctemplatepxcconfiguration.dbaas.percona.com
-        labels:
-            dbaas.percona.com/template: "yes"
-            dbaas.percona.com/engine: "pxc"
-        spec:
-        group: dbaas.percona.com
-        names:
-            kind: PXCTemplatePXCConfiguration
-            listKind: PXCTemplatePXCConfigurationList
-            plural: pxctemplatepxcconfiguration
-            singular: pxctemplatepxcconfiguration
-        scope: Namespaced
-        versions:
-        - name: v1
-            schema:
-            openAPIV3Schema:
-                properties:
-                apiVersion:
-                    type: string
-                kind:
-                    type: string
-                metadata:
-                    type: object
-                spec:
-                    properties:
-                    pxc:
-                        properties:
-                        configuration:
-                            type: string
-                        type: object
-                    type: object
-                status:
-                    type: object
-                type: object
-            served: true
-            storage: true
-    ```
+   ```sh
+       apiVersion: apiextensions.k8s.io/v1
+       kind: CustomResourceDefinition
+       metadata:
+       annotations:
+           controller-gen.kubebuilder.io/version: v0.8.0
+       creationTimestamp: null
+       name: pxctemplatepxcconfiguration.dbaas.percona.com
+       labels:
+           dbaas.percona.com/template: "yes"
+           dbaas.percona.com/engine: "pxc"
+       spec:
+       group: dbaas.percona.com
+       names:
+           kind: PXCTemplatePXCConfiguration
+           listKind: PXCTemplatePXCConfigurationList
+           plural: pxctemplatepxcconfiguration
+           singular: pxctemplatepxcconfiguration
+       scope: Namespaced
+       versions:
+       - name: v1
+           schema:
+           openAPIV3Schema:
+               properties:
+               apiVersion:
+                   type: string
+               kind:
+                   type: string
+               metadata:
+                   type: object
+               spec:
+                   properties:
+                   pxc:
+                       properties:
+                       configuration:
+                           type: string
+                       type: object
+                   type: object
+               status:
+                   type: object
+               type: object
+           served: true
+           storage: true
+   ```
 
 3. Run the following command.
 
@@ -111,42 +110,35 @@ kubectl apply -f dbaas-operator-manager-role.yaml
 
 1. Create a corresponding CR `pxctpl-pxc-config-max-connection-789.yaml` with the required values.
 
-    ```sh
-    apiVersion: dbaas.percona.com/v1
-    kind: PXCTemplatePXCConfiguration
-    metadata:
-    name: pxc-config-max-connections-789
-    labels:
-        dbaas.percona.com/template: "yes"
-        dbaas.percona.com/engine: "pxc"
-    spec:
-    pxc:
-        configuration: |
-        [mysqld]
-        max_connections = 789
-    ```
+   ```sh
+   apiVersion: dbaas.percona.com/v1
+   kind: PXCTemplatePXCConfiguration
+   metadata:
+   name: pxc-config-max-connections-789
+   labels:
+       dbaas.percona.com/template: "yes"
+       dbaas.percona.com/engine: "pxc"
+   spec:
+   pxc:
+       configuration: |
+       [mysqld]
+       max_connections = 789
+   ```
+
 2. Run the following command:
 
-    ```sh
-    kubectl apply -f pxctpl-pxc-config-max-connection-789.yaml
-    ```
+   ```sh
+   kubectl apply -f pxctpl-pxc-config-max-connection-789.yaml
+   ```
 
 ## Create a DB cluster from template
 
 To create a DB cluster from a template, do the following:
 
-1. From the main menu navigate to <i class="uil uil-database"></i> *DBaaS* → *Create DB Cluster*.
+1. From the main menu navigate to <i class="uil uil-database"></i> _DBaaS_ → _Create DB Cluster_.
 
-2. On the *Advanced Settings* panel, select the template from the *Templates* drop-down.
+2. On the _Advanced Settings_ panel, select the template from the _Templates_ drop-down.
 
-
-    ![!](../_images/PMM_dbaas_template.png)
-
+   ![!](../images/PMM_dbaas_template.png)
 
 3. Click `Create`.
-
-
-
-
-
-

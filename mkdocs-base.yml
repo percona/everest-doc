@@ -12,8 +12,8 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  logo: _images/percona-logo.svg
-  favicon: _images/percona-favicon.ico
+  logo: images/percona-logo.svg
+  favicon: images/percona-favicon.ico
   custom_dir: overrides
   font:
     text: Poppins
@@ -103,7 +103,7 @@ plugins:
     cover_subtitle: version (Date, Year)
 
     author: "Everest Team"
-    cover_logo: docs/_images/Percona_Logo_Color.png
+    cover_logo: docs/images/Percona_Logo_Color.png
     custom_template_path: _resources/templates
     enabled_if_env: ENABLE_PDF_EXPORT
   # Check links - but extends build time significantly
