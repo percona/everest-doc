@@ -91,7 +91,7 @@ plugins:
       - "variables.yml"
   # https://pypi.org/project/mkdocs-exclude/
   exclude:
-    glob: {}
+    glob: []
   # https://github.com/orzih/mkdocs-with-pdf
   with-pdf:
     output_path: "pdf/Everest-0.1.0.pdf"
