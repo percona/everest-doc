@@ -21,7 +21,7 @@ jobs:
       - name: Setup Python
         uses: percona-platform/setup-python@v2
         with:
-          python-version: "3.x"
+          python-version: '3.x'
 
       - name: Setup MkDocs
         run: |
@@ -40,8 +40,8 @@ jobs:
           echo "GIT_USER=percona-platform-robot:${ROBOT_TOKEN}" >> $GITHUB_ENV
 
       # Builds Material-themed static web site in 'preview' branch
-      - name: Build a themed site (2.x)
+      - name: Build a themed site
         run: |
-          PATH=$PATH:_resources/bin mike deploy 1.x -b preview
-          mike set-default 2.x -b preview
-          mike retitle 2.x "Everest 1.x (LATEST)" -b preview
+          mike deploy 1.x -b preview
+          mike set-default 1.x -b preview
+          mike retitle 1.x "Everest 1.x (LATEST)" -b preview
