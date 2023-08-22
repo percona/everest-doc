@@ -1,4 +1,9 @@
 
+# Percona Everest Documentation
+[![render](https://img.shields.io/badge/everest--doc-render-Green)](https://everest-doc.onrender.com/)
+[![Build](https://github.com/percona/everest-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/everest-doc/actions/workflows/build.yml)
+
+
 This repo holds the source files for the official [Everest technical documentation].
 
 To contribute to that documentation, you can:
