@@ -1,0 +1,47 @@
+name: Build Everest Docs (1.x)
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out code
+        uses: percona-platform/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Setup Python
+        uses: percona-platform/setup-python@v2
+        with:
+          python-version: '3.x'
+
+      - name: Setup MkDocs
+        run: |
+          python -m pip install --upgrade pip
+          pip install wheel
+          test -f requirements.txt && pip install -r requirements.txt
+
+      - name: Configure git
+        env:
+          ROBOT_TOKEN: ${{ secrets.ROBOT_TOKEN }}
+        run: |
+          git config --global url."https://percona-platform-robot:${ROBOT_TOKEN}@github.com".insteadOf "https://github.com"
+          git config user.name "GitHub Action"
+          git config user.email "github-action@users.noreply.github.com"
+          git config user.password "${ROBOT_TOKEN}"
+          echo "GIT_USER=percona-platform-robot:${ROBOT_TOKEN}" >> $GITHUB_ENV
+
+      # Builds Material-themed static web site in 'preview' branch
+      - name: Build a themed site
+        run: |
+          mike deploy 1.x -b preview
+          mike set-default 1.x -b preview
+          mike retitle 1.x "Everest 1.x (LATEST)" -b preview
