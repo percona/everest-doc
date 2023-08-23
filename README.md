@@ -133,7 +133,7 @@ _How to create a PDF version of the documentation._
 
 - `requirements.txt`: Python package dependencies.
 
-- `variables.yml`: Values used throughout the Markdown, including the current PMM version/release number.
+- `variables.yml`: Values used throughout the Markdown, including the current Everest version/release number.
 
 - `.spelling`: Words regarded as correct by `mdspell` (See [Spelling and grammar](#spelling-and-grammar).)
 
