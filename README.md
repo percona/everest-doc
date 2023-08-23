@@ -22,7 +22,7 @@ Before you start, it helps to know what [Git], [Python] and [Docker](https://doc
 
 ## Building the documentation
 
-If you'd like to have a local copy of PMM documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
+If you'd like to have a local copy of Everest documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
 
 ### With Docker
 
