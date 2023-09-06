@@ -122,12 +122,52 @@ extra:
 
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome: index.md
-
+  - Welcome to Percona Everest documentation: index.md
+    - Why Everest?: whyEverest.md
   - Release Notes:
       - release-notes/index.md
-      - "Everest version": release-notes/0.1.0.md
+      - 0.1.0: release-notes/0.1.0.md
+      - 0.2.0: release-notes/0.2.0.md
+- Get Started: quickstart.md
+	 - Initial setup/Before you start
+	 - Running kubernetes clusters and preparing them 
+- Install
+  - Plan your installation
+	- Hardware, software and system
+  - Compatibility 
+  - Installation procedure
+  - Post-install tasks
+- Use  
+	- Create a cluster
+  - Back up data for your environment
+	- On-demand and scheduled backups
+            - PITR backups
+ - Restore a database backup
+ -  Manage backup artifacts
+ - Monitor databases 
+- Configure 
+  - Set up default DB configurations
+  - Set up storage locations
+  - Set up Kubernetes clusters
+  - Set up monitoring endpoints 
 
-  - Reference:
-      - "Copyright and licensing information": copyright.md
-      - trademark-policy.md
+- FAQs
+- Reference 
+  - Architecture
+  - Glossary 
+  - Legal Notice
+  - Copyright and licensing information: copyright.md
+  - Trademark and copyright policy: trademark-policy.md 
+  - Cookie policy 
+  - Acknowledgments 
+- API Documentation
+- Contribute 
+  - Contribution guidelines 
+  - Download the PDF
+
+
+  
+
+
+
+
