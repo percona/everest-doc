@@ -123,7 +123,7 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 nav:
   - Welcome to Percona Everest documentation: welcome/index.md
-    - Why Everest?: welcome/whyEverest.md
+      - Why Everest?: welcome/whyEverest.md
   - Release Notes:
       - release-notes/index.md
       - 0.1.0: release-notes/0.1.0.md
