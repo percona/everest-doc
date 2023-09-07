@@ -21,3 +21,9 @@ To spin up a Percona Everest instance, run the following command:
     ```sh
     curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | bash
     ```
+
+!!! note alert alert-primary "Note"
+    Everest will search for the kubeconfig file in the `~/.kube/config`directory. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the `install.sh` script:
+    ```sh
+    curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
+    ```
