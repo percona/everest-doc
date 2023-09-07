@@ -14,7 +14,6 @@ theme:
   name: material
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
-  custom_dir: overrides
   font:
     text: Poppins
   palette:
