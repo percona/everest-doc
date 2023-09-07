@@ -1,11 +1,8 @@
 # MkDocs configuration for default Material-themed build
 INHERIT: mkdocs-base.yml
 
-site_url: https://docs.percona.com/percona-everest/
-
-theme:
-  name: material
-  custom_dir: overrides
+# site_url: https://docs.percona.com/percona-everest/
+site_url: https://docs.percona.com/
 
 #Google Analytics configuration
 extra:
