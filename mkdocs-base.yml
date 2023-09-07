@@ -122,8 +122,10 @@ extra:
 
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome to Percona Everest documentation: welcome/index.md
-  - Why Everest?: welcome/whyEverest.md
+  - Welcome to Percona Everest documentation:
+      - welcome/index.md
+      - Why Everest?:
+          - welcome/whyeverest.md
 
   - Release Notes:
       - release-notes/index.md
@@ -132,7 +134,7 @@ nav:
 
   - Get Started:
       - get-started/quickstart.md
-      - Initial setup: setup.md
+      - Initial setup: get-started/setup.md
       - Running Kubernetes clusters and preparing them: get-started/preparek8.md
 
   - Install:
