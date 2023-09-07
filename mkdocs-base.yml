@@ -12,9 +12,9 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
+  custom_dir: overrides
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
-  custom_dir: overrides
   font:
     text: Poppins
   palette:
@@ -122,44 +122,48 @@ extra:
 
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome to Percona Everest documentation: welcome/index.md
-    - Why Everest?: welcome/whyEverest.md
+  - Welcome to Percona Everest documentation:
+      - index.md
+      - Why Everest?: welcome/whyeverest.md
+
   - Release Notes:
       - release-notes/index.md
       - 0.1.0: release-notes/0.1.0.md
       - 0.2.0: release-notes/0.2.0.md
-  - Get Started: get-started/quickstart.md
-	 - Initial setup: setup.md
-	 - Running Kubernetes clusters and preparing them: get-started/preparek8.md
-   
+
+  - Get Started:
+      - get-started/quickstart.md
+      - Initial setup: get-started/setup.md
+      - Running Kubernetes clusters and preparing them: get-started/preparek8.md
+
   - Install:
-    - Plan your installation: install/plan.md
-    - Installation procedure: install/installEverest.md
-    - Post-install tasks: install/postinstall.md
+      - Plan your installation: install/plan.md
+      - Installation procedure: install/installEverest.md
+      - Post-install tasks: install/postinstall.md
 
-  - Use:  
-    - Create a cluster: use/createdb.md
-    - Back up data for your environment: use/backupRestore.md 
-    - Manage backup artifacts: use/manageBackups.md
-    - Monitor databases: use/monitorDBs.md
-  - Configure: 
-    - Set up default DB configurations: configure/configureDB.md
-    - Set up storage locations: configure/storagelocations.md
-    - Set up Kubernetes clusters: configure/configureClusters.md
-    - Set up monitoring endpoints : configure/configureMonitoring.md
+  - Use:
+      - Create a cluster: use/createdb.md
+      - Back up data for your environment: use/backupRestore.md
+      - Manage backup artifacts: use/manageBackups.md
+      - Monitor databases: use/monitorDBs.md
+
+  - Configure:
+      - Set up default DB configurations: configure/configureDB.md
+      - Set up storage locations: configure/storagelocations.md
+      - Set up Kubernetes clusters: configure/configureClusters.md
+      - Set up monitoring endpoints: configure/configureMonitoring.md
+
   - FAQs: faq.md
+
   - API Documentation: api/index.md
-  - Reference: reference/index.md 
-    - Architecture: reference/architecture.md
-    - Glossary: reference/glossary.md 
-    - Copyright and licensing information: reference/copyright.md
-    - Trademark and copyright policy: reference/trademark-policy.md 
-    - Acknowledgments:  reference/acknowledgements.md
-  - Contribute: 
-    - Contribution guidelines: contribute/contribute.md
 
-  
+  - Reference:
+      - reference/index.md
+      - Architecture: reference/architecture.md
+      - Glossary: reference/glossary.md
+      - Copyright and licensing information: reference/copyright.md
+      - Trademark and copyright policy: reference/trademark-policy.md
+      - Acknowledgments: reference/acknowledgements.md
 
-
-
-
+  - Contribute:
+      - Contribution guidelines: api/contribute/contribute.md
