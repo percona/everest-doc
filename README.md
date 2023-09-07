@@ -1,6 +1,10 @@
-[Percona Monitoring and Management] (PMM) is a database monitoring solution that is free and open-source.
 
-This repo holds the source files for the official [PMM technical documentation].
+# Percona Everest Documentation
+[![render](https://img.shields.io/badge/everest--doc-render-Green)](https://everest-doc.onrender.com/)
+[![Build](https://github.com/percona/everest-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/everest-doc/actions/workflows/build.yml)
+
+
+This repo holds the source files for the official [Everest technical documentation].
 
 To contribute to that documentation, you can:
 
@@ -143,59 +147,11 @@ _How to create a PDF version of the documentation._
 
 ## Version switching
 
-We use [mike] to build different versions of the documentation.
 
 A [GitHub actions] workflow runs `mike` which in turn runs `mkdocs`. The HTML is committed and pushed to the `publish` branch. The whole branch is then copied (by an internal Percona Jenkins job) to our web server.
 
-## Image overlays
 
-`docs/using/interface.md` uses an image of the home dashboard overlaid with numbered boxes to identify menu bars and control. This approach means the home dashboard image and its numbered version always look the same. You need only recreate the home page image in 1280x1280 format, then merge with the numbered overlay.
 
-Here's how it's done.
-
-- `PMM_Home_Dashboard.jpg` is created by [pmm-screenshots-pw](https://github.com/PaulJacobs-percona/pmm-screenshots-pw). If snapped by hand, it should be 1280x1280 pixels, to match the overlay image.
-
-- `PMM_Home_Dashboard_Overlay.png` is exported from `docs/images/PMM_Home_Dashboard_Overlay.drawio` using <https://app.diagrams.net/>.
-
-  1. Go to <https://app.diagrams.net/>
-
-  2. If it's your first time, select _Device_ at the _Save diagrams to:_ dialog
-
-  3. Click _Open existing diagram_
-
-  4. Navigate to `everest-doc/docs/images` and select `PMM_Home_Dashboard_Overlay.drawio`
-
-  5. If the dashboard layout has changed, replace the _Guide_ Layer with a new screenshot and adjust the elements on the _Overlay_ layer as required (To show layers, click View --> Layers). Untick the _Guide_ Layer so it is not exported.
-
-  6. Click File --> Export as --> PNG
-
-  7. In the _Image settings_ dialog, use these settings:
-
-     - _Zoom_: 100%, Border Width: 0
-
-     - _Size:_ Page (The page dimensions in inches should be as close to the base image as possible, i.e. 1280x1280)
-
-     - _Transparent Background:_ ON
-
-     - _Shadow:_ OFF
-
-     - _Grid_: OFF
-
-     - _Include a copy of my diagram:_ OFF
-
-  8. Click _Export_
-
-  9. Click _Device_
-
-  10. Navigate to `everest-doc/docs/images` and click `PMM_Home_Dashboard_Overlay.png`
-
-  11. Click _Save_ and overwrite the current file
-
-The overlay image is merged with a copy of the latest home dashboard using [composite], one of the [ImageMagick] tools.
-
-```sh
-composite docs/images/PMM_Home_Dashboard_Overlay.png docs/images/PMM_Home_Dashboard.jpg docs/images/PMM_Home_Dashboard_Numbered.png
-```
 
 ## Spelling and grammar
 
@@ -235,13 +191,13 @@ The plugin is installed in our [Documentation Docker image] and by the GitHub ac
 
 To enable it for local builds, uncomment the line with `htmlproofer` in the `plugins` section of `mkdocs.yml` and parse the build output for warnings.
 
-[Jira]: https://jira.percona.com/browse/Everest
+
 [MkDocs]: https://www.mkdocs.org/
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Git]: https://git-scm.com
 [Python]: https://www.python.org/downloads/
 [Docker]: https://docs.docker.com/get-docker/
-[Documentation Docker image]: https://hub.docker.com/repository/docker/perconalab/pmm-doc-md
+
 [mike]: https://github.com/jimporter/mike
 [GitHub actions]: https://github.com/percona/everest-doc/actions
 [ImageMagick]: https://imagemagick.org/script/download.php
