@@ -125,13 +125,14 @@ nav:
   - Welcome to Percona Everest documentation:
       - index.md
       - Why Everest?: welcome/whyeverest.md
+      
   - Release Notes:
       - release-notes/index.md
       - 0.1.0: release-notes/0.1.0.md
       - 0.2.0: release-notes/0.2.0.md
-  - quickstart.md  
+ 
   - Get Started:
-      - get-started/quickstart.md
+      - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
       - Running Kubernetes clusters and preparing them: get-started/preparek8.md
 
