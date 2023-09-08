@@ -1,27 +1,20 @@
 # Database engine configuration
 
-Important! 
-!!! caution alert alert-warning "Important"
-    Although Percona Everest helps install all the required operators and packages to run properly, it does not assist with spinning up a Kubernetes cluster.
+Percona Everest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
 
-This procedure simplifies the deployment of Everest instances, reducing the installation flow to running a single command.
+To configure your database engine in Percona Everest:
 
-## Prerequisites
+1. From the Percona Everest main page, navigate to **Create databases > Advanced Configurations** page.
+2. To update the database engine configuration for your existing database, go to the Everest main page and click on the three dots next to the database you want to update. Then select **Edit**.
+3. You can optimize your database's performance using **Database Engine Parameters** on the **Advanced configurations** page.
+4. Enable Database engine parameters by moving the slider to the right.
+5. Configure specific values to optimize performance, security, and functionality according to your requirements by entering the values in the text box.
 
-To spin up an Everest instance, you first need to have a Kubernetes cluster that is publicly accessible.
+    ![!image](images/everest_adv_config.png)
 
-We recommend setting one up on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), as it may be difficult to spin one up on local Kubernetes installations (minikube, kind, k3d, or similar products).
+6. To enable external access beyond the Kubernetes cluster network, move the slider to the right.
 
-### Supported k8s clusters
-
-- AWS
-- EKS 1.24 - 1.25
-
-
-## Spin up a Percona Everest instance
-
-To spin up a Percona Everest instance, run the following command: 
-`curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | bash`
-
-!!! note alert alert-primary ""
-    Everest will search for the kubeconfig file in the ~/.kube/config pathdirectory. If your file is located elsewhere, add the KUBECONFIG environment variable before running the install.sh script: `curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | KUBECONFIG=<path/to/config/file> bash`
+    !!! note alert alert-primary "Note"
+        Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
+    
+    ![!image](images/everest_adv_config_ip_source.png)
