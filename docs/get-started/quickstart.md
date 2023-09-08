@@ -26,4 +26,8 @@ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/
 ```
 
 !!! note alert alert-primary ""
-    Everest will search for the kubeconfig file in the ~/.kube/config pathdirectory. If your file is located elsewhere, add the KUBECONFIG environment variable before running the install.sh script: `curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | KUBECONFIG=<path/to/config/file> bash`
+    Everest will search for the kubeconfig file in the ~/.kube/config pathdirectory. If your file is located elsewhere, add the KUBECONFIG environment variable before running the install.sh script: 
+    
+    ```bash
+    curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
+    ```
