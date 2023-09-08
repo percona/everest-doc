@@ -21,4 +21,6 @@ To configure your database engine in Percona Everest:
 
 7. Click **Add new** to add the IP addresses in the **Source Range** field.
 
-8 Click **Continue**.
+8. Click **Continue**.
+
+9. If you are creating a new database cluster, click **Create database** and for existing database cluster click **Edit database**. The database engine parameters will be updated.
