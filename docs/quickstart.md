@@ -18,6 +18,7 @@ We recommend setting one up on the Amazon Elastic Kubernetes Service (EKS) or Go
 
 To spin up a Percona Everest instance, run the following command:
 
+
 ```sh
 curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | bash
 ```
