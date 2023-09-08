@@ -12,6 +12,26 @@ To configure your database engine in Percona Everest:
 
     ![!image](images/everest_adv_config.png)
 
+    Here are some configuration examples for each supported engine type:
+
+    **MySQL** 
+    <pre><code>[mysqld]
+    key_buffer_size=16M
+    max_allowed_packet=128M
+    max_connections=250</pre></code>
+
+    **Mongo**
+    <pre><code>operationProfiling:
+    mode: slowOp
+    slowOpThresholdMs: 200</pre></code>
+
+    **PostgreSQL**
+    <pre><code>log_connections = yes
+    search_path = '"$user", public'
+    shared_buffers = 128MB</pre></code>
+
+    For more information on configuring specific database parameters, see the [MySQL](https://dev.mysql.com/doc/refman/8.0/en/option-files.html), [MongoDB](https://www.mongodb.com/docs/manual/reference/configuration-options/), and [( [PostgreSQL](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE) configuration documentation.
+
 6. To enable external access beyond the Kubernetes cluster network, move the slider to the right.
 
     !!! note alert alert-primary "Note"
