@@ -25,9 +25,10 @@ Cluster management in Percona Everest involves the administration and maintenanc
 
     * Vertical scaling
             
-        Vertical scaling is essential for addressing increased workloads or performance demands. You can scale up or scale down as per your requirements. 
+    Vertical scaling is essential for addressing increased workloads or performance demands. You can scale up or scale down as per your requirements. 
         
         * Scale up
+
         You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.
 
         * Scale down               
