@@ -140,7 +140,8 @@ nav:
       - Plan your installation: install/plan.md
       - Installation procedure: install/installEverest.md
       - Post-install tasks: install/postinstall.md
-  - cluster-management.md  
+  - db_engine_config.md
+
   - Use:
       - Create a cluster: use/createdb.md
       - Back up data for your environment: use/backupRestore.md
