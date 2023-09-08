@@ -19,13 +19,13 @@ We recommend setting one up on the Amazon Elastic Kubernetes Service (EKS) or Go
 To spin up a Percona Everest instance, run the following command:
 
 
-    ```sh
+    ```yaml
     curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | bash
     ```
 
 !!! note alert alert-primary "Note"
     Everest will search for the kubeconfig file in the `~/.kube/config`path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the `install.sh` script:   
    
- ```sh
+ ```yaml
 curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.2.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
 ```
