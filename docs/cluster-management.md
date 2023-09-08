@@ -1,4 +1,4 @@
-# Percona Everest cluster management
+# Cluster management
 
 
 Cluster management in Percona Everest involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
