@@ -1,6 +1,5 @@
 # Quickstart guide
 
-Important! 
 !!! caution alert alert-warning "Important"
     Although Percona Everest helps install all the required operators and packages to run properly, it does not assist with spinning up a Kubernetes cluster.
 
