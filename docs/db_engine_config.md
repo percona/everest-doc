@@ -18,3 +18,7 @@ To configure your database engine in Percona Everest:
         Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
     
     ![!image](images/everest_adv_config_ip_source.png)
+
+7. Click **Add new** to add the IP addresses in the **Source Range** field.
+
+8 Click **Continue**.
