@@ -21,7 +21,7 @@ Cluster management in Percona Everest involves the administration and maintenanc
 
     Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
 
-        ![!image](images/everest_db_scaling.png)
+    ![!image](images/everest_db_scaling.png)
 
     * Vertical scaling
             
@@ -35,9 +35,9 @@ Cluster management in Percona Everest involves the administration and maintenanc
         
         Similarly, you can scale down (downsize) your database instance when the resource requirements decrease, which can help optimize costs.
 
-* Horizontal scaling
+    * Horizontal scaling
 
-To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
+    To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
 
 4. [Back up and restore]()
 
