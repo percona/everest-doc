@@ -140,6 +140,7 @@ nav:
       - Plan your installation: install/plan.md
       - Installation procedure: install/installEverest.md
       - Post-install tasks: install/postinstall.md
+  - cluster-management.md
   - db_engine_config.md
 
   - Use:
