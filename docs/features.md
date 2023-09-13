@@ -11,3 +11,15 @@ Some of the key features of Percona Everest are:
     * **Disaster recovery capabilities**: Percona Everest prioritizes data protection with a comprehensive disaster recovery suite. Set up backup schedules, create on-demand backups, perform point-in-time recovery, seamlessly restore existing databases, or create new ones from backups.
     * **Advanced configuration options**: Take fine-grained control of your database environment with advanced configuration features. Manage external access permissions and optimize your database engine configuration.
 
+- Database Management Features
+
+    * **Effortless Updates**: Stay up-to-date with the latest features and security patches. Percona Everest is built with Kubernetes Operators that help simplify database updates by automating the process and doing it without downtime, ensuring your databases are proofed against vulnerabilities.
+
+    * **Resource Allocation Flexibility**: Handle changing workloads by adjusting your resource allocations on the fly. Whether you need more processing power or memory, Percona Everest's vertical scaling has you covered.
+
+    * **Backup Management**: On-demand backup and restore to ensure that your data is protected.
+
+- **Administrative Features**
+
+    * **Centralized Configuration Management**: Percona Everest simplifies administrative tasks by allowing you to add and manage storage locations, monitoring endpoints, storage classes, and other default configurations from a central interface.
+    * **Database monitoring with PMM**: Monitor your databases and Kubernetes clusters with Percona Monitoring and Management (PMM) to gain insights into performance metrics, query analysis, and other important functions.
