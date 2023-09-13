@@ -130,7 +130,7 @@ nav:
       - release-notes/index.md
       - 0.1.0: release-notes/0.1.0.md
       - 0.2.0: release-notes/0.2.0.md
- 
+  - features.md
   - Get Started:
       - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
