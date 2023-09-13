@@ -1,8 +1,10 @@
-# Welcome
+# Introduction to Percona Everest
 
-Percona Everest is an open source Database-as-a-Service (DBaaS) solution that automates day-one and day-two operations for Postgres, MySQL, and MongoDB databases within the Kubernetes clusters.
+Everest is an open-source private database-as-a-service is a private that enables developers to quickly deploy code, scale deployments, and reduce database administration overhead. It also gives them control over their data, database configuration, and DBaaS costs.
 
-With Percona Everest, developers can quickly power up highly-performant, secure, and production-ready databases for applications that can grow seamlessly without infrastructure constraints. 
+Percona Everest offers a complete suite of database services, such as setup, deployment, monitoring, management, backup, restore, scaling, and other crucial operations.
+
+Percona Everest is designed for those who want to break free from vendor lock-in, ensure optimal database performance, enable cost-effective and right-sized database deployments, and reduce database administration overhead.
 
 
 [percona_services]: https://www.percona.com/services
