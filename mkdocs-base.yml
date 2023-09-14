@@ -126,20 +126,17 @@ nav:
       - index.md
       - Why Everest?: welcome/whyeverest.md
       
-  - Release Notes:
+# Release Notes: 
       - release-notes/index.md
-      - 0.1.0: release-notes/0.1.0.md
-      - 0.2.0: release-notes/0.2.0.md
- 
+
   - Get Started:
       - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
       - Running Kubernetes clusters and preparing them: get-started/preparek8.md
 
   - Install:
-      - Plan your installation: install/plan.md
       - Installation procedure: install/installEverest.md
-      - Post-install tasks: install/postinstall.md
+      - Uninstall Everest: install/uninstallEverest.md
   - db_engine_config.md
 
   - Use:
