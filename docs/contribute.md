@@ -54,9 +54,9 @@ The steps are the following:
       ```
 3. Change the directory to ``everest-doc`` and add the remote upstream repository:
 
-      ```sh
-      git remote add upstream git@github.com:percona/everest-doc.git
-      ```
+         ```sh
+         git remote add upstream git@github.com:percona/everest-doc.git
+         ```
 
 4. Create a separate branch for your changes:
 
@@ -88,13 +88,13 @@ To verify how your changes look, generate the static site with the documentation
 
 3. Go to the ``site/`` directory and open the ``index.html`` file to see the documentation.
 
-   If you want to see the changes as you edit the docs, use this command instead:
+      If you want to see the changes as you edit the docs, use this command instead:
 
-   ```sh
-   docker run --rm -v $(pwd):/docs -p 8000:8000 perconalab/pmm-doc-md mkdocs serve --dev-addr=0.0.0.0:8000
-   ```
+      ```sh
+      docker run --rm -v $(pwd):/docs -p 8000:8000 perconalab/pmm-doc-md mkdocs serve --dev-addr=0.0.0.0:8000
+      ```
 
-   Wait until you see the message `INFO    -  Start detecting changes`, then enter `0.0.0.0:8000` in the browser's address bar. The documentation automatically reloads after you save the changes in source files.
+      Wait until you see the message `INFO    -  Start detecting changes`, then enter `0.0.0.0:8000` in the browser's address bar. The documentation automatically reloads after you save the changes in source files.
 
 
 #### Build locally
