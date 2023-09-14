@@ -141,20 +141,11 @@ The repository includes the following directories and files:
 - `mkdocs-pdf.yml` - configuration file. Contains the settings for building the PDF docs.
 - `docs`:
 
-  - `*.md` - Source markdown files.
-  - `images` - Images, logos and favicons
-  - `css` - Styles
-  - `js` - Javascript files
-- `_resource`:
+  - `*.md` - source markdown files.
+  - `images` - images, logos and favicons
+  - `css` - styles
+  - `js` - javascript files
 
-   - `templates`:
-
-     - ``styles.scss`` - Styling for PDF documents
-   - `theme`:
-
-      - `main.html` - The layout template for hosting the documentation on Percona website
-   - overrides - The folder with the customized templates
-- `site` - This is where the output HTML files are put after the build
     
 [MkDocs]: https://www.mkdocs.org/
 [Markdown]: https://daringfireball.net/projects/markdown/
