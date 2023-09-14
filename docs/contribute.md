@@ -23,7 +23,7 @@ To contribute to the documentation, you should be familiar with the following te
 - [git](https://git-scm.com/) and [GitHub](https://guides.github.com/activities/hello-world/)
 - [Docker]. It allows you to run MkDocs in a virtual environment instead of installing it and its dependencies on your machine.
 
-The `.md` files are in the ``docs/`` directory. 
+The `.md` files are in the `docs/` directory. 
 
 ### Edit documentation online via GitHub
 
