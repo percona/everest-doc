@@ -27,7 +27,7 @@ The `.md` files are in the `docs/` directory.
 
 ### Edit documentation online via GitHub
 
-1. Click the **Edit this page** link next to the page title. The source ``.md`` file of the page opens in GitHub editor in your browser. If you haven’t worked with the repository before, GitHub creates a [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) of it for you.
+1. Select the pencil icon next to the page title to open the source file in the GitHub editor. In this editor, you can make the changes, view the changes in the Preview tab, and create a pull request. If you haven’t worked with the repository before, GitHub creates a [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) of it for you.
 
 2. Edit the page. You can check your changes on the **Preview** tab.
 
