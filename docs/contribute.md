@@ -47,10 +47,10 @@ This option is for users who prefer to work from their computer and / or have th
 The steps are the following:
 
 1. Fork this repository
-2. Clone the repository on your machine:
+2. Clone the repository to your machine:
 
 ```sh
-git clone git@github.com:<your_name>/everest-doc.git
+git clone git@github.com:<your_account>/everest-doc.git
 ```
 
 3. Change the directory to ``everest-doc`` and add the remote upstream repository:
@@ -140,7 +140,7 @@ The repository includes the following directories and files:
 - `mkdocs-pdf.yml` - configuration file. Contains the settings for building the PDF docs.
 - `docs`:
   - `*.md` - Source markdown files.
-  - `_images` - Images, logos and favicons
+  - `images` - Images, logos and favicons
   - `css` - Styles
   - `js` - Javascript files
 - `_resource`:
