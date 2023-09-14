@@ -49,14 +49,14 @@ The steps are the following:
 1. Fork this repository
 2. Clone the repository to your machine:
 
-         ```sh
-         git clone git@github.com:<your_account>/everest-doc.git
-         ```
-3. Change the directory to ``everest-doc`` and add the remote upstream repository:
+      ```sh
+      git clone git@github.com:<your_account>/everest-doc.git
+      ```
+3. Change the directory to `everest-doc` and add the remote upstream repository:
 
-         ```sh
-         git remote add upstream git@github.com:percona/everest-doc.git
-         ```
+      ```sh
+      git remote add upstream git@github.com:percona/everest-doc.git
+      ```
 
 4. Create a separate branch for your changes:
 
