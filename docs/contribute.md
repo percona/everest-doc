@@ -147,8 +147,10 @@ The repository includes the following directories and files:
 - `_resource`:
 
    - `templates`:
+
      - ``styles.scss`` - Styling for PDF documents
    - `theme`:
+   
       - `main.html` - The layout template for hosting the documentation on Percona website
    - overrides - The folder with the customized templates
 - `site` - This is where the output HTML files are put after the build
