@@ -49,7 +49,7 @@ The steps are the following:
 2. Clone the repository on your machine:
 
 ```sh
-git clone git@github.com:<your_name>/everest-doc.git
+git clone git@github.com:<your_account>/everest-doc.git
 ```
 
 3. Change the directory to ``everest-doc`` and add the remote upstream repository:
