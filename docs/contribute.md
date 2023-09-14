@@ -78,12 +78,13 @@ To verify how your changes look, generate the static site with the documentation
 #### Use Docker
 
 1. [Get Docker](https://docs.docker.com/get-docker/)
+
 2. We use [our Docker image](https://hub.docker.com/repository/docker/perconalab/pmm-doc-md) to build documentation. Run the following command:
 
    ```sh
    docker run --rm -v $(pwd):/docs perconalab/pmm-doc-md mkdocs build
    ```
-If Docker can't find the image locally, it first downloads the image, and then runs it to build the documentation.
+       If Docker can't find the image locally, it first downloads the image, and then runs it to build the documentation.
 
 3. Go to the ``site/`` directory and open the ``index.html`` file to see the documentation.
 
