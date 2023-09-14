@@ -17,6 +17,7 @@ You can contribute to documentation in the following ways:
 ## Contribute to documentation yourself
 
 To contribute to the documentation, you should be familiar with the following technologies:
+
 - [Markdown] markup language. We write the documentation in it.
 - [MkDocs] generator. We use it to convert source ``.md`` files to html and PDF documents.
 - [git](https://git-scm.com/) and [GitHub](https://guides.github.com/activities/hello-world/)
