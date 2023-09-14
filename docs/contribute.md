@@ -49,9 +49,9 @@ The steps are the following:
 1. Fork this repository
 2. Clone the repository to your machine:
 
-      ```sh
-      git clone git@github.com:<your_account>/everest-doc.git
-      ```
+         ```sh
+         git clone git@github.com:<your_account>/everest-doc.git
+         ```
 3. Change the directory to ``everest-doc`` and add the remote upstream repository:
 
          ```sh
@@ -103,15 +103,15 @@ To verify how your changes look, generate the static site with the documentation
 2. Install [MkDocs].
 3. While in the root directory of the doc project, run the following command to build the documentation:
 
-   ```sh
-   mkdocs build
-   ```
+      ```sh
+      mkdocs build
+      ```
 4. Go to the ``site`` directory and open the ``index.html`` file in your web browser to see the documentation.
 5. To automatically rebuild the documentation and reload the browser as you make changes, run the following:
    
-   ```sh
-   mkdocs serve
-   ```
+      ```sh
+      mkdocs serve
+      ```
    Wait until you see the message `INFO    -  Start detecting changes`, then enter `0.0.0.0:8000` in the browser's address bar. 
 
 ## PDF
