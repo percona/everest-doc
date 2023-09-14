@@ -139,7 +139,7 @@ The repository includes the following directories and files:
 - `mkdocs-pdf.yml` - configuration file. Contains the settings for building the PDF docs.
 - `docs`:
   - `*.md` - Source markdown files.
-  - `_images` - Images, logos and favicons
+  - `images` - Images, logos and favicons
   - `css` - Styles
   - `js` - Javascript files
 - `_resource`:
