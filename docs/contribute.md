@@ -49,15 +49,15 @@ The steps are the following:
 1. Fork this repository
 2. Clone the repository to your machine:
 
-```sh
-git clone git@github.com:<your_account>/everest-doc.git
-```
+   ```sh
+   git clone git@github.com:<your_account>/everest-doc.git
+   ```
 
 3. Change the directory to ``everest-doc`` and add the remote upstream repository:
 
-```sh
-git remote add upstream git@github.com:percona/everest-doc.git
-```
+   ```sh
+   git remote add upstream git@github.com:percona/everest-doc.git
+   ```
 
 4. Create a separate branch for your changes:
 
@@ -72,6 +72,7 @@ git remote add upstream git@github.com:percona/everest-doc.git
 ### Building the documentation
 
 To verify how your changes look, generate the static site with the documentation. This process is called *building*. You can do it in these ways:
+
 - [use Docker](#use-docker)
 - [build locally](#build-locally)
 
@@ -102,9 +103,9 @@ To verify how your changes look, generate the static site with the documentation
 2. Install [MkDocs].
 3. While in the root directory of the doc project, run the following command to build the documentation:
 
-```sh
-mkdocs build
-```
+   ```sh
+   mkdocs build
+   ```
 4. Go to the ``site`` directory and open the ``index.html`` file in your web browser to see the documentation.
 5. To automatically rebuild the documentation and reload the browser as you make changes, run the following:
    
@@ -150,7 +151,7 @@ The repository includes the following directories and files:
 
      - ``styles.scss`` - Styling for PDF documents
    - `theme`:
-   
+
       - `main.html` - The layout template for hosting the documentation on Percona website
    - overrides - The folder with the customized templates
 - `site` - This is where the output HTML files are put after the build
