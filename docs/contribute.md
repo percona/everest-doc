@@ -139,11 +139,13 @@ The repository includes the following directories and files:
 - `mkdocs.yml` - configuration file. Contains the settings for building the docs with Material theme.
 - `mkdocs-pdf.yml` - configuration file. Contains the settings for building the PDF docs.
 - `docs`:
+
   - `*.md` - Source markdown files.
   - `images` - Images, logos and favicons
   - `css` - Styles
   - `js` - Javascript files
 - `_resource`:
+
    - `templates`:
      - ``styles.scss`` - Styling for PDF documents
    - `theme`:
