@@ -32,3 +32,8 @@ The Basic information page will be displayed.
 10. On the **Advanced Configurations** screen, you can enable external access and database engine parameters by turning the toggle button on.
 
 ![!image](images/enable_advanced_config.png)
+
+11. Click **Create Database**. Your database will be created.
+12. Click Go to list of my databases. You will see the database that you provisioned.
+
+![!image](images/everest_db_provisioned.png)
