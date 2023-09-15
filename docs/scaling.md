@@ -36,48 +36,6 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 
 To scale your database instances:
 
-### For new database clusters
-
-To scale new database clusters:
-
-1. Log into the Percona Everest UI. 
-
-    The Percona Everest homepage will be displayed.
-
-2. Click **Create Database**.
-
-    The Basic information page will be displayed.
-
-3. Select the **Database type**: PostgreSQL, MySQL, or MongoDB.
-
-4. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
-
-5. Select the **Database version** from the dropdown.
-
-6. Select the **[Storage class]()**.
-
-7. Click **Continue**.
-
-    The **Resources** page will be displayed.
-
-8. Select the **Number of nodes**. 
-
-    ![!image](images/everest_db_scaling.png)
-
-9. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
-
-        
-10. Click **Continue** until you reach the page where the **Create database** option is seen.
-
-11. Click **Go to list of my databases**. You will see the database that you provisioned.
-
-12. Click on expand next to the database that you created. You can see the resources that you allocated for your database.
-
-    ![!image](images/everest_resources_allocated.png)
-
-### For existing database clusters
-
-To scale existing database clusters:
 
 1. From the Percona Everest Homepage, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
 2. Click **Edit**.
