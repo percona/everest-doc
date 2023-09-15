@@ -8,7 +8,7 @@ Vertical scaling is essential for addressing increased workloads or performance 
         
 * Scale up
 
-    You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold. To improve the performance of your cluster, you can create a cluster with a bigger disk size and memory that can hold more data.        
+    You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.       
     
     **Example**
         
