@@ -22,13 +22,17 @@ The steps to provision a new database are:
 
 6. Select the **[Storage class]()**.
 
-7. Click **Continue**. The **Resources** page will be displayed.
+7. Click **Continue**.
+
+   The **Resources** page will be displayed.
 
 8. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [topic]().
 
     ![!image](images/everest_db_scaling.png)
 
-9. Click **Continue**. The **Advanced Configurations** page will be displayed.
+9. Click **Continue**. 
+
+   The **Advanced Configurations** page will be displayed.
 
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
