@@ -8,12 +8,12 @@ Vertical scaling is essential for addressing increased workloads or performance 
         
 * Scale up
 
-    You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold. To increase the performance of your cluster, you can create a cluster with bigger disk size and memory that can hold more data.
-        
+    You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold. To improve the performance of your cluster, you can create a cluster with a bigger disk size and memory that can hold more data.        
+    
     **Example**
         
-    For optimal cluster performance, select **Large** as the **Resource size per node** when creating a database cluster. It has higher preset thresholds for CPU, memory, and disk as comapared to **Small**.
-            
+    For optimal cluster performance, select **Large** as the **Resource size per node** when creating a database cluster. It has higher preset thresholds for CPU, memory, and disk as compared to **Small**.            
+    
     ![!image](images/everest_scale_vertically_up.png)
 
 * Scale down 
@@ -22,13 +22,13 @@ Vertical scaling is essential for addressing increased workloads or performance 
             
     **Example**
       
-    If performance is not a criteria and resource requirements are low, opt for **Small** as the **Resource size per node** when creating a database cluster. This option has lower preset thresholds for CPU, Memory, and Disk compared to the **Large**.
-        
+    If performance is not a criterion and resource requirements are low, opt for **Small** as the **Resource size per node** when creating a database cluster. This option has lower preset thresholds for CPU, Memory, and Disk compared to the **Large**.        
+    
     ![!image](images/everest_db_scaling.png)
 
 ## Horizontal scaling
 
-To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance as well as availability and datbaase resilience.
+To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance, availability, and database resilience.
 
 ![!image](images/everest_scale_horizontally.png)
 
@@ -64,10 +64,10 @@ To scale new database clusters:
 
     ![!image](images/everest_db_scaling.png)
 
-9. Select the **Resources per node**. When you select the Resources per node, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
+9. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
 
         
-10. Click **Continue** till you come to the page where **Create database** option is seen.
+10. Click **Continue** until you reach the page where the **Create database** option is seen.
 
 11. Click **Go to list of my databases**. You will see the database that you provisioned.
 
@@ -83,8 +83,8 @@ To scale existing database clusters:
 2. Click **Edit**.
 3. Navigate to the **Resources** page.
 4. Select the **Number of nodes**. 
-5. Select the **Resources per node**. When you select the Resources per node, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
-6. Click **Continue** till you come to the page where **Edit database** option is seen.
+5. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
+6. Click **Continue** until you reach the page where **Edit database** option is seen.
 
 7. Click **Go to list of my databases**.
 
