@@ -67,11 +67,11 @@ To scale new database clusters:
 9. Select the **Resources per node**. When you select the Resources per node, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
 
         
-9. Click **Continue** till you come to the page where **Create database** option is seen.
+10. Click **Continue** till you come to the page where **Create database** option is seen.
 
-10. Click **Go to list of my databases**. You will see the database that you provisioned.
+11. Click **Go to list of my databases**. You will see the database that you provisioned.
 
-11. Click on expand next to the database that you created. You can see the resources that you allocated for your database.
+12. Click on expand next to the database that you created. You can see the resources that you allocated for your database.
 
     ![!image](images/everest_resources_allocated.png)
 
