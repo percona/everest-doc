@@ -1,5 +1,7 @@
 # Scaling your database deployment
 
+Scaling in Percona Everest allows for easy adjustment of database capacity and performance to meet the changing demands.
+
 * Vertical scaling
             
     Vertical scaling is essential for addressing increased workloads or performance demands. You can scale up or scale down as per your requirements. 
