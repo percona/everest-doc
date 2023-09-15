@@ -41,7 +41,7 @@ To scale your database instances:
 2. Click **Edit**.
 3. Navigate to the **Resources** page.
 4. Select the **Number of nodes**. 
-5. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
+5. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.
 6. Click **Continue** until you reach the page where **Edit database** option is seen.
 
 7. Click **Go to list of my databases**.
