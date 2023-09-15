@@ -7,7 +7,7 @@ Databases (DBs) may get damaged due to a variety of reasons, including disk cras
 To ensure that you can recover data in such events, it is critical to back up your databases. With Everest, you can do this with zero downtime and minimal performance impact. 
 
 ## Supported setups
-Currently,  you can create and restore on-demand backups. Future releases will add Point-in-Time-Recovery and scheduled backup functionality.
+Currently,  you can create and restore on-demand backups. Future releases will add Point-in-Time-Recovery and scheduled backups functionality.
 
 ## Prerequisites
 
