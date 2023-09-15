@@ -38,6 +38,8 @@ To scale your database instances:
 
 ### For new database clusters
 
+To scale new database clusters:
+
 1. Log into the Percona Everest UI. 
 
    The Percona Everest homepage will be displayed.
@@ -75,8 +77,10 @@ To scale your database instances:
 
 # For existing database clusters
 
-1. On the Percona Everest Homepage, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
-2. Click edit.
+To scale existing database clusters:
+
+1. From the Percona Everest Homepage, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
+2. Click **Edit**.
 3. Navigate to the **Resources** page.
 4. Select the **Number of nodes**. 
 5. Select the **Resources per node**. When you select the Resources per node, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields. However, you can also manually enter the values for these fields.
