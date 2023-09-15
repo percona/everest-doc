@@ -168,4 +168,4 @@ nav:
       - Acknowledgments: reference/acknowledgements.md
 
   - Contribute:
-      - Contribution guidelines: api/contribute/contribute.md
+      - contribute.md
