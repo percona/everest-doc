@@ -57,7 +57,7 @@ The steps are the following:
       ```sh
       git remote add upstream git@github.com:percona/everest-doc.git
       ```
-
+      
 4. Create a separate branch for your changes:
 
       ```sh
