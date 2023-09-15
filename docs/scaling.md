@@ -42,7 +42,7 @@ To scale new database clusters:
 
 1. Log into the Percona Everest UI. 
 
-   The Percona Everest homepage will be displayed.
+    The Percona Everest homepage will be displayed.
 
 2. Click **Create Database**.
 
