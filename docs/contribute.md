@@ -52,6 +52,7 @@ The steps are the following:
       ```sh
          git clone git@github.com:<your_account>/everest-doc.git
       ```
+
 3. Change the directory to `everest-doc` and add the remote upstream repository:
 
       ```sh
