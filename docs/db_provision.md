@@ -41,6 +41,6 @@ The steps to provision a new database are:
     ![!image](images/enable_advanced_config.png)
 
 11. Click **Create Database**. Your database will be created.
-12. Click Go to list of my databases. You will see the database that you provisioned.
+12. Click **Go to list of my databases**. You will see the database that you provisioned.
 
     ![!image](images/everest_provisioned_db.png)
