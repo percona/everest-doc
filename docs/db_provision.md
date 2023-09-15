@@ -4,7 +4,8 @@ Provisioning a database instance involves setting up and configuring a database 
 
 The steps to provision a new database are:
 
-1. Log into the Percona Everest UI. The Percona Everest homepage will be displayed.
+1. Log into the Percona Everest UI. 
+   The Percona Everest homepage will be displayed.
 2. Click **Create Database**.
 
     ![!image](images/everest_db_provision.png)
@@ -27,9 +28,9 @@ The steps to provision a new database are:
 
     ![!image](images/everest_db_scaling.png)
 
-9. Click **Continue**. The **Advanced Configurations** screen will be displayed.
+9. Click **Continue**. The **Advanced Configurations** page will be displayed.
 
-10. On the **Advanced Configurations** screen, you can enable external access and database engine parameters by turning the toggle button on.
+10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
     ![!image](images/enable_advanced_config.png)
 
