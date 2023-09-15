@@ -19,11 +19,11 @@ The Basic information page will be displayed.
 
 5. Select the **Database version** from the dropdown.
 
-6. Select the **Storage class**.
+6. Select the **[Storage class]()**.
 
 7. Click **Continue**. The **Resources** page will be displayed.
 
-8. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk.
+8. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [topic]().
 
 ![!image](images/everest_db_scaling.png)
 
@@ -36,4 +36,4 @@ The Basic information page will be displayed.
 11. Click **Create Database**. Your database will be created.
 12. Click Go to list of my databases. You will see the database that you provisioned.
 
-![!image](images/everest_db_provisioned.png)
+![!image](images/everest_provisioned_db.png)
