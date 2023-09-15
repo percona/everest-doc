@@ -1,32 +1,42 @@
 # Install Everest
 
+## Setup
+
 Percona Everest has two primary components:
 
  - [Percona CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
-- Everest application (UI for simplicity) that you can spin up with our quickstart instructions below.
+- Everest application (UI for simplicity), which you can spin up using the instructions below.
+
+### Supported operators
+
+- Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.12
+- Percona Operator for MongoDB (PSMDB) 1.14
+- Percona Operator for PostgreSQL (PG) 2.2
 
 
 ## Before you start
 
 Percona Everest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a Kubernetes cluster.
 Therefore, before installing Everest, ensure that you have a publicly accessible Kubernetes cluster.
+
 We recommend setting one up on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), as it may be difficult to currently spin one up on local Kubernetes installations (minikube, kind, k3d, or similar products).
 
 
 ## Prerequisites
+
 Before getting started with Percona Everest, we recommend that you:
 
 1. Install [Docker](https://docs.docker.com/engine/install/) and docker-compose.
-2. Install [Go](https://go.dev/doc/install).
-3. Install make.
-4. kubeconfig (Everest will use default one from ~/.kube/config)
+2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+3. Download the kubeconfig file from the Kubernetes cluster that you want to use with Everest.  By default, Everest uses the file available under *~/.kube/config.*
 
 ## Get started
+
 To install and provision Percona Everest:
 
 1. Use the following commands to spin up the backend and frontend:
 
- - `wget https://raw.githubusercontent.com/percona/percona-everest-backend/v0.1.0/quickstart.yml`
+ - `wget https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/quickstart.yml`
 
 - `docker-compose -f quickstart.yml up -d`
 2. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
