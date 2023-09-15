@@ -115,7 +115,7 @@ To verify how your changes look, generate the static site with the documentation
       ```
    Wait until you see the message `INFO    -  Start detecting changes`, then enter `0.0.0.0:8000` in the browser's address bar. 
 
-## PDF
+## Create a PDF version
 
 To create the PDF version of the documentation, use the following command:
 
@@ -125,7 +125,7 @@ To create the PDF version of the documentation, use the following command:
     docker run --rm -v $(pwd):/docs -e ENABLE_PDF_EXPORT=1 perconalab/pmm-doc-md mkdocs build -f mkdocs-pdf.yml
     ```
 
-* Without:
+* With MkDocs:
 
     ```sh
     ENABLE_PDF_EXPORT=1 mkdocs build -f mkdocs-pdf.yml
