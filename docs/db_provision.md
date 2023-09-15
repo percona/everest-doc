@@ -7,7 +7,7 @@ The steps to provision a new database are:
 1. Log into the Percona Everest UI. 
 
    The Percona Everest homepage will be displayed.
-   
+
 2. Click **Create Database**.
 
     ![!image](images/everest_db_provision.png)
@@ -26,7 +26,7 @@ The steps to provision a new database are:
 
 7. Click **Continue**.
 
-   The **Resources** page will be displayed.
+    The **Resources** page will be displayed.
 
 8. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [topic]().
 
@@ -34,7 +34,7 @@ The steps to provision a new database are:
 
 9. Click **Continue**. 
 
-   The **Advanced Configurations** page will be displayed.
+    The **Advanced Configurations** page will be displayed.
 
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
