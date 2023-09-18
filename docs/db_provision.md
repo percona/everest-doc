@@ -22,17 +22,17 @@ The steps to provision a new database are:
 
 5. Select the **Database version** from the dropdown.
 
-6. Select the **[Storage class]()**.
+6. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) in the Kubernetes documentation. 
 
 7. Click **Continue**.
 
     The **Resources** page will be displayed.
 
-8. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [topic]().
+8.  Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [topic]().
 
     ![!image](images/everest_db_scaling.png)
 
-9. Click **Continue**. 
+9.  Click **Continue**. 
 
     The **Advanced Configurations** page will be displayed.
 
