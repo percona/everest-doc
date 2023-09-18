@@ -166,41 +166,6 @@ to the cluster.
 
 {% include 'assets/fragments/connectivity.txt' %}
 
-## Troubleshooting
-
-If `kubectl get psmdb` command doesn't show `ready` status too long, you can 
-check the creation process with the `kubectl get pods` command:
-
-``` {.bash data-prompt="$" }
-$ kubectl get pods
-```
-
-??? example "Expected output"
-
-    --8<-- "./docs/assets/code/kubectl-get-pods-response.txt"
-
-If the command output had shown some errors, you can examine the problematic
-Pod with the `kubectl describe <pod name>` command as follows:
-
-``` {.bash data-prompt="$" }
-$ kubectl describe pod my-cluster-name-rs0-2
-```
-
-Review the detailed information for `Warning` statements and then correct the
-configuration. An example of a warning is as follows:
-
-`Warning  FailedScheduling  68s (x4 over 2m22s)  default-scheduler  0/1 nodes are available: 1 node(s) didn’t match pod affinity/anti-affinity, 1 node(s) didn’t satisfy existing pods anti-affinity rules.`
-
-??? note "Alternatively, you can examine your Pods via the object browser"
-
-    The errors will look as follows:
-
-    ![image](assets/images/gke-quickstart-object-browser-error.svg)
-
-    Clicking the problematic Pod will bring you to the details page with the
-    same warning:
-
-    ![image](assets/images/gke-quickstart-object-browser-details.svg)
 
 ## Removing the GKE cluster
 
