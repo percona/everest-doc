@@ -142,6 +142,7 @@ nav:
       - Post-install tasks: install/postinstall.md
   - cluster-management.md
   - db_engine_config.md
+  - db_provision.md
 
   - Use:
       - Create a cluster: use/createdb.md
