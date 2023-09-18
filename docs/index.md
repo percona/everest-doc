@@ -1,4 +1,4 @@
-# Welcome to Percona Everest [Alpha version]
+# Welcome to Percona Everest [Alpha]
 
 We are excited to welcome you to the very first release of Percona Everest, designed to demonstrate the core capabilities of our new open source private Database-as-a-Service (DBaaS) solution!
 
