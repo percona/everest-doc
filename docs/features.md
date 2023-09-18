@@ -20,5 +20,4 @@ Some of the key features of Percona Everest are:
 
 - **Administrative Features**
 
-    * **Centralized Configuration Management**: Percona Everest simplifies administrative tasks by allowing you to add and manage storage locations, monitoring endpoints, storage classes, and other default configurations from a central interface.
-    * **Database monitoring with PMM**: Monitor your databases and Kubernetes clusters with Percona Monitoring and Management (PMM) to gain insights into performance metrics, query analysis, and other important functions.
+**Database monitoring with PMM**: Monitor your databases and Kubernetes clusters with Percona Monitoring and Management (PMM) to gain insights into performance metrics, query analysis, and other important functions.
