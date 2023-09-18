@@ -57,7 +57,7 @@ shown on the above image. You will see the connect statement which configures
 the command-line access. After you have edited the statement, you may run the
 command in your local shell:
 
-``` {.bash data-prompt="$" }
+```sh
 $ gcloud container clusters get-credentials my-cluster-name --zone us-central1-a --project <project name>
 ```
 
@@ -65,7 +65,7 @@ Finally, use your [Cloud Identity and Access Management (Cloud IAM)](https://clo
 to control access to the cluster. The following command will give you the
 ability to create Roles and RoleBindings:
 
-``` {.bash data-prompt="$" }
+```sh
 $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-admin --user $(gcloud config get-value core/account)
 ```
 
@@ -79,7 +79,7 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
 
 You can clean up the cluster with the `gcloud` command as follows:
 
-``` {.bash data-prompt="$" }
+```sh
 $ gcloud container clusters delete <cluster name>
 ```
 
