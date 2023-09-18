@@ -1,26 +1,27 @@
-# Introduction to Percona Everest
+# Welcome to Percona Everest [Alpha]
 
-Percona Everest is an open source private Database-as-a-Service (DBaaS) solution that automates day-one and day-two operations for Postgres, MySQL, and MongoDB databases within Kubernetes clusters.
+We are excited to welcome you to the very first release of Percona Everest, designed to demonstrate the core capabilities of our new open source private Database-as-a-Service (DBaaS) solution!
 
-It enables developers to quickly deploy code, scale deployments, and reduce database administration overhead while offering complete control over their data, database configuration, and DBaaS costs.
+Before its general availability, Percona Everest will provide a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
 
-Percona Everest comes with a complete suite of database services, such as setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial operations.
+## Why Everest?
 
-Percona Everest enables you to avoid vendor lock-in, optimize database performance, deploy databases cost-effectively, and reduce administration costs.
-
-
-## Benefits of Percona Everest
+Percona Everest automates day-one and day-two database operations for Postgres, MySQL, and MongoDB databases within Kubernetes clusters. It enables you to quickly deploy code, scale deployments, and reduce database administration overhead while offering complete control over your data, database configuration, and DBaaS costs.
 
 Here's why you should try Percona Everest:
 
-- **Simplified DB deployment and management**: Percona Everest simplifies the provisioning, configuration, and management of database instances. You can launch a new database instance with just a few clicks, saving substantial time and effort.
-- **Web-based interface**: Percona Everest provides a user-friendly web interface for managing and configuring databases without the need to have extensive technical proficiency.
-- **Reduced infrastructure management**: Percona Everest eliminates the need to manage hardware, networking, and other infrastructure components, lowering operational costs.
-- **Reduced time to market**: Percona Everest significantly reduces the time to market for software applications and projects. 
-- **Global accessibility**: As a cloud-based application, Percona Everest can be accessed from anywhere using an internet connection. 
-- **Faster development**: Developers can focus on creating applications rather than managing databases, thus accelerating the development process.
-- **Increased focus on core competencies**: Your team can focus on the core competencies and innovation instead of focusing on database administration.
+- **Launch database instance with just a few clicks**: Percona Everest simplifies the entire database lifecycle, making it effortless to provision, configure, and manage your database instances.
+- **Lower operational costs**: Reduce infrastructure management by eliminating hardware management, networking, and other infrastructure components.
+- **Develop faster and reduce time to market**: Save valuable time and resources that would otherwise be spent on database management, allowing your team to focus on building applications and growing your business.
+- **Scale seamlessly**: As your application's demands grow, you can scale your database instances up or down effortlessly. Whether you need more processing power, storage, or replicas, you can adjust your setup without compromising security and performance.
+- **Simplify maintenance**: Routine maintenance tasks, such as software updates and patch management, are handled by Percona Everest, reducing downtime and the risk of human error.
+- **Monitor and optimize**: Gain insights into your database's performance with built-in monitoring. Percona Everest provides real-time metrics and analytics, helping you identify bottlenecks and optimize your database for peak efficiency.
+- **Automate backups**: Create on-demand and set up automated backup schedules effortlessly. Percona Everest ensures that your critical data is regularly backed up and readily available for recovery when needed. *[Scheduled backups not available in Alpha]*
+- **Collaborate effortlessly**: Collaborate with your team by granting access to the database instances they need, all while maintaining control and visibility over who can do what within your database environment. *[Not available in Alpha].*
+- **Ensure data security**: Percona Everest comes with robust security measures, to keep your data protected and give you peace of mind.- **Data sovereignty in an environment you control**: Pecona Everest is built with open source software to provide complete freedom from vendor lock-in.
+- **Data sovereignty in an environment you control**: Pecona Everest is built with open source software to provide complete freedom from vendor lock-in.
+  
+## Ready to test drive Percona Everest?
 
-[percona_services]: https://www.percona.com/services
-[community]: https://www.percona.com/forums/questions-discussions/everest
-[Technical Preview]: details/glossary.md#technical-preview
+How about checking Percona Everest features in action?
+Get started by [installing Percona Everest](../docs/get-started/quickstart.md) and [manage your first cluster](../docs/cluster-management.md)!
