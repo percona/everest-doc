@@ -2,7 +2,7 @@
 
 Some of the key features of Percona Everest are:
 
-- **Multi-Cloud and on-premise deployments**: Percona Everest enables you to transcend the limitations of a single cloud provider. Deploy your databases across multiple clouds (publicly available k8s), to ensure redundancy, high availability, and data sovereignty.
+- **Multi-Cloud deployments**: Percona Everest enables you to transcend the limitations of a single cloud provider. Deploy your databases across multiple clouds (publicly available k8s), to ensure redundancy, high availability, and data sovereignty.
 - **Multiple open source database support**: Percona Everest offers managed solutions for popular open-source databases, including PostgreSQL, MySQL, and MongoDB.
 - **Private deployments and DIY**: Percona Everest provides complete control over your database environment, ensuring the privacy and security of your data. Private deployments enable you to customize every aspect of your database setup using a do-it-yourself approach.
 - **Database provisioning**
