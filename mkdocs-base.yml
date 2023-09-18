@@ -143,7 +143,7 @@ nav:
   - cluster-management.md
   - db_engine_config.md
   - db_provision.md
-
+  - gke.md
   - Use:
       - Create a cluster: use/createdb.md
       - Back up data for your environment: use/backupRestore.md
