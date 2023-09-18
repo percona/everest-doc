@@ -142,7 +142,6 @@ nav:
       - Post-install tasks: install/postinstall.md
   - cluster-management.md
   - db_engine_config.md
-  - scaling.md
   - Use:
       - Create a cluster: use/createdb.md
       - Back up data for your environment: use/backupRestore.md
@@ -168,4 +167,4 @@ nav:
       - Acknowledgments: reference/acknowledgements.md
 
   - Contribute:
-      - Contribution guidelines: api/contribute/contribute.md
+      - contribute.md
