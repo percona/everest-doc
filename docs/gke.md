@@ -91,7 +91,7 @@ The return statement requests your confirmation of the deletion. Type `y` to con
 
     Just click the `Delete` popup menu item in the clusters list:
 
-    ![image](assets/images/gke-quickstart-cluster-connect.svg)
+    ![image](images/gke-quickstart-cluster-connect.svg)
 
 The cluster deletion may take time.
 
