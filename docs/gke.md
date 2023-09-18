@@ -35,7 +35,7 @@ $ gcloud container clusters create my-cluster-name --project <project name> --zo
 
 !!! note
 
-    You must edit the following command and other command-line statements to
+    You must edit the previous command and other command-line statements to
     replace the `<project name>` placeholder with your project name. You may
     also be required to edit the *zone location*, which is set to `us-central1`
     in the above example. Other parameters specify that we are creating a
@@ -47,7 +47,7 @@ You may wait a few minutes for the cluster to be generated.
 
     Select *Kubernetes Engine* → *Clusters* in the left menu panel:
 
-    ![image](assets/images/gke-quickstart-cluster-connect.svg)
+    ![image](images/gke-quickstart-cluster-connect.svg)
 
 Now you should configure the command-line access to your newly created cluster
 to make `kubectl` be able to use it.
@@ -76,8 +76,6 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
     ```
 
 ## Removing the GKE cluster
-
-There are several ways that you can delete the cluster.
 
 You can clean up the cluster with the `gcloud` command as follows:
 
