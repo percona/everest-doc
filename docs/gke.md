@@ -35,7 +35,7 @@ $ gcloud container clusters create my-cluster-name --project <project name> --zo
 
 !!! note
 
-    You must edit the following command and other command-line statements to
+    You must edit the previous command and other command-line statements to
     replace the `<project name>` placeholder with your project name. You may
     also be required to edit the *zone location*, which is set to `us-central1`
     in the above example. Other parameters specify that we are creating a
