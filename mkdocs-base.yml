@@ -140,6 +140,8 @@ nav:
       - Plan your installation: install/plan.md
       - Installation procedure: install/installEverest.md
       - Post-install tasks: install/postinstall.md
+      - Install Percona Everest on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+
   - cluster-management.md
   - db_engine_config.md
   - db_provision.md
