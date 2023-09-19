@@ -16,7 +16,7 @@ Here's why you should try Percona Everest:
 - **Scale seamlessly**: As your application's demands grow, you can scale your database instances up or down effortlessly. Whether you need more processing power, storage, or replicas, you can adjust your setup without compromising security and performance.
 - **Simplify maintenance**: Routine maintenance tasks, such as software updates and patch management, are handled by Percona Everest, reducing downtime and the risk of human error.
 - **Monitor and optimize**: Gain insights into your database's performance with built-in monitoring. Percona Everest provides real-time metrics and analytics, helping you identify bottlenecks and optimize your database for peak efficiency.
-- **Automate backups**: Create on-demand and set up automated backup schedules effortlessly. Percona Everest ensures that your critical data is regularly backed up and readily available for recovery when needed. ***[Scheduled backups not available in Alpha]***
+- **Automate backups**: Create on-demand and set up automated backup schedules effortlessly. Percona Everest ensures that your critical data is regularly backed up and readily available for recovery when needed. ***[Scheduled backups coming soon]***
 - **Collaborate effortlessly**: Collaborate with your team by granting access to the database instances they need, all while maintaining control and visibility over who can do what within your database environment. ***[Not available in Alpha].***
 - **Ensure data security**: Percona Everest comes with robust security measures to keep your data protected and give you peace of mind.
 - **Data sovereignty in an environment you control**: Pecona Everest is built with open source software to provide complete freedom from vendor lock-in.
