@@ -76,7 +76,6 @@ markdown_extensions:
     emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  section-index: {}
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
@@ -127,7 +126,7 @@ nav:
       - Why Everest?: welcome/whyeverest.md
       
   - Release Notes:
-      - release-notes/index.md
+      - Release notes index: release-notes/index.md
       - 0.1.0: release-notes/0.1.0.md
       - 0.2.0: release-notes/0.2.0.md
   - features.md
