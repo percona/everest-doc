@@ -43,21 +43,23 @@ To install and provision Percona Everest:
 4. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
 5. Rename the downloaded file as follows: `mv everestctl-darwin-amd64 everestctl`.
 6. Modify the file permissions: `chmod +x everestctl`.
-7. Provision and register the Kubernetes cluster in Everest from the installation wizard:
+7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. This will create a Percona namespace called `percona-everest`.
    
 !!! note alert alert-primary "Note"
     Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
 
     ```sh 
-    ✗ KUBECONFIG=~/.kube/config; ./everestctl install operators
+    KUBECONFIG=~/.kube/config; ./everestctl install operators
+
+ ??? example "Expected output"
+
     ? Everest URL http://127.0.0.1:8080
     ? Choose your Kubernetes Cluster name k3d-everest-dev
     ? Do you want to enable monitoring? No
     ? Do you want to enable backups? No
     ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
-    ```
 
-Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode. This will create a Percona namespace called `percona-everest`.
+Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode. 
         
     ```sh
     KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
