@@ -16,11 +16,14 @@ theme:
   logo: images/percona-logo.svg
   favicon: images/percona-favicon.ico
   font:
-    text: Poppins
+    text: Roboto
+    code: Roboto Mono
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to dark mode
@@ -28,6 +31,8 @@ theme:
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: custom
+      accent: custom
       toggle:
         icon: material/toggle-switch
         name: Switch to light mode
@@ -47,17 +52,23 @@ extra_css:
   - https://unicons.iconscout.com/release/v3.0.3/css/line.css
   - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css
   - css/percona.css
-  - css/lightgallery.min.css
+  - css/design.css
   - css/nocopy.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
   - js/promptremover.js
 
+#Copyright
+copyright: >
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
+
+#Extensions
 markdown_extensions:
   attr_list: {}
   toc:
-    permalink: True
+    permalink: true
+  md_in_html: {}
   admonition: {}
   def_list: {}
   meta: {}
@@ -65,15 +76,24 @@ markdown_extensions:
   pymdownx.details: {}
   pymdownx.mark: {}
   pymdownx.smartsymbols: {}
-  pymdownx.tabbed: {}
   pymdownx.tilde: {}
   pymdownx.superfences: {}
+  pymdownx.tabbed:
+    alternate_style: true
+  pymdownx.tasklist:
+    custom_checkbox: true
+  pymdownx.snippets:
+      base_path: ["snippets"]
+      auto_append:
+        - services-banner.md
   pymdownx.highlight:
-    linenums: false
-  pymdownx.inlinehilite: {}
+    use_pygments: true
   pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
+    options:
+      custom_icons:
+        - overrides/.icons
 
 plugins:
   search:
@@ -118,54 +138,35 @@ extra:
       as to measure the effectiveness of our documentation and whether users
       find what they're searching for. With your consent, you're helping us to
       make our documentation better. Read more about <a class="reference external" href="https://www.percona.com/20180524-cookie-policy" target="_blank">Percona Cookie Policy</a>.
-
+  edit_page_text: '<i class="uil uil-pen"></i> <b>Edit this page</b>'
+  updated_text: '<i class="uil uil-refresh"></i> Page updated'
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome to Percona Everest documentation:
-      - index.md
-      - Why Everest?: welcome/whyeverest.md
-      
-  - Release Notes:
-      - Release notes index: release-notes/index.md
-      - 0.1.0: release-notes/0.1.0.md
-      - 0.2.0: release-notes/0.2.0.md
-  - features.md
-  - Get Started:
-      - Quickstart Guide: get-started/quickstart.md
-      - Initial setup: get-started/setup.md
-      - Running Kubernetes clusters and preparing them: get-started/preparek8.md
+  - Welcome to Percona Everest [Alpha]: index.md        
+  - Features: features.md
+  - Quickstart guide:
+      - Overview: quickstart-guide/qs-overview.md
+      - Prerequisites: quickstart-guide/qs-prerequisites.md
+      - Quick install: quickstart-guide/quick-install.md
 
   - Install:
-      - Plan your installation: install/plan.md
-      - Installation procedure: install/installEverest.md
-      - Post-install tasks: install/postinstall.md
-  - cluster-management.md
-  - db_engine_config.md
-  - db_provision.md
+      - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+      - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
+      - Install Percona Everest: install/installEverest.md
+      - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
-      - Create a cluster: use/createdb.md
-      - Back up data for your environment: use/backupRestore.md
-      - Manage backup artifacts: use/manageBackups.md
-      - Monitor databases: use/monitorDBs.md
+      - Create and provision clusters: use/db_provision.md
+      - Back up and restore data: use/backupRestore.md
+      - Manage clusters: use/cluster-management.md
+      - Scale database deployment: use/scaling.md
 
   - Configure:
-      - Set up default DB configurations: configure/configureDB.md
-      - Set up storage locations: configure/storagelocations.md
-      - Set up Kubernetes clusters: configure/configureClusters.md
-      - Set up monitoring endpoints: configure/configureMonitoring.md
-
-  - FAQs: faq.md
-
-  - API Documentation: api/index.md
+      - Configure database engine: configure/db_engine_config.md
 
   - Reference:
-      - reference/index.md
-      - Architecture: reference/architecture.md
-      - Glossary: reference/glossary.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
-      - Acknowledgments: reference/acknowledgements.md
 
   - Contribute:
-      - contribute.md
+      - Contributing Guide: contribute.md

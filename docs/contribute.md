@@ -107,6 +107,7 @@ To verify how your changes look, generate the static site with the documentation
       ```sh
       mkdocs build
       ```
+      
 4. Go to the ``site`` directory and open the ``index.html`` file in your web browser to see the documentation.
 5. To automatically rebuild the documentation and reload the browser as you make changes, run the following:
    
