@@ -43,9 +43,9 @@ To install and provision Percona Everest:
      everest
    pg
 4. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
-5. Rename the downloaded file as follows: `mv everestctl-darwin-amd64 everestctl`.
+5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: `mv everestctl-darwin-amd64 everestctl`.
 6. Modify the file permissions: `chmod +x everestctl`.
-7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. This will create a Percona namespace called `percona-everest`.
+7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. This will install all needed components in a namespace called `percona-everest`.
    
 !!! note alert alert-primary "Note"
     Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
