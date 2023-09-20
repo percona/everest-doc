@@ -41,8 +41,9 @@ To install and provision Percona Everest:
 3. (Optional) Verify if the services started correctly: `docker compose -f quickstart-compose.yml ps --services --filter 'status=running'`. 
 ??? example "Expected output"
 
-     everest
-   pg
+     ```everest
+            pg
+     ```
 
 4. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
 5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: `mv everestctl-darwin-amd64 everestctl`.
@@ -54,11 +55,13 @@ To install and provision Percona Everest:
 
     ??? example "Expected output"
 
+        ```sh
         ? Everest URL http://127.0.0.1:8080
         ? Choose your Kubernetes Cluster name k3d-everest-dev
         ? Do you want to enable monitoring? No
         ? Do you want to enable backups? No
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
+        ```
 
         Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode:
         ```sh
