@@ -38,7 +38,7 @@ To install and provision Percona Everest:
 - to expose Everest though a specific interface, use that interface's IP address: `EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d`.
 - to allow access from any interface on the host machine: `EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d`.
 3. (Optional) Verify if the services started correctly: `docker compose -f quickstart-compose.yml ps --services --filter 'status=running'`. 
- ??? example "Expected output"
+??? example "Expected output"
 
      everest
    pg
