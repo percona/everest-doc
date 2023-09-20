@@ -4,7 +4,7 @@
 
 Percona Everest has two primary components:
 
- - [Percona CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
+- [Percona CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
 - Everest application (UI for simplicity), which you can spin up using the instructions below.
 
 ### Supported operators
@@ -28,13 +28,15 @@ Before getting started with Percona Everest, we recommend that you:
 2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 3. Download the kubeconfig file from the Kubernetes cluster that you want to use with Everest. By default, Everest uses the file available under *~/.kube/config.*
 
-
 ## Get started
 
 To install and provision Percona Everest:
 
 1. Download the Docker compose file: `curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml`.
-2. Spin up the Everest container and its internal database (PostgreSQL): `docker-compose -f quickstart-compose.yml up -d`.
+2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
+- to limit access to the localhost interface (default): `docker compose -f quickstart-compose.yml up -d`.
+- to expose Everest though a specific interface, use that interface's IP address: `EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d`.
+- to allow access from any interface on the host machine: `EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d`.
 3. Verify if the services started correctly: `docker compose -f quickstart-compose.yml ps --services --filter 'status=running'`. 
  ??? example "Expected output"
 
