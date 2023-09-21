@@ -57,7 +57,7 @@ This will install all needed components in a namespace called `percona-everest`.
         Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
 
     ??? example "Expected output"
-            ```sh
+            ```
             ? Everest URL http://127.0.0.1:8080
             ? Choose your Kubernetes Cluster name k3d-everest-dev
             ? Do you want to enable monitoring? No
@@ -67,7 +67,7 @@ This will install all needed components in a namespace called `percona-everest`.
 
     Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode:
         
-        ``sh
+        ```
         KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
