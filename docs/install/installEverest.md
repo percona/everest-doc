@@ -33,9 +33,9 @@ Before getting started with Percona Everest, we recommend that you:
 To install and provision Percona Everest:
 
 1. Download the Docker compose file:
- ```sh 
+```
 curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml
- ```
+```
 2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
     - to limit access to the localhost interface (default):
@@ -81,7 +81,7 @@ This will install all needed components in a namespace called `percona-everest`.
         Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
 
     ??? example "Expected output"
-            ```sh
+            ```
             ? Everest URL http://127.0.0.1:8080
             ? Choose your Kubernetes Cluster name k3d-everest-dev
             ? Do you want to enable monitoring? No
