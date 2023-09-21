@@ -67,7 +67,7 @@ This will install all needed components in a namespace called `percona-everest`.
 
     Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode:
         
-    ```sh
+    ```
         KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
 
