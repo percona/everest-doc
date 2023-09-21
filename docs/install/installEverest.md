@@ -74,8 +74,8 @@ docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
 7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
 
     !!! note alert alert-primary "Note"
- - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
- - If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
+       - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+       - If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
     ```sh
     KUBECONFIG=~/.kube/config; ./everestctl install operators
