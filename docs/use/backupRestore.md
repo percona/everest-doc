@@ -4,14 +4,16 @@
 
 Databases (DBs) may get damaged due to a variety of reasons, including disk crashes, power outages, software errors, or even virus attacks.  
 
-To ensure that you can recover data in such events, it is critical to back up your databases. With Everest, you can do this with zero downtime and minimal performance impact. 
+To ensure that you can recover data in such events, it is critical to back up your databases. With Everest, you can do this with zero downtime and minimal performance impact.
 
 ## Supported setups
-Currently,  you can create and restore on-demand backups. Future releases will add Point-in-Time-Recovery and scheduled backups functionality.
+
+Currently, you can create and restore on-demand backups. Future releases will add Point-in-Time-Recovery and scheduled backups functionality.
 
 ## Prerequisites
 
 ### Prepare storage location
+
 Before working with backups, create a backup location as a backup destination for creating and storing your backup artifacts.  
 
 Everest supports Amazon S3-compatible backup locations, which means you can use [AWS S3](https://aws.amazon.com/s3/) or any other storage solutions that support S3 API, like [min.io](https://min.io/).
@@ -41,7 +43,7 @@ To create a backup for a database:
 To restore a database from a backup:
 
 1. In the ![!](../images/databases_icon.png) **Databases** view, select the database you want to restore.
-2. Click the ![!](../images/actions_icon.png) Actions menu next to the backup you want to restore from, then click **Restore to this DB**.
+2. Click the  <i class="uil uil-cog"></i>  {{icon.ellipsis-h}} Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
 3. Select **Restore** to restore the backup of your database.
 
 ## Replicate database from backup
