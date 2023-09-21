@@ -43,7 +43,7 @@ To create a backup for a database:
 To restore a database from a backup:
 
 1. In the ![!](../images/databases_icon.png) **Databases** view, select the database you want to restore.
-2. Click the  <i class="uil uil-cog">{{icon.ellipsis-h}} <i class="uil uil-cog"></i> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
+2. Click the  <i class="uil uil-cog"/> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
 3. Select **Restore** to restore the backup of your database.
 
 ## Replicate database from backup
