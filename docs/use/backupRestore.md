@@ -33,8 +33,8 @@ To create a backup storage location:
 
 To create a backup for a database:
 
-1. Go to  ![!](../images/settings_icon.png) **Settings > Backup Storages** and check that  you have an available AWS S3-compatible location for storing  backups.
-2. Go to the ![!](../images/databases_icon.png) **Databases** view and select the DB which you want to back up.
+1. Go to <i class="uil uil-cog"></i>  **Settings > Backup Storages** and check that  you have an available AWS S3-compatible location for storing  backups.
+2. Go to <i class="uil uil-database"></i>  the ![!](../images/databases_icon.png) **Databases** view and select the DB which you want to back up.
 3. Click **Create backup > Now**. 
 4. In the **Create Backup** pop-up, change the default backup name if required, select an available backup location, and then click **Create**.
 
@@ -42,8 +42,8 @@ To create a backup for a database:
 
 To restore a database from a backup:
 
-1. In the ![!](../images/databases_icon.png) **Databases** view, select the database you want to restore.
-2. Click the  <i class="uil uil-cog"/> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
+1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to restore.
+2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
 3. Select **Restore** to restore the backup of your database.
 
 ## Replicate database from backup
@@ -65,8 +65,8 @@ There are specific situations when it makes sense to create a new database using
 
 To create a database from backup:
 
-1. In the ![!](../images/databases_icon.png) **Databases** view,  select the database you want to replicate.
-2. Click the ![!](../images/actions_icon.png)  Actions menu next to the backup you want to replicate from, then click **Create new DB**.
+1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
+2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click **Create new DB**.
 3. Select **Create** to start database provisioning for the DB replica.
 
 
