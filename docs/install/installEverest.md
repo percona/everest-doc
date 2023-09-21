@@ -33,7 +33,7 @@ Before getting started with Percona Everest, we recommend that you:
 To install and provision Percona Everest:
 
 1. Download the Docker compose file:
- `curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml`
+ ```curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml```
 2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
     - to limit access to the localhost interface (default): `docker compose -f quickstart-compose.yml up -d`.
