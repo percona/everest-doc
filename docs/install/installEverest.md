@@ -34,10 +34,10 @@ To install and provision Percona Everest:
 
 1. Download the Docker compose file: `curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml`.
 2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
-   
-   - to limit access to the localhost interface (default): `docker compose -f quickstart-compose.yml up -d`.
-   - to expose Everest though a specific interface, use that interface's IP address: `EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d`.
-   - to allow access from any interface on the host machine: `EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d`.
+
+    - to limit access to the localhost interface (default): `docker compose -f quickstart-compose.yml up -d`.
+    - to expose Everest though a specific interface, use that interface's IP address: `EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d`.
+    - to allow access from any interface on the host machine: `EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d`.
 3. (Optional) Verify if the services started correctly: `docker compose -f quickstart-compose.yml ps --services --filter 'status=running'`. 
 ??? example "Expected output"
 
@@ -62,9 +62,7 @@ To install and provision Percona Everest:
         ? Do you want to enable backups? No
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
         ```
-
         Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode:
         ```sh
-            KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-        ```
+            KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard```
 8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
