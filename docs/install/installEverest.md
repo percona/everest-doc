@@ -34,28 +34,28 @@ To install and provision Percona Everest:
 
 1. Download the Docker compose file:
  ```sh 
-    curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml
+curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/deploy/quickstart-compose.yml -o quickstart-compose.yml
  ```
 2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
     - to limit access to the localhost interface (default):
-        ```sh
-        docker compose -f quickstart-compose.yml up -d
-        ```
+    ```sh
+    docker compose -f quickstart-compose.yml up -d
+    ```
     - to expose Everest though a specific interface, use that interface's IP address: 
-        ```sh
-        EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d
-        ```
+    ```sh
+    EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d
+    ```
     - to allow access from any interface on the host machine:
-        ```sh
-        EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d
-        ```
+    ```sh
+    EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d
+    ```
   
 3. (Optional) Verify if the services started correctly:
 
-    ```sh 
-    docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
-    ```
+```sh 
+docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
+```
     
     ??? example "Expected output"
         ```
