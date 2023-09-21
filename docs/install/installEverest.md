@@ -55,6 +55,7 @@ curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/de
 ```sh 
 docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
 ```
+
     ??? example "Expected output"
         ```
             everest
