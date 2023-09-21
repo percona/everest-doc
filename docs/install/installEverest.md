@@ -38,11 +38,24 @@ To install and provision Percona Everest:
  ```
 2. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
-    - to limit access to the localhost interface (default): `docker compose -f quickstart-compose.yml up -d`.
-    - to expose Everest though a specific interface, use that interface's IP address: `EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d`.
-    - to allow access from any interface on the host machine: `EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d`.
+    - to limit access to the localhost interface (default):
+        ```sh
+        docker compose -f quickstart-compose.yml up -d
+        ```
+    - to expose Everest though a specific interface, use that interface's IP address: 
+        ```sh
+        EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d
+        ```
+    - to allow access from any interface on the host machine:
+        ```sh
+        EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d
+        ```
   
-3. (Optional) Verify if the services started correctly: `docker compose -f quickstart-compose.yml ps --services --filter 'status=running'`. 
+3. (Optional) Verify if the services started correctly:
+
+    ```sh 
+    docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
+    ```
     
     ??? example "Expected output"
         ```
@@ -51,9 +64,18 @@ To install and provision Percona Everest:
         ```
 
 4. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
-5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: `mv everestctl-darwin-amd64 everestctl`.
-6. Modify the file permissions: `chmod +x everestctl`.
-7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command: `KUBECONFIG=~/.kube/config; ./everestctl install operators`. 
+5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: 
+    ```sh
+    mv everestctl-darwin-amd64 everestctl
+    ```
+6. Modify the file permissions: 
+    ```sh
+    chmod +x everestctl
+    ```
+7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command: 
+    ```sh
+    KUBECONFIG=~/.kube/config; ./everestctl install operators
+    ```
 This will install all needed components in a namespace called `percona-everest`.
    
     !!! note alert alert-primary "Note"
