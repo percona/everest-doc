@@ -52,11 +52,9 @@ curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.3.0/de
     ```
   
 3. (Optional) Verify if the services started correctly:
-
 ```sh 
 docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
 ```
-    
     ??? example "Expected output"
         ```
             everest
@@ -93,7 +91,7 @@ This will install all needed components in a namespace called `percona-everest`.
     Alternatively, provision and register the Kubernetes cluster in Everest by running the installation in headless mode:
         
     ```
-        KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    KUBECONFIG=~/.kube/config; ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
 
 8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
