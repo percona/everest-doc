@@ -24,7 +24,7 @@ We recommend [setting one up on the Amazon Elastic Kubernetes Service (EKS)](../
 
 Before getting started with Percona Everest, we recommend that you:
 
-1. [Install Docker Desktop](https://docs.docker.com/desktop), which also includes Docker Engine and the Docker compose plugin.
+1. [Install Docker Engine](hhttps://docs.docker.com/engine/install), which also includes the Docker compose plugin.
 2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install) for GKE.
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
     ```sh 
@@ -94,7 +94,7 @@ docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
 This will install all needed components in a namespace called `percona-everest`.
        
 
-    ??? example "Expected output"
+    ??? example "Example"
             
             ? Everest URL http://127.0.0.1:8080
             ? Choose your Kubernetes Cluster name k3d-dbaas-tilt
