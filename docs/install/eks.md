@@ -40,8 +40,7 @@ To delete your cluster, you will need the following data:
 * name of your EKS cluster,
 * AWS region in which you have deployed your cluster.
 
-You can clean up the cluster with the following `eksctl` command (replace 
- `<region>` and `<cluster name>` placeholders with real names):
+You can clean up the cluster with the following `eksctl` command (replace `<region>` and `<cluster name>` placeholders with real names):
 
 ``` {.bash data-prompt="$" }
 $ eksctl delete cluster --region=<region> --name="<cluster name>"
