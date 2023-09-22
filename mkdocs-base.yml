@@ -76,7 +76,6 @@ markdown_extensions:
     emoji_generator: !!python/name:materialx.emoji.to_svg
 
 plugins:
-  section-index: {}
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
@@ -122,13 +121,11 @@ extra:
 
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome to Percona Everest documentation:
-      - index.md
-      - Why Everest?: welcome/whyeverest.md
-      
-# Release Notes: 
-      - release-notes/index.md
-
+  - Home:
+      - index.md        
+  - Release Notes:
+      - Release notes index: release-notes/index.md
+  - features.md
   - Get Started:
       - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
@@ -137,8 +134,10 @@ nav:
   - Install:
       - Installation procedure: install/installEverest.md
       - Uninstall Everest: install/uninstallEverest.md
+  - cluster-management.md
   - db_engine_config.md
-
+  - db_provision.md
+  - gke.md
   - Use:
       - Create a cluster: use/createdb.md
       - Back up data for your environment: use/backupRestore.md
@@ -164,4 +163,4 @@ nav:
       - Acknowledgments: reference/acknowledgements.md
 
   - Contribute:
-      - Contribution guidelines: api/contribute/contribute.md
+      - contribute.md

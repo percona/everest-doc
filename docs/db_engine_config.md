@@ -22,8 +22,8 @@ To configure your database engine in Percona Everest:
 
     **Mongo**
     <pre><code>operationProfiling:
-    mode: slowOp
-    slowOpThresholdMs: 200</pre></code>
+      mode: slowOp
+      slowOpThresholdMs: 200</pre></code>
 
     **PostgreSQL**
     <pre><code>log_connections = yes
