@@ -12,7 +12,7 @@ Before creating an EKS cluster, make sure to:
 
 2. [Install eksctl](https://github.com/weaveworks/eksctl#installation) to simplify cluster creation on EKS.
 
-3. [Install kubectl](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) to manage and deploy applications on Kubernetes.
+3. [Install kubectl](https://kubernetes.io/docs/tasks/tools/) to manage and deploy applications on Kubernetes.
 
 4. [Configure AWS CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) with your credentials.
 
