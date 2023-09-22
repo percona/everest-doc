@@ -28,7 +28,7 @@ Before getting started with Percona Everest, we recommend that you:
 2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install) for GKE.
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
     ```sh 
-    kubectl get nodes`
+    kubectl get nodes
     ```
 
     ??? example "Expected output"
