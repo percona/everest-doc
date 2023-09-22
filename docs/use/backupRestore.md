@@ -20,7 +20,9 @@ Everest supports Amazon S3-compatible backup locations, which means you can use 
 
 !!! caution alert alert-warning "Important"
 
-     Make sure not to share the same backup storage location for multiple database clusters.
+     - Currently, Everest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.
+     - Make sure you have read/write/delete permissions to the S3 bucket.
+     - Make sure not to share the same backup storage location for multiple database clusters.
 
 To create a backup storage location:
 
@@ -38,7 +40,7 @@ To create a backup for a database:
 3. Click **Create backup > Now**. 
 4. In the **Create Backup** pop-up, change the default backup name if required, select an available backup location, and then click **Create**.
 
-## Restore backup  to a database cluster
+## Restore the database from a previously saved backup
 
 To restore a database from a backup:
 
@@ -46,12 +48,11 @@ To restore a database from a backup:
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
 3. Select **Restore** to restore the backup of your database.
 
-## Replicate database from backup
+## Restore backup to a new database
 
 Database backups and data replication are complementary components of an effective disaster recovery strategy. 
 
-
-There are specific situations when it makes sense to create a new database using a backup instead of restoring the data to the original database:
+ There are specific situations that require the creation of a new database from a backup instead of restoring the data to the original database:
 
 - **When the original database is compromised**: Restoring a backup directly to a compromised DB could reintroduce the same issues. Creating a new database from the backup ensures that the restored data is isolated from the original database, preserving data integrity.
 
@@ -63,16 +64,8 @@ There are specific situations when it makes sense to create a new database using
 
 - **To create a safety net for rollbacks**: Restoring the backup directly to the original database leaves little room for rolling back the recovery process if issues are discovered later. Creating a new database provides a safety net, as you can decide whether to promote the new database to the production environment or keep the original one if necessary.
 
-To create a database from backup:
+To create a new database from backup:
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click **Create new DB**.
 3. Select **Create** to start database provisioning for the DB replica.
-
-
-
-
-
-
-
-
