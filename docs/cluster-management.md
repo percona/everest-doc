@@ -9,7 +9,7 @@ Cluster management involves the administration and maintenance of database clust
     ![!image](images/everest_db_provision.png)
 
 
-2. [Editing the database clusters]()
+2. Editing the database clusters
 
     Editing a cluster in a Percona Everest environment typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs. 
 
