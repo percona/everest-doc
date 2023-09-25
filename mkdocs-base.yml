@@ -141,7 +141,7 @@ nav:
       - Create and provision clusters: use/db_provision.md
       - Back up and restore data: use/backupRestore.md
       - Manage clusters: use/cluster-management.md
-      - Scaling your database deployment: use/scaling.md
+      - Scale database deployment: use/scaling.md
 
   - Configure:
       - Configure database engine: configure/db_engine_config.md
