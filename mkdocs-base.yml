@@ -144,7 +144,7 @@ nav:
       - Scaling your database deployment: use/scaling.md
 
   - Configure:
-      - Configure database engine configuration: configure/db_engine_config.md
+      - Configure database engine: configure/db_engine_config.md
 
   - Reference:
       - Copyright and licensing information: reference/copyright.md
