@@ -1,4 +1,4 @@
-# Database engine configuration
+# Configure database engine configuration
 
 Percona Everest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
 

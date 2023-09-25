@@ -124,47 +124,33 @@ extra:
 
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Home:
-      - index.md        
-  - Release Notes:
-      - Release notes index: release-notes/index.md
-  - features.md
+  - Welcome to Percona Everest [Alpha]: index.md        
+  - Features: featured.md
   - Get Started:
       - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
       - Running Kubernetes clusters and preparing them: get-started/preparek8.md
 
   - Install:
+      - Install Percona Everest on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+      - Install Percona Everest on Google Kubernetes Engine (GKE): install/gke.md
       - Installation procedure: install/installEverest.md
       - Uninstall Everest: install/uninstallEverest.md
-      - Post-install tasks: install/postinstall.md
-      - Install Percona Everest on Amazon Elastic Kubernetes Service (EKS): install/eks.md
 
   - Use:
-      - Create a cluster: use/createdb.md
+      - Create and provision clusters: use/db_provision.md
       - Back up and restore data: use/backupRestore.md
-      - Manage backup artifacts: use/manageBackups.md
-      - Monitor databases: use/monitorDBs.md
-      - cluster-management.md
-      - db_engine_config.md
+      - Manage clusters: use/cluster-management.md
+      - Scaling your database deployment: use/scaling.md
 
   - Configure:
-      - Set up default DB configurations: configure/configureDB.md
-      - Set up storage locations: configure/storagelocations.md
-      - Set up Kubernetes clusters: configure/configureClusters.md
-      - Set up monitoring endpoints: configure/configureMonitoring.md
-
-  - FAQs: faq.md
+      - Configure database engine configuration: configure/db_engine_config.md
 
   - API Documentation: api/index.md
 
   - Reference:
-      - reference/index.md
-      - Architecture: reference/architecture.md
-      - Glossary: reference/glossary.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
-      - Acknowledgments: reference/acknowledgements.md
 
   - Contribute:
-      - contribute.md
+      - Contributing Guide: contribute.md

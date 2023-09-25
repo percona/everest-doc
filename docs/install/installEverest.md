@@ -73,16 +73,16 @@ docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
             pg
         ```
 
-4. Download the latest release of the [everestctl](https://github.com/percona/percona-everest-cli/releases) command to provision Percona Everest.
-5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: 
+1. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases) to provision Percona Everest.
+2. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step: 
     ```sh
     mv everestctl-darwin-amd64 everestctl
     ```
-6. Modify the file permissions: 
+3. Modify the file permissions: 
     ```sh
     chmod +x everestctl
     ```
-7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
+4. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
 
     !!! note alert alert-primary "Note"
           - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.

@@ -1,4 +1,4 @@
-# Create Kubernetes cluster on Google Kubernetes Engine (GKE)
+# Install Percona Everest on Google Kubernetes Engine (GKE)
 
 ## Prerequisites
 

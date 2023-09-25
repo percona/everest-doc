@@ -1,10 +1,8 @@
-# Cluster management
+# Manage clusters
 
+Cluster management involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
 
-Cluster management in Percona Everest involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
-
-
-1. [Database provisioning]()
+1. [Database provisioning](../docs/use/db_provision.md)
     
     Provisioning a database instance involves setting up and configuring a database instance on the Perona Everest platform. 
 
@@ -17,7 +15,7 @@ Cluster management in Percona Everest involves the administration and maintenanc
 
     ![!image](images/everest_edit_cluster.png)
 
-3. Scaling
+3. [Scaling](../docs/use/scaling.md)
 
     Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
 
@@ -39,7 +37,7 @@ Cluster management in Percona Everest involves the administration and maintenanc
 
         To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
 
-4. [Back up and restore]()
+4. [Back up and restore](../docs/use/backupRestore.md)
 
 Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
 
