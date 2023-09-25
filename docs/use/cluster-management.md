@@ -6,20 +6,20 @@ Cluster management involves the administration and maintenance of database clust
     
     Provisioning a database instance involves setting up and configuring a database instance on the Perona Everest platform. 
 
-    ![!image](images/everest_db_provision.png)
+    ![!image](../images/everest_db_provision.png)
 
 
 2. Editing the database clusters
 
     Editing a cluster in a Percona Everest environment typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs. 
 
-    ![!image](images/everest_edit_cluster.png)
+    ![!image](../images/everest_edit_cluster.png)
 
 3. [Scaling](../docs/use/scaling.md)
 
     Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
 
-    ![!image](images/everest_db_scaling.png)
+    ![!image](../images/everest_db_scaling.png)
 
     * Vertical scaling
             
@@ -43,4 +43,4 @@ Back up and restore are critical aspects of managing and maintaining databases i
 
 With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
-![!image](images/everest_backup.png)
+![!image](../images/everest_backup.png)
