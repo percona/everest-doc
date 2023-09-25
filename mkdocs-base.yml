@@ -147,7 +147,7 @@ nav:
   - db_engine_config.md
   - Use:
       - Create a cluster: use/createdb.md
-      - Back up data for your environment: use/backupRestore.md
+      - Back up and restore data: use/backupRestore.md
       - Manage backup artifacts: use/manageBackups.md
       - Monitor databases: use/monitorDBs.md
 
