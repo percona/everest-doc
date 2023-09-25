@@ -132,8 +132,8 @@ nav:
       - Running Kubernetes clusters and preparing them: get-started/preparek8.md
 
   - Install:
-      - Install Percona Everest on Amazon Elastic Kubernetes Service (EKS): install/eks.md
-      - Install Percona Everest on Google Kubernetes Engine (GKE): install/gke.md
+      - Install on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+      - Install on Google Kubernetes Engine (GKE): install/gke.md
       - Installation procedure: install/installEverest.md
       - Uninstall Everest: install/uninstallEverest.md
 

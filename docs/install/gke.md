@@ -1,4 +1,4 @@
-# Install Percona Everest on Google Kubernetes Engine (GKE)
+# Install on Google Kubernetes Engine (GKE)
 
 ## Prerequisites
 
