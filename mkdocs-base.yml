@@ -146,8 +146,6 @@ nav:
   - Configure:
       - Configure database engine configuration: configure/db_engine_config.md
 
-  - API Documentation: api/index.md
-
   - Reference:
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
