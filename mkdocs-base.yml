@@ -74,7 +74,10 @@ markdown_extensions:
   pymdownx.emoji:
     emoji_index: !!python/name:materialx.emoji.twemoji
     emoji_generator: !!python/name:materialx.emoji.to_svg
-
+  pymdownx.snippets: {}
+  pymdownx.tabbed:
+    alternate_style: true
+    
 plugins:
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -138,6 +141,8 @@ nav:
       - Plan your installation: install/plan.md
       - Installation procedure: install/installEverest.md
       - Post-install tasks: install/postinstall.md
+      - Install Percona Everest on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+
   - cluster-management.md
   - db_engine_config.md
   - db_provision.md
