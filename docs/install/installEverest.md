@@ -51,20 +51,20 @@ curl https://raw.githubusercontent.com/percona/percona-everest-backend/release-0
 
     - to limit access to the localhost interface (default):
     ```sh
-    docker compose -f quickstart-compose.yml up -d
+    docker compose -f quickstart.yml up -d
     ```
     - to expose Everest though a specific interface, use that interface's IP address: 
     ```sh
-    EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart-compose.yml up -d
+    EVEREST_BIND_ADDR=<ip address>; docker compose -f quickstart.yml up -d
     ```
     - to allow access from any interface on the host machine (not recommended):
     ```sh
-    EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart-compose.yml up -d
+    EVEREST_BIND_ADDR=0.0.0.0; docker compose -f quickstart.yml up -d
     ```
   
 3. (Optional) Verify if the services started correctly:
 ```sh 
-docker compose -f quickstart-compose.yml ps --services --filter 'status=running'
+docker compose -f quickstart.yml ps --services --filter 'status=running'
 ```
 
     ??? example "Expected output"
