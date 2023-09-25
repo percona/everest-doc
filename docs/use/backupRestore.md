@@ -73,7 +73,5 @@ To create a new database from backup:
 Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) in the Kubernetes documentation. 
 5. On the **Resources** page, select the number of nodes and set the resources. For more information see, [Provision a database](../use/db_provision.md).
 6. On the **Advanced Configurations** page, enable external access and database engine parameters by turning the toggle button on. For more information on configuring specific database parameters, see the [MySQL](https://dev.mysql.com/doc/refman/8.0/en/option-files.html), [MongoDB](https://www.mongodb.com/docs/manual/reference/configuration-options), and [PostgreSQL](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE) configuration documentation.
-7. If you've enabled monitoring during CLI provisioning, this option will show as active on the **Monitoring** page and you can disable it if required. 
-8. Click Create database then run the command on the screen to ensure that you're using the same secret as the selectd backup.
-
-
+7. If you've enabled monitoring during CLI provisioning, this option will show as active on the **Monitoring** page and you can disable it if required.
+8. Click **Create database** then run the command on the screen to ensure that you're using the same secret as the selected backup.
