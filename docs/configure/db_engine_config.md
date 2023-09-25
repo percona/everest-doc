@@ -10,7 +10,7 @@ To configure your database engine in Percona Everest:
 4. Enable Database engine parameters by moving the slider to the right.
 5. Configure specific values to optimize performance, security, and functionality according to your requirements by entering the values in the text box.
 
-    ![!image](images/everest_adv_config.png)
+    ![!image](../images/everest_adv_config.png)
 
     Here are some configuration examples for each supported engine type:
 
@@ -37,7 +37,7 @@ To configure your database engine in Percona Everest:
     !!! note alert alert-primary "Note"
         Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
     
-    ![!image](images/everest_adv_config_ip_source.png)
+    ![!image](../images/everest_adv_config_ip_source.png)
 
 7. Click **Add new** to add the IP addresses in the **Source Range** field.
 

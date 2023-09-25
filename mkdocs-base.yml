@@ -125,7 +125,7 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 nav:
   - Welcome to Percona Everest [Alpha]: index.md        
-  - Features: featured.md
+  - Features: features.md
   - Get Started:
       - Quickstart Guide: get-started/quickstart.md
       - Initial setup: get-started/setup.md
