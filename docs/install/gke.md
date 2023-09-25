@@ -1,4 +1,4 @@
-# Install on Google Kubernetes Engine (GKE)
+# Create Kubernetes cluster on Google Kubernetes Engine (GKE)
 
 ## Prerequisites
 
