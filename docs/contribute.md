@@ -1,4 +1,4 @@
-# Contributing Guide
+# Contributing guide
 
 Thank you for deciding to contribute and help us improve Percona Everest documentation!
 
