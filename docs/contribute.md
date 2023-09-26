@@ -21,7 +21,7 @@ If there is no existing report, submit a report following these steps:
 1. Sign in to [Percona Everest Forum](hhttps://forums.percona.com/). You will need to create an account if you do not have one.
 
 2. Create a report that:      
-      -  describes the steps to reproduce the problem
+      -  describes the steps to reproduce the issue
       -  includes the version of Percona Everest, your environment, and so on
       -  has not been reported already 
       -  is scoped to a single bug
