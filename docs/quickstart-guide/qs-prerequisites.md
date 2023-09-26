@@ -31,5 +31,5 @@ Before getting started with Percona Everest, do the following:
 
 ## Next step
 
- [Install Percona Everest :material-arrow-right:](qs-prerequisites.md){.md-button}
+ [Install Percona Everest :material-arrow-right:](quick-install.md){.md-button}
 
