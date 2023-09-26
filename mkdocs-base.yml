@@ -148,8 +148,8 @@ nav:
       - Overview: quickstart-guide/qs-overview.md
       - Prerequisites: 
         - quickstart-guide/qs-prerequisites.md
-        - install/eks.md
-        - install/gke.md
+        - quickstart-guide/eks.md
+        - quickstart-guide/gke.md
       - Quick install: quickstart-guide/quick-install.md
 
   - Install:

@@ -4,7 +4,7 @@ The installation instructions in this guide go through all the manual installati
 
 To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
 
-For more information, see the [Quickstart guide](../quickstart-guide/qs-prerequisites.md)
+For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md)
 
 ## Setup
 
