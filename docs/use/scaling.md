@@ -14,7 +14,7 @@ Vertical scaling is essential for addressing increased workloads or performance 
         
     For optimal cluster performance, select **Large** as the **Resource size per node** when creating a database cluster. It has higher preset thresholds for CPU, memory, and disk as compared to **Small**.            
     
-    ![!image](images/everest_scale_vertically_up.png)
+    ![!image](../images/everest_scale_vertically_up.png)
 
 * Scale down 
 
@@ -24,13 +24,13 @@ Vertical scaling is essential for addressing increased workloads or performance 
       
     If performance is not a criterion and resource requirements are low, opt for **Small** as the **Resource size per node** when creating a database cluster. This option has lower preset thresholds for CPU, Memory, and Disk compared to the **Large**.        
     
-    ![!image](images/everest_db_scaling.png)
+    ![!image](../images/everest_db_scaling.png)
 
 ## Horizontal scaling
 
 To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance, availability, and database resilience.
 
-![!image](images/everest_scale_horizontally.png)
+![!image](../images/everest_scale_horizontally.png)
 
 ## How to scale your database clusters
 
@@ -48,7 +48,7 @@ To scale your database instances:
 
 8. Click on expand next to the database that you edited. You can see the resources that you allocated for your database.
 
-    ![!image](images/everest_resources_allocated.png)
+    ![!image](../images/everest_resources_allocated.png)
 
 
 
