@@ -7,6 +7,7 @@ All commands from this guide can be run either in the **Google Cloud shell** or 
 To use *Google Cloud shell*, you need nothing but a modern web browser.
 
 If you would like to use *your local shell*, install the following:
+{.power-number}
 
 1. [gcloud](https://cloud.google.com/sdk/docs/quickstarts). This tool is
     part of the Google Cloud SDK. To install it, select your operating
@@ -75,7 +76,7 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
     clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
     ```
 
-## Removing the GKE cluster
+## Remove the GKE cluster
 
 You can clean up the cluster with the `gcloud` command as follows:
 

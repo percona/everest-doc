@@ -35,7 +35,7 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 ## How to scale your database clusters
 
 To scale your database instances:
-
+{.power-number}
 
 1. From the Percona Everest Homepage, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
 2. Click **Edit**.
