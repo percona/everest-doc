@@ -135,7 +135,7 @@ nav:
       - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
       - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
       - Install Percona Everest: install/installEverest.md
-      - Uninstall Everest: install/uninstallEverest.md
+      - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
       - Create and provision clusters: use/db_provision.md
