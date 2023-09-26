@@ -133,7 +133,7 @@ nav:
 
   - Install:
       - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
-      - Install on Google Kubernetes Engine (GKE): install/gke.md
+      - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
       - Installation procedure: install/installEverest.md
       - Uninstall Everest: install/uninstallEverest.md
 
