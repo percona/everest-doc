@@ -1,27 +1,26 @@
-# Cluster management
+# Manage clusters
 
+Cluster management involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
+{.power-number}
 
-Cluster management in Percona Everest involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
-
-
-1. [Database provisioning]()
+1. [Database provisioning](../docs/use/db_provision.md)
     
     Provisioning a database instance involves setting up and configuring a database instance on the Perona Everest platform. 
 
-    ![!image](images/everest_db_provision.png)
+    ![!image](../images/everest_db_provision.png)
 
 
-2. [Editing the database clusters]()
+2. Editing the database clusters
 
     Editing a cluster in a Percona Everest environment typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs. 
 
-    ![!image](images/everest_edit_cluster.png)
+    ![!image](../images/everest_edit_cluster.png)
 
-3. Scaling
+3. [Scaling](../docs/use/scaling.md)
 
     Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
 
-    ![!image](images/everest_db_scaling.png)
+    ![!image](../images/everest_db_scaling.png)
 
     * Vertical scaling
             
@@ -39,10 +38,11 @@ Cluster management in Percona Everest involves the administration and maintenanc
 
         To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
 
-4. [Back up and restore]()
+4. [Back up and restore](../docs/use/backupRestore.md)
 
 Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
 
 With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
-![!image](images/everest_backup.png)
+![!image](../images/everest_backup.png)
+
