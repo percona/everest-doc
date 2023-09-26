@@ -14,7 +14,7 @@ We welcome all kinds of contributions so here's how you can get involved:
 ## Submit a bug report or feature request
 
 If you find a bug in Percona Everest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com). 
-Start by searching the open topics for a similar report. If you find that someone else has already reported your problem, then you can upvote that report to increase its visibility.
+Start by searching the open topics for a similar report. If you find that someone else has already reported the same issue, you can upvote that report to increase its visibility.
 
 If there is no existing report, submit a report following these steps:
 
