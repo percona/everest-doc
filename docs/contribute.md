@@ -33,7 +33,7 @@ If you’d like to submit a code patch, follow the [Contributing guide in Everes
 
 ## Contribute to Percona Everest documentation
 
-Found a typo or didn't find what you needed?  Here's how you can contribute to the documentation:
+Found a typo or didn't find what you needed? Here's how you can contribute to the documentation:
 
 1. **Request a doc change through a Jira issue**. If you’ve spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don’t have time nor desire to fix it yourself - let us know about it.
 
