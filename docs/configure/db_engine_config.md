@@ -1,8 +1,9 @@
-# Configure database engine configuration
+# Configure database engine 
 
 Percona Everest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
 
 To configure your database engine in Percona Everest:
+{.power-number}
 
 1. From the Percona Everest main page, navigate to **Create databases > Advanced Configurations** page.
 2. To update the database engine configuration for your existing database, go to the Everest main page and click on the three dots next to the database you want to update. Then select **Edit**.
