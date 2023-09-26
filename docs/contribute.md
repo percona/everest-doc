@@ -1,10 +1,39 @@
-# Contributing Guide
+# Contributing guide
 
-Thank you for deciding to contribute and help us improve Percona Everest documentation!
+Thank you for deciding to contribute and help us improve Percona Everest! We also contribute to other open source projects and communities! Let’s make technology better!
 
-We welcome contributors from all users and community. By contributing, you agree to the [Percona Community code of conduct](https://percona.community/contribute/coc/).
+By contributing, you agree to the [Percona Community code of conduct](https://percona.community/contribute/coc/).
 
-You can contribute to documentation in the following ways:
+We welcome all kinds of contributions so here's how you can get involved:
+
+- Submit bug reports or feature requests
+- Submit a code patch
+- Contribute to documentation
+
+
+## Submit a bug report or feature request
+
+If you find a bug in Percona Everest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com). 
+Start by searching the open topics for a similar report. If you find that someone else has already reported your problem, then you can upvote that report to increase its visibility.
+
+If there is no existing report, submit a report following these steps:
+
+1. Sign in to [Percona Everest Forum](hhttps://forums.percona.com/). You will need to create an account if you do not have one.
+
+2. Create a report that:      
+      -  describes the steps to reproduce the problem
+      -  includes the version of Percona Everest, your environment, and so on
+      -  has not been reported already 
+      -  is scoped to a single bug
+
+## Contributing to Percona Everest code:
+
+If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/percona-everest-backend/blob/main/CONTRIBUTING.md).
+
+
+## Contribute to Percona Everest documentation
+
+Found a typo or didn't find what you needed?  Here's how you can contribute to the documentation:
 
 1. **Request a doc change through a Jira issue**. If you’ve spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don’t have time nor desire to fix it yourself - let us know about it.
 
@@ -12,9 +41,9 @@ You can contribute to documentation in the following ways:
 	- Sign in (create a Jira account if you don’t have one) and click **Create** to create an issue.
 	- Describe the issue you have detected in the Summary, Description, Steps To Reproduce, Affects Version fields.
 
-2. **[Contribute to documentation yourself](#contribute-to-documentation-yourself)**. There is the **Edit this page** link that leads you to the source file of the page on GitHub. There you make changes, create a pull request that we review and add to the doc project. For details how to do it, read on.
+2. **[Contribute to documentation directly](#contribute-to-documentation-yourself)**. There is the **Edit this page** link that leads you to the source file of the page on GitHub. There you make changes, create a pull request that we review and add to the doc project. For details how to do it, read on.
 
-## Contribute to documentation yourself
+### Contribute to documentation directly
 
 To contribute to the documentation, you should be familiar with the following technologies:
 
@@ -25,7 +54,7 @@ To contribute to the documentation, you should be familiar with the following te
 
 The `.md` files are in the `docs/` directory. 
 
-### Edit documentation online via GitHub
+#### Edit documentation online via GitHub
 
 1. Select the pencil icon next to the page title to open the source file in the GitHub editor. In this editor, you can make the changes, view the changes in the Preview tab, and create a pull request. If you haven’t worked with the repository before, GitHub creates a [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) of it for you.
 
@@ -40,7 +69,7 @@ The `.md` files are in the `docs/` directory.
 4. GitHub creates a branch and a commit for your changes. It loads a new page on which you can open a pull request to Percona. The page shows the base branch - the one you offer your changes for, your commit message and a diff - a visual representation of your changes against the original page.  This allows you to make a last-minute review. When you are ready, click the **Create pull request** button.
 5. Someone from our team reviews the pull request and if everything is correct, merges it into the documentation. Then it gets published on the site.
 
-### Edit documentation locally
+##### Edit documentation locally
 
 This option is for users who prefer to work from their computer and / or have the full control over the documentation process.
 
@@ -69,14 +98,14 @@ The steps are the following:
 6. Commit your changes
 7. Open a pull request to Percona
 
-### Building the documentation
+#### Building the documentation
 
 To verify how your changes look, generate the static site with the documentation. This process is called *building*. You can do it in these ways:
 
 - [use Docker](#use-docker)
 - [build locally](#build-locally)
 
-#### Use Docker
+##### Use Docker
 
 1. [Get Docker](https://docs.docker.com/get-docker/)
 
@@ -115,7 +144,7 @@ To verify how your changes look, generate the static site with the documentation
       ```
    Wait until you see the message `INFO    -  Start detecting changes`, then enter `0.0.0.0:8000` in the browser's address bar. 
 
-## Create a PDF version
+### Create a PDF version
 
 To create the PDF version of the documentation, use the following command:
 
@@ -133,7 +162,7 @@ To create the PDF version of the documentation, use the following command:
 
 The PDF is in `site/_pdf`.
 
-## Repository structure
+### Repository structure
 
 The repository includes the following directories and files:
 
