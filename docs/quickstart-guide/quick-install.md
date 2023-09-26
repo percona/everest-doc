@@ -51,7 +51,7 @@ As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service 
 
 ## Next steps
 
-[Create a database :material-arrow-right:](../db_provision){.md-button}
+[Create a database :material-arrow-right:](../use/db_provision.md){.md-button}
 
 <!-- 
 [Monitor the database with PMM :material-arrow-right:](../use/monitorDBs.md){.md-button}
