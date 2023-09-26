@@ -57,12 +57,11 @@ Found a typo or didn't find what you needed? Here's how you can contribute to th
 
     * Commit your changes.
 
-	   * In the *Commit changes* section, describe your changes.
-	   * Select the **Create a new branch for this commit and start a pull request** option.
-	   * Click **Propose changes**.
+	     * In the *Commit changes* section, describe your changes.
+	     * Select the **Create a new branch for this commit and start a pull request** option.
+	     * Click **Propose changes**.
 
     * GitHub creates a branch and a commit for your changes. It loads a new page on which you can open a pull request to Percona. The page shows the base branch - the one you offer your changes for, your commit message and a diff - a visual representation of your changes against the original page. This allows you to make a last-minute review. When you are ready, click the **Create pull request** button.
     
     * Someone from our team reviews the pull request and if everything is correct, merges it into the documentation. Then it gets published on the site.
-
 

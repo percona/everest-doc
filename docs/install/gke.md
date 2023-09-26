@@ -48,7 +48,7 @@ You may wait a few minutes for the cluster to be generated.
 
     Select *Kubernetes Engine* → *Clusters* in the left menu panel:
 
-    ![image](images/gke-quickstart-cluster-connect.svg)
+    ![image](../images/gke-quickstart-cluster-connect.svg)
 
 Now you should configure the command-line access to your newly created cluster
 to make `kubectl` be able to use it.
@@ -90,7 +90,7 @@ The return statement requests your confirmation of the deletion. Type `y` to con
 
     Just click the `Delete` popup menu item in the clusters list:
 
-    ![image](images/gke-quickstart-cluster-connect.svg)
+    ![image](../images/gke-quickstart-cluster-connect.svg)
 
 The cluster deletion may take time.
 
