@@ -3,6 +3,7 @@
 ## Prerequisites
 
 Before creating an EKS cluster, make sure to:
+{.power-number}
 
 1. [Install the AWS Command Line Interface (AWS CLI)](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-install.html) for interacting with the different parts of AWS.
 
@@ -13,6 +14,9 @@ Before creating an EKS cluster, make sure to:
 4. [Configure AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) with your credentials.
 
 ## Create the EKS cluster
+
+To create the EKS cluster, do the following steps:
+{.power-number}
 
 1. Settled the required cluster details:
 
@@ -29,7 +33,7 @@ Before creating an EKS cluster, make sure to:
 2. Create your EKS cluster [following the official cluster creation instructions](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html).
 3. [Install the Amazon EBS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html) on your cluster. See the [official documentation](https://docs.aws.amazon.com/eks/latest/userguide/managing-ebs-csi.html) on adding it as an Amazon EKS add-on.
 
-## Removing the EKS cluster
+## Remove the EKS cluster
 
 To delete your cluster, you will need the following data:
 
