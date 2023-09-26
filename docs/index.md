@@ -26,4 +26,5 @@ Here's why you should try Percona Everest:
 ## Ready to test drive Percona Everest?
 
 How about checking Percona Everest features in action?
-Get started by [installing Percona Everest](../docs/get-started/quickstart.md) and [manage your first cluster](../docs/cluster-management.md)!
+
+Get started by [Install Percona Everest](quickstart-guide/qs-overview.md) and [Manage your first cluster](use/cluster-management.md)!

@@ -1,6 +1,8 @@
 # Install Percona Everest
 
-As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest. For more information, see [Prerequisites](qs-prerequisites.md). 
+As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest. 
+
+For more information, see the [Prerequisites](qs-prerequisites.md) section. 
 {.power-number}
 
 1. To install Percona Everest, run the following command:
