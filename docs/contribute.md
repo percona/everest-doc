@@ -26,7 +26,7 @@ If there is no existing report, submit a report following these steps:
       -  has not been reported already 
       -  is scoped to a single bug
 
-## Contributing to Percona Everest code:
+## Contribute to Percona Everest code:
 
 If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/percona-everest-backend/blob/main/CONTRIBUTING.md).
 
