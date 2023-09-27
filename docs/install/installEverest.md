@@ -1,8 +1,6 @@
 # Install Percona Everest
 
-The installation instructions in this guide go through all the manual installation and provisioning steps.
-
-To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
+The installation instructions in this guide go through all the manual installation and provisioning steps. To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
 
 For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md).
 
@@ -35,7 +33,7 @@ We recommend setting up Percona Everest on the [Amazon Elastic Kubernetes Servic
 Before getting started with Percona Everest, we recommend that you:
 {.power-number}
 
-1. [Install Docker Engine](hhttps://docs.docker.com/engine/install), which also includes the Docker compose plugin.
+1. Install [Docker Engine](https://docs.docker.com/engine/install) (1.13.0 and higher) with the [Docker compose plugin](https://docs.docker.com/compose/install/).
 2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install) for GKE.
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
     ```sh 

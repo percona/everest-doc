@@ -18,6 +18,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  icon:
+    edit: material/file-edit-outline
+    view: material/file-eye-outline
+  
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
