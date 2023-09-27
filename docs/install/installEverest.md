@@ -109,11 +109,13 @@ To install and provision Percona Everest:
     ```
 
 7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
-    - ```sh
+  
+    ```sh
     export KUBECONFIG=~/.kube/config
     ```
+
   
-   - ```sh
+    ```sh
     ./everestctl install operators
     ```
     
@@ -144,4 +146,4 @@ To install and provision Percona Everest:
     ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
     ```
 
-9. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
+8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
