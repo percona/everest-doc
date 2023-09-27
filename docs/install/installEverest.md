@@ -4,7 +4,7 @@ The installation instructions in this guide go through all the manual installati
 
 To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
 
-For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md)
+For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md).
 
 ## Setup
 
@@ -108,18 +108,22 @@ To install and provision Percona Everest:
     chmod +x everestctl
     ```
 
-7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following command. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable before running the command.
-
+7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
+    - ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
+  
+   - ```sh
+    ./everestctl install operators
+    ```
+    
+    This will install all needed components in a namespace called `percona-everest`.
+   
     !!! note alert alert-primary "Note"
         
         - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
         - If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
-    ```sh
-    ./everestctl install operators
-    ```
-    
-    This will install all needed components in a namespace called `percona-everest`.   
 
     ??? example "Example"
             
@@ -140,4 +144,4 @@ To install and provision Percona Everest:
     ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
     ```
 
-8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
+9. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
