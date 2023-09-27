@@ -1,4 +1,4 @@
-# Scaling your database deployment
+# Scale database deployment
 
 Scaling in Percona Everest allows for easy adjustment of database capacity and performance to meet the changing demands.
 
@@ -6,7 +6,7 @@ Scaling in Percona Everest allows for easy adjustment of database capacity and p
             
 Vertical scaling is essential for addressing increased workloads or performance demands. You can scale up or scale down as per your requirements. 
         
-* Scale up
+* `Scale up`
 
     You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.       
     
@@ -16,7 +16,7 @@ Vertical scaling is essential for addressing increased workloads or performance 
     
     ![!image](../images/everest_scale_vertically_up.png)
 
-* Scale down 
+* `Scale down `
 
     Similarly, you can scale down (downsize) your database instance when the resource requirements decrease, which can help optimize costs.
             
@@ -32,12 +32,12 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 
 ![!image](../images/everest_scale_horizontally.png)
 
-## How to scale your database clusters
+## How to scale your database instances
 
 To scale your database instances:
+{.power-number}
 
-
-1. From the Percona Everest Homepage, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
+1. From the `Percona Everest Homepage`, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
 2. Click **Edit**.
 3. Navigate to the **Resources** page.
 4. Select the **Number of nodes**. 

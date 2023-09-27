@@ -7,6 +7,7 @@ All commands from this guide can be run either in the **Google Cloud shell** or 
 To use *Google Cloud shell*, you need nothing but a modern web browser.
 
 If you would like to use *your local shell*, install the following:
+{.power-number}
 
 1. [gcloud](https://cloud.google.com/sdk/docs/quickstarts). This tool is
     part of the Google Cloud SDK. To install it, select your operating
@@ -74,25 +75,3 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
     ``` {.text .no-copy}
     clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
     ```
-
-## Removing the GKE cluster
-
-You can clean up the cluster with the `gcloud` command as follows:
-
-```sh
-$ gcloud container clusters delete <cluster name>
-```
-
-The return statement requests your confirmation of the deletion. Type `y` to confirm.
-
-??? note "Also, you can delete your cluster via the Google Cloud console"
-
-    Just click the `Delete` popup menu item in the clusters list:
-
-    ![image](../images/gke-quickstart-cluster-connect.svg)
-
-The cluster deletion may take time.
-
-!!! warning
-
-    After deleting the cluster, all data stored in it will be lost!
