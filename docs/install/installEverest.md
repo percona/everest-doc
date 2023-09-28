@@ -118,21 +118,6 @@ To install and provision Percona Everest:
     ```
     
     This will install all needed components in a namespace called `percona-everest`.
-   
-    !!! note alert alert-primary "LIMITATIONS"
-        
-        - If the Everest CLI fails to install the operators, the user should do the following:
-        
-            * Remove the [EKS](../quickstart-guide/eks.md#remove-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#remove-the-gke-cluster) cluster.
-        
-            * Create the [EKS](../quickstart-guide/eks.md#create-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#create-and-configure-the-gke-cluster) cluster.
-        
-            * Run the Everest CLI installation again.
-
-        - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
-
-        - If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
-
 
     ??? example "Example"
             
@@ -152,5 +137,26 @@ To install and provision Percona Everest:
     ```
     ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
     ```
+
+    ### Limitations
+        
+    * If the Everest CLI fails to install the operators, do the following:
+        
+        * Remove the [EKS](../quickstart-guide/eks.md#remove-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#remove-the-gke-cluster) cluster.
+        
+        * Create the [EKS](../quickstart-guide/eks.md#create-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#create-and-configure-the-gke-cluster) cluster.
+        
+        * Run the Everest CLI installation again.
+
+    * If you install an operator after the initial provisioning, please restart the `everest-operator pod` by running the following commands:
+
+        ```sh 
+        kubectl -n percona-everest get po
+        kubectl -n percona-everest delete pod everest-operator-pod-name
+        ```
+
+    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+
+    * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
 8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
