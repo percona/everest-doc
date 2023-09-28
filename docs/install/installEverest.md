@@ -142,18 +142,18 @@ To install and provision Percona Everest:
         
     * If the Everest CLI fails to install the operators, do the following:
         
-        * Remove the [EKS](../quickstart-guide/eks.md#remove-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#remove-the-gke-cluster) cluster.
+        * [Uninstall Percona Everest](uninstallEverest.md).
         
-        * Create the [EKS](../quickstart-guide/eks.md#create-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#create-and-configure-the-gke-cluster) cluster.
-        
-        * Run the Everest CLI installation again.
+        * Install Percona Everest, starting with the second step.
 
-    * If you install an operator after the initial provisioning, please restart the `everest-operator pod` by running the following commands:
+    * If you install an operator after the initial provisioning and want to create a database cluster, restart the `everest-operator pod` by running the following commands:
 
         ```sh 
         kubectl -n percona-everest get po
         kubectl -n percona-everest delete pod everest-operator-pod-name
         ```
+
+        This will fix the database cluster creation. The issue will be fixed in the upcoming releases.
 
     * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
 
