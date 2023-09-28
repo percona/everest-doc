@@ -161,7 +161,7 @@ nav:
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
-      - Create and provision clusters: use/db_provision.md
+      - Provision a database: use/db_provision.md
       - Back up and restore data: use/backupRestore.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md

@@ -15,6 +15,10 @@ Before creating an EKS cluster, make sure to:
 
 ## Create the EKS cluster
 
+!!! caution alert alert-warning "Important"
+    To run a 3-node pxc cluster, you will need at least a 3-node cluster with 2vCPUs available. The database will not be created if you attempt to create a database cluster in a Kubernetes cluster without sufficient resources.
+
+
 To create the EKS cluster, do the following steps:
 {.power-number}
 

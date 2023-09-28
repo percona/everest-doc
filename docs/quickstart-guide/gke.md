@@ -25,6 +25,9 @@ If you would like to use *your local shell*, install the following:
 
 ## Create and configure the GKE cluster
 
+!!! caution alert alert-warning "Important"
+    To run a 3-node pxc cluster, you will need at least a 3-node cluster with 2vCPUs available. The database will not be created if you attempt to create a database cluster in a Kubernetes cluster without sufficient resources.
+
 You can configure the settings using the `gcloud` tool. You can run it either in
 the [Cloud Shell](https://cloud.google.com/shell/docs/quickstart) or in your
 local shell (if you have installed Google Cloud SDK locally on the previous
@@ -75,3 +78,25 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
     ``` {.text .no-copy}
     clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
     ```
+
+## Remove the GKE cluster
+
+You can clean up the cluster with the `gcloud` command as follows:
+
+```sh
+$ gcloud container clusters delete <cluster name>
+```
+
+The return statement requests your confirmation of the deletion. Type `y` to confirm.
+
+??? note "Also, you can delete your cluster via the Google Cloud console"
+
+    Just click the `Delete` popup menu item in the clusters list:
+
+    ![image](../images/gke-quickstart-cluster-connect.svg)
+
+The cluster deletion may take time.
+
+!!! warning
+
+    After deleting the cluster, all data stored in it will be lost!

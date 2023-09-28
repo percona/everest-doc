@@ -1,4 +1,4 @@
-# Create and provision a database
+# Provision a database
 
 Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform. 
 
