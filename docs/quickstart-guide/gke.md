@@ -75,3 +75,25 @@ $ kubectl create clusterrolebinding cluster-admin-binding --clusterrole cluster-
     ``` {.text .no-copy}
     clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
     ```
+
+## Remove the GKE cluster
+
+You can clean up the cluster with the `gcloud` command as follows:
+
+```sh
+$ gcloud container clusters delete <cluster name>
+```
+
+The return statement requests your confirmation of the deletion. Type `y` to confirm.
+
+??? note "Also, you can delete your cluster via the Google Cloud console"
+
+    Just click the `Delete` popup menu item in the clusters list:
+
+    ![image](../images/gke-quickstart-cluster-connect.svg)
+
+The cluster deletion may take time.
+
+!!! warning
+
+    After deleting the cluster, all data stored in it will be lost!

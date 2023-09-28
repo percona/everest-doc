@@ -2,13 +2,13 @@
 
 The installation instructions in this guide go through all the manual installation and provisioning steps. To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
 
-For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md).
+[See Percona Everest quickstart guide :material-arrow-right:](../quickstart-guide/qs-overview.md){.md-button}
 
 ## Setup
 
 Percona Everest has two primary components:
 
-* [Percona CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
+* [Percona Everest CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
 * Percona Everest application with the UI, which you can spin up using the instructions below.
 
 ### Supported operators
@@ -119,9 +119,18 @@ To install and provision Percona Everest:
     
     This will install all needed components in a namespace called `percona-everest`.
    
-    !!! note alert alert-primary "Note"
+    !!! note alert alert-primary "LIMITATIONS"
         
+        - If the Everest CLI fails to install the operators, the user should do the following:
+        
+            * Remove the [EKS](../quickstart-guide/eks.md#remove-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#remove-the-gke-cluster) cluster.
+        
+            * Create the [EKS](../quickstart-guide/eks.md#create-the-eks-cluster) or [GKE](../quickstart-guide/gke.md#create-and-configure-the-gke-cluster) cluster.
+        
+            * Run the Everest CLI installation again.
+
         - If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+
         - If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
 
