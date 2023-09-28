@@ -6,8 +6,6 @@ Swagger API documentation
 
 Percona Everest lets you visually interact with API resources representing all objects within Percona Everest. You can browse the API using the UI, accessible at the `/swagger endpoint` URL. 
 
-To access Percona Everest API, click on the following link:
-
-https://docs.percona.com/everest-api-doc/
+To access the API, click [Percona Everest API](https://docs.percona.com/everest-api-doc/).
 
 
