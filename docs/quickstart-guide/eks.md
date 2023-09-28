@@ -15,6 +15,12 @@ Before creating an EKS cluster, make sure to:
 
 ## Create the EKS cluster
 
+!!! caution alert alert-warning "Important"
+     If you attempt to create 3 database cluster on a 4-core Kubernetes cluster, the resource limits will be exceeded, and the databases will not be created.
+     To run a 3-node pxc cluster, you will need a 3-node Kubernetes cluster with 2vCPU.
+
+
+
 To create the EKS cluster, do the following steps:
 {.power-number}
 
@@ -33,21 +39,3 @@ To create the EKS cluster, do the following steps:
 2. Create your EKS cluster [following the official cluster creation instructions](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html).
 3. [Install the Amazon EBS CSI driver](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html) on your cluster. See the [official documentation](https://docs.aws.amazon.com/eks/latest/userguide/managing-ebs-csi.html) on adding it as an Amazon EKS add-on.
 
-## Remove the EKS cluster
-
-To delete your cluster, you will need the following data:
-
-* name of your EKS cluster,
-* AWS region in which you have deployed your cluster.
-
-You can clean up the cluster with the following `eksctl` command (replace `<region>` and `<cluster name>` placeholders with real names):
-
-``` {.bash data-prompt="$" }
-$ eksctl delete cluster --region=<region> --name="<cluster name>"
-```
-
-The cluster deletion may take time.
-
-!!! warning
-
-    After deleting the cluster, all data stored in it will be lost!

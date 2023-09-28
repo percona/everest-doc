@@ -25,6 +25,10 @@ If you would like to use *your local shell*, install the following:
 
 ## Create and configure the GKE cluster
 
+!!! caution alert alert-warning "Important"
+     If you attempt to create 3 database cluster on a 4-core Kubernetes cluster, the resource limits will be exceeded, and the databases will not be created.
+     To run a 3-node pxc cluster, you will need a 3-node Kubernetes cluster with 2vCPU.
+
 You can configure the settings using the `gcloud` tool. You can run it either in
 the [Cloud Shell](https://cloud.google.com/shell/docs/quickstart) or in your
 local shell (if you have installed Google Cloud SDK locally on the previous
