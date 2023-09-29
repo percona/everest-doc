@@ -9,7 +9,7 @@
 
 Percona Everest has two primary components:
 
-* [Percona Everest CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
+* [Percona Everest CLI](https://github.com/percona/percona-everest-cli){:target="_blank"}, which connects Percona Everest to your Kubernetes cluster.
 * Percona Everest application with the UI, which you can spin up using the instructions below.
 
 ### Supported operators
