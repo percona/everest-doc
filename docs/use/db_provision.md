@@ -23,7 +23,7 @@ The steps to provision a new database are:
 
 5. Select the **Database version** from the dropdown.
 
-6. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) in the Kubernetes documentation. 
+6. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
 7. Click **Continue**.
 
@@ -40,6 +40,7 @@ The steps to provision a new database are:
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
     ![!image](../images/enable_advanced_config.png)
+
 11. If you’ve enabled monitoring during CLI provisioning, the Monitoring option will show as active on the last page of the wizard, and you can disable it if required.
 
 12. Click **Create Database**. Your database will be created.
