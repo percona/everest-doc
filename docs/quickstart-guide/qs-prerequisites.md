@@ -5,9 +5,9 @@ Before getting started with Percona Everest, do the following:
 
 1. Install [Docker Engine](https://docs.docker.com/engine/install){:target="_blank"} (1.13.0 and higher) with the [Docker compose plugin](https://docs.docker.com/compose/install/){:target="_blank"}.
 
-2. Install [curl](https://everything.curl.dev/get).
+2. Install [curl](https://everything.curl.dev/get){:target="_blank"}.
 
-3. Install [jq](https://jqlang.github.io/jq/).
+3. Install [jq](https://jqlang.github.io/jq/){:target="_blank"}.
 
 4. Set up a publicly accessible Kubernetes cluster. 
 
