@@ -40,6 +40,7 @@ The steps to provision a new database are:
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
     ![!image](../images/enable_advanced_config.png)
+
 11. If you’ve enabled monitoring during CLI provisioning, the Monitoring option will show as active on the last page of the wizard, and you can disable it if required.
 
 12. Click **Create Database**. Your database will be created.
