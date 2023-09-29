@@ -18,7 +18,7 @@ Percona Everest has two primary components:
 * Percona Operator for MongoDB (PSMDB) 1.14.0
 * Percona Operator for PostgreSQL (PG) 2.2.0
 
-### Supported k8s clusters:
+### Supported k8s clusters
 
 * Google Kubernetes Engine (GKE) 
 * Amazon Elastic Kubernetes Service (EKS) (1.24 - 1.25)
