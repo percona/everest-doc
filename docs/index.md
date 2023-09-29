@@ -30,3 +30,18 @@ Here's why you should try Percona Everest:
 How about checking Percona Everest features in action?
 
 Get started by [Installing Percona Everest](quickstart-guide/qs-overview.md) and [manage your first cluster](use/cluster-management.md)!
+
+## Known limitations
+
+Here are the limitations associated with this release. Some of them you might encounter depending on your settings, and some of them will be addressed in a future release: 
+
+- If you're using PostgreSQL, make sure not to share the same backup storage location for multiple database clusters. Use a unique storage location for backing up PostgreSQL clusters.
+- The options to define default database configuration will be available on the **Settings** view soon.
+- Scheduled backups are planned for a future release ([EVEREST-224](https://jira.percona.com/browse/EVEREST-224)). 
+- No support for database cluster management via CLI yet  ([EVEREST-141](https://jira.percona.com/browse/EVEREST-141), [EVEREST-315](https://jira.percona.com/browse/EVEREST-315),  [EVEREST-199](https://jira.percona.com/browse/EVEREST-199)).
+- No support for adding backup storages via CLI yet ([EVEREST-386](https://jira.percona.com/browse/EVEREST-386)).
+- No current support for K8s clusters without a public API server ([EVEREST-300](https://jira.percona.com/browse/EVEREST-300)).
+- No current support for adding monitoring instances via the UI ([EVEREST-135](https://jira.percona.com/browse/EVEREST-135)). 
+- Information regarding Percona Monitoring Management (PMM) monitoring is not yet visible on the UI ([EVEREST-388](https://jira.percona.com/browse/EVEREST-388)).
+- No current support for using https for connecting to PMM instances that use a self-signed certificate ([EVEREST-396](https://jira.percona.com/browse/EVEREST-396)).
+- Information regarding CPU/Memory resources doesn’t clearly state that is applied per replica and not per database cluster  ([EVEREST-394](https://jira.percona.com/browse/EVEREST-394)).
