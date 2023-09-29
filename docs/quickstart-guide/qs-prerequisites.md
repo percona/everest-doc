@@ -3,7 +3,7 @@
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [Docker Engine](https://docs.docker.com/engine/install) (1.13.0 and higher) with the [Docker compose plugin](https://docs.docker.com/compose/install/).
+1. Install [Docker Engine](https://docs.docker.com/engine/install){:target="_blank"} (1.13.0 and higher) with the [Docker compose plugin](https://docs.docker.com/compose/install/){:target="_blank"}.
 
 2. Install [curl](https://everything.curl.dev/get).
 
