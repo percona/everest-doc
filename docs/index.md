@@ -45,3 +45,4 @@ Here are the limitations associated with this release. Some of them you might en
 - Information regarding Percona Monitoring Management (PMM) monitoring is not yet visible on the UI.
 - No current support for using https for connecting to PMM instances that use a self-signed certificate.
 - Information regarding CPU/Memory resources doesn’t clearly state that is applied per replica and not per database cluster.
+- If you need to add more operators after the initial installation, make sure to first delete the Everest operator pod so that Kubernetes can restart it. Otherwise, the database will not start and will remain in Unknown status.
