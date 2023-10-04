@@ -16,7 +16,7 @@ To uninstall Everest:
 {.power-number}
 
 !!! note alert alert-primary "Warning"
-These cleanup instructions are needed after running unprovisioning of Everest via CLI
+Follow these cleanup instructions after unprovisioning Everest via CLI.
 
 1. Remove ALL created database clusters:
 
