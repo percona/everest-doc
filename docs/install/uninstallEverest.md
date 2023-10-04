@@ -59,11 +59,6 @@ Follow these cleanup instructions after unprovisioning Everest via CLI.
     ```sh
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
     ```
-   During the run of the command above run
-
-    ```sh
-    kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
-    ```
 
 7. Stop docker containers
 
