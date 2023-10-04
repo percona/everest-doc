@@ -8,6 +8,7 @@ No matter why you need to uninstall Everest, you can run the commands below to r
 
 !!! note alert alert-primary "Warning"
   Performing these actions will remove all database clusters and data from the Kubernetes cluster
+  Please validate before deleting any CRD as deleting the CRD will break the dependent custom resources (if any) present on the cluster
 
 To uninstall Everest:
 {.power-number}
