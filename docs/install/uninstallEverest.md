@@ -8,20 +8,24 @@ No matter why you need to uninstall Everest, you can run the commands below to r
 
 !!! note alert alert-primary "Warning"
   Performing these actions will remove all database clusters and data from the Kubernetes cluster
+
 To uninstall Everest:
 {.power-number}
 
-1. Remove ALL PVCs:
+!!! note alert alert-primary "Warning"
+These cleanup instructions are needed after running unprovisioning of Everest via CLI
+
+1. Remove ALL created database clusters:
+
+    ```sh
+    kubectl delete db --all -n percona-everest
+    ```
+2. Remove ALL PVCs:
 
     ```sh
     kubectl delete pvc --all -n percona-everest
     ```
 
-2. Remove ALL created database clusters:
-
-    ```sh
-    kubectl delete db --all -n percona-everest
-    ```
 
 3. List CSVs and remove those with a "*percona*" and "*everest*" prefix, or remove ALL operators:
 
@@ -35,6 +39,7 @@ To uninstall Everest:
 
     ```sh
     kubectl get crd -n percona-everest -o name | grep .percona.com$ | awk -F '/' {'print $2'} | xargs --no-run-if-empty kubectl delete crd -n percona-everest
+    kubectl delete crd postgresclusters.postgres-operator.crunchydata.com
     ```
 
 5. Remove Everest OLM catalog:
@@ -48,6 +53,11 @@ To uninstall Everest:
     ```sh
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
     ```
+   During the run of the command above run
+
+    ```sh
+    kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
+    ```
 
     ```sh
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml
@@ -56,4 +66,10 @@ To uninstall Everest:
 
   ```
      docker-compose -f quickstart.yml down
+  ```
+
+8. Remove percona-everest namespace
+
+  ```sh
+  kubectl delete ns percona-everest
   ```
