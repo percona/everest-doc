@@ -48,7 +48,11 @@ These cleanup instructions are needed after running unprovisioning of Everest vi
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/percona-dbaas-catalog.yaml
     ```
 
-6. Remove OLM installation:
+6. Remove OLM installation (Do not delete it if it was installed without Everest support):
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml
+    ```
 
     ```sh
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
@@ -59,9 +63,6 @@ These cleanup instructions are needed after running unprovisioning of Everest vi
     kubectl delete apiservices.apiregistration.k8s.io v1.packages.operators.coreos.com
     ```
 
-    ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml
-    ```
 7. Stop docker containers
 
   ```
