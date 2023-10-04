@@ -39,7 +39,7 @@ These cleanup instructions are needed after running unprovisioning of Everest vi
 
     ```sh
     kubectl get crd -n percona-everest -o name | grep .percona.com$ | awk -F '/' {'print $2'} | xargs --no-run-if-empty kubectl delete crd -n percona-everest
-    kubectl delete crd postgresclusters.postgres-operator.crunchydata.com
+    kubectl delete crd postgresclusters.postgres-operator.crunchydata.com -n percona-everest
     ```
 
 5. Remove Everest OLM catalog:
