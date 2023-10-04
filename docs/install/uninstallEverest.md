@@ -22,12 +22,12 @@ To uninstall Everest:
     ```sh
     kubectl delete db --all -n percona-everest
     ```
+
 2. Remove ALL PVCs:
 
     ```sh
     kubectl delete pvc --all -n percona-everest
     ```
-
 
 3. List CSVs and remove those with a "*percona*" and "*everest*" prefix, or remove ALL operators:
 
@@ -65,14 +65,14 @@ To uninstall Everest:
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
     ```
 
-8. Stop docker containers
+8. Stop Docker containers
 
-  ```
-     docker-compose -f quickstart.yml down
-  ```
+    ```
+    docker-compose -f quickstart.yml down
+    ```
 
 9. Remove percona-everest namespace
 
-  ```sh
-  kubectl delete ns percona-everest
-  ```
+    ```sh
+    kubectl delete ns percona-everest
+    ```
