@@ -3,7 +3,7 @@
 No matter why you need to uninstall Everest, you can run the commands below to remove all the Everest resources including:
 
 - All Kubernetes objects created by Everest
-- All docker containers created by Everest
+- All Docker containers created by Everest
 - All downloaded binaries and files like **everestctl**, **quickstart.yml**.
 
 !!! note alert alert-primary "Warning"
@@ -37,7 +37,7 @@ To uninstall Everest:
     kubectl delete csv --all -n percona-everest
     ```
 
-4. List ALL CRDs that will be removed
+4. List ALL CRDs that will be removed:
 
     ```sh
     kubectl get crd -l="operators.coreos.com/percona-server-mongodb-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' &&  kubectl get crd -l="operators.coreos.com/percona-postgresql-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' && kubectl get crd -l="operators.coreos.com/percona-xtradb-cluster-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}'
@@ -65,13 +65,13 @@ To uninstall Everest:
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
     ```
 
-8. Stop Docker containers
+8. Stop Docker containers:
 
     ```
     docker-compose -f quickstart.yml down
     ```
 
-9. Remove percona-everest namespace
+9. Remove percona-everest namespace:
 
     ```sh
     kubectl delete ns percona-everest
