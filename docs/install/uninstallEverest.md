@@ -39,8 +39,7 @@ These cleanup instructions are needed after running unprovisioning of Everest vi
 4. Remove ALL created CRD individually, or use:
 
     ```sh
-    kubectl get crd -n percona-everest -o name | grep .percona.com$ | awk -F '/' {'print $2'} | xargs --no-run-if-empty kubectl delete crd -n percona-everest
-    kubectl delete crd postgresclusters.postgres-operator.crunchydata.com -n percona-everest
+     echo $(kubectl get crd -l="operators.coreos.com/percona-server-mongodb-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' &&  kubectl get crd -l="operators.coreos.com/percona-postgresql-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' && kubectl get crd -l="operators.coreos.com/percona-xtradb-cluster-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}') | xargs  kubectl delete crd
     ```
 
 5. Remove Everest OLM catalog:
