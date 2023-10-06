@@ -7,7 +7,7 @@ No matter why you need to uninstall Everest, you can run the commands below to r
 - All downloaded binaries and files like **everestctl**, **quickstart.yml**.
 
 !!! note alert alert-primary "Warning"
-    Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster! 
+    Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster!
 
     Before proceeding with Custom Resource Definitions (CRD) cleanup, check that any custom resources linked with CRDs are removed. This is a crucial step because deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the cluster.
 
@@ -68,7 +68,7 @@ To uninstall Everest:
 8. Stop Docker containers:
 
     ```
-    docker-compose -f quickstart.yml down
+    docker compose -f quickstart.yml down
     ```
 
 9. Remove percona-everest namespace:
