@@ -4,7 +4,7 @@ We are excited to welcome you to the very first release of Percona Everest, desi
 
 Before its general availability, Percona Everest will provide a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
 
-## Why Everest?
+## Why Percona Everest?
 
 Percona Everest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead while regaining control over their data, database configuration, and DBaaS costs.
 
