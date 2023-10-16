@@ -1,4 +1,5 @@
-{# Import the theme's layout. #}
+{# MkDocs template for builds with Material Theme to customize docs layout by adding marketing-requested elements #}
+
 {% extends "base.html" %}
 
   {%- macro relbar2 () %}
@@ -9,6 +10,7 @@
         <p>For free technical help, visit the Percona <a class="reference external" href="https://forums.percona.com/c/everest/30/all" target="_blank">Community Forum</a>.<br>
         <p>To report bugs or submit feature requests, open a <a class="reference external" href="https://jira.percona.com/projects/EVEREST/issues/" target="_blank">JIRA</a> ticket.<br>
         <p>For paid <a class="reference external" href="https://www.percona.com/services/support"> support </a> and <a class="reference external" href="https://www.percona.com/services/managed-services"> managed </a> or <a class="reference external" href="https://www.percona.com/services/consulting">consulting services </a>, contact <a class="reference external" href="https://www.percona.com/about-percona/contact" target="_blank">Percona Sales</a>.</p>
+        
         <img referrerpolicy="no-referrer-when-downgrade" src="https://static.scarf.sh/a.png?x-pxid=02e3958d-3c26-4f9b-aee1-62b36bc495cb" />
     </article>
   </div>
@@ -26,68 +28,37 @@
                  {% endif %}
                  <meta property="og:type" content="website" />
                  <meta property="og:title" content="{{ title }}" />
-                 <meta property="og:image" content="https://docs.percona.com/everest-doc/images/everest.png">
-                 <meta property="og:url" content="https://docs.percona.com/everest-doc/">
+                 <meta property="og:image" content="https://docs.percona.com/everest/images/everest.png">
+                 <meta property="og:url" content="https://docs.percona.com/everest/">
               {% endblock %}
 
-              {% block analytics %}
-              <!-- Google Tag Manager -->
-              <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','GTM-WBVF48V');</script>
-              <!-- End Google Tag Manager -->
-
-
-              <!-- Google Tag Manager (noscript) -->
-              <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WBVF48V"
-                height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-                <!-- End Google Tag Manager (noscript) -->
-
-
-              {% endblock %}
-
-              {% block content %}
-
-                <!-- Edit and view button -->
-                {% if page.edit_url %}
-                  {% set edit = "https://github.com/percona/everest-doc/edit/main/docs/" %}
-                  {% set view = "https://raw.githubusercontent.com/percona/everest-doc/main/docs/" %}
-                  <a
-                    href="{{ page.edit_url }}"
-                    title="{{ lang.t('edit.link.title') }}"
-                    class="md-content__button md-icon"
-                  >
-                    {% include ".icons/material/file-edit-outline.svg" %}
-                  </a>
-                  <a
-                    href="{{ page.edit_url | replace(edit, view) }}"
-                    title="View source of this page"
-                    class="md-content__button md-icon"
-                  >
-                    {% include ".icons/material/file-eye-outline.svg" %}
-                  </a>
+              {% block site_nav %}
+              {% if nav %}
+                {% if page.meta and page.meta.hide %}
+                  {% set hidden = "hidden" if "navigation" in page.meta.hide %}
                 {% endif %}
-
-                <!--
-                  Hack: check whether the content contains a h1 headline. If it
-                  doesn't, the page title (or respectively site name) is used
-                  as the main headline.
-                -->
-                {% if not "\x3ch1" in page.content %}
-                  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+                <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" {{ hidden }}>
+                  <div class="md-sidebar__scrollwrap">
+                    <div class="md-sidebar__inner">
+                      {% include "partials/nav.html" %}
+                      <br>
+                      <label class="md-nav__title" for="__drawer">
+    </label> 
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+              {% if "toc.integrate" not in features %}
+                {% if page.meta and page.meta.hide %}
+                  {% set hidden = "hidden" if "toc" in page.meta.hide %}
                 {% endif %}
-
-                <!-- Markdown content -->
-                {{ page.content }}
-
-                <!-- Last update of source file -->
-                {% if page and page.meta %}
-                  {% if page.meta.git_revision_date_localized or
-                        page.meta.revision_date
-                  %}
-                    {% include "partials/source-file.html" %}
-                  {% endif %}
-                {% endif %}
-              {% endblock %}
+                <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" {{ hidden }}>
+                  <div class="md-sidebar__scrollwrap">
+                    <div class="md-sidebar__inner">
+                      {% include "partials/toc.html" %}
+                    </div>
+                  </div>
+                </div>
+              {% endif %}
+            {% endblock %}
+  

@@ -1,26 +1,78 @@
 # Uninstall Everest
 
-No matter why you need to uninstall Everest, you can run the commands below to remove all the Everest resources including: 
+No matter why you need to uninstall Everest, you can run the commands below to remove all the Everest resources including:
 
 - All Kubernetes objects created by Everest
-- All docker containers created by Everest
+- All Docker containers created by Everest
 - All downloaded binaries and files like **everestctl**, **quickstart.yml**.
 
+!!! note alert alert-primary "Warning"
+    Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster!
 
-To uninstall Everest: 
+    Before proceeding with Custom Resource Definitions (CRD) cleanup, check that any custom resources linked with CRDs are removed. This is a crucial step because deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the cluster.
 
-1. Remove ALL PVCs: `kubectl delete pvc --all -n percona-everest`
-2. Remove ALL created database clusters: `kubectl delete db --all -n percona-everest`
+To uninstall Everest:
+{.power-number}
+
+!!! note alert alert-primary "Warning"
+    Follow these cleanup instructions after unprovisioning Everest via CLI.
+
+1. Remove ALL created database clusters:
+
+    ```sh
+    kubectl delete db --all -n percona-everest
+    ```
+
+2. Remove ALL PVCs:
+
+    ```sh
+    kubectl delete pvc --all -n percona-everest
+    ```
+
 3. List CSVs and remove those with a "*percona*" and "*everest*" prefix, or remove ALL operators:
-```sh 
-kubectl delete sub --all -n percona-everest
-kubectl delete ip --all -n percona-everest
-kubectl delete csv --all -n percona-everest
-```
-4. Remove ALL created CRD individually, or use: `kubectl get crd -n percona-everest -o name | grep .percona.com$ | awk -F '/' {'print $2'} | xargs --no-run-if-empty kubectl delete crd -n percona-everest`
 
-5. Remove Everest OLM catalog: `kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/percona-dbaas-catalog.yaml`
+    ```sh
+    kubectl delete sub --all -n percona-everest
+    kubectl delete ip --all -n percona-everest
+    kubectl delete csv --all -n percona-everest
+    ```
 
-6. Remove OLM installation:
-- `kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml`
-- `kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml`
+4. List ALL CRDs that will be removed:
+
+    ```sh
+    kubectl get crd -l="operators.coreos.com/percona-server-mongodb-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' &&  kubectl get crd -l="operators.coreos.com/percona-postgresql-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' && kubectl get crd -l="operators.coreos.com/percona-xtradb-cluster-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}'
+    ```
+
+5. Remove ALL created CRD individually, or use:
+
+    ```sh
+     echo $(kubectl get crd -l="operators.coreos.com/percona-server-mongodb-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' &&  kubectl get crd -l="operators.coreos.com/percona-postgresql-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' && kubectl get crd -l="operators.coreos.com/percona-xtradb-cluster-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}') | xargs  kubectl delete crd
+    ```
+
+6. Remove Everest OLM catalog:
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/percona-dbaas-catalog.yaml
+    ```
+
+7. Remove OLM installation (Do not delete it if it was installed without Everest support):
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml
+    ```
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
+    ```
+
+8. Stop Docker containers:
+
+    ```
+    docker compose -f quickstart.yml down
+    ```
+
+9. Remove percona-everest namespace:
+
+    ```sh
+    kubectl delete ns percona-everest
+    ```

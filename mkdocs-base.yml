@@ -18,6 +18,10 @@ theme:
   font:
     text: Roboto
     code: Roboto Mono
+  icon:
+    edit: material/file-edit-outline
+    view: material/file-eye-outline
+  
   palette:
     # Light mode
     - media: "(prefers-color-scheme: light)"
@@ -146,28 +150,28 @@ nav:
   - Features: features.md
   - Quickstart guide:
       - Overview: quickstart-guide/qs-overview.md
-      - Prerequisites: quickstart-guide/qs-prerequisites.md
+      - Prerequisites: 
+        - quickstart-guide/qs-prerequisites.md
+        - quickstart-guide/eks.md
+        - quickstart-guide/gke.md
       - Quick install: quickstart-guide/quick-install.md
 
   - Install:
-      - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
-      - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
-      - Create and provision clusters: use/db_provision.md
+      - Provision a database: use/db_provision.md
       - Back up and restore data: use/backupRestore.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
 
   - Configure:
       - Configure database engine: configure/db_engine_config.md
-
+  - API: API.md
   - Reference:
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
 
-  - Contribute:
-      - Contributing Guide: contribute.md
+  - Contribute: contribute.md
 

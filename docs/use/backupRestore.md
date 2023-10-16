@@ -1,4 +1,4 @@
-# Backup and restore databases
+# Back up and restore databases
 
 ## Why it’s important to create backups
 
@@ -25,15 +25,17 @@ Everest supports Amazon S3-compatible backup locations, which means you can use 
      - Make sure not to share the same backup storage location for multiple database clusters.
 
 To create a backup storage location:
+{.power-number}
 
 1. Go to **Settings > Backup storage** and click **Add backup storage**.  
 2. In the **Name** field, specify a location name using only lowercase alphanumeric characters or hyphens. 
 3. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
- Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
+    Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
 
 ## Create backup
 
 To create a backup for a database:
+{.power-number}
 
 1. Go to <i class="uil uil-cog"></i>  **Settings > Backup Storages** and check that  you have an available AWS S3-compatible location for storing  backups.
 2. Go to the <i class="uil uil-database"></i>  **Databases** view and select the DB which you want to back up.
@@ -43,6 +45,7 @@ To create a backup for a database:
 ## Restore the database from a previously saved backup
 
 To restore a database from a backup:
+{.power-number}
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to restore.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click **Restore to this DB**. 
@@ -65,13 +68,14 @@ Database backups and data replication are complementary components of an effecti
 - **To create a safety net for rollbacks**: Restoring the backup directly to the original database leaves little room for rolling back the recovery process if issues are discovered later. Creating a new database provides a safety net, as you can decide whether to promote the new database to the production environment or keep the original one if necessary.
 
 To create a new database from backup:
+{.power-number}
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click **Create new DB**.
 3. Select **Create** to start database provisioning for the DB replica.
 4. In the **Basic information** window, change the default backup name if required, then select one of the classes created by your Kubernetes administrator. 
-Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) in the Kubernetes documentation. 
+Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 5. On the **Resources** page, select the number of nodes and set the resources. For more information see, [Provision a database](../use/db_provision.md).
-6. On the **Advanced Configurations** page, enable external access and database engine parameters by turning the toggle button on. For more information on configuring specific database parameters, see the [MySQL](https://dev.mysql.com/doc/refman/8.0/en/option-files.html), [MongoDB](https://www.mongodb.com/docs/manual/reference/configuration-options), and [PostgreSQL](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE) configuration documentation.
+6. On the **Advanced Configurations** page, enable external access and database engine parameters by turning the toggle button on. For more information on configuring specific database parameters, see the [MySQL](https://dev.mysql.com/doc/refman/8.0/en/option-files.html){:target="_blank"}, [MongoDB](https://www.mongodb.com/docs/manual/reference/configuration-options){:target="_blank"}, and [PostgreSQL](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE){:target="_blank"} configuration documentation.
 7. If you've enabled monitoring during CLI provisioning, this option will show as active on the **Monitoring** page and you can disable it if required.
 8. Click **Create database** then run the command on the screen to ensure that you're using the same secret as the selected backup.

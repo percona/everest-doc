@@ -1,25 +1,18 @@
 # Overview
 
-This guide will help you to quickly install and start working with Percona Everest.
+This section helps quickly install and start working with Percona Everest. In this section, you can find the following information:
 
-Percona Everest has two primary components:
+* Prerequisites required to install Percona Everest
 
-* [Percona CLI](https://github.com/percona/percona-everest-cli), which connects Percona Everest to your Kubernetes cluster.
+     * Instruction on creating Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS)
 
-* Percona Everest application with the UI.
+     * Instruction on creating Kubernetes cluster on Google Kubernetes Engine (GKE)
 
-Supported operators:
+* Percona Everest quick installation script
 
-* Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.13.0
-
-* Percona Operator for MongoDB (PSMDB) 1.14.0
-
-* Percona Operator for PostgreSQL (PG) 2.2.0
-
-Supported k8s clusters:
-
-* Google Kubernetes Engine (GKE) 
-* Amazon Elastic Kubernetes Service (EKS) (1.24 - 1.25)
+<!-- 
+* Instruction on configuring the database health monitoring with PMM
+-->
 
 ## Next steps
 
