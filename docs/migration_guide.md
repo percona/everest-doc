@@ -57,7 +57,7 @@ Here are some key differences between Everest and PMM/DBaaS:
 2. [Provision](use/db_provision.md) the cluster using everestctl.
 3. Connect your PMM instance (if required.)
 4. Migrate backup storages from PMM to Everest.
-5. Migrate from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
+5. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
    
     !!! note alert alert-primary "Note"
         Keep names consistent across two Kubernetes clusters.
