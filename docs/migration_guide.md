@@ -59,8 +59,8 @@ Here are some key differences between Everest and PMM/DBaaS:
 4. Migrate backup storages from PMM to Everest.
 5. Migrate from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
    
-       !!! note alert alert-primary "Note"
-           Keep names consistent across two Kubernetes clusters.
+    !!! note alert alert-primary "Note"
+        Keep names consistent across two Kubernetes clusters.
 
 6. Create a new database cluster using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
 7. Restore data for your database clusters using the operator's backup and restore features.
