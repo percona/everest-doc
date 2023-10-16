@@ -41,18 +41,34 @@ Before getting started with Percona Everest, do the following:
     gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
     ```
 
-## Pre-migration
+## Before you migrate
 
-Some points worth noting before you migrate to Percona Everest:
+Here are some key differences between Everest and PMM/DBaaS:
 
-1. Everest uses a configurable and separate namespace to run operators and database clusters while PMM/DBaaS uses a default namespace for that
-2. Everestctl installs operators and helps you to install/configure operators and monitoring features while this part was on the PMM side
-3. Everest revamped the backup/restore feature and it’s not possible to use old backup/restores
+1. Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
+2. Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
+
+3. Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
 
 ## Migrate
 
+1. Create a new Kubernetes cluster.
+2. [Provision](../use/db_provision.md) the cluster using everestctl.
+3. Connect your PMM if required.
+4. Migrate backup storages from PMM to Everest.
+5. Migrate from one Kubernetes cluster to a new one using the pattern `everest-secrets-dbclusterName`. 
+   Keep names consistent across two Kubernetes clusters.
+6. Create a new database cluster using webUI selecting resources and setting the name, backup storage, or monitoring of the cluster by running through the creation wizard. 
+7. Use the operator's backup/restore features to restore data for your database clusters. 
 
+!!! note alert alert-primary "Note"
+    The restoration won’t be available for you in the web UI for this run but other backups/restores will be there.
+
+    1. For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
+    2. For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
+8. Repeat it for every database cluster that you run.
+9. Disable the “Database as a Service (DBaaS)” feature in PMM Settings to avoid confusion and eventual usage from PMM.
 
 ## Post-migration
 
