@@ -70,6 +70,7 @@ Here are some key differences between Everest and PMM/DBaaS:
 
         1. For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
         2. For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
+
 8.  Each time you run a database cluster, repeat this step.
 
 9. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
