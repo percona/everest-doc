@@ -24,9 +24,9 @@ Before getting started with Percona Everest:
    
     [Create EKS cluster :material-arrow-right:](quickstart-guide/eks.md){.md-button} [Create GKE cluster :material-arrow-right:](quickstart-guide/gke.md){.md-button}
 
-5. Verify that you have access to the Kubernetes cluster that you want to use with Percona Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
+5. Verify that you have access to the Kubernetes cluster that you want to use with Percona Everest. By default, Percona Everest uses the kubeconfig file available under `~/.kube/config`. 
 
-    To verify access to the Kubernetes cluster, run the following command:
+    To verify access to the Kubernetes cluster, run:
    
     ```sh 
     kubectl get nodes
@@ -55,7 +55,7 @@ Here are some key differences between Percona Everest and PMM DBaaS:
 
 1. Create a new Kubernetes cluster.
 2. [Provision](use/db_provision.md) the cluster using everestctl.
-3. Migrate backup storages from PMM to PerconaEverest.
+3. Migrate backup storages from PMM to Percona Everest.
 
     To transfer backup storage from PMM to Percona Everest, follow these steps:
 
