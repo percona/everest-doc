@@ -55,15 +55,22 @@ Here are some key differences between Everest and PMM/DBaaS:
 
 1. Create a new Kubernetes cluster.
 2. [Provision](use/db_provision.md) the cluster using everestctl.
-3. Connect your PMM instance (if required.)
-4. Migrate backup storages from PMM to Everest.
-5. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
+3. Migrate backup storages from PMM to Everest.
+
+    To transfer backup storage from PMM to Percona Everest, follow these steps:
+    
+    - Log in to the PMM UI and navigate to the **Backup Storages** section.
+    - Take a backup.
+    - Log in to Percona Everest and go to the **Backup Storages**section on the UI.
+    - Copy the backup from PMM and paste it to Percona Everest.
+
+4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
    
     !!! note alert alert-primary "Note"
         Keep names consistent across two Kubernetes clusters.
 
-6. Create a new database cluster using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
-7. Restore data for your database clusters using the operator's backup and restore features.
+5. Create a new database cluster using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
+6. Restore data for your database clusters using the operator's backup and restore features.
 
     !!! note alert alert-primary "Note"
         The restoration won't be available for you in the web UI for this run, but other backups/restores will be there.
@@ -71,9 +78,9 @@ Here are some key differences between Everest and PMM/DBaaS:
         1. For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
         2. For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
 
-8.  Each time you run a database cluster, repeat this step.
+7.  Each time you run a database cluster, repeat this step.
 
-9. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
+8. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
 
 
 ## Post-migration
