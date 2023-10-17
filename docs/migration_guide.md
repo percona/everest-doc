@@ -61,7 +61,7 @@ Here are some key differences between Percona Everest and PMM DBaaS:
 
     - Log in to the PMM UI and navigate to the **Backup Storages** section.
     - Take a backup.
-    - Log in to Percona Everest and go to the **Backup Storages**section on the UI.
+    - Log in to Percona Everest and go to the **Backup Storages** section on the UI.
     - Copy the backup from PMM and paste it to Percona Everest.
 
 4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
