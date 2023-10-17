@@ -83,7 +83,7 @@ Before getting started with Percona Everest:
 
         - Each time you run a database cluster, repeat this step.
 
-8. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
+8. Disable the **Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
 
 ## What's next
 
