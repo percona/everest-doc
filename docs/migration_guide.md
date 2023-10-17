@@ -1,6 +1,6 @@
 # Migrate from PMM DBaaS to Percona Everest
 
-Migrating from PMM DBaaS to Percona Everest has many benefits, such as decreased operational overhead, improved scalability, and enhanced flexibility. However, planning and executing the migration is crucial to minimize downtime and ensure data integrity. 
+Migrating from Perona Monitoring and Management(PMM) DBaaS to Percona Everest has many benefits, such as decreased operational overhead, improved scalability, and enhanced flexibility. However, planning and executing the migration is crucial to minimize downtime and ensure data integrity. 
 
 Here's a comprehensive guide to help you through the process.
 
@@ -24,7 +24,7 @@ Before getting started with Percona Everest:
    
     [Create EKS cluster :material-arrow-right:](quickstart-guide/eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](quickstart-guide/gke.md){.md-button}
 
-5. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
+5. Verify that you have access to the Kubernetes cluster that you want to use with Percona Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
 
     To verify access to the Kubernetes cluster, run the following command:
    
@@ -43,19 +43,19 @@ Before getting started with Percona Everest:
 
 ## Before you migrate
 
-Here are some key differences between Everest and PMM/DBaaS:
+Here are some key differences between Percona Everest and PMM DBaaS:
 
-1. Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
+1. Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
-2. Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
+2. Percona Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
 
-3. Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
+3. Percona Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
 
 ## Migrate
 
 1. Create a new Kubernetes cluster.
 2. [Provision](use/db_provision.md) the cluster using everestctl.
-3. Migrate backup storages from PMM to Everest.
+3. Migrate backup storages from PMM to PerconaEverest.
 
     To transfer backup storage from PMM to Percona Everest, follow these steps:
 
