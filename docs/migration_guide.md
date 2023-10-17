@@ -82,7 +82,6 @@ Here are some key differences between Percona Everest and PMM DBaaS:
 
 8. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
 
-
 ## What's next
 
 After the migration, you can connect to the new database cluster to check if the data has been successfully migrated.
