@@ -22,7 +22,7 @@ Before getting started with Percona Everest:
     We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), as Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.
 
    
-    [Create EKS cluster :material-arrow-right:](quickstart-guide/eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](quickstart-guide/gke.md){.md-button}
+    [Create EKS cluster :material-arrow-right:](quickstart-guide/eks.md){.md-button} [Create GKE cluster :material-arrow-right:](quickstart-guide/gke.md){.md-button}
 
 5. Verify that you have access to the Kubernetes cluster that you want to use with Percona Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
 
