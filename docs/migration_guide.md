@@ -58,7 +58,7 @@ Here are some key differences between Everest and PMM/DBaaS:
 3. Migrate backup storages from PMM to Everest.
 
     To transfer backup storage from PMM to Percona Everest, follow these steps:
-    
+
     - Log in to the PMM UI and navigate to the **Backup Storages** section.
     - Take a backup.
     - Log in to Percona Everest and go to the **Backup Storages**section on the UI.
@@ -83,8 +83,8 @@ Here are some key differences between Everest and PMM/DBaaS:
 8. Disable the ***Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
 
 
-## Post-migration
+## What's next
 
-### Perform tests
+After the migration, you can connect to the new database cluster to check if the data has been successfully migrated.
 
 
