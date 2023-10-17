@@ -6,7 +6,7 @@ Here's a comprehensive guide to help you through the process.
 
 ## Prerequisites
 
-Before getting started with Percona Everest, do the following:
+Before getting started with Percona Everest:
 {.power-number}
 
 1. Install [Docker Engine](https://docs.docker.com/engine/install){:target="_blank"} (1.13.0 and higher) with the [Docker compose plugin](https://docs.docker.com/compose/install/){:target="_blank"}.
