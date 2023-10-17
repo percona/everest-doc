@@ -4,6 +4,18 @@ Migrating from Perona Monitoring and Management(PMM) DBaaS to Percona Everest ha
 
 Here's a comprehensive guide to help you through the process.
 
+
+## Before you migrate
+
+Here are some key differences between Percona Everest and PMM DBaaS:
+
+1. Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
+
+2. Percona Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
+
+3. Percona Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
+
+
 ## Prerequisites
 
 Before getting started with Percona Everest:
@@ -41,17 +53,8 @@ Before getting started with Percona Everest:
     gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
     ```
 
-## Before you migrate
 
-Here are some key differences between Percona Everest and PMM DBaaS:
-
-1. Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
-
-2. Percona Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
-
-3. Percona Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
-
-## Migrate
+## Migration procedure
 
 1. Create a new Kubernetes cluster.
 2. [Provision](use/db_provision.md) the cluster using everestctl.
