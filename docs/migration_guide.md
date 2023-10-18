@@ -68,7 +68,7 @@ Before getting started with Percona Everest:
 4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
    
     !!! note alert alert-primary "Note"
-        Keep names consistent across two Kubernetes clusters.
+        Keep the naming consistent across the two Kubernetes clusters.
 
 5. Create a new database cluster using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
 6. Restore data for your database clusters using the operator's backup and restore features.
@@ -76,12 +76,13 @@ Before getting started with Percona Everest:
     !!! note alert alert-primary "Note"
         - The restoration won't be available for you in the web UI for this run, but other backups/restores will be there.
 
-            1. For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
-            2. For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
+            -  For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
+            -  For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
 
         - Each time you run a database cluster, repeat this step.
 
-8. Disable the **Database as a Service (DBaaS)** feature in PMM Settings to prevent accidental usage and confusion.
+8. Disable the **Database as a Service (DBaaS)** feature in PMM by navigating to <i class="uil uil-cog"></i> **Configuration** → <i class="uil uil-setting"></i> **Settings** → **Advanced Settings**. Click <i class="uil uil-toggle-off"></i> toggle in the **Technical preview features** section of the page.
+
 
 ## What's next
 
