@@ -27,6 +27,7 @@ In creating Percona Everest, we leveraged our years of experience in open-source
 With our latest release, we're adding in product telemetry to fill-in the gaps in our understanding of how users are actually using Everest, and ultimately ensure that we're building the best-in-class DBaaS software for the open-source community.
 
 Participation in this anonymous program is optional, and you can opt-out if prefer not to share any information. 
+
 Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) and [telemetry documentation](../reference/telemetry.md) to learn more.
 
 ## Known limitations
