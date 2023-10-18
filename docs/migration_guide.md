@@ -81,8 +81,7 @@ Before getting started with Percona Everest:
 
         - Each time you run a database cluster, repeat this step.
 
-8. Disable the **Database as a Service (DBaaS)** feature in PMM by navigating to <i class="uil uil-cog"></i> **Configuration** → <i class="uil uil-setting"></i> **Settings** → **Advanced Settings** on the PMM UI and click <i class="uil uil-toggle-off"></i> **toggle** in the **Technical preview features** section of the page.
-
+8. Disable the DBaaS feature in PMM by navigating to <i class="uil uil-cog"></i> **Configuration** → <i class="uil uil-setting"></i> **Settings** → **Advanced Settings** on the PMM UI and toggling <i class="uil uil-toggle-off"></i> the **Database as a Service (DBaaS)** option located in the **Technical preview features** section.
 
 ## What's next
 
