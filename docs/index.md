@@ -29,17 +29,3 @@ Here's why you should try Percona Everest:
 How about checking Percona Everest features in action?
 
 Get started by [Installing Percona Everest](quickstart-guide/qs-overview.md) and [manage your first cluster](use/cluster-management.md)!
-
-## Known limitations
-
-Here are the limitations associated with this release. Some of them you might encounter depending on your settings, and some of them will be addressed in a future release: 
-
-- If you're using PostgreSQL, make sure not to share the same backup storage location for multiple database clusters. Use a unique storage location for backing up PostgreSQL clusters.
-- The options to define default database configuration will be available on the **Settings** view soon.
-- No support for database cluster management via CLI yet.
-- No support for adding backup storages via CLI yet.
-- No current support for K8s clusters without a public API server.
-- No current support for adding monitoring instances via the UI. 
-- Information regarding Percona Monitoring Management (PMM) monitoring is not yet visible on the UI.
-- No current support for using https for connecting to PMM instances that use a self-signed certificate.
-- Information regarding CPU/Memory resources doesn’t clearly state that is applied per replica and not per database cluster.
