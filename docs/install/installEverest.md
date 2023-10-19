@@ -57,34 +57,45 @@ To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
 1. Create the `percona-everest` namespace:
-    `kubectl create namespace percona-everest``
+    ```sh
+    kubectl create namespace percona-everest
+    ```
 2. Deploy Everest to Kubernetes:
-    ```kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest```
+    ```sh
+    kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
+    ```
 3. (Optional) Verify if the services started correctly:
-    `kubectl get pods -n percona-everest`
-        ??? example "Expected output"
-        ```
-            NAME                                                   READY   STATUS    RESTARTS       AGE
-            percona-everest-0                                      2/2     Running   2 (10s ago)    10s
-        ```
+    
+    ```sh
+    kubectl get pods -n percona-everest
+    ```        
+    ??? example "Expected output"
+    ```
+    NAME                                                   READY   STATUS    RESTARTS       AGE
+    percona-everest-0                                      2/2     Running   2 (10s ago)    10s
+    ```
 4. Make a note of the external IP address for the Everest service (for instance, 127.0.0.1 in this example):
-    `kubectl get svc/everest -n percona-everest`
-        ??? example "Expected output"
-        ```
-         NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-         everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
-        ```
-3. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
+   
+    ```sh 
+        kubectl get svc/everest -n percona-everest
+    ```
+    
+    ??? example "Expected output"
+    ```
+     NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+     everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
+    ```
+5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
     
     ```sh
     mv everestctl-darwin-amd64 everestctl
     ```
-4. Modify the file permissions:
+6. Modify the file permissions:
 
     ```sh
     chmod +x everestctl
     ```
-5. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
+7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
   
     ```sh
     export KUBECONFIG=~/.kube/config
