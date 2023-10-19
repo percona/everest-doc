@@ -78,7 +78,7 @@ To install and provision Percona Everest to Kubernetes:
 4. Make a note of the external IP address for the Everest service (for instance, 127.0.0.1 in this example):
    
     ```sh 
-        kubectl get svc/everest -n percona-everest
+    kubectl get svc/everest -n percona-everest
     ```
     
     ??? example "Expected output"
@@ -86,16 +86,19 @@ To install and provision Percona Everest to Kubernetes:
         NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
         everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
         ```
+
 5. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
     
     ```sh
     mv everestctl-darwin-amd64 everestctl
     ```
+
 6. Modify the file permissions:
 
     ```sh
     chmod +x everestctl
     ```
+    
 7. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
   
     ```sh
