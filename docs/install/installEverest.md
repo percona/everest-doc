@@ -1,4 +1,4 @@
-# Install Percona Everest
+# Install Percona Everest manually
 
 !!! note alert alert-primary "Note"
     The installation instructions in this guide go through all the manual installation and provisioning steps. To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
@@ -29,7 +29,119 @@ Percona Everest assists with installing all the necessary operators and required
 
 We recommend setting up Percona Everest on the [Amazon Elastic Kubernetes Service (EKS)](../quickstart-guide/eks.md) or on [Google Kubernetes Engine (GKE)](../quickstart-guide/gke.md), as Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.
 
-## Prerequisites
+## Install to Kubernetes (recommended)
+
+### Prerequisites
+
+Before getting started with Percona Everest, we recommend that you:
+{.power-number}
+
+1. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"} for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install){:target="_blank"} for GKE.
+2. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
+    
+    ```sh 
+    kubectl get nodes
+    ```
+
+    ??? example "Expected output"
+        ```
+            NAME                                       STATUS   ROLES    AGE   VERSION
+            gke-<name>-default-pool-75d48bfc-bx8g      Ready    <none>   11h   v1.26.7-gke.500
+            gke-<name>-default-pool-75d48bfc-c2df      Ready    <none>   11h   v1.26.7-gke.500
+            gke-<name>-default-pool-75d48bfc-zl7k      Ready    <none>   11h   v1.26.7-gke.500
+        ```
+
+### Install and provision
+
+To install and provision Percona Everest to Kubernetes:
+{.power-number}
+
+1. Create the `percona-everest` namespace:
+    `kubectl create namespace percona-everest``
+2. Deploy Everest to Kubernetes:
+    ```kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest```
+3. (Optional) Verify if the services started correctly:
+    `kubectl get pods -n percona-everest`
+        ??? example "Expected output"
+        ```
+            NAME                                                   READY   STATUS    RESTARTS       AGE
+            percona-everest-0                                      2/2     Running   2 (10s ago)    10s
+        ```
+4. Make a note of the external IP address for the Everest service (for instance, 127.0.0.1 in this example):
+    `kubectl get svc/everest -n percona-everest`
+        ??? example "Expected output"
+        ```
+         NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+         everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
+        ```
+3. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
+    
+    ```sh
+    mv everestctl-darwin-amd64 everestctl
+    ```
+4. Modify the file permissions:
+
+    ```sh
+    chmod +x everestctl
+    ```
+5. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command:
+  
+    ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
+
+  
+    ```sh
+    ./everestctl install operators
+    ```
+    
+    This will install all needed components in a namespace called `percona-everest`.
+
+    ??? example "Example"
+            
+            ? Everest URL http://127.0.0.1:8080
+            ? Choose your Kubernetes Cluster name k3d-dbaas-tilt
+            ? Do you want to enable monitoring? Yes
+            ? PMM URL Endpoint http://127.0.0.1
+            ? Username admin
+            ? Password *****
+            ? Name for the new monitoring instance my-pmm
+            ? Do you want to enable backups? No
+            ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
+            
+
+    Alternatively, you can provision and register the Kubernetes cluster by running the installation in headless mode:
+        
+    ```
+    ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
+    ```
+
+    #### Limitations
+        
+    * If the Everest CLI fails to install the operators, do the following:
+        
+        * [Uninstall Percona Everest](uninstallEverest.md).
+        
+        * Install Percona Everest, starting with the second step.
+
+    * If you install an operator after the initial provisioning and want to create a database cluster, restart the `everest-operator pod` by running the following commands:
+
+        ```sh 
+        kubectl -n percona-everest get po
+        kubectl -n percona-everest delete pod everest-operator-pod-name
+        ```
+
+        This will fix the database cluster creation. The issue will be fixed in the upcoming releases.
+
+    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+
+    * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
+
+8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster.
+   
+## Install using Docker compose (deprecated)
+
+### Prerequisites
 
 Before getting started with Percona Everest, we recommend that you:
 {.power-number}
@@ -50,9 +162,9 @@ Before getting started with Percona Everest, we recommend that you:
             gke-<name>-default-pool-75d48bfc-zl7k      Ready    <none>   11h   v1.26.7-gke.500
         ```
 
-## Get started
+### Install and provision
 
-To install and provision Percona Everest:
+To install and provision Percona Everest using Docker compose:
 {.power-number}
 
 1. Download the Docker compose file:
@@ -140,7 +252,7 @@ To install and provision Percona Everest:
     ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
     ```
 
-    ### Limitations
+    #### Limitations
         
     * If the Everest CLI fails to install the operators, do the following:
         
@@ -161,4 +273,4 @@ To install and provision Percona Everest:
 
     * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
-8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster. 
+8. Go to [http://127.0.0.1:8080](http://127.0.0.1:8080) to open the Everest UI and create your first database cluster.
