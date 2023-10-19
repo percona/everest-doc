@@ -64,16 +64,17 @@ To install and provision Percona Everest to Kubernetes:
     ```sh
     kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
     ```
-3. (Optional) Verify if the services started correctly:
+3. (Optional) Verify that the services started correctly:
     
     ```sh
     kubectl get pods -n percona-everest
     ```        
     ??? example "Expected output"
-    ```
-    NAME                                                   READY   STATUS    RESTARTS       AGE
-    percona-everest-0                                      2/2     Running   2 (10s ago)    10s
-    ```
+        ```
+        NAME                                                   READY   STATUS    RESTARTS       AGE
+        percona-everest-0                                      2/2     Running   2 (10s ago)    10s
+        ```
+
 4. Make a note of the external IP address for the Everest service (for instance, 127.0.0.1 in this example):
    
     ```sh 
