@@ -6,7 +6,7 @@ Product telemetry fills-in the gaps in our understanding of how you are actually
 
 Participation in this **anonymous** program is optional, and you can opt-out if you prefer not to share any information.
 
-Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) and [telemetry documentation](../reference/telemetry.md) to learn more.
+Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) to learn more.
 
 ## What information is collected
 
@@ -22,13 +22,15 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
 1. When [installing Everest using the quick install script](../quickstart-guide/quick-install.md), set the `DISABLE_TELEMETRY` env variable to **True**: 
    
    ```sh
-      export DISABLE_TELEMETRY=true
+   export DISABLE_TELEMETRY=true
    ```
-2. Restart the Everest backend: 
+
+2. Restart the Everest backend:
    
-    ```sh
-       docker compose -f quickstart.yml restart everest   
-    ```
+   ```sh
+   docker compose -f quickstart.yml restart everest   
+   ```
+
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
    
     ```sh
@@ -36,13 +38,13 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
     ```
 
 ## Enable telemetry again
-
 {.power-number}
+
 1. Set the DISABLE_TELEMETRY environment variable to false: 
    
-    ```sh 
-    export DISABLE_TELEMETRY=false
-    ```
+   ```sh 
+   export DISABLE_TELEMETRY=false
+   ```
 
 2. Restart the Everest backend:
     
