@@ -24,13 +24,11 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
    ```sh
       export DISABLE_TELEMETRY=true
    ```
-
 2. Restart the Everest backend: 
    
     ```sh
        docker compose -f quickstart.yml restart everest   
     ```
-    
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
    
     ```sh
@@ -39,20 +37,21 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
 
 ## Enable telemetry again
 
+{.power-number}
 1. Set the DISABLE_TELEMETRY environment variable to false: 
    
     ```sh 
     export DISABLE_TELEMETRY=false
     ```
 
-2. Restart the Everest backend: 
+2. Restart the Everest backend:
     
     ```sh
     docker compose -f quickstart.yml restart everest
     ```
 
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
-    
+
     ```sh 
     ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
