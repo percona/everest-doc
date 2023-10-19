@@ -17,17 +17,20 @@ Rest assured, access to the raw data is rigorously controlled, and individual us
 ## Disable telemetry
 
 Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to TRUE:
+{.power-number}
 
 1. When [installing Everest using the quick install script](../quickstart-guide/quick-install.md), set the `DISABLE_TELEMETRY` env variable to **True**: 
    
    ```sh
-   export DISABLE_TELEMETRY=true
+      export DISABLE_TELEMETRY=true
    ```
+
 2. Restart the Everest backend: 
    
     ```sh
-    docker compose -f quickstart.yml restart everest   
+       docker compose -f quickstart.yml restart everest   
     ```
+    
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
    
     ```sh
@@ -41,11 +44,13 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
     ```sh 
     export DISABLE_TELEMETRY=false
     ```
+
 2. Restart the Everest backend: 
     
     ```sh
     docker compose -f quickstart.yml restart everest
     ```
+
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
     
     ```sh 
