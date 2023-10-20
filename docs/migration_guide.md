@@ -74,10 +74,11 @@ Before getting started with Percona Everest:
 6. Restore data for your database clusters using the operator's backup and restore features.
 
     !!! note alert alert-primary "Note"
-        - The restoration won't be available for you in the web UI for this run, but other backups/restores will be there.
+        - The restoration won't be available for you in the web UI, you'll need to refer to the corresponding operator's documentation for instructions on how to do this.
 
-            -  For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups.html
-            -  For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups.html
+            -  For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups-restore.html
+            -  For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups-restore.html
+            -  For PostgreSQL https://docs.percona.com/percona-operator-for-postgresql/2.0/backups-restore.html
 
         - Each time you run a database cluster, repeat this step.
 
