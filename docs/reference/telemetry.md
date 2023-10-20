@@ -31,10 +31,10 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
    docker compose -f quickstart.yml restart everest   
    ```
 
-3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
+3. Run the Everest upgrade command so the underlying operators apply the new setting as well:
    
     ```sh
-    ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    ./everestctl upgrade
     ```
 
 ## Enable telemetry again
