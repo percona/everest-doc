@@ -75,7 +75,7 @@ To install and provision Percona Everest to Kubernetes:
         percona-everest-0                                      2/2     Running   2 (10s ago)    10s
         ```
 
-4. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is teh default 127.0.0.1:  
+4. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
    
     ```sh 
     kubectl get svc/everest -n percona-everest
