@@ -21,9 +21,9 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
 
 1. When [installing Everest using the quick install script](../quickstart-guide/quick-install.md), set the `DISABLE_TELEMETRY` env variable to **True**: 
    
-   ```sh
-   export DISABLE_TELEMETRY=true
-   ```
+      ```sh
+      export DISABLE_TELEMETRY=true
+      ```
 
 2. Restart the Everest backend:
    
@@ -38,13 +38,14 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
     ```
 
 ## Enable telemetry again
+
 {.power-number}
 
 1. Set the DISABLE_TELEMETRY environment variable to false: 
    
-   ```sh 
-   export DISABLE_TELEMETRY=false
-   ```
+    ```sh 
+    export DISABLE_TELEMETRY=false
+    ```
 
 2. Restart the Everest backend:
     
