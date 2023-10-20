@@ -86,6 +86,7 @@ To install and provision Percona Everest to Kubernetes:
         NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
         everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
         ```
+        
 5. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases) to provision Percona Everest.
 6. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
     
