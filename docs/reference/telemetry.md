@@ -55,7 +55,7 @@ To re-enable telemetry:
     ```
 
 3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
-
-    ```sh 
-    ./everestctl install operators --backup.enable=false --everest.endpoint=http://127.0.0.1:8080 --monitoring.enable=false --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    
+    ```sh
+    ./everestctl upgrade
     ```
