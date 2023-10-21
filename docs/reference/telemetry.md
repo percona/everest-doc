@@ -29,7 +29,7 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
    
    ```sh
     docker compose -f quickstart.yml restart everest   
-   ```
+    ```
 
 3. Run the Everest upgrade command so the underlying operators apply the new setting as well:
    
