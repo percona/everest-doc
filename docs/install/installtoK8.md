@@ -1,7 +1,5 @@
 # Install to Kubernetes (experimental)
 
-## Install and provision
-
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 

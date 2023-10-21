@@ -1,27 +1,5 @@
 # Install using Docker Compose (recommended)
 
-## Prerequisites
-
-Before getting started with Percona Everest, we recommend that you:
-{.power-number}
-
-1. Install [Docker Engine](https://docs.docker.com/engine/install){:target="_blank"} (1.13.0 and higher) with the [Docker Compose plugin](https://docs.docker.com/compose/install/){:target="_blank"}.
-2. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"} for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install){:target="_blank"} for GKE.
-3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
-    
-    ```sh 
-    kubectl get nodes
-    ```
-
-    ??? example "Expected output"
-        ```
-            NAME                                       STATUS   ROLES    AGE   VERSION
-            gke-<name>-default-pool-75d48bfc-bx8g      Ready    <none>   11h   v1.26.7-gke.500
-            gke-<name>-default-pool-75d48bfc-c2df      Ready    <none>   11h   v1.26.7-gke.500
-            gke-<name>-default-pool-75d48bfc-zl7k      Ready    <none>   11h   v1.26.7-gke.500
-        ```
-
-## Install and provision
 
 To install and provision Percona Everest using Docker Compose:
 {.power-number}
@@ -64,6 +42,7 @@ To install and provision Percona Everest using Docker Compose:
             everest
             pg
         ```
+        
 4. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
    
     ```sh 

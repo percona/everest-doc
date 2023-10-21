@@ -157,8 +157,8 @@ nav:
       - Quick install: quickstart-guide/quick-install.md
 
   - Install:
-      - Setup and prerequisites for manual installation: install/SetupPrereqs.md
-      - Install using Docker: install/installUsingDocker.md
+      - Setup and prerequisites: install/SetupPrereqs.md
+      - Install using Docker Compose: install/installUsingDocker.md
       - Install to Kubernetes: install/installtoK8.md
       - Uninstall Percona Everest: install/uninstallEverest.md
 

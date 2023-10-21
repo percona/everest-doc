@@ -49,4 +49,6 @@ Before getting started with Percona Everest, we recommend that you:
             gke-<name>-default-pool-75d48bfc-zl7k      Ready    <none>   11h   v1.26.7-gke.500
         ```
 
-    [Install using Docker Compose:](installUsingDocker.md){.md-button}  [Install to Kubernetes :material-arrow-right:](installtoK8.md){.md-button}
+### Next steps    
+
+[Install using Docker Compose: material-arrow-right:](installUsingDocker.md){.md-button}  [Install to Kubernetes :material-arrow-right:](installtoK8.md){.md-button}
