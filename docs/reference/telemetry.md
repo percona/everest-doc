@@ -39,6 +39,7 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
 
 ## Enable telemetry again
 
+To re-enable telemetry:
 {.power-number}
 
 1. Set the DISABLE_TELEMETRY environment variable to false: 
