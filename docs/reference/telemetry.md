@@ -27,7 +27,7 @@ Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want 
 
 2. Restart the Everest backend:
    
-   ```sh
+    ```sh
     docker compose -f quickstart.yml restart everest   
     ```
 
