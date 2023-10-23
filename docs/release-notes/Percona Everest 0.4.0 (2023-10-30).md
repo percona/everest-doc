@@ -14,7 +14,6 @@ This release introduces major changes to the core structure of Everest. As a res
 
 Make sure to uninstall Everest and install it again using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md). 
 
-
 ### Scheduled backups
 
 You can now schedule automatic backups to run automatically at predefined times. 
@@ -37,6 +36,11 @@ With our latest release, we're adding in product telemetry to fill-in the gaps i
 
 Participation in this anonymous program is optional, and you can opt-out if prefer not to share any information. 
 Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) and [telemetry documentation](../reference/telemetry.md) to learn more.
+
+### Enhanced UX for backup creation
+
+We've optimized the backup creation process, providing you with the flexibility to access **Settings** and set up a storage location when one is unavailable.
+This ensures that you can quickly generate the resources you need right when creating on-demand and scheduled backups.
 
 ## Known limitations
 
