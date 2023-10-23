@@ -26,11 +26,10 @@ To configure a backup schedule:
 3. Click **Create backup > Schedule**.
 4. Change the default backup name if required, and configure the frequency and start time for the backups.
     
-!!! note alert alert-primary "Important"
-    Make sure that the schedule you specify here does not create overlapping jobs or overhead on the production environment. Also, check that your specified schedule does not overlap with production hours.
+    !!! note alert alert-primary "Important"
+        Make sure that the schedule you specify here does not create overlapping jobs or overhead on the production environment. Also, check that your specified schedule does not overlap with production hours.
 
 5. Click **Create**. All scheduled backups for the current DB will be listed at the top so you can review the schedules that are currently generating backup artifacts.
-
 
 ## Edit a scheduled backup
 
