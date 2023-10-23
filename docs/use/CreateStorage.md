@@ -18,6 +18,6 @@ To create a backup storage location:
 3. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
     Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
 
-## Next steps
+## Next step
 
 [Create backups :material-arrow-right:](CreateBackup.md){.md-button}

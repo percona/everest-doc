@@ -10,6 +10,6 @@ To ensure that you can recover data in such events, it is critical to back up yo
 
 Everest enables you to create and restore on-demand and scheduled backups. Future releases will also add Point-in-Time-Recovery functionality.
 
-### Start here
+## Start here
 
 [Prepare a storage location :material-arrow-right:](CreateStorage.md){.md-button}

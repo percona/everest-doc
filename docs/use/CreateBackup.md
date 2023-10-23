@@ -32,7 +32,6 @@ To configure a backup schedule:
 5. Click **Create**. All scheduled backups for the current DB will be listed at the top so you can review the schedules that are currently generating backup artifacts.
 
 
-
 ## Edit a scheduled backup
 
 To edit a schedule that is currently generating backup artifacts:
@@ -41,7 +40,8 @@ To edit a schedule that is currently generating backup artifacts:
 1. Go to the <i class="uil uil-database"></i> **Databases** view and select the DB for which  backups have been scheduled.  
 2. Select the **Backups** tab and expand the Schedule box.
 3. Select the schedule you want to update, click the ellipsis <i class="uil uil-ellipsis-h"></i> and select **Edit**. 
-4. Update the schedule and click **Save**. 
+4. Update the schedule and click **Save**.
+    
 ## Next step 
 
 [Restore backups :material-arrow-right:](RestoreBackup.md){.md-button}

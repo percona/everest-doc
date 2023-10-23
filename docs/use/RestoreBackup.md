@@ -12,7 +12,7 @@ To restore a database from a backup:
 
 Database backups and data replication are complementary components of an effective disaster recovery strategy. 
 
- There are specific situations that require the creation of a new database from a backup instead of restoring the data to the original database:
+There are specific situations that require the creation of a new database from a backup instead of restoring the data to the original database:
 
 - **When the original database is compromised**: Restoring a backup directly to a compromised DB could reintroduce the same issues. Creating a new database from the backup ensures that the restored data is isolated from the original database, preserving data integrity.
 
