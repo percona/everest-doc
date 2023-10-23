@@ -39,7 +39,7 @@ Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb
 
 ### Enhanced UX for backup creation
 
-We've optimized the backup creation process, providing you with the flexibility to access **Settings** and set up a storage location when one is unavailable.
+We've optimized the backup creation process, providing you with the flexibility to access **Settings** and set up a storage location when none is configured yet.
 This ensures that you can quickly generate the resources you need right when creating on-demand and scheduled backups.
 
 ## Known limitations
