@@ -8,7 +8,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
 1. To install Percona Everest, run the following command:
 
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/install.sh" | bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/install.sh" | bash
     ```
 
     !!! note
@@ -16,7 +16,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
         Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable when running the `install.sh` script. 
     
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
     ```
 
     ??? example "Expected output"

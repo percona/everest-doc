@@ -52,17 +52,17 @@ To uninstall Everest:
 6. Remove Everest OLM catalog:
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/percona-dbaas-catalog.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/data/crds/olm/percona-dbaas-catalog.yaml
     ```
 
 7. Remove OLM installation (Do not delete it if it was installed without Everest support):
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/crds.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/data/crds/olm/crds.yaml
     ```
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/data/crds/olm/olm.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/data/crds/olm/olm.yaml
     ```
 
 8. Stop Docker containers:
