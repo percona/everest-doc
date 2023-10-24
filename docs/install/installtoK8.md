@@ -7,7 +7,7 @@ To install and provision Percona Everest to Kubernetes:
     ```sh
     kubectl create namespace percona-everest
     ```
-2. Create a kubernetes secret with an auto-generated root key used for encrypting secrets:
+2. Create a Kubernetes secret with an auto-generated root key used for encrypting secrets:
     ```sh
     ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64 --wrap=0); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
     apiVersion: v1
@@ -19,7 +19,7 @@ To install and provision Percona Everest to Kubernetes:
     EOF
     ```
 
-    Expected output:
+    ??? example "Expected output"
 
     ```sh
     secret/everest-secrets-root-key configured
@@ -27,9 +27,9 @@ To install and provision Percona Everest to Kubernetes:
 
 3. Deploy Everest to Kubernetes:
 
-```sh
-kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
-```
+    ```sh
+    kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
+    ```
 
 4. (Optional) Verify that the services started correctly:
     
@@ -120,5 +120,4 @@ kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backe
 
     * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
-8. Go the IP address configured for the Everest service at step 4 to launch the Everest UI and create your first database cluster. The default one used in this example is [http://127.0.0.1:8080](http://127.0.0.1:8080). 
-   
+10. Go the IP address configured for the Everest service at step 4 to launch the Everest UI and create your first database cluster. The default one used in this example is [http://127.0.0.1:8080](http://127.0.0.1:8080).
