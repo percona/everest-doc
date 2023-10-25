@@ -9,7 +9,7 @@ To install and provision Percona Everest to Kubernetes:
     ```
 2. Create a Kubernetes secret with an auto-generated root key used for encrypting secrets:
     ```sh
-    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64 --wrap=0); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
+    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
     apiVersion: v1
     kind: Secret
     metadata:
