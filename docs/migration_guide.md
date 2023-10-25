@@ -60,7 +60,7 @@ Before getting started with Percona Everest:
 2. [Provision](use/db_provision.md) the cluster.
 3. Migrate backup storages from PMM to Percona Everest:
 
-    - Log in to the PMM UI and navigate to the **Backup Storages** section.
+    - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section.
     - Create a [backup](https://docs.percona.com/percona-monitoring-and-management/get-started/backup/index.html).
     - Log in to Percona Everest and go to the **[Backup Storages](use/backupRestore.md)** section on the UI.
     - Copy the backup from PMM and paste it to Percona Everest.
