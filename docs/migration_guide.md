@@ -83,7 +83,8 @@ Before getting started with Percona Everest:
     kubectl get secret "dbaas-$DBNAME-$DBTYPE-secrets" -o yaml | sed "s/name: dbaas-$DBNAME-.*-
     secrets/name: everest-secrets-$DBNAME/" | sed "s/namespace: default/namespace: percona-everest/" > 
     secret.yaml
-   ```
+    ```
+
     Apply the secret in the kubernetes cluster registered in Everest:
 
     ```sh
