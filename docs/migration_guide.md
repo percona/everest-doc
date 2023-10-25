@@ -66,7 +66,23 @@ Before getting started with Percona Everest:
     - Copy-paste the values from the **details** on the configured storage locations in PMM and paste it to **[Add backup storage](use/backupRestore.md#prepare-storage-location)** page in Percona Everest.
 
 4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
-   
+
+    Example:
+
+    ```sh
+    export DBNAME=mysql-btknhj
+    export DBTYPE=pxc
+    ```
+
+    !!! note alert alert-primary "Note"
+    The DBTYPE can be `pxc` or `psmdb` depending on being a MySQL or MongoDB DB.
+
+    Get the secret from the kubernetes cluster registered in PMM:
+
+    ```sh
+    kubectl get secret "dbaas-$DBNAME-$DBTYPE-secrets" -o yaml | sed "s/name: dbaas-$DBNAME-.*-secrets/name: everest-secrets-$DBNAME/" | sed "s/namespace: default/namespace: percona-everest/" > secret.yaml
+   ```
+
     !!! note alert alert-primary "Note"
         Keep the naming consistent across the two Kubernetes clusters.
 
