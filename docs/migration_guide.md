@@ -75,7 +75,7 @@ Before getting started with Percona Everest:
     ```
 
     !!! note alert alert-primary "Note"
-    The DBTYPE can be `pxc` or `psmdb` depending on being a MySQL or MongoDB DB.
+        The DBTYPE can be `pxc` or `psmdb` depending on whether it is a MySQL or MongoDB database.
 
     Get the secret from the kubernetes cluster registered in PMM:
 
