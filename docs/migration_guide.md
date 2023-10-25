@@ -60,10 +60,10 @@ Before getting started with Percona Everest:
 2. [Provision](use/db_provision.md) the cluster.
 3. Migrate backup storages from PMM to Percona Everest:
 
-    - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section.
-    - Create a [backup](https://docs.percona.com/percona-monitoring-and-management/get-started/backup/index.html).
+    - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section. The **Storage Location** page opens. You can see the storage locations configured on this page.
+    - Click the downward arrow to see the details of the storage location that are configured.
     - Log in to Percona Everest and go to the **[Backup Storages](use/backupRestore.md)** section on the UI.
-    - Copy the backup from PMM and paste it to Percona Everest.
+    - Copy-paste the values from the **details** on configured storage locations in PMM and paste it to **Add backup storage** page in Percona Everest.
 
 4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
    
