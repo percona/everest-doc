@@ -56,8 +56,7 @@ Before getting started with Percona Everest:
 
 ## Migration procedure
 
-1. Set up a publicly accessible Kubernetes cluster.
-2. [Provision](use/db_provision.md) the cluster.
+1. [Install](install/installEverest.md) everest.
 3. Migrate backup storages from PMM to Percona Everest:
 
     - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section. The **Storage Location** page opens. You can see the storage locations configured on this page.
