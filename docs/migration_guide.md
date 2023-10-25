@@ -80,8 +80,16 @@ Before getting started with Percona Everest:
     Get the secret from the kubernetes cluster registered in PMM:
 
     ```sh
-    kubectl get secret "dbaas-$DBNAME-$DBTYPE-secrets" -o yaml | sed "s/name: dbaas-$DBNAME-.*-secrets/name: everest-secrets-$DBNAME/" | sed "s/namespace: default/namespace: percona-everest/" > secret.yaml
+    kubectl get secret "dbaas-$DBNAME-$DBTYPE-secrets" -o yaml | sed "s/name: dbaas-$DBNAME-.*-
+    secrets/name: everest-secrets-$DBNAME/" | sed "s/namespace: default/namespace: percona-everest/" > 
+    secret.yaml
    ```
+    Apply the secret in the kubernetes cluster registered in Everest:
+
+    ```sh
+    kubectl apply -f secret.yaml
+    ```
+
 
     !!! note alert alert-primary "Note"
         Keep the naming consistent across the two Kubernetes clusters.
