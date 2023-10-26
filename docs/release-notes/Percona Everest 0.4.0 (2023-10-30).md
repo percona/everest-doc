@@ -28,6 +28,8 @@ For more information about working with backups, see [Back up and restore databa
 
     ![!image](../images/everestschedule_backups.png)
 
+
+
 ### Option to provide anonymous usage statistics enabled
 
 In creating Percona Everest, we've leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet user needs.
@@ -41,6 +43,15 @@ Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb
 
 We've optimized the backup creation process, providing you with the flexibility to access **Settings** and set up a storage location when none is configured yet.
 This ensures that you can quickly generate the resources you need right when creating on-demand and scheduled backups.
+
+### Option to install Everest on Kubernetes (experimental)
+
+We've introduced a [new manual installation option](../install/installtoK8.md) for setting up Everest on Kubernetes.
+
+!!! note alert alert-primary "Warning"
+    This feature is currently in a technical preview stage, and we recommend using it solely for testing purposes! This is because it exposes Everest to the world without any user authentication.
+    
+For a more secure and recommended installation process, make sure to install Everest using the Docker procedure, either via the QuickInstall script or via [manual installation](../install/installtoK8.md). 
 
 ## Known limitations
 
