@@ -51,7 +51,7 @@ We've introduced a [new manual installation option](../install/installtoK8.md) f
 !!! note alert alert-primary "Warning"
     This feature is currently in a technical preview stage, and we recommend using it solely for testing purposes! This is because it exposes Everest to the world without any user authentication.
     
-For a more secure and recommended installation process, make sure to install Everest using the Docker procedure, either via the QuickInstall script or via [manual installation](../install/installtoK8.md). 
+    For a more secure and recommended installation process, make sure to install Everest using the Docker Compose procedure, either using the [QuickInstall script](../install/quick-install) or the [manual installation procedure](../install/installUsingDocker).
 
 ## Known limitations
 
