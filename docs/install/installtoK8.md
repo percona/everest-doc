@@ -1,5 +1,11 @@
 # Install to Kubernetes (experimental)
 
+
+!!! note alert alert-primary "Warning"
+    This feature is currently in a technical preview stage, and we recommend using it solely for testing purposes! This is because it exposes Everest to the world without any user authentication.
+    For a more secure and recommended installation process, make sure to install Everest using the Docker Compose procedure, either using the [QuickInstall script](../install/quick-install) or the [manual installation procedure](../install/installUsingDocker).
+
+
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
@@ -8,8 +14,9 @@ To install and provision Percona Everest to Kubernetes:
     kubectl create namespace percona-everest
     ```
 2. Create a Kubernetes secret with an auto-generated root key used for encrypting secrets:
+   
     ```sh
-    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
+    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64 | tr -d '\n'); cat <<EOF | sed "s/\$ENCODED_SECRETS_ROOT_KEY/$ENCODED_SECRETS_ROOT_KEY/" | kubectl apply -n percona-everest -f -
     apiVersion: v1
     kind: Secret
     metadata:
@@ -116,7 +123,7 @@ To install and provision Percona Everest to Kubernetes:
 
         This will fix the database cluster creation. The issue will be fixed in the upcoming releases.
 
-    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character and only uses alphanumeric characters or '-'.
 
     * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 

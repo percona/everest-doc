@@ -15,10 +15,10 @@ To install and provision Percona Everest using Docker Compose:
     ```sh
     kubectl create namespace percona-everest
     ```
-3. Create a kubernetes secret with an auto-generated root key used for encrypting secrets:
+3. Create a Kubernetes secret with an auto-generated root key used for encrypting secrets:
    
     ```sh
-    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
+    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64 | tr -d '\n'); cat <<EOF | sed "s/\$ENCODED_SECRETS_ROOT_KEY/$ENCODED_SECRETS_ROOT_KEY/" | kubectl apply -n percona-everest -f -
     apiVersion: v1
     kind: Secret
     metadata:
@@ -150,7 +150,7 @@ To install and provision Percona Everest using Docker Compose:
 
         This will fix the database cluster creation. The issue will be fixed in the upcoming releases.
 
-    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard.
+    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character and only uses alphanumeric characters or '-'.
 
     * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
 
