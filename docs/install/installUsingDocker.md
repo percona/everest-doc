@@ -16,17 +16,17 @@ To install and provision Percona Everest using Docker Compose:
     kubectl create namespace percona-everest
     ```
 3. Create a kubernetes secret with an auto-generated root key used for encrypting secrets:
-
-`    ```sh
-        ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
-        apiVersion: v1
-        kind: Secret
-        metadata:
-            name: everest-secrets-root-key
-        data:
-            secrets-root-key: $ENCODED_SECRETS_ROOT_KEY
-        EOF
-        ```
+   
+    ```sh
+    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
+    apiVersion: v1
+    kind: Secret
+    metadata:
+        name: everest-secrets-root-key
+    data:
+        secrets-root-key: $ENCODED_SECRETS_ROOT_KEY
+    EOF
+    ```
     
     ??? example "Expected output"
     ```sh
@@ -39,11 +39,7 @@ To install and provision Percona Everest using Docker Compose:
     ```sh
     kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
     ```
-
-
-
-
-
+    
 5. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
     * to limit access to the localhost interface (default):
