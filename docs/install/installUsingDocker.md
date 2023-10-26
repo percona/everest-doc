@@ -29,9 +29,10 @@ To install and provision Percona Everest using Docker Compose:
     ```
     
     ??? example "Expected output"
-    ```sh
-    secret/everest-secrets-root-key configured
-    ```
+    
+        ```{.text .no-copy}
+        secret/everest-secrets-root-key configured
+        ```
 
 
 4. Deploy Everest to Kubernetes:
@@ -39,7 +40,7 @@ To install and provision Percona Everest using Docker Compose:
     ```sh
     kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
     ```
-    
+
 5. Initialize the Everest container and its internal PostgreSQL database by executing one of the following commands, each offering distinct access configurations:
 
     * to limit access to the localhost interface (default):

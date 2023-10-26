@@ -20,10 +20,10 @@ To install and provision Percona Everest to Kubernetes:
     ```
 
     ??? example "Expected output"
-
-    ```sh
-    secret/everest-secrets-root-key configured
-    ```
+    
+        ```{.text .no-copy}
+        secret/everest-secrets-root-key configured
+        ```
 
 3. Deploy Everest to Kubernetes:
 
