@@ -10,6 +10,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
     ```sh
     kubectl create namespace percona-everest
     ```
+
 2. Create a kubernetes secret with an auto-generated root key used for encrypting secrets:
    
     ```sh
