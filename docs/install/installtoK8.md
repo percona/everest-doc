@@ -62,23 +62,23 @@ To install and provision Percona Everest to Kubernetes:
 
    
     === "Service Type Load Balancer"
-            * Use the following command to change the Everest service type to **LoadBalancer**:
+       * Use the following command to change the Everest service type to **LoadBalancer**:
             
-                ```sh
-                kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
-                ```
+        ```sh
+        kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
+        ```
             
-            * Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
+       * Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
         
-                ```sh 
-                kubectl get svc/everest -n percona-everest
-                ```
+        ```sh 
+        kubectl get svc/everest -n percona-everest
+        ```
             
-            ??? example "Expected output"
-                ```
-                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-                everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
-                ```
+        ??? example "Expected output"
+            ```
+            NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+            everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
+            ```
     === "Port Forwarding"   
         Run the following command to use Kubectl port-forwarding for connecting to Everest without exposing the service:
         
