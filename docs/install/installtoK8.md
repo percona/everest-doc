@@ -61,7 +61,7 @@ To install and provision Percona Everest to Kubernetes:
 5. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
-    
+
        * Use the following command to change the Everest service type to **LoadBalancer**:
             
         ```sh
@@ -79,7 +79,6 @@ To install and provision Percona Everest to Kubernetes:
             NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
             everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
             ```
-    
     === "Port Forwarding"
 
         Run the following command to use Kubectl port-forwarding for connecting to Everest without exposing the service:
