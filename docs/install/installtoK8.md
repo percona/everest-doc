@@ -9,9 +9,9 @@
 
     Before starting the installation procedure, keep in mind that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export commannd below to set the `KUBECONFIG` environment variable before running the commands in the **Installation** section.
     
-        ```sh
-        export KUBECONFIG=~/.kube/config
-        ```
+    ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
 
 ## Installation
 
@@ -62,13 +62,13 @@ To install and provision Percona Everest to Kubernetes:
 
    
     === "Service Type Load Balancer"
-        1. Use the following command to Change the Everest service type to LoadBalancer:
+        4.1. Use the following command to change the Everest service type to **LoadBalancer**:
         
             ```sh
             kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
             ```
             
-        2. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
+        4.2. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
     
             ```sh 
             kubectl get svc/everest -n percona-everest
@@ -82,9 +82,9 @@ To install and provision Percona Everest to Kubernetes:
     === "Port Forwarding"   
         Run the following command to use Kubectl port-forwarding for connecting to Everest without exposing the service:
         
-            ```sh
-            kubectl port-forward svc/everest 8080:8080 -n percona-everest
-            ``` 
+        ```sh
+        kubectl port-forward svc/everest 8080:8080 -n percona-everest
+        ``` 
 
 6. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases) to provision Percona Everest.
 7. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
