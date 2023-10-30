@@ -56,6 +56,8 @@ Before getting started with Percona Everest:
 
 
 ## Migration procedure
+
+To migrate from PMM DBaaS to Percona Everest:
 {.power-number}
 
 1. [Install](install/installEverest.md) everest.
