@@ -57,14 +57,14 @@ Before getting started with Percona Everest:
 ## Migration procedure
 
 1. [Install](install/installEverest.md) everest.
-3. Migrate backup storages from PMM to Percona Everest:
+2. Migrate backup storages from PMM to Percona Everest:
 
     - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section. The **Storage Location** page opens. You can see the storage locations configured on this page.
     - Click the downward arrow to see the details of the storage location that are configured.
     - Log in to Percona Everest and go to the **[Backup Storages](use/backupRestore.md#prepare-storage-location)** section on the UI.
     - Copy-paste the values from the **details** on the configured storage locations in PMM and paste it to **[Add backup storage](use/backupRestore.md#prepare-storage-location)** page in Percona Everest.
 
-4. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
+3. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
 
     Example:
 
@@ -94,8 +94,8 @@ Before getting started with Percona Everest:
     !!! note alert alert-primary "Note"
         Keep the naming consistent across the two Kubernetes clusters.
 
-5. [Create a new database cluster](use/db_provision.md) using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
-6. Restore data for your database clusters using the operator's backup and restore features.
+4. [Create a new database cluster](use/db_provision.md) using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
+5. Restore data for your database clusters using the operator's backup and restore features.
 
     !!! note alert alert-primary "Note"
         - The restoration won't be available for you in the web UI, you'll need to refer to the corresponding operator's documentation for instructions on how to do this.
@@ -106,7 +106,7 @@ Before getting started with Percona Everest:
 
         - Each time you run a database cluster, repeat this step.
 
-8. Disable the DBaaS feature in PMM by navigating to <i class="uil uil-cog"></i> **Configuration** → <i class="uil uil-setting"></i> **Settings** → **Advanced Settings** on the PMM UI and toggling <i class="uil uil-toggle-off"></i> the **Database as a Service (DBaaS)** option located in the **Technical preview features** section.
+6. Disable the DBaaS feature in PMM by navigating to <i class="uil uil-cog"></i> **Configuration** → <i class="uil uil-setting"></i> **Settings** → **Advanced Settings** on the PMM UI and toggling <i class="uil uil-toggle-off"></i> the **Database as a Service (DBaaS)** option located in the **Technical preview features** section.
 
 ## What's next
 
