@@ -56,6 +56,7 @@ Before getting started with Percona Everest:
 
 
 ## Migration procedure
+{.power-number}
 
 1. [Install](install/installEverest.md) everest.
 2. Migrate backup storages from PMM to Percona Everest:
