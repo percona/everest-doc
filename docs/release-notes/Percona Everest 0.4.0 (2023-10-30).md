@@ -18,7 +18,7 @@ Make sure to uninstall Everest and install it again using the [Quick Installatio
 
 You can now schedule automatic backups to run automatically at predefined times. 
 
-This automatic backup will repeat within the time frame given, ensuring you have a backlog of database snapshots to roll back to if needed.
+Automatic backups will repeat within the time frame given, ensuring you have a backlog of database snapshots to roll back to if needed.
 
 To set up a backup schedule, head over to the **Backups** tab in the database view. Here, you'll find the option to initiate a backup right away, or schedule one for later. 
 
