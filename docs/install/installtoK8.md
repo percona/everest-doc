@@ -10,11 +10,11 @@
 ## Prerequisites
 
 !!! note alert alert-primary "Important"
-    Before starting the installation procedure, keep in mind that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export commannd to set the `KUBECONFIG` environment variable before running the commands in the **Installation** section.
+    Before starting the installation procedure, keep in mind that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export commannd below to set the `KUBECONFIG` environment variable before running the commands in the **Installation** section.
     
-    ```sh
-    export KUBECONFIG=~/.kube/config
-    ```
+        ```sh
+        export KUBECONFIG=~/.kube/config
+        ```
 
 ## Installation
 
