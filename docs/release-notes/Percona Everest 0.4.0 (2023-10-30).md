@@ -47,7 +47,7 @@ This ensures that you can quickly generate the resources you need right when cre
 
 There's also a [new manual installation option](../install/installtoK8.md) for setting up Everest on Kubernetes.
 
-However, this feature is currently in a technical preview stage, and we recommend using it solely for testing purposes! This is because it exposes Everest to the world without any user authentication.
+However, this new installation option is currently in a technical preview stage, and we recommend using it solely for testing purposes! This is because it exposes Everest to the world without any user authentication.
     
     For a more secure and recommended installation process, make sure to install Everest using the Docker Compose procedure, either using the [QuickInstall script](../install/quick-install) or the [manual installation procedure](../install/installUsingDocker).
 
