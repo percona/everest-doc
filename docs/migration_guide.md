@@ -8,6 +8,7 @@ Here's a comprehensive guide to help you through the process.
 ## Before you migrate
 
 Here are some key differences between Percona Everest and PMM DBaaS:
+{.power-number}
 
 1. Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
