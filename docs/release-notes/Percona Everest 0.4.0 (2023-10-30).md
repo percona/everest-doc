@@ -26,7 +26,7 @@ Keep an eye out for future releases, as we'll soon enable backup scheduling from
 
 For more information about working with backups, see [Back up and restore databases](../use/backupRestore.md).
 
-    ![!image](../images/everestschedule_backups.png)
+![!image](../images/schedule_backups.png)
 
 
 
