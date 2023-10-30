@@ -1,6 +1,16 @@
 # Install using Docker Compose (recommended)
 
 
+## Prerequisite
+
+!!! note alert alert-primary "Important"
+    Before starting the installation procedure, keep in mind that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export commannd to set the `KUBECONFIG` environment variable before running the commands in the **Installation** section.
+    
+    ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
+
+## Installation
 To install and provision Percona Everest using Docker Compose:
 {.power-number}
 
@@ -80,13 +90,8 @@ To install and provision Percona Everest using Docker Compose:
     chmod +x everestctl
     ```
 
-9. From the installation wizard, provision and register the Kubernetes cluster in Everest using the following commands. Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, set the `KUBECONFIG` environment variable before running the command.  Additionally, ensure that the Everest URL/endpoint is configured to use the external IP value obtained in step 4:
-  
-  
-    ```sh
-    export KUBECONFIG=~/.kube/config
-    ```
-
+9. From the installation wizard, provision and register the Kubernetes cluster in Everest using one of the following commands, making sure that the Everest URL/endpoint is configured to use the external IP value obtained in step 4:
+    
   
     ```sh
     ./everestctl install operators
