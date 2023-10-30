@@ -164,7 +164,11 @@ nav:
 
   - Use:
       - Provision a database: use/db_provision.md
-      - Back up and restore data: use/backupRestore.md
+      - Back up and restore data: 
+        - About backups: use/AboutBackups.md
+        - Create storage locations: use/CreateStorage.md
+        - Create backups: use/CreateBackup.md
+        - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
 
