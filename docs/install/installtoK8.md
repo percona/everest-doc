@@ -61,18 +61,31 @@ To install and provision Percona Everest to Kubernetes:
         percona-everest-0                                      2/2     Running   2 (10s ago)    10s
         ```
 
-5. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
-   
-    ```sh 
-    kubectl get svc/everest -n percona-everest
-    ```
-    
-    ??? example "Expected output"
-        ```
-        NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-        everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
-        ```
+5.  Access the UI/API using one of the following options for exposing Everest, since by these are not accessible through an external IP by default: 
+    === "Service Type Load Balancer"
+        1. Use the following command to Change the Everest service type to LoadBalancer:
         
+        ```sh
+            kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
+            ```
+            
+        2. Retrieve the external IP address for the Everest service. This is the address used for provisioning the cluster, and from where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default 127.0.0.1:  
+    
+            ```sh 
+            kubectl get svc/everest -n percona-everest
+            ```
+            
+            ??? example "Expected output"
+                ```
+                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+                everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
+                ```
+    === "Port Forwarding"   
+        Use the following command to use Kubectl port-forwarding for connect to Everest without exposing the service:
+        
+        ```sh
+        kubectl port-forward svc/everest 8080:8080 -n percona-everest
+        ```    
 6. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases) to provision Percona Everest.
 7. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
     
