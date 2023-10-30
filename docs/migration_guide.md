@@ -94,7 +94,7 @@ Before getting started with Percona Everest:
     !!! note alert alert-primary "Note"
         Keep the naming consistent across the two Kubernetes clusters.
 
-5. Create a new database cluster using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
+5. [Create a new database cluster](use/db_provision.md) using the webUI. Run through the creation wizard to select resources, set the name, and configure the backup storage and monitoring of the cluster.
 6. Restore data for your database clusters using the operator's backup and restore features.
 
     !!! note alert alert-primary "Note"
