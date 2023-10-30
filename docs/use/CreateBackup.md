@@ -16,7 +16,7 @@ To create a backup now:
 
 ## Schedule a backup
 
-Scheduled a backup when you want your backups to occur automatically at predetermined intervals. This automation reduces the risk of human error and ensures that your data is consistently backed up without requiring your constant intervention.
+Schedule a backup when you want your backups to occur automatically at predetermined intervals. This automation reduces the risk of human error and ensures that your data is consistently backed up without requiring your constant intervention.
 
 To configure a backup schedule:
 {.power-number}
