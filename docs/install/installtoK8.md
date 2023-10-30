@@ -62,10 +62,11 @@ To install and provision Percona Everest to Kubernetes:
         ```
 
 5.  Access the UI/API using one of the following options for exposing Everest, since by these are not accessible through an external IP by default: 
+   
     === "Service Type Load Balancer"
         1. Use the following command to Change the Everest service type to LoadBalancer:
         
-        ```sh
+            ```sh
             kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
             ```
             
@@ -81,11 +82,11 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
                 ```
     === "Port Forwarding"   
-        Use the following command to use Kubectl port-forwarding for connect to Everest without exposing the service:
+        Run the following command to use Kubectl port-forwarding for connecting to Everest without exposing the service:
         
-        ```sh
-        kubectl port-forward svc/everest 8080:8080 -n percona-everest
-        ```    
+            ```sh
+            kubectl port-forward svc/everest 8080:8080 -n percona-everest
+            ```    
 6. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases) to provision Percona Everest.
 7. Rename the downloaded file using the following command and replacing the placeholder `everestctl-darwin-amd64` to match the file downloaded in the previous step:
     
@@ -99,7 +100,7 @@ To install and provision Percona Everest to Kubernetes:
     chmod +x everestctl
     ```
     
-9. From the installation wizard, provision and register the Kubernetes cluster in Everest using one of the following commands, making sure that the Everest URL/endpoint is configured to use the external IP value obtained in step 4:
+9.  From the installation wizard, provision and register the Kubernetes cluster in Everest using one of the following commands, making sure that the Everest URL/endpoint is configured to use the external IP value obtained in step 4:
   
     ```sh
     ./everestctl install operators
