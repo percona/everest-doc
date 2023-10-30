@@ -5,39 +5,18 @@ As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service 
 For more information, see the [Prerequisites](qs-prerequisites.md) section. 
 {.power-number}
 
-1. Create the `percona-everest` namespace:
+1. Run the following command:
 
     ```sh
-    kubectl create namespace percona-everest
+    export SECRETS_ROOT_KEY=$(openssl rand -base64 32)
+    echo "$SECRETS_ROOT_KEY"
     ```
-
-2. Create a kubernetes secret with an auto-generated root key used for encrypting secrets:
-   
-    ```sh
-    ENCODED_SECRETS_ROOT_KEY=$(openssl rand -base64 32 | tr -d '\n' | base64); cat <<EOF | envsubst | kubectl apply -n percona-everest -f -
-    apiVersion: v1
-    kind: Secret
-    metadata:
-        name: everest-secrets-root-key
-    data:
-        secrets-root-key: $ENCODED_SECRETS_ROOT_KEY
-    EOF
-    ```
-    
-    ??? example "Expected output"
-    
-        ```{.text .no-copy}
-        secret/everest-secrets-root-key configured
-        ```
+    This generates a base64-encoded 256-bit key used for secrets encryption. Make
+    sure to securely store this key, without it everest won't be able to access the
+    secrets stored in its internal secrets storage.
 
 
-3. Deploy Everest to Kubernetes:
-
-    ```sh
-    kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
-    ```
-
-4. To install Percona Everest, run the following command:
+2. To install Percona Everest, run the following command:
 
     ```{.bash data-prompt="$"}
     $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/install.sh" | bash
@@ -79,7 +58,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
         2023-09-22T11:37:38Z	info	install/operators.go:793	Connecting your Kubernetes cluster to Everest	{"component": "install/operators"}
         ```
 
-5. The Percona Everest site opens in your browser. Now, you can create databases in Percona Everest.
+3. The Percona Everest site opens in your browser. Now, you can create databases in Percona Everest.
 
     ![!image](../images/everest_site.png)
 
