@@ -148,7 +148,6 @@ extra:
 nav:
   - Welcome to Percona Everest [Alpha]: index.md        
   - Features: features.md
-  - Migration guide: migration_guide.md
   - Quickstart guide:
       - Overview: quickstart-guide/qs-overview.md
       - Prerequisites: 
@@ -156,7 +155,7 @@ nav:
         - quickstart-guide/eks.md
         - quickstart-guide/gke.md
       - Quick install: quickstart-guide/quick-install.md
-
+  - Migration to Percona Everest: migration_guide.md
   - Install:
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md
