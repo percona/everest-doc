@@ -60,7 +60,7 @@ Before getting started with Percona Everest:
 To migrate from PMM DBaaS to Percona Everest:
 {.power-number}
 
-1. [Install](install/installEverest.md) everest.
+1. [Install](quickstart-guide/quick-install.md) everest.
 2. Migrate backup storages from PMM to Percona Everest:
 
     - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section. The **Storage Location** page opens. You can see the storage locations configured on this page.
