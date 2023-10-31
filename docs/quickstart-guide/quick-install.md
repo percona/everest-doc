@@ -1,14 +1,25 @@
-# Install Percona Everest
+# Install Percona Everest using the Quickinstall script
 
 As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest. 
 
 For more information, see the [Prerequisites](qs-prerequisites.md) section. 
 {.power-number}
 
-1. To install Percona Everest, run the following command:
+1. Run the following command:
+
+    ```sh
+    export SECRETS_ROOT_KEY=$(openssl rand -base64 32)
+    echo "$SECRETS_ROOT_KEY"
+    ```
+    This generates a base64-encoded 256-bit key used for secrets encryption. Make
+    sure to securely store this key, without it everest won't be able to access the
+    secrets stored in its internal secrets storage.
+
+
+2. To install Percona Everest, run the following command:
 
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/install.sh" | bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/install.sh" | bash
     ```
 
     !!! note
@@ -16,7 +27,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
         Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, add the `KUBECONFIG` environment variable when running the `install.sh` script. 
     
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.3.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.4.0/install.sh" | KUBECONFIG=<path/to/config/file> bash
     ```
 
     ??? example "Expected output"
@@ -47,7 +58,7 @@ For more information, see the [Prerequisites](qs-prerequisites.md) section.
         2023-09-22T11:37:38Z	info	install/operators.go:793	Connecting your Kubernetes cluster to Everest	{"component": "install/operators"}
         ```
 
-2. The Percona Everest site opens in your browser. Now, you can create databases in Percona Everest.
+3. The Percona Everest site opens in your browser. Now, you can create databases in Percona Everest.
 
     ![!image](../images/everest_site.png)
 
