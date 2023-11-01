@@ -1,9 +1,14 @@
 # Install Percona Everest
 
-!!! note alert alert-primary "Note"
-    The installation instructions in this guide go through all the manual installation and provisioning steps. To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
 
-    [See Percona Everest quickstart guide :material-arrow-right:](../quickstart-guide/qs-overview.md){.md-button}
+The installation instructions in this guide go through all the manual installation and provisioning steps.
+
+To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
+
+For more information, see the [Quickstart guide](../quickstart-guide/qs-overview.md).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/l8wuXVQtnbo?si=W5zqh6qACDB3L26a" title="Percona Everest QuickStart Demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 
 ## Setup
 

@@ -11,3 +11,4 @@ mkdocs-bootstrap-tables-plugin
 mkdocs-htmlproofer-plugin
 mkdocs-meta-descriptions-plugin
 mike
+mkdocs-video
