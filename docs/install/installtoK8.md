@@ -3,7 +3,7 @@
 
 !!! note alert alert-primary "Warning"
     This feature is currently in a technical preview stage, and we recommend using it only for testing purposes! 
-    For production environments, we recommend installing Everest using the Docker Compose procedure, either using the [QuickInstall script](../install/quick-install) or the [manual installation procedure](../install/installUsingDocker).
+    For production environments, we recommend installing Everest using the Docker Compose procedure, either using the [QuickInstall script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/installUsingDocker).
 
 ## Before you start
 
