@@ -24,7 +24,7 @@ To set up a backup schedule, head over to the **Backups** tab in the database vi
 
 Keep an eye out for future releases, as we'll soon enable backup scheduling from the database creation wizard as well.
 
-For more information about working with backups, see [Back up and restore databases](../use/backupRestore.md).
+For more information about working with backups, see [Back up and restore databases](../use/AboutBackups.md).
 
 ![!image](../images/schedule_backups.png)
 
@@ -48,7 +48,7 @@ This ensures that you can quickly generate the resources you need right when cre
 
 There's also a [new manual installation option](../install/installtoK8.md) for setting up Everest on Kubernetes. 
 
-This new installation option is currently in a technical preview stage, and we recommend using it solely for testing purposes! For a more secure and recommended installation process, make sure to install Everest using the Docker Compose procedure, either using the [QuickInstall script](../install/quick-install) or the [manual installation procedure](../install/installUsingDocker).
+This new installation option is currently in a technical preview stage, and we recommend using it solely for testing purposes! For a more secure and recommended installation process, make sure to install Everest using the Docker Compose procedure, either using the [QuickInstall script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/installUsingDocker).
 
 ## Known limitations
 
