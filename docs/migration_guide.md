@@ -45,14 +45,14 @@ Before getting started with Percona Everest:
     kubectl get nodes
     ```
 
-??? example "Expected output"
-    
-    ```{.text .no-copy}
-    NAME                                    STATUS   ROLES    AGE   VERSION
-    gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
-    gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
-    gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
-    ```
+    ??? example "Expected output"
+        
+        ```{.text .no-copy}
+        NAME                                    STATUS   ROLES    AGE   VERSION
+        gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
+        gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
+        gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
+        ```
 
 
 ## Migration procedure
@@ -65,8 +65,8 @@ To migrate from PMM DBaaS to Percona Everest:
 
     - Log in to the PMM UI and navigate to the **Backup > Storage Locations** section. The **Storage Location** page opens. You can see the storage locations configured on this page.
     - Click the downward arrow to see the details of the storage location that are configured.
-    - Log in to Percona Everest and go to the **[Backup Storages](use/backupRestore.md#prepare-storage-location)** section on the UI.
-    - Copy-paste the values from the **details** on the configured storage locations in PMM and paste it to **[Add backup storage](use/backupRestore.md#prepare-storage-location)** page in Percona Everest.
+    - Log in to Percona Everest and go to the **[Backup Storages](use/CreateBackup.md)** section on the UI.
+    - Copy-paste the values from the **details** on the configured storage locations in PMM and paste it to **[Add backup storage](use/CreateStorage.md)** page in Percona Everest.
 
 3. Migrate secrets for database clusters from one Kubernetes cluster to a new cluster using the pattern `everest-secrets-dbclusterName`. 
 
