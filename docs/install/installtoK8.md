@@ -44,7 +44,7 @@ To install and provision Percona Everest to Kubernetes:
 3. Deploy Everest to Kubernetes:
 
     ```sh
-    kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-k8s.yaml -n percona-everest
+    kubectl apply -f https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.1/deploy/quickstart-k8s.yaml -n percona-everest
     ```
 
 4. (Optional) Verify that the services started correctly:

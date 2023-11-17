@@ -14,7 +14,7 @@ Rest assured, access to the raw data is rigorously controlled, and individual us
 
 ## Disable telemetry
 
-Starting with Everest 0.4.0, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to TRUE:
+Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to TRUE:
 {.power-number}
 
 1. When [installing Everest using the quick install script](../quickstart-guide/quick-install.md), set the `DISABLE_TELEMETRY` env variable to **True**: 

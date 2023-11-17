@@ -16,7 +16,7 @@ To install and provision Percona Everest using Docker Compose:
 1. Download the Docker Compose file:
    
     ```
-    curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.0/deploy/quickstart-compose.yml -o quickstart-compose.yml
+    curl https://raw.githubusercontent.com/percona/percona-everest-backend/v0.4.1/deploy/quickstart-compose.yml -o quickstart-compose.yml
     ```
 
 2. Run the following command:
