@@ -49,7 +49,8 @@ To uninstall Everest:
     kubectl delete csv --all -n percona-everest
     ```
 
-6. List ALL CRDs that will be removed:
+6. List ALL CRDs that will be removed using the following command. 
+Keep in mind that this command will exclusively list CRDs linked to Everest and skip any CRDs associated with standalone Percona Operators. This distinction is crucial because if there are instances of standalone Percona Operators existing within any namespace in your Kubernetes environment, you should avoid inadvertently deleting their CRDs.
 
     ```sh
     kubectl get crd -l="operators.coreos.com/percona-server-mongodb-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' &&  kubectl get crd -l="operators.coreos.com/percona-postgresql-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}' && kubectl get crd -l="operators.coreos.com/percona-xtradb-cluster-operator.percona-everest" --ignore-not-found=true --no-headers | awk '{print $1}'
