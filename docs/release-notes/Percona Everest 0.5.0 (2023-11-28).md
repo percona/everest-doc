@@ -29,11 +29,9 @@ This completes the Backup Scheduling functionality and enables you to define a c
 
 We've added a convenient way to copy database passwords. Since clipboard access is restricted in unsecured contexts, this option is only enabled when you access these pages via HTTPS or localhost.
 
-
 Database cluster list            |  Database cluster **Overview** page
 :-------------------------:|:-------------------------:
 ![Cluster list](../images/Cluster_list.png)  |  ![DB_Overview](../images/DB_Overview.png)
-
 
 ### Option to check Everest version
 
@@ -43,5 +41,4 @@ You may notice there's now a Help icon in the upper right corner. It's a handy w
 
 ## Fixed issues
 
-{.power-number}
 - [EVEREST-395](https://jira.percona.com/browse/EVEREST-395) - In specific scenarios, when creating a new database, Everest would reset the specified database name, version, and storage class to automatically generated values. This issue is now fixed.
