@@ -12,9 +12,10 @@ Version 0.5.0 introduces the following enhancements:
 
 This Everest release streamlines the installation workflow by transitioning from Docker Compose to Kubernetes, for easier and more robust deployments. 
 
-Previously confined to Docker containers through Docker Compose, Everest now operates directly within the Kubernetes cluster. This eliminates complexities and restrictions associated with running Everest outside the K8 cluster. Consequently, Everest works not only on public K8 clusters but also on private ones, enhancing its accessibility and adaptability. 
+Previously confined to Docker containers through Docker Compose, Everest now operates directly within the Kubernetes cluster. 
+This eliminates complexities and restrictions associated with running Everest outside the K8 cluster. Consequently, Everest works not only on public K8 clusters but also on private ones, enhancing its accessibility and adaptability. 
 
-To get started with Everest 0.5.0, check the [updated installation procedure](//docs/install/installtoK8.md).
+To install Everest 0.5.0, check the [updated installation procedure](//docs/install/installtoK8.md).
 
 ### Enhanced Backup scheduling
 
@@ -26,11 +27,13 @@ This completes the Backup Scheduling functionality and enables you to define a c
 
 ### Option to copy database password
 
-We've added a convenient way to copy a database password from the Database cluster list and from the Database cluster **Overview** page.
+We've added a convenient way to copy database passwords. Since clipboard access is restricted in unsecured contexts, this option is only enabled when you access these pages via HTTPS or localhost.
 
-Since clipboard access is restricted in unsecured contexts, this option is only enabled when you access these pages via HTTPS or localhost.
 
-![Cluster list](../images/Cluster_list.png) ![DB_Overview](../images/DB_Overview.png)
+Database cluster list            |  Database cluster **Overview** page
+:-------------------------:|:-------------------------:
+![Cluster list](../images/Cluster_list.png)  |  ![DB_Overview](../images/DB_Overview.png)
+
 
 ### Option to check Everest version
 
@@ -42,5 +45,3 @@ You may notice there's now a Help icon in the upper right corner. It's a handy w
 
 {.power-number}
 - [EVEREST-395](https://jira.percona.com/browse/EVEREST-395) - In specific scenarios, when creating a new database, Everest would reset the specified database name, version, and storage class to automatically generated values. This issue is now fixed.
-
-
