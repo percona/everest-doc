@@ -39,6 +39,6 @@ You may notice there's now a Help icon in the upper right corner. It's a handy w
 
 ![Help menu](../images/Help_icon.png)
 
-## Fixed issues
+## Fixed issue
 
-- [EVEREST-395](https://jira.percona.com/browse/EVEREST-395) - In specific scenarios, when creating a new database, Everest would reset the specified database name, version, and storage class to automatically generated values. This issue is now fixed.
+In specific scenarios, when creating a new database, Everest would reset the specified database name, version, and storage class to automatically generated values. This issue is now fixed.
