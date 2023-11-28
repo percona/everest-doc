@@ -148,8 +148,8 @@ extra:
 nav:
   - Welcome to Percona Everest [Alpha]: index.md 
   - Release Notes:
-      - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
       - Percona Everest 0.5.0 (2023-11-328): release-notes/Percona Everest 0.5.0 (2023-11-28).md      
+      - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
   - Features: features.md
   - Quickstart guide:
       - Overview: quickstart-guide/qs-overview.md
