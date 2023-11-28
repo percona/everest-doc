@@ -51,6 +51,6 @@ Before getting started with Percona Everest, we recommend that you:
 
 ### Next steps
 
-Start by installing Everest either using Docker Compose (recommended procedure), or to Kubernetes (experimental): 
+Start by installing Everest: 
 
-[Install using Docker Compose :material-arrow-right:](installUsingDocker.md){.md-button}  [Install to Kubernetes :material-arrow-right:](installtoK8.md){.md-button}
+[Install Everest :material-arrow-right:](installEverest.md){.md-button}
