@@ -53,7 +53,9 @@ export KUBECONFIG=~/.kube/config
         Forwarding from [::1]:8080 -> 8080
         ```
 
-3. The Percona Everest app will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). Now, you can open your browser and create databases in Percona Everest.
+3. The Percona Everest app will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
+
+    Now, you can open your browser and create databases in Percona Everest.
 
     ![!image](../images/everest_site.png)
 
