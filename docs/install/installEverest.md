@@ -14,7 +14,7 @@ export KUBECONFIG=~/.kube/config
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases/latest) to provision Percona Everest. More detailed installation instructions can be found via the [CLI installation documentation](../install/installEverestCLI).
+1. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases/latest) to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
 2. Install Everest and provision the Kubernetes cluster using one of the following commands:
   
@@ -22,7 +22,7 @@ To install and provision Percona Everest to Kubernetes:
     everestctl install
     ```
     
-    This will install all needed components in a namespace called `percona-everest`.
+    This will install all the required components in a namespace called `percona-everest`.
 
     ??? example "Example"
             
@@ -57,11 +57,14 @@ To install and provision Percona Everest to Kubernetes:
         kubectl -n percona-everest delete pod everest-operator-pod-name
         ```
 
-        This will fix the database cluster creation. The issue will be fixed in the upcoming releases.
+        This will fix the database cluster creation. 
+        
+        !!! note alert alert-primary "Note"
+            The issue will be fixed in the upcoming releases.
 
-    * If you don't enable monitoring during this provisioning step then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character and only uses alphanumeric characters or '-'.
+    * If you don't enable monitoring during this provisioning step, then you won't be able to enable it from the UI later. Make sure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character, and only uses alphanumeric characters or '-'.
 
-    * If you are using a PMM server instance with a self-signed certificate you cannot use HTTPS in the PMM URL endpoint.
+    * If you are using a PMM server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
 
 
 3. (Optional) Verify that the services started correctly:
@@ -109,4 +112,4 @@ To install and provision Percona Everest to Kubernetes:
             everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:31611/TCP   10s
             ```
 
-5. Go the IP address configured for the Everest service at step 4 to launch the Everest UI and create your first database cluster. The default one used in this example is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+5. Go to the IP address configured for the Everest service at step 4 to launch the Everest UI and create your first database cluster. The default one used in this example is [http://127.0.0.1:8080](http://127.0.0.1:8080).
