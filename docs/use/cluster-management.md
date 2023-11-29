@@ -38,7 +38,7 @@ Cluster management involves the administration and maintenance of database clust
 
         To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
 
-4. [Back up and restore](../use/backupRestore.md)
+4. [Back up and restore](../use/AboutBackups.md)
 
 Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
 
