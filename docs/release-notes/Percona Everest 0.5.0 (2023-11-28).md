@@ -15,7 +15,7 @@ This Everest release streamlines the installation workflow by transitioning from
 Previously confined to Docker containers through Docker Compose, Everest now operates directly within the Kubernetes cluster. 
 This eliminates complexities and restrictions associated with running Everest outside the K8 cluster. Consequently, Everest works not only on public K8 clusters but also on private ones, enhancing its accessibility and adaptability. 
 
-To install Everest 0.5.0, check the [updated installation procedure](//docs/install/installtoK8.md).
+To install Everest 0.5.0, check the [updated installation procedure](../install/installtoK8.md).
 
 ### Enhanced Backup scheduling
 
