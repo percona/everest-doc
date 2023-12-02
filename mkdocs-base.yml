@@ -148,6 +148,7 @@ extra:
 nav:
   - Welcome to Percona Everest [Alpha]: index.md 
   - Release Notes:
+      - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona Everest 0.5.0 (2023-11-28).md      
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
   - Features: features.md
   - Quickstart guide:
@@ -160,8 +161,8 @@ nav:
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
-      - Install using Docker Compose: install/installUsingDocker.md
-      - Install to Kubernetes: install/installtoK8.md
+      - Install Percona Everest: install/installEverest.md
+      - Install Percona Everest CLI: install/installEverestCLI.md
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
