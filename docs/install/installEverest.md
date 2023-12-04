@@ -1,6 +1,5 @@
 # Install Everest
 
-
 ## Before you start
 
 Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
@@ -65,7 +64,6 @@ To install and provision Percona Everest to Kubernetes:
     * It is crucial to enable monitoring during the provisioning step. If you skip this step, you won't be able to enable it later from the user interface. Ensure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character, and only uses alphanumeric characters or '-'.
 
     * If using a PMM server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
-
 
 3. (Optional) Verify that the services have started properly:
     

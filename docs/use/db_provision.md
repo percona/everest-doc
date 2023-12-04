@@ -2,7 +2,13 @@
 
 Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform. 
 
-The steps to provision a new database are:
+## Video tutorial
+
+Learn about creating databases and backups by checking the instructions under this topic or by following the video tutorial below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+To provision a new database:
 {.power-number}
 
 1. Log into the Percona Everest UI.
@@ -34,3 +40,5 @@ The steps to provision a new database are:
 13. Click **Go to list of my databases** to see the database that you provisioned.
 
     ![!image](../images/everest_provisioned_db.png)
+
+    

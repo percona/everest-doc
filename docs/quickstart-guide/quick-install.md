@@ -1,13 +1,19 @@
 # Install Percona Everest using the Quickinstall script
 
-As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest. 
+## Video tutorial
 
-For more information, see the [Prerequisites](qs-prerequisites.md) section. 
+Learn about installing Percona Everest via the Quick-Install script by checking the instructions under this topic or by following the video tutorial below.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest.
+
+For more information, see the [Prerequisites](qs-prerequisites.md) section.
 {.power-number}
 
 ## Before you start
 
-Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
+Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
     
 ```sh
 export KUBECONFIG=~/.kube/config
