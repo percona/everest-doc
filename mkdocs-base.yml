@@ -157,7 +157,7 @@ nav:
         - quickstart-guide/qs-prerequisites.md
         - quickstart-guide/eks.md
         - quickstart-guide/gke.md
-      - Quick install: quickstart-guide/quick-install.md
+      - Quick-Install: quickstart-guide/quick-install.md
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md

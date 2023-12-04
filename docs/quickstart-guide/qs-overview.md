@@ -1,6 +1,6 @@
 # Overview
 
-This section helps quickly install and start working with Percona Everest uusing the Quick Installation script. In this section, you can find the following information:
+This section helps quickly install and start working with Percona Everest using the Quick-Install script. In this section, you can find the following information:
 
 * Prerequisites required to install Percona Everest:
 
@@ -8,7 +8,7 @@ This section helps quickly install and start working with Percona Everest uusing
 
      * Instructions for creating Kubernetes cluster on Google Kubernetes Engine (GKE)
 
-* Percona Everest quick installation script.
+* Percona Everest Quick-Install script.
 
 <!-- 
 * Instruction on configuring the database health monitoring with PMM
