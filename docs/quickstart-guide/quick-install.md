@@ -1,11 +1,5 @@
 # Install Percona Everest using the Quick-Install script
 
-## Video tutorial
-
-Learn about installing Percona Everest via the Quick-Install script by checking the instructions under this topic or by following the video tutorial below.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
 ## Procedure
 
 As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest.
@@ -67,7 +61,11 @@ export KUBECONFIG=~/.kube/config
 
     ![!image](../images/everest_site.png)
 
+## Video tutorial
 
+You can also learn about installing Percona Everest via the Quick-Install script by following the video tutorial below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ## Next steps
 
 [Create a database :material-arrow-right:](../use/db_provision.md){.md-button}
