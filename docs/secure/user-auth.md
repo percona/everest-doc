@@ -4,7 +4,7 @@ Percona Everest provides user authentication to ensure that only authorized user
 
 To access Percona Everest:
 
-1. Copy the unique password that is displayed on the terminal while installing Percona Everest.
+1. Copy the unique password that is displayed on the terminal while [installing Percona Everest](../install/installEverest.md).
 
     ![!image](../images/everest_user-auth-token.png)
 
