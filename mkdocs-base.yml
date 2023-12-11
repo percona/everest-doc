@@ -179,7 +179,7 @@ nav:
   - Configure:
       - Configure database engine: configure/db_engine_config.md
   - Secure:
-      - Secure: secure/user_auth.md
+      - Secure: secure/user-auth.md
   - API: API.md
   - Reference:
       - Telemetry on Percona Everest: reference/telemetry.md
