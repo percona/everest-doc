@@ -21,9 +21,8 @@ If you forget to copy the password while installing Everest or misplace it, a so
 
 ??? example "Expected output"
 
-    ```{.text .no-copy}  
-    ? Your new password is:
-    ? Xw6lSUKXm6LJ8CusbJ4X2PjpRfWAiydV2zS90p7QPifz4QakJM2AISxuS97zriM9qfZtoPBjWbgciDXtXmaHSHv87cGBG7idNjUKsMdUP7NgjBRgCTXhDiMH7kvMGVfZ
+       ? Your new password is:
+       ? Xw6lSUKXm6LJ8CusbJ4X2PjpRfWAiydV2zS90p7QPifz4QakJM2AISxuS97zriM9qfZtoPBjWbgciDXtXmaHSHv87cGBG7idNjUKsMdUP7NgjBRgCTXhDiMH7kvMGVfZ
 
 
 
