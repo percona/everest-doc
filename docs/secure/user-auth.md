@@ -25,12 +25,11 @@ You can reset the password  by executing the following command:
 go run cmd/everest/main.go password reset
 ```
 
-
 ??? example "Expected output"
-
+    ```
         Your new password is:
         Xw6lSUKXm6LJ8CusbJ4X2PjpRfWAiydV2zS90p7QPifz4QakJM2AISxuS97zriM9qfZtoPBjWbgciDXtXmaHSHv87cGBG7idNjUKsMdUP7NgjBRgCTXhDiMH7kvMGVfZ
-
+    ```
 
 
 
