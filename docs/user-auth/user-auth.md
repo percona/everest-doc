@@ -12,7 +12,7 @@ To access Percona Everest:
 
 3. Enter the password that you copied in step 1.
 
-4. Click **Login**.
+4. Click **Log in**.
 
 
 ## Reset password
