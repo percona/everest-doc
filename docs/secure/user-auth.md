@@ -19,10 +19,11 @@ To access Percona Everest:
 
 If you forget to copy the password while installing Everest or misplace it, a solution is available to reset the password and receive a new one. You can reset the password  by executing the following command:
 
-    ??? example "Expected output"
-            
-            ? Your new password is:
-            ? Xw6lSUKXm6LJ8CusbJ4X2PjpRfWAiydV2zS90p7QPifz4QakJM2AISxuS97zriM9qfZtoPBjWbgciDXtXmaHSHv87cGBG7idNjUKsMdUP7NgjBRgCTXhDiMH7kvMGVfZ
+??? example "Expected output"
+
+    ```{.text .no-copy}  
+    ? Your new password is:
+    ? Xw6lSUKXm6LJ8CusbJ4X2PjpRfWAiydV2zS90p7QPifz4QakJM2AISxuS97zriM9qfZtoPBjWbgciDXtXmaHSHv87cGBG7idNjUKsMdUP7NgjBRgCTXhDiMH7kvMGVfZ
 
 
 
