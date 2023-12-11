@@ -10,7 +10,7 @@ To access Percona Everest:
 
 2. Navigate to the Everest UI.
 
-3. Enter the token that you copied in step 1.
+3. Enter the authorization token that you copied in step 1.
 
     ![!image](../images/everest_user-auth-login.png)
 
