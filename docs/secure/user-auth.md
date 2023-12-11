@@ -6,7 +6,7 @@ To access Percona Everest:
 
 1. Copy the unique password that is displayed on the terminal while installing Percona Everest.
 
-![!image](../images/everest_user-auth-token.png)
+    ![!image](../images/everest_user-auth-token.png)
 
 2. Log in to the Everest UI.
 
