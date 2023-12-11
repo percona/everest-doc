@@ -17,7 +17,14 @@ To access Percona Everest:
 
 ## Reset password
 
-If you forget to copy the password while installing Everest or misplace it, a solution is available to reset the password and receive a new one. You can reset the password  by executing the following command:
+If you forget to copy the password while installing Everest or misplace it, a solution is available to reset the password and receive a new one. 
+
+You can reset the password  by executing the following command:
+
+```sh
+go run cmd/everest/main.go password reset
+```
+
 
 ??? example "Expected output"
 
