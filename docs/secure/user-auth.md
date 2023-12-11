@@ -19,7 +19,7 @@ To access Percona Everest:
 
 If you forget to copy the authorization toke while installing Everest or misplace it, a solution is available to reset the token and receive a new one. 
 
-You can reset the authorization toke by executing the following command:
+You can reset the authorization token by executing the following command:
 
 ```sh
 go run cmd/everest/main.go password reset
