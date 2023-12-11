@@ -4,22 +4,22 @@ Percona Everest provides user authentication to ensure that only authorized user
 
 To access Percona Everest:
 
-1. Copy the unique password that is displayed on the terminal while [installing Percona Everest](../install/installEverest.md).
+1. Copy the authorization token that is displayed on the terminal while [installing Percona Everest](../install/installEverest.md).
 
     ![!image](../images/everest_user-auth-token.png)
 
 2. Log in to the Everest UI.
 
-3. Enter the password that you copied in step 1.
+3. Enter the token that you copied in step 1.
 
 4. Click **Log in**.
 
 
 ## Reset password
 
-If you forget to copy the password while installing Everest or misplace it, a solution is available to reset the password and receive a new one. 
+If you forget to copy the authorization toke while installing Everest or misplace it, a solution is available to reset the token and receive a new one. 
 
-You can reset the password  by executing the following command:
+You can reset the authorization toke by executing the following command:
 
 ```sh
 go run cmd/everest/main.go password reset
