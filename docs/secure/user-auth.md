@@ -3,6 +3,7 @@
 Percona Everest provides user authentication to ensure that only authorized users can access the databases hosted on Percona Everest. Securing access to these databases is crucial to safeguard sensitive data and restrict database access to authorized users only. 
 
 To access Percona Everest:
+{.power-number}
 
 1. Copy the authorization token that is displayed on the terminal while [installing Percona Everest](../install/installEverest.md).
 
@@ -27,6 +28,7 @@ go run cmd/everest/main.go password reset
 ```
 
 ??? example "Expected output"
+
     ```
     Here's your authorization token for accessing the Everest UI and API:
 
