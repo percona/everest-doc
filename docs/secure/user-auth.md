@@ -19,7 +19,7 @@ To access Percona Everest:
 4. Click **Log in**.
 
 
-## Reset password
+## Reset authorization token
 
 If you forget to copy the authorization token while installing Everest or misplace it, you can reset the token by executing the following command:
 
