@@ -26,7 +26,8 @@ If you forget to copy the authorization token while installing Everest or mispla
 go run cmd/everest/main.go password reset
 ```
 
-??? example "Expected output"    
+??? example "Expected output"
+    ```
     Here's your authorization token for accessing the Everest UI and API:
 
     74xm9CdEAD7iVtsqolBsSMNXvJHrMpJekUpPmZhXCAbGsMMFJVrGe7MyCvSV2qhSAgLMiTVRUKn363QTzVJNFL6a8cY4MPTwbb3rO87joikqvAHnQeyrDLZLSsglHmCP
@@ -34,6 +35,7 @@ go run cmd/everest/main.go password reset
     Store this token securely as you will not be able to retrieve it later. If you ever need to reset it, use the following command:
 
     everestctl token reset
+    ```
 
 
 
