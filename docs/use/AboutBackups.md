@@ -8,7 +8,7 @@ To ensure that you can recover data in such events, it is critical to back up yo
 
 ## Supported setups
 
-Everest enables you to create and restore on-demand and scheduled backups. Future releases will also add Point-in-Time-Recovery functionality.
+Everest enables you to create and restore on-demand, scheduled and Point-in-Time-Recovery (PITR) backups.
 
 ## Start here
 
