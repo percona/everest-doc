@@ -41,6 +41,9 @@ To install and provision Percona Everest to Kubernetes:
     everestctl install --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
     ```
 
+    !!! note alert alert-primary "Important"
+        Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
+    
     ### Limitations
         
     * If the Everest CLI fails to install the operators, do the following:
