@@ -8,14 +8,14 @@ Percona Everest is an open source private database-as-a-service that helps devel
 
 Version 0.6.0 introduces the following enhancements:
 
-### Point-in-Time Recovery (PITR) for Highly Available database clusters
+### Point-in-Time Recovery (PITR) for finer backup granularity
 
-In addition to on-demand and scheduled backups, Everest now also offers PITR functionality to restore databases from past timestamps on a new cluster.
+In addition to on-demand and scheduled backups, Everest now also offers PITR functionality to restore databases from past timestamps on the same cluster.
 
 PITR works by constantly backing up your database transaction logs following an initial full backup of the database. This enables you to:
 
 - Handle incorrect database writes by rolling back the database to a state before the error occurred
-- Minimize the potential for data loss by enabling very specific recovery points
+- Minimize the potential for data loss by enabling very specific recovery points  
 - Fulfill historical data auditing requirements to comply with laws and regulations
 
 For now, PITR is only available for MySQL databases. Future releases will enable this functionality for MongoDB and PostgreSQL databases as well.
