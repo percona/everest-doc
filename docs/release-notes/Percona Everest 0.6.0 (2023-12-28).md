@@ -14,3 +14,9 @@ We have taken a significant step towards ensuring the security of Percona Everes
 
 If you’re looking to dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/secure/user-auth.html).
 
+
+## Dark mode for an enhanced user experience
+
+We are excited to announce that the latest version of Percona Everest 0.6.0 introduces a new feature called Dark Mode. This feature enables you to switch the color scheme of the Percona Everest user interface from a predominantly light or white background to a predominantly dark one. 
+
+Dark Mode gives you a more comfortable and easy-on-the-eyes visual experience while navigating through Percona Everest. To use this feature, simply toggle it on or off from the UI. Once enabled, the color palette of the user interface changes to a darker shade, enhancing the overall user experience.
