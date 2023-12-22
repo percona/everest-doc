@@ -6,7 +6,7 @@ Percona Everest is an open source private database-as-a-service that helps devel
 
 ## Release highlights
 
-Version 0.5.0 introduces the following enhancements:
+Version 0.6.0 introduces the following enhancements:
 
 ## Secure access through user authentication
 
