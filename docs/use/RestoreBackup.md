@@ -1,6 +1,6 @@
 # Restore the database from a previously saved backup
 
-Database backups and data replication are complementary components of an effective disaster recovery strategy. 
+Database backups and data replication are complementary components of an effective disaster recovery strategy.
 
 Everest enables you to use backups to either create a new database or restore the backup data to the original database. Choosing between these two options often depends on the specific scenario, the urgency of recovery, the impact on ongoing operations, the need for data isolation, and the purpose of the restoration (such as testing, recovery from corruption, or analysis).
 
@@ -9,7 +9,7 @@ Everest enables you to use backups to either create a new database or restore th
 Restoring to the same cluster is useful in the following scenarios:
 
 - **When restoring from a Point-in-time recovery (PITR) timestamp**: Currently, PITR doesn't support restoration to a new database, making the same cluster restoration essential.
-- **For faster recovery**: It's typically quicker to restore data to an existing database as it eliminates the need for creating a new database structure.
+- **For faster recovery**: It's typically quicker to restore data to an existing database as it eliminates the need for creating a new database deployment.
 - **Database consistency:** Maintains the same database ID, configurations, and dependencies, ensuring consistency within the existing environment.
 
 To restore a database from a backup:
@@ -46,4 +46,3 @@ Storage classes define what storage configuration and features will be used for 
 6. On the **Advanced Configurations** page, enable external access and database engine parameters by turning the toggle button on. For more information on configuring specific database parameters, see the [MySQL](https://dev.mysql.com/doc/refman/8.0/en/option-files.html){:target="_blank"}, [MongoDB](https://www.mongodb.com/docs/manual/reference/configuration-options){:target="_blank"}, and [PostgreSQL](https://www.postgresql.org/docs/current/config-setting.html#CONFIG-SETTING-CONFIGURATION-FILE){:target="_blank"} configuration documentation.
 7. If you've enabled monitoring during CLI provisioning, this option will show as active on the **Monitoring** page and you can disable it if required.
 8. Click **Create database**.
-
