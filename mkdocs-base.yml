@@ -170,7 +170,8 @@ nav:
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Create storage locations: use/CreateStorage.md
-        - Create backups: use/CreateBackup.md
+        - Create on-demand and scheduled backups: use/CreateOnDemand.md
+        - Enable Point-in-time recovery (PITR): use/EnablePITR.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md

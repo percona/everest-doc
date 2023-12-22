@@ -42,5 +42,5 @@ To edit a schedule that is currently generating backup artifacts:
 4. Update the schedule and click **Save**.
 
 ## Next step
-[Create Point-in-time recovery backups :material-arrow-right:](CreatePITR.md){.md-button}
+[Enable Point-in-time recovery :material-arrow-right:](CreatePITR.md){.md-button}
 [Restore backups :material-arrow-right:](RestoreBackup.md){.md-button}
