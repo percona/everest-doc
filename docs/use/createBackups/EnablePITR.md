@@ -8,7 +8,7 @@ PITR complements on-demand and scheduled backup strategies by providing finer ba
 
 Restoring databases up to a specific moment in time involves retrieving data from a backup snapshot and replaying all subsequent events that occurred until a specified moment using oplog slices.
 
-When PITR and backups are enabled (either on-demand or scheduled), Everest starts capturing successive oplog slices at intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR oplogs.
+When PITR and backups are enabled (either on-demand or scheduled), Everest starts capturing successive database transaction logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR transaction logs.
 
 Since Everest saves oplog slices and streams them into your storage between scheduled task runs, scheduling frequent PITR backups is not necessary. You can use the available oplog slices in your storage to restore a backup to any moment between snapshots.
 
