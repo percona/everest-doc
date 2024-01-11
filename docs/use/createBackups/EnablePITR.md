@@ -20,7 +20,7 @@ Currently, PITR is only available for MySQL databases. Future releases will enab
 
 ### Prerequisites
 
-Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available AWS S3-compatible location for storing backups. Otherwise, [create a backup location](../use/CreateBackup.md) so Everest can store PITR artifacts for the database.
+Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available AWS S3-compatible location for storing backups. Otherwise, [create a backup location](../CreateStorage.md) so Everest can store PITR artifacts for the database.
 
 To enable PITR:
 {.power-number}

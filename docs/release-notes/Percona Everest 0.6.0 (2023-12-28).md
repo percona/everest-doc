@@ -24,7 +24,7 @@ To get started, enable the new PITR option on the database creation wizard:
 
 ![PITR](../images/PITR.PNG)
 
-For more information about working with PITR backups, see [Enable Point-in-time Recovery](../use/EnablePITR.md).
+For more information about working with PITR backups, see [Enable Point-in-time Recovery](../use/createBackups/EnablePITR.md).
 
 ### Secure access through user authentication
 
