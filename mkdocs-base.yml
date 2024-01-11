@@ -148,6 +148,7 @@ extra:
 nav:
   - Welcome to Percona Everest [Alpha]: index.md 
   - Release Notes:
+      - Percona Everest 0.6.0 (2023-12-28): release-notes/Percona Everest 0.6.0 (2023-12-28).md
       - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona Everest 0.5.0 (2023-11-28).md      
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
   - Features: features.md
@@ -170,13 +171,15 @@ nav:
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Create storage locations: use/CreateStorage.md
-        - Create backups: use/CreateBackup.md
+        - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
+        - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
 
   - Configure:
       - Configure database engine: configure/db_engine_config.md
+  - Secure: secure/user-auth.md
   - API: API.md
   - Reference:
       - Telemetry on Percona Everest: reference/telemetry.md
