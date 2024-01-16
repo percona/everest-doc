@@ -38,7 +38,7 @@ To install and provision Percona Everest to Kubernetes:
     Alternatively, you can install Everest and provision the Kubernetes cluster by running the installation in headless mode:
         
     ```
-    everestctl install --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --monitoring.enable=true --monitoring.type=pmm --monitoring.new-instance-name=my-pmm --monitoring.pmm.endpoint=http://127.0.0.1 --monitoring.pmm.username=admin --monitoring.pmm.password=admin  --skip-wizard
+    everestctl install --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
 
     !!! note alert alert-primary "Important"
