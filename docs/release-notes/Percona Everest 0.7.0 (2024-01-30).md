@@ -12,10 +12,18 @@ We're excited to announce that Percona Everest is now in Beta!
 
 Under development for the past five months and in testing since October 2023, we’re now taking Percona Everest public, making it open for anyone who wants to explore our Cloud Native database platform.
 
-## Point-in-Time Recovery (PITR) for MongoDB  
+## Point-in-Time Recovery (PITR) for MongoDB databases
 
-With this Beta release, we are also expanding Percona Everest's PITR capabilities to include MongoDB databases. Now, you can also restore MongoDB databases from past timestamps 
+We're expanding Percona Everest's PITR capabilities to include MongoDB databases.
+
+You can now also restore MongoDB databases to specific points in time within the same cluster. This gives you more control over your MongoDB environments and more options for data recovery.
+
+Future releases will cover PITR support for PostgreSQL databases and PITR restores to different clusters.
 
 ![Alt text](../images/PITR_Mongo.png)
 
 
+Known issue
+After restoring a MongoDB database, PITR does not resume automatically. 
+
+After restoring a MongoDB database from a point in time, PITR requires a full backup to resume after a restore.

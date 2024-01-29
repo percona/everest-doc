@@ -20,6 +20,14 @@ To restore a database from a backup:
 3. In the **Restore database** popup, specify whether you want to restore from a backup artifact or from a PITR timestamp, in which case you can select the specific recovery point from the drop-down menu.
 4. Select **Restore** to restore the backup of your database.
 
+### Post-restore steps for MongoDB
+
+A point-in-time restore operation changes the timeline of oplog events. Therefore, all oplog slices made after the restore timestamp and before the last backup become invalid. To resume PITR after the restore is complete, do the following:
+
+1. Make a new full backup to serve as the starting point for oplog updates.
+
+2. Re-enable PITR recovery to resume saving oplog slices. 
+
 ## Restore backup to a new database
 
 There are specific situations that require the creation of a new database from a backup instead of restoring the data to the original database:
