@@ -26,12 +26,6 @@ To install and provision Percona Everest to Kubernetes:
     ??? example "Example"
             
             ? Namespace to deploy Everest to percona-everest
-            ? Do you want to enable monitoring? Yes
-            ? Select monitoring instance: Add new monitoring instance
-            ? PMM URL Endpoint http://127.0.0.1
-            ? Username admin
-            ? Password *****
-            ? Name for the new monitoring instance my-pmm
             ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
             
 
