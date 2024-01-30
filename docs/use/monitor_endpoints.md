@@ -12,9 +12,9 @@ Here are some key values you'll get with monitoring of Percona Everest:
 
 ## Prerequisites
 
-To use monitoring in Percona Everest you should have a PMM instance up and running.
+To use monitoring in Percona Everest, you should have a PMM instance up and running.
 
-For information on installing PMM, see [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
+For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
 
 ## Add monitoring from the UI
 
@@ -24,7 +24,7 @@ For information on installing PMM, see [documentation](https://docs.percona.com/
 To add monitoring in Percona Everest from the UI:
 {.power-number}
 
-1. From the Percona Everest Homepage navigate to **Settings > Monitoring endpoints**. **Add monitoring endpoint** dialogue box opens.
+1. From the Percona Everest Homepage, navigate to **Settings > Monitoring endpoints**. **Add monitoring endpoint** dialogue box opens.
 
 2. On the **Add monitoring endpoint screen**, enter a PMM instance name. In the **User** and **Password** field, enter the credentials received upon installing PMM. In the **Endpoint** field, enter the PMM URL.
 
@@ -40,11 +40,10 @@ To add monitoring in Percona Everest from the UI:
 To edit a monitoring endpoint from Percona Everest UI:
 {.power-number}
 
-1. From the Percona Everest Homepage navigate to **Settings > Monitoring endpoints**.
+1. From the Percona Everest Homepage, navigate to **Settings > Monitoring endpoints**.
 
-2. Click on the ellipsis (three dots) next to the endpoint that you need to edit. **Edit monitoring endpoint** dialogue box opens.
+2. Click on the ellipsis (three dots) next to the endpoint you need to edit. The **Edit monitoring endpoint** dialogue box opens.
 
-    ![!image](../images/everest_endpoint_edit.png)
 
 3. Click **Add**.
 
@@ -66,13 +65,13 @@ To edit a monitoring endpoint from Percona Everest UI:
 
 2. Enter the following information on the CLI:
 
-    - 'Everest URL Endpoint' - URL of the Everest instance
-    - 'Everest Token' - The authorization token received while installing Everest
-    - 'PMM URL Endpoint' - URL of the PMM instance
-    - 'Username and Password' - Credentials for the PMM instance
-    - 'Name for the new monitoring instance '- Any name that you want to give to the monitoring instance
+    - **Everest URL Endpoint** - URL of the PerconaEverest instance
+    - **Everest Token** - The authorization token received while installing Percona Everest
+    - **PMM URL Endpoint** - URL of the PMM instance
+    - **Username and Password** - Credentials for the PMM instance
+    - **Name for the new monitoring instance**- Any name that you want to give to the monitoring instance
     
-3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be added on this page.
+3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be added to this page.
 
 
 
