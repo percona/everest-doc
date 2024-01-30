@@ -4,17 +4,21 @@ PITR maintains versions of your database from past timestamps, serving as a safe
 
 PITR complements on-demand and scheduled backup strategies by providing finer backup granularity with more specific recovery points for restoring data to the same cluster.
 
-## How it works
-
-Restoring databases up to a specific moment in time involves retrieving data from a backup snapshot and replaying all subsequent events that occurred until a specified moment using oplog slices.
-
-When PITR and backups are enabled (either on-demand or scheduled), Everest starts capturing successive database transaction logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR transaction logs.
-
-Since Everest saves transaction logs and streams them into your storage between scheduled task runs, scheduling frequent backups is not necessary. You can use the available transaction logs in your storage to restore a backup to any moment between snapshots.
-
 ## Supported scenarios
 
-Currently, PITR is only available for MySQL databases. Future releases will enable this functionality for MongoDB and PostgreSQL databases as well.
+Currently, PITR is only available for restoring MySQL and MongoDB databases to the same cluster. Future releases will cover PITR support for PostgreSQL databases and PITR restores to different clusters.
+
+## How it works
+
+Restoring databases up to a specific moment in time involves retrieving data from a backup snapshot and replaying all subsequent events that occurred until a specified moment using log slices.
+
+When PITR and backups are enabled (either on-demand or scheduled), Percona Everest starts capturing successive database logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR logs.
+
+Since Everest saves logs and streams them into your storage between scheduled task runs, scheduling frequent backups is not necessary. You can use the available logs in your storage to restore a backup to any moment between snapshots.
+
+## PITR upload intervals
+
+By default, Everest uploads PITR logs every minute for MySQL databases and every ten minutes for MongoDB databases. If you wish to adjust these default intervals, you can easily do so through the Everest API.
 
 ## Enable Point-in-time recovery
 
@@ -27,10 +31,10 @@ To enable PITR:
 
 === "When creating a new database"
 
-    1. On the Percona Everest homepage, click **Create Database** to display the database creation wizard.
+    1. On the Everest homepage, click **Create Database** to display the database creation wizard.
     2. Fill in the details of your database on the first steps of the wizard.
     3. Navigate to the **Backups** page, and make sure to enable and configure a backup schedule. 
-    4. Click **Next** to go to the **Point-in-time recovery (PITR)** page where you can enable PITR and specify a location for storing the PITR backups and oplogs. 
+    4. Click **Next** to go to the **Point-in-time recovery (PITR)** page where you can enable PITR and specify a location for storing the PITR backups and logs. 
     5. Complete the setup wizard to create the new database with PITR enabled. 
 
 === "When editing an existing database"

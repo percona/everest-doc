@@ -20,14 +20,14 @@ export KUBECONFIG=~/.kube/config
 1. To install Percona Everest, run the following command:
 
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.6.0/install.sh" | bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/install.sh" | bash
     ```
 
     ??? example "Expected output"
 
         ```{.text .no-copy}
         Downloading the latest release of Percona Everest CLI
-        https://github.com/percona/percona-everest-cli/releases/download/v0.6.0/everestctl-linux-amd64
+        https://github.com/percona/percona-everest-cli/releases/download/v0.7.0/everestctl-linux-amd64
         KUBECONFIG is not set. Using default k8s cluster
         Provisioning Everest with monitoring disabled
         If you want to enable monitoring please refer to the everest installation documentation.
