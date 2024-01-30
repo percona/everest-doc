@@ -24,7 +24,7 @@ For information on installing PMM, see the [documentation](https://docs.percona.
 To add monitoring in Percona Everest from the UI:
 {.power-number}
 
-1. From the Percona Everest Homepage, navigate to **Settings > Monitoring endpoints**. **Add monitoring endpoint** dialogue box opens.
+1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**. The **Add monitoring endpoint** dialogue box opens.
 
 2. On the **Add monitoring endpoint screen**, enter a PMM instance name. In the **User** and **Password** field, enter the credentials received upon installing PMM. In the **Endpoint** field, enter the PMM URL.
 
@@ -36,7 +36,7 @@ To add monitoring in Percona Everest from the UI:
 To edit a monitoring endpoint from Percona Everest UI:
 {.power-number}
 
-1. From the Percona Everest Homepage, navigate to **Settings > Monitoring endpoints**.
+1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**.
 
 2. Click on the ellipsis (three dots) next to the endpoint you need to edit. The **Edit monitoring endpoint** dialogue box opens.
 
@@ -68,7 +68,7 @@ To add monitoring in Percona Everest from the CLI:
     - **Username and Password** - Credentials for the PMM instance
     - **Name for the new monitoring instance** - Any name you want to give to the monitoring instance
     
-3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be dispalyed on this page.
+3. Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**. This monitoring instance will be dispalyed on this page.
 
 
 
@@ -143,7 +143,7 @@ To add monitoring in Percona Everest from the CLI:
         everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
         ```
 
--   If using a PMM server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
+-   If using a PMM server instance with a self-signed certificate, you cannot use **HTTPS** in the PMM URL endpoint.
 
 
 
