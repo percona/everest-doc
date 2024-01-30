@@ -79,7 +79,7 @@ To edit a monitoring endpoint from Percona Everest UI:
 ### Limitations
 
 !!! warning "warning"
-    The `everestctl monitoring enable` command is not very intuitive. There are certain limitations when using this command which will be fixed in the upcoming release.
+    There are few limitations when using the `everestctl monitoring enable` command which will be fixed in the upcoming release.
 
 
 
