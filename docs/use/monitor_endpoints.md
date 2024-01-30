@@ -18,7 +18,7 @@ For information on installing PMM, see the [documentation](https://docs.percona.
 
 ## Add monitoring from the UI
 
-!!! Tip "Recommended"
+!!! warning "Important"
     When setting up DB cluster monitoring, using endpoints added through the user interface will result in a limited selection of metrics being sent to PMM. To receive the full range of metrics (including k8s data points), configure monitoring endpoints using the [Everest CLI](../install/installEverestCLI.md) `everestctl monitoring enable` command.
 
 To add monitoring in Percona Everest from the UI:
@@ -105,7 +105,7 @@ To edit a monitoring endpoint from Percona Everest UI:
 
     **Scenario 1**
 
-    If you haven't configured monitoring points in the UI, then leave the **Registered instance name** field empty.
+    If you haven't configured monitoring points in the UI yet, then leave the **Registered instance name** field empty.
 
     ```sh
     everestctl monitoring enable
