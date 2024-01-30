@@ -90,7 +90,6 @@ The `everestctl monitoring enable` command has the following limitations:
     
     This ensures that a new port-forwarding tunnel will be created if the connection is lost due to a Percona Everest restart.
 
-
 === "**Limitation 2**"
 
     The `everestctl monitoring enable` command is not very intuitive. 
@@ -117,7 +116,7 @@ The `everestctl monitoring enable` command has the following limitations:
         ? Name for the new monitoring instance - dev-pmm
         ```
    
-    If you are running the command in wizard mode or headless mode (`--skip-wizard` flag):
+    If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
 
     ```sh
     everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --new-instance-name='dev-pmm' --pmm.endpoint='http://127.0.0.1' --pmm.username='admin' --pmm.password=<password> --skip-wizard
@@ -126,7 +125,7 @@ The `everestctl monitoring enable` command has the following limitations:
 
     **Scenario 2**
     
-    If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics). In this case, enter a value in **Registered instance name** field.
+    If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in **Registered instance name** field.
 
 
     ??? example "Output"
@@ -138,7 +137,7 @@ The `everestctl monitoring enable` command has the following limitations:
         ? Registered instance name dev-pmm
         ```
 
-    If you are running the command in wizard mode or headless mode (`--skip-wizard` flag):
+    If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
 
     ```sh
     everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
