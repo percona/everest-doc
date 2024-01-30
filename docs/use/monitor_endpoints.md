@@ -86,10 +86,10 @@ The `everestctl monitoring enable` command is not very intuitive the and you can
 
     **Solution**
 
-    Stop the port-forwarding command that you ran during the installation and run this command: 
+    Stop the port-forwarding command that you ran during the installation and run the following command before you run the `everestctl monitoring enable` command.
 
     ```sh
-    kubectl port-forward svc/everest 8080:8080 -n percona-everest before running everestctl monitoring enable.
+    kubectl port-forward svc/everest 8080:8080 -n percona-everest 
     ```
     This ensures that if the connection is dropped due to an everest restart, a new port-forwarding tunnel will be created to resume the connection.
 
@@ -97,11 +97,13 @@ The `everestctl monitoring enable` command is not very intuitive the and you can
 
 === "**Limitation 2**"
 
-    The `everestctl monitoring enable` command is not very intuitive. When using this command, you can have the following scenarios:
+    The `everestctl monitoring enable` command is not very intuitive. 
+    
+    When using this command, you can have the following scenarios:
 
     **Scenario 1**
 
-    If you haven't configured any monitoring points in the UI yet, leave the **Registered instance name** field empty.
+    If you haven't configured any monitoring points in the UI yet, in that case leave the **Registered instance name** field empty.
 
     ```sh
     everestctl monitoring enable
