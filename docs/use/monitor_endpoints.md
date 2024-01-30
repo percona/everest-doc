@@ -31,7 +31,7 @@ To add monitoring in Percona Everest from the UI:
     ![!image](../images/everest_add_endpoint.png)
 
 
-## Edit monitoring endpoint from the UI
+## Edit monitoring from the UI
 
 To edit a monitoring endpoint from Percona Everest UI:
 {.power-number}
