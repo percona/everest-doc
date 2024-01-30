@@ -21,7 +21,7 @@ To restore a database from a backup:
 4. Select **Restore** to restore the backup of your database.
 
 
-### Post-Restore Step for MongoDB
+### Post-Restore step for MongoDB
 
 PITR restores alter the timeline of MongoDB oplog events. As a result, MongoDB oplog slices created after the restore timestamp and before the last backup become invalid.
 
