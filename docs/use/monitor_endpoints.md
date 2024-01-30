@@ -69,7 +69,7 @@ To edit a monitoring endpoint from Percona Everest UI:
     - **Everest Token** - The authorization token received while installing Percona Everest
     - **PMM URL Endpoint** - URL of the PMM instance
     - **Username and Password** - Credentials for the PMM instance
-    - **Name for the new monitoring instance**- Any name that you want to give to the monitoring instance
+    - **Name for the new monitoring instance**- Any name you want to give to the monitoring instance
     
 3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be added to this page.
 
@@ -78,24 +78,23 @@ To edit a monitoring endpoint from Percona Everest UI:
 ### Limitations
 
 !!! warning "warning"
-    There are few limitations when using the `everestctl monitoring enable` command which will be fixed in the upcoming release.
-
+    The everestctl monitoring enable command has some limitations. However, these limitations will be addressed and resolved in the upcoming release.
 
 
 
 === "**Limitation 1**"
 
-    When you run `everestctl monitoring enable` command, the everest pod will restart. If you're using port-forwarding to access Everest (kubectl port-forward svc/everest 8080:8080 -n percona-everest), the port-forwarding will stop, and the command will fail. 
-
+    When you run `everestctl monitoring enable` command, the everest pod will restart. If you are using port-forwarding to access Everest (`kubectl port-forward svc/everest 8080:8080 -n percona-everest`), then the port-forwarding will stop, and the command will fail.
+    
     **Solution**
 
-    Stop the port-forwarding command that you ran during the installation and run the following command before you run the `everestctl monitoring enable` command.
+    Before running the `everestctl monitoring enable` command, stop the port-forwarding command that you ran while installing Percona Everest.
 
     ```sh
     kubectl port-forward svc/everest 8080:8080 -n percona-everest; kubectl port-forward svc/everest 8080:8080 -n percona-everest 
     ```
-    This ensures that if the connection is dropped due to an everest restart, a new port-forwarding tunnel will be created to resume the connection.
-
+    
+    This ensures that a new port-forwarding tunnel will be created if the connection is lost due to a Percona Everest restart.
 
 
 === "**Limitation 2**"
@@ -133,7 +132,7 @@ To edit a monitoring endpoint from Percona Everest UI:
 
     **Scenario 2**
     
-    If you already have a monitoring endpoint configured in the UI and want to use it to receive the full set of metrics (including k8s metrics). In this case, enter a value in **Registered instance name** field.
+    If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics). In this case, enter a value in **Registered instance name** field.
 
 
     ??? example "Output"
