@@ -55,23 +55,23 @@ There are two methods of adding monitoring via the CLI.
 
 You can add monitoring in Percona Everest using everestctl:
 
-    ```sh
-    everestctl monitoring enable
-    ```
+```sh
+everestctl monitoring enable
+```
 However there are some limitations such as:
 
-**Limitation 1**
+=== "**Limitation 1**"
 
-When you run `everestctl monitoring enable` command, the everest pod will restart. If you're using port-forwarding to access Everest (kubectl port-forward svc/everest 8080:8080 -n percona-everest), the port-forwarding will stop, and the command will fail. 
+    When you run `everestctl monitoring enable` command, the everest pod will restart. If you're using port-forwarding to access Everest (kubectl port-forward svc/everest 8080:8080 -n percona-everest), the port-forwarding will stop, and the command will fail. 
 
-**Solution**
+    **Solution**
 
-Stop the port-forwarding command that you ran during the installation and run this command: 
+    Stop the port-forwarding command that you ran during the installation and run this command: 
 
-```sh
-kubectl port-forward svc/everest 8080:8080 -n percona-everest before running everestctl monitoring enable.
-```
-This ensures that if the connection is dropped due to an everest restart, a new port-forwarding tunnel will be created to resume the connection.
+    ```sh
+    kubectl port-forward svc/everest 8080:8080 -n percona-everest before running everestctl monitoring enable.
+    ```
+    This ensures that if the connection is dropped due to an everest restart, a new port-forwarding tunnel will be created to resume the connection.
 
     Alternatively navigate to the `percona-everest-cli` directory and run the following command:
 
@@ -79,15 +79,15 @@ This ensures that if the connection is dropped due to an everest restart, a new 
     go run cmd/everest/main.go monitoring enable
     ```
 
+=== "**Limitation 2**"
 
-**Limitation 2**
+    The `everestctl monitoring enable` command is not very intuitive. When using this command, you can have the following scenarios:
 
-The `everestctl monitoring enable` command is not very intuitive. When using this command, you can have the following scenarios:
+    Scenario 1
 
-Scenario 1
+    If you haven't configured any monitoring points in the UI yet, leave the **Registered instance name** field empty or the `--instance-name` flag if running the command in wizard mode or headless mode (`--skip-wizard` flag), respectively.
 
-If you haven't configured any monitoring points in the UI yet, you should leave the **Registered instance name** empty or the --instance-name flag if they're running the command in wizard mode or headless mode (--skip-wizard flag), respectively.
-
+    Scenario 2
 
 
 2. Enter the following information:
