@@ -66,13 +66,12 @@ To edit a monitoring endpoint from Percona Everest UI:
 
 2. Enter the following information on the CLI:
 
-    ```sh
-    - Everest URL Endpoint - URL of the Everest instance
-    - Everest Token - The authorization token received while installing Everest
-    - PMM URL Endpoint - URL of the PMM instance
-    - Username and Password - Credentials for the PMM instance
-    - Name for the new monitoring instance - Any name that you want to give to the monitoring instance
-    ```
+    - 'Everest URL Endpoint' - URL of the Everest instance
+    - 'Everest Token' - The authorization token received while installing Everest
+    - 'PMM URL Endpoint' - URL of the PMM instance
+    - 'Username and Password' - Credentials for the PMM instance
+    - 'Name for the new monitoring instance '- Any name that you want to give to the monitoring instance
+    
 3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be added on this page.
 
 
@@ -113,7 +112,6 @@ The `everestctl monitoring enable` command is not very intuitive the and you can
     ??? example "Output"
 
         ```sh
-
         ? Everest URL endpoint http://127.0.0.1:8080
         ? Everest Token ********************************************************************************************************************************
         ? Registered instance name
@@ -137,12 +135,12 @@ The `everestctl monitoring enable` command is not very intuitive the and you can
 
     ??? example "Output"
 
-    ```sh
-    everestctl monitoring enable
-    ? Everest URL endpoint http://127.0.0.1:8080
-    ? Everest Token ********************************************************************************************************************************
-    ? Registered instance name dev-pmm
-    ```
+        ```sh
+        everestctl monitoring enable
+        ? Everest URL endpoint http://127.0.0.1:8080
+        ? Everest Token ********************************************************************************************************************************
+        ? Registered instance name dev-pmm
+        ```
 
         If you are running the command in wizard mode or headless mode (`--skip-wizard` flag):
 
