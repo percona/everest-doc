@@ -54,12 +54,6 @@ To edit a monitoring endpoint from Percona Everest UI:
     everestctl monitoring enable
     ```
 
-    Alternatively, navigate to the `percona-everest-cli` directory and run the following command:
-
-    ```sh
-    go run cmd/everest/main.go monitoring enable
-    ```
-
 2. Enter the following information on the CLI:
 
     - **Everest URL Endpoint** - URL of the PerconaEverest instance
