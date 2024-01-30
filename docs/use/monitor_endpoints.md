@@ -125,7 +125,7 @@ The `everestctl monitoring enable` command has the following limitations:
 
     **Scenario 2**
     
-    If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in **Registered instance name** field.
+    If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in the **Registered instance name** field.
 
 
     ??? example "Output"
