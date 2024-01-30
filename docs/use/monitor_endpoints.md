@@ -14,12 +14,12 @@ Here are some key values you'll get with monitoring of Percona Everest:
 
 To use monitoring in Percona Everest you should have a PMM instance up and running.
 
-For information on installing PMM, see [documentation] (https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
+For information on installing PMM, see [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
 
 ## Add monitoring from the UI
 
 !!! warning "warning"
-    When setting up DB cluster monitoring, using endpoints added through the user interface will result in a limited selection of metrics being sent to PMM. To receive the full range of metrics (including k8s data points), configure monitoring endpoints using the [Everest CLI](../install/installEverestCLI.md) (`everestctl monitoring enable` command).
+    When setting up DB cluster monitoring, using endpoints added through the user interface will result in a limited selection of metrics being sent to PMM. To receive the full range of metrics (including k8s data points), configure monitoring endpoints using the [Everest CLI](../install/installEverestCLI.md) `everestctl monitoring enable` command.
 
 To add monitoring in Percona Everest from the UI:
 {.power-number}
