@@ -12,11 +12,15 @@ Here are some key values you'll get with monitoring of Percona Everest:
 
 ## Prerequisites
 
-To use monitoring endpoints in Percona Everest:
+To use monitoring in Percona Everest you should have a PMM instance up and running.
 
-- [Install PMM] (https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
+For information on installing PMM, see [documentation] (https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
 
-- Open port 80 in PMM.
+## Add monitoring endpoints
+
+To add monitoring endpoints in Percona Everest:
+
+1. 
 
 
 
