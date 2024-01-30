@@ -72,7 +72,7 @@ To add monitoring in Percona Everest from the CLI:
 
 
 
-    ### Limitations
+ ### Limitations
 
     * The `everestctl monitoring enable` command has the following limitations:
 
