@@ -48,8 +48,7 @@ To edit a monitoring endpoint from Percona Everest UI:
 ## Add monitoring from the CLI
 
 !!! warning "warning"
-    The `everestctl monitoring enable` command has some [limitations](#limitations). However, these limitations will be addressed and resolved in the upcoming release.
-
+        The `everestctl monitoring enable` command has some [limitations](#limitations). It is recommended that you review these limitations carefully. These limitations will be addressed and resolved in the subsequent releases.
 
 
 1. You can add monitoring in Percona Everest using the following command:
