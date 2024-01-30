@@ -21,3 +21,20 @@ Future releases will cover PITR support for PostgreSQL databases and PITR restor
 PITR restores alter the timeline of MongoDB oplog events. As a result, MongoDB oplog slices created after the restore timestamp and before the last backup become invalid.
 
 To seamlessly resume PITR after a restore, make sure to run a new full backup. This new backup will serve as the starting point for oplog updates, ensuring the continuity and integrity of your data.
+
+
+### Monitoring
+
+Percona Everest now comes with amazing monitoring capabilities that will ensure your database infrastructure is always reliable and secure. 
+
+Here are some fundamental values you’ll get by monitoring Percona Everest:
+
+- Monitoring helps track database availability and uptime
+- Monitoring provides insights into database performance
+- Monitoring helps detect and address issues proactively
+- Continuous monitoring helps maintain a stable and reliable database environment.
+
+ ![!image](images/everest_select_endpoint.png)
+
+If you're looking for in-depth insights into this feature, refer to our comprehensive [documentation](https://docs.percona.com/everest/use/monitor_endpoints.html).
+
