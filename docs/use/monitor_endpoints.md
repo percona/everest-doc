@@ -144,6 +144,9 @@ The `everestctl monitoring enable` command is not very intuitive the and you can
         If you are running the command in wizard mode or headless mode (`--skip-wizard` flag):
 
         ```sh
+        everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
+        ```
+
 
 
 
