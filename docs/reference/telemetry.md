@@ -2,7 +2,7 @@
 
 In creating Percona Everest, we leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet your needs.
 
-Product telemetry fills-in the gaps in our understanding of how you are actually using Everest, to help us build the best-in-class DBaaS software for the open-source community.
+Product telemetry fills-in the gaps in our understanding of how you are actually using Everest, to help us build the best-in-class cloud-native database platform for the open-source community.
 
 Participation in this **anonymous** program is optional, and you can opt-out if you prefer not to share any information. Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) to learn more.
 

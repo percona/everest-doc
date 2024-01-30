@@ -7,7 +7,7 @@ about: Release Notes Template for Everest
 | ----------------- | --------------------------------------------------------------------- |
 | **Installation:** | [Installing Everest](https://www.percona.com/software/pmm/quickstart) |
 
-Everest is an open source DBaaS solution for MySQL, PostgreSQL, and MongoDB.
+Everest is an open source cloud-native database platform for MySQL, PostgreSQL, and MongoDB.
 
 !!! caution alert alert-warning "Important/Caution"
 Crucial points that need emphasis:

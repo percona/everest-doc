@@ -77,17 +77,17 @@ Keep in mind that this command will exclusively list CRDs linked to Everest and 
 9. Remove Everest OLM catalog:
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.6.0/data/crds/olm/percona-dbaas-catalog.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/percona-dbaas-catalog.yaml
     ```
 
 10. Remove OLM installation (Do not delete it if it was installed without Everest support):
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.6.0/data/crds/olm/crds.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/crds.yaml
     ```
 
     ```sh
-    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.6.0/data/crds/olm/olm.yaml
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/olm.yaml
     ```
 
 11. Remove percona-everest namespace:
