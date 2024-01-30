@@ -40,7 +40,7 @@ To edit a monitoring endpoint from Percona Everest UI:
 
 2. Click on the ellipsis (three dots) next to the endpoint you need to edit. The **Edit monitoring endpoint** dialogue box opens.
 
-    ![!image](../images/everest_endpoint_edit.png)
+     ![!image](../images/everest_endpoint_edit.png)
 
 3. Click **Add**.
 
