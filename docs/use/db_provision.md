@@ -31,6 +31,8 @@ To provision a new database:
 
 11. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
 
+    ![!image](../images/everest_select_endpoint.png)
+
 12. Click **Create Database**.
 
 13. Click **Go to list of my databases** to see the database that you provisioned.
