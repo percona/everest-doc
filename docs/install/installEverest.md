@@ -46,7 +46,7 @@ To install and provision Percona Everest to Kubernetes:
         
         * Install Percona Everest, starting with the second step.
 
-    * If using a PMM server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
+    * If using a PMM Server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
 
 3. (Optional) Verify that the services have started properly:
     
