@@ -29,7 +29,7 @@ To provision a new database:
 
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
-11. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md)
+11. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
 
 12. Click **Create Database**.
 
