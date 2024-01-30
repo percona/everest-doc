@@ -51,6 +51,9 @@ To edit a monitoring endpoint from Percona Everest UI:
     The `everestctl monitoring enable` command has some [limitations](#limitations). It is recommended that you review these limitations carefully. These limitations will be addressed and resolved in the subsequent releases.
 
 
+To add monitoring in Percona Everest from the CLI:
+{.power-number}
+
 1. You can add monitoring in Percona Everest using the following command:
 
     ```sh
@@ -59,13 +62,13 @@ To edit a monitoring endpoint from Percona Everest UI:
 
 2. Enter the following information on the CLI:
 
-    - **Everest URL Endpoint** - URL of the PerconaEverest instance
+    - **Everest URL Endpoint** - URL of the Percona Everest instance
     - **Everest Token** - The authorization token received while installing Percona Everest
     - **PMM URL Endpoint** - URL of the PMM instance
     - **Username and Password** - Credentials for the PMM instance
-    - **Name for the new monitoring instance**- Any name you want to give to the monitoring instance
+    - **Name for the new monitoring instance** - Any name you want to give to the monitoring instance
     
-3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be added to this page.
+3. Go to Percona Everest UI and navigate to **Settings > Monitoring endpoints**. This monitoring instance will be dispalyed on this page.
 
 
 
