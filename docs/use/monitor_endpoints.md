@@ -79,7 +79,7 @@ To edit a monitoring endpoint from Percona Everest UI:
     
     **Solution**
 
-    Before running the `everestctl monitoring enable` command, stop the port-forwarding command that you ran while installing Percona Everest.
+    Before running the `everestctl monitoring enable` command, stop the port-forwarding command that you ran while installing Percona Everest and run the following command instead.
 
     ```sh
     kubectl port-forward svc/everest 8080:8080 -n percona-everest; kubectl port-forward svc/everest 8080:8080 -n percona-everest 
