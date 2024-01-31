@@ -29,7 +29,9 @@ To provision a new database:
 
 10. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
-11. If you’ve enabled monitoring during CLI provisioning, the **Monitoring** option will show as active on the last page of the wizard, and you can disable it if required.
+11. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
+
+    ![!image](../images/everest_select_endpoint.png)
 
 12. Click **Create Database**.
 

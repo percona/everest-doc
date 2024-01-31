@@ -46,3 +46,6 @@ With the Percona Everest platform,  you can generate backups on demand, create n
 
 ![!image](../images/everest_backup.png)
 
+5. [Monitoring](../use/monitor_endpoints.md)
+
+Monitoring ensures consistent performance by continuously observing various metrics and aspects of the database system. It helps identify performance issues or bottlenecks before they escalate, allowing timely interventions, optimizations, and resource allocation adjustments. This helps us maintain a stable and consistent database system performance over time.

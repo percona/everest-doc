@@ -38,7 +38,7 @@ To install and provision Percona Everest to Kubernetes:
     !!! note alert alert-primary "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
     
-    ### Limitations
+    ### Limitation
         
     * If the Everest CLI fails to install the operators, do the following:
         
@@ -46,7 +46,6 @@ To install and provision Percona Everest to Kubernetes:
         
         * Install Percona Everest, starting with the second step.
 
-    * If using a PMM Server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
 
 3. (Optional) Verify that the services have started properly:
     
