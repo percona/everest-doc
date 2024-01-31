@@ -74,6 +74,9 @@ To add monitoring in Percona Everest from the CLI:
 
     ### Limitations
 
+    
+    * If using a PMM server instance with a self-signed certificate, you cannot use **HTTPS** in the PMM URL endpoint.
+   
     * The `everestctl monitoring enable` command has the following limitations:
 
         === "**Limitation 1**"
@@ -143,7 +146,6 @@ To add monitoring in Percona Everest from the CLI:
             everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
             ```
 
-    * If using a PMM server instance with a self-signed certificate, you cannot use **HTTPS** in the PMM URL endpoint.
 
 
 
