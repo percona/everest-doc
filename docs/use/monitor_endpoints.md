@@ -2,13 +2,12 @@
 
 Percona Everest provides monitoring capabilities with PMM to maintain a reliable and secure database infrastructure.
 
-Here are some key values you'll get with monitoring of Percona Everest:
+Here are some key benefits you'll get with monitoring of Percona Everest:
 
-- Monitoring helps track database availability and uptime
-- Monitoring provides insights into database performance
-- Monitoring helps detect and address issues proactively
-- Continuous monitoring helps maintain a stable and reliable database environment.
-
+- Database availability and uptime tracking
+- Insights into your database performance
+- Proactive issue detection and addressing opportunities
+- Continuous monitoring
 
 ## Prerequisites
 
