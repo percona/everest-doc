@@ -99,52 +99,52 @@ To add monitoring in Percona Everest from the CLI:
             
             When using this command, you can have the following scenarios:
 
-            === "**Scenario 1**"
+                === "**Scenario 1**"
 
-            If you haven't configured monitoring points in the UI yet, then leave the **Registered instance name** field empty.
-
-            ```sh
-            everestctl monitoring enable
-            ```
-            
-            ??? example "Output"
-
-                ```sh
-                ? Everest URL endpoint http://127.0.0.1:8080
-                ? Everest Token ********************************************************************************************************************************
-                ? Registered instance name
-                ? PMM URL Endpoint http://127.0.0.1
-                ? Username admin
-                ? Password *****
-                ? Name for the new monitoring instance - dev-pmm
-                ```
-        
-            If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
-
-            ```sh
-            everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --new-instance-name='dev-pmm' --pmm.endpoint='http://127.0.0.1' --pmm.username='admin' --pmm.password=<password> --skip-wizard
-            ```
-
-
-            === "**Scenario 2**"
-            
-            If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in the **Registered instance name** field.
-
-
-            ??? example "Output"
+                If you haven't configured monitoring points in the UI yet, then leave the **Registered instance name** field empty.
 
                 ```sh
                 everestctl monitoring enable
-                ? Everest URL endpoint http://127.0.0.1:8080
-                ? Everest Token ********************************************************************************************************************************
-                ? Registered instance name dev-pmm
+                ```
+                
+                ??? example "Output"
+
+                    ```sh
+                    ? Everest URL endpoint http://127.0.0.1:8080
+                    ? Everest Token ********************************************************************************************************************************
+                    ? Registered instance name
+                    ? PMM URL Endpoint http://127.0.0.1
+                    ? Username admin
+                    ? Password *****
+                    ? Name for the new monitoring instance - dev-pmm
+                    ```
+            
+                If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
+
+                ```sh
+                everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --new-instance-name='dev-pmm' --pmm.endpoint='http://127.0.0.1' --pmm.username='admin' --pmm.password=<password> --skip-wizard
                 ```
 
-            If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
 
-            ```sh
-            everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
-            ```
+                === "**Scenario 2**"
+                
+                If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in the **Registered instance name** field.
+
+
+                ??? example "Output"
+
+                    ```sh
+                    everestctl monitoring enable
+                    ? Everest URL endpoint http://127.0.0.1:8080
+                    ? Everest Token ********************************************************************************************************************************
+                    ? Registered instance name dev-pmm
+                    ```
+
+                If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
+
+                ```sh
+                everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
+                ```
 
 
 
