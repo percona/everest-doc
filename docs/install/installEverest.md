@@ -26,12 +26,6 @@ To install and provision Percona Everest to Kubernetes:
     ??? example "Example"
             
             ? Namespace to deploy Everest to percona-everest
-            ? Do you want to enable monitoring? Yes
-            ? Select monitoring instance: Add new monitoring instance
-            ? PMM URL Endpoint http://127.0.0.1
-            ? Username admin
-            ? Password *****
-            ? Name for the new monitoring instance my-pmm
             ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
             
 
@@ -44,7 +38,7 @@ To install and provision Percona Everest to Kubernetes:
     !!! note alert alert-primary "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
     
-    ### Limitations
+    ### Limitation
         
     * If the Everest CLI fails to install the operators, do the following:
         
@@ -52,21 +46,6 @@ To install and provision Percona Everest to Kubernetes:
         
         * Install Percona Everest, starting with the second step.
 
-    * If you install an operator after the initial provisioning and want to create a database cluster, restart the `everest-operator pod` by running the following commands:
-
-        ```sh 
-        kubectl -n percona-everest get po
-        kubectl -n percona-everest delete pod everest-operator-pod-name
-        ```
-
-        This will fix the database cluster creation. 
-        
-        !!! note alert alert-primary "Note"
-            The issue will be fixed in the upcoming releases.
-
-    * It is crucial to enable monitoring during the provisioning step. If you skip this step, you won't be able to enable it later from the user interface. Ensure to fill in the monitoring details in the wizard, ensuring that the name of the monitoring instance does not exceed 22 characters, starts and ends with an alphanumeric character, and only uses alphanumeric characters or '-'.
-
-    * If using a PMM server instance with a self-signed certificate, you cannot use HTTPS in the PMM URL endpoint.
 
 3. (Optional) Verify that the services have started properly:
     
