@@ -23,7 +23,7 @@ PITR restores alter the timeline of MongoDB oplog events. As a result, MongoDB o
 To seamlessly resume PITR after a restore, make sure to run a new full backup. This new backup will serve as the starting point for oplog updates, ensuring the continuity and integrity of your data.
 
 
-### Monitoring
+## Monitoring
 
 Percona Everest now comes with monitoring capabilities that will help ensure your database infrastructure is always reliable and secure. 
 
