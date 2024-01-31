@@ -99,7 +99,7 @@ To add monitoring in Percona Everest from the CLI:
             
             When using this command, you can have the following scenarios:
 
-            **Scenario 1**
+            === "**Scenario 1**"
 
             If you haven't configured monitoring points in the UI yet, then leave the **Registered instance name** field empty.
 
@@ -126,7 +126,7 @@ To add monitoring in Percona Everest from the CLI:
             ```
 
 
-            **Scenario 2**
+            === "**Scenario 2**"
             
             If you already have a monitoring endpoint configured in the UI and want to use it to receive the complete set of metrics (including k8s metrics), then enter a value in the **Registered instance name** field.
 
