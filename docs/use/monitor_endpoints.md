@@ -140,7 +140,7 @@ To add monitoring in Percona Everest from the CLI:
                 ? Registered instance name dev-pmm
                 ```
 
-            If you are running the command in wizard mode or headless mode (`--skip-wizard` flag), then run the following command:
+            If you are running the command in headless mode (`--skip-wizard` flag), then run the following command:
 
             ```sh
             everestctl monitoring enable --everest-url='http://127.0.0.1:8080' --everest-token=<token> --instance-name='dev-pmm' --skip-wizard
