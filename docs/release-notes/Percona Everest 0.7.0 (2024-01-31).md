@@ -25,14 +25,14 @@ To seamlessly resume PITR after a restore, make sure to run a new full backup. T
 
 ### Monitoring
 
-Percona Everest now comes with amazing monitoring capabilities that will ensure your database infrastructure is always reliable and secure. 
+Percona Everest now comes with monitoring capabilities that will help ensure your database infrastructure is always reliable and secure. 
 
-Here are some fundamental values you’ll get by monitoring Percona Everest:
+Here's what you'll get out of Percona Everest monitoring:
 
-- Monitoring helps track database availability and uptime
-- Monitoring provides insights into database performance
-- Monitoring helps detect and address issues proactively
-- Continuous monitoring helps maintain a stable and reliable database environment.
+- Database availability and uptime tracking
+- Insights into your database performance
+- Proactive issue detection and addressing opportunities
+- Continuous monitoring
 
  ![!image](../images/everest_select_endpoint.png)
 
