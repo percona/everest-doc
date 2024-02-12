@@ -8,7 +8,6 @@ Everest supports Amazon S3-compatible backup locations, which means you can use 
 
      - Currently, Everest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.
      - Make sure you have read/write/delete permissions to the S3 bucket.
-     - Make sure not to share the same backup storage location for multiple database clusters.
 
 To create a backup storage location:
 {.power-number}
