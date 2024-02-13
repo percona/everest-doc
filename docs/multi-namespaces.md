@@ -29,12 +29,12 @@ To create multi-namespaces using the wizard:
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
-Alternatively, you can create multi-namepaces in the headless mode:
+    Alternatively, you can create multi-namepaces in the headless mode:
 
     ```sh
     everestctl install --namespace <namespace-name> --namespace <namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
-Replace `<namespace-name>` with the desired name for your namespace.
+    Replace `<namespace-name>` with the desired name for your namespace.
 
     ??? example "Example"
         ```
