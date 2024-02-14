@@ -45,6 +45,15 @@ To create multi-namespaces using the wizard:
 
      ![!image](../images/everest_multinamespaces.png)
 
+Percona Everest supports multi-namespaces feature for the following:
+
+- [Database clusters](use/db_provision.md)
+- [Backups](use/CreateOnDemand.md)
+- [Restore](use/RestoreBackup.md)
+- [Monitoring](use/monitor_endpoints.md)
+
+
+
 
 
 
