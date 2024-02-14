@@ -12,7 +12,7 @@ If you are dealing with complex environments comprising multiple k8s clusters th
 
 ## Create multi-namespaces
 
-To create multi-namespaces using the wizard:
+You can create multi-namespaces in Percona Everest while installing it:
 {.power-number}
 
 1. Run the command:
