@@ -21,23 +21,35 @@ To install and provision Percona Everest to Kubernetes:
     everestctl install
     ```
     
-    This will install all the required components in a namespace called `percona-everest`.
+    This will install all the required components in a namespace called `percona-system`.
+
+
+
+3. Enter the specific names for the namespaces you want to create, separating each name with a comma.
+
+    ??? example "Expected output"
+        ```
+        ? Namespaces managed by Everest (comma separated) dev, production
+        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
+        ```
+
+    Alternatively, you can create multi-namepaces in the headless mode:
+
+    ```sh
+    everestctl install --namespace <namespace-name> --namespace <namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    ```
+    Replace `<namespace-name>` with the desired name for your namespace.
 
     ??? example "Example"
-            
-            ? Namespace to deploy Everest to percona-everest
-            ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
-            
-
-    Alternatively, you can install Everest and provision the Kubernetes cluster by running the installation in headless mode:
-        
-    ```
-    everestctl install --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-    ```
+        ```
+        everestctl install --namespace dev --namespace prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+        ```
 
     !!! note alert alert-primary "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
-    
+
+
+
     ### Limitation
         
     * If the Everest CLI fails to install the operators, do the following:
