@@ -28,7 +28,7 @@ Percona Everest will create the following namespaces by default. You can see the
 
 ## Create multi-namespaces
 
-You can create multi-namespaces in Percona Everest while installing it:
+You can create multi-namespaces while installing Percona Everest:
 {.power-number}
 
 1. Run the command:
