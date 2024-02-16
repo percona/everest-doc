@@ -22,9 +22,15 @@ To add monitoring in Percona Everest from the UI:
 
 1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**. The **Add monitoring endpoint** dialogue box opens.
 
-2. On the **Add monitoring endpoint screen**, enter a PMM instance name. In the **User** and **Password** field, enter the credentials received upon installing PMM. In the **Endpoint** field, enter the PMM URL.
+2. On the **Add monitoring endpoint screen**, enter a name for the monitoring instance.
 
     ![!image](../images/everest_add_endpoint.png)
+
+3. Select the **namespaces** where the monitoring endpoint should be available.
+
+4. In the **User** and **Password** field, enter the credentials received upon installing PMM. In the **Endpoint** field, enter the PMM URL.
+
+6. Click **Add**.
 
 
 ## Edit monitoring
@@ -39,7 +45,7 @@ To edit a monitoring endpoint from the Percona Everest UI:
     ![!image](../images/everest_edit_ellipsis.png)
 
 
-3. Click **Edit**. The **Edit monitoring endpoint** dialogue box opens.
+3. Click **Edit**. The **Edit monitoring endpoint** dialogue box opens. Edit the information as per your requirement on this dialogue box.
 
      ![!image](../images/everest_endpoint_edit.png)
 
