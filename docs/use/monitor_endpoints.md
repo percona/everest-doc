@@ -9,6 +9,14 @@ Here are some key benefits you'll get with monitoring of Percona Everest:
 - Proactive issue detection and addressing opportunities
 - Continuous monitoring
 
+## The concept of namespaces in monitoring
+
+When you assign namespaces to a monitoring instance, it only determines which databases are authorized to utilize that monitoring instance. However, you cannot monitor specific namespaces. 
+
+Each database can only be monitored by one instance, which means that the metrics for the database are only available to that instance.
+
+When monitoring k8s metrics with kube-state-metrics and victoria-metrics, adding a new monitoring instance will automatically trigger the VMAgent to push all k8s metrics to that instance. These are k8s metrics and not namespace metrics.
+
 ## Prerequisites
 
 To use monitoring in Percona Everest, you should have a PMM instance up and running.
@@ -31,6 +39,9 @@ To add monitoring in Percona Everest from the UI:
 4. In the **User** and **Password** field, enter the credentials received upon installing PMM. In the **Endpoint** field, enter the PMM URL.
 
 6. Click **Add**.
+
+
+
 
 
 ## Edit monitoring
