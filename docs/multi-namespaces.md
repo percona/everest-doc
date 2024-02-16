@@ -14,9 +14,18 @@ Percona Everest supports multi-namespaces feature for the following:
 - [Restore](use/RestoreBackup.md)
 - [Monitoring](use/monitor_endpoints.md)
 
-## Use case
+## Use case for multi-namespaces in Percona Everest
 
 If you are dealing with complex environments comprising multiple k8s clusters that need to be used with Percona Everest, you can leverage the multi-namespace feature. This feature enables logical partitioning between the virtual clusters, thus helping to manage the clusters efficiently.
+
+
+## Default namespaces in Percona Everest
+
+Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
+
+- everest-system
+- everest-monitoring
+
 
 ## Create multi-namespaces
 
