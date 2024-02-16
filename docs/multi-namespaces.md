@@ -6,6 +6,14 @@ In Kubernetes, the concept of namespaces enables you to create isolated groups o
 !!! warning "Important"
     Resource names must be unique within a specific namespace but not across different namespaces.
 
+
+Percona Everest supports multi-namespaces feature for the following:
+
+- [Database clusters](use/db_provision.md)
+- [Backups](use/CreateOnDemand.md)
+- [Restore](use/RestoreBackup.md)
+- [Monitoring](use/monitor_endpoints.md)
+
 ## Use case
 
 If you are dealing with complex environments comprising multiple k8s clusters that need to be used with Percona Everest, you can leverage the multi-namespace feature. This feature enables logical partitioning between the virtual clusters, thus helping to manage the clusters efficiently.
@@ -43,14 +51,9 @@ You can create multi-namespaces in Percona Everest while installing it:
 
 3. Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
-     ![!image](../images/everest_multinamespaces.png)
+     ![!image](images/everest_multinamespaces.png)
 
-Percona Everest supports multi-namespaces feature for the following:
 
-- [Database clusters](use/db_provision.md)
-- [Backups](use/CreateOnDemand.md)
-- [Restore](use/RestoreBackup.md)
-- [Monitoring](use/monitor_endpoints.md)
 
 
 
