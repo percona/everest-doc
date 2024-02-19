@@ -17,7 +17,7 @@ To provision a new database:
 
     ![!image](../images/everest_multi-namespaces.png)
 
-4. Select the **Database type**: PostgreSQL, MySQL, or MongoDB.
+4. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
 5. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
 
