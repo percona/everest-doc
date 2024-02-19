@@ -1,6 +1,6 @@
 # Multi-namespaces
 
-In Kubernetes, the concept of namespaces enables you to create isolated groups of resources within a single cluster. These namespaces act as virtual clusters, providing a way to organize and manage resources without interfering with other resources within the same cluster.
+In Kubernetes, the concept of namespaces enables you to create isolated groups of resources within a single cluster. These namespaces provide a way to organize and manage resources without interfering with other resources within the same cluster.
 
 
 !!! warning "Important"
