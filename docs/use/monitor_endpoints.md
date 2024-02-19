@@ -15,7 +15,7 @@ When you assign namespaces to a monitoring instance, it only determines which da
 
 Each database can only be monitored by one instance, which means that the metrics for the database are only available to that instance.
 
-When monitoring k8s metrics with kube-state-metrics and victoria-metrics, adding a new monitoring instance will automatically trigger the VMAgent to push all k8s metrics to that instance. These are k8s metrics and not namespace metrics.
+When adding a new monitoring instance, the monitoring stack (kube-state-metrics and victoria-metrics) will automatically start pushing kubernetes metrics to that instance.
 
 ## Prerequisites
 
