@@ -14,7 +14,7 @@ To create a backup storage location:
 
 1. Go to **Settings > Backup storages** and click **Add Backup storage**.  
 2. In the **Name** field, specify a location name using only lowercase alphanumeric characters or hyphens. 
-3. Select the **Namepaces** where you want to add this backup storage.
+3. Select the **Namepaces** where the backup storage should be available.
 4. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
     Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
 
