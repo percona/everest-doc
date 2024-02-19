@@ -1,4 +1,4 @@
-# Multi-namespaces
+# Multiple namespaces
 
 In Kubernetes, the concept of namespaces enables you to create isolated groups of resources within a single cluster. These namespaces provide a way to organize and manage resources without interfering with other resources within the same cluster.
 
@@ -16,7 +16,7 @@ Percona Everest supports multi-namespaces feature for the following:
 
 ## Use case for multi-namespaces in Percona Everest
 
-If you are dealing with complex environments comprising Kubernetes clusters that need to be used with Percona Everest, you can leverage the multi-namespace feature. This feature enables logical partitioning within the cluster, thus helping to manage the clusters efficiently.
+If you are dealing with complex environments comprising Kubernetes clusters that need to be used with Percona Everest, you can leverage the multiple namespace feature. This feature enables logical partitioning within the cluster, thus helping to manage the clusters efficiently.
 
 ## Default namespaces in Percona Everest
 
@@ -27,43 +27,12 @@ Percona Everest will create the following namespaces by default. You can see the
 - everest-monitoring: hosts the monitoring stack for kubernetes metrics ([VictoriaMetrics](https://victoriametrics.com/) and [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics))
 
 
-## Configure multi-namespaces
+## Configure multiple namespaces
 
-<<<<<<< HEAD
-You can configure multi-namespaces while installing Percona Everest. For detailed information on configuring multinamespaces, see (install/installEverest.md)
+You can configure multiple namespaces while installing Percona Everest. For detailed information on configuring multiple namespaces, see the [Installation](install/installEverest.md#installation) section.
 
-=======
-You can create multiple namespaces while installing Percona Everest:
-{.power-number}
 
-1. Run the command:
-
-    ```sh
-    everestctl install
-    ```
-
-2. Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
-
-    ??? example "Expected output"
-        ```
-        ? Namespaces managed by Everest (comma separated) dev, production
-        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
-        ```
-
-    Alternatively, you can set multiple namepaces in the headless mode:
-
-    ```sh
-    everestctl install --namespaces <namespace-name>,<namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-    ```
-    Replace `<namespace-name>` with the desired name for your namespace.
-
-    ??? example "Example"
-        ```
-        everestctl install --namespace dev --namespace prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-        ```
->>>>>>> 6ac1610d31787b49c12a6de7e3b8929d80bfd9ef
-
-3. Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
+Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
      ![!image](images/everest_multinamespaces.png)
 
