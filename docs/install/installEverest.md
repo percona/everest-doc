@@ -32,13 +32,13 @@ To install and provision Percona Everest to Kubernetes:
     Alternatively, you can set multiple namepaces in the headless mode:
 
     ```sh
-    everestctl install --namespace <namespace-name> --namespace <namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
     Replace `<namespace-name>` with the desired name for your namespace.
 
     ??? example "Example"
         ```
-        everestctl install --namespace dev --namespace prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+        everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
     !!! note alert alert-primary "Important"
