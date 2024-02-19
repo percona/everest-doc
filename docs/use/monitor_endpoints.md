@@ -42,8 +42,6 @@ To add monitoring in Percona Everest from the UI:
 
 
 
-
-
 ## Edit monitoring
 
 To edit a monitoring endpoint from the Percona Everest UI:
