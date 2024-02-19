@@ -59,7 +59,7 @@ To edit a monitoring endpoint from the Percona Everest UI:
      ![!image](../images/everest_endpoint_edit.png)
 
 
-3. Click **Add**.
+4. Click **Add**.
 
 
 ## Delete monitoring
