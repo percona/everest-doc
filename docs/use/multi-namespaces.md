@@ -30,7 +30,7 @@ You can configure multiple namespaces while installing Percona Everest. For deta
 
 Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
-     ![!image](../images/everest_multinamespaces.png)
+![!image](../images/everest_multinamespaces.png)
 
 
 
