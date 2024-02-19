@@ -28,10 +28,9 @@ To set up the namespaces that Percona Everest will manage and where you can depl
 
 You can configure multiple namespaces while installing Percona Everest. For detailed information on configuring multiple namespaces, see the [Installation](install/installEverest.md#installation) section.
 
-
 Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
-     ![!image](images/everest_multinamespaces.png)
+     ![!image](../images/everest_multinamespaces.png)
 
 
 
