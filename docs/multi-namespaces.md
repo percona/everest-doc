@@ -22,8 +22,9 @@ If you are dealing with complex environments comprising multiple k8s clusters th
 
 Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
 
-- everest-system
-- everest-monitoring
+- everest-olm: hosts the [Operator Lifecycle Manager](https://olm.operatorframework.io/) that manages all operators that are part of everest
+- everest-system: hosts Everest 
+- everest-monitoring: hosts the monitoring stack for kubernetes metrics ([VictoriaMetrics](https://victoriametrics.com/) and [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics))
 
 
 ## Create multi-namespaces
