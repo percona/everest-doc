@@ -28,7 +28,7 @@ To install and provision Percona Everest to Kubernetes:
 
     ??? example "Expected output"
         ```
-        ? Namespaces managed by Everest (comma separated) dev, production
+        ? Namespaces managed by Everest (comma separated) dev,production
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
