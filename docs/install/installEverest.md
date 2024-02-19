@@ -46,31 +46,7 @@ To install and provision Percona Everest to Kubernetes:
 
 
 
-    ### Limitation
-        
-    * If the Everest CLI fails to install the operators, do the following:
-        
-        * [Uninstall Percona Everest](uninstallEverest.md).
-        
-        * Install Percona Everest, starting with the second step.
-
-
-3. (Optional) Verify that the services have started properly:
-    
-    ```sh
-    kubectl get pods -n percona-everest
-    ```        
-    ??? example "Expected output"
-        ```
-        NAME                                                  READY   STATUS      RESTARTS   AGE
-        percona-xtradb-cluster-operator-75c9b976cf-jl9j6      1/1     Running     0          10s
-        percona-server-mongodb-operator-79b9668cd5-d7srk      1/1     Running     0          10s
-        percona-postgresql-operator-84947f45cc-2rb2w          1/1     Running     0          10s
-        percona-everest-5c896598d9-99jnr                      1/1     Running     0          10s
-        everest-operator-controller-manager-75b59869c-8jx47   2/2     Running     0          10s
-        ```
-
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+4 . Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Port Forwarding"
 
