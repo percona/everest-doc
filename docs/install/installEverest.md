@@ -20,9 +20,6 @@ To install and provision Percona Everest to Kubernetes:
     ```sh
     everestctl install
     ```
-    
-    This will install all the required components in a namespace called `percona-system`.
-
 
 3. Enter the specific names for the namespaces you want to create, separating each name with a comma.
 
