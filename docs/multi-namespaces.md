@@ -37,7 +37,7 @@ You can create multi-namespaces while installing Percona Everest:
     everestctl install
     ```
 
-2. Enter the specific names for the namespaces you want to create, separating each name with a comma.
+2. Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
 
     ??? example "Expected output"
         ```
