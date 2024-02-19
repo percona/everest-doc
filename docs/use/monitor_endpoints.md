@@ -11,7 +11,7 @@ Here are some key benefits you'll get with monitoring of Percona Everest:
 
 ## The concept of namespaces in monitoring
 
-When you assign namespaces to a monitoring instance, it only determines which databases are authorized to utilize that monitoring instance. However, you cannot monitor specific namespaces. 
+When you assign namespaces to a monitoring instance, it only determines which databases are authorized to utilize that monitoring instance, you cannot monitor specific namespaces. 
 
 Each database can only be monitored by one instance, which means that the metrics for the database are only available to that instance.
 
