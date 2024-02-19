@@ -45,6 +45,7 @@ To install and provision Percona Everest to Kubernetes:
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
 4 . Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+{.power-number}
 
 === "Port Forwarding"
     Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
