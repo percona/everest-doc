@@ -22,11 +22,11 @@ Percona Everest will create the following namespaces by default. You can see the
 - everest-system: hosts Everest 
 - everest-monitoring: hosts the monitoring stack for kubernetes metrics ([VictoriaMetrics](https://victoriametrics.com/) and [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics))
 
-To set up the namespaces that Percona Everest will manage and where you can deploy your databases, see the [Installation](install/installEverest.md#installation) section.
+To set up the namespaces that Percona Everest will manage and where you can deploy your databases, see the [Installation](../install/installEverest.md#installation) section.
 
 ## Configure multiple namespaces
 
-You can configure multiple namespaces while installing Percona Everest. For detailed information on configuring multiple namespaces, see the [Installation](install/installEverest.md#installation) section.
+You can configure multiple namespaces while installing Percona Everest. For detailed information on configuring multiple namespaces, see the [Installation](../install/installEverest.md#installation) section.
 
 Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
