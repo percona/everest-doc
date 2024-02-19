@@ -48,7 +48,7 @@ You can create multi-namespaces while installing Percona Everest:
     Alternatively, you can create multi-namepaces in the headless mode:
 
     ```sh
-    everestctl install --namespace <namespace-name> --namespace <namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    everestctl install --namespaces <namespace-name>,<namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
     ```
     Replace `<namespace-name>` with the desired name for your namespace.
 
