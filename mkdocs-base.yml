@@ -178,7 +178,7 @@ nav:
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
       - Monitoring: use/monitor_endpoints.md
-      - Multiple namepaces: multi-namespaces.md
+      - Multiple namepaces: use/multi-namespaces.md
   - Configure:
       - Configure database engine: configure/db_engine_config.md
   - Secure: secure/user-auth.md
