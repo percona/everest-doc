@@ -7,18 +7,14 @@ In Kubernetes, the concept of namespaces enables you to create isolated groups o
     Resource names must be unique within a specific namespace but not across different namespaces.
 
 
-Percona Everest supports multi-namespaces feature for the following:
-
-- [Database clusters](use/db_provision.md)
-- [Backups](use/createBackups/CreateOnDemand.md)
-- [Restore](use/RestoreBackup.md)
-- [Monitoring](use/monitor_endpoints.md)
-
-## Use case for multiple namespaces in Percona Everest
+## Use case for multi-namespaces in Percona Everest
 
 If you are dealing with complex environments comprising Kubernetes clusters that need to be used with Percona Everest, you can leverage the multiple namespace feature. This feature enables logical partitioning within the cluster, thus helping to manage the clusters efficiently.
 
 ## Default namespaces in Percona Everest
+
+!!! caution alert alert-warning "Important"
+    The following namespaces are restricted and cannot be used for deploying databases.
 
 Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
 
@@ -26,6 +22,7 @@ Percona Everest will create the following namespaces by default. You can see the
 - everest-system: hosts Everest 
 - everest-monitoring: hosts the monitoring stack for kubernetes metrics ([VictoriaMetrics](https://victoriametrics.com/) and [kube-state-metrics](https://github.com/kubernetes/kube-state-metrics))
 
+To set up the namespaces that Percona Everest will manage and where you can deploy your databases, see the [Installation](install/installEverest.md#installation) section.
 
 ## Configure multiple namespaces
 
