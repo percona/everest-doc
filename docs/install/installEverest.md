@@ -32,7 +32,7 @@ To install and provision Percona Everest to Kubernetes:
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
-    Alternatively, you can create multi-namepaces in the headless mode:
+    Alternatively, you can set multiple namepaces in the headless mode:
 
     ```sh
     everestctl install --namespace <namespace-name> --namespace <namespace-name> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
