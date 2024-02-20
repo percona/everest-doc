@@ -29,7 +29,7 @@ To set up the namespaces that Percona Everest will manage and where you can depl
 You can configure multiple namespaces in Percona Everest. For detailed information on configuring multiple namespaces, see the [Installation](../install/installEverest.md#installation) section.
 
 !!! warning "Important"
-    To have different operators in different namespaces,  run the install command multiple times. 
+    To have different operators in different namespaces, run the install command multiple times. 
     
     For example, run the install command twice if you want the PXC operator in *namespace 1* and the psmdb operator in *namespace 2*.
 
