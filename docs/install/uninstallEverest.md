@@ -114,7 +114,7 @@ This section lists various examples for removing the CRDs.
 
 #### Remove all the CRDs
 
-    ```sh
+    ```
     cat <<EOF | xargs kubectl delete crd
     cat <<EOF | xargs kubectl delete crd
     catalogsources.operators.coreos.com
@@ -158,7 +158,7 @@ This section lists various examples for removing the CRDs.
     EOF
     ```
         
-
+The output for the above command is:
 
         ```sh
         customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
