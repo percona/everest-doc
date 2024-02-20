@@ -89,21 +89,21 @@ The list of CRDs for the various operators is given below:
 
 === "CRDs for operators that you need to select (at least one)"
     
-??? example "PXC Operator"
+    ??? example "PXC Operator"
     ```
     perconaxtradbclusterbackups.pxc.percona.com
     perconaxtradbclusterrestores.pxc.percona.com
     perconaxtradbclusters.pxc.percona.com
     ```
 
-??? example "PSMDB Operator"
+    ??? example "PSMDB Operator"
     ```
     perconaservermongodbbackups.psmdb.percona.com
     perconaservermongodbrestores.psmdb.percona.com
     perconaservermongodbs.psmdb.percona.com
     ```
         
-??? example "PG Operator (Percona and CrunchyData)"
+    ??? example "PG Operator (Percona and CrunchyData)"
     ```
     perconapgbackups.pgv2.percona.com
     perconapgrestores.pgv2.percona.com
