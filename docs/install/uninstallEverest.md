@@ -44,7 +44,7 @@ Besides the operators mentioned above, you must have installed at least one of t
 
 Below is a list of CRDs for different operators.
 
-=== "CRDs for operators installed with Percona Everest"
+=== "CRDs of operators installed with Percona Everest"
 
     ??? example "OLM operator"
         ```
