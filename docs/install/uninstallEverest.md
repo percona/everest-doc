@@ -206,15 +206,15 @@ The output for the above command is:
         customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
         ```
 
-#### Remove CRD for PSMDB operator
+#### Remove CRD for PG operator
 
-To remove the CRD for PSMDB Operator:
+To remove the CRD for PG operator, but if you are using CruncyData run the following command:
 
     ```sh
     cat <<EOF | xargs kubectl delete crd
-    perconaservermongodbbackups.psmdb.percona.com
-    perconaservermongodbrestores.psmdb.percona.com
-    perconaservermongodbs.psmdb.percona.com
+    perconapgbackups.pgv2.percona.com
+    perconapgrestores.pgv2.percona.com
+    perconapgclusters.pgv2.percona.com
     ```
 
 
