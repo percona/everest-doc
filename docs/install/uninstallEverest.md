@@ -27,7 +27,7 @@ To uninstall Percona Everest:
 
 ## How to remove CRDs
 
-During the installation of Everest, the following operators will be installed:
+During the installation of Everest, the following operators are installed:
     
 - Everest
 - VictoriaMetrics
