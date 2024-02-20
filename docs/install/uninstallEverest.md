@@ -167,7 +167,7 @@ EOF
 ```
         
 ??? example "Expected output"
-    ```
+    ```{.text .no-copy}
     customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
     customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
     customresourcedefinition.apiextensions.k8s.io "installplans.operators.coreos.com" deleted
