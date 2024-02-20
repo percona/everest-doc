@@ -218,6 +218,7 @@ cat <<EOF | xargs kubectl delete crd
 perconapgbackups.pgv2.percona.com
 perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
+EOF
 ```
 
 
