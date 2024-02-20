@@ -59,60 +59,60 @@ The list of CRDs for the various operators is given below:
         subscriptions.operators.coreos.co
         ```
 
-        ??? example "VictoriaMetrics Operator"
-            ```
-            vmrules.operator.victoriametrics.com
-            vmnodescrapes.operator.victoriametrics.com
-            vmauths.operator.victoriametrics.com
-            vmprobes.operator.victoriametrics.com
-            vmpodscrapes.operator.victoriametrics.com
-            vmsingles.operator.victoriametrics.com
-            vmstaticscrapes.operator.victoriametrics.com
-            vmservicescrapes.operator.victoriametrics.com
-            vmalertmanagerconfigs.operator.victoriametrics.com
-            vmalertmanagers.operator.victoriametrics.com
-            vmalerts.operator.victoriametrics.com
-            vmagents.operator.victoriametrics.com
-            vmclusters.operator.victoriametrics.com
-            vmusers.operator.victoriametrics.com
-            ```
+    ??? example "VictoriaMetrics Operator"
+        ```
+        vmrules.operator.victoriametrics.com
+        vmnodescrapes.operator.victoriametrics.com
+        vmauths.operator.victoriametrics.com
+        vmprobes.operator.victoriametrics.com
+        vmpodscrapes.operator.victoriametrics.com
+        vmsingles.operator.victoriametrics.com
+        vmstaticscrapes.operator.victoriametrics.com
+        vmservicescrapes.operator.victoriametrics.com
+        vmalertmanagerconfigs.operator.victoriametrics.com
+        vmalertmanagers.operator.victoriametrics.com
+        vmalerts.operator.victoriametrics.com
+        vmagents.operator.victoriametrics.com
+        vmclusters.operator.victoriametrics.com
+        vmusers.operator.victoriametrics.com
+        ```
 
-        ??? example "Everest Operator"
-            ```
-            databaseclusterbackups.everest.percona.com
-            databaseclusters.everest.percona.com
-            databaseengines.everest.percona.com
-            backupstorages.everest.percona.com
-            databaseclusterrestores.everest.percona.com
-            monitoringconfigs.everest.percona.com
-            ```
+    ??? example "Everest Operator"
+        ```
+        databaseclusterbackups.everest.percona.com
+        databaseclusters.everest.percona.com
+        databaseengines.everest.percona.com
+        backupstorages.everest.percona.com
+        databaseclusterrestores.everest.percona.com
+        monitoringconfigs.everest.percona.com
+        ```
 
 === "CRDs for operators that you need to select (at least one)"
     
     ??? example "PXC Operator"
-    ```
-    perconaxtradbclusterbackups.pxc.percona.com
-    perconaxtradbclusterrestores.pxc.percona.com
-    perconaxtradbclusters.pxc.percona.com
-    ```
+        ```
+        perconaxtradbclusterbackups.pxc.percona.com
+        perconaxtradbclusterrestores.pxc.percona.com
+        perconaxtradbclusters.pxc.percona.com
+        ```
 
     ??? example "PSMDB Operator"
-    ```
-    perconaservermongodbbackups.psmdb.percona.com
-    perconaservermongodbrestores.psmdb.percona.com
-    perconaservermongodbs.psmdb.percona.com
-    ```
+        ```
+        perconaservermongodbbackups.psmdb.percona.com
+        perconaservermongodbrestores.psmdb.percona.com
+        perconaservermongodbs.psmdb.percona.com
+        ```
         
     ??? example "PG Operator (Percona and CrunchyData)"
-    ```
-    perconapgbackups.pgv2.percona.com
-    perconapgrestores.pgv2.percona.com
-    perconapgclusters.pgv2.percona.com
-    postgresclusters.postgres-operator.crunchydata.com
-    ```
+        ```
+        perconapgbackups.pgv2.percona.com
+        perconapgrestores.pgv2.percona.com
+        perconapgclusters.pgv2.percona.com
+        postgresclusters.postgres-operator.crunchydata.com
+        ```
                    
-    !!! caution alert alert-warning "warning"
-        If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+        !!! caution alert alert-warning "warning"
+            If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
 
             
         
