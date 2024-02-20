@@ -33,7 +33,7 @@ During the installation of Everest, the following operators will be installed:
 - VictoriaMetrics
 - OLM
 
-Besides the operators mentioned above, you need to install at least one of the following operators.
+Besides the operators mentioned above, you must have installed at least one of the following operators.
     
 - [Percona Operator for MySQL(PXC)](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
 - [Percona Operator for MongoDB(PSMDB)](https://docs.percona.com/percona-operator-for-mongodb/index.html)
