@@ -147,7 +147,7 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 nav:
   - Welcome to Percona Everest [Alpha]: index.md 
-  - Release Notes:
+  - Release notes:
       - Percona Everest 0.8.0 (2024-02-21): release-notes/Percona Everest 0.8.0 (2024-02-21).md
       - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona Everest 0.7.0 (2024-01-31).md
       - Percona Everest 0.6.0 (2024-01-11): release-notes/Percona Everest 0.6.0 (2024-01-11).md
