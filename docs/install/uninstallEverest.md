@@ -28,13 +28,13 @@ To uninstall Percona Everest:
 
 ## How to remove CRDs
 
-During the installation of Everest, the following operators will be installed as well:
+During the installation of Everest, the following operators will be installed:
     
 - Everest
 - VictoriaMetrics
 - OLM
 
-Besides the operators mentioned above, you have the option to install at least one of the following operators.
+Besides the operators mentioned above, you need to install at least one of the following operators.
     
 - [Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
 - [Percona Operator for MongoDB](https://docs.percona.com/percona-operator-for-mongodb/index.html)
@@ -121,6 +121,8 @@ The list of CRDs for the various operators is given below:
 This section lists various examples for removing the CRDs.
 
 #### Remove all the CRDs
+
+If you want to remove all the CRDS, run the following command:
 
 ```
 cat <<EOF | xargs kubectl delete crd
