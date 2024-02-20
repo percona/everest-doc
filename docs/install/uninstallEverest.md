@@ -42,7 +42,7 @@ Besides the operators mentioned above, you have the option to install at least o
 
     The list of CRDs for the operators is given below:
 
-    === "Operators installed with Percona Everest"
+    === "CRDs for operators installed with Percona Everest"
 
         ??? example "OLM Operator"
             ```
@@ -84,7 +84,7 @@ Besides the operators mentioned above, you have the option to install at least o
             monitoringconfigs.everest.percona.com
             ```
 
-    === "Operators that you need to select (at least one)"
+    === "CRDs for operators that you need to select (at least one)"
     
         ??? example "PXC Operator"
             ```
@@ -108,8 +108,8 @@ Besides the operators mentioned above, you have the option to install at least o
             postgresclusters.postgres-operator.crunchydata.com
             ```
                     
-                !!! caution alert alert-warning "warning"
-                    If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+            !!! caution alert alert-warning "warning"
+                If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
 
             
         
