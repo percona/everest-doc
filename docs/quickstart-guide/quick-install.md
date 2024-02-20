@@ -63,7 +63,7 @@ export KUBECONFIG=~/.kube/config
         2024-02-20T10:18:50Z    info    install/install.go:185
         Here's your authorization token for accessing the Everest UI and API:
 
-        SPL6dp9uUNjlTGcgvCbwzdPWmqjks01YGe5AwUpXTx8hciycT7avxSMY2moDs7i876RMW5kfRCMImYNVhhGWooHEFZAYMWjcaG1IotH6cgJFsyh7EcAfPevDqnotd1A7
+        **SPL6dp9uUNjlTGcgvCbwzdPWmqjks01YGe5AwUpXTx8hciycT7avxSMY2moDs7i876RMW5kfRCMImYNVhhGWooHEFZAYMWjcaG1IotH6cgJFsyh7EcAfPevDqnotd1A7**
 
         Store this token securely as you will not be able to retrieve it later. If you ever need to reset it, use the following command:
         everestctl token reset
@@ -74,8 +74,8 @@ export KUBECONFIG=~/.kube/config
         Forwarding from 127.0.0.1:8080 -> 8080
         Forwarding from [::1]:8080 -> 8080
         ```
-        !!! note alert alert-primary "Important"
-            Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
+    !!! note alert alert-primary "Important"
+        Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
 3. The Percona Everest app will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
