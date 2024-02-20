@@ -108,6 +108,11 @@ Besides the operators mentioned above, you have the option to install at least o
             postgresclusters.postgres-operator.crunchydata.com
             ```
         
+        !!! caution alert alert-warning "warning"
+            If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+
+            
+        
 ### Examples for removing CRDs
 
 This section lists various examples for removing the CRDs.
