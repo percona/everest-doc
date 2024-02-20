@@ -36,9 +36,9 @@ During the installation of Everest, the following operators will be installed:
 
 Besides the operators mentioned above, you need to install at least one of the following operators.
     
-- [Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
-- [Percona Operator for MongoDB](https://docs.percona.com/percona-operator-for-mongodb/index.html)
-- [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
+- [Percona Operator for MySQL(PXC)](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
+- [Percona Operator for MongoDB(PSMDB)](https://docs.percona.com/percona-operator-for-mongodb/index.html)
+- [Percona Operator for PostgreSQL(PG)](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
 
     
 ### List of CRDs for the operators
@@ -112,7 +112,7 @@ The list of CRDs for the various operators is given below:
         ```
                    
         !!! caution alert alert-warning "warning"
-            If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+            If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`.
 
             
         
