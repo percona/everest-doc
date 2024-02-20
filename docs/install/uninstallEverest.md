@@ -118,11 +118,11 @@ The list of CRDs for the various operators is given below:
         
 ### Examples for removing CRDs
 
-This section lists various examples for removing the CRDs.
+Here are some examples of how to remove the CRDs.
 
 #### Remove all the CRDs
 
-If you want to remove all the CRDS, run the following command:
+To remove all the CRDS, you can use the following command:
 
 ```
 cat <<EOF | xargs kubectl delete crd
@@ -167,7 +167,7 @@ postgresclusters.postgres-operator.crunchydata.com
 EOF    
 ```
         
-??? example "PG Operator (Percona and CrunchyData)"
+??? example "Expected output"
 ```
 customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
 customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
