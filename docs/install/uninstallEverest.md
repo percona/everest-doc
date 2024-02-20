@@ -38,7 +38,7 @@ Besides the operators mentioned above, you need to install at least one of the f
     
 - [Percona Operator for MySQL(PXC)](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
 - [Percona Operator for MongoDB(PSMDB)](https://docs.percona.com/percona-operator-for-mongodb/index.html)
-- [Percona Operator for PostgreSQL(PG)](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
+- [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
 
     
 ### List of CRDs for the operators
@@ -103,7 +103,7 @@ Below is a list of CRDs for different operators.
         perconaservermongodbs.psmdb.percona.com
         ```
         
-    ??? example "PG operator (Percona and CrunchyData)"
+    ??? example "PostgreSQL operator (Percona and CrunchyData)"
         ```
         perconapgbackups.pgv2.percona.com
         perconapgrestores.pgv2.percona.com
@@ -209,7 +209,7 @@ EOF
     customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
     ```
 
-#### Remove CRD for PG operator
+#### Remove CRD for PostresSQL operator
 
 If you are using the Postres operator for **Crunchy Data**, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. 
 
