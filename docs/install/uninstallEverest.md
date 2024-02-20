@@ -45,19 +45,19 @@ Besides the operators mentioned above, you have the option to install at least o
 
 The list of CRDs for the various operators is given below:
 
-    === "CRDs for operators installed with Percona Everest"
+=== "CRDs for operators installed with Percona Everest"
 
-        ??? example "OLM Operator"
-            ```
-            catalogsources.operators.coreos.com
-            clusterserviceversions.operators.coreos.com
-            installplans.operators.coreos.com
-            olmconfigs.operators.coreos.com
-            operatorconditions.operators.coreos.com
-            operatorgroups.operators.coreos.com
-            operators.operators.coreos.com
-            subscriptions.operators.coreos.co
-            ```
+    ??? example "OLM Operator"
+        ```
+        catalogsources.operators.coreos.com
+        clusterserviceversions.operators.coreos.com
+        installplans.operators.coreos.com
+        olmconfigs.operators.coreos.com
+        operatorconditions.operators.coreos.com
+        operatorgroups.operators.coreos.com
+        operators.operators.coreos.com
+        subscriptions.operators.coreos.co
+        ```
 
         ??? example "VictoriaMetrics Operator"
             ```
@@ -87,32 +87,32 @@ The list of CRDs for the various operators is given below:
             monitoringconfigs.everest.percona.com
             ```
 
-    === "CRDs for operators that you can select (at least one)"
+=== "CRDs for operators that you need to select (at least one)"
     
-        ??? example "PXC Operator"
-            ```
-            perconaxtradbclusterbackups.pxc.percona.com
-            perconaxtradbclusterrestores.pxc.percona.com
-            perconaxtradbclusters.pxc.percona.com
-            ```
+??? example "PXC Operator"
+    ```
+    perconaxtradbclusterbackups.pxc.percona.com
+    perconaxtradbclusterrestores.pxc.percona.com
+    perconaxtradbclusters.pxc.percona.com
+    ```
 
-        ??? example "PSMDB Operator"
-            ```
-            perconaservermongodbbackups.psmdb.percona.com
-            perconaservermongodbrestores.psmdb.percona.com
-            perconaservermongodbs.psmdb.percona.com
-            ```
+??? example "PSMDB Operator"
+    ```
+    perconaservermongodbbackups.psmdb.percona.com
+    perconaservermongodbrestores.psmdb.percona.com
+    perconaservermongodbs.psmdb.percona.com
+    ```
         
-        ??? example "PG Operator (Percona and CrunchyData)"
-            ```
-            perconapgbackups.pgv2.percona.com
-            perconapgrestores.pgv2.percona.com
-            perconapgclusters.pgv2.percona.com
-            postgresclusters.postgres-operator.crunchydata.com
-            ```
-                    
-            !!! caution alert alert-warning "warning"
-                If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+??? example "PG Operator (Percona and CrunchyData)"
+    ```
+    perconapgbackups.pgv2.percona.com
+    perconapgrestores.pgv2.percona.com
+    perconapgclusters.pgv2.percona.com
+    postgresclusters.postgres-operator.crunchydata.com
+    ```
+                   
+    !!! caution alert alert-warning "warning"
+        If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
 
             
         
@@ -211,7 +211,7 @@ customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operato
 
 If you are using PG operator for crunchy data, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. In this case, run the following command:
 
-```
+```sh
 cat <<EOF | xargs kubectl delete crd
 perconapgbackups.pgv2.percona.com
 perconapgrestores.pgv2.percona.com
