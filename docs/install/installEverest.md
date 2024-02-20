@@ -21,7 +21,11 @@ To install and provision Percona Everest to Kubernetes:
     everestctl install
     ```
 
-3. Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+    Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+
+    !!! caution alert alert-warning "Important"
+        The following namespaces are restricted and cannot be used for deploying databases.
+
 
     ??? example "Expected output"
         ```
@@ -44,7 +48,7 @@ To install and provision Percona Everest to Kubernetes:
     !!! note alert alert-primary "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
@@ -73,4 +77,4 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
                 ```
 
-5. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 4. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 4. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
