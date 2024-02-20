@@ -40,7 +40,10 @@ Besides the operators mentioned above, you have the option to install at least o
 - [Percona Operator for MongoDB](https://docs.percona.com/percona-operator-for-mongodb/index.html)
 - [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
 
-    The list of CRDs for the operators is given below:
+    
+### List of CRDs for the operators
+
+The list of CRDs for the various operators is given below:
 
     === "CRDs for operators installed with Percona Everest"
 
@@ -84,7 +87,7 @@ Besides the operators mentioned above, you have the option to install at least o
             monitoringconfigs.everest.percona.com
             ```
 
-    === "CRDs for operators that you need to select (at least one)"
+    === "CRDs for operators that you can select (at least one)"
     
         ??? example "PXC Operator"
             ```
@@ -162,8 +165,7 @@ postgresclusters.postgres-operator.crunchydata.com
 EOF    
 ```
         
-The output for the above command is:
-
+??? example "PG Operator (Percona and CrunchyData)"
 ```
 customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
 customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
@@ -209,12 +211,12 @@ customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operato
 
 If you are using PG operator for crunchy data, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. In this case, run the following command:
 
-    ```sh
-    cat <<EOF | xargs kubectl delete crd
-    perconapgbackups.pgv2.percona.com
-    perconapgrestores.pgv2.percona.com
-    perconapgclusters.pgv2.percona.com
-    ```
+```
+cat <<EOF | xargs kubectl delete crd
+perconapgbackups.pgv2.percona.com
+perconapgrestores.pgv2.percona.com
+perconapgclusters.pgv2.percona.com
+```
 
 
 
