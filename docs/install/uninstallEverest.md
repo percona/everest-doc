@@ -19,25 +19,26 @@ To uninstall Everest:
     everestctl uninstall
     ```
 
-2. Remove the unused Custom Resource Definitions (CRD).
-
-
-    During the installation of Everest, the following operators will be installed as well:
-    
-    - Everest
-    - VictoriaMetrics
-    - OLM
-
-    Besides the operators mentioned above, you have the option to install at least one of the following operators.
-    
-    - [Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
-    - [Percona Operator for MongoDB](https://docs.percona.com/percona-operator-for-mongodb/index.html)
-    - [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
+2. [Remove the unused Custom Resource Definitions (CRD)](uninstallEverest.md#).
 
     !!! caution alert alert-warning "warning"
 
         - Ensure that you don't remove any CRDs that are being used by the operators. Removing these CRDs can lead to unexpected behavior and errors in Percona Everest.
         - Before proceeding with Custom Resource Definitions (CRD) cleanup, check that any custom resources linked with CRDs are removed. This is a crucial step because deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the cluster.
+
+## How to remove CRD
+
+During the installation of Everest, the following operators will be installed as well:
+    
+- Everest
+- VictoriaMetrics
+- OLM
+
+Besides the operators mentioned above, you have the option to install at least one of the following operators.
+    
+- [Percona Operator for MySQL](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
+- [Percona Operator for MongoDB](https://docs.percona.com/percona-operator-for-mongodb/index.html)
+- [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
 
     The list of CRD's for the operators is given below:
 
@@ -107,9 +108,13 @@ To uninstall Everest:
             postgresclusters.postgres-operator.crunchydata.com
             ```
         
-    **Examples**
+### Examples for removing CRD
 
-        ```
+This section lists various examples for removing the CRDs.
+
+#### Remove all the CRDs
+
+        ```sh
         cat <<EOF | xargs kubectl delete crd
         catalogsources.operators.coreos.com
         clusterserviceversions.operators.coreos.com
@@ -152,7 +157,7 @@ To uninstall Everest:
         EOF
         ```
 
-        ```
+        ```sh
         customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
         customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
         customresourcedefinition.apiextensions.k8s.io "installplans.operators.coreos.com" deleted
@@ -192,6 +197,24 @@ To uninstall Everest:
         customresourcedefinition.apiextensions.k8s.io "perconapgclusters.pgv2.percona.com" deleted
         customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
         ```
+
+#### Remove CRD for PSMDB operator
+
+To remove the CRD for PSMDB Operator:
+
+    ```sh
+    cat <<EOF | xargs kubectl delete crd
+    perconaservermongodbbackups.psmdb.percona.com
+    perconaservermongodbrestores.psmdb.percona.com
+    perconaservermongodbs.psmdb.percona.com
+    ```
+
+
+
+
+
+
+
 
 
 
