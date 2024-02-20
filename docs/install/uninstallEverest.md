@@ -109,7 +109,6 @@ To uninstall Everest:
         
     **Examples**
 
-    ??? example "Deleting CRD's for all the operators"
         ```
         cat <<EOF | xargs kubectl delete crd
         catalogsources.operators.coreos.com
@@ -153,7 +152,6 @@ To uninstall Everest:
         EOF
         ```
 
-    ??? example "Expected output"
         ```
         customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
         customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
