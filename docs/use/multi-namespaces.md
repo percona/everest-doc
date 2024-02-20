@@ -11,7 +11,7 @@ In Kubernetes, the concept of namespaces enables you to create isolated groups o
 
 If you are dealing with complex environments comprising Kubernetes clusters that need to be used with Percona Everest, you can leverage the multiple namespace feature. This feature enables logical partitioning within the cluster.
 
-For example, you can deploy different environments like production, development, and QA within a single cluster by using multiple namespaces, which helps in managing the clusters efficiently.
+For example, you can deploy different environments like production, development, and QA within a single cluster by using multiple namespaces. This approach enables you to efficiently manage the clusters.
 
 ## Default namespaces in Percona Everest
 
