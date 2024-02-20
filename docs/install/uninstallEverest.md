@@ -13,13 +13,8 @@ You can run the commands below to remove all Everest resources including:
 To uninstall Everest:
 {.power-number}
 
-1. Identify the namespace:
 
-    ```sh
-    export EVEREST_NS=percona-everest
-    ```
-
-2. Uninstall Everest:
+1. Uninstall Everest:
 
     ```sh
     everestctl uninstall
