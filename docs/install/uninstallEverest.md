@@ -19,7 +19,7 @@ To uninstall Percona Everest:
     everestctl uninstall
     ```
 
-2. [Remove the unused Custom Resource Definitions (CRDs)](uninstallEverest.md#).
+2. [Remove the unused Custom Resource Definitions (CRDs)](uninstallEverest.md#how-to-remove-crds).
 
     !!! caution alert alert-warning "warning"
 
