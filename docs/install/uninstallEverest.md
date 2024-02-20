@@ -107,9 +107,9 @@ Besides the operators mentioned above, you have the option to install at least o
             perconapgclusters.pgv2.percona.com
             postgresclusters.postgres-operator.crunchydata.com
             ```
-        
-        !!! caution alert alert-warning "warning"
-            If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
+                    
+                !!! caution alert alert-warning "warning"
+                    If you are using CrunchyData, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com`
 
             
         
