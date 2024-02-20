@@ -211,7 +211,9 @@ customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operato
 
 #### Remove CRD for PG operator
 
-If you are using PG operator for crunchy data, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. In this case, run the following command:
+If you are using Postres operator for Crunchy Data, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. 
+
+In this case, run the following command:
 
 ```sh
 cat <<EOF | xargs kubectl delete crd
