@@ -41,46 +41,46 @@ To uninstall Everest:
     === "Operators installed with Percona Everest"
 
         ??? example "OLM Operator"
-        ```
-        catalogsources.operators.coreos.com
-        clusterserviceversions.operators.coreos.com
-        installplans.operators.coreos.com
-        olmconfigs.operators.coreos.com
-        operatorconditions.operators.coreos.com
-        operatorgroups.operators.coreos.com
-        operators.operators.coreos.com
-        subscriptions.operators.coreos.co
-        ```
+            ```
+            catalogsources.operators.coreos.com
+            clusterserviceversions.operators.coreos.com
+            installplans.operators.coreos.com
+            olmconfigs.operators.coreos.com
+            operatorconditions.operators.coreos.com
+            operatorgroups.operators.coreos.com
+            operators.operators.coreos.com
+            subscriptions.operators.coreos.co
+            ```
 
         ??? example "VictoriaMetrics Operator"
-        ```
-        vmrules.operator.victoriametrics.com
-        vmnodescrapes.operator.victoriametrics.com
-        vmauths.operator.victoriametrics.com
-        vmprobes.operator.victoriametrics.com
-        vmpodscrapes.operator.victoriametrics.com
-        vmsingles.operator.victoriametrics.com
-        vmstaticscrapes.operator.victoriametrics.com
-        vmservicescrapes.operator.victoriametrics.com
-        vmalertmanagerconfigs.operator.victoriametrics.com
-        vmalertmanagers.operator.victoriametrics.com
-        vmalerts.operator.victoriametrics.com
-        vmagents.operator.victoriametrics.com
-        vmclusters.operator.victoriametrics.com
-        vmusers.operator.victoriametrics.com
-        ```
+            ```
+            vmrules.operator.victoriametrics.com
+            vmnodescrapes.operator.victoriametrics.com
+            vmauths.operator.victoriametrics.com
+            vmprobes.operator.victoriametrics.com
+            vmpodscrapes.operator.victoriametrics.com
+            vmsingles.operator.victoriametrics.com
+            vmstaticscrapes.operator.victoriametrics.com
+            vmservicescrapes.operator.victoriametrics.com
+            vmalertmanagerconfigs.operator.victoriametrics.com
+            vmalertmanagers.operator.victoriametrics.com
+            vmalerts.operator.victoriametrics.com
+            vmagents.operator.victoriametrics.com
+            vmclusters.operator.victoriametrics.com
+            vmusers.operator.victoriametrics.com
+            ```
 
         ??? example "Everest Operator"
-        ```
-        databaseclusterbackups.everest.percona.com
-        databaseclusters.everest.percona.com
-        databaseengines.everest.percona.com
-        backupstorages.everest.percona.com
-        databaseclusterrestores.everest.percona.com
-        monitoringconfigs.everest.percona.com
-        ```
+            ```
+            databaseclusterbackups.everest.percona.com
+            databaseclusters.everest.percona.com
+            databaseengines.everest.percona.com
+            backupstorages.everest.percona.com
+            databaseclusterrestores.everest.percona.com
+            monitoringconfigs.everest.percona.com
+            ```
 
-    === "Operators that you need to select manually (atleast one)"
+    === "Operators that you need to select (atleast one)"
     
         ??? example "PXC Operator"
             ```
