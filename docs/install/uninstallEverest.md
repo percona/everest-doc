@@ -119,92 +119,91 @@ This section lists various examples for removing the CRDs.
 
 #### Remove all the CRDs
 
-    ```
-    cat <<EOF | xargs kubectl delete crd
-    cat <<EOF | xargs kubectl delete crd
-    catalogsources.operators.coreos.com
-    clusterserviceversions.operators.coreos.com
-    installplans.operators.coreos.com
-    olmconfigs.operators.coreos.com
-    operatorconditions.operators.coreos.com
-    operatorgroups.operators.coreos.com
-    operators.operators.coreos.com
-    subscriptions.operators.coreos.com
-    vmrules.operator.victoriametrics.com
-    vmnodescrapes.operator.victoriametrics.com
-    vmauths.operator.victoriametrics.com
-    vmprobes.operator.victoriametrics.com
-    vmpodscrapes.operator.victoriametrics.com
-    vmsingles.operator.victoriametrics.com
-    vmstaticscrapes.operator.victoriametrics.com
-    vmservicescrapes.operator.victoriametrics.com
-    vmalertmanagerconfigs.operator.victoriametrics.com
-    vmalertmanagers.operator.victoriametrics.com
-    vmalerts.operator.victoriametrics.com
-    vmagents.operator.victoriametrics.com
-    vmclusters.operator.victoriametrics.com
-    vmusers.operator.victoriametrics.com
-    databaseclusterbackups.everest.percona.com
-    databaseclusters.everest.percona.com
-    databaseengines.everest.percona.com
-    backupstorages.everest.percona.com
-    databaseclusterrestores.everest.percona.com
-    monitoringconfigs.everest.percona.com
-    perconaxtradbclusterbackups.pxc.percona.com
-    perconaxtradbclusterrestores.pxc.percona.com
-    perconaxtradbclusters.pxc.percona.com
-    perconaservermongodbbackups.psmdb.percona.com
-    perconaservermongodbrestores.psmdb.percona.com
-    perconaservermongodbs.psmdb.percona.com
-    perconapgbackups.pgv2.percona.com
-    perconapgrestores.pgv2.percona.com
-    perconapgclusters.pgv2.percona.com
-    postgresclusters.postgres-operator.crunchydata.com
-    EOF
-    ```
+```
+cat <<EOF | xargs kubectl delete crd
+catalogsources.operators.coreos.com
+clusterserviceversions.operators.coreos.com
+installplans.operators.coreos.com
+olmconfigs.operators.coreos.com
+operatorconditions.operators.coreos.com
+operatorgroups.operators.coreos.com
+operators.operators.coreos.com
+subscriptions.operators.coreos.com
+vmrules.operator.victoriametrics.com
+vmnodescrapes.operator.victoriametrics.com
+vmauths.operator.victoriametrics.com
+vmprobes.operator.victoriametrics.com
+vmpodscrapes.operator.victoriametrics.com
+vmsingles.operator.victoriametrics.com
+vmstaticscrapes.operator.victoriametrics.com
+vmservicescrapes.operator.victoriametrics.com
+vmalertmanagerconfigs.operator.victoriametrics.com
+vmalertmanagers.operator.victoriametrics.com
+vmalerts.operator.victoriametrics.com
+vmagents.operator.victoriametrics.com
+vmclusters.operator.victoriametrics.com
+vmusers.operator.victoriametrics.com
+databaseclusterbackups.everest.percona.com
+databaseclusters.everest.percona.com
+databaseengines.everest.percona.com
+backupstorages.everest.percona.com
+databaseclusterrestores.everest.percona.com
+monitoringconfigs.everest.percona.com
+perconaxtradbclusterbackups.pxc.percona.com
+perconaxtradbclusterrestores.pxc.percona.com
+perconaxtradbclusters.pxc.percona.com
+perconaservermongodbbackups.psmdb.percona.com
+perconaservermongodbrestores.psmdb.percona.com
+perconaservermongodbs.psmdb.percona.com
+perconapgbackups.pgv2.percona.com
+perconapgrestores.pgv2.percona.com
+perconapgclusters.pgv2.percona.com
+postgresclusters.postgres-operator.crunchydata.com
+EOF    
+```
         
 The output for the above command is:
 
-    ```sh
-    customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "installplans.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "olmconfigs.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "operatorconditions.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "operatorgroups.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "operators.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "subscriptions.operators.coreos.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmrules.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmnodescrapes.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmauths.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmprobes.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmpodscrapes.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmsingles.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmstaticscrapes.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmservicescrapes.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmalertmanagerconfigs.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmalertmanagers.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmalerts.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmagents.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmclusters.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "vmusers.operator.victoriametrics.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "databaseclusterbackups.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "databaseclusters.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "databaseengines.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "backupstorages.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "databaseclusterrestores.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "monitoringconfigs.everest.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusterbackups.pxc.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusterrestores.pxc.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusters.pxc.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaservermongodbbackups.psmdb.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaservermongodbrestores.psmdb.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconaservermongodbs.psmdb.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconapgbackups.pgv2.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconapgrestores.pgv2.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconapgclusters.pgv2.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
-    ```
+```
+customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "installplans.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "olmconfigs.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "operatorconditions.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "operatorgroups.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "operators.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "subscriptions.operators.coreos.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmrules.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmnodescrapes.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmauths.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmprobes.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmpodscrapes.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmsingles.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmstaticscrapes.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmservicescrapes.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmalertmanagerconfigs.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmalertmanagers.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmalerts.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmagents.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmclusters.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "vmusers.operator.victoriametrics.com" deleted
+customresourcedefinition.apiextensions.k8s.io "databaseclusterbackups.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "databaseclusters.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "databaseengines.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "backupstorages.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "databaseclusterrestores.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "monitoringconfigs.everest.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusterbackups.pxc.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusterrestores.pxc.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaxtradbclusters.pxc.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaservermongodbbackups.psmdb.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaservermongodbrestores.psmdb.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconaservermongodbs.psmdb.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconapgbackups.pgv2.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconapgrestores.pgv2.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "perconapgclusters.pgv2.percona.com" deleted
+customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
+```
 
 #### Remove CRD for PG operator
 
