@@ -114,48 +114,51 @@ This section lists various examples for removing the CRDs.
 
 #### Remove all the CRDs
 
-        ```sh
-        cat <<EOF | xargs kubectl delete crd
-        catalogsources.operators.coreos.com
-        clusterserviceversions.operators.coreos.com
-        installplans.operators.coreos.com
-        olmconfigs.operators.coreos.com
-        operatorconditions.operators.coreos.com
-        operatorgroups.operators.coreos.com
-        operators.operators.coreos.com
-        subscriptions.operators.coreos.com
-        vmrules.operator.victoriametrics.com
-        vmnodescrapes.operator.victoriametrics.com
-        vmauths.operator.victoriametrics.com
-        vmprobes.operator.victoriametrics.com
-        vmpodscrapes.operator.victoriametrics.com
-        vmsingles.operator.victoriametrics.com
-        vmstaticscrapes.operator.victoriametrics.com
-        vmservicescrapes.operator.victoriametrics.com
-        vmalertmanagerconfigs.operator.victoriametrics.com
-        vmalertmanagers.operator.victoriametrics.com
-        vmalerts.operator.victoriametrics.com
-        vmagents.operator.victoriametrics.com
-        vmclusters.operator.victoriametrics.com
-        vmusers.operator.victoriametrics.com
-        databaseclusterbackups.everest.percona.com
-        databaseclusters.everest.percona.com
-        databaseengines.everest.percona.com
-        backupstorages.everest.percona.com
-        databaseclusterrestores.everest.percona.com
-        monitoringconfigs.everest.percona.com
-        perconaxtradbclusterbackups.pxc.percona.com
-        perconaxtradbclusterrestores.pxc.percona.com
-        perconaxtradbclusters.pxc.percona.com
-        perconaservermongodbbackups.psmdb.percona.com
-        perconaservermongodbrestores.psmdb.percona.com
-        perconaservermongodbs.psmdb.percona.com
-        perconapgbackups.pgv2.percona.com
-        perconapgrestores.pgv2.percona.com
-        perconapgclusters.pgv2.percona.com
-        postgresclusters.postgres-operator.crunchydata.com
-        EOF
-        ```
+    ```sh
+    cat <<EOF | xargs kubectl delete crd
+    cat <<EOF | xargs kubectl delete crd
+    catalogsources.operators.coreos.com
+    clusterserviceversions.operators.coreos.com
+    installplans.operators.coreos.com
+    olmconfigs.operators.coreos.com
+    operatorconditions.operators.coreos.com
+    operatorgroups.operators.coreos.com
+    operators.operators.coreos.com
+    subscriptions.operators.coreos.com
+    vmrules.operator.victoriametrics.com
+    vmnodescrapes.operator.victoriametrics.com
+    vmauths.operator.victoriametrics.com
+    vmprobes.operator.victoriametrics.com
+    vmpodscrapes.operator.victoriametrics.com
+    vmsingles.operator.victoriametrics.com
+    vmstaticscrapes.operator.victoriametrics.com
+    vmservicescrapes.operator.victoriametrics.com
+    vmalertmanagerconfigs.operator.victoriametrics.com
+    vmalertmanagers.operator.victoriametrics.com
+    vmalerts.operator.victoriametrics.com
+    vmagents.operator.victoriametrics.com
+    vmclusters.operator.victoriametrics.com
+    vmusers.operator.victoriametrics.com
+    databaseclusterbackups.everest.percona.com
+    databaseclusters.everest.percona.com
+    databaseengines.everest.percona.com
+    backupstorages.everest.percona.com
+    databaseclusterrestores.everest.percona.com
+    monitoringconfigs.everest.percona.com
+    perconaxtradbclusterbackups.pxc.percona.com
+    perconaxtradbclusterrestores.pxc.percona.com
+    perconaxtradbclusters.pxc.percona.com
+    perconaservermongodbbackups.psmdb.percona.com
+    perconaservermongodbrestores.psmdb.percona.com
+    perconaservermongodbs.psmdb.percona.com
+    perconapgbackups.pgv2.percona.com
+    perconapgrestores.pgv2.percona.com
+    perconapgclusters.pgv2.percona.com
+    postgresclusters.postgres-operator.crunchydata.com
+    EOF
+    ```
+        
+
 
         ```sh
         customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
