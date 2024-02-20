@@ -63,7 +63,7 @@ export KUBECONFIG=~/.kube/config
         2024-02-20T10:18:50Z    info    install/install.go:185
         Here's your authorization token for accessing the Everest UI and API:
 
-        **SPL6dp9uUNjlTGcgvCbwzdPWmqjks01YGe5AwUpXTx8hciycT7avxSMY2moDs7i876RMW5kfRCMImYNVhhGWooHEFZAYMWjcaG1IotH6cgJFsyh7EcAfPevDqnotd1A7**
+        SPL6dp9uUNjlTGcgvCbwzdPWmqjks01YGe5AwUpXTx8hciycT7avxSMY2moDs7i876RMW5kfRCMImYNVhhGWooHEFZAYMWjcaG1IotH6cgJFsyh7EcAfPevDqnotd1A7
 
         Store this token securely as you will not be able to retrieve it later. If you ever need to reset it, use the following command:
         everestctl token reset
