@@ -209,7 +209,7 @@ EOF
 
 #### Remove CRD for PostreSQL operator
 
-If you are using the PostreSQL operator from **Crunchy Data**, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. 
+If you are using the PostgreSQL operator from **Crunchy Data**, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. 
 
 In this case, run the following command:
 
