@@ -19,11 +19,11 @@ To uninstall Percona Everest:
     everestctl uninstall
     ```
 
-2. [Remove the unused Custom Resource Definitions (CRDs)](uninstallEverest.md#how-to-remove-crds).
+2. Remove the unused Custom Resource Definitions (CRDs)(https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
     !!! caution alert alert-warning "warning"
 
-        - Ensure that you don't remove any CRDs that are being used by the operators. Removing these CRDs can lead to unexpected behavior and errors in Percona Everest.
+        - Ensure that you do not remove any CRDs that are being used by the operators. Removing these CRDs can lead to unexpected behavior and errors in Percona Everest.
         - Before proceeding with Custom Resource Definitions (CRD) cleanup, check that any custom resources linked with CRDs are removed. This is a crucial step because deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the cluster.
 
 ## How to remove CRDs
@@ -43,11 +43,11 @@ Besides the operators mentioned above, you need to install at least one of the f
     
 ### List of CRDs for the operators
 
-The list of CRDs for the various operators is given below:
+Below is a list of CRDs for different operators.
 
 === "CRDs for operators installed with Percona Everest"
 
-    ??? example "OLM Operator"
+    ??? example "OLM operator"
         ```
         catalogsources.operators.coreos.com
         clusterserviceversions.operators.coreos.com
@@ -59,7 +59,7 @@ The list of CRDs for the various operators is given below:
         subscriptions.operators.coreos.co
         ```
 
-    ??? example "VictoriaMetrics Operator"
+    ??? example "VictoriaMetrics operator"
         ```
         vmrules.operator.victoriametrics.com
         vmnodescrapes.operator.victoriametrics.com
@@ -77,7 +77,7 @@ The list of CRDs for the various operators is given below:
         vmusers.operator.victoriametrics.com
         ```
 
-    ??? example "Everest Operator"
+    ??? example "Everest operator"
         ```
         databaseclusterbackups.everest.percona.com
         databaseclusters.everest.percona.com
@@ -89,21 +89,21 @@ The list of CRDs for the various operators is given below:
 
 === "CRDs for operators that you need to select (at least one)"
     
-    ??? example "PXC Operator"
+    ??? example "PXC operator"
         ```
         perconaxtradbclusterbackups.pxc.percona.com
         perconaxtradbclusterrestores.pxc.percona.com
         perconaxtradbclusters.pxc.percona.com
         ```
 
-    ??? example "PSMDB Operator"
+    ??? example "PSMDB operator"
         ```
         perconaservermongodbbackups.psmdb.percona.com
         perconaservermongodbrestores.psmdb.percona.com
         perconaservermongodbs.psmdb.percona.com
         ```
         
-    ??? example "PG Operator (Percona and CrunchyData)"
+    ??? example "PG operator (Percona and CrunchyData)"
         ```
         perconapgbackups.pgv2.percona.com
         perconapgrestores.pgv2.percona.com
