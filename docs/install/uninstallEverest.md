@@ -111,7 +111,7 @@ Below is a list of CRDs for different operators.
         ```
                    
         !!! caution alert alert-warning "warning"
-            The Percona Operator for PostgreSQL is a fork of the Crunchy Data for the Postgres operator. Thus, if you are using the Postgres operator for Crunchy Data, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com.`
+            The Percona Operator for PostgreSQL is a fork of the Crunchy Data's Postgres operator. Thus, if you are using the Crunchy Data's Postgres operator, do not remove the CRD `postgresclusters.postgres-operator.crunchydata.com.`
 
                     
 ### Examples for removing CRDs
