@@ -43,7 +43,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 ## Bugs fixed
 
-- [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
+- [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) - Unable to turn on monitoring
 - [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - When editing a MongoDB database, the **Storage location** field on the **Backups** page is now disabled to prevent changes to the current location. This limitation stems from a restriction in Everest, which currently restricts MongoDB databases to utilizing a single storage location for backups.
 - [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - After uninstalling and reinstalling Percona Everest, the login token was not displayed. To log in to Percona Everest, the token from the first installation had to be used. The issue has been resolved now.
 - [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - When trying to set up a fourth scheduled backup for PostgreSQL databases, Everest now notifies that initiating another backup is not possible when three backup schedules are already in place. This restriction is due to a current limitation in the PostgreSQL Operator, which allows a maximum of three concurrent backups to be scheduled for PostgreSQL databases.
