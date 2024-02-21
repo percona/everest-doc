@@ -14,6 +14,14 @@ Under development for the past six months and in testing since October 2023, we'
 
 Be an early adopter and join us in driving its progress!
 
+## Multiple namespaces
+
+Starting with 0.8.0, we have introduced a new feature called as multiple namepaces. create isolated groups of resources within a single cluster. These namespaces provide a way to organize and manage resources without interfering with other resources within the same cluster. Multiple namespaces provides logical partioning Starting with Percona Everest 0.8.0, we have introduced a new feature called 'Multiple namespaces'. With this feature, you can create separate groups of resources within a single cluster. Namespaces enable you to partition your clusters logically, organizing and managing the resources effectively without impacting other resources in the same cluster. 
+
+To view the list of configured namespaces, navigate to <i class="uil uil-cog"></i> **Settings > Namespaces** on the Percona Everest UI.
+
+    ![!image](../images/everest_multinamespaces.png)
+
 ## Support for scheduled backups for PostgreSQL
 
 We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostreSQL as well.
