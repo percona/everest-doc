@@ -30,38 +30,31 @@ To gain a deeper understanding of this feature, refer to our comprehensive [docu
 
 We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostreSQL as well.
 
+    ![!image](../images/PostreSQL_Backups.png)
+
 However, due to a limitation on PostgreSQL Operator, scheduling is currently restricted to a maximum of three concurrent backups for PostgreSQL databases.
 
 ## New features and improvements
 
-- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) - We have now enabled Scheduled backups for the PostgreSQL operator.
-
+- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) - We've completed support for scheduled backups functionality, extending automated backup capabilities to PostgreSQL databases as well.
 - [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) Integrate with PGO v2.3.1
 
 - [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) - We have added a copy button next to the **Host** string on the **Connection Details** panel to enable you to copy the host string easily.
 
-- [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - A constraint prevented the execution of more than three Backup schedules for the Postgresql database. We have addressed this, and you can now execute backup schedules for the Postgresql database without any constraints.
-
-
 ## Bugs fixed
 
-- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - The storage location was enabled while editing a MongoDB database. This was not the expected behavior. The storage location should not be changed once set up during database creation. The issue has been resolved now.
-
+- [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
+- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - When editing a MongoDB database, the **Storage location** field on the **Backups** page is now disabled to prevent changes to the current location. This limitation stems from a restriction in Everest, which currently restricts MongoDB databases to utilizing a single storage location for backups.
 - [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - After uninstalling and reinstalling Percona Everest, the login token was not displayed. To log in to Percona Everest, the token from the first installation had to be used. The issue has been resolved now.
-
-- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) Backup schedules more than three do not run for postgresql database
-
-- [EVEREST-822](https://perconadev.atlassian.net/browse/EVEREST-822) Postgresql database created from a backup cannot be restored
-
-- [EVEREST-825](https://perconadev.atlassian.net/browse/EVEREST-825) PG cluster stuck initialising after restoration
-
-- [EVEREST-826](https://perconadev.atlassian.net/browse/EVEREST-826) \[Operator\] PG on-demand backups are incremental instead of full
-
-- [EVEREST-833](https://perconadev.atlassian.net/browse/EVEREST-833) \[UI\] Database version is blank when a new database is created from backup
-
+- [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - When trying to set up a fourth scheduled backup for PostgreSQL databases, Everest now notifies that initiating another backup is not possible when three backup schedules are already in place. This restriction is due to a current limitation in the PostgreSQL Operator, which allows a maximum of three concurrent backups to be scheduled for PostgreSQL databases.
+- [EVEREST-822](https://perconadev.atlassian.net/browse/EVEREST-822) - Fixed an issue that sometimes occurred when restoring a Postgresql database from a backup.
+- [EVEREST-826](https://perconadev.atlassian.net/browse/EVEREST-826)  - When initiating an on-demand backup for PostgreSQL databases, Everest would incorrectly perform incremental backups instead of conducting a full backup. This issue is now fixed.
+- [EVEREST-833](https://perconadev.atlassian.net/browse/EVEREST-833) - When creating a new database from a backup, Everest now pre-fills the database version inherited from the backup artifact, ensuring consistency and compatibility throughout deployments.
 - [EVEREST-854](https://perconadev.atlassian.net/browse/EVEREST-854) - Fixed an issue where the default number of nodes on the **Resources** page for MySQL showed up as 1 instead of 3. 
 
+## Known issues
 
-## Known issue
+- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to a limitation on PostgreSQL Operator, scheduling backups for PostgreSQL databases is currently restricted to a maximum of three concurrent backups.
+- [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - When performing a MongoDB database restore from a Point-in-Time (PITR), the displayed time in the UI does not align with the actual PITR creation time due to discrepancies between the PITR chunk creation time and the time at which chunks are uploaded to the S3 storage location.
 
-- [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - 
+
