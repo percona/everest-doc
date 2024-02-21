@@ -32,7 +32,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 ## New features and improvements
 
-- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) Enable scheduled backups for PG
+- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) - We have now enabled Scheduled backups for the PostgreSQL operator.
 
 - [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) Integrate with PGO v2.3.1
 
