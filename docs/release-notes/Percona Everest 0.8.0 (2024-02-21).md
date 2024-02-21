@@ -45,8 +45,6 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 ## Bugs fixed
 
-- [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
-
 - [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - The storage location was enabled while editing a MongoDB database. This was not the expected behavior. The storage location should not be changed once set up during database creation. The issue has been resolved now.
 
 - [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - After uninstalling and reinstalling Percona Everest, the login token was not displayed. To log in to Percona Everest, the token from the first installation had to be used. The issue has been resolved now.
