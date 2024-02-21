@@ -38,7 +38,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) Integrate with PGO v2.3.1
 
-- [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) \[UI\] Add copy button to connection's host string
+- [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) - We have added a copy button next to the **Host** string on the **Connection Details** panel to enable you to copy the host string easily.
 
 - [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - A constraint prevented the execution of more than three Backup schedules for the Postgresql database. We have addressed this, and you can now execute backup schedules for the Postgresql database without any constraints.
 
