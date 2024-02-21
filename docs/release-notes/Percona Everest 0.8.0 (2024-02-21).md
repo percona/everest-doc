@@ -64,3 +64,6 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 - [EVEREST-854](https://perconadev.atlassian.net/browse/EVEREST-854) - Fixed an issue where the default number of nodes on the **Resources** page for MySQL showed up as 1 instead of 3. 
 
 
+## Known issue
+
+- [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - 
