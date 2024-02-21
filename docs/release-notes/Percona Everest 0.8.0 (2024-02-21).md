@@ -36,7 +36,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 ## New features and improvements
 
-- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) - We've completed support for scheduled backups functionality, extending automated backup capabilities to PostgreSQL databases as well.
+- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) - We've completed support for Scheduled Backups functionality, extending automated backup capabilities to PostgreSQL databases as well.
 - [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) Integrate with PGO v2.3.1
 
 - [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) - We have added a copy button next to the **Host** string on the **Connection Details** panel to enable you to copy the host string easily.
@@ -56,5 +56,3 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to a limitation on PostgreSQL Operator, scheduling backups for PostgreSQL databases is currently restricted to a maximum of three concurrent backups.
 - [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - When performing a MongoDB database restore from a Point-in-Time (PITR), the displayed time in the UI does not align with the actual PITR creation time due to discrepancies between the PITR chunk creation time and the time at which chunks are uploaded to the S3 storage location.
-
-
