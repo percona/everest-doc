@@ -86,7 +86,7 @@ Below is a list of CRDs for different operators.
         monitoringconfigs.everest.percona.com
         ```
 
-=== "CRDs of optional operators that you must have selected at least one"
+=== "CRDs of optional operators that you must have selected (at least one)"
     
     ??? example "PXC operator"
         ```
