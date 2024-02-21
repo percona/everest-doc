@@ -45,9 +45,9 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
 
-- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - The storage location was enabled while editing a MongoDB database,  which caused an issue as Everest supports only one storage location for the MongoDB database. The issue has been resolved now.
+- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - The storage location was enabled while editing a MongoDB database. This was not the expected behavior. The storage location should not be changed once set up during database creation. The issue has been resolved now.
 
-- [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) Token is not deleted when Everest is uninstalled
+- [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - After uninstalling and reinstalling Percona Everest, the login token was not displayed. To log in to Percona Everest, the token from the first installation had to be used. The issue has been resolved now.
 
 - [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) Backup schedules more than three do not run for postgresql database
 
