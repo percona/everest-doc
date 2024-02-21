@@ -45,7 +45,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
 
-- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - \[UI\] Storage location for mongodb should be disabled for edit
+- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - The storage location was enabled while editing a MongoDB database,  which caused an issue as Everest supports only one storage location for the MongoDB database. The issue has been resolved now.
 
 - [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) Token is not deleted when Everest is uninstalled
 
