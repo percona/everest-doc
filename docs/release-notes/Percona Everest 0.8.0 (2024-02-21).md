@@ -38,8 +38,7 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) \[UI\] Add copy button to connection's host string
 
-- [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) \[BE\] Handle PG storages amount limitation
-
+- [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - A constraint prevented the execution of more than three Backup schedules for the Postgresql database. We have addressed this, and you can now execute backup schedules for the Postgresql database without any constraints.
 
 
 ## Bugs fixed
