@@ -164,8 +164,8 @@ nav:
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
-      - Install Percona Everest: install/installEverest.md
       - Install Percona Everest CLI: install/installEverestCLI.md
+      - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
