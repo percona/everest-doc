@@ -20,54 +20,39 @@ To install and provision Percona Everest to Kubernetes:
     ```sh
     everestctl install
     ```
-    
-    This will install all the required components in a namespace called `percona-everest`.
+
+    Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+
+    !!! caution alert alert-warning "Important"
+        The following namespaces are restricted and cannot be used for deploying databases.
+
+
+    ??? example "Expected output"
+        ```
+        ? Namespaces managed by Everest (comma separated) dev,production
+        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
+        ```
+
+    Alternatively, you can set multiple namepaces in the headless mode:
+
+    ```sh
+    everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+    ```
+    Replace `<namespace-name>` with the desired name for your namespace.
 
     ??? example "Example"
-            
-            ? Namespace to deploy Everest to percona-everest
-            ? What operators do you want to install? MySQL, MongoDB, PostgreSQL
-            
-
-    Alternatively, you can install Everest and provision the Kubernetes cluster by running the installation in headless mode:
-        
-    ```
-    everestctl install --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-    ```
+        ```
+        everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+        ```
 
     !!! note alert alert-primary "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
-    
-    ### Limitation
-        
-    * If the Everest CLI fails to install the operators, do the following:
-        
-        * [Uninstall Percona Everest](uninstallEverest.md).
-        
-        * Install Percona Everest, starting with the second step.
 
-
-3. (Optional) Verify that the services have started properly:
-    
-    ```sh
-    kubectl get pods -n percona-everest
-    ```        
-    ??? example "Expected output"
-        ```
-        NAME                                                  READY   STATUS      RESTARTS   AGE
-        percona-xtradb-cluster-operator-75c9b976cf-jl9j6      1/1     Running     0          10s
-        percona-server-mongodb-operator-79b9668cd5-d7srk      1/1     Running     0          10s
-        percona-postgresql-operator-84947f45cc-2rb2w          1/1     Running     0          10s
-        percona-everest-5c896598d9-99jnr                      1/1     Running     0          10s
-        everest-operator-controller-manager-75b59869c-8jx47   2/2     Running     0          10s
-        ```
-
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Port Forwarding"
-
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
-        
+                
         ```sh
         kubectl port-forward svc/everest 8080:8080 -n percona-everest
         ``` 
@@ -75,21 +60,21 @@ To install and provision Percona Everest to Kubernetes:
     === "Service Type Load Balancer"
 
         * Use the following command to change the Everest service type to `LoadBalancer`:
-            
-        ```sh
-        kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
-        ```
-            
+                    
+            ```sh
+            kubectl patch svc/everest -n percona-everest -p '{"spec": {"type": "LoadBalancer"}}'
+            ```
+                    
         * Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default `127.0.0.1`:  
-        
-        ```sh 
-        kubectl get svc/everest -n percona-everest
-        ```
-            
-        ??? example "Expected output"
+                
+            ```sh 
+            kubectl get svc/everest -n percona-everest
             ```
-            NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-            everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
-            ```
+                    
+            ??? example "Expected output"
+                ```
+                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+                everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
+                ```
 
-5. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 4. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
