@@ -30,7 +30,35 @@ We’re expanding Percona Everest’s schedule backup functionality to include P
 
 However, due to a limitation on PostgreSQL Operator, scheduling is currently restricted to a maximum of three concurrent backups for PostgreSQL databases.
 
-## Improvements
+## New features and improvements
+
+- [EVEREST-509](https://perconadev.atlassian.net/browse/EVEREST-509) Enable scheduled backups for PG
+
+- [EVEREST-748](https://perconadev.atlassian.net/browse/EVEREST-748) Integrate with PGO v2.3.1
+
+- [EVEREST-821](https://perconadev.atlassian.net/browse/EVEREST-821) \[UI\] Add copy button to connection's host string
+
+- [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) \[BE\] Handle PG storages amount limitation
 
 
+
+## Bugs fixed
+
+- [EVEREST-758](https://perconadev.atlassian.net/browse/EVEREST-758) - Unable to turn on monitoring
+
+- [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - \[UI\] Storage location for mongodb should be disabled for edit
+
+- [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) Token is not deleted when Everest is uninstalled
+
+- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) Backup schedules more than three do not run for postgresql database
+
+- [EVEREST-822](https://perconadev.atlassian.net/browse/EVEREST-822) Postgresql database created from a backup cannot be restored
+
+- [EVEREST-825](https://perconadev.atlassian.net/browse/EVEREST-825) PG cluster stuck initialising after restoration
+
+- [EVEREST-826](https://perconadev.atlassian.net/browse/EVEREST-826) \[Operator\] PG on-demand backups are incremental instead of full
+
+- [EVEREST-833](https://perconadev.atlassian.net/browse/EVEREST-833) \[UI\] Database version is blank when a new database is created from backup
+
+- [EVEREST-854](https://perconadev.atlassian.net/browse/EVEREST-854) \[UI\] default number of MySQL nodes is 1
 
