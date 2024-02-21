@@ -7,7 +7,7 @@ In Kubernetes, the concept of namespaces enables you to create isolated groups o
     Resource names must be unique within a specific namespace but not across different namespaces.
 
 
-## Use case for multiple namespaces in Percona Everest
+## Use case for multiple namespaces
 
 If you are dealing with complex environments comprising Kubernetes clusters that need to be used with Percona Everest, you can leverage the multiple namespace feature. This feature enables logical partitioning within the cluster.
 
