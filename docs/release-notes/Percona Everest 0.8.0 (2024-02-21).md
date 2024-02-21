@@ -59,5 +59,6 @@ However, due to a limitation on PostgreSQL Operator, scheduling is currently res
 
 - [EVEREST-833](https://perconadev.atlassian.net/browse/EVEREST-833) \[UI\] Database version is blank when a new database is created from backup
 
-- [EVEREST-854](https://perconadev.atlassian.net/browse/EVEREST-854) \[UI\] default number of MySQL nodes is 1
+- [EVEREST-854](https://perconadev.atlassian.net/browse/EVEREST-854) - Fixed an issue where the default number of nodes on the **Resources** page for MySQL showed up as 1 instead of 3. 
+
 
