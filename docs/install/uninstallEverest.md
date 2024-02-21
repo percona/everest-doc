@@ -207,7 +207,7 @@ EOF
     customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
     ```
 
-#### Remove CRD for PostreSQL operator
+#### Remove CRDs of Percona's PostgreSQL operator
 
 If you are using the PostgreSQL operator from **Crunchy Data**, do not remove the `postgresclusters.postgres-operator.crunchydata.com` CRD. 
 
