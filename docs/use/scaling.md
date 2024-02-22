@@ -1,6 +1,6 @@
 # Scale database deployment
 
-Scaling in Percona Everest allows for easy adjustment of database capacity and performance to meet the changing demands.
+Manual scaling in Percona Everest allows for easy adjustment of database capacity and performance to meet the changing demands.
 
 ## Vertical scaling
             
