@@ -44,7 +44,7 @@ Back up and restore are critical aspects of managing and maintaining databases i
 
 With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
-![!image](../images/everest_backup.png)
+    ![!image](../images/everest_backup.png)
 
 5. [Monitoring](../use/monitor_endpoints.md)
 
