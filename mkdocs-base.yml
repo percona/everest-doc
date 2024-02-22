@@ -146,7 +146,7 @@ extra:
   updated_text: '<i class="uil uil-refresh"></i> Page updated'
 # Common navigation for percona.com, render.com and PDF
 nav:
-  - Welcome to Percona Everest [Alpha]: index.md 
+  - Welcome to Percona Everest [Beta]: index.md 
   - Release Notes:
       - Percona Everest 0.8.0 (2024-02-22): release-notes/Percona Everest 0.8.0 (2024-02-21).md
       - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona Everest 0.7.0 (2024-01-31).md
