@@ -55,5 +55,5 @@ However, due to a limitation on the PostgreSQL Operator, you cannot add more tha
 
 ## Known issues
 
-- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to a limitation on PostgreSQL Operator, scheduling backups for PostgreSQL databases is currently restricted to a maximum of three concurrent backups.
+- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to a limitation on the PostgreSQL Operator, you cannot add more than three backup schedules for the PostgreSQL databases.
 - [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - When performing a MongoDB database restore from a Point-in-Time (PITR), the displayed time in the UI does not align with the actual PITR creation time due to discrepancies between the PITR chunk creation time and the time at which chunks are uploaded to the S3 storage location.
