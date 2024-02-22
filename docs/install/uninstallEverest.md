@@ -19,7 +19,7 @@ To uninstall Percona Everest:
     everestctl uninstall
     ```
 
-2. Remove the unused Custom Resource Definitions (CRDs)(https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
+2. Remove the unused [Custom Resource Definitions (CRDs)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
     !!! caution alert alert-warning "warning"
 
