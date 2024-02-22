@@ -22,7 +22,7 @@ Starting with Percona Everest 0.8.0, we have introduced a new feature called **M
 
 To view the list of configured namespaces, navigate to <i class="uil uil-cog"></i> **Settings > Namespaces** on the Percona Everest UI.
 
-    ![!image](../images/everest_multinamespaces.png)
+![!image](../images/everest_multinamespaces.png)
 
 To gain a deeper understanding of this feature, refer to our comprehensive [documentation](https://docs.percona.com/everest/use/multi-namespaces.html).
 
@@ -30,7 +30,7 @@ To gain a deeper understanding of this feature, refer to our comprehensive [docu
 
 We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostgreSQL as well.
 
-    ![!image](../images/PostreSQL_Backups.png)
+![!image](../images/PostreSQL_Backups.png)
 
 
 However, due to a limitation on the PostgreSQL Operator, you cannot add more than three backup schedules for the PostgreSQL databases.
