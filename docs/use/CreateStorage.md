@@ -15,9 +15,10 @@ Everest supports S3-compatible backup locations, which means you can use [AWS S3
 To create a backup storage location:
 {.power-number}
 
-1. Go to **Settings > Backup storage** and click **Add backup storage**.  
+1. Go to **Settings > Backup storages** and click **Add Backup storage**.  
 2. In the **Name** field, specify a location name using only lowercase alphanumeric characters or hyphens. 
-3. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
+3. Select the **Namepaces** where the backup storage should be available.
+4. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
     Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
 
 ## Next steps

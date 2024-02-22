@@ -4,7 +4,7 @@ site_name: Percona Everest
 site_description: Documentation
 site_author: Percona LLC
 site_url: ""
-copyright: Percona LLC, &#169; 2023
+copyright: Percona LLC, &#169; 2024
 use_directory_urls: false
 repo_name: percona/everest-doc
 repo_url: https://github.com/percona/everest-doc
@@ -65,7 +65,7 @@ extra_javascript:
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2023 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2024 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -147,7 +147,7 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 nav:
   - Welcome to Percona Everest [Alpha]: index.md 
-  - Release notes:
+  - Release Notes:
       - Percona Everest 0.8.0 (2024-02-22): release-notes/Percona Everest 0.8.0 (2024-02-21).md
       - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona Everest 0.7.0 (2024-01-31).md
       - Percona Everest 0.6.0 (2024-01-11): release-notes/Percona Everest 0.6.0 (2024-01-11).md
@@ -164,8 +164,8 @@ nav:
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
-      - Install Percona Everest: install/installEverest.md
       - Install Percona Everest CLI: install/installEverestCLI.md
+      - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
@@ -179,7 +179,7 @@ nav:
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
       - Monitoring: use/monitor_endpoints.md
-
+      - Multiple namepaces: use/multi-namespaces.md
   - Configure:
       - Configure database engine: configure/db_engine_config.md
   - Secure: secure/user-auth.md
