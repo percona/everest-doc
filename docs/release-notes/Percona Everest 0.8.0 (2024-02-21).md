@@ -28,7 +28,7 @@ To gain a deeper understanding of this feature, refer to our comprehensive [docu
 
 ### Support for scheduled backups for PostgreSQL
 
-We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostreSQL as well.
+We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostgreSQL as well.
 
     ![!image](../images/PostreSQL_Backups.png)
 
