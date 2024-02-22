@@ -54,7 +54,7 @@ To install and provision Percona Everest to Kubernetes:
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
                 
         ```sh
-        kubectl port-forward svc/everest 8080:8080 -n percona-everest
+        kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
 
     === "Service Type Load Balancer"
