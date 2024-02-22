@@ -32,7 +32,8 @@ We’re expanding Percona Everest’s schedule backup functionality to include P
 
     ![!image](../images/PostreSQL_Backups.png)
 
-However, due to a limitation on PostgreSQL Operator, scheduling is currently restricted to a maximum of three concurrent backups for PostgreSQL databases.
+
+However, due to a limitation on the PostgreSQL Operator, you cannot add more than three backup schedules for the PostgreSQL databases.
 
 ## New features and improvements
 
