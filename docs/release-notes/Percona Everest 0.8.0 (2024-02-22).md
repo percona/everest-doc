@@ -18,9 +18,9 @@ Be an early adopter and join us in driving its progress!
 
 ### Breaking change in Percona Everest 0.8.0
 
-!!! warning
+   !!! warning
 
-    Persona Everest introduces a breaking change that prevents you from directly upgrading to Percona Everest version 0.8.0.
+       Persona Everest introduces a breaking change that prevents you from directly upgrading to Percona Everest version 0.8.0.
 
 Before installing Percona Everest version 0.8.0, make sure to remove any previous versions from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
 
