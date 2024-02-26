@@ -8,6 +8,9 @@ Version 0.8.0 introduces the following changes:
 
 ## Beta release
 
+!!! caution alert alert-warning "Important"
+    You cannot upgrade to Percona Everest version 0.8.0. 
+
 We're excited to announce that Percona Everest is now in Beta!
 
 Under development for the past six months and in testing since October 2023, we're now taking Percona Everest public, making it open for anyone who wants to explore our Cloud Native database platform.
@@ -57,3 +60,7 @@ However, due to a limitation on the PostgreSQL Operator, you cannot add more tha
 
 - [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to a limitation on the PostgreSQL Operator, you cannot add more than three backup schedules for the PostgreSQL databases.
 - [EVEREST-820](https://perconadev.atlassian.net/browse/EVEREST-820) - When performing a MongoDB database restore from a Point-in-Time (PITR), the displayed time in the UI does not align with the actual PITR creation time due to discrepancies between the PITR chunk creation time and the time at which chunks are uploaded to the S3 storage location.
+
+
+## Limitations
+
