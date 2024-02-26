@@ -21,7 +21,7 @@ Be an early adopter and join us in driving its progress!
 !!! caution alert alert-warning "Warning"
     Persona Everest introduces a breaking change that prevents you from directly upgrading to Percona Everest version 0.8.0.
 
-Before installing Percona Everest version 0.8.0, make sure to remove any previous versions of Percona Everest from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
+Before installing Percona Everest version 0.8.0, make sure to remove any previous versions from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
 
 To uninstall Percona Everest:
 {.power-number}

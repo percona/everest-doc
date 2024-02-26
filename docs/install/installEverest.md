@@ -11,7 +11,7 @@ export KUBECONFIG=~/.kube/config
 ## Installation
 
 !!! caution alert alert-warning "warning"
-    To install a new version of Percona Everest, first [uninstall the old version](./release-notes/Percona Everest 0.8.0 (2024-02-22).md) using the old CLI.
+    To install a new version of Percona Everest, first [uninstall the old version](../release-notes/Percona Everest 0.8.0 (2024-02-22).md#) using the old CLI.
 
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
