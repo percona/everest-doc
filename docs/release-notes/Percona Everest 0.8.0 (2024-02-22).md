@@ -70,6 +70,7 @@ To uninstall Percona Everest:
     kubectl delete ip --all -n $EVEREST_NS
     kubectl delete csv --all -n $EVEREST_NS
     ```
+
 7. Remove Everest OLM catalog:
 
     ```sh
