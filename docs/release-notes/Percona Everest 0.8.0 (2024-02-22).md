@@ -1,16 +1,9 @@
 # What's new in Percona Everest 0.8.0
 
-<<<<<<< Updated upstream
 !!! caution alert alert-warning "Important"
     Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
 
     To install Percona Everest version 0.8.0, you need to uninstall any previous versions of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
-=======
-!!! caution alert alert-warning "Warning"
-    Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
-
-    To install Percona Everest version 0.8.0, you need to [uninstall any previous versions]() of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
->>>>>>> Stashed changes
 
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
@@ -74,8 +67,6 @@ However, due to a limitation on the PostgreSQL Operator, you cannot add more tha
 
 ## Limitations
 
-<<<<<<< Updated upstream
-=======
 !!! caution alert alert-warning "Important"
     To uninstall Percona Everest, use the uninstall command with the old CLI binary.
 
@@ -146,22 +137,3 @@ To uninstall Percona Everest:
     ```sh
     kubectl delete ns $EVEREST_NS
     ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> Stashed changes
