@@ -1,6 +1,6 @@
 # What's new in Percona Everest 0.8.0
 
-!!! caution alert alert-warning "Important"
+!!! caution alert alert-warning "Warning"
     Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
 
     To install Percona Everest version 0.8.0, you need to uninstall any previous versions of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
