@@ -1,5 +1,11 @@
 # What's new in Percona Everest 0.8.0
 
+!!! caution alert alert-warning "Important"
+    Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
+
+    To install Percona Everest version 0.8.0, you need to uninstall any previous versions of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
+
+
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
 Percona Everest is an open source cloud native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
@@ -7,9 +13,6 @@ Percona Everest is an open source cloud native database platform that helps deve
 Version 0.8.0 introduces the following changes:
 
 ## Beta release
-
-!!! caution alert alert-warning "Important"
-    You cannot upgrade to Percona Everest version 0.8.0. 
 
 We're excited to announce that Percona Everest is now in Beta!
 
