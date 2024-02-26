@@ -35,7 +35,7 @@ To uninstall the previous version of Percona Everest:
 
 2. Uninstall Everest:
 
-    !!! caution alert alert-warning "Important"
+    !!! warning "Important"
         To uninstall Percona Everest, use the uninstall command with the old CLI binary.
 
     ```sh
@@ -64,7 +64,7 @@ To uninstall the previous version of Percona Everest:
     kubectl delete pvc --all -n $EVEREST_NS
     ```
 
-6. List CSVs and remove those with a "*percona*" and "*everest*" prefix, or remove ALL operators:
+6. List CSVs and remove those with a **percona** and **everest** prefix, or remove ALL operators:
 
     ```sh
     kubectl delete sub --all -n $EVEREST_NS
@@ -88,7 +88,7 @@ To uninstall the previous version of Percona Everest:
     kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/olm.yaml
     ```
 
-9. Remove percona-everest namespace:
+9. Remove `percona-everest` namespace:
 
     ```sh
     kubectl delete ns $EVEREST_NS
