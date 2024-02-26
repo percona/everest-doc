@@ -1,9 +1,16 @@
 # What's new in Percona Everest 0.8.0
 
+<<<<<<< Updated upstream
 !!! caution alert alert-warning "Important"
     Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
 
     To install Percona Everest version 0.8.0, you need to uninstall any previous versions of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
+=======
+!!! caution alert alert-warning "Warning"
+    Persona Everest introduces a breaking change that prevents you from directly upgrading to Perfcona Everest version 0.8.0.
+
+    To install Percona Everest version 0.8.0, you need to [uninstall any previous versions]() of Percona Everest that you have installed on your system. After uninstalling the previous version, you can install Percona Everest 0.8.0.
+>>>>>>> Stashed changes
 
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
@@ -67,3 +74,94 @@ However, due to a limitation on the PostgreSQL Operator, you cannot add more tha
 
 ## Limitations
 
+<<<<<<< Updated upstream
+=======
+!!! caution alert alert-warning "Important"
+    To uninstall Percona Everest, use the uninstall command with the old CLI binary.
+
+To install Percona Everest version 0.8.0, uninstall any previous versions of Percona Everest that you have installed on your system and then install Percona Everest 0.8.0.
+
+To uninstall Percona Everest:
+{.power-number}
+
+1. Identify the namespace:
+
+    ```sh
+    export EVEREST_NS=percona-everest
+    ```
+
+2. Uninstall Everest:
+
+    ```sh
+    everestctl uninstall
+    ```
+
+3. Remove ALL created database clusters:
+
+    ```sh
+    kubectl delete db --all -n percona-everest
+    ```
+
+4. Remove ALL backups:
+
+    ```sh
+    kubectl -n $EVEREST_NS delete job --all
+    kubectl -n $EVEREST_NS delete pxc-backup --all
+    kubectl -n $EVEREST_NS delete psmdb-backup --all
+    kubectl -n $EVEREST_NS delete pg-backup --all
+    kubectl -n $EVEREST_NS delete pod --all
+    ```
+
+5. Remove ALL PVCs:
+
+    ```sh
+    kubectl delete pvc --all -n $EVEREST_NS
+    ```
+
+6. List CSVs and remove those with a "*percona*" and "*everest*" prefix, or remove ALL operators:
+
+    ```sh
+    kubectl delete sub --all -n $EVEREST_NS
+    kubectl delete ip --all -n $EVEREST_NS
+    kubectl delete csv --all -n $EVEREST_NS
+    ```
+7. Remove Everest OLM catalog:
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/percona-dbaas-catalog.yaml
+    ```
+
+8. Remove OLM installation (Do not delete it if it was installed without Everest support):
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/crds.yaml
+    ```
+
+    ```sh
+    kubectl delete -f https://raw.githubusercontent.com/percona/percona-everest-cli/v0.7.0/data/crds/olm/olm.yaml
+    ```
+
+9. Remove percona-everest namespace:
+
+    ```sh
+    kubectl delete ns $EVEREST_NS
+    ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> Stashed changes
