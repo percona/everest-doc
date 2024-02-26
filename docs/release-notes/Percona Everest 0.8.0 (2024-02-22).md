@@ -16,7 +16,7 @@ Be an early adopter and join us in driving its progress!
 
 ## Release highlights
 
-### Breaking changes in Percona Everest 0.8.0
+### Breaking change in Percona Everest 0.8.0
 
 !!! caution alert alert-warning "Warning"
     Persona Everest introduces a breaking change that prevents you from directly upgrading to Percona Everest version 0.8.0.
