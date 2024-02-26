@@ -23,7 +23,7 @@ Be an early adopter and join us in driving its progress!
 
 Before installing Percona Everest version 0.8.0, make sure to remove any previous versions from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
 
-To uninstall the previous versions of Percona Everest:
+To uninstall the previous version of Percona Everest:
 {.power-number}
 
 1. Identify the namespace:
