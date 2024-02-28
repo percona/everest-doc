@@ -21,16 +21,15 @@ To install and provision Percona Everest to Kubernetes:
 
 2. Install Everest and provision the Kubernetes cluster using one of the following commands:
 
-    !!! warning "Important"
-        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
-        -  Make sure that you enter at least one namespace.
-
-
     ```sh
     everestctl install
     ```
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+
+        !!! warning "Important"
+        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
+        -  Make sure that you enter at least one namespace.
 
     ??? example "Expected output"
         ```
