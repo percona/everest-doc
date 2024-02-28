@@ -20,16 +20,16 @@ To install and provision Percona Everest to Kubernetes:
 1. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
 2. Install Everest and provision the Kubernetes cluster using one of the following commands:
-  
+
+    !!! warning "Important"
+        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
+        -  Make sure that you enter at least one namespace.
+
     ```sh
     everestctl install
     ```
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
-
-    !!! caution alert alert-warning "Important"
-        The following namespaces are restricted and cannot be used for deploying databases.
-
 
     ??? example "Expected output"
         ```
@@ -49,7 +49,7 @@ To install and provision Percona Everest to Kubernetes:
         everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
-    !!! note alert alert-primary "Important"
+    !!! warning "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
 3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
