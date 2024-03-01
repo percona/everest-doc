@@ -20,7 +20,7 @@ Be an early adopter and join us in driving its progress!
 
    !!! warning
 
-       Percona Everest introduces a breaking change that prevents you from directly upgrading to Percona Everest version 0.8.0.
+       Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.8.0.
 
 Before installing Percona Everest version 0.8.0, make sure to remove any previous version from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
 
