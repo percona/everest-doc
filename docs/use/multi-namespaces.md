@@ -15,7 +15,7 @@ For example, you can deploy different environments like production, development,
 
 ## Default namespaces in Percona Everest
 
-!!! caution alert alert-warning "Important"
+!!! warning "Important"
     The following namespaces are restricted and cannot be used for deploying databases.
 
 Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
