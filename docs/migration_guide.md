@@ -1,6 +1,6 @@
 # Migration: PMM DBaaS to Percona Everest
 
-Migrating from Perona Monitoring and Management (PMM) DBaaS to Percona Everest has many benefits, such as decreased operational overhead, improved scalability, and enhanced flexibility. However, planning and executing the migration is crucial to minimize downtime and ensure data integrity. 
+Migrating from Percona Monitoring and Management (PMM) DBaaS to Percona Everest has many benefits, such as decreased operational overhead, improved scalability, and enhanced flexibility. However, planning and executing the migration is crucial to minimize downtime and ensure data integrity. 
 
 Here's a comprehensive guide to help you through the process.
 
@@ -12,7 +12,7 @@ Here are some key differences between Percona Everest and PMM DBaaS:
 
 1. Percona Everest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
-2. Percona Everestctl is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
+2. Percona `everestctl` is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
 
 3. Percona Everest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
 
