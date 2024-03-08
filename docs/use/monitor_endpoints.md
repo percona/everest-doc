@@ -38,8 +38,8 @@ To add monitoring in Percona Everest from the UI:
 
 4. In the **Endpoint** field, enter the PMM URL. In the **User** and **Password** field, enter the credentials received upon installing PMM.
 
-!!! warning
-    When setting up a new monitoring instance, if your PMM instance uses a self-signed certificate, use HTTP instead of HTTPS. This is because Everest requires TLS certificate validation and will not connect to your monitoring instance with self-signed certificates if you use HTTPS.
+    !!! warning
+        When setting up a new monitoring instance, if your PMM instance uses a self-signed certificate, use HTTP instead of HTTPS. This is because Everest requires TLS certificate validation and will not connect to your monitoring instance with self-signed certificates if you use HTTPS.
 
 6. Click **Add**.
 
