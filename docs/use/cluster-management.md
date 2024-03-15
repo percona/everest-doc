@@ -40,12 +40,12 @@ Cluster management involves the administration and maintenance of database clust
 
 4. [Back up and restore](../use/AboutBackups.md)
 
-Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
+    Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
 
-With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
+    With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
     ![!image](../images/everest_backup.png)
 
 5. [Monitoring](../use/monitor_endpoints.md)
 
-Monitoring ensures consistent performance by continuously observing various metrics and aspects of the database system. It helps identify performance issues or bottlenecks before they escalate, allowing timely interventions, optimizations, and resource allocation adjustments. This helps us maintain a stable and consistent database system performance over time.
+    Monitoring ensures consistent performance by continuously observing various metrics and aspects of the database system. It helps identify performance issues or bottlenecks before they escalate, allowing timely interventions, optimizations, and resource allocation adjustments. This helps us maintain a stable and consistent database system performance over time.
