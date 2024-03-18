@@ -43,6 +43,11 @@ To enable PITR:
     3. Navigate through the database configuration wizard to get to the **Backups** page where you can configure a backup schedule that will create an initial full backup required for PITR.
     4. Complete the setup wizard to schedule a full backup and enable PITR for the existing database.
 
+
+## Limitations
+
+
+
 ## Next step
 
 [Restore backups :material-arrow-right:](../RestoreBackup.md){.md-button}
