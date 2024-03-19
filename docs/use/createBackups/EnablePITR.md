@@ -55,7 +55,6 @@ You may encounter issues with point-in-time recovery (PITR) when attempting to r
 
 Connect to your database and run the following command. It contains the `gtid`, the `timestamp` and the status of the last transaction.
 
-
 `select pg_last_committed_xact();`
 
 ??? example "Expected output"
@@ -93,7 +92,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
         
         FATAL: recovery ended before configured recovery target was reached
         
-    In this case, the cluster is stuck during restoration due to a date used after the last transaction.
+    In this case, the cluster is stuck during restoration because you used a date that was after the last transaction.
 
 2. Start an interactive bash shell inside the recovery pod:
 
