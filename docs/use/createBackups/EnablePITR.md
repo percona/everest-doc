@@ -70,6 +70,8 @@ Connect to your database and run the following command. It contains the `gtid`, 
 **Workaround**
 
 You can follow these steps if your database cluster is stuck in the **Restoring** state:
+{.power-number}
+
 
 1. Check if your database cluster has been stuck because you have used a date after the last transaction:
 
