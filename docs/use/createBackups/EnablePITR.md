@@ -90,9 +90,8 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
         
     
     Check whether the log contains the following:
-
         
-        FATAL:  recovery ended before configured recovery target was reached
+        FATAL: recovery ended before configured recovery target was reached
         
     In this case, the cluster is stuck during restoration due to a date used after the last transaction.
 
