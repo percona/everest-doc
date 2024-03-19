@@ -81,8 +81,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 	    kubectl get pod -n your-namespace ;
         		
     
-    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
-
+    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`. It should be in the **Running** state.
 
     b. Check the logs for the recovery pod:
 
