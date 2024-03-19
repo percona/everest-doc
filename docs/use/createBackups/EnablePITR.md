@@ -30,6 +30,7 @@ To enable PITR:
 {.power-number}
 
 === "When creating a new database"
+    {.power-number}
 
     1. On the Everest homepage, click **Create Database** to display the database creation wizard.
     2. Fill in the details of your database on the first steps of the wizard.
@@ -38,13 +39,58 @@ To enable PITR:
     5. Complete the setup wizard to create the new database with PITR enabled. 
 
 === "When editing an existing database"
+    {.power-number}
+
     1. In the <i class="uil uil-database"></i> **Databases** view, select the database for which you want to enable PITR.
     2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the database, then click **Edit**.
     3. Navigate through the database configuration wizard to get to the **Backups** page where you can configure a backup schedule that will create an initial full backup required for PITR.
     4. Complete the setup wizard to schedule a full backup and enable PITR for the existing database.
 
 
-## Limitations
+## Limitation
+
+When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitations:
+
+In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the Restoring state.
+
+**Workaround**
+{.power-number}
+
+1. Connect to your database and run the following command:
+
+    `select pg_last_committed_xact();`
+
+    ??? example "Expected output"
+        ```
+        (768,“2024-03-13 15:52:25.122746+00”,0)
+        ```
+        It contains the `gtid`, the `timestamp` and the status of the last transaction.
+        Dates prior this one are available to recover to.
+
+ 
+
+---------------------
+If one already used a date after the latest transaction for pitr restoration, they will have the DatabaseCluster stuck in the “Restoring” state. Here are the steps to fix it:
+1. Check that the reason is a bad date
+	a) find the recovery pod. To find it, run the command:
+		kubectl get pod -n your-namespace ;
+		the recovery pod has the name in the format <cluster_name>-pgbackrest-restore-<something> and is in the Running state.
+	b) check the logs of the recovery pod:
+		kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+		and check if there is the log
+		 FATAL:  recovery ended before configured recovery target was reached
+		in that case the reason of the stuck restoring is the wrong date and we can proceed with unstucking the cluster.
+2. Start an interactive bash shell inside the recovery pod:
+	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
+	and delete the recovery.signal file
+	rm pgdata/pg16/recovery.signal
+	as a result after some time the recovery pod will be self-destroyed, the database cluster will change the status from “Restoring” to “Initializing” and then after some time to “Up”.
+
+
+
+
+
+
 
 
 
