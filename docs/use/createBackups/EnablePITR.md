@@ -76,9 +76,9 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
 
         a. Find the recovery pod:
 
-            ```sh
-	        kubectl get pod -n your-namespace ;
-            ```		
+        ```sh
+	    kubectl get pod -n your-namespace ;
+        ```		
     
         The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
 
