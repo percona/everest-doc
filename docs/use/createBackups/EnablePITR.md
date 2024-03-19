@@ -92,10 +92,15 @@ Check if there is the log
 In that case the reason of the stuck restoring is the wrong date and we can proceed with unstucking the cluster.
 
 2. Start an interactive bash shell inside the recovery pod:
+
+    ```sh
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
-	and delete the recovery.signal file
+	```
+Delete the recovery.signal file
+    ```sh
 	rm pgdata/pg16/recovery.signal
-	as a result after some time the recovery pod will be self-destroyed, the database cluster will change the status from “Restoring” to “Initializing” and then after some time to “Up”.
+    ```
+As a result after some time the recovery pod will be self-destroyed, the database cluster will change the status from **Restoring** to **Initializing** and then after some time to **Up**.
 
 
 
