@@ -96,7 +96,8 @@ In that case the reason of the stuck restoring is the wrong date and we can proc
     ```sh
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
 	```
-Delete the recovery.signal file
+Delete the recovery.signal file:
+
     ```sh
 	rm pgdata/pg16/recovery.signal
     ```
