@@ -70,40 +70,42 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
         It contains the `gtid`, the `timestamp` and the status of the last transaction.
         
         !!! caution alert alert-warning "Important"
-            You can recover data for dates prior to this specific date.
+            You can only recover data for the dates prior to this specific date.
 
-2. Find the recovery pod
+2. Check that your database cluster has been stuck because you have used a date after the last transaction:
 
-    ```sh
-	kubectl get pod -n your-namespace ;
-    ```		
-The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
+    a. Find the recovery pod:
+
+        ```sh
+	    kubectl get pod -n your-namespace ;
+        ```		
+    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
 
 
-2. Check the logs for the recovery pod:
+    b. Check the logs for the recovery pod:
 
-    ```sh
-    kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
-    ```
-Check if there is the log
+        ```sh
+        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+        ```
+    Check whether the log contains the following:
 
     ```sh
     FATAL:  recovery ended before configured recovery target was reached
     ```
-In that case the reason of the stuck restoring is the wrong date and we can proceed with unstucking the cluster.
+    In this case, the cluster is stuck during restoration due to a date used after the last transaction.
 
 2. Start an interactive bash shell inside the recovery pod:
 
     ```sh
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
 	```
-Delete the recovery.signal file:
+    Delete the `recovery.signal `file:
 
     ```sh
 	rm pgdata/pg16/recovery.signal
     ```
-As a result after some time the recovery pod will be self-destroyed, the database cluster will change the status from **Restoring** to **Initializing** and then after some time to **Up**.
 
+    After a certain period, the recovery pod will self-destruct. The database cluster status will change from **Restoring** to **Initializing** and eventually to **Up**.
 
 
 
