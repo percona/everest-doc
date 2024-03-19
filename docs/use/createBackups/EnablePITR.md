@@ -71,7 +71,7 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
         !!! caution alert alert-warning "Important"
             You can only recover data for the dates prior to this specific date.
 
-2. Check that your database cluster has been stuck because you have used a date after the last transaction:
+2. Check if your database cluster has been stuck because you have used a date after the last transaction:
 
     a. Find the recovery pod:
 
