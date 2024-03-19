@@ -57,15 +57,15 @@ Connect to your database and run the following command:
 
   `select pg_last_committed_xact();`
 
-    ??? example "Expected output"
-        ```
-        (768,“2024-03-13 15:52:25.122746+00”,0)
-        ```
+  ??? example "Expected output"
+      ```
+      (768,“2024-03-13 15:52:25.122746+00”,0)
+     ```
         
-    It contains the `gtid`, the `timestamp` and the status of the last transaction.
+     It contains the `gtid`, the `timestamp` and the status of the last transaction.
         
-    !!! caution alert alert-warning "Important"
-        You can only recover data for the dates prior to this specific date.
+     !!! caution alert alert-warning "Important"
+         You can only recover data for the dates prior to this specific date.
 
 
 **Workaround**
