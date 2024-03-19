@@ -49,13 +49,16 @@ To enable PITR:
 
 ## Limitation
 
-When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitations:
+When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
+
+**Problem**
 
 In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the Restoring state.
 
+
 **Workaround**
 
-Connect to your database and run the following command:
+1. Connect to your database and run the following command:
 
 `select pg_last_committed_xact();`
 
@@ -68,16 +71,26 @@ Connect to your database and run the following command:
     !!! caution alert alert-warning "Important"
         You can recover data for dates prior to this specific date.
 
- If one already used a date after the latest transaction for pitr restoration, they will have the DatabaseCluster stuck in the “Restoring” state. Here are the steps to fix it:
-1. Check that the reason is a bad date
-	a) find the recovery pod. To find it, run the command:
-		kubectl get pod -n your-namespace ;
-		the recovery pod has the name in the format <cluster_name>-pgbackrest-restore-<something> and is in the Running state.
-	b) check the logs of the recovery pod:
-		kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
-		and check if there is the log
-		 FATAL:  recovery ended before configured recovery target was reached
-		in that case the reason of the stuck restoring is the wrong date and we can proceed with unstucking the cluster.
+2. Find the recovery pod
+
+    ```sh
+	kubectl get pod -n your-namespace ;
+    ```		
+The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
+
+
+2. Check the logs for the recovery pod:
+
+    ```sh
+    kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+    ```
+Check if there is the log
+
+    ```sh
+    FATAL:  recovery ended before configured recovery target was reached
+    ```
+In that case the reason of the stuck restoring is the wrong date and we can proceed with unstucking the cluster.
+
 2. Start an interactive bash shell inside the recovery pod:
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
 	and delete the recovery.signal file
