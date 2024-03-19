@@ -63,7 +63,7 @@ Connect to your database and run the following command. It contains the `gtid`, 
     (768,“2024-03-13 15:52:25.122746+00”,0)
     ```
                 
-!!! caution alert alert-warning "Important"
+!!! warning 
     You can only recover data for the dates prior to this specific date.
 
 
@@ -108,12 +108,6 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     ```
 
     After a certain period, the recovery pod will self-destruct. The database cluster status will change from **Restoring** to **Initializing** and eventually to **Up**.
-
-
-
-
-
-
 
 
 ## Next step
