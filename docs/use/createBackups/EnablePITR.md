@@ -51,10 +51,9 @@ To enable PITR:
 
 When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
 
-**Problem**
+**Problem statement**
 
 In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the Restoring state.
-
 
 **Workaround**
 
