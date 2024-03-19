@@ -74,25 +74,27 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
 
 2. Check that your database cluster has been stuck because you have used a date after the last transaction:
 
-    a. Find the recovery pod:
+        a. Find the recovery pod:
+
+            ```sh
+	        kubectl get pod -n your-namespace ;
+            ```		
+    
+        The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
+
+
+        b. Check the logs for the recovery pod:
+
+            ```sh
+            kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+            ```
+    
+        Check whether the log contains the following:
 
         ```sh
-	    kubectl get pod -n your-namespace ;
-        ```		
-    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`, and currently, it is **Running**.
-
-
-    b. Check the logs for the recovery pod:
-
-        ```sh
-        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+        FATAL:  recovery ended before configured recovery target was reached
         ```
-    Check whether the log contains the following:
-
-    ```sh
-    FATAL:  recovery ended before configured recovery target was reached
-    ```
-    In this case, the cluster is stuck during restoration due to a date used after the last transaction.
+        In this case, the cluster is stuck during restoration due to a date used after the last transaction.
 
 2. Start an interactive bash shell inside the recovery pod:
 
