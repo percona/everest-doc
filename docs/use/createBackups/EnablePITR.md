@@ -30,7 +30,7 @@ To enable PITR:
 {.power-number}
 
 === "When creating a new database"
-    {.power-number}
+
 
     1. On the Everest homepage, click **Create Database** to display the database creation wizard.
     2. Fill in the details of your database on the first steps of the wizard.
@@ -39,7 +39,7 @@ To enable PITR:
     5. Complete the setup wizard to create the new database with PITR enabled. 
 
 === "When editing an existing database"
-    {.power-number}
+
 
     1. In the <i class="uil uil-database"></i> **Databases** view, select the database for which you want to enable PITR.
     2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the database, then click **Edit**.
@@ -65,7 +65,9 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
         (768,“2024-03-13 15:52:25.122746+00”,0)
         ```
         It contains the `gtid`, the `timestamp` and the status of the last transaction.
-        Dates prior this one are available to recover to.
+        
+        !!! caution alert alert-warning "Important"
+            You can recover data for dates prior to this specific date.
 
  
 
