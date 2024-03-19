@@ -54,9 +54,8 @@ When performing point-in-time recovery (PITR) for PostgreSQL, it is important to
 In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the Restoring state.
 
 **Workaround**
-{.power-number}
 
-1. Connect to your database and run the following command:
+Connect to your database and run the following command:
 
     `select pg_last_committed_xact();`
 
@@ -69,10 +68,7 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
         !!! caution alert alert-warning "Important"
             You can recover data for dates prior to this specific date.
 
- 
-
----------------------
-If one already used a date after the latest transaction for pitr restoration, they will have the DatabaseCluster stuck in the “Restoring” state. Here are the steps to fix it:
+ If one already used a date after the latest transaction for pitr restoration, they will have the DatabaseCluster stuck in the “Restoring” state. Here are the steps to fix it:
 1. Check that the reason is a bad date
 	a) find the recovery pod. To find it, run the command:
 		kubectl get pod -n your-namespace ;
