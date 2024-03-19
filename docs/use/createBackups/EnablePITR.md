@@ -90,9 +90,9 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
     
     Check whether the log contains the following:
 
-        ```sh
+        
         FATAL:  recovery ended before configured recovery target was reached
-        ```
+        
     In this case, the cluster is stuck during restoration due to a date used after the last transaction.
 
 2. Start an interactive bash shell inside the recovery pod:
@@ -100,7 +100,7 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
     ```
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
 	```
-    
+
     Delete the `recovery.signal `file:
 
     ```sh
