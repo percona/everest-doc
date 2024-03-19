@@ -57,7 +57,7 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
 
 Connect to your database and run the following command:
 
-    `select pg_last_committed_xact();`
+`select pg_last_committed_xact();`
 
     ??? example "Expected output"
         ```
