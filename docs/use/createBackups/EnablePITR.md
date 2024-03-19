@@ -97,9 +97,10 @@ In PostgreSQL, you may encounter issues with point-in-time recovery (PITR) when 
 
 2. Start an interactive bash shell inside the recovery pod:
 
-    
+    ```
 	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
-	
+	```
+    
     Delete the `recovery.signal `file:
 
     ```sh
