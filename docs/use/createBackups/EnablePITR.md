@@ -59,14 +59,14 @@ Connect to your database and run the following command:
 
 `select pg_last_committed_xact();`
 
-    ??? example "Expected output"
-        ```
-        (768,“2024-03-13 15:52:25.122746+00”,0)
-        ```
-        It contains the `gtid`, the `timestamp` and the status of the last transaction.
+??? example "Expected output"
+    ```
+    (768,“2024-03-13 15:52:25.122746+00”,0)
+    ```
+    It contains the `gtid`, the `timestamp` and the status of the last transaction.
         
-        !!! caution alert alert-warning "Important"
-            You can recover data for dates prior to this specific date.
+    !!! caution alert alert-warning "Important"
+        You can recover data for dates prior to this specific date.
 
  If one already used a date after the latest transaction for pitr restoration, they will have the DatabaseCluster stuck in the “Restoring” state. Here are the steps to fix it:
 1. Check that the reason is a bad date
