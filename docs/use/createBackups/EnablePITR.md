@@ -56,13 +56,15 @@ You may encounter issues with point-in-time recovery (PITR) when attempting to r
 
 **Check the timestamp of the last transaction**
 
-Connect to your database and run the following command. It contains the `gtid`, the `timestamp` and the status of the last transaction.
+Connect to your database and run the following command:
 
 `select pg_last_committed_xact();`
 
 ??? example "Expected output"
     ```
     (768,“2024-03-13 15:52:25.122746+00”,0);
+
+    It contains the `gtid`, the `timestamp` and the status of the last transaction.
     ```
                 
 !!! warning 
