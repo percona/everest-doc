@@ -8,7 +8,6 @@ Everest enables you to use backups to either create a new database or restore th
 
 Restoring to the same cluster is useful in the following scenarios:
 
-- **When restoring from a Point-in-time recovery (PITR) timestamp**: Currently, PITR doesn't support restoration to a new database, making the same cluster restoration essential.
 - **For faster recovery**: It's typically quicker to restore data to an existing database as it eliminates the need for creating a new database deployment.
 - **Database consistency:** Maintains the same database ID, configurations, and dependencies, ensuring consistency within the existing environment.
 
