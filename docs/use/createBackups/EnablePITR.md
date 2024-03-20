@@ -64,7 +64,7 @@ Connect to your database and run the following command:
     ```
     (768,“2024-03-13 15:52:25.122746+00”,0);
     ```
-    It contains the global transaction identifier (`GTID`), the `timestamp` and the status of the last transaction.
+    It contains the global transaction identifier (`GTID`), `timestamp` and the status of the last transaction.
     
                 
 !!! warning  
