@@ -58,7 +58,7 @@ You may encounter issues with point-in-time recovery (PITR) when attempting to r
 
 Connect to your database and run the following command. It contains the `gtid`, the `timestamp` and the status of the last transaction.
 
-`select pg_last_committed_xact();`
+`select pg_last_committed_xact()`
 
 ??? example "Expected output"
     ```
@@ -88,9 +88,10 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     b. Check the logs for the recovery pod:
 
         
-        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
+        kubectl logs  <restore_pod_name> -n your-namespace
         
-    
+    In this case, the recovery pod name is: `postgresql-kbi-pgbackrest-restore-8b95v`
+
     Check whether the log contains the following:
         
         FATAL: recovery ended before configured recovery target was reached
@@ -100,8 +101,10 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 2. Start an interactive bash shell inside the recovery pod:
 
     ```
-	kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
+	kubectl -n your-namespace exec <restore_pod_name> -it -- bash
 	```
+
+    postgresql-kbi-pgbackrest-restore-8b95v
 
     Delete the `recovery.signal `file:
 
