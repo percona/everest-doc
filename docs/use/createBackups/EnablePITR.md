@@ -58,7 +58,7 @@ You may encounter issues with point-in-time recovery (PITR) when attempting to r
 
 Connect to your database and run the following command. It contains the `gtid`, the `timestamp` and the status of the last transaction.
 
-`select pg_last_committed_xact()`
+`select pg_last_committed_xact();`
 
 ??? example "Expected output"
     ```
@@ -83,7 +83,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 	    kubectl get pod -n <your-namespace>
         		
     
-    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<XXX>`. The status of the recovery pod should be **Running**.
+    The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<XYZ>`. The status of the recovery pod should be **Running**.
 
     b. Check the logs for the recovery pod:
        
