@@ -86,11 +86,13 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`. The status of the recovery pod should be **Running**.
 
     b. Check the logs for the recovery pod:
+       
+        kubectl logs <restore_pod_name> -n your-namespace
 
-        
-        kubectl logs  <restore_pod_name> -n your-namespace
-        
-    In this case, the recovery pod name is: `postgresql-kbi-pgbackrest-restore-8b95v`
+    ??? example "Example"
+        ```        
+        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v` -n your-namespace
+        ```
 
     Check whether the log contains the following:
         
@@ -104,7 +106,10 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 	kubectl -n your-namespace exec <restore_pod_name> -it -- bash
 	```
 
-    postgresql-kbi-pgbackrest-restore-8b95v
+    ??? example "Example"
+        ```        
+	    kubectl -n your-namespace exec postgresql-kbi-pgbackrest-restore-8b95v -it -- bash
+        ```
 
     Delete the `recovery.signal `file:
 
