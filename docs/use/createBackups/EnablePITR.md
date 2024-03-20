@@ -62,7 +62,7 @@ Connect to your database and run the following command. It contains the `gtid`, 
 
 ??? example "Expected output"
     ```
-    (768,“2024-03-13 15:52:25.122746+00”,0)
+    (768,“2024-03-13 15:52:25.122746+00”,0);
     ```
                 
 !!! warning 
@@ -80,7 +80,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     a. Find the recovery pod:
 
         
-	    kubectl get pod -n your-namespace ;
+	    kubectl get pod -n your-namespace
         		
     
     The format of the recovery pod is `<cluster_name>-pgbackrest-restore-<something>`. The status of the recovery pod should be **Running**.
