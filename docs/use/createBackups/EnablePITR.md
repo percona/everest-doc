@@ -91,7 +91,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 
     ??? example "Example"
         ```        
-        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v` -n <your-namespace>
+        kubectl logs postgresql-kbi-pgbackrest-restore-8b95v -n your-namespace
         ```
 
     Check whether the log contains the following:
