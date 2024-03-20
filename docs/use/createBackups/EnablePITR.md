@@ -53,6 +53,9 @@ When performing point-in-time recovery (PITR) for PostgreSQL, it is important to
 
 You may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the **Restoring** state.
 
+
+**Check the timestamp of the last transaction**
+
 Connect to your database and run the following command. It contains the `gtid`, the `timestamp` and the status of the last transaction.
 
 `select pg_last_committed_xact();`
