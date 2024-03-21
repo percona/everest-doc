@@ -48,9 +48,9 @@ To create a new database from PITR:
 
 3. On the **Create database** dialogue box, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
 
-    ![!image](../../create_db_from_pitr.png)
+    ![!image](../../images/create_db_from_pitr.png)
 
-4. Follow the steps 4 to 12 from the [section](#create-a-new-database-from-backup).
+4. Follow the steps 4 to 12 from the [Create a new database from backup](#create-a-new-database-from-backup) section.
 
 
 
