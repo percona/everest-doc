@@ -50,7 +50,7 @@ To create a new database from PITR:
 
     ![!image](../../create_db_from_pitr.png)
 
-4. Follow the steps 4 to 12 from the [section]() 
+4. Follow the steps 4 to 12 from the [section](#create-a-new-database-from-backup).
 
 
 
