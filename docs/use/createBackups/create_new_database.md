@@ -2,7 +2,7 @@
 
 To create a new database, you can restore from a previously taken backup or perform a point-in-time recovery.
 
-## Creating a new batabase from backup
+## Create a new database from backup
 
 When you need to recreate a database from a known state, such as when recovering from data loss or corruption, or when setting up a new environment, this method is useful.
 
@@ -35,15 +35,22 @@ Storage classes define what storage configuration and features will be used for 
 
 
 
-## Creating a new batabase from PITR
+## Create a new database from PITR
 
 This approach can prove advantageous when you need to revert the database to a particular state, such as reversing unintended modifications to data or restoring from a system breakdown while minimizing data loss.
 
 To create a new database from PITR:
 {.power-number}
 
-
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
+
+2. Click on the <i class="uil uil-ellipsis-h"></i> menu next to the database you want to replicate from, then click **Create DB from a backup**. The **Create database** dialogue box opens.
+
+3. On the **Create database** dialogue box, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
+
+    ![!image](../../create_db_from_pitr.png)
+
+4. Follow the steps 4 to 12 from the [section]() 
 
 
 
