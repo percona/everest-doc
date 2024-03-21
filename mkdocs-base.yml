@@ -176,7 +176,7 @@ nav:
         - Create storage locations: use/CreateStorage.md
         - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
         - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
-        - Create new database from backup or PITR: use/create_new_database.md
+        - Create new database from backup or PITR: use/createBackups/create_new_database.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
