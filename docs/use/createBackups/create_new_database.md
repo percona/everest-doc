@@ -12,13 +12,13 @@ To create a new database from backup:
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click on the <i class="uil uil-ellipsis-h"></i> menu next to the database you want to replicate from, then click **Create DB from a backup**. The **Create database** dialogue box opens.
 
-    ![!image](../images/create_new_db_from_backup.png)
+    ![!image](../../images/create_new_db_from_backup.png)
 
 3. On the **Create database** dialogue box select **From a backup**.
 
-4. From the dropdwon select the backup.
+4. From the dropdown select the backup.
 
-    ![!image](../images/create_db.png)
+    ![!image](../../images/create_db.png)
 
 5. Click **Create**.
 
