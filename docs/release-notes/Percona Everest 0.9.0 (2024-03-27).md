@@ -9,7 +9,9 @@ Version 0.9.0 introduces the following changes:
 
 ## Release highlights
 
+We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) capabilities to include PostgreSQL databases. 
 
+You can now restore PostgreSQL databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your PostgreSQL environments and more options for data recovery.
 
 ## New features and improvements
 
