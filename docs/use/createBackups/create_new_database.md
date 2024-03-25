@@ -6,10 +6,17 @@ To create a new database, you can restore from a previously taken backup or perf
 
 When you need to recreate a database from a known state, such as when recovering from data loss or corruption, or when setting up a new environment, this method is useful.
 
-Creating a new database from backup is useful in the following scenarios:
+There are specific situations that require the creation of a new database from a backup:
 
-- **For faster recovery**: It’s typically quicker to create a new database from backup as it eliminates the need for creating a new database deployment.
-- **Database consistency**: Maintains the same database ID, configurations, and dependencies, ensuring consistency within the existing environment.
+- **When the original database is compromised**: Restoring a backup directly to a compromised DB could reintroduce the same issues. Creating a new database from the backup ensures that the restored data is isolated from the original database, preserving data integrity.
+
+- **When you want to debug a problem**: In a disaster recovery situation, it's essential to understand the root problem that led to the need for recovery. Creating a new database allows you to examine the original database for vulnerabilities or issues before restoring the data. This can help identify weaknesses that need to be addressed.
+
+- **When you want to validate backup data before restore**: By creating a new database, you can test the integrity and consistency of the backup data before making it the primary production data. This validation process ensures that the backup is clean and free from corruption, reducing the risk of propagating issues from the backup to the new database.
+
+- **Before upgrading or patching**: In some cases, a disaster recovery event might coincide with the need to upgrade or patch the database software. Creating a new database allows you to apply the necessary upgrades or patches to the new environment, ensuring that the production environment is up-to-date and secure.
+
+- **To create a safety net for rollbacks**: Restoring the backup directly to the original database leaves little room for rolling back the recovery process if issues are discovered later. Creating a new database provides a safety net, as you can decide whether to promote the new database to the production environment or keep the original one if necessary.
 
 
 To create a new database from backup:
