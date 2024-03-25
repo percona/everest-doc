@@ -34,4 +34,7 @@ To restore to a point-in-time:
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click **Restore from a backup**. The **Restore database** dialogue box opens.
 3. On the **Restore database** dialogue box, select **From a Point-in-time (PITR)**. Click on the calendar icon, choose the specific time to which you would like to restore the database.
+
+    ![!image](../../images/restore_db.png)
+
 4. Click **Restore**.
