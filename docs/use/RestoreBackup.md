@@ -16,7 +16,10 @@ To restore a database from a backup:
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to restore.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click **Restore from a backup**.
-3. In the **Restore database** popup, specify whether you want to restore from a backup artifact or from a PITR timestamp, in which case you can select the specific recovery point from the drop-down menu.
+3. On the **Restore database** dialogue box select  **From a backup**.
+
+    ![!image](../images/restore_from_backup.png)
+
 4. Select **Restore** to restore the backup of your database.
 
 
@@ -27,6 +30,10 @@ PITR restores alter the timeline of MongoDB oplog events. As a result, MongoDB o
 To seamlessly resume PITR after a restore, make sure to run a new full backup. This new backup will serve as the starting point for oplog updates, ensuring the continuity and integrity of your data.
 
 ## Restore to a point-in-time recovery
+
+!!! warning
+    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
+
 
 To restore to a point-in-time recovery:
 {.power-number}
