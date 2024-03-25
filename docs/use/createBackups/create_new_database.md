@@ -1,4 +1,4 @@
-# Create a new database from backup or PITR
+# Create new database from backup or PITR
 
 To create a new database, you can restore from a previously taken backup or perform a point-in-time recovery.
 
@@ -45,7 +45,6 @@ Storage classes define what storage configuration and features will be used for 
 
 11. If you’ve added a monitoring endpoint, this option will show as active on the **Monitoring** page, and you can turn it off if required.
 12. Click **Create database**.
-
 
 
 ## Create a new database from PITR
