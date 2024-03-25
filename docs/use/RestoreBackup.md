@@ -20,7 +20,7 @@ To restore a database from a backup:
 
     ![!image](../images/restore_from_backup.png)
 
-4. Select **Restore** to restore the backup of your database.
+4. Click **Restore**.
 
 
 ### Post-Restore step for MongoDB
