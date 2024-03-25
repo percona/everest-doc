@@ -64,7 +64,7 @@ To create a new database from PITR:
     ![!image](../../images/create_db_from_pitr.png)
 
     !!! warning
-        For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [limitation](../createBackups/EnablePITR.md#limitation) section for a workaround.
+        For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
 
 4. Follow the steps 4 to 12 from the [Create a new database from backup](#create-a-new-database-from-backup) section.
 
