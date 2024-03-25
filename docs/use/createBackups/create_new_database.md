@@ -6,6 +6,12 @@ To create a new database, you can restore from a previously taken backup or perf
 
 When you need to recreate a database from a known state, such as when recovering from data loss or corruption, or when setting up a new environment, this method is useful.
 
+Creating a new database from backup is useful in the following scenarios:
+
+- **For faster recovery**: It’s typically quicker to create a new database from backup as it eliminates the need for creating a new database deployment.
+- **Database consistency**: Maintains the same database ID, configurations, and dependencies, ensuring consistency within the existing environment.
+
+
 To create a new database from backup:
 {.power-number}
 
