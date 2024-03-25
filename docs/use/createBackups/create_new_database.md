@@ -25,13 +25,13 @@ To create a new database from backup:
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click on the <i class="uil uil-ellipsis-h"></i> menu next to the database you want to replicate from, then click **Create DB from a backup**. The **Create database** dialogue box opens.
 
-    ![!image](../../images/create_new_db_from_backup.png)
+  ![!image](../../images/create_new_db_from_backup.png)
 
 3. On the **Create database** dialogue box select **From a backup**.
 
 4. From the dropdown list, select the backup that you want to use for creating a database.
 
-    ![!image](../../images/create_db.png)
+  ![!image](../../images/create_db.png)
 
 5. Click **Create**.
 
@@ -61,7 +61,7 @@ To create a new database from PITR:
 
 3. On the **Create database** dialogue box, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
 
-    ![!image](../../images/create_db_from_pitr.png)
+  ![!image](../../images/create_db_from_pitr.png)
 
     !!! warning
         For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
