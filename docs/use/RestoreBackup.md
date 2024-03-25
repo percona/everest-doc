@@ -26,7 +26,7 @@ PITR restores alter the timeline of MongoDB oplog events. As a result, MongoDB o
 
 To seamlessly resume PITR after a restore, make sure to run a new full backup. This new backup will serve as the starting point for oplog updates, ensuring the continuity and integrity of your data.
 
-## Restore to a PITR
+## Restore to a point-in-time
 
 To restore to a point-in-time:
 {.power-number}
