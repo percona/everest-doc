@@ -49,6 +49,10 @@ Storage classes define what storage configuration and features will be used for 
 
 ## Create a new database from PITR
 
+!!! warning
+    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
+
+
 This approach can prove advantageous when you need to revert the database to a particular state, such as reversing unintended modifications to data or restoring from a system breakdown while minimizing data loss.
 
 To create a new database from PITR:
@@ -62,8 +66,6 @@ To create a new database from PITR:
 
     ![!image](../../images/create_db_from_pitr.png)
 
-    !!! warning
-        For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
 
 4. Follow the steps 4 to 12 from the [Create a new database from backup](#create-a-new-database-from-backup) section.
 
