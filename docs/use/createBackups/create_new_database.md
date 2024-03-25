@@ -27,7 +27,7 @@ To create a new database from backup:
 
     ![!image](../../images/create_new_db_from_backup.png)
 
-3. On the **Create database** dialogue box select the option **From a backup**.
+3. On the **Create database** dialogue box select **From a backup**.
 
 4. From the dropdown list, select the backup that you want to use for creating a database.
 
@@ -62,6 +62,9 @@ To create a new database from PITR:
 3. On the **Create database** dialogue box, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
 
     ![!image](../../images/create_db_from_pitr.png)
+
+    !!! warning
+        For PostgreSQL, point-in-time recovery (PITR) can get stuck in a Restoring state when you attempt to recover the database after the last transaction. See the [limitation](../createBackups/EnablePITR.md#limitation) section for a workaround.
 
 4. Follow the steps 4 to 12 from the [Create a new database from backup](#create-a-new-database-from-backup) section.
 
