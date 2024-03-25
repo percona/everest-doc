@@ -27,7 +27,7 @@ To create a new database from backup:
 
     ![!image](../../images/create_new_db_from_backup.png)
 
-3. On the **Create database** dialogue box select **From a backup**.
+3. On the **Create database** pop-up, select **From a backup**.
 
 4. From the dropdown list, select the backup that you want to use for creating a database.
 
@@ -62,7 +62,7 @@ To create a new database from PITR:
 
 2. Click on the <i class="uil uil-ellipsis-h"></i> menu next to the database you want to replicate from, then click **Create DB from a backup**. The **Create database** dialogue box opens.
 
-3. On the **Create database** dialogue box, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
+3. On the **Create database** pop-up, select the option **From a Point-in-time (PITR)**. Click on the calendar icon and choose the specific time for which you would like to create the database.
 
     ![!image](../../images/create_db_from_pitr.png)
 
