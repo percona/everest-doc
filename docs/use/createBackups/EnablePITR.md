@@ -4,9 +4,6 @@ PITR maintains versions of your database from past timestamps, serving as a safe
 
 PITR complements on-demand and scheduled backup strategies by providing finer backup granularity with more specific recovery points for restoring data to the same cluster.
 
-## Supported scenarios
-
-Currently, PITR is only available for restoring MySQL and MongoDB databases to the same cluster. Future releases will cover PITR support for PostgreSQL databases and PITR restores to different clusters.
 
 ## How it works
 
