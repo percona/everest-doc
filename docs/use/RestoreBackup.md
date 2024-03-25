@@ -16,7 +16,7 @@ To restore a database from a backup:
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to restore.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to restore from, then click **Restore from a backup**.
-3. On the **Restore database** pop-up, select  **From a backup**.
+3. In the **Restore database** pop-up, select  **From a backup**.
 
     ![!image](../images/restore_from_backup.png)
 
@@ -40,7 +40,7 @@ To restore to a point-in-time recovery:
 
 1. In the <i class="uil uil-database"></i> **Databases** view, select the database you want to replicate.
 2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the backup you want to replicate from, then click **Restore from a backup**. The **Restore database** dialogue box opens.
-3. On the **Restore database** pop-up, select **From a Point-in-time (PITR)**. Click on the calendar icon, choose the specific time to which you would like to restore the database.
+3. In the **Restore database** pop-up, select **From a Point-in-time (PITR)**. Click on the calendar icon, choose the specific time to which you would like to restore the database.
 
     ![!image](../images/restore_pitr.png)
 
