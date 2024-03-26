@@ -43,7 +43,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) - When editing a database with multiple backup schedules, an error was thrown. The issue has been reolved now.
 
-- [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) - Column hide/unhide option not working as expected on different UI pages
+- [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) - We resolved an issue where the column hide/unhide option was not functioning correctly on various UI pages.
 
 - [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) - PITR for PostgresSQL cannot be toggled to enabled/turned off as a limitation. We have added a message to inform the users about this.
 
