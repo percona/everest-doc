@@ -37,17 +37,17 @@ You can now restore your databases to specific points in time within the same cl
 ## Bugs fixed
 
 
-- [EVEREST-656](https://perconadev.atlassian.net/browse/EVEREST-656) \[UI\] Mongodb backup Status is displayed as Unknown for requested Status in kubernetes
+- [EVEREST-656](https://perconadev.atlassian.net/browse/EVEREST-656) - Previously, while initiating a backup for MongoDB, the backup status was being displayed as unknown. The issue has been resolved now.
 
-- [EVEREST-759](https://perconadev.atlassian.net/browse/EVEREST-759) Error message for schedule backups on the UI 
+- [EVEREST-759](https://perconadev.atlassian.net/browse/EVEREST-759) - We have added an error message to the Percona Everest UI for scheduled backups, which reminds you to set a backup storage location before configuring backup schedules to avoid any hassles.
 
-[EVEREST-786](https://perconadev.atlassian.net/browse/EVEREST-786) Monitoring username and password field accepting incorrect data
+- [EVEREST-786](https://perconadev.atlassian.net/browse/EVEREST-786) - Fixed an issue where the PMM monitoring URL was accepting incorrect credentials.
 
-[EVEREST-813](https://perconadev.atlassian.net/browse/EVEREST-813) Changing size of the cluster moves picker to Custom right away
+- [EVEREST-813](https://perconadev.atlassian.net/browse/EVEREST-813) - When choosing the appropriate cluster size (small, medium, large) on the **Resources** page, the selector invariably switched to the **Custom** option. The issue has been resolved now.
 
-[EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) \[UI\] Mongodb edit displays an error if there are multiple backup schedules
+- [EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) - When editing a database with multiple backup schedules, an error was thrown. The issue has been reolved now.
 
-[EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) Column hide/unhide option not working as expected on different UI pages
+- [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) Column hide/unhide option not working as expected on different UI pages
 
 [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) \[UI\] PITR for postgresql cannot be toggled to enabled/disabled as a limitation
 
