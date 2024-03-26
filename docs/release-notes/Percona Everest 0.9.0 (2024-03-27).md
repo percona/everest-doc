@@ -49,17 +49,15 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on linux arm.
 
-- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - Postgresql database could not be restored using PITR
+- [EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) - Storage location could not be chosen if scheduled backups were enabled for the first time while editing a MongoDB database.
 
-- [EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) \[UI\] Storage location can't be chosen if scheduled backups are enabled for the first time in edit of mongodb
+- [EVEREST-888](https://perconadev.atlassian.net/browse/EVEREST-888) - When creating a backup, the Backup storage field was not automatically populated as it was for scheduled backups. We have resolved this issue now.
 
-- [EVEREST-888](https://perconadev.atlassian.net/browse/EVEREST-888) \[UI\] Backup Storage does not have a value in manual backup
-
-- [EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) Restore to a new mysql database fails with PITR
+- [EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) - We have fixed an issue that was causing problems with restoring data to a new MySQL database using point-in-time recovery (PITR).
 
 - [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) \[operator\] HAProxy replicas service using incorrect LB in EKS
 
-- [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) \[operator\] PMM monioring missing k8s\_cluster\_id label
+- [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - In the PMM dashboard, you can now select a cluster ID among multiple monitored k8s clusters. Previously, VMAgent did not have such labels and hence was absent from PMM.
 
 
 
