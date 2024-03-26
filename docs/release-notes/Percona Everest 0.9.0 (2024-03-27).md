@@ -13,11 +13,15 @@ We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) c
 
 You can now restore your databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your database environments and more options for data recovery.
 
+
+
 ## New features and improvements
 
 - [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases.
 
 - [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases.
+
+- [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - We have added a Kubernetes cluster ID to the VMAgent configuration, enabling you to use the same PMM instance to monitor multiple Kubernetes clusters.
 
 ### Point-in-time recovery for PostgreSQL
 
@@ -27,7 +31,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-619](https://perconadev.atlassian.net/browse/EVEREST-619) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your PostgreSQL databases.
 
-- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the limitations of PostgreSQL for PITR. 
+- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the limitations of [PostgreSQL for PITR](https://docs.percona.com/everest/use/createBackups/EnablePITR.html#limitation-for-postgresql). 
 
 
 ## Bugs fixed
@@ -57,7 +61,6 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) - We corrected the AWS load balancer type for the HAProxy replicas to use the network LB type when enabling external access to the DB cluster, instead of the classic LB type.
 
-- [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - In the PMM dashboard, you can now select a cluster ID among multiple monitored k8s clusters. Previously, VMAgent did not have such labels and hence was absent from PMM.
 
 
 
