@@ -15,6 +15,10 @@ You can now restore your databases to specific points in time within the same cl
 
 ## New features and improvements
 
+- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases.
+
+- [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases.
+
 ### Point-in-time recovery for PostgreSQL databases
 
 - [EVEREST-598](https://perconadev.atlassian.net/browse/EVEREST-598) - We have now added support for Point-In-Time Recovery (PITR) functionality for PostgreSQL databases.
@@ -24,14 +28,6 @@ You can now restore your databases to specific points in time within the same cl
 - [EVEREST-619](https://perconadev.atlassian.net/browse/EVEREST-619) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your PostgreSQL databases.
 
 - [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the limitations of PostgreSQL for PITR. 
-
-### Point-in-time recovery for MySQL databases
-
-- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases.
-
-### Point-in-time recovery for MongoDB databases
-
-- [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases.
 
 
 ## Bugs fixed
