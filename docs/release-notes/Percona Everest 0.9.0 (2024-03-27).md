@@ -51,9 +51,9 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) - PITR for PostgresSQL cannot be toggled to enabled/turned off as a limitation. We have added a message to inform the users about this.
 
-- [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) Quick install script doesn't work on linux arm
+- [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on linux arm.
 
-- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
+- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - Postgresql database could not be restored using PITR
 
 - [EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) \[UI\] Storage location can't be chosen if scheduled backups are enabled for the first time in edit of mongodb
 
