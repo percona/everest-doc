@@ -14,7 +14,6 @@ We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) c
 You can now restore your databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your database environments and more options for data recovery.
 
 
-
 ## New features and improvements
 
 - [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases.
@@ -31,7 +30,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-619](https://perconadev.atlassian.net/browse/EVEREST-619) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your PostgreSQL databases.
 
-- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the limitations of [PostgreSQL for PITR](https://docs.percona.com/everest/use/createBackups/EnablePITR.html#limitation-for-postgresql). 
+- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the [limitations of PostgreSQL](https://docs.percona.com/everest/use/createBackups/EnablePITR.html#limitation-for-postgresql) for PITR. 
 
 
 ## Bugs fixed
