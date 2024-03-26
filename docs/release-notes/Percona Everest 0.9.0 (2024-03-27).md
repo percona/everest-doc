@@ -9,9 +9,9 @@ Version 0.9.0 introduces the following changes:
 
 ## Release highlights
 
-We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) capabilities to include PostgreSQL databases. 
+We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) capabilities for PostgreSQL, MySQL as well as MongoDB databases. 
 
-You can now restore PostgreSQL databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your PostgreSQL environments and more options for data recovery.
+You can now restore your databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your database environments and more options for data recovery.
 
 ## New features and improvements
 
@@ -21,13 +21,15 @@ You can now restore PostgreSQL databases to specific points in time within the s
 
 - [EVEREST-624](https://perconadev.atlassian.net/browse/EVEREST-624) - We have added a message on the Percona Everest UI for PostgreSQL informing users that Point-in-time recovery (PITR) is enabled by default and cannot be turned off.
 
-
 - [EVEREST-619](https://perconadev.atlassian.net/browse/EVEREST-619) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your PostgreSQL databases.
-
 
 - [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the limitations of PostgreSQL for PITR. 
 
+### Point-in-time recovery for MySQL databases
+
 - [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases.
+
+### Point-in-time recovery for MongoDB databases
 
 - [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases.
 
