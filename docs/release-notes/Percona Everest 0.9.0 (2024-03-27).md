@@ -49,21 +49,21 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) Column hide/unhide option not working as expected on different UI pages
 
-[EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) \[UI\] PITR for postgresql cannot be toggled to enabled/disabled as a limitation
+- [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) \[UI\] PITR for postgresql cannot be toggled to enabled/disabled as a limitation
 
-[EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) Quick install script doesn't work on linux arm
+- [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) Quick install script doesn't work on linux arm
 
-[EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
+- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
 
-[EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) \[UI\] Storage location can't be chosen if scheduled backups are enabled for the first time in edit of mongodb
+- [EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) \[UI\] Storage location can't be chosen if scheduled backups are enabled for the first time in edit of mongodb
 
-[EVEREST-888](https://perconadev.atlassian.net/browse/EVEREST-888) \[UI\] Backup Storage does not have a value in manual backup
+- [EVEREST-888](https://perconadev.atlassian.net/browse/EVEREST-888) \[UI\] Backup Storage does not have a value in manual backup
 
-[EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) Restore to a new mysql database fails with PITR
+- [EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) Restore to a new mysql database fails with PITR
 
-[EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) \[operator\] HAProxy replicas service using incorrect LB in EKS
+- [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) \[operator\] HAProxy replicas service using incorrect LB in EKS
 
-[EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) \[operator\] PMM monioring missing k8s\_cluster\_id label
+- [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) \[operator\] PMM monioring missing k8s\_cluster\_id label
 
 
 
