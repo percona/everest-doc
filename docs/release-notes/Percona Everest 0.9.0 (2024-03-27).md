@@ -19,7 +19,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases.
 
-### Point-in-time recovery for PostgreSQL databases
+### Point-in-time recovery for PostgreSQL
 
 - [EVEREST-598](https://perconadev.atlassian.net/browse/EVEREST-598) - We have now added support for Point-In-Time Recovery (PITR) functionality for PostgreSQL databases.
 
@@ -55,7 +55,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) - We have fixed an issue that was causing problems with restoring data to a new MySQL database using point-in-time recovery (PITR).
 
-- [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) \[operator\] HAProxy replicas service using incorrect LB in EKS
+- [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) - We corrected the AWS load balancer type for the HAProxy service to use the network LB type when enabling external access to the DB cluster, instead of the classic LB type.
 
 - [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - In the PMM dashboard, you can now select a cluster ID among multiple monitored k8s clusters. Previously, VMAgent did not have such labels and hence was absent from PMM.
 
