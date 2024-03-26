@@ -33,7 +33,7 @@ You can now restore your databases to specific points in time within the same cl
 ## Bugs fixed
 
 
-- [EVEREST-656](https://perconadev.atlassian.net/browse/EVEREST-656) - Previously, while initiating a backup for MongoDB, the backup status was being displayed as unknown. The issue has been resolved now.
+- [EVEREST-656](https://perconadev.atlassian.net/browse/EVEREST-656) - While initiating a backup for MongoDB, the backup status was being displayed as unknown. The issue has been resolved now.
 
 - [EVEREST-759](https://perconadev.atlassian.net/browse/EVEREST-759) - We have added an error message to the Percona Everest UI for scheduled backups, which reminds you to set a backup storage location before configuring backup schedules to avoid any hassles.
 
