@@ -44,17 +44,17 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-759](https://perconadev.atlassian.net/browse/EVEREST-759) - We have added an error message to the Percona Everest UI for scheduled backups, which reminds you to set a backup storage location before configuring backup schedules to avoid any hassles.
 
-- [EVEREST-786](https://perconadev.atlassian.net/browse/EVEREST-786) - Fixed an issue where the PMM monitoring URL was accepting incorrect credentials.
+- [EVEREST-786](https://perconadev.atlassian.net/browse/EVEREST-786) - Fixed an issue where the PMM monitoring URL accepted incorrect credentials.
 
 - [EVEREST-813](https://perconadev.atlassian.net/browse/EVEREST-813) - When choosing the appropriate cluster size (small, medium, large) on the **Resources** page, the selector invariably switched to the **Custom** option. The issue has been resolved now.
 
-- [EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) - When editing a database with multiple backup schedules, an error was thrown. The issue has been reolved now.
+- [EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) - When editing a database with multiple backup schedules, an error was thrown. The issue has been resolved now.
 
 - [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) - We resolved an issue where the column hide/unhide option was not functioning correctly on various UI pages.
 
-- [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) - PITR for PostgresSQL cannot be toggled to enabled/turned off as a limitation. We have added a message to inform the users about this.
+- [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) - PITR for PostgreSQL cannot be toggled on or off. We have added a message to inform users of this limitation.
 
-- [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on linux arm.
+- [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on Linux arm.
 
 - [EVEREST-887](https://perconadev.atlassian.net/browse/EVEREST-887) - Storage location could not be chosen if scheduled backups were enabled for the first time while editing a MongoDB database.
 
@@ -62,7 +62,7 @@ You can now restore your databases to specific points in time within the same cl
 
 - [EVEREST-890](https://perconadev.atlassian.net/browse/EVEREST-890) - We have fixed an issue that was causing problems with restoring data to a new MySQL database using point-in-time recovery (PITR).
 
-- [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) - We corrected the AWS load balancer type for the HAProxy replicas to use the network LB type when enabling external access to the DB cluster, instead of the classic LB type.
+- [EVEREST-913](https://perconadev.atlassian.net/browse/EVEREST-913) - We corrected the AWS load balancer type for the HAProxy replicas to use the network LB type when enabling external access to the DB cluster instead of the classic LB type.
 
 
 
