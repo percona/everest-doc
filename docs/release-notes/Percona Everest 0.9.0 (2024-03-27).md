@@ -20,9 +20,7 @@ You can now restore your databases to specific points in time within the same cl
 
 ## New features and improvements
 
-- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL databases. If you're looking to explore this feature further, see our comprehensive [documentation](https://docs.percona.com/everest/use/createBackups/create_new_database.html).
-
-- [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MongoDB databases. If you're looking to explore this feature further, see our comprehensive [documentation](https://docs.percona.com/everest/use/createBackups/create_new_database.html).
+- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618), [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with Percona Everest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL and MongoDB databases. If you're looking to explore this feature further, see our comprehensive [documentation](https://docs.percona.com/everest/use/createBackups/create_new_database.html).
 
 - [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - We have added a Kubernetes cluster ID to the VMAgent configuration, enabling you to use the same PMM instance to monitor multiple Kubernetes clusters.
 
