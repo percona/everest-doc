@@ -26,6 +26,7 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - We have added a Kubernetes cluster ID to the VMAgent configuration, enabling you to use the same PMM instance to monitor multiple Kubernetes clusters.
 
+
 ### Point-in-time recovery for PostgreSQL
 
 - [EVEREST-598](https://perconadev.atlassian.net/browse/EVEREST-598) - We have now added support for Point-In-Time Recovery (PITR) functionality for PostgreSQL databases.
