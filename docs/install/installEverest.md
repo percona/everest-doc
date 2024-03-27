@@ -13,7 +13,7 @@ export KUBECONFIG=~/.kube/config
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/percona-everest-cli/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
+1. Download the latest release of [everestctl](https://github.com/percona/percona-everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
 2. Install Everest and provision the Kubernetes cluster using one of the following commands:
   
