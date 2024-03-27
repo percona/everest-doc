@@ -13,6 +13,9 @@ We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) c
 
 You can now restore your databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your database environments and more options for data recovery.
 
+If you're looking for in-depth insights into this feature, refer to the sections [Create new database from backup or PITR]
+[(https://docs.percona.com/everest/use/createBackups/create_new_database.html#create-a-new-database-from-pitr) and [Restore to a point-in-time recovery](https://docs.percona.com/everest/use/RestoreBackup.html#restore-to-a-point-in-time-recovery) in our documentation.
+
 
 ![!image](../../images/create_db_from_pitr.png)
 
