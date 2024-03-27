@@ -1,6 +1,6 @@
 # Welcome to Percona Everest [Beta]
 
-We are excited to welcome you to this Beta release of Percona Everest, designed to demonstrate the core capabilities of our new open source private Database-as-a-Service (DBaaS) solution!
+We are excited to welcome you to this Beta release of Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
 
 Before its general availability, Percona Everest will provide a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
 
