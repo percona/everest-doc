@@ -53,7 +53,6 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) - We resolved an issue where the column hide/unhide option was not functioning correctly on various UI pages.
 
-- [EVEREST-883](https://perconadev.atlassian.net/browse/EVEREST-883) - PITR for PostgreSQL cannot be toggled on or off. We have added a message to inform users of this limitation.
 
 - [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on Linux arm.
 
