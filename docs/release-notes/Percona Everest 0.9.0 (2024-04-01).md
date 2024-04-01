@@ -6,10 +6,15 @@ Percona Everest is an open source cloud native database platform that helps deve
 
 Version 0.9.0 introduces the following changes:
 
-!!! warning
-    To install Percona Everest version 0.9.0, make sure to uninstall any previous versions by running the `everestctl uninstall` command.
 
 ## Release highlights
+
+### Breaking change in Percona Everest 0.9.0
+
+!!! warning
+    Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.9.0. To install Percona Everest version 0.9.0, make sure to uninstall any previous versions by running the `everestctl uninstall` command.
+
+### Enhanced point-in-time recovery for databases
 
 We've taken a step forward in enhancing Percona Everest's point-in-time (PITR) capabilities for PostgreSQL, MySQL as well as MongoDB databases. 
 
