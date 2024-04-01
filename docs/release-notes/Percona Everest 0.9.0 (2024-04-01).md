@@ -12,7 +12,11 @@ Version 0.9.0 introduces the following changes:
 ### Breaking change in Percona Everest 0.9.0
 
 !!! warning
-    Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.9.0. To install Percona Everest version 0.9.0, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the `everestctl uninstall` command.
+    Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.9.0.
+
+To install Percona Everest 0.9.0, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the command:
+
+    `everestctl uninstall`
 
 ### Enhanced point-in-time recovery for databases
 
