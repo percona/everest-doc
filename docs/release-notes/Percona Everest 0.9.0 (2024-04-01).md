@@ -16,7 +16,7 @@ Version 0.9.0 introduces the following changes:
 
 To install Percona Everest 0.9.0, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the command:
 
-    `everestctl uninstall`
+`everestctl uninstall`
 
 ### Enhanced point-in-time recovery for databases
 
