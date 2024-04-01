@@ -26,7 +26,6 @@ You can now restore your databases to specific points in time within the same cl
 
 If you're looking for in-depth insights into this feature, refer to the sections [Create new database from a point-in-time recovery](https://docs.percona.com/everest/use/createBackups/create_new_database.html#create-a-new-database-from-pitr) and [Restore to a point-in-time recovery](https://docs.percona.com/everest/use/RestoreBackup.html#restore-to-a-point-in-time-recovery) in our documentation.
 
-
 ![!image](../../images/create_db_from_pitr.png)
 
 ![!image](../images/restore_pitr.png)
@@ -39,7 +38,6 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-871](https://perconadev.atlassian.net/browse/EVEREST-871) - We have improved Percona Everest to ensure you don't accidentally delete a cluster. We've introduced a confirmation pop-up that will prompt you to enter the database's name correctly. Only when the correct database name is entered can you proceed with deleting the cluster.
 
-
 ### Point-in-time recovery for PostgreSQL
 
 - [EVEREST-598](https://perconadev.atlassian.net/browse/EVEREST-598) - We have now added support for Point-In-Time Recovery (PITR) functionality for PostgreSQL databases.
@@ -50,9 +48,7 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the Percona Everest UI to inform users about the [limitations of PostgreSQL](https://docs.percona.com/everest/use/createBackups/EnablePITR.html#limitation-for-postgresql) for PITR. 
 
-
 ## Bugs fixed
-
 
 - [EVEREST-656](https://perconadev.atlassian.net/browse/EVEREST-656) - While initiating a backup for MongoDB, the backup status was being displayed as unknown. The issue has been resolved now.
 
@@ -65,7 +61,6 @@ If you're looking for in-depth insights into this feature, refer to the sections
 - [EVEREST-856](https://perconadev.atlassian.net/browse/EVEREST-856) - When editing a database with multiple backup schedules, an error was thrown. The issue has been resolved now.
 
 - [EVEREST-862](https://perconadev.atlassian.net/browse/EVEREST-862) - We resolved an issue where the column hide/unhide option was not functioning correctly on various UI pages.
-
 
 - [EVEREST-885](https://perconadev.atlassian.net/browse/EVEREST-885) - Fixed an issue where the Quick install script did not work on Linux machines with ARM CPUs.
 
