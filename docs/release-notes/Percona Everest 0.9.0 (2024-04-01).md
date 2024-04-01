@@ -6,6 +6,9 @@ Percona Everest is an open source cloud native database platform that helps deve
 
 Version 0.9.0 introduces the following changes:
 
+!!! warning
+    Before installing Percona Everest version 0.9.0, ensure that you have uninstalled any previous versions by running the `uninstall everestctl` command.
+
 
 ## Release highlights
 
