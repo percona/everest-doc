@@ -26,7 +26,7 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - We have added a Kubernetes cluster ID to the VMAgent configuration, enabling you to use the same PMM instance to monitor multiple Kubernetes clusters.
 
-- [EVEREST-871](https://perconadev.atlassian.net/browse/EVEREST-871) - We've made some enhancements to Percona Everest to ensure you don't accidentally delete a cluster. We've introduced a confirmation pop-up that will prompt you to enter the database's name correctly. Only when the correct database name is entered can you proceed with deleting the cluster.
+- [EVEREST-871](https://perconadev.atlassian.net/browse/EVEREST-871) - We have improved Percona Everest to ensure you don't accidentally delete a cluster. We've introduced a confirmation pop-up that will prompt you to enter the database's name correctly. Only when the correct database name is entered can you proceed with deleting the cluster.
 
 
 ### Point-in-time recovery for PostgreSQL
