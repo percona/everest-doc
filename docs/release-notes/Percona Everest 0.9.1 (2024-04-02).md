@@ -20,7 +20,7 @@ To install Percona Everest 0.9.1, make sure to [uninstall](https://docs.percona.
 
 ## Fixed issues
 
-We have updated the quick install script to correct the URL for downloading the CLI (`everestctl`). Previously, the script failed because of an incorrect URL.
+- [EVEREST-949](https://perconadev.atlassian.net/browse/EVEREST-949) - We have updated the quick install script to correct the URL for downloading the CLI (`everestctl`). Previously, the script failed because of an incorrect URL.
 
 
 
