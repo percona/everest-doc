@@ -20,14 +20,14 @@ export KUBECONFIG=~/.kube/config
 1. To install Percona Everest, run the following command:
 
     ```{.bash data-prompt="$"}
-    $ curl -sfL "https://raw.githubusercontent.com/percona/everest/v0.9.0/install.sh" | bash
+    $ curl -sfL "https://raw.githubusercontent.com/percona/everest/v0.9.1/install.sh" | bash
     ```
 
     ??? example "Expected output"
 
         ```{.text .no-copy}
         Downloading the latest release of Percona Everest CLI
-        https://github.com/percona/everest/releases/download/v0.9.0/everestctl-linux-amd64
+        https://github.com/percona/everest/releases/download/v0.9.1/everestctl-linux-amd64
         KUBECONFIG is not set. Using default k8s cluster
 
         2024-02-20T10:15:46Z    info    install/install.go:430  Installing Operator Lifecycle Manager   {"component": "install"}
