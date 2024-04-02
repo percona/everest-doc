@@ -7,12 +7,20 @@ Percona Everest is an open source cloud native database platform that helps deve
 Version 0.9.1 introduces the following changes:
 
 
+
 ## Release highlights
 
+!!! warning
+    Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.9.1.
+
+To install Percona Everest 0.9.1, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the command:
+
+    everestctl uninstall
 
 
+## Fixed issues
 
-
+We have updated the quick install script to correct the URL for downloading the CLI (everestctl). The script failed earlier due to the wrong URL.
 
 
 
