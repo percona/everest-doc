@@ -29,7 +29,7 @@ To upgrade Percona Everest with the **Debug** mode on, execute the following com
 
 ## How to address a failed upgrade
 
-If the upgrade fails, you can attempt it again. If the issue persists, [contact us]() or create a [[JIRA](https://perconadev.atlassian.net/jira/software/c/projects/EVEREST/boards/65) ticket.
+If the upgrade fails, you can attempt it again. If the issue persists, [contact us]() or create a [JIRA](https://perconadev.atlassian.net/jira/software/c/projects/EVEREST/boards/65) ticket.
 
 
 ## After your upgrade is complete
