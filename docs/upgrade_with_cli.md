@@ -8,7 +8,7 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 !!! note
      Ensure that you have installed the latest version of the CLI.
 
-Percona Everest only supports upgrading by one version at a time. For example, you can upgrade from version 0.8 to version 0.9, or from version 0.9 to version 0.10. However, you cannot upgrade directly from version 0.8 to version 0.10.
+Percona Everest supports upgrading to the next version only starting from version 0.9.0. For instance, you can upgrade from version 0.9 to version 0.10.0. However, upgrading directly from version 0.8 to version 0.10 or from version 0.8.0 to 0.9.0 is not possible.
   
 ## Upgrade
 
