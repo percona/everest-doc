@@ -24,7 +24,7 @@ To upgrade Percona Everest using the CLI, execute the following command:
 
 To upgrade Percona Everest with the **Debug** mode on, execute the following command:
 
-        everestctl -v upgrade
+    everestctl -v upgrade
 
 ??? example "Expected output"
 
