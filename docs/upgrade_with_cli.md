@@ -3,10 +3,12 @@
 Percona Everest regularly releases updates that contain bug fixes, security improvements, and other enhancements to improve the overall performance of your database.
 
 
-## Prerequisites
+## Before you upgrade
 
-Ensure that you have installed the latest version of the CLI.
+note !!!
+     Ensure that you have installed the latest version of the CLI.
 
+Percona Everest only supports upgrading by one version at a time. For example, you can upgrade from version 0.8 to version 0.9, or from version 0.9 to version 0.10. However, you cannot upgrade directly from version 0.8 to version 0.10.
   
 ## Upgrade
 
