@@ -12,7 +12,7 @@ Upgrades to Percona Everest are supported from version 0.9.0 onwards. However, y
 
 ## Upgrade
 
-During the upgrade of Percona Everest, only Everest and Everest operators are upgraded, whereas the databases and backups remain unchanged.
+During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
 
 !!! note
     It is recommended that you create backups of your databases prior to upgrading Percona Everest.
