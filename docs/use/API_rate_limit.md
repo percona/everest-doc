@@ -40,7 +40,7 @@ To customize the API rate limiting:
                   value: "200"' 
     ```
 
-  Replace 200 with the desired value.
+    Replace 200 with the desired value.
 
 2. After executing the previous command, `percona-everest` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
