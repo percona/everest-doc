@@ -20,8 +20,8 @@ To update the API rate limit:
 
 1. Run the following command:
 
-    ```sh
-    kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+```sh
+kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0
@@ -36,9 +36,9 @@ To update the API rate limit:
           env:
             - name: API_REQUESTS_RATE_LIMIT
               value: "200"' 
-    ```
+```
 
-    Replace 200 with the value that you want.
+Replace 200 with the value that you want.
 
 2. After executing the previous command, the percona-everest pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
