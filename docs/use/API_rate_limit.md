@@ -42,7 +42,7 @@ To customize the API rate limiting:
 
   Replace 200 with the desired value.
 
-2. After executing the previous command, the percona-everest pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
+2. After executing the previous command, `percona-everest` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
     ```sh
     kubectl port-forward svc/everest 8080:8080 -n everest-system
