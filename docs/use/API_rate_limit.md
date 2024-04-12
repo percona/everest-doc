@@ -38,7 +38,7 @@ kubectl -n everest-system patch deployment percona-everest --type strategic -p '
               value: "200"' 
 ```
 
-Replace 200 with the value that you want.
+Replace 200 with the desired value.
 
 2. After executing the previous command, the percona-everest pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
