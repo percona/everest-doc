@@ -17,7 +17,7 @@ export KUBECONFIG=~/.kube/config
 
 ## Installation
 
-You can download the latest version of Everest CLI by visiting the latest release page in this repository.
+You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/percona-everest-cli/releases/latest).
 {.power-number}
 
 1. Download and install Everest CLI.
