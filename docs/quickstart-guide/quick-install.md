@@ -84,7 +84,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
             kubectl get svc/everest -n everest-system
             ```
 
-Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
+    Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
 
 ## Video tutorial
