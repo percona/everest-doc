@@ -84,11 +84,8 @@ You can download the latest version of Everest CLI by visiting the latest releas
             kubectl get svc/everest -n everest-system
             ```
 
-4. Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
+Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
-    Now, you can open your browser and create databases in Percona Everest.
-
-    ![!image](../images/everest_site.png)
 
 ## Video tutorial
 
