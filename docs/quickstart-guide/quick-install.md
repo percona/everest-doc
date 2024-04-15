@@ -68,7 +68,30 @@ You can download the latest version of Everest CLI by visiting the latest releas
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
-2. The Percona Everest app will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
+3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+
+    === "Port Forwarding"
+        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
+                
+        ```sh
+        kubectl port-forward svc/everest 8080:8080 -n everest-system
+        ``` 
+
+    === "Service Type Load Balancer"
+
+        * Use the following command to change the Everest service type to `LoadBalancer`:
+                    
+            ```sh
+            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            ```
+                    
+        * Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is the default `127.0.0.1`:  
+                
+            ```sh 
+            kubectl get svc/everest -n everest-system
+            ```
+
+4. The Percona Everest app will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
     Now, you can open your browser and create databases in Percona Everest.
 
