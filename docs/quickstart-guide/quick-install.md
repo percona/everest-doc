@@ -51,7 +51,6 @@ You can download the latest version of Everest CLI by visiting the latest releas
 2. Install Everest and provision the Kubernetes cluster:
 
     !!! warning "Important"
-        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
         -  Make sure that you enter at least one namespace.
         -  Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
@@ -61,12 +60,6 @@ You can download the latest version of Everest CLI by visiting the latest releas
     ```
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
-
-    ??? example "Expected output"
-        ```
-        ? Namespaces managed by Everest (comma separated) dev,production
-        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
-        ```
 
 3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
