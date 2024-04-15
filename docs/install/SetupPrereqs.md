@@ -20,7 +20,7 @@ Percona Everest has two primary components:
 
 ### Supported k8s clusters
 
-* Google Kubernetes Engine (GKE) (1.24 - 1.26)
+* Google Kubernetes Engine (GKE) (1.24 - 1.27)
 * Amazon Elastic Kubernetes Service (EKS) (1.24 - 1.27)
 
 ## Before you install
