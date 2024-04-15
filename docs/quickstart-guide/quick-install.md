@@ -17,10 +17,10 @@ export KUBECONFIG=~/.kube/config
 
 ## Installation
 
-1. Install Everest CLI.
-
-    You can download the latest version of Everest CLI by visiting the latest release page in this repository.
+You can download the latest version of Everest CLI by visiting the latest release page in this repository.
     {.power-number}
+
+1. Install Everest CLI.
 
     === "Linux and WSL"
                         
