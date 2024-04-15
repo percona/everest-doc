@@ -34,7 +34,7 @@ local shell (if you have installed Google Cloud SDK locally on the previous
 step). The following command will create a cluster named `my-cluster-name`:
 
 ``` {.bash data-prompt="$" }
-$ gcloud container clusters create my-cluster-name --project <project name> --zone us-central1-a --cluster-version 1.29 --machine-type n1-standard-4 --num-nodes=3
+$ gcloud container clusters create my-cluster-name --project <project name> --zone us-central1-a --cluster-version 1.27 --machine-type n1-standard-4 --num-nodes=3
 ```
 
 !!! note
