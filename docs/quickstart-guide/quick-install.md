@@ -1,4 +1,4 @@
-# Install Percona Everest using the Quick-Install script
+# Percona Everest quick start guide
 
 ## Procedure
 
