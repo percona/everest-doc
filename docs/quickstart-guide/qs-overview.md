@@ -9,9 +9,10 @@ Before getting started with Percona Everest, do the following:
 
 1. Install [curl](https://everything.curl.dev/get){:target="_blank"}.
 
-2. Set up a Kubernetes cluster. 
+2. Set up a Kubernetes cluster.
 
-    Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
+     ??? info "note"
+         Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
     We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
 
