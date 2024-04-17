@@ -21,9 +21,9 @@ Before getting started with Percona Everest, do the following:
 
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. Everest will search for the **kubeconfig** file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
     
-```sh
-export KUBECONFIG=~/.kube/config
-```
+     ```sh
+     export KUBECONFIG=~/.kube/config
+     ```
 
 To verify access to the Kubernetes cluster, run the following command:
    
