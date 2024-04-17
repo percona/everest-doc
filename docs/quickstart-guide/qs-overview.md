@@ -1,4 +1,4 @@
-# Overview
+# Quick install
 
 This section helps quickly install and start working with Percona Everest.
 
@@ -12,24 +12,23 @@ Before getting started with Percona Everest, do the following:
 2. Set up a Kubernetes cluster.
 
      ??? info "note"
-         Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
+          Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
-    We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
+We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
 
    
-    [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
+[Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
 
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. Everest will search for the **kubeconfig** file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
     
-     ```sh
-     export KUBECONFIG=~/.kube/config
-     ```
+          export KUBECONFIG=~/.kube/config
+     
 
 To verify access to the Kubernetes cluster, run the following command:
    
-    ```sh 
+     
     kubectl get nodes
-    ```
+    
 
     ??? example "Expected output"
         
