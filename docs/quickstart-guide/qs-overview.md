@@ -11,7 +11,7 @@ Before getting started with Percona Everest, do the following:
 
 2. Set up a Kubernetes cluster.
 
-     ??? info "note"
+     !!! note
           Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
 We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
@@ -30,14 +30,14 @@ To verify access to the Kubernetes cluster, run the following command:
     kubectl get nodes
     
 
-    ??? example "Expected output"
+??? example "Expected output"
         
-        ```{.text .no-copy}
-        NAME                                    STATUS   ROLES    AGE   VERSION
-        gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
-        gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
-        gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
-        ```
+     ```{.text .no-copy}
+     NAME                                    STATUS   ROLES    AGE   VERSION
+     gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
+     gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
+     gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
+     ```
 
 ## Procedure
 
@@ -117,6 +117,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
             ```
 
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
+
 ## Next step
 
  [Install Percona Everest :material-arrow-right:](quick-install.md){.md-button}
