@@ -41,14 +41,6 @@ To verify access to the Kubernetes cluster, run the following command:
 
 ## Procedure
 
-As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest.
-
-For more information, see the [Prerequisites](qs-prerequisites.md) section.
-{.power-number}
-
-
-## Installation
-
 You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/percona-everest-cli/releases/latest).
 {.power-number}
 
