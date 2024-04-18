@@ -113,6 +113,16 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
-## Next step
 
- [Install Percona Everest :material-arrow-right:](quick-install.md){.md-button}
+## Video tutorial
+
+You can also learn about installing Percona Everest via the Quick-Install script by following the video tutorial below:
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+## Next steps
+
+[Create a database :material-arrow-right:](../use/db_provision.md){.md-button}
+
+<!-- 
+[Monitor the database with PMM :material-arrow-right:](../use/monitorDBs.md){.md-button}
+-->
