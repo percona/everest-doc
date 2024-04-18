@@ -30,8 +30,8 @@ Before getting started with Percona Everest, do the following:
      To verify access to the Kubernetes cluster, run the following command:
    
      ```sh
-    kubectl get nodes
-    ```
+     kubectl get nodes
+     ```
 
 ??? example "Expected output"
         
