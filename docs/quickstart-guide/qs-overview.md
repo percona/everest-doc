@@ -1,6 +1,6 @@
 # Quick install
 
-This section helps quickly install and start working with Percona Everest.
+This section provides instructions for quickly installing and getting started with Percona Everest.
 
 ## Prerequisites
 
