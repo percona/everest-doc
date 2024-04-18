@@ -1,4 +1,4 @@
-# Quick install
+# Percona Everest quick install guide
 
 This section provides instructions for quickly installing and getting started with Percona Everest.
 
