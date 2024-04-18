@@ -152,12 +152,9 @@ nav:
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
   - Features: features.md
   - Quickstart guide:
-      - Overview: quickstart-guide/qs-overview.md
-      - Prerequisites: 
-        - quickstart-guide/qs-prerequisites.md
-        - quickstart-guide/eks.md
-        - quickstart-guide/gke.md
-      - Quick-Install: quickstart-guide/quick-install.md
+      - quickstart-guide/quick-install.md
+      - quickstart-guide/eks.md
+      - quickstart-guide/gke.md
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md

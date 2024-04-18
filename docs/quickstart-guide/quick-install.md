@@ -1,21 +1,50 @@
-# Percona Everest quick start guide
+# Quick install
 
-## Procedure
+This section provides instructions for quickly installing and getting started with Percona Everest.
 
-As soon as you create a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE), you can install Percona Everest.
+## Prerequisites
 
-For more information, see the [Prerequisites](qs-prerequisites.md) section.
+Before getting started with Percona Everest, do the following:
 {.power-number}
 
-## Before you start
+1. Install [curl](https://everything.curl.dev/get){:target="_blank"}.
 
-Before running the commands in the **Installation** section, note that Everest will search for the **kubeconfig** file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
+
+2. Set up a Kubernetes cluster.
+     
+    !!! note alert alert-primary "Note"
+
+          Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
+
+       We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
+
+   
+      [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
+
+3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
+
+     If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
     
-```sh
-export KUBECONFIG=~/.kube/config
-```
+     ```sh
+     export KUBECONFIG=~/.kube/config
+     ```
 
-## Installation
+     To verify access to the Kubernetes cluster, run the following command:
+   
+     ```sh
+     kubectl get nodes
+     ```
+
+    ??? example "Expected output"
+        
+        ```{.text .no-copy}
+        NAME                                    STATUS   ROLES    AGE   VERSION
+        gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
+        gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
+        gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
+        ```
+
+## Procedure
 
 You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/percona-everest-cli/releases/latest).
 {.power-number}
@@ -85,7 +114,6 @@ You can download the latest version of Everest CLI by visiting the latest releas
             ```
 
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
-
 
 ## Video tutorial
 
