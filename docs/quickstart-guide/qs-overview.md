@@ -19,8 +19,7 @@ Before getting started with Percona Everest, do the following:
        We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
 
 
-
-     ???+ note "Create Kubernetes cluster on Google Kubernetes Engine (GKE)"
+???+ note "Create Kubernetes cluster on Google Kubernetes Engine (GKE)"
 
           ## Prerequisites
 
