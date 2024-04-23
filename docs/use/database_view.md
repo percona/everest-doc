@@ -1,12 +1,13 @@
 # Database view
 
-
 The database view in Percona Everest provides an interface to view and provision your databases. With the database view, you can keep a close eye on all your databases and their status and perform tasks such as backup and restore.
 
 
-    ![!image](../images/database_view.png)
+   ![!image](../images/database_view.png)
 
 Click on the individual database, and you can perform the following actions:
+
+   ![!image](../images/database_view_actions.png)
 
 
 - **Edit the database**
