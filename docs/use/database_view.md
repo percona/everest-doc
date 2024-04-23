@@ -5,7 +5,7 @@ The database view in Percona Everest provides an interface to view and provision
 
    ![!image](../images/database_view.png)
 
-Click on the individual database, and you can perform the following actions:
+By clicking on the individual database, you will be able to perform various actions such as:
 
    ![!image](../images/database_view_actions.png)
 
