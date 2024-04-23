@@ -11,7 +11,7 @@ To create a backup now:
 
 1. Go to <i class="uil uil-cog"></i>  **Settings > Backup Storages** and check that you have an available S3-compatible location for storing backups. Otherwise, [create a backup location](../CreateStorage.md) so Everest can store backup artifacts for the database.
 2. Go to the <i class="uil uil-database"></i> **Databases** view and select the database which you want to back up.
-3. Click **Create backup > Now**.
+3. On the **Backups** tab click **Create backup > Now**.
 4. In the **Create Backup** pop-up, change the default backup name if required, select an available backup location, and then click **Create**.
 
 ## Schedule a backup
