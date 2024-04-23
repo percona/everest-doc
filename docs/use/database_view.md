@@ -19,11 +19,15 @@ Click on the individual database, and you can perform the following actions:
     Restarting your database can improve the performance of your database and enable you to apply recent configuration changes. To restart your database, click the ellipsis (...) menu next to the database you want to restart, then click **Restart**. 
 
 
-
 - Create database from a backup
-4. Restore database from a backup
-5. Suspend the database
-6. Delete the database
+
+    To 
+
+- Restore database from a backup
+
+- Suspend the database
+
+- Delete the database
 
 
 
