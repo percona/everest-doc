@@ -47,7 +47,7 @@ By clicking on the individual database, you will be able to perform various acti
      To delete your database, click the ellipsis (...) menu next to the database you want to suspend, then click **Delete**.
 
 
-You have the option to access a comprehensive overview of any specific database. This includes the following:
+You have the option to access a comprehensive overview of any specific database. To access this information, click on that specific database, the **Overview**, **Backups** and **Restores** tabs will be dispalyed.
 
 
 - **Overview**
