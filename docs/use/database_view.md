@@ -53,7 +53,7 @@ You have the option to access a comprehensive overview of any specific database.
 - **Overview**
 
 
-- **Backups**
+- **Backups** - You can also view the backups made for that database, including the date and time of the backup.
 
 - **Restores**
 
