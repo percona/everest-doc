@@ -12,7 +12,7 @@ By clicking on the individual database, you will be able to perform various acti
 
 - **Edit the database**
     
-    To edit any parameters for your database, click the ellipsis (...) menu next to the database you want to edit, then click **Edit**. Make the required changes on the screens that follow and then click *Edit database*.
+    To edit any parameters for your database, click the ellipsis (...) menu next to the database you want to edit, then click **Edit**. Make the required changes on the screens that follow and then click **Edit database**.
 
 -  **Restart the database**
 
@@ -25,7 +25,7 @@ By clicking on the individual database, you will be able to perform various acti
 
 - **Restore database from a backup**
 
-    You can restore a database with Percona Everest. To restore your database, click the ellipsis (...) menu next to the database, then click **Restore database from a backup**. For detailed information see, the [restore a database from a backup](createBackups/RestoreBackup.md) section.
+    With Percona Everest, you have the ability to restore your database using a backup. To restore your database, click the ellipsis (...) menu next to the database, then click **Restore database from a backup**. For more in-depth instructions on how to restore a database, refer to the [restore a database from a backup](createBackups/RestoreBackup.md) section.
 
 
 - **Suspend the database**
@@ -34,8 +34,7 @@ By clicking on the individual database, you will be able to perform various acti
 
 - **Delete the database**
 
-    When you dont need the database anymore, you can delete the database. To delete your database, click the ellipsis (...) menu next to the database you want to suspend, then click **Delete**.
-
+    When you no longer need your database, you can delete it. To delete your database, click the ellipsis (...) menu next to the database you want to suspend, then click **Delete**.
 
 
 
