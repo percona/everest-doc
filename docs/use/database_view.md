@@ -74,17 +74,20 @@ The **Backups** tab lists all the backups created for the database. This include
 Using the backups that you have created, you can:
 {.power-number}
 
--  Restore the backup to this datbase. 
+1.  Restore the backup to this datbase. 
 
-    a. To restore this database, click the ellipsis (...) menu next to the database, then click **Restore to this DB**. The **Restore Database** pop-up opens.
+    1. To restore this database, click the ellipsis (...) menu next to the database, then click **Restore to this DB**. The **Restore Database** pop-up opens.
 
-    b. Select the method that you want to use to restore this database. You can either choose **From a backup** or From a Point-in-time (PITR).
+    2. Select the method that you want to use to restore this database. You can either choose **From a backup** or From a Point-in-time (PITR).
 
-    c. Select either the backup from the dropdown or the point in time based on the option chosen in the previous step.
+    3. Select either the backup from the dropdown or the point in time based on the option chosen in the previous step.
     
-    d. Click **Restore**.
+    4. Click **Restore**.
 
-- Create a new database from this backup. 
+2. Create a new database from this backup. 
+
+    a. 
+
 
 This tab also lists all the active 
 
