@@ -9,27 +9,30 @@ To provision a new database:
 
 1. Log into the Percona Everest UI.
 
-2. On the Percona Everest homepage, click **Create Database** to display the Basic information page:
+2. On the Percona Everest homepage, click **Create Database**. The **Basic information** page opens.
+
 
     ![!image](../images/everest_db_provision.png)
 
-3. Select the **Namespace** where you want to create your database.
+3. On the **Basic information** page enter the following information:
 
-    ![!image](../images/everest_multi-namespaces.png)
+    a. Select the **Namespace** where you want to create your database.
 
-4. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
+      ![!image](../images/everest_multi-namespaces.png)
 
-5. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+    b. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
-6. Select the **Database version** from the dropdown.
+    c. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
 
-7. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
+    d. Select the **Database version** from the dropdown.
 
-8. Click **Continue** to go to the **Resources** page.
+    e. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
-9. Select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
+8. Click **Continue**. The **Resources** page opens.
 
-10. Click **Continue** to navigate to the **Backups** page where you can set up a schedule and specify a storage location if you wish to run backup jobs for your new database.
+9. On the **Resources** page select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
+
+10. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database.
 
 11. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
