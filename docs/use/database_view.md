@@ -69,18 +69,17 @@ The Overview tab provides a comprehensive view of all the essential database det
 
 The **Backups** tab lists all the backups created for the database. This includes the exact date and time when each backup was taken, providing you with a clear overview of the backup history for the database.
 
+The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting either **Edit** or **Delete**.
+
 ![!image](../images/database_backups.png)
 
 Using the backups that you have created, you can:
-{.power-number}
+
 
 - [Restore the backup to database](../use/RestoreBackup.md#RestoreBackup). 
 
 
 - [Create a new database from backup](createBackups/create_new_database.md#create_new_database). 
-
-
-The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting either **Edit** or **Delete**.
 
 
 ## Restores
