@@ -15,15 +15,15 @@ To provision a new database:
 
 3. On the **Basic information** page, provide the following details:
 
-       **a**. Select the **Namespace** where you want to create your database.
+       - Select the **Namespace** where you want to create your database.
 
-       **b**. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
+       - Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
-       **c**. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+       - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
 
-       **d**. Select the **Database version** from the dropdown.
+       - Select the **Database version** from the dropdown.
 
-       **e**. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
+       - In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
     ![!image](../images/everest_multi-namespaces.png)
 
