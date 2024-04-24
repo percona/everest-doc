@@ -79,13 +79,12 @@ Using the backups that you have created, you can:
 
 - [Create a new database from backup](createBackups/create_new_database.md#create_new_database). 
 
-The **Backups** tab also lists all the active schedules for the database.
 
 The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting either **Edit** or **Delete**.
 
 
 ## Restores
 
-The **Restores** tab displays the details of the resrtores for that database including the date and time of the restore.
+The **Restores** tab displays the details of the restores for that database including the date and time of the restore.
 
 ![!image](../images/database_restores.png)
