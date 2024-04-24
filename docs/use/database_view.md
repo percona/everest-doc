@@ -67,10 +67,29 @@ The Overview tab provides a comprehensive view of all the essential database det
 
 ## Backups
 
-The **Backups** tab displays the details of backups taken for that database, including the date and time of the backup.
-
+The **Backups** tab lists all the backups created for the database. This includes the exact date and time when each backup was taken, providing you with a clear overview of the backup history for the database.
 
 ![!image](../images/database_backups.png)
+
+Using the backups that you have created, you can:
+{.power-number}
+
+1. Restore the backup to this datbase. 
+
+    a. To restore this database, click the ellipsis (...) menu next to the database, then click **Restore to this DB**. The **Restore Database** pop-up opens.
+
+    b. Select the method that you want to use to restore this database. You can either choose **From a backup** or From a Point-in-time (PITR).
+
+    c. Select either the backup from the dropdown or the point in time based on the option chosen in the previous step.
+    
+    d. Click **Restore**.
+
+
+
+- Create a new database from this backup. 
+
+This tab also lists all the active 
+
 
 
 ## Restores
