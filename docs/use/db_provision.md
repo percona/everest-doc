@@ -11,7 +11,6 @@ To provision a new database:
 
 2. On the Percona Everest homepage, click **Create Database**. The **Basic information** page opens.
 
-
     ![!image](../images/everest_db_provision.png)
 
 3. On the **Basic information** page, provide the following details:
@@ -26,7 +25,7 @@ To provision a new database:
 
     e. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
-![!image](../images/everest_multi-namespaces.png)
+    ![!image](../images/everest_multi-namespaces.png)
 
 8. Click **Continue**. The **Resources** page opens.
 
