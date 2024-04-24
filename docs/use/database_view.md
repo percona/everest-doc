@@ -75,7 +75,6 @@ The **Backups** tab also displays all active schedules for the database. You can
 
 Using the backups that you have created, you can:
 
-
 - [Restore the backup to database](../use/RestoreBackup.md#RestoreBackup). 
 
 
@@ -84,6 +83,8 @@ Using the backups that you have created, you can:
 
 ## Restores
 
-The **Restores** tab displays the details of the restores for that database including the date and time of the restore.
+The **Restores** tab displays a list of the database restores along with their respective dates and timestamps. This way, you can easily track and manage the history of all the restores that have been performed on the database.
+
+To delete this restore, click the ellipsis (...) menu next to the database and click **Delete**.
 
 ![!image](../images/database_restores.png)
