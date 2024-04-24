@@ -15,7 +15,7 @@ To provision a new database:
 
 3. On the **Basic information** page, provide the following details:
 
-    **a.** Select the **Namespace** where you want to create your database.
+      **a**. Select the **Namespace** where you want to create your database.
 
     b. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
