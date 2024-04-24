@@ -62,7 +62,7 @@ The Overview tab provides a comprehensive view of all the essential database det
 - External access and monitoring status
 - Information about host, port, and credentials
 
-    ![!image](../images/database_details.png)
+![!image](../images/database_details.png)
 
 
 ## Backups
@@ -74,7 +74,7 @@ The **Backups** tab lists all the backups created for the database. This include
 Using the backups that you have created, you can:
 {.power-number}
 
-1. Restore the backup to this datbase. 
+-  Restore the backup to this datbase. 
 
     a. To restore this database, click the ellipsis (...) menu next to the database, then click **Restore to this DB**. The **Restore Database** pop-up opens.
 
@@ -83,8 +83,6 @@ Using the backups that you have created, you can:
     c. Select either the backup from the dropdown or the point in time based on the option chosen in the previous step.
     
     d. Click **Restore**.
-
-
 
 - Create a new database from this backup. 
 
