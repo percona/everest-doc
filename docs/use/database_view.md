@@ -51,17 +51,23 @@ By clicking on the individual database, you will be able to perform various acti
 
 You have the option to access a comprehensive overview of any specific database. To access this information, click on that specific database, the **Overview**, **Backups** and **Restores** tabs will be dispalyed.
 
-- **Overview** -  This tab dispalys all the datbase details.
+- **Overview**
+
+    This tab dispalys all the database details.
 
     ![!image](../images/database_details.png)
 
 
-- **Backups** - This tab displays the details of backups taken for that database, including the date and time of the backup.
+- **Backups** 
+
+    This tab displays the details of backups taken for that database, including the date and time of the backup.
 
 
     ![!image](../images/database_backups.png)
 
 
-- **Restores** - This tab displays the details of the resrtores for that database including the date and time of the restore.
+- **Restores**
+
+    This tab displays the details of the resrtores for that database including the date and time of the restore.
 
     ![!image](../images/database_restores.png)
