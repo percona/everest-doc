@@ -51,23 +51,31 @@ By clicking on the individual database, you will be able to perform various acti
 
 You have the option to access a comprehensive overview of any specific database. To access this information, click on that specific database, the **Overview**, **Backups** and **Restores** tabs will be dispalyed.
 
-- **Overview**
+## Overview
 
-    This tab dispalys all the database details.
+This tab displays all the database details such as:
+
+- Basic information about the database
+- Backups
+- Whether Point-in-time Reovery is enabled or not
+- Resources used
+- Whether external access is enabled or not
+- Whether monitoring is enabled or not.
+- Information about the host, port, and credentials
 
     ![!image](../images/database_details.png)
 
 
-- **Backups** 
+## Backups
 
-    This tab displays the details of backups taken for that database, including the date and time of the backup.
-
-
-    ![!image](../images/database_backups.png)
+The **Backups** tab displays the details of backups taken for that database, including the date and time of the backup.
 
 
-- **Restores**
+![!image](../images/database_backups.png)
 
-    This tab displays the details of the resrtores for that database including the date and time of the restore.
 
-    ![!image](../images/database_restores.png)
+## Restores
+
+The **Restores** tab displays the details of the resrtores for that database including the date and time of the restore.
+
+![!image](../images/database_restores.png)
