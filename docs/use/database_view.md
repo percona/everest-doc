@@ -85,6 +85,6 @@ Using the backups that you have created, you can:
 
 The **Restores** tab displays a list of the database restores along with their respective dates and timestamps. This way, you can easily track and manage the history of all the restores that have been performed on the database.
 
-To delete this restore, click the ellipsis (...) menu next to the database and click **Delete**.
+To remove this restored database, click the ellipsis (...) menu next to the database and click **Delete**.
 
 ![!image](../images/database_restores.png)
