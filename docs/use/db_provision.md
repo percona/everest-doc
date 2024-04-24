@@ -27,6 +27,7 @@ To provision a new database:
 
         ![!image](../images/everest_multi-namespaces.png)
 
+
 4. Click **Continue**. The **Resources** page opens.
 
 5. On the **Resources** page select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
