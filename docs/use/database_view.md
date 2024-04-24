@@ -77,6 +77,7 @@ Using the backups that you have created, you can:
 
 
 - [Create a new database from backup](createBackups/create_new_database.md#create_new_database). 
+
 ![!image](../images/database_backups.png)
 
 
