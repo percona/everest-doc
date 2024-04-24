@@ -15,7 +15,7 @@ To provision a new database:
 
 3. On the **Basic information** page, provide the following details:
 
-    a. Select the **Namespace** where you want to create your database.
+    **a.** Select the **Namespace** where you want to create your database.
 
     b. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
@@ -34,7 +34,9 @@ To provision a new database:
 6. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database. Provide the following details on this page:
 
     a. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+    
     b. Select the **Backup storage** from the dropdown.
+    
     c. Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup instances that should be kept.
 
     ![!image](../images/everest_scheduled_backups.png)    
