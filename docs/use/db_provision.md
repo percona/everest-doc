@@ -25,7 +25,7 @@ To provision a new database:
 
        - In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
-    ![!image](../images/everest_multi-namespaces.png)
+        ![!image](../images/everest_multi-namespaces.png)
 
 4. Click **Continue**. The **Resources** page opens.
 
@@ -33,11 +33,11 @@ To provision a new database:
 
 6. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database. Provide the following details on this page:
 
-    a. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+    - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
     
-    b. Select the **Backup storage** from the dropdown.
+    - Select the **Backup storage** from the dropdown.
     
-    c. Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup instances that should be kept.
+    - Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup instances that should be kept.
 
     ![!image](../images/everest_scheduled_backups.png)    
 
