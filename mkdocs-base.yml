@@ -166,8 +166,8 @@ nav:
       - Uninstall Percona Everest: install/uninstallEverest.md
 
   - Use:
-      - Provision a database: use/db_provision.md
       - Database view: use/database_view.md
+      - Provision a database: use/db_provision.md
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Create storage locations: use/CreateStorage.md
