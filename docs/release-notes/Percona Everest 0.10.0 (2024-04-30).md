@@ -4,7 +4,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 Percona Everest is an open source cloud native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
-Version 0.9.0 introduces the following changes:
+Version 0.10.0 introduces the following changes:
 
 
 ## Release highlights
@@ -12,6 +12,13 @@ Version 0.9.0 introduces the following changes:
 
 ## New features and improvements
 
+[EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) Allow monitoring instance connection to skip TLS checks
+
+[EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) everestctl upgrade
+
+[EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) Allow backup storage to skip TLS checks, \(like use of minio with self-signed certs\)
+
+[EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) Support backup storages with path-style URL access
 
 [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) Number Retention copies for backups
 
@@ -39,7 +46,7 @@ Version 0.9.0 introduces the following changes:
 
 [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) Add API rate limiting
 
-### Bug
+## Bugs fixed
 
 [EVEREST-385](https://perconadev.atlassian.net/browse/EVEREST-385) Backup and pods are not deleted if the db cluster is deleted
 
@@ -55,36 +62,14 @@ Version 0.9.0 introduces the following changes:
 
 [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) Last Backup information is incorrect
 
-### Admin & Maintenance Task
-
-[EVEREST-944](https://perconadev.atlassian.net/browse/EVEREST-944) \[UI\] Update React to 18.2.0
-
-### New Feature
-
-[EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) Allow monitoring instance connection to skip TLS checks
-
-[EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) everestctl upgrade
-
-[EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) Allow backup storage to skip TLS checks, \(like use of minio with self-signed certs\)
-
-[EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) Support backup storages with path-style URL access
-
-### Technical task
-
-[EVEREST-915](https://perconadev.atlassian.net/browse/EVEREST-915) \[BE | operator\] Allow backup storage to skip TLS checks
-
-[EVEREST-916](https://perconadev.atlassian.net/browse/EVEREST-916) \[FE\] Allow backup storage to skip TLS checks
-
-[EVEREST-917](https://perconadev.atlassian.net/browse/EVEREST-917) \[BE\] Allow monitoring instance connection to skip TLS checks
-
-[EVEREST-918](https://perconadev.atlassian.net/browse/EVEREST-918) \[FE\] Allow monitoring instance connection to skip TLS checks
 
 
 
-### Point-in-time recovery for PostgreSQL
 
 
-## Bugs fixed
+
+
+
 
 
 
