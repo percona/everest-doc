@@ -25,6 +25,7 @@ To provision a new database:
 
        - In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
+
         ![!image](../images/everest_multi-namespaces.png)
 
 
@@ -42,22 +43,15 @@ To provision a new database:
 
     ![!image](../images/everest_scheduled_backups.png)    
 
+7. Click **Continue**. The **Point-in-time Recovery (PITR)** page opens. You can enable PITR by turning the toggle on.
 
-7. Click **Continue**. The **Point-in-time Recovery (PITR)** page opens.
+8. Click **Continue**. The **Advanced Configurations** page opens. You can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md)
 
-8. On the **Point-in-time Recovery (PITR)** page you can enable PITR by turning the toggle on.
+9. Click **Continue**. The **Monitoring** page opens. You can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
 
-7. Click **Continue**. The **Advanced Configurations** page opens.
+10. Click **Create Database**.
 
-8. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md)
-
-9. Click **Continue**. The **Monitoring** page opens.
-
-10. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
-
-13. Click **Create Database**.
-
-14. Click **Go to list of my databases** to see the database that you provisioned.
+11. Click **Go to list of my databases** to see the database that you provisioned.
 
     ![!image](../images/everest_provisioned_db.png)
 
