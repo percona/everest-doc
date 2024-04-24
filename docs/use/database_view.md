@@ -74,22 +74,14 @@ The **Backups** tab lists all the backups created for the database. This include
 Using the backups that you have created, you can:
 {.power-number}
 
-1.  Restore the backup to this datbase. 
-
-    1. To restore this database, click the ellipsis (...) menu next to the database, then click **Restore to this DB**. The **Restore Database** pop-up opens.
-
-    2. Select the method that you want to use to restore this database. You can either choose **From a backup** or From a Point-in-time (PITR).
-
-    3. Select either the backup from the dropdown or the point in time based on the option chosen in the previous step.
-    
-    4. Click **Restore**.
-
-2. Create a new database from this backup. 
-
-    a. 
+- [Restore the backup to database](../use/RestoreBackup.md#RestoreBackup). 
 
 
-This tab also lists all the active 
+- [Create a new database from backup](createBackups/create_new_database.md#create_new_database). 
+
+The **Backups** tab also lists all the active schedules for the database.
+
+You can also edit or delete the schedules by clicking on the the ellipsis (...) menu next to the database, and then clicking either **Edit** or **Delete** as per your requirement.
 
 
 
