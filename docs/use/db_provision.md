@@ -18,8 +18,6 @@ To provision a new database:
 
     a. Select the **Namespace** where you want to create your database.
 
-      ![!image](../images/everest_multi-namespaces.png)
-
     b. Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
     c. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
@@ -28,11 +26,17 @@ To provision a new database:
 
     e. In the **Storage class** field, select one of the classes created by your Kubernetes administrator. Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
 
+![!image](../images/everest_multi-namespaces.png)
+
 8. Click **Continue**. The **Resources** page opens.
 
 9. On the **Resources** page select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
 
-10. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database.
+10. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database. Enter the following information on this page:
+
+    a. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+    b. Select the backup storage from the dropdown.
+    c. Enter the retension copies of the
 
 11. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
 
