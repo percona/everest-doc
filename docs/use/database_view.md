@@ -49,19 +49,18 @@ By clicking on the individual database, you will be able to perform various acti
 
 ## Detailed database view
 
-You have the option to access a comprehensive overview of any specific database. To access this information, click on that specific database, the **Overview**, **Backups** and **Restores** tabs will be dispalyed.
+You can view a comprehensive overview of any specific database by clicking on the respective database. Once you do that, you will see the **Overview**, **Backups**, and **Restores** tabs.
 
 ## Overview
 
-This tab displays all the database details such as:
+The Overview tab provides a comprehensive view of all the essential database details, such as:
 
 - Basic information about the database
-- Backups
-- Whether Point-in-time Reovery is enabled or not
-- Resources used
-- Whether external access is enabled or not
-- Whether monitoring is enabled or not.
-- Information about the host, port, and credentials
+- Backups information
+- Point-in-time Recovery status
+- Resources used by the database
+- External access and monitoring status
+- Information about host, port, and credentials
 
     ![!image](../images/database_details.png)
 
