@@ -27,19 +27,30 @@ To provision a new database:
 
     ![!image](../images/everest_multi-namespaces.png)
 
-8. Click **Continue**. The **Resources** page opens.
+4. Click **Continue**. The **Resources** page opens.
 
-9. On the **Resources** page select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
+5. On the **Resources** page select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
 
-10. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database. Enter the following information on this page:
+6. Click **Continue**. The **Scheduled Backups** page opens where you can set up a schedule if you wish to run backup jobs for your new database. Provide the following details on this page:
 
     a. Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
-    b. Select the backup storage from the dropdown.
-    c. Enter the retension copies of the
+    b. Select the **Backup storage** from the dropdown.
+    c. Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup instances that should be kept.
 
-11. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on.
+    ![!image](../images/everest_scheduled_backups.png)    
 
-12. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
+
+7. Click **Continue**. The **Point-in-time Recovery (PITR)** page opens.
+
+8. On the **Point-in-time Recovery (PITR)** page you can enable PITR by turning the toggle on.
+
+7. Click **Continue**. The **Advanced Configurations** page opens.
+
+8. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md)
+
+9. Click **Continue**. The **Monitoring** page opens.
+
+10. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
 
 13. Click **Create Database**.
 
