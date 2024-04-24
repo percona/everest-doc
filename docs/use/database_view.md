@@ -71,14 +71,15 @@ The **Backups** tab lists all the backups created for the database. This include
 
 The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting either **Edit** or **Delete**.
 
-![!image](../images/database_backups.png)
-
 Using the backups that you have created, you can:
 
 - [Restore the backup to database](../use/RestoreBackup.md#RestoreBackup). 
 
 
 - [Create a new database from backup](createBackups/create_new_database.md#create_new_database). 
+![!image](../images/database_backups.png)
+
+
 
 
 ## Restores
