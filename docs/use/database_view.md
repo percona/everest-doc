@@ -81,8 +81,7 @@ Using the backups that you have created, you can:
 
 The **Backups** tab also lists all the active schedules for the database.
 
-You can also edit or delete the schedules by clicking on the the ellipsis (...) menu next to the database, and then clicking either **Edit** or **Delete** as per your requirement.
-
+The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting either **Edit** or **Delete**.
 
 
 ## Restores
