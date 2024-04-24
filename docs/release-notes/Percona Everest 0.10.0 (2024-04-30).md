@@ -28,11 +28,6 @@ Version 0.10.0 introduces the following changes:
 
 [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) \[UI\] Add icon and tooltip to backups column
 
-[EVEREST-923](https://perconadev.atlassian.net/browse/EVEREST-923) \[UI\] Update 'create backup schedule' dialog
-
-[EVEREST-925](https://perconadev.atlassian.net/browse/EVEREST-925) \[UI\] Update 'create backup now' dialog
-
-[EVEREST-926](https://perconadev.atlassian.net/browse/EVEREST-926) \[UI\] Fix 'add storage' dialog width
 
 [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) \[UI\] Update all buttons to sentence case
 
@@ -61,10 +56,6 @@ Version 0.10.0 introduces the following changes:
 [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) Actionable Alert button is not visible in dark theme
 
 [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) Last Backup information is incorrect
-
-
-
-
 
 
 
