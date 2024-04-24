@@ -14,7 +14,7 @@ To provision a new database:
 
     ![!image](../images/everest_db_provision.png)
 
-3. On the **Basic information** page enter the following information:
+3. On the **Basic information** page, provide the following details:
 
     a. Select the **Namespace** where you want to create your database.
 
