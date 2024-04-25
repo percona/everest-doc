@@ -30,7 +30,7 @@ To provision a new database:
 
         ![!image](../images/everest_multi-namespaces.png)
 
-5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md).
+5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
 6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database. 
 
@@ -46,9 +46,9 @@ To provision a new database:
 
 7. On the **Point-in-time Recovery (PITR)** page, you can enable PITR by turning the toggle on.
 
-8. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md)
+8. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md) section.
 
-9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see [monitoring endpoints](../use/monitor_endpoints.md).
+9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
 
 10. Click **Create Database**.
 
