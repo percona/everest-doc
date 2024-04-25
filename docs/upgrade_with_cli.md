@@ -34,11 +34,7 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
 ## After your upgrade is complete
 
-After you successfully upgrade your Percona Everest version, refer to (step 3)[install/installEverest.md#step-3]in the Installation section.
-
-
-In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
-
+After upgrading your Percona Everest version, follow the instructions in [step 3](install/installEverest.md#step-3) and [step 4](install/installEverest.md#step-4) of the Installation section. 
 
 
 
