@@ -79,25 +79,17 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
 2. Install Everest and provision the Kubernetes cluster:
 
-    !!! warning "Important"
-        -  Make sure that you enter at least one namespace.
-        -  Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
-
-
     ```sh
     everestctl install
     ```
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
 
-3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+    !!! warning "Important"
+        -  Make sure that you enter at least one namespace.
+        -  Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
-    === "Port Forwarding"
-        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
-                
-        ```sh
-        kubectl port-forward svc/everest 8080:8080 -n everest-system
-        ``` 
+3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
 
@@ -113,6 +105,13 @@ You can download the latest version of Everest CLI by visiting the latest releas
             kubectl get svc/everest -n everest-system
             ```
 
+    === "Port Forwarding"
+        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
+                
+        ```sh
+        kubectl port-forward svc/everest 8080:8080 -n everest-system
+        ``` 
+        
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
 ## Video tutorial
