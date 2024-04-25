@@ -81,4 +81,4 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
                 ```
 
-4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).{#step-4}
+4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
