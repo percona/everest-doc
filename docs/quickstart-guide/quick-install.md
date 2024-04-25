@@ -14,7 +14,7 @@ Before getting started with Percona Everest, do the following:
      
     !!! note alert alert-primary "Note"
 
-          Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
+        Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
        We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
 
@@ -111,7 +111,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
         ```sh
         kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
-        
+
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
 ## Video tutorial
