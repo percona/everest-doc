@@ -52,7 +52,7 @@ To install and provision Percona Everest to Kubernetes:
     !!! warning "Important"
         Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
-3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default: #step-3
+3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:(#step-3)
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
@@ -81,4 +81,4 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
                 ```
 
-4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).#step-4
+4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).(#step-4)
