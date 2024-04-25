@@ -2,9 +2,6 @@
 
 The database view in Percona Everest provides an interface to view and provision your databases. With the database view, you can keep a close eye on all your databases and their status and perform tasks such as backup and restore.
 
-
-   ![!image](../images/database_view.png)
-
 By clicking on the individual database, you will be able to perform various actions such as:
 
    ![!image](../images/database_view_actions.png)
@@ -46,6 +43,8 @@ By clicking on the individual database, you will be able to perform various acti
     
      To delete your database, click the ellipsis (...) menu next to the database you want to suspend, then click **Delete**.
 
+
+   ![!image](../images/database_view_actions.png)
 
 ## Detailed database view
 
