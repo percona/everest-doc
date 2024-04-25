@@ -178,6 +178,7 @@ nav:
       - Scale database deployment: use/scaling.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
+      - API rate limiting: use/API_rate_limit.md
   - Configure:
       - Configure database engine: configure/db_engine_config.md
   - Secure: secure/user-auth.md
