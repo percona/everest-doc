@@ -23,7 +23,7 @@ By clicking on the individual database, you will be able to perform various acti
 
  - **Create database from a backup**
 
-    With Percona Everest, you have the ability to create a database by using a backup. 
+    With Percona Everest, you have the ability to create a database from a backup. 
     
     To create a backup, click the ellipsis (…) menu next to the database, then click **Create database from a backup**. For more in-depth instructions on how to create a database from a backup, refer to the [create a database from a backup ](createBackups/create_new_database.md).
 
