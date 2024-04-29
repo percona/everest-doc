@@ -11,8 +11,7 @@ Version 0.10.0 introduces the following changes:
 
 ### Percona Everest upgrade
 
-
-
+We're thrilled to announce that you can now easily upgrade your Percona Everest instance using our new Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly and easily upgrade your database to the latest version.
 
 
 
@@ -20,7 +19,7 @@ Version 0.10.0 introduces the following changes:
 ### Skipping TLS
 
 !!! warning
-    It is not recommended to skip TLS. If it is necessary to skip TLS, it should be used with self-signed certificates only.
+    It is not recommended to skip TLS. If it is necessary to skip TLS, make sure to use it with self-signed certificates.
 
 With the introduction of Percona Everest 0.10.0, it is now possible to skip Transport Layer Security (TLS) while adding backup storage. 
 
