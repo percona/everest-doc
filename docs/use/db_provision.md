@@ -36,7 +36,7 @@ To provision a new database:
 
     Provide the following details on this page:
 
-      - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+      - Choose a name for your backup schedule. The name is auto-populated, but you can modify it according to your needs.
     
       - Select the **Backup storage** from the dropdown.
     
@@ -50,9 +50,9 @@ To provision a new database:
 
 7. On the **Point-in-time Recovery (PITR)** page, you can enable PITR by turning the toggle on.
 
-8. On the **Advanced Configurations** page, you can enable external access and database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md) section.
+8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md) section.
 
-9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
+9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
 
 10. Click **Create Database**.
 

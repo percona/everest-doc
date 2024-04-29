@@ -23,7 +23,7 @@ By clicking on the individual database, you will be able to perform various acti
 
  - **Create database from a backup**
 
-    With Percona Everest, you have the ability to create a database by using a backup. 
+    With Percona Everest, you have the ability to create a database from a backup. 
     
     To create a backup, click the ellipsis (…) menu next to the database, then click **Create database from a backup**. For more in-depth instructions on how to create a database from a backup, refer to the [create a database from a backup ](createBackups/create_new_database.md).
 
@@ -84,6 +84,6 @@ The **Backups** tab also displays all active schedules for the database. You can
 
 The **Restores** tab displays a list of the database restores along with their respective dates and timestamps. This way, you can easily track and manage the history of all the restores that have been performed on the database.
 
-To remove this restored database, click the ellipsis (...) menu next to the database and click **Delete**.
+To remove the database's restore entry, click the ellipsis (...) menu next to the database and click **Delete**.
 
 ![!image](../images/database_restores.png)
