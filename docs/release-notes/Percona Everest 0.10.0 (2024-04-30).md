@@ -14,11 +14,17 @@ Version 0.10.0 introduces the following changes:
 
 
 
+
+
+
 ### Skipping TLS
 
 !!! warning
+    It is not recommended to skip TLS. If it is necessary to skip TLS, it should be used with self-signed certificates only.
 
+With the introduction of Percona Everest 0.10.0, it is now possible to skip Transport Layer Security (TLS) while adding backup storage. 
 
+TLS verifies the server's certificate chain and host name, ensuring its authenticity. However, TLS can add overhead to data transmission, especially in high-throughput backup scenarios. Skipping TLS may improve backup performance by reducing this overhead, allowing backups to complete faster.
 
 
 
