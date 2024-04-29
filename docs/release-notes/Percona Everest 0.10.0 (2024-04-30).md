@@ -15,7 +15,6 @@ We're thrilled to announce that you can now easily upgrade your Percona Everest 
 
 
 
-
 ### Skipping TLS
 
 !!! warning
