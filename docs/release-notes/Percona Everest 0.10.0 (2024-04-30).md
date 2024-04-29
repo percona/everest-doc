@@ -19,17 +19,20 @@ We're thrilled to announce that you can now easily upgrade your Percona Everest 
 For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
 
-
 ### API rate limiting
 
+Starting with Percona Everest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
+
+API rate limiting is one of the key aspects of managing API's . With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
+
+The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To customize API rate-limiting, you can adjust the rate limits to align them with your needs. To dive deep into this feature, see our comprehensive [documentation]()
 
 
 ### Skipping TLS certificate validation
 
 With the release of Percona Everest 0.10.0, you can add backup storage without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
-Skipping the TLS certificate validation is necessary when using a self-signed certificate because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certifcate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, there may not be a need for this identity check.
-
+Skipping the TLS certificate validation is necessary when using a self-signed certificate because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certificate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, this identity check may not be needed.
 
 
 ## New features and improvements
