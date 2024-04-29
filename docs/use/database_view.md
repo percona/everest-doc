@@ -24,7 +24,7 @@ Click on the individual database and select the ellipsis menu (...). This will a
     For more in-depth instructions on how to restore a database, refer to the [restore a database from a backup](createBackups/RestoreBackup.md) section.
 
 
- - **Suspend the database** - Suspending your database can save resources when it's not being used. Pausing it can also conserve CPU and memory. 
+ - **Suspend the database** - Suspending your database can save resources when it's not being used. 
     
     To resume your database click **Resume**. You database will be immediately resumed.
 
@@ -54,7 +54,7 @@ The Overview tab provides a comprehensive view of all the essential database det
 
 The **Backups** tab lists all the backups created for the database. This includes the exact date and time when each backup was taken, providing you with a clear overview of the backup history for the database.
 
-Click the ellipsis (...) menu next to the database and you can:
+From the ellipsis (...) menu next to the database you can:
 
 - [Restore the backup to database](../use/RestoreBackup.md#RestoreBackup). 
 
@@ -64,12 +64,12 @@ Click the ellipsis (...) menu next to the database and you can:
     ![!image](../images/database_backups.png)
 
 
-The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking the ellipsis (...) menu next to the database and selecting **Edit** or **Delete** respectively.
+The **Backups** tab also displays all active schedules for the database. You can edit or delete schedules by clicking **Edit** or **Delete** respectively.
 
 ## Restores
 
 The **Restores** tab displays a list of the database restores along with their respective dates and timestamps. This way, you can easily track and manage the history of all the restores that have been performed on the database.
 
-To remove the database's restore entry, click the ellipsis (...) menu next to the database and click **Delete**.
+To remove the database's restore entry, click **Delete** and the restored database will be deleted.
 
 ![!image](../images/database_restores.png)
