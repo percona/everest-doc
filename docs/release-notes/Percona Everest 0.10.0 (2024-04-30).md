@@ -9,6 +9,19 @@ Version 0.10.0 introduces the following changes:
 
 ## Release highlights
 
+### Percona Everest upgrade
+
+
+
+
+### Skipping TLS
+
+!!! warning
+
+
+
+
+
 
 ## New features and improvements
 
