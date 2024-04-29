@@ -23,9 +23,9 @@ For more information on upgrading Percona Everest, see our [documentation](https
 
 Starting with Percona Everest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
 
-API rate limiting is one of the key aspects of managing API's . With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
+API rate limiting is one of the key aspects of managing API's. With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
 
-The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To customize API rate-limiting, you can adjust the rate limits to align them with your needs. To dive deep into this feature, see our comprehensive [documentation]()
+The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html)
 
 
 ### Skipping TLS certificate validation
