@@ -28,10 +28,8 @@ Click on the individual database and select the ellipsis menu (...). This will a
     
     To resume your database click **Resume**. You database will be immediately resumed.
 
- - **Delete the database**
+ - **Delete the database** - If you have a database that you no longer use, you can delete it to free up space or resources.
 
-     When you no longer need your database, you can delete it. 
-    
 ## Detailed database view
 
 You can view a comprehensive overview of any specific database by clicking on the respective database. Once you do that, you will see the **Overview**, **Backups**, and **Restores** tabs.
