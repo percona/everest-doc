@@ -36,7 +36,7 @@ To provision a new database:
 
     Provide the following details on this page:
 
-      - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
+      - Choose a name for your backup schedule. The name is auto-populated, but you can modify it according to your needs.
     
       - Select the **Backup storage** from the dropdown.
     
