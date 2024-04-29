@@ -11,16 +11,21 @@ Version 0.10.0 introduces the following changes:
 
 ### Percona Everest upgrade
 
+!!! important
+     - You need to download CLI version >=0.10.0 for the upgrade command to work. You can only upgrade to one version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8 to version 0.10. 
+
 We're thrilled to announce that you can now easily upgrade your Percona Everest instance using our new Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly and easily upgrade your database to the latest version.
 
+For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
 
-### Skipping TLS
+
+### Skipping TLS certificate validation
 
 !!! warning
-    It is not recommended to skip TLS. If it is necessary to skip TLS, make sure to use it with self-signed certificates.
+    It is not recommended to skip TLS certificate validation. If it is necessary to skip, make sure to use it with self-signed certificates.
 
-With the introduction of Percona Everest 0.10.0, it is now possible to skip Transport Layer Security (TLS) while adding backup storage. 
+With the introduction of Percona Everest 0.10.0, it is now possible to skip Transport Layer Security (TLS)  certificate validation while adding backup storage. 
 
 TLS verifies the server's certificate chain and host name, ensuring its authenticity. However, TLS can add overhead to data transmission, especially in high-throughput backup scenarios. Skipping TLS may improve backup performance by reducing this overhead, allowing backups to complete faster.
 
