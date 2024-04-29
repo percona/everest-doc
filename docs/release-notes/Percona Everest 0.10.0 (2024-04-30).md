@@ -30,7 +30,7 @@ The default rate limit for Percona Everest is 100 requests per second. However, 
 
 ### Skipping TLS certificate validation
 
-With the release of Percona Everest 0.10.0, you can add backup storage without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
+With the release of Percona Everest 0.10.0, you can add backup storage and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
 Skipping the TLS certificate validation is necessary when using a self-signed certificate because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certificate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, this identity check may not be needed.
 
@@ -38,35 +38,35 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 ## New features and improvements
 
 
-[EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with Percona Everest 0.10.0, you can upgrade your Percona Everest instance using the CLI (everestctl).
+- [EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with Percona Everest 0.10.0, you can upgrade your Percona Everest instance using the CLI (everestctl).
 
-[EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) Allow monitoring instance connection to skip TLS checks
+- [EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) - You can now add monitoring instances without verifying the TLS certificates. 
 
+- [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) - You can now add backup storages without verifying the TLS certificates.
 
-[EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) Allow backup storage to skip TLS checks, \(like use of minio with self-signed certs\)
+- [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. 
 
-[EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) Support backup storages with path-style URL access
+- [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - Backup storages are now supported with path-style URL access.
 
-[EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) Number Retention copies for backups
-
-[EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) \[UI\] Limit number of PG backup schedules to three
-
-[EVEREST-911](https://perconadev.atlassian.net/browse/EVEREST-911) \[UI\] Add backups info column to main DB view
-
-[EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) \[UI\] Add icon and tooltip to backups column
+- [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for backups. Retention copies refer to the number of backup instances that should be kept.
 
 
-[EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) \[UI\] Update all buttons to sentence case
+- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to the current limitation of PostgreSQL, you can only create up to 3 schedules. To avoid confusion, we have added a tooltip to inform about this limitation.
 
-[EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) \[UI\] Enable 'cancel' button in the wizard when the user is editing a step
+- [EVEREST-911](https://perconadev.atlassian.net/browse/EVEREST-911) \[UI\] Add backups info column to main DB view
 
-[EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) \[UI\] Add storage name to PITR info alert when restoring
+- [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) \[UI\] Add icon and tooltip to backups column
 
-[EVEREST-946](https://perconadev.atlassian.net/browse/EVEREST-946) \[UI\] Add retention copies to 'create backup schedule' dialog
+- [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) \[UI\] Update all buttons to sentence case
 
-[EVEREST-962](https://perconadev.atlassian.net/browse/EVEREST-962) Bucket name sanitation HD-23050
+- [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) \[UI\] Enable 'cancel' button in the wizard when the user is editing a step
 
-[EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) Add API rate limiting
+- [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) \[UI\] Add storage name to PITR info alert when restoring
+
+- [EVEREST-946](https://perconadev.atlassian.net/browse/EVEREST-946) \[UI\] Add retention copies to 'create backup schedule' dialog
+
+- [EVEREST-962](https://perconadev.atlassian.net/browse/EVEREST-962) Bucket name sanitation HD-23050
+
 
 ## Bugs fixed
 
