@@ -20,15 +20,15 @@ For more information on upgrading Percona Everest, see our [documentation](https
 
 
 
+### API rate limiting
+
+
+
 ### Skipping TLS certificate validation
 
-!!! warning
-    It is not recommended to skip TLS certificate validation. If it is necessary to skip, make sure to use it with self-signed certificates.
+With the release of Percona Everest 0.10.0, you can add backup storage without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
-With the introduction of Percona Everest 0.10.0, it is now possible to skip Transport Layer Security (TLS)  certificate validation while adding backup storage. 
-
-TLS verifies the server's certificate chain and host name, ensuring its authenticity. However, TLS can add overhead to data transmission, especially in high-throughput backup scenarios. Skipping TLS may improve backup performance by reducing this overhead, allowing backups to complete faster.
-
+Skipping the TLS certificate validation is necessary when using a self-signed certificate because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certifcate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, there may not be a need for this identity check.
 
 
 
