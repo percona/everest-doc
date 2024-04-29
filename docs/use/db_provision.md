@@ -40,7 +40,7 @@ To provision a new database:
     
       - Select the **Backup storage** from the dropdown.
     
-      - Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup instances that should be kept.
+      - Enter the number of **Retention copies** for the backups. Retention copies refer to the number of backup artifacts that should be kept.
 
     ![!image](../images/everest_scheduled_backups.png)    
 
