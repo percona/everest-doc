@@ -14,7 +14,7 @@ Version 0.10.0 introduces the following changes:
 !!! important
      - You need to download CLI version >=0.10.0 for the upgrade command to work. You can only upgrade to one version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8 to version 0.10. 
 
-We're thrilled to announce that you can now upgrade your Percona Everest instance using our new Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your database to the latest version.
+We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your database to the latest version.
 
 For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
@@ -37,9 +37,11 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 ## New features and improvements
 
+
+[EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with Percona Everest 0.10.0, you can upgrade your Percona Everest instance using the CLI (everestctl).
+
 [EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) Allow monitoring instance connection to skip TLS checks
 
-[EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) everestctl upgrade
 
 [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) Allow backup storage to skip TLS checks, \(like use of minio with self-signed certs\)
 
