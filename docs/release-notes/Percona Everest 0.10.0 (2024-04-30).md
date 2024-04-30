@@ -37,7 +37,6 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 ## New features and improvements
 
-
 - [EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with Percona Everest 0.10.0, you can upgrade your Percona Everest instance using the CLI (everestctl).
 
 - [EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) - You can now add monitoring instances without verifying the TLS certificates. 
@@ -59,7 +58,6 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 - [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) - We have added an icon and tooltip to backups column.
 
 - [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) - We have updated all the labels on the buttons to sentence case for consistency.
-
 
 - [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) - Restoring a database using PITR now includes backup storage name.
 
