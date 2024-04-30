@@ -52,7 +52,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for create backup schedules. Retention copies refer to the number of backup instances that should be kept.
 
-- [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) - Previously, the 'cancel' button was disabled while editing anything in the wizard. This button is now enabled.
+- [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) - Previously, the **cancel** button was disabled while editing anything in the wizard. This button is now enabled.
 
 - [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to the current limitation of PostgreSQL, you can only create up to 3 schedules. To avoid confusion, we have added a tooltip that states this limitation.
 
