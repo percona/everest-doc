@@ -70,13 +70,13 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - Fixed an issue where login did not work immediately after logging out.
 
-- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - everestctl uninstall fails to complete
+- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed to complete. The issue has now been resolved.
 
-- [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) Actionable Alert button is not visible in dark theme
+- [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in dark theme. THe issue has been resolved now.
 
-- [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) Last Backup information is incorrect
+- [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) - Fixed an issue where the last backup information was inaccurate.
 
-- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) \[UI\] Documentation link on PITR option for PG opening on the same tab
+- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - Documentation link on PITR option for PG opening on the same tab
 
 
 
