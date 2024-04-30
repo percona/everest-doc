@@ -22,19 +22,9 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
     everestctl upgrade
 
-??? example "Expected output"
+    ??? example "Expected output"
 
 2. After upgrading, refresh the Percona Everest UI to access the new version.
-
-
-
-
-
-
-
-
-
-
 
 
 ## How to address a failed upgrade
@@ -44,7 +34,7 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
 ## After your upgrade is complete
 
-After upgrading your Percona Everest version, follow the instructions in [step 3](install/installEverest.md#step-3) and [step 4](install/installEverest.md#step-4) of the Installation section. 
+After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](install/installEverest.md) section. 
 
 
 
