@@ -61,24 +61,23 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) - Restoring a database using PITR now includes backup storage name.
 
-- [EVEREST-962](https://perconadev.atlassian.net/browse/EVEREST-962) - Bucket name sanitation HD-23050
-
 
 ## Bugs fixed
 
-[EVEREST-385](https://perconadev.atlassian.net/browse/EVEREST-385) Backup and pods are not deleted if the db cluster is deleted
+- [EVEREST-385](https://perconadev.atlassian.net/browse/EVEREST-385) - Previously, there was an issue where the backup and pods associated with a database cluster were not being deleted when the cluster itself was deleted. This has now been fixed.
 
-[EVEREST-846](https://perconadev.atlassian.net/browse/EVEREST-846) New database contains the backups of the old database with the same name
+- [EVEREST-846](https://perconadev.atlassian.net/browse/EVEREST-846) - Fixed an issue where the new database contained the backups of the old database with the same name.
 
-[EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) \[UI\] Login doesn't work immediately after logout
+- [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - Fixed an issue where login did not work immediately after logging out.
 
-[EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) \[UI\] Documentation link on PITR option for PG opening on the same tab
+- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - everestctl uninstall fails to complete
 
-[EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) everestctl uninstall fails to complete
+- [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) Actionable Alert button is not visible in dark theme
 
-[EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) Actionable Alert button is not visible in dark theme
+- [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) Last Backup information is incorrect
 
-[EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) Last Backup information is incorrect
+- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) \[UI\] Documentation link on PITR option for PG opening on the same tab
+
 
 
 
