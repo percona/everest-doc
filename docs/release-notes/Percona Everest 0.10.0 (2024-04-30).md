@@ -27,7 +27,7 @@ Starting with Percona Everest 0.10.0 version, we have introduced a new feature c
 
 API rate limiting is one of the key aspects of managing API's. With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
 
-The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html)
+The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html).
 
 
 ### Skipping TLS certificate validation
@@ -46,7 +46,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) - You can now add monitoring instances without verifying the TLS certificates. 
 
-- [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) - You can now add backup storages without verifying the TLS certificates.
+- [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) - You can now add backup storage without verifying the TLS certificates.
 
 - [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. 
 
@@ -60,11 +60,11 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-911](https://perconadev.atlassian.net/browse/EVEREST-911) - We added a new column to the database view displaying the time of the last backup.
 
-- [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) - We have added an icon and tooltip to backups column.
+- [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) - We have added an icon and tooltip to the backups column.
 
 - [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) - We have updated all the labels on the buttons to sentence case for consistency.
 
-- [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) - Restoring a database using PITR now includes backup storage name.
+- [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) - Restoring a database using PITR now includes a backup storage name.
 
 
 ## Bugs fixed
@@ -75,13 +75,13 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - Fixed an issue where login did not work immediately after logging out.
 
-- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed to complete. The issue has now been resolved.
+- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed. The issue has now been resolved.
 
 - [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in dark theme. The issue has been resolved now.
 
 - [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) - Fixed an issue where the last backup information was inaccurate.
 
-- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - The documentation link on PITR option for PostreSQL was opening on the same tab. The issue has been resolved now.
+- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - The documentation link on PITR option for PostgreSQL was opening on the same tab. The issue has been resolved now.
 
 
 
