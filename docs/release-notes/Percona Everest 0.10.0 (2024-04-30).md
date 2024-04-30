@@ -76,7 +76,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) - Fixed an issue where the last backup information was inaccurate.
 
-- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - Documentation link on PITR option for PG opening on the same tab
+- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - The documentation link on PITR option for PostreSQL was opening on the same tab. The issue has been resolved now.
 
 
 
