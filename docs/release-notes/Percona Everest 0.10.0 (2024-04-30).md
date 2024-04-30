@@ -51,13 +51,13 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 - [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for backups. Retention copies refer to the number of backup instances that should be kept.
 
 
-- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to the current limitation of PostgreSQL, you can only create up to 3 schedules. To avoid confusion, we have added a tooltip to inform about this limitation.
+- [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to the current limitation of PostgreSQL, you can only create up to 3 schedules. To avoid confusion, we have added a tooltip that states this limitation.
 
-- [EVEREST-911](https://perconadev.atlassian.net/browse/EVEREST-911) \[UI\] Add backups info column to main DB view
+- [EVEREST-911](https://perconadev.atlassian.net/browse/EVEREST-911) - We added a new column to the database view displaying the time of the last backup.
 
-- [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) \[UI\] Add icon and tooltip to backups column
+- [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) - We have added an icon and tooltip to backups column.
 
-- [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) \[UI\] Update all buttons to sentence case
+- [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) - We have updated all the labels on the buttons to sentence case in accordance with our standards.
 
 - [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) \[UI\] Enable 'cancel' button in the wizard when the user is editing a step
 
