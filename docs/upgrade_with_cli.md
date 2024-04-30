@@ -20,7 +20,7 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
 1. To upgrade Percona Everest using the CLI, execute the following command:
 
-    everestctl upgrade
+        everestctl upgrade
 
     ??? example "Expected output"
 
