@@ -48,9 +48,9 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - Backup storages are now supported with path-style URL access.
 
-- [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for backups. Retention copies refer to the number of backup instances that should be kept.
+- [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for create backup schedules. Retention copies refer to the number of backup instances that should be kept.
 
-- [EVEREST-946](https://perconadev.atlassian.net/browse/EVEREST-946) - Add retention copies to 'create backup schedule' dialog
+- [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) - Previously, the 'cancel' button was disabled while editing anything in the wizard. This button is now enabled.
 
 - [EVEREST-819](https://perconadev.atlassian.net/browse/EVEREST-819) - Due to the current limitation of PostgreSQL, you can only create up to 3 schedules. To avoid confusion, we have added a tooltip that states this limitation.
 
@@ -58,14 +58,12 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-912](https://perconadev.atlassian.net/browse/EVEREST-912) - We have added an icon and tooltip to backups column.
 
-- [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) - We have updated all the labels on the buttons to sentence case in accordance with our standards.
-
-- [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) \[UI\] Enable 'cancel' button in the wizard when the user is editing a step
-
-- [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) \[UI\] Add storage name to PITR info alert when restoring
+- [EVEREST-928](https://perconadev.atlassian.net/browse/EVEREST-928) - We have updated all the labels on the buttons to sentence case for consistency.
 
 
-- [EVEREST-962](https://perconadev.atlassian.net/browse/EVEREST-962) Bucket name sanitation HD-23050
+- [EVEREST-938](https://perconadev.atlassian.net/browse/EVEREST-938) - Restoring a database using PITR now includes backup storage name.
+
+- [EVEREST-962](https://perconadev.atlassian.net/browse/EVEREST-962) - Bucket name sanitation HD-23050
 
 
 ## Bugs fixed
