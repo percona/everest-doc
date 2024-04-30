@@ -12,10 +12,11 @@ You need to download CLI version >=0.10.0 for the upgrade command to work. You c
 
 ## Upgrade
 
-During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
-
 !!! note
     It is recommended that you create backups of your databases prior to upgrading Percona Everest.
+
+During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
+{.power-number}
 
 1. To upgrade Percona Everest using the CLI, execute the following command:
 
