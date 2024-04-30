@@ -11,7 +11,7 @@ Version 0.10.0 introduces the following changes:
 
 ### Percona Everest upgrade
 
-!!! important
+!!! warning "Important"
      - You need to download CLI version >=0.10.0 for the upgrade command to work. You can only upgrade to one version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8 to version 0.10. 
 
 We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your database to the latest version.
@@ -32,7 +32,7 @@ The default rate limit for Percona Everest is 100 requests per second. However, 
 
 With the release of Percona Everest 0.10.0, you can add backup storage and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
-Skipping the TLS certificate validation is necessary when using a self-signed certificate because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certificate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, this identity check may not be needed.
+Skipping the TLS certificate validation is necessary when using a self-signed certificate] because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certificate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, this identity check may not be needed.
 
 
 ## New features and improvements
@@ -72,7 +72,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed to complete. The issue has now been resolved.
 
-- [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in dark theme. THe issue has been resolved now.
+- [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in dark theme. The issue has been resolved now.
 
 - [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) - Fixed an issue where the last backup information was inaccurate.
 
