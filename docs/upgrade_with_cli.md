@@ -8,7 +8,7 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 !!! note
      It is recommended to install the latest version of the CLI .
 
-You need to download CLI version >=0.10.0 for the upgrade command to work. You can only upgrade to one version at a time. For instance, you can upgrade from version 0.9.1 to version 0.10.0, but not directly from version 0.8 to version 0.10.  
+You need to download CLI version >=0.10.0 for the upgrade command to work. You can only upgrade one minor version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8.0 to version 0.10.0.  
 
 ## Upgrade
 
