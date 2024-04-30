@@ -46,7 +46,7 @@ To provision a new database:
 
         Example: When you set retention copies to 3, it means that you want to keep a maximum of 3 backup copies at any given time. So, if you have 3 backups already and then run a 4th backup, the oldest backup will get deleted automatically. 
 
-    ![!image](../images/everest_scheduled_backups.png)    
+        ![!image](../images/everest_scheduled_backups.png)    
 
 7. On the **Point-in-time Recovery (PITR)** page, you can enable PITR by turning the toggle on.
 
