@@ -50,7 +50,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. With this you can set a threshold for the number of requests your API can receive within a specific period.
 
-- [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - Backup storages are now supported with path-style URL access.
+- [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - You can now access backup storages with [path-style URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access).
 
 - [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies for create backup schedules. Retention copies refer to the number of backup instances that should be kept.
 
