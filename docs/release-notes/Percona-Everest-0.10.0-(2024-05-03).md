@@ -59,7 +59,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) - You can now add backup storage without verifying the TLS certificates.
 
-- [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - You can now access backup storages with [path-style URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access).
+- [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - You can now access backup storage with [path-style URLs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access).
 
 - [EVEREST-668](https://perconadev.atlassian.net/browse/EVEREST-668) - We have introduced Retention copies while creating backup schedules. Retention copies refer to the number of backup instances that should be kept.
 
