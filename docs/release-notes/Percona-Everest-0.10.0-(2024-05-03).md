@@ -77,7 +77,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - We have resolved an issue that prevented users from logging in immediately after logging out.
 
-- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed. The issue has now been resolved.
+- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, an error occurred which prevented the uninstallation process from completing successfully. The issue has now been resolved.
 
 - [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in the dark theme. The issue has been resolved now.
 
