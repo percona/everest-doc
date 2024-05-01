@@ -71,11 +71,11 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 ## Bugs fixed
 
-- [EVEREST-385](https://perconadev.atlassian.net/browse/EVEREST-385) - Previously, there was an issue where the backup and pods associated with a database cluster were not being deleted when the cluster itself was deleted. This has now been fixed.
+- [EVEREST-385](https://perconadev.atlassian.net/browse/EVEREST-385) - Previously, there was an issue where the backup and pods associated with a database cluster were not being deleted when the cluster itself was deleted. The issue has been resolved now.
 
 - [EVEREST-846](https://perconadev.atlassian.net/browse/EVEREST-846) - Fixed an issue where the new database contained the backups of the old database with the same name.
 
-- [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - Fixed an issue where login did not work immediately after logging out.
+- [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - We have resolved an issue that prevented users from logging in immediately after logging out.
 
 - [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, the process failed. The issue has now been resolved.
 
@@ -83,7 +83,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-967](https://perconadev.atlassian.net/browse/EVEREST-967) - Fixed an issue where the last backup information was inaccurate.
 
-- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - The documentation link on PITR option for PostgreSQL was opening on the same tab. The issue has been resolved now.
+- [EVEREST-940](https://perconadev.atlassian.net/browse/EVEREST-940) - The documentation link on Point-in-time recovery option for PostgreSQL was opening in the same tab. The issue has been resolved now.
 
 
 
