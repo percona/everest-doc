@@ -48,7 +48,7 @@ Skipping the TLS certificate validation is necessary when using a self-signed ce
 
 - [EVEREST-895](https://perconadev.atlassian.net/browse/EVEREST-895) - You can now add backup storage without verifying the TLS certificates.
 
-- [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. 
+- [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. With this you can set a threshold for the number of requests your API can receive within a specific period.
 
 - [EVEREST-919](https://perconadev.atlassian.net/browse/EVEREST-919) - Backup storages are now supported with path-style URL access.
 
