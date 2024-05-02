@@ -12,7 +12,7 @@ Before getting started with Percona Everest, do the following:
 
 2. Set up a Kubernetes cluster.
      
-    !!! note alert alert-primary "Note"
+    !!! info "Important"
 
         Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
@@ -85,7 +85,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
 
-    !!! warning "Important"
+    !!! info "Important"
         -  Make sure that you enter at least one namespace.
         -  Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
 
