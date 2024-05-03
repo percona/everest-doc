@@ -14,7 +14,7 @@ Version 0.10.0 introduces the following changes:
 !!! warning "Important"
     You need to download CLI version >=0.10.0 for the upgrade command to work.    
 
-We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your database to the latest version.
+We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your Everest to the latest version.
 
 You can only upgrade one minor version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8.0 to version 0.10.0.
 
@@ -32,7 +32,7 @@ The default rate limit for Percona Everest is 100 requests per second. However, 
 
 ### Added control for TLS certificate validation
 
-With the release of Percona Everest 0.10.0, you can add backup storage and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
+With the release of Percona Everest 0.10.0, you can add backup storages and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
 When using a self-signed TLS certificate, the TLS certificate validation may fail as the certificate has not been issued by a trusted authority. To overcome this issue, you may need to skip the TLS certificate validation. 
 
