@@ -32,7 +32,7 @@ The default rate limit for Percona Everest is 100 requests per second. However, 
 
 ### Added control for TLS certificate validation
 
-With the release of Percona Everest 0.10.0, you can add backup storage and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
+With the release of Percona Everest 0.10.0, you can add backup storages and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
 
 Skipping the TLS certificate validation is necessary when using a self-signed certificate] because the certificate validation of TLS fails when using a self-signed certificate, as it hasn't been issued by a trusted authority. You can skip TLS certificate validation when there is no need to ensure the authenticity of the server holding the certificate. For instance, if you have a private network with complete control over everything within it, this identity check may not be needed.
