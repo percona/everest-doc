@@ -50,9 +50,9 @@ Point-In-Time Recovery (PITR) can only be used after a certain time has elapsed 
 
 The default **uploadInterval** values for different databases are as follows:  
 
-- PXC(Percona XtraDB Cluster) = 1 minute
-- PSMDB(Percona Server for MongoDB) = 10 minutes
-- PG(PostgreSQL) = 1 minute
+- MySQL = 1 minute
+- MongoDB = 10 minutes
+- PostgreSQL = 1 minute
 
 
 ### Limitation for PostgreSQL
