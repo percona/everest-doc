@@ -10,10 +10,6 @@ export KUBECONFIG=~/.kube/config
 
 ## Installation
 
-!!! warning
-
-    To install Percona Everest 0.9.0, first [uninstall the previous version](../release-notes/Percona%20Everest%200.8.0%20%282024-02-22%29.md#breaking-changes-in-percona-everest-080) using the old CLI binary.
-
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
@@ -21,15 +17,16 @@ To install and provision Percona Everest to Kubernetes:
 
 2. Install Everest and provision the Kubernetes cluster using one of the following commands:
 
-    !!! warning "Important"
-        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
-        -  Make sure that you enter at least one namespace.
 
     ```sh
     everestctl install
     ```
 
     Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+
+    !!! warning "Important"
+        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
+        -  Make sure that you enter at least one namespace.
 
     ??? example "Expected output"
         ```
@@ -54,13 +51,6 @@ To install and provision Percona Everest to Kubernetes:
 
 3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
-    === "Port Forwarding"
-        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
-                
-        ```sh
-        kubectl port-forward svc/everest 8080:8080 -n everest-system
-        ``` 
-
     === "Service Type Load Balancer"
 
         * Use the following command to change the Everest service type to `LoadBalancer`:
@@ -81,4 +71,11 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
                 ```
 
-4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In this example, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+    === "Port Forwarding"
+        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
+                
+        ```sh
+        kubectl port-forward svc/everest 8080:8080 -n everest-system
+        ``` 
+
+4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).

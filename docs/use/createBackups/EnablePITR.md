@@ -44,7 +44,18 @@ To enable PITR:
     4. Complete the setup wizard to schedule a full backup and enable PITR for the existing database.
 
 
-## Limitation for PostgreSQL
+## Limitations
+
+Point-In-Time Recovery (PITR) can only be used after a certain time has elapsed since the latest backup. This interval of time is referred to as the **PITR upload interval**. During this interval, PITR restore won't be available.
+
+The default **uploadInterval** values for different databases are as follows:  
+
+- MySQL = 1 minute
+- MongoDB = 10 minutes
+- PostgreSQL = 1 minute
+
+
+### Limitation for PostgreSQL
 
 When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
 
