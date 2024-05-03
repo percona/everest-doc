@@ -2,14 +2,14 @@
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source cloud native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+Percona Everest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 Version 0.10.0 introduces the following changes:
 
 
 ## Release highlights
 
-### Percona Everest upgrade
+### Simplified Percona Everest upgrades
 
 !!! warning "Important"
     You need to download CLI version >=0.10.0 for the upgrade command to work.    
@@ -21,7 +21,7 @@ You can only upgrade one minor version at a time. For instance, you can upgrade 
 For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
 
-### API rate limiting
+### Better traffic management with API rate limiting
 
 Starting with Percona Everest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
 
@@ -30,7 +30,7 @@ API rate limiting is one of the key aspects of managing API's. With this you can
 The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html).
 
 
-### Skipping TLS certificate validation
+### Added control for TLS certificate validation
 
 With the release of Percona Everest 0.10.0, you can add backup storage and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
