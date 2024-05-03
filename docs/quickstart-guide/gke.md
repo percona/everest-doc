@@ -25,16 +25,13 @@ If you would like to use *your local shell*, install the following:
 
 ## Create and configure the GKE cluster
 
-!!! caution alert alert-warning "Important"
-    To run a 3-node pxc cluster, you will need at least a 3-node cluster with 2vCPUs available. The database will not be created if you attempt to create a database cluster in a Kubernetes cluster without sufficient resources.
-
 You can configure the settings using the `gcloud` tool. You can run it either in
 the [Cloud Shell](https://cloud.google.com/shell/docs/quickstart){:target="_blank"} or in your
 local shell (if you have installed Google Cloud SDK locally on the previous
 step). The following command will create a cluster named `my-cluster-name`:
 
 ``` {.bash data-prompt="$" }
-$ gcloud container clusters create my-cluster-name --project <project name> --zone us-central1-a --cluster-version 1.25 --machine-type n1-standard-4 --num-nodes=3
+$ gcloud container clusters create my-cluster-name --project <project name> --zone us-central1-a --cluster-version 1.27 --machine-type n1-standard-4 --num-nodes=3
 ```
 
 !!! note
@@ -58,7 +55,7 @@ to make `kubectl` be able to use it.
 
 In the Google Cloud Console, select your cluster and then click the *Connect*
 shown on the above image. You will see the connect statement which configures
-the command-line access. After you have edited the statement, you may run the
+the command-line access. You need to run the
 command in your local shell:
 
 ``` {.bash data-prompt="$" }

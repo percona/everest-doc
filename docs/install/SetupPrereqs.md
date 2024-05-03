@@ -9,7 +9,7 @@
 
 Percona Everest has two primary components:
 
-* [Percona Everest CLI](https://github.com/percona/percona-everest-cli){:target="_blank"}, which connects Percona Everest to your Kubernetes cluster.
+* [Percona Everest CLI](https://docs.percona.com/everest/install/installEverestCLI.html), which connects Percona Everest to your Kubernetes cluster.
 * Percona Everest application with the UI, which you can spin up using the instructions below.
 
 ### Supported operators
@@ -20,7 +20,7 @@ Percona Everest has two primary components:
 
 ### Supported k8s clusters
 
-* Google Kubernetes Engine (GKE) (1.24 - 1.26)
+* Google Kubernetes Engine (GKE) (1.24 - 1.27)
 * Amazon Elastic Kubernetes Service (EKS) (1.24 - 1.27)
 
 ## Before you install

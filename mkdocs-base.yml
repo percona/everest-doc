@@ -13,33 +13,35 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
-  logo: images/percona-logo.svg
-  favicon: images/percona-favicon.ico
+  logo: assets/everest-mark.svg
+  favicon: assets/everest-fav.svg
   font:
     text: Roboto
     code: Roboto Mono
   icon:
     edit: material/file-edit-outline
     view: material/file-eye-outline
-  
+
   palette:
-    # Light mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Color theme set to Automatic. Click to change
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Dark mode
+        icon: material/brightness-7
+        name: Color theme set to Light Mode. Click to change
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: percona-dark
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: Color theme set to Dark Mode. Click to change
+
 
   # Theme features
 
@@ -59,6 +61,7 @@ extra_css:
   - css/design.css
   - css/nocopy.css
   - css/osano.css
+  - css/everest.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
@@ -136,7 +139,6 @@ plugins:
     canonical_version: null
 
 extra:
-  homepage: https://docs.percona.com
   edit_page_text: '<i class="uil uil-pen"></i> <b>Edit this page</b>'
   updated_text: '<i class="uil uil-refresh"></i> Page updated'
 # Common navigation for percona.com, render.com and PDF
@@ -144,20 +146,20 @@ extra:
 nav:
   - Welcome to Percona Everest [Beta]: index.md 
   - Release Notes:
-      - Percona Everest 0.9.0 (2024-04-01): release-notes/Percona Everest 0.9.0 (2024-04-01).md
-      - Percona Everest 0.8.0 (2024-02-22): release-notes/Percona Everest 0.8.0 (2024-02-22).md
-      - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona Everest 0.7.0 (2024-01-31).md
-      - Percona Everest 0.6.0 (2024-01-11): release-notes/Percona Everest 0.6.0 (2024-01-11).md
-      - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona Everest 0.5.0 (2023-11-28).md      
-      - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona Everest 0.4.0 (2023-10-30).md       
+      - Release notes index: release-notes/release_notes_index.md
+      - Percona Everest 0.10.0 (2024-05-03): release-notes/Percona-Everest-0.10.0-(2024-05-03).md
+      - Percona Everest 0.9.1 (2024-04-02): release-notes/Percona-Everest-0.9.1-(2024-04-02).md
+      - Percona Everest 0.9.0 (2024-04-01): release-notes/Percona-Everest-0.9.0-(2024-04-01).md
+      - Percona Everest 0.8.0 (2024-02-22): release-notes/Percona-Everest-0.8.0-(2024-02-22).md
+      - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona-Everest-0.7.0 (2024-01-31).md
+      - Percona Everest 0.6.0 (2024-01-11): release-notes/Percona Everest-0.6.0-(2024-01-11).md
+      - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona-Everest-0.5.0-(2023-11-28).md      
+      - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona-Everest-0.4.0-(2023-10-30).md      
   - Features: features.md
   - Quickstart guide:
-      - Overview: quickstart-guide/qs-overview.md
-      - Prerequisites: 
-        - quickstart-guide/qs-prerequisites.md
-        - quickstart-guide/eks.md
-        - quickstart-guide/gke.md
-      - Quick-Install: quickstart-guide/quick-install.md
+      - quickstart-guide/quick-install.md
+      - quickstart-guide/eks.md
+      - quickstart-guide/gke.md
   - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
@@ -166,18 +168,20 @@ nav:
       - Uninstall Percona Everest: install/uninstallEverest.md
   - Upgrade: upgrade_with_cli.md
   - Use:
+      - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Create storage locations: use/CreateStorage.md
         - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
         - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
-        - Create new database from backup or PITR: use/createBackups/create_new_database.md
+        - Create database from backups: use/createBackups/create_new_database.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
+      - API rate limiting: use/API_rate_limit.md
   - Configure:
       - Configure database engine: configure/db_engine_config.md
   - Secure: secure/user-auth.md

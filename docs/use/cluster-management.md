@@ -5,7 +5,7 @@ Cluster management involves the administration and maintenance of database clust
 
 1. [Database provisioning](../use/db_provision.md)
     
-    Provisioning a database instance involves setting up and configuring a database instance on the Perona Everest platform. 
+    Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform. 
 
     ![!image](../images/everest_db_provision.png)
 
@@ -44,7 +44,7 @@ Cluster management involves the administration and maintenance of database clust
 
     With the Percona Everest platform,  you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
-    ![!image](../images/everest_backup.png)
+    ![!image](../images/database_backups.png)
 
 5. [Monitoring](../use/monitor_endpoints.md)
 
