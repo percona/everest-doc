@@ -17,7 +17,6 @@ Before getting started with Percona Everest, do the following:
         Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
        We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
-
    
       [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
 
@@ -42,7 +41,6 @@ Before getting started with Percona Everest, do the following:
         gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
         gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
         gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
-        ```
 
 ## Procedure
 

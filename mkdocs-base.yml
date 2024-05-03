@@ -13,33 +13,35 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   custom_dir: overrides
-  logo: images/percona-logo.svg
-  favicon: images/percona-favicon.ico
+  logo: assets/everest-mark.svg
+  favicon: assets/everest-fav.svg
   font:
     text: Roboto
     code: Roboto Mono
   icon:
     edit: material/file-edit-outline
     view: material/file-eye-outline
-  
+
   palette:
-    # Light mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Color theme set to Automatic. Click to change
     - media: "(prefers-color-scheme: light)"
       scheme: percona-light
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch-off-outline
-        name: Switch to dark mode
-
-    # Dark mode
+        icon: material/brightness-7
+        name: Color theme set to Light Mode. Click to change
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
+      scheme: percona-dark
       primary: custom
       accent: custom
       toggle:
-        icon: material/toggle-switch
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: Color theme set to Dark Mode. Click to change
+
 
   # Theme features
 
@@ -59,6 +61,7 @@ extra_css:
   - css/design.css
   - css/nocopy.css
   - css/osano.css
+  - css/everest.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
@@ -136,7 +139,6 @@ plugins:
     canonical_version: null
 
 extra:
-  homepage: https://docs.percona.com
   edit_page_text: '<i class="uil uil-pen"></i> <b>Edit this page</b>'
   updated_text: '<i class="uil uil-refresh"></i> Page updated'
 # Common navigation for percona.com, render.com and PDF
@@ -144,6 +146,7 @@ extra:
 nav:
   - Welcome to Percona Everest [Beta]: index.md 
   - Release Notes:
+      - Percona Everest 0.9.1 (2024-04-02): release-notes/Percona Everest 0.9.1 (2024-04-02).md
       - Percona Everest 0.9.0 (2024-04-01): release-notes/Percona Everest 0.9.0 (2024-04-01).md
       - Percona Everest 0.8.0 (2024-02-22): release-notes/Percona Everest 0.8.0 (2024-02-22).md
       - Percona Everest 0.7.0 (2024-01-31): release-notes/Percona Everest 0.7.0 (2024-01-31).md
