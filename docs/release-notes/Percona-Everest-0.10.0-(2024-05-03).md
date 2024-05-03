@@ -22,7 +22,7 @@ You can only upgrade one minor version at a time. For instance, you can upgrade 
 For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
 
-### Better traffic management with API rate limiting
+### Streamlining traffic management with API rate limiting
 
 Starting with Percona Everest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
 
