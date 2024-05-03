@@ -26,7 +26,7 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
     ??? example "Expected output"
         ```
-        ./everestctl upgrade
+        everestctl upgrade
         2024-05-03T12:06:47Z    info    upgrade/upgrade.go:156  Current Everest version is 0.9.1        {"component": "upgrade"}
         2024-05-03T12:06:47Z    info    upgrade/upgrade.go:164  Found available upgrade to Everest version 0.10.0   {"component": "upgrade"}
         2024-05-03T12:06:47Z    info    upgrade/upgrade.go:167  Checking requirements for upgrade to Everest 0.10.0 {"component": "upgrade"}
