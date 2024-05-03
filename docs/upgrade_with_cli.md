@@ -23,6 +23,7 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
         everestctl upgrade
 
     ??? example "Expected output"
+    
         ./everestctl_0.10.0 upgrade --version-metadata-url https://check-dev.percona.com
         2024-05-03T12:06:47Z    info    upgrade/upgrade.go:156  Current Everest version is 0.9.1        {"component": "upgrade"}
         2024-05-03T12:06:47Z    info    upgrade/upgrade.go:164  Found available upgrade to Everest version 0.10.0   {"component": "upgrade"}
