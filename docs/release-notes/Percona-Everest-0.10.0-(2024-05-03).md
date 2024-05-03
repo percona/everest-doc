@@ -14,7 +14,7 @@ Version 0.10.0 introduces the following changes:
 !!! warning "Important"
     You need to download CLI version >=0.10.0 for the upgrade command to work.    
 
-We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your database to the latest version.
+We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your Everest to the latest version.
 
 You can only upgrade one minor version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0, but not directly from version 0.8.0 to version 0.10.0.
 
