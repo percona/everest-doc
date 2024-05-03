@@ -40,8 +40,11 @@ To provision a new database:
     
       - Select the **Backup storage** from the dropdown.
     
-      - Enter the number of **Retention copies** for the backups. 
-      
+      - Enter the number of **Retention copies** for the backups.
+
+        !!! note
+            Currently, Retention copies are not supported for PostgreSQL databases.      
+        
         Retention copies refer to the number of backup instances that should be kept.
 
         Example: When you set retention copies to 3, it means that you want to keep a maximum of 3 backup copies at any given time. So, if you have 3 backups already and then run a 4th backup, the oldest backup will get deleted automatically. 
