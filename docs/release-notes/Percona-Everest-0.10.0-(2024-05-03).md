@@ -12,7 +12,8 @@ Version 0.10.0 introduces the following changes:
 ### Simplified Percona Everest upgrades
 
 !!! warning "Important"
-    You need to download CLI version >=0.10.0 for the upgrade command to work.    
+    - You need to download CLI version >=0.10.0 for the upgrade command to work.
+    - Upgrade works only if you have Percona Everest version 0.9.0 or higher installed. 
 
 We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your Everest to the latest version.
 
