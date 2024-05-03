@@ -34,6 +34,7 @@ To create the EKS cluster, do the following steps:
 
         [spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances are not recommended for production environment but may be useful for testing purposes.
 
+
 2. Create your EKS cluster following the official [cluster creation instructions](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html){:target="_blank"}. 
 
     Example:

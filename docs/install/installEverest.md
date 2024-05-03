@@ -10,10 +10,6 @@ export KUBECONFIG=~/.kube/config
 
 ## Installation
 
-!!! warning
-
-    To install Percona Everest 0.9.1, first [uninstall the previous version](../release-notes/Percona%20Everest%200.8.0%20%282024-02-22%29.md#breaking-changes-in-percona-everest-080) using the old CLI binary.
-
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
