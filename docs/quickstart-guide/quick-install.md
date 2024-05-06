@@ -41,6 +41,7 @@ Before getting started with Percona Everest, do the following:
         gke-<name>-default-pool-75d48bfc-bx8g   Ready    <none>   11h   v1.26.7-gke.500
         gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
         gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
+        ```
 
 ## Procedure
 
@@ -119,7 +120,7 @@ You can also learn about installing Percona Everest via the Quick-Install script
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ## Next steps
 
-[Create a database :material-arrow-right:](../use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
 
 <!-- 
 [Monitor the database with PMM :material-arrow-right:](../use/monitorDBs.md){.md-button}
