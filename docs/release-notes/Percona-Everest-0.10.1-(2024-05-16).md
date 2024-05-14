@@ -7,7 +7,15 @@ Percona Everest is an open source cloud native database platform that helps prov
 Version 0.10.0 introduces the following changes:
 
 
-## Release highlights
+## Fixed issues
+
+- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - Rentention copies don't work:
+- [EVEREST-979](https://perconadev.atlassian.net/browse/EVEREST-979) - 
+
+Backups
+
+- [EVEREST-1061](https://perconadev.atlassian.net/browse/EVEREST-1061) - 
+- [EVEREST-1064](https://perconadev.atlassian.net/browse/EVEREST-1064) - 
 
 
 
