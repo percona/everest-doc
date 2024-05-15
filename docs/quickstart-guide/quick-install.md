@@ -7,7 +7,7 @@ This section provides instructions for quickly installing and getting started wi
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [curl](https://everything.curl.dev/get){:target="_blank"}.
+1. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
 
 2. Set up a Kubernetes cluster.
@@ -45,7 +45,7 @@ Before getting started with Percona Everest, do the following:
 
 ## Procedure
 
-You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/percona-everest-cli/releases/latest).
+You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
 {.power-number}
 
 1. Download and install Everest CLI.
