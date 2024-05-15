@@ -45,7 +45,7 @@ Before getting started with Percona Everest, do the following:
 
 ## Procedure
 
-You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/percona-everest-cli/releases/latest).
+You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
 {.power-number}
 
 1. Download and install Everest CLI.
