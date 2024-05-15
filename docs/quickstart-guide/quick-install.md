@@ -7,7 +7,7 @@ This section provides instructions for quickly installing and getting started wi
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [curl](https://everything.curl.dev/get){:target="_blank"}.
+1. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
 
 2. Set up a Kubernetes cluster.
