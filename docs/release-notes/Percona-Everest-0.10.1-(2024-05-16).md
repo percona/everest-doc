@@ -18,7 +18,7 @@ Version 0.10.0 introduces the following changes:
 ### Backups
 
 - [EVEREST-1061](https://perconadev.atlassian.net/browse/EVEREST-1061) - We fixed a race condition in the Everest operator where backups deleted due to retention policies were re-created. We fixed the issue and ensured that completed backups were not reconciled.
-- [EVEREST-1064](https://perconadev.atlassian.net/browse/EVEREST-1064) - 
+- [EVEREST-1064](https://perconadev.atlassian.net/browse/EVEREST-1064) - While configuring a backup schedule for the MongoDB cluster, duplicate backups of the same data were generated in S3, whereas only a single backup was produced in Everest. The issue has been resolved now.
 
 
 
