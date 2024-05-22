@@ -27,6 +27,7 @@ Version 0.10.1 introduces the following changes:
 
 ## Known limitations
 
+Backups for PostgreSQL do not work with GCP compatible API.
 
 
 
