@@ -9,7 +9,8 @@ Version 0.10.0 introduces the following changes:
 
 ## Fixed issues
 
-- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - Rentention copies don't work:
+- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - Rentention copies don't work:While setting up a PostgreSQL database cluster, we encountered an issue using the minIO bucket for backups and restores. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
+
 - [EVEREST-979](https://perconadev.atlassian.net/browse/EVEREST-979) - 
 
 Backups
