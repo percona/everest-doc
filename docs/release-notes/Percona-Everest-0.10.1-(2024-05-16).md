@@ -22,7 +22,11 @@ Version 0.10.1 introduces the following changes:
 
 ### Restores
 
-- [EVEREST-1082](https://perconadev.atlassian.net/browse/EVEREST-1082) - MongoDB restores to a new database fails if backup storage uses a self-signed certificate.
+- [EVEREST-1082](https://perconadev.atlassian.net/browse/EVEREST-1082) - Attempting to restore a MongoDB backup to a new database failed if the backup storage used a self-signed certificate. This issue has been resolved now.
+
+
+## Known limitations
+
 
 
 
