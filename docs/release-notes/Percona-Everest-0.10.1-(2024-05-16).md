@@ -11,7 +11,7 @@ Version 0.10.1 introduces the following changes:
 
 ### Retention copies
 
-- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - Rentention copies don't work:While setting up a PostgreSQL database cluster, we encountered an issue using the minIO bucket for backups and restores. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
+- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - Rentention copies did not work While setting up a PostgreSQL database cluster, we encountered an issue using the minIO bucket for backups and restores. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
 
 - [EVEREST-979](https://perconadev.atlassian.net/browse/EVEREST-979) - When the retention copies are specified in a backup schedule, the Everest operator successfully deleted the backup objects from Kubernetes. However, it failed to clean up the data on S3. The issue has been resolved at this time.
 
