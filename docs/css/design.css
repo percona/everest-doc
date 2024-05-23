@@ -255,6 +255,12 @@
     padding: 0 0.2em 0.1em;
     border-radius: 0.15em;
 }
+.md-typeset .highlight code span {
+    color: var(--md-typeset-color);
+}
+.md-typeset .highlight code span {
+    color: var(--md-typeset-color);
+}
 .md-button code,
 [data-md-color-scheme="percona-dark"] .md-button:not(.md-button--primary) code {
     background-color: rgba(255, 255, 255, 0.1);
