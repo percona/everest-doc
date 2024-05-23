@@ -18,7 +18,7 @@ Version 0.10.1 introduces the following changes:
 
 - [EVEREST-1082](https://perconadev.atlassian.net/browse/EVEREST-1082) - Attempting to restore a MongoDB backup to a new database failed if the backup storage used a self-signed certificate. This issue has been resolved now.
 
-- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - While restoring a PostgreSQL database cluster, we encountered an issue with the MinIO bucket. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
+- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - While restoring a PostgreSQL database cluster, we encountered an issue connecting to an S3-compatible bucket with a self-signed certificate. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
 
 ### Retention copies
 
