@@ -9,12 +9,6 @@ Version 0.10.1 introduces the following changes:
 
 ## Fixed issues
 
-### Retention copies
-
-- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - While setting up a PostgreSQL database cluster, we encountered an issue with the retention copies not working when using the minIO bucket for backups and restores. This problem resulted in the restored cluster becoming unresponsive and entering an unknown state. The issue has been resolved now.
-
-- [EVEREST-979](https://perconadev.atlassian.net/browse/EVEREST-979) - When the retention were specified in a backup schedule, the Everest operator successfully deleted the backup objects from Kubernetes. However, it failed to clean up the data on S3. This issue has been resolved now.
-
 ### Backups
 
 - [EVEREST-1061](https://perconadev.atlassian.net/browse/EVEREST-1061) - We fixed a race condition in the Everest operator where backups deleted due to retention policies were re-created. We fixed the issue and ensured that completed backups were not reconciled.
@@ -23,6 +17,12 @@ Version 0.10.1 introduces the following changes:
 ### Restores
 
 - [EVEREST-1082](https://perconadev.atlassian.net/browse/EVEREST-1082) - Attempting to restore a MongoDB backup to a new database failed if the backup storage used a self-signed certificate. This issue has been resolved now.
+
+- [EVEREST-1054](https://perconadev.atlassian.net/browse/EVEREST-1054) - While restoring a PostgreSQL database cluster, we encountered an issue with the MinIO bucket. This problem caused the restored cluster to become unresponsive and enter an unknown state. The issue has been resolved now.
+
+### Retention copies
+
+- [EVEREST-979](https://perconadev.atlassian.net/browse/EVEREST-979) - When the retention were specified in a backup schedule, the Everest operator successfully deleted the backup objects from Kubernetes. However, it failed to clean up the data on S3. This issue has been resolved now.
 
 
 ## Known limitations
