@@ -77,6 +77,7 @@
 [data-md-color-scheme="percona-light"] {
 
     /* Primitives */
+    --md-hue: 220;
     --md-primary-fg-color: var(--sky700);
 
     /* Type */
@@ -102,11 +103,14 @@
     /* Code */
     --md-code-bg-color: var(--stone800);
     --md-code-bg-color: var(--stone50);
+
+    /* Tables */
+    --md-typeset-table-color: hsla(var(--md-hue),17%,21%,0.25)
 }
 [data-md-color-scheme="percona-dark"] {
 
     /* Primitives */
-    --md-hue: 230;
+    --md-hue: 0;
     --md-primary-fg-color: var(--sky200);
 
     /* Type */
@@ -133,6 +137,9 @@
     /* Code */
     --md-code-bg-color: var(--stone50);
     --md-code-bg-color: var(--stone800);
+
+    /* Tables */
+    --md-typeset-table-color: hsla(var(--md-hue),0%,100%,0.25)
 }
 
 /* Typography */
@@ -255,7 +262,15 @@
     padding: 0 0.2em 0.1em;
     border-radius: 0.15em;
 }
+.md-typeset .highlight code span,
+.md-typeset code,
+.md-typeset kbd,
+.md-typeset pre {
+    color: var(--md-typeset-color);
+}
 .md-typeset .highlight code span {
+    color: var(--md-typeset-color);
+}
     color: var(--md-typeset-color);
 }
 .md-typeset .highlight code span {
