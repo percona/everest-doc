@@ -15,19 +15,18 @@ When you install Percona Everest, an admin user is automatically created, granti
 
 ## Overview
 
-All user accounts are stored in the YAML format within the `everest-accounts` Secret in the `everest-system` namespace.
+All user accounts are stored in the YAML format within the `everest-accounts` Secret in the `everest-system` namespace:
 
-    ??? example "YAML"
+??? example "YAML"
         
-        ```{.text .no-copy}
-        apiVersion: v1
-        kind: Secret
-        metadata:
-            name: everest-accounts
-            namespace: everest-system
-        data:
-          users.yaml:    YWRtaW46CiAgcGFzc3dvcmRIYXNoOiBhZG1pbgogIGVuYWJsZWQ6IHRydWUKICBjYXBhYmlsaXRpZXM6CiAgICAtIGxvZ2lu
-        ```
+    ```{.text .no-copy}
+    apiVersion: v1
+    kind: Secret
+    metadata:
+        name: everest-accounts
+        namespace: everest-system
+    data:                       users.yaml:YWRtaW46CiAgcGFzc3dvcmRIYXNoOiBhZG1pbgogIGVuYWJsZWQ6IHRydWUKICBjYXBhYmlsaXRpZXM6CiAgICAtIGxvZ2lu
+    ```
 
 
 
