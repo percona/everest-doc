@@ -16,7 +16,7 @@ When you install Percona Everest, an `admin` user is automatically created, gran
 
 All user accounts are stored in the YAML format within the `everest-accounts` Secret in the `everest-system` namespace:
 
-??? example "User accounts YAML format"
+??? example "User accounts: YAML format"
         
     ```{.text .no-copy}
     apiVersion: v1
@@ -100,9 +100,9 @@ When you log in from the UI, Percona Everest issues a JSON Web Token for authent
     Since JWT authentication is stateless, it is currently impossible to explicitly revoke specific tokens. Therefore, even a deleted user may continue to request the API as long as they have a valid token.
 
 
-Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used in the backend are automatically generated upon installation and stored in the `everest-jwt `Secret in the `everest-system `namespace.
 
-??? example "Secret Keys"
+??? info "What's happening under the hood?"
+    Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used in  the backend are automatically generated upon installation and stored in the `everest-jwt `Secret in the `everest-system `namespace.
 
     ```{.text .no-copy}
         apiVersion: v1
@@ -116,7 +116,7 @@ Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used 
         type: Opaque
     ```
 
-To reset these keys:
+To reset the keys:
 
 ```sh
 everestctl accounts reset-jwt-keys
