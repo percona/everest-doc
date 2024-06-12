@@ -28,6 +28,21 @@ All user accounts are stored in the YAML format within the `everest-accounts` Se
     data:                    
       users.yaml: YWRtaW46CiAgcGFzc3dvcmRIYXNoOiBhZG1pbgogIGVuYWJsZWQ6IHRydWUKICBjYXBhYmlsaXRpZXM6CiAgICAtIGxvZ2lu
     ```
+Decoding the base64 encoded value will yield a YAML that appears as follows:
+
+
+??? example "YAML after decoding"
+
+    ```{.text .no-copy}
+    admin:
+        passwordHash: <password>
+    enabled: true
+    capabilities:
+        - login
+    ```
+
+
+
 
 
 
