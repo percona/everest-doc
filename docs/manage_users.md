@@ -104,17 +104,18 @@ Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used 
 
 ??? example "Secret Keys"
 
-```{.text .no-copy}
-    apiVersion: v1
-    data:
-        id_rsa: <PRIVATE KEY>
-        id_rsa.pub: <PUBLIC KEY>
-    kind: Secret
-    metadata:
-        name: everest-jwt
-        namespace: everest-system
-    type: Opaque
-```
+    ```{.text .no-copy}
+        apiVersion: v1
+        data:
+            id_rsa: <PRIVATE KEY>
+            id_rsa.pub: <PUBLIC KEY>
+        kind: Secret
+        metadata:
+            name: everest-jwt
+            namespace: everest-system
+        type: Opaque
+    ```
+
 To reset these keys:
 
 ```sh
