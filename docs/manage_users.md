@@ -116,11 +116,11 @@ When you log in from the UI, Percona Everest issues a JSON Web Token for authent
         type: Opaque
     ```
 
-To reset the keys:
+    To reset the keys:
 
-```sh
-everestctl accounts reset-jwt-keys
-```
+    ```sh
+    everestctl accounts reset-jwt-keys
+    ```
 
 
 
