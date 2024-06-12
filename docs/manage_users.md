@@ -95,7 +95,7 @@ everestctl accounts delete -u <username>
 When you log in from the UI, Percona Everest issues a JSON Web Token for authentication of requests. By default, this token is valid for **24** hours, after which you are expected to log in again.
 
 
-!!! important "Important"
+!!! info "Important"
 
     Since JWT authentication is stateless, it is currently impossible to explicitly revoke specific tokens. Therefore, even a deleted user may continue to request the API as long as they have a valid token.
 
