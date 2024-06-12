@@ -25,7 +25,8 @@ All user accounts are stored in the YAML format within the `everest-accounts` Se
     metadata:
         name: everest-accounts
         namespace: everest-system
-    data:                       users.yaml:YWRtaW46CiAgcGFzc3dvcmRIYXNoOiBhZG1pbgogIGVuYWJsZWQ6IHRydWUKICBjYXBhYmlsaXRpZXM6CiAgICAtIGxvZ2lu
+    data:                       
+    users.yaml:YWRtaW46CiAgcGFzc3dvcmRIYXNoOiBhZG1pbgogIGVuYWJsZWQ6IHRydWUKICBjYXBhYmlsaXRpZXM6CiAgICAtIGxvZ2lu
     ```
 
 
