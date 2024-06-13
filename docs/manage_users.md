@@ -101,7 +101,7 @@ When you log in from the UI, Percona Everest issues a JSON Web Token for authent
     Since JWT authentication is stateless, it is currently impossible to explicitly revoke specific tokens. Therefore, even a deleted user may continue to request the API as long as they have a valid token.
 
 
-Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used in  the backend are automatically generated upon installation and stored in the `everest-jwt `Secret in the `everest-system `namespace.
+Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used in  the backend are automatically generated upon installation and stored in the `everest-jwt` Secret in the `everest-system `namespace.
 
         apiVersion: v1
         data:
