@@ -100,7 +100,7 @@ When you log in from the UI, Percona Everest issues a JSON Web Token for authent
 
 Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used in  the backend are automatically generated upon installation and stored in the `everest-jwt `Secret in the `everest-system `namespace.
 
-    ```{.text .no-copy}
+
         apiVersion: v1
         data:
             id_rsa: <PRIVATE KEY>
@@ -110,7 +110,7 @@ Everest uses the RSA algorithm for signing and verifying JWT. The RSA keys used 
             name: everest-jwt
             namespace: everest-system
         type: Opaque
-    ```
+
 
 To reset the keys:
 
