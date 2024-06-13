@@ -72,6 +72,8 @@ To create a new user:
 everestctl accounts create -u <username> -p $PASSWORD
 ```
 
+This user will have all the permissions to the system.
+
 ### List the users
 
 To list all the users in Percona Everest:
