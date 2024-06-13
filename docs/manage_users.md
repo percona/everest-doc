@@ -1,8 +1,6 @@
 # Manage users
 
-
 Percona Everest provides user management capabilities, enabling you to securely log in through either the Percona Everest UI or the API.
-
 
 When you install Percona Everest, an `admin` user is automatically created, granting full access to the system.
 
