@@ -39,7 +39,7 @@ Decoding the base64 encoded value will yield a YAML that appears as follows:
         - login
     ```
 
-## Commands for user management
+## User management commands
 
 ### Retrieve password
 
