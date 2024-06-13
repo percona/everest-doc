@@ -1,9 +1,11 @@
-# Manage users
+# Manage users in Percona Everest
 
 Percona Everest provides user management capabilities, enabling you to securely log in through either the Percona Everest UI or the API.
 
-When you install Percona Everest, an `admin` user is automatically created, granting full access to the system.
+Local user management involves administering Percona Everest users to ensure secure and efficient access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
+
+When you install Percona Everest, an `admin` user is automatically created, granting full access to the system.
 
 !!! note alert alert-primary "Note"
 
