@@ -102,14 +102,15 @@ The OIDC configuration settings can be retrieved along with other Everest settin
 GET /v1/settings
 ```
 
-    ??? example "Example"
+??? example "Example"
 
-        {
+    {
         "oidcConfig": {
             "clientId": "id1234",
             "issuerURL": "https://url.com"
-            }
         }
+    }
+
 
 For more information, see the [Open api spec](docs/spec/openapi.yml).
 
