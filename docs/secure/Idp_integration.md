@@ -98,9 +98,9 @@ You can configure OIDC via Percona Everest CLI:
 
 The OIDC configuration settings can be retrieved along with other Everest settings using the following API:
 
-    ```sh
-    GET /v1/settings
-    ```
+```sh
+GET /v1/settings
+```
 
     ??? example "Example"
 
