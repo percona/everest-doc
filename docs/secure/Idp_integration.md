@@ -105,10 +105,15 @@ GET /v1/settings
 ??? example "Example"
 
     {        
+           
             "oidcConfig": {
+            
             "clientId": "id1234",
+            
             "issuerURL": "https://url.com"
+        
         }
+    
     }
 
 
