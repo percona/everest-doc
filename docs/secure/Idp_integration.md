@@ -104,7 +104,7 @@ GET /v1/settings
 
 ??? example "Example"
 
-    {        
+        {        
            
             "oidcConfig": {
             
@@ -112,9 +112,9 @@ GET /v1/settings
             
             "issuerURL": "https://url.com"
         
-        }
+            }
     
-    }
+        }
 
 
 For more information, see the [Open api spec](docs/spec/openapi.yml).
