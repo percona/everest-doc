@@ -18,36 +18,36 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
     ??? example "Example: OKTA"
 
-    1. Sign in to your Okta organization as a user with administrative privileges.
-    
-    2. In the **Admin** Console, go to **Applications → Applications** and click **Create App Integration**.
+        1. Sign in to your Okta organization as a user with administrative privileges.
+        
+        2. In the **Admin** Console, go to **Applications → Applications** and click **Create App Integration**.
 
-    3. On the **Create a new app integration page**, set the following:
-    
-        - Select **OIDC - OpenID Connect** as the Sign-in method 
-        - **Web Application** as the Application type, and click **Next**.
+        3. On the **Create a new app integration page**, set the following:
+        
+            - Select **OIDC - OpenID Connect** as the Sign-in method 
+            - **Web Application** as the Application type, and click **Next**.
 
-        ![!image](../images/OKTA_admin_console.png)
+            ![!image](../images/OKTA_admin_console.png)
 
-    4. Set the following fields:
+        4. Set the following fields:
 
-        a. App integration name - any value
+            a. App integration name - any value
 
-        b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
+            b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
 
-        c. Sign-out redirect URIs - `<EVEREST_URL>`
+            c. Sign-out redirect URIs - `<EVEREST_URL>`
 
-        d. Click **Save**.
+            d. Click **Save**.
 
-        e. Copy the `clientID` of the created app.
+            e. Copy the `clientID` of the created app.
 
-        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
+            f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
 
 
-        ![!image](../images/sso_aap_integration.png)
+            ![!image](../images/sso_aap_integration.png)
 
-        !!! note "Note"
-            Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
+            !!! note "Note"
+                Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
 
 
@@ -62,9 +62,10 @@ You can configure OIDC via Percona Everest CLI:
 
     This command stores the updated configuration in k8s and restarts the Everest deployment.
 
-    1. The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
+    1. **Store Configuration**
 
-    ```sh{.text .no-copy}
+    The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
+
     apiVersion: v1
     kind: ConfigMap
     metadata:
@@ -74,9 +75,25 @@ You can configure OIDC via Percona Everest CLI:
 	      oidc.config: |
 	        issuerUrl: <your OIDC provider URL>
 	        clientId: <your OIDC provider client ID>
-    ```
+
     
     The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
+
+    2. **Restart Percona Everest**
+
+        OIDC configuration must be in place for Percona Everest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the Percona Everest API Server needs to be restarted.
+
+        The CLI command typically takes approximately 15 seconds to execute. It waits for the Everest Deployment to be up again before exiting successfully.
+
+    
+    !!! info "Important"
+
+        - The restart only impacts the Everest UI and API. Database clusters are not affected.
+
+        - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
+
+
+
 
 
 
