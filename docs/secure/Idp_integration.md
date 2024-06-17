@@ -36,6 +36,8 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
         c. Sign-out redirect URIs - `<EVEREST_URL>`
         d. Click **Save**.
 
+        ![!image](../images/sso_aap_integration.png)
+
         !!! note "Note"
             Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
