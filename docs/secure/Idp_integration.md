@@ -12,7 +12,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     !!! info "Important"
         The login redirect URL should point to `<EVEREST_URL>/login-callback`, and the logout redirect URL to `<EVEREST_URL>`.
 
-- **https based**: IdP providers often require the use of a secure connection (https). Therefore, the provider might require your `<EVEREST_URL>` to be based on https.
+- **https based**: IdP providers often require a secure connection (https). Therefore, the provider might require your `<EVEREST_URL>` to be based on https.
 
 - **Issuer URL**: The created OIDC Application will have a `client ID` field, which can be used for the Everest configuration. The issuer URL can be found in your provider's Authorization Servers list.
 
@@ -24,8 +24,8 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
         3. On the **Create a new app integration page**, set the following:
         
-            - Select **OIDC - OpenID Connect** as the Sign-in method 
-            - **Web Application** as the Application type, and click **Next**.
+            - Sign-in method - **OIDC - OpenID Connect**
+            - **Application type** - **Signle-Page Application**, and click **Next**.
 
             ![!image](../images/OKTA_admin_console.png)
 
