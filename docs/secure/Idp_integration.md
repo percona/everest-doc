@@ -93,6 +93,28 @@ You can configure OIDC via Percona Everest CLI:
             - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
 
 
+## API to get the OIDC settings
+
+
+The OIDC configuration settings can be retrieved along with other Everest settings using the following API:
+
+        GET /v1/settings
+
+    ??? example "Example"
+
+    {
+    "oidcConfig": {
+        "clientId": "id1234",
+        "issuerURL": "https://url.com"
+        }
+    }
+
+For more information, see the [Open api spec](docs/spec/openapi.yml).
+
+
+
+
+
 
 
 
