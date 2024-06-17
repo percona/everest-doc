@@ -60,9 +60,9 @@ You can configure OIDC via Percona Everest CLI:
 
 ??? example "What happens under the hood"
 
-    This command stores the updated configuration in k8s and restarts the Everest deployment.
+This command stores the updated configuration in k8s and restarts the Everest deployment.
 
-    1. **Store Configuration**
+1. **Store Configuration**
 
     The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
 
@@ -80,7 +80,7 @@ You can configure OIDC via Percona Everest CLI:
     
      The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
 
-    2. **Restart Percona Everest**
+2. **Restart Percona Everest**
 
     OIDC configuration must be in place for Percona Everest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the Percona Everest API Server needs to be restarted.
 
