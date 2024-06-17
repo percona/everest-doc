@@ -22,9 +22,22 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     
     2. In the **Admin** Console, go to **Applications → Applications** and click **Create App Integration**.
 
-    3. On the **Create a new app integration page**, select **OIDC - OpenID Connect** as the Sign-in method, **Web Application** as the Application type, and click **Next**.
+    3. On the **Create a new app integration page**, set the following:
+    
+        - Select **OIDC - OpenID Connect** as the Sign-in method 
+        - **Web Application** as the Application type, and click **Next**.
 
-    ![!image](../images/OKTA_admin_console.png)
+        ![!image](../images/OKTA_admin_console.png)
+
+    4. Set the following fields:
+
+        a. App integration name - any value
+        b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
+        c. Sign-out redirect URIs - `<EVEREST_URL>`
+        d. Click **Save**.
+
+        !!! note "Note"
+            Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
 
 
