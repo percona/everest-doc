@@ -50,8 +50,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 
 
-
-## Configure OIDC on the Percona Everest side
+## Configure OIDC on Percona Everest side
 
 
 You can configure OIDC via Percona Everest CLI:
