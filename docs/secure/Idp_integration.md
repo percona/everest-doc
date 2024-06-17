@@ -43,11 +43,11 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
             f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
 
+            !!! note "Note"
+                Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
             ![!image](../images/sso_aap_integration.png)
 
-            !!! note "Note"
-                Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
 
 
