@@ -32,8 +32,11 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     4. Set the following fields:
 
         a. App integration name - any value
+
         b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
+
         c. Sign-out redirect URIs - `<EVEREST_URL>`
+        
         d. Click **Save**.
 
         ![!image](../images/sso_aap_integration.png)
