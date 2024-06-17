@@ -102,7 +102,7 @@ The OIDC configuration settings can be retrieved along with other Everest settin
 GET /v1/settings
 ```
 
-    ??? example "Example"
+??? example "Example"
 
     {
     "oidcConfig": {
