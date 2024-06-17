@@ -58,7 +58,7 @@ You can configure OIDC via Percona Everest CLI:
 
     everestctl settings oidc configure --issuer-url=http://url.com --client-id=id2342
 
-??? example "What happens under the hood"
+??? example "What's happening under the hood?"
 
     This command stores the updated configuration in k8s and restarts the Everest deployment.
 
