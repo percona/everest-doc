@@ -87,11 +87,11 @@ You can configure OIDC via Percona Everest CLI:
         The CLI command typically takes approximately 15 seconds to execute. It waits for the Everest Deployment to be up again before exiting successfully.
 
     
-    !!! info "Important"
+        !!! info "Important"
 
-        - The restart only impacts the Everest UI and API. Database clusters are not affected.
+            - The restart only impacts the Everest UI and API. Database clusters are not affected.
 
-        - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
+            - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
 
 
 
