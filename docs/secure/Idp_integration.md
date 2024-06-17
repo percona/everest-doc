@@ -120,8 +120,9 @@ GET /v1/settings
 For more information, see the [Open api spec](docs/spec/openapi.yml).
 
 
+## Testing IdP integration
 
-
+After setting up your OIDC configuration, you can verify the functionality by visiting the Percona Everest login page and attempting to log in using Single Sign-On (SSO).
 
 
 
