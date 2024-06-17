@@ -5,5 +5,9 @@ Percona Everest IdP integration
 Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol)(OIDC) Protocol to integrate with external Identity Providers (IdP).
 
 
+## Configure OIDC on the providers's side
+
+
+
 
 
