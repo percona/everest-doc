@@ -10,7 +10,10 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 When setting up the Provider side, it's important to configure an application specifically for [PKCE]((https://auth0.com/docs/get-started/authentication-and-authorization-flow#authorization-code-flow-with-proof-key-for-code-exchange-pkce-)) (Proof Key for Code Exchange) authorization.
 
     !!! info "Important"
-        The login redirect URL should point to `<EVEREST_URL>/login-callback`, and the  logout redirect URL `- to <EVEREST_URL>`.
+        The login redirect URL should point to `<EVEREST_URL>/login-callback`, and the logout redirect URL to `<EVEREST_URL>`.
+
+IdP providers often require the use of a secure connection (https). Therefore, the provider might require your `<EVEREST_URL>` to be based on https.
+
 
 
 
