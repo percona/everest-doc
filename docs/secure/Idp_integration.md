@@ -36,16 +36,56 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
         b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
 
         c. Sign-out redirect URIs - `<EVEREST_URL>`
-        
+
         d. Click **Save**.
+
+        e. Copy the `clientID` of the created app.
+
+        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
+
 
         ![!image](../images/sso_aap_integration.png)
 
         !!! note "Note"
             Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
-        e. Copy the `clientID` of the created app.
-        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
+
+
+## Configure OIDC on the Percona Everest side
+
+
+You can configure OIDC via Percona Everest CLI:
+
+    everestctl settings oidc configure --issuer-url=http://url.com --client-id=id2342
+
+??? example "What happens under the hood"
+
+    This command stores the updated configuration in k8s and restarts the Everest deployment.
+
+    1. The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
+
+    ```sh{.text .no-copy}
+    apiVersion: v1
+    kind: ConfigMap
+    metadata:
+        name: everest-settings
+    data:
+        data:
+	      oidc.config: |
+	        issuerUrl: <your OIDC provider URL>
+	        clientId: <your OIDC provider client ID>
+	  ...
+      ```
+
+
+
+
+
+
+
+
+
+
 
 
 
