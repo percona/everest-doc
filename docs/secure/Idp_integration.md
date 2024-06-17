@@ -78,7 +78,7 @@ You can configure OIDC via Percona Everest CLI:
 	        clientId: <your OIDC provider client ID>
     ```
     
-        The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
+     The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
 
     2. **Restart Percona Everest**
 
