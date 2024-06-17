@@ -64,25 +64,25 @@ You can configure OIDC via Percona Everest CLI:
 
     1. **Store Configuration**
 
-    The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
+        The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
 
-    ```sh
-    apiVersion: v1
-    kind: ConfigMap
-    metadata:
-        name: everest-settings
-    data:
+        ```sh
+        apiVersion: v1
+        kind: ConfigMap
+        metadata:
+            name: everest-settings
         data:
-	      oidc.config: |
-	        issuerUrl: <your OIDC provider URL>
-	        clientId: <your OIDC provider client ID>
-    ```
+            data:
+            oidc.config: |
+                issuerUrl: <your OIDC provider URL>
+                clientId: <your OIDC provider client ID>
+        ```
     
-    The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
+        The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the CLI command to set up the OIDC config.
 
     2. **Restart Percona Everest**
 
-    OIDC configuration must be in place for Percona Everest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the Percona Everest API Server needs to be restarted.
+        OIDC configuration must be in place for Percona Everest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the Percona Everest API Server needs to be restarted.
 
         The CLI command typically takes approximately 15 seconds to execute. It waits for the Everest Deployment to be up again before exiting successfully.
 
