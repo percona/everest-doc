@@ -7,7 +7,6 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ## Configure OIDC on the providers's side
 
-
-
+When setting up the Provider side, it's important to configure an application specifically for [PKCE]((https://auth0.com/docs/get-started/authentication-and-authorization-flow#authorization-code-flow-with-proof-key-for-code-exchange-pkce-)) (Proof Key for Code Exchange) authorization.
 
 
