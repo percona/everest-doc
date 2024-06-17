@@ -16,7 +16,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 - **Issuer URL**: The created OIDC Application will have a `client ID` field, which can be used for the Everest configuration. The issuer URL can be found in your provider's Authorization Servers list.
 
-??? example "OKTA"
+??? example "Example: OKTA"
 
     1. Sign in to your Okta organization as a user with administrative privileges.
     
@@ -24,7 +24,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
     3. On the **Create a new app integration page**, select **OIDC - OpenID Connect** as the Sign-in method, **Web Application** as the Application type, and click **Next**.
 
-   ![!image](../images/OKTA_admin_console.png)
+    ![!image](../images/OKTA_admin_console.png)
 
 
 
