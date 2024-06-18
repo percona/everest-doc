@@ -61,16 +61,21 @@ You can configure OIDC via Percona Everest CLI:
 ??? example "Output"
 
     2024-06-18T11:06:18Z    info    oidc/configure.go:110   OIDC provider configured, restarting Everest..
+
     2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
 
 
 You can also use the wizard to configure OIDC:
 
 ??? example "Output"
-    $ everestctl settings oidc configure                                     
+    $ everestctl settings oidc configure
+
     ? Enter issuer URL <your-provider-url>
+
     ? Enter client ID <your-app-client-id>
+    
     2024-06-18T11:05:15Z    info    oidc/configure.go:110   OIDC provider   configured, restarting Everest..
+    
     2024-06-18T11:05:30Z    info    oidc/configure.go:117   OIDC has been configured successfully
 
 ??? info "What's happening under the hood?"
