@@ -60,7 +60,7 @@ Configuring OIDC via Percona Everest CLI:
 
 ??? example "Output"
 
-    ```sh{.text .no-copy}
+    ```{.text .no-copy}
     2024-06-18T11:06:18Z    info    oidc/configure.go:110   OIDC provider configured, restarting Everest..
     2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
     ```
@@ -69,7 +69,7 @@ Configuring OIDC via wizard:
 
 ??? example "Output"
 
-    ```sh{.text .no-copy}
+    ```{.text .no-copy}
     $ everestctl settings oidc configure
     ? Enter issuer URL <your-provider-url>
     ? Enter client ID <your-app-client-id>
