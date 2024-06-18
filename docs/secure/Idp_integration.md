@@ -54,22 +54,22 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 You can configure OIDC on the Percona side using the Percona Everest CLI or the wizard.
 
-You can configure OIDC via Percona Everest CLI:
+Configuring OIDC via Percona Everest CLI:
 
     everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id
 
 ??? example "Output"
 
-    ```sh
+    ```sh{.text .no-copy}
     2024-06-18T11:06:18Z    info    oidc/configure.go:110   OIDC provider configured, restarting Everest..
     2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
     ```
 
-You can also use the wizard to configure OIDC:
+Configuring OIDC via wizard:
 
 ??? example "Output"
 
-    ```sh
+    ```sh{.text .no-copy}
     $ everestctl settings oidc configure
     ? Enter issuer URL <your-provider-url>
     ? Enter client ID <your-app-client-id>
