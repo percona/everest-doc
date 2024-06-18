@@ -52,10 +52,26 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ## Configure OIDC on Percona Everest side
 
+You can configure OIDC on the Percona side using the Percona Everest CLI or the wizard.
 
 You can configure OIDC via Percona Everest CLI:
 
-    everestctl settings oidc configure --issuer-url=http://url.com --client-id=id2342
+    everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id
+
+??? example "Output"
+
+    2024-06-18T11:06:18Z    info    oidc/configure.go:110   OIDC provider configured, restarting Everest..
+    2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
+
+
+You can also use the wizard to configure OIDC:
+
+??? example "Output"
+    $ everestctl settings oidc configure                                     
+    ? Enter issuer URL <your-provider-url>
+    ? Enter client ID <your-app-client-id>
+    2024-06-18T11:05:15Z    info    oidc/configure.go:110   OIDC provider   configured, restarting Everest..
+    2024-06-18T11:05:30Z    info    oidc/configure.go:117   OIDC has been configured successfully
 
 ??? info "What's happening under the hood?"
 
@@ -92,32 +108,6 @@ You can configure OIDC via Percona Everest CLI:
 
             - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
 
-
-## API to get the OIDC settings
-
-
-The OIDC configuration settings can be retrieved along with other Everest settings using the following API:
-
-```sh
-GET /v1/settings
-```
-
-??? example "Example"
-
-        {        
-           
-            "oidcConfig": {
-            
-            "clientId": "id1234",
-            
-            "issuerURL": "https://url.com"
-        
-            }
-    
-        }
-
-
-For more information, see the [Open api spec](docs/spec/openapi.yml).
 
 
 ## Testing IdP integration
