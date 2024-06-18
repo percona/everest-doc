@@ -90,6 +90,7 @@ Configuring OIDC via wizard:
         kind: ConfigMap
         metadata:
             name: everest-settings
+            namespace: everest-system
         data:
             data:
             oidc.config: |
