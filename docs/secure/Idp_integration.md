@@ -14,7 +14,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     - Sign-in redirect URIs should point to `<EVEREST_URL>/login-callback`
     - Sign-out redirect URIs should point to `<EVEREST_URL>`
  
-- **Https based**: IdP providers often require a secure connection (https). Therefore, the provider might require your `<EVEREST_URL>` to be based on https. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
+- **Https based**: IdP providers often require a secure connection (Https). Therefore, the provider might require your `<EVEREST_URL>` to be based on Https. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
 
     ??? example "Example: OKTA"
@@ -119,6 +119,8 @@ Configuring OIDC via wizard:
 ## Testing IdP integration
 
 After setting up your OIDC configuration, you can verify the functionality by visiting the Percona Everest login page and attempting to log in using Single Sign-On (SSO).
+
+
 
 
 
