@@ -2,7 +2,7 @@
 
 [Identity Provider (IdP)](https://www.okta.com/identity-101/why-your-company-needs-an-identity-provider/) integration connects applications and services with an external identity provider for your organization. This enables centralized authentication and authorization management, improving security and simplifying user access. By leveraging IdP integration, you can ensure that users are securely authenticated and authorized to access various applications and services across your organization.
 
-Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol)(OIDC) Protocol to integrate with external Identity Providers (IdP).
+Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol) (OIDC) Protocol to integrate with external Identity Providers (IdP).
 
 
 ## Configure OIDC on the providers's side
@@ -62,7 +62,6 @@ You can configure OIDC via Percona Everest CLI:
 
     ```sh
     2024-06-18T11:06:18Z    info    oidc/configure.go:110   OIDC provider configured, restarting Everest..
-
     2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
     ```
 
@@ -72,13 +71,9 @@ You can also use the wizard to configure OIDC:
 
     ```sh
     $ everestctl settings oidc configure
-
     ? Enter issuer URL <your-provider-url>
-
     ? Enter client ID <your-app-client-id>
-
-    2024-06-18T11:05:15Z    info    oidc/configure.go:110   OIDC provider   configured, restarting Everest..
-    
+    2024-06-18T11:05:15Z    info    oidc/configure.go:110   OIDC provider   configured, restarting Everest..    
     2024-06-18T11:05:30Z    info    oidc/configure.go:117   OIDC has been configured successfully
     ```
 
