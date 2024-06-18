@@ -83,7 +83,7 @@ Configuring OIDC via wizard:
 
     1. **Store Configuration**
 
-        The OIDC settings are stored in the `everest-settings` ConfigMap, along with other settings, in the following format:
+        The OIDC settings are stored in the `everest-settings` ConfigMap in the `everest-system` namespace, along with other settings, in the following format:
 
         ```sh
         apiVersion: v1
