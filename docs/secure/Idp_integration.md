@@ -22,6 +22,9 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ### Example: OIDC configuration on the providers's side
 
+Below is an example of the configuration for the IdP provider Okta. Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Identity Platform, etc.
+
+
 ??? example "OKTA"
 
     1. Sign in to your Okta organization as a user with administrative privileges.
