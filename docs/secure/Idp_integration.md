@@ -17,7 +17,8 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     - Sign-in redirect URIs should point to `<EVEREST_URL>/login-callback`.
     - Sign-out redirect URIs should point to `<EVEREST_URL>`.
  
-- **Https based**: IdP providers often require a secure connection (Https). Therefore, the provider might require your `<EVEREST_URL>` to be based on Https. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
+!!! info "Important" 
+    IdP providers often require a secure connection (Https). Therefore, the         provider might require your `<EVEREST_URL>` to be based on Https. If your provider   requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
 
     ??? example "Example: OKTA"
@@ -118,7 +119,6 @@ To configure OIDC using the wizard, run the following command:
             - The restart only impacts the Everest UI and API. Database clusters are not affected.
 
             - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
-
 
 
 ## Testing IdP integration
