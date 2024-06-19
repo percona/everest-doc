@@ -21,7 +21,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     IdP providers often require a secure connection (Https). Therefore, the         provider might require your `<EVEREST_URL>` to be based on Https. If your provider   requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
 
-    ??? example "Example: OKTA"
+??? example "Example: OKTA"
 
         1. Sign in to your Okta organization as a user with administrative privileges.
         
