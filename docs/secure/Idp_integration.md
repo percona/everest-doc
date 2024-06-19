@@ -11,8 +11,8 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 - **Redirect URIs**: 
 
-    - Sign-in redirect URIs should point to `<EVEREST_URL>/login-callback`
-    - Sign-out redirect URIs should point to `<EVEREST_URL>`
+    - Sign-in redirect URIs should point to `<EVEREST_URL>/login-callback`.
+    - Sign-out redirect URIs should point to `<EVEREST_URL>`.
  
 - **Https based**: IdP providers often require a secure connection (Https). Therefore, the provider might require your `<EVEREST_URL>` to be based on Https. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
@@ -55,7 +55,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 You can configure OIDC on the Percona side using the flag or the wizard.
 
-Configuring OIDC using the flag:
+To configure OIDC using the flag, run the following command:
 
     everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id
 
@@ -66,7 +66,7 @@ Configuring OIDC using the flag:
     2024-06-18T11:06:33Z    info    oidc/configure.go:117   OIDC has been configured successfully
     ```
 
-Configuring OIDC via wizard:
+To configure OIDC using the wizard, run the following command:
 
     $ everestctl settings oidc configure
 
