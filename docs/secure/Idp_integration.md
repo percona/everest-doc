@@ -61,7 +61,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
 
 
-## Configure OIDC on Percona Everest side
+## Configure OIDC on the Percona Everest's side
 
 You can configure OIDC on the Percona side using the flag or the wizard.
 
