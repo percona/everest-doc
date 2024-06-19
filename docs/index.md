@@ -1,8 +1,8 @@
-# Welcome to Percona Everest [Beta]
+# Welcome to Percona Everest
 
-We are excited to welcome you to this Beta release of Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
+We are excited to welcome you to GA of Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
 
-Before its general availability, Percona Everest will provide a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
+Percona Everest provides a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
 
 ## Why Percona Everest?
 
