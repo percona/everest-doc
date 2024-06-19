@@ -17,8 +17,8 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     * Sign-in redirect URIs should point to `<EVEREST_URL>/login-callback`.
     * Sign-out redirect URIs should point to `<EVEREST_URL>`.
  
-!!! info "Important" 
-    IdP providers often require a secure connection (Https). Therefore, the         provider might require your `<EVEREST_URL>` to be based on Https. If your provider   requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
+    !!! info "Important" 
+        IdP providers often require a secure connection (Https). Therefore, the         provider might require your `<EVEREST_URL>` to be based on Https. If your provider   requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
 
 ??? example "Example: OKTA"
