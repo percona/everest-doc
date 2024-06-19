@@ -63,9 +63,9 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
 ## Configure OIDC on the Percona Everest's side
 
-You can configure OIDC on the Percona side using the flag or the wizard.
+You can configure OIDC on the Percona Everest's side using the CLI in headless mode or with the wizard
 
-To configure OIDC using the flag, run the following command:
+To configure OIDC using the headless mode, run the following command:
 
     everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id
 
