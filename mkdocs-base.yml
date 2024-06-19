@@ -185,7 +185,9 @@ nav:
       - API rate limiting: use/API_rate_limit.md
   - Configure:
       - Configure database engine: configure/db_engine_config.md
-  - Secure: secure/user-auth.md
+  - Secure: 
+      - User authentication: secure/user-auth.md
+      - IdP integration: secure/Idp_integration.md
   - API: API.md
   - Reference:
       - Telemetry on Percona Everest: reference/telemetry.md
