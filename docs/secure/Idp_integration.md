@@ -24,35 +24,35 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ??? example "OKTA"
 
-        1. Sign in to your Okta organization as a user with administrative privileges.
+    1. Sign in to your Okta organization as a user with administrative privileges.
         
-        2. In the **Admin** Console, go to **Applications → Applications** and click **Create App Integration**.
+    2. In the **Admin** Console, go to **Applications → Applications** and click **Create App Integration**.
 
-        3. On the **Create a new app integration page**, set the following:
+    3. On the **Create a new app integration page**, set the following:
         
-            - Sign-in method - **OIDC - OpenID Connect**
-            - **Application type** - **Signle-Page Application**, and click **Next**.
+        - Sign-in method - **OIDC - OpenID Connect**
+        - **Application type** - **Signle-Page Application**, and click **Next**.
 
-            ![!image](../images/OKTA_admin_console.png)
+        ![!image](../images/OKTA_admin_console.png)
 
-        4. Set the following fields:
+    4. Set the following fields:
 
-            a. App integration name - any value
+        a. App integration name - any value
 
-            b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
+        b. Sign-in redirect URIs - `<EVEREST_URL>/login-callback`
 
-            c. Sign-out redirect URIs - `<EVEREST_URL>`
+        c. Sign-out redirect URIs - `<EVEREST_URL>`
 
-            d. Click **Save**.
+        d. Click **Save**.
 
-            e. Copy the `clientID` of the created app.
+        e. Copy the `clientID` of the created app.
 
-            f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
+        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
 
-            !!! note "Note"
-                Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
+        !!! note "Note"
+            Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
-            ![!image](../images/sso_aap_integration.png)
+        ![!image](../images/sso_aap_integration.png)
 
 
 
