@@ -123,6 +123,8 @@ Configuring OIDC via wizard:
 After setting up your OIDC configuration, you can verify the functionality by visiting the Percona Everest login page and attempting to log in using Single Sign-On (SSO).
 
 
+![!image](../images/sso_login.png)
+
 
 
 
