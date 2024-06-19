@@ -68,10 +68,12 @@ Configuring OIDC using the flag:
 
 Configuring OIDC via wizard:
 
+    $ everestctl settings oidc configure
+
+
 ??? example "Output"
 
     ```{.text .no-copy}
-    $ everestctl settings oidc configure
     ? Enter issuer URL <your-provider-url>
     ? Enter client ID <your-app-client-id>
     2024-06-18T11:05:15Z    info    oidc/configure.go:110   OIDC provider   configured, restarting Everest..    
