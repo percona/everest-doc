@@ -26,10 +26,9 @@ To upgrade database operators via the Percona Everest UI:
 3. Once a database operator upgrade becomes available, you can upgrade each operator individually.
 
 
-    ![!image](images/db_operator_upgrade.png)
-
-
 4. Review the pending actions to complete before upgrading an operator:
+
+    ![!image](images/operator_upgrade_pending.png)
 
     a. Upgrade the database version.
 
@@ -39,9 +38,10 @@ To upgrade database operators via the Percona Everest UI:
 
 5. After resolving all pending actions, proceed with upgrading the operator.
 
-
     !!! note "Note"
 
         During the operator upgrade, you won't be able to perform actions that create or modify a database.
+
+    ![!image](images/db_operator_upgrade.png)
 
 
