@@ -49,7 +49,7 @@ To upgrade database operators via the Percona Everest UI:
 
 ??? example "Example"
 
-    In the upcoming scenario, we are going to upgrade the PXC operator.
+    In the upcoming scenario, we are going to upgrade the PXC operator to version 1.14.0.
     {.power-number}
 
     1. On the **Namespaces** tab, click on the namespace `n1` and check for any pending **Actions**.
