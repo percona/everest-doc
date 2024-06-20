@@ -30,11 +30,11 @@ To upgrade database operators via the Percona Everest UI:
 
     ![!image](images/operator_upgrade_pending.png)
 
-        a. Upgrade the database version.
+      a. Upgrade the database version.
 
-        b. Restart the database.
+      b. Restart the database.
 
-        c. Wait until the database is in the ready state.
+      c. Wait until the database is in the ready state.
 
 5. After resolving all pending actions, proceed with upgrading the operator.
 
