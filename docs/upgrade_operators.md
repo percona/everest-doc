@@ -47,40 +47,43 @@ To upgrade database operators via the Percona Everest UI:
     ![!image](images/db_operator_upgrade.png)
 
 
-## Example
+??? example "Example"
 
-In the following scenario, we have up upgrade the PXC operator:
+    In the upcoming scenario, we are going to upgrade the PXC operator.
+    {.power-number}
 
-1. Check if there are any pending **Actions**.
+    1. Check if there are any pending **Actions**.
 
-    ![!image](images/check_pending_actions.png)
+        ![!image](images/check_pending_actions.png)
 
 
-2. Click on **Update CRVersion to 1.13.0.** A confirmation pop-up will be displayed. Click **Upgrade**.
+    2. Click **Update CRVersion to 1.13.0.** A confirmation pop-up will appear. Click **Upgrade** to proceed.
 
-    ![!image](images/upgrade_crd_confirmation.png)
+        ![!image](images/upgrade_crd_confirmation.png)
 
-3. Go to **Databases** view page and click on the ellipsis (…) menu next to the database `mysql-fmd`.
+    3. Go to **Databases** view page and click on the ellipsis (…) menu next to the database `mysql-fmd`.
 
-4. Click **Edit**.
+    4. Click **Edit**.
 
-5. On the **Basic information** page, select the database version to **8.0.25.15-1** and click **Continue**.
+    5. On the **Basic information** page, select the database version as **8.0.25.15-1**. Then, click **Continue**.
 
-7. On the **Monitoring** page, click **Edit database**.
+    7. On the **Monitoring** page, click **Edit database**.
 
-8. Once the operator is ready to upgrade, the status of **Actions** will be **ready**.
+    8. Once the operator is ready to upgrade, the status of **Actions** will be set to **ready**.
 
-    ![!image](images/upgrade_operator.png)
+        ![!image](images/upgrade_operator.png)
 
-9. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
+    9. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
 
-    ![!image](images/upgrade_operator_confirmation.png)
+        ![!image](images/upgrade_operator_confirmation.png)
 
-10. Click **Ok**.
+    10. Click **Ok**.
 
-11. Complete the post upgrade tasks by clicking on the items under **Actions**. 
+    11. Complete the post upgrade tasks by clicking on the items under **Actions**.
 
-    ![!image](images/post_upgrade_tasks.png)
+        ![!image](images/post_upgrade_tasks.png)
+
+    12. Your PXC operator will now be upgraded to version 1.14.0.
 
 
 
