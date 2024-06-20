@@ -33,7 +33,7 @@ To upgrade database operators via the Percona Everest UI:
       b. Restart the database.
 
       c. Wait until the database is in the ready state.
-      
+
 
     ![!image](images/operator_upgrade_pending.png)
 
@@ -45,5 +45,40 @@ To upgrade database operators via the Percona Everest UI:
         During the operator upgrade, you won't be able to perform actions that create or modify a database.
 
     ![!image](images/db_operator_upgrade.png)
+
+
+## Example
+
+In the following scenario, we have up upgrade the MySQL operator:
+
+1. Check if there are any pending **Actions**.
+
+    ![!image](images/check_pending_actions.png)
+
+
+2. Click on **Update CRVersion to 1.13.0.** A confirmation pop-up will be displayed. Click **Upgrade**.
+
+    ![!image](images/upgrade_crd_confirmation.png)
+
+3. Go to **Databases** view page and click on the ellipsis (…) menu next to the database `mysql-fmd`.
+
+4. Click **Edit**.
+
+5. On the **Basic information** page, select the database version to **8.0.25.15-1** and click **Continue**.
+
+7. On the **Monitoring** page, click **Edit database**.
+
+8. Once the operator is ready to upgrade, the status of **Actions** will be **ready**.
+
+9. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
+
+10. Click **Ok**.
+
+11. Complete the post upgrade tasks by clicking on the items under **Actions**. Your PXC operator is now upraded to version 1.14.0.
+
+
+
+
+
 
 
