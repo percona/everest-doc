@@ -52,7 +52,7 @@ To upgrade database operators via the Percona Everest UI:
     In the upcoming scenario, we are going to upgrade the PXC operator.
     {.power-number}
 
-    1. On the **Namespaces** tab, click on the specific namespace and check for any pending **Actions**.
+    1. On the **Namespaces** tab, click on the namespace `n1` and check for any pending **Actions**.
 
 
         ![!image](images/check_pending_actions.png)
