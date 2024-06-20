@@ -167,7 +167,9 @@ nav:
       - Install Percona Everest CLI: install/installEverestCLI.md
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md
-  - Upgrade: upgrade_with_cli.md
+  - Upgrade: 
+    - upgrade_with_cli.md
+    - upgrade_operators.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
