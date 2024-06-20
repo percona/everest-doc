@@ -49,7 +49,7 @@ To upgrade database operators via the Percona Everest UI:
 
 ## Example
 
-In the following scenario, we have up upgrade the MySQL operator:
+In the following scenario, we have up upgrade the PXC operator:
 
 1. Check if there are any pending **Actions**.
 
@@ -70,11 +70,19 @@ In the following scenario, we have up upgrade the MySQL operator:
 
 8. Once the operator is ready to upgrade, the status of **Actions** will be **ready**.
 
+    ![!image](images/upgrade_operator.png)
+
 9. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
+
+    ![!image](images/upgrade_operator_confirmation.png)
 
 10. Click **Ok**.
 
-11. Complete the post upgrade tasks by clicking on the items under **Actions**. Your PXC operator is now upraded to version 1.14.0.
+11. Complete the post upgrade tasks by clicking on the items under **Actions**. 
+
+    ![!image](images/post_upgrade_tasks.png)
+
+
 
 
 
