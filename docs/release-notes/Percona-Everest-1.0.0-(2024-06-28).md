@@ -53,13 +53,9 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
+- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
 
-- [EVEREST-900](https://perconadev.atlassian.net/browse/EVEREST-900) \[Tech Debt\] \[operator\] Create common interface for reconciliation of the different DB operators
-
-
-- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) OIDC configuration
-
-- [EVEREST-1095](https://perconadev.atlassian.net/browse/EVEREST-1095) Settings API
+- [EVEREST-1095](https://perconadev.atlassian.net/browse/EVEREST-1095) - The new API method GET /v1/settings has been added to the Everest API. This method does not require the auth token so that the UI can get the initial Everest settings.
 
 
 ## Improvements
@@ -134,50 +130,12 @@ To explore the depths of this feature, delve into our [documentation](https://do
 [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) \[operator\] PSMDB and PG should use AWS's NLB instead of "classic" LB
 
 
-### New Feature
 
 
-
-### Technical task
-
-[EVEREST-874](https://perconadev.atlassian.net/browse/EVEREST-874) \[Operator\] Add DB "deleting" state
-
-[EVEREST-955](https://perconadev.atlassian.net/browse/EVEREST-955) \[BE\] Give users the option to delete the data from backup storage when deleting a backup
-
-[EVEREST-957](https://perconadev.atlassian.net/browse/EVEREST-957) \[UI\] Give users the option to delete the data from backup storage when deleting a backup
-
-[EVEREST-958](https://perconadev.atlassian.net/browse/EVEREST-958) \[BE\] Give users the option to delete the data from backup storage when deleting a DB
-
-[EVEREST-959](https://perconadev.atlassian.net/browse/EVEREST-959) \[UI\] Give users the option to delete the data from backup storage when deleting a DB
-
-[EVEREST-975](https://perconadev.atlassian.net/browse/EVEREST-975) \[UI\] Allow editing the db engine property
-
-[EVEREST-1026](https://perconadev.atlassian.net/browse/EVEREST-1026) \[UI\] Login screen with username and password
-
-[EVEREST-1027](https://perconadev.atlassian.net/browse/EVEREST-1027) \[API\] Create session endpoint
-
-[EVEREST-1028](https://perconadev.atlassian.net/browse/EVEREST-1028) \[API\] Authenticate requests using session token
-
-[EVEREST-1042](https://perconadev.atlassian.net/browse/EVEREST-1042) \[UI\] \[Storybook\] \[S\] Icons
-
-[EVEREST-1056](https://perconadev.atlassian.net/browse/EVEREST-1056) \[UI\] Add DB "deleting" state
-
-[EVEREST-1062](https://perconadev.atlassian.net/browse/EVEREST-1062) \[UI\] Validation for the duplicated schedules
-
-[EVEREST-1063](https://perconadev.atlassian.net/browse/EVEREST-1063) \[BE\] Validation for the duplicated schedules
-
-[EVEREST-1083](https://perconadev.atlassian.net/browse/EVEREST-1083) \[UI\] Create components page
-
-[EVEREST-1084](https://perconadev.atlassian.net/browse/EVEREST-1084) \[API\] Create components endpoint
-
-
-## Fixed issues
 
 
 
 ## Known limitations
-
-Backups for PostgreSQL do not work with GCP S3 compatible API.
 
 
 
