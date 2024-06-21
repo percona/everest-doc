@@ -13,14 +13,15 @@ Version 1.0.0 introduces the following changes:
 
 We are excited to announce that you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
 
+![!image](../images/upgrade_operator.png)
+
 Morever, before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
-![!image](../images/create_backup_storage.png)
+![!image](images/operator_upgrade_pending.png)
 
 For deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
 
 ![!image](../images/create_backup_storage.png)
-
 
 
 ## User management
@@ -37,6 +38,8 @@ If you’re looking for in-depth insights into this feature, see our [documentat
 Starting with Percona Everest 1.0.0, you can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access. By tapping into IdP integration, you can ensure that users are authenticated and authorized securely.
 
 Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol){:target="_blank"} (OIDC) Protocol to integrate with external Identity Providers (IdP).
+
+![!image](../images/sso_login.png)
 
 To integrate IdP with Percona Everest, first, [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../secure/IdP_integration#configure-oidc-on-percona-everest-side).
 
