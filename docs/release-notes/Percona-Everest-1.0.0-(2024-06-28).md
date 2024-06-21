@@ -67,11 +67,13 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ## Improvements
 
-- [EVEREST-884](https://perconadev.atlassian.net/browse/EVEREST-884) Add Everest version to our telemetry
+- [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) - We have made some improvements in our telemetry, including sending telemetry data about the DB cluster every time a user creates one and adding information about the Everest version reported for the instance ID.
 
-- [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Validate scheduled backups for same time on the same storage location
+- [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Percona Everest now validates scheduled backups if another backup is already scheduled for the same time and location.
 
-- [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) \[UI\] Allow multiple backup schedules in the wizard
+
+- [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) - Starting with Percona Everest 1.0.0, you now have the option to create multiple backup schedules using the wizard.
+
 
 - [EVEREST-931](https://perconadev.atlassian.net/browse/EVEREST-931) \[UI\] \[S-Daniel\] Wizard - disable all editing/continuing fields when required input is deleted 
 
