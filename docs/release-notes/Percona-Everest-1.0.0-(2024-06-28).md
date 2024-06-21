@@ -45,21 +45,9 @@ To integrate IdP with Percona Everest, first, [install Percona Everest](../insta
 To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/secure/IdP_integratiopn.html).
 
 
-## New features and improvements
+## New features
 
 - [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for new Load balancer setting
-
-- [EVEREST-766](https://perconadev.atlassian.net/browse/EVEREST-766) \[Peak\) Create Chip component
-
-- [EVEREST-770](https://perconadev.atlassian.net/browse/EVEREST-770) \[UI\] Add namespaces to settings
-
-- [EVEREST-783](https://perconadev.atlassian.net/browse/EVEREST-783) \[UI\] Add namespace page with DB type selector and corresponding table
-
-- [EVEREST-804](https://perconadev.atlassian.net/browse/EVEREST-804) \[UI\] Add upgrade modal
-
-- [EVEREST-806](https://perconadev.atlassian.net/browse/EVEREST-806) Support locking a namespace before an operator upgrade
-
-- [EVEREST-817](https://perconadev.atlassian.net/browse/EVEREST-817) Endpoint to monitor progress of operator upgrade
 
 - [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) Restore action form backup - improved UX
 
@@ -71,23 +59,13 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-900](https://perconadev.atlassian.net/browse/EVEREST-900) \[Tech Debt\] \[operator\] Create common interface for reconciliation of the different DB operators
 
-- [EVEREST-960](https://perconadev.atlassian.net/browse/EVEREST-960) Add support for operator upgrades through DatabaseEngine CR
-
-- [EVEREST-961](https://perconadev.atlassian.net/browse/EVEREST-961) Expose list of available operator upgrades in DatabaseEngine status
-
-- [EVEREST-1023](https://perconadev.atlassian.net/browse/EVEREST-1023) \[CLI\] List, create and delete accounts
-
-- [EVEREST-1024](https://perconadev.atlassian.net/browse/EVEREST-1024) \[CLI\] Update account password
-
-- [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) Account authentication
-
-- [EVEREST-1086](https://perconadev.atlassian.net/browse/EVEREST-1086) Implement access token validation middleware in the Everest server
 
 - [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) OIDC configuration
 
-- [EVEREST-1094](https://perconadev.atlassian.net/browse/EVEREST-1094) \[UI\] OIDC integration
-
 - [EVEREST-1095](https://perconadev.atlassian.net/browse/EVEREST-1095) Settings API
+
+
+## Improvements
 
 - [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Validate scheduled backups for same time on the same storage location
 
