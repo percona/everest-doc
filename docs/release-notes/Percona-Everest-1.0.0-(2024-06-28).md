@@ -75,26 +75,26 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) - Starting with Percona Everest 1.0.0, you now have the option to create multiple backup schedules using the wizard.
 
 
-- [EVEREST-931](https://perconadev.atlassian.net/browse/EVEREST-931) \[UI\] \[S-Daniel\] Wizard - disable all editing/continuing fields when required input is deleted 
-
-- [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) \[BE\] Improving Everest telemetry
-
-- [EVEREST-953](https://perconadev.atlassian.net/browse/EVEREST-953) \[UI\] Combine backups and PITR in the same wizard step
+- [EVEREST-931](https://perconadev.atlassian.net/browse/EVEREST-931) - When you go through a wizard, return to a specific step, and delete something from a mandatory field, the editing functionality is now disabled.
 
 
-- [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) \[UI\] Hide S3 keys
+- [EVEREST-953](https://perconadev.atlassian.net/browse/EVEREST-953) - For an improved user interface (UI) experience, we have consolidated backups and PITR on the same page.
+
+
+- [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) - Access and secret key inputs are now visible on the UI when adding a storage location. You can use the eye icon to toggle between making the keys visible or hidden. This feature allows you to conveniently view the S3 keys directly from the UI.
+
 
 
 - [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) Allow updating db engine version
 
 - [EVEREST-975](https://perconadev.atlassian.net/browse/EVEREST-975) \[UI\] Allow editing the db engine property
 
-- [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) \[UI\] Move "actions" button in DB details
+- [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the Database Details tab on the right side of the database name.
 
 
-- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Add DB "deleting" state
+- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
-- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) Create components page
+- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are always working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
 - [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) \[UI\] Hide "Delete backups storage data" option while deleting DBs that have no backups
 
