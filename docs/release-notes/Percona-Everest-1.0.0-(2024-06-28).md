@@ -49,13 +49,10 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for new Load balancer setting
 
-- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) Restore action form backup - improved UX
+- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - In the past, when viewing the DB cluster in the backups list, it was confusing to find information about the Point-in-Time Recovery (PITR) for restores. With the release of Percona Everest 1.0.0, PITR is now visible. However, PITR is only available to select if the chosen backup is the most recent full backup.
 
-- [EVEREST-867](https://perconadev.atlassian.net/browse/EVEREST-867) Create DB from backup - UX improvements
+- [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
-- [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) Give users the option to delete the data from backup storage when deleting a backup
-
-- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) Give users the option to delete the data from backup storage when deleting a DB
 
 - [EVEREST-900](https://perconadev.atlassian.net/browse/EVEREST-900) \[Tech Debt\] \[operator\] Create common interface for reconciliation of the different DB operators
 
