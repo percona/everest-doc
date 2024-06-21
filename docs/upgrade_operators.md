@@ -11,7 +11,7 @@ Before upgrading a database operator, Everest presents a list of tasks that need
 - Ensuring your clusters are using a supported [Custom Resource](https://ibm.github.io/kubernetes-operators/lab1/#:~:text=A%20CRD%20defines%20Custom%20Resources,store%20and%20retrieve%20structured%20data.){:target="_blank"} (CR) version.
 
 
-- Backing up your databases.
+- We recommend that you to take a backup of your databases before starting the upgrade process.
 
 ## Upgrade
 
@@ -69,25 +69,23 @@ To upgrade database operators via the Percona Everest UI:
 
     4. Click **Edit**.
 
-    5. On the **Basic information** page, select the database version as **8.0.25.15-1**. Then, click **Continue**.
+    5. On the **Basic information** page, select the database version as **8.0.25.15-1**. Click **Continue** until the last page of the editing wizard and then click **Edit database**.
 
-    7. On the **Monitoring** page, click **Edit database**.
-
-    8. Once the operator is ready to upgrade, the status of **Actions** will be set to **ready**.
+    6. Once the operator is ready to upgrade, the status of **Actions** will be set to **ready**.
 
         ![!image](images/upgrade_operator.png)
 
-    9. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
+    7. Click **Upgrade Operator**. A confirmation pop-up for **Operator upgrade** will be displayed.
 
         ![!image](images/upgrade_operator_confirmation.png)
 
-    10. Click **Ok**.
+    8. Click **Ok**.
 
-    11. Complete the post upgrade tasks by clicking on the items under **Actions**.
+    9. Complete the post upgrade tasks by clicking on the items under **Actions**.
 
         ![!image](images/post_upgrade_tasks.png)
 
-    12. Your PXC operator will now be upgraded to version 1.14.0.
+    10. Your PXC operator will now be upgraded to version 1.14.0.
 
 
 
