@@ -9,6 +9,13 @@ Version 1.0.0 introduces the following changes:
 
 ## Release highlights
 
+## Database operator upgrades
+
+Starting with Percona Everest 1.0.0, the intuitive UI enables you to upgrade database operators and all their components across any namespace with a single click.
+
+Before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
+
+
 ## New features and improvements
 
 - [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for new Load balancer setting
