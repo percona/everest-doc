@@ -96,7 +96,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are always working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
-- [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) \[UI\] Hide "Delete backups storage data" option while deleting DBs that have no backups
+- [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) - We now offer users the choice to select or deselect **Delete backup storage data** when attempting to delete a database without backups.
 
 
 ### Bugs
