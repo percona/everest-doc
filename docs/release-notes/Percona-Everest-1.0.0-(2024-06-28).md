@@ -47,13 +47,20 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ## New features
 
+- [EVEREST-816](https://perconadev.atlassian.net/browse/EVEREST-816) - Starting with Percona Everest 1.0.0, you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
+
+
+- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
+
+
+- [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
+
 - [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for new Load balancer setting
 
 - [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - In the past, when viewing the DB cluster in the backups list, it was confusing to find information about the Point-in-Time Recovery (PITR) for restores. With the release of Percona Everest 1.0.0, PITR is now visible. However, PITR is only available to select if the chosen backup is the most recent full backup.
 
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
-- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
 
 - [EVEREST-1095](https://perconadev.atlassian.net/browse/EVEREST-1095) - The new API method GET /v1/settings has been added to the Everest API. This method does not require the auth token so that the UI can get the initial Everest settings.
 
