@@ -147,6 +147,7 @@ nav:
   - Welcome to Percona Everest [Beta]: index.md 
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.0.0 (2024-06-28): release-notes/Percona-Everest-1.0.0-(2024-06-28).md
       - Percona-Everest 0.10.1 (2024-05-23): release-notes/Percona-Everest-0.10.1-(2024-05-23).md
       - Percona Everest 0.10.0 (2024-05-03): release-notes/Percona-Everest-0.10.0-(2024-05-03).md
       - Percona Everest 0.9.1 (2024-04-02): release-notes/Percona-Everest-0.9.1-(2024-04-02).md
