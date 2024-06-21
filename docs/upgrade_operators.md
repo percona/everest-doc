@@ -34,15 +34,16 @@ To upgrade database operators via the Percona Everest UI:
 
       c. Wait until the database is in the ready state.
 
+    !!! note "Note"
+
+        During the operator upgrade, you won't be able to perform actions that create or modify a database.
 
     ![!image](images/operator_upgrade_pending.png)
 
 
 5. After resolving all pending actions, proceed with upgrading the operator.
 
-    !!! note "Note"
 
-        During the operator upgrade, you won't be able to perform actions that create or modify a database.
 
     ![!image](images/db_operator_upgrade.png)
 
@@ -59,6 +60,8 @@ To upgrade database operators via the Percona Everest UI:
 
 
     2. Click **Update CRVersion to 1.13.0.** A confirmation pop-up will appear. Click **Upgrade** to proceed.
+
+        ![!image](images/upgrade_CRversion.png)
 
         ![!image](images/upgrade_crd_confirmation.png)
 
