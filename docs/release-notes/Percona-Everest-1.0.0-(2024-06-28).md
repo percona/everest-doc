@@ -67,6 +67,8 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ## Improvements
 
+- [EVEREST-884](https://perconadev.atlassian.net/browse/EVEREST-884) Add Everest version to our telemetry
+
 - [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Validate scheduled backups for same time on the same storage location
 
 - [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) \[UI\] Allow multiple backup schedules in the wizard
@@ -75,53 +77,27 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) \[BE\] Improving Everest telemetry
 
-- [EVEREST-951](https://perconadev.atlassian.net/browse/EVEREST-951) \[UI\] Insert backup schedules into table's header
-
 - [EVEREST-953](https://perconadev.atlassian.net/browse/EVEREST-953) \[UI\] Combine backups and PITR in the same wizard step
 
-- [EVEREST-954](https://perconadev.atlassian.net/browse/EVEREST-954) \[UI\] Invert tooltip dark mode & light mode
 
 - [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) \[UI\] Hide S3 keys
 
-- [EVEREST-972](https://perconadev.atlassian.net/browse/EVEREST-972) Improved version logic
 
 - [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) Allow updating db engine version
 
-- [EVEREST-1005](https://perconadev.atlassian.net/browse/EVEREST-1005) \[UI\] \[S\] Expand divider in tabs component
+- [EVEREST-975](https://perconadev.atlassian.net/browse/EVEREST-975) \[UI\] Allow editing the db engine property
 
 - [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) \[UI\] Move "actions" button in DB details
 
-[EVEREST-1013](https://perconadev.atlassian.net/browse/EVEREST-1013) Validate upgrade preconditions before running an upgrade
 
-[EVEREST-1049](https://perconadev.atlassian.net/browse/EVEREST-1049) \[UI\] \[S-Daniel\] Change 'insert' to 'enter in all fields
+- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Add DB "deleting" state
 
-[EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Add DB "deleting" state
+- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) Create components page
 
-[EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) Create components page
+- [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) \[UI\] Hide "Delete backups storage data" option while deleting DBs that have no backups
 
-[EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) \[UI\] Hide "Delete backups storage data" option while deleting DBs that have no backups
 
-[EVEREST-1099](https://perconadev.atlassian.net/browse/EVEREST-1099) Allow skipping authentication for APIs by specifying in the swagger spec
-
-[EVEREST-1100](https://perconadev.atlassian.net/browse/EVEREST-1100) \[UI\] Update subject names to bold in the dialogs
-
-[EVEREST-1102](https://perconadev.atlassian.net/browse/EVEREST-1102) Everest uninstall should not depend on reading namespaces from everest-operator deployment
-
-[EVEREST-1112](https://perconadev.atlassian.net/browse/EVEREST-1112) \[CLI\] Add command for getting the initial password
-
-[EVEREST-1122](https://perconadev.atlassian.net/browse/EVEREST-1122) Add command for resetting Everest JWT keys
-
-[EVEREST-1123](https://perconadev.atlassian.net/browse/EVEREST-1123) Reorganise CLI commands
-
-[EVEREST-1131](https://perconadev.atlassian.net/browse/EVEREST-1131) API for post-upgrade checks
-
-[EVEREST-1132](https://perconadev.atlassian.net/browse/EVEREST-1132) \[UI\] render list of post-upgrade checks
-
-### Bug
-
-[EVEREST-310](https://perconadev.atlassian.net/browse/EVEREST-310) \[BE\] Error messages should be improved for create backup storage api
-
-[EVEREST-573](https://perconadev.atlassian.net/browse/EVEREST-573) \[Operator\] Mongodb backup status is not consistent with mysql and postgresql
+### Bugs
 
 [EVEREST-807](https://perconadev.atlassian.net/browse/EVEREST-807) \[UI\] Storage location name should be displayed in PITR
 
@@ -135,83 +111,22 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
 
-[EVEREST-943](https://perconadev.atlassian.net/browse/EVEREST-943) \[UI\] Align AM/PM selector on PITR date picker 
-
-[EVEREST-963](https://perconadev.atlassian.net/browse/EVEREST-963) \[operator\] PMM missing k8s\_cluster\_id label on GKE
-
-[EVEREST-966](https://perconadev.atlassian.net/browse/EVEREST-966) \[UI\] New fonts and spaces need to be consistent, aligned
-
-[EVEREST-978](https://perconadev.atlassian.net/browse/EVEREST-978) \[UI\] \[S-Alex\] page is failing because of undefined
 
 [EVEREST-983](https://perconadev.atlassian.net/browse/EVEREST-983) \[UI\] Backup schedules remain active after backups are disabled
 
-[EVEREST-984](https://perconadev.atlassian.net/browse/EVEREST-984) \[UI\] Error should be displayed if retention copies limit is exceeded
-
-[EVEREST-986](https://perconadev.atlassian.net/browse/EVEREST-986) \[UI\] \[S-Daniel\] Monitoring Endpoints - Warning Message for TLS certificate not working as expected
-
-[EVEREST-987](https://perconadev.atlassian.net/browse/EVEREST-987) \[UI\] Scheduled Backups Repeats text is not aligned properly
-
-[EVEREST-991](https://perconadev.atlassian.net/browse/EVEREST-991) \[UI\] Add monitoring endpoint displays incorrect description text for Name field
-
 [EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) \[CLI\] Installation of operators in a new namespace fails
-
-[EVEREST-1009](https://perconadev.atlassian.net/browse/EVEREST-1009) \[UI\] GitHub issues link opening on the same tab
-
-[EVEREST-1015](https://perconadev.atlassian.net/browse/EVEREST-1015) everesctl uninstall should ignore NotFound errors
 
 [EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) Last backup 'inactive' status
 
-[EVEREST-1019](https://perconadev.atlassian.net/browse/EVEREST-1019) Mongodb restore status is different than mysql and postgresql
-
-[EVEREST-1030](https://perconadev.atlassian.net/browse/EVEREST-1030) PG restores stopped working after using destination from PerconaPGBackup
-
-[EVEREST-1031](https://perconadev.atlassian.net/browse/EVEREST-1031) \[UI\] 0 \(infinite\) Retention copies not showing any detail about backup retention on schedule backups
-
-[EVEREST-1033](https://perconadev.atlassian.net/browse/EVEREST-1033) \[CLI\] Cli should run install with a minimum one operator flag set as true
 
 [EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) \[UI\] Restores page should display the restores in a sorted order
 
-[EVEREST-1045](https://perconadev.atlassian.net/browse/EVEREST-1045) \[UI\] Login page gets stuck after upgrade to 0.10.0
-
-[EVEREST-1047](https://perconadev.atlassian.net/browse/EVEREST-1047) Backup Schedules - Daily, Weekly, Monthly schedule date and time issue 
 
 [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) \[UI\] Restore information does not get updated on the restores page
 
-[EVEREST-1057](https://perconadev.atlassian.net/browse/EVEREST-1057) \[UI\] "not found" flashes momentarily on some pages
-
-[EVEREST-1059](https://perconadev.atlassian.net/browse/EVEREST-1059) \[UI\] Cleanup backup storage option should be provided as a query parameter while deleting backups/DB
 
 [EVEREST-1060](https://perconadev.atlassian.net/browse/EVEREST-1060) \[UI\] Backup schedules more than three should not be created for postgresql database
 
-[EVEREST-1075](https://perconadev.atlassian.net/browse/EVEREST-1075) \[UI\] Restores page displays error
-
-[EVEREST-1079](https://perconadev.atlassian.net/browse/EVEREST-1079) Invalid/incorrect links on Everest installation docs
-
-[EVEREST-1080](https://perconadev.atlassian.net/browse/EVEREST-1080) 'everest-olm' namespace not added in the default namespaces
-
-[EVEREST-1081](https://perconadev.atlassian.net/browse/EVEREST-1081) \[UI\] Restore gets disabled for backups if PITR time is not the latest
-
-[EVEREST-1091](https://perconadev.atlassian.net/browse/EVEREST-1091) \[UI\] Database is temporarily removed from list when getting deleted
-
-[EVEREST-1101](https://perconadev.atlassian.net/browse/EVEREST-1101) Everest operator crashes and databases do not come up
-
-[EVEREST-1117](https://perconadev.atlassian.net/browse/EVEREST-1117) \[operator\] Backup state is flip-floping
-
-[EVEREST-1118](https://perconadev.atlassian.net/browse/EVEREST-1118) \[CLI\] User delete option without username flag giving an error \+ incorrect example in help
-
-[EVEREST-1120](https://perconadev.atlassian.net/browse/EVEREST-1120) Components page displays pg backups
-
-[EVEREST-1121](https://perconadev.atlassian.net/browse/EVEREST-1121) Running upgrade leads to the JWT keys getting overwritten from the quickstart manifests
-
-[EVEREST-1126](https://perconadev.atlassian.net/browse/EVEREST-1126) \[CLI\] Cli should not display the command to get the password if it is changed
-
-[EVEREST-1127](https://perconadev.atlassian.net/browse/EVEREST-1127) PXC operator gets upgraded but displays errors while upgrading
-
-[EVEREST-1128](https://perconadev.atlassian.net/browse/EVEREST-1128) Namespace installation error on CLI after upgrading from 0.10.1 to 0.11.0 
-
-[EVEREST-1133](https://perconadev.atlassian.net/browse/EVEREST-1133) Unable to upgrade to 0.11.0 rc1
-
-[EVEREST-1136](https://perconadev.atlassian.net/browse/EVEREST-1136) \[CLI\] Upgrade should display the way for user to login in UI
 
 [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) External IP for mysql is not displayed if external access is enabled
 
