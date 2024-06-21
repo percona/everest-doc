@@ -21,7 +21,6 @@ Morever, before initiating the upgrade process, Everest provides a comprehensive
 
 For deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
 
-![!image](../images/create_backup_storage.png)
 
 
 ## User management
