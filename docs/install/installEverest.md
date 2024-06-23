@@ -41,18 +41,21 @@ To install and provision Percona Everest to Kubernetes:
         1.     ```sh
                 everestctl install
                 ```
-            Expected output:
+            
+            ??? example "Expected output"
 
             ```sh
             ? Namespaces managed by Everest [comma separated] dev,testing
             ? What operators do you want to install? MySQL, MongoDB
-
+            ```
         2. Run the everestctl install command again to install the PostgreSQL operator again in namespaces production and staging.
+
+            ??? example "Expected output"
 
             ```sh
             ? Namespaces managed by Everest [comma separated] production,testagingsting
             ? What operators do you want to install? PostgreSQL
-
+            ```
 
     Alternatively, you can set multiple namepaces in the headless mode:
 
