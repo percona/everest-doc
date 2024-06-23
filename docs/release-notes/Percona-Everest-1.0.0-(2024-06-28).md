@@ -99,13 +99,14 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ### Bugs
 
-[EVEREST-807](https://perconadev.atlassian.net/browse/EVEREST-807) \[UI\] Storage location name should be displayed in PITR
+[EVEREST-807](https://perconadev.atlassian.net/browse/EVEREST-807) - Fixed an issue where PITR did not display the storage location being used when enabling PITR during database creation or editing.
 
-[EVEREST-837](https://perconadev.atlassian.net/browse/EVEREST-837) \[CLI\] Commands displayed in help do not have a description
 
-[EVEREST-841](https://perconadev.atlassian.net/browse/EVEREST-841) UI not able to detect the correct operator/DB-cluster for different namespaces
+[EVEREST-837](https://perconadev.atlassian.net/browse/EVEREST-837) - We have now updated the help for the Command Line Interface (CLI) commands to include the descriptions.
 
-[EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) \[CLI\] Uninstall gives error during namespace deletion
+[EVEREST-841](https://perconadev.atlassian.net/browse/EVEREST-841) - Fixed an issue where the user interface (UI) could not identify the correct operator/database cluster for different namespaces.
+
+[EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
 
 [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) \[CLI\] everestctl install should fallback to the default namespace in case its blank
 
