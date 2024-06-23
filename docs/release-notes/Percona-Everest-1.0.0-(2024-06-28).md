@@ -108,32 +108,30 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
 
-[EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) \[CLI\] everestctl install should fallback to the default namespace in case its blank
+[EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where everestctl install failed to revert to the default namespace when the namespace was left blank.
 
 [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
 
 
-[EVEREST-983](https://perconadev.atlassian.net/browse/EVEREST-983) \[UI\] Backup schedules remain active after backups are disabled
-
-[EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) \[CLI\] Installation of operators in a new namespace fails
-
-[EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) Last backup 'inactive' status
+[EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
 
 
-[EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) \[UI\] Restores page should display the restores in a sorted order
+[EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) - We updated the **Last backup** status from **inactive** to **pending** because it was confusing for the users.
 
 
-[EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) \[UI\] Restore information does not get updated on the restores page
+[EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) - The Restores page did not display the restores in a sorted order. The issue has been resolved now.
 
 
-[EVEREST-1060](https://perconadev.atlassian.net/browse/EVEREST-1060) \[UI\] Backup schedules more than three should not be created for postgresql database
+[EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The problem has been fixed now.
 
 
-[EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) External IP for mysql is not displayed if external access is enabled
+[EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not being displayed. The issue has been resolved now.
 
-[EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) Postgresql database gets stuck during deletion
 
-[EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) Everest gets uninstalled on selecting "no"
+[EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
+
+[EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
+
 
 [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) \[operator\] PSMDB and PG should use AWS's NLB instead of "classic" LB
 
