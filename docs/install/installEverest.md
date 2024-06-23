@@ -34,7 +34,7 @@ To install and provision Percona Everest to Kubernetes:
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
-    ??? example "Installing various operators in different namespaces"
+    ??? info "Installing various operators in different namespaces"
         
         To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following command:
 
