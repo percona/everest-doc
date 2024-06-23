@@ -44,7 +44,7 @@ To install and provision Percona Everest to Kubernetes:
                 ? What operators do you want to install? MySQL, MongoDB
                 ```
 
-        2. Rerun the everestctl install command to install the PostgreSQL operator in the production and staging namespaces.
+        2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
 
 
             ??? example "Expected output"
@@ -74,7 +74,7 @@ To install and provision Percona Everest to Kubernetes:
 
     We strongly recommend that you update the admin password after installation.
 
-4. To update the password for the `admin` user:
+4. Update the password for the `admin` user:
 
     ```sh
     ./everestctl accounts set-password --username admin
