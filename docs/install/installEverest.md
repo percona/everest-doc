@@ -28,11 +28,6 @@ To install and provision Percona Everest to Kubernetes:
         - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
         -  Make sure that you enter at least one namespace.
 
-    ??? example "Expected output"
-        ```
-        ? Namespaces managed by Everest (comma separated) dev,production
-        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
-        ```
 
     ??? info "Installing various operators in different namespaces"
         
@@ -44,18 +39,19 @@ To install and provision Percona Everest to Kubernetes:
             
             ??? example "Expected output"
 
-            ```sh
-            ? Namespaces managed by Everest [comma separated] dev,testing
-            ? What operators do you want to install? MySQL, MongoDB
-            ```
+                ```sh
+                ? Namespaces managed by Everest [comma separated] dev,testing
+                ? What operators do you want to install? MySQL, MongoDB
+                ```
+
         2. Run the everestctl install command again to install the PostgreSQL operator again in namespaces production and staging.
 
             ??? example "Expected output"
 
-            ```sh
-            ? Namespaces managed by Everest [comma separated] production,testagingsting
-            ? What operators do you want to install? PostgreSQL
-            ```
+                ```sh
+                ? Namespaces managed by Everest [comma separated] production,testagingsting
+                ? What operators do you want to install? PostgreSQL
+                ```
 
     Alternatively, you can set multiple namepaces in the headless mode:
 
