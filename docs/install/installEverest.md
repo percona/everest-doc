@@ -66,10 +66,22 @@ To install and provision Percona Everest to Kubernetes:
         everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
-    !!! warning "Important"
-        Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
+3.  Retrieve the password for the `admin` user by running the following command:
 
-3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+    ```sh
+    everestctl accounts initial-admin-password
+    ```
+
+    We strongly recommend that you update the admin password after installation.
+
+4. To update the password for the `admin` user:
+
+    ```sh
+    ./everestctl accounts set-password --username admin
+    ```
+
+
+5. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
 
@@ -98,4 +110,4 @@ To install and provision Percona Everest to Kubernetes:
         kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
 
-4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+6. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
