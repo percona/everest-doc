@@ -99,42 +99,41 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ### Bugs
 
-[EVEREST-807](https://perconadev.atlassian.net/browse/EVEREST-807) - Fixed an issue where PITR did not display the storage location being used when enabling PITR during database creation or editing.
+- [EVEREST-807](https://perconadev.atlassian.net/browse/EVEREST-807) - Fixed an issue where PITR did not display the storage location being used when enabling PITR during database creation or editing.
 
 
-[EVEREST-837](https://perconadev.atlassian.net/browse/EVEREST-837) - We have now updated the help for the Command Line Interface (CLI) commands to include the descriptions.
+- [EVEREST-837](https://perconadev.atlassian.net/browse/EVEREST-837) - We have now updated the help for the Command Line Interface (CLI) commands to include the descriptions.
 
-[EVEREST-841](https://perconadev.atlassian.net/browse/EVEREST-841) - Fixed an issue where the user interface (UI) could not identify the correct operator/database cluster for different namespaces.
+- [EVEREST-841](https://perconadev.atlassian.net/browse/EVEREST-841) - Fixed an issue where the user interface (UI) could not identify the correct operator/database cluster for different namespaces.
 
-[EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
+- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
 
-[EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where everestctl install failed to revert to the default namespace when the namespace was left blank.
+- [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where everestctl install failed to revert to the default namespace when the namespace was left blank.
 
-[EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
-
-
-[EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
+- [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
 
 
-[EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) - We updated the **Last backup** status from **inactive** to **pending** because it was confusing for the users.
+- [EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
 
 
-[EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) - The Restores page did not display the restores in a sorted order. The issue has been resolved now.
+- [EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) - We updated the **Last backup** status from **inactive** to **pending** because it was confusing for the users.
 
 
-[EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The problem has been fixed now.
+- [EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) - The Restores page did not display the restores in a sorted order. The issue has been resolved now.
 
 
-[EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not being displayed. The issue has been resolved now.
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The problem has been fixed now.
 
 
-[EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
-
-[EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
+- [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not being displayed. The issue has been resolved now.
 
 
-[EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) \[operator\] PSMDB and PG should use AWS's NLB instead of "classic" LB
+- [EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
 
+- [EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
+
+
+- [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) - The issue with enabling external access to a DB running in EKS, where the provisioned LB was of the **classic** type instead of the required network type **NLB**, has been fixed.
 
 
 
