@@ -88,7 +88,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
     - You are unable to upgrade to a different major version. 
     - Downgrading the DB Engine version is not supported.
 
-- [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the Database Details tab on the right side of the database name.
+- [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the **Database Details** tab on the right side of the database name.
 
 
 - [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
@@ -109,7 +109,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
 
-- [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where everestctl install failed to revert to the default namespace when the namespace was left blank.
+- [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where `everestctl install` failed to revert to the default namespace when the namespace was left blank.
 
 - [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
 
