@@ -137,10 +137,6 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) - The issue with enabling external access to a DB running in EKS, where the provisioned LB was of the **classic** type instead of the required network type **NLB**, has been fixed.
 
 
-
-
-
-
 ## Known limitations
 
 
