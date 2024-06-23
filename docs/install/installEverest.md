@@ -34,6 +34,12 @@ To install and provision Percona Everest to Kubernetes:
         ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
         ```
 
+    ??? example "Installing various operators in diferent namespaces"
+        ```
+        ? Namespaces managed by Everest (comma separated) dev,production
+        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
+        ```
+
     Alternatively, you can set multiple namepaces in the headless mode:
 
     ```sh
