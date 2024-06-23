@@ -19,7 +19,7 @@ Moreover, before initiating the upgrade process, Everest provides a comprehensiv
 
 ![!image](images/operator_upgrade_pending.png)
 
-For deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
+For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
 
 
 
@@ -29,7 +29,7 @@ Percona Everest 1.0.0 introduces user management features, enabling you to secur
 		
 Local user management involves administering Percona Everest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
-If you’re looking for in-depth insights into this feature, see our [documentation]() 
+If you’re looking for in-depth insights into this feature, see our [documentation]().
 
 
 ## IdP integration for enhanced security
@@ -40,7 +40,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ![!image](../images/sso_login.png)
 
-To integrate IdP with Percona Everest, first, [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../secure/IdP_integration#configure-oidc-on-percona-everest-side).
+To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../secure/IdP_integration#configure-oidc-on-percona-everest-side).
 
 To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/secure/IdP_integratiopn.html).
 
@@ -93,7 +93,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
-- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are always working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
+- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are constantly working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
 - [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) - We now offer users the choice to select or deselect **Delete backup storage data** when attempting to delete a database without backups.
 
@@ -126,7 +126,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The problem has been fixed now.
 
 
-- [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not being displayed. The issue has been resolved now.
+- [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not displayed. The issue has been resolved now.
 
 
 - [EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
