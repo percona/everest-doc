@@ -83,9 +83,10 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) - Access and secret key inputs are now visible on the UI when adding a storage location. You can use the eye icon to toggle between making the keys visible or hidden. This feature allows you to conveniently view the S3 keys directly from the UI.
 
-- [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) Allow updating db engine version
+- [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
 
-- [EVEREST-975](https://perconadev.atlassian.net/browse/EVEREST-975) \[UI\] Allow editing the db engine property
+    - You are unable to upgrade to a different major version. 
+    - Downgrading the DB Engine version is not supported.
 
 - [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the Database Details tab on the right side of the database name.
 
