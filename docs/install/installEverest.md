@@ -35,10 +35,24 @@ To install and provision Percona Everest to Kubernetes:
         ```
 
     ??? example "Installing various operators in diferent namespaces"
-        ```
-        ? Namespaces managed by Everest (comma separated) dev,production
-        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
-        ```
+        
+        If you want to install various operators in different namespaces, say MySQL and MongoDB operator in namespaces dev and testing and PostgreSQL operator in namepaces production and staging run the following command:
+
+        1.     ```sh
+                everestctl install
+                ```
+            Expected output:
+
+            ```sh
+            ? Namespaces managed by Everest [comma separated] dev,testing
+            ? What operators do you want to install? MySQL, MongoDB
+
+        2. Run the everestctl install command again to install the PostgreSQL operator again in namespaces production and staging.
+
+            ```sh
+            ? Namespaces managed by Everest [comma separated] production,testagingsting
+            ? What operators do you want to install? PostgreSQL
+
 
     Alternatively, you can set multiple namepaces in the headless mode:
 
