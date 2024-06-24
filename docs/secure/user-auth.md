@@ -5,7 +5,7 @@ Percona Everest provides user authentication to ensure that only authorized user
 To access Percona Everest:
 {.power-number}
 
-1. Copy the authorization token that is displayed on the terminal while [installing Percona Everest](../install/installEverest.md).
+1. Once you [install Percona Everest](../install/installEverest.md), run the following command:
 
     ![!image](../images/everest_user-auth-token.png)
 
