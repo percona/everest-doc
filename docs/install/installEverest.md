@@ -61,13 +61,13 @@ To install and provision Percona Everest to Kubernetes:
         everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
-3.  Retrieve the password for the `admin` user by running the following command:
+3.  When you install Percona Everest, an `admin` user is automatically created. To retrieve the password for the `admin` user, run the following command:
 
     ```sh
     everestctl accounts initial-admin-password
     ```
 
-    We strongly recommend that you update the admin password after installation.
+    We strongly recommend that you update the `admin` password after installation.
 
 4. Update the password for the `admin` user:
 
