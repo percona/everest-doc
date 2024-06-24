@@ -75,6 +75,8 @@ To install and provision Percona Everest to Kubernetes:
     ./everestctl accounts set-password --username admin
     ```
 
+    To access detailed information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
+
 
 5. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
