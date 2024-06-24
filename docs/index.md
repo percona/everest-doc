@@ -11,7 +11,7 @@ Let's start by enabling you to deploy an automated private DBaaS, eliminating ve
 
 [Install Percona Everest :material-arrow-right:](install/installEverest.mdeks.md){.md-button}  [Manage your first cluster :material-arrow-right:](use/db_provision.md.md){.md-button}
 
-![!image](../images/everest_home_page.png)
+![!image](images/everest_home_page.png)
   
 ## Ready to test drive Percona Everest?
 
