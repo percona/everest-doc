@@ -43,7 +43,7 @@ Before getting started with Percona Everest, do the following:
         gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
         ```
 
-## Procedure
+## Install Percona Everest
 
 You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
 {.power-number}
@@ -76,19 +76,26 @@ You can download the latest version of Everest CLI by visiting the latest releas
         ``` 
 
 
-2. Install Everest and provision the Kubernetes cluster:
+2. Install Percona Everest:
 
     ```sh
     everestctl install
     ```
 
-    Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+    Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma.
 
     !!! warning "Important"
-        -  Make sure that you enter at least one namespace.
-        -  Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
+        Make sure that you enter at least one namespace.
 
-3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+3. When you install Percona Everest, an `admin` user is automatically created. To retrieve the password for the `admin` user, run the following command:
+
+    ```sh
+    everestctl accounts initial-admin-password
+    ```
+
+    For more information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
+
+4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
 
