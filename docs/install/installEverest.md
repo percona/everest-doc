@@ -72,7 +72,7 @@ To install and provision Percona Everest to Kubernetes:
 4. Update the password for the `admin` user:
 
     ```sh
-    ./everestctl accounts set-password --username admin
+    everestctl accounts set-password --username admin
     ```
 
     To access detailed information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
