@@ -2,17 +2,14 @@
 
 We are excited to welcome you to GA of Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
 
-Percona Everest provides a complete suite of database services so you can enjoy ultimate performance for database setup, deployment, monitoring, management, backup, restoring, scaling, and other crucial database operations.
 
 ## Why Percona Everest?
 
-Percona Everest is an open source cloud-native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead while regaining control over their data, database configuration, and DBaaS costs.
+Percona Everest is the first open-source platform for automated database provisioning and management. It supports multiple database technologies and can be hosted on any Kubernetes infrastructure, in the cloud or on-premises.
 
-Percona Everest is designed for those who want to break free from vendor lock-in, ensure optimal database performance, enable cost-effective and right-sized database deployments, and reduce database administration overhead.
+Let's start by enabling you to deploy an automated private DBaaS, eliminating vendor lock-in and complex in-house platform development.
 
-The solution automates day-one and day-two database operations for Postgres, MySQL, and MongoDB databases within Kubernetes clusters.
 
-Here's why you should try Percona Everest:
 
 - **Launch database instance with just a few clicks**: Percona Everest simplifies the entire database lifecycle, making it effortless to provision, configure, and manage your database instances.
 - **Enable your team to develop faster and reduce time to market**: Save valuable time and resources that would otherwise be spent on database management, allowing your team to focus on building applications and growing your business.
