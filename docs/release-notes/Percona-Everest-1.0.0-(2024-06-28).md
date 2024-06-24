@@ -120,13 +120,13 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
 
 
-- [EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) - We updated the **Last backup** status from **inactive** to **pending** because it was confusing for the users.
+- [EVEREST-1016](https://perconadev.atlassian.net/browse/EVEREST-1016) - We updated the **Last backup** status from **inactive** to **scheduled** because it was confusing for the users.
 
 
 - [EVEREST-1034](https://perconadev.atlassian.net/browse/EVEREST-1034) - The Restores page did not display the restores in a sorted order. The issue has been resolved now.
 
 
-- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The problem has been fixed now.
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The issue has been fixed now.
 
 
 - [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not displayed. The issue has been resolved now.
