@@ -15,7 +15,7 @@ To access Percona Everest:
 
     
     !!! note " Note"
-        To access Percona Everest, you have the option to create a [new user account](manage_users.md#create-a-new-user). Once the account is created, you can then log in using your newly created user credentials.
+        To access Percona Everest, you can also create a [new user account](manage_users.md#create-a-new-user). Once the account is created, you can then log in using your newly created user credentials.
 
 
 3. Update the password for the `admin` user:
