@@ -5,18 +5,27 @@ Percona Everest provides user authentication to ensure that only authorized user
 To access Percona Everest:
 {.power-number}
 
-1. Once you [install Percona Everest](../install/installEverest.md), run the following command:
+1. When you [install Percona Everest](../install/installEverest.md), an `admin` user is automatically created. To retrieve the password for the `admin` user, run the following command:
 
-    ![!image](../images/everest_user-auth-token.png)
+     ```sh
+    everestctl accounts initial-admin-password
+    ```
 
-2. Navigate to the Everest UI.
+    We strongly recommend that you update the `admin` password after installation.
 
-3. Enter the authorization token that you copied in step 1.
+3. Update the password for the `admin` user:
 
-    ![!image](../images/everest_user-auth-login.png)
+    ```sh
+    everestctl accounts set-password --username admin
+    ```
 
+    For detailed information on user management, see the section [Manage users in Percona Everest](../manage_users.md).
 
-4. Click **Log in**.
+4. Navigate to the Everest UI.
+
+5. Enter the password you received in step 1. If you changed the initial password, enter the updated one.
+
+6. Click **Log in**.
 
 
 ## Reset authorization token
