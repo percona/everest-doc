@@ -114,7 +114,8 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where `everestctl install` failed to revert to the default namespace when the namespace was left blank.
 
-- [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) \[CLI\] everestctl install does not recognize the option to install the operators
+- [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) - When running the `everestctl install` command, the installation wizard asked for values such as namespaces and operators, even though the values were already provided by flags `(--namespaces=everest --operator.mongodb=false --operator.postgresql=false --operator.xtradb-cluster=true)`. The issue has been resolved now.
+
 
 
 - [EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
