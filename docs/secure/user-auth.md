@@ -13,7 +13,7 @@ Percona Everest provides user authentication to ensure that only authorized user
 
     
     !!! note " Note"
-        To access Percona Everest, you can also create a [new user account](manage_users.md#create-a-new-user). Once the account is created, you can then log in using your newly created user credentials.
+        You can create a [new user account](manage_users.md#create-a-new-user) after installing Percona Everest. Once the account is created, you can then log in using your newly created user credentials.
 
 
 2. Navigate to the Everest UI.
