@@ -93,7 +93,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
     everestctl accounts initial-admin-password
     ```
 
-    For more information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
+    For more information on user management, see the section [Manage users in Percona Everest](../manage_users.md).
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
