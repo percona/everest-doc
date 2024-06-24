@@ -9,7 +9,7 @@ Percona Everest is the first open-source platform for automated database provisi
 
 Let's start by enabling you to deploy an automated private DBaaS, eliminating vendor lock-in and complex in-house platform development.
 
-
+[Install Percona Everest :material-arrow-right:](install/installEverest.mdeks.md){.md-button}  [Manage your first cluster :material-arrow-right:](use/db_provision.md.md){.md-button}
 
 - **Launch database instance with just a few clicks**: Percona Everest simplifies the entire database lifecycle, making it effortless to provision, configure, and manage your database instances.
 - **Enable your team to develop faster and reduce time to market**: Save valuable time and resources that would otherwise be spent on database management, allowing your team to focus on building applications and growing your business.
