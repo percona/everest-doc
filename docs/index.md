@@ -29,4 +29,4 @@ Discover how Percona Everest simplifies and streamlines your database management
 
 Learn how Percona Everest ensures the security of your hosted databases.
 
-[Security in Percona Everest :material-arrow-right:](secure/user-auth.mdfeatures.md){ .md-button .md-button--primary }
+[Securing your deployments :material-arrow-right:](secure/user-auth.mdfeatures.md){ .md-button .md-button--primary }
