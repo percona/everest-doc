@@ -27,8 +27,7 @@ Discover how Percona Everest simplifies and streamlines your database management
 
 Explore how our security features are designed to ensure the security of your hosted databases.
 
-[Secure your deployments :material-arrow-right:](secure/user-auth.md)
-{ .md-button .md-button--primary }
+[Secure your deployments :material-arrow-right:](secure/user-auth.md){ .md-button .md-button--primary }
 
 
 ## :material-account-supervisor: { .title }
