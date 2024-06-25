@@ -137,8 +137,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The issue has been fixed now.
 
 
-- [EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
-
 - [EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
 
 
