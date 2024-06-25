@@ -79,7 +79,7 @@ We're always striving to enhance user experience, and we're excited to announce 
     - Downgrading the DB Engine version is not supported.
 
 
-- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We're constantly working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
+- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
 ## Improvements
 
