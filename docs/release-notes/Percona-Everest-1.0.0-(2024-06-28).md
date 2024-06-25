@@ -65,6 +65,9 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
 
+- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you can now see a checkbox that asks whether you want to retain the backup data on the backup storage. For PostgreSQL databases, the checkbox is disabled and accompanied by an information icon and tooltip explaining why the backup storage data is retained.
+
+
 ## Improvements
 
 - [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) - We have made some improvements in our telemetry, including sending telemetry data about the DB cluster every time a user creates one and adding information about the Everest version reported for the instance ID.
@@ -95,7 +98,6 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are constantly working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
-- [EVEREST-1093](https://perconadev.atlassian.net/browse/EVEREST-1093) - We now offer users the choice to select or deselect **Delete backup storage data** when attempting to delete a database without backups.
 
 
 ### Bugs
