@@ -128,9 +128,6 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The issue has been fixed now.
 
 
-- [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not displayed. The issue has been resolved now.
-
-
 - [EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
 
 - [EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
