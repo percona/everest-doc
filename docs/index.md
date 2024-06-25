@@ -19,3 +19,9 @@ Let's start by enabling you to deploy an automated private DBaaS, eliminating ve
 
 
 ## :material-telescope: Discover { .title }
+
+Discover how Percona Everest simplifies and streamlines your database management and provisioning.
+
+[Discover Percona Everest :material-arrow-right:](features.md){ .md-button .md-button--primary }
+
+
