@@ -65,7 +65,8 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
 
-- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you can now see a checkbox that asks whether you want to retain the backup data on the backup storage. For PostgreSQL databases, the checkbox is disabled and accompanied by an information icon and tooltip explaining why the backup storage data is retained.
+- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you now have the option to delete the data as well from the backup storage. However, for PostgreSQL databases, the backup storage data is retained.
+
 
 
 ## Improvements
