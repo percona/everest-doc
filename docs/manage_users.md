@@ -118,7 +118,7 @@ Everest uses the RSA algorithm to sign in and verify JWT. The RSA keys used in  
         type: Opaque
 
 
-To reset the keys:
+To reset the key pair:
     
     everestctl accounts reset-jwt-keys
     
