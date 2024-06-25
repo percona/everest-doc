@@ -48,10 +48,10 @@ To integrate IdP with Percona Everest, first [install Percona Everest](../instal
 To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/secure/IdP_integratiopn.html).
 
 
-
 ## All new components page
 
 We're always striving to enhance user experience, and we're excited to announce our latest addition – the **Components** page! This new page is your go-to destination for in-depth details about the pods and containers, such as their status, type, age, and much more.
+
 
 ## New features
 
@@ -83,7 +83,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 ## Improvements
 
-- [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) - We have made some improvements in our telemetry, including sending telemetry data about the DB cluster every time a user creates one and adding information about the Everest version reported for the instance ID.
 
 - [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Percona Everest now validates scheduled backups if another backup is already scheduled for the same time and location.
 
@@ -107,7 +106,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
 
-
+- [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) - We have made some improvements in our telemetry, including sending telemetry data about the DB cluster every time a user creates one and adding information about the Everest version reported for the instance ID.
 
 
 ### Bugs
@@ -143,7 +142,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) - The issue with enabling external access to a DB running in EKS, where the provisioned LB was of the **classic** type instead of the required network type **NLB**, has been fixed.
 
 
-## Known limitations
 
 
 
