@@ -58,7 +58,7 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
 
-- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for new Load balancer setting
+- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for customizing load balancer source ranges in PostgreSQL clusters
 
 - [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - In the past, when viewing the DB cluster in the backups list, it was confusing to find information about the Point-in-Time Recovery (PITR) for restores. With the release of Percona Everest 1.0.0, PITR is now visible. However, PITR is only available to select if the chosen backup is the most recent full backup.
 
