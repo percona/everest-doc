@@ -33,8 +33,15 @@ Explore how our security features are designed to ensure the security of your ho
 [Secure your deployments :material-arrow-right:](secure/user-auth.md){ .md-button .md-button--primary }
 
 
-### :material-account-supervisor: { .title }
+### :material-account-supervisor: Manage users { .title }
 
 Learn how to manage user accounts in Percona Everest.
 
 [Manage user accounts :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
+
+
+### :material-api: API { .title }
+
+Get ready to dive into our APIs and uncover their potential.
+
+[Dive into our APIs :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
