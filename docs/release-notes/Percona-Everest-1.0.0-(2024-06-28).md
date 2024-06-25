@@ -119,8 +119,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-841](https://perconadev.atlassian.net/browse/EVEREST-841) - Fixed an issue where the user interface (UI) could not identify the correct operator/database cluster for different namespaces.
 
-- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error occurred when attempting to delete a namespace. The issue is resolved now.
-
 - [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where `everestctl install` failed to revert to the default namespace when the namespace was left blank.
 
 - [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) - When running the `everestctl install` command, the installation wizard asked for values such as namespaces and operators, even though the values were already provided by flags `(--namespaces=everest --operator.mongodb=false --operator.postgresql=false --operator.xtradb-cluster=true)`. The issue has been resolved now.
@@ -137,9 +135,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The issue has been fixed now.
-
-
-- [EVEREST-1137](https://perconadev.atlassian.net/browse/EVEREST-1137) - When external access was enabled, the external IP address for MySQL was not displayed. The issue has been resolved now.
 
 
 - [EVEREST-1139](https://perconadev.atlassian.net/browse/EVEREST-1139) - Addressed an issue where the PostgreSQL database became unresponsive and stuck when attempting to delete the database.
