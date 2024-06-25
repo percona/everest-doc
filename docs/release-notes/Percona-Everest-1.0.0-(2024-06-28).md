@@ -48,6 +48,11 @@ To integrate IdP with Percona Everest, first [install Percona Everest](../instal
 To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/secure/IdP_integratiopn.html).
 
 
+
+## All new components page
+
+We're always striving to enhance user experience, and we're excited to announce our latest addition – the Components page! This new page is your go-to destination for in-depth details about the pods and containers, such as their status, type, age, and much more.
+
 ## New features
 
 - [EVEREST-816](https://perconadev.atlassian.net/browse/EVEREST-816) - Starting with Percona Everest 1.0.0, you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
@@ -68,6 +73,13 @@ To explore the depths of this feature, delve into our [documentation](https://do
 - [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you now have the option to delete the data as well from the backup storage. However, for PostgreSQL databases, the backup storage data is retained.
 
 
+- [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
+
+    - You are unable to upgrade to a different major version. 
+    - Downgrading the DB Engine version is not supported.
+
+
+- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We're constantly working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
 ## Improvements
 
@@ -87,17 +99,14 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 - [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) - Access and secret key inputs are now visible on the UI when adding a storage location. You can use the eye icon to toggle between making the keys visible or hidden. This feature allows you to conveniently view the S3 keys directly from the UI.
 
-- [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
 
-    - You are unable to upgrade to a different major version. 
-    - Downgrading the DB Engine version is not supported.
 
 - [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the **Database Details** tab on the right side of the database name.
 
 
 - [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
-- [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) We are constantly working to enhance our user experience, and we've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
+
 
 
 
