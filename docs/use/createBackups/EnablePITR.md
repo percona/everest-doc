@@ -46,7 +46,7 @@ To enable PITR:
 
 ## Limitations
 
-There are some limitations associated with the PITR functionality. For a comprehensive list of known limitations, see the [known Limitations](../../reference/known_limitations.md) section.
+There are some limitations associated with the PITR functionality. For a comprehensive list of known limitations, see the [known Limitations](../../reference/known_limitations.md#point-in-time-recovery-pitr) section.
 
 ## Next step
 
