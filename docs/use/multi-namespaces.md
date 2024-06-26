@@ -44,14 +44,14 @@ The following holds true for multiple namespaces:
         1.     everestctl install
 
                 
-        ??? example "Expected output"
+            ??? example "Expected output"
 
-            ```sh
-            ? Namespaces managed by Everest [comma separated] dev,testing
-            ? What operators do you want to install? MySQL, MongoDB
-            ```
+                ```sh
+                ? Namespaces managed by Everest [comma separated] dev,testing
+                ? What operators do you want to install? MySQL, MongoDB
+                ```
 
-            2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
+        2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
 
 
             ??? example "Expected output"
