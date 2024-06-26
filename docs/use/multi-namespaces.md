@@ -41,15 +41,15 @@ The following holds true for multiple namespaces:
         To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following command:
             {.power-number}
 
-            1.     everestctl install
+        1.     everestctl install
 
                 
-            ??? example "Expected output"
+        ??? example "Expected output"
 
-                ```sh
-                ? Namespaces managed by Everest [comma separated] dev,testing
-                ? What operators do you want to install? MySQL, MongoDB
-                ```
+            ```sh
+            ? Namespaces managed by Everest [comma separated] dev,testing
+            ? What operators do you want to install? MySQL, MongoDB
+            ```
 
             2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
 
