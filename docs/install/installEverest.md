@@ -61,15 +61,7 @@ To install and provision Percona Everest to Kubernetes:
         everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
-3.  When you install Percona Everest, an `admin` user is automatically created. To retrieve the password for the `admin` user, run the following command:
-
-    ```sh
-    everestctl accounts initial-admin-password
-    ```
-
-    We strongly recommend that you update the `admin` password after installation.
-
-4. Update the password for the `admin` user:
+3. Update the password for the `admin` user:
 
     ```sh
     everestctl accounts set-password --username admin
@@ -77,8 +69,12 @@ To install and provision Percona Everest to Kubernetes:
 
     To access detailed information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
 
+    !!! info "Important"
+       - You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+       - Do not modify the root user's password in the database, as this could potentially break your cluster.
 
-5. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+
+4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
 
@@ -107,4 +103,4 @@ To install and provision Percona Everest to Kubernetes:
         kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
 
-6. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+5. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
