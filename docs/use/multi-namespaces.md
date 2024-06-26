@@ -28,18 +28,20 @@ To set up the namespaces that Percona Everest will manage and where you can depl
 
 ## Configure multiple namespaces
 
-You can configure multiple namespaces in Percona Everest. 
+The following holds true for multiple namespaces:
 
-To have different operators in different namespaces, run the install command multiple times. See the following example for more details:
+- You can configure multiple namespaces in Percona Everest. 
+
+- To have different operators in different namespaces, run the install command multiple times. See the following example for more details:
     
-??? info "Example: Installing various operators in different namespaces"
-        
-    To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following command:
-        {.power-number}
-
-        1.     everestctl install
-
+    ??? info "Example: Installing various operators in different namespaces"
             
+        To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following command:
+            {.power-number}
+
+            1.     everestctl install
+
+                
             ??? example "Expected output"
 
                 ```sh
@@ -47,7 +49,7 @@ To have different operators in different namespaces, run the install command mul
                 ? What operators do you want to install? MySQL, MongoDB
                 ```
 
-        2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
+            2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
 
 
             ??? example "Expected output"
