@@ -32,7 +32,9 @@ The following holds true for multiple namespaces:
 
 - You can configure multiple namespaces in Percona Everest. 
 
-- To have different operators in different namespaces, run the install command multiple times. See the following example for more details:
+- You can install different operators in various namespaces by running the install command multiple times.
+
+    See the following example for more details:
     
     ??? info "Example: Installing various operators in different namespaces"
             
