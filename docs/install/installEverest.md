@@ -67,11 +67,11 @@ To install and provision Percona Everest to Kubernetes:
     everestctl accounts set-password --username admin
     ```
 
-    To access detailed information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
-
     !!! info "Important"
        - You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
        - Do not modify the root user's password in the database, as this could potentially break your cluster.
+
+    To access detailed information about user management, see the section [Manage users in Percona Everest](../manage_users.md).
 
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
