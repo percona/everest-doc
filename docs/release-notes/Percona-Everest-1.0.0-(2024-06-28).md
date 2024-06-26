@@ -11,7 +11,7 @@ Percona Everest is an open source cloud native database platform that helps prov
 !!! info "Important"
     Despite being a major version upgrade, we fully support upgrading from Percona Everest 0.10.1 to 1.0.0.
 
-Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to Percona Everest 1.0.0!
+Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to Percona Everest 1.0.0.
 
 ## Release highlights
 
