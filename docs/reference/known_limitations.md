@@ -8,7 +8,7 @@ This section describes the known limitations associated with Percona Everest:
 
 The limitations related to backups in Percona Everest are as follows:
 
-When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
+- When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
 
 **Workaround**: To prevent this, manually delete any backups created with versions prior to 1.0.0 by using the **Delete** action on the **Backups** page before deleting the database.
 
@@ -109,4 +109,6 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     After a certain period, the recovery pod will self-destruct. The database cluster status will change from **Restoring** to **Initializing** and eventually to **Up**.
 
 
+## CLI
 
+If an unexpected error occurs when using the Everest CLI (everestctl), you may encounter a development stack trace that is helpful for debugging.
