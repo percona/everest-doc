@@ -1,16 +1,18 @@
 # What's new in Percona Everest 1.0.0
 
-
 We proudly announce that Percona Everest has officially hit the general availability (GA) milestone with the release of version 1.0.0.
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
 Percona Everest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
+## Upgrading to Percona Everest 1.0.0
 
-Version 1.0.0 introduces the following changes:
+Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to Percona Everest 1.0.0!
 
 ## Release highlights
+
+Version 1.0.0 introduces the following changes:
 
 ## Simplified database operator upgrades
 
@@ -63,7 +65,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
 
-- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) Add support for customizing load balancer source ranges in PostgreSQL clusters
+- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) - Added support for customizing load balancer source ranges in PostgreSQL clusters.
 
 - [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - In the past, when viewing the DB cluster in the backups list, it was confusing to find information about the Point-in-Time Recovery (PITR) for restores. With the release of Percona Everest 1.0.0, PITR is now visible. However, PITR is only available to select if the chosen backup is the most recent full backup.
 
