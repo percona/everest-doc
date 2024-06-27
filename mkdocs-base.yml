@@ -174,8 +174,8 @@ nav:
     - upgrade_operators.md
 
   - Administer:
-    - manage_users.md
-    - Idp_integration.md
+    - administer/manage_users.md
+    - administer/Idp_integration.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
