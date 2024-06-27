@@ -69,19 +69,29 @@ everestctl accounts set-password -u <username>
 You will be prompted to update the password.
 
 
-??? example "YAML after decoding"
+??? example "Example"
 
     ```{.text .no-copy}
     ? Enter new password **********
     ? Re-enter new password **********
     ```
+
 ### Create a new user
 
 To create a new user:
 
 ```sh
-everestctl accounts create -u <username> -p $PASSWORD
+everestctl accounts create -u <username>
 ```
+You will be prompted to enter the password for this user.
+
+
+??? example "Example"
+
+    ```{.text .no-copy}
+    ? Enter new password **********
+P2024-06-27T08:11:34Z	info	cli/accounts.go:141	User 'rasika' has been created	{"component": "accounts"}
+    ```
 
 !!! info "Important"
     For Percona Everest version 1.0.0, new users have full access to the system. However, once RBAC support is in place, an admin user will be able to manage permissions for users, granting them fine-grained control over database resources.
