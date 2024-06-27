@@ -188,14 +188,14 @@ nav:
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
+      - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
-  - Configure:
-      - Configure database engine: configure/db_engine_config.md
   - API: API.md
   - Reference:
       - Telemetry on Percona Everest: reference/telemetry.md
+      - Migration: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
 
