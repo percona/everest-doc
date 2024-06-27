@@ -8,7 +8,7 @@ When you install Percona Everest, an `admin` user is automatically created, gran
 
 !!! note alert alert-primary "Note"
 
-    We strongly recommend using [Single Sign-On (SSO) integration](/secure/Idp_integration.md) for the production environment.
+    We strongly recommend using [Single Sign-On (SSO) integration](Idp_integration.md) for the production environment.
 
 
 ## Overview
