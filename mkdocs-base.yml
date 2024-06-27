@@ -174,7 +174,8 @@ nav:
 
   - Administer:
       - User management: administer/manage_users.md
-        - Secure: administer/Idp_integration.md
+        - Secure:
+          - administer/Idp_integration.md
 
   - Use:
       - Database view: use/database_view.md
