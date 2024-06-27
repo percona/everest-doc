@@ -2,7 +2,12 @@
 
 Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform.
 
+
+!!! warning
+    Do not modify the root user's password in the database, as this could potentially break your cluster
+
 ## Procedure
+
 
 To provision a new database:
 {.power-number}

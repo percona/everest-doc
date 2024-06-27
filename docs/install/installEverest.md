@@ -15,24 +15,15 @@ To install and provision Percona Everest to Kubernetes:
 
 1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
-2. Install Everest and provision the Kubernetes cluster using one of the following commands:
+2. Install Percona Everest using one of the following commands:
 
 
     ```sh
     everestctl install
     ```
 
-    Enter the specific names for the namespaces you want Everest to manage, separating each name with a comma.
+    Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases. Make sure that you enter **at least** one namespace.
 
-    !!! warning "Important"
-        - [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
-        -  Make sure that you enter at least one namespace.
-
-    ??? example "Expected output"
-        ```
-        ? Namespaces managed by Everest (comma separated) dev,production
-        ? What operators do you want to install? MySQL, MongoDB, PostgreSQL        
-        ```
 
     Alternatively, you can set multiple namepaces in the headless mode:
 
@@ -46,10 +37,23 @@ To install and provision Percona Everest to Kubernetes:
         everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
         ```
 
-    !!! warning "Important"
-        Ensure to copy the authorization token displayed on the terminal in this step. You will need this token to log in to the Percona Everest UI.    
+    To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
 
-3. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+
+3. Update the password for the `admin` user:
+
+    ```sh
+    everestctl accounts set-password --username admin
+    ```
+
+    !!! info "Important"
+
+        - You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+
+    To access detailed information about user management, see the [Manage users in Percona Everest](../manage_users.md) section.
+
+
+4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Service Type Load Balancer"
 
@@ -78,4 +82,4 @@ To install and provision Percona Everest to Kubernetes:
         kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
 
-4. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 3. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
+5. To launch the Everest UI and create your first database cluster, go to the IP address configured for the Everest service in step 4. In the example above, this is [http://127.0.0.1:8080](http://127.0.0.1:8080).
