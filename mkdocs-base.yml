@@ -166,16 +166,15 @@ nav:
       - Setup and prerequisites: install/SetupPrereqs.md
       - Install Percona Everest CLI: install/installEverestCLI.md
       - Install Percona Everest: install/installEverest.md
-      - Uninstall Percona Everest: install/uninstallEverest.md
-  - Manage users: manage_users.md
+      - Uninstall Percona Everest: install/uninstallEverest.md 
 
   - Upgrade: 
     - upgrade_with_cli.md
     - upgrade_operators.md
 
   - Administer:
-    - administer/manage_users.md
-    - administer/Idp_integration.md
+      - User management: administer/manage_users.md
+        - administer/Idp_integration.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
