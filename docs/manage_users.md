@@ -63,9 +63,18 @@ everestctl accounts initial-admin-password
 To update the password for an existing user:
 
 ```sh
-everestctl accounts set-password -u <username> --new-password $PASSWORD
+everestctl accounts set-password -u <username>
 ```
 
+You will be prompted to update the password.
+
+
+??? example "YAML after decoding"
+
+    ```{.text .no-copy}
+    ? Enter new password **********
+    ? Re-enter new password **********
+    ```
 ### Create a new user
 
 To create a new user:
