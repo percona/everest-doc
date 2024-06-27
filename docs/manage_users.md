@@ -8,7 +8,7 @@ When you install Percona Everest, an `admin` user is automatically created, gran
 
 !!! note alert alert-primary "Note"
 
-    It is recommended that you use the admin account for the initial configuration and subsequently transition to Single Sign-On (SSO) integration.
+    It is recommended that you use the admin account for the initial configuration and subsequently transition to [Single Sign-On (SSO) integration](/secure/Idp_integration.md).
 
 
 ## Overview
