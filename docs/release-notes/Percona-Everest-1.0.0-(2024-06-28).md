@@ -30,7 +30,6 @@ Moreover, before initiating the upgrade process, Everest provides a comprehensiv
 For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
 
 
-
 ## User management
 
 Percona Everest 1.0.0 introduces user management features, enabling you to securely log in to the platform through either the Percona Everest user interface or the API. So, get ready for a more secure and user-friendly experience with this update.
@@ -147,7 +146,9 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) - The issue with enabling external access to a DB running in EKS, where the provisioned LB was of the **classic** type instead of the required network type **NLB**, has been fixed.
 
 
+## Known limitations
 
+Check out the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html) section for in-depth details about the constraints of Percona Everest.
 
 
 
