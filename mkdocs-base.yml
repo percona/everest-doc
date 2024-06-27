@@ -172,6 +172,10 @@ nav:
   - Upgrade: 
     - upgrade_with_cli.md
     - upgrade_operators.md
+
+  - Administer:
+    - manage_users.md
+    - Idp_integration.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
