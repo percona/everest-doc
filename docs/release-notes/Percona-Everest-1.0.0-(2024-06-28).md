@@ -67,26 +67,25 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
 
-- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) - Added support for customizing load balancer source ranges in PostgreSQL clusters.
-
-- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full back or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
-
-- [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
-
-
-- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you now have the option to delete the data as well from the backup storage. However, for PostgreSQL databases, the backup storage data is retained.
-
 
 - [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
 
     - You are unable to upgrade to a different major version. 
     - Downgrading the DB Engine version is not supported.
 
-
 - [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
-## Improvements
+- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full back or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
 
+- [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
+
+- [EVEREST-873](https://perconadev.atlassian.net/browse/EVEREST-873) - When attempting to delete a database, you now have the option to delete the data as well from the backup storage. However, for PostgreSQL databases, the backup storage data is retained.
+
+
+- [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) - Added support for customizing load balancer source ranges in PostgreSQL clusters.
+
+
+## Improvements
 
 - [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Percona Everest now validates scheduled backups if another backup is already scheduled for the same time and location.
 
