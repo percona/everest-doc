@@ -39,7 +39,7 @@ To provision a new database:
 
 6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
 
-    Click **Create backup schedule**. The backup schedule pop-up is dispalyed.
+    Click **Create backup schedule**. The backup schedule pop-up is displayed.
 
     Provide the following details on this page:
 
@@ -58,7 +58,7 @@ To provision a new database:
 
         ![!image](../images/everest_scheduled_backups.png)    
 
-7. On the **Point-in-time Recovery (PITR)** page, you can enable PITR by turning the toggle on.
+7. On the **Scheduled Backups** page, you can also enable Point-in-time Recovery (PITR) by turning the toggle on.
 
 8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md) section.
 
