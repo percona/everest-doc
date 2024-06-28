@@ -21,7 +21,7 @@ Click on the individual database and select the ellipsis menu (...). This will a
 
  - **Restore database from a backup** - With Percona Everest, you have the ability to restore your database from a backup. 
     
-    For more in-depth instructions on how to restore a database, refer to the [restore a database from a backup](createBackups/RestoreBackup.md) section.
+    For more in-depth instructions on how to restore a database, refer to the [restore a database from a backup](RestoreBackup.md) section.
 
 
  - **Suspend the database** - Suspending your database can save resources when it's not being used. 
