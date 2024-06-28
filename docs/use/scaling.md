@@ -34,6 +34,12 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 
 ## How to scale your database instances
 
+
+!!! info "Important"
+
+    The allocated resources should be sized based on the expected workload to avoid unexpected restarts of the DB cluster nodes due to under-provisioning.
+
+
 To scale your database instances:
 {.power-number}
 

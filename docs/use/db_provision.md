@@ -2,7 +2,15 @@
 
 Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform.
 
+
+!!! warning
+    Refrain from changing the password of administrative users (e.g., root, monitor, or operator) manually in the database. This action may cause inconsistencies with the secrets stored in Kubernetes, which are crucial for the proper functioning of the cluster. Such modifications have the potential to disrupt your cluster.
+
+    We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
+
+
 ## Procedure
+
 
 To provision a new database:
 {.power-number}
@@ -32,7 +40,9 @@ To provision a new database:
 
 5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
-6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database. 
+6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
+
+    Click **Create backup schedule**. The backup schedule pop-up is displayed.
 
     Provide the following details on this page:
 
@@ -51,9 +61,9 @@ To provision a new database:
 
         ![!image](../images/everest_scheduled_backups.png)    
 
-7. On the **Point-in-time Recovery (PITR)** page, you can enable PITR by turning the toggle on.
+7. On the **Scheduled Backups** page, you can also enable Point-in-time Recovery (PITR) by turning the toggle on.
 
-8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../configure/db_engine_config.md) section.
+8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
 
 9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
 

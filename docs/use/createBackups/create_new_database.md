@@ -37,7 +37,7 @@ To create a new database from backup:
 
 6. On the **Basic information** page, change the default backup name if required, then select one of the classes created by your Kubernetes administrator.
 Storage classes define what storage configuration and features will be used for storing your database data. Different classes map to different quality-of-service levels, backup policies, persistent volumes, or to arbitrary policies determined by your cluster administrator. For more information, see [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/){:target="_blank"} in the Kubernetes documentation. 
-7. On the **Resources** page, select the number of nodes and set the resources. For more information see, [Provision a database](../use/db_provision.md).
+7. On the **Resources** page, select the number of nodes and set the resources. For more information see, [Provision a database](../db_provision.md).
 8. (Optional) Enable scheduled backups on the **Scheduled Backups** page. Provide a name, select a schedule interval, and choose a backup storage from the dropdown.
 9. On the **Point-in-time Recovery (PITR)** page, you may enable **PITR** with the toggle, provided you have previously enabled scheduled backups. Select the **Backup storage** from the dropdown.
 
@@ -50,7 +50,7 @@ Storage classes define what storage configuration and features will be used for 
 ## Create a new database from PITR
 
 !!! warning
-    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
+    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../../reference/known_limitations.md#limitation-for-postgresql) section for a workaround.
 
 
 This approach can prove advantageous when you need to revert the database to a particular state, such as reversing unintended modifications to data or restoring from a system breakdown while minimizing data loss.

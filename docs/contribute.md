@@ -29,7 +29,7 @@ If there is no existing report, submit a report following these steps:
 
 ## Contribute to Percona Everest code
 
-If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/percona-everest-backend/blob/main/CONTRIBUTING.md).
+If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/everest/blob/main/CONTRIBUTING.md).
 
 ## Contribute to Percona Everest documentation
 

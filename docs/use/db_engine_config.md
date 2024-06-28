@@ -36,7 +36,9 @@ To configure your database engine in Percona Everest:
 6. To enable external access beyond the Kubernetes cluster network, move the slider to the right.
 
     !!! note alert alert-primary "Note"
-        Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
+        - Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
+        - The network mask is always required, so if you want to limit access to a single IP, ensure to add the `/32` network mask.
+
     
     ![!image](../images/everest_adv_config_ip_source.png)
 

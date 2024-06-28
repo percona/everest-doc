@@ -144,9 +144,10 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 
 nav:
-  - Welcome to Percona Everest [Beta]: index.md 
+  - Welcome to Percona Everest: index.md 
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.0.0 (2024-06-28): release-notes/Percona-Everest-1.0.0-(2024-06-28).md
       - Percona-Everest 0.10.1 (2024-05-23): release-notes/Percona-Everest-0.10.1-(2024-05-23).md
       - Percona Everest 0.10.0 (2024-05-03): release-notes/Percona-Everest-0.10.0-(2024-05-03).md
       - Percona Everest 0.9.1 (2024-04-02): release-notes/Percona-Everest-0.9.1-(2024-04-02).md
@@ -161,13 +162,20 @@ nav:
       - quickstart-guide/quick-install.md
       - quickstart-guide/eks.md
       - quickstart-guide/gke.md
-  - Migrate to Percona Everest: migration_guide.md
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
       - Install Percona Everest CLI: install/installEverestCLI.md
       - Install Percona Everest: install/installEverest.md
-      - Uninstall Percona Everest: install/uninstallEverest.md
-  - Upgrade: upgrade_with_cli.md
+      - Uninstall Percona Everest: install/uninstallEverest.md 
+
+  - Upgrade: 
+    - upgrade_with_cli.md
+    - upgrade_operators.md
+
+  - Administer:
+      - User management: administer/manage_users.md
+      - Single sign-on (SSO): administer/Idp_integration.md
+
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
@@ -180,15 +188,15 @@ nav:
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - Scale database deployment: use/scaling.md
+      - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
-  - Configure:
-      - Configure database engine: configure/db_engine_config.md
-  - Secure: secure/user-auth.md
   - API: API.md
   - Reference:
+      - Limitations: reference/known_limitations.md
       - Telemetry on Percona Everest: reference/telemetry.md
+      - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
 
