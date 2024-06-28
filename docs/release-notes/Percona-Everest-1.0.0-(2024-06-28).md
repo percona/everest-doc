@@ -69,7 +69,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-731](https://perconadev.atlassian.net/browse/EVEREST-731) - Added support for customizing load balancer source ranges in PostgreSQL clusters.
 
-- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - In the past, when viewing the DB cluster in the backups list, it was confusing to find information about the Point-in-Time Recovery (PITR) for restores. With the release of Percona Everest 1.0.0, PITR is now visible. However, PITR is only available to select if the chosen backup is the most recent full backup.
+- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full back or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
 
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
