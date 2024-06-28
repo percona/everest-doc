@@ -54,7 +54,9 @@ To explore the depths of this feature, delve into our [documentation](https://do
 
 ## All new components page
 
-We're always striving to enhance user experience, and we're excited to announce our latest addition – the **Components** page! This new page is your go-to destination for in-depth details about the pods and containers, such as their status, type, age, and much more.
+We are always striving to enhance user experience, and we are excited to announce our latest addition – the **Components** page! This new page is your go-to destination for in-depth details about the pods and containers, such as their status, type, age, and much more.
+
+![!image](../images/components_page.png)
 
 
 ## New features
