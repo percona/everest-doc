@@ -87,11 +87,16 @@ You can download the latest version of Everest CLI by visiting the latest releas
     !!! warning "Important"
         Make sure that you enter at least one namespace.
 
-3. When you install Percona Everest, an `admin` user is automatically created. To retrieve the password for the `admin` user, run the following command:
+3. Update the password for the `admin` user:
 
     ```sh
-    everestctl accounts initial-admin-password
+    everestctl accounts set-password --username admin
     ```
+
+    !!! info "Important"
+
+        You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+
 
     For more information on user management, see the section [Manage users in Percona Everest](../manage_users.md).
 
@@ -120,11 +125,7 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
     Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). 
 
-## Video tutorial
 
-You can also learn about installing Percona Everest via the Quick-Install script by following the video tutorial below:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/vxhNon-el9Q?si=8toRQZ-Z1-prU9vC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ## Next steps
 
 [Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
