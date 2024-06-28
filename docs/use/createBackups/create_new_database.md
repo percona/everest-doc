@@ -50,7 +50,7 @@ Storage classes define what storage configuration and features will be used for 
 ## Create a new database from PITR
 
 !!! warning
-    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../createBackups/EnablePITR.md#limitation) section for a workaround.
+    For PostgreSQL, point-in-time recovery (PITR) can get stuck in a **Restoring** state when you attempt to recover the database after the last transaction. See the [Limitation for PostgreSQL](../../reference/known_limitations.md#limitation-for-postgresql) section for a workaround.
 
 
 This approach can prove advantageous when you need to revert the database to a particular state, such as reversing unintended modifications to data or restoring from a system breakdown while minimizing data loss.
