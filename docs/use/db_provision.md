@@ -4,7 +4,10 @@ Provisioning a database instance involves setting up and configuring a database 
 
 
 !!! warning
-    Do not modify the root user's password in the database, as this could potentially break your cluster
+    Refrain from changing the password of administrative users (e.g., root, monitor, or operator) manually in the database. This action may cause inconsistencies with the secrets stored in Kubernetes, which are crucial for the proper functioning of the cluster. Such modifications have the potential to disrupt your cluster.
+
+    This is a temporary limitation and will be fixed in the subsequent releases.
+
 
 ## Procedure
 
