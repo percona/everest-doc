@@ -1,6 +1,6 @@
 # What's new in Percona Everest 1.0.0
 
-We proudly announce that Percona Everest has officially hit the general availability (GA) milestone with the release of version 1.0.0.
+We proudly announce that Percona Everest has officially hit the **general availability (GA)** milestone with the release of version 1.0.0.
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
@@ -95,19 +95,14 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-931](https://perconadev.atlassian.net/browse/EVEREST-931) - When you go through a wizard, return to a specific step, and delete something from a mandatory field, the editing functionality is now disabled.
 
+- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) - Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
 - [EVEREST-953](https://perconadev.atlassian.net/browse/EVEREST-953) - For an improved user interface (UI) experience, we have consolidated backups and PITR on the same page.
-
 
 - [EVEREST-971](https://perconadev.atlassian.net/browse/EVEREST-971) - Access and secret key inputs are now visible on the UI when adding a storage location. You can use the eye icon to toggle between making the keys visible or hidden. This feature allows you to conveniently view the S3 keys directly from the UI.
 
 
-
 - [EVEREST-1007](https://perconadev.atlassian.net/browse/EVEREST-1007) - For an improved user experience, the **Actions** button has been moved to the **Database Details** tab on the right side of the database name.
-
-
-- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
-
 
 - [EVEREST-937](https://perconadev.atlassian.net/browse/EVEREST-937) - We have made some improvements in our telemetry, including sending telemetry data about the DB cluster every time a user creates one and adding information about the Everest version reported for the instance ID.
 
