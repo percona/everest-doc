@@ -75,7 +75,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
-- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full back or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
+- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full backup or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
 
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
