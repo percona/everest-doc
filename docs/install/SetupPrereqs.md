@@ -14,7 +14,7 @@ Percona Everest has two primary components:
 
 ### Supported operators
 
-* Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.13.0
+* Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.13.0, 1.14.0
 * Percona Operator for MongoDB (PSMDB) 1.15.0
 * Percona Operator for PostgreSQL (PG) 2.3.1
 
