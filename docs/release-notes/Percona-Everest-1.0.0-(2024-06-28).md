@@ -47,9 +47,9 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ![!image](../images/sso_login.png)
 
-To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../administer/IdP_integration#configure-oidc-on-percona-everest-side).
+To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../administer/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../administer/IdP_integration#configure-oidc-on-percona-everest-side).
 
-To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/administer/IdP_integratiopn.html).
+To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/administer/Idp_integration.html).
 
 
 ## All new components page
