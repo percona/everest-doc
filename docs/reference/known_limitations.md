@@ -10,7 +10,7 @@ The limitations related to backups in Percona Everest are as follows:
 
 - When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
 
-**Workaround**: To prevent this, manually delete any backups created with versions prior to 1.0.0 by using the **Delete** action on the **Backups** page before deleting the database.
+    **Workaround**: To prevent this, manually delete any backups created with versions prior to 1.0.0 by using the **Delete** action on the **Backups** page before deleting the database.
 
 - You cannot change the bucket name for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
 
