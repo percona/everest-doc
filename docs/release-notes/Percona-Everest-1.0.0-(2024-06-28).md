@@ -63,12 +63,9 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-816](https://perconadev.atlassian.net/browse/EVEREST-816) - Starting with Percona Everest 1.0.0, you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
 
-
 - [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
 
-
 - [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
-
 
 - [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
 
@@ -121,7 +118,6 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-869](https://perconadev.atlassian.net/browse/EVEREST-869) - Fixed an issue where `everestctl install` failed to revert to the default namespace when the namespace was left blank.
 
 - [EVEREST-870](https://perconadev.atlassian.net/browse/EVEREST-870) - When running the `everestctl install` command, the installation wizard asked for values such as namespaces and operators, even though the values were already provided by flags `(--namespaces=everest --operator.mongodb=false --operator.postgresql=false --operator.xtradb-cluster=true)`. The issue has been resolved now.
-
 
 
 - [EVEREST-1003](https://perconadev.atlassian.net/browse/EVEREST-1003) - Resolved an issue where the installation of operators in a new namespace was failing.
