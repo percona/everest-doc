@@ -25,7 +25,7 @@ We are excited to announce that you can now upgrade database operators and all t
 
 Moreover, before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
-![!image](images/operator_upgrade_pending.png)
+![!image](../images/operator_upgrade_pending.png)
 
 For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade_operators.html).
 
