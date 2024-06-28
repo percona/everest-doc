@@ -36,7 +36,7 @@ Percona Everest 1.0.0 introduces user management features, enabling you to secur
 		
 Local user management involves administering Percona Everest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
-If you’re looking for in-depth insights into this feature, see our [documentation]().
+If you’re looking for in-depth insights into this feature, see our [documentation](https://docs.percona.com/everest/administer/manage_users.html).
 
 
 ## IdP integration for enhanced security
@@ -47,9 +47,9 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 ![!image](../images/sso_login.png)
 
-To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../secure/IdP_integration#configure-oidc-on-percona-everest-side).
+To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](../secure/IdP_integration#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](../administer/IdP_integration#configure-oidc-on-percona-everest-side).
 
-To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/secure/IdP_integratiopn.html).
+To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/administer/IdP_integratiopn.html).
 
 
 ## All new components page
