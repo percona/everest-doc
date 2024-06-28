@@ -27,7 +27,7 @@ Moreover, before initiating the upgrade process, Everest provides a comprehensiv
 
 ![!image](images/operator_upgrade_pending.png)
 
-For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade/upgrade_operators.html).
+For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade_operators.html).
 
 
 ## User management
