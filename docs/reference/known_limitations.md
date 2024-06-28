@@ -4,6 +4,11 @@
 This section describes the known limitations associated with Percona Everest:
 
 
+
+## Passwords
+
+Do not modify the root user's password in the database, as this could potentially break your cluster.
+
 ## Backups
 
 The limitations related to backups in Percona Everest are as follows:
