@@ -7,14 +7,14 @@ Cluster management involves the administration and maintenance of database clust
     
     Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform. 
 
-    ![!image](../images/everest_db_provision.png)
+    ![!image](../images/database_view.png)
 
 
 2. Editing the database clusters
 
     Editing a cluster in a Percona Everest environment typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs. 
 
-    ![!image](../images/everest_edit_cluster.png)
+    ![!image](../images/atabase_view_actions.png)
 
 3. [Scaling](../use/scaling.md)
 
