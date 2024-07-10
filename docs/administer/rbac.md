@@ -17,9 +17,14 @@ This default built-in role definition can be seen in [policy.csv]()
 
 Below is a comprehensive table outlining the permissions granted for various resources:
 
+??? example "Permissions for Namespaces list"
+ 
+
 | Resources |Permissions | Description |Note|
 |-----------|--------|---------------|------------------|
 | Namespaces list|Read specific | View specific namespaces.|
+| Namespaces list|Read all | View all namespaces.|
+| Namespaces list|All | View all namespaces.|
 
 
 
