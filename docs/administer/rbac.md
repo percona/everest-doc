@@ -19,18 +19,19 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
 ??? example "Permissions for resources"
  
-    | Namespaces |Access | Description |
+    | Resource |Access | Description |
     |-----------|--------|-------------------------------------|
-    |           |Read specific | View specific namespaces.|
-    |           |Read all | View all namespaces.|
-    |           |All (*) | View all namespaces.|
+    | Namespaces|Read specific | View specific namespaces.|
+    | Namespaces|Read all | View all namespaces.|
+    | Namespaces|All (*) | View all namespaces.|
 
 
-    | Database engines <br/>|Permissions | Description |
-        MySQL, MoongoDB, PostgreSQ
+    | Resource|Permissions | Description |
     |-----------|--------|-------------------------------------|
-    |           |Read all | View specific namespaces.|
-    |           |Update spefic | View all namespaces.|
-    |           | Update all | View all namespaces.|
+    | Database engines <br/> MySQL, MongoDB, PostgreSQL|Read all | Read all namespaces.|Users can view all the database engines when they create databases. </br> !!! note 
+          This policy must at least be read all so the users can create databases.
+
+
+
 
 
