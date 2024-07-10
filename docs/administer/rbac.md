@@ -28,8 +28,8 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     | Resource|Permissions | Description |
     |-----------|--------|-------------------------------------|
-    | Database engines <br/> MySQL, MongoDB, PostgreSQL|Read all | Read all namespaces.|Users can view all the database engines when they create databases. </br> !!! note 
-          This policy must at least be read all so the users can create databases.
+    | Database engines <br/> MySQL, MongoDB, PostgreSQL|Read all |Users can view all the database engines when they create databases. </br> !!! note 
+          This policy must at least be read all so the users can create databases.|
 
 
 
