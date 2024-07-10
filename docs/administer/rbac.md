@@ -32,7 +32,7 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     |**Read**| **Create**| **Update**| **Delete**|**All**|**Description** |
     |--------|-----------|------------|----------|--------|-------|
-    | Yes(specific)| No  |No |    No |No |Users can view the specific database engines when they create databases.</br> Note: This policy must at least be read all so the users can create databases.|
+    | Yes(specific)| No  |No |    No |No |Users can view the specific database engines when they create databases.</br> **Note**: This policy must at least be read all so the users can create databases.|
         | Yes (all) |No   | No   | No    |No| Users can view all the database engines when they create databases.|
         | No |No   | Yes (specific)  | No | No| Users can upgrade the database engines in the specific namespace.|
         | Yes |No   | Yes (all)   | No| No| Users can upgrade the database engines in all the namespaces.|
