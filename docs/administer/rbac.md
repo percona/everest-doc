@@ -11,3 +11,17 @@ In Percona Everest, the only predefined default role is **admin**. The **admin**
 
 This default built-in role definition can be seen in [policy.csv]()
 
+
+## RBAC resources and permissions
+
+
+Below is a comprehensive table outlining the permissions granted for various resources:
+
+| Resources |Permissions | Description |Note|
+|-----------|--------|---------------|------------------|
+| Namespaces list|Read specific | View specific namespaces.|
+
+
+
+
+
