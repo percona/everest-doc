@@ -19,18 +19,18 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
 ??? example "Permissions for resources"
  
-    | Permissions for Namepaces|
-    | Permissions |Access | Description |
+    | Namespaces |Access | Description |
     |-----------|--------|-------------------------------------|
-    | Namespaces list|Read specific | View specific namespaces.|
-    | Namespaces list|Read all | View all namespaces.|
-    | Namespaces list|All (*) | View all namespaces.|
+    |           |Read specific | View specific namespaces.|
+    |           |Read all | View all namespaces.|
+    |           |All (*) | View all namespaces.|
 
 
-    | Resources |Permissions | Description |
+    | Database engines <br/>|Permissions | Description |
+        MySQL, MoongoDB, PostgreSQ
     |-----------|--------|-------------------------------------|
-    | Namespaces list|Read specific | View specific namespaces.|
-    | Namespaces list|Read all | View all namespaces.|
-    | Namespaces list|All | View all namespaces.|
+    |           |Read all | View specific namespaces.|
+    |           |Update spefic | View all namespaces.|
+    |           | Update all | View all namespaces.|
 
 
