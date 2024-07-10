@@ -19,20 +19,20 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
 ??? info "Permissions for resources"
 
-    **Permissions for Namespaces**
+    **Table: Permissions for Namespaces**
  
-    | Resource |Access | Description |
-    |-----------|--------|-------------------------------------|
-    | Namespaces|Read specific | View specific namespaces.|
-    | Namespaces|Read all | View all namespaces.|
-    | Namespaces|All (*) | View all namespaces.|
+    |**Access** | **Description** |
+    --------|-------------------------------------|
+    | Read specific | View specific namespaces.|
+    | Read all | View all namespaces.|
+    | All (*) | View all namespaces.|
 
 
-    **Permissions for database engines (MySQL, MomgoDB, PostreSQL)**
+    **Table: Permissions for database engines (MySQL, MomgoDB, PostreSQL)**
 
-    | Resource|Permissions | Description |
-    |-----------|--------|-------------------------------------|
-    | Database engines <br/>MySQL, MongoDB, PostgreSQL|Read all |Users can view all the database engines when they create databases. </br> **Note**: This policy must at least be read all so the users can create databases.|
+    | Access | Description |
+    |-----------|---------------------------------------------|
+    | Read all |Users can view all the database engines when they create databases. </br> **Note**: This policy must at least be read all so the users can create databases.|
 
 
 
