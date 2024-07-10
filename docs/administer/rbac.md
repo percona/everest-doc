@@ -21,11 +21,11 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     **Table: Permissions for Namespaces**
  
-    |**Access** | **Description** |
+    |**Read** | Create| Update| Delete|**Description** |
     --------|-------------------------------------|
-    | Read specific | View specific namespaces.|
-    | Read all | View all namespaces.|
-    | All (*) | View all namespaces.|
+    | Yes(specific)  | No        |No    |View specific namespaces.|
+    | Yes (all) |No   | No   | No    |View all namespaces.|
+    | All (*) |No   | No   | No| View all namespaces.|
 
 
     **Table: Permissions for database engines (MySQL, MomgoDB, PostreSQL)**
