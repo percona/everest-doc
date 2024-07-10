@@ -15,18 +15,22 @@ This default built-in role definition can be seen in [policy.csv]()
 ## RBAC resources and permissions
 
 
-Below is a comprehensive table outlining the permissions granted for various resources:
+Below are a comprehensive list of tables outlining the permissions granted for various **resources**:
 
-??? example "Permissions for Namespaces list"
+??? example "Permissions for resources"
  
+    | Permissions for Namepaces|
+    | Permissions |Access | Description |
+    |-----------|--------|-------------------------------------|
+    | Namespaces list|Read specific | View specific namespaces.|
+    | Namespaces list|Read all | View all namespaces.|
+    | Namespaces list|All (*) | View all namespaces.|
+
 
     | Resources |Permissions | Description |
     |-----------|--------|-------------------------------------|
     | Namespaces list|Read specific | View specific namespaces.|
     | Namespaces list|Read all | View all namespaces.|
     | Namespaces list|All | View all namespaces.|
-
-
-
 
 
