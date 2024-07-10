@@ -21,9 +21,9 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     **Table: Permissions for Namespaces**
  
-    |**Read** | Create| Update| Delete|**Description** |
-    --------|-------------------------------------|
-    | Yes(specific)  | No        |No    |View specific namespaces.|
+    |**Read**| **Create**| **Update**| **Delete**|**Description** |
+    |--------|-----------|------------|-----------|---------------|
+    | Yes(specific)| No  |No |    No               |View specific namespaces.|
     | Yes (all) |No   | No   | No    |View all namespaces.|
     | All (*) |No   | No   | No| View all namespaces.|
 
