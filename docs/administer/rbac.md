@@ -17,7 +17,7 @@ This default built-in role definition can be seen in [policy.csv]()
 
 Below are a comprehensive list of tables outlining the permissions granted for various **resources**:
 
-??? example "Permissions for resources"
+??? info "Permissions for resources"
  
     | Resource |Access | Description |
     |-----------|--------|-------------------------------------|
@@ -28,8 +28,7 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     | Resource|Permissions | Description |
     |-----------|--------|-------------------------------------|
-    | Database engines <br/> 
-    MySQL, MongoDB, PostgreSQL|Read all |Users can view all the database engines when they create databases. </br> **Note** This policy must at least be read all so the users can create databases.|
+    | Database engines <br/>MySQL, MongoDB, PostgreSQL|Read all |Users can view all the database engines when they create databases. </br> **Note**: This policy must at least be read all so the users can create databases.|
 
 
 
