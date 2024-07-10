@@ -5,6 +5,9 @@ Role-based access control (RBAC) restricts access to resources within Percona Ev
 
 ## Default role
 
-In Percona Everest, the only predefined default role is **admin**. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
+In Percona Everest, the only predefined default role is **admin**. The **admin** user is a superuser and it has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
 
 - `role:admin` - unrestricted access to all resources
+
+This default built-in role definition can be seen in [policy.csv]()
+
