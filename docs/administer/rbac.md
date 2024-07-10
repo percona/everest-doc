@@ -18,6 +18,8 @@ This default built-in role definition can be seen in [policy.csv]()
 Below are a comprehensive list of tables outlining the permissions granted for various **resources**:
 
 ??? info "Permissions for resources"
+
+    **Permissions for Namespaces**
  
     | Resource |Access | Description |
     |-----------|--------|-------------------------------------|
@@ -25,6 +27,8 @@ Below are a comprehensive list of tables outlining the permissions granted for v
     | Namespaces|Read all | View all namespaces.|
     | Namespaces|All (*) | View all namespaces.|
 
+
+    **Permissions for database engines (MySQL, MomgoDB, PostreSQL)**
 
     | Resource|Permissions | Description |
     |-----------|--------|-------------------------------------|
