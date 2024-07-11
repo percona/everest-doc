@@ -28,7 +28,7 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
-    | Namespaces|:material-checkbox-marked-circle:| :x:  |:x: | :x:|
+    | Namespaces|:white_check_mark:| :x:  |:x: | :x:|
     | Database engines</br> MySQL, MongoDB, PostreSQL|:material-checkbox-marked-circle:</br> **Note**: This policy must at least be read all so the users can create databases.| :x:  |:material-checkbox-marked-circle:| :x:|  
     
     
