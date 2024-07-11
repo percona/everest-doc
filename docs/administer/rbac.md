@@ -21,7 +21,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
 
     !!! warning "Warning"
-        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources **only** within those namespaces. However, if you have permissions for **all** the namespaces, you can carry out these actions across all namespaces. 
+        If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions only on those resources or only within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
 
     </br> </br>
 
@@ -33,6 +33,8 @@ Below is a comprehensive table outlining the permissions granted for various **r
     | Database engines</br> MySQL, MongoDB, PostreSQL|:white_check_mark:</br> </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |:white_check_mark:| :x:|
      | Database clusters|:white_check_mark:| :white_check_mark:  |:white_check_mark:| :white_check_mark:|
      | Backups storage and Monitoring endpoints|:white_check_mark:| :white_check_mark:  |:white_check_mark:| :white_check_mark:|
+    | Access database data(credentials)|:white_check_mark:</br> **Note**: If no policy is not defined:</br> - You cannot see the credentials and the connection string.</br> - You cannot create backups or restores from any DB, even if you can create DBs. </br> - You also cannot create a database from any backup.
+| :x: |:x:| :x:|
 
     
     
