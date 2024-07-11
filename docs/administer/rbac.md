@@ -20,8 +20,8 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 ??? info "Permissions for resources"
 
 
-    !!! info "Important"
-        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources only within those namespaces. However, if you have permissions for all the namespaces, you can carry out these actions across all namespaces.
+    !!! warning "Warning"
+        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources **only** within those namespaces. However, if you have permissions for **all** the namespaces, you can carry out these actions across all namespaces.
 
 
     **Table: Privileges for the various resources in Percona Everest**
@@ -29,7 +29,7 @@ Below are a comprehensive list of tables outlining the permissions granted for v
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
     | Namespaces|:white_check_mark:| :x:  |:x: | :x:|
-    | Database engines</br> MySQL, MongoDB, PostreSQL|:white_check_mark:</br> **Note**: This policy must at least be **read all** so the users can create databases.| :x: |:white_check_mark:| :x:|
+    | Database engines</br> MySQL, MongoDB, PostreSQL|:white_check_mark:</br> </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |:white_check_mark:| :x:|
      | Database clusters|:white_check_mark:| :white_check_mark:  |:white_check_mark:| :white_check_mark:|
      | Backups storage and Monitoring endpoints|:white_check_mark:| :white_check_mark:  |:white_check_mark:| :white_check_mark:|
 
