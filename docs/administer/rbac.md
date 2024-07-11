@@ -28,13 +28,13 @@ The policy definiiton in Percona Everest is:
     
 Where:
 
- adminrole:role: refers to the username
+ adminrole:role: refers to the `username`
 
- resource: could be namespaces, database engines, etc.
+ resource: could be `namespaces, database engines,` etc.
 
- action: such read, create, update, delete
- 
- object: can be * or in the format <namespace>/<objectname>
+ action: such `read, create, update, delete`
+
+ object: can be `*` or in the format `<namespace>/<objectname>`
 
 
 
