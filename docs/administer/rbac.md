@@ -32,7 +32,7 @@ Below are a comprehensive list of tables outlining the permissions granted for v
     | Database engines</br> MySQL, MongoDB, PostreSQL|:material-checkbox-marked-circle:</br> **Note**: This policy must at least be read all so the users can create databases.| :x:  |:material-checkbox-marked-circle:| :x:|  
     
     
-  |
+  
 
 
 
