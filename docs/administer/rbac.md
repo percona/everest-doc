@@ -21,7 +21,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
 
     !!! warning "Warning"
-        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources **only** within those namespaces. However, if you have permissions for **all** the namespaces, you can carry out these actions across all namespaces.
+        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources **only** within those namespaces. However, if you have permissions for **all** the namespaces, you can carry out these actions across all namespaces. </br> </br>
 
 
     **Table: Privileges for the various resources in Percona Everest**
