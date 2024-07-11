@@ -15,7 +15,7 @@ This default built-in role definition can be seen in [policy.csv]()
 ## RBAC resources and permissions
 
 
-Below are a comprehensive list of tables outlining the permissions granted for various **resources**:
+Below is a comprehensive table outlining the permissions granted for various **resources**:
 
 ??? info "Permissions for resources"
 
