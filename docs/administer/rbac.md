@@ -22,16 +22,16 @@ RBAC policies are the rules and guidelines that define how roles, permissions, a
 The policy definiiton in Percona Everest is:
 
 
-    ```sh
-        p, adminrole:role, <resource>, <action>, <object>
-    ```
+```sh
+    p, adminrole:role, <resource>, <action>, <object>
+```
     
-    Where:
+Where:
 
-    adminrole:role: it is the username
-    resource: resource can be namespaces, database engines, etc.
-    action: action can be read, create, update, delete
-    object: It can be * or in the format <namespace>/<objectname>
+ adminrole:role: refers to the username
+ resource: could be namespaces, database engines, etc.
+ action: such read, create, update, delete
+ object: can be * or in the format <namespace>/<objectname>
 
 
 
