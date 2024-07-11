@@ -9,10 +9,35 @@ In Percona Everest, the only predefined default role is **admin**. The **admin**
 
 - `role:admin` - unrestricted access to all resources
 
-This default built-in role definition can be seen in [policy.csv]()
+This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L91)
 
 
-## RBAC resources and permissions
+
+
+## Policy definition in RBAC
+
+RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
+
+
+The policy definiiton in Percona Everest is:
+
+
+    ```sh
+        p, adminrole:role, <resource>, <action>, <object>
+    ```
+    
+    Where:
+
+    adminrole:role: is the username
+    resource: resource can be namespaces, database engines, etc.
+    action: action can be read, create, update, delete
+    object: it cam be * or in the format <namespace>/<objectname>
+
+
+
+
+
+## RBAC resources and privileges
 
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
