@@ -19,24 +19,20 @@ Below are a comprehensive list of tables outlining the permissions granted for v
 
 ??? info "Permissions for resources"
 
-    **Table: Permissions for Namespaces**
- 
-    |**Read**| **Create**| **Update**| **Delete**|**All**|**Description** |
-    |--------|-----------|------------|----------|--------|-------|
-    | Yes(specific)| No  |No |    No |No |View specific namespaces.|
-    | Yes (all) |No   | No   | No    |No| View all namespaces.|
-    | Yes |No   | No   | No| Yes| View all namespaces.|
+
+    !!! info "Important"
+        If you have permission for specific namespaces, you can perform read, update, create, or delete actions on resources only within those namespaces. However, if you have permissions for all the namespaces, you can carry out these actions across all namespaces.
 
 
-    **Table: Permissions for database engines (MySQL, MomgoDB, PostreSQL)**
+    **Table: Privileges for the various resources in Percona Everest**
 
-    |**Read**| **Create**| **Update**| **Delete**|**All**|**Description** |
-    |--------|-----------|------------|----------|--------|-------|
-    | Yes(specific)| No  |No |    No |No |Users can view the specific database engines when they create databases.</br> **Note**: This policy must at least be read all so the users can create databases.|
-        | Yes (all) |No   | No   | No    |No| Users can view all the database engines when they create databases.|
-        | No |No   | Yes (specific)  | No | No| Users can upgrade the database engines in the specific namespace.|
-        | Yes |No   | Yes (all)   | No| No| Users can upgrade the database engines in all the namespaces.|
-        | Yes |No   | Yes   | No| Yes| Users can view all the DB engines when they create databases and can upgrade all the database engines in all the namespaces|   
+    |**Resource**| **Read**| **Create**| **Update**|**Delete**|
+    |------------|---------|-----------|-----------|----------|
+    | Namespaces|:material-checkbox-marked-circle:| :x:  |:x: | :x:|
+    | Database engines</br> MySQL, MongoDB, PostreSQL|:material-checkbox-marked-circle:</br> **Note**: This policy must at least be read all so the users can create databases.| :x:  |:material-checkbox-marked-circle:| :x:|  
+    
+    
+  |
 
 
 
