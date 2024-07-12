@@ -80,14 +80,14 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
 
 Explanation:
 
-This role can do the following:
+The `admin-darkside` role has the following privileges:
 
-- The `admin-darkside` role can view only `the-dark-side` namespace
-- The `admin-darkside `role can only read and update the database engines in the `the-dark-side` namespace
-- The `admin-darkside` role can only read, create, update, and delete the database clusters in `the-dark-side` namespace
+- The `admin-darkside` role can only view `the-dark-side` namespace
+- The `admin-darkside' role can only view and update the database engines in the `the-dark-side` namespace
+- The `admin-darkside` role can only view, create, update, and delete the database clusters in `the-dark-side` namespace
 - The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace
-- The `admin-darkside` role can only read, create, update, and delete the backup storages in `the-dark-side` namespace
-- The `admin-darkside` role can only read, create, update, and delete the monitoring instances in `the-dark-side` namespace
+- The `admin-darkside` role can only view, create, update, and delete the backup storages in `the-dark-side` namespace
+- The `admin-darkside` role can only view, create, update, and delete the monitoring instances in `the-dark-side` namespace
 
 ## RBAC resources and privileges
 
@@ -106,7 +106,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
     | Namespaces|You can view namespaces| :x:  |:x: | :x:|
-    | Database engines</br> MySQL, MongoDB, PostreSQL|You can database engines when you create databases</br></br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify datbase engines| :x:|
+    | Database engines</br> MySQL, MongoDB, PostreSQL|You view can database engines when you create databases</br></br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify datbase engines| :x:|
     | Database clusters|You can view databases| You can create databases|You can modify databases| You can delete databases|
     | Backups storage and Monitoring endpoints|You can siew backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
     | Database data (credentials)|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
