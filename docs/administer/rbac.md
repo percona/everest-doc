@@ -89,11 +89,6 @@ This role can do the following:
 - The `admin-darkside` role can only read, create, update, and delete the backup storages in `the-dark-side` namespace
 - The `admin-darkside` role can only read, create, update, and delete the monitoring instances in `the-dark-side` namespace
 
-
-
-
-
-
 ## RBAC resources and privileges
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
