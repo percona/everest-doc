@@ -58,10 +58,10 @@ Below is a comprehensive table outlining the permissions granted for various **r
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
     | Namespaces|View namespaces| :x:  |:x: | :x:|
-    | Database engines</br> MySQL, MongoDB, PostreSQL|</br> View database engines when you crete databases</br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify datbase engines| :x:|
+    | Database engines</br> MySQL, MongoDB, PostreSQL|View database engines when you create databases</br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify datbase engines| :x:|
     | Database clusters|View databases| Create databases|Modify databases| Delete databases|
     | Backups storage and Monitoring endpoints|View backups and monitroing endpoints| Create backups and monitroing endpoints|Modify backups and monitroing endpoints| Delete backups and monitroing endpoints|
-    | Database data (credentials)|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> </br> * You cannot see the credentials and the connection string.</br> * You cannot create backups or restores from any DB, even if you can create DBs. </br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
+    | Database data (credentials)|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> </br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
 
     
     
