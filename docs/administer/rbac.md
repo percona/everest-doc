@@ -23,7 +23,7 @@ The policy definiiton in Percona Everest is:
 
 
 ```sh
-    p, adminrole:role, <resource>, <action>, <object>
+    p, adminrole:role, <resource>, <action>, <namespace>/<objectname>`
 ```
     
 Where:
