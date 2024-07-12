@@ -13,7 +13,6 @@ This default built-in role definition can be seen in [policy.csv](https://github
 
 
 
-
 ## Policy definition in RBAC
 
 RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
@@ -28,13 +27,67 @@ The policy definiiton in Percona Everest is:
     
 Where:
 
- adminrole:role: refers to the `username`
+ adminrole:role: refers to the subject. It can also be name of the user.
 
  resource: could be `namespaces, database engines,` etc.
 
  action: such `read, create, update, delete`
 
-namespace>/objectname: * refers to the object (it means **all**). Alternatively it can be of the format `<namespace>/<objectname>`.
+namespace>/objectname: `*` refers to the object (it means **all**). Alternatively it can be of the format `<namespace>/<objectname>`.
+
+
+### Super Admin policy
+
+Check out the policy for a `Super Admin` role:
+
+```sh
+{* Super Admin role definition *}
+    p, adminrole:role, namespaces, read, *
+    p, adminrole:role, database-engines, *, */*
+    p, adminrole:role, database-clusters, *, */*
+    p, adminrole:role, database-clusters-credentials, read, */*
+    p, adminrole:role, backup-storages, *, */*
+    p, adminrole:role, monitoring-instances, *, */*
+```
+
+### Readonly policy
+
+Check out the policy for a `readonly` role:
+
+```sh
+{* Read Only role definition *}
+    p, readonly:role, namespaces, read, *
+    p, readonly:role, database-engines, read, */*
+    p, readonly:role, database-clusters, read, */*
+    p, readonly:role, backup-storages, read, */*
+    p, readonly:role, monitoring-instances, read, */*
+```
+
+
+### Examples
+
+Let's set up an Admin Group role for just one namespace called **the-dark-side**.
+
+```sh
+ {* EXAMPLE: Admin Group role definition for only one namespace **the-dark-side**}
+ p, admin-darkside:role, namespaces, read, the-dark-side
+ p, admin-darkside:role, database-engines, *, the-dark-side/*
+ p, admin-darkside:role, database-clusters, *, the-dark-side/*
+ p, admin-darkside:role, database-clusters-credentials, read, the-dark-side/*
+ p, admin-darkside:role, backup-storages, *, the-dark-side/*
+ p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
+```
+
+Explanation:
+
+This role can do the following:
+
+- The `admin-darkside` role can view only `the-dark-side` namespace
+- The `admin-darkside `role can only read and update the database engines in the `the-dark-side` namespace
+- The `admin-darkside` role can only read, create, update, and delete the database clusters in `the-dark-side` namespace
+- The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace
+- The `admin-darkside` role can only read, create, update, and delete the backup storages in `the-dark-side` namespace
+- The `admin-darkside` role can only read, create, update, and delete the monitoring instances in `the-dark-side` namespace
 
 
 
@@ -42,7 +95,6 @@ namespace>/objectname: * refers to the object (it means **all**). Alternatively 
 
 
 ## RBAC resources and privileges
-
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
 
