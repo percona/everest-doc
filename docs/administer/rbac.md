@@ -36,6 +36,9 @@ Where:
 
  object: can be `*` or in the format `<namespace>/<objectname>`
 
+namespace>/<objectname: * refers to the object (it means **all**). Alternatively it can be of the format <namespace>/<objectname>.
+
+
 
 
 
