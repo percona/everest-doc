@@ -65,7 +65,6 @@ namespace>/resourcename: `*/*` is a wildcard indicating all namespaces and all r
 Check out the policy for a `Super Admin` role:
 
 ```sh
-{* Super Admin role definition *}
     p, adminrole:role, namespaces, read, *
     p, adminrole:role, database-engines, *, */*
     p, adminrole:role, database-clusters, *, */*
@@ -79,7 +78,6 @@ Check out the policy for a `Super Admin` role:
 Check out the policy for a `readonly` role:
 
 ```sh
-{* Read Only role definition *}
     p, readonly:role, namespaces, read, *
     p, readonly:role, database-engines, read, */*
     p, readonly:role, database-clusters, read, */*
@@ -154,7 +152,7 @@ Let's set up a dev group role definition with **full** access for just one datab
  p, team-darkside-banana:role, database-clusters-credentials, read, the-dark-side/banana
  p, team-darkside-banana:role, backup-storages, read, the-dark-side/*
  p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
- ```
+```
 
 ???+ Example "Interpretation"
 
