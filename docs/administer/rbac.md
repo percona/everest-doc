@@ -86,7 +86,7 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
     - **Database clusters**: `All` access (read, create, update, delete)
     - **Database clusters credentials**: `Read` acccess
     - **Backup storages**: `All` access (read, create, update, delete)
-    - **Monitoring instances**: `All` actions (read, create, update, delete)
+    - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
 
