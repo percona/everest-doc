@@ -152,7 +152,7 @@ Let's set up a dev group role definition with **full** access for just one datab
  p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
 ```
 
-??? Example "ILet's dive into decoding this"
+??? Example "Let's dive into decoding this"
 
     The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
