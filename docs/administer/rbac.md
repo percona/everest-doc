@@ -99,6 +99,12 @@ The `admin-darkside` role has the following privileges:
 |- The `admin-darkside` role can view, create, update, and delete the monitoring instances in only `the-dark-side` namespace.|
 
 
+The `admin-darkside` role has the following privileges:
+
+|**Resource**| **Read**| **Create**| **Update**|**Delete**|
+|------------|---------|-----------|-----------|----------|
+| Namespace:`the-dark-side` |This role can only view `the-dark-side` namespace| :x:  |:x: | :x:|
+| Database engines` |This role can view the datbase engines only in the`the-dark-side` namespace.| :x:  |This role can update the database engines only in the`the-dark-side` namespace| :x:|
 
 
 
