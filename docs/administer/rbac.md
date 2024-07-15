@@ -100,7 +100,7 @@ Let's set up an Admin group role definition for just one namespace called **the-
  p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
 ```
 
-???+ Example "Interpretation"
+??? Example "Let's dive into decoding this!"
 
     The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
@@ -127,7 +127,7 @@ Let's set up a dev group role definition with **read/update/create** access with
  p, team-darkside:role, monitoring-instances, read, the-dark-side/*
 ```
 
-???+ Example "Interpretation"
+??? Example "Let's dive into decoding this"
 
     The `team-darkside` role has the following privileges `only` within `the-dark-side` namespace:
 
@@ -154,7 +154,7 @@ Let's set up a dev group role definition with **full** access for just one datab
  p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
 ```
 
-???+ Example "Interpretation"
+??? Example "ILet's dive into decoding this"
 
     The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
@@ -179,7 +179,7 @@ Let's set up a dev group role definition with **read/update/create** access to a
  p, team-darkside:role, monitoring-instances, read, `*/*`
 
 
-???+ Example "Interpretation"
+??? Example "Let's dive into decoding this"
 
     The `team-darkside` role has the following privileges in **all** the namespaces:
 
