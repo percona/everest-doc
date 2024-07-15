@@ -94,6 +94,7 @@ Let's set up an Admin Group role definition for just one namespace called **the-
 
 Let's set up a dev group role definition with **read/update/create** access within the namespace called as `the-dark-side`:
 
+```sh
  p, team-darkside:role, namespaces, read, the-dark-side
  p, team-darkside:role, database-engines, read, the-dark-side/*
  p, team-darkside:role, database-clusters, read, the-dark-side/*
@@ -102,7 +103,20 @@ Let's set up a dev group role definition with **read/update/create** access with
  p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
  p, team-darkside:role, backup-storages, read, the-dark-side/*
  p, team-darkside:role, monitoring-instances, read, the-dark-side/*
+```
 
+???+ Example "Interpretation"
+
+    The `team-darkside` role has the following privileges `only` within `the-dark-side` namespace:
+
+    - **namespace**:  `Read` access to `the-dark-side`  .
+    - **Database engines**: `Read` access
+    - **Database clusters**: `Read` access
+    - **Database clusters**: `Update` acccess
+    - **Database clusters**: `Create` acccess
+    - **Database clusters credentials**: `Read` acccess
+    - **Backup storages**: `Read` access
+    - **Monitoring instances**: `Read` access
 
 #### Dev group role with full access to a single datbase
 
