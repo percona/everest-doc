@@ -127,7 +127,7 @@ Let's set up a dev group role definition with **read/update/create** access with
 
 ??? Example "Let's dive into decoding this"
 
-    The `team-darkside` role has the following privileges `only` within `the-dark-side` namespace:
+    The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
     - **namespace**:  `Read` access to `the-dark-side`  .
     - **Database engines**: `Read` access
@@ -166,7 +166,7 @@ Let's set up a dev group role definition with **full** access for just one datab
 
 #### Dev group role definition with read/update/create access to all the namespaces
 
-Let's set up a dev group role definition with **read/update/create** access to all the namespaces:
+Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
 ```sh
  p, team-darkside:role, namespaces, read, `*/*`
