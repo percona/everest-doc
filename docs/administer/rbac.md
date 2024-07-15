@@ -91,7 +91,7 @@ Check out the policy for a `readonly` role:
 
 #### Admin group role for a single namespace
 
-Let's set up an Admin Group role definition for just one namespace called **the-dark-side**.
+Let's set up an Admin group role definition for just one namespace called **the-dark-side**.
 
 ```sh
  p, admin-darkside:role, namespaces, read, the-dark-side
@@ -104,7 +104,7 @@ Let's set up an Admin Group role definition for just one namespace called **the-
 
 ???+ Example "Interpretation"
 
-    The `admin-darkside` role has the following privileges `only` within `the-dark-side` namespace:
+    The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
     - **namespace**:  `Read` access to the `the-dark-side`  .
     - **Database engines**: `Read` and `update` access
