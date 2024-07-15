@@ -78,7 +78,7 @@ Let's set up an Admin Group role definition for just one namespace called **the-
  p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
 ```
 
-???+ Example "Explanation"
+???+ Example "Interpretation"
 
     The `admin-darkside` role has the following privileges `only` within `the-dark-side` namespace:
 
@@ -93,27 +93,28 @@ Let's set up an Admin Group role definition for just one namespace called **the-
 #### Dev group role with all access for single namepsace
 
 
-Let's set up a dev group role definition with **all** access for just one namespace called `the-dark-side`:
+Let's set up a dev group role definition with **full** access for just one database called `banana` in `the-dark-side`:
 
 ```sh
- p, team-darkside:role, namespaces, read, the-dark-side
- p, team-darkside:role, database-engines, read, the-dark-side/*
- p, team-darkside:role, database-clusters, *, the-dark-side/*
- p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
- p, team-darkside:role, backup-storages, read, the-dark-side/*
- p, team-darkside:role, monitoring-instances, read, the-dark-side/*
+ p, team-darkside-banana:role, namespaces, read, the-dark-side
+ p, team-darkside-banana:role, database-engines, read, the-dark-side/*
+ p, team-darkside-banana:role, database-clusters, read, the-dark-side/banana
+ p, team-darkside-banana:role, database-clusters, update, the-dark-side/banana
+ p, team-darkside-banana:role, database-clusters-credentials, read, the-dark-side/banana
+ p, team-darkside-banana:role, backup-storages, read, the-dark-side/*
+ p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
  ```
 
-???+ Example "Explanation"
+???+ Example "Interpretation"
 
-    The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+    The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
     - **namespace**:  `Read` access to the `the-dark-side`  .
-    - **Database engines**: `Read` access
-    - **Database clusters**: `All` access (read, create, update, delete)
-    - **Database clusters credentials**: `Read` acccess
-    - **Backup storages**: `All` access (read, create, update, delete)
-    - **Monitoring instances**: `All` access (read, create, update, delete)
+    - **Database engines**: `Read` access to all the database engines
+    - **Database clusters**:  Read and update access for **only** the `banana` database
+    - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
+    - **Backup storages**: Read access to all the backup storages
+    - **Monitoring instances**: Read access to all the monitoring instances
 
 ## RBAC resources and privileges
 
