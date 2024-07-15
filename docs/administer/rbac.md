@@ -89,6 +89,15 @@ The `admin-darkside` role has the following privileges:
 - The `admin-darkside` role can view, create, update, and delete the monitoring instances in only `the-dark-side` namespace
 
 
+|** Namespace**</br>`the-dark-side`|
+|----------------------------|
+| The `admin-darkside` role can only view `the-dark-side` namespace.|
+| The `admin-darkside' role can view and update the database engines in only `the-dark-side` namespace|
+|The `admin-darkside` role can view, create, update, and delete the database clusters in only `the-dark-side` namespace.|
+
+
+
+
 
 ## RBAC resources and privileges
 
