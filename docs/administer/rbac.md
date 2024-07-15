@@ -15,9 +15,7 @@ This default built-in role definition can be seen in [policy.csv](https://github
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
 
-    ??? info "Permissions for resources"
-
-    </br>
+??? info "Permissions for resources"
 
 
     !!! info "Important"
