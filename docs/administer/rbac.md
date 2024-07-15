@@ -79,14 +79,14 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
 
 ???+ Example "Explanation"
 
-    The `admin-darkside` role has the following privileges:
+    The `admin-darkside` role has the following privileges `only` within `the-dark-side` namespace:
 
-    - The `admin-darkside` role can only view `the-dark-side` namespace.
-    - The `admin-darkside' role can view and update the database engines only within `the-dark-side` namespace.
-    - The `admin-darkside` role can view, create, update, and delete the database clusters only within `the-dark-side` namespace
-    - The `admin-darkside` role can view the database clusters only within `the-dark-side` namespace.
-    - The `admin-darkside` role can view, create, update, and delete the backup storages only within `the-dark-side` namespace.
-    - The `admin-darkside` role can view, create, update, and delete the monitoring instances only within `the-dark-side` namespace.
+    - **namespace**:  `Read` access to the `the-dark-side`  .
+    - **Database engines**: `Read` and `update` access
+    - **Database clusters**: `All` access (read, create, update, delete)
+    - **Database clusters credentials**: `Read` acccess
+    - **Backup storages**: `All` access (read, create, update, delete)
+    - **Monitoring instances**: `All` actions (read, create, update, delete)
 
 
 
