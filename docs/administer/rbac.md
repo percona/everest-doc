@@ -17,6 +17,8 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
 ??? info "Permissions for resources"
 
+</br>
+
 
     !!! info "Important"
         If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions only on those resources or only within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
@@ -28,7 +30,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
     | Namespaces|You can view namespaces| :x:  |:x: | :x:|
-    | Database engines</br> MySQL, MongoDB, PostreSQL|You view can database engines when you create databases</br></br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify datbase engines| :x:|
+    | Database engines</br> MySQL, MongoDB, PostreSQL|You view can database engines when you create databases</br></br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify database engines| :x:|
     | Database clusters|You can view databases| You can create databases|You can modify databases| You can delete databases|
     | Backups storage and Monitoring endpoints|You can siew backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
     | Database data (credentials)|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
