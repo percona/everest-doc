@@ -104,7 +104,11 @@ The `admin-darkside` role has the following privileges:
 |**Resource**| **Read**| **Create**| **Update**|**Delete**|
 |------------|---------|-----------|-----------|----------|
 | Namespace:`the-dark-side`|This role can only view `the-dark-side` namespace| :x:|:x:| :x:|
-|Database engines|This role can view the datbase engines only in the`the-dark-side` namespace.|:x:|This role can update the database engines only in the`the-dark-side`namespace| :x:|
+|Database engines|This role can view the database engines only in the`the-dark-side` namespace.|:x:|This role can update the database engines only in the`the-dark-side`namespace| :x:|
+|Database clusters|This role can view the database engines only in the`the-dark-side` namespace.|This role can create the database engines only in the`the-dark-side`namespace.|This role can update the database engines only in the`the-dark-side`namespace| This role can delete the database engines only in the`the-dark-side`namespace|
+|Database clusters credentials|This role can view the database cluster credentials only in the`the-dark-side` namespace.|:x:|:x:| :x:|
+|Backup storages|This role can view the backup storages only in the`the-dark-side` namespace.|This role can create the backup storages only in the`the-dark-side`namespace.|This role can update the backup storages only in the`the-dark-side`namespace| This role can delete the backup storages only in the`the-dark-side`namespace|
+|Monitoring endpoints|This role can view the monitoring endpoints only in the`the-dark-side` namespace.|This role can create the monitoring endpoints only in the`the-dark-side`namespace.|This role can update the monitoring endpoints only in the`the-dark-side`namespace| This role can delete the monitoring endpoints only in the`the-dark-side`namespace|
 
 
 
