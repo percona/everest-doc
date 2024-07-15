@@ -77,16 +77,16 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
  p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
 ```
 
-!!! :books: "Explanation"
+    !!! Example "Explanation"
 
-The `admin-darkside` role has the following privileges:
+    The `admin-darkside` role has the following privileges:
 
-    - The `admin-darkside` role can only view `the-dark-side` namespace.
-    - The `admin-darkside' role can view and update the database engines in only `the-dark-side` namespace
-    - The `admin-darkside` role can view, create, update, and delete the database clusters in only `the-dark-side` namespace
-    - The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace.
-    - The `admin-darkside` role can view, create, update, and delete the backup storages in only `the-dark-side` namespace
-    - The `admin-darkside` role can view, create, update, and delete the monitoring instances in only `the-dark-side` namespace
+        - The `admin-darkside` role can only view `the-dark-side` namespace.
+        - The `admin-darkside' role can view and update the database engines in only `the-dark-side` namespace
+        - The `admin-darkside` role can view, create, update, and delete the database clusters in only `the-dark-side` namespace
+        - The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace.
+        - The `admin-darkside` role can view, create, update, and delete the backup storages in only `the-dark-side` namespace
+        - The `admin-darkside` role can view, create, update, and delete the monitoring instances in only `the-dark-side` namespace
 
 
 
