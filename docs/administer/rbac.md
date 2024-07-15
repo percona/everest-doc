@@ -87,7 +87,7 @@ Check out the policy for a `readonly` role:
 
 #### Admin group role for a single namespace
 
-Let's set up an Admin group role definition for just one namespace called **the-dark-side**.
+Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
 ```sh
  p, admin-darkside:role, namespaces, read, the-dark-side
@@ -140,7 +140,7 @@ Let's set up a dev group role definition with **read/update/create** access with
 
 #### Dev group role with full access to a single datbase
 
-Let's set up a dev group role definition with **full** access for just one database called `banana` within `the-dark-side`:
+Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
 ```sh
  p, team-darkside-banana:role, namespaces, read, the-dark-side
