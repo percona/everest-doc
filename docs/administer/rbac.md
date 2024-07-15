@@ -168,6 +168,7 @@ Let's set up a dev group role definition with **full** access for just one datab
 
 Let's set up a dev group role definition with **read/update/create** access to all the namespaces:
 
+```sh
  p, team-darkside:role, namespaces, read, `*/*`
  p, team-darkside:role, database-engines, read, `*/*`
  p, team-darkside:role, database-clusters, read, `*/*`
@@ -175,7 +176,7 @@ Let's set up a dev group role definition with **read/update/create** access to a
  p, team-darkside:role, database-clusters-credentials, read, `*/*`
  p, team-darkside:role, backup-storages, read, `*/*`
  p, team-darkside:role, monitoring-instances, read, `*/*`
-
+```
 
 ??? Example "Let's dive into decoding this"
 
