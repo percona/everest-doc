@@ -77,7 +77,7 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
  p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
 ```
 
-??? Example "Explanation"
+???+ Example "Explanation"
 
     The `admin-darkside` role has the following privileges:
 
