@@ -90,10 +90,10 @@ Let's set up an Admin Group role definition for just one namespace called **the-
     - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-#### Dev group role with all access for single namepsace
+#### Dev group role with full access to a single datbase
 
 
-Let's set up a dev group role definition with **full** access for just one database called `banana` in `the-dark-side`:
+Let's set up a dev group role definition with **full** access for just one database called `banana` within `the-dark-side`:
 
 ```sh
  p, team-darkside-banana:role, namespaces, read, the-dark-side
