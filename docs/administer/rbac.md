@@ -63,7 +63,6 @@ Check out the policy for a `readonly` role:
     p, readonly:role, monitoring-instances, read, */*
 ```
 
-
 ### Examples
 
 Let's set up an Admin Group role for just one namespace called **the-dark-side**.
@@ -82,12 +81,14 @@ Explanation:
 
 The `admin-darkside` role has the following privileges:
 
-- The `admin-darkside` role can only view `the-dark-side` namespace
-- The `admin-darkside' role can only view and update the database engines in the `the-dark-side` namespace
-- The `admin-darkside` role can only view, create, update, and delete the database clusters in `the-dark-side` namespace
-- The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace
-- The `admin-darkside` role can only view, create, update, and delete the backup storages in `the-dark-side` namespace
-- The `admin-darkside` role can only view, create, update, and delete the monitoring instances in `the-dark-side` namespace
+- The `admin-darkside` role can only view `the-dark-side` namespace.
+- The `admin-darkside' role can view and update the database engines in only `the-dark-side` namespace
+- The `admin-darkside` role can view, create, update, and delete the database clusters in only `the-dark-side` namespace
+- The `admin-darkside` role can view the database clusters only in `the-dark-side` namespace.
+- The `admin-darkside` role can view, create, update, and delete the backup storages in only `the-dark-side` namespace
+- The `admin-darkside` role can view, create, update, and delete the monitoring instances in only `the-dark-side` namespace
+
+
 
 ## RBAC resources and privileges
 
