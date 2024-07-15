@@ -65,10 +65,11 @@ Check out the policy for a `readonly` role:
 
 ### Examples
 
-Let's set up an Admin Group role for just one namespace called **the-dark-side**.
+#### Admin group role for a single namespace
+
+Let's set up an Admin Group role definition for just one namespace called **the-dark-side**.
 
 ```sh
- {* EXAMPLE: Admin Group role definition for only one namespace **the-dark-side**}
  p, admin-darkside:role, namespaces, read, the-dark-side
  p, admin-darkside:role, database-engines, *, the-dark-side/*
  p, admin-darkside:role, database-clusters, *, the-dark-side/*
@@ -89,8 +90,30 @@ Let's set up an Admin Group role for just one namespace called **the-dark-side**
     - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
+#### Dev group role with all access for single namepsace
 
 
+Let's set up a dev group role definition with **all** access for just one namespace called `the-dark-side`:
+
+```sh
+ p, team-darkside:role, namespaces, read, the-dark-side
+ p, team-darkside:role, database-engines, read, the-dark-side/*
+ p, team-darkside:role, database-clusters, *, the-dark-side/*
+ p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
+ p, team-darkside:role, backup-storages, read, the-dark-side/*
+ p, team-darkside:role, monitoring-instances, read, the-dark-side/*
+ ```
+
+???+ Example "Explanation"
+
+    The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+
+    - **namespace**:  `Read` access to the `the-dark-side`  .
+    - **Database engines**: `Read` access
+    - **Database clusters**: `All` access (read, create, update, delete)
+    - **Database clusters credentials**: `Read` acccess
+    - **Backup storages**: `All` access (read, create, update, delete)
+    - **Monitoring instances**: `All` access (read, create, update, delete)
 
 ## RBAC resources and privileges
 
