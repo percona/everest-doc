@@ -143,6 +143,20 @@ Let's set up a dev group role definition with **full** access for just one datab
     - **Backup storages**: Read access to all the backup storages
     - **Monitoring instances**: Read access to all the monitoring instances
 
+
+#### Dev group role definition with read/update/create access to all the namespaces
+
+Let's set up a dev group role definition with **read/update/create** access to all the namespaces:
+
+ p, team-darkside:role, namespaces, read, `*/*`
+ p, team-darkside:role, database-engines, read, `*/*`
+ p, team-darkside:role, database-clusters, read, `*/*`
+ p, team-darkside:role, database-clusters, update, `*/*`
+ p, team-darkside:role, database-clusters-credentials, read, `*/*`
+ p, team-darkside:role, backup-storages, read, `*/*`
+ p, team-darkside:role, monitoring-instances, read, `*/*`
+
+
 ## RBAC resources and privileges
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
