@@ -219,7 +219,7 @@ data:
     p, adminrole:role, backup-storages, *, */*
     p, adminrole:role, monitoring-instances, *, */*
     g, admin, adminrole:role
-    **g, <newuser>, adminrole:role**
+    g, <newuser>, adminrole:role
 ```
 
 
