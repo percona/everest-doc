@@ -54,7 +54,7 @@ Check out the policy for a **Admin** role:
     p, adminrole:role, database-clusters, *, */*
     p, adminrole:role, database-cluster-backups, *, */*
     p, adminrole:role, database-cluster-restores, *, */*
-    p, adminrole:role, database-clusters-credentials, read, */*
+    p, adminrole:role, database-cluster-credentials, read, */*
     p, adminrole:role, backup-storages, *, */*
     p, adminrole:role, monitoring-instances, *, */*
 ```
