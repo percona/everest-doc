@@ -84,7 +84,7 @@ Let's set up an Admin group role definition for just one namespace called `the-d
  p, admin-darkside:role, namespaces, read, the-dark-side
  p, admin-darkside:role, database-engines, *, the-dark-side/*
  p, admin-darkside:role, database-clusters, *, the-dark-side/*
- p, admin-darkside:role, database-clusters-credentials, read, the-dark-side/*
+ p, admin-darkside:role, database-cluster-credentials, read, the-dark-side/*
  p, admin-darkside:role, backup-storages, *, the-dark-side/*
  p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
 ```
