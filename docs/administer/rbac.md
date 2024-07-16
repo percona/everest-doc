@@ -192,8 +192,6 @@ g, username, rolename
 A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must edit your RBAC configuration stored in the `everest-rbac` `ConfigMap` in the `everest-system` namespace:
 
 
-To change the `configmap`, execute the following command:
-
 ```sh
 kubectl edit configmap-rbac -n everest-system
 ```
