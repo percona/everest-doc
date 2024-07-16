@@ -231,8 +231,6 @@ data:
 
 For example, let's assign the role `team-darkside:role` to a new user named John:
 
-
-```sh
 ```sh
  p, team-darkside:role, namespaces, read, `*/*`
  p, team-darkside:role, database-engines, read, `*/*`
