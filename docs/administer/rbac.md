@@ -181,7 +181,7 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
     - **Monitoring instances**: `Read` access to all the monitoring instances
 
 
-## Assign users to a group and grant them permissions
+## Assigning roles to users
 
 In order for roles to take effect, they need to be assigned to users. The syntax for this is as follows:
 
