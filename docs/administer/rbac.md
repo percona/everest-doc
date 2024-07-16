@@ -43,7 +43,7 @@ The policy definiiton in Percona Everest is:
 
 
 ```sh
-    p, adminrole:role, <resource>, <action>, <namespace>/<resourcename>
+p, adminrole:role, <resource>, <action>, <namespace>/<resourcename>
 ```
     
 Where:
@@ -55,7 +55,7 @@ Where:
  **action**: such read, create, update, delete
 
 **namespace>/resourcename**: `*/*` is a wildcard indicating all namespaces and all resources.
-. Alternatively it can be of the format <namespace>/<resourcename>.
+. Alternatively it can be of the format *<namespace>/<resourcename>*.
 
 
 ### Super Admin policy
