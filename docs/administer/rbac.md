@@ -183,7 +183,7 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
 
 ## Assign users to a group and grant them permissions
 
-In RBAC policy each group can have multiple users and roles associated with it. You can assign a user to a group as follows. Add the following in `ConfigMap`:
+In order for roles to take effect, they need to be assigned to users. The syntax for this is as follows:
 
 ```sh
 g, username, rolename
