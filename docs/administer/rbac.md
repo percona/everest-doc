@@ -125,7 +125,7 @@ Let's set up a dev group role definition with **read/update/create** access with
  p, team-darkside:role, monitoring-instances, read, the-dark-side/*
 ```
 
-??? Example "Let's dive into decoding this"
+??? Example "Let's dive into decoding this!"
 
     The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
@@ -152,7 +152,7 @@ Let's set up a dev group role with **full** access for just one database called 
  p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
 ```
 
-??? Example "Let's dive into decoding this"
+??? Example "Let's dive into decoding this!"
 
     The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
@@ -178,7 +178,7 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
  p, team-darkside:role, monitoring-instances, read, `*/*`
 ```
 
-??? Example "Let's dive into decoding this"
+??? Example "Let's dive into decoding this!"
 
     The `team-darkside` role has the following privileges in **all** the namespaces:
 
