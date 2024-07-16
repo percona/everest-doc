@@ -189,6 +189,48 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
     - **Backup storages**: `Read` access to all the backup storages
     - **Monitoring instances**: `Read` access to all the monitoring instances
 
+## Assign permissions to a new user
+
+A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must explicitly change your RBAC configuration file (`configmap`).
+
+
+To change the `configmap`, execute the following command:
+
+```sh
+kubectl edit configmap-rbac -n everest-system
+```
+
+A text editor will open, and you can edit the `ConfigMap` as follows. You just have to add the new user and assign it the admin role.
+
+
+```sh
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: everest-rbac
+data:
+  policy.csv: |
+    p, adminrole:role, namespaces, read, *
+    p, adminrole:role, database-engines, *, */*
+    p, adminrole:role, database-clusters, *, */*
+    p, adminrole:role, database-cluster-backups, *, */*
+    p, adminrole:role, database-cluster-restores, *, */*
+    p, adminrole:role, database-cluster-credentials, read, */*
+    p, adminrole:role, backup-storages, *, */*
+    p, adminrole:role, monitoring-instances, *, */*
+    g, admin, adminrole:role
+    **g, <newuser>, adminrole:role**
+```
+
+
+
+
+
+
+
+
+
+
 
 
     

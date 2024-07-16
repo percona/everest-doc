@@ -94,8 +94,9 @@ You will be prompted to enter the password for this user.
     ```
 
 !!! info "Important"
-    For Percona Everest version 1.0.0, new users have full access to the system. However, once RBAC support is in place, an admin user will be able to manage permissions for users, granting them fine-grained control over database resources.
+    A new user in Percona Everest will initially have **no** privileges. However, admin user can manage users' permissions and grant them fine-grained control over database resources.
 
+For information on granting permissions to the new users, see the []() section.
 
 ### List the users
 
