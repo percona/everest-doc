@@ -9,7 +9,7 @@ In Percona Everest, the only predefined default role is **admin**. The **admin**
 
 - `role:admin` - unrestricted access to all resources
 
-This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L91)
+This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L91).
 
 ## RBAC resources and privileges
 
