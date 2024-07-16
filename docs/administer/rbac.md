@@ -138,7 +138,7 @@ Let's set up a dev group role definition with **read/update/create** access with
     - **Backup storages**: `Read` access
     - **Monitoring instances**: `Read` access
 
-#### Dev group role with full access to a single datbase
+#### Dev group role with full access to a single database
 
 Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
