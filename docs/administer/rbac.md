@@ -57,7 +57,6 @@ Check out the policy for a **Admin** role:
     p, adminrole:role, database-clusters-credentials, read, */*
     p, adminrole:role, backup-storages, *, */*
     p, adminrole:role, monitoring-instances, *, */*
-    g, admin, adminrole:role
 ```
 
 ### Read only policy
@@ -68,6 +67,9 @@ Check out the policy for a **readonly** role:
     p, readonly:role, namespaces, read, *
     p, readonly:role, database-engines, read, */*
     p, readonly:role, database-clusters, read, */*
+    p, adminrole:role, database-cluster-backups, *, */*
+    p, adminrole:role, database-cluster-restores, *, */*
+    p, adminrole:role, database-cluster-credentials, read, */*
     p, readonly:role, backup-storages, read, */*
     p, readonly:role, monitoring-instances, read, */*
 ```
