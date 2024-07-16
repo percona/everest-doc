@@ -43,19 +43,7 @@ The policy definiton in Percona Everest is:
 
 
 ```sh
-p, adminrole:role, <resource>, <action>, <namespace>/<resourcename>
-```
-    
-Where:
-
- **adminrole:role**: refers to the subject. It can also be name of the user.
-
- **resource**: could be namespaces, database engines, etc.
-
- **action**: such read, create, update, delete
-
-**namespace/resourcename**: `*/*` is a wildcard indicating all namespaces and all resources.
-. Alternatively it can be of the format `<namespace>/<resourcename>.`
+p, <subject>, <resource-type>, <action>, <resource-name>
 
 
 ### Super Admin policy
