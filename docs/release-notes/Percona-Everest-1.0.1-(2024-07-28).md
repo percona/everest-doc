@@ -10,6 +10,5 @@ Percona Everest is an open source cloud native database platform that helps prov
 Version 1.1.0 introduces the following changes:
 
 
-
 ## Known limitations
 
