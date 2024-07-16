@@ -189,7 +189,7 @@ In order for roles to take effect, they need to be assigned to users. The syntax
 g, username, rolename
 ```
 
-A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must explicitly change your RBAC configuration file (`configmap`).
+A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must edit your RBAC configuration stored in the `everest-rbac` `ConfigMap` in the `everest-system` namespace:
 
 
 To change the `configmap`, execute the following command:
