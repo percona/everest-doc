@@ -96,7 +96,7 @@ You will be prompted to enter the password for this user.
 !!! info "Important"
     A new user in Percona Everest will initially have **no** privileges. However, admin user can manage users' permissions and grant them fine-grained control over database resources.
 
-For information on granting permissions to the new users, see the []() section.
+For detailed information on granting permissions to new users, see [assign permissions to a new user](rbac.md#assign-permissions-to-a-new-user) section.
 
 ### List the users
 

@@ -189,7 +189,14 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
     - **Backup storages**: `Read` access to all the backup storages
     - **Monitoring instances**: `Read` access to all the monitoring instances
 
-## Assign permissions to a new user
+
+## Assign users to a group and grant permissions to users
+
+In RBAC policy each group can have multiple users and roles associated with it. You can assign a user to a group as follows. Add the following in `ConfigMap`:
+
+```sh
+g, username, rolename
+```
 
 A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must explicitly change your RBAC configuration file (`configmap`).
 
@@ -200,7 +207,7 @@ To change the `configmap`, execute the following command:
 kubectl edit configmap-rbac -n everest-system
 ```
 
-A text editor will open, and you can edit the `ConfigMap` as follows. You just have to add the new user and assign it the admin role.
+A text editor will open, and you can edit the `ConfigMap` as follows. You just have to add the new user and assign it the desired role.
 
 
 ```sh
