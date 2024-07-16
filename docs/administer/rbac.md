@@ -190,7 +190,7 @@ Let's set up a dev group role with **read/update/create** access to **all** the 
     - **Monitoring instances**: `Read` access to all the monitoring instances
 
 
-## Assign users to a group and grant permissions to users
+## Assign users to a group and grant them permissions
 
 In RBAC policy each group can have multiple users and roles associated with it. You can assign a user to a group as follows. Add the following in `ConfigMap`:
 
