@@ -42,7 +42,7 @@ The policy definiton in Percona Everest is:
 
 ```sh
 p, <subject>, <resource-type>, <action>, <resource-name>
-
+```
 
 ### Admin policy
 
