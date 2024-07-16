@@ -58,17 +58,20 @@ Where:
 . Alternatively it can be of the format `<namespace>/<resourcename>.`
 
 
-### Super Admin policy
+### Admin policy
 
-Check out the policy for a **Super Admin** role:
+Check out the policy for a **Admin** role:
 
 ```sh
     p, adminrole:role, namespaces, read, *
     p, adminrole:role, database-engines, *, */*
     p, adminrole:role, database-clusters, *, */*
+    p, adminrole:role, database-cluster-backups, *, */*
+    p, adminrole:role, database-cluster-restores, *, */*
     p, adminrole:role, database-clusters-credentials, read, */*
     p, adminrole:role, backup-storages, *, */*
     p, adminrole:role, monitoring-instances, *, */*
+    g, admin, adminrole:role
 ```
 
 ### Read only policy
