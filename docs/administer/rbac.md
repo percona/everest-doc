@@ -39,7 +39,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
 
 
-The policy definiiton in Percona Everest is:
+The policy definiton in Percona Everest is:
 
 
 ```sh
@@ -54,8 +54,8 @@ Where:
 
  **action**: such read, create, update, delete
 
-**namespace>/resourcename**: `*/*` is a wildcard indicating all namespaces and all resources.
-. Alternatively it can be of the format *<namespace>/<resourcename>*.
+**namespace/resourcename**: `*/*` is a wildcard indicating all namespaces and all resources.
+. Alternatively it can be of the format `<namespace>/<resourcename>.`
 
 
 ### Super Admin policy
