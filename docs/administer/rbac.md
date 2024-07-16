@@ -50,17 +50,17 @@ Where:
 
  **adminrole:role**: refers to the subject. It can also be name of the user.
 
- **resource**: could be `namespaces, database engines,` etc.
+ **resource**: could be namespaces, database engines, etc.
 
- **action**: such `read, create, update, delete`
+ **action**: such read, create, update, delete
 
 **namespace>/resourcename**: `*/*` is a wildcard indicating all namespaces and all resources.
-. Alternatively it can be of the format `<namespace>/<resourcename>`.
+. Alternatively it can be of the format <namespace>/<resourcename>.
 
 
 ### Super Admin policy
 
-Check out the policy for a `Super Admin` role:
+Check out the policy for a **Super Admin** role:
 
 ```sh
     p, adminrole:role, namespaces, read, *
@@ -73,7 +73,7 @@ Check out the policy for a `Super Admin` role:
 
 ### Read only policy
 
-Check out the policy for a `readonly` role:
+Check out the policy for a **readonly** role:
 
 ```sh
     p, readonly:role, namespaces, read, *
