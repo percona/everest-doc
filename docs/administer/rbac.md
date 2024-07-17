@@ -50,7 +50,7 @@ Where:
 
 **resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
-**action**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or '*'
+**action**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
 
 **resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*` or `my-namespace/*`
 
