@@ -44,6 +44,16 @@ The policy definiton in Percona Everest is:
 p, <subject>, <resource-type>, <action>, <resource-name>
 ```
 
+Where:
+
+**subject**: refers to the name of the role or user. For example, `adminrole:role` or `admin`
+
+**resource-type**: refers to the type of Everest resource. For example, namespaces, database-clusters, database-engines, etc.
+
+**action**: refers to the action the subject can perform. For example, read, update, delete, create, or '*'
+
+**resource-name**: refers to a specific instance of the given resource-type. This argument should be prefixed with the namespace in which the resource is present. For example `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as '*', '*/*' or 'my-namespace/*'
+
 ### Admin policy
 
 Check out the policy for a **Admin** role:
