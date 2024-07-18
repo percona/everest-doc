@@ -105,7 +105,7 @@ Check out the policy for a **readonly** role:
     p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
     ```
 
-    ??? Example "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
         The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
@@ -132,7 +132,7 @@ Check out the policy for a **readonly** role:
     p, team-darkside:role, monitoring-instances, read, the-dark-side/*
     ```
 
-    ??? Example "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
         The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
@@ -159,7 +159,7 @@ Check out the policy for a **readonly** role:
     p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
     ```
 
-    ??? Example "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
         The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
@@ -185,7 +185,7 @@ Check out the policy for a **readonly** role:
     p, team-darkside:role, monitoring-instances, read, `*/*`
     ```
 
-    ??? Example "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
         The `team-darkside` role has the following privileges in **all** the namespaces:
 
