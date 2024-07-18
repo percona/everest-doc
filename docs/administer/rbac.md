@@ -16,7 +16,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 ??? info "Permissions for resources"
 
 
-    !!! info "Important"
+    !!! warning "Important"
         If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions only on those resources or only within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
 
     </br> </br>
@@ -92,7 +92,7 @@ Check out the policy for a **readonly** role:
     {.power-number}
 
 
-    1. Admin group role for a single namespace
+    1. **Admin group role for a single namespace**
 
         Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
@@ -117,7 +117,7 @@ Check out the policy for a **readonly** role:
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-    2. Dev group role with read/update/create access to single namepsace
+    2. **Dev group role with read/update/create access to single namepsace**
 
         Let's set up a dev group role definition with **read/update/create** access within the namespace called as `the-dark-side`:
 
@@ -145,7 +145,7 @@ Check out the policy for a **readonly** role:
             - **Backup storages**: `Read` access
             - **Monitoring instances**: `Read` access
 
-    3. Dev group role with full access to a single database
+    3. **Dev group role with full access to a single database**
 
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
@@ -171,7 +171,7 @@ Check out the policy for a **readonly** role:
             - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    4. Dev group role definition with read/update/create access to all the namespaces
+    4. **Dev group role definition with read/update/create access to all the namespaces**
 
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
