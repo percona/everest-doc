@@ -94,27 +94,27 @@ Check out the policy for a **readonly** role:
 
     1. Admin group role for a single namespace
 
-    Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
+        Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
-    ```sh
-    p, admin-darkside:role, namespaces, read, the-dark-side
-    p, admin-darkside:role, database-engines, *, the-dark-side/*
-    p, admin-darkside:role, database-clusters, *, the-dark-side/*
-    p, admin-darkside:role, database-cluster-credentials, read, the-dark-side/*
-    p, admin-darkside:role, backup-storages, *, the-dark-side/*
-    p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
-    ```
+        ```sh
+        p, admin-darkside:role, namespaces, read, the-dark-side
+        p, admin-darkside:role, database-engines, *, the-dark-side/*
+        p, admin-darkside:role, database-clusters, *, the-dark-side/*
+        p, admin-darkside:role, database-cluster-credentials, read, the-dark-side/*
+        p, admin-darkside:role, backup-storages, *, the-dark-side/*
+        p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
-        - **namespace**:  `Read` access to the `the-dark-side`  .
-        - **Database engines**: `Read` and `update` access
-        - **Database clusters**: `All` access (read, create, update, delete)
-        - **Database clusters credentials**: `Read` acccess
-        - **Backup storages**: `All` access (read, create, update, delete)
-        - **Monitoring instances**: `All` access (read, create, update, delete)
+            - **namespace**:  `Read` access to the `the-dark-side`  .
+            - **Database engines**: `Read` and `update` access
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `All` access (read, create, update, delete)
+            - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
     2. Dev group role with read/update/create access to single namepsace
