@@ -119,82 +119,82 @@ Check out the policy for a **readonly** role:
 
     2. Dev group role with read/update/create access to single namepsace
 
-    Let's set up a dev group role definition with **read/update/create** access within the namespace called as `the-dark-side`:
+        Let's set up a dev group role definition with **read/update/create** access within the namespace called as `the-dark-side`:
 
-    ```sh
-    p, team-darkside:role, namespaces, read, the-dark-side
-    p, team-darkside:role, database-engines, read, the-dark-side/*
-    p, team-darkside:role, database-clusters, read, the-dark-side/*
-    p, team-darkside:role, database-clusters, update, the-dark-side/*
-    p, team-darkside:role, database-clusters, create, the-dark-side/*
-    p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
-    p, team-darkside:role, backup-storages, read, the-dark-side/*
-    p, team-darkside:role, monitoring-instances, read, the-dark-side/*
-    ```
+        ```sh
+        p, team-darkside:role, namespaces, read, the-dark-side
+        p, team-darkside:role, database-engines, read, the-dark-side/*
+        p, team-darkside:role, database-clusters, read, the-dark-side/*
+        p, team-darkside:role, database-clusters, update, the-dark-side/*
+        p, team-darkside:role, database-clusters, create, the-dark-side/*
+        p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
+        p, team-darkside:role, backup-storages, read, the-dark-side/*
+        p, team-darkside:role, monitoring-instances, read, the-dark-side/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+            The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
-        - **namespace**:  `Read` access to `the-dark-side`  .
-        - **Database engines**: `Read` access
-        - **Database clusters**: `Read` access
-        - **Database clusters**: `Update` acccess
-        - **Database clusters**: `Create` acccess
-        - **Database clusters credentials**: `Read` acccess
-        - **Backup storages**: `Read` access
-        - **Monitoring instances**: `Read` access
+            - **namespace**:  `Read` access to `the-dark-side`  .
+            - **Database engines**: `Read` access
+            - **Database clusters**: `Read` access
+            - **Database clusters**: `Update` acccess
+            - **Database clusters**: `Create` acccess
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
 
     3. Dev group role with full access to a single database
 
-    Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
+        Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
-    ```sh
-    p, team-darkside-banana:role, namespaces, read, the-dark-side
-    p, team-darkside-banana:role, database-engines, read, the-dark-side/*
-    p, team-darkside-banana:role, database-clusters, read, the-dark-side/banana
-    p, team-darkside-banana:role, database-clusters, update, the-dark-side/banana
-    p, team-darkside-banana:role, database-clusters-credentials, read, the-dark-side/banana
-    p, team-darkside-banana:role, backup-storages, read, the-dark-side/*
-    p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
-    ```
+        ```sh
+        p, team-darkside-banana:role, namespaces, read, the-dark-side
+        p, team-darkside-banana:role, database-engines, read, the-dark-side/*
+        p, team-darkside-banana:role, database-clusters, read, the-dark-side/banana
+        p, team-darkside-banana:role, database-clusters, update, the-dark-side/banana
+        p, team-darkside-banana:role, database-clusters-credentials, read, the-dark-side/banana
+        p, team-darkside-banana:role, backup-storages, read, the-dark-side/*
+        p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
+            The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
-        - **namespace**:  `Read` access to the `the-dark-side`  .
-        - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**:  Read and update access for **only** the `banana` database
-        - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
-        - **Backup storages**: Read access to all the backup storages
-        - **Monitoring instances**: Read access to all the monitoring instances
+            - **namespace**:  `Read` access to the `the-dark-side`  .
+            - **Database engines**: `Read` access to all the database engines
+            - **Database clusters**:  Read and update access for **only** the `banana` database
+            - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
+            - **Backup storages**: Read access to all the backup storages
+            - **Monitoring instances**: Read access to all the monitoring instances
 
 
     4. Dev group role definition with read/update/create access to all the namespaces
 
-    Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
+        Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
-    ```sh
-    p, team-darkside:role, namespaces, read, `*/*`
-    p, team-darkside:role, database-engines, read, `*/*`
-    p, team-darkside:role, database-clusters, read, `*/*`
-    p, team-darkside:role, database-clusters, update, `*/*`
-    p, team-darkside:role, database-clusters-credentials, read, `*/*`
-    p, team-darkside:role, backup-storages, read, `*/*`
-    p, team-darkside:role, monitoring-instances, read, `*/*`
-    ```
+        ```sh
+        p, team-darkside:role, namespaces, read, `*/*`
+        p, team-darkside:role, database-engines, read, `*/*`
+        p, team-darkside:role, database-clusters, read, `*/*`
+        p, team-darkside:role, database-clusters, update, `*/*`
+        p, team-darkside:role, database-clusters-credentials, read, `*/*`
+        p, team-darkside:role, backup-storages, read, `*/*`
+        p, team-darkside:role, monitoring-instances, read, `*/*`
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `team-darkside` role has the following privileges in **all** the namespaces:
+            The `team-darkside` role has the following privileges in **all** the namespaces:
 
-        - **namespace**:  `Read` access in all the namespaces.
-        - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**:  `Read` and update access for all the database clusters
-        - **Database clusters credentials**: `Read` acccess for **all** the databases
-        - **Backup storages**: `Read` access to all the backup storages
-        - **Monitoring instances**: `Read` access to all the monitoring instances
+            - **namespace**:  `Read` access in all the namespaces.
+            - **Database engines**: `Read` access to all the database engines
+            - **Database clusters**:  `Read` and update access for all the database clusters
+            - **Database clusters credentials**: `Read` acccess for **all** the databases
+            - **Backup storages**: `Read` access to all the backup storages
+            - **Monitoring instances**: `Read` access to all the monitoring instances
 
 
 ## Assigning roles to users
