@@ -282,10 +282,10 @@ Where:
     ```
 
     output:
-    
+
     ```sh
     × Invalid
-    policy syntax error - unknown resource name 'non-existent-resource'    ✓ Valid
+    policy syntax error - unknown resource name 'non-existent-resource'
     ```
 
 
