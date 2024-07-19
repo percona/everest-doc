@@ -261,7 +261,7 @@ Where:
 
 `policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
 
-??? Example "Policy validation
+??? Example "Policy validation"
 
     The following example demonstrates that this is a valid policy.
 
