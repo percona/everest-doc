@@ -248,6 +248,27 @@ For example, let's assign the role `team-darkside:role` to a new user named John
 ```
 
 
+## Validate your RBAC policy
+
+To verify that your Role-Based Access Control (RBAC) policies are functioning correctly, you can execute the following command to validate them.
+
+
+```sh
+everestctl settings rbac validate --policy-file
+```
+
+Where:
+
+`policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
+
+??? Example "Example
+
+    ```sh
+    everestctl settings rbac validate --policy-file ./pkg/rbac/testdata/policy-1-good.csv
+    ```
+
+
+
 
 
 
