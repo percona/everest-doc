@@ -261,11 +261,11 @@ Where:
 
 `policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
 
-??? Example "Example
+??? Example "valid policy validation
 
     ```sh
     everestctl settings rbac validate --policy-file ./pkg/rbac/testdata/policy-1-good.csv
-    ✓Valid
+    ✓ Valid
     ```
 
     
