@@ -267,6 +267,10 @@ Where:
 
     ```sh
     everestctl settings rbac validate --policy-file ./pkg/rbac/testdata/policy-1-good.csv
+    ```
+    Output:
+
+    ```sh
     ✓ Valid
     ```
 
@@ -275,7 +279,11 @@ Where:
 
     ```sh
     everestctl settings rbac validate --policy-file ./pkg/rbac/testdata/policy-bad.csv
+    ```
+
+    output:
     
+    ```sh
     × Invalid
     policy syntax error - unknown resource name 'non-existent-resource'    ✓ Valid
     ```
