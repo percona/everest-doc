@@ -265,7 +265,10 @@ Where:
 
     ```sh
     everestctl settings rbac validate --policy-file ./pkg/rbac/testdata/policy-1-good.csv
+    ✓Valid
     ```
+
+    
 
 
 
