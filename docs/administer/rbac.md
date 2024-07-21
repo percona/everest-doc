@@ -300,6 +300,26 @@ everestctl settings rbac can
 ```
 
 
+??? Example "Test your policy"
+
+    ```sh
+    $everestctl settings rbac can alice create database-clusters '*'
+    ```
+    Output
+
+    ```{.text .no-copy}
+    No
+    ```
+
+    ```sh
+    $everestctl settings rbac can admin create database-clusters '*'
+    ```
+
+    Output:
+
+    ```{.text .no-copy}
+    Yes
+    ```
 
 
 
