@@ -296,8 +296,12 @@ We have a straightforward command that can be used to test the RBAC (Role-Based 
 
 
 ```sh
-everestctl settings rbac can
+everestctl settings rbac can --policy-file
 ```
+
+Where:
+
+`policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
 
 
 ??? Example "Test your policy"
@@ -305,7 +309,7 @@ everestctl settings rbac can
     The following example tests whether a user, **Alice**, can create database clusters:
 
     ```sh
-    everestctl settings rbac can alice create database-clusters '*'
+    everestctl settings rbac can alice create database-clusters '*' --policy-file ./pkg/rbac/testdata/policy-1-bad.csv
     ```
     Output
 
@@ -317,7 +321,7 @@ everestctl settings rbac can
     The following example tests whether an **Admin** user can create database clusters:
     
     ```sh
-    everestctl settings rbac can admin create database-clusters '*'
+    everestctl settings rbac can admin create database-clusters '*' --policy-file ./pkg/rbac/testdata/policy-1-good.csv
     ```
 
     Output:
