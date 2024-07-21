@@ -305,7 +305,7 @@ everestctl settings rbac can
     The following example tests whether a user, **Alice**, can create database clusters:
 
     ```sh
-    $everestctl settings rbac can alice create database-clusters '*'
+    everestctl settings rbac can alice create database-clusters '*'
     ```
     Output
 
@@ -317,7 +317,7 @@ everestctl settings rbac can
     The following example tests whether an **Admin** user can create database clusters:
     
     ```sh
-    $everestctl settings rbac can admin create database-clusters '*'
+    everestctl settings rbac can admin create database-clusters '*'
     ```
 
     Output:
