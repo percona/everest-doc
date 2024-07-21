@@ -58,7 +58,7 @@ Where:
 
 ### Admin policy
 
-Check out the policy for a **Admin** role:
+Check out the policy for an **Admin** role:
 
 ```sh
     p, adminrole:role, namespaces, read, *
@@ -292,7 +292,7 @@ Where:
 
 You can verify if a role or individual (such as a group or a local user) has the necessary privileges to perform particular operations on designated resources. 
 
-We have a straightforward command that can be used to test the RBAC (Role-Based Access Control) policies.
+We have a straightforward command that can be used to test the RBAC (Role-Based Access Control) policies:
 
 
 ```sh
@@ -301,6 +301,8 @@ everestctl settings rbac can
 
 
 ??? Example "Test your policy"
+
+    The following example tests whether a user, **Alice**, can create database clusters:
 
     ```sh
     $everestctl settings rbac can alice create database-clusters '*'
@@ -311,6 +313,9 @@ everestctl settings rbac can
     No
     ```
 
+
+    The following example tests whether an **Admin** user can create database clusters:
+    
     ```sh
     $everestctl settings rbac can admin create database-clusters '*'
     ```
