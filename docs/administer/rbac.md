@@ -290,7 +290,17 @@ Where:
 
 ## Test your RBAC policy
 
-You can verify if a role or individual (such as a group or a local user) has the necessary privileges to perform particular operations on designated resources.
+You can verify if a role or individual (such as a group or a local user) has the necessary privileges to perform particular operations on designated resources. 
+
+We have a straightforward command that can be used to test the RBAC (Role-Based Access Control) policies.
+
+
+```sh
+everestctl settings rbac can
+```
+
+
+
 
 
 
