@@ -250,8 +250,7 @@ For example, let's assign the role `team-darkside:role` to a new user named John
 
 ## Validate your RBAC policy
 
-To verify that your Role-Based Access Control (RBAC) policies are functioning correctly, you can execute the following command to validate them.
-
+You can verify whether your Role-based access control (RBAC) policies are functioning correctly by executing the following command:
 
 ```sh
 everestctl settings rbac validate --policy-file
@@ -287,6 +286,12 @@ Where:
     × Invalid
     policy syntax error - unknown resource name 'non-existent-resource'
     ```
+
+
+## Test your RBAC policy
+
+You can verify if a role or individual (such as a group or a local user) has the necessary privileges to perform particular operations on designated resources.
+
 
 
 
