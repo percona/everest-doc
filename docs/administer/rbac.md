@@ -270,7 +270,7 @@ Where:
     ```
     Output:
 
-    ```sh
+    ```{.text .no-copy}
     ✓ Valid
     ```
 
@@ -283,7 +283,7 @@ Where:
 
     output:
 
-    ```sh
+    ```{.text .no-copy}
     × Invalid
     policy syntax error - unknown resource name 'non-existent-resource'
     ```
