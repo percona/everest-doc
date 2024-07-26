@@ -18,7 +18,7 @@ Version 1.1.0 introduces the following changes:
 - [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240) Add support for PG Operator v2.4.0
 
 
-## Improvement
+## Improvements
 
 - [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) \[UI\] Postgresql icon on databases UI should be improved
 
@@ -55,3 +55,41 @@ Version 1.1.0 introduces the following changes:
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) \[UI\] Show storage in the schedules list and in the backups list
 
 - [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) \[UI\] Show rate limit error message on /session endpoint
+
+## Bug
+
+- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) \[CLI\] Errors should not contain exceptions or stack traces
+
+- [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) \[UI\] Mysql is not the selected engine in database creation when it is not installed as the first operator
+
+- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) \[CLI\] Uninstall gives error during namespace deletion
+
+- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) \[UI\] Schedule name and storage location information not visible on backup dashboard
+
+- [EVEREST-1000](https://perconadev.atlassian.net/browse/EVEREST-1000) \[UI\] Advanced Configurations toggle buttons alignment is incorrect
+
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) \[UI\] Restore information does not get updated on the restores page
+
+- [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) \[UI\] Backups page is slow in adding/editing scheduled backups
+
+- [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) Backup files are not deleted from S3 if database is deleted
+
+- [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) Editing a backup storage in a backup schedule for a postgresql database displays an error when 3 backup schedules have been created
+
+- [EVEREST-1161](https://perconadev.atlassian.net/browse/EVEREST-1161) PG operator crashed after pg db restore
+
+- [EVEREST-1175](https://perconadev.atlassian.net/browse/EVEREST-1175) minor UI issues with fields and descriptions
+
+- [EVEREST-1179](https://perconadev.atlassian.net/browse/EVEREST-1179) No confirmation msg on canceling creating a DB cluster by clicking on setting or Databases page 
+
+- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) \[UI\] DB engine major version upgrade/downgrade should be disabled
+
+- [EVEREST-1197](https://perconadev.atlassian.net/browse/EVEREST-1197) Mongodb database is not able to come up
+
+- [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) \[UI\] Use \`Gi\` for storage size, not \`G\`
+
+- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) \[API\] Trying to downgrade a major version returns incorrect error message
+
+- [EVEREST-1243](https://perconadev.atlassian.net/browse/EVEREST-1243) \[UI\] Strange shapes coming on top of Started/Finished column name after restore
+
+- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) \[UI\] Recovery message and actions are inconsistent
