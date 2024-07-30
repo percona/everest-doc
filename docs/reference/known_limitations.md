@@ -23,16 +23,13 @@ The limitations related to backups in Percona Everest are as follows:
 
 - You cannot change the bucket name for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
 
-- You cannot use the same backup storage for two schedules.
-
-
 
 ## Scheduled backups
 
 Due to an issue identified in PostgreSQL, the following functionalities are currently unavailable:
 
 - Modifying the storage location in existing schedules
-- Using the same storage location for different schedules
+- Using the same backup storage for different schedules
 - Creating more than three schedules for PostgreSQL
 
 The bug may result in a situation where editing or deleting the schedules could corrupt previously taken backups, making it impossible to restore from them.
