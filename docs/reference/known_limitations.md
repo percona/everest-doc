@@ -15,7 +15,9 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Backups
 
-The limitations related to backups in Percona Everest are as follows:
+The limitations related to on-deamnd backups in Percona Everest are as follows:
+
+### Limitations for PostgreSQL for on-demand backups
 
 - When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
 
@@ -23,16 +25,21 @@ The limitations related to backups in Percona Everest are as follows:
 
 - You cannot change the bucket name for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
 
+- You can create on-demand backups using only the first three backup storages if there are more than three backup storages.
+
+
 
 ## Scheduled backups
 
-Due to an issue identified in PostgreSQL, the following functionalities are currently unavailable:
+### Limitations for PostgreSQL for schedules
+
+Due to PostgreSQL limitations, the following functionality is unavailable for PostgreSQL:
 
 - Modifying the storage location in existing schedules
 - Using the same backup storage for different schedules
 - Creating more than three schedules for PostgreSQL
 
-The bug may result in a situation where editing or deleting the schedules could corrupt previously taken backups, making it impossible to restore from them.
+Everest does not allow these actions to be performed because they could corrupt previously taken backups, making it impossible to restore from them.
 
 
 ## Point-in-time-recovery (PITR)
