@@ -27,6 +27,9 @@ The limitations related to on-deamnd backups in Percona Everest are as follows:
 
 - You can create on-demand backups using only the first three backup storages if there are more than three backup storages.
 
+    For example, if you create backup storages everest-1, everest-2, everest-3, and everest-4 sequentially, you can only use everest-1, everest-2, and everest-3 for on-demand backups.
+
+
 
 
 ## Scheduled backups
@@ -38,7 +41,8 @@ Due to PostgreSQL limitations, the following functionality is unavailable for Po
 - Modifying the storage location in existing schedules
 - Using the same backup storage for different schedules
 - Creating more than three schedules for PostgreSQL
-
+- Creating a schedule that uses the fourth backup storage when three backup storages are already in use.
+ 
 Everest does not allow these actions to be performed because they could corrupt previously taken backups, making it impossible to restore from them.
 
 
