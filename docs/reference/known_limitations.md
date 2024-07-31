@@ -15,7 +15,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Backups
 
-The limitations related to on-deamnd backups in Percona Everest are as follows:
+Let's delve into the limitations of on-demand backups in Percona Everest. 
 
 ### PostgreSQL limitations for on-demand backups
 
@@ -30,9 +30,9 @@ The limitations related to on-deamnd backups in Percona Everest are as follows:
     For example, if you create backup storages everest-1, everest-2, everest-3, and everest-4 sequentially, you can only use everest-1, everest-2, and everest-3 for on-demand backups.
 
 
-
-
 ## Scheduled backups
+
+Let's explore the constraints of scheduled backups in Percona Everest.
 
 ### PostgreSQL Limitations for schedules
 
