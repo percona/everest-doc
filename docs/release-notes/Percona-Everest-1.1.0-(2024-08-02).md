@@ -26,7 +26,7 @@ These improvements are:
 
     ![!image](../images/schedule_limitation_2.png)
 
-    ![!image](../images/on_demand_limitation_2)
+    ![!image](../images/on_demand_limitation_2.png)
 
 
 ## New features
