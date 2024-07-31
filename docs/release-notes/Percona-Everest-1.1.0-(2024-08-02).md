@@ -21,12 +21,12 @@ These improvements are:
     ???+ example "Example"
         If you have created two schedules using backup storage bucket-1 and bucket-2, and an on-demand backup using backup storage bucket-3, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
-![!image](../images/pg_limitation_2.png)
+    ![!image](../images/pg_limitation_2.png)
 
 
-![!image](../images/schedule_limitation_2.png)
+    ![!image](../images/schedule_limitation_2.png)
 
-
+    ![!image](../images/on_demand_limitation_2)
 
 
 ## New features
