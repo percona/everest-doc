@@ -13,7 +13,7 @@ Version 1.1.0 introduces the following changes:
 
 We're excited to announce that we've improved our on-demand backups and schedules to address some limitations with PostgreSQL. These enhancements are aimed at providing our users with an even more seamless and efficient experience when using these features.
 
-These improvements are:
+These improvements include:
 
 - If you create more than three backup storages, you can use any of the existing storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
  
@@ -28,6 +28,15 @@ These improvements are:
 
 
     ![!image](../images/on_demand_limitation_2.png)
+
+- You can only create up to three backup schedules for PostgreSQL.
+
+    ![!image](max_three_schedules_pg.png)
+
+- You cannot change the storage location in existing schedules.
+
+- You cannot use the same storage location for multiple backup schedules.
+
 
 
 ## New features
