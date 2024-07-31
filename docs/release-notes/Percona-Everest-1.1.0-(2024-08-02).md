@@ -15,7 +15,7 @@ We're excited to announce that we've improved our on-demand backups and schedule
 
 These improvements are:
 
-- If you create more than three backup storages, you can use any of the existing storages for on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
+- If you create more than three backup storages, you can use any of the existing storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
  
 
     ??? example+ "Example"
