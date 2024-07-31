@@ -31,7 +31,7 @@ Check out these improvements:
 
 - You can only create up to three backup schedules for PostgreSQL.
 
-    ![!image](max_three_schedules_pg.png)
+    ![!image](../images/max_three_schedules_pg.png)
 
 - You cannot change the storage location in existing schedules.
 
