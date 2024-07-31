@@ -9,6 +9,17 @@ Version 1.1.0 introduces the following changes:
 
 ## Release highlights
 
+### Enhancements in the functionality for PostgreSQL backups and schedules
+
+We're excited to announce that we've improved our on-demand backups and schedules to address some limitations with PostgreSQL. These enhancements are aimed at providing our users with an even more seamless and efficient experience when using these features.
+
+These improvements are:
+
+- If you create more than three backup storages, you can use any of the existing storages for on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
+ 
+
+    ??? example+ "Example"
+        If you have created two schedules using backup storage bucket-1 and bucket-2, and an on-demand backup using backup storage bucket-3, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
 
 ## New features
