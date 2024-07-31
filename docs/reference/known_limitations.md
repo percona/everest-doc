@@ -17,7 +17,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
 The limitations related to on-deamnd backups in Percona Everest are as follows:
 
-### Limitations for PostgreSQL for on-demand backups
+### PostgreSQL limitations for on-demand backups
 
 - When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
 
@@ -34,7 +34,7 @@ The limitations related to on-deamnd backups in Percona Everest are as follows:
 
 ## Scheduled backups
 
-### Limitations for PostgreSQL for schedules
+### PostgreSQL Limitations for schedules
 
 Due to PostgreSQL limitations, the following functionality is unavailable for PostgreSQL:
 
@@ -57,7 +57,7 @@ The default **uploadInterval** values for different databases are as follows:
 - PostgreSQL = 1 minute
 
 
-### Limitation for PostgreSQL
+### PostgreSQL limitation for PITR
 
 When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
 
