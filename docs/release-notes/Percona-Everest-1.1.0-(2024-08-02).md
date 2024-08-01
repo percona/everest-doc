@@ -11,7 +11,7 @@ Version 1.1.0 introduces the following changes:
 
 ### Enhancements in the functionality for PostgreSQL backups and schedules
 
-We're excited to announce that we've improved our on-demand backups and schedules to address some limitations with PostgreSQL. These enhancements are aimed at providing our users with an even more seamless and efficient experience when using these features.
+We're thrilled to announce that we have enhanced our on-demand backups and schedules to address certain limitations with PostgreSQL. These improvements are designed to offer our users a more seamless experience when utilizing these features.
 
 Check out these improvements:
 
@@ -36,6 +36,10 @@ Check out these improvements:
 - You cannot change the storage location in existing schedules.
 
 - You cannot use the same storage location for multiple backup schedules.
+
+
+### Operator upgrades
+
 
 
 
