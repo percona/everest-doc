@@ -38,21 +38,10 @@ Check out these improvements:
 - You cannot use the same storage location for multiple backup schedules.
 
 
-### Operator upgrades
-
-
-
-
-## New features
-
-- [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239) Add support for PSMDB Operator v1.16.2
-
-- [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240) Add support for PG Operator v2.4.0
-
 
 ## Improvements
 
-- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) \[UI\] Postgresql icon on databases UI should be improved
+- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) -  Postgresql icon on databases UI should be improved
 
 - [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) \[UI\] \[S-Alex\] Update 'restore' icon everywhere
 
