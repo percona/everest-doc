@@ -57,11 +57,8 @@ Check out these improvements:
 
 - [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We have revamped the CLI UX for install, upgrade, and uninstall commands. Prior to this, the screen was cluttered with logs that were hard to understand. But now, we have made this concise with loading animation and spinners.
 
-- [EVEREST-1157](https://perconadev.atlassian.net/browse/EVEREST-1157) Implement rate limit for the /session endpoint
 
-- [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165) Upgrade all operators in a given namespace at the same time
-
-- [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) \[UI\] Add confirmation dialog when leaving the wizard through the side navigation
+- [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've just added a confirmation dialog that pops up when y
 
 - [EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) \[UI\] Edit resources \(logic\)
 
