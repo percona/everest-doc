@@ -45,15 +45,17 @@ Check out these improvements:
 
 - [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We have updated the **restore** icon across Percona Everest for a consistent look.
 
-- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071) Add Backup "deleting" state
+- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)-We have introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
 
-- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) \[UI\] \[S-Daniel\] Update technology column in DB list table
 
-- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) Forbid running an on-demand backup if another backup is already running
+- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) - Update technology column in DB list table
 
-- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) DB engine upgrade should be available in the Namespaces page
+- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) -To ensure a seamless user experience, you cannot initiate an on-demand backup while another backup is still in progress.
 
-- [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) \[CLI\] Improve CLI UX for install/upgrade/uninstall commands
+- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) -Starting with Percona Everest 1.1.0, you now have the convenience of upgrading the database version directly from the Namespaces page, without having to go through the hassle of using the edit DB wizard.
+
+
+- [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We have revamped the CLI UX for install, upgrade, and uninstall commands. Prior to this, the screen was cluttered with logs that were hard to understand. But now, we have made this concise with loading animation and spinners.
 
 - [EVEREST-1157](https://perconadev.atlassian.net/browse/EVEREST-1157) Implement rate limit for the /session endpoint
 
