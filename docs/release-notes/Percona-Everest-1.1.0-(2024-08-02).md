@@ -63,7 +63,6 @@ Check out these improvements:
 
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostresSQL schedules.
 
-- [EVEREST-1217](https://perconadev.atlassian.net/browse/EVEREST-1217) Remove the PG "maximum 3 schedules" warning 
 
 - [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) PG: restrict usage of 4th storage when there are already 3 storages used
 
