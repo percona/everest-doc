@@ -41,9 +41,9 @@ Check out these improvements:
 
 ## Improvements
 
-- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) -  Postgresql icon on databases UI should be improved
+- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) - We've updated the Postgresql database icon on the UI for better clarity and visibility.
 
-- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) \[UI\] \[S-Alex\] Update 'restore' icon everywhere
+- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We have updated the **restore** icon across Percona Everest for a consistent look.
 
 - [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071) Add Backup "deleting" state
 
