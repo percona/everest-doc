@@ -60,9 +60,8 @@ Check out these improvements:
 
 - [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've just added a confirmation dialog that pops up when you try to exit the wizard using the side navigation.
 
-- [EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) \[UI\] Edit resources \(logic\)
 
-- [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) Remove PG schedules deletion restriction
+- [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostresSQL schedules.
 
 - [EVEREST-1217](https://perconadev.atlassian.net/browse/EVEREST-1217) Remove the PG "maximum 3 schedules" warning 
 
