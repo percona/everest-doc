@@ -99,7 +99,8 @@ Check out these improvements:
 
 - [EVEREST-1197](https://perconadev.atlassian.net/browse/EVEREST-1197) Mongodb database is not able to come up
 
-- [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) \[UI\] Use \`Gi\` for storage size, not \`G\`
+- [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) - Before, when creating a database from the UI, it used `G` as the unit for storage instead of `Gi`. It should have also used `Gi` when displaying details about the database storage. The issue has been resolved now, and it shows the correct unit.
+
 
 - [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) \[API\] Trying to downgrade a major version returns incorrect error message
 
