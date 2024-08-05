@@ -77,21 +77,20 @@ Check out these improvements:
 
 ## Bug
 
-- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) \[CLI\] Errors should not contain exceptions or stack traces
+- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the errors contained exceptions and stack traces.
 
-- [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) \[UI\] Mysql is not the selected engine in database creation when it is not installed as the first operator
+- [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) - We fixed an issue where MySQL was not selected as the default database engine when creating a database, specifically when it was not the first operator installed.
 
-- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) \[CLI\] Uninstall gives error during namespace deletion
+- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error was thrown during namespace deletion. The issue has been resolved now.
 
-- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) \[UI\] Schedule name and storage location information not visible on backup dashboard
+- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups were not visible on the UI. We have resolved the issue now.
 
-- [EVEREST-1000](https://perconadev.atlassian.net/browse/EVEREST-1000) \[UI\] Advanced Configurations toggle buttons alignment is incorrect
 
-- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) \[UI\] Restore information does not get updated on the restores page
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restores page. 
 
-- [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) \[UI\] Backups page is slow in adding/editing scheduled backups
+- [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The performance of the backup page was affected while adding and editing the backups. The issue has been resolved now.
 
-- [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) Backup files are not deleted from S3 if database is deleted
+- [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) - The backup files stored in the S3 bucket were not removed even after the corresponding database was deleted.  The issue has been resolved now.
 
 - [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) Editing a backup storage in a backup schedule for a postgresql database displays an error when 3 backup schedules have been created
 
