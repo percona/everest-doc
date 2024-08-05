@@ -92,11 +92,8 @@ Check out these improvements:
 
 - [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) - The backup files stored in the S3 bucket were not removed even after the corresponding database was deleted.  The issue has been resolved now.
 
-- [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) Editing a backup storage in a backup schedule for a postgresql database displays an error when 3 backup schedules have been created
+- [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) - While editing the backup storage in a PostgreSQL database backup schedule, an error was encountered after three backup schedules were created. The issue has been resolved now.
 
-- [EVEREST-1161](https://perconadev.atlassian.net/browse/EVEREST-1161) PG operator crashed after pg db restore
-
-- [EVEREST-1175](https://perconadev.atlassian.net/browse/EVEREST-1175) minor UI issues with fields and descriptions
 
 - [EVEREST-1179](https://perconadev.atlassian.net/browse/EVEREST-1179) No confirmation msg on canceling creating a DB cluster by clicking on setting or Databases page 
 
