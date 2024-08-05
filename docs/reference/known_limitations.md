@@ -23,11 +23,11 @@ Let's delve into the limitations of on-demand backups in Percona Everest.
 
     **Workaround**: To prevent this, manually delete any backups created with versions prior to 1.0.0 by using the **Delete** action on the **Backups** page before deleting the database.
 
-- You cannot change the bucket name for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
+- You cannot change the bucket name and region for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
 
-- You can create on-demand backups using only the first three backup storages if there are more than three backup storages.
+- If you create more than three backup storages, you can use any of the existing storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
 
-    For example, if you create backup storages everest-1, everest-2, everest-3, and everest-4 sequentially, you can only use everest-1, everest-2, and everest-3 for on-demand backups.
+    If you have created two schedules using backup storage bucket-1 and bucket-2, and an on-demand backup using backup storage bucket-3, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
 
 ## Scheduled backups
