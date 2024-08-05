@@ -94,10 +94,8 @@ Check out these improvements:
 
 - [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) - While editing the backup storage in a PostgreSQL database backup schedule, an error was encountered after three backup schedules were created. The issue has been resolved now.
 
+- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - Database engine major version upgrade was not possible for MongoDB and PostgreSQL, so it should have been disabled in database edit. However, it was enabled. We have addressed this issue, and it is disabled now.
 
-- [EVEREST-1179](https://perconadev.atlassian.net/browse/EVEREST-1179) No confirmation msg on canceling creating a DB cluster by clicking on setting or Databases page 
-
-- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) \[UI\] DB engine major version upgrade/downgrade should be disabled
 
 - [EVEREST-1197](https://perconadev.atlassian.net/browse/EVEREST-1197) Mongodb database is not able to come up
 
@@ -105,6 +103,5 @@ Check out these improvements:
 
 - [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) \[API\] Trying to downgrade a major version returns incorrect error message
 
-- [EVEREST-1243](https://perconadev.atlassian.net/browse/EVEREST-1243) \[UI\] Strange shapes coming on top of Started/Finished column name after restore
 
 - [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) \[UI\] Recovery message and actions are inconsistent
