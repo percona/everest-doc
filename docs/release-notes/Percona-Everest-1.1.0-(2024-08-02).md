@@ -70,9 +70,10 @@ Check out these improvements:
 
 - [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region and URL. 
 
-- [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) \[UI\] Show storage in the schedules list and in the backups list
+- [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
 
-- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) \[UI\] Show rate limit error message on /session endpoint
+
+- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We have set up a rate limiter to restrict the number of requests you can make to the API within a specific time frame. On the login page, an error will be thrown if you surpass this limit of requests within the given period.
 
 ## Bug
 
