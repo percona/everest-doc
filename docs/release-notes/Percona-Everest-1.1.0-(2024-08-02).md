@@ -43,9 +43,9 @@ Check out these improvements:
 
 - [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) - We've updated the Postgresql database icon on the UI for better clarity and visibility.
 
-- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We have updated the **restore** icon across Percona Everest for a consistent look.
+- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across Percona Everest for a consistent look.
 
-- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)-We have introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
+- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
 
 
 - [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) - Update technology column in DB list table
@@ -64,11 +64,11 @@ Check out these improvements:
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostresSQL schedules.
 
 
-- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) PG: restrict usage of 4th storage when there are already 3 storages used
+- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules
 
-- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) Restrict editing backup storages 
+- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storages.
 
-- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) Restrict creating backup storages with the same bucket, region, url 
+- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region and URL. 
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) \[UI\] Show storage in the schedules list and in the backups list
 
