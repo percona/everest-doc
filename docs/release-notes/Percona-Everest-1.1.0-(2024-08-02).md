@@ -116,5 +116,12 @@ Let's delve into the various scenarios we need to consider:
 
 If you already have two or more storages using the same bucket, URL, and region, you won't be able to edit them after the 1.1.0 update. You would need to delete the duplicate storages.
 
+**Scenario 2**
+
+If the storage is in use by any schedule or backup the storage cannot be deleted.
+
+First, ensure you have a fresh backup by creating another schedule or backup pointing to new valid storage. Then, delete all the old schedules and backups that use the duplicate storage. Once no schedules or backups use the storage, it can be deleted.
+
+
 
 
