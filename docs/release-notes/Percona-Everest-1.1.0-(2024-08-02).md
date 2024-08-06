@@ -73,24 +73,18 @@ Check out these improvements:
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
 
+## Bugs
 
-
-
-
-
-
-## Bug
-
-- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the errors contained exceptions and stack traces.
+- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - Fixed an issue where an incorrect error message was displayed when attempting to downgrade a major database version.
 
 - [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) - We fixed an issue where MySQL was not selected as the default database engine when creating a database, specifically when it was not the first operator installed.
 
+- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - Database engine major version upgrade was not possible for MongoDB and PostgreSQL, so it should have been disabled in database edit. However, it was enabled. We have addressed this issue, and it is disabled now.
+
 - [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error was thrown during namespace deletion. The issue has been resolved now.
 
-- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups were not visible on the UI. We have resolved the issue now.
 
 
-- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restore page. 
 
 - [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The performance of the backup page was affected while adding and editing the backups. The issue has been resolved now.
 
@@ -98,14 +92,17 @@ Check out these improvements:
 
 - [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) - While editing the backup storage in a PostgreSQL database backup schedule, an error was encountered after three backup schedules were created. The issue has been resolved now.
 
-- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - Database engine major version upgrade was not possible for MongoDB and PostgreSQL, so it should have been disabled in database edit. However, it was enabled. We have addressed this issue, and it is disabled now.
+- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups were not visible on the UI. The issue has been resolved now.
 
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restore page. 
 
+- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
 
 - [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) - Before, when creating a database from the UI, it used `G` as the unit for storage instead of `Gi`. It also used `G` when displaying details about the database storage. The issue has been resolved now, and it shows the correct unit.
 
+- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the errors contained exceptions and stack traces.
 
-- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - Fixed an issue where an incorrect error message was displayed when attempting to downgrade a major database version.
 
-- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
+
+
 
