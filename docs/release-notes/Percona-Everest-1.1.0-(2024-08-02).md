@@ -10,7 +10,7 @@ Version 1.1.0 introduces the following changes:
 ## Release highlights
 
 !!! warning
-    Percona Everest 1.1.0 comes up with certain [limitations](https://docs.percona.com/everest/release-notes//Percona-Everest-1.1.0-%282024-08-02%29.html#known-limitations) that you need to take into account before you update to this version.
+    Percona Everest 1.1.0 comes with certain [limitations](https://docs.percona.com/everest/release-notes//Percona-Everest-1.1.0-%282024-08-02%29.html#known-limitations) that you need to take into account before you update to this version.
 
 ### Enhancements in the functionality for PostgreSQL backups and schedules
 
