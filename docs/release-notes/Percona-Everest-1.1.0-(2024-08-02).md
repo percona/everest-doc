@@ -73,7 +73,7 @@ Check out these improvements:
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
 
-## Bugs
+## Bugs fixed
 
 - [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - Fixed an issue where an incorrect error message was displayed when attempting to downgrade a major database version.
 
