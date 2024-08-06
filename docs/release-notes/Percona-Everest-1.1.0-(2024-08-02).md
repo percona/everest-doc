@@ -41,30 +41,31 @@ Check out these improvements:
 
 ## Improvements
 
-- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) - We've updated the Postgresql database icon on the UI for better clarity and visibility.
-
-- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across Percona Everest for a consistent look.
-
-- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
-
-
-- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table to make it visually appealing.
-
-- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) -To ensure a seamless user experience, you cannot initiate an on-demand backup while another backup is still in progress.
+- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We have set up a rate limiter to restrict the number of requests you can make to the API within a specific time frame. On the login page, an error will be thrown if you surpass this limit of requests within the given period.
 
 - [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) -Starting with Percona Everest 1.1.0, you now have the convenience of upgrading the database version directly from the Namespaces page, without having to go through the hassle of using the edit DB wizard.
 
-
 - [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We have revamped the CLI UX for install, upgrade, and uninstall commands. Prior to this, the screen was cluttered with logs that were hard to understand. But now, we have made this concise with loading animation and spinners.
 
+- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table to make it visually appealing.
 
 - [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've just added a confirmation dialog that pops up when you try to exit the wizard using the side navigation.
 
 
+- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across Percona Everest for a consistent look.
+
+- [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) - We've updated the Postgresql database icon on the UI for better clarity and visibility.
+
+### Backups and schedules
+
+- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - To ensure a seamless user experience, you cannot initiate an on-demand backup while another backup is still in progress.
+
+- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules.
+
+- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
+
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostreSQL schedules.
 
-
-- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules
 
 - [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storage.
 
@@ -73,7 +74,10 @@ Check out these improvements:
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
 
 
-- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We have set up a rate limiter to restrict the number of requests you can make to the API within a specific time frame. On the login page, an error will be thrown if you surpass this limit of requests within the given period.
+
+
+
+
 
 ## Bug
 
