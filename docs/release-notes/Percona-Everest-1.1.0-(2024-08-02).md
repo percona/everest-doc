@@ -108,7 +108,7 @@ Check out these improvements:
 
 ## Known limitations
 
-- You can't use the same URL, bucket, and region in two different backup storages. Doing so may cause issues with restoring from the existing backups.
+You can't use the same URL, bucket, and region in two different backup storages. Doing so may cause issues with restoring from the existing backups.
 
 Let's delve into the various scenarios we need to consider:
 
@@ -118,7 +118,7 @@ If you already have two or more storages using the same bucket, URL, and region,
 
 **Scenario 2**
 
-If the storage is in use by any schedule or backup the storage cannot be deleted.
+If the storage is already in use by any schedule or backup the storage cannot be deleted.
 
 First, ensure you have a fresh backup by creating another schedule or backup pointing to new valid storage. Then, delete all the old schedules and backups that use the duplicate storage. Once no schedules or backups use the storage, it can be deleted.
 
