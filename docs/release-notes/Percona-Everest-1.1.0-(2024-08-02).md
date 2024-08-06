@@ -9,6 +9,9 @@ Version 1.1.0 introduces the following changes:
 
 ## Release highlights
 
+!!! warning
+    Percona Everest 1.1.0 comes up with certain [limitations]() that you need to take into account.
+
 ### Enhancements in the functionality for PostgreSQL backups and schedules
 
 We're thrilled to announce that we have enhanced our on-demand backups and schedules to address certain limitations with PostgreSQL. These improvements are designed to offer our users a more seamless experience when utilizing these features.
@@ -103,6 +106,15 @@ Check out these improvements:
 - [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the errors contained exceptions and stack traces.
 
 
+## Known limitations
+
+- You can't use the same URL, bucket, and region in two different backup storages. Doing so may cause issues with restoring from the existing backups.
+
+Let's delve into the various scenarios we need to consider:
+
+**Scenario 1**
+
+If you already have two or more storages using the same bucket, URL, and region, you won't be able to edit them after the 1.1.0 update. You would need to delete the duplicate storages.
 
 
 
