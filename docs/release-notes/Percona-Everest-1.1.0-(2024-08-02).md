@@ -15,7 +15,7 @@ We're thrilled to announce that we have enhanced our on-demand backups and sched
 
 Check out these improvements:
 
-- If you create more than three backup storages, you can use any of the existing storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
+- If you create more than three backup storages, you can use any existing storages across on-demand backups and schedules as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
  
 
     ???+ example "Example"
@@ -48,7 +48,7 @@ Check out these improvements:
 - [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
 
 
-- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) - Update technology column in DB list table
+- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table to make it visually appealing.
 
 - [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) -To ensure a seamless user experience, you cannot initiate an on-demand backup while another backup is still in progress.
 
@@ -66,9 +66,9 @@ Check out these improvements:
 
 - [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules
 
-- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storages.
+- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storage.
 
-- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region and URL. 
+- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region, and URL. 
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
 
@@ -86,7 +86,7 @@ Check out these improvements:
 - [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups were not visible on the UI. We have resolved the issue now.
 
 
-- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restores page. 
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restore page. 
 
 - [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The performance of the backup page was affected while adding and editing the backups. The issue has been resolved now.
 
