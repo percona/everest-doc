@@ -97,12 +97,11 @@ Check out these improvements:
 - [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - Database engine major version upgrade was not possible for MongoDB and PostgreSQL, so it should have been disabled in database edit. However, it was enabled. We have addressed this issue, and it is disabled now.
 
 
-- [EVEREST-1197](https://perconadev.atlassian.net/browse/EVEREST-1197) Mongodb database is not able to come up
 
-- [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) - Before, when creating a database from the UI, it used `G` as the unit for storage instead of `Gi`. It should have also used `Gi` when displaying details about the database storage. The issue has been resolved now, and it shows the correct unit.
-
-
-- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) \[API\] Trying to downgrade a major version returns incorrect error message
+- [EVEREST-1204](https://perconadev.atlassian.net/browse/EVEREST-1204) - Before, when creating a database from the UI, it used `G` as the unit for storage instead of `Gi`. It also used `G` when displaying details about the database storage. The issue has been resolved now, and it shows the correct unit.
 
 
-- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) \[UI\] Recovery message and actions are inconsistent
+- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - Fixed an issue where an incorrect error message was displayed when attempting to downgrade a major database version.
+
+- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
+
