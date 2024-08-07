@@ -21,7 +21,7 @@ We've improved the robustness of our backups and restores by enforcing a few lim
  
 
     ???+ example "Example"
-        If you have created two schedules using backup storage bucket-1 and bucket-2, and an on-demand backup using backup storage bucket-3, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
+        If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
 
     ![!image](../images/backup_storages.png)
