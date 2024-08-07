@@ -41,7 +41,7 @@ Due to PostgreSQL limitations, the following functionality is unavailable for Po
 - Modifying the storage location in existing schedules
 - Using the same backup storage for different schedules
 - Creating more than three schedules for PostgreSQL
-- Using more than three different backup storages in total, including those used in existing backup schedules.
+- Using more than three different backup storages in total, including those used in existing on-demand backups.
  
 Everest does not allow these actions to be performed because they could corrupt previously taken backups, making it impossible to restore from them.
 
