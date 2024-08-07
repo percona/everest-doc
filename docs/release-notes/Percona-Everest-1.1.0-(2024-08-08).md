@@ -16,7 +16,6 @@ Version 1.1.0 introduces the following changes:
 
 We've improved the robustness of our backups and restores by enforcing a few limitations in the way we manage backup storage. This proactive approach ensures that we can prevent potential issues from being triggered in edge-case scenarios.
 
-Check out these improvements:
 
 - If you create more than three backup storages, you can use any existing storages across on-demand backups and schedules as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
  
