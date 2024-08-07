@@ -63,7 +63,7 @@ Check out these improvements:
 
 - [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with Percona Everest 1.1.0, you cannot initiate an on-demand backup while another backup is still in progress. This approach is designed to maintain the integrity of the backup data and reduce any potential impact on the database performance.
 
-- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules.
+- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) - Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages for PostgreSQL, including those used in existing backup schedules. This ensures that we can properly restore the backups.
 
 - [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
 
