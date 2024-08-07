@@ -12,7 +12,6 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
 
-
 ## Backups
 
 Let's delve into the limitations of on-demand backups in Percona Everest. 
@@ -27,7 +26,7 @@ Let's delve into the limitations of on-demand backups in Percona Everest.
 
 - If you create more than three backup storages, you can use any of the existing storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
 
-    If you have created two schedules using backup storage bucket-1 and bucket-2, and an on-demand backup using backup storage bucket-3, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
+    If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
 
 ## Scheduled backups
