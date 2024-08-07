@@ -48,12 +48,12 @@ step).
 The following command will create a cluster named `my-cluster-name`:
 
 ```{.bash data-prompt="$" }
-$ gcloud container clusters create my-cluster-name --project <project name> --zone us-central1-a --cluster-version 1.27 --machine-type n1-standard-4 --num-nodes=3
+$ gcloud container clusters create my-cluster-name --project <project ID> --zone us-central1-a --cluster-version 1.27 --machine-type n1-standard-4 --num-nodes=3
 ```
 
 !!! note
 
-    - Replace <project name> with your actual Google Cloud project name.
+    - Replace <project ID> with your actual Google Cloud project ID (see available projects with `gcloud projects list` command).
     - You may also need to edit the zone location, which is set to us-central1-a in the example above.
 
 This command creates a cluster with 3 nodes, each with a machine type of n1-standard-4 (4 vCPUs). The creation process may take a few minutes.
@@ -104,7 +104,7 @@ Once you are done with your cluster, cleaning up the resources is a good practic
 You can clean up the cluster with the `gcloud` command as follows:
 
 ```{.bash data-prompt="$" }
-$ gcloud container clusters delete <cluster name> --zone us-central1-a --project <project name>
+$ gcloud container clusters delete <cluster name> --zone us-central1-a --project <project ID>
 
 ```
 
