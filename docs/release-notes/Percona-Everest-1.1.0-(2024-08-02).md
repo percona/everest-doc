@@ -67,7 +67,7 @@ Check out these improvements:
 
 - [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
 
-- [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostreSQL schedules.
+- [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostgreSQL schedules.
 
 
 - [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storage.
