@@ -14,7 +14,7 @@ Version 1.1.0 introduces the following changes:
 
 ### Enhancements in the functionality for PostgreSQL backups and schedules
 
-We're thrilled to announce that we have enhanced our on-demand backups and schedules to address certain limitations with PostgreSQL. These improvements are designed to offer our users a more seamless experience when utilizing these features.
+We've improved the robustness of our backups and restores by enforcing a few limitations in the way we manage backup storage. This proactive approach ensures that we can prevent potential issues from being triggered in edge-case scenarios.
 
 Check out these improvements:
 
@@ -50,7 +50,7 @@ Check out these improvements:
 
 - [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We have revamped the CLI UX for install, upgrade, and uninstall commands. Prior to this, the screen was cluttered with logs that were hard to understand. But now, we have made this concise with loading animation and spinners.
 
-- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table to make it visually appealing.
+- [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table.
 
 - [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've just added a confirmation dialog that pops up when you try to exit the wizard using the side navigation.
 
@@ -61,7 +61,7 @@ Check out these improvements:
 
 ### Backups and schedules
 
-- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - To ensure a seamless user experience, you cannot initiate an on-demand backup while another backup is still in progress.
+- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with Percona Everest 1.1.0, you cannot initiate an on-demand backup while another backup is still in progress. This approach is designed to maintain the integrity of the backup data and reduce any potential impact on the database performance.
 
 - [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages in total, including those used in existing backup schedules.
 
