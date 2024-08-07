@@ -20,17 +20,17 @@ Percona Everest has two primary components:
 
 ### Supported k8s clusters
 
-Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s. 
+Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
 
 However, not all the many combinations of K8s distributions and K8s versions might be fully tested and certified. Please refer to the matrix below, and feel free to [contact us](SetupPrereqs.md#get-expert-help) in case of questions.
 
-| Platform              | Kubernetes Version | Percona Everest Version | State                                   | 
-|:----------------------|:-------------------|:------------------------|:----------------------------------------| 
+| Platform              | Kubernetes Version | Percona Everest Version | State                                   |
+|:----------------------|:-------------------|:------------------------|:----------------------------------------|
 | Google GKE            | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
 | Amazon EKS            | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
 | Vanilla K8s (kubeadm) | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
 | Azure AKS             | -                  | >= 1.0.0                | Works but not fully certified yet       |
-| DigitalOcean          | 1.29 - 1.30        | >= 1.0.0                | Works but not fully certified yet       |
+| DigitalOcean          | -                  | >= 1.0.0                | Works but not fully certified yet       |
 | OpenShift             | -                  |                         | Coming soon                             |
 | Other cloud K8s       | -                  |                         | Should work but not fully certified yet |
 
@@ -51,8 +51,8 @@ Before getting started with Percona Everest, we recommend that you:
 
 1. Install [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"} for EKS or the [gcloud CLI](https://cloud.google.com/sdk/docs/install){:target="_blank"} for GKE.
 2. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
-    
-    ```sh 
+
+    ```sh
     kubectl get nodes
     ```
 
@@ -66,6 +66,6 @@ Before getting started with Percona Everest, we recommend that you:
 
 ### Next steps
 
-Start by installing Everest: 
+Start by installing Everest:
 
 [Install Everest :material-arrow-right:](installEverest.md){.md-button}
