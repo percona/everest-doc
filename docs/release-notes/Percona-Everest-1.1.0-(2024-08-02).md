@@ -101,7 +101,7 @@ Check out these improvements:
 
 - [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
 
-- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the errors contained exceptions and stack traces.
+- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the CLI errors contained exceptions and stack traces.
 
 
 ## Known limitations
