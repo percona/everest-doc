@@ -7,7 +7,7 @@ Initiate an immediate backup for hands-on control, or schedule one if you prefer
 On-demand backups give you immediate control over when and what data to back up. One-time backups can be particularly useful when you need to safeguard critical information before making significant changes to your database.
 
 !!! info "Important"
-    There are few limitations to consider when working with PostgreSQL. For  detailed information, refer to the [limitations](../../reference/known_limitations.md#postgresql-limitations-for-on-demand-backups) section.
+    There are few limitations to consider when working with PostgreSQL's on-demand backups. For detailed information, refer to the [limitations](../../reference/known_limitations.md#postgresql-limitations-for-on-demand-backups) section.
 
 To create a backup now:
 {.power-number}
