@@ -1,6 +1,6 @@
 # Welcome to Percona Everest
 
-We are excited to welcome you to GA of Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
+We are excited to welcome you to Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
 
 
 ## Why Percona Everest?
