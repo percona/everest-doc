@@ -7,7 +7,7 @@ We are excited to welcome you to GA of Percona Everest, designed to demonstrate 
 
 Percona Everest is the first open-source platform for automated database provisioning and management. It supports multiple database technologies and can be hosted on any Kubernetes infrastructure, in the cloud or on-premises.
 
-![!image](images/everest_home_page.png)
+![!image](images/Percona_Everest_docs.png)
   
 ## Ready to test drive Percona Everest?
 
