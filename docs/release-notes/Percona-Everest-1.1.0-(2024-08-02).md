@@ -65,7 +65,7 @@ Check out these improvements:
 
 - [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) - Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages for PostgreSQL, including those used in existing backup schedules. This ensures that we can properly restore the backups.
 
-- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **deleting** state that will persist until all resources belonging to that backup are removed.
+- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **Deleting** state that will persist until all resources belonging to that backup are removed.
 
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostgreSQL schedules.
 
@@ -75,6 +75,9 @@ Check out these improvements:
 - [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region, and URL. 
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
+
+- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups are now visible on the UI.
+
 
 ## Bugs fixed
 
@@ -88,14 +91,13 @@ Check out these improvements:
 
 
 
-
 - [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The performance of the backup page was affected while adding and editing the backups. The issue has been resolved now.
 
 - [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) - The backup files stored in the S3 bucket were not removed even after the corresponding database was deleted.  The issue has been resolved now.
 
 - [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) - While editing the backup storage in a PostgreSQL database backup schedule, an error was encountered after three backup schedules were created. The issue has been resolved now.
 
-- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups were not visible on the UI. The issue has been resolved now.
+
 
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restore page. 
 
