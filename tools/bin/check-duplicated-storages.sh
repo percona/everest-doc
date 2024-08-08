@@ -1,7 +1,11 @@
 #!/bin/bash
 
-backup_storage_output=$(kubectl get backupstorage -n everest-system)
-backup_storage_names=($(echo "$backup_storage_output" | awk 'NR>1 {print $1}'))
+backup_storage_names=($(kubectl get backupstorage -n everest-system --no-headers -o=jsonpath='{.items[*].metadata.name}'))
+
+if ! command -v kubectl &> /dev/null; then
+  echo "Error: kubectl is not installed. Please install it first."
+  exit 1
+fi
 
 get_value() {
   local map="$1"
@@ -15,14 +19,13 @@ found=0
 buckets=""
 
 for name in "${backup_storage_names[@]}"; do
-  storage=$(kubectl get backupstorage "$name" -n everest-system -o json)
-
-  bucket=$(echo "$storage" | jq -r '.spec.bucket')
-  endpointURL=$(echo "$storage" | jq -r '.spec.endpointURL')
-  region=$(echo "$storage" | jq -r '.spec.region')
+  storage_info=$(kubectl get backupstorage "$name" -n everest-system -o go-template='{{printf "%s %s %s %s" .metadata.name .spec.bucket .spec.endpointURL .spec.region}}')
+  storage_name=$(echo "$storage_info" | awk '{print $1}')
+  bucket=$(echo "$storage_info" | awk '{print $2}')
+  endpointURL=$(echo "$storage_info" | awk '{print $3}')
+  region=$(echo "$storage_info" | awk '{print $4}')
 
   key="$bucket$endpointURL$region"
-  storage_name=$(echo "$storage" | jq -r '.metadata.name')
   existing_value=$(get_value "$buckets" "$key")
 
   if [[ ${#existing_value} -gt 0  ]]; then
