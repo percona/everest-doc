@@ -33,7 +33,7 @@ Discover how Percona Everest simplifies and streamlines your database management
 
 Explore how our security features are designed to ensure the security of your hosted databases.
 
-[Secure your deployments :material-arrow-right:](secure/user-auth.md){ .md-button .md-button--primary }
+[Secure your deployments :material-arrow-right:](administer/Idp_integration.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
@@ -41,7 +41,7 @@ Explore how our security features are designed to ensure the security of your ho
 
 Learn how to manage user accounts in Percona Everest.
 
-[Manage user accounts :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
+[Manage user accounts :material-arrow-right:](administer/manage_users.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
@@ -50,7 +50,7 @@ Learn how to manage user accounts in Percona Everest.
 
 Get ready to dive into our APIs and uncover their potential.
 
-[Dive into our APIs :material-arrow-right:](admimanage_users.md){ .md-button .md-button--primary }
+[Dive into our APIs :material-arrow-right:](https://percona-everest.readme.io/reference/getkubernetesclusterresources){ .md-button .md-button--primary }
 
 </div>
 </div>
