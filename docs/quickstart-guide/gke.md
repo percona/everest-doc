@@ -15,7 +15,7 @@ All commands from this guide can be run either in the **Google Cloud shell** or 
 
 To use _Google Cloud shell_, you need only a modern web browser. Open the [Google Cloud Console](https://console.cloud.google.com/) and click on the Cloud Shell icon at the top-right corner.
 
-![image](../images/gke-activate-cloud-shell.png)
+![image](../images/gke-activate-cloud-shell.svg)
 
 ### Local Shell
 
