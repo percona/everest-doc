@@ -6,6 +6,9 @@ Initiate an immediate backup for hands-on control, or schedule one if you prefer
 
 On-demand backups give you immediate control over when and what data to back up. One-time backups can be particularly useful when you need to safeguard critical information before making significant changes to your database.
 
+!!! info "Important"
+    There are few limitations to consider when working with PostgreSQL's on-demand backups. For detailed information, refer to the [limitations](../../reference/known_limitations.md#postgresql-limitations-for-on-demand-backups) section.
+
 To create a backup now:
 {.power-number}
 
@@ -17,6 +20,9 @@ To create a backup now:
 ## Schedule a backup
 
 Schedule a backup when you want your backups to occur automatically at predetermined intervals. This automation reduces the risk of human error and ensures that your data is consistently backed up without requiring your constant intervention.
+
+!!! info "Important"
+    There are few limitations to consider when working with PostgreSQL's scheduled backups. For detailed information, refer to the [limitations](../../reference/known_limitations.md#postgresql-limitations-for-schedules) section.
 
 To configure a backup schedule:
 {.power-number}
