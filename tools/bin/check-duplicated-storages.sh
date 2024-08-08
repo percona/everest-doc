@@ -2,23 +2,27 @@
 
 set -e
 
-backup_storage_names=($(kubectl get backupstorage -n everest-system --no-headers -o=jsonpath='{.items[*].metadata.name}'))
-
 if ! command -v kubectl &> /dev/null; then
   echo "Error: kubectl is not installed. Please install it first."
   exit 1
 fi
 
+backup_storage_names=($(kubectl get backupstorage -n everest-system --no-headers -o=jsonpath='{.items[*].metadata.name}'))
+
 get_value() {
   local map="$1"
   local key="$2"
-  local value=$(echo "$map"| grep "$key" | cut -d"=" -f2)
-  echo $value
+  for bucket in "${buckets[@]}"; do
+    k=$(echo "$bucket" | cut -d"=" -f1)
+    if [[ $k == $key  ]]; then
+      echo "$bucket" | cut -d"=" -f2
+    fi
+  done
 }
 
 echo "Backup storages which share the same bucket, region, endpointURL:"
 found=0
-buckets=""
+declare -a buckets
 
 for name in "${backup_storage_names[@]}"; do
   storage_info=$(kubectl get backupstorage "$name" -n everest-system -o go-template='{{printf "%s %s %s %s" .metadata.name .spec.bucket .spec.endpointURL .spec.region}}')
@@ -34,7 +38,7 @@ for name in "${backup_storage_names[@]}"; do
     found=1
     echo "- $existing_value and $storage_name"
   else
-    buckets+="$key=$storage_name\n"
+    buckets+=("$key=$storage_name")
   fi
 done
 
