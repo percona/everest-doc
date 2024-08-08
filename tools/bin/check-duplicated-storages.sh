@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -e
+
 backup_storage_names=($(kubectl get backupstorage -n everest-system --no-headers -o=jsonpath='{.items[*].metadata.name}'))
 
 if ! command -v kubectl &> /dev/null; then
