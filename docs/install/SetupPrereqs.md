@@ -35,7 +35,7 @@ However, not all the many combinations of K8s distributions and K8s versions mig
 | Other cloud K8s       | -                  |                         | Should work but not fully certified yet |
 
 !!! note
-    [Air-gapped](https://ibm.github.io/kubernetes-networking/vpc/airgap/) environments are not currently supported, but support for this is coming soon.
+    Air-gapped environments (i.e. environments physically isolated from unsecured networks such as the public Internet) are not currently supported. Their support is coming soon.
 
 ## Before you install
 
