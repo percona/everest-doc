@@ -50,7 +50,7 @@ Learn how to manage user accounts in Percona Everest.
 
 Get ready to dive into our APIs and uncover their potential.
 
-[Dive into our APIs :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
+[Dive into our APIs :material-arrow-right:](admimanage_users.md){ .md-button .md-button--primary }
 
 </div>
 </div>
