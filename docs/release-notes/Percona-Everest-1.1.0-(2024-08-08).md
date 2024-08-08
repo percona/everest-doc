@@ -9,19 +9,20 @@ Version 1.1.0 introduces the following changes:
 
 ## Release highlights
 
-!!! warning
+!!! info "Important"
     Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-08).md#known-limitations) that you should be aware of.
 
-### Enhancements in the functionality for PostgreSQL backups and schedules
+### Enhancements for PostgreSQL disaster recovery
 
-We've improved the robustness of our backups and restores by enforcing a few limitations in the way we manage backup storage. This proactive approach ensures that we can prevent potential issues from being triggered in edge-case scenarios.
+We've made our backups and restores more reliable by setting limits on how we manage backup storage. This proactive approach ensures that we can prevent potential issues from being triggered in edge-case scenarios.
 
+Here's how it works:
 
-- If you create more than three backup storages, you can use any existing storages across on-demand backups and schedules as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
+- You can have up to three backup storages in use at a time, across both on-demand backups and schedules.
  
 
     ???+ example "Example"
-        If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
+        If you already have two scheduled backups using storage `bucket-1` and `bucket-2`, and an on-demand backup using `bucket-3`, you’ll need to use one of these three storages for any new on-demand backup or schedule.
 
 
     ![!image](../images/backup_storages.png)
@@ -43,15 +44,15 @@ We've improved the robustness of our backups and restores by enforcing a few lim
 
 ## Improvements
 
-- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We have set up a rate limiter to restrict the number of requests you can make to the API within a specific time frame. On the login page, an error will be thrown if you surpass this limit of requests within the given period.
+- [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We've implemented a rate limiter to control how many API requests you can make within a set time frame. If you exceed this limit on the login page, you'll receive an error message.
 
-- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) -Starting with Percona Everest 1.1.0, you now have the convenience of upgrading the database version directly from the Namespaces page, without having to go through the hassle of using the edit DB wizard.
+- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) --Starting with Percona Everest 1.1.0, you can now upgrade the database version directly from the **Namespaces** page, skipping the need to use the edit DB wizard.
 
-- [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We have revamped the CLI UX for install, upgrade, and uninstall commands. Prior to this, the screen was cluttered with logs that were hard to understand. But now, we have made this concise with loading animation and spinners.
+- [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We've improved the CLI experience for install, upgrade, and uninstall commands by streamlining it with concise loading animations and spinners.
 
 - [EVEREST-1088](https://perconadev.atlassian.net/browse/EVEREST-1088) -  We've removed the icons from the **Technology** column in the database list table.
 
-- [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've just added a confirmation dialog that pops up when you try to exit the wizard using the side navigation.
+- [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've added a confirmation dialog that appears when you try to exit the wizard using the side navigation.
 
 
 - [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across Percona Everest for a consistent look.
@@ -60,11 +61,11 @@ We've improved the robustness of our backups and restores by enforcing a few lim
 
 ### Backups and schedules
 
-- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with Percona Everest 1.1.0, you cannot initiate an on-demand backup while another backup is still in progress. This approach is designed to maintain the integrity of the backup data and reduce any potential impact on the database performance.
+- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with Percona Everest 1.1.0, you can no longer initiate an on-demand backup while another backup is in progress. This change helps maintain data integrity and minimizes potential impact on database performance.
 
-- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) - Starting with Percona Everest 1.1.0, you cannot use more than three different backup storages for PostgreSQL, including those used in existing backup schedules. This ensures that we can properly restore the backups.
+- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  In Percona Everest 1.1.0, you're limited to using a maximum of three different backup storages for PostgreSQL, including those used in existing backup schedules. This restriction ensures reliable backup restoration.
 
-- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **Deleting** state that will persist until all resources belonging to that backup are removed.
+- [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **Deleting** state that remains active until all resources associated with the backup are fully removed.
 
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostgreSQL schedules.
 
@@ -73,54 +74,50 @@ We've improved the robustness of our backups and restores by enforcing a few lim
 
 - [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region, and URL. 
 
-- [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For an enhanced user experience, you can now view the backup storage being utilized for both on-demand backups and schedules.
+- [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For a better user experience, you can now see which backup storage is being used for both on-demand backups and schedules.
 
-- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups are now visible on the UI.
+- [EVEREST-910](https://perconadev.atlassian.net/browse/EVEREST-910) - The schedule name and storage location for scheduled backups are now displayed on the UI.
 
 
 ## Bugs fixed
 
-- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - Fixed an issue where an incorrect error message was displayed when attempting to downgrade a major database version.
+- [EVEREST-1233](https://perconadev.atlassian.net/browse/EVEREST-1233) - You will now see the correct error message when attempting to downgrade a major database version.
 
-- [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) - We fixed an issue where MySQL was not selected as the default database engine when creating a database, specifically when it was not the first operator installed.
+- [EVEREST-740](https://perconadev.atlassian.net/browse/EVEREST-740) -  MySQL is now correctly selected as the default database engine when creating a database, even if it wasn't the first operator installed.
 
-- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - Database engine major version upgrade was not possible for MongoDB and PostgreSQL, so it should have been disabled in database edit. However, it was enabled. We have addressed this issue, and it is disabled now.
+- [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - The option to upgrade the major version of the database engine for MongoDB and PostgreSQL is now correctly disabled in the database edit section, reflecting the intended functionality.
 
-- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - While uninstalling Percona Everest, an error was thrown during namespace deletion. The issue has been resolved now.
+- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - The issue causing an error during namespace deletion while uninstalling Percona Everest has been resolved.
 
 
+- [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The backup page performance is now optimized for adding and editing backup.
 
-- [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The performance of the backup page was affected while adding and editing the backups. The issue has been resolved now.
-
-- [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) - The backup files stored in the S3 bucket were not removed even after the corresponding database was deleted.  The issue has been resolved now.
+- [EVEREST-1141](https://perconadev.atlassian.net/browse/EVEREST-1141) - Backup files in the S3 bucket are now properly removed when the corresponding database is deleted.
 
 - [EVEREST-1144](https://perconadev.atlassian.net/browse/EVEREST-1144) - While editing the backup storage in a PostgreSQL database backup schedule, an error was encountered after three backup schedules were created. The issue has been resolved now.
 
 
 
-- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - Fixed an issue that was preventing the restore information from being updated on the restore page. 
+- [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The restore page now correctly updates the restore information. 
 
 - [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
 
-- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - We have fixed an issue where the CLI errors contained exceptions and stack traces.
+- [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - CLI errors now display more user-friendly messages without exceptions and stack traces.
 
 
 ## Known limitations
 
 You can't use the same URL, bucket, and region in two different backup storages. Doing so may cause issues with restoring from the existing backups.
 
-Let's delve into the various scenarios we need to consider:
+Here’s what you need to know:
 
 **Scenario 1**
 
-If you already have two or more storages using the same bucket, URL, and region, you won't be able to edit them after the 1.1.0 update. You would need to delete the duplicate storages.
+If you have multiple storages with the same bucket, URL, and region, you won’t be able to edit them after the 1.1.0 update. You’ll need to delete the duplicates.
 
 **Scenario 2**
 
-If the storage is already in use by any schedule or backup the storage cannot be deleted.
-
-First, ensure you have a fresh backup by creating another schedule or backup pointing to new valid storage. Then, delete all the old schedules and backups that use the duplicate storage. Once no schedules or backups use the storage, it can be deleted.
-
+If a storage is currently in use by any schedule or backup, you can’t delete it. First, create a new backup or schedule with a different storage. Then, remove the old schedules and backups using the duplicate storage. Once it's no longer in use, you can delete it.
 
 
 
