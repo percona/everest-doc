@@ -128,8 +128,3 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     ```
 
     After a certain period, the recovery pod will self-destruct. The database cluster status will change from **Restoring** to **Initializing** and eventually to **Up**.
-
-
-## CLI
-
-If an unexpected error occurs when using the Everest CLI (everestctl), you may encounter a development stack trace that is helpful for debugging.
