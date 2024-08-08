@@ -26,17 +26,16 @@ However, not all the many combinations of K8s distributions and K8s versions mig
 
 | Platform              | Kubernetes Version | Percona Everest Version | State                                   |
 |:----------------------|:-------------------|:------------------------|:----------------------------------------|
-| Google GKE            | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
-| Amazon EKS            | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
-| Vanilla K8s (kubeadm) | 1.24 - 1.28        | >= 1.0.0                | Fully tested & certified                |
+| Google GKE            | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
+| Amazon EKS            | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
+| Vanilla K8s (kubeadm) | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
 | Azure AKS             | -                  | >= 1.0.0                | Works but not fully certified yet       |
 | DigitalOcean          | -                  | >= 1.0.0                | Works but not fully certified yet       |
 | OpenShift             | -                  |                         | Coming soon                             |
 | Other cloud K8s       | -                  |                         | Should work but not fully certified yet |
 
-**Note:**
-
-- Air-gapped environments are still not supported, but its support is coming soon.
+!!! note
+    [Air-gapped](https://ibm.github.io/kubernetes-networking/vpc/airgap/) environments are not currently supported, but support for this is coming soon.
 
 ## Before you install
 
