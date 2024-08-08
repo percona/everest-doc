@@ -19,12 +19,15 @@ Let's start by enabling you to deploy an automated private DBaaS, eliminating ve
 
 ## In this documentation
 
+<div data-grid markdown><div data-banner markdown>
+
 ### :material-telescope: Discover { .title }
 
 Discover how Percona Everest simplifies and streamlines your database management and provisioning.
 
 [Discover Percona Everest :material-arrow-right:](features.md){ .md-button .md-button--primary }
 
+</div><div data-banner markdown>
 
 ### :material-security: Secure { .title }
 
@@ -32,6 +35,7 @@ Explore how our security features are designed to ensure the security of your ho
 
 [Secure your deployments :material-arrow-right:](secure/user-auth.md){ .md-button .md-button--primary }
 
+</div><div data-banner markdown>
 
 ### :material-account-supervisor: Manage users { .title }
 
@@ -39,9 +43,14 @@ Learn how to manage user accounts in Percona Everest.
 
 [Manage user accounts :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
 
+</div><div data-banner markdown>
+
 
 ### :material-api: Percona Everest API { .title }
 
 Get ready to dive into our APIs and uncover their potential.
 
 [Dive into our APIs :material-arrow-right:](manage_users.md){ .md-button .md-button--primary }
+
+</div>
+</div>
