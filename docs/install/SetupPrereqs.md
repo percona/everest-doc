@@ -22,7 +22,7 @@ Percona Everest has two primary components:
 
 Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
 
-However, not all the many combinations of K8s distributions and K8s versions might be fully tested and certified. Please refer to the matrix below, and feel free to [contact us](SetupPrereqs.md#get-expert-help) in case of questions.
+However, not all the many combinations of K8s distributions and K8s versions might be fully tested and certified. Refer to the matrix below and [reach out to us](SetupPrereqs.md#get-expert-help) should you have any questions.
 
 | Platform              | Kubernetes Version | Percona Everest Version | State                                   |
 |:----------------------|:-------------------|:------------------------|:----------------------------------------|
