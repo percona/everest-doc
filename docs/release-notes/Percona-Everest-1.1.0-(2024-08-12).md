@@ -119,7 +119,7 @@ If you have multiple storages with the same bucket, URL, and region, you won’t
 To check whether your existing Everest installation has any backup storages using the same bucket, region, and endpoint URL, execute the following command:
 
 ```sh
-curl "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
+curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
 ```
 
 **Scenario 2**
