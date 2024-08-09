@@ -10,7 +10,7 @@ The Everest API has a critical endpoint known as the `/session` endpoint, which 
 
 By default, an Percona Everest installation allows three requests per second to this endpoint. It’s configurable via the `CREATE_SESSION_RATE_LIMIT` environment variable.
 
-Everest monitors failed login attempts per IP address and applies progressive timeouts to prevent unlimited login attempts without being throttled. When a rate limit is reached, the Percona Everest UI will throw an error.
+Everest monitors failed login attempts per IP address and applies progressive timeouts to prevent unlimited login attempts without being throttled. When a rate limit is reached, the Percona Everest API will throw an error.
 
   
 ## Customize API rate limiting
