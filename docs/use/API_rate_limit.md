@@ -4,6 +4,15 @@
 API rate limiting is a crucial aspect of managing APIs effectively. It involves setting a threshold for the number of requests that an API can receive within a specific period. This enables you to regulate the number of incoming requests, mitigating the risk of server overload or abuse. 
 
 
+## Sessions rate limit
+
+The Everest API has a critical endpoint known as the `/session` endpoint, which is responsible for exchanging the user's login credentials (username and password) for a JSON web token (JWT). As this endpoint is used to authenticate users, it is important to implement additional security measures.
+
+By default, a Percona Everest installation allows three requests per second to this endpoint. It’s configurable via the `CREATE_SESSION_RATE_LIMIT` environment variable.
+
+Everest monitors failed login attempts per IP address and applies progressive timeouts to prevent unlimited login attempts without being throttled. When a rate limit is reached, the Percona Everest API will throw an error.
+
+  
 ## Customize API rate limiting
 
 The default rate limit for Percona Everest is 100 requests per second. However, you have the option to modify these limits. To customize API rate limiting, you can adjust the rate limits to align them with your usage patterns and requirements.
@@ -38,6 +47,8 @@ To customize the API rate limiting:
               env:
                 - name: API_REQUESTS_RATE_LIMIT
                   value: "200"' 
+                - name: CREATE_SESSION_RATE_LIMIT
+                  value: "3"' 
     ```
 
     Replace 200 with the desired value.
