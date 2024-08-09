@@ -115,6 +115,13 @@ Here’s what you need to know:
 
 If you have multiple storages with the same bucket, URL, and region, you won’t be able to edit them after the 1.1.0 update. You’ll need to delete the duplicates.
 
+
+To check whether your existing Everest installation has any backup storages using the same bucket, region, and endpoint URL, execute the following command:
+
+```sh
+curl "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
+```
+
 **Scenario 2**
 
 If a storage is currently in use by any schedule or backup, you can’t delete it. First, create a new backup or schedule with a different storage. Then, remove the old schedules and backups using the duplicate storage. Once it's no longer in use, you can delete it.
