@@ -6,7 +6,7 @@ API rate limiting is a crucial aspect of managing APIs effectively. It involves 
 
 ## Sessions rate limit
 
-The Everest API has a critical endpoint known as the `/session` endpoint, which is responsible for exchanging the user's login credentials (username and password) for a JSON web token (JWT). As this endpoint is critical to safeguarding the user's integrity and confidentiality, it is important to implement additional security measures.
+The Everest API has a critical endpoint known as the `/session` endpoint, which is responsible for exchanging the user's login credentials (username and password) for a JSON web token (JWT). As this endpoint is used to authenticate users, it is important to implement additional security measures.
 
 By default, a Percona Everest installation allows three requests per second to this endpoint. It’s configurable via the `CREATE_SESSION_RATE_LIMIT` environment variable.
 
