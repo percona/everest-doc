@@ -11,7 +11,7 @@ Version 1.1.0 introduces the following changes:
 
 !!! warning
 
-    If you are using CLI v1.1.0 to upgrade from a version prior to v1.0.0 you need to run the following command before upgrading:
+    If you are using everestctl v1.1.0 to upgrade from a version prior to v1.0.0 you need to run the following command before upgrading:
 
     ```sh
     kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
