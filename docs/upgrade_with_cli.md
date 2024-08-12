@@ -23,7 +23,7 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
     ```sh
     kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
-```
+    ```
 
 2. To upgrade Percona Everest, use the following command:
 
