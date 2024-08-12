@@ -10,7 +10,6 @@ Version 1.1.0 introduces the following changes:
 ## Upgrade instructions
 
 !!! warning
-
     If you are using CLI v1.1.0 to upgrade from a version prior to v1.0.0 you need to run the following command before upgrading:
 
     ```sh
