@@ -18,7 +18,11 @@ You can only upgrade one minor version at a time. For instance, you can upgrade 
 During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
 {.power-number}
 
-1. To upgrade Percona Everest using the CLI, execute the following command:
+1. If you are using everestctl v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
+
+        kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
+
+2. To upgrade Percona Everest, use the following command:
 
     ```sh
     everestctl upgrade
@@ -40,7 +44,10 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
         2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
         ```
 
-2. After upgrading, refresh the Percona Everest UI to access the new version.
+
+
+
+3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
 

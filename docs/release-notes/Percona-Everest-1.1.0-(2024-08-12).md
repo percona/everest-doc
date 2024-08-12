@@ -7,10 +7,21 @@ Percona Everest is an open source cloud native database platform that helps prov
 Version 1.1.0 introduces the following changes:
 
 
+## Upgrade instructions
+
+!!! warning
+    If you are using everestctl v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
+
+    ```sh
+    kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
+    ```
+
+
 ## Release highlights
 
 !!! info "Important"
     Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
+
 
 ### Enhancements for PostgreSQL disaster recovery
 
