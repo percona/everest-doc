@@ -15,7 +15,7 @@ Version 1.1.0 introduces the following changes:
     ```sh
     kubectl get deployments everest-operator-controller-manager -n
      everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
-```
+    ```
 
 
 ## Release highlights
