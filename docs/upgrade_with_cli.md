@@ -50,7 +50,7 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
 
 
-2. After upgrading, refresh the Percona Everest UI to access the new version.
+3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
 
