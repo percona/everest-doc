@@ -10,7 +10,7 @@ Version 1.1.0 introduces the following changes:
 ## Release highlights
 
 !!! info "Important"
-    Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-08).md#known-limitations) that you should be aware of.
+    Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
 
 ### Enhancements for PostgreSQL disaster recovery
 
@@ -121,6 +121,8 @@ To check whether your existing Everest installation has any backup storages usin
 ```sh
 curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
 ```
+
+
 
 **Scenario 2**
 
