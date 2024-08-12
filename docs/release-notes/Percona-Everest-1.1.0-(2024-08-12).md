@@ -12,6 +12,14 @@ Version 1.1.0 introduces the following changes:
 !!! info "Important"
     Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
 
+### Breaking change in Percona Everest 1.1.0
+
+If you are using CLI v1.1.0 to upgrade from a version prior to v1.0.0 you need to run the following command before upgrading:
+
+```sh
+kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | xargs -d ',' -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
+```
+
 ### Enhancements for PostgreSQL disaster recovery
 
 We've made our backups and restores more reliable by setting limits on how we manage backup storage. This proactive approach ensures that we can prevent potential issues from being triggered in edge-case scenarios.
