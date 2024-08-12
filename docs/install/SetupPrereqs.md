@@ -1,24 +1,17 @@
-# Setup and prerequisites for manual installation
-
-!!! note alert alert-primary "Note"
-    The installation instructions in this guide go through all the manual installation and provisioning steps. To get started with Percona Everest as quickly as possible, Percona provides a script that automatically performs most steps.
-
-    [See Percona Everest QuickStart guide :material-arrow-right:](../quickstart-guide/quick-install.md){.md-button}
-
-## Setup
+# Setup and prerequisites
 
 Percona Everest has two primary components:
 
 * [Percona Everest CLI](https://docs.percona.com/everest/install/installEverestCLI.html), which connects Percona Everest to your Kubernetes cluster.
 * Percona Everest application with the UI, which you can spin up using the instructions below.
 
-### Supported operators
+## Supported operators
 
 * Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.13.0, 1.14.0
 * Percona Operator for MongoDB (PSMDB) 1.15.0
 * Percona Operator for PostgreSQL (PG) 2.3.1
 
-### Supported k8s clusters
+## Supported k8s clusters
 
 Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
 
