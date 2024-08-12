@@ -18,7 +18,7 @@ You can only upgrade one minor version at a time. For instance, you can upgrade 
 During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
 {.power-number}
 
-1. If you are using CLI v1.1.0 to upgrade from a version prior to v1.0.0, you need to execute the following command:
+1. If you are using CLI v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
 
 
     ```sh
