@@ -73,7 +73,7 @@ To create the EKS cluster, do the following steps:
     
     **3.2** Add the [Amazon EBS CSI](https://docs.aws.amazon.com/eks/latest/userguide/managing-ebs-csi.html) add-on using eksctl. (Replace 111122223333 with your account ID)
     
-            eksctl create addon --name aws-ebs-csi-driver --cluster my-cluster --service-account-role-arn arn:aws:iam::111122223333:role/AmazonEKS_EBS_CSI_DriverRole --force
+        eksctl create addon --name aws-ebs-csi-driver --cluster my-cluster --service-account-role-arn arn:aws:iam::111122223333:role/AmazonEKS_EBS_CSI_DriverRole --force
             
 4. Add nodes to your [EKS cluster](https://docs.aws.amazon.com/eks/latest/userguide/eks-compute.html)
 
