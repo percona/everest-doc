@@ -26,13 +26,13 @@ To create the EKS cluster, do the following steps:
 
 1. **Set up your cluster details**
    
-   Before creating your cluster, determine the following details:
+    Before creating your cluster, determine the following details:
 
-    - **Cluster Name**: Choose a name for your EKS cluster.
-    - **AWS Region**: Specify the AWS region where you want to deploy your cluster.
-    - **Number of Nodes**: Decide how many nodes you need.
-    - **On-Demand and Spot Instances**:  Determine the desired ratio between [on-demand](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html){:target="_blank"}
-        and [spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances in the total number of nodes.
+        - **Cluster Name**: Choose a name for your EKS cluster.
+        - **AWS Region**: Specify the AWS region where you want to deploy your cluster.
+        - **Number of Nodes**: Decide how many nodes you need.
+        - **On-Demand and Spot Instances**:  Determine the desired ratio between [on-demand](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html){:target="_blank"}
+            and [spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances in the total number of nodes.
 
     !!! note
         [Spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances are not recommended for production environment but may be useful for testing purposes.
