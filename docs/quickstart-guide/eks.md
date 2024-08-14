@@ -27,7 +27,6 @@ To create the EKS cluster, do the following steps:
 1. **Set up your cluster details**
    
     Before creating your cluster, determine the following details:
-
         - **Cluster Name**: Choose a name for your EKS cluster.
         - **AWS Region**: Specify the AWS region where you want to deploy your cluster.
         - **Number of Nodes**: Decide how many nodes you need.
