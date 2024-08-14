@@ -95,5 +95,5 @@ Congratulations! You have successfully created and configured a Kubernetes clust
 
 ## Next Steps
 
-Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our [installing Everest using the quick install script](quick-install.md) to get started quickly and easily.
+Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our [Quick start guide](quick-install.md) to get started quickly and easily.
         
