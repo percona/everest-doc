@@ -47,7 +47,7 @@ To create the EKS cluster, do the following steps:
     eksctl create cluster --name my-cluster --region region-code --version 1.28 --vpc-private-subnets subnet-ExampleID1,subnet-ExampleID2 --without-nodegroup
     ```
 
-    *  name: The name of your cluster.
+    *  **name**: The name of your cluster.
     * region: The AWS region where the cluster will be deployed.
     * version: The Kubernetes version for your cluster.
     * vpc-private-subnets: The private subnets where the nodes will be deployed.
