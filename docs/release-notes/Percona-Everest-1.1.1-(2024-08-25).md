@@ -8,6 +8,6 @@ Version 1.1.1 introduces the following changes:
 
 ## Fixed issues
 
-- [EVEREST-1349](https://perconadev.atlassian.net/browse/EVEREST-1349) - While attempting to delete a database cluster after upgrading from Percona Everest version 1.0.x to 1.1.0, the provisioned databases in v1.0.x were stuck in the **Deleting** state. The issue has been resolved now.
+- [EVEREST-1349](https://perconadev.atlassian.net/browse/EVEREST-1349) - While attempting to delete a database cluster after upgrading from Percona Everest version `1.0.x` to `1.1.0`, the provisioned databases in `v1.0.x` were stuck in the **Deleting** state. The issue has been resolved now.
 
 
