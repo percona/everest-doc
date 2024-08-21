@@ -7,9 +7,9 @@ Percona Everest has two primary components:
 
 ## Supported operators
 
-* Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.13.0, 1.14.0
+* Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.14.0, 1.15.0
 * Percona Operator for MongoDB (PSMDB) 1.15.0
-* Percona Operator for PostgreSQL (PG) 2.3.1
+* Percona Operator for PostgreSQL (PG) 2.3.1, 2.4.1
 
 ## Supported k8s clusters
 
@@ -17,15 +17,15 @@ Percona Everest works on most of the cloud K8s and on most of the on-prem vanill
 
 However, not all the many combinations of K8s distributions and K8s versions might be fully tested and certified. Refer to the matrix below and [reach out to us](SetupPrereqs.md#get-expert-help) should you have any questions.
 
-| Platform              | Kubernetes Version | Percona Everest Version | State                                   |
-|:----------------------|:-------------------|:------------------------|:----------------------------------------|
-| Google GKE            | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
-| Amazon EKS            | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
-| Vanilla K8s (kubeadm) | 1.24 - 1.28        | >= 1.0.0                | Fully tested and certified                |
-| Azure AKS             | -                  | >= 1.0.0                | Works but not fully certified yet       |
-| DigitalOcean          | -                  | >= 1.0.0                | Works but not fully certified yet       |
-| OpenShift             | -                  |                         | Coming soon                             |
-| Other cloud K8s       | -                  |                         | Should work but not fully certified yet |
+| Platform              | Kubernetes Version | State                                   |
+|:----------------------|:-------------------|:----------------------------------------|
+| Google GKE            | 1.27 - 1.29        | Fully tested and certified                |
+| Amazon EKS            | 1.28 - 1.30        | Fully tested and certified                |
+| Azure AKS             | -                  | Works but not fully certified yet       |
+| DigitalOcean          | -                  | Works but not fully certified yet       |
+| Vanilla K8s (kubeadm) | -                  | Works but not fully certified yet       |
+| OpenShift             | -                  | Coming soon                             |
+| Other cloud K8s       | -                  | Should work but not fully certified yet |
 
 !!! note
     Air-gapped environments (i.e. environments physically isolated from unsecured networks such as the public Internet) are not currently supported. Their support is coming soon.
