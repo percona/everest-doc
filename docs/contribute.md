@@ -38,7 +38,7 @@ Found a typo or didn't find what you needed? Here's how you can contribute to th
 
 1. **Request a doc change through a Jira issue**. If you’ve spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don’t have time nor desire to fix it yourself - let us know about it.
 
-	- Click the **Jira** link in the contact us section. This opens the [Jira issue tracker](https://jira.percona.com/projects/Everest).
+	- Click the **Jira** link in the contact us section. This opens the [Jira issue tracker](https://perconadev.atlassian.net/jira/software/c/projects/EVEREST/boards/65).
 	- Sign in (create a Jira account if you don’t have one) and click **Create** to create an issue.
 	- Describe the issue you have detected in the Summary, Description, Steps To Reproduce, Affects Version fields.
 
