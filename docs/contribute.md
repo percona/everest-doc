@@ -19,7 +19,7 @@ Start by searching the open topics for a similar report. If you find that someon
 If there is no existing report, submit a report following these steps:
 {.power-number}
 
-1. Sign in to [Percona Everest Forum](hhttps://forums.percona.com/). You will need to create an account if you do not have one.
+1. Sign in to [Percona Everest Forum](htttps://forums.percona.com). You will need to create an account if you do not have one.
 
 2. Create a report that:      
       *  describes the steps to reproduce the issue
