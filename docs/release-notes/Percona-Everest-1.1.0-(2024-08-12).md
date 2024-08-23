@@ -124,7 +124,7 @@ Here’s what you need to know:
 
 **Scenario 1**
 
-=== ":simple-mongodb: MongoDB", ":simple-mysql: MySQL"
+=== ":simple-mongodb::simple-mysql: MongoDB, MySQL"
 
 If you have multiple storages with the same bucket, URL, and region, you won’t be able to edit them after the 1.1.0 update. You’ll need to delete the duplicates.
 
