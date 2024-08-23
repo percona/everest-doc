@@ -136,9 +136,7 @@ curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/c
 
 **Scenario 2**
 
-If a storage is currently in use by any schedule or backup, you can’t delete it.
-
-Let's check how to work with various databases:
+What to do if you have schedules or backups that are using duplicated storages in different database technologies.
 
 - MySQL, MongoDB: Create a new backup using a different backup storage. Then, delete the old schedules and backups that use the duplicated storage.
 
