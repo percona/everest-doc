@@ -124,6 +124,8 @@ Here’s what you need to know:
 
 **Scenario 1**
 
+=== ":simple-mongodb:, MongoDB", ":simple-mysql: MySQL"
+
 If you have multiple storages with the same bucket, URL, and region, you won’t be able to edit them after the 1.1.0 update. You’ll need to delete the duplicates.
 
 
@@ -137,6 +139,8 @@ curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/c
 **Scenario 2**
 
 What to do if you have schedules or backups that are using duplicated storages in different database technologies.
+
+=== ":simple-mongodb: MongoDB"
 
 - MySQL, MongoDB: Create a new backup using a different backup storage. Then, delete the old schedules and backups that use the duplicated storage.
 
