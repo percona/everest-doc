@@ -138,11 +138,11 @@ curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/c
 
 What to do if you have schedules or backups that are using duplicated storages in different database technologies.
 
-    === ":simple-mongodb: MongoDB" ":simple-mysql: MySQL"
+  === ":simple-mongodb: MongoDB" ":simple-mysql: MySQL"
 
     Create a new backup using a different backup storage. Then, delete the old schedules and backups that use the duplicated storage.
 
-    === ":simple-postgresql: PostgreSQL"
+        === ":simple-postgresql: PostgreSQL"
 
-    Any backups using duplicated backup storages should be deleted. First, delete the backups from both backup storages, then delete the backup schedules, and finally, delete the backup storages themselves. Then, create a new backup storage and take backups using the new backup storage.
+        Any backups using duplicated backup storages should be deleted. First, delete the backups from both backup storages, then delete the backup schedules, and finally, delete the backup storages themselves. Then, create a new backup storage and take backups using the new backup storage.
 
