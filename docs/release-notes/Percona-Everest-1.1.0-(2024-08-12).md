@@ -142,8 +142,5 @@ Let's check how to work with various databases:
 
 - MySQL, MongoDB: Create a new backup using a different backup storage. Then, delete the old schedules and backups that use the duplicated storage.
 
-- PostgreSQL: Delete the old schedules and backups that use the duplicate storage. Then, create a new backup using different storage.
-
-Once the duplicate storage is no longer in use, you can delete it.
-
+- PostgreSQL: Any backups using duplicated backup storages should be deleted. First, delete the backups from both backup storages, then delete the backup schedules, and finally, delete the backup storages themselves. Then, create a new backup storage and take backups using the new backup storage.
 
