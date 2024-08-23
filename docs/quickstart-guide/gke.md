@@ -124,4 +124,7 @@ The cluster deletion may take time.
 
 ## Next Steps
 
-Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our [installing Everest using the quick install script](quick-install.md) to get started quickly and easily.
+Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our quick install guide to get started quickly and easily.
+
+
+[Provision database :material-arrow-right:](../quickstart-guide/quick-install.md){.md-button}
