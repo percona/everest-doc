@@ -91,9 +91,10 @@ To create the EKS cluster, do the following steps:
         --ssh-access \
         --ssh-public-key my-key
 
-Congratulations! You have successfully created and configured a Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS).
 
 ## Next Steps
 
-Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our [Quick start guide](quick-install.md) to get started quickly and easily.
+Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our quick install guide to get started quickly and easily.
+
+[Provision database :material-arrow-right:](../quickstart-guide/quick-install.md){.md-button}
         
