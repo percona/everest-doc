@@ -12,28 +12,37 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
 
-
 ## Backups
 
-The limitations related to backups in Percona Everest are as follows:
+Let's delve into the limitations of on-demand backups in Percona Everest. 
+
+### PostgreSQL limitations for on-demand backups
 
 - When attempting to delete a PostgreSQL database that contains backups created with Everest versions older than 1.0.0, the database may become stuck in the **Deleting** state. 
 
     **Workaround**: To prevent this, manually delete any backups created with versions prior to 1.0.0 by using the **Delete** action on the **Backups** page before deleting the database.
 
-- You cannot change the bucket name for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
+- You cannot change the bucket name and region for a specific backup storage. Doing so will make any backups taken for that bucket unusable.
 
+- You can use any of the existing backup storages across on-demand backups and schedules, as long as the total number of storages in use (by existing on-demand backups and schedules) does not exceed three.
+
+    If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
 
 ## Scheduled backups
 
-Due to an issue that has been identified in PostgreSQL editing/deletion of schedules, the following functionality is temporarily unavailable for PostgreSQL:
+Let's explore the constraints of scheduled backups in Percona Everest.
+
+### PostgreSQL Limitations for schedules
+
+Due to PostgreSQL limitations, the following functionality is unavailable for PostgreSQL:
 
 - Modifying the storage location in existing schedules
-- Removing existing schedules
-- Utilizing the same storage location for different schedules
-
-The bug may result in a situation where editing or deleting the schedules could corrupt previously taken backups, making it impossible to restore from them.
+- Using the same backup storage for different schedules
+- Creating more than three schedules for PostgreSQL
+- Using more than three different backup storages in total, including those used in existing on-demand backups.
+ 
+Everest does not allow these actions to be performed because they could corrupt previously taken backups, making it impossible to restore from them.
 
 
 ## Point-in-time-recovery (PITR)
@@ -47,7 +56,7 @@ The default **uploadInterval** values for different databases are as follows:
 - PostgreSQL = 1 minute
 
 
-### Limitation for PostgreSQL
+### PostgreSQL limitation for PITR
 
 When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
 
@@ -119,8 +128,3 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
     ```
 
     After a certain period, the recovery pod will self-destruct. The database cluster status will change from **Restoring** to **Initializing** and eventually to **Up**.
-
-
-## CLI
-
-If an unexpected error occurs when using the Everest CLI (everestctl), you may encounter a development stack trace that is helpful for debugging.
