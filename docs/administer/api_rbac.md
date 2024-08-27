@@ -1,2 +1,3 @@
 API changes for RBAC
 
+Starting with Everest v1.2.0, breaking changes are being made to the API for monitoring instances and backup storage resources. Previously, these resources were globally scoped, but now they will be specific to namespaces. This means that DatabaseClusters will only be able to use monitoring instances and backup storage that are located within the same namespace as the cluster. This change is being implemented to ensure more precise access control and consistency.
