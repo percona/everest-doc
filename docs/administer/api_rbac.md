@@ -12,11 +12,11 @@ Starting with Percona Everest v1.2.0, breaking changes are being made to the API
 
 The use of the `allowedNamespaces` field for globally scoped resources presented challenges when integrating with the core RBAC model. In order to resolve this inconsistency and align with the RBAC framework, backup storage and monitoring instances are now namespaced resources. This change ensures that all resources adhere to the same RBAC model, resulting in a more consistent and manageable access control structure across the entire system.
 
-##  What are the changes in the Percona Everest APIs?
+##  Changes in the Percona Everest APIs?
 
-The APIs has been updated with the following modifications:
+The APIs have been updated with the following modifications:
 
-- The existing APIs for backup storage and monitoring instances are deprecated. You should use the API path prefixed with `/namespaces/{namespace}`.
+- The existing APIs for backup storage and monitoring instances are deprecated. Now, you should use the API path prefixed with `/namespaces/{namespace}`.
 
     ??? example "Example"
 
@@ -24,10 +24,9 @@ The APIs has been updated with the following modifications:
 
         ```/v1/namespaces/{namespace}/backup-storages```
 
-        Check out the [API](https://percona-everest.readme.io/reference/getkubernetesclusterresources) documentation for more details
+        Check out the [API](https://percona-everest.readme.io/reference/getkubernetesclusterresources) documentation for more details.
 
-
-
+- The `.spec.allowedNamespaces` field has been deprecated. Access control for these resources is now managed through the RBAC policy.
 
 
 
