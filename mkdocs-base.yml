@@ -179,8 +179,8 @@ nav:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
       - Access Control: 
-        - administer/rbac.md
-        - administer/api_rbac.md
+        - RBAC: administer/rbac.md
+        - API changes: administer/api_rbac.md
       
 
   - Use:
