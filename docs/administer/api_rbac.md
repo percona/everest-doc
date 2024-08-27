@@ -20,9 +20,9 @@ The APIs has been updated with the following modifications:
 
     ??? example "Example"
 
-            /v1/backup-storages is now
+        ```/v1/backup-storages``` is now
 
-             /v1/namespaces/{namespace}/backup-storages.
+        ```/v1/namespaces/{namespace}/backup-storages```
 
         Check out the [API](https://percona-everest.readme.io/reference/getkubernetesclusterresources) documentation for more details
 
