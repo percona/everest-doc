@@ -101,9 +101,11 @@ In the unlikely event that your upgrade fails and you need to manually migrate t
 
 3. Edit `new-backupstorages.yaml` as follows:
 
-    a. For each `BackupStorage` retrieved, create a copy in each namespace specified under `.spec.allowedNamespaces`.
-    b. Remove (or unset) `.spec.allowedNamespaces` in each copy of the `BackupStorages` object.
-    c. Ensure that `.metadata` contains only `name` and `namespace`.
+    1. For each `BackupStorage` retrieved, create a copy in each namespace specified under `.spec.allowedNamespaces`.
+
+    2. Remove (or unset) `.spec.allowedNamespaces` in each copy of the `BackupStorages` object.
+    
+    3. Ensure that `.metadata` contains only `name` and `namespace`.
 
     ??? example "Example"
         ```sh
