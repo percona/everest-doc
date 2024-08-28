@@ -12,7 +12,7 @@ Starting with Percona Everest v1.2.0, breaking changes are being made to the API
 
 The use of the `allowedNamespaces` field for globally scoped resources presented challenges when integrating with the core RBAC model. In order to resolve this inconsistency and align with the RBAC framework, backup storage and monitoring instances are now namespaced resources. This change ensures that all resources adhere to the same RBAC model, resulting in a more consistent and manageable access control structure across the entire system.
 
-##  Changes in the Percona Everest APIs?
+##  Changes in the Percona Everest APIs
 
 The APIs have been updated with the following modifications:
 
@@ -28,11 +28,11 @@ The APIs have been updated with the following modifications:
 
 - The `.spec.allowedNamespaces` field has been deprecated. Access control for these resources is now managed through the RBAC policy.
 
-## Upgrading to Percona Everest 1.2.0
+### Migrating to Percona Everest 1.2.0
 
 After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
 
-Need more details? Check out the [upgrade]() section.
+Need more details? Check out the [upgrade](../upgrade_with_cli.md#upgrading-to-percona-everest-120) section.
 
 
 
