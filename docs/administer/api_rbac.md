@@ -30,8 +30,9 @@ The APIs have been updated with the following modifications:
 
 ## Upgrading to Percona Everest 1.2.0
 
+After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
 
-
+Need more details? Check out the [upgrade]() section.
 
 
 
