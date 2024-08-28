@@ -53,7 +53,7 @@ When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your exi
 
 Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
 
-In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the in the []() section.
+In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the in the [How to resolve upgrade failures in Percona Everest 1.2.0](#how-to-resolve-upgrade-failures-in-percona-everest-120) section.
 
 
 ## How to address a failed upgrade
@@ -142,6 +142,13 @@ In the unlikely event that your upgrade fails and you need to manually migrate t
         verifyTLS: true
         ```
 
+4. Create your new backup storages:
+
+        kubectl apply -f new-backupstorages.yaml
+
+    A similar set of steps can also be followed for monitoring configs as well:
+
+        kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
 
 ## After your upgrade is complete
