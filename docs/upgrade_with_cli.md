@@ -53,7 +53,7 @@ When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your exi
 
 Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
 
-In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the in the [How to resolve upgrade failures in Percona Everest 1.2.0](#how-to-resolve-upgrade-failures-in-percona-everest-120) section.
+In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in the [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-resolve-upgrade-failures-in-percona-everest-120) section.
 
 
 ## How to address a failed upgrade
