@@ -28,6 +28,9 @@ The APIs have been updated with the following modifications:
 
 - The `.spec.allowedNamespaces` field has been deprecated. Access control for these resources is now managed through the RBAC policy.
 
+## Upgrading to Percona Everest 1.2.0
+
+
 
 
 
