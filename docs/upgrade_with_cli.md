@@ -51,6 +51,9 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
 
 When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup-storages and monitoring-instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
+Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally.
+
+
 ## How to address a failed upgrade
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
