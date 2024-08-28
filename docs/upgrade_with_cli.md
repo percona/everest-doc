@@ -44,12 +44,12 @@ During the upgrade of Percona Everest, only Everest and Everest operator are upg
         2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
         ```
 
-
-
-
 3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
+### Upgrading to Percona Everest 1.2.0
+
+When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup-storages and monitoring-instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
 ## How to address a failed upgrade
 
