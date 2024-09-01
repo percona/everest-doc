@@ -6,9 +6,9 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
 
 
 !!! note "Note"
-    To integrate IdP with Percona Everest, first, [install Percona Everest](../install/installEverest.md) and then [configure OIDC](#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](#configure-oidc-on-percona-everest-side).
+    To integrate IdP with Percona Everest, first, [install Percona Everest](../install/installEverest.md) and then [configure OIDC](#configure-oidc-on-the-provider-side) on the IdP's side as well as the [Percona Everest side](#configure-oidc-on-percona-everest-side).
 
-## Configure OIDC on the providers's side
+## Configure OIDC on the provider side
 
 - **Proof Key for Code Exchange (PKCE)**: When setting up the Provider side, it's important to configure an application specifically for [PKCE](https://auth0.com/docs/get-started/authentication-and-authorization-flow#authorization-code-flow-with-proof-key-for-code-exchange-pkce-){:target="_blank"} authorization.
 
@@ -20,7 +20,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
         !!! info "Important" 
             IdP providers often require a secure connection (HTTPS). Therefore, the provider might require your `<EVEREST_URL>` to be based on HTTPS. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
 
-### Example: OIDC configuration on the providers's side
+### Example: OIDC configuration on the provider side
 
 Below is an example of the configuration for the IdP provider Okta. 
 
@@ -66,7 +66,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 You can configure OIDC on the Percona Everest's side using the CLI in headless mode or with the wizard.
 
 !!! note "Note"
-    You must have obtained the `Issuer URL` and `Client ID` values from the [Configure OIDC on the providers's side](#example-oidc-configuration-on-the-providerss-side) section.
+    You must have obtained the `Issuer URL` and `Client ID` values from the [Configure OIDC on the provider side](#example-oidc-configuration-on-the-provider-side) section.
 
 To configure OIDC using the headless mode, run the following command:
 
