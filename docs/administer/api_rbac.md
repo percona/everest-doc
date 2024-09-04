@@ -34,7 +34,7 @@ The APIs have been updated with the following modifications:
 
 - The `.spec.allowedNamespaces` field has been deprecated. Access control for these resources is now managed through the RBAC policy.
 
-- `database-clusters` can now only reference `backup-storages` and `monitoring-instances `that are created within the same namespace as the `database-cluster`.
+- `database-clusters` can now only reference `backup-storages` and `monitoring-instances` that are created within the same namespace as the `database-cluster`.
 
 ### Migrating to Percona Everest 1.2.0
 
