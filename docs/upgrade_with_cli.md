@@ -60,9 +60,9 @@ In the unlikely event that your upgrade fails, and you need to manually migrate 
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
 
-### Resolving upgrade failures due to the breaking API changes in 1.2.0
+### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
 
-Everest 1.2.0 includes some breaking API changes (attach link to doc). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
+Percona Everest 1.2.0 includes some [breaking API changes](administer/api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
 {.power-number}
 
 1. List the existing backup-storages:
