@@ -1,6 +1,6 @@
 # Navigating the breaking API changes for RBAC
 
-Starting with Percona Everest v1.2.0, breaking changes are being made to the API for monitoring instances and backup storage resources. These changes are:
+Starting with Percona Everest v1.2.0, breaking changes are being made to the API for `monitoring-instances` and `backup-storage` resources. These changes are:
 
 - Before the release of Percona Everest 1.2.0, these resources were globally scoped, but now they will be specific to namespaces. 
 
