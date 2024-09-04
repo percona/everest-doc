@@ -38,7 +38,7 @@ The APIs have been updated with the following modifications:
 
 ### Migrating to Percona Everest 1.2.0
 
-After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
+When upgrading to 1.2.0, all your existing backup-storages and monitoring-instances will be automatically migrated to the namespaces specified in their .spec.allowedNamespaces fields. After the upgrade, these resources will be accessible exclusively through the new API endpoints.
 
 Need more details? Check out the [upgrade](../upgrade_with_cli.md#upgrading-to-percona-everest-120) section.
 
