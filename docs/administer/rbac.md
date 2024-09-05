@@ -158,7 +158,7 @@ Check out the policy for a **readonly** role:
             - **Database cluster credentials**: `Read` acccess
             - **Backup storages**: `Read` access
 
-            ![!image](../images/rbac_backup_permissions.png)
+            ![!image](../images/rbac_storages_permissions.png)
 
             - **Monitoring instances**: `Read` access
 
