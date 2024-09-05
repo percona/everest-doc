@@ -119,17 +119,20 @@ Check out the policy for a **readonly** role:
 
     2. **Dev group role with read/update/create access to single namepsace**
 
-        Let's set up a dev group role definition with **read/update/create** access within the namespace called as `the-dark-side`:
+        Let's set up a dev group role definition with **read/update/create** access within the namespace called as `dev`:
 
-        ```sh
-        p, team-darkside:role, namespaces, read, the-dark-side
-        p, team-darkside:role, database-engines, read, the-dark-side/*
-        p, team-darkside:role, database-clusters, read, the-dark-side/*
-        p, team-darkside:role, database-clusters, update, the-dark-side/*
-        p, team-darkside:role, database-clusters, create, the-dark-side/*
-        p, team-darkside:role, database-cluster-credentials, read, the-dark-side/*
-        p, team-darkside:role, backup-storages, read, the-dark-side/*
-        p, team-darkside:role, monitoring-instances, read, the-dark-side/*
+        ```sh       
+        p, team-darkside:role, namespaces, read, dev
+        p, team-darkside:role, database-engines, read, dev/*
+        p, team-darkside:role, database-clusters, read, dev/*
+        p, team-darkside:role, database-clusters, update, dev/*
+        p, team-darkside:role, database-clusters, create, dev/*
+        p, team-darkside:role, database-clusters, delete, dev/*
+        p, team-darkside:role, database-cluster-credentials, read, dev/*
+        p, team-darkside:role, backup-storages, read, dev/*
+        p, team-darkside:role, monitoring-instances, read, dev/*
+        p, team-darkside:role, database-cluster-restores, create, dev/*
+        g, john, team-darkside:role
         ```
 
         ??? info "Let's dive into decoding this!"
