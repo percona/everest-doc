@@ -127,7 +127,7 @@ Check out the policy for a **readonly** role:
         p, team-darkside:role, database-clusters, read, the-dark-side/*
         p, team-darkside:role, database-clusters, update, the-dark-side/*
         p, team-darkside:role, database-clusters, create, the-dark-side/*
-        p, team-darkside:role, database-clusters-credentials, read, the-dark-side/*
+        p, team-darkside:role, database-cluster-credentials, read, the-dark-side/*
         p, team-darkside:role, backup-storages, read, the-dark-side/*
         p, team-darkside:role, monitoring-instances, read, the-dark-side/*
         ```
