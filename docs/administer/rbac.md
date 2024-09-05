@@ -145,32 +145,7 @@ Check out the policy for a **readonly** role:
 
         ??? info "Let's dive into decoding this!"
 
-            The `team-dev` role has the following privileges **only** within `dev` namespace:
-
-            - **namespace**:  `Read` access to `dev`
-            - **Database engines**: `Read` access
-            - **Database clusters**: `Read` access
-            - **Database clusters**: `Update` acccess
-            - **Database clusters**: `Create` acccess
-
-            ![!image](../images/rbac_cluster_permissions.png)
-
-            - **Database cluster credentials**: `Read` acccess
-            - **Backup storages**: `Read` access
-
-            ![!image](../images/rbac_storages_permissions.png)
-
-            - **Monitoring instances**: `Read` access
-
-            ![!image](../images/rbac_monitoring_permissions.png)
-
-            - **Database cluster restores**: `Create` access
-
-
-
-
-
-
+            
 
     3. **Dev group role with full access to a single database**
 
@@ -261,19 +236,42 @@ data:
     g, <newuser>, adminrole:role
 ```
 
-For example, let's assign the role `team-darkside:role` to a new user named John:
+For example, let's assign the role `team-dev` to a new user named John:
 
-```sh
- p, team-darkside:role, namespaces, read, */*
- p, team-darkside:role, database-engines, read, */*
- p, team-darkside:role, database-clusters, read, */*
- p, team-darkside:role, database-clusters, update, */*
- p, team-darkside:role, database-clusters-credentials, read, */*
- p, team-darkside:role, backup-storages, read, */*
- p, team-darkside:role, monitoring-instances, read, */*
- g, john, team-darkside:role
-```
+    ```sh       
+    p, team-dev:role, namespaces, read, dev
+    p, team-dev:role, database-engines, read, dev/*
+    p, team-dev:role, database-clusters, read, dev/*
+    p, team-dev:role, database-clusters, update, dev/*
+    p, team-dev:role, database-clusters, create, dev/*
+    p, team-dev:role, database-clusters, delete, dev/*
+    p, team-dev:role, database-cluster-credentials, read, dev/*
+    p, team-dev:role, backup-storages, read, dev/*
+    p, team-dev:role, monitoring-instances, read, dev/*
+    p, team-dev:role, database-cluster-restores, create, dev/*
+    g, john, team-dev:role
+    ```
 
+The `team-dev` role has the following privileges **only** within `dev` namespace:
+
+- **namespace**:  `Read` access to `dev`
+- **Database engines**: `Read` access
+- **Database clusters**: `Read` access
+- **Database clusters**: `Update` acccess
+- **Database clusters**: `Create` acccess
+
+![!image](../images/rbac_cluster_permissions.png)
+
+- **Database cluster credentials**: `Read` acccess
+- **Backup storages**: `Read` access
+
+![!image](../images/rbac_storages_permissions.png)
+
+- **Monitoring instances**: `Read` access
+
+![!image](../images/rbac_monitoring_permissions.png)
+
+- **Database cluster restores**: `Create` access
 
 ## Validate your RBAC policy
 
