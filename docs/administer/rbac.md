@@ -86,6 +86,14 @@ Check out the policy for a **readonly** role:
     p, readonly:role, monitoring-instances, read, */*
 ```
 
+    ![!image](../images/rbac_readonly_role.png)
+
+    ![!image](../images/rbac_readonly_role.png)
+
+    
+
+
+
 ??? Example "Examples"
 
     Let's dive into some role definitions for RBAC:
@@ -151,7 +159,7 @@ Check out the policy for a **readonly** role:
             - **Backup storages**: `Read` access
 
             ![!image](../images/rbac_backup_permissions.png)
-            
+
             - **Monitoring instances**: `Read` access
 
             ![!image](../images/rbac_monitoring_permissions.png)
