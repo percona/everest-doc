@@ -238,16 +238,16 @@ The `team-dev` role has the following privileges **only** within `dev` namespace
 - **Database clusters**: `Update` acccess
 - **Database clusters**: `Create` acccess
 
-![!image](../images/rbac_cluster_permissions.png)
+    ![!image](../images/rbac_cluster_permissions.png)
 
 - **Database cluster credentials**: `Read` acccess
 - **Backup storages**: `Read` access
 
-![!image](../images/rbac_storages_permissions.png)
+    ![!image](../images/rbac_storages_permissions.png)
 
 - **Monitoring instances**: `Read` access
 
-![!image](../images/rbac_monitoring_permissions.png)
+    ![!image](../images/rbac_monitoring_permissions.png)
 
 - **Database cluster restores**: `Create` access
 
