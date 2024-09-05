@@ -151,6 +151,7 @@ Check out the policy for a **readonly** role:
             - **Backup storages**: `Read` access
 
             ![!image](../images/rbac_backup_permissions.png)
+            
             - **Monitoring instances**: `Read` access
 
             ![!image](../images/rbac_monitoring_permissions.png)
