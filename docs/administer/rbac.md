@@ -88,7 +88,7 @@ Check out the policy for a **readonly** role:
 
 ![!image](../images/rbac_readonly_role.png)
 
-![!image](../images/rbac_readonly_role.png)
+![!image](../images/rbac_readonly_ns.png)
 
     
 
