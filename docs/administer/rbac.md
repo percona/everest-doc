@@ -176,13 +176,13 @@ Check out the policy for a **readonly** role:
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
         ```sh
-        p, team-darkside:role, namespaces, read, `*/*`
-        p, team-darkside:role, database-engines, read, `*/*`
-        p, team-darkside:role, database-clusters, read, `*/*`
-        p, team-darkside:role, database-clusters, update, `*/*`
-        p, team-darkside:role, database-clusters-credentials, read, `*/*`
-        p, team-darkside:role, backup-storages, read, `*/*`
-        p, team-darkside:role, monitoring-instances, read, `*/*`
+        p, team-darkside:role, namespaces, read, */*
+        p, team-darkside:role, database-engines, read, */*
+        p, team-darkside:role, database-clusters, read, */*
+        p, team-darkside:role, database-clusters, update, */*
+        p, team-darkside:role, database-clusters-credentials, read, */*
+        p, team-darkside:role, backup-storages, read, */*
+        p, team-darkside:role, monitoring-instances, read, */*
         ```
 
         ??? info "Let's dive into decoding this!"
