@@ -86,9 +86,9 @@ Check out the policy for a **readonly** role:
     p, readonly:role, monitoring-instances, read, */*
 ```
 
-    ![!image](../images/rbac_readonly_role.png)
+![!image](../images/rbac_readonly_role.png)
 
-    ![!image](../images/rbac_readonly_role.png)
+![!image](../images/rbac_readonly_role.png)
 
     
 
