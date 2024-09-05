@@ -124,30 +124,8 @@ Check out the policy for a **readonly** role:
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-
-    2. **Dev group role with read/update/create access to single namepsace**
-
-        Let's set up a dev group role definition with **read/update/create** access within the namespace called as `dev`:
-
-        ```sh       
-        p, team-dev:role, namespaces, read, dev
-        p, team-dev:role, database-engines, read, dev/*
-        p, team-dev:role, database-clusters, read, dev/*
-        p, team-dev:role, database-clusters, update, dev/*
-        p, team-dev:role, database-clusters, create, dev/*
-        p, team-dev:role, database-clusters, delete, dev/*
-        p, team-dev:role, database-cluster-credentials, read, dev/*
-        p, team-dev:role, backup-storages, read, dev/*
-        p, team-dev:role, monitoring-instances, read, dev/*
-        p, team-dev:role, database-cluster-restores, create, dev/*
-        g, john, team-dev:role
-        ```
-
-        ??? info "Let's dive into decoding this!"
-
             
-
-    3. **Dev group role with full access to a single database**
+    2. **Dev group role with full access to a single database**
 
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
@@ -173,7 +151,7 @@ Check out the policy for a **readonly** role:
             - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    4. **Dev group role definition with read/update/create access to all the namespaces**
+    3. **Dev group role definition with read/update/create access to all the namespaces**
 
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
