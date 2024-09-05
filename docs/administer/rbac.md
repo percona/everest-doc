@@ -122,31 +122,46 @@ Check out the policy for a **readonly** role:
         Let's set up a dev group role definition with **read/update/create** access within the namespace called as `dev`:
 
         ```sh       
-        p, team-darkside:role, namespaces, read, dev
-        p, team-darkside:role, database-engines, read, dev/*
-        p, team-darkside:role, database-clusters, read, dev/*
-        p, team-darkside:role, database-clusters, update, dev/*
-        p, team-darkside:role, database-clusters, create, dev/*
-        p, team-darkside:role, database-clusters, delete, dev/*
-        p, team-darkside:role, database-cluster-credentials, read, dev/*
-        p, team-darkside:role, backup-storages, read, dev/*
-        p, team-darkside:role, monitoring-instances, read, dev/*
-        p, team-darkside:role, database-cluster-restores, create, dev/*
-        g, john, team-darkside:role
+        p, team-dev:role, namespaces, read, dev
+        p, team-dev:role, database-engines, read, dev/*
+        p, team-dev:role, database-clusters, read, dev/*
+        p, team-dev:role, database-clusters, update, dev/*
+        p, team-dev:role, database-clusters, create, dev/*
+        p, team-dev:role, database-clusters, delete, dev/*
+        p, team-dev:role, database-cluster-credentials, read, dev/*
+        p, team-dev:role, backup-storages, read, dev/*
+        p, team-dev:role, monitoring-instances, read, dev/*
+        p, team-dev:role, database-cluster-restores, create, dev/*
+        g, john, team-dev:role
         ```
 
         ??? info "Let's dive into decoding this!"
 
-            The `team-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+            The `team-dev` role has the following privileges **only** within `dev` namespace:
 
-            - **namespace**:  `Read` access to `the-dark-side`  .
+            - **namespace**:  `Read` access to `dev`
             - **Database engines**: `Read` access
             - **Database clusters**: `Read` access
             - **Database clusters**: `Update` acccess
             - **Database clusters**: `Create` acccess
-            - **Database clusters credentials**: `Read` acccess
+
+            ![!image](../images/rbac_cluster_permissions.png)
+
+            - **Database cluster credentials**: `Read` acccess
             - **Backup storages**: `Read` access
+
+            ![!image](../images/rbac_backup_permissions.png)
             - **Monitoring instances**: `Read` access
+
+            ![!image](../images/rbac_monitoring_permissions.png)
+
+            - **Database cluster restores**: `Create` access
+
+
+
+
+
+
 
     3. **Dev group role with full access to a single database**
 
