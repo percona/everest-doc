@@ -21,6 +21,29 @@ Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducin
 
 With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
 
+Here's a breakdown of the key concepts in RBAC:
+
+- [Roles](https://docs.percona.com/everest/administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within Percona Everest.
+
+- [RBAC resources and privileges](https://docs.percona.com/everest/administer/rbac.html#rbac-resources-and-privileges): Resources are the entities or objects within Percona Everest that require controlled access. Privileges specify the particular actions that a role is able to perform on a resource.
+
+- [Policy definition](https://docs.percona.com/everest/administer/rbac.html#policy-definition-in-rbac): RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC.
+
+
+    The policy definition in Percona Everest is:
+
+
+    ```sh
+    p, <subject>, <resource-type>, <action>, <resource-name>
+    ```
+- [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within Percona Everest is crucial for the roles to be effective.
+
+The syntax for this is as follows:
+
+```sh
+g, username, rolename
+```
+Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
 
 
 #### Percona Everest v1.2.0: A deep dive into Breaking API changes
