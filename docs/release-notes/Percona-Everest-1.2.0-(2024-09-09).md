@@ -76,7 +76,20 @@ MongoDB sharding has several key components:
 
 - config servers: The configuration servers store the cluster's metadata and configuration settings.
 
+#### Enable sharding in Percona Everest
 
+To enable sharding:
+{.power-number}
+
+1. On the **Create Database **wizard, select **MongoDB** database and turn on the Sharded Cluster toggle.
+
+    ![!image](../images/enable_sharding.png)
+
+
+2. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
+
+
+    ![!image](../images/sharding_status.png)
 
 
 ### Improved mulitple operator upgrades
