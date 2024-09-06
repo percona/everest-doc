@@ -3,16 +3,20 @@
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
 
-## Release highlights
+## Release summary
 
-**Release highlights summary table**
-
-|**Sr. No**|**Release highlights**|**Title**|
+|**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
-| 1.      |[RBAC](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
+| 1.      |- [RBAC](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
 | 2.|[API changes for RBAC](#percona-everest-v120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
 | 3.|[MongoDB sharding](#sharding-in-percona-everest-optimizing-mongodb-for-enhanced-scalability) |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
 | 4.|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
+| 5.|[New features](#new-features)|check out the new features introduced in Percona Everest 1.2.0|
+| 6.|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
+| 7.|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
+
+
+## Release highlights
 
 
 ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
@@ -32,17 +36,18 @@ Here's a breakdown of the key concepts in RBAC:
 
     The policy definition in Percona Everest is:
 
+        ```sh
+        p, <subject>, <resource-type>, <action>, <resource-name>
+        ```
 
-    ```sh
-    p, <subject>, <resource-type>, <action>, <resource-name>
-    ```
 - [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within Percona Everest is crucial for the roles to be effective.
 
-The syntax for this is as follows:
+    The syntax for assigning a role is as follows:
 
-```sh
-g, username, rolename
-```
+    ```sh
+    g, username, rolename
+    ```
+
 Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
 
 
