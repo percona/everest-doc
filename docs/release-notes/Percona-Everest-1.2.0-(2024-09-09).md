@@ -51,7 +51,7 @@ Here's a breakdown of the key concepts in RBAC:
 Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
 
 
-#### Percona Everest v1.2.0: A deep dive into Breaking API changes
+### Percona Everest 1.2.0: A deep dive into Breaking API changes
 
 Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
 
