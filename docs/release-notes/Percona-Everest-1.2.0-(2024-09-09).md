@@ -97,7 +97,7 @@ To enable sharding:
     ![!image](../images/sharding_status.png)
 
 
-### Improved mulitple operator upgrades
+### Improved multiple operator upgrades
 
 
 Starting with Percona Everest 1.2.0, we have the capability to upgrade all the database operators concurrently with their components across any namespace using our intuitive UI with just a single click.
@@ -124,7 +124,7 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 
 ## Improvements
 
-- [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165) Upgrade all operators in a given namespace at the same time
+- [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165)- We now have the capability to upgrade all database operators simultaneously with their components across any namespace using our user-friendly interface with just a single click.
 
 - [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Edit monitoring \(widget\+logic\)
 
@@ -132,8 +132,8 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 
 - [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): Backups \(widget\)
 
-- [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369) \[docs\] Update the outdated section about disabling telemetry
-
+- [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369): 
+We have updated the documentation for the section on turning off telemetry.
 
 ## Bugs
 
