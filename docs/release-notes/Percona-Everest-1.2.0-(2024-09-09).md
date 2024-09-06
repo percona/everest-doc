@@ -48,6 +48,22 @@ Explore our comprehensive [documentation](https://docs.percona.com/everest/admin
 
 #### Percona Everest v1.2.0: A deep dive into Breaking API changes
 
+Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
+
+- Before the release of Percona Everest 1.2.0, the resources `monitoring-instances` and  `backup-storages` were globally scoped, but now they will be specific to the namespaces. The database clusters can only use `monitoring-instances` and `backup-storages` that are located within the same namespace as the cluster. The system used a `.spec.allowedNamespaces` field to control access to these global resources. This field determined the namespaces where the resource could be accessed, providing a certain degree of access control.
+
+- With the update to Percona Everest v1.2.0, the shift from global scope to designated namespaces for these resources marks a significant change in how access control is managed, enhancing security by ensuring that resources are only accessible within their designated namespaces. This means that database clusters can now only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster.
+
+- When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+
+    !!! note
+        After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
+
+    Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
+
+
+
+
 
 ### Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability
 
