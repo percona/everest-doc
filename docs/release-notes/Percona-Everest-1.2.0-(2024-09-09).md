@@ -50,11 +50,11 @@ Explore our comprehensive [documentation](https://docs.percona.com/everest/admin
 
 Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
 
-- Before the release of Percona Everest 1.2.0, the resources `monitoring-instances` and  `backup-storages` were globally scoped, but now they will be specific to the namespaces. The database clusters can only use `monitoring-instances` and `backup-storages` that are located within the same namespace as the cluster. The system used a `.spec.allowedNamespaces` field to control access to these global resources. This field determined the namespaces where the resource could be accessed, providing a certain degree of access control.
+- Before the release of Percona Everest 1.2.0, the resources `monitoring-instances` and  `backup-storages` had a global scope. Earlier, Percona Everest used a `.spec.allowedNamespaces` field to control access to these global resources. This field defined the namespaces where the resources could be accessed, thus providing some degree of access control.
 
-- With the update to Percona Everest v1.2.0, the shift from global scope to designated namespaces for these resources marks a significant change in how access control is managed, enhancing security by ensuring that resources are only accessible within their designated namespaces. This means that database clusters can now only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster.
+- With the upgrade to Percona Everest version 1.2.0, the transition from global scope to the designated namespaces for these resources is an important change in the way access control is managed. This improves security as the resources are only accessible within their designated namespaces. The database clusters can only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster.
 
-- When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+- When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing `backup-storages` and `monitoring-instances` will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
     !!! note
         After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
@@ -62,10 +62,17 @@ Beginning with Percona Everest v1.2.0, breaking changes are being introduced to 
     Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
 
 
+### Exploring the benefits of MongoDB sharding in Percona Everest
+
+[Sharding  :octicons-link-external-16:](https://docs.mongodb.com/manual/reference/glossary/#term-sharding) is used for horizontal database scaling. It distributes a database horizontally across multiple nodes or servers, known as **shards**. Each shard manages a portion of the data, forming a sharded cluster, which enables MongoDB to handle large datasets and high user concurrency effectively.
+
+MongoDB sharding has several key components:
+
+- shard: Each shard has a subset of the data.
+- mongos: The query router directs the client queries to the proper shard(s).
+- config servers: The configuration servers store the cluster's metadata and configuration settings.
 
 
-
-### Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability
 
 
 ### Improved mulitple operator upgrades
