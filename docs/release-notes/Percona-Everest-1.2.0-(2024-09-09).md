@@ -5,7 +5,20 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
+### Summary
 
+
+
+
+
+- Introducing RBAC in Percona Everest: Ensure security and simplify database access management
+
+    - Percona Everest v1.2.0: A deep dive into Breaking API changes
+
+- Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability
+
+
+- 
 
 
 
