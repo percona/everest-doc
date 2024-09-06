@@ -86,7 +86,7 @@ MongoDB sharding has several key components:
 To enable sharding:
 {.power-number}
 
-1. On the **Create Database **wizard, select **MongoDB** database and turn on the Sharded Cluster toggle.
+1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle.
 
     ![!image](../images/enable_sharding.png)
 
@@ -113,11 +113,11 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 
 - [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142): We have now added a [new command](../administer/rbac.md#validate-your-rbac-policy) for validating your RBAC policy to ensure that your RBAC policies are working as expected.
 
-- [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240): Add support for PG Operator v2.4.1
+- [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240): We have added support for PostgreSQL operator version 2.4.1. 
 
-- [EVEREST-1298](https://perconadev.atlassian.net/browse/EVEREST-1298): Add support for PXC Operator v1.15.0
+- [EVEREST-1298](https://perconadev.atlassian.net/browse/EVEREST-1298): We have added support for MySQL operator version 1.15.0.
 
-- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): Enable MongoDB sharding during DB creation in the wizard
+- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): Starting with Percona Everest 1.2.0, you can enable sharding for MongoDB when creating a database cluster. By leveraging sharding in Percona Everest, you can enhance the performance and scalability of your database clusters.
 
 - [EVEREST-981](https://perconadev.atlassian.net/browse/EVEREST-981): Configure everest to run behind a proxy
 
