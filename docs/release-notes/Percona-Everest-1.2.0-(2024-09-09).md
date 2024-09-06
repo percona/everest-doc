@@ -5,8 +5,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
-### Summary
-
 **Release highlights summary table**
 
 |**Sr. No**|**Release highlights**|**Title**|
