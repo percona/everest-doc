@@ -9,9 +9,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |---------|---------------------|---------|
 | 1.      |- [RBAC](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
 | 2.|[API changes for RBAC](#percona-everest-v120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
-| 3.|[MongoDB sharding](#sharding-in-percona-everest-optimizing-mongodb-for-enhanced-scalability) |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
+| 3.|[MongoDB sharding](#sharding-in-percona-everest-optimizing-mongodb-for-enhanced-scalability) |Exploring the Benefits of MongoDB Sharding in Percona Everest|
 | 4.|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
-| 5.|[New features](#new-features)|check out the new features introduced in Percona Everest 1.2.0|
+| 5.|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.2.0|
 | 6.|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
 | 7.|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
 
@@ -99,6 +99,10 @@ To enable sharding:
 
 ### Improved mulitple operator upgrades
 
+
+Starting with Percona Everest 1.2.0, we have the capability to upgrade all the database operators concurrently with their components across any namespace using our intuitive UI with just a single click.
+
+Before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
 
 ## New Features
