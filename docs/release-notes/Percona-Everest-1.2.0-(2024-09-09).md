@@ -76,7 +76,7 @@ MongoDB sharding has several key components:
 - shard: Each shard has a subset of the data.
 - mongos: The query router directs the client queries to the proper shard(s).
 
-    !!! note
+    !!! info "Important"
         With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of nodes in your replica set. However, in our upcoming releases, you can customize the number of routers and set resource limits for them.
 
 - config servers: The configuration servers store the cluster's metadata and configuration settings.
