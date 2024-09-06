@@ -107,11 +107,11 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 
 ## New features
 
-- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035): Add backup retention option for PG
+- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035): We've now included **Retention copies** for PostgreSQL as well when setting up backup schedules.
 
-- [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103): Restrict actions based on RBAC
+- [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103): Starting with Percona Everest 1.2.0, we've restricted actions based on RBAC roles, ensuring that users are explicitly granted access to the resources required for their specific roles. This enhances security and simplifies access control processes.
 
-- [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142): Add command for validating RBAC policy
+- [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142): We have now added a [new command](../administer/rbac.md#validate-your-rbac-policy) for validating your RBAC policy to ensure that your RBAC policies are working as expected.
 
 - [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240): Add support for PG Operator v2.4.1
 
