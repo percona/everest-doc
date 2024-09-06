@@ -105,19 +105,22 @@ Starting with Percona Everest 1.2.0, we have the capability to upgrade all the d
 Before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
 
-## New Features
+## New features
 
-- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035) \[UI\] Add backup retention option for PG
+- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035): Add backup retention option for PG
 
-- [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103) Restrict actions based on RBAC
+- [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103): Restrict actions based on RBAC
 
-- [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142) \[CLI\] Add command for validating RBAC policy
+- [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142): Add command for validating RBAC policy
 
-- [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240) Add support for PG Operator v2.4.1
+- [EVEREST-1240](https://perconadev.atlassian.net/browse/EVEREST-1240): Add support for PG Operator v2.4.1
 
-- [EVEREST-1298](https://perconadev.atlassian.net/browse/EVEREST-1298) Add support for PXC Operator v1.15.0
+- [EVEREST-1298](https://perconadev.atlassian.net/browse/EVEREST-1298): Add support for PXC Operator v1.15.0
 
-- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303) Enable MongoDB sharding during DB creation in the wizard
+- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): Enable MongoDB sharding during DB creation in the wizard
+
+- [EVEREST-981](https://perconadev.atlassian.net/browse/EVEREST-981): Configure everest to run behind a proxy
+
 
 ## Improvements
 
