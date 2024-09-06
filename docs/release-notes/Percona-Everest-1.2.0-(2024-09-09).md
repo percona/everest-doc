@@ -137,9 +137,9 @@ We have updated the documentation for the section on turning off telemetry.
 
 ## Bugs
 
-- [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768) All postgresql pods do not restart on restarting the database
+- [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): We've resolved the issue with the PostgreSQL pods not restarting when the database was restarted.
 
-- [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232) \[UI\] Inconsistent date formats
+- [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats .
 
 - [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253) \[UI\] Delete option in the backup menu should be disabled if the backup is in Deleting status
 
