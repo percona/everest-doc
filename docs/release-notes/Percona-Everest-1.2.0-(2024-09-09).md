@@ -9,13 +9,12 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 **Table: Release highlights summary**
 
-|**Sr No**|**Release highlight**|**Title**|
+|**Sr. No**|**Release highlights**|**Title**|
 |---------|---------------------|---------|
-| 1.      |RBAC               |Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
-| 2.|API changes for RBAC|Percona Everest v1.2.0: A deep dive into Breaking API changes|
-| 3.|MongoDB sharding |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
-
-| 4.|Operator upgrades|Improved mulitple operator upgrades|
+| 1.      |[RBAC](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
+| 2.|[API changes for RBAC](#percona-everest-v120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
+| 3.|[MongoDB sharding](#sharding-in-percona-everest-optimizing-mongodb-for-enhanced-scalability) |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
+| 4.|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
 
 
 ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
@@ -23,6 +22,18 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
 
 With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
+
+
+
+#### Percona Everest v1.2.0: A deep dive into Breaking API changes
+
+
+### Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability
+
+
+### Improved mulitple operator upgrades
+
+
 
 ## New Features
 
