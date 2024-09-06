@@ -18,7 +18,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | 4.|Operator Upgrades|Improved mulitple operator upgrades|
 
 
-## Introducing RBAC in Percona Everest: Ensure security and simplify database access management
+### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
 
 Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
 
