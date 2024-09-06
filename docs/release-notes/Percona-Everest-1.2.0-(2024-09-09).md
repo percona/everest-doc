@@ -36,9 +36,9 @@ Here's a breakdown of the key concepts in RBAC:
 
     The policy definition in Percona Everest is:
 
-        ```sh
-        p, <subject>, <resource-type>, <action>, <resource-name>
-        ```
+    ```sh
+    p, <subject>, <resource-type>, <action>, <resource-name>
+    ```
 
 - [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within Percona Everest is crucial for the roles to be effective.
 
