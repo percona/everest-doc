@@ -9,13 +9,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 **Table: Release highlights summary**
 
-    |**Sr No**|**Release highlight**|**Title**|
-    |---------|---------------------|---------|
-    | 1.        |RBAC               |Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
-    | 2.|API changes for RBAC|Percona Everest v1.2.0: A deep dive into Breaking API changes|
-    | 3.|MongoDB sharding |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
+|**Sr No**|**Release highlight**|**Title**|
+|---------|---------------------|---------|
+| 1.      |RBAC               |Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
+| 2.|API changes for RBAC|Percona Everest v1.2.0: A deep dive into Breaking API changes|
+| 3.|MongoDB sharding |Sharding in Percona Everest: Optimizing MongoDB for enhanced scalability|
 
-    | 4.|Operator Upgrades|Improved mulitple operator upgrades|
+| 4.|Operator upgrades|Improved mulitple operator upgrades|
 
 
 ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
