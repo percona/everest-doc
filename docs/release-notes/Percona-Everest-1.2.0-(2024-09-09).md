@@ -141,7 +141,7 @@ We have updated the documentation for the section on turning off telemetry.
 
 - [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats .
 
-- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253) \[UI\] Delete option in the backup menu should be disabled if the backup is in Deleting status
+- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is now disabled if the backup is in the **Deleting** status.
 
 - [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273) Backend sends an empty response if the backup storage url is edited to an http address
 
