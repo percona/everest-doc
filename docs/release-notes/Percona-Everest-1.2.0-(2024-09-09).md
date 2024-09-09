@@ -164,8 +164,4 @@ We have updated the documentation for the section on turning off telemetry.
 
 - [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We've resolved the issue that was preventing us from deleting the monitoring endpoint not currently in use.
 
-- [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375) Upgrade to PXC operator 1.15.0 restarts DBs
-
-- [EVEREST-1394](https://perconadev.atlassian.net/browse/EVEREST-1394) \[UI\] Backup storage creation is not available from backups page, schedule creation is disabled in postgresql
-
-- [EVEREST-1400](https://perconadev.atlassian.net/browse/EVEREST-1400) Number of shards and configuration servers should be defined based on number of database nodes
+- [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
