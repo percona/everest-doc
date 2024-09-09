@@ -147,13 +147,14 @@ We have updated the documentation for the section on turning off telemetry.
 
 - [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the Resources page and the Database Summary panel is now consistent.
 
-- [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286) \[UI\] Backup name should be disabled for editing in backup schedules
+- [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286): When editing a backup schedule, the option to change the backup name is now disabled.
+
 
 - [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) No ability to change antiAffinityTopologyKey or other affinity settings
 
-- [EVEREST-1315](https://perconadev.atlassian.net/browse/EVEREST-1315) Everest shows a successful upgrade message even if the upgrade was not fully successful.
+- [EVEREST-1315](https://perconadev.atlassian.net/browse/EVEREST-1315): Despite Percona Everest showing a successful upgrade message, the upgrade actually didn't go as planned. The issue has been resolved now.
 
-- [EVEREST-1323](https://perconadev.atlassian.net/browse/EVEREST-1323)  Error on "Components" Page in Percona Everest 0.0.0 After Creating Databases
+- [EVEREST-1323](https://perconadev.atlassian.net/browse/EVEREST-1323):We've resolved the issue that was causing an error to appear on the **Components** page after creating databases, especially when the status was either **initializing** or **up**.
 
 - [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354) \[operator\] Resource limits are not respected
 
