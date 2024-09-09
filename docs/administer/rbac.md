@@ -39,7 +39,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
 
 
-The policy definiton in Percona Everest is:
+The policy definition in Percona Everest is:
 
 
 ```sh
@@ -54,7 +54,7 @@ Where:
 
 **action**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
 
-**resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*` or `my-namespace/*`
+**resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example, `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*`, or `my-namespace/*`
 
 ### Admin policy
 
@@ -230,17 +230,17 @@ p, team-dev:role, database-cluster-restores, create, dev/*
 g, john, team-dev:role
 ```
 
-The `team-dev` role has the following privileges **only** within `dev` namespace:
+The `team-dev` role has the following privileges **only** within the `dev` namespace:
 
 - **namespace**:  `Read` access to `dev`
 - **Database engines**: `Read` access
 - **Database clusters**: `Read` access
-- **Database clusters**: `Update` acccess
-- **Database clusters**: `Create` acccess
+- **Database clusters**: `Update` access
+- **Database clusters**: `Create` access
 
     ![!image](../images/rbac_cluster_permissions.png)
 
-- **Database cluster credentials**: `Read` acccess
+- **Database cluster credentials**: `Read` access
 - **Backup storages**: `Read` access
 
     ![!image](../images/rbac_storages_permissions.png)
@@ -261,7 +261,7 @@ everestctl settings rbac validate --policy-file
 
 Where:
 
-`policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
+`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
 
 ??? Example "Policy validation"
 
@@ -304,7 +304,7 @@ everestctl settings rbac can --policy-file
 
 Where:
 
-`policy-file `is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
+`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
 
 
 ??? Example "Test your policy"
