@@ -16,7 +16,7 @@ The RBAC model functions on the principle that all resources are organized into 
 
 Prior to Percona Everest version 1.2.0, certain resources such as `backup-storages` and `monitoring-instances` were not organized into namespaces but were accessible globally. To enforce access restrictions on these globally scoped resources, the system utilized a `.spec.allowedNamespaces` field. The `.spec.allowedNamespaces` field specifies the namespaces within which the resource can be accessed, giving you certain level of control.
 
-Using the `allowedNamespaces` field for globally scoped resources presented challenges when integrating with the core RBAC model. To fix this and align with the RBAC framework, `backup-storages`, and `monitoring-instances` are now namespaced resources. This ensures that all resources conform to the same RBAC model, which results in a consistent and manageable access control structure across the system.
+Using the `.spec.allowedNamespaces` field for globally scoped resources presented challenges when integrating with the core RBAC model. To fix this and align with the RBAC framework, `backup-storages` and `monitoring-instances` are now namespaced resources. This ensures that all resources conform to the same RBAC model, which results in a consistent and manageable access control structure across the system.
 
 ##  Changes in the Percona Everest APIs
 
