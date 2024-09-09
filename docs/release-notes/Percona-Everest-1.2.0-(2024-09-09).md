@@ -67,34 +67,6 @@ Beginning with Percona Everest v1.2.0, breaking changes are being introduced to 
     Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
 
 
-### Exploring the benefits of MongoDB sharding in Percona Everest
-
-[Sharding  :octicons-link-external-16:](https://docs.mongodb.com/manual/reference/glossary/#term-sharding) is used for horizontal database scaling. It distributes a database horizontally across multiple nodes or servers, known as **shards**. Each shard manages a portion of the data, forming a sharded cluster, which enables MongoDB to handle large datasets and high user concurrency effectively.
-
-MongoDB sharding has several key components:
-
-- shard: Each shard has a subset of the data.
-- mongos: The query router directs the client queries to the proper shard(s).
-
-    !!! info "Important"
-        With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of nodes in your replica set. However, in our upcoming releases, you can customize the number of routers and set resource limits for them.
-
-- config servers: The configuration servers store the cluster's metadata and configuration settings.
-
-#### Enable sharding in Percona Everest
-
-To enable sharding:
-{.power-number}
-
-1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle.
-
-    ![!image](../images/enable_sharding.png)
-
-
-2. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
-
-
-    ![!image](../images/sharding_status.png)
 
 
 ### Improved multiple operator upgrades
