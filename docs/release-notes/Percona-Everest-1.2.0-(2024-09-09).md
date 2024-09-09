@@ -156,9 +156,10 @@ We have updated the documentation for the section on turning off telemetry.
 
 - [EVEREST-1323](https://perconadev.atlassian.net/browse/EVEREST-1323):We've resolved the issue that was causing an error to appear on the **Components** page after creating databases, especially when the status was either **initializing** or **up**.
 
-- [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354) \[operator\] Resource limits are not respected
+- [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354): Weve resolved an issue related to the incorrect display of CPU and memory resources in the PXC CRD.
 
-- [EVEREST-1371](https://perconadev.atlassian.net/browse/EVEREST-1371) \[UI\] Monitoring endpoint displays 'username' instead of 'endpoint name' plus other related issues
+
+- [EVEREST-1371](https://perconadev.atlassian.net/browse/EVEREST-1371): 
 
 - [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372) Unable to delete monitoring endpoint\(s\) that are not being used currently
 
