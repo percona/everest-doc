@@ -162,7 +162,7 @@ We have updated the documentation for the section on turning off telemetry.
 - [EVEREST-1371](https://perconadev.atlassian.net/browse/EVEREST-1371): We've addressed a couple of issues pertaining to the **Monitoring** page, one of them being the monitoring endpoint displaying the **username** instead of the **endpoint** name.
 
 
-- [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372) Unable to delete monitoring endpoint\(s\) that are not being used currently
+- [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We've resolved the issue that was preventing us from deleting the monitoring endpoint not currently in use.
 
 - [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375) Upgrade to PXC operator 1.15.0 restarts DBs
 
