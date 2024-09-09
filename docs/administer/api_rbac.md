@@ -8,7 +8,7 @@ Starting with Percona Everest v1.2.0, breaking changes are being made to the API
 
 - With the update to Percona Everest v1.2.0, the shift from global scoping to namespacing these resources marks a significant change in how access control is managed, enhancing security by ensuring that resources are only accessible within their designated namespaces.
 
-## Challenges with globally spaced namespaces
+## Challenges with globally scoped namespaces
 
 In Percona Everest v1.2.0, we’ve rolled out Role-Based Access Control (RBAC) to enhance security and provide more granular control over the access privileges for specific resources within the system. This implementation provides fine-grained control over which users and user groups can access particular resources within the system. 
 
