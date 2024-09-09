@@ -132,7 +132,7 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 
 - [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): Backups \(widget\)
 
-- [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369): We have updated the documentation for the section on turning off telemetry.
+- [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369): We've updated the documentation for the section on turning off telemetry.
 
 ## Bugs
 
