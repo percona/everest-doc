@@ -141,11 +141,11 @@ We have updated the documentation for the section on turning off telemetry.
 
 - [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats .
 
-- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is now disabled if the backup is in the **Deleting** status.
+- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is properly now disabled if the backup is in the **Deleting** status.
 
 - [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273) Backend sends an empty response if the backup storage url is edited to an http address
 
-- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279) \[UI\] Resources page in DB wizard can show different resources in two places
+- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the Resources page and the Database Summary panel is now consistent.
 
 - [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286) \[UI\] Backup name should be disabled for editing in backup schedules
 
