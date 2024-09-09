@@ -4,7 +4,7 @@ Starting with Percona Everest v1.2.0, breaking changes are being made to the API
 
 - Before the release of Percona Everest 1.2.0, these resources were globally scoped, but now they will be specific to namespaces. 
 
-- The database clusters can only use monitoring instances and backup storages located within the same namespace as the cluster. The system used a `.spec.allowedNamespaces` field to control access to these global resources. This field determined the namespaces where the resource could be accessed, providing a certain degree of access control.
+- The database clusters can only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster. The system used a `.spec.allowedNamespaces` field to control access to these global resources. This field determined the namespaces where the resource could be accessed, providing a certain degree of access control.
 
 - With the update to Percona Everest v1.2.0, the shift from global scoping to namespacing these resources marks a significant change in how access control is managed, enhancing security by ensuring that resources are only accessible within their designated namespaces.
 
