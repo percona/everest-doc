@@ -14,7 +14,7 @@ In Percona Everest v1.2.0, we’ve rolled out Role-Based Access Control (RBAC) t
 
 The RBAC model functions on the principle that all resources are organized into namespaces. This enables a well-structured and hierarchical arrangement of resources, simplifying the management of access rights according to the namespace to which a resource is associated.
 
-Prior to Percona Everest version 1.2.0, certain resources such as `backup-storages` and `monitoring-instances` were not organized into namespaces but were accessible globally. To enforce access restrictions on these globally scoped resources, the system utilized a .spec.allowedNamespaces field. The .spec.allowedNamespaces field specifies the namespaces within which the resource can be accessed, giving you certain level of control.
+Prior to Percona Everest version 1.2.0, certain resources such as `backup-storages` and `monitoring-instances` were not organized into namespaces but were accessible globally. To enforce access restrictions on these globally scoped resources, the system utilized a `.spec.allowedNamespaces` field. The `.spec.allowedNamespaces` field specifies the namespaces within which the resource can be accessed, giving you certain level of control.
 
 Using the `allowedNamespaces` field for globally scoped resources presented challenges when integrating with the core RBAC model. To fix this and align with the RBAC framework, `backup-storages`, and `monitoring-instances` are now namespaced resources. This ensures that all resources conform to the same RBAC model, which results in a consistent and manageable access control structure across the system.
 
@@ -38,7 +38,7 @@ The APIs have been updated with the following modifications:
 
 ### Migrating to Percona Everest 1.2.0
 
-When upgrading to 1.2.0, all your existing backup-storages and monitoring-instances will be automatically migrated to the namespaces specified in their .spec.allowedNamespaces fields. After the upgrade, these resources will be accessible exclusively through the new API endpoints.
+When upgrading to 1.2.0, all your existing backup-storages and monitoring-instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces `fields. After the upgrade, these resources will be accessible exclusively through the new API endpoints.
 
 Need more details? Check out the [upgrade](../upgrade_with_cli.md#upgrading-to-percona-everest-120) section.
 
