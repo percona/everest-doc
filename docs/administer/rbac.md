@@ -333,6 +333,9 @@ Where:
     Yes
     ```
 
+## Breaking API changes for RBAC
+
+Starting from Percona Everest v1.2.0, breaking changes are being implemented to the API for `monitoring-instances` and `backup-storages `resources. Explore further by checking out the section on [Breaking API changes](../api_rbac.md) for a deep dive into this topic.
 
 
 
