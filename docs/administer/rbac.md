@@ -107,10 +107,10 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
         ```sh
-        p, admin-darkside:role, namespaces, read, the-dark-side
+        p, admin-darkside:role, namespaces, *, the-dark-side
         p, admin-darkside:role, database-engines, *, the-dark-side/*
         p, admin-darkside:role, database-clusters, *, the-dark-side/*
-        p, admin-darkside:role, database-cluster-credentials, read, the-dark-side/*
+        p, admin-darkside:role, database-cluster-credentials, *, the-dark-side/*
         p, admin-darkside:role, backup-storages, *, the-dark-side/*
         p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
         ```
