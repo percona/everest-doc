@@ -9,7 +9,7 @@ In Percona Everest, the only predefined role is **adminrole:role**, which is ass
 
 This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L94-L102).
 
-## RBAC resources and privileges
+## RBAC resources and permissions
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
 
@@ -92,7 +92,9 @@ Check out the policy for a **readonly** role:
 
     
 
+### RBAC examples
 
+In this section, we will explore some examples that demonstrate how to create policy definitions for the required roles.
 
 ??? Example "Examples"
 
