@@ -61,12 +61,12 @@ Where:
 Check out the policy for an **Admin** role:
 
 ```sh
-    p, adminrole:role, namespaces, read, *
+    p, adminrole:role, namespaces, *, *
     p, adminrole:role, database-engines, *, */*
     p, adminrole:role, database-clusters, *, */*
     p, adminrole:role, database-cluster-backups, *, */*
     p, adminrole:role, database-cluster-restores, *, */*
-    p, adminrole:role, database-cluster-credentials, read, */*
+    p, adminrole:role, database-cluster-credentials, *, */*
     p, adminrole:role, backup-storages, *, */*
     p, adminrole:role, monitoring-instances, *, */*
 ```
