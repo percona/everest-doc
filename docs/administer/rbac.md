@@ -21,7 +21,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
     </br> </br>
 
-    **Table: Privileges for the various resources in Percona Everest**
+    **Table: Permissions for the various resources in Percona Everest**
 
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
