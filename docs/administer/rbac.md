@@ -32,7 +32,8 @@ Below is a comprehensive table outlining the permissions granted for various **r
     | database-cluster-restores|You can view database cluster restores| You can create database cluster restores|You can modify database cluster restores| You can delete database cluster restores|
     | backup-storages and monitoring-instances |You can view backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
     | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
-[^1]: :x: Represents an action that's not supported by the everest API.
+    
+    [^1]: :x: Represents an action that's not supported by the everest API.
 
 
 ## Policy definition in RBAC
