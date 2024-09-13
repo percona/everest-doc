@@ -14,8 +14,6 @@ Before upgrading a database operator, Everest presents a list of tasks that need
 - Ensuring your clusters are using a supported [Custom Resource](https://ibm.github.io/kubernetes-operators/lab1/#:~:text=A%20CRD%20defines%20Custom%20Resources,store%20and%20retrieve%20structured%20data.){:target="_blank"} (CR) version.
 
 
-
-
 ## Upgrade
 
 To upgrade database operators via the Percona Everest UI:
@@ -23,33 +21,35 @@ To upgrade database operators via the Percona Everest UI:
 
 1. Log in to the Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**.
 
-2. Click on the namespace where you want to upgrade the database operator. You will see all the database operators installed in that namespace.
+2. Click on the namespace where you want to upgrade the database operators. You will see all the database operators installed in that namespace.
+
+    
+
+3.  Once the upgrade for the database operators becomes available, you can initiate the upgrade process by clicking on **Upgrade**.
+
+    ![!image](images/upgrade_buttons_page.png)
 
 
-3. Once a database operator upgrade becomes available, you can upgrade each operator individually.
+4. A page is displayed showcasing the upgrades available for the different operators.
 
 
-4. Review the pending actions to complete before upgrading an operator:
+    ![!image](images/show_upgrades_operators.png)
 
-      a. Upgrade the database version.
 
-      b. Restart the database.
+5. Click on **Upgrade Operators**. A confirmation pop-up will appear, asking if you want to proceed with the upgrade:
 
-      c. Wait until the database is in the ready state.
+     
+    ![!image](images/upgrade_operators_confirmation.png)
 
-    !!! note "Note"
+      
+6. After clicking on **Upgrade**, you will see a page displaying a list of pending actions.   
 
-        During the operator upgrade, you won't be able to perform actions that create or modify a database.
 
-    ![!image](images/operator_upgrade_pending.png)
+    ![!image](images/upgrade_dependency.png)
+
 
 
 5. After resolving all pending actions, proceed with upgrading the operator.
-
-
-
-    ![!image](images/db_operator_upgrade.png)
-
 
 ??? example "Example"
 
@@ -93,7 +93,19 @@ To upgrade database operators via the Percona Everest UI:
 
 
 
+![!image](images/upgrade_dependency.png)
 
+a. Upgrade the database version.
+
+      b. Restart the database.
+
+      c. Wait until the database is in the ready state.
+
+    !!! note "Note"
+
+        During the operator upgrade, you won't be able to perform actions that create or modify a database.
+
+    ![!image](images/operator_upgrade_pending.png)
 
 
 
