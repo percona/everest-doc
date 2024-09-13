@@ -1,6 +1,6 @@
 # Upgrade database operators
 
-Starting with Percona Everest 1.2.0, the intuitive UI allows you to upgrade database operators and all their components in any namespace with a single-click.
+Starting with Percona Everest 1.2.0, the intuitive UI allows you to upgrade all the database operators and their components in any namespace with a single-click.
 
 ## Before you upgrade
 
