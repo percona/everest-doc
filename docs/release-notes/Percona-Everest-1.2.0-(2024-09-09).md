@@ -17,8 +17,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 | **4.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
 | **5.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.2.0|
 | **6.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
-| **7.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
-| **8.**|[New and deprecated API's](#bugs)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs.|
+| **7.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs|
+| **8.**|[Bugs](#)|Find out about all the bugs fixed in Percona Everest 1.2.0|
+
 
 
 ## Release highlights
