@@ -19,13 +19,10 @@ Before upgrading a database operator, Everest presents a list of tasks that need
 To upgrade database operators via the Percona Everest UI:
 {.power-number}
 
-1. Log in to the Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**.
+1. Log in to the Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. You will see all the database operators installed in that namespace.
 
-2. Click on the namespace where you want to upgrade the database operators. You will see all the database operators installed in that namespace.
 
-    
-
-3.  Once the upgrade for the database operators becomes available, you can initiate the upgrade process by clicking on **Upgrade**.
+3. Once the upgrade for the database operators becomes available, you can initiate the upgrade process by clicking on **Upgrade**.
 
     ![!image](images/upgrade_buttons_page.png)
 
