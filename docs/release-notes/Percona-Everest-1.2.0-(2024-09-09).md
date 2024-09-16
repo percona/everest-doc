@@ -13,12 +13,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |---------|---------------------|---------|
 | **1.**      |[Role-based access control (RBAC)](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
 | **2.**|[Breaking API changes](#percona-everest-120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
-| **3.**|[MongoDB sharding](#exploring-the-benefits-of-mongodb-sharding-in-percona-everest) |Exploring the Benefits of MongoDB Sharding in Percona Everest|
-| **4.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
-| **5.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.2.0|
-| **6.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
-| **7.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs|
-| **8.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
+| **3.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
+| **4.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.2.0|
+| **5.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
+| **6.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs|
+| **7.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
 
 
 
