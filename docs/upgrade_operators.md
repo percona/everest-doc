@@ -1,11 +1,11 @@
 # Upgrade database operators
 
-Starting with Percona Everest 1.2.0, the intuitive UI allows you to upgrade all the database operators and their components in any namespace with a single-click.
+Starting with Percona Everest 1.2.0, the intuitive UI allows you to upgrade all the database operators and their components in any namespace with a single click.
 
 ## Before you upgrade
 
 !!! note " Note"
-    We recommend that you to take a backup of your databases before starting the upgrade process.
+    We recommend that you take a database backup before starting the upgrade process.
 
 Before upgrading a database operator, Everest presents a list of tasks that need to be completed to smoothly transition your clusters to the next version of the database operators. These tasks may include:
 
@@ -39,7 +39,7 @@ To upgrade database operators via the Percona Everest UI:
     ![!image](images/upgrade_operators_confirmation.png)
 
       
-6. After clicking on **Upgrade**, you will see a page displaying pending actions. The pending actions indicate that you need to restart the database in order to utilize the updated CR version.
+6. After clicking on **Upgrade**, you will see a page displaying pending actions. The pending actions indicate that you need to restart the database to utilize the updated CR version.
 
     ![!image](images/operators_upgrade_dependency.png)
 
