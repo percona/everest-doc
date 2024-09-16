@@ -26,7 +26,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
 
-!!! caution "Disclaimer"
+!!! warning "Disclaimer"
     RBAC is currently in Technical Preview. Early adopters are advised to use this feature only for testing purposes and not in production environments.
 
 
