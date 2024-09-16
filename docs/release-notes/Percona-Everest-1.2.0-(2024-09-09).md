@@ -121,7 +121,7 @@ Before initiating the upgrade process, Everest provides a comprehensive list of 
 - [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286): When editing a backup schedule, the option to change the backup name is now disabled.
 
 
-- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) No ability to change antiAffinityTopologyKey or other affinity settings
+- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) Updated the default affinity settings for the database cluster pods. A database restart is required in order to apply these new settings.
 
 - [EVEREST-1315](https://perconadev.atlassian.net/browse/EVEREST-1315): Despite Percona Everest showing a successful upgrade message, the upgrade actually didn't go as planned. The issue has been resolved now.
 
