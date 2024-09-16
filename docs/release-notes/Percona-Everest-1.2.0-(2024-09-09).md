@@ -3,11 +3,15 @@
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
 
+!!! warning
+    Once you upgrade to Percona Everest version 1.2.0, the process cannot be reversed.
+
+
 ## Release summary
 
 |**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
-| **1.**      |[RBAC](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
+| **1.**      |[Role-based access control (RBAC)](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
 | **2.**|[Breaking API changes](#percona-everest-v120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
 | **3.**|[MongoDB sharding](#exploring-the-benefits-of-mongodb-sharding-in-percona-everest) |Exploring the Benefits of MongoDB Sharding in Percona Everest|
 | **4.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
@@ -68,9 +72,7 @@ Beginning with Percona Everest v1.2.0, breaking changes are being introduced to 
 
 
 
-
 ### Improved multiple operator upgrades
-
 
 Starting with Percona Everest 1.2.0, we have the capability to upgrade all the database operators concurrently with their components across any namespace using our intuitive UI with just a single click.
 
