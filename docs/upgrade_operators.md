@@ -30,7 +30,7 @@ To upgrade database operators via the Percona Everest UI:
 4. A page is displayed showcasing the upgrades available for the different operators.
 
 
-    ![!image](images/show_upgrades_operators.png)
+    ![!image](images/show_operators_upgrades.png)
 
 
 5. Click on **Upgrade Operators**. A confirmation pop-up will appear, asking if you want to proceed with the upgrade.
