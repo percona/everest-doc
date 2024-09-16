@@ -36,16 +36,19 @@ To upgrade database operators via the Percona Everest UI:
     ![!image](images/show_upgrades_operators.png)
 
 
-5. Click on **Upgrade Operators**. A confirmation pop-up will appear, asking if you want to proceed with the upgrade:
+5. Click on **Upgrade Operators**. A confirmation pop-up will appear, asking if you want to proceed with the upgrade.
 
      
     ![!image](images/upgrade_operators_confirmation.png)
 
       
-6. After clicking on **Upgrade**, you will see a page displaying a list of pending actions.   
-
+6. After clicking on **Upgrade**, you will see a page displaying pending actions. The pending actions indicate that you need to restart the database in order to utilize the updated CR version.
 
     ![!image](images/upgrade_dependency.png)
+
+7. Click on the pending **Actions**. A confirmation pop-up will appear, asking if you want to **Upgrade CRD version**:
+
+    ![!image](images/upgrade_crd_confirmation.png)
 
 
 
