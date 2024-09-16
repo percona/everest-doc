@@ -45,7 +45,7 @@ To upgrade database operators via the Percona Everest UI:
 
 7. Click on the pending **Actions**. A confirmation pop-up will appear, asking if you want to **Upgrade CRD version**:
 
-    ![!image](images/upgrade_crd_confirmation.png)
+    ![!image](images/CRD_upgrade_confirmation_1.png)
 
 8. Click on **Upgrade** to upgrade the operators.
 
