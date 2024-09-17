@@ -78,9 +78,9 @@ Beginning with Percona Everest v1.2.0, breaking changes are being introduced to 
 
 ### Improved multiple operator upgrades
 
-Starting with Percona Everest 1.2.0, we have the capability to upgrade all the database operators concurrently with their components across any namespace using our intuitive UI with just a single click.
+Starting with Percona Everest 1.2.0, it's important to note that due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace. The upgrade process can be accomplished using our intuitive UI.
 
-Before initiating the upgrade process, Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
+Before initiating the upgrade process, Percona Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
 
 ## New features
