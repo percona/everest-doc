@@ -102,7 +102,7 @@ Before initiating the upgrade process, Percona Everest provides a comprehensive 
 
 ## Improvements
 
-- [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165)- We now have the capability to upgrade all database operators simultaneously with their components across any namespace using our user-friendly interface with just a single click.
+- [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165)- Due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace.
 
 - [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Edit monitoring \(widget\+logic\)
 
@@ -140,7 +140,7 @@ Before initiating the upgrade process, Percona Everest provides a comprehensive 
 
 - [EVEREST-1323](https://perconadev.atlassian.net/browse/EVEREST-1323):We've resolved the issue that was causing an error to appear on the **Components** page after creating databases, especially when the status was either **initializing** or **up**.
 
-- [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354): We've resolved an issue related to the incorrect display of CPU and memory resources in the PXC CRD.
+- [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354): We've resolved an issue related to an incorrect allocation of CPU and memory resources for PXC clusters. To apply these new settings, a database restart is required.
 
 
 - [EVEREST-1371](https://perconadev.atlassian.net/browse/EVEREST-1371): We've addressed a couple of issues pertaining to the **Monitoring** page, one of them being the monitoring endpoint displaying the **username** instead of the **endpoint** name.
