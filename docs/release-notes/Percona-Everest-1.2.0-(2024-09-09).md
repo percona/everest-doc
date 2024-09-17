@@ -24,56 +24,60 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## Release highlights
 
 
-### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
+=== "RBAC"
 
-!!! warning "Disclaimer"
-    RBAC is currently in Technical Preview. Early adopters are advised to use this feature only for testing purposes and not in production environments.
+    ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
 
-
-Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
-
-With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
-
-Here's a breakdown of the key concepts in RBAC:
-
-- [Roles](https://docs.percona.com/everest/administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within Percona Everest.
-
-- [RBAC resources and privileges](https://docs.percona.com/everest/administer/rbac.html#rbac-resources-and-privileges): Resources are the entities or objects within Percona Everest that require controlled access. Privileges specify the particular actions that a role is able to perform on a resource.
-
-- [Policy definition](https://docs.percona.com/everest/administer/rbac.html#policy-definition-in-rbac): RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC.
+    !!! warning "Disclaimer"
+        RBAC is currently in Technical Preview. Early adopters are advised to use this feature only for testing purposes and not in production environments.
 
 
-    The policy definition in Percona Everest is:
+    Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
 
-    ```sh
-    p, <subject>, <resource-type>, <action>, <resource-name>
-    ```
+    With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
 
-- [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within Percona Everest is crucial for the roles to be effective.
+    Here's a breakdown of the key concepts in RBAC:
 
-    The syntax for assigning a role is as follows:
+    - [Roles](https://docs.percona.com/everest/administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within Percona Everest.
 
-    ```sh
-    g, username, rolename
-    ```
+    - [RBAC resources and privileges](https://docs.percona.com/everest/administer/rbac.html#rbac-resources-and-privileges): Resources are the entities or objects within Percona Everest that require controlled access. Privileges specify the particular actions that a role is able to perform on a resource.
 
-Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
+    - [Policy definition](https://docs.percona.com/everest/administer/rbac.html#policy-definition-in-rbac): RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC.
 
 
-### Percona Everest 1.2.0: A deep dive into Breaking API changes
+        The policy definition in Percona Everest is:
 
-Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
+        ```sh
+        p, <subject>, <resource-type>, <action>, <resource-name>
+        ```
 
-- Before the launch of Percona Everest 1.2.0, the resources `monitoring-instances` and `backup-storages` had a global scope. Percona Everest used a `.spec.allowedNamespaces` field to control access to these global resources. This field defined the namespaces where the resources could be accessed, thus providing some degree of access control.
+    - [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within Percona Everest is crucial for the roles to be effective.
 
-- With the upgrade to Percona Everest version 1.2.0, the transition from global scope to the designated namespaces for these resources is an important change in the way access control is managed. This improves security as the resources are only accessible within their designated namespaces. The database clusters can only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster.
+        The syntax for assigning a role is as follows:
 
-- When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing `backup-storages` and `monitoring-instances` will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+        ```sh
+        g, username, rolename
+        ```
 
-    !!! note
-        After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
+    Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
 
-    Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
+
+=== "Breaking API changes"
+
+    **Percona Everest 1.2.0: A deep dive into Breaking API changes**
+
+    Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
+
+    - Before the launch of Percona Everest 1.2.0, the resources `monitoring-instances` and `backup-storages` had a global scope. Percona Everest used a `.spec.allowedNamespaces` field to control access to these global resources. This field defined the namespaces where the resources could be accessed, thus providing some degree of access control.
+
+    - With the upgrade to Percona Everest version 1.2.0, the transition from global scope to the designated namespaces for these resources is an important change in the way access control is managed. This improves security as the resources are only accessible within their designated namespaces. The database clusters can only use `monitoring-instances` and `backup-storages` located within the same namespace as the cluster.
+
+    - When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing `backup-storages` and `monitoring-instances` will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+
+        !!! note
+            After the upgrade to Percona Everest 1.2.0, you will only be able to access these resources through the new API endpoints.
+
+        Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
 
 
 ### Improved multiple operator upgrades
