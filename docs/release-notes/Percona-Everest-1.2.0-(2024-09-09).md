@@ -64,7 +64,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "Breaking API changes"
 
-    **Percona Everest 1.2.0: A deep dive into Breaking API changes**
+    ### Percona Everest 1.2.0: A deep dive into Breaking API changes
 
     Beginning with Percona Everest v1.2.0, breaking changes are being introduced to the API for `monitoring-instances` and `backup-storages` resources. These updates include:
 
@@ -80,11 +80,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
         Check out our [documentation](docs.percona.com/everest//administer/api_rbac.html#changes-in-the-percona-everest-apis) for in-depth details on the Breaking API changes.
 
 
-### Improved multiple operator upgrades
+=== "Operator upgrades"
 
-Starting with Percona Everest 1.2.0, it's important to note that due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace. The upgrade process can be accomplished using our intuitive UI.
+    ### Improved multiple operator upgrades
 
-Before initiating the upgrade process, Percona Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
+    Starting with Percona Everest 1.2.0, it's important to note that due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace. The upgrade process can be accomplished using our intuitive UI.
+
+    Before initiating the upgrade process, Percona Everest provides a comprehensive list of tasks that must be completed to ensure a seamless transition of your clusters to the next version of the database operators.
 
 
 ## New features
