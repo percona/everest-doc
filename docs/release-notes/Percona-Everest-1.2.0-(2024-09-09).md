@@ -154,3 +154,27 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We've resolved the issue that was preventing us from deleting the monitoring endpoint not currently in use.
 
 - [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
+
+
+<!---Issues added for RC3--->
+
+
+- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
+
+- [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) Duplicate backup storages in different namespaces causes pg backup problems
+
+- [EVEREST-1465](https://perconadev.atlassian.net/browse/EVEREST-1465) \[UI\] Restore to same and new database can be done if the user does not have the database-cluster-credentials permissions
+
+- [EVEREST-1466](https://perconadev.atlassian.net/browse/EVEREST-1466) Restore to the same mysql database gets stuck
+
+- [EVEREST-1472](https://perconadev.atlassian.net/browse/EVEREST-1472) \[RBAC\] Add backup storage option is visible while editing a DB cluster, when user does not have permission
+
+- [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) \[RBAC\] Backups API returns information regarding backup storage location to a user who has no permission for backup storage locations
+
+[EVEREST-1474](https://perconadev.atlassian.net/browse/EVEREST-1474) \[RBAC\] Backups information available on the overview page but not on backups page for a user who has no permission for backups storages
+
+[EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) \[RBAC\] DB cluster API returns information about storage name and schedules to a user having no permissions for backups \+ storages
+
+[EVEREST-1481](https://perconadev.atlassian.net/browse/EVEREST-1481) \[UI\] Restore to same and new database options are not available in the databases page and Actions menu
+
+[EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) \[UI\] Database credentials for databases in a namespace are not displayed
