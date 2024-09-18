@@ -109,7 +109,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165)- Due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace.
 
-- [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Edit monitoring \(widget\+logic\)
+- [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Starting with Percona Everest 1.2.0, you can now directly edit the monitoring endpoint from the database overview page, instead of having to use the Edit database wizard.
+
 
 - [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): Resources \(widget\) \+ common card updation
 
@@ -176,13 +177,13 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 - [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) - Resolved an issue where the backup API returned information about the backup storage location to a user without permission for backup storage locations.
 
 
-[EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permissions for backups and storage.
+- [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permissions for backups and storage.
 
 
 <!---ask Diogo whether to inlcude this or not--->
 
-[EVEREST-1481](https://perconadev.atlassian.net/browse/EVEREST-1481) - Restore to same and new database options are not available in the databases page and Actions menu
+- [EVEREST-1481](https://perconadev.atlassian.net/browse/EVEREST-1481) - Restore to same and new database options are not available in the databases page and Actions menu
 
-[EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
+- [EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
 
  
