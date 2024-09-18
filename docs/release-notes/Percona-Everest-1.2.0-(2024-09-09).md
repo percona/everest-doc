@@ -126,7 +126,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Bugs
 
-- [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): We've resolved the issue with the PostgreSQL pods not restarting when the database was restarted.
+- [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): The PostgreSQL pods now demonstrate the intended behavior by not getting stuck, as they automatically restart when the database is restarted.
+
 
 - [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats .
 
@@ -182,4 +183,6 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 [EVEREST-1481](https://perconadev.atlassian.net/browse/EVEREST-1481) - Restore to same and new database options are not available in the databases page and Actions menu
 
-[EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - 
+[EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
+
+ 
