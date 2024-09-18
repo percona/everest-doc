@@ -140,7 +140,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286): When editing a backup schedule, the option to change the backup name is now disabled.
 
-
 - [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) Updated the default affinity settings for the database cluster pods. A database restart is required in order to apply these new settings.
 
 - [EVEREST-1315](https://perconadev.atlassian.net/browse/EVEREST-1315): Despite Percona Everest showing a successful upgrade message, the upgrade actually didn't go as planned. The issue has been resolved now.
@@ -157,9 +156,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
 
-
 <!---Issues added for RC3--->
-
 
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - After upgrading to Percona Everest 1.2.0, it was observed that a user, who had not been included in the RBAC configuration and lacked proper permissions, was able to access specific information on Percona Everest. We have resolved the issue now.
 
@@ -178,11 +175,6 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 
 - [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permissions for backups and storage.
-
-
-<!---ask Diogo whether to inlcude this or not--->
-
-- [EVEREST-1481](https://perconadev.atlassian.net/browse/EVEREST-1481) - Restore to same and new database options are not available in the databases page and Actions menu
 
 - [EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
 
