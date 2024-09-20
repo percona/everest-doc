@@ -22,34 +22,6 @@ metadata:
   uid: 189b0a70-10cc-437e-96a3-a3d465728be6
   ```
 
-
-
-## RBAC resources and permissions
-
-Below is a comprehensive table outlining the permissions granted for various **resources**:
-
-??? info "Permissions for resources"
-
-
-    !!! warning "Important"
-        - If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
-        - :x: Represents an action that's not supported by the Percona Everest API.
-
-    </br> </br>
-
-    **Table: Permissions for the various resources in Percona Everest**
-
-    |**Resource**| **Read**| **Create**| **Update**|**Delete**|
-    |------------|---------|-----------|-----------|----------|
-    | namespaces|You can view namespaces| :x:|:x: | :x:|
-    | database-engines </br> (MySQL, MongoDB, PostreSQL)|You view can database engines when you create databases</br>  </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify database engines| :x:|
-    | database-clusters|You can view databases| You can create databases|You can modify databases| You can delete databases|
-    | database-cluster-backups|You can view database cluster backups| You can create database cluster backups|You can modify database cluster backups| You can delete database cluster backups|
-    | database-cluster-restores|You can view database cluster restores| You can create database cluster restores|You can modify database cluster restores| You can delete database cluster restores|
-    | backup-storages and monitoring-instances |You can view backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
-    | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
-
-
 ## Policy definition in RBAC
 
 RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
@@ -68,7 +40,7 @@ Where:
 
 **resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
-**action**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
+**[action](#rbac-resources-and-permissions)**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
 
 **resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example, `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*`, or `my-namespace/*`
 
@@ -105,6 +77,31 @@ Check out the policy for a **readonly** role:
 ![!image](../images/rbac_readonly_role.png)
 
 ![!image](../images/rbac_readonly_ns.png)
+
+## RBAC resources and permissions
+
+Below is a comprehensive table outlining the permissions granted for various **resources**:
+
+??? info "Permissions for resources"
+
+
+    !!! warning "Important"
+        - If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
+        - :x: Represents an action that's not supported by the Percona Everest API.
+
+    </br> </br>
+
+    **Table: Permissions for the various resources in Percona Everest**
+
+    |**Resource**| **Read**| **Create**| **Update**|**Delete**|
+    |------------|---------|-----------|-----------|----------|
+    | namespaces|You can view namespaces| :x:|:x: | :x:|
+    | database-engines </br> (MySQL, MongoDB, PostreSQL)|You view can database engines when you create databases</br>  </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify database engines| :x:|
+    | database-clusters|You can view databases| You can create databases|You can modify databases| You can delete databases|
+    | database-cluster-backups|You can view database cluster backups| You can create database cluster backups|You can modify database cluster backups| You can delete database cluster backups|
+    | database-cluster-restores|You can view database cluster restores| You can create database cluster restores|You can modify database cluster restores| You can delete database cluster restores|
+    | backup-storages and monitoring-instances |You can view backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
+    | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
 
 
 
