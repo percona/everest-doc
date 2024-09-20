@@ -66,9 +66,6 @@ Check out the policy for a **readonly** role:
     p, readonly:role, monitoring-instances, read, */*
 ```
 
-![!image](../images/rbac_readonly_role.png)
-
-![!image](../images/rbac_readonly_ns.png)
 
 ## RBAC resources and permissions
 
@@ -182,8 +179,21 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-            
-    2. **Dev group role with full access to a single database**
+
+    2. Let's set up a policy for a **readonly** role:
+
+    ```sh
+        p, readonly:role, namespaces, read, *
+        p, readonly:role, database-engines, read, */*
+        p, readonly:role, database-clusters, read, */*
+        p, adminrole:role, database-cluster-backups, *, */*
+        p, adminrole:role, database-cluster-restores, *, */*
+        p, adminrole:role, database-cluster-credentials, read, */*
+        p, readonly:role, backup-storages, read, */*
+        p, readonly:role, monitoring-instances, read, */*
+    ```    
+
+    3. **Dev group role with full access to a single database**
 
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
@@ -209,7 +219,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    3. **Dev group role definition with read/update/create access to all the namespaces**
+    4. **Dev group role definition with read/update/create access to all the namespaces**
 
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
