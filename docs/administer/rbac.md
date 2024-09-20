@@ -282,7 +282,7 @@ data:
     g, <newuser>, role:admin
 ```
 
-For example, let's assign the role `team-dev` to a new user named John:
+For example, let's assign the role `team-dev` to a new user named `john`:
 
 ```sh       
 p, role:team-dev, namespaces, read, dev
