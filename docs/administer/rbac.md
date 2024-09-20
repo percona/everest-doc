@@ -109,11 +109,11 @@ Below is a comprehensive table outlining the permissions granted for various **r
     Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
     {.power-number}
 
-    === "namespaces"
+    === "Namespaces"
 
         Read `namespaces` permissions are required for **all** the **roles**. 
 
-    === " Database clusters"
+    === " DB clusters"
     
         To create, update and delete database clusters, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
 
