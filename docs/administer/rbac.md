@@ -106,6 +106,9 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
 ### Key considerations for RBAC
 
+Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
+
+- To create,update and delete database clusters, you also need explicit read permissions as well. Without them, you would not be able to view the clusters.
 
 
 
