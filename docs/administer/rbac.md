@@ -107,10 +107,33 @@ Below is a comprehensive table outlining the permissions granted for various **r
 ### Key considerations for RBAC
 
 Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
+{.power-number}
 
-- To create,update and delete database clusters, you also need explicit read permissions as well. Without them, you would not be able to view the clusters.
+-  Read `namespaces` permissions are required for **all** the **roles**. 
+
+-  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
+
+-  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
+
+    Example: To manage `backup schedules` (create, update, delete a schedule), it is recommended to **explicitly** grant `read` permissions for the `backup schedules` as well as `backup storages`.
+
+- For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
 
 
+- For restores, new and existing databases, you should grant the following permisssions as well:
+
+    - Read `backups` (of the old DB)
+    - Read `MonitoringConfig` (if the old DB has monitoring enabled)
+    - Read `database cluster credentials` (of the old DB)
+    - Create `backups` (if backup schedules are enabled)
+
+
+- For upgrades, the following permissions must be granted:
+
+    - Read Namespaces
+    - Read all `database` engines in that namespace
+    - Read all `database clusters` in that namespace
+    - Update `database clusters` in that namespace
 
 ## Roles in RBAC
 
