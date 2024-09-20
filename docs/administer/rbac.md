@@ -40,7 +40,7 @@ Where:
 
 **resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
-For in-depth information on the actions that a resource can perform, see the [resources and permissions](#rbac-resources-and-permissions) section.
+For in-depth information on the actions that a subject can perform, see the [resources and permissions](#rbac-resources-and-permissions) section.
 
 **[action](#rbac-resources-and-permissions)**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
 
