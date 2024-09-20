@@ -104,36 +104,36 @@ Below is a comprehensive table outlining the permissions granted for various **r
     | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
 
 
-### Key considerations for RBAC
+    ### Key considerations for RBAC
 
-Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
-{.power-number}
+    Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
+    {.power-number}
 
--  Read `namespaces` permissions are required for **all** the **roles**. 
+    -  Read `namespaces` permissions are required for **all** the **roles**. 
 
--  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
+    -  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
 
--  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
+    -  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
 
-    Example: To manage `backup schedules` (create, update, delete a schedule), it is recommended to **explicitly** grant `read` permissions for the `backup schedules` as well as `backup storages`.
+        Example: To manage `backup schedules` (create, update, delete a schedule), it is recommended to **explicitly** grant `read` permissions for the `backup schedules` as well as `backup storages`.
 
-- For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
-
-
-- For restores, new and existing databases, you should grant the following permisssions as well:
-
-    - Read `backups` (of the old DB)
-    - Read `MonitoringConfig` (if the old DB has monitoring enabled)
-    - Read `database cluster credentials` (of the old DB)
-    - Create `backups` (if backup schedules are enabled)
+    - For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
 
 
-- For upgrades, the following permissions must be granted:
+    - For restores, new and existing databases, you should grant the following permisssions as well:
 
-    - Read Namespaces
-    - Read all `database` engines in that namespace
-    - Read all `database clusters` in that namespace
-    - Update `database clusters` in that namespace
+        - Read `backups` (of the old DB)
+        - Read `MonitoringConfig` (if the old DB has monitoring enabled)
+        - Read `database cluster credentials` (of the old DB)
+        - Create `backups` (if backup schedules are enabled)
+
+
+    - For upgrades, the following permissions must be granted:
+
+        - Read Namespaces
+        - Read all `database` engines in that namespace
+        - Read all `database clusters` in that namespace
+        - Update `database clusters` in that namespace
 
 ## Roles in RBAC
 
