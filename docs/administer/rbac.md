@@ -285,17 +285,14 @@ data:
 For example, let's assign the role `team-dev` to a new user named John:
 
 ```sh       
-p, team-dev:role, namespaces, read, dev
-p, team-dev:role, database-engines, read, dev/*
-p, team-dev:role, database-clusters, read, dev/*
-p, team-dev:role, database-clusters, update, dev/*
-p, team-dev:role, database-clusters, create, dev/*
-p, team-dev:role, database-clusters, delete, dev/*
-p, team-dev:role, database-cluster-credentials, read, dev/*
-p, team-dev:role, backup-storages, read, dev/*
-p, team-dev:role, monitoring-instances, read, dev/*
-p, team-dev:role, database-cluster-restores, create, dev/*
-g, john, team-dev:role
+p, role:team-dev, namespaces, read, dev
+p, role:team-dev, database-engines, read, dev/*
+p, role:team-dev, database-clusters, read, dev/*
+p, role:team-dev, database-clusters, update, dev/*
+p, role:team-dev, database-clusters, create, dev/*
+p, role:team-dev, database-clusters, delete, dev/*
+p, role:team-dev, database-cluster-credentials, read, dev/*
+g, john, role:team-dev
 ```
 
 The `team-dev` role has the following privileges **only** within the `dev` namespace:
