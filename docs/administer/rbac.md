@@ -144,7 +144,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
         For upgrades, the following permissions must be granted:
 
         - Read Namespaces
-        - Read all `database` engines in that namespace
+        - Read all `database engines` in that namespace
         - Read all `database clusters` in that namespace
         - Update `database clusters` in that namespace
 
