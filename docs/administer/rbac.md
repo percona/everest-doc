@@ -278,16 +278,8 @@ metadata:
   name: everest-rbac
 data:
   policy.csv: |
-    p, adminrole:role, namespaces, *, *
-    p, adminrole:role, database-engines, *, */*
-    p, adminrole:role, database-clusters, *, */*
-    p, adminrole:role, database-cluster-backups, *, */*
-    p, adminrole:role, database-cluster-restores, *, */*
-    p, adminrole:role, database-cluster-credentials, *, */*
-    p, adminrole:role, backup-storages, *, */*
-    p, adminrole:role, monitoring-instances, *, */*
-    g, admin, adminrole:role
-    g, <newuser>, adminrole:role
+    g, admin, role:admin
+    g, <newuser>, role:admin
 ```
 
 For example, let's assign the role `team-dev` to a new user named John:
