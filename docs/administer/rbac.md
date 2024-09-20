@@ -163,12 +163,12 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
         ```sh
-        p, admin-darkside:role, namespaces, *, the-dark-side
-        p, admin-darkside:role, database-engines, *, the-dark-side/*
-        p, admin-darkside:role, database-clusters, *, the-dark-side/*
-        p, admin-darkside:role, database-cluster-credentials, *, the-dark-side/*
-        p, admin-darkside:role, backup-storages, *, the-dark-side/*
-        p, admin-darkside:role, monitoring-instances, *, the-dark-side/*
+        p, role:admin-darkside, namespaces, *, the-dark-side
+        p, role:admin-darkside, database-engines, *, the-dark-side/*
+        p, role:admin-darkside, database-clusters, *, the-dark-side/*
+        p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
+        p, role:admin-darkside, backup-storages, *, the-dark-side/*
+        p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
         ```
 
         ??? info "Let's dive into decoding this!"
@@ -188,13 +188,13 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
         ```sh
-        p, team-darkside-banana:role, namespaces, read, the-dark-side
-        p, team-darkside-banana:role, database-engines, read, the-dark-side/*
-        p, team-darkside-banana:role, database-clusters, read, the-dark-side/banana
-        p, team-darkside-banana:role, database-clusters, update, the-dark-side/banana
-        p, team-darkside-banana:role, database-clusters-credentials, read, the-dark-side/banana
-        p, team-darkside-banana:role, backup-storages, read, the-dark-side/*
-        p, team-darkside-banana:role, monitoring-instances, read, the-dark-side/*
+        p, role:team-darkside-banana, namespaces, read, the-dark-side
+        p, role:team-darkside-banana, database-engines, read, the-dark-side/*
+        p, role:team-darkside-banana, database-clusters, read, the-dark-side/banana
+        p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
+        p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
+        p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
+        p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
         ```
 
         ??? info "Let's dive into decoding this!"
@@ -214,13 +214,13 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
         ```sh
-        p, team-darkside:role, namespaces, read, */*
-        p, team-darkside:role, database-engines, read, */*
-        p, team-darkside:role, database-clusters, read, */*
-        p, team-darkside:role, database-clusters, update, */*
-        p, team-darkside:role, database-clusters-credentials, read, */*
-        p, team-darkside:role, backup-storages, read, */*
-        p, team-darkside:role, monitoring-instances, read, */*
+        p, role:team-darkside, namespaces, read, */*
+        p, role:team-darkside, database-engines, read, */*
+        p, role:team-darkside, database-clusters, read, */*
+        p, role:team-darkside, database-clusters, update, */*
+        p, role:team-darkside, database-clusters-credentials, read, */*
+        p, role:team-darkside, backup-storages, read, */*
+        p, role:team-darkside, monitoring-instances, read, */*
         ```
 
         ??? info "Let's dive into decoding this!"
