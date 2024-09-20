@@ -111,7 +111,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
     1.  Read `namespaces` permissions are required for **all** the **roles**. 
 
-    2.  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
+    2.  To create, update and delete database clusters, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
 
     3.  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
 
@@ -120,7 +120,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
     4. For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
 
 
-    5. For restores, new and existing databases, you should grant the following permisssions as well:
+    5. For restores, to new and existing databases, you should grant the following permisssions as well:
 
         - Read `backups` (of the old DB)
         - Read `MonitoringConfig` (if the old DB has monitoring enabled)
