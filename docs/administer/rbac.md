@@ -123,7 +123,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
         Example: To manage `backup schedules` (create, update, delete a schedule), it is recommended to **explicitly** grant `read` permissions for the `backup schedules` as well as `backup storages`.
 
-    === " Backups"
+    === "Backups"
     
         For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
 
