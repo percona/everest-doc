@@ -44,6 +44,11 @@ For in-depth information on the actions that a resource can perform, see the [re
 
 **resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example, `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*`, or `my-namespace/*`
 
+!!! info "Important"
+    If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
+
+
+
 ### Admin policy
 
 Check out the policy for an **Admin** role:
@@ -86,8 +91,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
 
     !!! warning "Important"
-        - If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
-        - :x: Represents an action that's not supported by the Percona Everest API.
+        :x: Represents an action that's not supported by the Percona Everest API.
 
     </br> </br>
 
