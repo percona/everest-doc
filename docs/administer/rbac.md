@@ -11,16 +11,14 @@ Here's how you can enable RBAC:
 ```sh
 apiVersion: v1
 data:
-  enabled: "true"
-
+  enabled: "false"
+  policy.csv: |
+    g, admin, role:admin
 kind: ConfigMap
 metadata:
-  creationTimestamp: "2024-09-19T11:42:52Z"
   name: everest-rbac
   namespace: everest-system
-  resourceVersion: "17903"
-  uid: 189b0a70-10cc-437e-96a3-a3d465728be6
-  ```
+```
 
 ## Policy definition in RBAC
 
@@ -41,6 +39,8 @@ Where:
 **resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
 **[action](#rbac-resources-and-permissions)**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
+
+For in-depth information on the actions that a resource can perform, see the [resources and permissions](#rbac-resources-and-permissions) section.
 
 **resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present. For example, `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*`, or `my-namespace/*`
 
@@ -104,15 +104,23 @@ Below is a comprehensive table outlining the permissions granted for various **r
     | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
 
 
+### Key considerations for RBAC
 
-## Default role
+
+
+
+## Roles in RBAC
+
+In Role-Based Access Control (RBAC), a Role is a set of permissions that define what actions (like read, write, update, delete) can be performed on specific resources within Percona Everest. In RBAC, roles are assigned to users, allowing them to interact with the resources according to the permissions defined by their roles.
+
+### Default role
 
 In Percona Everest, the only predefined role is **adminrole:role**, which is assigned to the **admin** user. Hence, this **admin** user has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
 
 This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L94-L102).
 
 
-### RBAC examples
+## RBAC examples
 
 In this section, we will explore some examples that demonstrate how to create policy definitions for the required roles.
 
