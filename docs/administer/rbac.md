@@ -51,22 +51,6 @@ For in-depth information on the actions that a subject can perform, see the [res
     If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
 
 
-
-### Admin policy
-
-Check out the policy for an **Admin** role:
-
-```sh
-    p, adminrole:role, namespaces, *, *
-    p, adminrole:role, database-engines, *, */*
-    p, adminrole:role, database-clusters, *, */*
-    p, adminrole:role, database-cluster-backups, *, */*
-    p, adminrole:role, database-cluster-restores, *, */*
-    p, adminrole:role, database-cluster-credentials, *, */*
-    p, adminrole:role, backup-storages, *, */*
-    p, adminrole:role, monitoring-instances, *, */*
-```
-
 ### Read only policy
 
 Check out the policy for a **readonly** role:
@@ -151,8 +135,6 @@ Below is a comprehensive table outlining the permissions granted for various **r
         - Read all `database engines` in that namespace
         - Read all `database clusters` in that namespace
         - Update `database clusters` in that namespace
-
-
 
 
 ## Roles in RBAC
