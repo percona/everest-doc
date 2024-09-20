@@ -109,18 +109,18 @@ Below is a comprehensive table outlining the permissions granted for various **r
     Before you start defining the different roles, there are some important things to consider when it comes to Role-Based Access Control (RBAC).
     {.power-number}
 
-    -  Read `namespaces` permissions are required for **all** the **roles**. 
+    1.  Read `namespaces` permissions are required for **all** the **roles**. 
 
-    -  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
+    2.  To create, update and delete `database clusters`, backups, schedules, monitoring instances, and restores it is recommended to **explicitly** grant `read` permissions as well for the `database clusters`. Without these permissions, you would not be able to view these resources, which would not be practical.
 
-    -  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
+    3.  To create, update and delete the resources, it is recommended to **explicitly** grant `read` permissions for these resources as well. Without these permissions, you would not be able to view these resources, which would not be practical.
 
         Example: To manage `backup schedules` (create, update, delete a schedule), it is recommended to **explicitly** grant `read` permissions for the `backup schedules` as well as `backup storages`.
 
-    - For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
+    4. For on-demand backups and schedules, you should grant `read` permissions for `backup storages` as well.
 
 
-    - For restores, new and existing databases, you should grant the following permisssions as well:
+    5. For restores, new and existing databases, you should grant the following permisssions as well:
 
         - Read `backups` (of the old DB)
         - Read `MonitoringConfig` (if the old DB has monitoring enabled)
@@ -128,7 +128,7 @@ Below is a comprehensive table outlining the permissions granted for various **r
         - Create `backups` (if backup schedules are enabled)
 
 
-    - For upgrades, the following permissions must be granted:
+    6. For upgrades, the following permissions must be granted:
 
         - Read Namespaces
         - Read all `database` engines in that namespace
