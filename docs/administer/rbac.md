@@ -93,7 +93,6 @@ Below is a comprehensive table outlining the permissions granted for various **r
     !!! warning "Important"
         :x: Represents an action that's not supported by the Percona Everest API.
 
-    </br> </br>
 
     **Table: Permissions for the various resources in Percona Everest**
 
