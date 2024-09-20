@@ -6,6 +6,8 @@ Role-based access control (RBAC) restricts access to resources within Percona Ev
 
 To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
+The RBAC configuration is stored in a `ConfigMap` named `everest-rbac` within the `everest-system` namespace.
+
 Here's how you can enable RBAC:
 
 ```sh
