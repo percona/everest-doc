@@ -356,7 +356,7 @@ We have a straightforward command that can be used to test the RBAC (Role-Based 
 
 
 ```sh
-everestctl settings rbac can --policy-file
+everestctl settings rbac can --policy-file <file_path>
 ```
 
 Where:
