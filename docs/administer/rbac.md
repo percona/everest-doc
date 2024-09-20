@@ -132,10 +132,10 @@ Below is a comprehensive table outlining the permissions granted for various **r
 
         For restores, to new and existing databases, you should grant the following permisssions as well:
 
-            - Read `backups` (of the old DB)
-            - Read `MonitoringConfig` (if the old DB has monitoring enabled)
-            - Read `database cluster credentials` (of the old DB)
-            - Create `backups` (if backup schedules are enabled)
+        - Read `backups` (of the old DB)
+        - Read `MonitoringConfig` (if the old DB has monitoring enabled)
+        - Read `database cluster credentials` (of the old DB)
+        - Create `backups` (if backup schedules are enabled)
    
     === "Upgrades"
 
