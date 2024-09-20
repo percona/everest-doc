@@ -36,7 +36,7 @@ p, <subject>, <resource-type>, <action>, <resource-name>
 
 Where:
 
-**subject**: Refers to the name of the role or user. For example, `adminrole:role` or `admin`
+**subject**: Refers to the name of the role or user. For example, `role:admin` or `admin`
 
 **resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
