@@ -2,12 +2,27 @@
 
 Role-based access control (RBAC) restricts access to resources within Percona Everest. It establishes a framework that defines access permissions and privileges according to individual users' roles. With RBAC, only authorized individuals can access specific information or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
 
+## How to enable RBAC
 
-## Default role
+To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
-In Percona Everest, the only predefined role is **adminrole:role**, which is assigned to the **admin** user. Hence, this **admin** user has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
+Here's how you can enable RBAC:
 
-This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L94-L102).
+```sh
+apiVersion: v1
+data:
+  enabled: "true"
+
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2024-09-19T11:42:52Z"
+  name: everest-rbac
+  namespace: everest-system
+  resourceVersion: "17903"
+  uid: 189b0a70-10cc-437e-96a3-a3d465728be6
+  ```
+
+
 
 ## RBAC resources and permissions
 
@@ -91,7 +106,14 @@ Check out the policy for a **readonly** role:
 
 ![!image](../images/rbac_readonly_ns.png)
 
-    
+
+
+## Default role
+
+In Percona Everest, the only predefined role is **adminrole:role**, which is assigned to the **admin** user. Hence, this **admin** user has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
+
+This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L94-L102).
+
 
 ### RBAC examples
 
