@@ -11,7 +11,7 @@ Here's how you can enable RBAC:
 ```sh
 apiVersion: v1
 data:
-  enabled: "false"
+  enabled: "true"
   policy.csv: |
     g, admin, role:admin
 kind: ConfigMap
