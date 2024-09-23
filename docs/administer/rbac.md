@@ -154,6 +154,22 @@ In this section, we will explore some examples that demonstrate how to create po
     Let's dive into some role definitions for RBAC:
     {.power-number}
 
+    1. **Admin role for a single namepsace**
+
+        Let's set up an admin role with unrestricted access to all resources in a single namespace called `namespaceA`.
+
+    ```sh
+    p, namespaceAadmin:role, namespaces, *, namespaceA
+    p, namespaceAadmin:role, database-engines, *, namespaceA/*
+    p, namespaceAadmin:role, database-clusters, *, namespaceA/*
+    p, namespaceAadmin:role, database-cluster-backups, *, namespaceA/*
+    p, namespaceAadmin:role, database-cluster-restores, *, namespaceA/*
+    p, namespaceAadmin:role, database-cluster-credentials, *, namespaceA/*
+    p, namespaceAadmin:role, backup-storages, *, namespaceA/*
+    p, namespaceAadmin:role, monitoring-instances, *, namespaceA/*
+    ```
+
+
 
     1. **Admin group role for a single namespace**
 
@@ -167,6 +183,18 @@ In this section, we will explore some examples that demonstrate how to create po
         p, role:admin-darkside, backup-storages, *, the-dark-side/*
         p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
         ```
+
+        ??? info "Let's dive into decoding this!"
+
+            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+
+            - **namespace**:  `Read` access to the `the-dark-side`  .
+            - **Database engines**: `Read` and `update` access
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `All` access (read, create, update, delete)
+            - **Monitoring instances**: `All` access (read, create, update, delete)
+
 
         ??? info "Let's dive into decoding this!"
 
