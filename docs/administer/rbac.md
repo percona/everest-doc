@@ -156,14 +156,14 @@ In this section, we will explore some examples that demonstrate how to create po
 
         The `namespaceAadmin` role has the following privileges within the `namespaceA` namespace:
 
-            - **namespace**:  `Read` access to the `namespaceA`
-            - **Database engines**: `Read` and `update` access
-            - **Database clusters**: `All` access (read, create, update, delete)
-            - **Database cluster backups**: `All` access (read, create, update, delete) 
-            - **Database cluster rstores**: `All` access (read, create, update, delete) 
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `All` access (read, create, update, delete)
-            - **Monitoring instances**: `All` access (read, create, update, delete)
+        - **namespace**:  `Read` access to the `namespaceA`
+        - **Database engines**: `Read` and `update` access
+        - **Database clusters**: `All` access (read, create, update, delete)
+        - **Database cluster backups**: `All` access (read, create, update, delete) 
+        - **Database cluster rstores**: `All` access (read, create, update, delete) 
+        - **Database clusters credentials**: `Read` acccess
+        - **Backup storages**: `All` access (read, create, update, delete)
+        - **Monitoring instances**: `All` access (read, create, update, delete)
 
     ### Admin role for a single namespace
 
