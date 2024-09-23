@@ -346,9 +346,6 @@ The `team-dev` role has the following privileges **only** within the `dev` names
 - **Database clusters**: `Update` access
 - **Database clusters**: `Create` access
 - **Database clusters**: `Delete` access
-
-    ![!image](../images/rbac_cluster_permissions.png)
-
 - **Database cluster credentials**: `Read` access
 
 ## Validate your RBAC policy
