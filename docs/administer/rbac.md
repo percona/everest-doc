@@ -167,7 +167,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Admin role for a single namespace
 
-    Let's set up an admin role definition for just one namespace called `the-dark-side`.
+    Let's set up a role for just one namespace called `the-dark-side`.
 
     ```sh
     p, role:admin-darkside, namespaces, *, the-dark-side
@@ -192,6 +192,8 @@ In this section, we will explore some examples that demonstrate how to create po
 
 
     ### Read only role for all the namespaces
+
+        Let's set up a read ony role for all the namespaces.
 
     ```sh
         p, role:readonly, namespaces, read, *
