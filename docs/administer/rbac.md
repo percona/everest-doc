@@ -127,7 +127,7 @@ In Role-Based Access Control (RBAC), a Role is a set of permissions that define 
 
 ### Built-in role
 
-In Percona Everest, the only predefined role is **adminrole:role**, which is assigned to the **admin** user. Hence, this **admin** user has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
+In Percona Everest, the only predefined role is **role:admin**. A user with this role has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
 
 This default built-in role definition can be seen in [policy.csv](https://github.com/percona/everest/blob/main/deploy/quickstart-k8s.yaml#L94-L102).
 
