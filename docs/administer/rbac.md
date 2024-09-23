@@ -140,10 +140,14 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Role with unrestricted privileges to database clusters
 
-     Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. This means that the user won't be able to `create` or `delete` any backups.
+     Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
+     
+    This means that the user won't be able to `create` or `delete` any backups.
 
-
-
+    ```sh
+    p, example-user, database-clusters, *, */*
+    p, example-user, database-cluster-backups, read, */*
+    ```
 
     ### Admin role for a single namepsace
 
