@@ -234,7 +234,7 @@ In this section, we will explore some examples that demonstrate how to create po
     
     ??? info "Let's dive into decoding this!"
 
-    The `readonly`role has the following privileges in all the namespaces:
+        The `readonly`role has the following privileges in all the namespaces:
 
         - **namespace**:  `Read` access to all the namespaces
         - **Database engines**: `Read` access
@@ -271,7 +271,6 @@ In this section, we will explore some examples that demonstrate how to create po
 
 
     ### Dev group role definition with read/update/create access to all the namespaces
-
     Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
     ```sh
