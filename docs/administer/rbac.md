@@ -243,6 +243,36 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Database cluster restores**: `Read` access
         - **Backup storages**: `Read` access
         - **Monitoring instances**: `Read` access
+        
+        
+    ### Read only role with access to the DB credentials
+
+    Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
+
+    ```sh
+    p, role:readonlywithcreds:, namespaces, read, *
+    p, role:readonlywithcreds:, database-engines, read, */*
+    p, role:readonlywithcreds:, database-clusters, read, */*
+    p, role:readonlywithcreds:, database-cluster-backups, read, */*
+    p, role:readonlywithcreds:, database-cluster-restores, read, */*
+    p, role:readonlywithcreds:, backup-storages, read, */*
+    p, role:readonlywithcreds:, monitoring-instances, read, */*
+    p, role:readonlywithcreds:, database-cluster-credentials, read, */*
+    ```
+
+    ??? info "Let's dive into decoding this!"
+
+        The `readonlywithcreds` role has the following privileges in all the namespaces:
+
+        - **namespace**: `Read` access to all the namespaces
+        - **Database engines**: `Read` access
+        - **Database clusters**: Read` access
+        - **Database cluster backups**: `Read` access
+        - **Database cluster restores**: `Read` access
+        - **Backup storages**: `Read` access
+        - **Monitoring instances**: `Read` access
+        - **Database clusters credentials**: `Read` acccess
+
 
     ### Dev group role with full access to a single database
 
@@ -293,6 +323,8 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Database clusters credentials**: `Read` acccess for **all** the databases
         - **Backup storages**: `Read` access to all the backup storages
         - **Monitoring instances**: `Read` access to all the monitoring instances
+
+    
 
 
 ## Assigning roles to users
