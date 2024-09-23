@@ -229,9 +229,9 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access
 
 
-    3. Read only role without access to the datbase credentials:
+    3. Read only role without access to the database credentials:
 
-        Lets set up a read-only role with access to all resources in all namespaces with the exception of the database credentials:
+        Lets set up a read only role with access to all resources in all namespaces with the exception of the database credentials:
 
     ```sh
     p, readonly:role, namespaces, read, *
@@ -243,6 +243,18 @@ In this section, we will explore some examples that demonstrate how to create po
     p, readonly:role, monitoring-instances, read, */*
     ```
     
+        ??? info "Let's dive into decoding this!"
+
+        The `readonly`role has the following privileges in all the namespaces:
+
+            - **namespace**:  `Read` access to all the namespaces
+            - **Database engines**: `Read` access
+            - **Database clusters**: Read` access
+            - **Database cluster backups**: `Read` 
+            - **Database cluster restores**: `Read`
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
+
 
 
 
