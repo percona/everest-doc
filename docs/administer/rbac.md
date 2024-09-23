@@ -182,7 +182,6 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-
     2. **Admin group role for a single namespace**
 
         Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
