@@ -6,7 +6,8 @@ Role-based access control (RBAC) restricts access to resources within Percona Ev
 
 To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
-The RBAC configuration is stored in a `ConfigMap` named `everest-rbac` within the `everest-system` namespace.
+!!! info "Important"
+    The RBAC configuration is stored in a `ConfigMap` named `everest-rbac` within the `everest-system` namespace.
 
 Here's how you can enable RBAC:
 
@@ -42,7 +43,7 @@ Where:
 
 For in-depth information on the actions that a subject can perform, see the [resources and permissions](#rbac-resources-and-permissions) section.
 
-**[action](#rbac-resources-and-permissions)**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
+**action**: Refers to the action the subject can perform. For example, `read`, `update`, `delete`, `create`, or `*`
 
 
 **resource-name**: Refers to a specific instance of the given resource-type. The argument should be prefixed with the namespace in which the resource is present `<namespace>/<resource-name>`. For example, `my-namespace/my-cluster-1`, `my-namespace-2/my-backup-1`, etc. You may also use a wildcard, such as `*`, `*/*`, or `my-namespace/*`
