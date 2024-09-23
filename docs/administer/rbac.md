@@ -50,23 +50,6 @@ For in-depth information on the actions that a subject can perform, see the [res
 !!! info "Important"
     If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
 
-
-### Read only policy
-
-Check out the policy for a **readonly** role:
-
-```sh
-    p, role:readonly, namespaces, read, *
-    p, role:readonly, database-engines, read, */*
-    p, role:readonly, database-clusters, read, */*
-    p, adminrole:role, database-cluster-backups, *, */*
-    p, adminrole:role, database-cluster-restores, *, */*
-    p, adminrole:role, database-cluster-credentials, read, */*
-    p, role:readonly, backup-storages, read, */*
-    p, role:readonly, monitoring-instances, read, */*
-```
-
-
 ## RBAC resources and permissions
 
 Below is a comprehensive table outlining the permissions granted for various **resources**:
@@ -182,7 +165,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-    2. **Admin group role for a single namespace**
+    2. **Admin role for a single namespace**
 
         Let's set up an admin role definition for just one namespace called `the-dark-side`.
 
@@ -207,7 +190,6 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `All` access (read, create, update, delete)
             
 
-
         ??? info "Let's dive into decoding this!"
 
             The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
@@ -220,7 +202,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-    2. **readonly** role:
+    2. **readonly** role for all the namespaces:
 
     ```sh
         p, role:readonly, namespaces, read, *
@@ -245,6 +227,24 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Database clusters credentials**: `Read` acccess
             - **Backup storages**: `Read` access
             - **Monitoring instances**: `Read` access
+
+
+    3. Read only role without access to the datbase credentials:
+
+        Lets set up a read-only role with access to all resources in all namespaces with the exception of the database credentials:
+
+    ```sh
+    p, readonly:role, namespaces, read, *
+    p, readonly:role, database-engines, read, */*
+    p, readonly:role, database-clusters, read, */*
+    p, readonly:role, database-cluster-backups, read, */*
+    p, readonly:role, database-cluster-restores, read, */*
+    p, readonly:role, backup-storages, read, */*
+    p, readonly:role, monitoring-instances, read, */*
+    ```
+    
+
+
 
     3. **Dev group role with full access to a single database**
 
