@@ -53,7 +53,7 @@ For in-depth information on the actions that a subject can perform, see the [res
 
 ## RBAC resources and permissions
 
-Below is a comprehensive table outlining the permissions granted for various **resources**:
+Below is a comprehensive table outlining the permissions available for various **resources**:
 
 ??? info "Permissions for resources"
 
