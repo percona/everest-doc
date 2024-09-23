@@ -56,14 +56,14 @@ For in-depth information on the actions that a subject can perform, see the [res
 Check out the policy for a **readonly** role:
 
 ```sh
-    p, readonly:role, namespaces, read, *
-    p, readonly:role, database-engines, read, */*
-    p, readonly:role, database-clusters, read, */*
+    p, role:readonly, namespaces, read, *
+    p, role:readonly, database-engines, read, */*
+    p, role:readonly, database-clusters, read, */*
     p, adminrole:role, database-cluster-backups, *, */*
     p, adminrole:role, database-cluster-restores, *, */*
     p, adminrole:role, database-cluster-credentials, read, */*
-    p, readonly:role, backup-storages, read, */*
-    p, readonly:role, monitoring-instances, read, */*
+    p, role:readonly, backup-storages, read, */*
+    p, role:readonly, monitoring-instances, read, */*
 ```
 
 
@@ -159,14 +159,14 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
     ```sh
-    p, namespaceAadmin:role, namespaces, *, namespaceA
-    p, namespaceAadmin:role, database-engines, *, namespaceA/*
-    p, namespaceAadmin:role, database-clusters, *, namespaceA/*
-    p, namespaceAadmin:role, database-cluster-backups, *, namespaceA/*
-    p, namespaceAadmin:role, database-cluster-restores, *, namespaceA/*
-    p, namespaceAadmin:role, database-cluster-credentials, *, namespaceA/*
-    p, namespaceAadmin:role, backup-storages, *, namespaceA/*
-    p, namespaceAadmin:role, monitoring-instances, *, namespaceA/*
+    p, role:namespaceAadmin, namespaces, *, namespaceA
+    p, role:namespaceAadmin, database-engines, *, namespaceA/*
+    p, role:namespaceAadmin, database-clusters, *, namespaceA/*
+    p, role:namespaceAadmin, database-cluster-backups, *, namespaceA/*
+    p, role:namespaceAadmin, database-cluster-restores, *, namespaceA/*
+    p, role:namespaceAadmin, database-cluster-credentials, *, namespaceA/*
+    p, role:namespaceAadmin, backup-storages, *, namespaceA/*
+    p, role:namespaceAadmin, monitoring-instances, *, namespaceA/*
     ```
 
     ??? info "Let's dive into decoding this!"
@@ -223,14 +223,14 @@ In this section, we will explore some examples that demonstrate how to create po
     2. Let's set up a policy for a **readonly** role:
 
     ```sh
-        p, readonly:role, namespaces, read, *
-        p, readonly:role, database-engines, read, */*
-        p, readonly:role, database-clusters, read, */*
-        p, adminrole:role, database-cluster-backups, *, */*
-        p, adminrole:role, database-cluster-restores, *, */*
-        p, adminrole:role, database-cluster-credentials, read, */*
-        p, readonly:role, backup-storages, read, */*
-        p, readonly:role, monitoring-instances, read, */*
+        p, role:readonly, namespaces, read, *
+        p, role:readonly, database-engines, read, */*
+        p, role:readonly, database-clusters, read, */*
+        p, role:readonly, database-cluster-backups, *, */*
+        p, role:readonly, database-cluster-restores, *, */*
+        p, role:readonly, database-cluster-credentials, read, */*
+        p, role:readonly, backup-storages, read, */*
+        p, role:readonly, monitoring-instances, read, */*
     ```    
 
     3. **Dev group role with full access to a single database**
