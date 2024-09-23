@@ -169,14 +169,14 @@ In this section, we will explore some examples that demonstrate how to create po
 
         Let's set up an admin role definition for just one namespace called `the-dark-side`.
 
-        ```sh
-        p, role:admin-darkside, namespaces, *, the-dark-side
-        p, role:admin-darkside, database-engines, *, the-dark-side/*
-        p, role:admin-darkside, database-clusters, *, the-dark-side/*
-        p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
-        p, role:admin-darkside, backup-storages, *, the-dark-side/*
-        p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
-        ```
+    ```sh
+    p, role:admin-darkside, namespaces, *, the-dark-side
+    p, role:admin-darkside, database-engines, *, the-dark-side/*
+    p, role:admin-darkside, database-clusters, *, the-dark-side/*
+    p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
+    p, role:admin-darkside, backup-storages, *, the-dark-side/*
+    p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
+    ```
 
         ??? info "Let's dive into decoding this!"
 
