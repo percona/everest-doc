@@ -129,7 +129,7 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
 1. `/namespaces/{namespace}/monitoring-instances`  
 
-    ```{.no-copy}
+    ```sh{.no-copy}
         a. GET
         b. POST
     ```
