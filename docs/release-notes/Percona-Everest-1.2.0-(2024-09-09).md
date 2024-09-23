@@ -129,8 +129,8 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
 1. `/namespaces/{namespace}/monitoring-instances`
         
-a. GET
-b. POST
+  a. GET
+  b. POST
 
 
 2. `/namespaces/{namespace}/monitoring-instances/{name}`
