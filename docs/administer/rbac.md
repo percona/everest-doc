@@ -139,7 +139,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Admin role for a single namepsace
 
-        Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
+    Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
     ```sh
     p, role:namespaceAadmin, namespaces, *, namespaceA
