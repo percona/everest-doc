@@ -167,7 +167,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Admin role for a single namespace
 
-        Let's set up an admin role definition for just one namespace called `the-dark-side`.
+    Let's set up an admin role definition for just one namespace called `the-dark-side`.
 
     ```sh
     p, role:admin-darkside, namespaces, *, the-dark-side
@@ -178,9 +178,9 @@ In this section, we will explore some examples that demonstrate how to create po
     p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
     ```
 
-        ??? info "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
-            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+        The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
             - **namespace**:  `Read` access to the `the-dark-side`  .
             - **Database engines**: `Read` and `update` access
@@ -189,17 +189,6 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
             
-
-        ??? info "Let's dive into decoding this!"
-
-            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
-
-            - **namespace**:  `Read` access to the `the-dark-side`  .
-            - **Database engines**: `Read` and `update` access
-            - **Database clusters**: `All` access (read, create, update, delete)
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `All` access (read, create, update, delete)
-            - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
     ### Read only role for all the namespaces
@@ -219,19 +208,19 @@ In this section, we will explore some examples that demonstrate how to create po
 
         The `readonly`role has the following privileges in all the namespaces:
 
-            - **namespace**:  `Read` access to all the namespaces
-            - **Database engines**: `Read` access
-            - **Database clusters**: Read` access
-            - **Database cluster backups**: `Read` 
-            - **Database cluster rstores**: `Read`
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `Read` access
-            - **Monitoring instances**: `Read` access
+        - **namespace**:  `Read` access to all the namespaces
+        - **Database engines**: `Read` access
+        - **Database clusters**: Read` access
+        - **Database cluster backups**: `Read` 
+        - **Database cluster rstores**: `Read`
+        - **Database clusters credentials**: `Read` acccess
+        - **Backup storages**: `Read` access
+        - **Monitoring instances**: `Read` access
 
 
     ### Read only role without access to the database credentials
 
-        Lets set up a read only role with access to all resources in all namespaces with the exception of the database credentials:
+    Lets set up a read only role with access to all resources in all namespaces with the exception of the database credentials:
 
     ```sh
     p, readonly:role, namespaces, read, *
@@ -243,47 +232,47 @@ In this section, we will explore some examples that demonstrate how to create po
     p, readonly:role, monitoring-instances, read, */*
     ```
     
-        ??? info "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
-        The `readonly`role has the following privileges in all the namespaces:
+    The `readonly`role has the following privileges in all the namespaces:
 
-            - **namespace**:  `Read` access to all the namespaces
-            - **Database engines**: `Read` access
-            - **Database clusters**: Read` access
-            - **Database cluster backups**: `Read` access
-            - **Database cluster restores**: `Read` access
-            - **Backup storages**: `Read` access
-            - **Monitoring instances**: `Read` access
+        - **namespace**:  `Read` access to all the namespaces
+        - **Database engines**: `Read` access
+        - **Database clusters**: Read` access
+        - **Database cluster backups**: `Read` access
+        - **Database cluster restores**: `Read` access
+        - **Backup storages**: `Read` access
+        - **Monitoring instances**: `Read` access
 
     ### Dev group role with full access to a single database
 
-        Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
+    Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
-        ```sh
-        p, role:team-darkside-banana, namespaces, read, the-dark-side
-        p, role:team-darkside-banana, database-engines, read, the-dark-side/*
-        p, role:team-darkside-banana, database-clusters, read, the-dark-side/banana
-        p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
-        p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
-        p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
-        p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
-        ```
+    ```sh
+    p, role:team-darkside-banana, namespaces, read, the-dark-side
+    p, role:team-darkside-banana, database-engines, read, the-dark-side/*
+    p, role:team-darkside-banana, database-clusters, read, the-dark-side/banana
+    p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
+    p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
+    p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
+    p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
+    ```
 
-        ??? info "Let's dive into decoding this!"
+    ??? info "Let's dive into decoding this!"
 
-            The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
+        The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
-            - **namespace**:  `Read` access to the `the-dark-side`  .
-            - **Database engines**: `Read` access to all the database engines
-            - **Database clusters**:  Read and update access for **only** the `banana` database
-            - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
-            - **Backup storages**: Read access to all the backup storages
-            - **Monitoring instances**: Read access to all the monitoring instances
+        - **namespace**:  `Read` access to the `the-dark-side`  .
+        - **Database engines**: `Read` access to all the database engines
+        - **Database clusters**:  Read and update access for **only** the `banana` database
+        - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
+        - **Backup storages**: Read access to all the backup storages
+        - **Monitoring instances**: Read access to all the monitoring instances
 
 
     ### Dev group role definition with read/update/create access to all the namespaces
 
-        Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
+    Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
         ```sh
         p, role:team-darkside, namespaces, read, */*
@@ -305,9 +294,6 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Database clusters credentials**: `Read` acccess for **all** the databases
             - **Backup storages**: `Read` access to all the backup storages
             - **Monitoring instances**: `Read` access to all the monitoring instances
-
-
-
 
 
 ## Assigning roles to users
