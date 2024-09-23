@@ -297,7 +297,9 @@ In this section, we will explore some examples that demonstrate how to create po
 
         - **namespace**:  `Read` access to the `the-dark-side`  .
         - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**:  Read and update access for **only** the `banana` database
+        - **Database clusters**: `Read` and `update` access
+        - **Database cluster backups**: `All` access (read, create, update, delete)
+        - **Database cluster restores**: `All` access (read, create, update, delete)
         - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
         - **Backup storages**: Read access to all the backup storages
         - **Monitoring instances**: Read access to all the monitoring instances
@@ -323,7 +325,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
         - **namespace**: `Read` access in all the namespaces.
         - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**:  `Read` and update access for all the database clusters
+        - **Database clusters**:  `Read` and `update` access for all the database clusters
         - **Database clusters credentials**: `Read` acccess for **all** the databases
         - **Backup storages**: `Read` access to all the backup storages
         - **Monitoring instances**: `Read` access to all the monitoring instances
