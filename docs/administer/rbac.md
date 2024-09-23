@@ -222,7 +222,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Read only role without access to the database credentials
 
-    Lets set up a read only role with access to all resources in all namespaces with the exception of the database credentials:
+    Lets set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
     ```sh
     p, readonly:role, namespaces, read, *
