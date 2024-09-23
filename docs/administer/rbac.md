@@ -139,7 +139,7 @@ In this section, we will explore some examples that demonstrate how to create po
 ??? Example "Examples"
 
     Let's dive into some role definitions for RBAC:
-    {.power-number}
+    
 
     ### Role with unrestricted privileges to database clusters
 
