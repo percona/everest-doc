@@ -130,31 +130,39 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 1. `/namespaces/{namespace}/monitoring-instances`  
 
     ```{.bash .no-copy}
-        a. GET
-        b. POST
+    a. GET
+    b. POST
     ```
 
 
 2. `/namespaces/{namespace}/monitoring-instances/{name}`
-        
+
+    ```{.bash .no-copy}   
     a. GET
     b. PATCH
     c. DELETE
-
+    ```
 
 3. `/namespaces/{namespace}/backup-storages`
 
+    ```{.bash .no-copy} 
     a. GET
     b. POST
+    ```
 
 4. `/namespaces/{namespace}/backup-storages/{name}`
 
+    ```{.bash .no-copy} 
     a. GET
     b. PATCH
     c. DELETE
-/permissions
-GET
+    ```
 
+5. `/permissions`
+
+    ```{.bash .no-copy}
+    GET
+    ```
 
 
 
