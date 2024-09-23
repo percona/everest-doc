@@ -182,12 +182,12 @@ In this section, we will explore some examples that demonstrate how to create po
 
         The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
-            - **namespace**:  `Read` access to the `the-dark-side`  .
-            - **Database engines**: `Read` and `update` access
-            - **Database clusters**: `All` access (read, create, update, delete)
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `All` access (read, create, update, delete)
-            - **Monitoring instances**: `All` access (read, create, update, delete)
+        - **namespace**:  `Read` access to the `the-dark-side`  .
+        - **Database engines**: `Read` and `update` access
+        - **Database clusters**: `All` access (read, create, update, delete)
+        - **Database clusters credentials**: `Read` acccess
+        - **Backup storages**: `All` access (read, create, update, delete)
+        - **Monitoring instances**: `All` access (read, create, update, delete)
             
 
 
@@ -245,7 +245,7 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Monitoring instances**: `Read` access
         
         
-    ### Read only role with access to the DB credentials
+    ### Read only role with access to the database credentials
 
     Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
 
@@ -300,7 +300,7 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    ### Dev group role definition with read/update/create access to all the namespaces
+    ### Dev group role with read/update/create access to all the namespaces
     Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
     ```sh
@@ -317,15 +317,40 @@ In this section, we will explore some examples that demonstrate how to create po
 
         The `team-darkside` role has the following privileges in **all** the namespaces:
 
-        - **namespace**:  `Read` access in all the namespaces.
+        - **namespace**: `Read` access in all the namespaces.
         - **Database engines**: `Read` access to all the database engines
         - **Database clusters**:  `Read` and update access for all the database clusters
         - **Database clusters credentials**: `Read` acccess for **all** the databases
         - **Backup storages**: `Read` access to all the backup storages
         - **Monitoring instances**: `Read` access to all the monitoring instances
 
-    
+    ### Database admin role 
 
+    Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without any restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
+
+    ```sh
+    p, roleA:role, namespaces, *, *
+    p, roleA:role, database-engines, read, */*
+    p, roleA:role, database-clusters, *, */*
+    p, roleA:role, database-cluster-backups, *, */*
+    p, roleA:role, database-cluster-restores, *, */*
+    p, roleA:role, database-cluster-credentials, *, */*
+    p, roleA:role, backup-storages, read, */*
+    p, roleA:role, monitoring-instances, read, */*
+    ```
+
+    ??? info "Let's dive into decoding this!"
+
+        The `roleA` role has the following privileges in **all** the namespaces:
+
+        - **namespace**: `Read` access in all the namespaces.
+        - **Database engines**: `Read` access to all the database engines
+        - **Database clusters**: `All` access (read, create, update, delete)
+        - **Database cluster backups**: `All` access (read, create, update, delete)
+        - **Database cluster restores**: `All` access (read, create, update, delete)
+        - **Database clusters credentials**: `Read` acccess for **all** the databases       
+        - **Backup storages**: `Read` access to all the backup storages
+        - **Monitoring instances**: `Read` access to all the monitoring instances
 
 ## Assigning roles to users
 
