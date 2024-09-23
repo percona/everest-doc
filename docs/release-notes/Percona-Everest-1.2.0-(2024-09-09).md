@@ -122,6 +122,77 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## The latest in APIs: What’s new and what’s deprecated
 
 
+### New added API endpoints
+
+Check out the new API endpoints we've added in Percona Everest 1.2.0:
+
+
+1. ```/namespaces/{namespace}/monitoring-instances```
+        a. GET
+        b. POST
+
+
+/namespaces/{namespace}/monitoring-instances/{name}
+GET
+PATCH
+DELETE
+/namespaces/{namespace}/backup-storages
+GET
+POST
+/namespaces/{namespace}/backup-storages/{name}
+GET
+PATCH
+DELETE
+/permissions
+GET
+
+
+
+
+
+
+
+Removed the endpoints/methods that had been deprecated in v1.1.0:
+
+ Removed the endpoints/methods that had been deprecated in v1.1.0:
+/namespaces/{namespace}/database-engines/{name}/operator-version/preflight
+GET
+/namespaces/{namespace}/database-engines/{name}/operator-version
+GET
+PUT
+Deprecated the following endpoints/methods:
+/monitoring-instances
+GET
+POST
+/monitoring-instances/{name}
+GET
+PATCH
+DELETE
+/backup-storages
+GET
+POST
+/backup-storages/{name}
+GET
+PATCH
+DELETE
+Added the following endpoints/methods:
+/namespaces/{namespace}/monitoring-instances
+GET
+POST
+/namespaces/{namespace}/monitoring-instances/{name}
+GET
+PATCH
+DELETE
+/namespaces/{namespace}/backup-storages
+GET
+POST
+/namespaces/{namespace}/backup-storages/{name}
+GET
+PATCH
+DELETE
+/permissions
+GET
+
 
 
 
