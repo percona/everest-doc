@@ -190,7 +190,6 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Monitoring instances**: `All` access (read, create, update, delete)
             
 
-
     ### Read only role for all the namespaces
 
         Let's set up a read ony role for all the namespaces.
@@ -276,15 +275,17 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Database clusters credentials**: `Read` acccess
 
 
-    ### Dev group role with full access to a single database
+    ### Dev role with full access to a single database
 
     Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
     ```sh
     p, role:team-darkside-banana, namespaces, read, the-dark-side
     p, role:team-darkside-banana, database-engines, read, the-dark-side/*
-    p, role:team-darkside-banana, database-clusters, read, the-dark-side/banana
+    p, role:team-darkside-banana, database-clusters, read, the-dark-side/*
     p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
+    p, role:team-darkside-banana, database-cluster-backups, *, the-dark-side/*
+    p, role:team-darkside-banana, database-cluster-restores, *, the-dark-side/*
     p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
     p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
     p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
@@ -302,7 +303,8 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    ### Dev group role with read/update/create access to all the namespaces
+    ### Dev role with read/update/create access to all the namespaces
+    
     Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
     ```sh
