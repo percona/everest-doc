@@ -156,7 +156,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     1. **Admin role for a single namepsace**
 
-        Let's set up an admin role with unrestricted access to all resources in a single namespace called `namespaceA`.
+        Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
     ```sh
     p, namespaceAadmin:role, namespaces, *, namespaceA
@@ -169,9 +169,21 @@ In this section, we will explore some examples that demonstrate how to create po
     p, namespaceAadmin:role, monitoring-instances, *, namespaceA/*
     ```
 
+    ??? info "Let's dive into decoding this!"
+
+        The `namespaceAadmin` role has the following privileges within the `namespaceA` namespace:
+
+            - **namespace**:  `Read` access to the `namespaceA`
+            - **Database engines**: `Read` and `update` access
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database cluster backups**: `All` access (read, create, update, delete) 
+            - **Database cluster rstores**: `All` access (read, create, update, delete) 
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `All` access (read, create, update, delete)
+            - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-    1. **Admin group role for a single namespace**
+    2. **Admin group role for a single namespace**
 
         Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
 
@@ -194,6 +206,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Database clusters credentials**: `Read` acccess
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
+            
 
 
         ??? info "Let's dive into decoding this!"
