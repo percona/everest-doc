@@ -184,7 +184,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     2. **Admin group role for a single namespace**
 
-        Let's set up an Admin group role definition for just one namespace called `the-dark-side`.
+        Let's set up an admin role definition for just one namespace called `the-dark-side`.
 
         ```sh
         p, role:admin-darkside, namespaces, *, the-dark-side
@@ -220,7 +220,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-    2. Let's set up a policy for a **readonly** role:
+    2. **readonly** role:
 
     ```sh
         p, role:readonly, namespaces, read, *
@@ -232,6 +232,19 @@ In this section, we will explore some examples that demonstrate how to create po
         p, role:readonly, backup-storages, read, */*
         p, role:readonly, monitoring-instances, read, */*
     ```    
+
+    ??? info "Let's dive into decoding this!"
+
+        The `readonly`role has the following privileges in all the namespaces:
+
+            - **namespace**:  `Read` access to all the namespaces
+            - **Database engines**: `Read` access
+            - **Database clusters**: Read` access
+            - **Database cluster backups**: `Read` 
+            - **Database cluster rstores**: `Read`
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
 
     3. **Dev group role with full access to a single database**
 
