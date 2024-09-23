@@ -165,7 +165,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-    ### Admin role for a single namespace**
+    ### Admin role for a single namespace
 
         Let's set up an admin role definition for just one namespace called `the-dark-side`.
 
@@ -202,7 +202,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
 
-    2. **readonly** role for all the namespaces:
+    ### Read only role for all the namespaces
 
     ```sh
         p, role:readonly, namespaces, read, *
@@ -229,7 +229,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access
 
 
-    3. Read only role without access to the database credentials:
+    ### Read only role without access to the database credentials
 
         Lets set up a read only role with access to all resources in all namespaces with the exception of the database credentials:
 
@@ -255,7 +255,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `Read` access
             - **Monitoring instances**: `Read` access
 
-    3. **Dev group role with full access to a single database**
+    ### Dev group role with full access to a single database
 
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
@@ -281,7 +281,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    4. **Dev group role definition with read/update/create access to all the namespaces**
+    ### Dev group role definition with read/update/create access to all the namespaces
 
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
