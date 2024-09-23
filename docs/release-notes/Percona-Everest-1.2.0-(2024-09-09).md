@@ -4,7 +4,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 
 !!! warning
-    Once you upgrade to Percona Everest version 1.2.0, the process cannot be reversed.
+     Percona Everest v1.2.0 introduces breaking changes to the API. Once you upgrade to version 1.2.0, the process cannot be reversed.
 
 
 ## Release summary
@@ -47,7 +47,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
 
     !!! warning "Disclaimer"
-        RBAC is currently in Technical Preview. Early adopters are advised to use this feature only for testing purposes and not in production environments.
+        RBAC is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
 
 
     Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
