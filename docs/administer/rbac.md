@@ -123,7 +123,7 @@ Below is a comprehensive table outlining the permissions available for various *
 In Role-Based Access Control (RBAC), a Role is a set of permissions that define what actions (like read, write, update, delete) can be performed on specific resources within Percona Everest. In RBAC, roles are assigned to users, allowing them to interact with the resources according to the permissions defined by their roles.
 
 !!! note
-    It is recommended to prefix role names with "role:" to prevent confusion between role names and user names.
+    It is recommended to prefix role names with **role:** to prevent confusion between role names and user names.
 
 ### Built-in role
 
