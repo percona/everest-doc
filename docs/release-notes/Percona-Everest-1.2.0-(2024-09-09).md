@@ -55,7 +55,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
-
     Here's a breakdown of the key concepts in RBAC:
 
     - [Roles](https://docs.percona.com/everest/administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within Percona Everest.
