@@ -413,7 +413,7 @@ data:
     g, <newuser>, role:admin
 ```
 
-??? Example "Examples"
+??? Example "Example"
 
     Let's assign the role `team-dev` to a new user named `john`:
 
