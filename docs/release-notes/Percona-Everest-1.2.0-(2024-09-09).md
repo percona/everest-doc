@@ -167,7 +167,7 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
 ### Deprecated API endpoints
 
-These are the API endpoints deprecated in Percona Everest 1.2.0:
+This is the list of the API endpoints deprecated:
 {.power-number}
 
 1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
