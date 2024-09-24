@@ -213,7 +213,7 @@ In this section, we will explore some examples that demonstrate how to create po
     
         ### Read only role for all the namespaces
 
-            Let's set up a read ony role for all the namespaces.
+        Let's set up a read ony role for all the namespaces.
 
         ```sh
             p, role:readonly, namespaces, read, *
@@ -228,7 +228,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
         ??? info "Let's dive into decoding this!"
 
-            The `readonly`role has the following privileges in all the namespaces:
+            The `readonly` role has the following privileges in all the namespaces:
 
             - **namespace**:  `Read` access to all the namespaces
             - **Database engines**: `Read` access
