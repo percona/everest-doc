@@ -143,7 +143,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Basic role"
     
-        ### Role with unrestricted privileges to database clusters
+        **Role with unrestricted privileges to database clusters**
 
         Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
         
@@ -156,7 +156,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Admin role" 
     
-        ### Admin role for a single namepsace
+        **1. Admin role for a single namepsace**
 
         Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
@@ -184,7 +184,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
 
-        ### Admin role for a single namespace
+        **2. Admin role for a single namespace**
 
         Let's set up a role for just one namespace called `the-dark-side`.
 
