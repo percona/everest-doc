@@ -160,8 +160,9 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
 5. `/permissions`
 
-    a. ```{.bash .no-copy}```
-    GET
+    
+    ```{.bash .no-copy}
+    a. GET
     ```
 
 
@@ -175,8 +176,7 @@ This is the list of the API endpoints deprecated:
 
     a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
 
-
-        ```{.bash .no-copy}
+       ```{.bash .no-copy}
         1. GET
         ```
 
