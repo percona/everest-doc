@@ -143,246 +143,246 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Basic role"
     
-    ### Role with unrestricted privileges to database clusters
+        ### Role with unrestricted privileges to database clusters
 
-     Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
-     
-    This means that the user won't be able to `create` or `delete` any backups.
+        Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
+        
+        This means that the user won't be able to `create` or `delete` any backups.
 
-    ```sh
-    p, example-user, database-clusters, *, */*
-    p, example-user, database-cluster-backups, read, */*
-    ```
+        ```sh
+        p, example-user, database-clusters, *, */*
+        p, example-user, database-cluster-backups, read, */*
+        ```
 
     === "Admin role" 
     
-    ### Admin role for a single namepsace
+        ### Admin role for a single namepsace
 
-    Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
+        Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
-    ```sh
-    p, role:namespaceAadmin, namespaces, *, namespaceA
-    p, role:namespaceAadmin, database-engines, *, namespaceA/*
-    p, role:namespaceAadmin, database-clusters, *, namespaceA/*
-    p, role:namespaceAadmin, database-cluster-backups, *, namespaceA/*
-    p, role:namespaceAadmin, database-cluster-restores, *, namespaceA/*
-    p, role:namespaceAadmin, database-cluster-credentials, *, namespaceA/*
-    p, role:namespaceAadmin, backup-storages, *, namespaceA/*
-    p, role:namespaceAadmin, monitoring-instances, *, namespaceA/*
-    ```
+        ```sh
+        p, role:namespaceAadmin, namespaces, *, namespaceA
+        p, role:namespaceAadmin, database-engines, *, namespaceA/*
+        p, role:namespaceAadmin, database-clusters, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-backups, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-restores, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-credentials, *, namespaceA/*
+        p, role:namespaceAadmin, backup-storages, *, namespaceA/*
+        p, role:namespaceAadmin, monitoring-instances, *, namespaceA/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `namespaceAadmin` role has the following privileges within the `namespaceA` namespace:
+            The `namespaceAadmin` role has the following privileges within the `namespaceA` namespace:
 
-        - **namespace**: `Read` access to the `namespaceA`
-        - **Database engines**: `Read` and `update` access
-        - **Database clusters**: `All` access (read, create, update, delete)
-        - **Database cluster backups**: `All` access (read, create, update, delete) 
-        - **Database cluster rstores**: `All` access (read, create, update, delete) 
-        - **Database clusters credentials**: `Read` acccess
-        - **Backup storages**: `All` access (read, create, update, delete)
-        - **Monitoring instances**: `All` access (read, create, update, delete)
+            - **namespace**: `Read` access to the `namespaceA`
+            - **Database engines**: `Read` and `update` access
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database cluster backups**: `All` access (read, create, update, delete) 
+            - **Database cluster rstores**: `All` access (read, create, update, delete) 
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `All` access (read, create, update, delete)
+            - **Monitoring instances**: `All` access (read, create, update, delete)
 
-    ### Admin role for a single namespace
+        ### Admin role for a single namespace
 
-    Let's set up a role for just one namespace called `the-dark-side`.
+        Let's set up a role for just one namespace called `the-dark-side`.
 
-    ```sh
-    p, role:admin-darkside, namespaces, *, the-dark-side
-    p, role:admin-darkside, database-engines, *, the-dark-side/*
-    p, role:admin-darkside, database-clusters, *, the-dark-side/*
-    p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
-    p, role:admin-darkside, backup-storages, *, the-dark-side/*
-    p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
-    ```
+        ```sh
+        p, role:admin-darkside, namespaces, *, the-dark-side
+        p, role:admin-darkside, database-engines, *, the-dark-side/*
+        p, role:admin-darkside, database-clusters, *, the-dark-side/*
+        p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
+        p, role:admin-darkside, backup-storages, *, the-dark-side/*
+        p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
+            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
 
-        - **namespace**:  `Read` access to the `the-dark-side`  .
-        - **Database engines**: `Read` and `update` access
-        - **Database clusters**: `All` access (read, create, update, delete)
-        - **Database clusters credentials**: `Read` acccess
-        - **Backup storages**: `All` access (read, create, update, delete)
-        - **Monitoring instances**: `All` access (read, create, update, delete)
+            - **namespace**:  `Read` access to the `the-dark-side`  .
+            - **Database engines**: `Read` and `update` access
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `All` access (read, create, update, delete)
+            - **Monitoring instances**: `All` access (read, create, update, delete)
             
 
     === "Read only role" 
     
-    ### Read only role for all the namespaces
+        ### Read only role for all the namespaces
 
-        Let's set up a read ony role for all the namespaces.
+            Let's set up a read ony role for all the namespaces.
 
-    ```sh
-        p, role:readonly, namespaces, read, *
-        p, role:readonly, database-engines, read, */*
-        p, role:readonly, database-clusters, read, */*
-        p, role:readonly, database-cluster-backups, *, */*
-        p, role:readonly, database-cluster-restores, *, */*
-        p, role:readonly, database-cluster-credentials, read, */*
-        p, role:readonly, backup-storages, read, */*
-        p, role:readonly, monitoring-instances, read, */*
-    ```    
+        ```sh
+            p, role:readonly, namespaces, read, *
+            p, role:readonly, database-engines, read, */*
+            p, role:readonly, database-clusters, read, */*
+            p, role:readonly, database-cluster-backups, *, */*
+            p, role:readonly, database-cluster-restores, *, */*
+            p, role:readonly, database-cluster-credentials, read, */*
+            p, role:readonly, backup-storages, read, */*
+            p, role:readonly, monitoring-instances, read, */*
+        ```    
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `readonly`role has the following privileges in all the namespaces:
+            The `readonly`role has the following privileges in all the namespaces:
 
-        - **namespace**:  `Read` access to all the namespaces
-        - **Database engines**: `Read` access
-        - **Database clusters**: Read` access
-        - **Database cluster backups**: `Read` 
-        - **Database cluster rstores**: `Read`
-        - **Database clusters credentials**: `Read` acccess
-        - **Backup storages**: `Read` access
-        - **Monitoring instances**: `Read` access
+            - **namespace**:  `Read` access to all the namespaces
+            - **Database engines**: `Read` access
+            - **Database clusters**: Read` access
+            - **Database cluster backups**: `Read` 
+            - **Database cluster rstores**: `Read`
+            - **Database clusters credentials**: `Read` acccess
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
 
 
-    ### Read only role without access to the database credentials
+        ### Read only role without access to the database credentials
 
-    Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
+        Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
-    ```sh
-    p, readonly:role, namespaces, read, *
-    p, readonly:role, database-engines, read, */*
-    p, readonly:role, database-clusters, read, */*
-    p, readonly:role, database-cluster-backups, read, */*
-    p, readonly:role, database-cluster-restores, read, */*
-    p, readonly:role, backup-storages, read, */*
-    p, readonly:role, monitoring-instances, read, */*
-    ```
-    
-    ??? info "Let's dive into decoding this!"
-
-        The `readonly`role has the following privileges in all the namespaces:
-
-        - **namespace**:  `Read` access to all the namespaces
-        - **Database engines**: `Read` access
-        - **Database clusters**: Read` access
-        - **Database cluster backups**: `Read` access
-        - **Database cluster restores**: `Read` access
-        - **Backup storages**: `Read` access
-        - **Monitoring instances**: `Read` access
+        ```sh
+        p, readonly:role, namespaces, read, *
+        p, readonly:role, database-engines, read, */*
+        p, readonly:role, database-clusters, read, */*
+        p, readonly:role, database-cluster-backups, read, */*
+        p, readonly:role, database-cluster-restores, read, */*
+        p, readonly:role, backup-storages, read, */*
+        p, readonly:role, monitoring-instances, read, */*
+        ```
         
-        
-    ### Read only role with access to the database credentials
+        ??? info "Let's dive into decoding this!"
 
-    Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
+            The `readonly`role has the following privileges in all the namespaces:
 
-    ```sh
-    p, role:readonlywithcreds:, namespaces, read, *
-    p, role:readonlywithcreds:, database-engines, read, */*
-    p, role:readonlywithcreds:, database-clusters, read, */*
-    p, role:readonlywithcreds:, database-cluster-backups, read, */*
-    p, role:readonlywithcreds:, database-cluster-restores, read, */*
-    p, role:readonlywithcreds:, backup-storages, read, */*
-    p, role:readonlywithcreds:, monitoring-instances, read, */*
-    p, role:readonlywithcreds:, database-cluster-credentials, read, */*
-    ```
+            - **namespace**:  `Read` access to all the namespaces
+            - **Database engines**: `Read` access
+            - **Database clusters**: Read` access
+            - **Database cluster backups**: `Read` access
+            - **Database cluster restores**: `Read` access
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
+            
+            
+        ### Read only role with access to the database credentials
 
-    ??? info "Let's dive into decoding this!"
+        Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
 
-        The `readonlywithcreds` role has the following privileges in all the namespaces:
+        ```sh
+        p, role:readonlywithcreds:, namespaces, read, *
+        p, role:readonlywithcreds:, database-engines, read, */*
+        p, role:readonlywithcreds:, database-clusters, read, */*
+        p, role:readonlywithcreds:, database-cluster-backups, read, */*
+        p, role:readonlywithcreds:, database-cluster-restores, read, */*
+        p, role:readonlywithcreds:, backup-storages, read, */*
+        p, role:readonlywithcreds:, monitoring-instances, read, */*
+        p, role:readonlywithcreds:, database-cluster-credentials, read, */*
+        ```
 
-        - **namespace**: `Read` access to all the namespaces
-        - **Database engines**: `Read` access
-        - **Database clusters**: Read` access
-        - **Database cluster backups**: `Read` access
-        - **Database cluster restores**: `Read` access
-        - **Backup storages**: `Read` access
-        - **Monitoring instances**: `Read` access
-        - **Database clusters credentials**: `Read` acccess
+        ??? info "Let's dive into decoding this!"
+
+            The `readonlywithcreds` role has the following privileges in all the namespaces:
+
+            - **namespace**: `Read` access to all the namespaces
+            - **Database engines**: `Read` access
+            - **Database clusters**: Read` access
+            - **Database cluster backups**: `Read` access
+            - **Database cluster restores**: `Read` access
+            - **Backup storages**: `Read` access
+            - **Monitoring instances**: `Read` access
+            - **Database clusters credentials**: `Read` acccess
 
 
     === "Dev role" 
 
-    ### Dev role with full access to a single database
+        ### Dev role with full access to a single database
 
-    Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
+        Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
-    ```sh
-    p, role:team-darkside-banana, namespaces, read, the-dark-side
-    p, role:team-darkside-banana, database-engines, read, the-dark-side/*
-    p, role:team-darkside-banana, database-clusters, read, the-dark-side/*
-    p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
-    p, role:team-darkside-banana, database-cluster-backups, *, the-dark-side/*
-    p, role:team-darkside-banana, database-cluster-restores, *, the-dark-side/*
-    p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
-    p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
-    p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
-    ```
+        ```sh
+        p, role:team-darkside-banana, namespaces, read, the-dark-side
+        p, role:team-darkside-banana, database-engines, read, the-dark-side/*
+        p, role:team-darkside-banana, database-clusters, read, the-dark-side/*
+        p, role:team-darkside-banana, database-clusters, update, the-dark-side/banana
+        p, role:team-darkside-banana, database-cluster-backups, *, the-dark-side/*
+        p, role:team-darkside-banana, database-cluster-restores, *, the-dark-side/*
+        p, role:team-darkside-banana, database-clusters-credentials, read, the-dark-side/banana
+        p, role:team-darkside-banana, backup-storages, read, the-dark-side/*
+        p, role:team-darkside-banana, monitoring-instances, read, the-dark-side/*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
+            The `team-darkside-banana` role has the following privileges for **single** database `banana' within `the-dark-side` namespace:
 
-        - **namespace**:  `Read` access to the `the-dark-side`  .
-        - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**: `Read` and `update` access
-        - **Database cluster backups**: `All` access (read, create, update, delete)
-        - **Database cluster restores**: `All` access (read, create, update, delete)
-        - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
-        - **Backup storages**: Read access to all the backup storages
-        - **Monitoring instances**: Read access to all the monitoring instances
+            - **namespace**:  `Read` access to the `the-dark-side`  .
+            - **Database engines**: `Read` access to all the database engines
+            - **Database clusters**: `Read` and `update` access
+            - **Database cluster backups**: `All` access (read, create, update, delete)
+            - **Database cluster restores**: `All` access (read, create, update, delete)
+            - **Database clusters credentials**: `Read` acccess for **only** the `banana` database
+            - **Backup storages**: Read access to all the backup storages
+            - **Monitoring instances**: Read access to all the monitoring instances
 
 
-    ### Dev role with read/update/create access to all the namespaces
-    
-    Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
+        ### Dev role with read/update/create access to all the namespaces
+        
+        Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
-    ```sh
-    p, role:team-darkside, namespaces, read, */*
-    p, role:team-darkside, database-engines, read, */*
-    p, role:team-darkside, database-clusters, read, */*
-    p, role:team-darkside, database-clusters, update, */*
-    p, role:team-darkside, database-clusters-credentials, read, */*
-    p, role:team-darkside, backup-storages, read, */*
-    p, role:team-darkside, monitoring-instances, read, */*
-    ```
+        ```sh
+        p, role:team-darkside, namespaces, read, */*
+        p, role:team-darkside, database-engines, read, */*
+        p, role:team-darkside, database-clusters, read, */*
+        p, role:team-darkside, database-clusters, update, */*
+        p, role:team-darkside, database-clusters-credentials, read, */*
+        p, role:team-darkside, backup-storages, read, */*
+        p, role:team-darkside, monitoring-instances, read, */*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `team-darkside` role has the following privileges in **all** the namespaces:
+            The `team-darkside` role has the following privileges in **all** the namespaces:
 
-        - **namespace**: `Read` access in all the namespaces.
-        - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**:  `Read` and `update` access for all the database clusters
-        - **Database clusters credentials**: `Read` acccess for **all** the databases
-        - **Backup storages**: `Read` access to all the backup storages
-        - **Monitoring instances**: `Read` access to all the monitoring instances
+            - **namespace**: `Read` access in all the namespaces.
+            - **Database engines**: `Read` access to all the database engines
+            - **Database clusters**:  `Read` and `update` access for all the database clusters
+            - **Database clusters credentials**: `Read` acccess for **all** the databases
+            - **Backup storages**: `Read` access to all the backup storages
+            - **Monitoring instances**: `Read` access to all the monitoring instances
 
 
     === "Database Admin role" 
 
-    ### Database admin role 
+        ### Database admin role 
 
-    Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
+        Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
-    ```sh
-    p, roleA:role, namespaces, *, *
-    p, roleA:role, database-engines, read, */*
-    p, roleA:role, database-clusters, *, */*
-    p, roleA:role, database-cluster-backups, *, */*
-    p, roleA:role, database-cluster-restores, *, */*
-    p, roleA:role, database-cluster-credentials, *, */*
-    p, roleA:role, backup-storages, read, */*
-    p, roleA:role, monitoring-instances, read, */*
-    ```
+        ```sh
+        p, roleA:role, namespaces, *, *
+        p, roleA:role, database-engines, read, */*
+        p, roleA:role, database-clusters, *, */*
+        p, roleA:role, database-cluster-backups, *, */*
+        p, roleA:role, database-cluster-restores, *, */*
+        p, roleA:role, database-cluster-credentials, *, */*
+        p, roleA:role, backup-storages, read, */*
+        p, roleA:role, monitoring-instances, read, */*
+        ```
 
-    ??? info "Let's dive into decoding this!"
+        ??? info "Let's dive into decoding this!"
 
-        The `roleA` role has the following privileges in **all** the namespaces:
+            The `roleA` role has the following privileges in **all** the namespaces:
 
-        - **namespace**: `Read` access in all the namespaces.
-        - **Database engines**: `Read` access to all the database engines
-        - **Database clusters**: `All` access (read, create, update, delete)
-        - **Database cluster backups**: `All` access (read, create, update, delete)
-        - **Database cluster restores**: `All` access (read, create, update, delete)
-        - **Database clusters credentials**: `Read` acccess for **all** the databases       
-        - **Backup storages**: `Read` access to all the backup storages
-        - **Monitoring instances**: `Read` access to all the monitoring instances
+            - **namespace**: `Read` access in all the namespaces.
+            - **Database engines**: `Read` access to all the database engines
+            - **Database clusters**: `All` access (read, create, update, delete)
+            - **Database cluster backups**: `All` access (read, create, update, delete)
+            - **Database cluster restores**: `All` access (read, create, update, delete)
+            - **Database clusters credentials**: `Read` acccess for **all** the databases       
+            - **Backup storages**: `Read` access to all the backup storages
+            - **Monitoring instances**: `Read` access to all the monitoring instances
 
 ## Assigning roles to users
 
