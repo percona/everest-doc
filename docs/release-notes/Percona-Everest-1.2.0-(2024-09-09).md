@@ -174,11 +174,11 @@ This is the list of the API endpoints deprecated:
 1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
 
 
-    a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
+a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
 
-       ```{.bash .no-copy}
-        1. GET
-        ```
+    ```{.bash .no-copy}
+    1. GET
+    ```
 
     b. `/namespaces/{namespace}/database-engines/{name}/operator-version`
 
