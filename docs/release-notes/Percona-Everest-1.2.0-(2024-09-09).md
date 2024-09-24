@@ -188,6 +188,7 @@ This is the list of the API endpoints deprecated:
     ```
 
 2. Deprecated the following endpoints/methods:
+{.power-number}
 
     c. `/monitoring-instances`
 
