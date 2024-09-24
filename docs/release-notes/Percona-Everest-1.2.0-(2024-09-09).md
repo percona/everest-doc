@@ -13,7 +13,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |---------|---------------------|---------|
 | **1.**  |[Role-based access control (RBAC)](#introducing-rbac-in-percona-everest-ensure-security-and-simplify-database-access-management)|Introducing RBAC in Percona Everest: Ensure security and simplify database access management|
 | **2.**|[Breaking API changes](#percona-everest-120-a-deep-dive-into-breaking-api-changes)|Percona Everest v1.2.0: A deep dive into Breaking API changes|
-| **3.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved mulitple operator upgrades|
+| **3.**|[Operator upgrades](#improved-mulitple-operator-upgrades)|Improved multiple operator upgrades|
 | **4.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.2.0|
 | **5.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
 | **6.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs|
@@ -90,7 +90,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## New features
 
-
 - [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103): Starting with Percona Everest 1.2.0, we've restricted actions based on RBAC roles, ensuring that users are explicitly granted access to the resources required for their specific roles. This enhances security and simplifies access control processes.
 
 - [EVEREST-1142](https://perconadev.atlassian.net/browse/EVEREST-1142): We have now added a [new command](../administer/rbac.md#validate-your-rbac-policy) for validating your RBAC policy to ensure that your RBAC policies are working as expected.
@@ -109,7 +108,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Starting with Percona Everest 1.2.0, you can now directly edit the monitoring endpoint from the database overview page, instead of having to use the Edit database wizard.
 
 
-- [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): We've updated the **Resources** panel on the **Database overview** page to be independent instead of part of the database details panel and improved the overall look and feel of this page.
+- [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): We've updated the **Resources** panel on the **Database overview** page to be independent instead of part of the **DB Details** panel and improved the overall look and feel of this page.
 
 
 - [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369): We've updated the documentation for the section on turning off telemetry.
@@ -220,13 +219,13 @@ This is the list of the API endpoints deprecated:
 - [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): The PostgreSQL pods now demonstrate the intended behavior by not getting stuck, as they automatically restart when the database is restarted.
 
 
-- [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats .
+- [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats.
 
 - [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is properly now disabled if the backup is in the **Deleting** status.
 
-- [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273) Backend sends an empty response if the backup storage url is edited to an http address
+- [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273) Backend sends an empty response if the backup storage URL is edited to an HTTP address.
 
-- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the Resources page and the Database Summary panel is now consistent.
+- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the **Resources page** and the **Database Summary** panel is now consistent.
 
 - [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286): When editing a backup schedule, the option to change the backup name is now disabled.
 
@@ -238,33 +237,32 @@ This is the list of the API endpoints deprecated:
 
 - [EVEREST-1354](https://perconadev.atlassian.net/browse/EVEREST-1354): We've resolved an issue related to an incorrect allocation of CPU and memory resources for PXC clusters. To apply these new settings, a database restart is required.
 
-
 - [EVEREST-1371](https://perconadev.atlassian.net/browse/EVEREST-1371): We've addressed a couple of issues pertaining to the **Monitoring** page, one of them being the monitoring endpoint displaying the **username** instead of the **endpoint** name.
 
 
-- [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We've resolved the issue that was preventing us from deleting the monitoring endpoint not currently in use.
+- [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We’ve resolved the issue that prevented us from deleting the monitoring endpoint that is not currently in use.
 
 - [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
 
 <!---Issues added for RC3--->
 
-- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - After upgrading to Percona Everest 1.2.0, it was observed that a user, who had not been included in the RBAC configuration and lacked proper permissions, was able to access specific information on Percona Everest. We have resolved the issue now.
+- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - After upgrading to Percona Everest 1.2.0, it was observed that a user who had not been included in the RBAC configuration and lacked proper permissions, was able to access specific information on Percona Everest. We have resolved the issue now.
 
 
 - [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) - 
-PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storages in different namespaces.
+PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storage in different namespaces.
 
 - [EVEREST-1465](https://perconadev.atlassian.net/browse/EVEREST-1465) - Fixed an issue where a restore to the same and new database could be performed, even if the user lacked the necessary database-cluster-credentials permissions.
 
-- [EVEREST-1466](https://perconadev.atlassian.net/browse/EVEREST-1466) - Restoring to the same MySQL database was stuck, despite the user having the necessary permissions to restore the databases. We have resolved the issue now.
+- [EVEREST-1466](https://perconadev.atlassian.net/browse/EVEREST-1466) - Restoring to the same MySQL database was stuck despite the user having the necessary permissions to restore the databases. We have resolved the issue now.
 
-- [EVEREST-1472](https://perconadev.atlassian.net/browse/EVEREST-1472) - The option to **Add backup storage **is no longer visible when editing a datbase cluster if the user does not have the necessary permissions.
+- [EVEREST-1472](https://perconadev.atlassian.net/browse/EVEREST-1472) - The option to **Add backup storage **is no longer visible when editing a database cluster if the user does not have the necessary permissions.
 
 
 - [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) - Resolved an issue where the backup API returned information about the backup storage location to a user without permission for backup storage locations.
 
 
-- [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permissions for backups and storage.
+- [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permission for backups and storage.
 
 - [EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
 
