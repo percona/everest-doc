@@ -356,7 +356,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Database admin role" 
 
-        ### Database admin role 
+        ### Database admin role with read access to certain resources
 
         Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
