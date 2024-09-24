@@ -67,11 +67,11 @@ Below is a comprehensive table outlining the permissions available for various *
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
     | namespaces|You can view namespaces| :x:|:x: | :x:|
-    | database-engines </br> (MySQL, MongoDB, PostreSQL)|You view can database engines when you create databases</br>  </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify database engines| :x:|
+    | database-engines </br> (MySQL, MongoDB, PostgreSQL)|You can view database engines when you create databases</br>  </br>**Note**: This policy must at least be **read all** so the users can create databases.| :x: |Modify database engines| :x:|
     | database-clusters|You can view databases| You can create databases|You can modify databases| You can delete databases|
     | database-cluster-backups|You can view database cluster backups| You can create database cluster backups|:x:| You can delete database cluster backups|
     | database-cluster-restores|You can view database cluster restores| You can create database cluster restores|You can modify database cluster restores| You can delete database cluster restores|
-    | backup-storages and monitoring-instances |You can view backups and monitroing endpoints| You can create backups and monitroing endpoints|You can modify backups and monitroing endpoints| You can delete backups and monitroing endpoints|
+    | backup-storages and monitoring-instances |You can view backups and monitoring endpoints| You can create backups and monitoring endpoints|You can modify backups and monitoring endpoints| You can delete backups and monitoring endpoints|
     | database-cluster-credentials|View database data (credentials) </br> </br>**Note**: If no policy is defined:</br> * You cannot see the credentials and the connection string.</br> * You also cannot create a database from any backup.| :x: |:x:| :x:|
 
 
@@ -236,7 +236,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Read only role without access to the database credentials
 
-    Lets set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
+    Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
     ```sh
     p, readonly:role, namespaces, read, *
@@ -347,7 +347,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     ### Database admin role 
 
-    Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without any restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
+    Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
     ```sh
     p, roleA:role, namespaces, *, *
