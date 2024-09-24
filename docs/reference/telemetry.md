@@ -19,23 +19,23 @@ Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want 
 
 1. To disable telemetry run:
 
-```sh
-    kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
-  strategy:
-    rollingUpdate:
-      maxSurge: 0
-      maxUnavailable: 1
-    type: RollingUpdate
-  template:
-    spec:
-      affinity:
-        podAntiAffinity: {}
-      containers:
-        - name: everest
-          env:
-            - name: DISABLE_TELEMETRY
-              value: "true"'
-```
+    ```sh
+        kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+    strategy:
+        rollingUpdate:
+        maxSurge: 0
+        maxUnavailable: 1
+        type: RollingUpdate
+    template:
+        spec:
+        affinity:
+            podAntiAffinity: {}
+        containers:
+            - name: everest
+            env:
+                - name: DISABLE_TELEMETRY
+                value: "true"'
+    ```
 
 2. Run the Everest upgrade command so the underlying operators apply the new setting as well:
    
