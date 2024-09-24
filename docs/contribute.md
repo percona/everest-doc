@@ -19,7 +19,7 @@ Start by searching the open topics for a similar report. If you find that someon
 If there is no existing report, submit a report following these steps:
 {.power-number}
 
-1. Sign in to [Percona Everest Forum](hhttps://forums.percona.com/). You will need to create an account if you do not have one.
+1. Sign in to [Percona Everest Forum](https://forums.percona.com). You will need to create an account if you do not have one.
 
 2. Create a report that:      
       *  describes the steps to reproduce the issue
@@ -38,7 +38,7 @@ Found a typo or didn't find what you needed? Here's how you can contribute to th
 
 1. **Request a doc change through a Jira issue**. If you’ve spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don’t have time nor desire to fix it yourself - let us know about it.
 
-	- Click the **Jira** link in the contact us section. This opens the [Jira issue tracker](https://jira.percona.com/projects/Everest).
+	- Click the **Jira** link in the contact us section. This opens the [Jira issue tracker](https://perconadev.atlassian.net/jira/software/c/projects/EVEREST/boards/65).
 	- Sign in (create a Jira account if you don’t have one) and click **Create** to create an issue.
 	- Describe the issue you have detected in the Summary, Description, Steps To Reproduce, Affects Version fields.
 
