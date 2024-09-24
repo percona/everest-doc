@@ -354,7 +354,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access to all the monitoring instances
 
 
-    === "Database Admin role" 
+    === "Database admin role" 
 
         ### Database admin role 
 
