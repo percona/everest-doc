@@ -112,9 +112,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Starting with Percona Everest 1.2.0, you can now directly edit the monitoring endpoint from the database overview page, instead of having to use the Edit database wizard.
 
 
-- [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): Resources \(widget\) \+ common card updation
+- [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): We've updated the **Resources** panel on the **Database overview** page to be independent instead of part of the database details panel and improved the overall look and feel of this page.
 
-- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): Backups \(widget\)
 
 - [EVEREST-1369](https://perconadev.atlassian.net/browse/EVEREST-1369): We've updated the documentation for the section on turning off telemetry.
 
