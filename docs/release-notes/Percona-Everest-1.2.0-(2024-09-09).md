@@ -160,7 +160,7 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
 5. `/permissions`
 
-    a. ```{.bash .no-copy}
+    a. ```{.bash .no-copy}```
     GET
     ```
 
@@ -176,48 +176,48 @@ This is the list of the API endpoints deprecated:
     a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
 
 
-    ```{.bash .no-copy}
-    1. GET
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        ```
 
     b. `/namespaces/{namespace}/database-engines/{name}/operator-version`
 
-    ```{.bash .no-copy}
-    1. GET
-    2. PUT
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        2. PUT
+        ```
 
 2. Deprecated the following endpoints/methods:
 
     c. `/monitoring-instances`
 
-    ```{.bash .no-copy}
-    1. GET
-    2. POST
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        2. POST
+        ```
     
     d. `/monitoring-instances/{name}`
 
-    ```{.bash .no-copy}
-    1. GET
-    2. PATCH
-    3. DELETE
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        2. PATCH
+        3. DELETE
+        ```
 
     e. `/backup-storages`
 
-    ```{.bash .no-copy}
-    1. GET
-    2. POST
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        2. POST
+        ```
 
     f. `/backup-storages/{name}`
 
-    ```{.bash .no-copy}
-    1. GET
-    2. PATCH
-    3. DELETE
-    ```
+        ```{.bash .no-copy}
+        1. GET
+        2. PATCH
+        3. DELETE
+        ```
 
 ## Bugs
 
