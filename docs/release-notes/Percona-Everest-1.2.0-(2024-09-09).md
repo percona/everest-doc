@@ -122,7 +122,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## The latest in APIs: What’s new and what’s deprecated
 
 
-### New added API endpoints
+### Newly added API endpoints
 
 Check out the new API endpoints we've added in Percona Everest 1.2.0:
 {.power-number}
