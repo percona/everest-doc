@@ -90,7 +90,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## New features
 
-- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035): We've now included **Retention copies** for PostgreSQL as well when setting up backup schedules.
 
 - [EVEREST-1103](https://perconadev.atlassian.net/browse/EVEREST-1103): Starting with Percona Everest 1.2.0, we've restricted actions based on RBAC roles, ensuring that users are explicitly granted access to the resources required for their specific roles. This enhances security and simplifies access control processes.
 
@@ -100,9 +99,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1298](https://perconadev.atlassian.net/browse/EVEREST-1298): We have added support for MySQL operator version 1.15.0.
 
-- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): Starting with Percona Everest 1.2.0, you can enable sharding for MongoDB when creating a database cluster. By leveraging sharding in Percona Everest, you can enhance the performance and scalability of your database clusters.
-
-- [EVEREST-981](https://perconadev.atlassian.net/browse/EVEREST-981): Configure everest to run behind a proxy
+- [EVEREST-1035](https://perconadev.atlassian.net/browse/EVEREST-1035): We've now included **Retention copies** for PostgreSQL as well when setting up backup schedules.
 
 
 ## Improvements
