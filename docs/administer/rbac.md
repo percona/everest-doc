@@ -141,6 +141,8 @@ In this section, we will explore some examples that demonstrate how to create po
     Let's dive into some role definitions for RBAC:
     
 
+    === "Basic role"
+    
     ### Role with unrestricted privileges to database clusters
 
      Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
@@ -152,7 +154,7 @@ In this section, we will explore some examples that demonstrate how to create po
     p, example-user, database-cluster-backups, read, */*
     ```
 
-    ### Admin role for a single namepsace
+    === "Admin role" ### Admin role for a single namepsace
 
     Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
