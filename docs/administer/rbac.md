@@ -154,7 +154,9 @@ In this section, we will explore some examples that demonstrate how to create po
     p, example-user, database-cluster-backups, read, */*
     ```
 
-    === "Admin role" ### Admin role for a single namepsace
+    === "Admin role" 
+    
+    ### Admin role for a single namepsace
 
     Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
@@ -207,6 +209,8 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Monitoring instances**: `All` access (read, create, update, delete)
             
 
+    === "Read only role" 
+    
     ### Read only role for all the namespaces
 
         Let's set up a read ony role for all the namespaces.
@@ -292,6 +296,8 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Database clusters credentials**: `Read` acccess
 
 
+    === "Dev role" 
+
     ### Dev role with full access to a single database
 
     Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
@@ -346,6 +352,9 @@ In this section, we will explore some examples that demonstrate how to create po
         - **Database clusters credentials**: `Read` acccess for **all** the databases
         - **Backup storages**: `Read` access to all the backup storages
         - **Monitoring instances**: `Read` access to all the monitoring instances
+
+
+    === "Database Admin role" 
 
     ### Database admin role 
 
