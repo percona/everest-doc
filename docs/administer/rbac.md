@@ -211,7 +211,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Read only role" 
     
-        ### Read only role for all the namespaces
+        **1. Read only role for all the namespaces**
 
         Let's set up a read ony role for all the namespaces.
 
@@ -240,7 +240,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access
 
 
-        ### Read only role without access to the database credentials
+        **2. Read only role without access to the database credentials**
 
         Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
@@ -267,7 +267,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access
             
             
-        ### Read only role with access to the database credentials
+        **3. Read only role with access to the database credentials**
 
         Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
 
@@ -298,7 +298,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Dev role" 
 
-        ### Dev role with full access to a single database
+        **1. Dev role with full access to a single database**
 
         Let's set up a dev group role with **full** access for just one database called `banana` within `the-dark-side`:
 
@@ -328,7 +328,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: Read access to all the monitoring instances
 
 
-        ### Dev role with read/update/create access to all the namespaces
+        **2. Dev role with read/update/create access to all the namespaces**
         
         Let's set up a dev group role with **read/update/create** access to **all** the namespaces:
 
@@ -356,7 +356,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Database admin role" 
 
-        ### Database admin role with read access to certain resources
+        **Database admin role with read access to certain resources**
 
         Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
