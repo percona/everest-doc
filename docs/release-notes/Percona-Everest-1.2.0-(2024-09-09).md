@@ -170,7 +170,7 @@ Check out the new API endpoints we've added in Percona Everest 1.2.0:
 These are the API endpoints deprecated in Percona Everest 1.2.0:
 {.power-number}
 
-1. Check out the endpoints/methods that had been deprecated in Percona Everest v1.1.0:
+1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
 
 
     a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
@@ -196,7 +196,7 @@ These are the API endpoints deprecated in Percona Everest 1.2.0:
     2. POST
     ```
     
-    d. /monitoring-instances/{name}
+    d. `/monitoring-instances/{name}`
 
     ```{.bash .no-copy}
     1. GET
