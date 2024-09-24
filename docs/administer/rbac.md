@@ -413,28 +413,30 @@ data:
     g, <newuser>, role:admin
 ```
 
-For example, let's assign the role `team-dev` to a new user named `john`:
+??? Example "Examples"
 
-```sh       
-p, role:team-dev, namespaces, read, dev
-p, role:team-dev, database-engines, read, dev/*
-p, role:team-dev, database-clusters, read, dev/*
-p, role:team-dev, database-clusters, update, dev/*
-p, role:team-dev, database-clusters, create, dev/*
-p, role:team-dev, database-clusters, delete, dev/*
-p, role:team-dev, database-cluster-credentials, read, dev/*
-g, john, role:team-dev
-```
+    Let's assign the role `team-dev` to a new user named `john`:
 
-The `team-dev` role has the following privileges **only** within the `dev` namespace:
+    ```sh       
+    p, role:team-dev, namespaces, read, dev
+    p, role:team-dev, database-engines, read, dev/*
+    p, role:team-dev, database-clusters, read, dev/*
+    p, role:team-dev, database-clusters, update, dev/*
+    p, role:team-dev, database-clusters, create, dev/*
+    p, role:team-dev, database-clusters, delete, dev/*
+    p, role:team-dev, database-cluster-credentials, read, dev/*
+    g, john, role:team-dev
+    ```
 
-- **namespace**:  `Read` access to `dev`
-- **Database engines**: `Read` access
-- **Database clusters**: `Read` access
-- **Database clusters**: `Update` access
-- **Database clusters**: `Create` access
-- **Database clusters**: `Delete` access
-- **Database cluster credentials**: `Read` access
+    The `team-dev` role has the following privileges **only** within the `dev` namespace:
+
+    - **namespace**:  `Read` access to `dev`
+    - **Database engines**: `Read` access
+    - **Database clusters**: `Read` access
+    - **Database clusters**: `Update` access
+    - **Database clusters**: `Create` access
+    - **Database clusters**: `Delete` access
+    - **Database cluster credentials**: `Read` access
 
 ## Validate your RBAC policy
 
