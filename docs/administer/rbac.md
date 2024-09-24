@@ -260,7 +260,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
             - **namespace**:  `Read` access to all the namespaces
             - **Database engines**: `Read` access
-            - **Database clusters**: Read` access
+            - **Database clusters**: `Read` access
             - **Database cluster backups**: `Read` access
             - **Database cluster restores**: `Read` access
             - **Backup storages**: `Read` access
@@ -288,7 +288,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
             - **namespace**: `Read` access to all the namespaces
             - **Database engines**: `Read` access
-            - **Database clusters**: Read` access
+            - **Database clusters**: `Read` access
             - **Database cluster backups**: `Read` access
             - **Database cluster restores**: `Read` access
             - **Backup storages**: `Read` access
