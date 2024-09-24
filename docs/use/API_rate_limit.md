@@ -46,7 +46,7 @@ To customize the API rate limiting:
             - name: everest
               env:
                 - name: API_REQUESTS_RATE_LIMIT
-                  value: "200"' 
+                  value: "200" 
                 - name: CREATE_SESSION_RATE_LIMIT
                   value: "3"' 
     ```
