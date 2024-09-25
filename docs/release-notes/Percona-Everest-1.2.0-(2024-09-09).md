@@ -18,7 +18,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 | **5.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.2.0|
 | **6.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.2.0, as well as any deprecated APIs|
 | **7.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.2.0|
-| **8.**|[Known limitations](#known-limitations)|Find out about all the bugs fixed in Percona Everest 1.2.0|
+| **8.**|[Known limitations](#known-limitations)|Discover all the known limitations in Percona Everest 1.2.0|
 
 
 
@@ -57,7 +57,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
-        !!! info "Important"
+    !!! info "Important"
         Check out the [known limitations](#known-limitations) section for important information about the limitations of RBAC.
 
     Here's a breakdown of the key concepts in RBAC:
