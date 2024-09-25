@@ -47,8 +47,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ### Introducing RBAC in Percona Everest: Ensure security and simplify database access management
 
-    !!! warning "Disclaimer"
-        RBAC is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
+    !!! warning 
+        - RBAC is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
+        -  Check out the [known limitations](#known-limitations) section for important information about the limitations of RBAC.
 
     Starting with Percona Everest 1.2.0, we’ve enhanced our platform by introducing Role-Based Access Control (RBAC), which regulates resource access for better management and security.
 
@@ -56,9 +57,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 
     To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
-
-    !!! info "Important"
-        Check out the [known limitations](#known-limitations) section for important information about the limitations of RBAC.
 
     Here's a breakdown of the key concepts in RBAC:
 
