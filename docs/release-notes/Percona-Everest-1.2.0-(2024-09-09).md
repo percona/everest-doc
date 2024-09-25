@@ -265,7 +265,7 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 ## Known limitations
 
-RBAC will not work if you have configured [Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
+RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
 
 
 
