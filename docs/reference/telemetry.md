@@ -49,21 +49,19 @@ If you want to enable telemetry again:
 1. Run the following:
 
     ```sh
-    kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
-    strategy:
-        rollingUpdate:
-        maxSurge: 0
-        maxUnavailable: 1
-        type: RollingUpdate
-    template:
-        spec:
-        affinity:
-            podAntiAffinity: {}
-        containers:
-            - name: everest
-            env:
-                - name: DISABLE_TELEMETRY
-                value: "false"'
+kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    spec:
+      containers:
+        - name: everest
+          env:
+          - name: DISABLE_TELEMETRY
+            value: "false"'
     ```
 
 2. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
