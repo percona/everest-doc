@@ -245,8 +245,6 @@ This is the list of the API endpoints deprecated:
 
 - [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
 
-<!---Issues added for RC3--->
-
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - After upgrading to Percona Everest 1.2.0, it was observed that a user who had not been included in the RBAC configuration and lacked proper permissions, was able to access specific information on Percona Everest. We have resolved the issue now.
 
 
@@ -261,7 +259,6 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 
 - [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) - Resolved an issue where the backup API returned information about the backup storage location to a user without permission for backup storage locations.
-
 
 - [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permission for backups and storage.
 
