@@ -17,7 +17,7 @@ Rest assured, access to the raw data is rigorously controlled, and individual us
 Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to **TRUE**:
 {.power-number}
 
-1. To disable telemetry run:
+To disable telemetry run:
 
     ```sh
 kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
@@ -35,18 +35,9 @@ kubectl -n everest-system patch deployment percona-everest --type strategic -p '
             value: "true"'
     ```
 
-2. Run the Everest upgrade command so the underlying operators apply the new setting as well:
-   
-    ```sh
-    ./everestctl upgrade
-    ```
-
 ## Enable telemetry
 
 If you want to enable telemetry again:
-{.power-number}
-
-1. Run the following:
 
     ```sh
 kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
@@ -64,8 +55,3 @@ kubectl -n everest-system patch deployment percona-everest --type strategic -p '
             value: "false"'
     ```
 
-2. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
-    
-    ```sh
-    ./everestctl upgrade
-    ```
