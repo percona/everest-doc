@@ -147,58 +147,6 @@ This is the list of the API endpoints deprecated from Percona Everest:
 |**e.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
 |**f.**|`/backup-storages/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
 
-
-
-`GET`</br>2. `PATCH`</br>3.`DELETE`
-
-1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
-
-
-    a. `/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`
-
-    ```{.bash .no-copy}
-    1. GET
-    ```
-
-    b. `/namespaces/{namespace}/database-engines/{name}/operator-version`
-
-    ```{.bash .no-copy}
-    1. GET
-    2. PUT
-    ```
-
-2. Deprecated the following endpoints/methods:
-
-    c. `/monitoring-instances`
-
-    ```{.bash .no-copy}
-    1. GET
-    2. POST
-    ```
-    
-    d. `/monitoring-instances/{name}`
-
-    ```{.bash .no-copy}
-    1. GET
-    2. PATCH
-    3. DELETE
-    ```
-
-    e. `/backup-storages`
-
-    ```{.bash .no-copy}
-    1. GET
-    2. POST
-    ```
-
-    f. `/backup-storages/{name}`
-
-    ```{.bash .no-copy}
-    1. GET
-    2. PATCH
-    3. DELETE
-    ```
-
 ## Bugs
 
 - [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): The PostgreSQL pods now demonstrate the intended behavior by not getting stuck, as they automatically restart when the database is restarted.
