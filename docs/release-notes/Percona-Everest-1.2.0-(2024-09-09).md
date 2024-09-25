@@ -122,58 +122,31 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 Check out the new API endpoints we've added in Percona Everest 1.2.0:
 
-|**No**|**API endpoint**|**Method**|
+|**No**|**API endpoints**|**Method**|
 |---------|---------------------|---------|
 |**1.**|`/namespaces/{namespace}/monitoring-instances`|a.`GET`</br> b.`POST`|
-|**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br> b. `PATCH`</br>`DELETE`|
+|**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br>b. `PATCH`</br>c.`DELETE`|
 |**3.**|`/namespaces/{namespace}/backup-storages`|a.`GET`</br> b. `POST`|
 |**4.**|`/namespaces/{namespace}/backup-storages/{name}`|a.`GET`</br> b.`POST`|
 |**5.**|``/permissions``|a.`GET`|
 
 
 
-
-1. `/namespaces/{namespace}/monitoring-instances`  
-
-    ```{.bash .no-copy}
-    a. GET
-    b. POST
-    ```
-
-2. `/namespaces/{namespace}/monitoring-instances/{name}`
-
-    ```{.bash .no-copy}   
-    a. GET
-    b. PATCH
-    c. DELETE
-    ```
-
-3. `/namespaces/{namespace}/backup-storages`
-
-    ```{.bash .no-copy} 
-    a. GET
-    b. POST
-    ```
-
-4. `/namespaces/{namespace}/backup-storages/{name}`
-
-    ```{.bash .no-copy} 
-    a. GET
-    b. PATCH
-    c. DELETE
-    ```
-
-5. `/permissions`
-
-    
-    ```{.bash .no-copy}
-    a. GET
-    ```
-
 ### Deprecated API endpoints
 
-This is the list of the API endpoints deprecated:
-{.power-number}
+This is the list of the API endpoints deprecated from Percona Everest:
+
+|**No**|**API endpoints**|**Method**|
+|---------|---------------------|---------|
+|Endpoints that had been deprecated from Percona Everest v1.1.0:|
+|**1.**|`/namespaces/{namespace}/monitoring-instances`|a.`GET`</br> b.`POST`|
+|**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br>b. `PATCH`</br>c.`DELETE`|
+|**3.**|`/namespaces/{namespace}/backup-storages`|a.`GET`</br> b. `POST`|
+|**4.**|`/namespaces/{namespace}/backup-storages/{name}`|a.`GET`</br> b.`POST`|
+|**5.**|``/permissions``|a.`GET`|
+
+
+
 
 1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
 
