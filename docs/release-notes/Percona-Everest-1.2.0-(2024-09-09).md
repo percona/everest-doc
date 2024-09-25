@@ -124,7 +124,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 |**Sr. No**|**API endpoint**|**Method**|
 |---------|---------------------|---------|
-| **1.**  |`/namespaces/{namespace}/monitoring-instances`|a. GET</br> b. POST
+| **1.** |`/namespaces/{namespace}/monitoring-instances`|a. GET</br> b. POST|
+| **2.** |`/namespaces/{namespace}/monitoring-instances/{name}`|a. GET</br> b. PATCH</br>DELETE|
+
 
 Check out the new API endpoints we've added in Percona Everest 1.2.0:
 {.power-number}
