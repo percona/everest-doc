@@ -118,34 +118,35 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## The latest in APIs: What’s new and what’s deprecated
 
-### Newly added API endpoints
 
-Check out the new API endpoints we've added in Percona Everest 1.2.0:
+=== "Newly added API endpoints"
 
-|**No**|**API endpoints**|**Method**|
-|---------|---------------------|---------|
-|**1.**|`/namespaces/{namespace}/monitoring-instances`|a.`GET`</br> b.`POST`|
-|**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br>b. `PATCH`</br>c.`DELETE`|
-|**3.**|`/namespaces/{namespace}/backup-storages`|a.`GET`</br> b. `POST`|
-|**4.**|`/namespaces/{namespace}/backup-storages/{name}`|a.`GET`</br> b.`POST`|
-|**5.**|``/permissions``|a.`GET`|
+    Check out the new API endpoints we've added in Percona Everest 1.2.0:
+
+    |**No**|**API endpoints**|**Method**|
+    |---------|---------------------|---------|
+    |**1.**|`/namespaces/{namespace}/monitoring-instances`|a.`GET`</br> b.`POST`|
+    |**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br>b. `PATCH`</br>c.`DELETE`|
+    |**3.**|`/namespaces/{namespace}/backup-storages`|a.`GET`</br> b. `POST`|
+    |**4.**|`/namespaces/{namespace}/backup-storages/{name}`|a.`GET`</br> b.`POST`|
+    |**5.**|``/permissions``|a.`GET`|
 
 
 
-### Deprecated API endpoints
+=== "Deprecated API endpoints"
 
-This is the list of the API endpoints deprecated from Percona Everest:
+    This is the list of the API endpoints deprecated from Percona Everest:
 
-|**No**|**API endpoints**|**Method**|
-|---------|---------------------|---------|
-|**1.** |**Endpoints deprecated from Percona Everest v1.1.0:**|
-|**a.**|`/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`|1.`GET`|
-|**b.**|`/namespaces/{namespace}/database-engines/{name}/operator-version`|1.`GET`</br>2.`PUT`|
-|**2.** |**Endpoints deprecated from Percona Everest v1.2.0:**|
-|**c.**|`/monitoring-instances`|1.`GET`</br> 2.`POST`|
-|**d.**|`/monitoring-instances/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
-|**e.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
-|**f.**|`/backup-storages/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
+    |**No**|**API endpoints**|**Method**|
+    |---------|---------------------|---------|
+    |**1.** |**Endpoints deprecated from Percona Everest v1.1.0:**|
+    |**a.**|`/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`|1.`GET`|
+    |**b.**|`/namespaces/{namespace}/database-engines/{name}/operator-version`|1.`GET`</br>2.`PUT`|
+    |**2.** |**Endpoints deprecated from Percona Everest v1.2.0:**|
+    |**c.**|`/monitoring-instances`|1.`GET`</br> 2.`POST`|
+    |**d.**|`/monitoring-instances/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
+    |**e.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
+    |**f.**|`/backup-storages/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
 
 ## Bugs
 
