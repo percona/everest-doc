@@ -138,15 +138,18 @@ This is the list of the API endpoints deprecated from Percona Everest:
 
 |**No**|**API endpoints**|**Method**|
 |---------|---------------------|---------|
-|Endpoints that had been deprecated from Percona Everest v1.1.0:|
-|**1.**|`/namespaces/{namespace}/monitoring-instances`|a.`GET`</br> b.`POST`|
-|**2.**|`/namespaces/{namespace}/monitoring-instances/{name}`|a.`GET`</br>b. `PATCH`</br>c.`DELETE`|
-|**3.**|`/namespaces/{namespace}/backup-storages`|a.`GET`</br> b. `POST`|
-|**4.**|`/namespaces/{namespace}/backup-storages/{name}`|a.`GET`</br> b.`POST`|
-|**5.**|``/permissions``|a.`GET`|
+|**1.** |**Endpoints deprecated from Percona Everest v1.1.0:**|
+|**a.**|`/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`|1.`GET`|
+|**b.**|`/namespaces/{namespace}/database-engines/{name}/operator-version`|1.`GET`</br>2.`PUT`|
+|**2.** |**Endpoints deprecated from Percona Everest v1.2.0:**|
+|**c.**|`/monitoring-instances`|1.`GET`</br> 2.`POST`|
+|**d.**|`/monitoring-instances/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
+|**e.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
+|**f.**|`/backup-storages/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
 
 
 
+`GET`</br>2. `PATCH`</br>3.`DELETE`
 
 1. Check out the endpoints/methods that had been deprecated from Percona Everest v1.1.0:
 
