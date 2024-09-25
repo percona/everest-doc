@@ -257,11 +257,15 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 - [EVEREST-1472](https://perconadev.atlassian.net/browse/EVEREST-1472) - The option to **Add backup storage **is no longer visible when editing a database cluster if the user does not have the necessary permissions.
 
-
 - [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) - Resolved an issue where the backup API returned information about the backup storage location to a user without permission for backup storage locations.
 
 - [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permission for backups and storage.
 
 - [EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
 
- 
+## Known limitations
+
+RBAC will not work if you have configured [Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
+
+
+
