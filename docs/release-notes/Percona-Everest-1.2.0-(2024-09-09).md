@@ -21,9 +21,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 | **8.**|[Known limitations](#known-limitations)|Discover all the known limitations in Percona Everest 1.2.0|
 
 
-
 ## Release highlights
-
 
 === "Breaking API changes"
 
