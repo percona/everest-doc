@@ -111,7 +111,7 @@ To install and provision Percona Everest to Kubernetes:
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address is http://34.175.155.135:32349.
+        4. To launch the Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address is [http://34.175.155.135:32349](http://34.175.155.135:32349).
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
