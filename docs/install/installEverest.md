@@ -79,7 +79,7 @@ To install and provision Percona Everest to Kubernetes:
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
 
-        1. Run the following command to change the Everest service type to `NodePort`
+        1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
