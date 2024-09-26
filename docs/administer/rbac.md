@@ -54,6 +54,12 @@ For in-depth information on the actions that a subject can perform, see the [res
 !!! info "Important"
     If you have permission for specific namespaces or resources, you can perform read, update, create, or delete actions **only** on those resources or **only** within those namespaces. However, if you have permission for **all** the resources or namespaces, you can carry out these actions across all the resources and namespaces.
 
+Example:
+
+`p, example-user, database-clusters, read, example-namespace/example-db`
+
+In this cas, the `example-user` user has permissions to read a database called `example-db` in the `example-namespace `namespace.
+
 ## RBAC resources and permissions
 
 Below is a comprehensive table outlining the permissions available for various **resources**:
@@ -143,20 +149,6 @@ In this section, we will explore some examples that demonstrate how to create po
 
     Let's dive into some role definitions for RBAC:
     
-
-    === "Basic role"
-    
-        **Role with unrestricted privileges to database clusters**
-
-        Let's set up a role for `example-user` with unrestricted access to database clusters and `read` access to database cluster backups. 
-        
-        This means that the user won't be able to `create` or `delete` any backups.
-
-        ```sh
-        p, example-user, database-clusters, *, */*
-        p, example-user, database-cluster-backups, read, */*
-        ```
-
     === "Admin role" 
     
         **Admin role for a single namepsace**
