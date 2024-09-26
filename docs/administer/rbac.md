@@ -245,13 +245,13 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
         ```sh
-        p, readonly:role, namespaces, read, *
-        p, readonly:role, database-engines, read, */*
-        p, readonly:role, database-clusters, read, */*
-        p, readonly:role, database-cluster-backups, read, */*
-        p, readonly:role, database-cluster-restores, read, */*
-        p, readonly:role, backup-storages, read, */*
-        p, readonly:role, monitoring-instances, read, */*
+        p, role:readonly, namespaces, read, *
+        p, role:readonly, database-engines, read, */*
+        p, role:readonly, database-clusters, read, */*
+        p, role:readonly, database-cluster-backups, read, */*
+        p, role:readonly, database-cluster-restores, read, */*
+        p, role:readonly, backup-storages, read, */*
+        p, role:readonly, monitoring-instances, read, */*
         ```
         
         ??? info "Let's dive into decoding this!"
