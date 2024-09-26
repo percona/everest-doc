@@ -272,14 +272,14 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
 
         ```sh
-        p, role:readonlywithcreds:, namespaces, read, *
-        p, role:readonlywithcreds:, database-engines, read, */*
-        p, role:readonlywithcreds:, database-clusters, read, */*
-        p, role:readonlywithcreds:, database-cluster-backups, read, */*
-        p, role:readonlywithcreds:, database-cluster-restores, read, */*
-        p, role:readonlywithcreds:, backup-storages, read, */*
-        p, role:readonlywithcreds:, monitoring-instances, read, */*
-        p, role:readonlywithcreds:, database-cluster-credentials, read, */*
+        p, role:readonlywithcreds, namespaces, read, *
+        p, role:readonlywithcreds, database-engines, read, */*
+        p, role:readonlywithcreds, database-clusters, read, */*
+        p, role:readonlywithcreds, database-cluster-backups, read, */*
+        p, role:readonlywithcreds, database-cluster-restores, read, */*
+        p, role:readonlywithcreds, backup-storages, read, */*
+        p, role:readonlywithcreds, monitoring-instances, read, */*
+        p, role:readonlywithcreds, database-cluster-credentials, read, */*
         ```
 
         ??? info "Let's dive into decoding this!"
