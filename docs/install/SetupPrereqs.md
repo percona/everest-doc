@@ -19,7 +19,7 @@ However, not all the many combinations of K8s distributions and K8s versions mig
 
 | Platform              | Kubernetes Version | State                                   |
 |:----------------------|:-------------------|:----------------------------------------|
-| Google GKE            | 1.27 - 1.29        | Fully tested and certified                |
+| Google GKE            | 1.27-1.29        | Fully tested and certified                |
 | Amazon EKS            | 1.28 - 1.30        | Fully tested and certified                |
 | Azure AKS             | -                  | Works but not fully certified yet       |
 | DigitalOcean          | -                  | Works but not fully certified yet       |
