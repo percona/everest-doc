@@ -190,36 +190,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Read only role" 
     
-        **1. Read only role for all the namespaces**
-
-        Let's set up a read ony role for all the namespaces.
-
-        ```sh
-            p, role:readonly, namespaces, read, *
-            p, role:readonly, database-engines, read, */*
-            p, role:readonly, database-clusters, read, */*
-            p, role:readonly, database-cluster-backups, *, */*
-            p, role:readonly, database-cluster-restores, *, */*
-            p, role:readonly, database-cluster-credentials, read, */*
-            p, role:readonly, backup-storages, read, */*
-            p, role:readonly, monitoring-instances, read, */*
-        ```    
-
-        ??? info "Let's dive into decoding this!"
-
-            The `readonly` role has the following privileges in all the namespaces:
-
-            - **namespace**:  `Read` access to all the namespaces
-            - **Database engines**: `Read` access
-            - **Database clusters**: Read` access
-            - **Database cluster backups**: `Read` 
-            - **Database cluster rstores**: `Read`
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `Read` access
-            - **Monitoring instances**: `Read` access
-
-
-        **2. Read only role without access to the database credentials**
+        **Read only role without access to the database credentials**
 
         Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
