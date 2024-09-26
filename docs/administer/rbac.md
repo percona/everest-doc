@@ -311,14 +311,14 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
         ```sh
-        p, roleA:role, namespaces, *, *
-        p, roleA:role, database-engines, read, */*
-        p, roleA:role, database-clusters, *, */*
-        p, roleA:role, database-cluster-backups, *, */*
-        p, roleA:role, database-cluster-restores, *, */*
-        p, roleA:role, database-cluster-credentials, *, */*
-        p, roleA:role, backup-storages, read, */*
-        p, roleA:role, monitoring-instances, read, */*
+        p, role:roleA, namespaces, *, *
+        p, role:roleA, database-engines, read, */*
+        p, role:roleA, database-clusters, *, */*
+        p, role:roleA, database-cluster-backups, *, */*
+        p, role:roleA, database-cluster-restores, *, */*
+        p, role:roleA, database-cluster-credentials, *, */*
+        p, role:roleA, backup-storages, read, */*
+        p, role:roleA, monitoring-instances, read, */*
         ```
 
         ??? info "Let's dive into decoding this!"
