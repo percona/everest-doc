@@ -55,7 +55,7 @@ To install and provision Percona Everest to Kubernetes:
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
-    === "Service Type Load Balancer"
+    === "Load Balancer"
 
         * Use the following command to change the Everest service type to `LoadBalancer`:
                     
@@ -74,6 +74,25 @@ To install and provision Percona Everest to Kubernetes:
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   127.0.0.1       8080:8080/TCP    10s
                 ```
+
+
+    === "Node Port"
+        A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
+
+        1. Run the following command to change the Everest service type to `NodePort`
+
+            ```sh
+            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
+            ```
+
+        2. Assign the external port to the Percona Everest service, which is `32349` in this case.
+
+            ```sh
+            kubectl get svc/everest -n everest-system
+NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
+            ```
+
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
