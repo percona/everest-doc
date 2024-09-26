@@ -156,7 +156,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Admin role" 
     
-        **1. Admin role for a single namepsace**
+        **Admin role for a single namepsace**
 
         Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
@@ -180,30 +180,6 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Database clusters**: `All` access (read, create, update, delete)
             - **Database cluster backups**: `All` access (read, create, update, delete) 
             - **Database cluster rstores**: `All` access (read, create, update, delete) 
-            - **Database clusters credentials**: `Read` acccess
-            - **Backup storages**: `All` access (read, create, update, delete)
-            - **Monitoring instances**: `All` access (read, create, update, delete)
-
-        **2. Admin role for a single namespace**
-
-        Let's set up a role for just one namespace called `the-dark-side`.
-
-        ```sh
-        p, role:admin-darkside, namespaces, *, the-dark-side
-        p, role:admin-darkside, database-engines, *, the-dark-side/*
-        p, role:admin-darkside, database-clusters, *, the-dark-side/*
-        p, role:admin-darkside, database-cluster-credentials, *, the-dark-side/*
-        p, role:admin-darkside, backup-storages, *, the-dark-side/*
-        p, role:admin-darkside, monitoring-instances, *, the-dark-side/*
-        ```
-
-        ??? info "Let's dive into decoding this!"
-
-            The `admin-darkside` role has the following privileges **only** within `the-dark-side` namespace:
-
-            - **namespace**:  `Read` access to the `the-dark-side`  .
-            - **Database engines**: `Read` and `update` access
-            - **Database clusters**: `All` access (read, create, update, delete)
             - **Database clusters credentials**: `Read` acccess
             - **Backup storages**: `All` access (read, create, update, delete)
             - **Monitoring instances**: `All` access (read, create, update, delete)
