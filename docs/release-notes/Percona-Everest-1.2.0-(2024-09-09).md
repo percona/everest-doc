@@ -154,7 +154,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is properly now disabled if the backup is in the **Deleting** status.
 
-- [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273) Backend sends an empty response if the backup storage URL is edited to an HTTP address.
+- [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273): We have fixed an issue to display an error message when the user edits the backup storage URL to an invalid one.
+
 
 - [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the **Resources page** and the **Database Summary** panel is now consistent.
 
