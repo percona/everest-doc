@@ -177,18 +177,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) - 
 PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storage in different namespaces.
 
-- [EVEREST-1465](https://perconadev.atlassian.net/browse/EVEREST-1465) - Fixed an issue where a restore to the same and new database could be performed, even if the user lacked the necessary database-cluster-credentials permissions.
-
-- [EVEREST-1466](https://perconadev.atlassian.net/browse/EVEREST-1466) - Restoring to the same MySQL database was stuck despite the user having the necessary permissions to restore the databases. We have resolved the issue now.
-
-- [EVEREST-1472](https://perconadev.atlassian.net/browse/EVEREST-1472) - The option to **Add backup storage **is no longer visible when editing a database cluster if the user does not have the necessary permissions.
-
-- [EVEREST-1473](https://perconadev.atlassian.net/browse/EVEREST-1473) - Resolved an issue where the backup API returned information about the backup storage location to a user without permission for backup storage locations.
-
-- [EVEREST-1477](https://perconadev.atlassian.net/browse/EVEREST-1477) - Resolved an issue where the database cluster API returned information about the storage name and schedules to a user without permission for backups and storage.
-
-- [EVEREST-1486](https://perconadev.atlassian.net/browse/EVEREST-1486) - You can now view the database credentials for databases in a namespace on the **database** page as well as the **database overview** page if they have the necessary permissions, as intended.
-
 ## Known limitations
 
 RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
