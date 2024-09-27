@@ -174,8 +174,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We’ve resolved the issue that prevented us from deleting the monitoring endpoint that is not currently in use.
 
-- [EVEREST-1375](https://perconadev.atlassian.net/browse/EVEREST-1375): The upgrade to PXC operator 1.15.0 caused a restart of the databases. We have resolved the issue now.
-
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - After upgrading to Percona Everest 1.2.0, it was observed that a user who had not been included in the RBAC configuration and lacked proper permissions, was able to access specific information on Percona Everest. We have resolved the issue now.
 
 
