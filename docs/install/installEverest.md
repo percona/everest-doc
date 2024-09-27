@@ -84,8 +84,7 @@ To install and provision Percona Everest to Kubernetes:
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
             ```
-
-        2. Assign the external port to the Everest service, which is `32349` in this case.
+        2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
 
             ```sh
             kubectl get svc/everest -n everest-system
@@ -111,7 +110,7 @@ To install and provision Percona Everest to Kubernetes:
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address is [http://34.175.155.135:32349](http://34.175.155.135:32349).
+        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
