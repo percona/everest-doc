@@ -5,6 +5,10 @@
 
 Role-based access control (RBAC) restricts access to resources within Percona Everest. It establishes a framework that defines access permissions and privileges according to individual users' roles. With RBAC, only authorized individuals can access specific information or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
 
+!!! warning
+    RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
+
+
 ## How to enable RBAC
 
 To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
