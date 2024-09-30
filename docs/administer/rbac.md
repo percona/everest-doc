@@ -343,12 +343,6 @@ p, role:exampleA, database-clusters, create, namespaceA/*
 ```
 
 
-
-
-
-
-
-
 ## Assigning roles to users
 
 In order for roles to take effect, they need to be assigned to users. The syntax for this is as follows:
