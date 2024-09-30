@@ -333,7 +333,7 @@ p, role:exampleA, monitoring-instances, read, namespaceA/*
 
 #### Permissions to create on-demand backups
 
-In the policy mentioned [above](#read-only-role-for-a-single-namespaceread-only-role-for-a-single-namespace), just add permissions to create on-demand backups.
+In the policy mentioned [above](#read-only-role-for-a-single-namespace), just add permissions to create on-demand backups.
 
 `p, role:exampleA, database-cluster-backups, create, namespaceA/*`
 
