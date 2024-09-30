@@ -283,6 +283,63 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Backup storages**: `Read` access to all the backup storages
             - **Monitoring instances**: `Read` access to all the monitoring instances
 
+## More insights into backups and restore policies
+
+Let's dive into different backup and restore policies for Percona Everest.
+
+
+### Read only role for a single namespace
+
+Let's start with a read only role for a single namespace:
+
+```sh
+p, role:exampleA, namespaces, read, namespaceA
+p, role:exampleA, database-engines, read, namespaceA/*
+p, role:exampleA, database-clusters, read, namespaceA/*
+p, role:exampleA, database-cluster-backups, read, namespaceA/*
+p, role:exampleA, database-cluster-restores, read, namespaceA/*
+p, role:exampleA, backup-storages, read, namespaceA/*
+p, role:exampleA, monitoring-instances, read, namespaceA/*
+```
+
+#### Permissions to create on-demand backups
+
+In the policy mentioned [above](#read-only-role-for-a-single-namespaceread-only-role-for-a-single-namespace), just add permissions to create on-demand backups.
+
+`p, role:exampleA, database-cluster-backups, create, namespaceA/*`
+
+
+#### Permissions to manage backup schedules
+
+In the policy mentioned [above](#read-only-role-for-a-single-namespace), just add permissions to manage backup schedules.Backup schedules are part of the database cluster spec, so we require update permissions for the database clusters:
+
+
+```sh
+p, role:exampleA, database-cluster-backups, create, namespaceA/*
+p, role:exampleA, database-clusters, update, namespaceA/*
+```
+
+#### Permissions to restore a backup to an existing database
+
+In the policy mentioned [above](#read-only-role-for-a-single-namespaceread-only-role-for-a-single-namespace), just add permissions to restore a backup to an existing database:
+
+```sh
+p, role:exampleA, database-cluster-restores, create, namespaceA/*
+p, role:exampleA, database-cluster-credentials, read, namespaceA/*
+```
+
+!!! note
+    You cannot restore the backup to an existing database without having read permissions to the database cluster credentials.
+
+
+
+
+
+
+
+
+
+
 ## Assigning roles to users
 
 In order for roles to take effect, they need to be assigned to users. The syntax for this is as follows:
