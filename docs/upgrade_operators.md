@@ -7,7 +7,7 @@ Starting with Percona Everest 1.0.0, the intuitive UI allows you to upgrade data
 !!! note " Note"
     We recommend that you to take a backup of your databases before starting the upgrade process.
 
-Before upgrading a database operator, Everest presents a list of tasks that need to be completed to smoothly transition your clusters to the next version of the database operators. These tasks may include:
+Before upgrading a database operator, Percona Everest presents a list of tasks that need to be completed to smoothly transition your clusters to the next version of the database operators. These tasks may include:
 
 - Upgrading your database engine version from an unsupported or end-of-life (EOL) version.
 
