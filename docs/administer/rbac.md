@@ -164,7 +164,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     Let's dive into some role definitions for RBAC:
     
-    === "Admin role" 
+    === "Namespace admin role" 
     
         **Admin role for a single namepsace**
 
