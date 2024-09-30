@@ -62,7 +62,7 @@ Example:
 
 `p, example-user, database-clusters, read, example-namespace/example-db`
 
-In this cas, the `example-user` user has permissions to read a database called `example-db` in the `example-namespace `namespace.
+In this case, the `example-user` user has permissions to read a database called `example-db` in the `example-namespace `namespace.
 
 ## RBAC resources and permissions
 
