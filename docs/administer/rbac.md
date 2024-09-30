@@ -197,7 +197,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Read only role" 
     
-        **Read only role without access to the database credentials**
+        **1. Read only role without access to the database credentials**
 
         Let's set up a read only role with access to all resources in all namespaces with the **exception** of database credentials:
 
@@ -224,7 +224,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Monitoring instances**: `Read` access
             
             
-        **3. Read only role with access to the database credentials**
+        **2. Read only role with access to the database credentials**
 
         Let's set up a read only role that has read-only access to all resources in all namespaces, **including** access to the database credentials.
 
@@ -255,7 +255,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
     === "Database admin role" 
 
-        **Database admin role with read access to certain resources**
+        **1. Database admin role with read access to certain resources**
 
         Let's set up a role that has read only access to the `database-engines`, `backup-storages` and `monitoring-instances`. This means that users assigned to this role *can manage the databases* without restriction but *cannot manage the database Kubernetes operators' versions*. They also cannot create, update, or delete `backup-storages` and `monitoring-instances`.
 
@@ -282,6 +282,36 @@ In this section, we will explore some examples that demonstrate how to create po
             - **Database clusters credentials**: `Read` acccess for **all** the databases       
             - **Backup storages**: `Read` access to all the backup storages
             - **Monitoring instances**: `Read` access to all the monitoring instances
+
+
+        **2. Database admin role for a single database**
+
+        Let's set up a role that has access to only a single database:
+
+        ```sh
+        p, role:dbadminDatabaseA, namespaces, *, namespaceA
+        p, role:dbadminDatabaseA, database-engines, read, namespaceA/*
+        p, role:dbadminDatabaseA, database-clusters, *, namespaceA/databaseA
+        p, role:dbadminDatabaseA, database-cluster-backups, *, namespaceA/*
+        p, role:dbadminDatabaseA, database-cluster-restores, *, namespaceA/*
+        p, role:dbadminDatabaseA, database-cluster-credentials, *, namespaceA/databaseA
+        p, role:dbadminDatabaseA, backup-storages, read, namespaceA/*
+        p, role:dbadminDatabaseA, monitoring-instances, read, namespaceA/*
+        ```
+
+        ??? info "Let's dive into decoding this!"
+
+            This role has the following privileges:
+
+            - **namespace**: `Read` access in the namespace `namespaceA`.
+            - **Database engines**: `Read` access in the namespace `namespaceA`
+            - **Database clusters**: `All` access (read, create, update, delete) in namespace `namespaceA` only for database `databaseA`
+            - **Database cluster backups**: `All` access (read, create, delete) in the namespace `namespaceA`
+            - **Database cluster restores**: `All` access (read, create, update, delete) in the namespace `namespaceA`
+            - **Database clusters credentials**: `Read` acccess for **all** the databases       
+            - **Backup storages**: `Read` access to all the backup storagesin the namespace `namespaceA`
+            - **Monitoring instances**: `Read` access to all the monitoring instances in the namespace `namespaceA`
+
 
 ## More insights into backups and restore policies
 
