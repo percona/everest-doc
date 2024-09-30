@@ -317,10 +317,9 @@ In this section, we will explore some examples that demonstrate how to create po
 
 Let's dive into different backup and restore policies for Percona Everest.
 
-
 ### Read only role for a single namespace
 
-Let's start with a read only role for a single namespace:
+Let's start with a read only role for a **single** namespace:
 
 ```sh
 p, role:exampleA, namespaces, read, namespaceA
@@ -364,7 +363,7 @@ p, role:exampleA, database-cluster-credentials, read, namespaceA/*
 
 #### Permissions to restore a backup to a new database
 
-In the policy mentioned [above](#read-only-role-for-a-single-namespaceread-only-role-for-a-single-namespace), just add permissions to restore a backup to a new database:
+In the policy mentioned [above](#read-only-role-for-a-single-namespace), just add permissions to restore a backup to a new database:
 
 ```sh
 p, role:exampleA, database-cluster-restores, create, namespaceA/*
