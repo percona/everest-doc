@@ -171,14 +171,14 @@ In this section, we will explore some examples that demonstrate how to create po
         Let's set up an admin role with unrestricted privileges to all the resources in a single namespace called `namespaceA`.
 
         ```sh
-        p, role:namespaceAdmin, namespaces, *, namespaceA
-        p, role:namespaceAdmin, database-engines, *, namespaceA/*
-        p, role:namespaceAdmin, database-clusters, *, namespaceA/*
-        p, role:namespaceAdmin, database-cluster-backups, *, namespaceA/*
-        p, role:namespaceAdmin, database-cluster-restores, *, namespaceA/*
-        p, role:namespaceAdmin, database-cluster-credentials, *, namespaceA/*
-        p, role:namespaceAdmin, backup-storages, *, namespaceA/*
-        p, role:namespaceAdmin, monitoring-instances, *, namespaceA/*
+        p, role:namespaceAadmin, namespaces, *, namespaceA
+        p, role:namespaceAadmin, database-engines, *, namespaceA/*
+        p, role:namespaceAadmin, database-clusters, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-backups, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-restores, *, namespaceA/*
+        p, role:namespaceAadmin, database-cluster-credentials, *, namespaceA/*
+        p, role:namespaceAadmin, backup-storages, *, namespaceA/*
+        p, role:namespaceAadmin, monitoring-instances, *, namespaceA/*
         ```
 
         ??? info "Let's dive into decoding this!"
