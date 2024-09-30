@@ -188,7 +188,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **namespace**: `Read` access to the `namespaceA`
             - **Database engines**: `Read` and `update` access
             - **Database clusters**: `All` access (read, create, update, delete)
-            - **Database cluster backups**: `All` access (read, create, update, delete) 
+            - **Database cluster backups**: `All` access (read, create, delete) 
             - **Database cluster rstores**: `All` access (read, create, update, delete) 
             - **Database clusters credentials**: `Read` acccess
             - **Backup storages**: `All` access (read, create, update, delete)
@@ -335,7 +335,7 @@ In this section, we will explore some examples that demonstrate how to create po
             - **namespace**: `Read` access in all the namespaces.
             - **Database engines**: `Read` access to all the database engines
             - **Database clusters**: `All` access (read, create, update, delete)
-            - **Database cluster backups**: `All` access (read, create, update, delete)
+            - **Database cluster backups**: `All` access (read, create, delete)
             - **Database cluster restores**: `All` access (read, create, update, delete)
             - **Database clusters credentials**: `Read` acccess for **all** the databases       
             - **Backup storages**: `Read` access to all the backup storages
