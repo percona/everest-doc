@@ -144,16 +144,16 @@ In Percona Everest, the only predefined role is `role:admin`. A user with this r
 
 This built-in `role:admin` definition is equivalent to the following:
 
-    ```sh
-    p, role:admin, namespaces, *, *
-    p, role:admin, database-engines, *, */*
-    p, role:admin, database-clusters, *, */*
-    p, role:admin, database-cluster-backups, *, */*
-    p, role:admin, database-cluster-restores, *, */*
-    p, role:admin, database-cluster-credentials, *, */*
-    p, role:admin, backup-storages, *, */*
-    p, role:admin, monitoring-instances, *, */*
-    ```
+```sh
+p, role:admin, namespaces, *, *
+p, role:admin, database-engines, *, */*
+p, role:admin, database-clusters, *, */*
+p, role:admin, database-cluster-backups, *, */*
+p, role:admin, database-cluster-restores, *, */*
+p, role:admin, database-cluster-credentials, *, */*
+p, role:admin, backup-storages, *, */*
+p, role:admin, monitoring-instances, *, */*
+```
 
 
 ## RBAC examples
