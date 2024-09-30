@@ -332,6 +332,15 @@ p, role:exampleA, database-cluster-credentials, read, namespaceA/*
     You cannot restore the backup to an existing database without having read permissions to the database cluster credentials.
 
 
+#### Permissions to restore a backup to a new database
+
+In the policy mentioned [above](#read-only-role-for-a-single-namespaceread-only-role-for-a-single-namespace), just add permissions to restore a backup to a new database:
+
+```sh
+p, role:exampleA, database-cluster-restores, create, namespaceA/*
+p, role:exampleA, database-cluster-credentials, read, namespaceA/*
+p, role:exampleA, database-clusters, create, namespaceA/*
+```
 
 
 
