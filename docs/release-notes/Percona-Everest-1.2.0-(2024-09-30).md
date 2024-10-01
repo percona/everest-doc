@@ -177,9 +177,18 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) - 
 PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storage in different namespaces.
 
+- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) - Before Percona Everest 1.2.0, every database node had to be scheduled on a separate K8s node within an EKS distribution. Otherwise, the database would fail to start if it didn't have a separate K8s node available. Now, it is preferable, but the databases will still come up even if no separate K8s node is available, and this setting is applied regardless of the distribution being used.
+
 ## Known limitations
 
-RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
+- RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is **Microsoft Entra**.
+
+- If you remove permissions for a resource, some permissions will still be valid even after they have been removed. The new set of permissions will only take effect when you refresh the page.
+
+- When you upgrade to Percona Everest 1.2.0, the database transitions to the initializing state as part of the PostgreSQL operator upgrade process. However, this initializing state does not cause any downtime.
+
+- When you upgrade PXC operators, if your PXC databases consist of a single node, they will be restarted, resulting in downtime. However, its worth noting that single node databases are not typically used in production environments.
+
 
 
 
