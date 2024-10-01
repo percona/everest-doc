@@ -8,7 +8,7 @@ Percona Everest has two primary components:
 ## Supported operators
 
 * Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.14.0, 1.15.0
-* Percona Operator for MongoDB (PSMDB) 1.15.0, 1.17.0
+* Percona Operator for MongoDB (PSMDB) 1.15.0
 * Percona Operator for PostgreSQL (PG) 2.3.1, 2.4.1
 
 ## Supported k8s clusters
@@ -19,7 +19,7 @@ However, not all the many combinations of K8s distributions and K8s versions mig
 
 | Platform              | Kubernetes Version | State                                   |
 |:----------------------|:-------------------|:----------------------------------------|
-| Google GKE            | 1.27-1.29        | Fully tested and certified                |
+| Google GKE            | 1.27 - 1.29        | Fully tested and certified                |
 | Amazon EKS            | 1.28 - 1.30        | Fully tested and certified                |
 | Azure AKS             | -                  | Works but not fully certified yet       |
 | DigitalOcean          | -                  | Works but not fully certified yet       |
