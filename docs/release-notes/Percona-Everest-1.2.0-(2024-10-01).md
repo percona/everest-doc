@@ -107,7 +107,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1165](https://perconadev.atlassian.net/browse/EVEREST-1165)- Due to limitations with the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/), it is now required to upgrade all database operators concurrently with their components across any namespace.
 
-- [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Starting with Percona Everest 1.2.0, you can now directly edit the monitoring endpoint from the database overview page, instead of having to use the Edit database wizard.
+- [EVEREST-1212](https://perconadev.atlassian.net/browse/EVEREST-1212) - Starting with Percona Everest 1.2.0, you can now directly edit the monitoring endpoint from the database overview page instead of having to use the Edit database wizard.
 
 
 - [EVEREST-1230](https://perconadev.atlassian.net/browse/EVEREST-1230): We've updated the **Resources** panel on the **Database overview** page to be independent instead of part of the **DB Details** panel and improved the overall look and feel of this page.
@@ -149,19 +149,18 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-768](https://perconadev.atlassian.net/browse/EVEREST-768): The PostgreSQL pods now demonstrate the intended behavior by not getting stuck, as they automatically restart when the database is restarted.
 
+- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) - Before Percona Everest 1.2.0, every database node had to be scheduled on a separate K8s node within an EKS distribution. Otherwise, the database would fail to start if it didn't have a separate K8s node available. Now, it is preferable, but the databases will still come up even if no separate K8s node is available, and this setting is applied regardless of the distribution being used.
+
 
 - [EVEREST-1232](https://perconadev.atlassian.net/browse/EVEREST-1232): The backups and restore pages have been updated to show consistent date formats.
 
-- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is properly now disabled if the backup is in the **Deleting** status.
-
 - [EVEREST-1273](https://perconadev.atlassian.net/browse/EVEREST-1273): We have fixed an issue to display an error message when the user edits the backup storage URL to an invalid one.
-
-
-- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the **Resources page** and the **Database Summary** panel is now consistent.
 
 - [EVEREST-1286](https://perconadev.atlassian.net/browse/EVEREST-1286): When editing a backup schedule, the option to change the backup name is now disabled.
 
-- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) Updated the default affinity settings for the database cluster pods. A database restart is required in order to apply these new settings.
+- [EVEREST-1253](https://perconadev.atlassian.net/browse/EVEREST-1253): The **Delete** option in the backup menu is properly now disabled if the backup is in the **Deleting** status.
+
+- [EVEREST-1279](https://perconadev.atlassian.net/browse/EVEREST-1279): The CPU value displayed on the **Resources page** and the **Database Summary** panel is now consistent.
 
 - [EVEREST-1315](https://perconadev.atlassian.net/browse/EVEREST-1315): Despite Percona Everest showing a successful upgrade message, the upgrade actually didn't go as planned. The issue has been resolved now.
 
@@ -174,10 +173,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1372](https://perconadev.atlassian.net/browse/EVEREST-1372): We’ve resolved the issue that prevented us from deleting the monitoring endpoint that is not currently in use.
 
-- [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) - 
-PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storage in different namespaces.
+- [EVEREST-1427](https://perconadev.atlassian.net/browse/EVEREST-1427) - PostgreSQL no longer gets stuck in an unknown state despite having duplicate backup storage in different namespaces.
 
-- [EVEREST-1287](https://perconadev.atlassian.net/browse/EVEREST-1287) - Before Percona Everest 1.2.0, every database node had to be scheduled on a separate K8s node within an EKS distribution. Otherwise, the database would fail to start if it didn't have a separate K8s node available. Now, it is preferable, but the databases will still come up even if no separate K8s node is available, and this setting is applied regardless of the distribution being used.
+
+
 
 ## Known limitations
 
@@ -187,7 +186,7 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 - When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the initializing state as part of the upgrade process. However, this initializing state does not cause any downtime.
 
-- When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, its worth noting that single node databases should not be used in production environments.
+- When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, it is worth noting that single node databases should not be used in production environments.
 
 
 
