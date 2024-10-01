@@ -136,10 +136,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**No**|**API endpoints**|**Method**|
     |---------|---------------------|---------|
-    |**1.** |**Endpoints deprecated from Percona Everest v1.1.0:**|
+    |**1.** |**Endpoints deprecated in Percona Everest v1.1.0 and removed in v1.2.0:**|
     |**a.**|`/namespaces/{namespace}/database-engines/{name}/operator-version/preflight`|1.`GET`|
     |**b.**|`/namespaces/{namespace}/database-engines/{name}/operator-version`|1.`GET`</br>2.`PUT`|
-    |**2.** |**Endpoints deprecated in v1.1.0 and now removed from Percona Everest v1.2.0:**|
+    |**2.** |**Endpoints deprecated in v1.2.0:**|
     |**c.**|`/monitoring-instances`|1.`GET`</br> 2.`POST`|
     |**d.**|`/monitoring-instances/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
     |**e.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
