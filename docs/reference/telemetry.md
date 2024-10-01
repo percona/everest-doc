@@ -14,46 +14,44 @@ Rest assured, access to the raw data is rigorously controlled, and individual us
 
 ## Disable telemetry
 
-Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to TRUE:
+Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to **TRUE**:
 {.power-number}
 
-1. When [installing Everest using the quick install script](../quickstart-guide/quick-install.md), set the `DISABLE_TELEMETRY` env variable to **True**: 
-   
-      ```sh
-      export DISABLE_TELEMETRY=true
-      ```
+To disable telemetry run:
 
-2. Restart the Everest backend:
-   
-    ```sh
-    docker compose -f quickstart.yml restart everest   
-    ```
+```sh
+kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    spec:
+      containers:
+        - name: everest
+          env:
+          - name: DISABLE_TELEMETRY
+            value: "true"'
+```
 
-3. Run the Everest upgrade command so the underlying operators apply the new setting as well:
-   
-    ```sh
-    ./everestctl upgrade
-    ```
+## Enable telemetry
 
-## Enable telemetry again
+If you want to enable telemetry again:
 
-To re-enable telemetry:
-{.power-number}
+```sh
+kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+  strategy:
+    rollingUpdate:
+      maxSurge: 0
+      maxUnavailable: 1
+    type: RollingUpdate
+  template:
+    spec:
+      containers:
+        - name: everest
+          env:
+          - name: DISABLE_TELEMETRY
+            value: "false"'
+```
 
-1. Set the DISABLE_TELEMETRY environment variable to false: 
-   
-    ```sh 
-    export DISABLE_TELEMETRY=false
-    ```
-
-2. Restart the Everest backend:
-    
-    ```sh
-    docker compose -f quickstart.yml restart everest
-    ```
-
-3. Run the Everest provisioning again to make sure that the underlying operators apply the new setting as well:
-    
-    ```sh
-    ./everestctl upgrade
-    ```
