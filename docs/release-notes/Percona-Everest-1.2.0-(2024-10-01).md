@@ -185,9 +185,9 @@ PostgreSQL no longer gets stuck in an unknown state despite having duplicate bac
 
 - If you remove permissions for a resource, some permissions will still be valid even after they have been removed. The new set of permissions will only take effect when you refresh the page.
 
-- When you upgrade to Percona Everest 1.2.0, the database transitions to the initializing state as part of the PostgreSQL operator upgrade process. However, this initializing state does not cause any downtime.
+- When you upgrade to PostgreSQL operator to version 2.4.1, the database transitions to the initializing state as part of the PostgreSQL operator upgrade process. However, this initializing state does not cause any downtime.
 
-- When you upgrade PXC operators, if your PXC databases consist of a single node, they will be restarted, resulting in downtime. However, its worth noting that single node databases are not typically used in production environments.
+- When you upgrade PXC operators to v1.15.0, if your PXC databases consist of a single node, they will be restarted, resulting in downtime. However, its worth noting that single node databases are not typically used in production environments.
 
 
 
