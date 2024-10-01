@@ -286,7 +286,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
         **2. Database admin role for a single database**
 
-        Let's set up a role that has access to only a single database:
+        Let's set up a role that has access to only a single database called `databaseA`:
 
         ```sh
         p, role:dbadminDatabaseA, namespaces, *, namespaceA
