@@ -431,7 +431,7 @@ data:
 You can verify whether your Role-based access control (RBAC) policies are functioning correctly by executing the following command:
 
 ```sh
-everestctl settings rbac validate --policy-file
+everestctl settings rbac validate --policy-file <file_path>
 ```
 
 Where:
