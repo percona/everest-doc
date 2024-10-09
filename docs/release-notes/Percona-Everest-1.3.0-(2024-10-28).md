@@ -24,10 +24,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 The key components of MongoDB sharding are:
 
-- [shard]()
-- [mongos]
-- [config servers]()
-
+- Shard: Each shard has a subset of the data.
+- Mongos: The query router directs the client queries to the proper shard(s).
+- Config servers: The configuration servers store the cluster's metadata and configuration settings.
 
 Here's how you can enable sharding:
 
