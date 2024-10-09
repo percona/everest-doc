@@ -8,11 +8,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
 | **1.**  |[MongoDB Sharding](#sharding)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
-| **2.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
-| **3.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
-| **4.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.3.0, as well as any deprecated APIs|
-| **5.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.3.0|
-| **6.**|[Known limitations](#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
+| **2.**  |[MongoDB Sharding](#sharding)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
+
+| **3.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
+| **4.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
+| **5.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.3.0, as well as any deprecated APIs|
+| **6.**|[Bugs](#bugs)|Find out about all the bugs fixed in Percona Everest 1.3.0|
+| **7.**|[Known limitations](#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
 
 
 ## Release highlights
@@ -43,7 +45,6 @@ On the **Create Database** wizard, select **MongoDB** database and turn on the *
 - [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in Percona Everest 1.3.0. Now, you can benefit from sharding for your MongoDB databases with Percona Everest.
 
 - [EVEREST-777](https://perconadev.atlassian.net/browse/EVEREST-777): You now have the ability to customize the number of proxy replicas and their resources, including CPU and RAM, just like you can already do for the number of DB engine replicas and resources.
-
 
 - [EVEREST-1310](https://perconadev.atlassian.net/browse/EVEREST-1310): 
 
