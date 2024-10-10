@@ -8,9 +8,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
 | **1.**  |[MongoDB Sharding](#sharding)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
-| **2.**  |[Configure proxy nodes and define their resource limits](#capability-to-configure-proxy-nodes-and-define-their-resource-limits)
-|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
-
+| **2.**  |[Configure proxy nodes](#capability-to-configure-proxy-nodes-and-define-their-resource-limits)|Configure proxy nodes and define their resource limits|
 | **3.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
 | **4.**|[Improvements](#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
 | **5.**|[New and deprecated API's](#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.3.0, as well as any deprecated APIs|
