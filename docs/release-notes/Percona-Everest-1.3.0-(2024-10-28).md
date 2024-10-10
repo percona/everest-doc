@@ -85,7 +85,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ### Improvement
 
-[EVEREST-1006](https://perconadev.atlassian.net/browse/EVEREST-1006) \[UI\] Display DB status in DB details
+- [EVEREST-1006](https://perconadev.atlassian.net/browse/EVEREST-1006) - You can now your status right from the database details page.
 
 [EVEREST-1208](https://perconadev.atlassian.net/browse/EVEREST-1208) \[UI\] Upgrade DB version \(db detailes widget \+ logic\)
 
@@ -103,15 +103,14 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ### Bug
 
-[EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
+- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
 
-[EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
+- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
 
-[EVEREST-1197](https://perconadev.atlassian.net/browse/EVEREST-1197) Mongodb database is not able to come up
 
-[EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) \[UI\] Components are shown as green while there are containers that are not ready
+- [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) \[UI\] Components are shown as green while there are containers that are not ready
 
-[EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) \[UI\] Database overview page should display resources more clearly
+- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) \[UI\] Database overview page should display resources more clearly
 
 [EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) \[UI\] Components page is refreshed continuously if a database is suspended
 
@@ -119,13 +118,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) Issue with Resource per Node Selection in Database Creation
 
-[EVEREST-1400](https://perconadev.atlassian.net/browse/EVEREST-1400) \[UI\] Number of shards and configuration servers should be defined based on number of database nodes
 
 [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
 
 [EVEREST-1414](https://perconadev.atlassian.net/browse/EVEREST-1414) \[operator\] Do not modify labels not handled by the everest-operator
 
-[EVEREST-1422](https://perconadev.atlassian.net/browse/EVEREST-1422) Restore of a mongodb sharded backup to a new database failed
 
 [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) Unable to return to the namespace settings page after upgrading the database operator in the Percona Everest GUI.
 
@@ -159,62 +156,12 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 [EVEREST-1541](https://perconadev.atlassian.net/browse/EVEREST-1541) \[UI\] Custom number of nodes do not work for mysql databases
 
-[EVEREST-1544](https://perconadev.atlassian.net/browse/EVEREST-1544) Mysql database does not come up with 3/5 nodes and 1 proxy node
 
-[EVEREST-1545](https://perconadev.atlassian.net/browse/EVEREST-1545) \[UI\] Incorrect number of nodes are displayed during database edit
 
 [EVEREST-1550](https://perconadev.atlassian.net/browse/EVEREST-1550) \[UI\] Dashboard menu for database displays an empty small box
 
 [EVEREST-1551](https://perconadev.atlassian.net/browse/EVEREST-1551) \[UI\] Upgrade button is being displayed when there are no new operator versions available for upgrade
 
-[EVEREST-1555](https://perconadev.atlassian.net/browse/EVEREST-1555) MySQL cluster stuck in initializing state
-
-[EVEREST-1557](https://perconadev.atlassian.net/browse/EVEREST-1557) \[UI\] Incorrect resource values set for proxies when editing the DB
-
-### New Feature
-
-
-[EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239) Add support for PSMDB Operator v1.17.0
-
-[EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303) Enable MongoDB sharding during DB creation in the wizard
-
-[EVEREST-1310](https://perconadev.atlassian.net/browse/EVEREST-1310) \[UI\] Customize proxy replicas and resources during editing from the DB details view
-
-### Overhead
-
-[EVEREST-1353](https://perconadev.atlassian.net/browse/EVEREST-1353) Use PG backup name in dbb 
-
-[EVEREST-1462](https://perconadev.atlassian.net/browse/EVEREST-1462) PXC: use LatestRestorableTime
-
-[EVEREST-1463](https://perconadev.atlassian.net/browse/EVEREST-1463) PSMDB: use LatestRestorableTime
-
-[EVEREST-1490](https://perconadev.atlassian.net/browse/EVEREST-1490) \[UI\] \[Refactoring\] Combine actions menu into one function
-
-[EVEREST-1498](https://perconadev.atlassian.net/browse/EVEREST-1498) \[API\] Remove deprecated API endpoints
-
-[EVEREST-1499](https://perconadev.atlassian.net/browse/EVEREST-1499) \[docs\] Everest 1.3.0
-
-### Technical task
-
-[EVEREST-995](https://perconadev.atlassian.net/browse/EVEREST-995) \[UI\] \[Storybook\] \[S\] Select
-
-[EVEREST-1044](https://perconadev.atlassian.net/browse/EVEREST-1044) \[UI\] \[Storybook\] \[S\] Typography
-
-[EVEREST-1256](https://perconadev.atlassian.net/browse/EVEREST-1256) \[API\] Add connection URL to database-cluster-credentials endpoint
-
-[EVEREST-1268](https://perconadev.atlassian.net/browse/EVEREST-1268) \[UI\] Add ready status to the containers in the components view
-
-[EVEREST-1305](https://perconadev.atlassian.net/browse/EVEREST-1305) \[API\] expose MongoDB sharding/config server options
-
-[EVEREST-1306](https://perconadev.atlassian.net/browse/EVEREST-1306) \[UI\] Add MongoDB sharding/config server inputs and toggle
-
-[EVEREST-1405](https://perconadev.atlassian.net/browse/EVEREST-1405) \[UI\] Update sharding wizard
-
-[EVEREST-1522](https://perconadev.atlassian.net/browse/EVEREST-1522) \[UI\] Integrated progress loader to dialog
-
-### Epic
-
-[EVEREST-353](https://perconadev.atlassian.net/browse/EVEREST-353) MongoDB sharded cluster
 
 
 
