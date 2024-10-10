@@ -20,7 +20,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## Release highlights
 
 
-=== "Configure proxy nodes"
+=== "Configure proxies"
 
     ### Capability to configure proxy nodes and define their resource limits
 
@@ -68,7 +68,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ### Support for PSMDB Operator v1.17.0
 
-    Percona Everest now fully supports PSMDB Operator v1.17.0.
+    Starting with Percona Everest 1.3.0, we are thrilled to announce that we have added support for PSMDB Operator v1.17.0.
 
 ## New features
 
