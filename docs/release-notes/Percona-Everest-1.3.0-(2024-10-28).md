@@ -47,6 +47,9 @@ Starting with Percona Everest 1.3.0, we have introduced a new feature that permi
 
 With this feature you now have more flexibility to customize the resources allocated to proxy replicas according to your needs thus providing more control over your Percona Everest deployments.
 
+
+![!image](../images/proxies_resources.png)
+
 ## New features
 
 - [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in Percona Everest 1.3.0. Now, you can benefit from sharding for your MongoDB databases with Percona Everest.
