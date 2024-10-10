@@ -50,18 +50,33 @@ With this feature, you now have more flexibility to customize the resources allo
 ![!image](../images/proxies_resources.png)
 
 
+## Display database status details
+
+
+Starting with the latest Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the database view page.
+
+
+![!image](../images/display_db_details.png)
+
+
+
 ### Support for PSMDB Operator v1.17.0
 
 Percona Everest now fully supports PSMDB Operator v1.17.0.
 
 ## New features
 
-- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in Percona Everest 1.3.0. Now, you can benefit from sharding for your MongoDB databases with Percona Everest.
+- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in Percona Everest 1.3.0. Now, you can benefit from sharding for your MongoDB databases with Percona Everest. 
 
 - [EVEREST-777](https://perconadev.atlassian.net/browse/EVEREST-777): Previously, you could only customize the database engine replicas and their resources. Now, you have the ability to customize the number of proxy replicas and their resources, including CPU and RAM, during the database creation.
 
 
 - [EVEREST-1310](https://perconadev.atlassian.net/browse/EVEREST-1310): Previously, you could only customize the database engine replicas and their resources. Now, you have the ability to customize the number of proxy replicas and their resources, including CPU and RAM, while editing the database.
+
+
+- [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239): We've now added support for PSMDB Operator v1.17.0.
+
+
 
 
 
