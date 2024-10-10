@@ -20,49 +20,55 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## Release highlights
 
 
-### Optimize MongoDB with sharding in Percona Everest
+=== "Configure proxy nodes"
+
+    ### Capability to configure proxy nodes and define their resource limits
+
+    Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
+
+    With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your Percona Everest deployments.
 
 
-We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in Percona Everest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with Percona Everest.
+    ![!image](../images/proxies_resources.png)
 
-[Sharding  :octicons-link-external-16:](https://docs.mongodb.com/manual/reference/glossary/#term-sharding) is used for horizontal database scaling. It distributes a database horizontally across multiple nodes or servers, known as **shards**. Each shard manages a portion of the data, forming a sharded cluster, which enables MongoDB to handle large datasets and high user concurrency effectively.
+=== "MongoDB sharding"
 
-The key components of MongoDB sharding are:
-
-- Shard: Each shard has a subset of the data.
-- Mongos: The query router directs the client queries to the proper shard(s).
-- Config servers: The configuration servers store the cluster's metadata and configuration settings.
-
-Here's how you can enable sharding:
-
-On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle.
-
-![!image](../images/enable_sharding.png)
+    ### Optimize MongoDB with sharding in Percona Everest
 
 
-### Capability to configure proxy nodes and define their resource limits
+    We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in Percona Everest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with Percona Everest.
 
-Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
+    [Sharding  :octicons-link-external-16:](https://docs.mongodb.com/manual/reference/glossary/#term-sharding) is used for horizontal database scaling. It distributes a database horizontally across multiple nodes or servers, known as **shards**. Each shard manages a portion of the data, forming a sharded cluster, which enables MongoDB to handle large datasets and high user concurrency effectively.
 
-With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your Percona Everest deployments.
+    The key components of MongoDB sharding are:
 
+    - Shard: Each shard has a subset of the data.
+    - Mongos: The query router directs the client queries to the proper shard(s).
+    - Config servers: The configuration servers store the cluster's metadata and configuration settings.
 
-![!image](../images/proxies_resources.png)
+    Here's how you can enable sharding:
 
+    On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle.
 
-## Display database status details
-
-
-Starting with the latest Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the database view page.
-
-
-![!image](../images/display_db_details.png)
+    ![!image](../images/enable_sharding.png)
 
 
+=== "Database status details
 
-### Support for PSMDB Operator v1.17.0
+    ## Display database status details
 
-Percona Everest now fully supports PSMDB Operator v1.17.0.
+
+    Starting with the latest Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view ** page.
+
+
+    ![!image](../images/display_db_details.png)
+
+
+=== "PSMDB Operator v1.17.0"
+
+    ### Support for PSMDB Operator v1.17.0
+
+    Percona Everest now fully supports PSMDB Operator v1.17.0.
 
 ## New features
 
@@ -75,9 +81,6 @@ Percona Everest now fully supports PSMDB Operator v1.17.0.
 
 
 - [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239): We've now added support for PSMDB Operator v1.17.0.
-
-
-
 
 
 ### Improvement
