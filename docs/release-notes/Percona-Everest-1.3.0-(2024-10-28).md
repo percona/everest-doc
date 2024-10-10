@@ -53,7 +53,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     ![!image](../images/enable_sharding.png)
 
 
-=== "Database status details
+=== "Database status details"
 
     ### Display database status details
 
