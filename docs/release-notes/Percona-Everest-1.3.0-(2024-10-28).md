@@ -55,10 +55,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "Database status details
 
-    ## Display database status details
+    ### Display database status details
 
 
-    Starting with the latest Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view ** page.
+    Starting with the latest Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view** page.
 
 
     ![!image](../images/display_db_details.png)
