@@ -8,7 +8,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 |**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
 | **1.**  |[MongoDB Sharding](#sharding)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
-| **2.**  |[Configure proxy nodes and define their resource limits]()
+| **2.**  |[Configure proxy nodes and define their resource limits](#capability-to-configure-proxy-nodes-and-define-their-resource-limits)
 |Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
 
 | **3.**|[New features](#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
@@ -40,6 +40,12 @@ On the **Create Database** wizard, select **MongoDB** database and turn on the *
 
 ![!image](../images/enable_sharding.png)
 
+
+## Capability to configure proxy nodes and define their resource limits
+
+Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxy replicas, including the allocation of CPU and RAM resources for each replica. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
+
+With this feature you now have more flexibility to customize the resources allocated to proxy replicas according to your needs thus providing more control over your Percona Everest deployments.
 
 ## New features
 
