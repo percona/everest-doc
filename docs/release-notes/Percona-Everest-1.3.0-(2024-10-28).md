@@ -43,9 +43,9 @@ On the **Create Database** wizard, select **MongoDB** database and turn on the *
 
 ## Capability to configure proxy nodes and define their resource limits
 
-Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxy replicas, including the allocation of CPU and RAM resources for each replica. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
+Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
 
-With this feature you now have more flexibility to customize the resources allocated to proxy replicas according to your needs thus providing more control over your Percona Everest deployments.
+With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your Percona Everest deployments.
 
 
 ![!image](../images/proxies_resources.png)
