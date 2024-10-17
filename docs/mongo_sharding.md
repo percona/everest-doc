@@ -6,13 +6,13 @@
 
 ## Key components of MongoDB sharding
 
-- Shard: Each shard has a subset of the data.
-- Routers: The query router directs the client queries to the proper shard(s).
+- **Shard:** Each shard has a subset of the data.
+- **Routers: **The query router directs the client queries to the proper shard(s).
 
     !!! info "Important"
         With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of nodes in your replica set. However, in our upcoming releases, you can customize the number of routers and set resource limits for them.
 
-- Config servers: The configuration servers store the cluster's metadata and configuration settings.
+- **Config servers:** The configuration servers store the cluster's metadata and configuration settings.
 
 
 ## Why sharding?
@@ -44,15 +44,15 @@ To enable sharding:
 
 2. On the **Resources** page, choose or enter the following details:
 
-    a. Number of Shards
+        a. Number of Shards
 
-    b. On the **Nodes** panel, select the **Number of nodes** and the corresponding **Resurce size per node**.
-    
-    c. On the **Routers** panel, select the **Number of routers** and the corresponding **Resource size per router**.
+        b. On the **Nodes** panel, select the **Number of nodes** and the corresponding **Resurce size per node**.
 
-    d. Number of configuration servers
+        c. On the **Routers** panel, select the **Number of routers** and the corresponding **Resource size per router**.
 
-    ![!image](images/sharding_routers.png)
+        d. Number of configuration servers
+
+        ![!image](images/sharding_routers.png)
 
 
 3. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
