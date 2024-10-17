@@ -7,7 +7,7 @@
 ## Key components of MongoDB sharding
 
 - Shard: Each shard has a subset of the data.
-- Mongos: The query router directs the client queries to the proper shard(s).
+- Routers: The query router directs the client queries to the proper shard(s).
 
     !!! info "Important"
         With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of nodes in your replica set. However, in our upcoming releases, you can customize the number of routers and set resource limits for them.
@@ -31,16 +31,29 @@ By splitting data across multiple servers, sharding reduces the load on any one 
 
 ### Availability
 
-If one shard (or server) fails, the remaining shards can continue to operate, enhancing the system's availability and fault tolerance. Data replication across shards ensures that no information is lost in a failure.
+If one shard (or server) fails, the remaining shards can continue to operate, enhancing the system's availability and fault tolerance. Data replication across shards ensures that no information is lost in the event of a failure.
 
 ## Enable sharding in Percona Everest
 
 To enable sharding:
 {.power-number}
 
-1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle.
-    ![!image](../images/enable_sharding.png)
-2. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
+1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle. Click **Continue**. The **Resources** page will be displayed.
+
+    ![!image](images/enable_sharding.png)
+
+2. On the **Resources** page, choose or enter the following details:
+
+    1. Number of Shards
+    2. On the **Nodes** panel, select the **Number of nodes** and the corresponding **Resurce size per node**.
+    3. On the **Routers** panel, select the **Number of routers** and the corresponding **Resource size per router**.
+
+    4. Number of configuration servers
+
+    ![!image](images/sharding_routers.png)
+
+
+3. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
     ![!image](../images/sharding_status.png)
 
 
