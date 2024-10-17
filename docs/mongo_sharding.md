@@ -45,7 +45,9 @@ To enable sharding:
 2. On the **Resources** page, choose or enter the following details:
 
     a. Number of Shards
+
     b. On the **Nodes** panel, select the **Number of nodes** and the corresponding **Resurce size per node**.
+    
     c. On the **Routers** panel, select the **Number of routers** and the corresponding **Resource size per router**.
 
     d. Number of configuration servers
