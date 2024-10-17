@@ -181,7 +181,7 @@ nav:
       - Single sign-on (SSO): administer/Idp_integration.md
       - Access Control: 
         - RBAC: administer/rbac.md
-  - MongoDB Sharding: mongo_sharding.md
+  - MongoDB sharding: mongo_sharding.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
