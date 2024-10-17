@@ -15,6 +15,19 @@
 - Config servers: The configuration servers store the cluster's metadata and configuration settings.
 
 
+## Why sharding?
+
+Here are the key reasons for implementing sharding:
+
+### Scalability
+
+By increasing the number of shards in the cluster, you can scale your system horizontally. This enables you to manage larger datasets and handle higher traffic volumes, ensuring your system remains responsive and efficient despite growing demands.
+
+
+### Improved performance
+
+By splitting data across multiple servers, sharding reduces the load on any one server, that leads to faster query response times. Since each shard contains only a fraction of the total data, queries targeting a specific shard can be processed faster.
+
 ## Enable sharding in Percona Everest
 
 To enable sharding:
