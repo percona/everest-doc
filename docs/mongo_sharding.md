@@ -10,7 +10,7 @@
 - **Routers:** The query router directs the client queries to the proper shard(s).
 
     !!! info "Important"
-        With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of nodes in your replica set. However, in our upcoming releases, you can customize the number of routers and set resource limits for them.
+        With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of shards in your replica set. However, in our upcoming releases, you will be able to customize the number of routers and set resource limits for them.
 
 - **Config servers:** The configuration servers store the cluster's metadata and configuration settings.
 
@@ -30,7 +30,7 @@ By splitting data across multiple servers, sharding reduces the load on any one 
 
 ### Availability
 
-If one shard (or server) fails, the remaining shards can continue to operate, enhancing the system's availability and fault tolerance. Data replication across shards ensures that no information is lost in the event of a failure.
+If one shard (or server) fails, the remaining shards can continue to operate, enhancing the system's availability and fault tolerance. Data replication across replica sets ensures that no information is lost in the event of a failure.
 
 ## Enable sharding in Percona Everest
 
@@ -46,7 +46,7 @@ To enable sharding:
 
       **a.** Number of Shards
 
-      **b.** On the **Nodes** panel, select the **Number of nodes** and the corresponding **Resurce size per node**.
+      **b.** On the **Nodes** panel, select the **Number of nodes** per shard and the corresponding **Resource size per node**.
 
       **c.** On the **Routers** panel, select the **Number of routers** and the corresponding **Resource size per router**.
 
@@ -64,13 +64,9 @@ To enable sharding:
 
 Here are few recommendations to fine-tune your setup for MongoDB sharding:
 
-- To enhance the scalability of your cluster, consider **increasing** the number of **nodes**, which can include shards or routers, based on your anticipated load. 
+- Scalability: To enhance your cluster's scalability, consider increasing the number of shards, based on your anticipated load.
 
-- Fault Tolerance
+- Fault Tolerance: To ensure fault tolerance, MongoDB uses replica sets. This ensures that if one server fails, another replica can take over without impacting the cluster’s availability.
 
-    MongoDB uses replica sets for config servers to ensure fault tolerance. This ensures that if one config server fails, another replica can take over without impacting the cluster's availability.
-
-- Redundancy
-    
-    It is recommended that the configuration servers be deployed in a MongoDB sharded cluster as a replica set of 3 or 5 members. This is important for maintaining high availability and ensuring the sharded cluster continues functioning even if some config server members fail.
+- Redundancy: It is recommended that the nodes be deployed in a MongoDB sharded cluster as replica sets of 3 or 5 members. This is important for maintaining high availability and ensuring the sharded cluster continues functioning even if some servers fail.
 
