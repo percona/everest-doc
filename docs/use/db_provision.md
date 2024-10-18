@@ -51,14 +51,15 @@ To provision a new database:
 
     - MongoDB: On the **Routers** panel, select the **Number of routers** and **Resource size per router**.
 
-        
-        The query router directs the client queries to the proper shard(s).
+        !!! info
+            The query router directs the client queries to the proper shard(s).
 
         ![!image](../images/resources_routers.png)
 
     - PostgreSQL: On the **PG Bouncers** panel, select the **Number of PG Bouncers** and **Resource size per PG Bouncer**.
 
-        [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments.
+        !!! info
+            [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments.
 
         ![!image](../images/resources_pgbouncer.png)
 
