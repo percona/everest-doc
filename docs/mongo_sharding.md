@@ -25,7 +25,7 @@ By increasing the number of shards in the cluster, you can scale your system hor
 
 ### Improved performance
 
-By splitting data across multiple servers, sharding reduces the load on any one server, that leads to faster query response times. Since each shard contains only a fraction of the total data, queries targeting a specific shard can be processed faster.
+By splitting data across multiple servers, sharding reduces the load on any one server, which leads to faster query response times. Since each shard contains only a fraction of the total data, queries targeting a specific shard can be processed faster.
 
 
 ### Availability
