@@ -46,13 +46,19 @@ To provision a new database:
 
         Proxies are used primarily to ensure high availability, load balancing, and database failover management. They act as intermediaries, ensuring client requests are directed to the appropriate database instances.
 
-    - MongDB: On the **Routers** panel, select the **Number of routers** and **Resource size per router**.
+        ![!image](../images/resources_proxies_page.png)
+
+    - MongoDB: On the **Routers** panel, select the **Number of routers** and **Resource size per router**.
 
         The query router directs the client queries to the proper shard(s).
 
+        ![!image](../images/resources_routers.png)
+
     - PostgreSQL: On the **PG Bouncers** panel, select the **Number of PG Bouncers** and **Resource size per PG Bouncer**.
 
-    [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments. 
+        [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments.
+
+        ![!image](../images/resources_pgbouncer.png)
 
 
 6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
