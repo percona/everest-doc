@@ -60,7 +60,7 @@ To enable sharding:
 
 3. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
 
-    ![!image](../images/sharding_status.png)
+    ![!image](images/sharding_status.png)
 
 
 ## Fine-tuning your sharding setup
