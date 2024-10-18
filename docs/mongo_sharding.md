@@ -37,7 +37,7 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
 To enable sharding:
 {.power-number}
 
-1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle. Click **Continue**. The **Resources** page will be displayed.
+1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle. Click **Continue**. The **Resources** page will be displayed. </br>
 
 
     ![!image](images/enable_sharding.png)
