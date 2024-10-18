@@ -15,7 +15,7 @@
 - **Config servers:** The configuration servers store the cluster's metadata and configuration settings.
 
 
-### try more nodes based on the expected load or number of routers. Config servers - High avilability (fault tolerance). 
+### try more nodes based on the expected load or number of routers. Config servers - High avilability (fault tolerance). more redundancy, more config servers. 
 
 ## Why sharding?
 
@@ -62,4 +62,18 @@ To enable sharding:
 
     ![!image](../images/sharding_status.png)
 
+
+## Fine-tuning your sharding setup
+
+Here are few recommendations to fine-tune your setup for MongoDB sharding:
+
+- To enhance the scalability of your cluster, consider **increasing** the number of **nodes**, which can include shards or routers, based on your anticipated load. 
+
+- Fault Tolerance
+
+    MongoDB uses replica sets for config servers to ensure fault tolerance. This ensures that if one config server fails, another replica can take over without impacting the cluster's availability.
+
+- Redundancy
+    
+    It is recommended that the configuration servers be deployed in a MongoDB sharded cluster as a replica set of 3 or 5 members. This is important for maintaining high availability and ensuring the sharded cluster continues functioning even if some config server members fail.
 
