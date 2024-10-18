@@ -14,9 +14,6 @@
 
 - **Config servers:** The configuration servers store the cluster's metadata and configuration settings.
 
-
-### try more nodes based on the expected load or number of routers. Config servers - High avilability (fault tolerance). more redundancy, more config servers. 
-
 ## Why sharding?
 
 Here are the key reasons for implementing sharding:
