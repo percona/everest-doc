@@ -40,13 +40,19 @@ To provision a new database:
 
 5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
-Additionally, based on the database technology you’re working with, select the following:
+    Additionally, based on the database technology you’re working with, select the following:
 
-- MySQL: Select the **Proxies** and **Resource size per proxy**.
+    - MySQL: On the **Proxies** panel, select the **Number of proxies** and **Resource size per proxy**.
 
-    Proxies are 
+        Proxies are used primarily to ensure high availability, load balancing, and database failover management. They act as intermediaries, ensuring client requests are directed to the appropriate database instances.
 
+    - MongDB: On the **Routers** panel, select the **Number of routers** and **Resource size per router**.
 
+        The query router directs the client queries to the proper shard(s).
+
+    - PostgreSQL: On the **PG Bouncers** panel, select the **Number of PG Bouncers** and **Resource size per PG Bouncer**.
+
+    [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments. 
 
 
 6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
