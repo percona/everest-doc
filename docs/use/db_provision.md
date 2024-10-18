@@ -44,7 +44,8 @@ To provision a new database:
 
     - MySQL: On the **Proxies** panel, select the **Number of proxies** and **Resource size per proxy**.
 
-        Proxies are used primarily to ensure high availability, load balancing, and database failover management. They act as intermediaries, ensuring client requests are directed to the appropriate database instances.
+        !!! info
+            Proxies are used primarily to ensure high availability, load balancing, and database failover management. They act as intermediaries, ensuring client requests are directed to the appropriate database instances.
 
         ![!image](../images/resources_proxies_page.png)
 
