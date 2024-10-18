@@ -59,7 +59,7 @@ To provision a new database:
     - PostgreSQL: On the **PG Bouncers** panel, select the **Number of PG Bouncers** and **Resource size per PG Bouncer**.
 
         !!! info
-            [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high-traffic environments.
+            [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high traffic environments.
 
         ![!image](../images/resources_pgbouncer.png)
 
