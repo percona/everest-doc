@@ -50,6 +50,7 @@ To provision a new database:
 
     - MongoDB: On the **Routers** panel, select the **Number of routers** and **Resource size per router**.
 
+        
         The query router directs the client queries to the proper shard(s).
 
         ![!image](../images/resources_routers.png)
@@ -61,7 +62,7 @@ To provision a new database:
         ![!image](../images/resources_pgbouncer.png)
 
 
-6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
+6. On the **Scheduled Backups** page, set up a schedule to run backup jobs for your new database.
 
     Click **Create backup schedule**. The backup schedule pop-up is displayed.
 
