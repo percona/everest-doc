@@ -9,9 +9,6 @@
 - **Shard:** Each shard has a subset of the data.
 - **Routers:** The query router directs the client queries to the proper shard(s).
 
-    !!! info "Important"
-        With the current Percona Everest release, the number of routers (mongos) is, by default, set to the number of shards in your replica set. However, in our upcoming releases, you will be able to customize the number of routers and set resource limits for them.
-
 - **Config servers:** The configuration servers store the cluster's metadata and configuration settings.
 
 ## Why sharding?
