@@ -61,9 +61,9 @@ To enable sharding:
 
 Here are few recommendations to fine-tune your setup for MongoDB sharding:
 
-- Scalability: To enhance your cluster's scalability, consider increasing the number of shards, based on your anticipated load.
+- **Scalability**: To enhance your cluster's scalability, consider increasing the number of shards, based on your anticipated load.
 
-- Fault Tolerance: To ensure fault tolerance, MongoDB uses replica sets. This ensures that if one server fails, another replica can take over without impacting the cluster’s availability.
+- **Fault tolerance**: To ensure fault tolerance, MongoDB uses replica sets. This ensures that if one server fails, another replica can take over without impacting the cluster’s availability.
 
-- Redundancy: It is recommended that the nodes be deployed in a MongoDB sharded cluster as replica sets of 3 or 5 members. This is important for maintaining high availability and ensuring the sharded cluster continues functioning even if some servers fail.
+- **Redundancy**: It is recommended that the nodes be deployed in a MongoDB sharded cluster as replica sets of 3 or 5 members. This is important for maintaining high availability and ensuring the sharded cluster continues functioning even if some servers fail.
 
