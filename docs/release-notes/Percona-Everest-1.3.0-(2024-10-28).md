@@ -91,17 +91,16 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1208](https://perconadev.atlassian.net/browse/EVEREST-1208) -  
 You can upgrade the database version directly from the **Overview** page. However, the **Upgrade** option will only be visible if you have the necessary permissions. When you click **Upgrade**, a pop-up will appear, prompting you to select the version of the database to which you want to upgrade.
 
-[EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) - You can now easily edit your resources directly from the **Overview** page. There’s no longer a need to navigate the entire database wizard, saving you time and simplifying the process.
+- [EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) - You can now easily edit your resources directly from the **Overview** page. There’s no longer a need to navigate the entire database wizard, saving you time and simplifying the process.
 
-[EVEREST-1459](https://perconadev.atlassian.net/browse/EVEREST-1459) \[UI\] Add 'contact Percona support' action to support menu 
+- [EVEREST-1459](https://perconadev.atlassian.net/browse/EVEREST-1459) \[UI\] Add 'contact Percona support' action to support menu 
 
-[EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) - To make your experience with Percona Everest even smoother, we've added convenient links right on the login page. Discover everything from **Support** and a **Quickstart guide** to our **Forum**, the **K8s Squad program**, and our **GitHub** repository.
+- [EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) - To make your experience with Percona Everest even smoother, we've added convenient links right on the login page. Discover everything from **Support** and a **Quickstart guide** to our **Forum**, the **K8s Squad program**, and our **GitHub** repository.
 
-[EVEREST-1469](https://perconadev.atlassian.net/browse/EVEREST-1469) \[BE\]\[RBAC\] Use globMatch matcher instead of keyMatch
 
-[EVEREST-1470](https://perconadev.atlassian.net/browse/EVEREST-1470) - The `rbac validate` command has been enhanced to accept the `ConfigMap` YAML file. This enables you to validate role-based access control (RBAC) configurations by leveraging the structured data provided in a `ConfigMap` format.
+- [EVEREST-1470](https://perconadev.atlassian.net/browse/EVEREST-1470) - The `rbac validate` command has been enhanced to accept the `ConfigMap` YAML file. This enables you to validate role-based access control (RBAC) configurations by leveraging the structured data provided in a `ConfigMap` format.
 
-[EVEREST-1533](https://perconadev.atlassian.net/browse/EVEREST-1533) - Users with read-only permissions for a namespace, including all database engines and database clusters within that namespace, currently cannot access the **Upgrade** option in the user interface. This restriction prevents them from viewing upgrade prerequisites, such as the versions of database clusters that may need to be upgraded.
+- [EVEREST-1533](https://perconadev.atlassian.net/browse/EVEREST-1533) - Users with read-only permissions for a namespace, including all database engines and database clusters within that namespace, currently cannot access the **Upgrade** option in the user interface. This restriction prevents them from viewing upgrade prerequisites, such as the versions of database clusters that may need to be upgraded.
 
 However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
@@ -110,7 +109,7 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
 
 
-- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
+- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) - PITR is not enabled for postgresql database after creating backup schedules on the Backups page
 
 
 - [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) \[UI\] Components are shown as green while there are containers that are not ready
