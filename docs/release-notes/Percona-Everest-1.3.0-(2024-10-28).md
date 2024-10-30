@@ -119,9 +119,9 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 
 - [EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) - We’ve addressed an issue that caused the **Components** page to get stuck in a loop, refreshing endlessly whenever a database was suspended. 
 
-[EVEREST-1398](https://perconadev.atlassian.net/browse/EVEREST-1398) - The time format is now unified across all backups and restores, ensuring consistency and clarity.
+- [EVEREST-1398](https://perconadev.atlassian.net/browse/EVEREST-1398) - The time format is now unified across all backups and restores, ensuring consistency and clarity.
 
-[EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) Issue with Resource per Node Selection in Database Creation
+- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) Issue with Resource per Node Selection in Database Creation
 
 
 [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
