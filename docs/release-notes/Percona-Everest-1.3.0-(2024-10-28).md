@@ -115,9 +115,9 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) - On the **Components** page, the Pod icon now shows the correct color: green if the status is `Running` and all containers are ready, and yellow if the status is `Running` while some containers are not ready.
 
 
-- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) - Database overview page should display resources more clearly
+- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) - For an enhanced UI, the **Overview** page now displays resources more clearly.
 
-[EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) \[UI\] Components page is refreshed continuously if a database is suspended
+- [EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) - We’ve addressed an issue that caused the **Components** page to get stuck in a loop, refreshing endlessly whenever a database was suspended. 
 
 [EVEREST-1398](https://perconadev.atlassian.net/browse/EVEREST-1398) \[UI\] Inconsistent time format for backups and restore
 
