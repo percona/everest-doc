@@ -89,13 +89,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1006](https://perconadev.atlassian.net/browse/EVEREST-1006) - You can now view your database status right from the database details page.
 
 - [EVEREST-1208](https://perconadev.atlassian.net/browse/EVEREST-1208) -  
-You can upgrade the database version directly from the database overview page. However, the Upgrade option will only be visible if you have the necessary permissions. When you click Upgrade, a pop-up will appear, prompting you to select the version of the database to which you want to upgrade.
+You can upgrade the database version directly from the **Overview** page. However, the **Upgrade** option will only be visible if you have the necessary permissions. When you click **Upgrade**, a pop-up will appear, prompting you to select the version of the database to which you want to upgrade.
 
-[EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) \[UI\] Edit resources \(logic\)
+[EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) - You can now easily edit your resources directly from the **Overview** page. There’s no longer a need to navigate the entire database wizard, saving you time and simplifying the process.
 
 [EVEREST-1459](https://perconadev.atlassian.net/browse/EVEREST-1459) \[UI\] Add 'contact Percona support' action to support menu 
 
-[EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) \[UI\] Update login page side container
+[EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) - To make your experience with Percona Everest even smoother, we've added convenient links right on the login page. Discover everything from **Support** and a **Quickstart guide** to our **Forum**, the **K8s Squad program**, and our **GitHub** repository.
 
 [EVEREST-1469](https://perconadev.atlassian.net/browse/EVEREST-1469) \[BE\]\[RBAC\] Use globMatch matcher instead of keyMatch
 
