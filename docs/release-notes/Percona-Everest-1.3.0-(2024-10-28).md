@@ -112,9 +112,10 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) - When creating a PostgreSQL database, if backup schedules were not created initially but added later after the database was created, Point-in-Time Recovery (PITR) was disabled. We have now resolved the issue, and PITR is now enabled.
 
 
-- [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) \[UI\] Components are shown as green while there are containers that are not ready
+- [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) - On the **Components** page, the Pod icon now shows the correct color: green if the status is `Running` and all containers are ready, and yellow if the status is `Running` while some containers are not ready.
 
-- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) \[UI\] Database overview page should display resources more clearly
+
+- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) - Database overview page should display resources more clearly
 
 [EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) \[UI\] Components page is refreshed continuously if a database is suspended
 
