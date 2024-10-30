@@ -107,7 +107,8 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 
 ### Bug
 
-- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) Postgresql database could not be restored using PITR
+- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
+
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
 
