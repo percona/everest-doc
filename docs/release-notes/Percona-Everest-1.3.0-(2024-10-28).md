@@ -134,7 +134,8 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 
 - [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - Now, the Create database wizard correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
 
-[EVEREST-1447](https://perconadev.atlassian.net/browse/EVEREST-1447) \[UI\] Edit and delete options for backup schedules should be disabled if the user does not have the permission
+- [EVEREST-1447](https://perconadev.atlassian.net/browse/EVEREST-1447) - The options to edit and delete backup schedules are now disabled if the user lacks the necessary permissions.
+
 
 [EVEREST-1454](https://perconadev.atlassian.net/browse/EVEREST-1454) \[RBAC\] Add backup storage option is visible while creating a DB cluster, when user does not have permission
 
