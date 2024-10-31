@@ -143,9 +143,10 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1455](https://perconadev.atlassian.net/browse/EVEREST-1455) - Monitoring endpoint information is now consistent when editing a database (DB) cluster. Previously, if you created a DB cluster with monitoring enabled and then removed all permissions related to monitoring before editing the same DB cluster, the endpoint information for monitoring would not be consistent.
 
 
-- [EVEREST-1457](https://perconadev.atlassian.net/browse/EVEREST-1457) \[RBAC\] Add monitoring endpoint option is visible while creating a DB cluster, when user does not have permission
+- [EVEREST-1457](https://perconadev.atlassian.net/browse/EVEREST-1457) - We have addressed an issue where the **Add monitoring endpoint** option appeared while creating a DB cluster, even though the user lacked the required permissions.
 
-[EVEREST-1464](https://perconadev.atlassian.net/browse/EVEREST-1464) \[UI\] Restore page keeps on getting refreshed if the user does not have restore permissions
+
+- [EVEREST-1464](https://perconadev.atlassian.net/browse/EVEREST-1464) -  Previously, the **Restores** page would automatically refresh if a user attempted to access it without the necessary restore permissions. The issue has been resolved now.
 
 [EVEREST-1506](https://perconadev.atlassian.net/browse/EVEREST-1506) \[RBAC\] Unable to edit DB cluster despite having the required permissions
 
