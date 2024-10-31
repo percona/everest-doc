@@ -132,7 +132,7 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 
 - [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the Percona Everest GUI. This issue has now been resolved.
 
-- [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) \[UI\] Create database wizard does not display any error if the user does not have database-engines permissions
+- [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - Now, the Create database wizard correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
 
 [EVEREST-1447](https://perconadev.atlassian.net/browse/EVEREST-1447) \[UI\] Edit and delete options for backup schedules should be disabled if the user does not have the permission
 
