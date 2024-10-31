@@ -137,9 +137,10 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1447](https://perconadev.atlassian.net/browse/EVEREST-1447) - The options to edit and delete backup schedules are now disabled if the user lacks the necessary permissions.
 
 
-[EVEREST-1454](https://perconadev.atlassian.net/browse/EVEREST-1454) \[RBAC\] Add backup storage option is visible while creating a DB cluster, when user does not have permission
+- [EVEREST-1454](https://perconadev.atlassian.net/browse/EVEREST-1454) - Although the user did not have permissions for backup storage, they could see the **Add backup storage** option while creating a DB cluster. The issue has been resolved now.
 
-[EVEREST-1455](https://perconadev.atlassian.net/browse/EVEREST-1455) \[RBAC\] Monitoring endpoint information not consistent while editing db cluster
+
+- [EVEREST-1455](https://perconadev.atlassian.net/browse/EVEREST-1455) \[RBAC\] Monitoring endpoint information not consistent while editing db cluster
 
 [EVEREST-1457](https://perconadev.atlassian.net/browse/EVEREST-1457) \[RBAC\] Add monitoring endpoint option is visible while creating a DB cluster, when user does not have permission
 
@@ -162,7 +163,6 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 [EVEREST-1539](https://perconadev.atlassian.net/browse/EVEREST-1539) Mysql and mongodb database does not come up with 2, 4 and 6 nodes
 
 [EVEREST-1541](https://perconadev.atlassian.net/browse/EVEREST-1541) \[UI\] Custom number of nodes do not work for mysql databases
-
 
 
 [EVEREST-1550](https://perconadev.atlassian.net/browse/EVEREST-1550) \[UI\] Dashboard menu for database displays an empty small box
