@@ -124,12 +124,13 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) The Resource per node now correctly shows the value set when creating the database. Before, the value set during and after database creation did not match.
 
 
-- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
-
-[EVEREST-1414](https://perconadev.atlassian.net/browse/EVEREST-1414) \[operator\] Do not modify labels not handled by the everest-operator
+- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - We resolved an issue where a user not included in the RBAC configuration (lacking permissions) could access certain information on Percona Everest.
 
 
-[EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) Unable to return to the namespace settings page after upgrading the database operator in the Percona Everest GUI.
+- [EVEREST-1414](https://perconadev.atlassian.net/browse/EVEREST-1414) \[operator\] Do not modify labels not handled by the everest-operator
+
+
+[EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the Percona Everest GUI. This issue has now been resolved.
 
 [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) \[UI\] Create database wizard does not display any error if the user does not have database-engines permissions
 
