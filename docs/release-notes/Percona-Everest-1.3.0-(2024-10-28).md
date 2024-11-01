@@ -161,7 +161,7 @@ If users do not have the necessary permissions to perform an action, you can now
 - [EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) - When deleting a Monitoring endpoint, the UI is no longer stuck and successfully deletes the monitoring endpoint.
 
 
-[EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) \[RBAC\] User having no permissions for backup storages able to create a DB cluster with backup schedule using a storage location
+- [EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) \[RBAC\] User having no permissions for backup storages able to create a DB cluster with backup schedule using a storage location
 
 [EVEREST-1532](https://perconadev.atlassian.net/browse/EVEREST-1532) \[UI\] Upgrade option missing on the UI when database engine name is passed in RBAC policy 
 
