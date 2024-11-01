@@ -157,9 +157,9 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 - [EVEREST-1517](https://perconadev.atlassian.net/browse/EVEREST-1517) - 
 If users do not have the necessary permissions to perform an action, you can now see the correct error message on the UI.
 
-- [EVEREST-1524](https://perconadev.atlassian.net/browse/EVEREST-1524) \[UI\] CRD version upgrade becomes inaccessible if the user navigates away from the operator upgrade page
 
-[EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) \[UI\] Error message "Monitoring instance <name> is used" not showing on the UI
+- [EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) - When deleting a Monitoring endpoint, the UI is no longer stuck and successfully deletes the monitoring endpoint.
+
 
 [EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) \[RBAC\] User having no permissions for backup storages able to create a DB cluster with backup schedule using a storage location
 
