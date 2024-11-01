@@ -164,7 +164,7 @@ If users do not have the necessary permissions to perform an action, you can now
 - [EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) - We resolved an issue where users lacking backup storage permissions could create a DB cluster with a backup schedule using a storage location.
 
 
-- [EVEREST-1532](https://perconadev.atlassian.net/browse/EVEREST-1532) - The **Upgrade** option is absent on the Percona Everest UI when the database engine name is included in the RBAC policy.
+- [EVEREST-1532](https://perconadev.atlassian.net/browse/EVEREST-1532) - The option to upgrade an operator is absent on the Percona Everest UI when the database engine name is included in the RBAC policy.
 
 
 [EVEREST-1539](https://perconadev.atlassian.net/browse/EVEREST-1539) Mysql and mongodb database does not come up with 2, 4 and 6 nodes
