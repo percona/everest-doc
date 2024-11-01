@@ -148,13 +148,16 @@ However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickabl
 
 - [EVEREST-1464](https://perconadev.atlassian.net/browse/EVEREST-1464) -  Previously, the **Restores** page would automatically refresh if a user attempted to access it without the necessary restore permissions. The issue has been resolved now.
 
-[EVEREST-1506](https://perconadev.atlassian.net/browse/EVEREST-1506) \[RBAC\] Unable to edit DB cluster despite having the required permissions
+- [EVEREST-1506](https://perconadev.atlassian.net/browse/EVEREST-1506) - You can now edit the database cluster, provided that you have the necessary permissions to do so.
 
-[EVEREST-1510](https://perconadev.atlassian.net/browse/EVEREST-1510) \[UI\] Add storage button is displayed for postgresql database when backup schedules have already been added
 
-[EVEREST-1517](https://perconadev.atlassian.net/browse/EVEREST-1517) No permissions error being displayed on the UI for user lacking permissions
+- [EVEREST-1510](https://perconadev.atlassian.net/browse/EVEREST-1510) - The Add Storage button was displayed for the PostgreSQL database even though backup schedules had already been set up. This issue has been resolved now.
 
-[EVEREST-1524](https://perconadev.atlassian.net/browse/EVEREST-1524) \[UI\] CRD version upgrade becomes inaccessible if the user navigates away from the operator upgrade page
+
+- [EVEREST-1517](https://perconadev.atlassian.net/browse/EVEREST-1517) - 
+If users do not have the necessary permissions to perform an action, you can now see the correct error message on the UI.
+
+- [EVEREST-1524](https://perconadev.atlassian.net/browse/EVEREST-1524) \[UI\] CRD version upgrade becomes inaccessible if the user navigates away from the operator upgrade page
 
 [EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) \[UI\] Error message "Monitoring instance <name> is used" not showing on the UI
 
