@@ -103,7 +103,7 @@ You can upgrade the database version directly from the **Overview** page. Howeve
 
 - [EVEREST-1533](https://perconadev.atlassian.net/browse/EVEREST-1533) - Users with read-only permissions for a namespace, including all database engines and database clusters within that namespace, currently cannot access the **Upgrade** option in the user interface. This restriction prevents them from viewing upgrade prerequisites, such as the versions of database clusters that may need to be upgraded.
 
-However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
+    However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
 ## Bugs
 
