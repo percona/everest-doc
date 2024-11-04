@@ -64,7 +64,7 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
     a. Get the list of config server pods:
 
-    `kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
+        kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>
 
     b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
 
@@ -76,9 +76,9 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
      To resolve MongoDB backup failures that result in extended downtime, follow this process:
 
-   a. On Percona Everest UI, click **Actions >> Restart**
+    a. On Percona Everest UI, click **Actions >> Restart**
 
-   b. When the database cluster is up, take another backup.
+    b. When the database cluster is up, take another backup.
 
 ## Scheduled backups
 
