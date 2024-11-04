@@ -72,7 +72,7 @@ To resolve MongoDB backup failures caused by config server issues with minimal d
 
 3. Longer downtime: restart the database cluster
 
-To resolve MongoDB backup failures that result in long downtime, follow this process:
+To resolve MongoDB backup failures that result in extended downtime, follow this process:
 
     a. On Percona Everest UI, click **Actions >> Restart**
     b. When the database cluster is up, take another backup.
