@@ -7,9 +7,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 |**Sr. No**|**Release summary**|**Description**|
 |---------|---------------------|---------|
-| **1.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_2)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
-| **2.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
-| **3.**  |[Database details](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_3)|Check your database status from the datbas details page|
+| **1.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
+| **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_2)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
+| **3.**  |[Database status](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_3)|Check your database status from the datbas details page|
 | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in Percona Everest|
 | **4.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
 | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#improvement)|Discover all the enhancements featured in Percona Everest 1.3.0|
