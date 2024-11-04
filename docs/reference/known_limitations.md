@@ -68,8 +68,8 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
 3. Longer downtime: restart the db cluster
 
-    a. On Percona Everest UI, in the database cluster actions click **Restart**
-    b. When the datbase cluster is up, take another backup.
+    a. On Percona Everest UI, click **Actions >> Restart**
+    b. When the database cluster is up, take another backup.
 
 ## Scheduled backups
 
