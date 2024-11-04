@@ -46,15 +46,16 @@ Here are some potential errors you could encounter:
 We have prepared a list of workarounds to ensure you don’t get stuck with your backups:
 {.power-number}
 
-
-
 1. No downtime: delete locks.
 
-    To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
+   To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
 
    a. Connect to your MongoDB database.
+
    b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
+
    c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
+
    d. Run another backup. If the backup still fails, check the next scenario.
 
 2. Shorter downtime: restart config server (sharded clusters only)
@@ -63,7 +64,7 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
    a. Get the list of config server pods:
 
-    `kubectl get po -n <YOUR_NAMESPACE> -l                  [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
+    `kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
 
    b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
 
