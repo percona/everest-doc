@@ -122,13 +122,13 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 - [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
 
 
-- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) - When creating a PostgreSQL database, if backup schedules were not created initially but added later after the database was created, Point-in-Time Recovery (PITR) was disabled. We have now resolved the issue, and PITR is now enabled.
+- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) - When creating a PostgreSQL database, if backup schedules were not created initially but added later after the database was created, Point-in-Time Recovery (PITR) was disabled. We have now resolved the issue, and PITR has now been enabled.
 
 
-- [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) - On the **Components** page, the Pod icon now shows the correct color: green if the status is `Running` and all containers are ready, and yellow if the status is `Running` while some containers are not ready.
+- [EVEREST-1266](https://perconadev.atlassian.net/browse/EVEREST-1266) - On the **Components** page, the Pod icon now shows the correct color: green if the status is `Running` and all containers are ready and yellow if the status is `Running` while some containers are not ready.
 
 
-- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) - For an enhanced UI, the **Overview** page now displays resources more clearly.
+- [EVEREST-1384](https://perconadev.atlassian.net/browse/EVEREST-1384) - The **Overview** page now displays resources more clearly for an enhanced UI.
 
 - [EVEREST-1390](https://perconadev.atlassian.net/browse/EVEREST-1390) - We’ve addressed an issue that caused the **Components** page to get stuck in a loop, refreshing endlessly whenever a database was suspended. 
 
@@ -145,12 +145,12 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 
 - [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the Percona Everest GUI. This issue has now been resolved.
 
-- [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - Now, the Create database wizard correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
+- [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - The **Create database** wizard now correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
 
 - [EVEREST-1447](https://perconadev.atlassian.net/browse/EVEREST-1447) - The options to edit and delete backup schedules are now disabled if the user lacks the necessary permissions.
 
 
-- [EVEREST-1454](https://perconadev.atlassian.net/browse/EVEREST-1454) - Although the user did not have permissions for backup storage, they could see the **Add backup storage** option while creating a DB cluster. The issue has been resolved now.
+- [EVEREST-1454](https://perconadev.atlassian.net/browse/EVEREST-1454) - Although the user did not have permission for backup storage, they could see the **Add backup storage** option while creating a DB cluster. The issue has been resolved now.
 
 
 - [EVEREST-1455](https://perconadev.atlassian.net/browse/EVEREST-1455) - Monitoring endpoint information is now consistent when editing a database (DB) cluster. Previously, if you created a DB cluster with monitoring enabled and then removed all permissions related to monitoring before editing the same DB cluster, the endpoint information for monitoring would not be consistent.
@@ -171,7 +171,7 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 If users do not have the necessary permissions to perform an action, you can now see the correct error message on the UI.
 
 
-- [EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) - When deleting a Monitoring endpoint, the UI is no longer stuck and successfully deletes the monitoring endpoint.
+- [EVEREST-1525](https://perconadev.atlassian.net/browse/EVEREST-1525) - When deleting a monitoring endpoint, the UI no longer freezes and successfully removes the monitoring endpoint.
 
 
 - [EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) - We resolved an issue where users lacking backup storage permissions could create a DB cluster with a backup schedule using a storage location.
