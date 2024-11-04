@@ -104,6 +104,22 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
+
+## The latest in APIs: What’s new and what’s deprecated
+
+### Deprecated API endpoints
+
+This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and removed from v1.3.0:
+
+
+|**No**|**API endpoints**|**Method**|
+|---------|--------------|------------|
+|**a.**|`/monitoring-instances`|1.`GET`</br> 2.`POST`|
+|**b.**|`/monitoring-instances/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
+|**c.**|`/backup-storages`|1.`GET`</br> 2.`POST`|
+|**d.**|`/backup-storages/{name}`|1.`GET`</br>2. `PATCH`</br>3.`DELETE`|
+
+
 ## Bugs
 
 - [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
@@ -175,6 +191,8 @@ If users do not have the necessary permissions to perform an action, you can now
 
 
 ## Known limitations
+
+
 
 
 
