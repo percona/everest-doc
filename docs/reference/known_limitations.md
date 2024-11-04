@@ -28,6 +28,48 @@ Let's delve into the limitations of on-demand backups in Percona Everest.
 
     If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
+### PSMDB backup failures
+
+There maybe instances when your MongoDB backups may encounter unexpected failures. 
+
+Let's check the reason for these failures by running the following command:
+
+    kubectl get psmdb-backup <BACKUP_NAME> -n <YOUR_NAMESPACE> -o yaml | grep error
+
+Here are some potential errors you could encounter:
+
+- `starting deadline exceeded`
+- `'couldn''t get response from all shards: convergeClusterWithTimeout: 33s:`
+
+#### Workarounds for PSMDB backup failures
+
+We have prepared a list of workarounds to ensure you don’t get stuck with your backups:
+{.power-number}
+
+
+
+1. No downtime: delete locks.
+
+    a. Connect to your MongoDB database.
+    b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
+    c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
+    d. Run another backup. If the backup still fails, check the next scenario.
+
+
+2. Shorter downtime: restart config server (sharded clusters only)
+
+    a. Get the list of config server pods:
+
+    `kubectl get po -n <YOUR_NAMESPACE> -l                  [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
+
+    b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
+    c. Wait until your database cluster is up.
+    d. Run another bakckup. If the backup still fails, check the next scenario.
+
+3. Longer downtime: restart the db cluster
+
+    a. On Percona Everest UI, in the database cluster actions click **Restart**
+    b. When the datbase cluster is up, take another backup.
 
 ## Scheduled backups
 
