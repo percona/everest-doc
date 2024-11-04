@@ -197,10 +197,17 @@ Let's check the reason for these failures by running the following command:
 
     kubectl get psmdb-backup <BACKUP_NAME> -n <YOUR_NAMESPACE> -o yaml | grep error
 
-If you encounter any of the following errors, we have prepared a list of [workarounds]() to ensure you don’t get stuck with your backups:
+Here are some potential errors you could encounter:
 
 - `starting deadline exceeded`
 - `'couldn''t get response from all shards: convergeClusterWithTimeout: 33s:`
+
+We have prepared a list of [workarounds]() to ensure you don’t get stuck with your backups.
+
+
+
+
+
 
 
 
