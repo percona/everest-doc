@@ -85,7 +85,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239): We've now added support for PSMDB Operator v1.17.0.
 
 
-### Improvement
+## Improvements
 
 - [EVEREST-1006](https://perconadev.atlassian.net/browse/EVEREST-1006) - You can now view your database status right from the database details page.
 
@@ -105,7 +105,7 @@ You can upgrade the database version directly from the **Overview** page. Howeve
 
 However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
-### Bug
+## Bugs
 
 - [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
 
@@ -173,6 +173,12 @@ If users do not have the necessary permissions to perform an action, you can now
 - [EVEREST-1550](https://perconadev.atlassian.net/browse/EVEREST-1550) - The database dashboard menu displayed an empty box for users with read-only permissions on the database cluster. This issue has now been resolved.
 
 - [EVEREST-1551](https://perconadev.atlassian.net/browse/EVEREST-1551) - The **Upgrade** button now only appears when new operator versions are available for upgrade.
+
+
+## Known limitations
+
+
+
 
 
 
