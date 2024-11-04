@@ -13,7 +13,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in Percona Everest|
     | **4.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
     | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#improvement)|Discover all the enhancements featured in Percona Everest 1.3.0|
-    | **6.**|[New and deprecated API's](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.3.0, as well as any deprecated APIs|
+    | **6.**|[Deprecated API's](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#the-latest-in-apis-whats-new-and-whats-deprecated)|Discover all the new APIs that have been added to Percona Everest 1.3.0, as well as any deprecated APIs|
     | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#bug)|Find out about all the bugs fixed in Percona Everest 1.3.0|
     | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-10-28%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
 
@@ -104,10 +104,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, within this window, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
-
-## The latest in APIs: What’s new and what’s deprecated
-
-### Deprecated API endpoints
+## Deprecated API endpoints
 
 This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and removed from v1.3.0:
 
