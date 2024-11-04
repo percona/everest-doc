@@ -50,6 +50,8 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
 1. No downtime: delete locks.
 
+To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
+
     a. Connect to your MongoDB database.
     b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
     c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
@@ -57,6 +59,8 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
 
 2. Shorter downtime: restart config server (sharded clusters only)
+
+To resolve MongoDB backup failures caused by config server issues with minimal downtime in a sharded cluster setup, follow this process:
 
     a. Get the list of config server pods:
 
@@ -66,7 +70,9 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
     c. Wait until your database cluster is up.
     d. Run another bakckup. If the backup still fails, check the next scenario.
 
-3. Longer downtime: restart the db cluster
+3. Longer downtime: restart the database cluster
+
+
 
     a. On Percona Everest UI, click **Actions >> Restart**
     b. When the database cluster is up, take another backup.
