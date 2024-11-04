@@ -89,8 +89,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1006](https://perconadev.atlassian.net/browse/EVEREST-1006) - You can now view your database status right from the database details page.
 
-- [EVEREST-1208](https://perconadev.atlassian.net/browse/EVEREST-1208) -  
-You can upgrade the database version directly from the **Overview** page. However, the **Upgrade** option will only be visible if you have the necessary permissions. When you click **Upgrade**, a pop-up will appear, prompting you to select the version of the database to which you want to upgrade.
+- [EVEREST-1208](https://perconadev.atlassian.net/browse/EVEREST-1208) - You can upgrade the database version directly from the **Overview** page. However, the **Upgrade** option will only be visible if you have the necessary permissions. When you click **Upgrade**, a pop-up will appear, prompting you to select the version of the database to which you want to upgrade.
 
 - [EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) - You can now easily edit your resources directly from the **Overview** page. There’s no longer a need to navigate the entire database wizard, saving you time and simplifying the process.
 
