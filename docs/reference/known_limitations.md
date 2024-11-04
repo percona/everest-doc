@@ -48,37 +48,37 @@ We have prepared a list of workarounds to ensure you don’t get stuck with your
 
 1. No downtime: delete locks.
 
-   To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
+    To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
 
-   a. Connect to your MongoDB database.
+    a. Connect to your MongoDB database.
 
-   b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
+    b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
 
-   c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
+    c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
 
-   d. Run another backup. If the backup still fails, check the next scenario.
+    d. Run another backup. If the backup still fails, check the next scenario.
 
 2. Shorter downtime: restart config server (sharded clusters only)
 
-    To resolve MongoDB backup failures caused by config server issues with minimal downtime in a sharded cluster setup, follow this process:
+     To resolve MongoDB backup failures caused by config server issues with minimal downtime in a sharded cluster setup, follow this process:
 
-   a. Get the list of config server pods:
+    a. Get the list of config server pods:
 
-        `kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
+    `kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>`
 
-   b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
+    b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
 
-   c. Wait until your database cluster is up.
+    c. Wait until your database cluster is up.
 
-   d. Run another bakckup. If the backup still fails, check the next scenario.
+    d. Run another bakckup. If the backup still fails, check the next scenario.
 
 3. Longer downtime: restart the database cluster
 
-    To resolve MongoDB backup failures that result in extended downtime, follow this process:
+     To resolve MongoDB backup failures that result in extended downtime, follow this process:
 
-  a. On Percona Everest UI, click **Actions >> Restart**
+   a. On Percona Everest UI, click **Actions >> Restart**
 
-  b. When the database cluster is up, take another backup.
+   b. When the database cluster is up, take another backup.
 
 ## Scheduled backups
 
