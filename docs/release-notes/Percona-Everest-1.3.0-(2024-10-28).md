@@ -172,7 +172,7 @@ If users do not have the necessary permissions to perform an action, you can now
 [EVEREST-1541](https://perconadev.atlassian.net/browse/EVEREST-1541) \[UI\] Custom number of nodes do not work for mysql databases
 
 
-[EVEREST-1550](https://perconadev.atlassian.net/browse/EVEREST-1550) \[UI\] Dashboard menu for database displays an empty small box
+- [EVEREST-1550](https://perconadev.atlassian.net/browse/EVEREST-1550) - The database dashboard menu displayed an empty box for users with read-only permissions on the database cluster. This issue has now been resolved.
 
 [EVEREST-1551](https://perconadev.atlassian.net/browse/EVEREST-1551) \[UI\] Upgrade button is being displayed when there are no new operator versions available for upgrade
 
