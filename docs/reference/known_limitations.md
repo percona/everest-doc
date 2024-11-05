@@ -39,7 +39,7 @@ Let's check the reason for these failures by running the following command:
 Here are some potential errors you could encounter:
 
 - `starting deadline exceeded`
-- `'couldn''t get response from all shards: convergeClusterWithTimeout: 33s:`
+- `'couldn''t get response from all shards: convergeClusterWithTimeout:`
 
 #### Workarounds for PSMDB backup failures
 
