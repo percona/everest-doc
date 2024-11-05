@@ -43,20 +43,33 @@ Here are some potential errors you could encounter:
 
 #### Workarounds for PSMDB backup failures
 
-We have prepared a list of workarounds to ensure you don’t get stuck with your backups:
+We have compiled a list of workarounds to help restore the functionality of your backups and ensure that they operate smoothly once again.
 {.power-number}
+
+
+
+|**Impact**|**Action**|**Procedure**|
+|---------|-----------|---|
+| No downtime  |Delete locks|Configure proxy nodes and define their resource limits| **a.** Connect to your MongoDB database. </br> **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br> **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`. </br> **d.** Run another backup. If the backup still fails, check the next scenario.|
+
+
+
+
+
+
+
 
 1. No downtime: delete locks.
 
     To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
 
-    a. Connect to your MongoDB database.
+      **a.** Connect to your MongoDB database.
 
-    b. Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
+      **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
 
-    c. If the list was not empty, run `db.pbmLock.deleteMany({})`.
+      **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`.
 
-    d. Run another backup. If the backup still fails, check the next scenario.
+      **d.** Run another backup. If the backup still fails, check the next scenario.
 
 2. Shorter downtime: restart config server (sharded clusters only)
 
