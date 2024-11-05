@@ -199,11 +199,11 @@ Let's check the reason for these failures by running the following command:
 
 Here are some potential errors you could encounter:
 
-```sh
+```{.bash .no-copy}
 starting deadline exceeded
 ```
 
-```sh
+```{.bash .no-copy}
 'couldn''t get response from all shards: convergeClusterWithTimeout:
 ```
 
