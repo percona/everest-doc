@@ -3,7 +3,7 @@
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
 
 
-??? info "Release summary"
+??? info "Release summary at a glance"
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
