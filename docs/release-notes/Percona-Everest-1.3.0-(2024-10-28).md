@@ -202,7 +202,7 @@ Here are some potential errors you could encounter:
 - `starting deadline exceeded`
 - `'couldn''t get response from all shards: convergeClusterWithTimeout: 33s:`
 
-We have prepared a list of [workarounds]() to ensure you don’t get stuck with your backups.
+Check out our [documentation] for a list of  a list of **workarounds** to ensure you don’t get stuck with your backups.
 
 
 
