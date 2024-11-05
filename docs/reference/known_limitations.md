@@ -50,7 +50,7 @@ We have compiled a list of workarounds to help restore the functionality of your
 
 |**Impact**|**Action**|**Procedure**|
 |---------|-----------|---|
-| No downtime  |Delete locks|Configure proxy nodes and define their resource limits| **a.** Connect to your MongoDB database. </br> **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br> **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`. </br> **d.** Run another backup. If the backup still fails, check the next scenario.|
+| No downtime  |Delete locks|**a.** Connect to your MongoDB database. </br> **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br> **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`. </br> **d.** Run another backup. If the backup still fails, check the next scenario.|
 
 
 
