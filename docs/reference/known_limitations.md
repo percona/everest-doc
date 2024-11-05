@@ -43,57 +43,16 @@ Here are some potential errors you could encounter:
 
 #### Workarounds for PSMDB backup failures
 
-We have compiled a list of workarounds to help restore the functionality of your backups and ensure that they operate smoothly once again.
+We have compiled a list of workarounds in a tabular format to help restore the functionality of your backups and ensure that they operate smoothly once again.
 {.power-number}
-
 
 
 |**Workaround**|**Impact on the cluster**|**Action**|**Procedure**|
 |----------|-----------|-------------|--------------------|
 | **1**|**No downtime**  |Delete the locks |**1.** Connect to your MongoDB database. </br></br> **2.** Run the command: `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br></br> **3.** If the list was not empty, run the command`db.pbmLock.deleteMany({})`. </br></br> **4.** Run another backup. If the backup still fails, check the workaround 2.|
-| **2**|**Shorter downtime**  |Restart config server (sharded clusters only). |**1.** Get the list of config server pods:`kubectl get po -n <YOUR_NAMESPACE> -l app.kubernetes.io/component=cfg,app.kubernetes.io/instance=<YOUR_DB_CLUSTER_NAME>`. </br></br> **2.** For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>` </br></br> **3.** Wait until your database cluster is up. </br></br> **4.** Run another bakckup. If the backup still fails, check workaround 3.|
+| **2**|**Shorter downtime**  |Restart config server (sharded clusters only) |**1.** Get the list of config server pods:`kubectl get po -n <YOUR_NAMESPACE> -l app.kubernetes.io/component=cfg,app.kubernetes.io/instance=<YOUR_DB_CLUSTER_NAME>`. </br></br> **2.** For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>` </br></br> **3.** Wait until your database cluster is up. </br></br> **4.** Run another bakckup. If the backup still fails, check workaround 3.|
 | **3**|**Longer downtime**|Restart the DB server |**1.** On Percona Everest UI, click **Actions >> Restart**. </br></br> **2.** When the database cluster is up, take another backup.|
 
-
-
-
-
-
-
-
-1. No downtime: delete locks.
-
-    To address MongoDB backup failures caused by lock files without causing downtime, follow this process:
-
-      **a.** Connect to your MongoDB database.
-
-      **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable.
-
-      **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`.
-
-      **d.** Run another backup. If the backup still fails, check the next scenario.
-
-2. Shorter downtime: restart config server (sharded clusters only)
-
-     To resolve MongoDB backup failures caused by config server issues with minimal downtime in a sharded cluster setup, follow this process:
-
-    a. Get the list of config server pods:
-
-        kubectl get po -n <YOUR_NAMESPACE> -l [app.kubernetes.io/component=cfg,app.kubernetes.io/instance=](http://app.kubernetes.io/component=cfg,app.kubernetes.io/instance=)<YOUR_DB_CLUSTER_NAME>
-
-    b. For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>`
-
-    c. Wait until your database cluster is up.
-
-    d. Run another bakckup. If the backup still fails, check the next scenario.
-
-3. Longer downtime: restart the database cluster
-
-     To resolve MongoDB backup failures that result in extended downtime, follow this process:
-
-    a. On Percona Everest UI, click **Actions >> Restart**
-
-    b. When the database cluster is up, take another backup.
 
 ## Scheduled backups
 
