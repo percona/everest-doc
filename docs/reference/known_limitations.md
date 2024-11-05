@@ -48,9 +48,11 @@ We have compiled a list of workarounds to help restore the functionality of your
 
 
 
-|**Impact**|**Action**|**Procedure**|
-|---------|-----------|---|
-| No downtime  |Delete locks|**a.** Connect to your MongoDB database. </br> **b.** Run `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br> **c.** If the list was not empty, run `db.pbmLock.deleteMany({})`. </br> **d.** Run another backup. If the backup still fails, check the next scenario.|
+|**No**|**Impact on the cluster**|**Action**|**Procedure**|
+|----------|-----------|-------------|--------------------|
+| **Workaround 1**|**No downtime**  |Delete the locks. |**a.** Connect to your MongoDB database. </br></br> **b.** Run the command: `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br></br> **c.** If the list was not empty, run the command`db.pbmLock.deleteMany({})`. </br></br> **d.** Run another backup. If the backup still fails, check the workaround 2.|
+| **Workaround 2**|**Shorter downtime**  |Restart config server (sharded clusters only). |**a.** Get the list of config server pods:`kubectl get po -n <YOUR_NAMESPACE> -l app.kubernetes.io/component=cfg,app.kubernetes.io/instance=<YOUR_DB_CLUSTER_NAME>`. </br></br> **b.** For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>` </br></br> **c.** Wait until your database cluster is up. </br></br> **d.** Run another bakckup. If the backup still fails, check workaround 3.|
+| **Workaround 3**|**Longer downtime**|Restart the DB server |**a.** On Percona Everest UI, click **Actions >> Restart**. </br></br> **b.** When the database cluster is up, take another backup.|
 
 
 
