@@ -43,7 +43,7 @@ Here are some potential errors you could encounter:
 
 #### Workarounds for PSMDB backup failures
 
-We have compiled a list of workarounds in a tabular format to help restore the functionality of your backups and ensure that they operate smoothly once again.
+In the following table, we have compiled a list of workarounds to ensure that your backups function properly again.
 {.power-number}
 
 
