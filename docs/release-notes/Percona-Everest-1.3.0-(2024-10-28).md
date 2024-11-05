@@ -202,7 +202,7 @@ Here are some potential errors you could encounter:
 - `starting deadline exceeded`
 - `'couldn''t get response from all shards: convergeClusterWithTimeout: 33s:`
 
-Check out our [documentation] for a list of  a list of **workarounds** to ensure you don’t get stuck with your backups.
+Check out our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#workarounds-for-psmdb-backup-failures) for a list of  a list of **workarounds** to help restore the functionality of your backups and ensure that they operate smoothly once again.
 
 
 
