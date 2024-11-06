@@ -36,6 +36,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ### Optimize MongoDB with sharding in Percona Everest
 
+    !!! warning
+    Once you've enabled sharding, ensure to take a **new** backup to avoid data inconsistency and potential restoration failures.
+
 
     We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in Percona Everest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with Percona Everest.
 
