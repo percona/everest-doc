@@ -30,6 +30,9 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
 
 ## Enable sharding in Percona Everest
 
+!!! warning
+        Once you've enabled sharding, ensure to take a **new** backup to avoid data inconsistency and potential restoration failures.
+
 To enable sharding:
 {.power-number}
 
