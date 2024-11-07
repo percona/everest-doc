@@ -143,9 +143,6 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - We resolved an issue where a user not included in the RBAC configuration (lacking permissions) could access certain information on Percona Everest.
 
 
-- [EVEREST-1414](https://perconadev.atlassian.net/browse/EVEREST-1414) \[operator\] Do not modify labels not handled by the everest-operator
-
-
 - [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the Percona Everest GUI. This issue has now been resolved.
 
 - [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - The **Create database** wizard now correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
