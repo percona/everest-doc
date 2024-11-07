@@ -214,6 +214,14 @@ starting deadline exceeded
     We have compiled a list of  a list of [workarounds](https://docs.percona.com/everest/reference/known_limitations.html#workarounds-for-psmdb-backup-failures) to ensure that your backups function properly again.
 
 
+### MongoDB sharding
+
+- Once MongoDB sharding is enabled, it cannot be disabled unless the cluster is paused.
+
+- 
+
+
+
 
 
 
