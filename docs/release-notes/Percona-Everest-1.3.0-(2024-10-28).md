@@ -136,7 +136,7 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 
 - [EVEREST-1398](https://perconadev.atlassian.net/browse/EVEREST-1398) - The time format is now unified across all backups and restores, ensuring consistency and clarity.
 
-- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) The Resource per node now correctly shows the value set when creating the database. Before, the value set during and after database creation did not match.
+- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) The Resource per node now correctly shows the preset value set when creating the database. Before, the value set during and after database creation did not match.
 
 
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - We resolved an issue where a user not included in the RBAC configuration (lacking permissions) could access certain information on Percona Everest.
