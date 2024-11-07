@@ -218,7 +218,8 @@ starting deadline exceeded
 
 - Once MongoDB sharding is enabled, it cannot be disabled unless the cluster is paused.
 
-- 
+- MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
+
 
 
 

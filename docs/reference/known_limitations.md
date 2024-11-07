@@ -4,13 +4,17 @@
 This section describes the known limitations associated with Percona Everest:
 
 
-
 ## Passwords
 
 Refrain from changing the password of administrative users (e.g., root, monitor, or operator) manually in the database. This action may cause inconsistencies with the secrets stored in Kubernetes, which are crucial for the proper functioning of the cluster. Such modifications have the potential to disrupt your cluster.
 
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
+## MongoDB sharding
+
+- Once MongoDB sharding is enabled, it cannot be disabled unless the cluster is paused.
+
+- MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
 
 ## Backups
 
