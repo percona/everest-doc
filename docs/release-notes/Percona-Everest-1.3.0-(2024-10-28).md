@@ -204,7 +204,7 @@ You can check the reason for these failures by running the following command:
 
 ### MongoDB sharding
 
-There are a few limitations related to MongoDB sharding. See our [limitations](https://docs.percona.com/everest/reference/known_limitations.html#) section for details about these limitations.
+There are a few limitations related to MongoDB sharding. See our [limitations](https://docs.percona.com/everest/reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
 
 
 
