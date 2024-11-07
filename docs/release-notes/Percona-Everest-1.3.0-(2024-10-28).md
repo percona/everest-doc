@@ -192,19 +192,10 @@ If users do not have the necessary permissions to perform an action, you can now
 
 There maybe instances when your MongoDB backups may encounter unexpected failures. 
 
-Let's check the reason for these failures by running the following command:
+You can check the reason for these failures by running the following command:
 
     kubectl get psmdb-backup <BACKUP_NAME> -n <YOUR_NAMESPACE> -o yaml | grep error
 
-Here are some potential errors you could encounter:
-
-```{.bash .no-copy}
-starting deadline exceeded
-```
-
-```{.bash .no-copy}
-'couldn''t get response from all shards: convergeClusterWithTimeout:
-```
 
 !!! info "Important"
     We have compiled a list of  a list of [workarounds](https://docs.percona.com/everest/reference/known_limitations.html#workarounds-for-psmdb-backup-failures) to ensure that your backups function properly again.
@@ -212,7 +203,7 @@ starting deadline exceeded
 
 ### MongoDB sharding
 
-There are a few limitations related to MongoDB sharding. See our [limitations]() section for details about these limitations.
+There are a few limitations related to MongoDB sharding. See our [limitations](https://docs.percona.com/everest/reference/known_limitations.html#) section for details about these limitations.
 
 
 
