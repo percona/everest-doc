@@ -12,6 +12,11 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
 
+## Upgrading operators
+
+- When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the initializing state as part of the upgrade process. However, this initializing state does not cause any downtime.
+- When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, it is worth noting that single node databases should not be used in production environments.
+
 ## Backups
 
 Let's delve into the limitations of on-demand backups in Percona Everest. 
