@@ -6,7 +6,7 @@ This section is your go-to resource for tackling common issues and finding solut
 
 ## Troubleshooting checklist
 
-Here’s a handy checklist to help you identify some potential issues you might experience while using Percona Everest.
+Here’s a high level checklist to help you identify some potential issues you might encouner while using Percona Everest.
 {.power-number}
 
 1. Are you using the recommended Percona Everest and compatible operator versions?
@@ -23,7 +23,8 @@ Here’s a handy checklist to help you identify some potential issues you might 
 
 ## Troubleshooting topics
 
-We have sorted the troubleshooting topics into specific categories, making it easy for you to find the information you need.
+We have organized the topics into distinct categories to assist you in exploring the information more easily. 
+
 
 ### Installation
 
