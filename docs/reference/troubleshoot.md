@@ -5,9 +5,6 @@ This section is your go-to resource for tackling common issues and finding solut
 
 
  ??? info "Troubleshooting checklist"
-
-     ## Troubleshooting checklist
-
      Here’s a high level checklist to help you identify some potential issues you might 
      encouner while using Percona Everest.
      {.power-number}
