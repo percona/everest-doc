@@ -36,11 +36,10 @@ The main components are:
 - catalog-operator
 - packageserver
 
-??? example "What happens under the hood"
     
-    1. When you install Percona Everest, the `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
+1. When you install Percona Everest, the `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
 
-    Running the following command, will list all deployments in the everest-olm namespace
+    Execute the following command, all the three deployments should be present in the `everest-olm` namespace
 
         ```
         $ kubectl get deploy -n everest-olm
@@ -49,13 +48,16 @@ The main components are:
     catalog-operator   1/1     1            1           5m37s
     packageserver      2/2     2            2           3m2s
     ```
-    2. Next,  the `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
+    
+2. Next,  the `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
 
-    Running the following command will list all `CatalogSources` in the `everest-olm ` namespace:
+    Execute the following command, `everest-catalog` should be present in the `everest-olm` ` namespace:
 
     ```sh
     kubectl get catalogsources -n everest-olm
     NAME              DISPLAY           TYPE   PUBLISHER   AGE
     everest-catalog   Everest Catalog   grpc   Percona     6m5s
     ```
+
+
 
