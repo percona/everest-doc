@@ -106,6 +106,31 @@ In addition to OLM, Everest consists of five different operators:
             In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
 
 
+=== "VictoriaMetrics"
+    We use the Victoria Metrics stack along with kube-state-metrics for monitoring. Both can be found in the `everest-monitoring` namespace.
+
+    ??? example "Examples"
+        ```
+        $ kubectl get sub -n everest-monitoring
+        NAME                   PACKAGE                    SOURCE            CHANNEL
+victoriametrics-operator   victoriametrics-operator   everest-catalog   stable-v0
+        ```
+
+$ kubectl get ip -n everest-monitoring
+NAME            CSV                                APPROVAL   APPROVED
+install-nw6sf   victoriametrics-operator.v0.29.1   Manual     true
+
+$ kubectl get csv -n everest-monitoring
+NAME                               DISPLAY                    VERSION   REPLACES                           PHASE
+victoriametrics-operator.v0.29.1   VictoriaMetrics Operator   0.29.1    victoriametrics-operator.v0.27.2   Succeeded
+
+$ kubectl get deploy -n everest-monitoring
+NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+vm-operator-vm-operator   1/1     1            1           19m
+kube-state-metrics        1/1     1            1           19m
+
+        
+
 
 
 
