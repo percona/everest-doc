@@ -213,7 +213,7 @@ In addition to OLM, Everest consists of five different operators:
 
 ### Database deployment
 
-In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be pxc, psmdb, or pg.
+In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be `pxc`, `psmdb`, or `pg`.
 
 Example:
 This gives a step by step approach to troubleshoot if something goes wrong with your database deployment:
