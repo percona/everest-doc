@@ -187,13 +187,13 @@ In addition to OLM, Everest consists of five different operators:
         ```
     The Everest Operator monitors these resources to reconcile the DatabaseEngine Custom Resource Definitions (CRs) for each installed database operator. These DatabaseEngine CRs provide the user interface (UI) with information about the available database engines and their supported versions. If you experience any issues with the list of available database engines or their versions, this is the area to investigate.
 
-        ??? example "Example"
-            ```
-            $ kubectl get dbengine -n everest
-            NAME                              TYPE         STATUS      OPERATOR VERSION
-           percona-xtradb-cluster-operator   pxc          installed   1.14.0
-           percona-server-mongodb-operator   psmdb        installed   1.15.0
-           percona-postgresql-operator       postgresql   installed   2.3.1
+    ??? example "Example"
+        ```
+        $ kubectl get dbengine -n everest
+        NAME                              TYPE         STATUS      OPERATOR VERSION
+        percona-xtradb-cluster-operator   pxc          installed   1.14.0
+        percona-server-mongodb-operator   psmdb        installed   1.15.0
+        percona-postgresql-operator       postgresql   installed   2.3.1
 
     !!! note
         The Everest Operator requires an internet connection to reach [check.percona.com](http://check.percona.com/) to get the supported versions for each engine. You can troubleshoot this step by looking at the everest operator logs:
