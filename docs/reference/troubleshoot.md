@@ -28,10 +28,34 @@ We have organized the topics into distinct categories to assist you in exploring
 
 ### Installation
 
-We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the everest-olm namespace. 
+We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
 The main components are:
 
 - olm-operator
 - catalog-operator
-- packageserver.
+- packageserver
+
+??? example "What happens under the hood"
+    
+    1. When you install Percona Everest, the `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
+
+    Running the following command, will list all deployments in the everest-olm namespace
+
+        ```
+        $ kubectl get deploy -n everest-olm
+    NAME               READY   UP-TO-DATE   AVAILABLE   AGE
+    olm-operator       1/1     1            1           5m38s
+    catalog-operator   1/1     1            1           5m37s
+    packageserver      2/2     2            2           3m2s
+    ```
+    2. Next,  the `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
+
+    Running the following command will list all `CatalogSources` in the `everest-olm ` namespace:
+
+    ```sh
+    kubectl get catalogsources -n everest-olm
+    NAME              DISPLAY           TYPE   PUBLISHER   AGE
+    everest-catalog   Everest Catalog   grpc   Percona     6m5s
+    ```
+
