@@ -26,7 +26,7 @@ Here’s a high level checklist to help you identify some potential issues you m
 We have organized the topics into distinct categories to assist you in exploring the information more easily. 
 
 
-### Installation
+### Percona Everest installation
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
@@ -58,6 +58,25 @@ The main components are:
     NAME              DISPLAY           TYPE   PUBLISHER   AGE
     everest-catalog   Everest Catalog   grpc   Percona     6m5s
     ```
+
+#### OLM subscription
+
+The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/). OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
+
+
+In addition to OLM, Everest consists of five different operators:
+
+- Everest
+- VictoriaMetrics
+- Percona Operator for MySQL (PXC)
+- Percona Operator for MongoDB (PSMDB)
+- Percona Operator for PostgreSQL (PG)
+
+
+
+
+
+
 
 
 
