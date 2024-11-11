@@ -75,25 +75,31 @@ In addition to OLM, Everest consists of five different operators:
 === "Everest"
     The Everest Operator is always installed to the `everest-system` namespace. If the operator is installed properly, you should find a subscription, an install plan and a cluster service version for this operator:
 
-    ??? example "Example"
+    ??? example "Examples"
         ```sh
         $ kubectl get sub -n everest-system
         NAME               PACKAGE            SOURCE            CHANNEL
         everest-operator   everest-operator   everest-catalog   stable-v0
+        ```
 
+        ```
         $ kubectl get ip -n everest-system
         NAME            CSV                       APPROVAL   APPROVED
         install-69g62   everest-operator.v0.10.1  Manual     true
+        ```
 
+        ```
         $ kubectl get csv -n everest-system
         NAME                      DISPLAY            VERSION   REPLACES                   PHASE
         everest-operator.v0.10.1  Everest operator   0.10.1    everest-operator.v0.9.0    Succeeded
+        ```
 
         $ kubectl get deploy -n everest-system
         NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
         everest-operator-controller-manager   1/1     1            1           12m
         percona-everest                       1/1     1            1           11m
         ```
+    
     !!! note
 
         In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
