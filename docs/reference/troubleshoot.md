@@ -4,11 +4,11 @@
 This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
 
 
- ??? info "Troubleshooting checklist"
+??? info "Troubleshooting checklist"
 
-     Here’s a high level checklist to help you identify some potential issues you might 
-     encouner while using Percona Everest.
-     {.power-number}
+    Here’s a high level checklist to help you identify some potential issues you might 
+    encouner while using Percona Everest.
+    {.power-number}
 
     1. Are you using the recommended Percona Everest and compatible operator versions?
     2. Did you check the known issues section in the [Release Notes](../release-notes/release_notes_index.md) for that particular Percona Everest release?
