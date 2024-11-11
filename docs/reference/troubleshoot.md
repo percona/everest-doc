@@ -94,6 +94,10 @@ In addition to OLM, Everest consists of five different operators:
         everest-operator-controller-manager   1/1     1            1           12m
         percona-everest                       1/1     1            1           11m
         ```
+    !!! note
+
+    In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
+
 
 
 
