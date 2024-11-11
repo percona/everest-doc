@@ -33,9 +33,9 @@ We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework
 
 The main components are:
 
-- olm-operator
-- catalog-operator
-- packageserver
+    - olm-operator
+    - catalog-operator
+    - packageserver
 
     
 1. When you install Percona Everest, the `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
