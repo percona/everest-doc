@@ -51,7 +51,7 @@ The main components are:
     
 2. Next,  the `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
 
-    Execute the following command, `everest-catalog` should be present in the `everest-olm` ` namespace:
+    Execute the following command, `everest-catalog` should be present in the `everest-olm` namespace:
 
     ```sh
     kubectl get catalogsources -n everest-olm
@@ -94,15 +94,16 @@ In addition to OLM, Everest consists of five different operators:
         everest-operator.v0.10.1  Everest operator   0.10.1    everest-operator.v0.9.0    Succeeded
         ```
 
+        ```
         $ kubectl get deploy -n everest-system
         NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
         everest-operator-controller-manager   1/1     1            1           12m
         percona-everest                       1/1     1            1           11m
         ```
     
-    !!! note
+        !!! note
 
-        In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
+            In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
 
 
 
