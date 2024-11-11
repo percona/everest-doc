@@ -32,14 +32,16 @@ We have organized the topics into distinct categories to assist you in exploring
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
 The main components are:
+
+* olm-operator
+* catalog-operator
+* packageserver
+
+When you install Percona Everest, the following components are installed:
 {.power-number}
 
-   - olm-operator
-   - catalog-operator
-   - packageserver
 
-    
-1. When you install Percona Everest, the `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
+1. The `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
 
     Execute the following command, all the three deployments should be present in the `everest-olm` namespace
 
@@ -51,7 +53,7 @@ The main components are:
     packageserver      2/2     2            2           3m2s
     ```
     
-2. Next,  the `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
+2. The `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
 
     Execute the following command, `everest-catalog` should be present in the `everest-olm` namespace:
 
