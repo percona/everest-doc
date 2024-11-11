@@ -243,6 +243,30 @@ This gives a step by step approach to troubleshoot if something goes wrong with 
     The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
 
 
+### Backups and restores
+
+#### Backups
+
+Every backup in percona Everest begins with the creation of a `DatabaseClusterBackup (DBB)` `Custom Resource (CR)` that is deployed to a selected namespace. Depending on the chosen engine type, this `DBB` will be converted into the corresponding Custom Resource that can be interpreted by the database operator, such as `pxc-backup`, `psmdb-backup`, or `pg-backup`.
+
+```
+kubectl describe pxc-backup
+kubectl describe psmdb-backup
+kubectl describe pg-backup
+```
+
+#### Restores
+
+Every Restore operation in Everest begins with a `DatabaseClusterRestore (DBR)` Custom Resource (CR) that is deployed in the specified namespace. Based on the selected engine type, this `DBR` will be transformed into the corresponding Custom Resource that can be processed by the database operator, such as `pxc-restore`, `psmdb-restore`, or `pg-restore`.
+
+```sh
+kubectl describe pxc-restore restoreName
+kubectl describe psmdb-restore restoreName 
+kubectl describe pg-restore restoreName
+```
+
+
+
 
 
 
