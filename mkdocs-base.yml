@@ -202,6 +202,9 @@ nav:
       - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
+      - Troubleshoot:
+        - Resolve issues: reference/troubleshoot.md
+        - FAQ: reference/faq.md
 
   - Contribute: contribute.md
 
