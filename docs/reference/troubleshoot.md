@@ -202,8 +202,43 @@ In addition to OLM, Everest consists of five different operators:
         kubectl logs pods/everest-operator-controller-manager-5b868c4fcc-rt6rp -n everest-system
         ```
 
+### Database deployment
 
+In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be pxc, psmdb, or pg.
+
+Example:
+This gives a step by step approach to troubleshoot if something goes wrong with your database deployment:
+{.power-number}
+
+1. Run the following command:
+
+```
+$ kubectl get db -n everest
+NAME        SIZE   READY   STATUS   HOSTNAME                    AGE
+mysql-7tl   2      2       ready    mysql-7tl-haproxy.everest   6m8s
+
+$ kubectl get pxc -n everest
+NAME        ENDPOINT                    STATUS   PXC   PROXYSQL   HAPROXY   AGE
+mysql-7tl   mysql-7tl-haproxy.everest   ready    1                1         6m10s
+```
+
+2. If an issue arises, first investigate these two objects by executing the following commands:
+
+```
+kubectl describe db/mysql-7tl -n everest
+kubectl describe pxc/mysql-7tl -n everest
+```
+
+3. If relevant information is not found here, then check the Everest Operator logs as well as the PXC Operator logs:
+
+```
+kubectl logs pods/everest-operator-controller-manager-5b868c4fcc-rt6rp -n everest-system
+kubectl logs pods/percona-xtradb-cluster-operator-77c5ffddf6-fv8vg -n everest
+```
             
+!!! note
+
+    The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
 
 
 
