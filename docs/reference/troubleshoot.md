@@ -160,6 +160,8 @@ In addition to OLM, Everest consists of five different operators:
     We use the VictoriaMetrics stack along with [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) for monitoring. Both can be found in the `everest-monitoring` namespace.
 
     ??? example "Examples"
+
+        The following example installs all the operators to the `everest` namespace:
         ```
         $ kubectl get sub -n everest-monitoring
         NAME                   PACKAGE                    SOURCE            
@@ -198,6 +200,7 @@ In addition to OLM, Everest consists of five different operators:
         percona-xtradb-cluster-operator   pxc          installed   1.14.0
         percona-server-mongodb-operator   psmdb        installed   1.15.0
         percona-postgresql-operator       postgresql   installed   2.3.1
+        ```
 
     !!! note
         The Everest Operator requires an internet connection to reach [check.percona.com](http://check.percona.com/) to get the supported versions for each engine. You can troubleshoot this step by looking at the everest operator logs:
@@ -240,9 +243,9 @@ This gives a step by step approach to troubleshoot if something goes wrong with 
     kubectl logs pods/percona-xtradb-cluster-operator-77c5ffddf6-fv8vg -n everest
     ```
             
-!!! note
+    !!! note
 
-    The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
+        The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
 
 
 ### Backups and restores
