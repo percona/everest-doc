@@ -41,8 +41,8 @@ The main components are:
 
     Execute the following command, all the three deployments should be present in the `everest-olm` namespace
 
-        ```
-        $ kubectl get deploy -n everest-olm
+    ```
+    $ kubectl get deploy -n everest-olm
     NAME               READY   UP-TO-DATE   AVAILABLE   AGE
     olm-operator       1/1     1            1           5m38s
     catalog-operator   1/1     1            1           5m37s
@@ -96,7 +96,7 @@ In addition to OLM, Everest consists of five different operators:
         ```
     !!! note
 
-    In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
+        In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
 
 
 
