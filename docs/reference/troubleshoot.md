@@ -116,20 +116,24 @@ In addition to OLM, Everest consists of five different operators:
 victoriametrics-operator   victoriametrics-operator   everest-catalog   stable-v0
         ```
 
-$ kubectl get ip -n everest-monitoring
-NAME            CSV                                APPROVAL   APPROVED
-install-nw6sf   victoriametrics-operator.v0.29.1   Manual     true
-
-$ kubectl get csv -n everest-monitoring
-NAME                               DISPLAY                    VERSION   REPLACES                           PHASE
-victoriametrics-operator.v0.29.1   VictoriaMetrics Operator   0.29.1    victoriametrics-operator.v0.27.2   Succeeded
-
-$ kubectl get deploy -n everest-monitoring
-NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
-vm-operator-vm-operator   1/1     1            1           19m
-kube-state-metrics        1/1     1            1           19m
-
+        ```
+        $ kubectl get ip -n everest-monitoring
+        NAME            CSV                                APPROVAL   APPROVED
+        install-nw6sf   victoriametrics-operator.v0.29.1   Manual     true
+        ```
         
+        ```
+        $ kubectl get csv -n everest-monitoring
+        NAME                               DISPLAY                    VERSION   REPLACES                           PHASE
+        victoriametrics-operator.v0.29.1   VictoriaMetrics Operator   0.29.1    victoriametrics-operator.v0.27.2   Succeeded
+        ```
+
+        ```
+        $ kubectl get deploy -n everest-monitoring
+        NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
+        vm-operator-vm-operator   1/1     1            1           19m
+        kube-state-metrics        1/1     1            1           19m
+        ```
 
 
 
