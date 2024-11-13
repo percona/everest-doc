@@ -33,6 +33,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "MongoDB sharding"
 
+    !!! warning
+         - Sharding is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
+        -  Check out the [known limitations](#known-limitations) section for important information about the limitations of sharding.
+
     ### Optimize MongoDB with sharding in Percona Everest
 
     !!! warning
