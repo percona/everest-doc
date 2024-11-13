@@ -127,8 +127,6 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 
 ## Bugs
 
-- [EVEREST-886](https://perconadev.atlassian.net/browse/EVEREST-886) - The PostgreSQL database can now be restored using PITR. Previously, the restoration using the latest PITR did not complete, and the database remained in the **Restoring** status.
-
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) - When creating a PostgreSQL database, if backup schedules were not created initially but added later after the database was created, Point-in-Time Recovery (PITR) was disabled. We have now resolved the issue, and PITR has now been enabled.
 

@@ -20,7 +20,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
     1. If your restore fails or is stuck, use this **workaround**: 
 
-        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest **Restore** object, click **...**, and delete it. Then, attempt to restore it again.
+        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click **...**, and **Delete**. Then, attempt to restore it again.
 
 
 ## MongoDB
