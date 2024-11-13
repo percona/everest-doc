@@ -46,7 +46,7 @@ Let's delve into the limitations of on-demand backups in Percona Everest.
 
     If you have created two schedules using backup storage `bucket-1` and `bucket-2`, and an on-demand backup using backup storage `bucket-3`, you can only utilize one of these three backup storages to create the next on-demand backup or a schedule.
 
-### PSMDB backup failures
+### MongoDB backup failures
 
 There maybe instances when your MongoDB backups may encounter unexpected failures. 
 
