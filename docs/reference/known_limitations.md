@@ -14,6 +14,16 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - Once MongoDB sharding is enabled, it cannot be disabled.
 
+- After you enable sharding for a cluster, you need to take another backup to ensure you can restore. 
+
+    - If your restore fails or is stuck, use this workaround: 
+
+        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest **Restore** object, click **...**, and delete it. Then, attempt to restore it again.
+
+
+ 
+
+
 
 ## PSMDB operators
 
