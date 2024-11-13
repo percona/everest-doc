@@ -59,7 +59,7 @@ Here are some potential errors you could encounter:
 - `starting deadline exceeded`
 - `'couldn''t get response from all shards: convergeClusterWithTimeout:`
 
-#### Workarounds for PSMDB backup failures
+#### Workarounds for MongoDB backup failures
 
 In the following table, we have compiled a list of workarounds to ensure that your backups function properly again.
 {.power-number}
