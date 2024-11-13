@@ -23,7 +23,7 @@ We are developing a new feature that will allow you to modify these settings dir
         On the Percona Everest UI, navigate to the **Restores** tab, locate the latest **Restore** object, click **...**, and delete it. Then, attempt to restore it again.
 
 
-## PSMDB operators
+## MongoDB
 
 - MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
 
