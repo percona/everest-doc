@@ -71,6 +71,10 @@ Here are instructions on obtaining permissions to shard a collection:
 ```sh
 MONGODB_CLUSTER_ADMIN_USER=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_USER | base64decode {{"}}"}}{{"{{"}}"\n"{{"}}"}}')
 ```
+     Cluster Admin Username
+    kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{.data.MONGODB_CLUSTER_ADMIN_USER | base64decode }}{{"\n"}}'
+    # Cluster Admin Password
+    kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{.data.MONGODB_CLUSTER_ADMIN_PASSWORD | base64decode }}{{"\n"}}'
 
 ```sh
 MONGODB_CLUSTER_ADMIN_PASSWORD=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_PASSWORD | base64decode {{"}}"}}{{"{{"}}"\n"{{"}}"}}')
