@@ -36,8 +36,6 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
     - There are a few more limitations related to MongoDB sharding. See the [limitations](https://docs.percona.com/everest/reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
 
 
-
-
 To enable sharding:
 {.power-number}
 
@@ -62,6 +60,24 @@ To enable sharding:
 3. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
 
     ![!image](images/sharding_status.png)
+
+
+### Obtain credentials for sharding collections
+
+You need to obtain the credentials for a user with permissions to shard collections.
+
+Here are instructions on obtaining permissions to shard a collection:
+
+```sh
+MONGODB_CLUSTER_ADMIN_USER=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ .data.MONGODB_CLUSTER_ADMIN_USER | base64decode }}')
+MONGODB_CLUSTER_ADMIN_PASSWORD=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ .data.MONGODB_CLUSTER_ADMIN_PASSWORD | base64decode }}')
+```
+
+Once you establish a connection with this user, you will have the ability to execute the commands `sh.enableSharding()` and `sh.shardCollection()`. 
+
+   - The `sh.enableSharding()` command allows you to enable sharding for a specific database. 
+    
+    - The `sh.shardCollection()` command is used to partition a collection across multiple shards, optimizing data distribution and query performance.
 
 
 ## Fine-tuning your sharding setup
