@@ -69,7 +69,7 @@ You need to obtain the credentials for a user with permissions to shard collecti
 Here are instructions on obtaining permissions to shard a collection:
 
 ```sh
-MONGODB_CLUSTER_ADMIN_USER=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_USER | base64decode {{"}}')
+MONGODB_CLUSTER_ADMIN_USER=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_USER | base64decode {{"}}"}}{{"{{"}}')
 ```
 
 Once you establish a connection with this user, you will have the ability to execute the commands `sh.enableSharding()` and `sh.shardCollection()`. 
