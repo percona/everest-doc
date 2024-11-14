@@ -16,11 +16,11 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - After you enable sharding for a cluster, you need to take another backup to ensure you can restore. 
 
-- Since MongoDB sharding is in tech preview, there may be issues with backups and restores. Therefore, using sharded PSMDB clusters in production environments is not recommended.
+- Since MongoDB sharding is in Tech Preview, there may be issues with backups and restores. Therefore, using sharded PSMDB clusters in production environments is not recommended.
 
     1. If your restore fails or is stuck, use this **workaround**: 
 
-        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click **...**, and delete it. Then, attempt to restore it again.
+        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
 
 
 ## MongoDB
