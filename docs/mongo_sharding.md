@@ -72,6 +72,10 @@ Here are instructions on obtaining permissions to shard a collection:
 MONGODB_CLUSTER_ADMIN_USER=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_USER | base64decode {{"}}"}}{{"{{"}}"\n"{{"}}"}}')
 ```
 
+```sh
+MONGODB_CLUSTER_ADMIN_PASSWORD=$(kubectl get secrets --namespace <NAMESPACE> everest-secrets-<CLUSTER_NAME> -o template='{{ "{{"}}.data.MONGODB_CLUSTER_ADMIN_PASSWORD | base64decode {{"}}"}}{{"{{"}}"\n"{{"}}"}}')
+```
+
 Once you establish a connection with this user, you will have the ability to execute the commands `sh.enableSharding()` and `sh.shardCollection()`. 
 
    - The `sh.enableSharding()` command allows you to enable sharding for a specific database. 
