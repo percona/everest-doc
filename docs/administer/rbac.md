@@ -384,7 +384,7 @@ A new user in Percona Everest will initially have **no** permissions. To grant p
 
 
 ```sh
-kubectl edit configmap-rbac -n everest-system
+kubectl edit cm everest-rbac -n everest-system
 ```
 
 A text editor will open, and you can edit the `ConfigMap` as follows. You just have to add the new user and assign it the desired role.
