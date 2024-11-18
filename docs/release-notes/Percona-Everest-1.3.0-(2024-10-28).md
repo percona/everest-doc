@@ -33,14 +33,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "MongoDB sharding"
 
+    ### Optimize MongoDB with sharding in Percona Everest
+
     !!! warning
          - Sharding is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
         -  Check out the [known limitations](#known-limitations) section for important information about the limitations of sharding.
 
-    ### Optimize MongoDB with sharding in Percona Everest
-
-    !!! warning
-        If you reshard or unshard a collection, create a new backup to avoid data inconsistency and restore failure.
+        - If you reshard or unshard a collection, create a new backup to avoid data inconsistency and restore failure.
 
     We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in Percona Everest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with Percona Everest.
 
