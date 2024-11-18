@@ -508,7 +508,7 @@ Where:
     Yes
     ```
 
-Use the same command with the YAML file path for YAML file validation. For example:
+Use the same command with the YAML file path containing the `everest-rbac` ConfigMap. For example:
 ```sh
 everestctl settings rbac validate --policy-file ./rbac-config.yaml
 ```
