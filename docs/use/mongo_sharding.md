@@ -42,7 +42,7 @@ To enable sharding:
 1. On the **Create Database** wizard, select **MongoDB** database and turn on the **Sharded Cluster** toggle. Click **Continue**. The **Resources** page will be displayed. 
 
 
-    ![!image](images/enable_sharding.png)
+    ![!image](../images/enable_sharding.png)
 
 2. On the **Resources** page, choose or enter the following details:
 
@@ -54,12 +54,12 @@ To enable sharding:
 
        * Number of configuration servers
 
-    ![!image](images/sharding_routers.png)
+    ![!image](../images/sharding_routers.png)
 
 
 3. To check if sharding is enabled, go to the database view page and click on the specific database. Then, check the **Resources** panel to see if sharding is enabled.
 
-    ![!image](images/sharding_status.png)
+    ![!image](../images/sharding_status.png)
 
 
 ### Obtain credentials for sharding collections
