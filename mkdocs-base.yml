@@ -193,7 +193,7 @@ nav:
         - Create database from backups: use/createBackups/create_new_database.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
-      - MongoDB sharding: mongo_sharding.md
+      - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
       - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
