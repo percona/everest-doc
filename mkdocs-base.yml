@@ -147,6 +147,7 @@ nav:
   - Welcome to Percona Everest: index.md 
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
       - Percona-Everest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
       - Percona-Everest 1.1.1 (2024-08-22): release-notes/Percona-Everest-1.1.1-(2024-08-22).md
       - Percona-Everest 1.1.0 (2024-08-12): release-notes/Percona-Everest-1.1.0-(2024-08-12).md
@@ -181,8 +182,6 @@ nav:
       - Single sign-on (SSO): administer/Idp_integration.md
       - Access Control: 
         - RBAC: administer/rbac.md
-
-
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
@@ -194,6 +193,7 @@ nav:
         - Create database from backups: use/createBackups/create_new_database.md
         - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
+      - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
       - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
