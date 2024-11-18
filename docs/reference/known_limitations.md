@@ -30,6 +30,11 @@ We are developing a new feature that will allow you to modify these settings dir
 - Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
 
 
+## Upgrading operators
+
+- When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the **Initializing** state as part of the upgrade process. However, this **Initializing** state does not cause any downtime.
+- When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, it is worth noting that single node databases should not be used in production environments.
+
 ## Backups
 
 Let's delve into the limitations of on-demand backups in Percona Everest. 
