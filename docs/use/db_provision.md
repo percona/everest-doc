@@ -40,7 +40,24 @@ To provision a new database:
 
 5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
-6. On the **Scheduled Backups** page, set up a schedule if you wish to run backup jobs for your new database.
+    Additionally, based on the database technology you’re working with, select the following:
+
+    - MySQL: On the **Proxies** panel, select the **Number of proxies** and **Resource size per proxy**.
+
+        !!! info
+            Proxies are used primarily to ensure high availability, load balancing, and database failover management. They act as intermediaries, ensuring client requests are directed to the appropriate database instances.
+
+        ![!image](../images/resources_proxies_page.png)
+
+    - PostgreSQL: On the **PG Bouncers** panel, select the **Number of PG Bouncers** and **Resource size per PG Bouncer**.
+
+        !!! info
+            [PgBouncer](https://www.pgbouncer.org/) manages PostgreSQL connections, particularly in high traffic environments.
+
+        ![!image](../images/resources_pgbouncer.png)
+
+
+6. On the **Scheduled Backups** page, set up a schedule to run backup jobs for your new database.
 
     Click **Create backup schedule**. The backup schedule pop-up is displayed.
 
