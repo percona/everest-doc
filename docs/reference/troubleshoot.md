@@ -112,7 +112,7 @@ In addition to OLM, Everest consists of five different operators:
             In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
 
 
-=== "VictoriaMetrics"
+=== "DB operators"
     In this section, we group all the database (DB) operators together because they are managed in the same way. When you run the command `everestctl install`, you must choose which operators to install (PXC, PSMDB, PG) and specify the namespaces for each. The following example assumes that you want to install all the operators in the `everest` namespace:
 
     ??? example "Examples"
@@ -158,7 +158,7 @@ In addition to OLM, Everest consists of five different operators:
         percona-postgresql-operator       1/1     1            1           21m
         ```
 
-=== "DB operators"
+=== "VictoriaMetrics"
     We use the VictoriaMetrics stack along with [kube-state-metrics](https://kubernetes.io/docs/concepts/cluster-administration/kube-state-metrics/) for monitoring. Both can be found in the `everest-monitoring` namespace.
 
     ??? example "Examples"
