@@ -3,7 +3,6 @@
 - [Percona Everest 1.3.0 (2024-11-18)](Percona-Everest-1.3.0-(2024-11-18).md)
 - [Percona Everest 1.2.0 (2024-10-01)](Percona-Everest-1.2.0-(2024-10-01).md)
 - [Percona Everest 1.1.1 (2024-08-22)](Percona-Everest-1.1.1-(2024-08-22).md)
-- [Percona Everest 1.2.0 (2024-09-12)](Percona-Everest-1.2.0-(2024-09-12).md)
 - [Percona Everest 1.1.0 (2024-08-12)](Percona-Everest-1.1.0-(2024-08-12).md)
 - [Percona Everest 1.0.1 (2024-07-08)](Percona-Everest-1.0.1-(2024-07-08).md)
 - [Percona Everest 1.0.0 (2024-06-28)](Percona-Everest-1.0.0-(2024-06-28).md)
