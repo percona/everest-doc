@@ -16,10 +16,10 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
     - This will help us validate whether an API call was made for a user operation and whether any errors occurred during the process. 
     
-            !!! Note
+        !!! Note
                 This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-        **Answer:**
+      **Answer:**
         Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
 
