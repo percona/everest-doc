@@ -37,7 +37,7 @@ Explore how our security features are designed to ensure the security of your ho
 
 </div><div data-banner markdown>
 
-### ::material-frequently-asked-questions: Troubleshooting { .title }
+### :material-frequently-asked-questions: Troubleshooting { .title }
 
 Dive into our troubleshooting section, where we will help you overcome challenges. Whether you’re dealing with everyday problems or specific concerns, we have you covered!
 
