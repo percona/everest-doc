@@ -3,7 +3,7 @@
 This section outlines the most frequently asked questions (FAQs) about Percona Everest.
 
 
-??? Question "What is DatabaseEngine?"
+??? Question+ "What is DatabaseEngine?"
 
     Can you provide an example of **Database Engine Operations**? Does it manage database operators, such as upgrading the operator, or is it related to Percona Everest resources?
 
