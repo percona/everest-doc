@@ -15,12 +15,12 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 ???+ Question "Do we have logs of the API calls made?"
 
     - This will help us validate whether an API call was made for a user operation and whether any errors occurred during the process. 
-    
-        !!! Note
-                This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-      **Answer:**
+        **Answer:**
         Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+
+        !!! Note
+            This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
 
     - If we have these logs, where are they stored?
@@ -37,8 +37,6 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 ???+ Question "Are there any additional resources that are not included in the image?"
 
     Is there a resource that manages the API calls and interacts with the individual resources? Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
-
-
 
     **Answer:**
     All communication with Everest resources begins with the API.
