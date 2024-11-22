@@ -3,7 +3,7 @@
 This section outlines the most frequently asked questions (FAQs) about Percona Everest.
 
 
-???+ Question "1. DatabaseEngine"
+??? Question "1. DatabaseEngine"
 
     What is a `DatabaseEngine`, and can you provide an example of **Database Engine Operations**? Does it manage database operators, such as upgrading the operator, or is it related to Percona Everest resources?
 
@@ -16,14 +16,14 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
     - Do we have logs of the API calls made? This would help us validate whether an API call was executed for a user operation and if it encountered any errors. This is important for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn’t been created for some reason. 
 
-    **Answer:**
-    Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+        **Answer:**
+        Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
 
     - If we have these logs, where are they stored?
 
-    **Answer:**
-    You can retrieve logs from the pods associated with this deployment.
+        **Answer:**
+        You can retrieve logs from the pods associated with this deployment.
 
 
 ???+ Question "3. Frontend" 
