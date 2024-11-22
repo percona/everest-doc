@@ -29,14 +29,15 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
         You can retrieve logs from the pods associated with this deployment.
 
 
-???+ Question "Do we have any logs for frontend actions, like nginx logs, to troubleshoot issues between the frontend and the Percona Everest API" 
+???+ Question "Do we have any logs for frontend actions, like Nginx logs, to troubleshoot issues between the front end and the Percona Everest API??" 
 
     **Answer:**
     The logs will be accessible in the console of the web browser.
 
 ???+ Question "Are there any additional resources that are not included in the image?"
 
-    For instance, is there a resource that handles the API calls and interacts with individual resources? Should we check its logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? In that case, should we match the "Percona operator" issue with the corresponding Everest resource and address the problem from there?
+    Is there a resource that manages the API calls and interacts with the individual resources? Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
+
 
 
     **Answer:**
