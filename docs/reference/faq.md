@@ -12,16 +12,18 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
         Refer to our API documentation at https://percona-everest.readme.io/reference/getkubernetesclusterresources for in-depth information.
 
-**Q: Everest API**
+???+ Question "Everest API"
 
-- Do we have logs of the API calls made? This would help us validate whether an API call was executed for a user operation and if it encountered any errors. This is important for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn’t been created for some reason. 
+    - Do we have logs of the API calls made? This would help us validate whether an API call was executed for a user operation and if it encountered any errors. This is important for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn’t been created for some reason. 
 
-    Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+    ??? info "Answer" 
+        Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
 
-- If we have these logs, where are they stored?
+    - If we have these logs, where are they stored?
 
-    You can retrieve logs from the pods associated with this deployment.
+        ??? info "Answer"
+            You can retrieve logs from the pods associated with this deployment.
 
 
 **Q: Frontend:** Do we have any logs for frontend actions, like nginx logs, to troubleshoot issues between the frontend and the Percona Everest API?
