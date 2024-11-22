@@ -5,8 +5,7 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
 ???+ Question
 
-**Q:** What is a `DatabaseEngine`, and can you provide an example of **Database Engine Operations**? Does it manage database operators, such as upgrading the operator, or is it related to Percona Everest resources?
-
+    What is a `DatabaseEngine`, and can you provide an example of **Database Engine Operations**? Does it manage database operators, such as upgrading the operator, or is it related to Percona Everest resources?
 
     The `DatabaseEngine` is a resource that contains compatible PG/PXC/MongoDB versions for the current Everest version. This information can be retrieved and updated.
 
