@@ -37,11 +37,11 @@ Explore how our security features are designed to ensure the security of your ho
 
 </div><div data-banner markdown>
 
-### :material-account-supervisor: Manage users { .title }
+### ::material-frequently-asked-questions: Troubleshooting { .title }
 
-Learn how to manage user accounts in Percona Everest.
+Dive into our troubleshooting section, where we will help you overcome challenges. Whether you’re dealing with everyday problems or specific concerns, we have you covered!
 
-[Manage user accounts :material-arrow-right:](administer/manage_users.md){ .md-button .md-button--primary }
+[Troubleshoot :material-arrow-right:](reference/troubleshoot.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
