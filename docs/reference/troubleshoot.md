@@ -28,7 +28,7 @@ When you install Percona Everest, the following components are installed:
 
 1. The `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
 
-    Execute the following command, all the three deployments should be present in the `everest-olm` namespace
+    Execute the following command, all three deployments should be present in the `everest-olm` namespace
 
     ```
     $ kubectl get deploy -n everest-olm
