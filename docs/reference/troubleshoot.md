@@ -10,7 +10,7 @@ This section is your go-to resource for tackling common issues and finding solut
 We have organized the topics into distinct categories to assist you in exploring the information more easily. 
 
 
-### Percona Everest installation
+### Percona Everest installation overview
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
@@ -19,6 +19,8 @@ The main components are:
 * olm-operator
 * catalog-operator
 * packageserver
+
+#### Percona Everest installation
 
 When you install Percona Everest, the following components are installed:
 {.power-number}
