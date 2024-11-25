@@ -33,7 +33,7 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 **Answer:**
 The logs will be accessible in the console of the web browser.
 
-### Question "Are there any additional resources that are not included in the image?"
+### Are there any additional resources that are not included in the image?
 
 Is there a resource that manages the API calls and interacts with the individual resources? Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
 
