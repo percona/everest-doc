@@ -16,16 +16,16 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 
 - This will help us validate whether an API call was made for a user operation and whether any errors occurred during the process. 
 
-**Answer:**
-Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+    **Answer:**
+    Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
-!!! Note
-    This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
+    !!! Note
+        This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-- If we have these logs, where are they stored?
+    - If we have these logs, where are they stored?
 
-**Answer:**
-You can retrieve logs from the pods associated with this deployment.
+    **Answer:**
+    You can retrieve logs from the pods associated with this deployment.
 
 
 ### Do we have any logs for frontend actions, like Nginx logs, to troubleshoot issues between the front end and the Percona Everest API? 
