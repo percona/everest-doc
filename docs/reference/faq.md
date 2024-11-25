@@ -28,7 +28,7 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
     You can retrieve logs from the pods associated with this deployment.
 
 
-### Do we have any logs for frontend actions, like Nginx logs, to troubleshoot issues between the front end and the Percona Everest API? 
+### Do we have any logs for frontend actions, to troubleshoot issues between the front end and the Percona Everest API? 
 
 **Answer:**
 The logs will be accessible in the console of the web browser.
