@@ -45,7 +45,7 @@ All communication with Everest resources begins with the API.
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
 
 
-### Why PMM appears to be absent in this context?
+### Does Percona Everest deploy PMM servers?
 
 While `MonitorConfig` is present, does this resource interact directly with each `pmm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
 
