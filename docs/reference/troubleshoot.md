@@ -96,7 +96,7 @@ In addition to OLM, Everest consists of five different operators:
 
 
 === "DB operators"
-    In this section, we group all the database (DB) operators together because they are managed in the same way. When you run the command `everestctl install`, you must choose which operators to install (PXC, PSMDB, PG) and specify the namespaces for each. The following example assumes that you want to install all the operators in the `everest` namespace:
+    In this section, we group all the database (DB) operators together because they are managed in the same way. When you run the command `everestctl install`, you must choose which operators to install (PXC, PSMDB, PG) and specify the namespaces for each. The following example assumes that you installed all the operators in the `everest` namespace:
 
     ??? example "Examples"
         ```
