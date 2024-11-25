@@ -45,7 +45,7 @@ The API is responsible for updating Everest resources, while the Everest operato
 
 ### Why PMM appears to be absent in this context?
 
-While `MonitorConfig` is present, does this resource interact directly with each `ppm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
+While `MonitorConfig` is present, does this resource interact directly with each `pmm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
 
 **Answer:**
 When communicating with PMM, we generate an API key to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
