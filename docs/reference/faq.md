@@ -12,44 +12,43 @@ The `DatabaseEngine` is a resource that contains compatible PG/PXC/MongoDB versi
 
 Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources) for in-depth information.
 
-???+ Question "Do we have logs of the API calls made?"
+### Do we have logs of the API calls made?
 
-    - This will help us validate whether an API call was made for a user operation and whether any errors occurred during the process. 
+- This will help us validate whether an API call was made for a user operation and whether any errors occurred during the process. 
 
-        **Answer:**
-        Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+**Answer:**
+Yes, the Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
-        !!! Note
-            This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
+!!! Note
+    This is crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
+- If we have these logs, where are they stored?
 
-    - If we have these logs, where are they stored?
-
-        **Answer:**
-        You can retrieve logs from the pods associated with this deployment.
-
-
-???+ Question "Do we have any logs for frontend actions, like Nginx logs, to troubleshoot issues between the front end and the Percona Everest API??" 
-
-    **Answer:**
-    The logs will be accessible in the console of the web browser.
-
-???+ Question "Are there any additional resources that are not included in the image?"
-
-    Is there a resource that manages the API calls and interacts with the individual resources? Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
-
-    **Answer:**
-    All communication with Everest resources begins with the API.
-
-    The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
+**Answer:**
+You can retrieve logs from the pods associated with this deployment.
 
 
-???+ Question "Why PMM appears to be absent in this context?"
+### Do we have any logs for frontend actions, like Nginx logs, to troubleshoot issues between the front end and the Percona Everest API? 
 
-    While `MonitorConfig` is present, does this resource interact directly with each `ppm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
+**Answer:**
+The logs will be accessible in the console of the web browser.
 
-    **Answer:**
-    When communicating with PMM, we generate an API key to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
+### Question "Are there any additional resources that are not included in the image?"
 
-    !!! note
-        PMM is an external service we support and does not necessarily fit into our architecture.
+Is there a resource that manages the API calls and interacts with the individual resources? Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
+
+**Answer:**
+All communication with Everest resources begins with the API.
+
+The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
+
+
+### Why PMM appears to be absent in this context?
+
+While `MonitorConfig` is present, does this resource interact directly with each `ppm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
+
+**Answer:**
+When communicating with PMM, we generate an API key to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
+
+!!! note
+    PMM is an external service we support and does not necessarily fit into our architecture.
