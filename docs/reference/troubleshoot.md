@@ -10,7 +10,7 @@ This section is your go-to resource for tackling common issues and finding solut
 We have organized the topics into distinct categories to assist you in exploring the information more easily. 
 
 
-### Percona Everest installation overview
+### Percona Everest comprehensive installation overview
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
@@ -31,7 +31,7 @@ When you install Percona Everest, the following components are installed:
     Execute the following command, all the three deployments should be present in the `everest-olm` namespace
 
     ```
-    $ kubectl get deploy -n everest-olm
+    kubectl get deploy -n everest-olm
     NAME               READY   UP-TO-DATE   AVAILABLE   AGE
     olm-operator       1/1     1            1           5m38s
     catalog-operator   1/1     1            1           5m37s
@@ -66,25 +66,25 @@ In addition to OLM, Everest consists of five different operators:
 
     ??? example "Examples"
         ```sh
-        $ kubectl get sub -n everest-system
+        kubectl get sub -n everest-system
         NAME               PACKAGE            SOURCE            CHANNEL
         everest-operator   everest-operator   everest-catalog   stable-v0
         ```
 
         ```
-        $ kubectl get ip -n everest-system
+        kubectl get ip -n everest-system
         NAME            CSV                       APPROVAL   APPROVED
         install-69g62   everest-operator.v0.10.1  Manual     true
         ```
 
         ```
-        $ kubectl get csv -n everest-system
+        kubectl get csv -n everest-system
         NAME                      DISPLAY            VERSION   REPLACES                   PHASE
         everest-operator.v0.10.1  Everest operator   0.10.1    everest-operator.v0.9.0    Succeeded
         ```
 
         ```
-        $ kubectl get deploy -n everest-system
+        kubectl get deploy -n everest-system
         NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
         everest-operator-controller-manager   1/1     1            1           12m
         percona-everest                       1/1     1            1           11m
@@ -100,7 +100,7 @@ In addition to OLM, Everest consists of five different operators:
 
     ??? example "Examples"
         ```
-        $ kubectl get sub -n everest
+        kubectl get sub -n everest
         NAME                              PACKAGE                           SOURCE            CHANNEL
         percona-xtradb-cluster-operator   percona-xtradb-cluster-operator   everest-catalog   stable-v1
         percona-server-mongodb-operator   percona-server-mongodb-operator   everest-catalog   stable-v1
@@ -108,7 +108,7 @@ In addition to OLM, Everest consists of five different operators:
         ```
 
         ```
-        $ kubectl get ip -n everest
+        kubectl get ip -n everest
         NAME            CSV      APPROVAL                                    
         APPROVED
         install-tjwjf   percona-xtradb-cluster-operator.v1.14.0   Manual  
@@ -120,7 +120,7 @@ In addition to OLM, Everest consists of five different operators:
         ```
         
         ```
-        $ kubectl get csv -n everest
+        kubectl get csv -n everest
         NAME                                      DISPLAY                                                       
         VERSION   REPLACES                                  PHASE
         percona-xtradb-cluster-operator.v1.14.0   Percona Operator for MySQL based on Percona XtraDB Cluster   
@@ -134,7 +134,7 @@ In addition to OLM, Everest consists of five different operators:
         ```
 
         ```
-        $ kubectl get deploy -n everest
+        kubectl get deploy -n everest
         NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
         percona-xtradb-cluster-operator   1/1     1            1           23m
         percona-server-mongodb-operator   1/1     1            1           22m
@@ -148,7 +148,7 @@ In addition to OLM, Everest consists of five different operators:
 
         The following example installs all the operators to the `everest` namespace:
         ```
-        $ kubectl get sub -n everest-monitoring
+        kubectl get sub -n everest-monitoring
         NAME                   PACKAGE                    SOURCE            
         CHANNEL
         victoriametrics-operator   victoriametrics-operator   everest-  
@@ -156,14 +156,14 @@ In addition to OLM, Everest consists of five different operators:
         ```
 
         ```
-        $ kubectl get ip -n everest-monitoring
+        kubectl get ip -n everest-monitoring
         NAME            CSV                                APPROVAL   
         APPROVED
         install-nw6sf   victoriametrics-operator.v0.29.1   Manual     true
         ```
         
         ```
-        $ kubectl get csv -n everest-monitoring
+        kubectl get csv -n everest-monitoring
         NAME                               DISPLAY                    
         VERSION   REPLACES                           PHASE
         victoriametrics-operator.v0.29.1   VictoriaMetrics Operator  0.29.1  
@@ -171,7 +171,7 @@ In addition to OLM, Everest consists of five different operators:
         ```
 
         ```
-        $ kubectl get deploy -n everest-monitoring
+        kubectl get deploy -n everest-monitoring
         NAME                      READY   UP-TO-DATE   AVAILABLE   AGE
         vm-operator-vm-operator   1/1     1            1           19m
         kube-state-metrics        1/1     1            1           19m
@@ -180,7 +180,7 @@ In addition to OLM, Everest consists of five different operators:
 
     ??? example "Example"
         ```
-        $ kubectl get dbengine -n everest
+        kubectl get dbengine -n everest
         NAME                              TYPE         STATUS      OPERATOR VERSION
         percona-xtradb-cluster-operator   pxc          installed   1.14.0
         percona-server-mongodb-operator   psmdb        installed   1.15.0
@@ -205,11 +205,11 @@ This gives a step by step approach to troubleshoot if something goes wrong with 
 1. Run the following command:
 
     ```
-    $ kubectl get db -n everest
+    kubectl get db -n everest
     NAME        SIZE   READY   STATUS   HOSTNAME                    AGE
     mysql-7tl   2      2       ready    mysql-7tl-haproxy.everest   6m8s
 
-    $ kubectl get pxc -n everest
+    kubectl get pxc -n everest
     NAME        ENDPOINT                    STATUS   PXC   PROXYSQL   HAPROXY   AGE
     mysql-7tl   mysql-7tl-haproxy.everest   ready    1                1         6m10s
     ```

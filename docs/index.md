@@ -39,7 +39,7 @@ Explore how our security features are designed to ensure the security of your ho
 
 ### :material-frequently-asked-questions: Troubleshooting { .title }
 
-Dive into our troubleshooting section, where we will help you overcome challenges. Whether you’re dealing with everyday problems or specific concerns, we have you covered!
+Dive into our troubleshooting section, which is designed to guide you through any issues you may encounter while using Percona Everest.
 
 [Troubleshoot :material-arrow-right:](reference/troubleshoot.md){ .md-button .md-button--primary }
 
