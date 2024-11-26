@@ -194,12 +194,13 @@ nav:
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
+  - Troubleshoot:
+    - Resolve issues: troubleshoot/troubleshoot.md
+      - FAQ: troubleshoot/faq.md
+
   - API: API.md
   - Reference:
       - Limitations: reference/known_limitations.md
-      - Troubleshoot:
-        - Resolve issues: reference/troubleshoot.md
-        - FAQ: reference/faq.md
       - Telemetry on Percona Everest: reference/telemetry.md
       - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
