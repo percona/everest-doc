@@ -194,6 +194,7 @@ nav:
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
+      
   - Troubleshoot:
       - Resolve issues: troubleshoot/troubleshoot.md
       - FAQ: troubleshoot/faq.md
