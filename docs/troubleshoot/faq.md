@@ -16,16 +16,16 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 
 - Accessing these logs will enable us to confirm whether an API call was initiated for a specific user operation and to identify any errors that may have occurred during that process.
 
-**Answer:**
-Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+    **Answer:**
+    Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
 
     !!! Note
         Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
 - Where are these logs stored?
 
-**Answer:**
-You can retrieve the logs from the pods associated with this deployment.
+    **Answer:**
+    You can retrieve the logs from the pods associated with this deployment.
 
 
 ### Do we have any logs for front end actions to troubleshoot issues between the front end and the Percona Everest API? 
@@ -41,10 +41,10 @@ You can view these logs in the console of your web browser.
 
 - Should we correlate the **Percona operator** issue with the corresponding Percona Everest resource and address the problem from that point?
 
-**Answer:**
-All communication with Everest resources begins with the API.
+    **Answer:**
+    All communication with Everest resources begins with the API.
 
-The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
+    The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
 
 
 ### Does Percona Everest deploy PMM servers?
