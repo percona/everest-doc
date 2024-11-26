@@ -53,50 +53,14 @@ When you install Percona Everest, the following components are installed:
 The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/). OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
 
 
-In addition to OLM, Everest consists of five different operators:
+In addition to OLM, Percona Everest consists of these operators:
 
-- Everest
-- VictoriaMetrics
 - Percona Operator for MySQL (PXC)
 - Percona Operator for MongoDB (PSMDB)
 - Percona Operator for PostgreSQL (PG)
 
-=== "Everest"
-    The Everest Operator is always installed to the `everest-system` namespace. If the operator is installed properly, you should find a subscription, an install plan and a cluster service version for this operator:
 
-    ??? example "Examples"
-        ```sh
-        kubectl get sub -n everest-system
-        NAME               PACKAGE            SOURCE            CHANNEL
-        everest-operator   everest-operator   everest-catalog   stable-v0
-        ```
-
-        ```
-        kubectl get ip -n everest-system
-        NAME            CSV                       APPROVAL   APPROVED
-        install-69g62   everest-operator.v0.10.1  Manual     true
-        ```
-
-        ```
-        kubectl get csv -n everest-system
-        NAME                      DISPLAY            VERSION   REPLACES                   PHASE
-        everest-operator.v0.10.1  Everest operator   0.10.1    everest-operator.v0.9.0    Succeeded
-        ```
-
-        ```
-        kubectl get deploy -n everest-system
-        NAME                                  READY   UP-TO-DATE   AVAILABLE   AGE
-        everest-operator-controller-manager   1/1     1            1           12m
-        percona-everest                       1/1     1            1           11m
-        ```
-    
-        !!! note
-
-            In the last command, besides the Everest operator, you also see the `percona-everest` deployment in the `everest-system `namespace; this is the Percona Everest UI/API deployment.
-
-
-=== "DB operators"
-    In this section, we group all the database (DB) operators together because they are managed in the same way. When you run the command `everestctl install`, you must choose which operators to install (PXC, PSMDB, PG) and specify the namespaces for each. The following example assumes that you installed all the operators in the `everest` namespace:
+In this section, we group all the database (DB) operators together because they are managed in the same way. When you run the command `everestctl install`, you must choose which operators to install (PXC, PSMDB, PG) and specify the namespaces for each. The following example assumes that you installed all the operators in the `everest` namespace:
 
     ??? example "Examples"
         ```
