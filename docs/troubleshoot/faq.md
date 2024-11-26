@@ -33,7 +33,7 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 **Answer:**
 You can view these logs in the console of your web browser.
 
-### Are there any resources that are not a part of the Percona Everest operator image that we need to troubleshoot?
+### Do we need to troubleshoot any resources that are not part of the Percona Everest operator image?
 
 - Is there a resource that receives API calls and interacts with individual resources that we should check for troubleshooting and logs when issues arise?
 
