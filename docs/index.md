@@ -41,7 +41,7 @@ Explore how our security features are designed to ensure the security of your ho
 
 Dive into our troubleshooting section, which is designed to guide you through any issues you may encounter while using Percona Everest.
 
-[Troubleshoot :material-arrow-right:](reference/troubleshoot.md){ .md-button .md-button--primary }
+[Troubleshoot :material-arrow-right:](troubleshoot/troubleshoot.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
