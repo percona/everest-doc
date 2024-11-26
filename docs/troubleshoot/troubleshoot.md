@@ -1,16 +1,12 @@
-# Troubleshooting strategies for Percona Everest
+# Troubleshooting common issues in Percona Everest
 
 
 This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
 
 
 
-## Troubleshooting topics
 
-We have organized the topics into distinct categories to assist you in exploring the information more easily. 
-
-
-### Percona Everest comprehensive installation overview
+## Comprehensive installation overview
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
@@ -20,7 +16,7 @@ The main components are:
 * catalog-operator
 * packageserver
 
-#### Percona Everest installation
+### Percona Everest installation
 
 When you install Percona Everest, the following components are installed:
 {.power-number}
@@ -48,7 +44,7 @@ When you install Percona Everest, the following components are installed:
     everest-catalog   Everest Catalog   grpc   Percona     6m5s
     ```
 
-#### OLM subscription
+### OLM subscription
 
 The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/). OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
 
@@ -105,7 +101,7 @@ In this section, we group all the database (DB) operators together because they 
     percona-postgresql-operator       1/1     1            1           21m
     ```
 
-### Database deployment
+## Database deployment
 
 In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be `PXC`, `PSMDB`, or `PG`.
 
@@ -144,9 +140,9 @@ This gives a step by step approach to troubleshoot if something goes wrong with 
         The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
 
 
-### Backups and restores
+## Backups and restores
 
-#### Backups
+### Backups
 
 Every backup in percona Everest begins with the creation of a `DatabaseClusterBackup (DBB)` `Custom Resource (CR)` that is deployed to a selected namespace. Depending on the chosen engine type, this `DBB` will be converted into the corresponding Custom Resource that can be interpreted by the database operator, such as `pxc-backup`, `psmdb-backup`, or `pg-backup`.
 
@@ -156,7 +152,7 @@ kubectl describe psmdb-backup
 kubectl describe pg-backup
 ```
 
-#### Restores
+### Restores
 
 Every Restore operation in Everest begins with a `DatabaseClusterRestore (DBR)` Custom Resource (CR) that is deployed in the specified namespace. Based on the selected engine type, this `DBR` will be transformed into the corresponding Custom Resource that can be processed by the database operator, such as `pxc-restore`, `psmdb-restore`, or `pg-restore`.
 
