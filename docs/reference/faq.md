@@ -28,16 +28,18 @@ Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deploy
 You can retrieve the logs from the pods associated with this deployment.
 
 
-### Do we have any logs for frontend actions, to troubleshoot issues between the front end and the Percona Everest API? 
+### Do we have any logs for front end actions to troubleshoot issues between the front end and the Percona Everest API? 
 
 **Answer:**
-The logs will be accessible in the console of the web browser.
+You can view these logs in the console of your web browser.
 
-### Is there a resource that manages the API calls and interacts with the individual resources?
+### Are there any resources that are not a part of the Percona Everest operator image that we need to troubleshoot?
 
-- Should we check the logs for troubleshooting when issues arise? Alternatively, does the Everest API communicate directly with the Everest operator resources? 
+- Is there a resource that receives API calls and interacts with individual resources that we should check for troubleshooting and logs when issues arise?
 
-- If so, should we correlate the **Percona operator** issue with the corresponding Everest resource and address the problem from that point?
+- Does the Percona Everest API communicate directly with the Percona Everest operator resources? 
+
+- Should we correlate the **Percona operator** issue with the corresponding Percona Everest resource and address the problem from that point?
 
 **Answer:**
 All communication with Everest resources begins with the API.
