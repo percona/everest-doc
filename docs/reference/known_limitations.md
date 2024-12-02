@@ -38,7 +38,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
         `kubectl edit psmdb/<DBName> -n <Namespace>`
 
-    2. Delete the finalizer called `delete-pods-in-order`
+    2. Delete the finalizer called `delete-pods-in-order`.
 
 ## Upgrading operators
 
