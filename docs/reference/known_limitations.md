@@ -25,24 +25,20 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Databases
 
-### MongoDB databases
-
 - MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
 
-- Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
+- Do not perform a full backup of an empty MongoDB database. Instead, ensure that you add some data to the database before creating a full backup.
 
 
-### Databases stuck in initializing state
+- If you attempt to delete a MongoDB and MySQL cluster stuck in the **initializing** state due to insufficient resources, the cluster will remain in the deleting state indefinitely.
 
-If you attempt to delete a MongoDB and MySQL cluster that is stuck in the **initializing** state due to a lack of resources, the cluster will remain in the deleting state indefinitely.
+    **Workaround**
 
-**Workaround**
+    1. Run the command:
 
-1. Run the command:
+        `kubectl edit psmdb/<DBName> -n <Namespace>`
 
-    `kubectl edit psmdb/<DBName> -n <Namespace>`
-
-2. Delete the finalizer called `delete-pods-in-order`
+    2. Delete the finalizer called `delete-pods-in-order`
 
 ## Upgrading operators
 
