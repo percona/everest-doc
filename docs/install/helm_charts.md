@@ -40,15 +40,49 @@ You can install Percona Everest using Helm as an alternative method.
         The command does the following:
         {.power-number}
 
-        1. This command deploys the Percona Everest components in the `everest-system` namespace. Currently, specifying a different namespace for Percona Everest is not supported.
+        1. Deploys the Percona Everest components in the `everest-system` namespace. Currently, specifying a different namespace for Percona Everest is not supported.
 
-        2. It also deploys a new namespace called `everest` for your databases and the database operators.
+        2. Deploys a new namespace called `everest` for your databases and the database operators.
 
-        3. You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter.
+    
+    You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter.
 
-        4. All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
 
-        5. Installation without chart hooks is currently not supported. The use of `--no-hooks` during installation is not supported.
+3. Once the installation is complete, retrieve the `admin` password:
+
+    ```sh
+    kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
+    ```
+
+4. Connect to the Percona Everest UI by setting up port-forwarding to your local machine:
+
+    ```sh
+    kubectl port-forward svc/everest -n everest-system 8080:8080
+    ```
+
+    !!! note
+
+        - The default username for logging into the Everest UI is `admin`.
+        - You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+        - The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
+
+5. Deploy additional database namespaces:
+
+    Once Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
+
+    If you set `dbNamespaces.enabled=false` in the previous step, you can deploy a database namespace with the following command:
+
+    ```sh
+    helm install everest \
+    percona/everest-db-namespace \
+    --create-namespace \
+    --namespace everest
+    ```
+
+    !!! note
+        -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
+        - Installation without chart hooks is currently not supported. The use of `--no-hooks` during installation is not supported.
+
 
 
 
