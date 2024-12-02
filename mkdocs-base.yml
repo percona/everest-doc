@@ -171,6 +171,7 @@ nav:
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
       - Install Percona Everest CLI: install/installEverestCLI.md
+      - Install Percona Everest using Helm: install/helm_charts.md
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md 
 
