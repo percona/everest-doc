@@ -30,6 +30,19 @@ We are developing a new feature that will allow you to modify these settings dir
 - Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
 
 
+## Databases stuck in initializing state
+
+If you attempt to delete a MongoDB and MySQL cluster that is stuck in the initializing state due to a lack of resources, the cluster will remain in the deleting state indefinitely.
+
+**Workaround**
+
+1. Run the command:
+
+`kubectl edit psmdb/<DBName> -n <Namespace>`
+
+2. Delete the finalizer called `delete-pods-in-order`
+
+
 ## Upgrading operators
 
 - When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the **Initializing** state as part of the upgrade process. However, this **Initializing** state does not cause any downtime.
