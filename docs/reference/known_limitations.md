@@ -34,7 +34,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ### Databases stuck in initializing state
 
-If you attempt to delete a MongoDB and MySQL cluster that is stuck in the initializing state due to a lack of resources, the cluster will remain in the deleting state indefinitely.
+If you attempt to delete a MongoDB and MySQL cluster that is stuck in the **initializing** state due to a lack of resources, the cluster will remain in the deleting state indefinitely.
 
 **Workaround**
 
