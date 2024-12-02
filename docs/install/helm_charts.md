@@ -44,9 +44,7 @@ You can install Percona Everest using Helm as an alternative method.
 
         2. Deploys a new namespace called `everest` for your databases and the database operators.
 
-    
-    You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter.
-
+            You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter.
 
 3. Once the installation is complete, retrieve the `admin` password:
 
