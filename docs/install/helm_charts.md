@@ -89,10 +89,13 @@ You can customize various parameters in the Percona Everest Helm charts to tailo
 Here are some parameters of the Percona Everest Helm chart:
 
 
-|**Key**|**Type**|**Default**|**Description**|
+|**Namespace**|**Key**|**Type**|**Default**|**Description**|
 |---------|------|---------|------------------|
-|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
-
+|everest|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
+|everest|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to manually update the everest-settings `ConfigMap`.|
+|everest-db-namespace|`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
+|everest-db-namespace|`postgresql`|bool|true| Installs the Percona Postgresql Server operator if set.|
+|everest-db-namespace|`psmdb`|bool|true| Installs the Percona Server MongoDB operator if set.|
 
 
 
