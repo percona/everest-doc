@@ -1,10 +1,5 @@
 # Helm Chart
 
-!!! warning
-    Helm Chart is currently in Technical Preview. Early adopters are advised to use this feature only for testing purposes and not in production environments. Future releases may introduce breaking changes, and we cannot guarantee a migration path.
-
-
-
 ## Helm chart overview
 
 Helm is a package manager for Kubernetes applications.
