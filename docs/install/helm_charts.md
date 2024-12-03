@@ -82,6 +82,21 @@ You can install Percona Everest using Helm as an alternative method.
         - Installation without chart hooks is currently not supported. The use of `--no-hooks` during installation is not supported.
 
 
+## Configure parameters
+
+You can customize various parameters in the Percona Everest Helm charts to tailor your deployment to meet your specific needs. Refer to the [documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} for the Helm charts to learn how to configure these parameters.
+
+Here are some parameters of the Percona Everest Helm chart, along with their default values.
+
+
+
+
+
+
+
+
+
+
 
 
 
