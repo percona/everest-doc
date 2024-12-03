@@ -79,12 +79,12 @@ You can install Percona Everest using Helm as an alternative method.
 
 ## Configure parameters
 
-You can customize various parameters in the Percona Everest Helm charts for your deployment to meet your specific needs. Refer to the [documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to explore the Helm charts and discover how to configure these parameters.
+You can customize various parameters in the Percona Everest Helm charts for your deployment to meet your specific needs. Refer to the [documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
 
 Here are a few parameters that you can use for Percona Everest Helm charts:
 
 |**Namespace**|**Key**|**Type**|**Default**|**Description**|
-|---------|------|---------|------------------|
+|---------|------|---------|------------------|------------|
 |everest|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
 |everest|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to manually update the everest-settings `ConfigMap`.|
 |everest-db-namespace|`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
