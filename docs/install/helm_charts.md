@@ -86,7 +86,13 @@ You can install Percona Everest using Helm as an alternative method.
 
 You can customize various parameters in the Percona Everest Helm charts to tailor your deployment to meet your specific needs. Refer to the [documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} for the Helm charts to learn how to configure these parameters.
 
-Here are some parameters of the Percona Everest Helm chart, along with their default values.
+Here are some parameters of the Percona Everest Helm chart:
+
+
+|**Key**|**Type**|**Default**|**Description**|
+|---------|------|---------|------------------|
+|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
+
 
 
 
