@@ -171,6 +171,7 @@ nav:
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
       - Install Percona Everest CLI: install/installEverestCLI.md
+      - Install Percona Everest using CLI: install/installEverest.md
       - Install Percona Everest using Helm: install/install_everest_helm.md
   - Upgrade: 
     - upgrade_with_cli.md
