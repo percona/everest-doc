@@ -1,4 +1,5 @@
-# Helm chart
+# Install Percona Everest using Helm
+
 
 Helm is a package manager for Kubernetes applications.
 
