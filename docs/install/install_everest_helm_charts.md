@@ -1,4 +1,4 @@
-# Helm Chart
+# Helm chart
 
 Helm is a package manager for Kubernetes applications.
 
@@ -6,7 +6,7 @@ The Percona Everest Helm chart can be set up with a single command and includes 
 
 The Helm chart simplifies the Percona Everest deployment process by packaging the configuration, dependencies, and templates. This streamlined approach ensures that everything can be set up smoothly without any hassle. For more information on Helm, refer to the official [documentation](https://helm.sh/docs/topics/charts/){:target="_blank"}.
 
-## Install Percona Everest using Helm chart
+## Install Percona Everest
 
 You can install Percona Everest using Helm as an alternative method.
 {.power-number}
