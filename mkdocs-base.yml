@@ -178,7 +178,7 @@ nav:
 
   - Uninstall:
     - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
-    - Uninstall Percona Everest using CLI: uninstall/uninstall_everest_helm_charts.md
+    - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
    
   - Administer:
       - User management: administer/manage_users.md
