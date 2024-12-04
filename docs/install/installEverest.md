@@ -1,4 +1,4 @@
-# Install Everest
+# Install Percona Everest
 
 ## Before you start
 
@@ -8,7 +8,7 @@ Before running the commands in the **Installation** section, note that Everest w
 export KUBECONFIG=~/.kube/config
 ```
 
-## Installation
+## Install Percona Everest using the CLI
 
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
