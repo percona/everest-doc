@@ -1,4 +1,4 @@
-# Install Everest CLI
+# Install Percona Everest CLI
 
 You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
 
