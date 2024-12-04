@@ -9,11 +9,11 @@ You can run the commands below to remove all Everest resources including:
     Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster, including backups!
 
 
-To uninstall Percona Everest:
+To uninstall Percona Everest, follow these steps:
 {.power-number}
 
 
-1. Uninstall Everest:
+1. Run the following command:
 
     ```sh
     everestctl uninstall
