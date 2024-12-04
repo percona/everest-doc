@@ -1,0 +1,1 @@
+# Uninstall Everest using Helm
