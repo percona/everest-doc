@@ -76,7 +76,7 @@ You can install Percona Everest using Helm as an alternative method.
 
 You can customize various parameters in the Percona Everest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
 
-[Here](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"} is a list of all the configurable parameters for Percona Everest Helm charts. A few parameters are listed in the following table:
+A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}).
 
 |**Namespace**|**Key**|**Type**|**Default**|**Description**|
 |---------|------|---------|------------------|------------|
