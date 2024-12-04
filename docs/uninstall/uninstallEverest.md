@@ -1,4 +1,4 @@
-# Uninstall Everest using the CLI
+# Uninstall Percona Everest using the CLI
 
 You can run the commands below to remove all Everest resources including:
 
