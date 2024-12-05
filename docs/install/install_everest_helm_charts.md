@@ -1,7 +1,7 @@
 # Install Percona Everest using Helm
-This guide demonstrates how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl install`. Helm charts simplify deployment by packaging all required resources and configurations, making it an ideal choice for automating and managing installations in Kubernetes environments.
 
-For more info, refer to the official documentation on [Helm charts](https://helm.sh/docs/topics/charts/#helm).
+
+This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.  
 
 ## Install Percona Everest
 
