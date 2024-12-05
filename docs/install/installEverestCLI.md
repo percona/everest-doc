@@ -47,7 +47,7 @@ sudo install -m 555 everestctl-darwin-amd64 /usr/local/bin/everestctl
 rm everestctl-darwin-amd64
 ```
 
-### Next steps
+## Next steps
 
 Start by installing Percona Everest: 
 
