@@ -168,10 +168,8 @@ nav:
 
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
-      - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS)
-: install/eks.md
-      - Create Kubernetes cluster on Google Kubernetes Engine (GKE)
-: install/gke.md
+      - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+      - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
       - Install Percona Everest CLI: install/installEverestCLI.md
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md 
