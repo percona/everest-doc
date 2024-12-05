@@ -9,7 +9,6 @@ For more info, refer to the official documentation on [Helm charts](https://helm
 
     ```sh
     helm repo add percona https://percona.github.io/percona-helm-charts/
-    helm install everest-core percona/everest --namespace everest-system --create-namespace
     ```
 
 2. Install Percona Everest:
