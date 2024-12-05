@@ -164,12 +164,12 @@ nav:
       - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona-Everest-0.5.0-(2023-11-28).md      
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona-Everest-0.4.0-(2023-10-30).md      
   - Features: features.md
-  - Quickstart guide:
-      - quickstart-guide/quick-install.md
-      - quickstart-guide/eks.md
-      - quickstart-guide/gke.md
+  - Quickstart guide: quick-install.md
+
   - Install:
       - Setup and prerequisites: install/SetupPrereqs.md
+      - Create Kubernetes cluster on Amazon Elastic Kubernetes Service (EKS): install/eks.md
+      - Create Kubernetes cluster on Google Kubernetes Engine (GKE): install/gke.md
       - Install Percona Everest CLI: install/installEverestCLI.md
       - Install Percona Everest: install/installEverest.md
       - Uninstall Percona Everest: install/uninstallEverest.md 
