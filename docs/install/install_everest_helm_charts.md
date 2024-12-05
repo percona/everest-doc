@@ -28,7 +28,7 @@ For more info, refer to the official documentation on [Helm charts](https://helm
 
         2. Deploys a new namespace called `everest` for your databases and the database operators.
 
-            You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter.
+            You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
 3. Once the installation is complete, retrieve the `admin` password:
 
