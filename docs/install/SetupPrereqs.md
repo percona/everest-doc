@@ -56,7 +56,7 @@ Before getting started with Percona Everest, we recommend that you:
             gke-<name>-default-pool-75d48bfc-zl7k      Ready    <none>   11h   v1.26.7-gke.500
         ```
 
-### Next steps
+## Next steps
 
 Start by installing Everest:
 
