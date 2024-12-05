@@ -181,12 +181,12 @@ nav:
   - Administer:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
-      - Access Control: 
-        - RBAC: administer/rbac.md
+      - Access Control: RBAC: administer/rbac.md
+      - Managing namespaces: use/manage_namespaces.md
+
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
-      - Commands to provision namespaces: use/commands.md
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Create storage locations: use/CreateStorage.md
