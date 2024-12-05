@@ -166,7 +166,7 @@ nav:
   - Features: features.md
   - Quickstart guide: quick-install.md
   - Install:
-    - Setup and prerequisites: install/SetupPrereqs.md
+      - Setup and prerequisites: install/SetupPrereqs.md
         - Create Kubernetes cluster on Amazon Elastic Kubernetes Service: install/eks.md
         - Create Kubernetes cluster on Google Kubernetes Engine: install/gke.md
         - Install Percona Everest CLI: install/installEverestCLI.md
