@@ -1,0 +1,2 @@
+# Mananage database namespaces
+
