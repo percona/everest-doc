@@ -73,10 +73,13 @@ You can customize various parameters in the Percona Everest Helm charts for your
 
 A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
 
-|**Charts**|**Key**|**Type**|**Default**|**Description**|
+|**Helm Charts**|**Key**|**Type**|**Default**|**Description**|
 |---------|------|---------|------------------|------------|
 |everest|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
 |everest|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to manually update the everest-settings `ConfigMap`.|
+
+|**Subcharts**|**Key**|**Type**|**Default**|**Description**|
+|---------|------|---------|------------------|------------|
 |everest-db-namespace|`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
 |everest-db-namespace|`postgresql`|bool|true| Installs the Percona Postgresql Server operator if set.|
 |everest-db-namespace|`psmdb`|bool|true| Installs the Percona Server MongoDB operator if set.|
