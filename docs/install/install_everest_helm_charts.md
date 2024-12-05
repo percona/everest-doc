@@ -63,7 +63,7 @@ For more info, refer to the official documentation on [Helm charts](https://helm
 
     !!! note
         -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
-        - Installation without chart hooks is currently not supported. The use of `--no-hooks` during installation is not supported.
+        - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
 
 
 ## Configure parameters
