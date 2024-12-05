@@ -1,2 +1,2 @@
-# New CLI commands to provision DB namespaces
+# CLI commands to provision database namespaces
 
