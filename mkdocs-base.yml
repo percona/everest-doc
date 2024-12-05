@@ -165,15 +165,15 @@ nav:
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona-Everest-0.4.0-(2023-10-30).md      
   - Features: features.md
   - Quickstart guide: quick-install.md
-
-
+    
   - Install:
-    - install/SetupPrereqs.md
+    - Setup and prerequisites: 
+      - install/SetupPrereqs.md
       - install/eks.md
       - install/gke.md
       - install/installEverestCLI.md
-    - Install Percona Everest using CLI: install/installEverest.md
-    - Install Percona Everest using Helm: install/install_everest_helm_charts.md
+    - install/installEverest.md
+    - install/install_everest_helm_charts.md
   
   - Upgrade: 
     - upgrade_with_cli.md
