@@ -1,9 +1,11 @@
 # Install Percona Everest using Helm
 
-
 This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.  
 
-## Install Percona Everest
+## Install Percona Everest and deploy namespaces
+
+Here are the steps to install Percona Everest and deploy additional namespaces:
+{.power-number}
 
 1. Add the Percona Helm repository:
 
