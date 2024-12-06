@@ -169,7 +169,7 @@ nav:
   - Install:
     - Setup and prerequisites:
       - install/prerequisites.md
-      - install/supported_operarors_k8s.md
+      - install/supported_operators_k8s.md
       - install/eks.md
       - install/gke.md
       - install/installEverestCLI.md
