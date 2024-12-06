@@ -9,45 +9,69 @@ You can download the latest version of Everest CLI by visiting the latest releas
 ## Linux and WSL
 
 To install Everest CLI on Linux or WSL, run the following commands:
+{.power-number}
 
-```bash
-# Download the latest version of Everest CLI
+1. Download the latest version of Everest CLI.
+
+```sh
 curl -sSL -o everestctl-linux-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
+```
 
-# Install the Everest CLI binary to /usr/local/bin/
+2. Install the Everest CLI binary to /usr/local/bin/.
+
+```sh
 sudo install -m 555 everestctl-linux-amd64 /usr/local/bin/everestctl
+```
 
-# Remove the Everest CLI binary to clean up
+3. Remove the Everest CLI binary to clean up.
+
+```sh
 rm everestctl-linux-amd64
 ```
 
 ## macOS (Apple Silicon)
 
 To install Everest CLI on macOS with Apple Silicon, run the following commands:
+{.power-number}
 
-```bash
-# Download the latest version of Everest CLI for Apple Silicon
+1. Download the latest version of Everest CLI for Apple Silicon.
+
+```sh
 curl -sSL -o everestctl-darwin-arm64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-arm64
+```
 
-# Install the Everest CLI binary to /usr/local/bin/
+2. Install the Everest CLI binary to /usr/local/bin/.
+
+```sh
 sudo install -m 555 everestctl-darwin-arm64 /usr/local/bin/everestctl
+```
+3. Remove the Everest CLI binary to clean up
 
-# Remove the Everest CLI binary to clean up
+```sh
 rm everestctl-darwin-arm64
 ```
 
 ## macOS (Intel CPU)
 
 To install Everest CLI on macOS with an Intel CPU, run the following commands:
+{.power-number}
 
-```bash
-# Download the latest version of Everest CLI for Intel CPUs
+
+1. Download the latest version of Everest CLI for Intel CPUs.
+
+```sh
 curl -sSL -o everestctl-darwin-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-amd64
+```
 
-# Install the Everest CLI binary to /usr/local/bin/
+2. Install the Everest CLI binary to /usr/local/bin/.
+
+```sh
 sudo install -m 555 everestctl-darwin-amd64 /usr/local/bin/everestctl
+```
 
-# Remove the Everest CLI binary to clean up
+3. Remove the Everest CLI binary to clean up.
+
+```sh
 rm everestctl-darwin-amd64
 ```
 
