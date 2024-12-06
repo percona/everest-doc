@@ -1,17 +1,14 @@
-# Setup and prerequisites
+# Supported operators and K8s clusters
 
-Percona Everest has two primary components:
+Percona Everest provides support for various operators and Kubernetes clusters. The following is a list of the specific operators and Kubernetes clusters that are compatible with Percona Everest:
 
-* [Percona Everest CLI](https://docs.percona.com/everest/install/installEverestCLI.html), which connects Percona Everest to your Kubernetes cluster.
-* Percona Everest application with the UI, which you can spin up using the instructions below.
-
-## Supported operators
+## Operators
 
 * Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.14.0, 1.15.0
 * Percona Operator for MongoDB (PSMDB) 1.15.0
 * Percona Operator for PostgreSQL (PG) 2.3.1, 2.4.1
 
-## Supported k8s clusters
+## k8s clusters
 
 Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
 
@@ -31,6 +28,11 @@ However, not all the many combinations of K8s distributions and K8s versions mig
     Air-gapped environments (i.e. environments physically isolated from unsecured networks such as the public Internet) are not currently supported. Their support is coming soon.
 
 ## Before you install
+
+Percona Everest has two primary components:
+
+* [Percona Everest CLI](https://docs.percona.com/everest/install/installEverestCLI.html), which connects Percona Everest to your Kubernetes cluster.
+* Percona Everest application with the UI, which you can spin up using the instructions below.
 
 Percona Everest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a publicly accessible Kubernetes cluster.
 
