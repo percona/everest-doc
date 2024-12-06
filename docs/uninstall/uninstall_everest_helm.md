@@ -19,18 +19,21 @@ kubectl delete ns <your_db_namespace>
 
 ## Uninstall Percona Everest
 
-To uninstall Percona Everest, run the following command:
+To uninstall Percona Everest, follow these steps:
+{.power-number}
 
-```sh
-helm uninstall everest-core -n everest-system
-kubectl delete ns everest-system
-```
+1. Run the following command:
+
+    ```sh
+    helm uninstall everest-core -n everest-system
+    kubectl delete ns everest-system
+    ```
 
 2. Remove the unused [Custom Resource Definitions (CRDs)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
     !!! caution alert alert-warning "warning"
 
-        - Deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the kubernetes cluster. Ensure that you do not remove any CRDs that are being used by operator deployments outside of Everest.
+        Deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the kubernetes cluster. Ensure that you do not remove any CRDs that are being used by operator deployments outside of Everest.
 
 ## How to remove CRDs
 
