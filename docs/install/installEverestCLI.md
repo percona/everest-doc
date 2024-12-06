@@ -6,28 +6,29 @@
 
 You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
 
-## Linux and WSL
 
-To install Everest CLI on Linux or WSL, run the following commands:
-{.power-number}
+=== "Linux and WSL"
+        
+    To install Everest CLI on Linux or WSL, run the following commands:
+    {.power-number}
 
-1. Download the latest version of Everest CLI.
+    1. Download the latest version of Everest CLI.
 
-    ```sh
-    curl -sSL -o everestctl-linux-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
-    ```
+        ```sh
+        curl -sSL -o everestctl-linux-amd64         https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
+        ```
 
-2. Install the Everest CLI binary to /usr/local/bin/.
+    2. Install the Everest CLI binary to /usr/local/bin/.
 
-    ```sh
-    sudo install -m 555 everestctl-linux-amd64 /usr/local/bin/everestctl
-    ```
+        ```sh
+        sudo install -m 555 everestctl-linux-amd64 /usr/local/bin/everestctl
+        ```
 
-3. Remove the Everest CLI binary to clean up.
+    3. Remove the Everest CLI binary to clean up.
 
-    ```sh
-    rm everestctl-linux-amd64
-    ```
+        ```sh
+        rm everestctl-linux-amd64
+        ```         
 
 ## macOS (Apple Silicon)
 
