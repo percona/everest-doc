@@ -24,8 +24,8 @@ To install and provision Percona Everest to Kubernetes:
 
     Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases. Make sure that you enter **at least** one namespace.
 
-
-    Alternatively, you can set multiple namepaces in the headless mode:
+    **Alternative command to install Percona Everest**
+    You can set multiple namepaces in the headless mode:
 
     ```sh
     everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
