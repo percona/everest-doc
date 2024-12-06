@@ -23,12 +23,22 @@ We are developing a new feature that will allow you to modify these settings dir
         On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
 
 
-## MongoDB
+## Databases
 
 - MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
 
-- Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
+- Do not perform a full backup of an empty MongoDB database. Instead, ensure that you add some data to the database before creating a full backup.
 
+
+- If you attempt to delete a MongoDB and MySQL cluster stuck in the **initializing** state due to insufficient resources, the cluster will remain in the deleting state indefinitely. This issue is caused by a [bug](https://perconadev.atlassian.net/browse/K8SPSMDB-1208){:target="_blank"} in the PSMDB operator.
+
+    **Workaround**
+
+    1. Run the command:
+
+        `kubectl edit psmdb/<DBName> -n <Namespace>`
+
+    2. Delete the finalizer called `delete-pods-in-order`.
 
 ## Upgrading operators
 
