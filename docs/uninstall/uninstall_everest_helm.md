@@ -35,7 +35,7 @@ To uninstall Percona Everest, follow these steps:
 
         Deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the kubernetes cluster. Ensure that you do not remove any CRDs that are being used by operator deployments outside of Everest.
 
-## How to remove CRDs
+## Remove CRDs
 
 During the installation of Everest, the following operators are installed:
     
