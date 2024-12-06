@@ -1,31 +1,41 @@
-# Uninstall Everest
+# Uninstall Percona Everest using Helm
 
-You can run the commands below to remove all Everest resources including:
-
-- All Kubernetes objects created by Everest
-- All downloaded binaries and files like **everestctl**.
-
-!!! note alert alert-primary "Warning"
-    Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster, including backups!
+If you are looking for an alternative method to uninstall Percona Everest, you can also consider using the Helm charts.
 
 
-To uninstall Percona Everest:
+## Uninstall the database namespaces
+
+If you have created any database namespaces other than the default namespace, ensure to delete them first.
+
+
+```sh
+helm uninstall everest -n <your_db_namespace>
+kubectl delete ns <your_db_namespace>
+```
+
+!!! note
+    This runs a chart hook that cleans up your database resources. Although it is not recommended, you can skip this step by specifying `cleanupOnUninstall=false`.
+
+
+## Uninstall Percona Everest
+
+To uninstall Percona Everest, follow these steps:
 {.power-number}
 
-
-1. Uninstall Everest:
+1. Run the following command:
 
     ```sh
-    everestctl uninstall
+    helm uninstall everest-core -n everest-system
+    kubectl delete ns everest-system
     ```
 
 2. Remove the unused [Custom Resource Definitions (CRDs)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
 
     !!! caution alert alert-warning "warning"
 
-        - Deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the kubernetes cluster. Ensure that you do not remove any CRDs that are being used by operator deployments outside of Everest.
+        Deleting CRDs can potentially cause issues with any custom resources that depend on those definitions within the kubernetes cluster. Ensure that you do not remove any CRDs that are being used by operator deployments outside of Everest.
 
-## How to remove CRDs
+## Remove CRDs
 
 During the installation of Everest, the following operators are installed:
     
@@ -220,11 +230,6 @@ perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
 EOF
 ```
-
-
-
-
-
 
 
 
