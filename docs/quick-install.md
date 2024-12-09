@@ -10,11 +10,12 @@ Helm simplifies the installation of Percona Everest. With this guide, you'll be 
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
+1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm).
+2. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
-2. Install [yq](https://github.com/mikefarah/yq).
+4. Install [yq](https://github.com/mikefarah/yq).
 
-3. Set up a Kubernetes cluster.
+4. Set up a Kubernetes cluster.
      
     !!! note alert alert-primary "Note"
 
