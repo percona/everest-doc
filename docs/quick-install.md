@@ -80,6 +80,7 @@ Helm is the easiest way to install Percona Everest.
     !!! note:
         The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
+    For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
