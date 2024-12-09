@@ -1,9 +1,10 @@
 # Percona Everest quick install guide
 
-To quickly get started with Percona Everest, install it using Helm.
+Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time.
 
+We have a comprehensive installation guide that covers all possibilities. 
 !!! info "Alternative installation option"
-    Helm is the easiest way to install Percona Everest. However, if you prefer another method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
+    If you prefer an alternative method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
 
 
 ## Prerequisites
@@ -50,7 +51,7 @@ Before getting started with Percona Everest, do the following:
 
 ## Install Percona Everest
 
-Helm is the easiest way to install Percona Everest.
+To install Percona Everest using Helm follow these steps:
 {.power-number}
 
 1. Add the Percona Helm repository.
