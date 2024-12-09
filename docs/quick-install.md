@@ -2,6 +2,8 @@
 
 Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
+Percona Helm charts can be found in [percona/percona-helm-charts](https://github.com/percona/percona-helm-charts) repository in Github.
+
 !!! info "Alternative installation option"
     If you prefer an alternative method, you can [install Percona Everest using the CLI](install/installEverest.md).
 
@@ -11,9 +13,9 @@ Before getting started with Percona Everest, do the following:
 {.power-number}
 
 1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm).
-2. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
+2. Install [curl :octicons-link-external-16:](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
-4. Install [yq](https://github.com/mikefarah/yq).
+4. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq).
 
 4. Set up a Kubernetes cluster.
      

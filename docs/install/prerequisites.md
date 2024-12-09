@@ -4,9 +4,9 @@ Before getting started with Percona Everest, we recommend that you:
 {.power-number}
 
 
-1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm) to install install Percona Everest using Helm.
+1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm) to install Percona Everest using Helm.
 
-2. Install [yq](https://github.com/mikefarah/yq) to install Percona Everest using Helm.
+2. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq) to install Percona Everest using Helm.
 
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
 
