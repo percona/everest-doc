@@ -2,7 +2,8 @@
 
 Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time.
 
-We have a comprehensive installation guide that covers all possibilities. 
+We have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
+
 !!! info "Alternative installation option"
     If you prefer an alternative method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
 
