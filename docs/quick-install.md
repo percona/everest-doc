@@ -58,18 +58,18 @@ Here are the steps to install Percona Everest using Helm:
 
     Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma.
 
-3. Update the password for the `admin` user:
+2. Install Percona Everest.
 
     ```sh
-    everestctl accounts set-password --username admin
+    helm install everest-core percona/everest \
+    --namespace everest-system \
+    --create-namespace
     ```
+3. Retrieve the admin password.
 
-    !!! info "Important"
-
-        You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
-
-
-    For more information on user management, see the section [Manage users in Percona Everest](../administer/manage_users.md).
+    ```sh
+    kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
+    ```
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
@@ -86,10 +86,7 @@ Here are the steps to install Percona Everest using Helm:
             ```sh 
             kubectl get svc/everest -n everest-system
             ```
-
-
-
-
+            
     === "Node Port"       
 
         1. Run the following command to change the Everest service type to `NodePort`:
