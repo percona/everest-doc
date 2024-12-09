@@ -46,8 +46,12 @@ Before getting started with Percona Everest, do the following:
 
 ## Install Percona Everest
 
-Here are the steps to install Percona Everest using Helm:
+Helm is the easiest way to install Percona Everest and start using it.
 {.power-number}
+
+!!! info "Important"
+    Helm is the easiest way to install Percona Everest. However, if you prefer another method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
+
 
 1. Add the Percona Helm repository.
 
@@ -65,6 +69,8 @@ Here are the steps to install Percona Everest using Helm:
     --namespace everest-system \
     --create-namespace
     ```
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [installing Percona Everest using Helm](install/install_everest_helm_charts.md).
+
 3. Retrieve the admin password.
 
     ```sh
@@ -86,7 +92,7 @@ Here are the steps to install Percona Everest using Helm:
             ```sh 
             kubectl get svc/everest -n everest-system
             ```
-            
+
     === "Node Port"       
 
         1. Run the following command to change the Everest service type to `NodePort`:
