@@ -76,7 +76,7 @@ To install Percona Everest using Helm follow these steps:
 
 ## Post-installation steps
 
-Once you have successfully installed Percona Everest, please proceed with the following steps:
+Once you have successfully installed Percona Everest, proceed with the following steps:
 {.power-number}
 
 1. Retrieve the `admin` password.
