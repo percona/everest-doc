@@ -2,6 +2,10 @@
 
 To quickly get started with Percona Everest, install it using Helm.
 
+!!! info "Alternative installation option"
+    Helm is the easiest way to install Percona Everest. However, if you prefer another method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
+
+
 ## Prerequisites
 
 Before getting started with Percona Everest, do the following:
@@ -49,10 +53,6 @@ Before getting started with Percona Everest, do the following:
 Helm is the easiest way to install Percona Everest.
 {.power-number}
 
-!!! info "Important"
-    Helm is the easiest way to install Percona Everest. However, if you prefer another method, you can also install Percona Everest using the CLI. Refer to the section [here](install/installEverest.md) to get started.
-
-
 1. Add the Percona Helm repository.
 
     ```sh
@@ -77,7 +77,7 @@ Helm is the easiest way to install Percona Everest.
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
 
-    !!! note:
+    !!! note
         The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
     For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
