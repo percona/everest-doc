@@ -9,8 +9,9 @@ Before getting started with Percona Everest, do the following:
 
 1. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
+2. Install [yq](https://github.com/mikefarah/yq).
 
-2. Set up a Kubernetes cluster.
+3. Set up a Kubernetes cluster.
      
     !!! note alert alert-primary "Note"
 
@@ -45,47 +46,17 @@ Before getting started with Percona Everest, do the following:
 
 ## Install Percona Everest
 
-You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
+Here are the steps to install Percona Everest using Helm:
 {.power-number}
 
-1. Download and install Everest CLI.
-
-    === "Linux and WSL"
-                        
-        ```sh
-        curl -sSL -o everestctl-linux-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
-        sudo install -m 555 everestctl-linux-amd64 /usr/local/bin/everestctl
-        rm everestctl-linux-amd64       
-        ``` 
-
-    === "macOS (Apple Silicon)"
-                        
-        ```sh
-        curl -sSL -o everestctl-darwin-arm64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-arm64
-        sudo install -m 555 everestctl-darwin-arm64 /usr/local/bin/everestctl
-        rm everestctl-darwin-arm64      
-        ```
-
-
-    === "macOS (Intel CPU)"
-                        
-        ```sh
-        curl -sSL -o everestctl-darwin-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-amd64
-        sudo install -m 555 everestctl-darwin-amd64 /usr/local/bin/everestctl
-        rm everestctl-darwin-amd64        
-        ``` 
-
-
-2. Install Percona Everest:
+1. Add the Percona Helm repository.
 
     ```sh
-    everestctl install
+    helm repo add percona https://percona.github.io/percona-helm-charts/
+    helm repo update
     ```
 
     Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma.
-
-    !!! warning "Important"
-        Make sure that you enter at least one namespace.
 
 3. Update the password for the `admin` user:
 
