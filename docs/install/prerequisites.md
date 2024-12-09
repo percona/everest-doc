@@ -43,6 +43,6 @@ We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service
 
 ## Next steps
 
-Start by installing Everest:
+Start by installing Percona Everest:
 
-[Install Everest :material-arrow-right:](installEverest.md){.md-button}
+[Install Percona Everest :material-arrow-right:](installEverest.md){.md-button}
