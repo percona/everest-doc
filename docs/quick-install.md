@@ -5,7 +5,7 @@ Helm simplifies the installation of Percona Everest. With this guide, you'll be 
 We have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
 !!! info "Alternative installation option"
-        If you prefer an alternative method, you can install Percona Everest using the CLI. To get started, refer to the section [here](install/installEverest.md).
+    If you prefer an alternative method, you can install Percona Everest using the CLI. To get started, refer to the section [here](install/installEverest.md).
 
 ## Prerequisites
 
@@ -70,7 +70,7 @@ To install Percona Everest using Helm follow these steps:
     --namespace everest-system \
     --create-namespace
     ```
-    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [installing Percona Everest using Helm](install/install_everest_helm_charts.md).
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section [here](install/install_everest_helm_charts.md).
 
 3. Retrieve the admin password.
 
