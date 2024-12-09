@@ -70,7 +70,13 @@ To install Percona Everest using Helm follow these steps:
     ```
     Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section [here](install/install_everest_helm_charts.md).
 
-3. Retrieve the `admin` password.
+
+## Post-installation steps
+
+Once you have successfully installed Percona Everest, please proceed with the following steps:
+{.power-number}
+
+1. Retrieve the `admin` password.
 
     ```sh
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
@@ -81,7 +87,7 @@ To install Percona Everest using Helm follow these steps:
 
     For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+2. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Load Balancer"
 
