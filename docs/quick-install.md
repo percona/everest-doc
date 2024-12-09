@@ -1,6 +1,6 @@
 # Percona Everest quick install guide
 
-This section provides instructions for quickly installing and getting started with Percona Everest.
+To quickly get started with Percona Everest, install it using Helm.
 
 ## Prerequisites
 
@@ -46,7 +46,7 @@ Before getting started with Percona Everest, do the following:
 
 ## Install Percona Everest
 
-Helm is the easiest way to install Percona Everest and start using it.
+Helm is the easiest way to install Percona Everest.
 {.power-number}
 
 !!! info "Important"
