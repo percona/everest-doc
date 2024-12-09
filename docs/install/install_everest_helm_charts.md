@@ -127,10 +127,6 @@ Here are the steps to install Percona Everest and deploy additional namespaces:
         -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
         - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
 
-
-
-
-
 ## Configure parameters
 
 You can customize various parameters in the Percona Everest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
