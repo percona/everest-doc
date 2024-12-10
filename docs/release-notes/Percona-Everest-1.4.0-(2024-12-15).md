@@ -20,7 +20,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## Release highlights
 
 
-=== "Configure proxies"
+=== "Helm charts"
 
     ### Capability to configure proxy nodes and define their resource limits
 
@@ -59,12 +59,3 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     If you're looking to dive deeper into MongoDB sharding, check out the [documentation](https://docs.percona.com/everest/use/mongo_sharding.html).
 
-=== "Database status"
-
-    ### Database status at a glance
-
-
-    Starting with Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view** page.
-
-
-    ![!image](../images/display_db_details.png)
