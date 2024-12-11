@@ -31,7 +31,7 @@ everestctl namespaces delete [NAMESPACE]
 
 - This command deletes only the specified namespace, as long as it is managed by Percona Everest.
 
-- Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. iI will only remove the Percona Everest label.
+- Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. It will only remove the Percona Everest label.
 
 
 ## Update namespaces
