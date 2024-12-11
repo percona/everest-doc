@@ -62,7 +62,6 @@ To install Percona Everest using Helm follow these steps:
     helm repo update
     ```
 
-    Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma.
 
 2. Install Percona Everest.
 
