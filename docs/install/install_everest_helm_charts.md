@@ -136,7 +136,7 @@ You can customize various parameters in the Percona Everest Helm charts for your
 A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
 
 
-**Percona Everest chart**
+**percona/everest chart**
 
 |**Key**|**Type**|**Default**|**Description**|
 |------|---------|-----------|---------------|
@@ -151,28 +151,3 @@ A few parameters are listed in the following table. For a detailed list of the p
 |`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
 |everest-db-namespace|`postgresql`|bool|true| Installs the Percona Postgresql Server operator if set.|
 |`psmdb`|bool|true| Installs the Percona Server MongoDB operator if set.|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -1,6 +1,6 @@
 # Uninstall Percona Everest using Helm
 
-If you are looking for an alternative method to uninstall Percona Everest, you can also consider using the Helm charts.
+If you installed Everest using Helm, follow the instructions below to uninstall.
 
 
 ## Uninstall the database namespaces
@@ -230,10 +230,3 @@ perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
 EOF
 ```
-
-
-
-
-
-
-
