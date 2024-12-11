@@ -4,7 +4,7 @@ This section explains how to install Percona Everest using [Helm](https://helm.s
 
 Percona Helm charts can be found in [percona/percona-helm-charts](https://github.com/percona/percona-helm-charts) repository in Github.
 
-## Install Percona Everest and deploy namespaces
+## Install Percona Everest and deploy database namespaces
 
 Here are the steps to install Percona Everest and deploy additional namespaces:
 {.power-number}
