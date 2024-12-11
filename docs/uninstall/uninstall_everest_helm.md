@@ -230,10 +230,3 @@ perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
 EOF
 ```
-
-
-
-
-
-
-
