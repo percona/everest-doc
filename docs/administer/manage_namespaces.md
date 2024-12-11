@@ -43,7 +43,7 @@ You can run the following command to add more operators to the DB namespace.
 everestctl namespaces update [NAMESPACE] 
 ```
 
-!!! warning
+!!! note
     The `everestctl install` command can provision a DB namespace. However, if you run this command again, an error will be thrown: `Everest is already installed.`
 
 
