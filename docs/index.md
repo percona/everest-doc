@@ -16,8 +16,7 @@ Let's start by enabling you to deploy an automated private DBaaS, eliminating ve
 [Percona Everest quickstart guide:material-arrow-right:](quick-install.md){.md-button }  [Manage your first cluster :material-arrow-right:](use/db_provision.md){.md-button }
 
 
-
-## In this documentation
+Follow our documentation, and you’ll be set up in no time.
 
 <div data-grid markdown><div data-banner markdown>
 
