@@ -65,17 +65,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1546](https://perconadev.atlassian.net/browse/EVEREST-1546) \[UI\] Number of proxies/routers/bouncers and their resources should be displayed in dashboard and database overview
 
-- [EVEREST-1554](https://perconadev.atlassian.net/browse/EVEREST-1554) \[UI\] empty space after adding an helper text with error to the DOM
-
-- [EVEREST-1556](https://perconadev.atlassian.net/browse/EVEREST-1556) \[UI\] Increase actions buttons in db details to Large size
-
-- [EVEREST-1681](https://perconadev.atlassian.net/browse/EVEREST-1681) \[UI\] Edit PITR action
-
 - [EVEREST-1683](https://perconadev.atlassian.net/browse/EVEREST-1683) \[UI\] Backups on the database overview page should be sorted in descending order by Started date and time
 
-- [EVEREST-1684](https://perconadev.atlassian.net/browse/EVEREST-1684) \[UI\] Remove blue background from expandable card
-
-- [EVEREST-1685](https://perconadev.atlassian.net/browse/EVEREST-1685) \[UI\] Increase spacing in shards section
 
 - [EVEREST-1686](https://perconadev.atlassian.net/browse/EVEREST-1686) Use 24h format
 
@@ -125,7 +116,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608) \[UI\] Error should be displayed on Resources page if the proxies field has no value
 
-- [EVEREST-1611](https://perconadev.atlassian.net/browse/EVEREST-1611) Support for installation on existing namespaces
 
 - [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613) Issue with Topology Settings Reverting to "Custom" in Percona Everest UI
 
@@ -139,11 +129,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1650](https://perconadev.atlassian.net/browse/EVEREST-1650) UI - Unable to Create Backup After Adding Storage
 
-- [EVEREST-1655](https://perconadev.atlassian.net/browse/EVEREST-1655) Everest API should use check-dev in dev/RC builds
-
-- [EVEREST-1672](https://perconadev.atlassian.net/browse/EVEREST-1672) Use non-strict decoding when reading response from VS
-
-- [EVEREST-1680](https://perconadev.atlassian.net/browse/EVEREST-1680) \[UI\] Connection URL is not being displayed properly
 
 - [EVEREST-1694](https://perconadev.atlassian.net/browse/EVEREST-1694) \[RBAC\] Backup storages page is empty if user only has access to a single storage
 
@@ -155,51 +140,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1712](https://perconadev.atlassian.net/browse/EVEREST-1712) \[UI\] Pages become unresponsive after a while
 
-
-
-### Overhead
-
-- [EVEREST-1501](https://perconadev.atlassian.net/browse/EVEREST-1501) \[Research\] OpenShift support
-
-- [EVEREST-1513](https://perconadev.atlassian.net/browse/EVEREST-1513) Helm release automation
-
-- [EVEREST-1514](https://perconadev.atlassian.net/browse/EVEREST-1514) \[CLI\] install using helm
-
-- [EVEREST-1516](https://perconadev.atlassian.net/browse/EVEREST-1516) \[Research\] install everest/vm operator without OLM
-
-- [EVEREST-1543](https://perconadev.atlassian.net/browse/EVEREST-1543) \[Research\] Helm chart installation requirements and limitations
-
-- [EVEREST-1620](https://perconadev.atlassian.net/browse/EVEREST-1620) Tilt dev environment should use Everest Helm chart
-
-- [EVEREST-1682](https://perconadev.atlassian.net/browse/EVEREST-1682) \[UI\] update support link
-
-- [EVEREST-1704](https://perconadev.atlassian.net/browse/EVEREST-1704) Hide PXC ConnectionURL
-
-### Technical task
-
-- [EVEREST-1255](https://perconadev.atlassian.net/browse/EVEREST-1255) \[UI\] Add connection URL to connection details info card
-
-- [EVEREST-1582](https://perconadev.atlassian.net/browse/EVEREST-1582) \[UI\] \`/databases\` page should list and show database-clusters without requiring permissions to read all DBCs
-
-- [EVEREST-1585](https://perconadev.atlassian.net/browse/EVEREST-1585) DBEngines should not be created in everest-system and everest-monitoring namespaces
-
-- [EVEREST-1696](https://perconadev.atlassian.net/browse/EVEREST-1696) \[RBAC\] \[UI\] Request monitoring instances list even if user has access to a single monitoring instance
-
-- [EVEREST-1697](https://perconadev.atlassian.net/browse/EVEREST-1697) \[RBAC\] \[UI\] Request backup storages list even if user has access to a single storage
-
-- [EVEREST-1698](https://perconadev.atlassian.net/browse/EVEREST-1698) \[RBAC\] \[BE\] Filter monitoring instances list based on RBAC permissions
-
-- [EVEREST-1699](https://perconadev.atlassian.net/browse/EVEREST-1699) \[RBAC\] \[BE\] Filter backup storages list based on RBAC permissions
-
-- [EVEREST-1705](https://perconadev.atlassian.net/browse/EVEREST-1705) \[RBAC\] \[UI\] Align permissions for backup actions with new resources
-
-- [EVEREST-1706](https://perconadev.atlassian.net/browse/EVEREST-1706) \[RBAC\] \[BE\] Restrict database-cluster-backups access based on the database name
-
-- [EVEREST-1707](https://perconadev.atlassian.net/browse/EVEREST-1707) \[RBAC\] \[BE\] Restrict database-cluster-restores access based on the database name
-
-- [EVEREST-1708](https://perconadev.atlassian.net/browse/EVEREST-1708) \[RBAC\] \[UI\] Align permissions for restore actions with new resources
-
-- [EVEREST-1713](https://perconadev.atlassian.net/browse/EVEREST-1713) \[UI\] Create empty state 
 
 ### Epic
 
