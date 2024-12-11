@@ -151,28 +151,3 @@ A few parameters are listed in the following table. For a detailed list of the p
 |`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
 |everest-db-namespace|`postgresql`|bool|true| Installs the Percona Postgresql Server operator if set.|
 |`psmdb`|bool|true| Installs the Percona Server MongoDB operator if set.|
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
