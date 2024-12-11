@@ -49,7 +49,7 @@ everestctl namespaces update [NAMESPACE]
 
 - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
 
-- You may choose to skip the DB namespace installation in the `everestctl install...` command.
+- You may choose to skip the DB namespace installation in the `everestctl install` command.
 
 
 
