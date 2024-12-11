@@ -29,17 +29,27 @@ You can run the following command for deleting namespaces:
 everestctl namespaces delete [NAMESPACE]
 ```
 
-It must delete only the provided namespace, if it is managed by Everest.
+- This command deletes only the specified namespace, as long as it is managed by Percona Everest.
 
-Setting --keep-namespace will delete all the operators in the namespace, but will not delete the namespace itself. It will simply remove the Everest label.
+- Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. iI will only remove the Percona Everest label.
 
-Add new command everestctl namespaces update [NAMESPACE] to add more operators to the DB namespace.
 
-The everestctl install  command can still provision a DB namespace like it does now. However, calling this command a second time will throw an error like Everest is already installed
+## Update namespaces
 
-If you wish to provision a DB namespace after installation, use the everestctl namespaced add command
+You can run the following command to add more operators to the DB namespace.
 
-You are allowed to skip installing a DB namespace in the everestctl install ... command
+
+```sh
+everestctl namespaces update [NAMESPACE] 
+```
+
+!!! warning
+    The `everestctl install` command can provision a DB namespace. However, if you run this command again, an error will be thrown: `Everest is already installed.`
+
+
+- To provision a DB namespace after installation, use the command 'everestctl namespaces add.' 
+
+- You may choose to skip the DB namespace installation in the 'everestctl install ...' command.
 
 
 
