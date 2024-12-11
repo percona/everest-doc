@@ -1,5 +1,11 @@
 # Install Percona Everest using CLI
 
+!!! info "Important"
+    Starting from version 1.4.0, `everestctl` now uses the Helm chart to install Percona Everest. To configure chart parameters during installation through the CLI, you can:
+
+    * Use the `--helm-set` flag to specify individual parameter values.
+    * Provide a values file with the `--helm-values` flag for bulk configuration.
+
 ## Before you start
 
 Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
