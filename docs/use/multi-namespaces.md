@@ -34,7 +34,7 @@ The following holds true for multiple namespaces:
 
 - You can install different operators in various namespaces.
 
-For comprehensive information on how to configure multiple namespaces, refer to the section [namespaces management](../administer/manage_namespaces.md).
+For comprehensive information on how to configure multiple namespaces, refer to the section [namespaces management](../administer/manage_namespaces.md#add-new-namespaces).
 
 See the example below for configuring multiple namespaces:
 
