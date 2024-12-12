@@ -177,8 +177,9 @@ nav:
     - install/install_everest_helm_charts.md
   
   - Upgrade: 
-    - upgrade_with_cli.md
-    - upgrade_operators.md
+    - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
+    - Upgrade Percona Everest using CLI: upgrade/upgrade_with_cli.md
+    - Upgrade Percona operators: upgrade/upgrade_operators.md
 
   - Uninstall:
     - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
