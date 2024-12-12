@@ -3,7 +3,7 @@
 In Kubernetes, the concept of namespaces enables you to create isolated groups of resources within a single cluster. These namespaces provide a way to organize and manage resources without interfering with other resources within the same cluster.
 
 
-!!! warning "Important"
+!!! info "Important"
     Resource names must be unique within a specific namespace but not across different namespaces.
 
 
@@ -15,7 +15,7 @@ For example, you can deploy different environments like production, development,
 
 ## Default namespaces in Percona Everest
 
-!!! warning "Important"
+!!! info "Important"
     The following namespaces are restricted and cannot be used for deploying databases.
 
 Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
@@ -32,33 +32,33 @@ The following holds true for multiple namespaces:
 
 - You can configure multiple namespaces in Percona Everest. 
 
-- You can install different operators in various namespaces by running the install command multiple times.
+- You can install different operators in various namespaces.
+
 
     See the following example for more details:
     
     ??? info "Installing various operators in different namespaces"
             
-        To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following commands:
+        To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
             {.power-number}
 
-        1. `everestctl install`
+        1. `everestctl namespaces add development`
 
                 
             ??? example "Expected output"
 
                 ```sh
-                ? Namespaces managed by Everest [comma separated] dev,testing
-                ? What operators do you want to install? MySQL, MongoDB
+                ? Which operators do you want to install? PostgreSQL
+                ✓ Installing namespace 'development'
                 ```
 
-        2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
+        2. `everestctl namespaces add production`.
 
 
             ??? example "Expected output"
-
                 ```sh
-                ? Namespaces managed by Everest [comma separated] production,staging
-                ? What operators do you want to install? PostgreSQL
+                ? Which operators do you want to install? MySQL, MongoDB
+                ✓ Installing namespace 'production'
                 ```
 
 
