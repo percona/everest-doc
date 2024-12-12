@@ -34,16 +34,16 @@ The following holds true for multiple namespaces:
 
 - You can install different operators in various namespaces.
 
-For comprehensive information on how to configure multiple namespaces, refer to the section on [namespaces management](../administer/manage_namespaces.md).
+For comprehensive information on how to configure multiple namespaces, refer to the section [namespaces management](../administer/manage_namespaces.md).
 
 See the example below for configuring multiple namespaces:
 
-    ??? info "Installing various operators in different namespaces"
+??? info "Installing various operators in different namespaces"
             
-        To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
-            {.power-number}
+    To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
+    {.power-number}
 
-        1. `everestctl namespaces add development`
+    1. `everestctl namespaces add development`
 
                 
             ??? example "Expected output"
@@ -53,7 +53,7 @@ See the example below for configuring multiple namespaces:
                 ✓ Installing namespace 'development'
                 ```
 
-        2. `everestctl namespaces add production`.
+    2. `everestctl namespaces add production`.
 
 
             ??? example "Expected output"
@@ -63,9 +63,9 @@ See the example below for configuring multiple namespaces:
                 ```
 
 
-    Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
+Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
-    ![!image](../images/everest_multinamespaces.png)
+![!image](../images/everest_multinamespaces.png)
 
 ## Deploy the database in your namespace
 
