@@ -51,8 +51,12 @@ everestctl namespaces update [NAMESPACE]
 
 - You may choose to skip the DB namespace installation in the `everestctl install` command.
 
-??? example "Example"
+??? example "Example"    
+    ```sh
+    ./everestctl namespaces update development --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
 
+    ? Which operators do you want to install? MongoDB
+    ✓ Updating namespace 'development'
 
 
 ## Delete namespaces
