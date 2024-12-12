@@ -18,20 +18,14 @@ The command supports the following flags:
 
 `--operator.xtradb-cluster=<bool>`
 
-`--take-ownership` - If the namespace exists, it will be adopted. If set to false, Percona Everest will throw an error.
+`--take-ownership` - If the namespace exists, it will be part of Percona Everest. If it is set to false, Percona Everest will throw an error.
 
+ ??? example "Example"
+    
+    ./everestctl namespaces add production --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig 
 
-## Delete namespaces
-
-You can run the following command for deleting namespaces:
-
-```sh
-everestctl namespaces delete [NAMESPACE]
-```
-
-- This command deletes only the specified namespace, as long as it is managed by Percona Everest.
-
-- Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. It will only remove the Percona Everest label.
+    ? Which operators do you want to install? MongoDB    
+    ✓ Installing namespace 'production'
 
 
 ## Update namespaces
@@ -52,6 +46,17 @@ everestctl namespaces update [NAMESPACE]
 - You may choose to skip the DB namespace installation in the `everestctl install` command.
 
 
+## Delete namespaces
+
+You can run the following command for deleting namespaces:
+
+```sh
+everestctl namespaces delete [NAMESPACE]
+```
+
+- This command deletes only the specified namespace, as long as it is managed by Percona Everest.
+
+- Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. It will only remove the Percona Everest label.
 
 
 
