@@ -21,12 +21,17 @@ The command supports the following flags:
 `--take-ownership` - If the namespace exists, it will be part of Percona Everest. If it is set to false, Percona Everest will throw an error.
 
 ??? example "Example"    
-    ```sh
+    1. ```sh
     everestctl namespaces add production --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig 
 
     ? Which operators do you want to install? MongoDB    
     ✓ Installing namespace 'production'
     ```
+    2. ```sh
+    everestctl namespaces add development --      operator.postgresql=false --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
+✓ Installing namespace 'development'
+       ```
+
 ## Update namespaces
 
 You can run the following command to add more operators to the DB namespace.
