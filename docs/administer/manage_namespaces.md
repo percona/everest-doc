@@ -57,6 +57,7 @@ everestctl namespaces update [NAMESPACE]
 
     ? Which operators do you want to install? MongoDB
     ✓ Updating namespace 'development'
+    ```
 
 
 ## Delete namespaces
