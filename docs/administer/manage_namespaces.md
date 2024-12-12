@@ -29,7 +29,7 @@ The command supports the following flags:
     ```
     
     ```sh
-    everestctl namespaces add development --      operator.postgresql=false --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
+    everestctl namespaces add development --operator.postgresql=false --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
     ✓ Installing namespace 'development'
     ```
     In the command above, we did not specify the MongoDB and MySQL  operators. Therefore, by default, Percona Everest assumes these operators are true and adds them.
