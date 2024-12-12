@@ -73,6 +73,16 @@ everestctl namespaces delete [NAMESPACE]
 - Setting the `--keep-namespace` option will delete all operators in the namespace but will not remove the namespace itself. It will only remove the Percona Everest label.
 
 
+??? example "Example"
+    ```sh
+    everestctl namespaces remove development  --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
+
+    ✓ Deleting database clusters in namespace 'development'
+    ✓ Deleting backup storages in namespace 'development'
+    ✓ Deleting monitoring instances in namespace 'development'
+    ✓ Deleting namespace 'development'
+    ```
+
 
 
 
