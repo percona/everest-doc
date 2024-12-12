@@ -34,9 +34,10 @@ The following holds true for multiple namespaces:
 
 - You can install different operators in various namespaces.
 
+For comprehensive information on how to configure multiple namespaces, refer to the section on [namespaces management](../administer/manage_namespaces.md).
 
-    See the following example for more details:
-    
+See the example below for configuring multiple namespaces:
+
     ??? info "Installing various operators in different namespaces"
             
         To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
