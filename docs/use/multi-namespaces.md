@@ -36,7 +36,7 @@ The following holds true for multiple namespaces:
 
     See the following example for more details:
     
-    ??? info "Example: Installing various operators in different namespaces"
+    ??? info "Installing various operators in different namespaces"
             
         To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following commands:
             {.power-number}
