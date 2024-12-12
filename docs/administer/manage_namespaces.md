@@ -30,9 +30,9 @@ The command supports the following flags:
     
     ```sh
     everestctl namespaces add development --      operator.postgresql=false --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
-✓ Installing namespace 'development'
+    ✓ Installing namespace 'development'
     ```
-    In the command above, we did not specify the MongoDB and MySQL operators. Therefore, by default, Percona Everest assumes these operators are true and adds them.
+    In the command above, we did not specify the MongoDB and MySQL  operators. Therefore, by default, Percona Everest assumes these operators are true and adds them.
 
 ## Update namespaces
 
@@ -50,6 +50,9 @@ everestctl namespaces update [NAMESPACE]
 - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
 
 - You may choose to skip the DB namespace installation in the `everestctl install` command.
+
+??? example "Example"
+
 
 
 ## Delete namespaces
