@@ -43,23 +43,20 @@ See the example below for configuring multiple namespaces:
     {.power-number}
 
     1. `everestctl namespaces add development`
-
                 
-            ??? example "Expected output"
-
-                ```sh
-                ? Which operators do you want to install? PostgreSQL
-                ✓ Installing namespace 'development'
-                ```
+        ??? example "Expected output"
+            ```sh
+            ? Which operators do you want to install? PostgreSQL
+            ✓ Installing namespace 'development'
+            ```
 
     2. `everestctl namespaces add production`.
 
-
-            ??? example "Expected output"
-                ```sh
-                ? Which operators do you want to install? MySQL, MongoDB
-                ✓ Installing namespace 'production'
-                ```
+        ??? example "Expected output"
+            ```sh
+            ? Which operators do you want to install? MySQL, MongoDB
+            ✓ Installing namespace 'production'
+            ```
 
 
 Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
