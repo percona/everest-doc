@@ -1,16 +1,23 @@
 # Percona Everest quick install guide
 
-This section provides instructions for quickly installing and getting started with Percona Everest.
+Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
+
+Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
+
+!!! info "Alternative installation option"
+    If you prefer an alternative method, you can [install Percona Everest using the CLI](install/installEverest.md).
 
 ## Prerequisites
 
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [curl](https://everything.curl.dev/install/index.html){:target="_blank"}.
+1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm).
+2. Install [curl :octicons-link-external-16:](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
+4. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq).
 
-2. Set up a Kubernetes cluster.
+4. Set up a Kubernetes cluster.
      
     !!! note alert alert-primary "Note"
 
@@ -45,62 +52,44 @@ Before getting started with Percona Everest, do the following:
 
 ## Install Percona Everest
 
-You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
+To install Percona Everest using Helm follow these steps:
 {.power-number}
 
-1. Download and install Everest CLI.
-
-    === "Linux and WSL"
-                        
-        ```sh
-        curl -sSL -o everestctl-linux-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
-        sudo install -m 555 everestctl-linux-amd64 /usr/local/bin/everestctl
-        rm everestctl-linux-amd64       
-        ``` 
-
-    === "macOS (Apple Silicon)"
-                        
-        ```sh
-        curl -sSL -o everestctl-darwin-arm64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-arm64
-        sudo install -m 555 everestctl-darwin-arm64 /usr/local/bin/everestctl
-        rm everestctl-darwin-arm64      
-        ```
-
-
-    === "macOS (Intel CPU)"
-                        
-        ```sh
-        curl -sSL -o everestctl-darwin-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-amd64
-        sudo install -m 555 everestctl-darwin-amd64 /usr/local/bin/everestctl
-        rm everestctl-darwin-amd64        
-        ``` 
-
-
-2. Install Percona Everest:
+1. Add the Percona Helm repository.
 
     ```sh
-    everestctl install
+    helm repo add percona https://percona.github.io/percona-helm-charts/
+    helm repo update
     ```
 
-    Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma.
 
-    !!! warning "Important"
-        Make sure that you enter at least one namespace.
-
-3. Update the password for the `admin` user:
+2. Install Percona Everest.
 
     ```sh
-    everestctl accounts set-password --username admin
+    helm install everest-core percona/everest \
+    --namespace everest-system \
+    --create-namespace
+    ```
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section [here](install/install_everest_helm_charts.md).
+
+
+## Post-installation steps
+
+Once you have successfully installed Percona Everest, proceed with the following steps:
+{.power-number}
+
+1. Retrieve the `admin` password.
+
+    ```sh
+    kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
 
-    !!! info "Important"
+    !!! note
+        The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
-        You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+    For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
 
-
-    For more information on user management, see the section [Manage users in Percona Everest](../administer/manage_users.md).
-
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+2. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Load Balancer"
 
@@ -115,9 +104,6 @@ You can download the latest version of Everest CLI by visiting the latest releas
             ```sh 
             kubectl get svc/everest -n everest-system
             ```
-
-
-
 
     === "Node Port"       
 
