@@ -30,7 +30,7 @@ To set up the namespaces that Percona Everest will manage and where you can depl
 
 The following holds true for multiple namespaces:
 
-- You can [configure multiple namespaces]((../administer/manage_namespaces.md#add-new-namespaces)) in Percona Everest using the `everestctl namespaces add [NAMESPACE]` command.
+- You can [configure multiple namespaces](../administer/manage_namespaces.md#add-new-namespaces) in Percona Everest using the `everestctl namespaces add [NAMESPACE]` command.
 
 - You can [install different operators](../administer/manage_namespaces.md#update-namespaces) in various namespaces using the `everestctl namespaces update [NAMESPACE]` command.
 
