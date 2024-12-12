@@ -38,8 +38,7 @@ For comprehensive information on how to configure multiple namespaces, refer to 
 
 See the example below for configuring multiple namespaces:
 
-??? info "Installing various operators in different namespaces"
-            
+??? info "Installing various operators in different namespaces"            
     To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
     {.power-number}
 

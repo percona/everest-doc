@@ -53,7 +53,7 @@ everestctl namespaces update [NAMESPACE]
 
 ??? example "Example"    
     ```sh
-    ./everestctl namespaces update development --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
+    everestctl namespaces update development --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
 
     ? Which operators do you want to install? MongoDB
     ✓ Updating namespace 'development'
