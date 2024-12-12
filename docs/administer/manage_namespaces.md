@@ -14,7 +14,7 @@ The command supports the following flags:
 
 `--operator.mongodb=<bool>`
 
-`--operator.postgres=<bool>`
+`--operator.postgresql=<bool>`
 
 `--operator.xtradb-cluster=<bool>`
 
