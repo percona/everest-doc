@@ -112,6 +112,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
+    For details on how to update the admin password, refer to the section on [user management](../administer/manage_users.md#update-the-password).
+
 5. Deploy additional database namespaces:
 
     Once Percona Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
