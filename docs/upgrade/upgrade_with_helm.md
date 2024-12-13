@@ -22,7 +22,7 @@ kubectl apply -k https://github.com/percona/everest-operator/config/crd?ref=$(VE
 
 where,
 
-**Next version** - A placeholder for the specific version of the Everest Operator. For example, you might replace `<Next version>` with v1.3.0.
+**Next version** - A placeholder for the specific version of the Everest Operator. For example, you might replace `<Next version>` with 1.3.0.
 
 ## Upgrade Helm releases
 
