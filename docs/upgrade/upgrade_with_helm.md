@@ -24,4 +24,27 @@ where,
 
 **Next version** - A placeholder for the specific version of the Everest Operator. For example, you might replace `<Next version>` with v1.3.0.
 
+## Upgrade Helm releases
 
+To upgrade Percona Everest using Helm, run the following commands:
+{power.number}
+
+1. Upgrade the Helm release for Everest (core components).
+
+    ```sh
+    helm upgrade everest-core percona/everest --namespace everest-system --version $(VERSION)      
+    ```
+
+    where,
+
+    **VERSION** is the Percona Everest Version you wish to upgrade to.
+
+2. Upgrade the Helm release for the database namespace (if applicable):
+
+    ```sh
+    helm upgrade everest percona/everest-db-namespace --namespace [DB NAMESPACE] --version $(VERSION)
+    ```
+
+    where,
+
+    **VERSION** is the Percona Everest Version you wish to upgrade to.
