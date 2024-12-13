@@ -13,7 +13,6 @@ Before getting started with Percona Everest, do the following:
 {.power-number}
 
 1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm).
-2. Install [curl :octicons-link-external-16:](https://everything.curl.dev/install/index.html){:target="_blank"}.
 
 4. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq).
 
