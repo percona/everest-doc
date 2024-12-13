@@ -182,8 +182,8 @@ nav:
     - Upgrade Percona operators: upgrade/upgrade_operators.md
 
   - Uninstall:
-    - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
     - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
+    - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
    
   - Administer:
       - User management: administer/manage_users.md
