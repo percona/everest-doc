@@ -10,7 +10,7 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 
 You can only upgrade one minor version at a time. For instance, you can upgrade from version 1.0.0 to version 1.1.0 but you cannot directly upgrade from version 1.0.0 to version 1.2.0.  
 
-## Upgrade
+## Upgrade to versions other than v1.2.0
 
 !!! note
     It is recommended that you create backups of your databases prior to upgrading Percona Everest.
