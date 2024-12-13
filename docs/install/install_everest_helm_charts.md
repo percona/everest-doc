@@ -122,7 +122,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
     helm install everest \
     percona/everest-db-namespace \
     --create-namespace \
-    --namespace everest
+    --namespace <DBNamespace>
     ```
 
     !!! note
