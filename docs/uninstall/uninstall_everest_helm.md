@@ -9,8 +9,8 @@ If you have created any database namespaces other than the default namespace, en
 
 
 ```sh
-helm uninstall everest -n <your_db_namespace>
-kubectl delete ns <your_db_namespace>
+helm uninstall everest -n <DBNamespace>
+kubectl delete ns <DBNamespace>
 ```
 
 !!! note
