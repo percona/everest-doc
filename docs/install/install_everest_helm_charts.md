@@ -110,9 +110,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 5. The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-    The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
+    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
-    For details on how to update the admin password, refer to the section on [user management](../administer/manage_users.md#update-the-password).
+    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
 5. Deploy additional database namespaces:
 
