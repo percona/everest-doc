@@ -173,8 +173,8 @@ nav:
       - install/eks.md
       - install/gke.md
       - install/installEverestCLI.md
-    - install/installEverest.md
     - install/install_everest_helm_charts.md
+    - install/installEverest.md
   
   - Upgrade: 
     - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
