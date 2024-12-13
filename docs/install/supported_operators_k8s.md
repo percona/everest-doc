@@ -5,8 +5,8 @@ Percona Everest provides support for various operators and Kubernetes clusters. 
 ## Operators
 
 * Percona Operator for MySQL Based on Percona XtraDB Cluster (PXC) 1.14.0, 1.15.0
-* Percona Operator for MongoDB (PSMDB) 1.15.0
-* Percona Operator for PostgreSQL (PG) 2.3.1, 2.4.1
+* Percona Operator for MongoDB (PSMDB) 1.17.0, 1.18.0
+* Percona Operator for PostgreSQL (PG) 2.4.1, 2.5.0
 
 ## k8s clusters
 
