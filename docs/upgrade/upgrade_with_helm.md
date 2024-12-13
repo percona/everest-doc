@@ -9,7 +9,7 @@ Percona Everest consistently delivers updates that includes bug fixes, security 
     - For a safe upgrade, we perform a pre-upgrade hook that runs a series of checks. You can disable this by setting `upgrade.preflightChecks=false`, but doing so means a safe upgrade cannot be assured.
 
 
- ## Upgrade CRDs
+## Upgrade CRDs
 
 In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need to manually upgrade the CRDs.
 
@@ -27,7 +27,7 @@ where,
 ## Upgrade Helm releases
 
 To upgrade Percona Everest using Helm, run the following commands:
-{power.number}
+{.power-number}
 
 1. Upgrade the Helm release for Everest (core components).
 
