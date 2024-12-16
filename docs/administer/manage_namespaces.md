@@ -22,7 +22,7 @@ The command supports the following flags:
 
 ??? example "Example"    
     ```sh
-    everestctl namespaces add production --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig 
+    everestctl namespaces add production
 
     ? Which operators do you want to install? MongoDB    
     ✓ Installing namespace 'production'
