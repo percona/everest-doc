@@ -18,7 +18,7 @@ The command supports the following flags:
 
 `--operator.xtradb-cluster=<bool>`
 
-`--take-ownership` - If the namespace exists, it will be part of Percona Everest. If it is set to false, Percona Everest will throw an error.
+`--take-ownership` - Allows Everest to manage an existing Kubernetes namespace by adding the necessary labels. Without this flag, Everest will attempt to create the namespace and throw an error if it already exists. Use this flag to take over an existing namespace.
 
 ??? example "Example"    
     ```sh
