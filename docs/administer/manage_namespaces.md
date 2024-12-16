@@ -84,8 +84,3 @@ everestctl namespaces delete [NAMESPACE]
     ✓ Deleting monitoring instances in namespace 'development'
     ✓ Deleting namespace 'development'
     ```
-
-
-
-
-
