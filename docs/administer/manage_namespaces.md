@@ -36,7 +36,7 @@ The command supports the following flags:
 
 ## Update namespaces
 
-You can run the following command to add more operators to the DB namespace.
+You can run the following command to add more operators to an existing DB namespace.
 
 
 ```sh
