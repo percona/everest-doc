@@ -44,7 +44,7 @@ everestctl namespaces update [NAMESPACE]
 ```
 
 !!! note
-    The `everestctl install` command can provision a DB namespace. However, if you run this command again, an error will be thrown: `Everest is already installed.`
+    The `everestctl install` command lets you create database namespaces during the initial installation. However, it cannot be rerun to add more database namespaces. To create additional database namespaces after installation, use the namespaces add command.`
 
 
 - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
