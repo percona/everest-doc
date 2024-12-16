@@ -51,6 +51,8 @@ everestctl namespaces update [NAMESPACE]
 
 - You may choose to skip the DB namespace installation in the `everestctl install` command.
 
+- Removing operators with `update` is currently not supported.
+
 ??? example "Example"    
     ```sh
     everestctl namespaces update development --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
