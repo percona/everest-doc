@@ -13,8 +13,8 @@ export KUBECONFIG=~/.kube/config
 !!! info "Important"
     Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest) to install Percona Everest. To configure chart parameters during installation through the CLI, you can:
 
-    * Use the `--helm-set` flag to specify individual parameter values.
-    * Provide a values file with the `--helm-values` flag for bulk configuration.
+    * Use the `--helm-.set` flag to specify individual parameter values.
+    * Provide a values file with the `--helm.values` flag for bulk configuration.
 
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
