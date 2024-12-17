@@ -20,13 +20,6 @@ The command supports the following flags:
 
 `--take-ownership` - Allows Percona Everest to manage an existing Kubernetes namespace by adding the necessary labels. Without this flag, Percona Everest will attempt to create the namespace and throw an error if it already exists. Use this flag to take over an existing namespace.
 
-!!! note
-    The `everestctl install` command allows you create database namespaces during the initial installation. However, it cannot be rerun to add more database namespaces. To create additional database namespaces after installation, use the namespaces add command.` 
-
-    - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
-
-    - You may choose to skip the DB namespace installation in the `everestctl install` command.
-
 ??? example "Example"
     ```sh
     everestctl namespaces add development --operator.postgresql=false
@@ -40,6 +33,14 @@ The command supports the following flags:
     ? Which operators do you want to install? MongoDB    
     ✓ Installing namespace 'production'
     ```
+
+!!! note
+    The `everestctl install` command allows you create database namespaces during the initial installation. However, it cannot be rerun to add more database namespaces. To create additional database namespaces after installation, use the namespaces add command.` 
+
+    - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
+
+    - You may choose to skip the DB namespace installation in the `everestctl install` command.
+
 
    
     
