@@ -26,6 +26,9 @@ where,
 
 ## Upgrade Helm releases
 
+!!! warning
+    When using `helm upgrade`, specifying `--set` (or other equivalent flags) causes Helm to revert all other values to the defaults defined in the chart. To avoid this issue, either include the `--reuse-values` flag or provide the complete set of values, including those used during the installation.
+
 To upgrade Percona Everest using Helm, run the following commands:
 {.power-number}
 
