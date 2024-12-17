@@ -1,4 +1,4 @@
-# Install Everest
+# Install Percona Everest using CLI
 
 ## Before you start
 
@@ -8,7 +8,13 @@ Before running the commands in the **Installation** section, note that Everest w
 export KUBECONFIG=~/.kube/config
 ```
 
-## Installation
+## Install Percona Everest
+
+!!! info "Important"
+    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through the CLI, you can:
+
+    * Use the `--helm-.set` flag to specify individual parameter values.
+    * Provide a values file with the `--helm.values` flag for bulk configuration.
 
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
@@ -24,8 +30,9 @@ To install and provision Percona Everest to Kubernetes:
 
     Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases. Make sure that you enter **at least** one namespace.
 
+    **Alternative command**
 
-    Alternatively, you can set multiple namepaces in the headless mode:
+    You can set multiple namepaces in the headless mode:
 
     ```sh
     everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
