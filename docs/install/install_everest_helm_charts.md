@@ -118,7 +118,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     Once Percona Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
 
-    If you set `dbNamespaces.enabled=false` in step 2., you can deploy a database namespace with the following command:
+    If you set `dbNamespaces.enabled=false` in **step 2**, you can deploy a database namespace with the following command:
 
     ```sh
     helm install everest \
