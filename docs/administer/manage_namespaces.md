@@ -35,7 +35,7 @@ The command supports the following flags:
     ```
 
 !!! note
-    The `everestctl install` command allows you create database namespaces during the initial installation. However, it cannot be rerun to add more database namespaces. To create additional database namespaces after installation, use the namespaces add command.` 
+    The `everestctl install` command allows you create database namespaces during the initial installation. However, it cannot be rerun to add more database namespaces. To create additional database namespaces after installation, use the namespaces add command.
 
     - To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
 
