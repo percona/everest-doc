@@ -41,11 +41,10 @@ The command supports the following flags:
 
     - You may choose to skip the DB namespace installation in the `everestctl install` command.
 
-
-   
-    
-
 ## Update namespaces
+
+!!! info "Important"
+    Removing operators with `update` is currently not supported.
 
 You can run the following command to add more operators to an existing DB namespace.
 
@@ -53,15 +52,6 @@ You can run the following command to add more operators to an existing DB namesp
 ```sh
 everestctl namespaces update [NAMESPACE] 
 ```
-
-
-
-
-- To provision a DB namespace after installation, use the command `everestctl namespaces add`. 
-
-- You may choose to skip the DB namespace installation in the `everestctl install` command.
-
-- Removing operators with `update` is currently not supported.
 
 ??? example "Example"    
     ```sh
