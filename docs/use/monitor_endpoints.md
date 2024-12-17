@@ -44,6 +44,11 @@ To add monitoring in Percona Everest from the UI:
 6. Click **Add**.
 
 
+### Connect to PMM and monitor your databases
+
+
+
+
 
 ## Edit monitoring
 
