@@ -25,7 +25,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
-    ??? info "Install Percona Everest with Helm"
+    ??? info "Installion with Helm"
 
         1. Add the Percona Helm repository:
 
@@ -41,13 +41,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
             --create-namespace
             ```
         
-            For a deep dive into using Helm charts for installing Percona Everest, refer to our      [documentation](https://docs.percona.com/everest/install/install/install_everest_helm_charts.html).    
+            For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
+
+    Discover our documentation for a hassle-free [upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) or [uninstallation](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) of Percona Everest using Helm Charts.    
     
-    ### Capability to configure proxy nodes and define their resource limits
-
-    Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
-
-    With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your Percona Everest deployments.
 
 
     ![!image](../images/proxies_resources.png)
