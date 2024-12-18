@@ -20,26 +20,27 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 
 === "Helm charts"
+    ### Simplify your Percona Everest deployments with Helm
 
-    We are thrilled to introduce Helm charts in Percona Everest 1.4.0. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+    We are thrilled to introduce [Helm charts](https://helm.sh/) in Percona Everest 1.4.0. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
     To use Helm charts in Percona Everest, follow these steps:
 
-        1. Add the Percona Helm repository:
+    1. Add the Percona Helm repository:
 
-            ```sh
-            helm repo add percona https://percona.github.io/percona-helm-charts/
-            ```
+        ```sh
+        helm repo add percona https://percona.github.io/percona-helm-charts/
+        ```
 
-        2. Install Percona Everest:
+    2. Install Percona Everest:
 
-            ```sh
-            helm install everest-core percona/everest \
-            --namespace everest-system \
-            --create-namespace
-            ```
+        ```sh
+        helm install everest-core percona/everest \
+        --namespace everest-system \
+        --create-namespace
+        ```
         
         For a deep dive into using Helm charts with Percona Everest, refer to our       [documentation](https://docs.percona.com/everest/install/install/install_everest_helm_charts.html).    
     
@@ -54,8 +55,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "Namespace management"
 
-    ### Optimize MongoDB with sharding in Percona Everest
-    
+    ### Manage your namespaces with everestctl commands
+
+
+
 ## New features
 
 - [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908) Add connection URL to connection details info card
