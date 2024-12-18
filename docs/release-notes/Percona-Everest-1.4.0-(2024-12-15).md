@@ -21,6 +21,28 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "Helm charts"
 
+    We are thrilled to introduce Helm charts in Percona Everest 1.4.0. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+
+    Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
+
+    To use Helm charts in Percona Everest, follow these steps:
+
+        1. Add the Percona Helm repository:
+
+            ```sh
+            helm repo add percona https://percona.github.io/percona-helm-charts/
+            ```
+
+        2. Install Percona Everest:
+
+            ```sh
+            helm install everest-core percona/everest \
+            --namespace everest-system \
+            --create-namespace
+            ```
+        
+        For a deep dive into using Helm charts with Percona Everest, refer to our       [documentation](https://docs.percona.com/everest/install/install/install_everest_helm_charts.html).    
+    
     ### Capability to configure proxy nodes and define their resource limits
 
     Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
@@ -33,10 +55,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 === "Namespace management"
 
     ### Optimize MongoDB with sharding in Percona Everest
-
     
-
-
 ## New features
 
 - [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908) Add connection URL to connection details info card
