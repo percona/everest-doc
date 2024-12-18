@@ -131,6 +131,10 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
             ```sh
             kubectl get svc/everest -n everest-system
+            ```
+
+            ??? example "Expected output"
+            ```{.text .no-copy}
             NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
@@ -139,6 +143,10 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
             ```sh
             kubectl get nodes -o wide
+            ```
+
+            ??? example "Expected output"
+            ```{.text .no-copy}
             NAME                                          STATUS   ROLES    AGE   VERSION               INTERNAL-IP     EXTERNAL-IP      OS-IMAGE                             KERNEL-VERSION CONTAINER-RUNTIME
             gke-everest-test-default-pool-8bbed860-65gx   Ready    <none>   3m35s v1.30.3-gke.1969001   10.204.15.199   34.175.155.135   Container-Optimized OS from Google   6.1.100+       containerd://1.7.19
             gke-everest-test-default-pool-8bbed860-pqzb   Ready    <none>   3m35s v1.30.3-gke.1969001   10.204.15.200   34.175.120.50    Container-Optimized OS from Google   6.1.100+       containerd://1.7.19
