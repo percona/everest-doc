@@ -45,13 +45,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Discover our documentation for a hassle-free [upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) or [uninstallation](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) of Percona Everest using Helm Charts.    
     
-
-
-    ![!image](../images/proxies_resources.png)
-
 === "Namespace management"
 
-    ### Manage your namespaces with everestctl commands
+    ### Manage your namespaces with new everestctl commands
+
+
 
 
 
