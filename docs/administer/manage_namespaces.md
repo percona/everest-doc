@@ -77,7 +77,7 @@ everestctl namespaces delete [NAMESPACE]
 
 ??? example "Example"
     ```sh
-    everestctl namespaces remove development --kubeconfig /Users/rasikachivate/Downloads/Kubeconfig
+    everestctl namespaces remove development
 
     ✓ Deleting database clusters in namespace 'development'
     ✓ Deleting backup storages in namespace 'development'
