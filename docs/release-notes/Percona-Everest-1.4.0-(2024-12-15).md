@@ -49,6 +49,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ### Manage your namespaces with new everestctl commands
 
+    Namespace management is essential in Percona Everest for efficiently organizing, securing, and allocating resources, particularly in large and complex Kubernetes environments. By leveraging Kubernetes namespaces, Percona Everest achieves logical isolation, enhanced security, and better resource allocation for databases, backups, and monitoring setups.
+
 
 
 
