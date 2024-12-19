@@ -63,7 +63,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 
 === "Removing UI edit wizard"
-     You dont have the navigate through the edit DB wizard to edit your datbase clusters.
+     Starting with Percona Everest 1.4.0, we have removed the edit DB wizard. 
+Now, you can experience a more streamlined experience with our new editable widgets on the Overview screen. This enables quick edits—focusing only on the fields you wish to change rather than going through the entire edit DB wizard, even for changes to a single field.
 
 
 ## New features
