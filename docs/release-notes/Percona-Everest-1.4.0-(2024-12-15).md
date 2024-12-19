@@ -16,7 +16,21 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.4.0|
 
 
-## Release highlights
+## Release highlights    
+    
+=== "Namespaces management"
+
+    ### Manage your namespaces with new everestctl commands
+
+    Namespace management is essential in Percona Everest for efficiently organizing, securing, and allocating resources, particularly in large and complex Kubernetes environments. By leveraging Kubernetes namespaces, Percona Everest achieves logical isolation, enhanced security, and better resource allocation for databases, backups, and monitoring setups.
+
+
+ Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces. These commands enable you to:
+    
+ - Add new namespaces
+ - Update existing namespaces
+ - Delete any used namespaces
+
 
 === "Helm charts"
     ### Simplify your Percona Everest deployments with Helm
@@ -43,13 +57,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
         
             For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
-    Discover our documentation for a hassle-free [upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) or [uninstallation](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) of Percona Everest using Helm Charts.    
-    
-=== "Namespace management"
-
-    ### Manage your namespaces with new everestctl commands
-
-    Namespace management is essential in Percona Everest for efficiently organizing, securing, and allocating resources, particularly in large and complex Kubernetes environments. By leveraging Kubernetes namespaces, Percona Everest achieves logical isolation, enhanced security, and better resource allocation for databases, backups, and monitoring setups.
+    Discover our documentation for a hassle-free [upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) or [uninstallation](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) of Percona Everest using Helm Charts.
 
 
 
