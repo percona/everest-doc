@@ -27,9 +27,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
  Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces. These commands enable you to:
     
- - Add new namespaces
- - Update existing namespaces
- - Delete any used namespaces
+ - [Add new namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#add-new-namespaces)
+ - [Update existing namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#update-namespaces)
+ - [Delete any used namespaces](delete-namespaces)
 
 
 === "Helm charts"
