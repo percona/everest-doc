@@ -58,9 +58,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
         
             For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
-    Discover our documentation for a hassle-free [upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) or [uninstallation](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) of Percona Everest using Helm Charts.
+
+Looking to [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button}
+
+Everest with Helm? Check out our documentation on helm charts.
 
 
+=== "Removing UI edit wizard"
 
 
 
