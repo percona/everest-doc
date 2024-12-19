@@ -40,7 +40,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
-    ??? info "Installion with Helm"
+    ??? info "Install Percona Everest with Helm"
 
         1. Add the Percona Helm repository:
 
