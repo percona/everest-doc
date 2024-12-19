@@ -59,13 +59,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
             For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
 
-Looking to [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button}
-
-Everest with Helm? Check out our documentation on helm charts.
+    Explore our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections to learn how to upgrade or uninstall Percona Everest with Helm.
 
 
 === "Removing UI edit wizard"
-
+     You dont have the navigate through the edit DB wizard to edit your datbase clusters.
 
 
 ## New features
