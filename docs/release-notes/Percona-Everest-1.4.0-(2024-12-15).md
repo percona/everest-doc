@@ -84,19 +84,18 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## New features
 
 
-
 - [EVEREST-1511](https://perconadev.atlassian.net/browse/EVEREST-1511): We have introduced Helm charts, which simplify the Percona Everest deployment process by packaging all necessary resources and configurations. These charts are ideal for automating and managing installations in Kubernetes environments.
 
-- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908) Add connection URL to connection details info card
+- [EVEREST-1512](https://perconadev.atlassian.net/browse/EVEREST-1512): You can now seamlessly upgrade your Percona Everest installation using Helm, a package manager for Kubernetes. This streamlined process simplifies the upgrade experience.
 
+- [EVEREST-1673](https://perconadev.atlassian.net/browse/EVEREST-1673): Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces.
 
-- [EVEREST-1512](https://perconadev.atlassian.net/browse/EVEREST-1512) Upgrade with helm
+- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** screen now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
 
 - [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599) Add support for PG operator v2.5.0
 
 - [EVEREST-1624](https://perconadev.atlassian.net/browse/EVEREST-1624) Add support for PSMDB Operator v1.18.0
 
-- [EVEREST-1673](https://perconadev.atlassian.net/browse/EVEREST-1673) \[CLI\] New command for provisioning DB namespaces
 
 ## Improvement
 
