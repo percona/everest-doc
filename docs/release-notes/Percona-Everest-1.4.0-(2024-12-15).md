@@ -62,9 +62,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     Explore our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections to learn how to upgrade or uninstall Percona Everest with Helm.
 
 
-=== "Removing UI edit wizard"
-     Starting with Percona Everest 1.4.0, we have removed the edit DB wizard. 
-Now, you can experience a more streamlined experience with our new editable widgets on the Overview screen. This enables quick edits—focusing only on the fields you wish to change rather than going through the entire edit DB wizard, even for changes to a single field.
+=== "Improved edit database flow"
+
+    ### Removal of the Edit DB Wizard for an Enhanced User Experience
+
+    Starting with Percona Everest 1.4.0, we have removed the **Edit DB** wizard to provide a more streamlined user experience. You can now edit specific fields directly from the **DB Overview** screen using our new editable widgets, eliminating the need to navigate through the entire **Edit DB** wizard.
+
+    ![!image](../images/display_db_details.png)
 
 
 ## New features
