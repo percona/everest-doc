@@ -69,7 +69,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ![!image](../images/remove_edit_db_wizard.png)
 
-    Let's assume you want to make changes to the **Resources** widget. First, navigate to the specific database. Next, go to the **Overview > Resources** and then click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
+    Let's assume you want to make changes to **Point-in-time-Recovery (PITR)**. First, navigate to the specific database. Next, go to the **Overview > ** **Point-in-time-Recovery (PITR)** and then click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
 
     ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
