@@ -92,14 +92,14 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** screen now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
 
-- [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599): We have added support for PG operator v2.5.0.
+- [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599): We have added support for PostgreSQL operator v2.5.0.
 
 - [EVEREST-1624](https://perconadev.atlassian.net/browse/EVEREST-1624): We have added support for PSMDB Operator v1.18.0.
 
 
 ## Improvement
 
-- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065) \[UI\] Remove edit button from database list actions
+- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Remove edit button from database list actions
 
 - [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066) \[UI\] Backups \(widget\)
 
@@ -112,7 +112,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1546](https://perconadev.atlassian.net/browse/EVEREST-1546) \[UI\] Number of proxies/routers/bouncers and their resources should be displayed in dashboard and database overview
 
 - [EVEREST-1683](https://perconadev.atlassian.net/browse/EVEREST-1683) \[UI\] Backups on the database overview page should be sorted in descending order by Started date and time
-
 
 - [EVEREST-1686](https://perconadev.atlassian.net/browse/EVEREST-1686) Use 24h format
 
