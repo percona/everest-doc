@@ -68,8 +68,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Starting with Percona Everest 1.4.0, we have removed the **Edit DB** wizard to provide a more streamlined user experience. You can now edit specific fields directly from the **DB Overview** screen using our new editable widgets, eliminating the need to navigate through the entire **Edit DB** wizard.
 
-    ![!image](../images/remove_edit_db_wizard)
+    ![!image](../images/remove_edit_db_wizard.png)
 
+    Let's assume you want to make changes to the resources screen. First, navigate to the specific database. Next, go to the **Overview > Resources** widget and click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
+
+    ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
 ## New features
 
