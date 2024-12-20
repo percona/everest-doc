@@ -67,7 +67,7 @@ everestctl namespaces update [NAMESPACE]
 You can run the following command for deleting namespaces:
 
 ```sh
-everestctl namespaces delete [NAMESPACE]
+everestctl namespaces remove [NAMESPACE]
 ```
 
 - This command deletes only the specified namespace, as long as it is managed by Percona Everest.
