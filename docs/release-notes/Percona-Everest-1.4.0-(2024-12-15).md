@@ -21,7 +21,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 === "Helm charts"
     ### Simplify your Percona Everest deployments with Helm
 
-    We are excited to announce the launch of Helm charts in Percona Everest 1.4.0.[Helm charts](https://helm.sh/) simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+    We are excited to announce the launch of Helm charts in Percona Everest 1.4.0. [Helm charts](https://helm.sh/) simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
@@ -69,7 +69,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ![!image](../images/remove_edit_db_wizard.png)
 
-    Let's assume you want to make changes to **Point-in-time-Recovery (PITR)**. First, navigate to the specific database. Next, go to the **Overview > ** **Point-in-time-Recovery (PITR)** and then click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
+    Let's assume you want to make changes to **Point-in-time-Recovery (PITR)**. First, navigate to the specific database. Next, go to the **Overview > Point-in-time-Recovery (PITR)** and then click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
 
     ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
