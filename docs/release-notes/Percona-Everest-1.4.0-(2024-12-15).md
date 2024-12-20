@@ -7,9 +7,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**  |[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
-    | **2.**  |[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
-    | **3.**  |[Improved edit datbase flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new everestctl commands|
+    | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
+    | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
+    | **3.**|[Improved edit datbase flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new everestctl commands|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
     | **7.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.4.0|
@@ -76,9 +76,12 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## New features
 
+
+
+- [EVEREST-1511](https://perconadev.atlassian.net/browse/EVEREST-1511): We have introduced Helm charts, which simplify the Percona Everest deployment process by packaging all necessary resources and configurations. These charts are ideal for automating and managing installations in Kubernetes environments.
+
 - [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908) Add connection URL to connection details info card
 
-- [EVEREST-1511](https://perconadev.atlassian.net/browse/EVEREST-1511) Install/uninstall with helm
 
 - [EVEREST-1512](https://perconadev.atlassian.net/browse/EVEREST-1512) Upgrade with helm
 
