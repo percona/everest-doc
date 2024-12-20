@@ -3,7 +3,7 @@
 In Kubernetes, the concept of namespaces enables you to create isolated groups of resources within a single cluster. These namespaces provide a way to organize and manage resources without interfering with other resources within the same cluster.
 
 
-!!! warning "Important"
+!!! info "Important"
     Resource names must be unique within a specific namespace but not across different namespaces.
 
 
@@ -15,7 +15,7 @@ For example, you can deploy different environments like production, development,
 
 ## Default namespaces in Percona Everest
 
-!!! warning "Important"
+!!! info "Important"
     The following namespaces are restricted and cannot be used for deploying databases.
 
 Percona Everest will create the following namespaces by default. You can see these default namespaces while Percona Everest is being installed.
@@ -30,41 +30,35 @@ To set up the namespaces that Percona Everest will manage and where you can depl
 
 The following holds true for multiple namespaces:
 
-- You can configure multiple namespaces in Percona Everest. 
+- You can [configure multiple namespaces](../administer/manage_namespaces.md#add-new-namespaces) in Percona Everest using the `everestctl namespaces add [NAMESPACE]` command.
 
-- You can install different operators in various namespaces by running the install command multiple times.
+- You can [install different operators](../administer/manage_namespaces.md#update-namespaces) in various namespaces using the `everestctl namespaces update [NAMESPACE]` command.
 
-    See the following example for more details:
-    
-    ??? info "Example: Installing various operators in different namespaces"
-            
-        To install various operators in different namespaces, such as MySQL and MongoDB operator in namespaces dev and testing, and PostgreSQL operator in namespaces production and staging, run the following commands:
-            {.power-number}
 
-        1. `everestctl install`
+??? example "Example: Configuring multiple namesapces and installing various operators within those namespaces"            
+    To install various operators in different namespaces, such as MongoDB and MySQL operator in namespace production, and PostgreSQL operator in namespace development, run the following commands:
+    {.power-number}
 
+    1. `everestctl namespaces add development`
                 
-            ??? example "Expected output"
+        ??? example "Expected output"
+            ```sh
+            ? Which operators do you want to install? PostgreSQL
+            ✓ Installing namespace 'development'
+            ```
 
-                ```sh
-                ? Namespaces managed by Everest [comma separated] dev,testing
-                ? What operators do you want to install? MySQL, MongoDB
-                ```
+    2. `everestctl namespaces add production`.
 
-        2. Rerun the `everestctl install` command to install the PostgreSQL operator in the production and staging namespaces.
-
-
-            ??? example "Expected output"
-
-                ```sh
-                ? Namespaces managed by Everest [comma separated] production,staging
-                ? What operators do you want to install? PostgreSQL
-                ```
+        ??? example "Expected output"
+            ```sh
+            ? Which operators do you want to install? MySQL, MongoDB
+            ✓ Installing namespace 'production'
+            ```
 
 
-    Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
+Go to Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. A list of all the namespaces that you have created will appear here.
 
-    ![!image](../images/everest_multinamespaces.png)
+![!image](../images/everest_multinamespaces.png)
 
 ## Deploy the database in your namespace
 
