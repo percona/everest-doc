@@ -7,8 +7,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**  |[Helm charts]()||
-    | **2.**  |[Namespace management]()||
+    | **1.**  |[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
+    | **2.**  |[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
+    | **3.**  |[Improved edit datbase flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new everestctl commands|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
     | **7.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.4.0|
@@ -70,7 +71,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     ![!image](../images/remove_edit_db_wizard.png)
 
      Let's assume you want to make changes to **Point-in-time-Recovery (PITR)**. First, navigate to the specific database. Then, go to **Overview > Point-in-time-Recovery (PITR)** and click **Edit**. Make the necessary changes and click **Save**.
-     
+
     ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
 ## New features
