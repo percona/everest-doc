@@ -16,22 +16,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.4.0|
 
 
-## Release highlights    
-    
-=== "Namespaces management"
-
-    ### Manage your namespaces with new everestctl commands
-
-    Namespace management is essential in Percona Everest for efficiently organizing, securing, and allocating resources, particularly in large and complex Kubernetes environments. By leveraging Kubernetes namespaces, Percona Everest achieves logical isolation, enhanced security, and better resource allocation for databases, backups, and monitoring setups.
-
-
-    Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces. These commands enable you to:
-        
-    - [Add new namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#add-new-namespaces)
-    - [Update existing namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#update-namespaces)
-    - [Delete any used namespaces](delete-namespaces)
-
-    For a deep dive into managing namespaces for provisioning DB namespaces in Percona Everest, refer to our [documentation](https://docs.percona.com/everest/administer/manage_namespaces.html).
+## Release highlights
 
 === "Helm charts"
     ### Simplify your Percona Everest deployments with Helm
@@ -60,7 +45,21 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 
     Explore our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections to learn how to upgrade or uninstall Percona Everest with Helm.
+    
+=== "Namespaces management"
 
+    ### Manage your namespaces with new everestctl commands
+
+    Namespace management is essential in Percona Everest for efficiently organizing, securing, and allocating resources, particularly in large and complex Kubernetes environments. By leveraging Kubernetes namespaces, Percona Everest achieves logical isolation, enhanced security, and better resource allocation for databases, backups, and monitoring setups.
+
+
+    Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces. These commands enable you to:
+        
+    - [Add new namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#add-new-namespaces)
+    - [Update existing namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#update-namespaces)
+    - [Delete any used namespaces](delete-namespaces)
+
+    For a deep dive into managing namespaces for provisioning DB namespaces in Percona Everest, refer to our [documentation](https://docs.percona.com/everest/administer/manage_namespaces.html).
 
 === "Improved edit database flow"
 
@@ -70,7 +69,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ![!image](../images/remove_edit_db_wizard.png)
 
-    Let's assume you want to make changes to the resources screen. First, navigate to the specific database. Next, go to the **Overview > Resources** widget and click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
+    Let's assume you want to make changes to the **Resources** widget. First, navigate to the specific database. Next, go to the **Overview > Resources** and then click **Edit**. Make the necessary changes according to your requirements, then click **Save**.
 
     ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
