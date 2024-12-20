@@ -10,7 +10,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
     | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
     | **3.**|[Improved edit datbase flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new everestctl commands|
-    | **4.**|[PSMDB operator 1.18.0 and PG operator 2.5.0](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.18.0 and PG operator v2.5.0|
+    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.18.0 and PG operator v2.5.0|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
     | **7.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.4.0|
@@ -46,7 +46,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
             For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
 
-    Don't miss our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sectionsDon't miss our Upgrade or Uninstall sections, which provide information on upgrading or uninstalling Percona Everest with Helm.
+    Don't miss our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections, which provide information on upgrading or uninstalling Percona Everest with Helm.
     
 === "Namespaces management"
 
@@ -75,7 +75,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ![!image](../images/remove_db_wizard_edit_resource_widget.png)
 
-=== "PSMDB operator 1.18.0 and PG operator 2.5.0"
+=== "Operators support"
 
     ### Support for PSMDB Operator v1.18.0 and PG operator 2.5.0
 
@@ -92,9 +92,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** screen now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
 
-- [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599) Add support for PG operator v2.5.0
+- [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599): We have added support for PG operator v2.5.0.
 
-- [EVEREST-1624](https://perconadev.atlassian.net/browse/EVEREST-1624) Add support for PSMDB Operator v1.18.0
+- [EVEREST-1624](https://perconadev.atlassian.net/browse/EVEREST-1624): We have added support for PSMDB Operator v1.18.0.
 
 
 ## Improvement
