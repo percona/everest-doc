@@ -68,7 +68,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Starting with Percona Everest 1.4.0, we have removed the **Edit DB** wizard to provide a more streamlined user experience. You can now edit specific fields directly from the **DB Overview** screen using our new editable widgets, eliminating the need to navigate through the entire **Edit DB** wizard.
 
-    ![!image](../images/display_db_details.png)
+    ![!image](../images/remove_edit_db_wizard)
 
 
 ## New features
