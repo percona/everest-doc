@@ -9,7 +9,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     |---------|---------------------|---------|
     | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
     | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
-    | **3.**|[Improved edit datbase flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new everestctl commands|
+    | **3.**|[Improved edit database flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new `everestctl` commands|
     | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.18.0 and PG operator v2.5.0|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
@@ -99,11 +99,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Improvement
 
-- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Remove edit button from database list actions
+- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Starting with Percona Everest 1.4.0, we have removed the **Edit** button from the database list actions. This change provides a more streamlined user experience, allowing you to edit the database directly from the database **Overview** screen without having to go through the entire edit wizard.
 
-- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066) \[UI\] Backups \(widget\)
 
-- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210) \[UI\] Edit advanced configuration \(widget \+ logic\)
+- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): We have enhanced the **Backups & PITR** wizard on the **Overview** screen. You can now enable or disable PITR directly by clicking **Edit** from this screen.
+
+
+- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210) - \[UI\] Edit advanced configuration \(widget \+ logic\)
 
 - [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304) \[UI\] Select DB type from DB cluster view before opening DB creation wizard
 
