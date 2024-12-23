@@ -102,12 +102,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Starting with Percona Everest 1.4.0, we have removed the **Edit** button from the database list actions. This change provides a more streamlined user experience, allowing you to edit the database directly from the database **Overview** screen without having to go through the entire edit wizard.
 
 
-- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): We have enhanced the **Backups & PITR** wizard on the **Overview** screen. You can now enable or disable PITR directly by clicking **Edit** from this screen.
+- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): Starting with Percona Everest 1.4.0, we have improved the **Backups & PITR** widget on the database **Overview** screen. With this enhancement, you can now directly enable or disable PITR by clicking **Edit** from this screen.
 
+- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210): We've made the **Advanced Configuration** panel on the **DB Details** widget even easier to use. Now, you can edit or enable parameters on this panel straight from the database **Overview** screen. Just click **Edit** and make your changes with ease.
 
-- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210) - \[UI\] Edit advanced configuration \(widget \+ logic\)
-
-- [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304) \[UI\] Select DB type from DB cluster view before opening DB creation wizard
+- [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304): We have simplified the create database wizard. Now, when you click on **Create Database**, a menu shows up under the button with the options **MySQL**, **PostgreSQL**, and **MongoDB**. After selecting a database type, you will be guided to the wizard with the chosen value pre-set.
 
 - [EVEREST-1458](https://perconadev.atlassian.net/browse/EVEREST-1458) \[UI\] Refactor empty states - tables 
 
