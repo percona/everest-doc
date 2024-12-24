@@ -13,7 +13,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.18.0 and PG operator v2.5.0|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
-    | **7.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.4.0|
     | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.4.0|
     | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.4.0|
 
@@ -114,15 +113,16 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1686](https://perconadev.atlassian.net/browse/EVEREST-1686): We've adopted a 24-hour time format for our backups and restores to eliminate any potential confusion and ensure consistency across Percona Everest.
 
-- [EVEREST-1687](https://perconadev.atlassian.net/browse/EVEREST-1687): \[UI\] Update button label - upgrade crd version
+- [EVEREST-1687](https://perconadev.atlassian.net/browse/EVEREST-1687): The label for the upgrade CRD button has been shortened to improve readability.  
 
-- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688) \[UI\] Number fields can change value on scrolling the page
+- [EVEREST-1701](https://perconadev.atlassian.net/browse/EVEREST-1701): Starting with Percona Everest 1.4.0, when configuring RBAC policies, the resource name for `database-cluster-backups` now corresponds to the database name instead of the backup name. This change allows for a more intuitive configuration of permissions for backups at the database level.
 
-- [EVEREST-1701](https://perconadev.atlassian.net/browse/EVEREST-1701) \[RBAC\] database-cluster-backups resource name matches DB name instead of backup name
 
-- [EVEREST-1702](https://perconadev.atlassian.net/browse/EVEREST-1702) \[RBAC\] database-cluster-restores resource name matches DB name instead of restore name
+- [EVEREST-1702](https://perconadev.atlassian.net/browse/EVEREST-1702): Starting with Percona Everest 1.4.0, when configuring RBAC policies, the resource name for `database-cluster-restores` now corresponds to the database name instead of the restore name. This change allows for a more intuitive configuration of permissions for backups at the database level.
 
 ## Bugs
+
+- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): 
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
 
