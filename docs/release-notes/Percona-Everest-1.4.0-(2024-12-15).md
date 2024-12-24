@@ -124,7 +124,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed with other fields as well. This issue has now been addressed, and the values for the fields remain constant.
 
-- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): PITR is not enabled for postgresql database after creating backup schedules on the Backups page
+- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): We’ve resolved the issue that prevented Point-In-Time Recovery (PITR) from being enabled for the PostgreSQL database after setting up backup schedules on the **Backups** page.
 
 - [EVEREST-1191](https://perconadev.atlassian.net/browse/EVEREST-1191) \[CLI\] Incorrect handling of OIDC issuer URL response parsing
 
