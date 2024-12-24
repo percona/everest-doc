@@ -122,9 +122,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Bugs
 
-- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): 
+- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed with other fields as well. This issue has now been addressed, and the values for the fields remain constant.
 
-- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187) \[UI\] PITR is not enabled for postgresql database after creating backup schedules on the Backups page
+- [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): PITR is not enabled for postgresql database after creating backup schedules on the Backups page
 
 - [EVEREST-1191](https://perconadev.atlassian.net/browse/EVEREST-1191) \[CLI\] Incorrect handling of OIDC issuer URL response parsing
 
@@ -183,12 +183,3 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1703](https://perconadev.atlassian.net/browse/EVEREST-1703) \[UI\] MongoDB sharded cluster is stuck after selecting not enough config serbvers
 
 - [EVEREST-1712](https://perconadev.atlassian.net/browse/EVEREST-1712) \[UI\] Pages become unresponsive after a while
-
-
-### Epic
-
-- [EVEREST-550](https://perconadev.atlassian.net/browse/EVEREST-550) Helm chart for installation
-
-- [EVEREST-1116](https://perconadev.atlassian.net/browse/EVEREST-1116) Namespace Management \(adding/removing namespaces and operators\)
-
-- [EVEREST-1207](https://perconadev.atlassian.net/browse/EVEREST-1207) Improve Editing DB flows
