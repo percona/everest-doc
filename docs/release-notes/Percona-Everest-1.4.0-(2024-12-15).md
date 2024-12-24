@@ -126,13 +126,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): We’ve resolved the issue that prevented Point-In-Time Recovery (PITR) from being enabled for the PostgreSQL database after setting up backup schedules on the **Backups** page.
 
-- [EVEREST-1191](https://perconadev.atlassian.net/browse/EVEREST-1191) \[CLI\] Incorrect handling of OIDC issuer URL response parsing
+- [EVEREST-1235](https://perconadev.atlassian.net/browse/EVEREST-1235), [EVEREST-1254](https://perconadev.atlassian.net/browse/EVEREST-1254): `everestctl` now provides relevant error messages when using the `install` command, helping you identify any issues that occurred during the installation process. For instance, if the kubeconfig is unavailable, the cluster configuration is incorrect, or the cluster cannot be connected to, `everestctl` will display an appropriate error message.
 
-- [EVEREST-1235](https://perconadev.atlassian.net/browse/EVEREST-1235) \[CLI\] Improve error messages related to k8s connectivity
-
-- [EVEREST-1254](https://perconadev.atlassian.net/browse/EVEREST-1254) \[CLI\] Uninstallation displays a strange code in the end
-
-- [EVEREST-1294](https://perconadev.atlassian.net/browse/EVEREST-1294) everestctl is not providing error if it cannot connect to k8s cluster
+- [EVEREST-1254](https://perconadev.atlassian.net/browse/EVEREST-1254): During the uninstallation of Percona Everest, an unusual error code appeared at the end of the process. The issue has been resolved now.
 
 - [EVEREST-1301](https://perconadev.atlassian.net/browse/EVEREST-1301) \[UI\] Mongodb backup schedule can't be created if a schedule with a different backup storage is created in db edit
 
