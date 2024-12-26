@@ -154,7 +154,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608): Percona Everest now displays an error message if the proxies value in the **Custom** field for the MySQL database is not entered. Also, unless you enter this value, the **Continue** button is disabled, as expected.
 
-- [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613) Issue with Topology Settings Reverting to "Custom" in Percona Everest UI
+- [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613): On the **Edit Topology** page, the **Resource Size per Node** field now displays the initially selected configuration. Previously, when reopening the **Edit Topology** page, the setting reverted to **Custom** instead of retaining the chosen option.
 
 - [EVEREST-1615](https://perconadev.atlassian.net/browse/EVEREST-1615) \[CLI\] Uninstall fails if a mongodb sharded cluster is in Deleting state
 
@@ -166,11 +166,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1650](https://perconadev.atlassian.net/browse/EVEREST-1650) UI - Unable to Create Backup After Adding Storage
 
-- [EVEREST-1694](https://perconadev.atlassian.net/browse/EVEREST-1694) \[RBAC\] Backup storages page is empty if user only has access to a single storage
+- [EVEREST-1694](https://perconadev.atlassian.net/browse/EVEREST-1694): The **Backup storages** page was appearing empty for users with access to only one backup storage. This issue has now been resolved.
 
-- [EVEREST-1695](https://perconadev.atlassian.net/browse/EVEREST-1695) \[RBAC\] Monitoring instances page is empty if user only has access to a single instance
-
-- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700) Database clusters restarted on creation when PMM monitoring enabled
+- [EVEREST-1695](https://perconadev.atlassian.net/browse/EVEREST-1695): The **Monitoring endpoints** page was empty for users with access to only one monitoring instance. This issue has now been resolved.
 
 - [EVEREST-1703](https://perconadev.atlassian.net/browse/EVEREST-1703): While setting up a MongoDB sharded cluster in Percona Everest, an error occurred during the topology step. If only **1** config server was selected, an error message appeared, stating that the number of config servers must be greater than one. However, when the config server setting was changed to **3** or any other value, the “Next” button became grayed out, preventing progress to the next step. The issue has been resolved now.
 
