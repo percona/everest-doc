@@ -156,15 +156,13 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613): On the **Edit Topology** page, the **Resource Size per Node** field now displays the initially selected configuration. Previously, when reopening the **Edit Topology** page, the setting reverted to **Custom** instead of retaining the chosen option.
 
-- [EVEREST-1615](https://perconadev.atlassian.net/browse/EVEREST-1615) \[CLI\] Uninstall fails if a mongodb sharded cluster is in Deleting state
+- [EVEREST-1615](https://perconadev.atlassian.net/browse/EVEREST-1615): We have fixed an issue where the uninstallation of Percona Everest failed if a MongoDB sharded cluster was in the **Deleting** state.
 
-- [EVEREST-1630](https://perconadev.atlassian.net/browse/EVEREST-1630) "Config Servers" Reset to Default Value of 1 in GUI After Editing Resources
+- [EVEREST-1642](https://perconadev.atlassian.net/browse/EVEREST-1642): When restoring to a new database, it is not possible to modify the version of the database. This behaviour aligns with the expected functionality of Percona Everest.
 
-- [EVEREST-1642](https://perconadev.atlassian.net/browse/EVEREST-1642) \[UI\] Database version can be changed when restoring to a new database
+- [EVEREST-1649](https://perconadev.atlassian.net/browse/EVEREST-1649): We've addressed an issue that caused the **Add storage** button for backups to remain inactive, even after the page was refreshed. The button would only become active when users switched between different tabs, such as transitioning from the **Overview** tab to the **Backups** tab.
 
-- [EVEREST-1649](https://perconadev.atlassian.net/browse/EVEREST-1649) UI - Backup "Add Storage" Button Inactive After Refresh
-
-- [EVEREST-1650](https://perconadev.atlassian.net/browse/EVEREST-1650) UI - Unable to Create Backup After Adding Storage
+- [EVEREST-1650](https://perconadev.atlassian.net/browse/EVEREST-1650): We have resolved an issue on the **Backups** page where the button incorrectly displayed **Add storage** instead of **Create backup** after adding new storage. This prevented users from creating backups. The issue occurred when trying to add backup storage in a namespace other than the one where the database was originally created (the default namespace).
 
 - [EVEREST-1694](https://perconadev.atlassian.net/browse/EVEREST-1694): The **Backup storages** page was appearing empty for users with access to only one backup storage. This issue has now been resolved.
 
