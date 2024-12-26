@@ -150,9 +150,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593): We’ve resolved an issue that was preventing the display name and database version from showing up during new cluster creation.
 
-- [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594): Scheduled backups begin to fail after several successful backups when the number of shards in the MongoDB sharded cluster is changed.
+- [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594): Scheduled backups failed after several successful runs when the number of shards in the MongoDB sharded cluster was modified. This issue has been resolved now.
 
-- [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608) \[UI\] Error should be displayed on Resources page if the proxies field has no value
+- [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608): Percona Everest now displays an error message if the proxies value in the **Custom** field for the MySQL database is not entered. Also, unless you enter this value, the **Continue** button is disabled, as expected.
 
 - [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613) Issue with Topology Settings Reverting to "Custom" in Percona Everest UI
 
