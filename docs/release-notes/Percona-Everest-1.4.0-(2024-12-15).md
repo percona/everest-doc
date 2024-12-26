@@ -26,27 +26,10 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
-    ??? info "Install Percona Everest with Helm"
+    If you're looking to get started with Percona Everest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
-        1. Add the Percona Helm repository:
+    Additionally, check our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} and [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections to find out how to upgrade or uninstall your Percona Everest instances.    
 
-            ```sh
-            helm repo add percona https://percona.github.io/percona-helm-charts/
-            ```
-
-        2. Install Percona Everest:
-
-            ```sh
-            helm install everest-core percona/everest \
-            --namespace everest-system \
-            --create-namespace
-            ```
-        
-            For a deep dive into using Helm charts for installing Percona Everest, refer to our [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
-
-
-    Don't miss our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} or [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections, which provide information on upgrading or uninstalling Percona Everest with Helm.
-    
 === "Namespaces management"
 
     ### Manage your namespaces with new everestctl commands
@@ -96,7 +79,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1624](https://perconadev.atlassian.net/browse/EVEREST-1624): We have added support for PSMDB Operator v1.18.0.
 
 
-## Improvement
+## Improvements
 
 - [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Starting with Percona Everest 1.4.0, we have removed the **Edit** button from the database list actions. This change provides a more streamlined user experience, allowing you to edit the database directly from the database **Overview** screen without having to go through the entire edit wizard.
 
@@ -171,3 +154,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1703](https://perconadev.atlassian.net/browse/EVEREST-1703): While setting up a MongoDB sharded cluster in Percona Everest, an error occurred during the topology step. If only **1** config server was selected, an error message appeared, stating that the number of config servers must be greater than one. However, when the config server setting was changed to **3** or any other value, the “Next” button became grayed out, preventing progress to the next step. The issue has been resolved now.
 
 - [EVEREST-1712](https://perconadev.atlassian.net/browse/EVEREST-1712): We've resolved an issue where the Percona Everest UI pages became unresponsive after some time. None of the page elements worked, and the only solution was to close the page and start a new browser session.
+
+
+## Known limitations
+
