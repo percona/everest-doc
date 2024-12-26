@@ -122,7 +122,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Bugs
 
-- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed with other fields as well. This issue has now been addressed, and the values for the fields remain constant.
+- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed with other fields as well. This issue has been resolved now, and the values for the fields remain constant.
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): We’ve resolved the issue that prevented Point-In-Time Recovery (PITR) from being enabled for the PostgreSQL database after setting up backup schedules on the **Backups** page.
 
@@ -136,21 +136,22 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1352](https://perconadev.atlassian.net/browse/EVEREST-1352): To ensure data integrity, all database actions are now disabled while the database is in a **Deleting** state.
 
-- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399): After creating a database and clicking **Edit** on the database, the **Resource per node** setting does not show the initially selected option (Small or Medium). Instead, it defaults to **Custom**, which was not the choice made during the initial setup. This issue has now been resolved.
+- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399): The **Resource per node** now accurately displays the value set during database creation. Previously, there was a mismatch between the value chosen at setup and what was shown when editing the database. Instead, it defaulted to **Custom**, which was not the initial selection. 
 
-- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
+- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407): We've resolved an issue where a user lacking the necessary RBAC permissions could access specific information in Percona Everest.
 
-- [EVEREST-1440](https://perconadev.atlassian.net/browse/EVEREST-1440) \[UI\] Time lag and Add storage displayed on the Backups page if the user does not have backup storage permissions
+- [EVEREST-1440](https://perconadev.atlassian.net/browse/EVEREST-1440): We've resolved an issue that caused a delay while loading the **Backups** page. Furthermore, the **Add Storage** option was displayed on the **Backups** page even though the user did not have backup storage permissions.
 
-- [EVEREST-1518](https://perconadev.atlassian.net/browse/EVEREST-1518) \[RBAC\] DB clusters visible and editable for users without permissions for the respective db engine\(s\)
+- [EVEREST-1518](https://perconadev.atlassian.net/browse/EVEREST-1518): We've resolved an issue that allowed users to see and edit DB clusters without the required permissions for the database engine(s).
+
 
 - [EVEREST-1534](https://perconadev.atlassian.net/browse/EVEREST-1534) \[RBAC\] '/databases' page does not show any individual dbs from the policy
 
-- [EVEREST-1565](https://perconadev.atlassian.net/browse/EVEREST-1565) \[UI\] Mongodb versions are not sorted and some versions are skipped
+- [EVEREST-1565](https://perconadev.atlassian.net/browse/EVEREST-1565): The MongoDB versions are now sorted in descending order, and all the versions are visible on the **Basic information** page when selecting the **Database version**.
 
-- [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593) \[UI\] Sometimes the Display name and Database version are not displayed in a fresh cluster
+- [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593): We’ve resolved an issue that was preventing the display name and database version from showing up during new cluster creation.
 
-- [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594) Scheduled backups start failing after some successful backups for mongodb sharded clusters
+- [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594): Scheduled backups begin to fail after several successful backups when the number of shards in the MongoDB sharded cluster is changed.
 
 - [EVEREST-1604](https://perconadev.atlassian.net/browse/EVEREST-1604) \[RBAC\] Create a database from a backup is successful if the user does not have database-engines permissions
 
