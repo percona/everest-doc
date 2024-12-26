@@ -49,7 +49,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     ### Removal of the Edit DB Wizard for an enhanced User Experience
 
-    Starting with Percona Everest 1.4.0, we have removed the **Edit DB** wizard to provide a more streamlined user experience. You can now edit specific fields directly from the **DB Overview** screen using our new editable widgets, eliminating the need to navigate through the entire **Edit DB** wizard.
+    Starting with Percona Everest 1.4.0, we have removed the **Edit DB** wizard to provide a more streamlined user experience. You can now edit specific fields directly from the **DB Overview** page using our new editable widgets, eliminating the need to navigate through the entire **Edit DB** wizard.
 
     ![!image](../images/remove_edit_db_wizard.png)
 
@@ -72,7 +72,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1673](https://perconadev.atlassian.net/browse/EVEREST-1673): Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces.
 
-- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** screen now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
+- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** page now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
 
 - [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599): We have added support for PostgreSQL operator v2.5.0.
 
@@ -81,18 +81,18 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Improvements
 
-- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Starting with Percona Everest 1.4.0, we have removed the **Edit** button from the database list actions. This change provides a more streamlined user experience, allowing you to edit the database directly from the database **Overview** screen without having to go through the entire edit wizard.
+- [EVEREST-1065](https://perconadev.atlassian.net/browse/EVEREST-1065): Starting with Percona Everest 1.4.0, we have removed the **Edit** button from the database list actions. This change provides a more streamlined user experience, allowing you to edit the database directly from the database **Overview** page without having to go through the entire edit wizard.
 
 
-- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): We have improved the **Backups & PITR** widget on the database **Overview** screen. With this enhancement, you can now directly enable or disable PITR by clicking **Edit** from this screen.
+- [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066): We have improved the **Backups & PITR** widget on the database **Overview** page. With this enhancement, you can now directly enable or disable PITR by clicking **Edit** from this page.
 
-- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210): The **Advanced Configuration** panel on the **DB Details** widget is now more user-friendly than ever. You can  edit or enable parameters directly from the database **Overview** screen. Just click **Edit**, and and make your changes with ease.
+- [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210): The **Advanced Configuration** panel on the **DB Details** widget is now more user-friendly than ever. You can  edit or enable parameters directly from the database **Overview** page. Just click **Edit**, and and make your changes with ease.
 
 - [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304): We have simplified the create database wizard. When you click on **Create Database**, a menu shows up under the button with the options **MySQL**, **PostgreSQL**, and **MongoDB**. After selecting a database type, you will be guided to the wizard with the chosen value pre-set.
 
-- [EVEREST-1546](https://perconadev.atlassian.net/browse/EVEREST-1546): You can see the number of proxies, routers, and bouncers, along with their resources, directly on the **Database Summary** and **Overview** screens. This enhancement provides greater visibility into the resources within your clusters.
+- [EVEREST-1546](https://perconadev.atlassian.net/browse/EVEREST-1546): You can see the number of proxies, routers, and bouncers, along with their resources, directly on the **Database Summary** and **Overview** pages. This enhancement provides greater visibility into the resources within your clusters.
 
-- [EVEREST-1683](https://perconadev.atlassian.net/browse/EVEREST-1683): The **Backups** on the **Overview** screen are organized in descending order, making it easier to find your most recent backups by their start date and time.
+- [EVEREST-1683](https://perconadev.atlassian.net/browse/EVEREST-1683): The **Backups** on the **Overview** page are organized in descending order, making it easier to find your most recent backups by their start date and time.
 
 - [EVEREST-1686](https://perconadev.atlassian.net/browse/EVEREST-1686): We've adopted a 24-hour time format for our backups and restores to eliminate any potential confusion and ensure consistency across Percona Everest.
 
