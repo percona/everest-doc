@@ -88,7 +88,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1210](https://perconadev.atlassian.net/browse/EVEREST-1210): The **Advanced Configuration** panel on the **DB Details** widget is now more user-friendly than ever. You can  edit or enable parameters directly from the database **Overview** page. Just click **Edit**, and and make your changes with ease.
 
-- [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304): We have simplified the create database wizard. When you click on **Create Database**, a menu shows up under the button with the options **MySQL**, **PostgreSQL**, and **MongoDB**. After selecting a database type, you will be guided to the wizard with the chosen value pre-set.
+- [EVEREST-1304](https://perconadev.atlassian.net/browse/EVEREST-1304): We have simplified the create database wizard. When you click **Create Database**, a menu with the **MySQL**, **PostgreSQL**, and **MongoDB** options will appear under the button. After selecting a database type, you will be guided to the wizard with the chosen value pre-set.
 
 - [EVEREST-1546](https://perconadev.atlassian.net/browse/EVEREST-1546): You can see the number of proxies, routers, and bouncers, along with their resources, directly on the **Database Summary** and **Overview** pages. This enhancement provides greater visibility into the resources within your clusters.
 
@@ -105,7 +105,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Bugs
 
-- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed with other fields as well. This issue has been resolved now, and the values for the fields remain constant.
+- [EVEREST-1688](https://perconadev.atlassian.net/browse/EVEREST-1688): If a user changed the value for the number of shards and then scrolled down, the number of shards would unexpectedly increase. Conversely, if they scrolled up, the number of shards would decrease. The value did not remain constant, and similar behavior was observed in other fields as well. This issue has been resolved now, and the values for the fields remain constant.
 
 - [EVEREST-1187](https://perconadev.atlassian.net/browse/EVEREST-1187): We’ve resolved the issue that prevented Point-In-Time Recovery (PITR) from being enabled for the PostgreSQL database after setting up backup schedules on the **Backups** page.
 
@@ -115,7 +115,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1301](https://perconadev.atlassian.net/browse/EVEREST-1301) \[UI\] Mongodb backup schedule can't be created if a schedule with a different backup storage is created in db edit
 
-- [EVEREST-1320](https://perconadev.atlassian.net/browse/EVEREST-1320): The warning message for a gap in Point-in-Time Recovery (PITR) is now shown on both the **Backups** and **Restores** pages. Additionally, when the database is up and running, there is a triangle icon on the dashboard page that now correctly directs you to the **Backups** page.
+- [EVEREST-1320](https://perconadev.atlassian.net/browse/EVEREST-1320): The warning message for a gap in Point-in-Time Recovery (PITR) is now shown on both the **Backups** and **Restores** pages. Additionally, when the database is up and running, a triangle icon on the dashboard page now correctly directs you to the **Backups** page.
 
 - [EVEREST-1352](https://perconadev.atlassian.net/browse/EVEREST-1352): To ensure data integrity, all database actions are now disabled while the database is in a **Deleting** state.
 
@@ -131,17 +131,17 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1565](https://perconadev.atlassian.net/browse/EVEREST-1565): The MongoDB versions are now sorted in descending order, and all the versions are visible on the **Basic information** page when selecting the **Database version**.
 
-- [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593): We’ve resolved an issue that was preventing the display name and database version from showing up during new cluster creation.
+- [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593): We’ve resolved an issue that was preventing the display name and database version from showing up during a new cluster creation.
 
 - [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594): Scheduled backups failed after several successful runs when the number of shards in the MongoDB sharded cluster was modified. This issue has been resolved now.
 
-- [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608): Percona Everest now displays an error message if the proxies value in the **Custom** field for the MySQL database is not entered. Also, unless you enter this value, the **Continue** button is disabled, as expected.
+- [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608): Percona Everest now displays an error message if the **Proxies** value in the **Custom** field for the MySQL database is not entered. Also, unless you enter this value, the **Continue** button is disabled, which aligns with the expected behavior.
 
-- [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613): On the **Edit Topology** page, the **Resource Size per Node** field now displays the initially selected configuration. Previously, when reopening the **Edit Topology** page, the setting reverted to **Custom** instead of retaining the chosen option.
+- [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613): On the **Edit Topology** page, the **Resource Size per Node** field now displays the initially selected configuration. Previously, when reopening the **Edit Topology** page, the setting would revert to **Custom** instead of retaining the chosen option.
 
 - [EVEREST-1615](https://perconadev.atlassian.net/browse/EVEREST-1615): We have fixed an issue where the uninstallation of Percona Everest failed if a MongoDB sharded cluster was in the **Deleting** state.
 
-- [EVEREST-1642](https://perconadev.atlassian.net/browse/EVEREST-1642): When restoring to a new database, it is not possible to modify the version of the database. This behaviour aligns with the expected functionality of Percona Everest.
+- [EVEREST-1642](https://perconadev.atlassian.net/browse/EVEREST-1642): When restoring to a new database, modifying its version is no longer possible. This behavior aligns with the expected functionality of Percona Everest.
 
 - [EVEREST-1649](https://perconadev.atlassian.net/browse/EVEREST-1649): We've addressed an issue that caused the **Add storage** button for backups to remain inactive, even after the page was refreshed. The button would only become active when users switched between different tabs, such as transitioning from the **Overview** tab to the **Backups** tab.
 
