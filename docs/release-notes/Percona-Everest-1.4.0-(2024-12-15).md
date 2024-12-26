@@ -142,8 +142,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1440](https://perconadev.atlassian.net/browse/EVEREST-1440): We've resolved an issue that caused a delay while loading the **Backups** page. Furthermore, the **Add Storage** option was displayed on the **Backups** page even though the user did not have backup storage permissions.
 
-- [EVEREST-1518](https://perconadev.atlassian.net/browse/EVEREST-1518): We've resolved an issue that allowed users to see and edit DB clusters without the required permissions for the database engine(s).
-
+- [EVEREST-1518](https://perconadev.atlassian.net/browse/EVEREST-1518), [EVEREST-1604](https://perconadev.atlassian.net/browse/EVEREST-1604): We've resolved an issue that permitted users to view and edit DB clusters, as well as restore to the same DB cluster, even if they lacked the necessary permissions for the database engine(s).
 
 - [EVEREST-1534](https://perconadev.atlassian.net/browse/EVEREST-1534) \[RBAC\] '/databases' page does not show any individual dbs from the policy
 
@@ -152,8 +151,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1593](https://perconadev.atlassian.net/browse/EVEREST-1593): We’ve resolved an issue that was preventing the display name and database version from showing up during new cluster creation.
 
 - [EVEREST-1594](https://perconadev.atlassian.net/browse/EVEREST-1594): Scheduled backups begin to fail after several successful backups when the number of shards in the MongoDB sharded cluster is changed.
-
-- [EVEREST-1604](https://perconadev.atlassian.net/browse/EVEREST-1604) \[RBAC\] Create a database from a backup is successful if the user does not have database-engines permissions
 
 - [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608) \[UI\] Error should be displayed on Resources page if the proxies field has no value
 
@@ -175,6 +172,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700) Database clusters restarted on creation when PMM monitoring enabled
 
-- [EVEREST-1703](https://perconadev.atlassian.net/browse/EVEREST-1703) \[UI\] MongoDB sharded cluster is stuck after selecting not enough config serbvers
+- [EVEREST-1703](https://perconadev.atlassian.net/browse/EVEREST-1703): While setting up a MongoDB sharded cluster in Percona Everest, an error occurred during the topology step. If only **1** config server was selected, an error message appeared, stating that the number of config servers must be greater than one. However, when the config server setting was changed to **3** or any other value, the “Next” button became grayed out, preventing progress to the next step. The issue has been resolved now.
 
 - [EVEREST-1712](https://perconadev.atlassian.net/browse/EVEREST-1712): We've resolved an issue where the Percona Everest UI pages became unresponsive after some time. None of the page elements worked, and the only solution was to close the page and start a new browser session.
