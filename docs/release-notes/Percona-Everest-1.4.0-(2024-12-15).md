@@ -132,11 +132,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1301](https://perconadev.atlassian.net/browse/EVEREST-1301) \[UI\] Mongodb backup schedule can't be created if a schedule with a different backup storage is created in db edit
 
-- [EVEREST-1320](https://perconadev.atlassian.net/browse/EVEREST-1320) \[UI\] PITR gap message should come on the Backups page instead of Restores page
+- [EVEREST-1320](https://perconadev.atlassian.net/browse/EVEREST-1320): The warning message for a gap in Point-in-Time Recovery (PITR) is now shown on both the **Backups** and **Restores** pages. Additionally, when the database is up and running, there is a triangle icon on the dashboard page that now correctly directs you to the **Backups** page.
 
-- [EVEREST-1352](https://perconadev.atlassian.net/browse/EVEREST-1352) \[UI\] All database actions should be disabled if the database is in Deleting status
+- [EVEREST-1352](https://perconadev.atlassian.net/browse/EVEREST-1352): To ensure data integrity, all database actions are now disabled while the database is in a **Deleting** state.
 
-- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) Issue with Resource per Node Selection in Database Creation
+- [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399): After creating a database and clicking **Edit** on the database, the **Resource per node** setting does not show the initially selected option (Small or Medium). Instead, it defaults to **Custom**, which was not the choice made during the initial setup. This issue has now been resolved.
 
 - [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) \[RBAC\] A user that is not added in the rbac config \(not having permissions\) can access certain information on Everest
 
@@ -156,7 +156,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1608](https://perconadev.atlassian.net/browse/EVEREST-1608) \[UI\] Error should be displayed on Resources page if the proxies field has no value
 
-
 - [EVEREST-1613](https://perconadev.atlassian.net/browse/EVEREST-1613) Issue with Topology Settings Reverting to "Custom" in Percona Everest UI
 
 - [EVEREST-1615](https://perconadev.atlassian.net/browse/EVEREST-1615) \[CLI\] Uninstall fails if a mongodb sharded cluster is in Deleting state
@@ -168,7 +167,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 - [EVEREST-1649](https://perconadev.atlassian.net/browse/EVEREST-1649) UI - Backup "Add Storage" Button Inactive After Refresh
 
 - [EVEREST-1650](https://perconadev.atlassian.net/browse/EVEREST-1650) UI - Unable to Create Backup After Adding Storage
-
 
 - [EVEREST-1694](https://perconadev.atlassian.net/browse/EVEREST-1694) \[RBAC\] Backup storages page is empty if user only has access to a single storage
 
