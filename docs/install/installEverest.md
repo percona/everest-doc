@@ -48,7 +48,6 @@ To install and provision Percona Everest to Kubernetes:
          {.power-number}
 
         1. Run the following command:
-
             ```sh
             everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
             ```
