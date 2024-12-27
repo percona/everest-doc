@@ -23,28 +23,27 @@ To install and provision Percona Everest to Kubernetes:
 
 2. You can install Percona Everest using either the wizard or the headless mode:
 
-    **Install Percona Everest using the wizard**
+    - **Install Percona Everest using the wizard**
 
-    a. Run the following command:
-
-        ```sh
-        everestctl install
-        ```
-
-    b. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
-
-    - If you do not specify a namespace, the `everest` namespace gets provisioned by default.
-
-    - You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.        
-
-        ??? example "Example"
-            ```
-            everestctl install --skip-db-namespace
+        a. Run the following command:
+            ```sh
+            everestctl install
             ```
 
-    **Install Percona Everest using the headless mode**
+        b. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
 
-    - You can set multiple namepaces in the headless mode:
+        - If you do not specify a namespace, the `everest` namespace gets provisioned by default.
+
+        - You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.        
+
+            ??? example "Example"
+                ```
+                everestctl install --skip-db-namespace
+                ```
+
+    - **Install Percona Everest using the headless mode**
+
+        You can set multiple namepaces in the headless mode:
 
         ```sh
         everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
@@ -56,9 +55,9 @@ To install and provision Percona Everest to Kubernetes:
             everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
             ```
      
-     - If you do not specify a namespace, the `everest` namespace gets provisioned by default.
+       If you do not specify a namespace, the `everest` namespace gets provisioned by default.
 
-     - You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
+       You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
 
 
 
