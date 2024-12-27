@@ -24,13 +24,14 @@ To install and provision Percona Everest to Kubernetes:
 2. You can install Percona Everest using either the wizard or the headless mode:
 
     - **Install Percona Everest using the wizard**
+        {.power-number}
 
-        a. Run the following command:
+        1. Run the following command:
             ```sh
             everestctl install
             ```
 
-        b. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
+        2. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
 
         - If you do not specify a namespace, the `everest` namespace gets provisioned by default.
 
