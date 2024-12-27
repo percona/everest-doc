@@ -63,7 +63,7 @@ To install and provision Percona Everest to Kubernetes:
 
            * You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
 
-    To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
+     To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
 
 
 3. Update the password for the `admin` user:
