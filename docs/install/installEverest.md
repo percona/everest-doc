@@ -33,9 +33,9 @@ To install and provision Percona Everest to Kubernetes:
 
         2. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
 
-            - If you do not specify a namespace, the `everest` namespace gets provisioned by default.
+            * If you do not specify a namespace, the `everest` namespace gets provisioned by default.
 
-            - You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.        
+            * You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.        
 
                 ??? example "Example"
                     ```
@@ -59,7 +59,7 @@ To install and provision Percona Everest to Kubernetes:
 
         You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
 
-    To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
+        To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
 
 
 3. Update the password for the `admin` user:
