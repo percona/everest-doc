@@ -21,7 +21,15 @@ To install and provision Percona Everest to Kubernetes:
 
 1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
-2. You can install Percona Everest using either the wizard or the headless mode:
+2. You can install Percona Everest using either the wizard or the headless mode.
+
+    !!! note        
+        * If you do not specify a namespace, the `everest` namespace gets provisioned by default.
+        * You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
+
+        ```
+        everestctl install --skip-db-namespace
+        ```
 
     - **Install Percona Everest using the wizard**
         {.power-number}
@@ -59,14 +67,6 @@ To install and provision Percona Everest to Kubernetes:
             ```
         To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
 
-
-    !!! note        
-        * If you do not specify a namespace, the `everest` namespace gets provisioned by default.
-        * You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
-
-        ```
-        everestctl install --skip-db-namespace
-        ```
 
 3. Update the password for the `admin` user:
 
