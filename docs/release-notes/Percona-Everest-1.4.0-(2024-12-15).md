@@ -164,3 +164,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Known limitations
 
+- The backup storage you choose for your initial backup schedule will be used for all subsequent schedules and point-in-time recovery (PITR).
+- When creating a 1-node MongoDB cluster, the cluster temporarily enters an **Error** state instead of **Initializing** before transitioning to the **Ready** state.
+
+
