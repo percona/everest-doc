@@ -31,6 +31,9 @@ To install and provision Percona Everest to Kubernetes:
             everestctl install --skip-db-namespace
             ```
 
+        To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
+
+
     - **Install Percona Everest using the wizard**
         {.power-number}
 
@@ -65,7 +68,6 @@ To install and provision Percona Everest to Kubernetes:
             ```sh
             everestctl namespaces add [NAMESPACE]
             ```
-        To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
 
 
 3. Update the password for the `admin` user:
