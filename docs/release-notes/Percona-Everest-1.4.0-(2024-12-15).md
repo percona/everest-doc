@@ -133,7 +133,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1518](https://perconadev.atlassian.net/browse/EVEREST-1518), [EVEREST-1604](https://perconadev.atlassian.net/browse/EVEREST-1604): We've resolved an issue that permitted users to view and edit DB clusters, as well as restore to the same DB cluster, even if they lacked the necessary permissions for the database engine(s).
 
-- [EVEREST-1534](https://perconadev.atlassian.net/browse/EVEREST-1534) \[RBAC\] '/databases' page does not show any individual dbs from the policy
+- [EVEREST-1534](https://perconadev.atlassian.net/browse/EVEREST-1534) The **Database clusters** page was empty for users with access to only one database cluster. This issue has now been resolved.
 
 - [EVEREST-1565](https://perconadev.atlassian.net/browse/EVEREST-1565): The MongoDB versions are now sorted in descending order, and all the versions are visible on the **Basic information** page when selecting the **Database version**.
 
