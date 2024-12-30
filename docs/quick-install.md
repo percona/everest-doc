@@ -63,18 +63,17 @@ To install Percona Everest using Helm follow these steps:
 
 2. Install Percona Everest.
 
-    !!! note
-        - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
-        If `dbNamespace.enabled=false` is set, no namespaces will be provisioned. You can provision namespaces later with the `everestctl namespaces add [NAMESPACE]` command.
-
 
     ```sh
     helm install everest-core percona/everest \
     --namespace everest-system \
     --create-namespace
     ```
-    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section [here](install/install_everest_helm_charts.md).
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
+    !!! note
+        - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
+        - If `dbNamespace.enabled=false` is set, no namespaces will be provisioned. You can provision namespaces later with the `everestctl namespaces add [NAMESPACE]` command.
 
 ## Post-installation steps
 
