@@ -1,5 +1,9 @@
 # Install Percona Everest using Helm
 
+    !!! warning
+        Google Container Registry (GCR) is deprecated and will be shut down on March 18, 2025. This will impact all Percona Everest versions prior to 1.4.0. It is recommended to switch to [Artifact Registry](https://cloud.google.com/artifact-registry/docs){:target="_blank"} which offers similar container management features and additional benefits. 
+        For more details, see the [GCR documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+
 This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
