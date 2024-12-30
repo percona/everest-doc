@@ -78,7 +78,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1673](https://perconadev.atlassian.net/browse/EVEREST-1673): Starting with Percona Everest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces.
 
-- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 14.0, the **Overview** page now includes the **Connection URL** in the **Connection Details** section of the **DB Details** widget, allowing you to copy it directly.
+- [EVEREST-908](https://perconadev.atlassian.net/browse/EVEREST-908): Starting with Percona Everest 1.4.0, the **Overview** page now includes the **Connection URL** in the **Connection Details** widget, allowing you to copy it directly.
 
 - [EVEREST-1599](https://perconadev.atlassian.net/browse/EVEREST-1599): We have added support for PostgreSQL operator v2.5.0.
 
