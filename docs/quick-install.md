@@ -1,5 +1,10 @@
 # Percona Everest quick install guide
 
+!!! warning
+    Google Container Registry (GCR) is being deprecated and will be shut down on March 18, 2025. This change will affect all versions of Percona Everest prior to 1.4.0. It is recommended to transition to [Artifact Registry](https://cloud.google.com/artifact-registry/docs){:target="_blank"}, which provides similar container management features along with additional benefits. 
+    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+
+
 Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.

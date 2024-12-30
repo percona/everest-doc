@@ -1,5 +1,9 @@
 # Install Percona Everest using CLI
 
+!!! warning
+    Google Container Registry (GCR) is being deprecated and will be shut down on March 18, 2025. This change will affect all versions of Percona Everest prior to 1.4.0. It is recommended to transition to [Artifact Registry](https://cloud.google.com/artifact-registry/docs){:target="_blank"}, which provides similar container management features along with additional benefits. 
+    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+
 ## Before you start
 
 Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
