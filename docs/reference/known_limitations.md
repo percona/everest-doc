@@ -29,6 +29,8 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
 
+- When creating a 1-node MongoDB cluster, it temporarily enters an **error** state instead of **initializing** before transitioning to the **ready** state.
+
 
 ## Upgrading operators
 
