@@ -119,8 +119,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - [EVEREST-1254](https://perconadev.atlassian.net/browse/EVEREST-1254): During the uninstallation of Percona Everest, an unusual error code appeared at the end of the process. The issue has been resolved now.
 
-- [EVEREST-1301](https://perconadev.atlassian.net/browse/EVEREST-1301) \[UI\] Mongodb backup schedule can't be created if a schedule with a different backup storage is created in db edit
-
 - [EVEREST-1320](https://perconadev.atlassian.net/browse/EVEREST-1320): The warning message for a gap in Point-in-Time Recovery (PITR) is now shown on both the **Backups** and **Restores** pages. Additionally, when the database is up and running, a triangle icon on the dashboard page now correctly directs you to the **Backups** page.
 
 - [EVEREST-1352](https://perconadev.atlassian.net/browse/EVEREST-1352): To ensure data integrity, all database actions are now disabled while the database is in a **Deleting** state.
