@@ -38,11 +38,17 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
-3. Once the installation is complete, retrieve the `admin` password:
+3. Once the installation is complete, retrieve the `admin` password. 
 
     ```sh
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
+
+    The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+
+    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
+
+    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
@@ -112,12 +118,6 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-
-5. The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
-
-    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
-
-    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
 5. Deploy additional database namespaces:
 
