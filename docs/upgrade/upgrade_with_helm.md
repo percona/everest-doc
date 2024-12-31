@@ -35,7 +35,7 @@ To upgrade Percona Everest using Helm, run the following commands:
 1. Upgrade the Helm release for Everest (core components).
 
     ```sh
-    helm upgrade everest-core percona/everest --namespace everest-system --version $(VERSION)      
+    helm upgrade everest-core percona/everest --namespace everest-system --version "$VERSION"      
     ```
 
     where,
