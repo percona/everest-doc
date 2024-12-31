@@ -45,7 +45,7 @@ To upgrade Percona Everest using Helm, run the following commands:
 2. Upgrade the Helm release for the database namespace (if applicable):
 
     ```sh
-    helm upgrade everest percona/everest-db-namespace --namespace [DB NAMESPACE] --version $(VERSION)
+    helm upgrade everest percona/everest-db-namespace --namespace <DB namespace> --version "$VERSION"
     ```
 
     where,
