@@ -10,7 +10,7 @@ Helm simplifies the installation of Percona Everest. With this guide, you'll be 
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
-!!! info "Alternative installation option"
+!!! info "Alternative installation method"
     If you prefer an alternative method, you can [install Percona Everest using the CLI](install/installEverest.md).
 
 ## Prerequisites
