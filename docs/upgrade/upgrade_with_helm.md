@@ -17,7 +17,7 @@ To update the CRDs, run the following command:
 
 ```sh
 VERSION=<Next version>
-kubectl apply -k https://github.com/percona/everest-operator/config/crd?ref=v$(VERSION) --server-side
+kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side
 ```
 
 where,
