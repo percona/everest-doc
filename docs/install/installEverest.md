@@ -35,7 +35,6 @@ To install and provision Percona Everest to Kubernetes:
             ```
             everestctl install --skip-db-namespace
             ```
-
         To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
