@@ -162,6 +162,15 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Known limitations
 
+- In Percona Operator for PostgreSQL version 2.5.0, backups start failing after a minor version upgrade from PostgreSQL 16.3 to 16.4 if monitoring is enabled on the database. 
+
+    **Workaround** 
+
+    After upgrading the PostgreSQL version, make sure to update the pg_stat_monitor extension by running the following command:
+
+    ```sql
+    ALTER EXTENSION pg_stat_monitor UPDATE;
+    ```
 - The backup storage you choose for your initial backup schedule will be used for all subsequent schedules and point-in-time recovery (PITR).
 - When creating a 1-node MongoDB cluster, the cluster temporarily enters an **Error** state instead of **Initializing** before transitioning to the **Ready** state.
 
