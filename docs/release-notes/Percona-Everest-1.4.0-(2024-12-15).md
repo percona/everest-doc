@@ -163,7 +163,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Known limitations
 
-- In Percona Operator for PostgreSQL version 2.5.0, backups start failing after a minor version upgrade from PostgreSQL 16.3 to 16.4 if monitoring is enabled on the database. 
+- In Percona Operator for PostgreSQL version 2.5.0, backups start failing after a minor version upgrade from PostgreSQL 16.3 to 16.4 if **monitoring is enabled** on the database. 
 
     **Workaround** 
 
