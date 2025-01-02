@@ -25,8 +25,6 @@ To provision a new database:
 
        - Select the **Namespace** where you want to create your database.
 
-       - Select the **Database type**: MySQL, MongoDB or PostgreSQL.
-
        - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
 
        - Select the **Database version** from the dropdown.
@@ -38,7 +36,7 @@ To provision a new database:
 
         ![!image](../images/everest_multi-namespaces.png)
 
-5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
+5. On the **Resources** page, select the **Number of nodes**. Also, set **Resources size per node **by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
     Additionally, based on the database technology you’re working with, select the following:
 
@@ -80,15 +78,14 @@ To provision a new database:
 
 7. On the **Scheduled Backups** page, you can also enable Point-in-time Recovery (PITR) by turning the toggle on.
 
-8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
+8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle on. For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
 
-9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
+9. On the **Monitoring** page, you can enable monitoring by turning the toggle on and selecting the **Monitoring endpoint URL**. If you have not added any monitoring endpoinFor information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
 
 10. Click **Create Database**.
 
 11. Click **Go to list of my databases** to see the database that you provisioned.
 
-    ![!image](../images/everest_provisioned_db.png)
 
 ## Video tutorial
 
