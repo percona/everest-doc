@@ -17,7 +17,7 @@ To provision a new database:
 
 1. Log into the Percona Everest UI.
 
-2. On the Percona Everest homepage, click **Create Database**. The **Basic information** page opens.
+2. On the Percona Everest homepage, click **Create Database**. The menu for the different database types will open. Select the database that you wish to provision. The **Basic Information** page will then open.
 
     ![!image](../images/everest_db_provision.png)
 
