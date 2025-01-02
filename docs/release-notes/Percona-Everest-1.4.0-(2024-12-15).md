@@ -34,7 +34,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     If you're looking to get started with Percona Everest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
-    Additionally, check our [Upgrade :material-arrow-right:](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html){.md-button} and [Uninstall :material-arrow-right:](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html){.md-button} sections to find out how to upgrade or uninstall your Percona Everest instances.    
+    Additionally, check our [Upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) and [Uninstall](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) sections to find out how to upgrade or uninstall your Percona Everest instances.    
 
 === "Namespaces management"
 
