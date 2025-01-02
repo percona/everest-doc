@@ -16,7 +16,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_1)|Simplify your Percona Everest deployments with Helm|
     | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
     | **3.**|[Improved edit database flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_3)|Manage your namespaces with new `everestctl` commands|
-    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.18.0 and PG operator v2.5.0|
+    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282024-12-15%29.html#__tabbed_1_4)|Support for Percona Operator for MongoDB v1.18.0 and Percona Operator for PostgreSQL v2.5.0|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
     | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.4.0|
@@ -30,7 +30,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     We are excited to announce the launch of Helm charts in Percona Everest 1.4.0. [Helm charts](https://helm.sh/) simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
-    Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
+    Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
     If you're looking to get started with Percona Everest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
@@ -65,7 +65,9 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 === "Operators support"
 
-    ### Support for PSMDB Operator v1.18.0 and PG operator 2.5.0
+    ### Support for Percona Operator for MongoDB 1.18.0(https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"}
+ and [Percona Operator for PostgreSQL 2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"}
+
 
     Starting with Percona Everest 1.4.0, we are thrilled to announce that we have added support for PSMDB Operator v1.18.0 and PG operator v2.5.0.
 
