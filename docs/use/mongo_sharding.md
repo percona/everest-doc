@@ -46,7 +46,7 @@ To enable sharding:
 
 2. On the **Basic Information** page, turn the **Sharded Cluster** toggle to **on**.
 
-    ![!image](../image/everest_sharded_cluster.png)
+    ![!image](../images/everest_sharded_cluster.png)
 
 3.Click **Continue**. The **Resources** page will be displayed.
 
