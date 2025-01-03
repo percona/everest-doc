@@ -42,7 +42,7 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
 To enable sharding:
 {.power-number}
 
-1. On the Percona Everest homepage, click **Create Database** and select the **MongoDB** database. The **Basic information** page will be displayed.
+1. From the Percona Everest homepage, click **Create Database** and select the **MongoDB** database. The **Basic information** page will be displayed.
 
 2. On the **Basic Information** page, turn the **Sharded Cluster** toggle to **on**.
 
