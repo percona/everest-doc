@@ -91,7 +91,7 @@ Once you establish a connection with this user, you will have the ability to exe
 
 ## Fine-tuning your sharding setup
 
-Here are few recommendations to fine-tune your setup for MongoDB sharding:
+Here are few recommendations to fine-tune your setup for MongoDB sharding.
 
 - **Scalability**: To enhance your cluster's scalability, consider increasing the number of shards, based on your anticipated load.
 
