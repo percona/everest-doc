@@ -19,7 +19,7 @@ To provision a new database:
 
 2. On the Percona Everest homepage, click **Create Database**. The menu for the different database types will open. Select the database that you wish to provision. The **Basic Information** page will then open.
 
-    ![!image](../images/everest_db_provision.png)
+     ![!image](../images/everest_db_provision.png)
 
 3. On the **Basic information** page, provide the following details:
 
@@ -77,7 +77,7 @@ To provision a new database:
 
         Example: When you set retention copies to 3, it means that you want to keep a maximum of 3 backup copies at any given time. So, if you have 3 backups already and then run a 4th backup, the oldest backup will get deleted automatically. 
 
-        ![!image](../images/everest_scheduled_backups.png)    
+         ![!image](../images/everest_scheduled_backups.png)    
 
 7. On the **Scheduled Backups** page, you can also enable Point-in-time Recovery (PITR) by turning the toggle on.
 
