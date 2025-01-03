@@ -50,4 +50,4 @@ To upgrade Percona Everest using Helm, run the following commands:
 
     where,
 
-    **VERSION** is the Percona Everest Version you wish to upgrade to.
+    **VERSION** is the Percona Everest version you wish to upgrade to.
