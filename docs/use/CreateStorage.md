@@ -38,9 +38,9 @@ To create a backup storage:
 
 !!! caution alert alert-warning "Note"
     
-    - Make sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
-    
-    - Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
+    - Use regional AWS STS endpoints (e.g., https://s3.<region>.amazonaws.com) to reduce latency and improve response times by staying geographically closer to your application.
+
+    - A database created in a namespace can only access backup storages that are also created in the same namespace.
 
 ## Next steps
 
