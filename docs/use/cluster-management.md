@@ -62,3 +62,5 @@ Cluster management involves the administration and maintenance of database clust
     Monitoring ensures consistent performance by continuously observing various metrics and aspects of the database system. It helps identify performance issues or bottlenecks before they escalate, allowing timely interventions, optimizations, and resource allocation adjustments. This helps us maintain a stable and consistent database system performance over time.
 
     You can manage your monitoring settings by navigating to the **Overview** page of the desired cluster and clicking **Edit** in the **Monitoring** widget. You can turn monitoring on or off by using the toggle according to your needs.
+
+    ![!image](../images/everest_disable_endpoint.png)
