@@ -20,7 +20,7 @@ Cluster management involves the administration and maintenance of database clust
     
     For example, to edit the resources in a database cluster, go to the **Overview** page and click **Edit** on the **Resources** widget. The **Edit Topology** screen will be displayed. Modify the settings and click **Save**.
 
-    ![!image](../edit_resources_toplogy.png)
+    ![!image](../images/edit_resources_toplogy.png)
 
 3. [Scaling](../use/scaling.md)
 
