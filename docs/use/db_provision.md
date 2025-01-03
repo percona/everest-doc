@@ -54,6 +54,9 @@ To provision a new database:
 
         ![!image](../images/resources_pgbouncer.png)
 
+    - MongoDB: If you enable sharding, you can see the **Routers** panel on the **Resources** page. Select the **Number of routers** and the **Resource size per router**.
+
+        ![!image](../images/resources_routers.png)
 
 6. On the **Scheduled Backups** page, set up a schedule to run backup jobs for your new database.
 
