@@ -18,6 +18,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     ```sh
     helm repo add percona https://percona.github.io/percona-helm-charts/
+    helm repo update
     ```
 
 2. Install Percona Everest:
