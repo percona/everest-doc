@@ -18,13 +18,15 @@ Cluster management involves the administration and maintenance of database clust
 
     ![!image](../images/remove_edit_db_wizard.png)
     
-    For example, to edit the resources in a database cluster, go to the **Overview** page and click **Edit** on the **Resources** widget. The **Edit Topology** screen will be displayed. Modify the settings and click **Save**.
-
-    ![!image](../images/edit_resources_toplogy.png)
 
 3. [Scaling](../use/scaling.md)
 
     Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
+
+    To scale your database cluster, go to the **Overview** page of the desired cluster. Click on **Edit** in the **Resources** widget. This will open the **Edit Topology** screen. Make the necessary changes to the settings and then click **Save**.
+    
+    ![!image](../images/edit_resources_toplogy.png)
+
 
     ![!image](../images/everest_db_scaling.png)
 
