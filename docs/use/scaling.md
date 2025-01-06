@@ -46,8 +46,7 @@ To scale your database instances:
 2. Navigate to the **Resources** widget and click **Edit**. This will open the **Edit Topology** screen.
 3. Select the **Number of nodes**. 
 4. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.
-5. Set the **Routers**, **PG Bouncers**, or **Proxies** and their corresponding resources based on the technology used.
-6. Click **Save**.
+5. Set the **Routers**, **PG Bouncers**, or **Proxies** and their corresponding resources based on the technology used. Click **Save**.
 
 
 
