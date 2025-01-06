@@ -43,16 +43,15 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 To scale your database instances:
 {.power-number}
 
-1. From the `Percona Everest Homepage`, click on the three dots next to the database that you want to scale. A list of actions will be displayed.
-2. Click **Edit**.
-3. Navigate to the **Resources** page.
-4. Select the **Number of nodes**. 
-5. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.
-6. Click **Continue** until you reach the page where **Edit database** option is seen.
+1. From the Percona Everest homepage, select the database you wish to scale. The **Overview** page will then be displayed.
+2. Navigate to the **Resources** widget and click **Edit**. This will open the **Edit Topology** screen.
+3. Select the **Number of nodes**. 
+4. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.
+5. Set the **Routers**, **PG Bouncers**, or **Proxies** and their corresponding resources based on the technology used.
 
-7. Click **Go to list of my databases**.
+6. Click **Save**.
 
-8. Click on expand next to the database that you edited. You can see the resources that you allocated for your database.
+7. Click on expand next to the database that you edited. You can see the resources that you allocated for your database.
 
     ![!image](../images/everest_resources_allocated.png)
 
