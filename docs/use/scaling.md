@@ -24,7 +24,6 @@ Vertical scaling is essential for addressing increased workloads or performance 
       
     If performance is not a criterion and resource requirements are low, opt for **Small** as the **Resource size per node** when creating a database cluster. This option has lower preset thresholds for CPU, Memory, and Disk compared to the **Large**.        
     
-    ![!image](../images/everest_db_scaling.png)
 
 ## Horizontal scaling
 
@@ -48,12 +47,7 @@ To scale your database instances:
 3. Select the **Number of nodes**. 
 4. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.
 5. Set the **Routers**, **PG Bouncers**, or **Proxies** and their corresponding resources based on the technology used.
-
 6. Click **Save**.
-
-7. Click on expand next to the database that you edited. You can see the resources that you allocated for your database.
-
-    ![!image](../images/everest_resources_allocated.png)
 
 
 
