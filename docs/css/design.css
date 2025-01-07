@@ -262,6 +262,7 @@
     vertical-align: baseline;
     padding: 0 0.2em 0.1em;
     border-radius: 0.15em;
+    white-space: pre-wrap;   /* Ensure long lines wrap */
 }
 .md-typeset .highlight code span,
 .md-typeset code,

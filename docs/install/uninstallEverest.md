@@ -74,6 +74,8 @@ Below is a list of CRDs for different operators.
         vmagents.operator.victoriametrics.com
         vmclusters.operator.victoriametrics.com
         vmusers.operator.victoriametrics.com
+        vmscrapeconfigs.operator.victoriametrics.com
+        vlogs.operator.victoriametrics.com
         ```
 
     ??? example "Everest operator"
@@ -105,8 +107,12 @@ Below is a list of CRDs for different operators.
     ??? example "PostgreSQL operator (Percona and CrunchyData)"
         ```
         perconapgbackups.pgv2.percona.com
-        perconapgrestores.pgv2.percona.com
         perconapgclusters.pgv2.percona.com
+        perconapgrestores.pgv2.percona.com
+        perconapgupgrades.pgv2.percona.com
+        crunchybridgeclusters.postgres-operator.crunchydata.com
+        pgadmins.postgres-operator.crunchydata.com
+        pgupgrades.postgres-operator.crunchydata.com
         postgresclusters.postgres-operator.crunchydata.com
         ```
                    
@@ -146,6 +152,8 @@ vmalerts.operator.victoriametrics.com
 vmagents.operator.victoriametrics.com
 vmclusters.operator.victoriametrics.com
 vmusers.operator.victoriametrics.com
+vmscrapeconfigs.operator.victoriametrics.com
+vlogs.operator.victoriametrics.com
 databaseclusterbackups.everest.percona.com
 databaseclusters.everest.percona.com
 databaseengines.everest.percona.com
@@ -159,10 +167,14 @@ perconaservermongodbbackups.psmdb.percona.com
 perconaservermongodbrestores.psmdb.percona.com
 perconaservermongodbs.psmdb.percona.com
 perconapgbackups.pgv2.percona.com
-perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
+perconapgrestores.pgv2.percona.com
+perconapgupgrades.pgv2.percona.com
+crunchybridgeclusters.postgres-operator.crunchydata.com
+pgadmins.postgres-operator.crunchydata.com
+pgupgrades.postgres-operator.crunchydata.com
 postgresclusters.postgres-operator.crunchydata.com
-EOF    
+EOF
 ```
         
 ??? example "Expected output"
@@ -189,6 +201,8 @@ EOF
     customresourcedefinition.apiextensions.k8s.io "vmagents.operator.victoriametrics.com" deleted
     customresourcedefinition.apiextensions.k8s.io "vmclusters.operator.victoriametrics.com" deleted
     customresourcedefinition.apiextensions.k8s.io "vmusers.operator.victoriametrics.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "vmscrapeconfigs.operator.victoriametrics.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "vlogs.operator.victoriametrics.com" deleted
     customresourcedefinition.apiextensions.k8s.io "databaseclusterbackups.everest.percona.com" deleted
     customresourcedefinition.apiextensions.k8s.io "databaseclusters.everest.percona.com" deleted
     customresourcedefinition.apiextensions.k8s.io "databaseengines.everest.percona.com" deleted
@@ -202,8 +216,12 @@ EOF
     customresourcedefinition.apiextensions.k8s.io "perconaservermongodbrestores.psmdb.percona.com" deleted
     customresourcedefinition.apiextensions.k8s.io "perconaservermongodbs.psmdb.percona.com" deleted
     customresourcedefinition.apiextensions.k8s.io "perconapgbackups.pgv2.percona.com" deleted
-    customresourcedefinition.apiextensions.k8s.io "perconapgrestores.pgv2.percona.com" deleted
     customresourcedefinition.apiextensions.k8s.io "perconapgclusters.pgv2.percona.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "perconapgrestores.pgv2.percona.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "perconapgupgrades.pgv2.percona.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "crunchybridgeclusters.postgres-operator.crunchydata.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "pgadmins.postgres-operator.crunchydata.com" deleted
+    customresourcedefinition.apiextensions.k8s.io "pgupgrades.postgres-operator.crunchydata.com" deleted
     customresourcedefinition.apiextensions.k8s.io "postgresclusters.postgres-operator.crunchydata.com" deleted
     ```
 
