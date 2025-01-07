@@ -38,8 +38,8 @@ To enable PITR:
 === "When editing an existing database"
 
 
-    1. In the <i class="uil uil-database"></i> **Databases** view, select the database for which you want to enable PITR.
-    2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the database, then click **Edit**.
+    1. In the <i class="uil uil-database"></i> **Databases** view, select the database for which you want to enable PITR. The **Overview** tab will be displayed.
+    2. 
     3. Navigate through the database configuration wizard to get to the **Backups** page where you can configure a backup schedule that will create an initial full backup required for PITR.
     4. Complete the setup wizard to schedule a full backup and enable PITR for the existing database.
 
