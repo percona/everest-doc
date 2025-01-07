@@ -1,4 +1,9 @@
-# Install Everest
+# Install Percona Everest using CLI
+
+!!! warning
+    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    
+    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 ## Before you start
 
@@ -8,36 +13,65 @@ Before running the commands in the **Installation** section, note that Everest w
 export KUBECONFIG=~/.kube/config
 ```
 
-## Installation
+## Install Percona Everest
+
+!!! info "Important"
+    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through the CLI, you can:
+
+    * Use the `--helm-.set` flag to specify individual parameter values.
+    * Provide a values file with the `--helm.values` flag for bulk configuration.
 
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
 1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
 
-2. Install Percona Everest using one of the following commands:
+2. You can install Percona Everest using either the wizard or the headless mode.
+
+    !!! note        
+        * If you do not specify a namespace, the `everest` namespace gets provisioned by default.
+        * You can skip provisioning the database namespace during initial installation by using the flag `--skip-db-namespace`.
+
+            ```
+            everestctl install --skip-db-namespace
+            ```
+        To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
-    ```sh
-    everestctl install
-    ```
+    - **Install Percona Everest using the wizard**
+        {.power-number}
 
-    Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases. Make sure that you enter **at least** one namespace.
+        1. Run the following command.
+            ```sh
+            everestctl install
+            ```
 
+        2. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
 
-    Alternatively, you can set multiple namepaces in the headless mode:
+        3.  If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
 
-    ```sh
-    everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-    ```
-    Replace `<namespace-name>` with the desired name for your namespace.
+            ```sh
+            everestctl namespaces add <NAMESPACE>
+            ``` 
 
-    ??? example "Example"
-        ```
-        everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
-        ```
+    - **Install Percona Everest using the headless mode**
+        {.power-number}
 
-    To gain a deeper understanding of how to install different operators in various namespaces, refer to the [configure multiple namespaces](../use/multi-namespaces.md#configure-multiple-namespaces) section.
+        1. Run the following command. You can set multiple namepaces in the headless mode. Replace `<namespace-name>` with the desired name for your namespace.
+            ```sh
+            everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+            ```
+
+            ??? example "Example"
+                ```
+                everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
+                ```
+        
+        2. If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
+
+            ```sh
+            everestctl namespaces add <NAMESPACE>
+            ```
 
 
 3. Update the password for the `admin` user:
