@@ -1,4 +1,4 @@
-# Role Based Access Control
+# Role-based access control (RBAC)
 
 !!! warning "Disclaimer"
     RBAC is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
@@ -292,8 +292,8 @@ In this section, we will explore some examples that demonstrate how to create po
         p, role:dbadminDatabaseA, namespaces, *, namespaceA
         p, role:dbadminDatabaseA, database-engines, read, namespaceA/*
         p, role:dbadminDatabaseA, database-clusters, *, namespaceA/databaseA
-        p, role:dbadminDatabaseA, database-cluster-backups, *, namespaceA/*
-        p, role:dbadminDatabaseA, database-cluster-restores, *, namespaceA/*
+        p, role:dbadminDatabaseA, database-cluster-backups, *, namespaceA/databaseA
+        p, role:dbadminDatabaseA, database-cluster-restores, *, namespaceA/databaseA
         p, role:dbadminDatabaseA, database-cluster-credentials, *, namespaceA/databaseA
         p, role:dbadminDatabaseA, backup-storages, read, namespaceA/*
         p, role:dbadminDatabaseA, monitoring-instances, read, namespaceA/*

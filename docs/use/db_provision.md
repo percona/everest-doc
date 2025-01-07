@@ -17,15 +17,13 @@ To provision a new database:
 
 1. Log into the Percona Everest UI.
 
-2. On the Percona Everest homepage, click **Create Database**. The **Basic information** page opens.
+2. On the Percona Everest homepage, click **Create Database**. The menu for the different database types will open. Select the database that you wish to provision. The **Basic Information** page will then be displayed.
 
-    ![!image](../images/everest_db_provision.png)
+     ![!image](../images/everest_db_provision.png)
 
 3. On the **Basic information** page, provide the following details:
 
        - Select the **Namespace** where you want to create your database.
-
-       - Select the **Database type**: MySQL, MongoDB or PostgreSQL.
 
        - Choose a name for your database. The name is auto-populated, but you can modify it according to your needs.
 
@@ -38,7 +36,9 @@ To provision a new database:
 
         ![!image](../images/everest_multi-namespaces.png)
 
-5. On the **Resources** page, select the **Number of nodes**. Also, set the resources per node by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
+4. Click **Continue**. The **Resources** page will be displayed.
+
+5. On the **Resources** page, select the **Number of nodes**. Also, set **Resources size per node **by selecting one of the predefined presets or by specifying the CPU, Memory, and Disk. For more information on resources, see the [Scale database deployment](../use/scaling.md) section.
 
     Additionally, based on the database technology you’re working with, select the following:
 
@@ -56,8 +56,13 @@ To provision a new database:
 
         ![!image](../images/resources_pgbouncer.png)
 
+    - MongoDB: If you enable sharding, you can see the **Routers** panel on the **Resources** page. Select the **Number of routers** and the **Resource size per router**.
 
-6. On the **Scheduled Backups** page, set up a schedule to run backup jobs for your new database.
+        ![!image](../images/resources_routers.png)
+
+6. Click **Continue**. The **Scheduled Backups** page will be displayed.
+
+7. On the **Scheduled Backups** page, set up a schedule to run backup jobs for your new database.
 
     Click **Create backup schedule**. The backup schedule pop-up is displayed.
 
@@ -76,19 +81,24 @@ To provision a new database:
 
         Example: When you set retention copies to 3, it means that you want to keep a maximum of 3 backup copies at any given time. So, if you have 3 backups already and then run a 4th backup, the oldest backup will get deleted automatically. 
 
-        ![!image](../images/everest_scheduled_backups.png)    
+         ![!image](../images/everest_scheduled_backups.png)    
 
 7. On the **Scheduled Backups** page, you can also enable Point-in-time Recovery (PITR) by turning the toggle on.
 
-8. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle button on. For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
+8. Click **Continue**. The **Advanced Configurations** page will be displayed.
 
-9. On the **Monitoring** page, you can enable monitoring by turning the toggle button on and selecting the **Monitoring endpoint URL**. For information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
+9. On the **Advanced Configurations** page, you can enable external access and customise database engine parameters by turning the toggle on. For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
 
-10. Click **Create Database**.
+10. Click **Continue**. The **Monitoring** page will be displayed.
 
-11. Click **Go to list of my databases** to see the database that you provisioned.
+11. On the **Monitoring** page, you can enable monitoring by turning the toggle on and selecting the **Monitoring endpoint** from the drop down.
+ 
+    If you have not added any monitoring endpoint, click **Add monitoring endpoint**. For information on adding monitoring endpoints, see the [monitoring endpoints](../use/monitor_endpoints.md) section.
 
-    ![!image](../images/everest_provisioned_db.png)
+12. Click **Create Database**.
+
+13. Click **Go to list of my databases** to see the database that you provisioned.
+
 
 ## Video tutorial
 
