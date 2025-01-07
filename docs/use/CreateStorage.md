@@ -13,9 +13,9 @@ Everest supports S3-compatible backup locations, which means you can use [AWS S3
 To create a backup storage location:
 {.power-number}
 
-1. Go to **Settings:
+1. Go to Backup Storage Settings:
 
-    Navigate to **Settings > Backup storages**, then click **Add Backup storage**.
+    Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click **Add Backup storage**.
 
 2. Fill in the Required Fields:
 
