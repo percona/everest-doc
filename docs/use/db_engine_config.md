@@ -8,7 +8,7 @@ Percona Everest provides configuration settings and options, which are essential
 To configure your database engine in Percona Everest:
 {.power-number}
 
-1. From the Percona Everest main page, navigate to **Create databases > Advanced Configurations** page.
+1. From the Percona Everest main page, navigate to **Create database > Advanced Configurations** page.
 
 2. To enable external access beyond the Kubernetes cluster network, turn on the toggle.
 
@@ -56,7 +56,7 @@ To configure your database engine in Percona Everest:
 To update your database engine in Percona Everest for an existing DB cluster:
 {.power-number}
 
-1. To update the database engine configuration for your existing database, go to the Everest home page and click on the database for which you want to update the database engine. The **Overview** page will be displayed.
+1. Go to the Percona Everest home page and click on the database for which you want to update the database engine. The **Overview** page will be displayed.
 
 2. On the **Advanced configuration** widget, click **Edit**. The **Edit advanced configuration** screen will be displayed.
 
