@@ -47,7 +47,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
         
     - [Add new namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#add-new-namespaces)
     - [Update existing namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#update-namespaces)
-    - [Delete any used namespaces](delete-namespaces)
+    - [Delete any used namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#delete-namespaces)
 
     For a deep dive into managing namespaces for provisioning DB namespaces in Percona Everest, refer to our [documentation](https://docs.percona.com/everest/administer/manage_namespaces.html).
 
