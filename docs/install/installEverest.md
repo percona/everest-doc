@@ -51,7 +51,7 @@ To install and provision Percona Everest to Kubernetes:
         3.  If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
 
             ```sh
-            everestctl namespaces add [NAMESPACE]
+            everestctl namespaces add <NAMESPACE>
             ``` 
 
     - **Install Percona Everest using the headless mode**
@@ -70,7 +70,7 @@ To install and provision Percona Everest to Kubernetes:
         2. If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
 
             ```sh
-            everestctl namespaces add [NAMESPACE]
+            everestctl namespaces add <NAMESPACE>
             ```
 
 
