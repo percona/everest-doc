@@ -32,7 +32,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
-    If you're looking to get started with Percona Everest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
+    If you are looking to get started with Percona Everest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
     Additionally, check our [Upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) and [Uninstall](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) sections to find out how to upgrade or uninstall your Percona Everest instances using Helm.    
 
