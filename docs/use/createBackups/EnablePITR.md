@@ -29,7 +29,7 @@ To enable PITR:
 === "When creating a new database"
 
 
-    1. On the Everest homepage, click **Create Database** to display the database creation wizard.
+    1. On the Everest homepage, click **Create database** to display the database creation wizard.
     2. Fill in the details of your database on the first steps of the wizard.
     3. Navigate to the **Backups** page, and make sure to enable and configure a backup schedule. 
     4. Click **Next** to go to the **Point-in-time recovery (PITR)** page where you can enable PITR and specify a location for storing the PITR backups and logs. 
@@ -37,11 +37,10 @@ To enable PITR:
 
 === "When editing an existing database"
 
-
-    1. In the <i class="uil uil-database"></i> **Databases** view, select the database for which you want to enable PITR.
-    2. Click the <i class="uil uil-ellipsis-h"></i> Actions menu next to the database, then click **Edit**.
-    3. Navigate through the database configuration wizard to get to the **Backups** page where you can configure a backup schedule that will create an initial full backup required for PITR.
-    4. Complete the setup wizard to schedule a full backup and enable PITR for the existing database.
+    1. On the <i class="uil uil-database"></i> **Databases** view page, select the database for which you want to enable PITR. The **Overview** tab will be displayed.
+    2. Navigate to **Backups & PITR > Point-in-time Recovery (PITR)** widget.
+    3. Click **Edit**. The **Edit PITR** pop-up will be displayed.
+    4. Toggle the switch on or off based on whether you want to enable or disable PITR. Click **Save**.
 
 
 ## Limitations

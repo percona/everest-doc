@@ -23,7 +23,7 @@ To use monitoring in Percona Everest, you should have a PMM instance up and runn
 
 For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
 
-## Add monitoring
+## Add monitoring endpoint
 
 To add monitoring in Percona Everest from the UI:
 {.power-number}
@@ -44,8 +44,7 @@ To add monitoring in Percona Everest from the UI:
 6. Click **Add**.
 
 
-
-## Edit monitoring
+## Edit monitoring endpoint
 
 To edit a monitoring endpoint from the Percona Everest UI:
 {.power-number}
@@ -65,7 +64,7 @@ To edit a monitoring endpoint from the Percona Everest UI:
 4. Click **Add**.
 
 
-## Delete monitoring
+## Delete monitoring endpoint
 
 To delete a monitoring endpoint from the Percona Everest UI:
 {.power-number}
@@ -81,7 +80,6 @@ To delete a monitoring endpoint from the Percona Everest UI:
      ![!image](../images/everest_endpoint_delete.png)
 
 4. Click **Delete**.
-
 
 
 

@@ -1,5 +1,6 @@
 # Percona Everest release notes index
 
+- [Percona Everest 1.4.0 (2025-01-07)](Percona-Everest-1.4.0-(2025-01-07).md)
 - [Percona Everest 1.3.0 (2024-11-18)](Percona-Everest-1.3.0-(2024-11-18).md)
 - [Percona Everest 1.2.0 (2024-10-01)](Percona-Everest-1.2.0-(2024-10-01).md)
 - [Percona Everest 1.1.1 (2024-08-22)](Percona-Everest-1.1.1-(2024-08-22).md)

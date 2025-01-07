@@ -1,4 +1,4 @@
-# Uninstall Everest
+# Uninstall Percona Everest using the CLI
 
 You can run the commands below to remove all Everest resources including:
 
@@ -9,11 +9,11 @@ You can run the commands below to remove all Everest resources including:
     Uninstalling Everest will remove all database clusters and associated data from the Kubernetes cluster, including backups!
 
 
-To uninstall Percona Everest:
+To uninstall Percona Everest, follow these steps:
 {.power-number}
 
 
-1. Uninstall Everest:
+1. Run the following command:
 
     ```sh
     everestctl uninstall
@@ -174,11 +174,11 @@ crunchybridgeclusters.postgres-operator.crunchydata.com
 pgadmins.postgres-operator.crunchydata.com
 pgupgrades.postgres-operator.crunchydata.com
 postgresclusters.postgres-operator.crunchydata.com
-EOF
+EOF   
 ```
         
 ??? example "Expected output"
-    ```{.text .no-copy}
+    ```sh
     customresourcedefinition.apiextensions.k8s.io "catalogsources.operators.coreos.com" deleted
     customresourcedefinition.apiextensions.k8s.io "clusterserviceversions.operators.coreos.com" deleted
     customresourcedefinition.apiextensions.k8s.io "installplans.operators.coreos.com" deleted
@@ -238,6 +238,7 @@ perconapgrestores.pgv2.percona.com
 perconapgclusters.pgv2.percona.com
 EOF
 ```
+
 
 
 

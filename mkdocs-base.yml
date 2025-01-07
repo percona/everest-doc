@@ -4,7 +4,7 @@ site_name: Percona Everest
 site_description: Documentation
 site_author: Percona LLC
 site_url: ""
-copyright: Percona LLC, &#169; 2024
+copyright: Percona LLC, &#169; 2025
 use_directory_urls: false
 repo_name: percona/everest-doc
 repo_url: https://github.com/percona/everest-doc
@@ -147,6 +147,7 @@ nav:
   - Welcome to Percona Everest: index.md 
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
       - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
       - Percona-Everest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
       - Percona-Everest 1.1.1 (2024-08-22): release-notes/Percona-Everest-1.1.1-(2024-08-22).md
@@ -163,25 +164,33 @@ nav:
       - Percona Everest 0.5.0 (2023-11-28): release-notes/Percona-Everest-0.5.0-(2023-11-28).md      
       - Percona Everest 0.4.0 (2023-10-30): release-notes/Percona-Everest-0.4.0-(2023-10-30).md      
   - Features: features.md
-  - Quickstart guide:
-      - quickstart-guide/quick-install.md
-      - quickstart-guide/eks.md
-      - quickstart-guide/gke.md
+  - Quickstart guide: quick-install.md
+    
   - Install:
-      - Setup and prerequisites: install/SetupPrereqs.md
-      - Install Percona Everest CLI: install/installEverestCLI.md
-      - Install Percona Everest: install/installEverest.md
-      - Uninstall Percona Everest: install/uninstallEverest.md 
-
+    - Setup and prerequisites:
+      - install/prerequisites.md
+      - install/supported_operators_k8s.md
+      - install/eks.md
+      - install/gke.md
+      - install/installEverestCLI.md
+    - install/install_everest_helm_charts.md
+    - install/installEverest.md
+  
   - Upgrade: 
-    - upgrade_with_cli.md
-    - upgrade_operators.md
+    - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
+    - Upgrade Percona Everest using CLI: upgrade/upgrade_with_cli.md
+    - Upgrade Percona operators: upgrade/upgrade_operators.md
 
+  - Uninstall:
+    - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
+    - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
+   
   - Administer:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
-      - Access Control: 
-        - RBAC: administer/rbac.md
+      - Role-based access control: administer/rbac.md
+      - Namespaces management: administer/manage_namespaces.md
+
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
