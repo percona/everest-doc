@@ -29,6 +29,8 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - Do not create a full backup on an empty database. Instead, perform a full backup after adding some data to the database.
 
+- If you attempt to delete a MongoDB cluster stuck in the **initializing** state due to insufficient resources, the cluster will remain in the deleting state indefinitely. This issue is caused by a [bug](https://perconadev.atlassian.net/browse/K8SPSMDB-1208){:target="_blank"} in the PSMDB operator.
+
 
 ## Upgrading operators
 
