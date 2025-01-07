@@ -147,6 +147,7 @@ nav:
   - Welcome to Percona Everest: index.md 
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.5.0 (2025-02-07): release-notes/Percona-Everest-1.5.0-(2025-02-07).md
       - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
       - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
       - Percona-Everest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
