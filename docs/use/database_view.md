@@ -9,9 +9,6 @@ Click on the individual database and select the ellipsis menu (...). This will a
 
    ![!image](../images/database_view_actions.png)
 
-
- - **Edit the database** - Make the required changes on the screens that follow and then click **Edit database**.
-
  -  **Restart the database** - Restarting your database can improve the performance of your database and enable you to apply recent configuration changes. 
     
 
@@ -32,7 +29,7 @@ Click on the individual database and select the ellipsis menu (...). This will a
 
 ## Detailed database view
 
-You can view a comprehensive overview of any specific database by clicking on the respective database. Once you do that, you will see the **Overview**, **Backups**, and **Restores** tabs.
+You can view a comprehensive overview of any specific database by clicking on the respective database. Once you do that, you will see the **Overview**, **Backups**, **Components** and **Restores** tabs.
 
 ## Overview
 
@@ -40,6 +37,7 @@ The Overview tab provides a comprehensive view of all the essential database det
 
 - Basic information about the database
 - Backups information
+- Backups schedules information
 - Point-in-time Recovery status
 - Resources used by the database
 - External access and monitoring status

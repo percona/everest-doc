@@ -6,6 +6,7 @@ markdown-include
 mkdocs-material
 mkdocs-with-pdf
 mkdocs-git-revision-date-plugin
+typing-extensions
 mkdocs-material-extensions
 mkdocs-bootstrap-tables-plugin
 mkdocs-htmlproofer-plugin
