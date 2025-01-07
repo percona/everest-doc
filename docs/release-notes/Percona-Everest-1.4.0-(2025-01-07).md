@@ -177,4 +177,11 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 - When creating a 1-node MongoDB cluster, the cluster temporarily enters an **Error** state instead of **Initializing** before transitioning to the **Ready** state.
 
+- When restoring a MySQL database from a backup, the process may fail if the database name is too long. Use a shorter name for the restored database.
+
+
+
+
+
+
 
