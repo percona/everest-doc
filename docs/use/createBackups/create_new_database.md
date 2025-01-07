@@ -27,7 +27,7 @@ To create a new database from backup:
 
     ![!image](../../images/database_view_actions.png)
 
-3. On the **Create database** pop-up, select **Create DB from a backup**.
+3. On the **Create database** pop-up, select **From a backup**.
 
 4. From the dropdown list, select the backup that you want to use for creating a database.
 
