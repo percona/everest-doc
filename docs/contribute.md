@@ -2,7 +2,7 @@
 
 Thank you for deciding to contribute and help us improve Percona Everest! We also contribute to other open source projects and communities! Let’s make technology better!
 
-By contributing, you agree to the [Percona Community code of conduct](https://percona.community/contribute/coc/).
+By contributing, you agree to the [Percona Community code of conduct](https://percona.community/contribute/coc/){:target="_blank"}.
 
 We welcome all kinds of contributions so here's how you can get involved:
 
@@ -13,13 +13,13 @@ We welcome all kinds of contributions so here's how you can get involved:
 
 ## Submit a bug report or feature request
 
-If you find a bug in Percona Everest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com). 
+If you find a bug in Percona Everest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com){:target="_blank"}. 
 Start by searching the open topics for a similar report. If you find that someone else has already reported the same issue, you can upvote that report to increase its visibility.
 
 If there is no existing report, submit a report following these steps:
 {.power-number}
 
-1. Sign in to [Percona Everest Forum](https://forums.percona.com). You will need to create an account if you do not have one.
+1. Sign in to [Percona Everest Forum](https://forums.percona.com){:target="_blank"}. You will need to create an account if you do not have one.
 
 2. Create a report that:      
       *  describes the steps to reproduce the issue
@@ -46,8 +46,8 @@ Found a typo or didn't find what you needed? Here's how you can contribute to th
 
     To contribute to the documentation, you should be familiar with the following technologies:
 
-    * [Markdown](https://www.markdownguide.org/getting-started/) markup language. We write the documentation in it.
-    * [git](https://git-scm.com/) and [GitHub](https://guides.github.com/activities/hello-world/)
+    * [Markdown](https://www.markdownguide.org/getting-started/){:target="_blank"} markup language. We write the documentation in it.
+    * [git](https://git-scm.com/){:target="_blank"} and [GitHub](https://guides.github.com/activities/hello-world/){:target="_blank"}
 
     The `.md` files are in the `docs/` directory. 
 
