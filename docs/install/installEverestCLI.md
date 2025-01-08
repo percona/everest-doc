@@ -3,7 +3,7 @@
 !!! info "Important"
     Installing the Percona Everest CLI is only necessary if you want to use it to install Percona Everest; it is **not** required if you prefer to install Percona Everest with Helm.
 
-You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest).
+You can download the latest version of Everest CLI by visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest){:target="_blank"}.
 
 
 === "Linux and WSL"
