@@ -104,9 +104,9 @@ To migrate from PMM DBaaS to Percona Everest:
     !!! note alert alert-primary "Note"
         - The restoration won't be available for you in the web UI, you'll need to refer to the corresponding operator's documentation for instructions on how to do this.
 
-            -  For PXC https://docs.percona.com/percona-operator-for-mysql/pxc/backups-restore.html
-            -  For PSMDB https://docs.percona.com/percona-operator-for-mongodb/backups-restore.html
-            -  For PostgreSQL https://docs.percona.com/percona-operator-for-postgresql/2.0/backups-restore.html
+            -  For [PXC](https://docs.percona.com/percona-operator-for-mysql/pxc/backups-restore.html){:target="_blank"}
+            -  For [PSMDB](https://docs.percona.com/percona-operator-for-mongodb/backups-restore.html){:target="_blank"}
+            -  For [PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/backups-restore.html){:target="_blank"}
 
         - Each time you run a database cluster, repeat this step.
 
