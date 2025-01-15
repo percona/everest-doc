@@ -54,7 +54,21 @@ Here’s how you can create a new rule for affinity:
         - Prefered: It defines preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.    
         - Required: A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.
 
-    - **Weight (0-100)**: It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods.
+    - **Weight (0-100)**: It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights. 
+    
+    !!! note
+        Weight is only used when the priority is **Preferred**.
+
+3. In the **Rule details** section, enter the following:
+
+    - **Topology key**:  
+    - **Key**:
+    - **Operator**: 
+
+
+    |**Elements of affinity rules**|**Description**|
+    |-------------------------------|--------------|
+    |Component</br> 1. MongoDB: DB Node</br> 2. MongoDB sharded cluster: Config server, DB Node, Proxy</br> 3. MySQL: DB Node, Proxy</br> 4. PostreSQL: DB Node, Proxy|Components available based on the selected databases.|
 
 
 
