@@ -38,17 +38,28 @@ Here’s how you can create a new rule for affinity:
 
     - **Component**: The following components are available based on the selected databases:
     
-        - MongoDB: DB Node
-        - MongoDB sharded cluster: Config server, DB Node, Proxy
-        - MongoDB: DB Node
-        - MySQL: DB Node, Proxy
-        - PostreSQL: DB Node, Proxy
+        - MongoDB: `DB Node`
+        - MongoDB sharded cluster: `Config server, DB Node, Proxy`
+        - MongoDB: `DB Node`
+        - MySQL: `DB Node, Proxy`
+        - PostreSQL: `DB Node, Proxy`
 
-    - Type
+    - **Type**: The following are the different [types of affinity](#types-of-affinity):
 
-    - Priority
+        - node affinity
+        - pod affinity
+        - pod anti-affinity
 
-    - Weight - 
+    - **Priority**: Each type of Affinity can implement two distinct levels of rule enforcement:
+
+       - Prefered: It defines preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.
+    
+
+       - Required: A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.
+
+
+    - **Weight (0-100)**: It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods.
+
 
 
 
