@@ -67,21 +67,21 @@ Here’s how you can create a new rule for affinity:
 
     - **Operator**: The operator field specifies how a label's values match a resource, such as a Pod or node. It establishes the logical condition to determine if a resource satisfies the affinity or anti-affinity rule.
 
-    The following are all logical operators you can use in the operator field:
+        The following are all logical operators you can use in the operator field:
 
-       - **In**: Matches label values in a list.
+        - **In**: Matches label values in a list.
 
-        !!! note
+            !!! note
             When using the **In** operator, you must provide the values.
         
-       - **NotIn**: Matches label values not in a list.
+        - **NotIn**: Matches label values not in a list.
 
-        !!! note
+            !!! note
             When using the **NotIn** operator, you must provide the values.
 
-       - **Exists**: Matches when a label key exists, regardless of its value.
+        - **Exists**: Matches when a label key exists, regardless of its value.
 
-       - **DoesNotExist**: Matches when a label key does not exist.	
+        - **DoesNotExist**: Matches when a label key does not exist.	
 
 
 
