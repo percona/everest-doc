@@ -10,11 +10,11 @@ Affinity refers to rules that attempt to schedule Pods together or on nodes that
 
 Kubernetes supports the following types of affinity:
 
-- Node Affinity: Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.
+- **Node Affinity**: Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.
     
-- Pod Affinity: Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.
+- **Pod Affinity**: Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.
     
-- Pod Anti-Affinity: Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.
+- **Pod Anti-Affinity**: Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.
 
 
 You can set affinity rules in Percona Everest via the **Advanced Configurations** page within the **Affinity** section. From the Percona Everest home page, navigate through the **Create Database** wizard until you reach the **Advanced Configurations** page.
@@ -38,10 +38,10 @@ Here’s how you can create a new rule for affinity:
 
     - **Component**: The following components are available based on the selected databases:
     
-        - MongoDB: DB Node
-        - MongoDB sharded cluster: Config server, DB Node, Proxy
-        - MySQL: DB Node, Proxy
-        - PostreSQL: DB Node, Proxy
+        - **MongoDB**: DB Node
+        - **MongoDB sharded cluster**: Config server, DB Node, Proxy
+        - **MySQL**: DB Node, Proxy
+        - **PostreSQL**: DB Node, Proxy
 
     - **Type**: The following are the different [types of affinity](#types-of-affinity):
 
@@ -51,13 +51,13 @@ Here’s how you can create a new rule for affinity:
 
     - **Priority**: Each type of Affinity can implement two distinct levels of rule enforcement:
         
-        - Prefered: It defines preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.    
-        - Required: A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.
+        - **Prefered**: It defines preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.    
+        - **Required**: A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.
 
-    - **Weight (0-100)**: It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights. 
+    - **Weight (1-100)**: It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights. 
     
-    !!! note
-        Weight is only used when the priority is **Preferred**.
+        !!! note
+            Weight is only used when the priority is **Preferred**.
 
 3. In the **Rule details** section, enter the following:
 
@@ -69,17 +69,19 @@ Here’s how you can create a new rule for affinity:
 
     The following are all logical operators you can use in the operator field:
 
-       - In: Matches label values in a list.
+       - **In**: Matches label values in a list.
 
         !!! note
             When using the **In** operator, you must provide the values.
         
-       - NotIn: Matches label values not in a list.
+       - **NotIn**: Matches label values not in a list.
 
         !!! note
             When using the **NotIn** operator, you must provide the values.
-       - Exists: Matches when a label key exists, regardless of its value.
-       - DoesNotExist: Matches when a label key does not exist.	
+
+       - **Exists**: Matches when a label key exists, regardless of its value.
+
+       - **DoesNotExist**: Matches when a label key does not exist.	
 
 
 
