@@ -84,7 +84,7 @@ Here’s how you can create a new rule for affinity:
         - **DoesNotExist**: Matches when a label key does not exist.	
 
 
-3. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
+4. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
 
 
