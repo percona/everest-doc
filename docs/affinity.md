@@ -72,16 +72,19 @@ Here’s how you can create a new rule for affinity:
         - **In**: Matches label values in a list.
 
             !!! note
-            When using the **In** operator, you must provide the values.
+                When using the **In** operator, you must provide the values.
         
         - **NotIn**: Matches label values not in a list.
 
             !!! note
-            When using the **NotIn** operator, you must provide the values.
+                When using the **NotIn** operator, you must provide the values.
 
         - **Exists**: Matches when a label key exists, regardless of its value.
 
         - **DoesNotExist**: Matches when a label key does not exist.	
+
+
+3. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
 
 
