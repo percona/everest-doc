@@ -206,6 +206,7 @@ nav:
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
       - Configure database engine: use/db_engine_config.md
+      - Affinity: use/affinity.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
