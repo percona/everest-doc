@@ -61,16 +61,30 @@ Here’s how you can create a new rule for affinity:
 
 3. In the **Rule details** section, enter the following:
 
-    - **Topology key**:  
-    - **Key**:
-    - **Operator**: 
+    - **Topology key**: It specifies the domain or grouping within which Pods should be scheduled together (for affinity) or apart (for anti-affinity).
+    
+    - **Key**: The key field is a label that identifies resources like Pods or nodes through their associated labels.
+
+    - **Operator**: The operator field specifies how a label's values match a resource, such as a Pod or node. It establishes the logical condition to determine if a resource satisfies the affinity or anti-affinity rule.
+
+    The following are all logical operators you can use in the operator field:
+
+       - In: Matches label values in a list.
+
+        !!! note
+            When using the **In** operator, you must provide the values.
+        
+       - NotIn: Matches label values not in a list.
+
+        !!! note
+            When using the **NotIn** operator, you must provide the values.
+       - Exists: Matches when a label key exists, regardless of its value.
+       - DoesNotExist: Matches when a label key does not exist.	
 
 
-    |**Elements of affinity rules**|**Description**|
-    |-------------------------------|--------------|
-    |**Component**</br> * MongoDB: DB Node</br> * MongoDB sharded cluster: Config server, DB Node, Proxy</br> * MySQL: DB Node, Proxy</br> * PostreSQL: DB Node, Proxy|Components available based on the selected databases.|
-    |**Type**</br> * node affinity</br>* pod affinity</br>* pod anti-affinity|Different [types of affinity](#types-of-affinity)|
-|**Priority**</br></br> Preferred</br></br></br></br>Required| Two distinct levels of rule enforcement</br></br>Defines preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>Strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
+
+
+ 
 
 
 
