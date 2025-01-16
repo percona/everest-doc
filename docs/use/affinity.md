@@ -90,7 +90,7 @@ Here’s how you can create a new rule for affinity:
 |**Settings**|**Description**|**Note**|
 |------------|-------------|---------------|
 |Node affinity|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|   |
-|Components|<ul><li>Config Server</li><li>DB Node</li><li>Proxy</br></br></li><li>DB Node</br><br></li><li>Proxy</li></ul>|This is applicable to **MongoDB sharded cluster**.<br/></br></br></br>This is applicable to **MongoDB non sharded cluster**.<br/></br></br>This is applicable to **MySQL** and **PostgreSQL** databases.|
+|Components|<ul><li>Config Server</li><li>DB Node</li><li>Proxy</br></br></li><li>DB Node</br><br></li><li>Proxy</li></ul>|This is applicable to **MongoDB sharded cluster**.<br/></br></br></br>This is applicable to **MongoDB non sharded cluster**.</br></br>This is applicable to **MySQL** and **PostgreSQL** databases.|
 
 
 
