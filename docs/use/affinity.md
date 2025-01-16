@@ -87,9 +87,9 @@ Here’s how you can create a new rule for affinity:
 4. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
 
-|**Settings**|**Component**|**Description**|**Note**|
+|**Settings**|**Components**|**Description**|**Note**|
 |------------|-------------|---------------|-----------|
-|Node affinity|MongoDB sharded cluster</br>Config server<br/>DB node<br/><br/>Proxy<br/><br/>MongoDB non sharded cluster<br/>|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|-----------|
+|Node affinity|Config server<br/>DB node<br/><br/>Proxy<br/><br/>MongoDB non sharded cluster<br/><br/><br/>DB node|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|This is applicable to MongoDB sharded cluster.<br/><br/>This is applicable to MongoDB non sharded cluster.|
 
 
 
