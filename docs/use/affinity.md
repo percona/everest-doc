@@ -93,7 +93,7 @@ Here’s how you can create a new rule for affinity:
 |Pod affinity|Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.|   |
 |Pod anti-affinity|Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.|   |
 |Components|<ul><li>Config Server</li><li>DB Node</li><li>Proxy</br></br></li><li>DB Node</br><br></li><li>DB Node</li><li>Proxy</li></ul>|</br>Applicable for **MongoDB sharded cluster**.<br/></br></br></br>Applicable for **MongoDB non sharded cluster**.</br></br>Applicable for **MySQL** and **PostgreSQL** databases.|
-|Priority|Each type of Affinity can implement two distinct levels of rule enforcement:</br><ul><li>Preffered</br></br></br></br><ul><li>Required</li></ul>|</br></br></br></br>Defines the preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
+|Priority|Each type of Affinity can implement two distinct levels of rule enforcement:</br><ul><li>Preffered</br></br></br></br></br></li><li>Required</li></ul>|</br></br></br></br>Defines the preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
 
 
 
