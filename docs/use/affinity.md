@@ -16,9 +16,8 @@ You can set affinity rules in Percona Everest via the **Advanced Configurations*
 2. From the **Advanced Configurations** page, click **Create affinity rule**. The **Add rule** screen will be displayed.
 
     
-3. Enter the information on the **Add Rule** screen. The following table provides details about the different elements involved in setting up affinity rules for your databases
+3. Enter the information on the **Add Rule** screen. The following table provides details about the different elements involved in setting up affinity rules for your databases.
 
-    |       **Affinity rules settings**           |
     |**Settings**    |**Description**|**Note**|
     |----------------|-------------|---------------|
     |**Node affinity**|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|   |
