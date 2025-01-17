@@ -98,8 +98,7 @@ Here’s how you can create a new rule for affinity:
 |**Topology key**|It specifies the domain or grouping within which Pods should be scheduled together (for affinity) or apart (for anti-affinity).|Here are some examples of **topologyKey**:</br><ul><li>kubernetes.io/hostname</li><li>topology.kubernetes.io/zone	</li><li>topology.kubernetes.io/region</li><li>Custom Node Labels (e.g., rack)</li></ul>|
 |**key**|The key field is a label that identifies resources like Pods or nodes through their associated labels.|Here are some examples of **key** are:</br><ul><li> app</li><li>tier</li><li>environment</li><li>Custom labels (e.g., disk-type, rack)</li></ul>|
 |**Operator**|The operator field specifies how a label's values match a resource, such as a Pod or node. It establishes the logical condition to determine if a resource satisfies the affinity or anti-affinity rule.</br></br>The following are all logical operators you can use in the operator field:</br><ul><li>**In**: Matches label values in a list</li><li>**NotIn**: Matches label values not in a list.</li><li>**Exists**: Matches when a label key exists, regardless of its value.</li><li>**DoesNotExist**: Matches when a label key does not exist.</li></ul>|When using the **In** and **NotIn** operators, you have to provide the values for the key as well.|
-|**Values**|The values are the specific label values that must match the key for the affinity rule to apply.
-|Here are some examples for **values** are:</br><ul><li>frontend</li><li>zone1</li><li>production</li><li>Custom values</li></ul>|
+|**Values**|The values are the specific label values that must match the key for the affinity rule to apply.|Here are some examples for **values** are:</br><ul><li>frontend</li><li>zone1</li><li>production</li><li>custom values</li></ul>|
 
 
 
