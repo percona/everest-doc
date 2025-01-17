@@ -20,8 +20,8 @@ You can set affinity rules in Percona Everest via the **Advanced Configurations*
 
 The following table provides details about the different elements involved in setting up affinity rules for your databases.
 
-|**Settings**    |**Description**|**Note**|
-|----------------|-------------|----------|
+|**Settings**    |**Description**  |**Note**  |
+|----------------|-----------------|--------------|
 |**Node affinity**|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|   |
 |**Pod affinity**|Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.|   |
 |**Pod anti-affinity**|Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.|   |
