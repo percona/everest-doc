@@ -37,6 +37,8 @@ The following table provides details about the different elements involved in se
 
 Here are some detailed use cases for affinity that showcase its various applications and benefits.
 
+### Use case for Node affinity
+
 
 
 
