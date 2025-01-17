@@ -87,8 +87,8 @@ Here’s how you can create a new rule for affinity:
 4. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
 
-|**Settings**|**Description**|**Note**|
-|------------|-------------|---------------|
+|**Settings**    |**Description**|**Notes**|
+|----------------|-------------|---------------|
 |**Node affinity**|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|   |
 |**Pod affinity**|Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.|   |
 |**Pod anti-affinity**|Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.|   |
