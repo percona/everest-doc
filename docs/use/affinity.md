@@ -66,7 +66,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 === "Pod affinity"
     ### Pods scheduled together
 
-     Let's consider a use case in which you want to to ensure that two nginx  pods should be scheduled to run on the same Kubernetes node.
+     Let's consider a use case in which you want to to ensure that HAProxy pods should be scheduled to run on the same Kubernetes node.
 
     ```sh
      affinity:
@@ -77,16 +77,38 @@ Here are several detailed use cases for affinity that highlight its diverse appl
         - key: app
           operator: In
           values:
-          - nginx
+          - haProxy
       topologyKey: "kubernetes.io/hostname"
     ```
 
     ??? info "What happens under the hood"
-        - The pod will be scheduled only on nodes that already contain pods labeled with `app=nginx`.
+        - The pod will be scheduled only on nodes that already contain pods labeled with `app=haproxy`.
 
         - If no nodes match, the pod will not be scheduled until a suitable node becomes available.
 
 
+=== "Pod anti-affinity"
+    ### Pods scheduled apart
+
+     Let's consider a use case in which you want to ensure that no HAProxy pods should be scheduled to run on the same Kubernetes node.
+
+    ```sh
+    affinity:
+  podAntiAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        matchExpressions:
+        - key: app
+          operator: In
+          values:
+          - haproxy
+      topologyKey: "kubernetes.io/hostname"
+    ```
+
+        ??? info "What happens under the hood"
+        - The pod will not be scheduled on nodes that contain pods labeled with `app=haproxy`.
+
+        - If no nodes match, the pod will not be scheduled until a suitable node becomes available.
 
 
 
