@@ -62,7 +62,6 @@ Here are several detailed use cases for affinity that highlight its diverse appl
         - For the rule to be applicable, it is essential that the node possesses a label such as `topology.kubernetes.io/region: us-west-2`. If no nodes correspond to the specified label, the pod will remain in an unscheduled state.
 
 
-
 === "Pod affinity"
     ### Pods scheduled together
 
@@ -80,7 +79,6 @@ Here are several detailed use cases for affinity that highlight its diverse appl
           - haProxy
       topologyKey: "kubernetes.io/hostname"
     ```
-
     ??? info "What happens under the hood"
         - The pod will be scheduled only on nodes that already contain pods labeled with `app=haproxy`.
 
@@ -105,7 +103,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
       topologyKey: "kubernetes.io/hostname"
     ```
 
-        ??? info "What happens under the hood"
+    ??? info "What happens under the hood"
         - The pod will not be scheduled on nodes that contain pods labeled with `app=haproxy`.
 
         - If no nodes match, the pod will not be scheduled until a suitable node becomes available.
