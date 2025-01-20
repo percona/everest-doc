@@ -62,23 +62,21 @@ Here are several detailed use cases for affinity that highlight its diverse appl
         - For the rule to be applicable, it is essential that the node possesses a label such as `topology.kubernetes.io/region: us-west-2`. If no nodes correspond to the specified label, the pod will remain in an unscheduled state.
 
 
-=== "Pod affinity"
+=== "Pods affinity"
     ### Pods scheduled together
 
     Let's consider a use case in which you want to to ensure that HAProxy pods should be scheduled to run on the same Kubernetes node.
-
-    ```sh
-     affinity:
-  podAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-    - labelSelector:
-        matchExpressions:
-        - key: app
-          operator: In
-          values:
-          - haProxy
-      topologyKey: "kubernetes.io/hostname"
-    ```
+    
+        affinity:
+    podAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: app
+            operator: In
+            values:
+            - haProxy
+        topologyKey: "kubernetes.io/hostname"
 
     ??? info "What happens under the hood"
         - The pod will be scheduled only on nodes that already contain pods labeled with `app=haproxy`.
@@ -91,18 +89,17 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
     Let's consider a use case in which you want to ensure that no HAProxy pods should be scheduled to run on the same Kubernetes node.
 
-    ```sh
-    affinity:
-  podAntiAffinity:
-    requiredDuringSchedulingIgnoredDuringExecution:
-    - labelSelector:
-        matchExpressions:
-        - key: app
-          operator: In
-          values:
-          - haproxy
-      topologyKey: "kubernetes.io/hostname"
-    ```
+
+        affinity:
+    podAntiAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        - labelSelector:
+            matchExpressions:
+            - key: app
+            operator: In
+            values:
+            - haproxy
+        topologyKey: "kubernetes.io/hostname"
 
     ??? info "What happens under the hood"
         - The pod will not be scheduled on nodes that contain pods labeled with `app=haproxy`.
