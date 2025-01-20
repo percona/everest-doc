@@ -43,7 +43,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
     Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
 
-    You need to run a workload in the `us-west-2 region` for latency optimaztion and to meet specific compliance requirements.
+    You need to run a workload in the `us-west2 region` for latency optimaztion and to meet specific compliance requirements.
 
     ```sh
     affinity:
@@ -54,7 +54,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
             - key: topology.kubernetes.io/region
             operator: In
             values:
-            - "us-west-2"
+            - "us-west2"
     ```
     ??? info "What happens under the hood"
         - It ensures that the pod is scheduled only on nodes located in the us-west-2 region, as defined by the `topology.kubernetes.io/region` node label.
@@ -64,7 +64,32 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
 
 === "Pod affinity"
-    ### Use case for Pod affinity
+    ### Pods scheduled together
+
+     Let's consider a use case in which you want to to ensure that two nginx  pods should be scheduled to run on the same Kubernetes node.
+
+    ```sh
+     affinity:
+  podAffinity:
+    requiredDuringSchedulingIgnoredDuringExecution:
+    - labelSelector:
+        matchExpressions:
+        - key: app
+          operator: In
+          values:
+          - nginx
+      topologyKey: "kubernetes.io/hostname"
+    ```
+
+    ??? info "What happens under the hood"
+        - The pod will be scheduled only on nodes that already contain pods labeled with `app=nginx`.
+
+        - If no nodes match, the pod will not be scheduled until a suitable node becomes available.
+
+
+
+
+
 
 
 
