@@ -39,7 +39,6 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
 
 === Node affinity
-
     ### Use case for Node affinity
 
     Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
