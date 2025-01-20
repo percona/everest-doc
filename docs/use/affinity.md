@@ -96,7 +96,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
             - labelSelector:
             matchExpressions:
                 - key: app
-                operator: In
+                operator: NotIn
                 values:
                 - haproxy
         topologyKey: "kubernetes.io/hostname"
