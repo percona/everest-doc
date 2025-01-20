@@ -65,7 +65,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 === "Pod affinity"
     ### Pods scheduled together
 
-     Let's consider a use case in which you want to to ensure that HAProxy pods should be scheduled to run on the same Kubernetes node.
+    Let's consider a use case in which you want to to ensure that HAProxy pods should be scheduled to run on the same Kubernetes node.
 
     ```sh
      affinity:
