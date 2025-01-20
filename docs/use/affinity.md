@@ -35,11 +35,38 @@ The following table provides details about the different elements involved in se
 
 ## Use cases for affinity
 
-Here are some detailed use cases for affinity that showcase its various applications and benefits.
+Here are several detailed use cases for affinity that highlight its diverse applications and the numerous benefits it offers across various contexts.
 
-### Use case for Node affinity
 
-Let's consider a case where we want to seperate nodes using node affinity using the 
+=== Node affinity
+
+    ### Use case for Node affinity
+
+    Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
+
+    You need to run a workload in the us-west-2 region for latency optimaztion and to meet specific compliance requirements.
+
+    ```sh
+    affinity:
+    nodeAffinity:
+        requiredDuringSchedulingIgnoredDuringExecution:
+        nodeSelectorTerms:
+        - matchExpressions:
+            - key: topology.kubernetes.io/region
+            operator: In
+            values:
+            - "us-west-2"
+    ```
+    ??? info "What happens under the hood"
+        It ensures that the pod is scheduled only on nodes located in the us-west-2 region, as defined by the `topology.kubernetes.io/region` node label.
+
+        For the rule to be applicable, it is essential that the node possesses a label such as `topology.kubernetes.io/region: us-west-2`. If no nodes correspond to the specified label, the pod will remain in an unscheduled state.
+
+
+
+
+
+
 
 
 
