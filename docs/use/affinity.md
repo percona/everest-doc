@@ -38,7 +38,7 @@ The following table provides details about the different elements involved in se
 Here are several detailed use cases for affinity that highlight its diverse applications and the numerous benefits it offers across various contexts.
 
 
-=== Node affinity
+=== "Node affinity"
     ### Use case for Node affinity
 
     Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
@@ -63,7 +63,8 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
 
 
-
+=== "Pod affinity"
+    ### Use case for Pod affinity
 
 
 
