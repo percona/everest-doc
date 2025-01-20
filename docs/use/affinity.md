@@ -79,6 +79,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
           - haProxy
       topologyKey: "kubernetes.io/hostname"
     ```
+
     ??? info "What happens under the hood"
         - The pod will be scheduled only on nodes that already contain pods labeled with `app=haproxy`.
 
@@ -88,7 +89,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 === "Pod anti-affinity"
     ### Pods scheduled apart
 
-     Let's consider a use case in which you want to ensure that no HAProxy pods should be scheduled to run on the same Kubernetes node.
+    Let's consider a use case in which you want to ensure that no HAProxy pods should be scheduled to run on the same Kubernetes node.
 
     ```sh
     affinity:
