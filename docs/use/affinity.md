@@ -68,14 +68,14 @@ Here are several detailed use cases for affinity that highlight its diverse appl
     Let's consider a use case in which you want to to ensure that HAProxy pods should be scheduled to run on the same Kubernetes node.
     
         affinity:
-    podAffinity:
-        requiredDuringSchedulingIgnoredDuringExecution:
-        - labelSelector:
+        podAffinity:
+            requiredDuringSchedulingIgnoredDuringExecution:
+            - labelSelector:
             matchExpressions:
-            - key: app
-            operator: In
-            values:
-            - haProxy
+                - key: app
+                operator: In
+                values:
+                - haProxy
         topologyKey: "kubernetes.io/hostname"
 
     ??? info "What happens under the hood"
