@@ -39,11 +39,11 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
 
 === "Node affinity"
-    ### Use case for Node affinity
+    ### Regional scheduling
 
     Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
 
-    You need to run a workload in the us-west-2 region for latency optimaztion and to meet specific compliance requirements.
+    You need to run a workload in the `us-west-2 region` for latency optimaztion and to meet specific compliance requirements.
 
     ```sh
     affinity:
@@ -57,9 +57,9 @@ Here are several detailed use cases for affinity that highlight its diverse appl
             - "us-west-2"
     ```
     ??? info "What happens under the hood"
-        It ensures that the pod is scheduled only on nodes located in the us-west-2 region, as defined by the `topology.kubernetes.io/region` node label.
+        - It ensures that the pod is scheduled only on nodes located in the us-west-2 region, as defined by the `topology.kubernetes.io/region` node label.
 
-        For the rule to be applicable, it is essential that the node possesses a label such as `topology.kubernetes.io/region: us-west-2`. If no nodes correspond to the specified label, the pod will remain in an unscheduled state.
+        - For the rule to be applicable, it is essential that the node possesses a label such as `topology.kubernetes.io/region: us-west-2`. If no nodes correspond to the specified label, the pod will remain in an unscheduled state.
 
 
 
