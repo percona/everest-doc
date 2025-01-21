@@ -466,6 +466,15 @@ Where:
     policy syntax error - unknown resource name 'non-existent-resource'
     ```
 
+    You can also use the same command with the YAML file path containing the everest-rbac ConfigMap. For example:
+
+    
+    ```sh
+    everestctl settings rbac validate --policy-file ./rbac-config.yaml
+    ```
+
+    
+
 
 ## Test your RBAC policy
 
@@ -508,6 +517,7 @@ Where:
     ```{.text .no-copy}
     Yes
     ```
+
 
 ## Breaking API changes for RBAC
 
