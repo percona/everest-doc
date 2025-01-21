@@ -1,10 +1,33 @@
 #  Leveraging Affinity in Percona Everest
 
-The database Affinity rules provide database administrators with enhanced control over workload distribution in a Kubernetes cluster. By implementing affinity and anti-affinity rules, you can not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
-
-## Affinity rules
 
 Affinity refers to rules that attempt to schedule Pods together or on nodes that meet specific criteria. It promotes the co-location of Pods or assigns Pods to preferred nodes.
+
+Affinity rules provide database administrators with enhanced control over workload distribution in a Kubernetes cluster. By implementing affinity and anti-affinity rules, you can not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
+
+
+## Types of affinity
+
+Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster.
+
+### Node affinity
+
+Node affinity determines which nodes a pod can be scheduled on. Based on the labels assigned to nodes, you can define rules about where a pod should or should not be deployed. 
+
+Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
+
+If you're looking to dive deep into node affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
+
+### Pod affinity
+
+
+
+
+
+
+
+
+
 
 ### Set up affinity rules for your cluster
 
