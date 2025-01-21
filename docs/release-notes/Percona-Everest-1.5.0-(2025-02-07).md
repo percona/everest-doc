@@ -24,45 +24,129 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 ## Release highlights
 
 
-=== "Operators support"
+### Operators support
 
-    ### Support for PSMDB 1.18.0 and PG 2.5.0
-
-
-    Starting with Percona Everest 1.4.0, we are thrilled to announce that we have added support for PSMDB Operator v1.18.0 and PG operator v2.5.0.
 
 ## New features
 
+[EVEREST-1547](https://perconadev.atlassian.net/browse/EVEREST-1547) \[UI\] Notify users that an everest upgrade has been performed and load new UI code
 
+[EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549) Add support for PXC operator v1.16.1
 
+[EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605) Set affinity rules in DB creation wizard
+
+[EVEREST-1606](https://perconadev.atlassian.net/browse/EVEREST-1606) Set affinity rules in DB components tab
+
+[EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607) Navigate to affinity rules from the DB overview tab
+
+[EVEREST-1799](https://perconadev.atlassian.net/browse/EVEREST-1799) \[RBAC\] Validate Permissions Assignment to User Groups from IDP
 
 
 ## Improvements
 
+[EVEREST-970](https://perconadev.atlassian.net/browse/EVEREST-970) \[UI\] Change default schedule to "Daily at 1am"
+
+[EVEREST-990](https://perconadev.atlassian.net/browse/EVEREST-990) Everest GUI needs to use HTTPS
+
+[EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066) \[UI\] Backups \(widget\)
+
+[EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180) TLS support for Everest server
+
+[EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190) \[UI\] Show user detail on the UI
+
+[EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202) \[UI\] Remove focus state after the user clicks out \(table header icons\)
+
+[EVEREST-1579](https://perconadev.atlassian.net/browse/EVEREST-1579) \[UI\] Improve shard topology visibility
+
+[EVEREST-1612](https://perconadev.atlassian.net/browse/EVEREST-1612) \[CLI\] everestctl version command should display the Everest server version \(if installed\)
+
+[EVEREST-1716](https://perconadev.atlassian.net/browse/EVEREST-1716) \[UI\] Add 'percona optimised configuration' to advanced config step
+
+[EVEREST-1718](https://perconadev.atlassian.net/browse/EVEREST-1718) \[UI\] Add loading bar when operators are being upgraded
+
+[EVEREST-1778](https://perconadev.atlassian.net/browse/EVEREST-1778) \[CLI\] 'Add Namespace' should prompt for namespace name and support multiple namespace installation
+
+[EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788) \[CLI\] 'Remove Namespace' should prompt for namespace name
+
+[EVEREST-1790](https://perconadev.atlassian.net/browse/EVEREST-1790) \[CLI\] 'Update Namespace' should prompt for namespace name
+
+[EVEREST-1794](https://perconadev.atlassian.net/browse/EVEREST-1794) \[CLI\] Improve description/help-text of --keep-namespace flag for better clarity
+
+[EVEREST-1795](https://perconadev.atlassian.net/browse/EVEREST-1795) \[CLI\] Improve error message when trying to update a namespace with everestctl that is not managed by Everest
 
 
 ## Bugs
+
+[EVEREST-1261](https://perconadev.atlassian.net/browse/EVEREST-1261) Incorrect error when adding backup storage using same credentials
+
+[EVEREST-1401](https://perconadev.atlassian.net/browse/EVEREST-1401) \[UI\] Resources not calculated properly for PSMDB sharding cluster
+
+[EVEREST-1537](https://perconadev.atlassian.net/browse/EVEREST-1537) Everest uninstall fails on trying to delete db clusters due to timeout
+
+[EVEREST-1581](https://perconadev.atlassian.net/browse/EVEREST-1581) \[UI\] Database remains in Deleting status
+
+[EVEREST-1588](https://perconadev.atlassian.net/browse/EVEREST-1588) PG stuck initializing after a restore
+
+[EVEREST-1589](https://perconadev.atlassian.net/browse/EVEREST-1589) MySQL stuck initializing in 1-node cluster
+
+[EVEREST-1590](https://perconadev.atlassian.net/browse/EVEREST-1590) Installation is stuck
+
+[EVEREST-1647](https://perconadev.atlassian.net/browse/EVEREST-1647) \[UI\] Monthly schedule creates an invalid configuration for PSMDB
+
+[EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651) Creating a new database from backup fails for a mysql database with a long name
+
+[EVEREST-1674](https://perconadev.atlassian.net/browse/EVEREST-1674) Intermittent "Enforce did not pass" Message for Status 403, and Database Disappearance in UI
+
+[EVEREST-1677](https://perconadev.atlassian.net/browse/EVEREST-1677) \[UI\] After upgrade from 1.2.0 to 1.3.0-rc5 all resources of proxies and bouncers are displayed as 0
+
+[EVEREST-1722](https://perconadev.atlassian.net/browse/EVEREST-1722) UI Issues with Config Number Adjustment in DatabaseClusters
+
+[EVEREST-1724](https://perconadev.atlassian.net/browse/EVEREST-1724) \[UI\] Sharding is reset to default when returning to the previous step of the form
+
+[EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728) \[UI\] Database dashboard is not updated automatically
+
+[EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729) \[CLI\] Installation fails if 1.3.0 release cli is used to install 1.4.0
+
+[EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735) \[UI\] Incorrect info on PITR Edit button is visible when PITR is enabled
+
+[EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758) \[UI\] Percona Everest UI buttons to create namespaces not accessible until page is manually refreshed  after adding a namespace with everestctl namespaces add
+
+[EVEREST-1800](https://perconadev.atlassian.net/browse/EVEREST-1800) \[RBAC\] Unable to create a DB cluster as DB version is not displayed, with specific RBAC policy
+
+[EVEREST-1801](https://perconadev.atlassian.net/browse/EVEREST-1801) \[RBAC\] Create DB cluster option not visible on the UI if user does not have permission for all the DB engines
+
+[EVEREST-1802](https://perconadev.atlassian.net/browse/EVEREST-1802) \[RBAC\] Namespace\(s\) not visible on UI if user does not have permission to all db engines of a namespace
+
+[EVEREST-1803](https://perconadev.atlassian.net/browse/EVEREST-1803) \[RBAC\] Unable to edit/add monitoring to a already created DB cluster, with specific RBAC policy
+
+[EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804) \[RBAC\] Operator Upgrade option not visible on the UI if user has access to all DB clusters in a namespace \(RBAC for db clusters set individually\)
+
+[EVEREST-1805](https://perconadev.atlassian.net/browse/EVEREST-1805) \[UI\] Shard Cluster Activation State Resets After Clicking "Previous"
+
+[EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) everest-operator does not restart when a DB operator is installed for the first time
+
+[EVEREST-1816](https://perconadev.atlassian.net/browse/EVEREST-1816) Installation under OpenShift is failing
+
+[EVEREST-1818](https://perconadev.atlassian.net/browse/EVEREST-1818) \[operators\] fix CSV Not found errors in DBEngine reconciliation 
+
+[EVEREST-1820](https://perconadev.atlassian.net/browse/EVEREST-1820) Database restores are not reconciled correctly for any DB type
+
+
+### Technical task
+
+[EVEREST-1616](https://perconadev.atlassian.net/browse/EVEREST-1616) \[UI\] Set affinity rules in DB creation wizard and Components page
+
+[EVEREST-1617](https://perconadev.atlassian.net/browse/EVEREST-1617) \[API\] Set affinity rules
+
+[EVEREST-1618](https://perconadev.atlassian.net/browse/EVEREST-1618) \[Operator\] Set affinity rules
+
+[EVEREST-1654](https://perconadev.atlassian.net/browse/EVEREST-1654) Improve labels handling
+
 
 
 
 
 ## Known limitations
-
-- In Percona Operator for PostgreSQL version 2.5.0, backups start failing after a minor version upgrade from PostgreSQL 16.3 to 16.4 if **monitoring is enabled** on the database. 
-
-    **Workaround** 
-
-    Once you upgrade your PostgreSQL version, it’s essential to also update the `pg_stat_monitor` extension by executing the following command:
-    
-    ```sql
-    ALTER EXTENSION pg_stat_monitor UPDATE;
-    ```
-
-- The backup storage you choose for your initial backup schedule will be used for all subsequent schedules and point-in-time recovery (PITR).
-
-- When creating a 1-node MongoDB cluster, the cluster temporarily enters an **Error** state instead of **Initializing** before transitioning to the **Ready** state.
-
-- When restoring a MySQL database from a backup, the process may fail if the database name is too long. Use a shorter name for the restored database.
 
 
 
