@@ -46,25 +46,20 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 [EVEREST-970](https://perconadev.atlassian.net/browse/EVEREST-970) \[UI\] Change default schedule to "Daily at 1am"
 
-[EVEREST-990](https://perconadev.atlassian.net/browse/EVEREST-990) Everest GUI needs to use HTTPS
 
 [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066) \[UI\] Backups \(widget\)
 
-[EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180) TLS support for Everest server
 
 [EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190) \[UI\] Show user detail on the UI
 
-[EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202) \[UI\] Remove focus state after the user clicks out \(table header icons\)
 
 [EVEREST-1579](https://perconadev.atlassian.net/browse/EVEREST-1579) \[UI\] Improve shard topology visibility
 
 [EVEREST-1612](https://perconadev.atlassian.net/browse/EVEREST-1612) \[CLI\] everestctl version command should display the Everest server version \(if installed\)
 
-[EVEREST-1716](https://perconadev.atlassian.net/browse/EVEREST-1716) \[UI\] Add 'percona optimised configuration' to advanced config step
 
 [EVEREST-1718](https://perconadev.atlassian.net/browse/EVEREST-1718) \[UI\] Add loading bar when operators are being upgraded
 
-[EVEREST-1778](https://perconadev.atlassian.net/browse/EVEREST-1778) \[CLI\] 'Add Namespace' should prompt for namespace name and support multiple namespace installation
 
 [EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788) \[CLI\] 'Remove Namespace' should prompt for namespace name
 
@@ -127,7 +122,6 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 [EVEREST-1816](https://perconadev.atlassian.net/browse/EVEREST-1816) Installation under OpenShift is failing
 
-[EVEREST-1818](https://perconadev.atlassian.net/browse/EVEREST-1818) \[operators\] fix CSV Not found errors in DBEngine reconciliation 
 
 [EVEREST-1820](https://perconadev.atlassian.net/browse/EVEREST-1820) Database restores are not reconciled correctly for any DB type
 
