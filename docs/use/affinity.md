@@ -1,6 +1,6 @@
 #  Leveraging Affinity in Percona Everest
 
-!!! warning
+!!! info "Important"
     We rely on the Kubernetes scheduler for pod placement and resource management.
 
 Affinity refers to rules that attempt to schedule Pods together or on nodes that meet specific criteria. It promotes the co-location of Pods or assigns Pods to preferred nodes.
