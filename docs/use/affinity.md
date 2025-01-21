@@ -20,12 +20,19 @@ If you're looking to dive deep into node affinity, check out the Kubernetes [doc
 
 ### Pod affinity
 
+Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
 
+Kubernetes uses labels, which are key-value pairs, to identify and categorize pods.
 
+If you're looking to dive deep into pod affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
+### Pod anti-affinity
 
+Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
 
+Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
 
+If you're looking to dive deep into pod anti-affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
 
 
@@ -35,6 +42,8 @@ You can set affinity rules in Percona Everest via the **Advanced Configurations*
 {.power-number}
 
 1. From the Percona Everest home page, navigate through the **Create Database** wizard until you reach the **Advanced Configurations** page.
+
+
 
 2. From the **Advanced Configurations** page, click **Create affinity rule**. The **Add rule** screen will be displayed.
 
