@@ -52,8 +52,7 @@ You can set affinity rules in Percona Everest via the **Advanced Configurations*
     
 3. Enter the information on the **Add Rule** screen. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
-
-    [!image](../images/add_rule_affinity.png)
+    ![!image](../images/add_rule_affinity.png)
 
 The following table provides details about the different attributes involved in setting up affinity rules for your databases.
 
