@@ -43,20 +43,20 @@ You can set affinity rules in Percona Everest via the **Advanced Configurations*
 
 1. From the Percona Everest home page, navigate through the **Create Database** wizard until you reach the **Advanced Configurations** page.
 
-
-
 2. From the **Advanced Configurations** page, click **Create affinity rule**. The **Add rule** screen will be displayed.
+
+    ![!image](../images/create_affinity.png)
 
     
 3. Enter the information on the **Add Rule** screen. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
 
-The following table provides details about the different elements involved in setting up affinity rules for your databases.
 
-|**Settings**    |**Description**  |**Note**  |
+    [!image](add_rule_affinity.png)
+
+The following table provides details about the different attributes involved in setting up affinity rules for your databases.
+
+|**Attributes**    |**Description**  |**Note**  |
 |----------------|-----------------|--------------|
-|**Node affinity**|Node affinity is used to schedule Pods on nodes that meet specific criteria based on node labels.|   |
-|**Pod affinity**|Pod Affinity is used to define rules to ensure that certain Pods are scheduled close to or on the same nodes as other Pods.|   |
-|**Pod anti-affinity**|Pod Anti-Affinity is used to specify rules that ensure certain Pods are scheduled away from each other.|   |
 |**Components**|<ul><li>Config Server</li><li>DB Node</li><li>Router</br></br></li><li>DB Node</br><br></li><li>DB Node</li><li>Proxy</li></ul>|Applicable for **MongoDB sharded cluster**.<br/></br></br></br></br>Applicable for **MongoDB non sharded cluster**.</br></br>Applicable for **MySQL** and **PostgreSQL** databases.|
 |**Priority**|Each type of Affinity can implement two distinct levels of rule enforcement:</br><ul><li>Preffered</br></br></br></br></br></li><li>Required</li></ul>|</br></br>Defines the preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
 |**Weight (1-100)**|It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights.|Weight is only used when the priority is **Preferred**.|
