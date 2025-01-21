@@ -76,7 +76,7 @@ Here are several detailed use cases for affinity that highlight its diverse appl
 
     Let's consider a use case in which workloads are distributed based on performance requirements, fault tolerance, and regional specifications across designated zones or areas.
 
-    You need to run a workload in the `us-west2 region` for latency optimaztion and to meet specific compliance requirements.
+    You need to run a workload in the `us-west2` region for latency optimization and to meet specific compliance requirements.
 
     ```sh
     affinity:
