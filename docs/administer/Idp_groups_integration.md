@@ -57,9 +57,9 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 
     2. Fine-tune the settings to align with your organization's security policy. Here are some suggestions:
 
-     - Uncheck all grant types except for the **Authorization Code**.
-     -  Adjust the token lifetime to determine how long a session can remain active.
-    - Restrict the refresh token lifetime or consider disabling it entirely.
+        - Uncheck all grant types except for the **Authorization Code**.
+        -  Adjust the token lifetime to determine how long a session can remain active.
+        - Restrict the refresh token lifetime or consider disabling it entirely.
 
     ![!image](../images/scr_rule.png)
 
