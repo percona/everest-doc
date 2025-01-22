@@ -18,7 +18,7 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     !!! note
         A Scope describes the information that potentially can be requested.  
     
-    Add a scope called **Groups** and keep all other options set to their default values.
+    Add a scope called **groups** and keep all other options set to their default values.
 
     ![!image](../images/scr_scope.png)
 
@@ -27,21 +27,23 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     !!! note
         A claim specifies the scope to activate and the information required within that scope.
 
-    1. Add a claim named **Groups**.
+    1. Add a claim named **groups**.
 
     2. Set the **Include in token type** to **ID Token** and choose **Always**.
 
     3. Change the **Value type** to **Groups**.
 
-    4. Select **Filter > Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
+    4. Select **Filter** as  **Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
 
-    5. Set **Include in** to **Groups**, which is the scope you created earlier.
+    5. Set **Include in** to **groups**, which is the scope you created earlier.
 
     ![!image](../images/scr_claim.png)
 
-5. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
+5. Click **Create**.
 
-    1. Add a name and description.
+6. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
+
+    1. Add **Name** and **Description**.
 
     2. Assign the policy to the client (Application Integration) you created earlier. The field should auto-complete as you type. Create the policy.
 
@@ -51,15 +53,17 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 
 6. Add a rule to the policy. A Rule defines the details of usage:
 
-    1. Add a name. If you prefer, you can use **default**, which is a reasonable option.
+    1. Add a name. If you prefer, you can use **default** option.
 
-    2. Fine-tune the settings to align with your organization's security posture. Here are some suggestions:
+    2. Fine-tune the settings to align with your organization's security policy. Here are some suggestions:
 
-     - Uncheck all grant types except for the Authorization Code.
+     - Uncheck all grant types except for the **Authorization Code**.
      -  Adjust the token lifetime to determine how long a session can remain active.
     - Restrict the refresh token lifetime or consider disabling it entirely.
 
     ![!image](../images/scr_rule.png)
+
+7. Click **Create Rule**.
 
 
 
