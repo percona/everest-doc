@@ -94,13 +94,12 @@ The `everestctl version` command has been updated to provide  information about 
 - [EVEREST-1718](https://perconadev.atlassian.net/browse/EVEREST-1718) \[UI\] Add loading bar when operators are being upgraded
 
 
-- [EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788) \[CLI\] 'Remove Namespace' should prompt for namespace name
+- [EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788),[EVEREST-1790](https://perconadev.atlassian.net/browse/EVEREST-1790): The `everestctl namespaces remove` and `everestctl namespaces update` commands now show a help message that guides you on how to use them.
 
-- [EVEREST-1790](https://perconadev.atlassian.net/browse/EVEREST-1790) \[CLI\] 'Update Namespace' should prompt for namespace name
 
-- [EVEREST-1794](https://perconadev.atlassian.net/browse/EVEREST-1794) \[CLI\] Improve description/help-text of --keep-namespace flag for better clarity
+- [EVEREST-1794](https://perconadev.atlassian.net/browse/EVEREST-1794): We have improved the description of the help text for the `--keep-namespace` flag in the `everestctl namespaces remove` command. Previously, the flag did not clearly explain that it retains the namespace in Kubernetes while only removing `everest-managed` resources, which led to confusion.
 
-- [EVEREST-1795](https://perconadev.atlassian.net/browse/EVEREST-1795) \[CLI\] Improve error message when trying to update a namespace with everestctl that is not managed by Everest
+- [EVEREST-1795](https://perconadev.atlassian.net/browse/EVEREST-1795): When attempting to update a namespace using `everestctl` that was created with `kubectl` (not managed by Percona Everest), the error message was unclear. It did not provide actionable steps for the user to resolve the issue. We have improved the error message to give more insights into the issue.
 
 
 ## Bugs
