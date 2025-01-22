@@ -37,25 +37,29 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 
     5. Set **Include in** to **Groups**, which is the scope you created earlier.
 
+    ![!image](../images/scr_claim.png)
+
 5. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
 
-    a. Add a name and description.
+    1. Add a name and description.
 
-    b. Assign the policy to the client (Application Integration) you created earlier. The field should auto-complete as you type. Create the policy.
+    2. Assign the policy to the client (Application Integration) you created earlier. The field should auto-complete as you type. Create the policy.
 
-    c. Create the policy.
+    3. Create the policy.
 
     ![!image](../images/scr_policy.png)
 
 6. Add a rule to the policy. A Rule defines the details of usage:
 
-    a. Add a name. If you prefer, you can use **default**, which is a reasonable option.
+    1. Add a name. If you prefer, you can use **default**, which is a reasonable option.
 
-    b. Fine-tune the settings to align with your organization's security posture. Here are some suggestions:
+    2. Fine-tune the settings to align with your organization's security posture. Here are some suggestions:
 
      - Uncheck all grant types except for the Authorization Code.
      -  Adjust the token lifetime to determine how long a session can remain active.
     - Restrict the refresh token lifetime or consider disabling it entirely.
+
+    ![!image](../images/scr_rule.png)
 
 
 
