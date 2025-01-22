@@ -107,9 +107,12 @@ The `everestctl version` command has been updated to provide  information about 
 - [EVEREST-1261](https://perconadev.atlassian.net/browse/EVEREST-1261): We fixed an issue where a user who had already added a backup storage location received an incorrect error message when trying to add another one with the same bucket name and URL.
 
 
-- [EVEREST-1401](https://perconadev.atlassian.net/browse/EVEREST-1401) \[UI\] Resources not calculated properly for PSMDB sharding cluster
+- [EVEREST-1401](https://perconadev.atlassian.net/browse/EVEREST-1401):
+Now, when you create/edit the database cluster with sharding enabled for PSMDB, it will display the correct resources required for the specified number of shards.
 
-- [EVEREST-1537](https://perconadev.atlassian.net/browse/EVEREST-1537) Everest uninstall fails on trying to delete db clusters due to timeout
+- [EVEREST-1537](https://perconadev.atlassian.net/browse/EVEREST-1537):
+We have resolved an issue that caused Everest uninstallation to fail when attempting to delete database clusters due to a timeout.
+
 
 - [EVEREST-1581](https://perconadev.atlassian.net/browse/EVEREST-1581) \[UI\] Database remains in Deleting status
 
