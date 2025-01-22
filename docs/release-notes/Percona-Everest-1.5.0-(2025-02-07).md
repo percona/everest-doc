@@ -104,7 +104,8 @@ The `everestctl version` command has been updated to provide  information about 
 
 ## Bugs
 
-- [EVEREST-1261](https://perconadev.atlassian.net/browse/EVEREST-1261) Incorrect error when adding backup storage using same credentials
+- [EVEREST-1261](https://perconadev.atlassian.net/browse/EVEREST-1261): We fixed an issue where a user who had already added a backup storage location received an incorrect error message when trying to add another one with the same bucket name and URL.
+
 
 - [EVEREST-1401](https://perconadev.atlassian.net/browse/EVEREST-1401) \[UI\] Resources not calculated properly for PSMDB sharding cluster
 
