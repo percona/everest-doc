@@ -20,6 +20,8 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     
     Add a scope called **Groups** and keep all other options set to their default values.
 
+    ![!image](../images/scr_scope.png)
+
 4. **Click Claims > Add Claim**. 
 
     !!! note
