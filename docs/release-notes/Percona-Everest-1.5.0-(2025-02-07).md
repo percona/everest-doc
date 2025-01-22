@@ -23,8 +23,38 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
+### Optimizing workloads with affinity in Percona Everest
+
+We're thrilled to announce the latest enhancement to our offerings—introducing Affinity with Percona Everest 1.5.0.
+
+Affinity provide database administrators with enhanced control over workload distribution in a Kubernetes cluster. By implementing affinity and anti-affinity rules, you can not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
+
+Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster.
+
+- [Node affinity](https://docs.percona.com/everest/use/affinity.html#node-affinity)
+- [Pod affinity](https://docs.percona.com/everest/use/affinity.html#pod-affinity)
+- [Pod anti-affinity](https://docs.percona.com/everest/use/affinity.html#pod-anti-affinity)
+
+## Set up affinity rules for your cluster
+
+!!! info "Important"
+    We've set up a default affinity rule that applies to all your database engines to ensure optimal performance and reliability.
+
+You can set affinity rules in Percona Everest via the **Advanced Configurations** page within the **Affinity** section.
+
+![!image](../images/create_affinity.png)
+
+![!image](../images/configure_node_affinity.png)
+
+### Secure Access: Validating permissions assignments from Your IDP
+
+Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs.
+
+A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission.
 
 ### Operators support
+
+We have added support for PXC operator verrsion v1.16.1.
 
 
 ## New features
