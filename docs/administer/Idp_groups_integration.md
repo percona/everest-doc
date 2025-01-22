@@ -1,4 +1,4 @@
-# RBAC: IdP Groups integration
+# RBAC: IdP groups integration
 
 You can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique sub IDs.
 
@@ -34,6 +34,30 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     d. Select **Filter > Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
 
     e. Set **Include in** to **Groups**, which is the scope you created earlier.
+
+5. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
+
+    a. Add a name and description.
+
+    b. Assign the policy to the client (Application Integration) you created earlier. The field should auto-complete as you type. Create the policy.
+
+    c. Create the policy.
+
+6. Add a rule to the policy. A Rule defines the details of usage:
+
+    a. Add a name. If you prefer, you can use **default**, which is a reasonable option.
+
+    b. Fine-tune the settings to align with your organization's security posture. Here are some suggestions:
+
+     - Uncheck all grant types except for the Authorization Code.
+     -  Adjust the token lifetime to determine how long a session can remain active.
+    - Restrict the refresh token lifetime or consider disabling it entirely.
+
+
+
+
+
+
 
 
 
