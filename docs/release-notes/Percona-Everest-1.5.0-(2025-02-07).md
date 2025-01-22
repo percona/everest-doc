@@ -87,7 +87,8 @@ We have added support for PXC operator version v1.16.1.
 
 - [EVEREST-1579](https://perconadev.atlassian.net/browse/EVEREST-1579): We have enhanced the shard **Topology** by modifying the label from **Nodes** to **Nodes per shard**. This change provides greater clarity on the distribution of nodes across each shard. Additionally, we now display the total number of nodes within the **Database summary** panel, giving you a more complete and insightful overview of your database.
 
-- [EVEREST-1612](https://perconadev.atlassian.net/browse/EVEREST-1612) \[CLI\] everestctl version command should display the Everest server version \(if installed\)
+- [EVEREST-1612](https://perconadev.atlassian.net/browse/EVEREST-1612): 
+The `everestctl version` command has been updated to provide  information about the version of the Everest server that is currently installed on your system, if applicable. This enhancement enables you to easily verify the server version in use.
 
 
 - [EVEREST-1718](https://perconadev.atlassian.net/browse/EVEREST-1718) \[UI\] Add loading bar when operators are being upgraded
@@ -160,16 +161,7 @@ We have added support for PXC operator version v1.16.1.
 
 ### Technical task
 
-- [EVEREST-1616](https://perconadev.atlassian.net/browse/EVEREST-1616) \[UI\] Set affinity rules in DB creation wizard and Components page
-
-- [EVEREST-1617](https://perconadev.atlassian.net/browse/EVEREST-1617) \[API\] Set affinity rules
-
-- [EVEREST-1618](https://perconadev.atlassian.net/browse/EVEREST-1618) \[Operator\] Set affinity rules
-
 - [EVEREST-1654](https://perconadev.atlassian.net/browse/EVEREST-1654) Improve labels handling
-
-
-
 
 
 ## Known limitations
