@@ -25,15 +25,15 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     !!! note
         A claim specifies the scope to activate and the information required within that scope.
 
-    a. Add a claim named **Groups**.
+    1. Add a claim named **Groups**.
 
-    b. Set the **Include in token type** to **ID Token** and choose **Always**.
+    2. Set the **Include in token type** to **ID Token** and choose **Always**.
 
-    c. Change the **Value type** to **Groups**.
+    3. Change the **Value type** to **Groups**.
 
-    d. Select **Filter > Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
+    4. Select **Filter > Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
 
-    e. Set **Include in** to **Groups**, which is the scope you created earlier.
+    5. Set **Include in** to **Groups**, which is the scope you created earlier.
 
 5. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
 
@@ -42,6 +42,8 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
     b. Assign the policy to the client (Application Integration) you created earlier. The field should auto-complete as you type. Create the policy.
 
     c. Create the policy.
+
+    ![!image](../images/scr_policy.png)
 
 6. Add a rule to the policy. A Rule defines the details of usage:
 
