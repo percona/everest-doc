@@ -13,40 +13,17 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Affinity](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_1)||
-    | **2.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for [Percona Operator for MongoDB v1.18.0](https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"} (PSMDB) and [Percona Operator for PostgreSQL v2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"} (PG)|
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
-    | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.4.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.4.0|
+    | **1.**|RBAC: Permissions assignment from Your IDP|Validate permissions assignment from Your IDP for secure access|
+    | **2.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for PXC operator 1.16.1|
+    | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.4.0|
+    | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.4.0|
+    | **5.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.4.0|
+    | **6.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.4.0|
 
 
 ## Release highlights
 
-### Optimizing workloads with affinity in Percona Everest
-
-We're thrilled to announce the latest enhancement to our offerings—introducing Affinity with Percona Everest 1.5.0.
-
-Affinity provide database administrators with enhanced control over workload distribution in a Kubernetes cluster. By implementing affinity and anti-affinity rules, you can not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
-
-Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster.
-
-- [Node affinity](https://docs.percona.com/everest/use/affinity.html#node-affinity)
-- [Pod affinity](https://docs.percona.com/everest/use/affinity.html#pod-affinity)
-- [Pod anti-affinity](https://docs.percona.com/everest/use/affinity.html#pod-anti-affinity)
-
-## Set up affinity rules for your cluster
-
-!!! info "Important"
-    All components have a default Pod Anti-Affinity rule set for each of your database engines.
-
-You can set affinity rules in Percona Everest via the **Advanced Configurations** page within the **Affinity** section.
-
-![!image](../images/create_affinity.png)
-
-![!image](../images/configure_node_affinity.png)
-
-### Secure Access: Validating permissions assignments from Your IDP
+### RBAC: Validating permissions assignments from Your IDP
 
 Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs.
 
@@ -54,7 +31,7 @@ A user will be authorized to perform an operation if either their subject or any
 
 ### Operators support
 
-We have added support for PXC operator version v1.16.1.
+We have added support for PXC operator v1.16.1.
 
 
 ## New features
@@ -62,7 +39,6 @@ We have added support for PXC operator version v1.16.1.
 - [EVEREST-1547](https://perconadev.atlassian.net/browse/EVEREST-1547): After performing an Everest upgrade, you will now receive a notification indicating that the upgrade has been completed. You can then access all the new features by clicking the **Reload** button.
 
 - [EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549): We have added support for PXC operator v1.16.1.
-
 
 - [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605): Starting with Percona Everest 1.5.0, you have the ability to configure Kubernetes affinity rules for specific database components in the **Advanced Configuration** section of the database creation wizard. This enables you to manage workload distribution across your Kubernetes cluster, optimize resource utilization and boosting the high availability of each component.
 
@@ -111,63 +87,49 @@ The `everestctl version` command has been updated to provide  information about 
 Now, when you create/edit the database cluster with sharding enabled for PSMDB, it will display the correct resources required for the specified number of shards.
 
 - [EVEREST-1537](https://perconadev.atlassian.net/browse/EVEREST-1537):
-We have resolved an issue that caused Everest uninstallation to fail when attempting to delete database clusters due to a timeout.
+We have resolved an issue that caused Percona Everest uninstallation to fail when attempting to delete database clusters due to a timeout.
 
 
-- [EVEREST-1581](https://perconadev.atlassian.net/browse/EVEREST-1581) \[UI\] Database remains in Deleting status
+- [EVEREST-1581](https://perconadev.atlassian.net/browse/EVEREST-1581): The database remained in a **Deleting** state, despite all components being deleted. The issue has now been resolved.
 
-- [EVEREST-1588](https://perconadev.atlassian.net/browse/EVEREST-1588) PG stuck initializing after a restore
+- [EVEREST-1588](https://perconadev.atlassian.net/browse/EVEREST-1588): We have fixed an issue where the PostgreSQL database was stuck in an **initializing** state after a restore.
 
-- [EVEREST-1589](https://perconadev.atlassian.net/browse/EVEREST-1589) MySQL stuck initializing in 1-node cluster
+- [EVEREST-1589](https://perconadev.atlassian.net/browse/EVEREST-1589): We have fixed an issue where the MySQL database reamined stuck in an **initializing** state for 1-node cluster.
 
 - [EVEREST-1590](https://perconadev.atlassian.net/browse/EVEREST-1590) Installation is stuck
 
-- [EVEREST-1647](https://perconadev.atlassian.net/browse/EVEREST-1647) \[UI\] Monthly schedule creates an invalid configuration for PSMDB
+- [EVEREST-1647](https://perconadev.atlassian.net/browse/EVEREST-1647): When creating a monthly schedule on day 1 at 12:00 AM (the default option when choosing **Monthly**), it led to an error for PSMDB. The issue has been resolved now.
 
-- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651) Creating a new database from backup fails for a mysql database with a long name
-
-- [EVEREST-1674](https://perconadev.atlassian.net/browse/EVEREST-1674) Intermittent "Enforce did not pass" Message for Status 403, and Database Disappearance in UI
-
-- [EVEREST-1677](https://perconadev.atlassian.net/browse/EVEREST-1677) \[UI\] After upgrade from 1.2.0 to 1.3.0-rc5 all resources of proxies and bouncers are displayed as 0
-
-- [EVEREST-1722](https://perconadev.atlassian.net/browse/EVEREST-1722) UI Issues with Config Number Adjustment in DatabaseClusters
-
-- [EVEREST-1724](https://perconadev.atlassian.net/browse/EVEREST-1724) \[UI\] Sharding is reset to default when returning to the previous step of the form
-
-- [EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728) \[UI\] Database dashboard is not updated automatically
-
-- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729) \[CLI\] Installation fails if 1.3.0 release cli is used to install 1.4.0
-
-- [EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735) \[UI\] Incorrect info on PITR Edit button is visible when PITR is enabled
-
-- [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758) \[UI\] Percona Everest UI buttons to create namespaces not accessible until page is manually refreshed  after adding a namespace with everestctl namespaces add
-
-- [EVEREST-1800](https://perconadev.atlassian.net/browse/EVEREST-1800) \[RBAC\] Unable to create a DB cluster as DB version is not displayed, with specific RBAC policy
-
-- [EVEREST-1801](https://perconadev.atlassian.net/browse/EVEREST-1801) \[RBAC\] Create DB cluster option not visible on the UI if user does not have permission for all the DB engines
-
-- [EVEREST-1802](https://perconadev.atlassian.net/browse/EVEREST-1802) \[RBAC\] Namespace\(s\) not visible on UI if user does not have permission to all db engines of a namespace
-
-- [EVEREST-1803](https://perconadev.atlassian.net/browse/EVEREST-1803) \[RBAC\] Unable to edit/add monitoring to a already created DB cluster, with specific RBAC policy
-
-- [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804) \[RBAC\] Operator Upgrade option not visible on the UI if user has access to all DB clusters in a namespace \(RBAC for db clusters set individually\)
-
-- [EVEREST-1805](https://perconadev.atlassian.net/browse/EVEREST-1805) \[UI\] Shard Cluster Activation State Resets After Clicking "Previous"
-
-- [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) everest-operator does not restart when a DB operator is installed for the first time
-
-- [EVEREST-1816](https://perconadev.atlassian.net/browse/EVEREST-1816) Installation under OpenShift is failing
+- [EVEREST-1674](https://perconadev.atlassian.net/browse/EVEREST-1674): The message **Enforce did not pass** appeared randomly in the UI. Additionally, databases in the UI sometimes disappeared and then reappeared after a few seconds. We have now resolved the issue.
 
 
-- [EVEREST-1820](https://perconadev.atlassian.net/browse/EVEREST-1820) Database restores are not reconciled correctly for any DB type
+- [EVEREST-1724](https://perconadev.atlassian.net/browse/EVEREST-1724): Sharding no longer resets to its default setting (disabled) when navigating back in the database creation wizard.
 
 
-### Technical task
-
-- [EVEREST-1654](https://perconadev.atlassian.net/browse/EVEREST-1654) Improve labels handling
+- [EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728): The database dashboard now updates automatically when you create databases in different namespaces across various browser sessions.
 
 
-## Known limitations
+- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): Installation fails if 1.3.0 release cli is used to install 1.4.0
+
+- [EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735): We have fixed an issue where incorrect information appeared on the **PITR Edit** button when PITR was enabled.
+
+
+- [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758): The **Create Database** button on the UI was inaccessible until the page was manually refreshed after adding a namespace using the `everestctl namespaces add` command. The issue has been resolved now.
+
+
+- [EVEREST-1800](https://perconadev.atlassian.net/browse/EVEREST-1800): We fixed an issue where users could not create a DB cluster because the DB version was not displayed with a specific RBAC policy.
+
+- [EVEREST-1801](https://perconadev.atlassian.net/browse/EVEREST-1801): Create DB cluster option was not visible on the UI if user did not have the permissions for all the database engines. The issue has been resolved now.
+
+- [EVEREST-1802](https://perconadev.atlassian.net/browse/EVEREST-1802): Create DB cluster option was not visible on the UI if the user lacked permissions for all database engines. This issue has now been resolved.
+
+
+- [EVEREST-1803](https://perconadev.atlassian.net/browse/EVEREST-1803): 
+We have fixed an issue that prevented users from editing or adding monitoring to an existing DB cluster with a specific RBAC policy.
+
+- [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804): The Operator Upgrade option was previously not visible on the UI when users had access to all DB clusters in a namespace. This issue has now been resolved.
+
+- [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) The everest-operator now restarts seamlessly when a DB operator is installed for the first time.
 
 
 
