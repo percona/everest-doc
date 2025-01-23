@@ -6,7 +6,7 @@ A user will be authorized to perform an operation if either their subject or any
 
 ## OKTA
 
-Let's consider you have successfully set up an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side). In this configuration, your API server is identified by the issuer URL, which acts as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the client ID. This setup allows for secure communication and authentication between your application and Okta's services.
+Let's consider you have successfully set up an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side). In this configuration, the issuer URL identifies your API server, which acts as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the client ID. This setup allows for secure communication and authentication between your application and Okta's services.
 {.power-number}
 
 1. Navigate to **Security > API**.
@@ -59,7 +59,7 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 
         - Uncheck all grant types except for the **Authorization Code**.
         -  Adjust the token lifetime to determine how long a session can remain active.
-        - Restrict the refresh token lifetime or consider disabling it entirely.
+        - Restrict the refresh token lifetime or consider deactivating it completely.
 
     ![!image](../images/scr_rule.png)
 
