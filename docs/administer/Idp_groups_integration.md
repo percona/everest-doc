@@ -71,7 +71,7 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 During the SSO authentication, if the group's scope is requested but the Identity Provider (IdP), like Okta, lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
 
 
-To retrieve the OIDC groups, users must include the scope by specifying the following fields:
+To retrieve the OIDC groups, you need to include the scope by specifying the following fields:
 
 `--scopes openid,profile,email,groups`
 
@@ -80,35 +80,34 @@ To retrieve the OIDC groups, users must include the scope by specifying the foll
    **scopes openid** - Grants access to the user's identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).
 
 
-   **profile** - Grants access basic profile information
+   **profile** - Grants access basic profile information.
 
-   **email** - Grants access to the user's email address and its verification status 
+   **email** - Grants access to the user's email address and its verification status.
 
-   **groups** - Grants access to obtain information about the user's group memberships
+   **groups** - Grants access to obtain information about the user's group memberships.
 
 
 By default, the scope should be `openid profile email`.
 
 ??? example "Example"
 
-    Let us consider a scenario where an employee wants to access the company portal via SSO.
+    Let's consider a scenario where an employee needs to log into the company portal using SSO.
     {.power-number}
 
-
-    1. The portal is redirected to OKTA and requests the following scope:
+    1. The portal redirects to OKTA and requests the following scope:
 
     ```
     --scopes openid,profile,email,groups
     ```
 
-    2. OKTA authenticates the user and provides ID token including:
+    2. OKTA authenticates the user and provides an ID token that includes:
 
     - `openid` - User identifier (sub)
     - `profile` - Users name, picure, and other profile data
     - `email` - Verified email address
     - `groups` - User's group membership (ProjecTeam,Admins)
 
-    The portal retrieves the group's claim from the ID token and, based on the user's membership, grants access to the appropriate dashboard.
+    The portal retrieves the group's claim from the ID token and grants access to the appropriate dashboard based on the user's membership.
 
 
 
