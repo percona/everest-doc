@@ -1,4 +1,4 @@
-# RBAC: IdP groups integration
+# RBAC: Integration with IdP groups
 
 You can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique sub IDs.
 
