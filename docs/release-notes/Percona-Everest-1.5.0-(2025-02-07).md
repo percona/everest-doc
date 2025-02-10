@@ -23,7 +23,8 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
-### RBAC: Validating permissions assignments from Your IDP
+### Streamlining Role-Based Access Control with IdP group integration
+
 
 Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs.
 
