@@ -190,7 +190,7 @@ nav:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
-      - RBAC IdP groups integration: administer/Idp_groups_integration.md
+      - IdP groups integration: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
   - Use:
