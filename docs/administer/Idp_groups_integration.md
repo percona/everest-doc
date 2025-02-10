@@ -77,30 +77,38 @@ To retrieve the OIDC groups, users must include the scope by specifying the foll
 
   where:
 
-   `**scopes openid**` - Grants access to the user's identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).
+   **scopes openid** - Grants access to the user's identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).
 
 
+   **profile** - Grants access basic profile information
 
-   `**profile**` - Grants access basic profile information
+   **email** - Grants access to the user's email address and its verification status 
 
-
-   `**email**` - Grants access to the user's email address and its verification status 
-
-
-   `**groups**` - Grants access to obtain information about the user's group memberships
+   **groups** - Grants access to obtain information about the user's group memberships
 
 
 By default, the scope should be `openid profile email`.
 
 ??? example "Example"
 
-    Example for an OAuth client:
+    Let us consider a scenario where an employee wants to access the company portal via SSO.
+    {.power-number}
+
+
+    1. The portal is redirected to OKTA and requests the following scope:
 
     ```
-    oauth-client --authorize --scopes openid,profile,email,groups
+    --scopes openid,profile,email,groups
     ```
 
+    2. OKTA authenticates the user and provides ID token including:
 
+    - `openid` - User identifier (sub)
+    - `profile` - Users name, picure, and other profile data
+    - `email` - Verified email address
+    - `groups` - User's group membership (ProjecTeam,Admins)
+
+    The portal retrieves the group's claim from the ID token and, based on the user's membership, grants access to the appropriate dashboard.
 
 
 
