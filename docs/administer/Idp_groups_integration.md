@@ -6,7 +6,7 @@ A user will be authorized to perform an operation if either their subject or any
 
 ## OKTA
 
-Once you successfully establish an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side), the issuer URL in this configuration identifies your API server, serving as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the client ID. This setup allows for secure communication and authentication between your application and Okta's services.
+Once you successfully establish an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side), the `issuerURL` in this configuration identifies your API server, serving as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the `clientID`. This setup allows for secure communication and authentication between your application and Okta's services.
 
 To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP provider settings. Here are the steps to configure the groups claim:
 {.power-number}
@@ -15,16 +15,16 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
 2. In the list, find the API server that you use and click **Edit**.
 
-3. **Click Scopes > Add Scope**. 
+3. Click **Scopes > Add Scope**. 
 
     !!! note
-        A Scope describes the information that potentially can be requested.  
-    
-    Add a scope called **groups** and keep all other options set to their default values.
+        A scope specifies the level and type of access a client application can request from an Identity Provider (IdP) during the authentication process.
+      
+    Add a scope called **groups** while keeping all other options to their default settings.
 
     ![!image](../images/scr_scope.png)
 
-4. **Click Claims > Add Claim**. 
+4. Click **Claims > Add Claim**. 
 
     !!! note
         A claim specifies the scope to activate and the information required within that scope.
@@ -60,8 +60,8 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
     2. Fine-tune the settings to align with your organization's security policy. Here are some suggestions:
 
         - Uncheck all grant types except for the **Authorization Code**.
-        -  Adjust the token lifetime to determine how long a session can remain active.
-        - Restrict the refresh token lifetime or consider deactivating it completely.
+        -  Adjust the **token lifetime** to determine how long a session can remain active.
+        - Restrict the refresh **token lifetime** or consider deactivating it completely.
 
     ![!image](../images/scr_rule.png)
 
