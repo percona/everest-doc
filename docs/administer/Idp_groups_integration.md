@@ -66,6 +66,28 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 7. Click **Create Rule**.
 
 
+## Configure Group claims in OKTA
+
+During the SSO authentication, if the group's scope is requested but the Identity Provider (IdP), like Okta, lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
+
+
+To retrieve the OIDC groups, users must include the scope by specifying the following fields:
+
+`--scopes openid,profile,email,groups`
+
+  where:
+
+   `**scopes openid**` - Grants access to the user’s identity and required for OpenID Connect authentication
+
+
+   `**profile**` - Grants access basic profile information
+
+
+   `**email**` - Grants access to the user's email address and its verification status 
+
+
+   `**groups**` - Grants access to obtain information about the user's group memberships
+
 
 
 
