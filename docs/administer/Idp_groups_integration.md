@@ -77,7 +77,8 @@ To retrieve the OIDC groups, users must include the scope by specifying the foll
 
   where:
 
-   `**scopes openid**` - Grants access to the user’s identity and required for OpenID Connect authentication
+   `**scopes openid**` - Grants access to the user's identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).
+
 
 
    `**profile**` - Grants access basic profile information
@@ -89,7 +90,15 @@ To retrieve the OIDC groups, users must include the scope by specifying the foll
    `**groups**` - Grants access to obtain information about the user's group memberships
 
 
+By default, the scope should be `openid profile email`.
 
+??? example "Example"
+
+    Example for an OAuth client:
+
+    ```
+    oauth-client --authorize --scopes openid,profile,email,groups
+    ```
 
 
 
