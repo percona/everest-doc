@@ -11,7 +11,7 @@ Let's consider you have successfully set up an Identity Provider (IdP) [integrat
 
 1. Navigate to **Security > API**.
 
-2. In the list, find the API server that you use and click on **Edit**.
+2. In the list, find the API server that you use and click **Edit**.
 
 3. **Click Scopes > Add Scope**. 
 
