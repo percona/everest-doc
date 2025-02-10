@@ -6,7 +6,9 @@ A user will be authorized to perform an operation if either their subject or any
 
 ## OKTA
 
-Let's consider you have successfully set up an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side). In this configuration, the issuer URL identifies your API server, which acts as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the client ID. This setup allows for secure communication and authentication between your application and Okta's services.
+Once you successfully establish an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side), the issuer URL in this configuration identifies your API server, serving as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the client ID. This setup allows for secure communication and authentication between your application and Okta's services.
+
+To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP provider settings. Here are the steps to configure the groups claim:
 {.power-number}
 
 1. Navigate to **Security > API**.
