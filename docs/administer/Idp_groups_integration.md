@@ -35,7 +35,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     3. Change the **Value type** to **Groups**.
 
-    4. Select **Filter** as  **Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
+    4. Select the **Filter** as **Matches regexp** and add a filter to match the desired Okta groups for Everest, for example: .*.
 
     5. Set **Include in** to **groups**, which is the scope you created earlier.
 
