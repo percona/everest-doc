@@ -86,8 +86,8 @@ Take a look at the descriptions of the various fields in the table below:
   |**email**|Grants access to the user’s email address and its verification status.|
     |**groups**|Grants access to obtain information about the user’s group memberships.|
 
-
-By default, the scope would be `openid profile email`.
+!!! note
+    The default scope is set to `openid profile email`.
 
 ??? example "Example"
 
