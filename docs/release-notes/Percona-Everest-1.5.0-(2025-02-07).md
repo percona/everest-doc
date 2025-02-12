@@ -13,7 +13,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|RBAC: Integration with IdP groups|Assign RBAC policies to user groups obtained from an external IdP.|
+    | **1.**|[RBAC: Integration with IdP groups](#streamlining-role-based-access-control-with-idp-group-integration)|Assign RBAC policies to user groups obtained from an external IdP|
     | **2.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for PXC operator 1.16.1|
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
     | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
