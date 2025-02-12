@@ -25,15 +25,26 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ### Streamlining Role-Based Access Control with IdP group integration
 
+Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub** IDs.
 
-Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs.
+A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
-A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission.
+During the SSO authentication, if the group’s scope is requested but the Identity Provider (IdP) lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
+
+To retrieve the OIDC groups, you need to include the scope by specifying the following fields:
+
+`--scopes openid,profile,email,groups`
+
+ **Field**|**Description**|
+ |--------|---------------|
+ |**scopes openid**|Grants access to the user’s identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).|
+  |**profile**|Grants access basic profile information.|
+  |**email**|Grants access to the user’s email address and its verification status.|
+    |**groups**|Grants access to obtain information about the user’s group memberships.|
 
 ### Operators support
 
 We have added support for PXC operator v1.16.1.
-
 
 ## New features
 
