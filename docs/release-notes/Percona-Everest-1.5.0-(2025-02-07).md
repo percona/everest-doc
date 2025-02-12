@@ -31,7 +31,7 @@ During the SSO authentication, if the group’s scope is requested but the Ident
 
 To retrieve the OIDC groups, you need to include the scope by specifying the following fields:
 
-`--scopes openid,profile,email,groups`
+    --scopes openid,profile,email,groups
 
 Take a look at the descriptions of the various fields in the table below:
 
