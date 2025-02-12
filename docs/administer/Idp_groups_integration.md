@@ -77,15 +77,14 @@ To retrieve the OIDC groups, you need to include the scope by specifying the fol
 
 `--scopes openid,profile,email,groups`
 
-where:
+Take a look at the descriptions of the various fields in the table below:
 
-   **scopes openid** - Grants access to the user's identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).
-
-   **profile** - Grants access basic profile information.
-
-   **email** - Grants access to the user's email address and its verification status.
-
-   **groups** - Grants access to obtain information about the user's group memberships.
+ **Field**|**Description**|
+ |--------|---------------|
+ |**scopes openid**|Grants access to the user’s identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).|
+  |**profile**|Grants access basic profile information.|
+  |**email**|Grants access to the user’s email address and its verification status.|
+    |**groups**|Grants access to obtain information about the user’s group memberships.|
 
 
 By default, the scope would be `openid profile email`.
