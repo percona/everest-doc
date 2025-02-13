@@ -37,7 +37,7 @@ Take a look at the descriptions of the various fields in the table below:
 
  **Field**|**Description**|
  |--------|---------------|
- |`scopes openid`|Grants access to the user’s identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).|
+ |`openid`|Grants access to the user’s identity, necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).|
   |`profile`|Grants access basic profile information.|
   |`email`|Grants access to the user’s email address and its verification status.|
     |`groups`|Grants access to obtain information about the user’s group memberships.|
