@@ -47,20 +47,14 @@ To explore further, dive into our [documentation](https://docs.percona.com/evere
 
 ### Operators support
 
-We have added support for PXC operator v1.16.1.
+We have added support for PXC operator v1.19.1.
 
 ## New features
 
 - [EVEREST-1547](https://perconadev.atlassian.net/browse/EVEREST-1547): After performing an Everest upgrade, you will now receive a notification indicating that the upgrade has been completed. You can then access all the new features by clicking the **Reload** button.
 
-- [EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549): We have added support for PXC operator v1.16.1.
+- [EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549): We have added support for PXC operator v1.19.1.
 
-- [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605): Starting with Percona Everest 1.5.0, you have the ability to configure Kubernetes affinity rules for specific database components in the **Advanced Configuration** section of the database creation wizard. This enables you to manage workload distribution across your Kubernetes cluster, optimize resource utilization and boosting the high availability of each component.
-
-- [EVEREST-1606](https://perconadev.atlassian.net/browse/EVEREST-1606): You can now configure Kubernetes affinity rules for specific database components in the **Components** tab of an existing database.
-
-
-- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607): You can now view the current status of your affinity configuration from the DB Overview tab. From there, you can directly navigate to the Affinity section in the Components tab to modify the rules. This will enable you to monitor and adjust the Kubernetes affinity settings for your database components.
 
 - [EVEREST-1799](https://perconadev.atlassian.net/browse/EVEREST-1799): Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from an external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs. 
 
