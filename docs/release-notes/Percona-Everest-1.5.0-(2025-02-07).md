@@ -29,9 +29,9 @@ Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user gr
 
 During the SSO authentication, if the group’s scope is requested but the Identity Provider (IdP) lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
 
-To retrieve the OIDC groups, you need to include the scope by specifying the following fields:
+To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
-    --scopes openid,profile,email,groups
+       everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id --scopes openid,profile,email,groups
 
 Take a look at the descriptions of the various fields in the table below:
 
