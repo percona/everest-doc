@@ -61,7 +61,7 @@ We have added support for PXC operator v1.19.1.
 
 ## Improvements
 
-- [EVEREST-970](https://perconadev.atlassian.net/browse/EVEREST-970): Our default schedule has been updated from **Hourly** to **Daily**, starting at 1:00 AM.
+- [EVEREST-970](https://perconadev.atlassian.net/browse/EVEREST-970): Our default backup schedule has been updated from **Hourly** to **Daily**, starting at 1:00 AM.
 
 
 - [EVEREST-1066](https://perconadev.atlassian.net/browse/EVEREST-1066) \[UI\] Backups \(widget\)
