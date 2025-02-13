@@ -136,7 +136,7 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 - [EVEREST-1803](https://perconadev.atlassian.net/browse/EVEREST-1803): 
 We have fixed an issue that prevented users from editing or adding monitoring to an existing DB cluster with a specific RBAC policy.
 
-- [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804): The Operator Upgrade option was previously not visible on the UI when users had access to all DB clusters in a namespace. This issue has now been resolved.
+- [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804): The Operator Upgrade option was previously not visible on the UI when users didn't have access to all DB clusters in a namespace. This issue has now been resolved.
 
 - [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) The everest-operator now restarts seamlessly when a DB operator is installed for the first time.
 
