@@ -130,7 +130,7 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 
 - [EVEREST-1801](https://perconadev.atlassian.net/browse/EVEREST-1801): Create DB cluster option was not visible on the UI if user did not have the permissions for all the database engines. The issue has been resolved now.
 
-- [EVEREST-1802](https://perconadev.atlassian.net/browse/EVEREST-1802): Create DB cluster option was not visible on the UI if the user lacked permissions for all database engines. This issue has now been resolved.
+- [EVEREST-1802](https://perconadev.atlassian.net/browse/EVEREST-1802): A given namespace was not visible on the UI if the user lacked permissions for all database engines in that namespace. This issue has now been resolved.
 
 
 - [EVEREST-1803](https://perconadev.atlassian.net/browse/EVEREST-1803): 
