@@ -64,7 +64,7 @@ We have added support for PXC operator v1.19.1.
 - [EVEREST-970](https://perconadev.atlassian.net/browse/EVEREST-970): Our default backup schedule has been updated from **Hourly** to **Daily**, starting at 1:00 AM.
 
 
-- [EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190): You can now easily find out which account you’re using to log into Everest by clicking the Profile button. This button shows the email ID used to log into Percona Everest.
+- [EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190): You can now easily find out which account you’re using to log into Everest by clicking the Profile button. This button shows the user's name or email address used to log into Percona Everest.
 
 
 - [EVEREST-1579](https://perconadev.atlassian.net/browse/EVEREST-1579): We have enhanced the shard **Topology** by modifying the label from **Nodes** to **Nodes per shard**. This change provides greater clarity on the distribution of nodes across each shard. Additionally, we now display the total number of nodes within the **Database summary** panel, giving you a more complete and insightful overview of your database.
