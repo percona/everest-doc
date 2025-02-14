@@ -64,7 +64,7 @@ To explore further, dive into our [documentation](https://docs.percona.com/evere
 
 ### Operators support
 
-We have added support for PXC operator v1.16.1 and PSMDB operator 1.19.1.
+We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 
 ## New features
 
