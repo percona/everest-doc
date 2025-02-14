@@ -13,6 +13,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
+    | **1.**|[Role-based access control (RBAC) GA](#)|Assign RBAC policies to user groups obtained from an external IdP|
     | **1.**|[RBAC: Integration with IdP groups](#streamlining-role-based-access-control-with-idp-group-integration)|Assign RBAC policies to user groups obtained from an external IdP|
     | **2.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for PXC operator 1.16.1|
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
@@ -23,7 +24,23 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
-### Streamlining Role-Based Access Control with IdP group integration
+## Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
+
+We’re delighted to unlock the GA of RBAC in Percona Everest!
+
+With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
+
+- Granular access management: Allocate roles with detailed permissions to ensure precise access control.
+
+- Enhanced security: Restrict access to authorized users and teams only.
+
+- Better IdP integration: Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
+
+**Upgrade to Percona Everest today** to unlock RBAC for improved security and streamlined efficiency!
+
+For more insights into RBAC, refer to our [documentation](https://docs.percona.com/everest/administer/rbac.html).
+
+### Streamlining Role-Based Access Control with enhanced IdP group integration
 
 Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub** IDs. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
@@ -115,8 +132,7 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 - [EVEREST-1724](https://perconadev.atlassian.net/browse/EVEREST-1724): Sharding no longer resets to its default setting (disabled) when navigating back in the database creation wizard.
 
 
-- [EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728): The database dashboard now updates automatically when you create databases in different namespaces across various browser sessions.
-
+- [EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728): The database list now refreshes automatically whenever new databases are deployed in recently created namespaces, and this update is reflected across various browser sessions.
 
 - [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): Installation fails if 1.3.0 release cli is used to install 1.4.0
 
