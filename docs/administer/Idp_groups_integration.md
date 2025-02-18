@@ -25,9 +25,9 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
     ![!image](../images/scr_scope.png)
 
 
-5. Click **Create**.
+4. Click **Create**.
 
-6. Click **Claims > Add Claim**. 
+5. Click **Claims > Add Claim**. 
 
     !!! note
         A claim specifies the scope to activate and the information required within that scope.
@@ -44,7 +44,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_claim.png)
 
-7. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
+6. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
 
     1. Add **Name** and **Description**.
 
@@ -54,7 +54,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_policy.png)
 
-8. Add a rule to the policy. A Rule defines the details of usage:
+7. Add a rule to the policy. A Rule defines the details of usage:
 
     1. Add a name. If you prefer, you can use **default** option.
 
@@ -64,7 +64,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
         -  Adjust the **token lifetime** to determine how long a session can remain active.
         - Restrict the refresh **token lifetime** or consider deactivating it completely.
 
-    ![!image](../images/scr_rule.png)
+        ![!image](../images/scr_rule.png)
 
     3. Click **Create Rule**.
 
