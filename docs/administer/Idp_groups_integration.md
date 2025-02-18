@@ -109,6 +109,30 @@ Take a look at the descriptions of the various fields in the table below:
 
     The portal retrieves the group's claim from the ID token and grants access to the appropriate dashboard based on the user's membership.
 
+## Configure RBAC to assign permissions to the groups
+
+To configure RBAC, you can assign permissions to the groups that a user belongs to. Just specify the name of the group when creating the policy assignment.
+
+    g, username, role:admin
+
+    g, groupname, role:admin
+
+!!! note
+    The `username` should be a part of the `groupname`.
+
+
+Similarly, for policies:
+
+        p, <Username>, database-clusters, *, */
+
+        p, <GroupName>, database-clusters, *, */
+
+ !!! note
+    The `username` should be a part of the `groupname`.       
+
+
+
+
 
 
 
