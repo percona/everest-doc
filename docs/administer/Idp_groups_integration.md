@@ -119,7 +119,6 @@ The following commands are similar:
 g, username, role:admin
 ```
     
-
 !!! note
     The `username` should be a part of the `groupname`.
 
