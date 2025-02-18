@@ -24,7 +24,10 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_scope.png)
 
-4. Click **Claims > Add Claim**. 
+
+5. Click **Create**.
+
+6. Click **Claims > Add Claim**. 
 
     !!! note
         A claim specifies the scope to activate and the information required within that scope.
@@ -41,9 +44,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_claim.png)
 
-5. Click **Create**.
-
-6. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
+7. Click **Access Policies > Add Policy**. A policy restricts how this authorization server is used.
 
     1. Add **Name** and **Description**.
 
@@ -53,7 +54,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_policy.png)
 
-6. Add a rule to the policy. A Rule defines the details of usage:
+8. Add a rule to the policy. A Rule defines the details of usage:
 
     1. Add a name. If you prefer, you can use **default** option.
 
@@ -65,17 +66,16 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
 
     ![!image](../images/scr_rule.png)
 
-7. Click **Create Rule**.
+    3. Click **Create Rule**.
 
 
-## Configure Group claims in OKTA
+## Configure Percona Everest to fetch groups from IdP
 
 During the SSO authentication, if the group's scope is requested but the Identity Provider (IdP), like Okta, lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
 
-
 To retrieve the OIDC groups, you need to include the scope by specifying the following fields:
 
-`--scopes openid,profile,email,groups`
+    everestctl settings oidc configure --issuer-url https://example.com --client-id 123456 --scopes openid,profile,email,groups
 
 Take a look at the descriptions of the various fields in the table below:
 
@@ -97,7 +97,7 @@ Take a look at the descriptions of the various fields in the table below:
     1. The portal redirects to OKTA and requests the following scope:
 
         ```
-        --scopes openid,profile,email,groups
+        everestctl settings oidc configure --issuer-url https://example.com --client-id 123456 --scopes openid,profile,email,groups
         ```
 
     2. OKTA authenticates the user and provides an ID token that includes:
