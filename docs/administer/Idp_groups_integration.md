@@ -128,11 +128,11 @@ g, groupname, role:admin
 Similarly, for policies:
 
 ```sh
-p, <Username>, database-clusters, *, */
+p, username, database-clusters, *, */
 ```
 
 ```sh
-p, <GroupName>, database-clusters, *, */
+p, groupName, database-clusters, *, */
 ```
 
 !!! note
