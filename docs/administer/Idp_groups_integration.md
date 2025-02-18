@@ -113,9 +113,12 @@ Take a look at the descriptions of the various fields in the table below:
 
 To configure RBAC, you can assign permissions to the groups that a user belongs to. Just specify the name of the group when creating the policy assignment.
 
+    ```
     g, username, role:admin
-
+    ```
+    ```
     g, groupname, role:admin
+    ```
 
 !!! note
     The `username` should be a part of the `groupname`.
@@ -123,11 +126,16 @@ To configure RBAC, you can assign permissions to the groups that a user belongs 
 
 Similarly, for policies:
 
-        p, <Username>, database-clusters, *, */
+```sh
+p, <Username>, database-clusters, *, */
 
-        p, <GroupName>, database-clusters, *, */
+```
 
- !!! note
+```sh
+p, <GroupName>, database-clusters, *, */
+```
+
+!!! note
     The `username` should be a part of the `groupname`.       
 
 
