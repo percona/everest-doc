@@ -116,9 +116,6 @@ To configure RBAC, you can assign permissions to the groups that a user belongs 
 ```sh
 g, username, role:admin
 ```
-    
-!!! note
-    The `username` should be a part of the `groupname`.
 
 Similarly, for policies:
 
@@ -126,8 +123,11 @@ Similarly, for policies:
 p, username, database-clusters, *, */
 ```
 
-!!! note
-    The `username` should be a part of the `groupname`.       
+For additional information, refer to the section on [assigning roles to users](../administer/rbac.md#assigning-roles-to-users) in RBAC.
+
+
+
+    
 
 
 
