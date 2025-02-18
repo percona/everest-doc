@@ -1,6 +1,6 @@
 # RBAC: Integration with IdP groups
 
-You can now assign RBAC policies to user groups obtained from the external IDP. This change simplifies permissions management for external users without the need for unique sub IDs.
+You can now assign RBAC policies to user groups from an external IDP. This update simplifies permissions management for external users, eliminating the need for unique **Sub IDs** (unique identifiers for authenticated users).
 
 A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
