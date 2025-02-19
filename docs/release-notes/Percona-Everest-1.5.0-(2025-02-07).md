@@ -48,7 +48,7 @@ During the SSO authentication, if the group’s scope is requested but the Ident
 
 To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
-       everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id --scopes openid,profile,email,groups
+       everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id> --scopes openid,profile,email,groups
 
 Take a look at the descriptions of the various fields in the table below:
 
