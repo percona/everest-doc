@@ -9,6 +9,9 @@ This section explains how to install Percona Everest using [Helm](https://helm.s
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
+!!! info "Important"
+    If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
+
 ## Install Percona Everest and deploy database namespaces
 
 Here are the steps to install Percona Everest and deploy additional database namespaces:
