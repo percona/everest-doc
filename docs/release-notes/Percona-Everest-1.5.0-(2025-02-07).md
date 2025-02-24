@@ -30,15 +30,14 @@ We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0!
 
 With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
-- Granular access management: Allocate roles with detailed permissions to ensure precise access control.
+- [Granular access management](https://docs.percona.com/everest/administer/rbac.html): Allocate roles with detailed permissions to ensure precise access control.
 
-- Enhanced security: Restrict access to authorized users and teams only.
+- [Enhanced security](https://docs.percona.com/everest/administer/Idp_integration.html): Restrict access to authorized users and teams only.
 
-- Better IdP integration: Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
+- [Better IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
 
 **Upgrade to Percona Everest today** to unlock RBAC for improved security and streamlined efficiency!
 
-For more insights into RBAC, refer to our [documentation](https://docs.percona.com/everest/administer/rbac.html).
 
 ### Streamlining Role-Based Access Control with enhanced IdP group integration
 
@@ -71,7 +70,9 @@ We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 
 - [EVEREST-1547](https://perconadev.atlassian.net/browse/EVEREST-1547): After performing an Everest upgrade, you will now receive a notification indicating that the upgrade has been completed. You can then access all the new features by clicking the **Reload** button.
 
-- [EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549): We have added support for PXC operator v1.19.1.
+- [EVEREST-1549](https://perconadev.atlassian.net/browse/EVEREST-1549): We have added support for PXC operator v1.16.1.
+
+- [EVEREST-1884](https://perconadev.atlassian.net/browse/EVEREST-1884): We have added support for PSMDB operator v1.19.1.
 
 
 - [EVEREST-1799](https://perconadev.atlassian.net/browse/EVEREST-1799): Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from an external IDP. This change simplifies permissions management for external users without the need for unique **sub** IDs. 
@@ -135,12 +136,14 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 
 - [EVEREST-1728](https://perconadev.atlassian.net/browse/EVEREST-1728): The database list now refreshes automatically whenever new databases are deployed in recently created namespaces, and this update is reflected across various browser sessions.
 
+- [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758): The **Create Database** button on the UI was inaccessible until the page was manually refreshed after adding a namespace using the `everestctl namespaces add` command. The issue has been resolved now.
+
+
 - [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): Installation fails if 1.3.0 release cli is used to install 1.4.0
 
 - [EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735): We have fixed an issue where incorrect information appeared on the **PITR Edit** button when PITR was enabled.
 
 
-- [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758): The **Create Database** button on the UI was inaccessible until the page was manually refreshed after adding a namespace using the `everestctl namespaces add` command. The issue has been resolved now.
 
 
 - [EVEREST-1800](https://perconadev.atlassian.net/browse/EVEREST-1800): We fixed an issue where users could not create a DB cluster because the DB version was not displayed with a specific RBAC policy.
