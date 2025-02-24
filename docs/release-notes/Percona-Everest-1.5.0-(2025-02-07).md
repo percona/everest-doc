@@ -24,7 +24,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
-## Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
+### Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
 
 We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0!
 
@@ -44,7 +44,8 @@ For more insights into RBAC, refer to our [documentation](https://docs.percona.c
 
 Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub** IDs. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
-During the SSO authentication, if the group’s scope is requested but the Identity Provider (IdP) lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
+
+Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documention](https://docs.percona.com/everest/administer/Idp_groups_integration.html)
 
 To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
