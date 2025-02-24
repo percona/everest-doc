@@ -1,4 +1,7 @@
-# Uninstall Percona Everest using the CLI
+# Uninstall Percona Everest using everestctl
+
+!!! info "important"
+    If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
 
 You can run the commands below to remove all Everest resources including:
 
