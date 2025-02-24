@@ -153,7 +153,7 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 ## Known limitations
 
-Operator versions 1.19.0 and 1.19.1 are set with a recommended MongoDB version of 7.0 due to potential issues with point-in-time recovery on MongoDB 8.0 when sharding is enabled, and the Operator version is 1.19.x. Thus, upgrading to Operator 1.19.0 or 1.19.1 is not advisable if you run sharded MongoDB 8.0 clusters.
+PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to potential issues with point-in-time recovery on MongoDB 8.0 when sharding is enabled, the recommended MongoDB version is still 7.0.
 
 
 
