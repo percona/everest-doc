@@ -2,6 +2,8 @@
 
 You can now assign RBAC policies to user groups from an external IDP. This update simplifies permissions management for external users, eliminating the need for unique **Sub IDs** (unique identifiers for authenticated users).
 
+During the SSO authentication, if the group’s scope is requested but the Identity Provider (IdP) lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
+
 A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
 ## OKTA
