@@ -1,7 +1,8 @@
 # Uninstall Percona Everest using Helm
 
-!!! info "Important"
-    If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
+!!! info "important"
+    If you installed Percona Everest using `helm`, make sure to uninstall it exclusively through `helm` for a seamless removal.
+
 
 
 ## Uninstall the database namespaces
