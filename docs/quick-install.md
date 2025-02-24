@@ -11,7 +11,7 @@ Helm simplifies the installation of Percona Everest. With this guide, you'll be 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
-    If you prefer an alternative method, you can [install Percona Everest using the CLI](install/installEverest.md).
+    If you prefer an alternative method, you can [install Percona Everest using everestctl](install/installEverest.md).
 
 ## Prerequisites
 
@@ -150,6 +150,8 @@ Once you have successfully installed Percona Everest, proceed with the following
 
         Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
+!!! info "important"
+    If you installed Percona Everest using `helm`, make sure to uninstall it exclusively through `helm` for a seamless removal.
 
 ## Next steps
 
