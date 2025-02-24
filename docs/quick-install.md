@@ -80,6 +80,7 @@ To install Percona Everest using Helm follow these steps:
     !!! note
         - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
         - If `dbNamespace.enabled=false` is set, no namespaces will be provisioned. You can provision namespaces later with the `everestctl namespaces add <NAMESPACE>` command.
+        - If you installed Percona Everest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
 
 ## Post-installation steps
 
@@ -150,8 +151,6 @@ Once you have successfully installed Percona Everest, proceed with the following
 
         Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
-!!! info "important"
-    If you installed Percona Everest using `helm`, make sure to uninstall it exclusively through `helm` for a seamless removal.
 
 ## Next steps
 
