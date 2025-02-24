@@ -34,7 +34,7 @@ With RBAC, only authorized individuals can access specific resources or perform 
 
 - [Enhanced security](https://docs.percona.com/everest/administer/Idp_integration.html): Restrict access to authorized users and teams only.
 
-- [Better IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
+- [Enhanced IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
 
 **Upgrade to Percona Everest today** to unlock RBAC for improved security and a more streamlined experience!
 
