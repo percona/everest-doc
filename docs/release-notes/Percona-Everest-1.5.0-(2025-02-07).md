@@ -41,7 +41,7 @@ With RBAC, only authorized individuals can access specific resources or perform 
 
 ### Streamlining Role-Based Access Control with enhanced IdP group integration
 
-Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub** IDs. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
+Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
 
 Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documention](https://docs.percona.com/everest/administer/Idp_groups_integration.html)
