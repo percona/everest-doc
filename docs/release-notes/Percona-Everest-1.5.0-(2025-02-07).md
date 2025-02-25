@@ -75,6 +75,10 @@ We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 
 - [EVEREST-1884](https://perconadev.atlassian.net/browse/EVEREST-1884): We have added support for PSMDB operator v1.19.1.
 
+- (EVEREST-689)[https://perconadev.atlassian.net/browse/EVEREST-689]: We have added a new option to hide and unhide the password in the password form field on the login page.
+
+
+
 
 
 ## Improvements
@@ -149,6 +153,19 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 - [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804): The Operator Upgrade option was previously not visible on the UI when users didn't have access to all DB clusters in a namespace. This issue has now been resolved.
 
 - [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) The everest-operator now restarts seamlessly when a DB operator is installed for the first time.
+
+
+- (EVEREST-688)[https://perconadev.atlassian.net/browse/EVEREST-688]: You will be logged out from all tabs when you log out from one tab or attempt to perform any action, as per the expected behavior.
+
+- (EVEREST-864)[https://perconadev.atlassian.net/browse/EVEREST-864]When a user created a database cluster and changed the namespace from A—which had backup storage configured—to a different namespace that did not have a backup storage location, the user interface only reset the values related to Basic Cluster Information and Resources. However, it failed to reset other values in the form, including those related to Backups, Point-in-Time Recovery (PITR), Advanced Configurations, and Monitoring. The issue has been resolved now.
+
+- (EVEREST-1787)[https://perconadev.atlassian.net/browse/EVEREST-1787]: After clicking **Create Database** and returning to the database view page, there was a short delay with a **Loading** button before the **Create Database** button appeared. This issue has been resolved now.
+
+- (EVEREST-1792)[https://perconadev.atlassian.net/browse/EVEREST-1792]: We have significantly reduced the delay between the loading of fields and their labels.
+
+- (EVEREST-1053)[https://perconadev.atlassian.net/browse/EVEREST-1053]: Restores now have different names for different database clusters. We have also implemented a standard naming convention for the restored databases that contains the database name/backup name with time.
+
+(EVEREST-1808)[https://perconadev.atlassian.net/browse/EVEREST-1808]: The content within the textbox was not fully visible when no backups had been created. The issue has been resolved now.
 
 
 ## Known limitations
