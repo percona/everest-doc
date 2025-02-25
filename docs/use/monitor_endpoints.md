@@ -55,11 +55,11 @@ Here’s how to monitor your databases using PMM:
 
 3. Go to **Experimental > Databases Overview** to access the **Database Overview** dashboard. In the following image you can see that two PostgreSQL databases are being monitored.
 
-    [!image](../images/PMM_databases_overview_dashboard.png)
+    ![!image](../images/PMM_databases_overview_dashboard.png)
 
 4. On the **Databases Overview** dashboard, you have the option to monitor a specific database. To do this, select the desired database's **Engine** from the drop-down menu.
 
-    [!image](../images/pmm_overview_dashboard_engine_type.png)
+    ![!image](../images/pmm_overview_dashboard_engine_type.png)
 
     On this dashboard, you will find a graphical representation that highlights the following: 
     - A comprehensive list of databases under monitoring 
@@ -69,7 +69,7 @@ Here’s how to monitor your databases using PMM:
 
 5. If you want a comprehensive view of, say, your PostgreSQL databases being monitored, go to **Experimental > PostgreSQL Instance**.
 
-    [!image](../images/PMM_databases_overview_DB.png)
+    ![!image](../images/PMM_databases_overview_DB.png)
 
 
 
