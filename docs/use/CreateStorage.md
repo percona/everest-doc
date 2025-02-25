@@ -7,19 +7,34 @@ Everest supports S3-compatible backup locations, which means you can use [AWS S3
 !!! caution alert alert-warning "Important"
 
      - Currently, Everest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.
-     - Only virtual-hosted-style bucket names are supported. This format integrates the bucket name into the domain name in the URL: *https://<span style="color: red;">bucket-name</span>.s3.<span style="color: red;">region-code</span>.amazonaws.com/<span style="color: red;">key-name</span>*
-     Path-style bucket name access is not supported. 
-     For more information about format access, see [Path-style requests in the Amazon documentation](https://docs.aws.amazon.com/AmazonS3/latest/userguide/VirtualHosting.html#path-style-access).
+
      - Make sure you have read/write/delete permissions to the S3 bucket.
 
 To create a backup storage location:
 {.power-number}
 
-1. Go to **Settings > Backup storages** and click **Add Backup storage**.  
-2. In the **Name** field, specify a location name using only lowercase alphanumeric characters or hyphens. 
-3. Select the **Namepaces** where the backup storage should be available.
-4. Enter your credentials, making sure to use regional AWS STS endpoints instead of the global endpoint: `https://s3.<region>.amazonaws.com`.
-    Using an endpoint that is geographically closer to your application reduces latency and provides better response times.
+1. Go to Backup storage settings:
+
+    Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click **Add Backup storage**.
+
+2. Fill in the Required Fields:
+
+      - **Name**: Enter a name using only lowercase letters, numbers, or hyphens.
+      - **Description**: (Optional) Add a short description for this backup storage.
+      - **Namespace**: Select where this backup storage will be available.
+      - **Type**: Choose S3 Compatible.
+      - **Bucket Name**: Provide the S3 bucket name where backups will be stored.
+      - **Region**: Specify the bucket's region (e.g., us-east-1).
+      - **Endpoint**: Enter the S3-compatible URL (e.g., https://s3.us-east-1.amazonaws.com).
+      - **Access Key**: Input the access key for your S3 account.
+      - **Secret Key**: Input the corresponding secret key.
+
+3. Additional Options:
+      - **Verify TLS Certificate**: Enable this to validate secure connections.
+      - **Force Path-Style URL Access**: Use this if your storage provider uses path-style URLs.
+
+4. Click **Add** to save your configuration.
+
 
 ## Next steps
 

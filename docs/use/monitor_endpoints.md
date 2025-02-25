@@ -23,7 +23,7 @@ To use monitoring in Percona Everest, you should have a PMM instance up and runn
 
 For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
 
-## Add monitoring
+## Add monitoring endpoint
 
 To add monitoring in Percona Everest from the UI:
 {.power-number}
@@ -39,7 +39,7 @@ To add monitoring in Percona Everest from the UI:
 4. In the **Endpoint** field, enter the PMM URL. In the **User** and **Password** field, enter the credentials received upon installing PMM.
 
     !!! warning
-        When setting up a new monitoring instance, if your PMM instance uses a self-signed certificate, use HTTP instead of HTTPS. This is because Everest requires TLS certificate validation and will not connect to your monitoring instance with self-signed certificates if you use HTTPS.
+        When setting up a new monitoring instance, if your PMM instance uses a self-signed certificate, skip the **Verify TLS verification** checkbox.        
 
 6. Click **Add**.
 
@@ -72,7 +72,8 @@ Here’s how to monitor your databases using PMM:
     [!image](../images/PMM_databases_overview_DB.png)
 
 
-## Edit monitoring
+
+## Edit monitoring endpoint
 
 To edit a monitoring endpoint from the Percona Everest UI:
 {.power-number}
@@ -92,7 +93,7 @@ To edit a monitoring endpoint from the Percona Everest UI:
 4. Click **Add**.
 
 
-## Delete monitoring
+## Delete monitoring endpoint
 
 To delete a monitoring endpoint from the Percona Everest UI:
 {.power-number}
@@ -108,7 +109,6 @@ To delete a monitoring endpoint from the Percona Everest UI:
      ![!image](../images/everest_endpoint_delete.png)
 
 4. Click **Delete**.
-
 
 
 
