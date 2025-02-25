@@ -53,7 +53,7 @@ Take a look at the descriptions of the various fields in the table below:
 
  **Field**|**Description**|
  |--------|---------------|
- |**openid**|Grants access to the user’s identity, which is necessary for OIDC flows to issue an ID token with the unique identifier (subject sub).|
+ |**openid**|Grants access to the user’s identity, which is necessary for OIDC flows to issue an ID token with a unique identifier (subject **sub**).|
   |**profile**|Grants access to basic profile information.|
   |**email**|Grants access to the user’s email address and its verification status.|
     |**groups**|Grants access to obtain information about the user’s group memberships.|
@@ -76,9 +76,6 @@ We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 - [EVEREST-1884](https://perconadev.atlassian.net/browse/EVEREST-1884): We have added support for PSMDB operator v1.19.1.
 
 - (EVEREST-689)[https://perconadev.atlassian.net/browse/EVEREST-689]: We have added a new option to hide and unhide the password in the password form field on the login page.
-
-
-
 
 
 ## Improvements
@@ -121,11 +118,11 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 
 - [EVEREST-1588](https://perconadev.atlassian.net/browse/EVEREST-1588): We have fixed an issue where the PostgreSQL database was stuck in an **initializing** state after a restore.
 
-- [EVEREST-1589](https://perconadev.atlassian.net/browse/EVEREST-1589): We have fixed an issue where the MySQL database remained stuck in an **initializing** state for a 1-node cluster.
+- [EVEREST-1589](https://perconadev.atlassian.net/browse/EVEREST-1589): We have fixed an issue in which the MySQL database remained stuck in an **initializing** state for a 1-node cluster.
 
 - [EVEREST-1647](https://perconadev.atlassian.net/browse/EVEREST-1647): Creating a monthly schedule on day 1 at 12:00 AM (the default option when **choosing Monthly**) led to an error for PSMDB. The issue has been resolved now.
 
-- [EVEREST-1674](https://perconadev.atlassian.net/browse/EVEREST-1674): The message **Enforce did not pass** appeared randomly in the UI. Additionally, databases in the UI sometimes disappeared and then reappeared after a few seconds. We have now resolved the issue.
+- [EVEREST-1674](https://perconadev.atlassian.net/browse/EVEREST-1674): The message **Enforce did not pass** appeared randomly in the UI. Additionally, databases in the UI occasionally disappeared and then reappeared after a few seconds. We have now resolved the issue.
 
 
 - [EVEREST-1724](https://perconadev.atlassian.net/browse/EVEREST-1724): Sharding no longer resets to its default setting (disabled) when navigating back in the database creation wizard.
@@ -152,7 +149,7 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 - [EVEREST-1804](https://perconadev.atlassian.net/browse/EVEREST-1804): The Operator Upgrade option was previously not visible on the UI when users didn't have access to all DB clusters in a namespace. This issue has now been resolved.
 
-- [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811) The everest-operator now restarts seamlessly when a DB operator is installed for the first time.
+- [EVEREST-1811](https://perconadev.atlassian.net/browse/EVEREST-1811): `everest-operator` now restarts seamlessly when a DB operator is installed for the first time.
 
 
 - (EVEREST-688)[https://perconadev.atlassian.net/browse/EVEREST-688]: You will be logged out from all tabs when you log out from one tab or attempt to perform any action, as per the expected behavior.
