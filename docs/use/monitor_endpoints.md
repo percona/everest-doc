@@ -46,8 +46,30 @@ To add monitoring in Percona Everest from the UI:
 
 ### Connect to PMM and monitor your databases
 
+Here’s how to monitor your databases using PMM:
+{.power-number}
 
+1. Log in to PMM.
 
+2. From the PMM home page, go to <i class="uil uil-apps"></i> **Dashboards > Experimental**. Here, you'll discover a comprehensive view of the various databases that you can view.
+
+3. Go to **Experimental > Databases Overview** to access the **Database Overview** dashboard. In the following image you can see that two PostgreSQL databases are being monitored.
+
+    [!image](../images/PMM_databases_overview_dashboard.png)
+
+4. On the **Databases Overview** dashboard, you have the option to monitor a specific database. To do this, select the desired database's **Engine** from the drop-down menu.
+
+    [!image](../images/pmm_overview_dashboard_engine_type.png)
+
+    On this dashboard, you will find a graphical representation that highlights the following: 
+    - A comprehensive list of databases under monitoring 
+    - A clear identification of slow-performing queries 
+    - A record of all executed queries, providing an overview of the activity 
+    - The execution time for each query, allowing for performance analysis and optimization.
+
+5. If you want a comprehensive view of, say, your PostgreSQL databases being monitored, go to **Experimental > PostgreSQL Instance**.
+
+    [!image](../images/PMM_databases_overview_DB.png)
 
 
 ## Edit monitoring
