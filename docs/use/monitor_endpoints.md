@@ -61,7 +61,8 @@ Here’s how to monitor your databases using PMM:
 
     ![!image](../images/pmm_overview_dashboard_engine_type.png)
 
-    On this dashboard, you will find a graphical representation that highlights the following: 
+    On this dashboard, you will find a graphical representation that highlights the following:
+    
     - A comprehensive list of databases under monitoring 
     - A clear identification of slow-performing queries 
     - A record of all executed queries, providing an overview of the activity 
