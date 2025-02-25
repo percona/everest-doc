@@ -2,7 +2,7 @@
 
 Percona Everest provides monitoring capabilities with PMM to maintain a reliable and secure database infrastructure.
 
-Here are some key benefits you'll get with monitoring of Percona Everest:
+Here are some key benefits you’ll get from monitoring Percona Everest:
 
 - Database availability and uptime tracking
 - Insights into your database performance
@@ -11,11 +11,11 @@ Here are some key benefits you'll get with monitoring of Percona Everest:
 
 ## The concept of namespaces in monitoring
 
-When you assign namespaces to a monitoring instance, it only determines which databases are authorized to utilize that monitoring instance, you cannot monitor specific namespaces. 
+When you assign namespaces to a monitoring instance, it only determines which databases are authorized to utilize it; you cannot monitor specific namespaces. 
 
 Each database can only be monitored by one instance, which means that the metrics for the database are only available to that instance.
 
-When adding a new monitoring instance, the monitoring stack (kube-state-metrics and victoria-metrics) will automatically start pushing kubernetes metrics to that instance.
+When adding a new monitoring instance, the monitoring stack (kube-state-metrics and victoria-metrics) will automatically start pushing Kubernetes metrics to that instance.
 
 ## Prerequisites
 
@@ -36,7 +36,7 @@ To add monitoring in Percona Everest from the UI:
 
 3. Select the **namespaces** where the monitoring endpoint should be available.
 
-4. In the **Endpoint** field, enter the PMM URL. In the **User** and **Password** field, enter the credentials received upon installing PMM.
+4. In the **Endpoint** field, enter the PMM URL. Enter the credentials received upon installing PMM in the **User** and **Password** field.
 
     !!! warning
         When setting up a new monitoring instance, if your PMM instance uses a self-signed certificate, skip the **Verify TLS verification** checkbox.        
@@ -55,11 +55,11 @@ Here’s how to monitor your databases using PMM:
 
     ![!image](../images/pmm_dashboards_page.png)
 
-3. Go to **Experimental > Databases Overview** to access the **Database Overview** dashboard. In the following image you can see that two PostgreSQL databases are being monitored.
+3. Go to **Experimental > Databases Overview** to access the **Database Overview** dashboard. The following image shows that two PostgreSQL databases are monitored.
 
     ![!image](../images/PMM_databases_overview_dashboard.png)
 
-4. On the **Databases Overview** dashboard, you have the option to monitor a specific database. To do this, select the desired database's **Engine** from the drop-down menu.
+4. On the **Databases Overview** dashboard, you can monitor a specific database. To do this, select the desired database **Engine** from the drop-down menu.
 
     ![!image](../images/pmm_overview_dashboard_engine_type.png)
 
@@ -67,13 +67,14 @@ Here’s how to monitor your databases using PMM:
 
     - A comprehensive list of databases under monitoring 
     - A clear identification of slow-performing queries 
-    - A record of all executed queries, providing an overview of the activity 
-    - The execution time for each query, allowing for performance analysis and optimization.
 
-5. If you want a comprehensive view of, say, your PostgreSQL databases being monitored, go to <i class="uil uil-apps"></i> **Dashboards > Experimental > PostgreSQL Instance**.
+    - The execution time for each query
+
+    - A record of all executed queries, providing an overview of the activity. 
+
+5. For instance, to get a comprehensive view of your PostgreSQL databases being monitored, go to <i class="uil uil-apps"></i> **Dashboards > Experimental > PostgreSQL Instance**.
 
     ![!image](../images/PMM_databases_overview_DB.png)
-
 
 
 ## Edit monitoring endpoint
@@ -88,7 +89,7 @@ To edit a monitoring endpoint from the Percona Everest UI:
     ![!image](../images/everest_edit_ellipsis.png)
 
 
-3. Click **Edit**. The **Edit monitoring endpoint** dialogue box opens. Edit the information as per your requirement on this dialogue box.
+3. **Click Edit**. The **Edit monitoring endpoint** pop-up opens. In this dialogue box, edit the information as per your requirements.
 
      ![!image](../images/everest_endpoint_edit.png)
 
