@@ -93,7 +93,7 @@ Once you have successfully installed Percona Everest, proceed with the following
     ```
 
     !!! note
-        The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
+        The default admin password is stored in plain text. It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed.
 
     For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
 
