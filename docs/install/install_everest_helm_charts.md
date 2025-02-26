@@ -5,9 +5,10 @@
     
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
-This section explains how to install Percona Everest using [Helm](https://helm.sh/){:target="_blank"} as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
-Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
+
 
 ## Install Percona Everest and deploy database namespaces
 
@@ -122,7 +123,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 5. Deploy additional database namespaces:
 
-    Once Percona Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
+    Once Percona Everest runs successfully, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
 
     If you set `dbNamespaces.enabled=false` in **step 2**, you can deploy a database namespace with the following command:
 
@@ -134,7 +135,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
     ```
 
     !!! note
-        -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
+        -  All database operators are installed in your database namespace by default. You can override this by specifying one or more options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
         - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
 
 ## Configure parameters
@@ -149,7 +150,7 @@ A few parameters are listed in the following table. For a detailed list of the p
 |**Key**|**Type**|**Default**|**Description**|
 |------|---------|-----------|---------------|
 |`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
-|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to manually update the everest-settings `ConfigMap`.|
+|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to update the everest-settings `ConfigMap` manually.|
 
 
 **percona/everest-db-namespace subchart**
