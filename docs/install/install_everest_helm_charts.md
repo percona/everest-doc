@@ -5,7 +5,7 @@
     
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
-This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+This section explains how to install Percona Everest using [Helm](https://helm.sh/) as an alternative to `everestctl`. Helm charts simplify deployment by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest) repository in Github.
 
@@ -48,7 +48,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
+    The default `admin` password is stored in plain text. It is highly recommended that you update the password using `everestctl` to ensure that the passwords are hashed.
 
     To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
@@ -62,7 +62,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246): 
+        2. Retrieve the external IP address for the Everest service. This is the address where you can launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246): 
                 
             ```sh 
             kubectl get svc/everest -n everest-system
@@ -91,7 +91,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        3. Retrieve the external IP addresses for the kubernetes cluster nodes.
+        3. Retrieve the external IP addresses for the Kubernetes cluster nodes.
 
             ```sh
             kubectl get nodes -o wide
@@ -109,7 +109,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you can use any node IP specified in the above steps.
 
     === "Port Forwarding"
         Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
@@ -136,7 +136,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     !!! note
         -  All database operators are installed in your database namespace by default. You can override this by specifying one or more options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
-        - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
+        - Installation without chart hooks (i.e., the use of `--no-hooks`) is currently not supported.
 
 ## Configure parameters
 
@@ -149,8 +149,8 @@ A few parameters are listed in the following table. For a detailed list of the p
 
 |**Key**|**Type**|**Default**|**Description**|
 |------|---------|-----------|---------------|
-|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended to reset the admin password after installation.|
-|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to update the everest-settings `ConfigMap` manually.|
+|`server.initialAdminPassword`|string|""|Initial password configured for admin user.</br></br> If it is not set, a random password is generated. It is recommended that the admin password be reset after installation.|
+|`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you must manually update the everest-settings `ConfigMap` .|
 
 
 **percona/everest-db-namespace subchart**
