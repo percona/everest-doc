@@ -58,12 +58,24 @@ You can enable monitoring for your cluster while creating the database.
 
 4. Select the **Monitoring endpoint** from the drop down.
 
-5.  Click **Create Database**. This will enable monitoring for your database cluster.
+5.  Click **Create Database**. This will allow you to  monitor your database cluster.
 
+You can enable monitoring for your cluster even after the database has been created.
 
+To enable monitoring for your database cluster, follow these steps:
+{.power-number}
 
+1. Select the database cluster from the Percona Everest homepage to enable monitoring.
 
+2. Navigate to the **Overview** page and look for the **Monitoring** panel. Click on **Edit**.
 
+    ![!image](../images/enable_monitoring_existing_cluster.png)
+
+3. Turn on the **Enable monitoring** toggle.
+
+4. Select the **Monitoring endpoint** from the drop-down.
+
+5. Click **Save**. This will allow you to monitor your database cluster.
 
 ### Connect to PMM and monitor your databases
 
