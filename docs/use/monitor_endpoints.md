@@ -45,7 +45,11 @@ To add monitoring in Percona Everest from the UI:
 
 ### Enable monitoring
 
+#### Enable monitoring for a new cluster
+
 You can enable monitoring for your cluster while creating the database.
+
+To enable monitoring for your database cluster, follow these steps:
 {.power-number}
 
 1. From the Percona Everest Home page, click **Create Database**. The **Create Database** wizard opens.
@@ -59,6 +63,8 @@ You can enable monitoring for your cluster while creating the database.
 4. Select the **Monitoring endpoint** from the drop down.
 
 5.  Click **Create Database**. This will allow you to  monitor your database cluster.
+
+### Enable monitoring for an existing cluster
 
 You can enable monitoring for your cluster even after the database has been created.
 
@@ -108,6 +114,17 @@ Here’s how to monitor your databases using PMM:
 5. For instance, to get a comprehensive view of your PostgreSQL databases being monitored, go to <i class="uil uil-apps"></i> **Dashboards > Experimental > PostgreSQL Instance**.
 
     ![!image](../images/PMM_databases_overview_DB.png)
+
+6. To see a comprehensive list of all the pods in the cluster along with their respective CPU and RAM usage statistics, go to <i class="uil uil-apps"></i> **Dashboards > Experimental > DB Cluster Summary**. This provides insights into how your cluster performs and resources are allocated, enabling you to make informed decisions.
+
+    ![!image](../images/DB_summary_dashbaord_PMM.png)
+
+    If you're looking to dive deeper into the dashboard's features and functionality, check out the [PMM documentation](https://docs.percona.com/percona-monitoring-and-management//3/use/dashboards-panels/index.html).
+
+
+
+
+
 
 
 ## Edit monitoring endpoint
