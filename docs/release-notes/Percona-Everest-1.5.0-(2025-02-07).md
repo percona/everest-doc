@@ -38,8 +38,6 @@
 
     - [Enhanced IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
 
-    **Upgrade to Percona Everest today** to unlock RBAC for improved security and a more streamlined experience!
-
 === "RBAC with enhanced IdP"
 
     ### Streamlining RBAC with enhanced IdP group integration
@@ -70,7 +68,6 @@
     ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
     Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC operator v1.16.1.
-
 
 
 ## New features
