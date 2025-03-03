@@ -26,7 +26,7 @@
 
 === "RBAC GA"
 
-    ### RBAC now Generally Available (GA) in Percona Everest
+    ### RBAC now Generally Available (GA)
 
     We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
 
@@ -42,7 +42,7 @@
 
 === "RBAC with enhanced IdP"
 
-    ### Streamlining Role-Based Access Control with enhanced IdP group integration
+    ### Streamlining RBAC with enhanced IdP group integration
 
     Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you must set up the **groups** claim in your IdP provider configuration.
 
