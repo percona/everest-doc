@@ -6,7 +6,7 @@
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](#).
+➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "Release summary at a glance"
