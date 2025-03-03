@@ -69,7 +69,7 @@
 
     ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
-        Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC operator v1.16.1.
+    Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC operator v1.16.1.
 
 
 
