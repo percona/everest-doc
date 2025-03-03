@@ -169,7 +169,10 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 - PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to potential issues with point-in-time recovery on MongoDB 8.0 when sharding is enabled, the recommended MongoDB version is still 7.0.
 
-- When restoring a database with Point-in-Time Recovery (PITR), it does not allow changes to the time between the most recent successful backup and the latest PITR. The time is automatically reset to align with the latest PITR.
+- When restoring a database with Point-in-Time Recovery (PITR), it does not allow changes to the time between the most recent successful backup and the latest PITR if you type the date and time manually. The time is automatically reset to align with the latest PITR. However, it works as expected if you select the date and time from the date selector.
+
+
+
 
 
 
