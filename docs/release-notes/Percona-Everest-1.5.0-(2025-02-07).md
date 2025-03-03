@@ -15,7 +15,7 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
-??? info "🔑 Release updates at a glance"
+??? info "🔑 Updates at a glance"
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
