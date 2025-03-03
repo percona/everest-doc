@@ -17,7 +17,7 @@
 
 ??? info "🔑 Updates at a glance"
 
-    |**Sr. No**|**Release summary**|**Description**|
+    |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
     | **1.**|[Role-based access control (RBAC) Generally Available (GA)](#role-based-access-control-rbac-now-generally-available-ga-in-percona-everest)|RBAC is now GA with Percona Everest 1.5.0 |
     | **2.**|[RBAC: Integration with IdP groups](#streamlining-role-based-access-control-with-enhanced-idp-group-integration)|Assign RBAC policies to user groups obtained from an external IdP|
@@ -34,7 +34,7 @@
 
     ### Percona Everest: RBAC is now GA
 
-    We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
+    We’re delighted to announce the General Availability of RBAC in Percona Everest 1.5.0.
 
     With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
