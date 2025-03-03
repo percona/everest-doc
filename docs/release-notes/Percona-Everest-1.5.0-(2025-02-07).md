@@ -24,9 +24,9 @@
 
 ## Release highlights
 
-=== RBAC GA
+=== "RBAC GA"
 
-    ### Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
+    ### RBAC now Generally Available (GA) in Percona Everest
 
     We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
 
@@ -40,7 +40,7 @@
 
     **Upgrade to Percona Everest today** to unlock RBAC for improved security and a more streamlined experience!
 
-=== RBAC with enhanc ed IdP
+=== "RBAC with enhanced IdP"
 
     ### Streamlining Role-Based Access Control with enhanced IdP group integration
 
@@ -65,7 +65,7 @@
     To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
 
 
-=== Operators support
+=== "Operators support"
 
     ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
