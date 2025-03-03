@@ -182,7 +182,7 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 ## :rocket: Upgrade now
 
-Upgrade to **Percona Everest 1.5.0** to access these new features and improvements! Our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) provides upgrade steps.
+Upgrade to **Percona Everest 1.5.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
 
 
 
