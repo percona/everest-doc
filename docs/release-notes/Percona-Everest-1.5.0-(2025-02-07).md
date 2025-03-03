@@ -8,6 +8,8 @@
 
 To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quick-install.md).
 
+➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](#).
+
 
 ??? info "Release summary at a glance"
 
