@@ -62,7 +62,7 @@
     |**email**|Grants access to the user’s email address and its verification status.|
         |**groups**|Grants access to obtain information about the user’s group memberships.|
 
-    To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
+    :mag: To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
 
 
 === "Operators support"
