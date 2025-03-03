@@ -26,7 +26,7 @@
 
 === "RBAC GA"
 
-    ### RBAC now Generally Available (GA)
+    ### Percona Everest: RBAC is now GA
 
     We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
 
