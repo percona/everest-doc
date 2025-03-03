@@ -6,8 +6,6 @@
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quick-install.md).
-
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](#).
 
 
@@ -26,50 +24,54 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ## Release highlights
 
-### Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
+=== RBAC GA
 
-We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
+    ### Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
 
-With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
+    We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
 
-- [Granular access management](https://docs.percona.com/everest/administer/rbac.html): Allocate roles with detailed permissions to ensure precise access control.
+    With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
-- [Enhanced security](https://docs.percona.com/everest/administer/Idp_integration.html): Restrict access to authorized users and teams only.
+    - [Granular access management](https://docs.percona.com/everest/administer/rbac.html): Allocate roles with detailed permissions to ensure precise access control.
 
-- [Enhanced IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
+    - [Enhanced security](https://docs.percona.com/everest/administer/Idp_integration.html): Restrict access to authorized users and teams only.
 
-**Upgrade to Percona Everest today** to unlock RBAC for improved security and a more streamlined experience!
+    - [Enhanced IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
 
-### Streamlining Role-Based Access Control with enhanced IdP group integration
+    **Upgrade to Percona Everest today** to unlock RBAC for improved security and a more streamlined experience!
 
-Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you must set up the **groups** claim in your IdP provider configuration.
+=== RBAC with enhanc ed IdP
+
+    ### Streamlining Role-Based Access Control with enhanced IdP group integration
+
+    Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you must set up the **groups** claim in your IdP provider configuration.
 
 
-Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html)
+    Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html)
 
-To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
+    To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
        everestctl settings oidc configure --issuer-url=http://url.com --client-id=<your-app-client-id> --scopes openid,profile,email,groups
 
-Take a look at the descriptions of the various fields in the table below:
+    Take a look at the descriptions of the various fields in the table below:
 
- **Field**|**Description**|
- |--------|---------------|
- |**openid**|Grants access to the user’s identity, which is necessary for OIDC flows to issue an ID token with a unique identifier (subject **sub**).|
-  |**profile**|Grants access to basic profile information.|
-  |**email**|Grants access to the user’s email address and its verification status.|
-    |**groups**|Grants access to obtain information about the user’s group memberships.|
+    **Field**|**Description**|
+    |--------|---------------|
+    |**openid**|Grants access to the user’s identity, which is necessary for OIDC flows to issue an ID token with a unique identifier (subject **sub**).|
+    |**profile**|Grants access to basic profile information.|
+    |**email**|Grants access to the user’s email address and its verification status.|
+        |**groups**|Grants access to obtain information about the user’s group memberships.|
 
-To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
+    To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
 
 
-### Operators support
+=== Operators support
 
-We have added support for 
+    ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
-- PXC v1.16.1
+        Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC operator v1.16.1.
 
-- PSMDB 1.19.1.
+
 
 ## New features
 
@@ -178,7 +180,9 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 - When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
 
+## :rocket: Upgrade now
 
+Upgrade to **Percona Everest 1.5.0** to access these new features and improvements! Our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) provides upgrade steps.
 
 
 
