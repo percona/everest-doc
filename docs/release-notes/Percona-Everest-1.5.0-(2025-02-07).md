@@ -91,7 +91,8 @@ We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 The `everestctl version` command has been updated to provide  information about the version of the Everest server currently installed on your system, if applicable. This enhancement enables you to quickly verify the server version that is in use.
 
 
-- [EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788),[EVEREST-1790](https://perconadev.atlassian.net/browse/EVEREST-1790): The `everestctl namespaces remove`, and `everestctl namespaces update` commands now show a help message that guides you on how to use them.
+- [EVEREST-1788](https://perconadev.atlassian.net/browse/EVEREST-1788), 
+ [EVEREST-1790](https://perconadev.atlassian.net/browse/EVEREST-1790): The `everestctl namespaces remove`, and `everestctl namespaces update` commands now show a help message that guides you on how to use them.
 
 
 - [EVEREST-1794](https://perconadev.atlassian.net/browse/EVEREST-1794): We have improved the description of the help text for the `--keep-namespace` flag in the `everestctl namespaces remove` command. Previously, the flag did not clearly explain that it retains the namespace in Kubernetes while only removing `everest-managed` resources, which led to confusion.
@@ -169,7 +170,7 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 - PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to potential issues with point-in-time recovery on MongoDB 8.0 when sharding is enabled, the recommended MongoDB version is still 7.0.
 
-- When restoring a database with Point-in-Time Recovery (PITR), it does not allow changes to the time between the most recent successful backup and the latest PITR if you type the date and time manually. The time is automatically reset to align with the latest PITR. However, it works as expected if you select the date and time from the date selector.
+- When restoring a database using Point-in-Time Recovery (PITR), you cannot manually change the time between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
 
 
 
