@@ -26,7 +26,7 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
 
 ### Role-based access control (RBAC) now Generally Available (GA) in Percona Everest
 
-We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0!
+We’re delighted to unlock the GA of RBAC in Percona Everest 1.5.0.
 
 With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
@@ -63,7 +63,11 @@ To explore further, dive into our [documentation](https://docs.percona.com/evere
 
 ### Operators support
 
-We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
+We have added support for 
+
+- PXC v1.16.1
+
+- PSMDB 1.19.1.
 
 ## New features
 
@@ -168,9 +172,9 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 ## Known limitations
 
-- PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to potential issues with point-in-time recovery on MongoDB 8.0 when sharding is enabled, the recommended MongoDB version is still 7.0.
+- PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
 
-- When restoring a database using Point-in-Time Recovery (PITR), you cannot manually change the time between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
+- When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
 
 
 
