@@ -75,7 +75,7 @@ We have added support for the operators PXC v1.16.1 and PSMDB 1.19.1.
 
 - [EVEREST-1884](https://perconadev.atlassian.net/browse/EVEREST-1884): We have added support for PSMDB operator v1.19.1.
 
-- (EVEREST-689)[https://perconadev.atlassian.net/browse/EVEREST-689]: We have added a new option to hide and unhide the password in the password form field on the login page.
+- [EVEREST-689](https://perconadev.atlassian.net/browse/EVEREST-689): We have added a new option to hide and unhide the password in the password form field on the login page.
 
 
 ## Improvements
