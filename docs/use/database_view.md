@@ -50,7 +50,7 @@ The Overview tab provides a comprehensive view of all the essential database det
 
 The Components page offers comprehensive information about pods and containers. Here, you can find everything you need to know, including their current status, types, age, and various other attributes, helping you gain a deep understanding of their functions and performance.
 
-   ![!image](../imageseverest_components_page.png)
+   ![!image](../images/everest_components_page.png)
 
 ## Backups
 
