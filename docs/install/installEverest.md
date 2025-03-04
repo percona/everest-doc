@@ -7,14 +7,15 @@
 
 ## Before you start
 
-!!! info "Important"
-    If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
-
 Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
     
 ```sh
 export KUBECONFIG=~/.kube/config
 ```
+
+!!! info "Important"
+    If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
+
 
 ## Install Percona Everest
 
