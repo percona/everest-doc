@@ -144,7 +144,7 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 
 - [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758): The **Create Database** button on the UI was inaccessible until the page was manually refreshed after adding a namespace using the `everestctl namespaces add` command. The issue has been resolved now.
 
-- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): Installation fails if Percona Everest 1.3.0 release CLI is used to install 1.4.0.
+- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): We have added a mechanism to prevent a given CLI version from installing incompatible Percona Everest versions.
 
 - [EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735): We have fixed an issue where incorrect information appeared on the **PITR Edit** button when PITR was enabled.
 
