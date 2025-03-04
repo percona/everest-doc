@@ -149,6 +149,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.5.0 (2025-02-07): release-notes/Percona-Everest-1.5.0-(2025-02-07).md
       - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
       - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
       - Percona-Everest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
@@ -191,6 +192,7 @@ nav:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
+      - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
   - Use:

@@ -11,7 +11,7 @@ Helm simplifies the installation of Percona Everest. With this guide, you'll be 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
-    If you prefer an alternative method, you can [install Percona Everest using the CLI](install/installEverest.md).
+    If you prefer an alternative method, you can [install Percona Everest using everestctl](install/installEverest.md).
 
 ## Prerequisites
 
@@ -80,6 +80,7 @@ To install Percona Everest using Helm follow these steps:
     !!! note
         - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
         - If `dbNamespace.enabled=false` is set, no namespaces will be provisioned. You can provision namespaces later with the `everestctl namespaces add <NAMESPACE>` command.
+        - If you installed Percona Everest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
 
 ## Post-installation steps
 
