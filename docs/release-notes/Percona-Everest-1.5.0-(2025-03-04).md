@@ -23,7 +23,7 @@
     | **2.**|[RBAC: Integration with IdP groups](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
     | **3.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
     | **4.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
-    | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements|Discover all the enhancements featured in Percona Everest 1.5.0|
+    | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
     | **6.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.5.0|
     | **7.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.5.0|
 
@@ -51,7 +51,7 @@
     Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you must set up the **groups** claim in your IdP provider configuration.
 
 
-    Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html)
+    Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
 
     To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
