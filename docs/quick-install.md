@@ -24,9 +24,9 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 Before getting started with Percona Everest, do the following:
 {.power-number}
 
-1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm).
+1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm){:target="_blank"}.
 
-4. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq).
+4. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq){:target="_blank"}.
 
 4. Set up a Kubernetes cluster.
      
@@ -35,8 +35,8 @@ Before getting started with Percona Everest, do the following:
         Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
        We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
-   
-      [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
+         
+      [Create EKS cluster :material-arrow-right:](install/eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](install/gke.md){.md-button}
 
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
 

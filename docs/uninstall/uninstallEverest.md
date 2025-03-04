@@ -22,7 +22,7 @@ To uninstall Percona Everest, follow these steps:
     everestctl uninstall
     ```
 
-2. Remove the unused [Custom Resource Definitions (CRDs)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/).
+2. Remove the unused [Custom Resource Definitions (CRDs)](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/){:target="_blank"}.
 
     !!! caution alert alert-warning "warning"
 
@@ -38,9 +38,9 @@ During the installation of Everest, the following operators are installed:
 
 Besides the operators mentioned above, you must have installed at least one of the following operators.
     
-- [Percona Operator for MySQL(PXC)](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html)
-- [Percona Operator for MongoDB(PSMDB)](https://docs.percona.com/percona-operator-for-mongodb/index.html)
-- [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html)
+- [Percona Operator for MySQL(PXC)](https://docs.percona.com/percona-operator-for-mysql/pxc/index.html){:target="_blank"}
+- [Percona Operator for MongoDB(PSMDB)](https://docs.percona.com/percona-operator-for-mongodb/index.html){:target="_blank"}
+- [Percona Operator for PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/index.html){:target="_blank"}
 
     
 ### List of CRDs for the operators
