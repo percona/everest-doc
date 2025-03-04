@@ -13,6 +13,10 @@ Before running the commands in the **Installation** section, note that Everest w
 export KUBECONFIG=~/.kube/config
 ```
 
+!!! info "Important"
+    If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
+
+
 ## Install Percona Everest
 
 !!! info "Important"

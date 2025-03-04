@@ -42,6 +42,9 @@ We are developing a new feature that will allow you to modify these settings dir
 
     2. Delete the finalizer called `delete-pods-in-order`.
 
+- When you delete a PostgreSQL (PG) cluster, the associated backup files will not be automatically removed from S3. Instead, these files will remain in S3 storage. Therefore, you need to manually delete any backup files that you no longer need.
+
+
 ## Upgrading operators
 
 - When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the **Initializing** state as part of the upgrade process. However, this **Initializing** state does not cause any downtime.
