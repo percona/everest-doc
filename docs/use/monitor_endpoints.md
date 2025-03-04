@@ -3,7 +3,7 @@
 Percona Everest provides monitoring capabilities with PMM to maintain a reliable and secure database infrastructure.
 
 !!! caution alert alert-warning "Important"
-    Currently, only PMM v2.x is supported. The support for PMM v3.x is going to be added in the future releases
+    PMM v2.x is currently supported. Support for PMM v3.x is planned for future releases.
 
 Here are some key benefits you'll get with monitoring of Percona Everest:
 
