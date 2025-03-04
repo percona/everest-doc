@@ -35,7 +35,7 @@ To create the EKS cluster, do the following steps:
             and [spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances in the total number of nodes.
 
     !!! note
-        [Spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances are not recommended for production environment but may be useful for testing purposes.
+        [Spot](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html){:target="_blank"} instances are not recommended for production environments but may be useful for testing.
 
 2. **Create Your EKS Cluster**
 
@@ -53,7 +53,7 @@ To create the EKS cluster, do the following steps:
     * **vpc-private-subnets**: The private subnets where the nodes will be deployed.
     * **without-nodegroup**: Creates the cluster without a default node group. You will add nodes later.
 
-    For more detailed options and instructions, refer to the official [EKS cluster creation documentation](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html){:target="_blank"}.
+    Refer to the official [EKS cluster creation documentation](https://docs.aws.amazon.com/eks/latest/userguide/create-cluster.html){:target="_blank"} for more detailed options and instructions.
 
 3. Install the [Amazon EBS CSI](https://docs.aws.amazon.com/eks/latest/userguide/ebs-csi.html){:target="_blank"} driver on your cluster.
 

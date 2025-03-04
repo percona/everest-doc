@@ -8,7 +8,7 @@ Before getting started with Percona Everest, we recommend that you:
 
 2. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq) to install Percona Everest using Helm.
 
-3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
+3. Verify that you can access the Kubernetes cluster you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
 
     ```sh
     kubectl get nodes
@@ -36,9 +36,9 @@ You can install Percona Everest using one of the following methods:
 Once you’ve installed Percona Everest, you can easily log into the Percona Everest UI by following the setup instructions in the next section.
 
 !!! important
-    Percona Everest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a publicly accessible Kubernetes cluster.
+    Percona Everest assists with installing all the necessary operators and packages but does not currently help spin up a publicly accessible Kubernetes cluster.
 
-We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE). Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.
+We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE). Due to network issues, Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products).
    
 [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
 

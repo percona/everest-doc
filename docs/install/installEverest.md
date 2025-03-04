@@ -28,7 +28,7 @@ export KUBECONFIG=~/.kube/config
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
+1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. See [CLI installation documentation](../install/installEverestCLI) for detailed installation instructions.
 
 2. You can install Percona Everest using either the wizard or the headless mode.
 
@@ -39,7 +39,7 @@ To install and provision Percona Everest to Kubernetes:
             ```
             everestctl install --skip-db-namespace
             ```
-        To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
+        To explore namespace management in detail, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
     - **Install Percona Everest using the wizard**
@@ -61,7 +61,7 @@ To install and provision Percona Everest to Kubernetes:
     - **Install Percona Everest using the headless mode**
         {.power-number}
 
-        1. Run the following command. You can set multiple namepaces in the headless mode. Replace `<namespace-name>` with the desired name for your namespace.
+        1. Run the following command. You can set multiple namespaces in the headless mode. Replace `<namespace-name>` with the desired name for your namespace.
             ```sh
             everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.xtradb-cluster=true --skip-wizard
             ```
@@ -91,7 +91,7 @@ To install and provision Percona Everest to Kubernetes:
     To access detailed information about user management, see the [Manage users in Percona Everest](../administer/manage_users.md) section.
 
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+4. Access the Percona Everest UI/API using one of the following options for exposing it, as Percona Everest is not exposed with an external IP by default:
 
     === "Load Balancer"
 
@@ -101,7 +101,7 @@ To install and provision Percona Everest to Kubernetes:
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246): 
+        2. Retrieve the external IP address for the Everest service. This is the address where you can launch Percona Everest at the end of the installation procedure. In this example, the external IP address is [http://34.175.201.246](http://34.175.201.246): 
                 
             ```sh 
             kubectl get svc/everest -n everest-system
@@ -130,7 +130,7 @@ To install and provision Percona Everest to Kubernetes:
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        3. Retrieve the external IP addresses for the kubernetes cluster nodes.
+        3. Retrieve the external IP addresses for the Kubernetes cluster nodes.
 
             ```sh
             kubectl get nodes -o wide
