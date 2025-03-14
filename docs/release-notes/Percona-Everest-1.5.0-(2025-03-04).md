@@ -176,11 +176,11 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 - All versions of Percona Everest prior to 1.4.0 depend on images hosted on Google Container Registry, meaning that downloading those images will fail after the shutdown date (March 18, 2025).
 
-**Action required** 
+    **Action required** 
 
-We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    To prevent Percona Everest from becoming inoperable, an urgent upgrade to version 1.4.0 or later is required.
     
-For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 - PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
 
