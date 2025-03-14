@@ -3,14 +3,7 @@
 !!! info "Important"
     **Google Container Registry (GCR) Deprecation**
 
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-    **Action required** 
-
-    We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
+    Google Container Registry (GCR) is set to be deprecated, with its official shutdown scheduled for March 18, 2025. For more details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations) section.
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
@@ -180,6 +173,14 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 
 ## Known limitations
+
+- All versions of Percona Everest prior to 1.4.0 depend on images hosted on Google Container Registry, meaning that downloading those images will fail after the shutdown date (March 18, 2025).
+
+**Action required** 
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    
+For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 - PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
 
