@@ -1,7 +1,7 @@
 # What's new in Percona Everest 1.5.0
 
 !!! info "Important"
-    **Google Container Registry** (GCR) is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**. For more details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations) section.
+    **Google Container Registry** (GCR) is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**. For more details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations#) section.
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
@@ -172,17 +172,24 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 ## Known limitations
 
-- All versions of Percona Everest prior to 1.4.0 depend on images hosted on Google Container Registry, meaning that downloading those images will fail after the shutdown date (March 18, 2025).
+### GCR deprecation
 
-    **Action required** 
+All versions of Percona Everest prior to 1.4.0 depend on images hosted on Google Container Registry, meaning that downloading those images will fail after the shutdown date (March 18, 2025).
 
-    We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+**Action required** 
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
-- PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
 
-- When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
+### Issues with PITR on MongoDB 8.0
+
+PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
+
+### PITR: Manual time entry issues
+
+When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
 
 ## :rocket: Upgrade now
 
