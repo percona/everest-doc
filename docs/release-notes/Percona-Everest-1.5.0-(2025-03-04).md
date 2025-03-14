@@ -195,7 +195,7 @@ PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, du
 
 Use MongoDB version 7.0.
 
-### PITR: Manual time entry issues
+### PITR: Manual time entry limitation
 
 When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. 
 
