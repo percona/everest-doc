@@ -1,7 +1,7 @@
 # What's new in Percona Everest 1.5.0
 
 !!! info "Important"
-    **Google Container Registry** (GCR) is set to be **deprecated**, with its official shutdown scheduled for March 18, 2025. For more details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations) section.
+    **Google Container Registry** (GCR) is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**. For more details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations) section.
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
