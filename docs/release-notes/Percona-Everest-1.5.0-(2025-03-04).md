@@ -178,7 +178,7 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
     **Action required** 
 
-    To prevent Percona Everest from becoming inoperable, an urgent upgrade to version 1.4.0 or later is required.
+    We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
