@@ -75,10 +75,9 @@ All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Co
 
 Percona Everest versions older than 1.4.0 will cease to function after this date.
 
-## Action required
+### Action required
 
-!!! info "Important"
-    We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
 For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
