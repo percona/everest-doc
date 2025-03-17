@@ -65,6 +65,7 @@ To install and provision Percona Everest to Kubernetes:
             ```sh
             everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
             ```
+            
             !!! note
                 The flag `--operator.xtradb-cluster` has been **deprecated** and will be removed in the subsequent releases. While it will continue to function for now,  users will receive a warning message asking them to use `--operator.mysql` instead.
 
