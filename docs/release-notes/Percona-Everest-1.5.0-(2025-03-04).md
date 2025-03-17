@@ -10,7 +10,7 @@
     | **1.**|[Role-based access control (RBAC) Generally Available (GA)](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with Percona Everest 1.5.0 |
     | **2.**|[RBAC: Integration with IdP groups](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
     | **3.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
-    | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR Starting **March 18, 2025**|
+    | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **March 18, 2025**|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
     | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.5.0|
