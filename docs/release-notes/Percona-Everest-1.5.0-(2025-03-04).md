@@ -68,8 +68,9 @@
 ## Google Container Registry (GCR)
 
 
-!!! warning "~~GCR will be deprecated~~"
+!!! warning "GCR will be deprecated"
     GCR is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**.
+    
     All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **March 18, 2025**.
 
 ### Impact of GCR deprecation
