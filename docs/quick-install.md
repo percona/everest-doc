@@ -1,17 +1,5 @@
 # Percona Everest quick install guide
 
-!!! warning
-    **Google Container Registry (GCR) Deprecation**
-
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-    **Action required** 
-
-    We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
-
 Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
@@ -60,6 +48,15 @@ Before getting started with Percona Everest, do the following:
         gke-<name>-default-pool-75d48bfc-c2df   Ready    <none>   11h   v1.26.7-gke.500
         gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
         ```
+
+## Google Container Registry (GCR) deprecation
+
+!!! info "Important"
+    [Google Container Registry (GCR) is scheduled to be deprecated](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
+
+**Action required**
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
 
 ## Install Percona Everest
 
