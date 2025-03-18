@@ -1,17 +1,5 @@
 # What's new in Percona Everest 1.5.0
 
-!!! warning
-    **Google Container Registry (GCR) Deprecation**
-
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-    **Action required** 
-
-    We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
-
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
@@ -22,10 +10,11 @@
     | **1.**|[Role-based access control (RBAC) Generally Available (GA)](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with Percona Everest 1.5.0 |
     | **2.**|[RBAC: Integration with IdP groups](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
     | **3.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
-    | **4.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
-    | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
-    | **6.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.5.0|
-    | **7.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.5.0|
+    | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **March 18, 2025**|
+    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
+    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
+    | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.5.0|
+    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.5.0|
 
 
 ## Release highlights
@@ -76,6 +65,23 @@
     ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
     Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC Operator v1.16.1.
+
+## Google Container Registry (GCR)
+
+!!! warning "GCR deprecation"
+    GCR is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**.
+
+    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **March 18, 2025**.
+
+### Impact of GCR deprecation
+
+Percona Everest versions older than 1.4.0 will cease to function after this date.
+
+### Action required
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    
+For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
 ## New features
@@ -181,9 +187,21 @@ We have fixed an issue that prevented users from editing or adding monitoring to
 
 ## Known limitations
 
-- PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
+### Issues with PITR on MongoDB 8.0
 
-- When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. However, if you select the date and time using the date picker, it works as expected.
+PSMDB Operator version 1.19.1 added support for MongoDB version 8.0. However, due to **potential issues with point-in-time recovery on MongoDB 8.0** when sharding is enabled, the recommended MongoDB version is still 7.0.
+
+**Action required**
+
+Use MongoDB version 7.0.
+
+### PITR: Manual time entry limitation
+
+When restoring a database using Point-in-Time Recovery (PITR), you **cannot manually change the time** between the most recent successful backup and the latest PITR. If you attempt to enter the date and time manually, the system will automatically reset it to align with the latest PITR. 
+
+**Action required**
+
+Use the date picker to select the desired date and time for PITR restore.
 
 ## :rocket: Upgrade now
 
