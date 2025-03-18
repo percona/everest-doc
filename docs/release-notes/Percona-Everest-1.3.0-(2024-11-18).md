@@ -11,7 +11,7 @@
     | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
     | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
     | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in Percona Everest|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **March 18, 2025**| 
+    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
     | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
     | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
     | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.3.0|
@@ -82,7 +82,7 @@
 ## Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
-    GCR is set to be **deprecated**, with its official shutdown scheduled for **March 18, 2025**.
+    GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
 
     All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **March 18, 2025**.
 
