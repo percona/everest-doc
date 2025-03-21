@@ -1,12 +1,6 @@
 # What's new in Percona Everest 1.3.0
 
-!!! warning
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
-
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "Release summary at a glance"
@@ -17,11 +11,12 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
     | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
     | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in Percona Everest|
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
-    | **7.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.3.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.3.0|
-    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
+    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
+    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.3.0|
+    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.3.0|
+    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
 
 
 ## Release highlights
@@ -82,6 +77,22 @@ To begin your journey with Percona Everest, check out the [Quickstart Guide for 
     ### Support for PSMDB Operator v1.17.0
 
     Starting with Percona Everest 1.3.0, we are thrilled to announce that we have added support for PSMDB Operator v1.17.0.
+
+
+## Google Container Registry (GCR)
+
+!!! warning "GCR deprecation"
+    GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
+
+    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+
+### Impact of GCR deprecation
+
+Percona Everest versions older than 1.4.0 will cease to function after this date.
+
+### Action required
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
 
 ## New features
 
