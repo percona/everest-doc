@@ -43,15 +43,15 @@ kubectl describe storageclass <your-storage-class>
 To modify storage capacity, follow these steps:
 {.power-number}
 
-1. Go to the **Overview** page for your database.
+1. From the Percona Everest homepage, go to the **Overview** page for your database.
 
-2. In the Resources panel, click **Edit**. Click **Edit**. The **Edit Topology** pop-up will be displayed.
+2. In the Resources panel, click **Edit**. The **Edit Topology** pop-up will be displayed.
 
 3. Under **Resource size per node**, find the **DISK** field. 
 
 4. Update the disk value (in Gi) to the new desired capacity.
 
-4. Click **Save**.
+5. Click **Save**.
 
 !!! note
     Disk size can only be increased. Decreasing the disk is not supported to protect data integrity.
