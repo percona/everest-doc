@@ -30,7 +30,7 @@ kubectl get storageclass
 kubectl describe storageclass <your-storage-class>
 ```
 
-??? example "Expected output"
+??? example "StorageClass that supports volume expansion"
     ```
         apiVersion: storage.k8s.io/v1
     kind: StorageClass
