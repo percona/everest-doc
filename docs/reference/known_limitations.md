@@ -24,12 +24,12 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Manual storage scaling
 
-In Percona Everest, manually scaling storage does not check resource quotas before expanding a volume. If the requested storage exceeds the quota, the PVC resize fails, and the database remains in the **Resizing Volumes** state.
+When manually scaling storage in Percona Everest, resource quotas are not automatically validated during the volume expansion process. If the requested storage exceeds the defined quota, the PVC resize operation will fail, leaving the database in the **Resizing Volumes** state.
 
-Ensure to check your namespace's resource quotas before resizing:
+To avoid such issues, ensure you verify your namespace's resource quotas before initiating a resize:
 
 ```sh
-kubectl get resourcequota -n <namespace>
+kubectl describe quota <resource-quota-name> -n <namespace>
 ```
 
 ## Databases
