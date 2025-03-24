@@ -4,7 +4,7 @@
 
 You can increase the capacity of your S3-compatible storage through manual storage scaling. This is done by either adjusting existing resources or allocating new ones. This feature gives you precise control over your storage to accommodate increasing data demands.
 
-In the Kubernetes environment used by Percona Everest, storage is managed using Persistent Volumes (PVs) and Persistent Volume Claims (PVCs). Manual scaling involves adjusting the underlying PV resources to meet the demands specified in the PVC.
+In the Kubernetes environment used by Percona Everest, storage is managed using **Persistent Volumes (PVs)** and **Persistent Volume Claims (PVCs)**. Manual scaling involves adjusting the underlying PV resources to meet the demands specified in the PVC.
 
 For detailed information on PVs and PVCs, refer to the official [Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
 
@@ -14,7 +14,7 @@ While you can adjust CPU and memory allocations for your databases, the disk siz
 
 ## Prerequisites
 
-When scaling storage manually for a database managed by Percona Everest in a Kubernetes cluster, ensure that the StorageClass used by the database's PersistentVolumeClaim (PVC) supports volume expansion.
+When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's PersistentVolumeClaim (PVC) supports **volume expansion**.
 
 !!! note
     In Kubernetes, manual disk scaling only works if the associated `StorageClass` has the following setting:
@@ -30,7 +30,7 @@ kubectl get storageclass
 kubectl describe storageclass <your-storage-class>
 ```
 
-??? example "StorageClass that supports volume expansion"
+??? example "Expected output"
     ```
         apiVersion: storage.k8s.io/v1
     kind: StorageClass
@@ -45,13 +45,18 @@ kubectl describe storageclass <your-storage-class>
 To modify storage capacity, follow these steps:
 {.power-number}
 
-1. From the **Overview** page, navigate to the **Resources** panel.
+1. Go to the **Overview** page for your database.
 
-2. Click **Edit**. The **Edit Topology** pop-up will be displayed.
+2. In the Resources panel, click **Edit**. Click **Edit**. The **Edit Topology** pop-up will be displayed.
 
-3. In the **Resource size per node** section, find the **DISK** field. Modify the disk value (in Gi ) to the desired capacity.
+3. Under **Resource size per node**, find the **DISK** field. 
+
+4. Update the disk value (in Gi) to the new desired capacity.
 
 4. Click **Save**.
+
+!!! note
+    Disk size can only be increased. Decreasing the disk is not supported to protect data integrity.
 
 
 
