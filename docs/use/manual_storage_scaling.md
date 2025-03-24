@@ -4,7 +4,7 @@ You can increase the capacity of your S3-compatible storage through manual stora
 
 ## Addressing the fixed Disk size constraint
 
-While you can adjust CPU and memory allocations for your databases, the disk size is fixed after the initial database provisioning. This enhancement allows you to manage expanding database workloads effectively while maintaining system stability and robust data security.
+While you can adjust CPU and memory allocations for your databases, the disk size is fixed after the initial database provisioning. This enhancement allows you to manage expanding database workloads effectively while maintaining system stability and data security.
 
 In the Kubernetes environment used by Percona Everest, storage is managed using **Persistent Volumes (PVs)** and **Persistent Volume Claims (PVCs)**. Manual scaling involves adjusting the underlying PV resources to meet the demands specified in the PVC.
 
