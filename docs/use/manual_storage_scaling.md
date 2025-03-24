@@ -35,16 +35,10 @@ kubectl describe storageclass <your-storage-class>
         apiVersion: storage.k8s.io/v1
     kind: StorageClass
     metadata:
-    name: expandable-storage
-    provisioner: kubernetes.io/aws-ebs
-    allowVolumeExpansion: true
+        name: expandable-storage
+        provisioner: kubernetes.io/aws-ebs
+        allowVolumeExpansion: true
     ```
-
-
-
-
-
-
 
 ## Editing storage capacity
 
@@ -55,7 +49,7 @@ To modify storage capacity, follow these steps:
 
 2. Click **Edit**. The **Edit Topology** pop-up will be displayed.
 
-3. In the **Resource size per node** section, find the **DISK** field. Modify the disk value to the desired capacity.
+3. In the **Resource size per node** section, find the **DISK** field. Modify the disk value (in ) to the desired capacity.
 
 4. Click **Save**.
 
