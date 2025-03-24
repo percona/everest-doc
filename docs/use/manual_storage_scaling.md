@@ -8,11 +8,11 @@ While you can adjust CPU and memory allocations for your databases, the disk siz
 
 In the Kubernetes environment used by Percona Everest, storage is managed using **Persistent Volumes (PVs)** and **Persistent Volume Claims (PVCs)**. Manual scaling involves adjusting the underlying PV resources to meet the demands specified in the PVC.
 
-For detailed information on PVs and PVCs, refer to the official [Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
+For detailed information on PVs and PVCs, refer to the official [Kubernetes documentation](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"}.
 
 ## Prerequisites
 
-- When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's PersistentVolumeClaim (PVC) supports **volume expansion**.
+- When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's **PersistentVolumeClaim (PVC)** supports **volume expansion**.
 
     !!! note
         In Kubernetes, manual disk scaling only works if the associated `StorageClass` has the following setting:
@@ -38,7 +38,7 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
             allowVolumeExpansion: true
         ```
 
-- Before scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota) allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
+- When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
 
 ## Editing storage capacity
 
