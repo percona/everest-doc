@@ -32,12 +32,12 @@ kubectl describe storageclass <your-storage-class>
 
 ??? example "Expected output"
     ```
-    apiVersion: storage.k8s.io/v1
-kind: StorageClass
-metadata:
-  name: expandable-storage
-provisioner: kubernetes.io/aws-ebs
-allowVolumeExpansion: true
+        apiVersion: storage.k8s.io/v1
+    kind: StorageClass
+    metadata:
+    name: expandable-storage
+    provisioner: kubernetes.io/aws-ebs
+    allowVolumeExpansion: true
     ```
 
 
