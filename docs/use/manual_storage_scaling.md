@@ -38,7 +38,7 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
             allowVolumeExpansion: true
         ```
 
-- Before scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota) allow the requested storage capacity.
+- Before scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota) allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
 
 ## Editing storage capacity
 
