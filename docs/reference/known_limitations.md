@@ -22,6 +22,15 @@ We are developing a new feature that will allow you to modify these settings dir
 
         On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
 
+## Manual storage scaling
+
+In Percona Everest, manually scaling storage does not check resource quotas before expanding a volume. If the requested storage exceeds the quota, the PVC resize fails, and the database remains in the **Resizing Volumes** state.
+
+Ensure to check your namespace's resource quotas before resizing:
+
+```sh
+kubectl get resourcequota -n <namespace>
+```
 
 ## Databases
 

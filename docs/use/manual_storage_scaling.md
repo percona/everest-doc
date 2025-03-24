@@ -12,31 +12,33 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 
 ## Prerequisites
 
-When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's PersistentVolumeClaim (PVC) supports **volume expansion**.
+- When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's PersistentVolumeClaim (PVC) supports **volume expansion**.
 
-!!! note
-    In Kubernetes, manual disk scaling only works if the associated `StorageClass` has the following setting:
+    !!! note
+        In Kubernetes, manual disk scaling only works if the associated `StorageClass` has the following setting:
+
+        ```sh
+        allowVolumeExpansion: true
+        ```
+
+    To verify if your storage class allows for volume expansion, execute the following command:
 
     ```sh
-    allowVolumeExpansion: true
+    kubectl get storageclass
+    kubectl describe storageclass <your-storage-class>
     ```
 
-To verify if your storage class allows for volume expansion, execute the following command:
+    ??? example "Expected output"
+        ```
+            apiVersion: storage.k8s.io/v1
+        kind: StorageClass
+        metadata:
+            name: expandable-storage
+            provisioner: kubernetes.io/aws-ebs
+            allowVolumeExpansion: true
+        ```
 
-```sh
-kubectl get storageclass
-kubectl describe storageclass <your-storage-class>
-```
-
-??? example "Expected output"
-    ```
-        apiVersion: storage.k8s.io/v1
-    kind: StorageClass
-    metadata:
-        name: expandable-storage
-        provisioner: kubernetes.io/aws-ebs
-        allowVolumeExpansion: true
-    ```
+- Before scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota) allow the requested storage capacity.
 
 ## Editing storage capacity
 
