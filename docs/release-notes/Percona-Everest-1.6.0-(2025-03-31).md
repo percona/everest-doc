@@ -62,3 +62,22 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 - [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): DB version upgrade modal should not allow to select the current version
 
 - [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): Add upgrading state
+
+
+## Bugs
+
+- [EVEREST-765](https://perconadev.atlassian.net/browse/EVEREST-765): PITR gets disabled after the database is Suspended and Resumed
+
+- [EVEREST-1350](https://perconadev.atlassian.net/browse/EVEREST-1350): Display IP address with netmask same as backend
+
+- [EVEREST-1374](https://perconadev.atlassian.net/browse/EVEREST-1374): Backup storage and monitoring ednpoint name restriction logic is not consistent
+
+- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): PITR options are not available on UI if there are no schedules
+
+- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763):  Editing the topology from 3 nodes to 1 node does not display any error
+
+- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): PG cluster initializing again and again \+ backups are failing, for a certain scenario
+
+- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Empty state briefly appears before first DB cluster is displayed
+
+- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): [UI] Custom number of nodes for PG is not visible properly in cluster overview
