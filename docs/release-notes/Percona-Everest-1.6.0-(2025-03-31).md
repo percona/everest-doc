@@ -16,6 +16,9 @@
 === "Manual Storage scaling"
 
 
+=== "MongoDB: Major DB upgrades"
+
+
 ## Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
@@ -45,4 +48,14 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 - [EVEREST-1843]: (https://perconadev.atlassian.net/browse/EVEREST-1843) Add support for PG operator v2.6.0
 
 - [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): \[UI\] Topology diagram view.
+
+## Improvements
+
+- [EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202): Remove focus state after the user clicks out \(table header icons\)
+
+- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): Move 'storage class' field to advanced configurations step
+
+- [EVEREST-1312](https://perconadev.atlassian.net/browse/EVEREST-1312): Installation log should display the same operator names as selected in the wizard
+
+- [EVEREST-1711](https://perconadev.atlassian.net/browse/EVEREST-1711): Remove final confirmation step from the wizard
 
