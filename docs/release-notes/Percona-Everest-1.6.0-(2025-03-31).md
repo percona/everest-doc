@@ -59,3 +59,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1711](https://perconadev.atlassian.net/browse/EVEREST-1711): Remove final confirmation step from the wizard
 
+- [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): DB version upgrade modal should not allow to select the current version
+
+- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): Add upgrading state
