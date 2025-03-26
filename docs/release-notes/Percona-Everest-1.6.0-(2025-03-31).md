@@ -23,7 +23,7 @@
 
     [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion - When scaling storage manually for a database managed by Percona Everest, ensure that the StorageClass used by the database’s PersistentVolumeClaim (PVC)supports volume expansion.
 
-    [resource quotas] (https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} fulfill the storage capacity - When scaling storage in Percona Everest, always verify that resource quotas allow the requested storage capacity. 
+    [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} fulfill the storage capacity - When scaling storage in Percona Everest, always verify that resource quotas allow the requested storage capacity. 
   
     For more information, see the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html#manual-storage-scaling) section.
 
