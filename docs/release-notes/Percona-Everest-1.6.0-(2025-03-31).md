@@ -21,9 +21,11 @@
     
     **Prerequisites before scaling**
 
-    -PersistentVolumeClaim (PVC) volume expansion - When scaling storage manually for a database managed by Percona Everest, ensure that the StorageClass used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
+    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the StorageClass used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
 
-    - **Resource quota check** - When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html#manual-storage-scaling) section.
+    - **Resource quota check** - Ensure that your [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow for the requested storage capacity.
+     
+    For more information, see the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html#manual-storage-scaling) section.
   
 
 === "MongoDB: Major DB upgrades"
