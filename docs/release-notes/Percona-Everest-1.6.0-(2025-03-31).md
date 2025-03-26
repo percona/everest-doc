@@ -17,9 +17,9 @@
 
     ### Maximizing Efficiency with manual storage scaling
 
-    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your **S3-compatible storage**. This feature enables you to manage your increasing database workloads while keeping data security and system stability at the forefront.
-
-    Before you scale your storage, ensure the following:
+    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your **S3-compatible storage**. This is particularly useful for handling unexpected workload growth and ensures you can manage increasing database demands while maintaining data security and system stability.
+    
+    **Prerequisites before scaling**
 
     **[PersistentVolumeClaim (PVC)] voulme expansion(https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"}** supports volume expansion - When scaling storage manually for a database managed by Percona Everest, ensure that the StorageClass used by the database’s PersistentVolumeClaim (PVC)supports volume expansion.
 
