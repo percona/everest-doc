@@ -13,9 +13,9 @@
 
 ## Release highlights
 
-=== "Manual Storage scaling"
+=== "Manual storage scaling"
 
-    Starting with Percona Everest 1.6.0, you can now  manually scale your the databases! This feature empowers you to expand your S3-compatible storage precisely when required. By leveraging this capability, you can effectively handle your expanding database workloads while prioritizing data security and maintaining system stability.
+    Starting with Percona Everest 1.6.0, you can now  manually scale up your the databases! This feature empowers you to expand your S3-compatible storage precisely when required. By leveraging this capability, you can effectively handle your expanding database workloads while prioritizing data security and maintaining system stability.
 
 
 === "MongoDB: Major DB upgrades"
