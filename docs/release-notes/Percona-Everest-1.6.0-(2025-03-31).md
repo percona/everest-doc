@@ -14,7 +14,19 @@
 ## Release highlights
 
 === "Manual storage scaling"
+
+    ### Maximizing Efficiency with manual storage scaling
+
     Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your **S3-compatible storage**. This feature enables you to manage your increasing database workloads while keeping data security and system stability at the forefront.
+
+    - When scaling storage manually for a database managed by Percona Everest, ensure that the StorageClass used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.
+
+    - When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html#manual-storage-scaling) section.
+
+
+
+
+
 
 === "MongoDB: Major DB upgrades"
 
