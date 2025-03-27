@@ -21,9 +21,9 @@
     
     **Prerequisites for storage scaling**
 
-    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
+    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.  Refer to the [Kubernetes documentation on Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} for more details.
 
-    - **Resource quota check** - Ensure that your [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow for the requested storage capacity.
+    - **Resource quota check** - Verify that your resource quotas allow for the requested in  storage capacity. See the Kubernetes documentation on [Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
 
     **How to modify storage capacity**
     
@@ -41,6 +41,13 @@
     ![!image](../images/database_upgrade.png)
     
     ![!image](../images/upgrade_database_versions.png)
+
+=== "Operators support"
+
+    ### Support for Percona Operator for PostgreSQL 2.6.0
+
+    Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
+
 
 ## Google Container Registry (GCR)
 
@@ -66,9 +73,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): DB major version upgrades for MongoDB
 
-- [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841) DB major version upgrades for MongoDB
-
-- [EVEREST-1843]: (https://perconadev.atlassian.net/browse/EVEREST-1843) Add support for PG operator v2.6.0
+- [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Add support for PG operator v2.6.0
 
 - [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): \[UI\] Topology diagram view.
 
