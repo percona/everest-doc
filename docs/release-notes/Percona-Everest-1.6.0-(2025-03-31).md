@@ -27,8 +27,7 @@
 
     **How to modify storage capacity**
     
-    To modify the storage capacity click **Overview >> Resources >> Edit** and enter the desired value for the **DISK** (in Gi).
-
+    From the Percona Everest home page select the specific database. Then, go to **Overview > Resources > Edit** and enter the desired value for the **DISK** (in Gi).
 
 === "MongoDB: Major database upgrades"
 
