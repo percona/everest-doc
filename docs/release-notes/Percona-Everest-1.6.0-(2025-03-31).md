@@ -21,7 +21,7 @@
     
     **Prerequisites for storage scaling**
 
-    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the StorageClass used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
+    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
 
     - **Resource quota check** - Ensure that your [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow for the requested storage capacity.
 
@@ -30,9 +30,9 @@
     To modify the storage capacity click **Overview >> Resources >> Edit** and enter the desired value for the **DISK** (in Gi).
 
 
+=== "MongoDB: Major database upgrades"
 
 
-=== "MongoDB: Major DB upgrades"
 
 
 
