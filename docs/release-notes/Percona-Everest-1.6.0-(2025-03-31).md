@@ -32,6 +32,10 @@
 
 === "MongoDB: Major database upgrades"
 
+    ### Seamless major version upgrades for MongoDB
+
+    Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your your applications remain secure, performant, and compliant with the latest MongoDB features.
+
 
 
 
