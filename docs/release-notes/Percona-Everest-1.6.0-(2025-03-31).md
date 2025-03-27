@@ -19,15 +19,23 @@
 
     Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your **S3-compatible storage**. This is particularly useful for handling unexpected workload growth and ensures you can manage increasing database demands while maintaining data security and system stability.
     
-    **Prerequisites before scaling**
+    **Prerequisites for storage scaling**
 
     - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the StorageClass used by the database’s [PersistentVolumeClaim (PVC)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} supports volume expansion.
 
     - **Resource quota check** - Ensure that your [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow for the requested storage capacity.
 
-        For more information, see the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html#manual-storage-scaling) section.
+    **How to modify storage capacity**
+    
+    To modify the storage capacity click **Overview >> Resources >> Edit** and enter the desired value for the **DISK** (in Gi).
+
+
+
 
 === "MongoDB: Major DB upgrades"
+
+
+
 
 
 ## Google Container Registry (GCR)
