@@ -118,9 +118,8 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763): When modifying the network topology by reducing the configuration from three nodes to a single node, no error message was displayed. This issue has now been resolved, and an error message now appears, indicating that downscaling is not possible.
 
+- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): Resolved an issue where the PostgreSQL cluster was repeatedly been initialized, leading to backup failures in specific scenarios.
 
-- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): PG cluster initializing again and again \+ backups are failing, for a certain scenario
+- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was dispalyed.
 
-- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Empty state briefly appears before first DB cluster is displayed
-
-- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): [UI] Custom number of nodes for PG is not visible properly in cluster overview
+- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): [UI]: Fixed a UI issue where the custom number of nodes for PG was not displaying correctly in the cluster overview.
