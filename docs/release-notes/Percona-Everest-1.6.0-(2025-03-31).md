@@ -30,7 +30,7 @@
     To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
 
 
-=== "MongoDB: Major database upgrades"
+=== "Major database upgrades"
 
     ### Seamless major version upgrades for MongoDB
 
