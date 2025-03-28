@@ -30,7 +30,7 @@
 
     - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.  Refer to the [Kubernetes documentation on Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} for more details.
 
-    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. See the Kubernetes documentation on [Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
+    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. See the [Kubernetes documentation on Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
 
     **How to modify storage capacity**
 
