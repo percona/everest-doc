@@ -26,8 +26,9 @@
     - **Resource quota check** - Verify that your resource quotas allow for the requested in  storage capacity. See the Kubernetes documentation on [Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
 
     **How to modify storage capacity**
-    
-    From the Percona Everest home page select the specific database. Then, go to **Overview > Resources > Edit** and enter the desired value for the **DISK** (in Gi).
+
+    To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
+
 
 === "MongoDB: Major database upgrades"
 
@@ -35,7 +36,7 @@
 
     Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your your applications remain secure, performant, and compliant with the latest MongoDB features.
 
-    To upgrade your MongoDB databases, go to Percona Everest homepage, navigate to **Overview**, select **Edit**, choose the desired database version, and then click **Upgrade**.
+    To upgrade your MongoDB databases, visit the Percona Everest homepage and select the database you want to upgrade. Go to the **Overview** page, click on **Edit**, choose the desired version, and then click **Upgrade**.
 
     ![!image](../images/database_upgrade.png)
     
