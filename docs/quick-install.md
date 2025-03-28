@@ -157,7 +157,7 @@ Once you have successfully installed Percona Everest, proceed with the following
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
 
 <!-- 
 [Monitor the database with PMM :material-arrow-right:](../use/monitorDBs.md){.md-button}
