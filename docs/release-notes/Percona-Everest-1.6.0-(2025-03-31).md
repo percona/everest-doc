@@ -50,10 +50,10 @@
 
     You can access this view from the **Overview > Components** tab.    The diagram displays the following:
 
-    - Nodes: Displays all the nodes within the cluster.
-    - Pods: Shows the pods running on each node.
-    - Status: Shows the health of components, such as whether the pods are running or failing.
-    - Uptime: Shows how long a component (like a pod or node) has been running since its last start or restart.
+    - **Nodes**: Displays all the nodes within the cluster.
+    - **Pods**: Shows the pods running on each node.
+    - **Status**: Shows the health of components, such as whether the pods are running or failing.
+    - **Uptime**: Shows how long a component (like a pod or node) has been running since its last start or restart.
 
 === "Operators support"
 
