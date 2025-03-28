@@ -23,7 +23,7 @@
 
     - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.  Refer to the [Kubernetes documentation on Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} for more details.
 
-    - **Resource quota check** - Verify that your resource quotas allow for the requested in  storage capacity. See the Kubernetes documentation on [Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
+    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. See the Kubernetes documentation on [Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
 
     **How to modify storage capacity**
 
@@ -34,7 +34,7 @@
 
     ### Seamless major version upgrades for MongoDB
 
-    Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your your applications remain secure, performant, and compliant with the latest MongoDB features.
+    Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your applications remain secure, performant, and compliant with the latest MongoDB features.
 
     To upgrade your MongoDB databases, visit the Percona Everest homepage and select the database you want to upgrade. Go to the **Overview** page, click on **Edit**, choose the desired version, and then click **Upgrade**.
 
@@ -92,17 +92,18 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 ## Improvements
 
-- [EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202): Remove focus state after the user clicks out \(table header icons\)
+- [EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202): We’ve refined the table header icons by removing the focus state when users click outside for an enhanced UX.
 
-- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): Move 'storage class' field to advanced configurations step
+- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): We've moved the **Storage class** field to the **Advanced Configurations** page for better organization and usability."
 
-- [EVEREST-1312](https://perconadev.atlassian.net/browse/EVEREST-1312): Installation log should display the same operator names as selected in the wizard
+- [EVEREST-1312](https://perconadev.atlassian.net/browse/EVEREST-1312): The installation log now displays the same operator names as selected in the wizard for consistency and clarity.
 
-- [EVEREST-1711](https://perconadev.atlassian.net/browse/EVEREST-1711): Remove final confirmation step from the wizard
+- [EVEREST-1711](https://perconadev.atlassian.net/browse/EVEREST-1711): We've enhanced the database creation wizard by removing the final confirmation step, which improves user flow and decreases the number of clicks needed to create a database.
 
-- [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): DB version upgrade modal should not allow to select the current version
+- [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): Updated the database version upgrade modal to prevent selection of the current version, ensuring only valid upgrade options are available.
 
-- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): Add upgrading state
+
+- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that provides a clear indication of when a database upgrade is taking place.
 
 
 ## Bugs
