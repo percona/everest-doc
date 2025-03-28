@@ -42,10 +42,9 @@
     
     ![!image](../images/upgrade_database_versions.png)
 
+=== "Topology diagram"
 
-=== "Topology diagram view"
-
-    ### 
+    ### Topology diagram view for your DB clusters
 
     Starting with the release of Percona Everest 1.6.0, we have introduced a topology diagram view for your database clusters. This feature provides a visual representation of the configuration of various components within your database cluster, helping you to understand how your services connect and interact. The diagram helps you identify potential bottlenecks and points of failure, enabling you to make more informed decisions and effectively manage your database clusters.
 
@@ -55,8 +54,6 @@
     - Pods: Shows the pods running on each node.
     - Status: Shows the health of components, such as whether the pods are running or failing.
     - Uptime: Shows how long a component (like a pod or node) has been running since its last start or restart.
-
-
 
 === "Operators support"
 
