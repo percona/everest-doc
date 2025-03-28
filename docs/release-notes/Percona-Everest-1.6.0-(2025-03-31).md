@@ -102,21 +102,22 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): Updated the database version upgrade modal to prevent selection of the current version, ensuring only valid upgrade options are available.
 
-
 - [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that provides a clear indication of when a database upgrade is taking place.
 
 
 ## Bugs
 
-- [EVEREST-765](https://perconadev.atlassian.net/browse/EVEREST-765): PITR gets disabled after the database is Suspended and Resumed
+- [EVEREST-765](https://perconadev.atlassian.net/browse/EVEREST-765): We have fixed an issue that caused Point-In-Time Recovery (PITR) to be disabled after the database was suspended and then resumed.
 
-- [EVEREST-1350](https://perconadev.atlassian.net/browse/EVEREST-1350): Display IP address with netmask same as backend
+- [EVEREST-1350](https://perconadev.atlassian.net/browse/EVEREST-1350): The UI now displays the IP address along with the netmask, ensuring consistency with the backend format.
 
-- [EVEREST-1374](https://perconadev.atlassian.net/browse/EVEREST-1374): Backup storage and monitoring ednpoint name restriction logic is not consistent
 
-- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): PITR options are not available on UI if there are no schedules
+- [EVEREST-1374](https://perconadev.atlassian.net/browse/EVEREST-1374): We have identified and addressed an inconsistency in the logic governing the naming restrictions for backup storage and monitoring endpoints.
 
-- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763):  Editing the topology from 3 nodes to 1 node does not display any error
+- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): Point-In-Time Recovery (PITR) options were not visible in the UI when no scheduled backups were in place. This occurred even if the most recent backup completed successfully and PITR was enabled. This issue has been resolved now.
+
+- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763): When modifying the network topology by reducing the configuration from three nodes to a single node, no error message was displayed. This issue has now been resolved, and an error message now appears, indicating that downscaling is not possible.
+
 
 - [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): PG cluster initializing again and again \+ backups are failing, for a certain scenario
 
