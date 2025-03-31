@@ -15,7 +15,6 @@ The prerequisites for performing a major version upgrade of MongoDB in Percona E
 To upgrade database versions via the Percona Everest UI:
 {.power-number}
 
-
 1. Log in to the Percona Everest UI. Navigate to the home page, and select the database that you wish to upgrade. 
 
 2. On the **Overview** page, in the **DB Details** panel, click **Edit**. 
