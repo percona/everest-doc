@@ -49,18 +49,7 @@
     
     ![!image](../images/upgrade_database_versions.png)
 
-=== "Topology diagram"
 
-    ### Topology diagram view for your DB clusters
-
-    Starting with the release of Percona Everest 1.6.0, we have introduced a topology diagram view for your database clusters. This feature provides a visual representation of the configuration of various components within your database cluster, helping you to understand how your services connect and interact. The diagram helps you identify potential bottlenecks and points of failure, enabling you to make more informed decisions and effectively manage your database clusters.
-
-    You can access this view from the **Overview > Components** tab.    The diagram displays the following:
-
-    - **Nodes**: Displays all the nodes within the cluster.
-    - **Pods**: Shows the pods running on each node.
-    - **Status**: Shows the health of components, such as whether the pods are running or failing.
-    - **Uptime**: Shows how long a component (like a pod or node) has been running since its last start or restart.
 
 === "Operators support"
 
@@ -95,7 +84,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
 
-- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): Starting with Percona Everest 1.6.0, we have introduced a topology diagram view for your database clusters. This feature provides a visual representation of the configuration of various components within your database cluster, helping you to understand how your services connect and interact.
 
 ## Improvements
 
