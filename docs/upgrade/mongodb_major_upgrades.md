@@ -20,7 +20,13 @@ To upgrade database versions via the Percona Everest UI:
 
 2. On the **Overview** page, in the **DB Details** panel, click **Edit**. 
 
+    ![!image](../images/database_upgrade.png)
+
+
 3. Choose the desired database version, and then click **Upgrade**.
+
+    ![!image](../images/upgrade_database_versions.png)
+
 
 
 
