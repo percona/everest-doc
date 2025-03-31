@@ -25,17 +25,13 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 
     ```sh
     kubectl get storageclass
-    kubectl describe storageclass <your-storage-class>
     ```
 
     ??? example "Expected output"
         ```
-            apiVersion: storage.k8s.io/v1
-        kind: StorageClass
-        metadata:
-            name: expandable-storage
-            provisioner: kubernetes.io/aws-ebs
-            allowVolumeExpansion: true
+NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+expandable-storage     kubernetes.io/aws-ebs   Delete          WaitForFirstConsumer   true                   42m
+
         ```
 
 - When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
