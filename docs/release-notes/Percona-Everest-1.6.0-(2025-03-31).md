@@ -43,7 +43,7 @@
 
     Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your applications remain secure, performant, and compliant with the latest MongoDB features.
 
-    To upgrade your MongoDB databases, visit the Percona Everest homepage and select the database you want to upgrade. Go to the **Overview** page, click on **Edit**, choose the desired version, and then click **Upgrade**.
+    To upgrade your MongoDB databases, visit the Percona Everest homepage and select the database you want to upgrade. Go to the **Overview** page, click on **DB Details > Edit**, choose the desired version, and then click **Upgrade**.
 
     ![!image](../images/database_upgrade.png)
     
