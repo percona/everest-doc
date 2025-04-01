@@ -36,6 +36,8 @@
 
     To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
 
+    ![!image](../images/edit_storage_capacity.png)
+
 
 === "Major database upgrades"
 
@@ -83,7 +85,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 - [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**.
 
 - [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
-
 
 ## Improvements
 
