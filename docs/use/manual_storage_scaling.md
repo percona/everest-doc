@@ -60,6 +60,9 @@ To modify storage capacity, follow these steps:
 5. Click **Save**.
 
 
+For information about the limitations of manual storage scaling, refer to the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
+
+
 
 
 
