@@ -1,6 +1,6 @@
 # Manual storage scaling
 
-You can increase the capacity of your storage through manual storage scaling. This feature enables you to adapt to rising data demands, providing more flexibility in managing growing database workloads while ensuring system stability and data security.
+You can increase the storage capacity of your **S3-compatible** storage through manual storage scaling. This feature enables you to adapt to rising data demands, providing more flexibility in managing growing database workloads while ensuring system stability and data security.
 
 ## Fixed disk size constraint
 
@@ -25,18 +25,26 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 
     ```sh
     kubectl get storageclass
+    kubectl describe storageclass <your-storage-class>
     ```
 
     ??? example "Expected output"
         ```
-NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-expandable-storage     kubernetes.io/aws-ebs   Delete          WaitForFirstConsumer   true                   42m
-
+            apiVersion: storage.k8s.io/v1
+        kind: StorageClass
+        metadata:
+            name: expandable-storage
+            provisioner: kubernetes.io/aws-ebs
+            allowVolumeExpansion: true
         ```
 
 - When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
 
 ## Editing storage capacity
+
+!!! info "Important"
+    - Cluster resizing is permanent and cannot be reversed.
+    - Disk size can only be increased. Decreasing the disk is not supported to protect data integrity.
 
 To modify storage capacity, follow these steps:
 {.power-number}
@@ -50,10 +58,6 @@ To modify storage capacity, follow these steps:
 4. Update the disk value (in Gi) to the new desired capacity.
 
 5. Click **Save**.
-
-!!! note
-    Disk size can only be increased. Decreasing the disk is not supported to protect data integrity.
-
 
 
 
