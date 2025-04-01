@@ -12,7 +12,7 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 
 ## Prerequisites
 
-- When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's **PersistentVolumeClaim (PVC)** supports **volume expansion**.
+- When scaling storage manually for a database managed by Percona Everest, ensure that the `StorageClass` used by the database's **PersistentVolumeClaim (PVC)** supports **volume expansion**. This setting allows the size of the underlying Persistent Volume to be increased after it has been created.
 
     !!! note
         In Kubernetes, manual disk scaling only works if the associated `StorageClass` has the following setting:
@@ -58,6 +58,8 @@ To modify storage capacity, follow these steps:
     ![!image](../images/edit_storage_capacity.png)
 
 4. Click **Save**.
+
+5. After clicking **Save**, go back to the **Overview** page and check that the **DISK** field reflects the new capacity.
 
 
 For information about the limitations of manual storage scaling, refer to the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
