@@ -53,7 +53,9 @@ To modify storage capacity, follow these steps:
 
 2. In the Resources panel, click **Edit**. The **Edit Topology** pop-up will be displayed.
 
-3. Under **Resource size per node**, find the **DISK** field. 
+3. Under **Resource size per node**, find the **DISK** field.
+
+    ![!image](../images/edit_storage_capacity.png)
 
 4. Update the disk value (in Gi) to the new desired capacity.
 
