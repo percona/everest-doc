@@ -52,6 +52,8 @@ Cluster management involves the administration and maintenance of database clust
 
     You can increase the storage capacity of your S3-compatible storage through manual storage scaling. This feature enables you to adapt to rising data demands, providing more flexibility in managing growing database workloads while ensuring system stability and data security.
 
+    To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
+
 5. [Back up and restore](../use/AboutBackups.md)
 
     Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
