@@ -54,6 +54,8 @@ Cluster management involves the administration and maintenance of database clust
 
     To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
 
+    ![!image](../images/edit_storage_capacity.png)
+
 5. [Back up and restore](../use/AboutBackups.md)
 
     Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
