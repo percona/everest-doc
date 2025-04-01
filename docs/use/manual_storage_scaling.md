@@ -49,11 +49,11 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 To modify storage capacity, follow these steps:
 {.power-number}
 
-1. From the Percona Everest homepage, go to the **Overview** page for your database.
+1. Navigate to the **Overview** page for your database from the Percona Everest home page.
 
-2. In the Resources panel, click **Edit**. The **Edit Topology** pop-up will be displayed.
+2. Click **Edit** in the Resources panel.  The **Edit Topology** pop-up will be displayed.
 
-3. Find the **DISK** field. Update the disk value (in Gi) to the new desired capacity.
+3. Locate the **DISK** field and enter the disk value (in Gi) to the new desired capacity.
 
     ![!image](../images/edit_storage_capacity.png)
 
