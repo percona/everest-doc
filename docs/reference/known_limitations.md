@@ -1,6 +1,5 @@
 # Known limitations in Percona Everest
 
-
 This section describes the known limitations associated with Percona Everest:
 
 
