@@ -2,13 +2,14 @@
 
 Starting with Percona Everest 1.6.0, you can upgrade your MongoDB database major versions, allowing upgrades with minimal downtime and disruption.
 
+!!! note
+    PostgreSQL and MySQL support only minor engine upgrades.
+
 ## Before you upgrade
 
 The prerequisites for performing a major version upgrade of MongoDB in Percona Everest are:
 
 - **Version compatibility:** Verify that your current MongoDB version is eligible for an upgrade.
-
-- **System resources:** Ensure that your cluster has adequate CPU, memory, and storage to handle the upgrade process.
 
 ## Upgrade
 
