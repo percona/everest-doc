@@ -54,7 +54,6 @@ To modify storage capacity, follow these steps:
 
 5. After clicking **Save**, go back to the **Overview** page and check that the **DISK** field reflects the new capacity.
 
-
 For information about the limitations of manual storage scaling, refer to the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
 
 
