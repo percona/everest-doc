@@ -3,9 +3,6 @@
 This section explains how to install Percona Everest using Openshift.
 
 
-!!! info "Important"
-    We’re still refining OpenShift support for Percona Everest, which means some things might not work as intended. If you encounter any issues, help us improve by creating a new issue [here](https://github.com/percona/everest/issues/new){:target="_blank"}.
-
 ## Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
