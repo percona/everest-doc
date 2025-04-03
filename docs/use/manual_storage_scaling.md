@@ -2,7 +2,7 @@
 
 You can increase the storage capacity of your **S3-compatible** storage through manual storage scaling. This feature enables you to adapt to rising data demands, providing more flexibility in managing growing database workloads while ensuring system stability and data security.
 
-## Understanding storage in Percona Everest
+## Storage management in Percona Everest
 
 In the Kubernetes environment used by Percona Everest, storage is managed using **Persistent Volumes (PVs)** and **Persistent Volume Claims (PVCs)**. Manual scaling involves adjusting the underlying PV resources to meet the demands specified in the PVC.
 
