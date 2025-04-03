@@ -18,7 +18,7 @@ We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as poss
 ## Install Percona Everest
 
 Here are the steps to install Percona Everest with OpenShift compatibility enabled:
-    {.power-number}
+{.power-number}
 
 1. Run the following command:
 
