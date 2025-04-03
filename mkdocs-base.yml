@@ -178,6 +178,8 @@ nav:
       - install/installEverestCLI.md
     - install/install_everest_helm_charts.md
     - install/installEverest.md
+    - install/install_everest_openshift.md
+
   
   - Upgrade: 
     - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
