@@ -27,9 +27,8 @@ For detailed information on PVs and PVCs, refer to the official [Kubernetes docu
 
     ??? example "Expected output"
         ```
-NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
-expandable-storage     kubernetes.io/aws-ebs   Delete          WaitForFirstConsumer   true                   42m
-
+        NAME                   PROVISIONER             RECLAIMPOLICY   VOLUMEBINDINGMODE      ALLOWVOLUMEEXPANSION   AGE
+        expandable-storage     kubernetes.io/aws-ebs   Delete          WaitForFirstConsumer   true                   42m
         ```
 
 - When scaling storage in Percona Everest, always verify that [resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} allow the requested storage capacity. For more information, see the [known limitations](../reference/known_limitations.md#manual-storage-scaling) section.
