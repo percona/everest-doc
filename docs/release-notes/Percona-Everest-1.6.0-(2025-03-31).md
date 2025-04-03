@@ -9,7 +9,7 @@
     |---------|---------------------|---------|
     | **1.**|[Manual storage scaling](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|Increase the storage capacity of your S3-compatible storage through manual storage scaling|
     | **2.**|[MongoDB: Major DB updates](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|Support for major version upgrades of MongoDB|
-    | **3.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)||
+    | **3.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|Support for Percona Operator for PostgreSQL 2.6.0|
     | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
     | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.6.0|
     | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.6.0|
