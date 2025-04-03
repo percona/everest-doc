@@ -214,6 +214,11 @@ nav:
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
+      
+  - Resolve issues:
+      - Troubleshooting: troubleshoot/troubleshoot.md
+      - FAQ: troubleshoot/faq.md
+
   - API: API.md
   - Reference:
       - Breaking API changes: api_rbac.md
@@ -222,6 +227,7 @@ nav:
       - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
+
 
   - Contribute: contribute.md
 
