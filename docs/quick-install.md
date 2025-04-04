@@ -78,7 +78,7 @@ To install Percona Everest using Helm follow these steps:
     --namespace everest-system \
     --create-namespace
     ```
-    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](../administer/manage_namespaces.md).
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
     !!! note
         - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
