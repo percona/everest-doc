@@ -23,7 +23,7 @@
 
     ### Maximizing Efficiency with manual storage scaling
 
-    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your **S3-compatible storage**. This is particularly useful for handling unexpected workload growth and ensures you can manage increasing database demands while maintaining data security and system stability.
+    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage. This is particularly useful for handling unexpected workload growth and ensures you can manage increasing database demands while maintaining data security and system stability.
     
     **Prerequisites for storage scaling**
 
