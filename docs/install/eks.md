@@ -92,6 +92,24 @@ To create the EKS cluster, do the following steps:
         --ssh-public-key my-key
 
 
+## Remove the EKS cluster
+
+To delete your cluster, you will need the following data:
+
+- Name of your EKS cluster
+- AWS region in which you have deployed your cluster.
+
+You can clean up the cluster with the `eksctl` command as follows (with real names instead of <region> and <cluster name> placeholders):
+
+```sh
+$ eksctl delete cluster --region=<region> --name="<cluster name>"
+```
+
+The cluster deletion may take time.
+
+!!! warning
+    After deleting the cluster, all data stored in it will be lost!
+
 ## Next Steps
 
 Now that your Kubernetes cluster is running, you might want to deploy **Percona Everest**. Follow our quick install guide to get started quickly and easily.
