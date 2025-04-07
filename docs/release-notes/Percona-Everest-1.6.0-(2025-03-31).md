@@ -117,10 +117,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was dispalyed.
 
-- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): [UI]: Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
-
-### Known limitations
-
+- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
 
 ## :rocket: Upgrade now
 
