@@ -119,9 +119,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): [UI]: Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
 
-### Known limitations
-
-
 ## :rocket: Upgrade now
 
 Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
