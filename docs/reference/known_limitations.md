@@ -125,9 +125,11 @@ The default **uploadInterval** values for different databases are as follows:
 
 ### PostgreSQL limitation for PITR
 
-When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
+When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitations:
 
-You may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the **Restoring** state.
+- The Edit button in the UI for PITR is always disabled for PostgreSQL. However, PITR is still enabled automatically once a backup or a backup schedule exists.
+
+- You may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the **Restoring** state.
 
 **Check the timestamp of the last transaction**
 
