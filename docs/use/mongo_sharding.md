@@ -31,7 +31,7 @@ By splitting data across multiple servers, sharding reduces the load on any one 
 
 If one shard (or server) fails, the remaining shards can continue to operate, enhancing the system's availability and fault tolerance. Data replication across replica sets ensures that no information is lost in the event of a failure.
 
-## Enable sharding in Percona Everest
+## Create MongoDB sharded cluster
 
 !!! warning
     - Once you have a sharded collection, ensure you take a new backup to avoid data inconsistency and potential restoration failures.
@@ -39,7 +39,7 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
     - There are a few more limitations related to MongoDB sharding. See the [limitations](https://docs.percona.com/everest/reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
 
 
-To enable sharding:
+To create a sharded cluster:
 {.power-number}
 
 1. From the Percona Everest homepage, click **Create Database** and select the **MongoDB** database. The **Basic information** page will be displayed.
