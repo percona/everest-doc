@@ -12,9 +12,3 @@ To edit a backup storage:
       ![!image](../../../images/edit_backup_storage.png)
 
 4. Make your changes and click **Edit** to save your configuration.
-
-
-## Next steps
-
-[Create backups :material-arrow-right:](../use/createBackups/CreateOnDemand.md){.md-button}
-[Enable PITR :material-arrow-right:](../use/createBackups/EnablePITR.md){.md-button}
