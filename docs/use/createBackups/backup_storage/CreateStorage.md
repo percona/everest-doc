@@ -1,4 +1,4 @@
-# Prepare storage location
+# Create storage location
 
 Before working with backups, create a backup location as a backup destination for creating and storing your backup artifacts.  
 
