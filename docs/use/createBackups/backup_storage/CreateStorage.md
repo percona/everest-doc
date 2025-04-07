@@ -1,6 +1,6 @@
 # Create backup storage
 
-Before working with backups, create a backup location as a backup destination for creating and storing your backup artifacts.  
+Before working with backups, create a backup storage location as a backup destination for creating and storing your backup artifacts.  
 
 Everest supports S3-compatible backup locations, which means you can use [AWS S3](https://aws.amazon.com/s3/) or any other storage solutions that support S3 API, like [min.io](https://min.io/).
 
