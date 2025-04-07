@@ -89,7 +89,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202): We’ve refined the table header icons by removing the focus state when users click outside for an enhanced UX.
 
-- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): We've moved the **Storage class** field to the **Advanced Configurations** page for better organization and usability."
+- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): We've moved the **Storage class** field to the **Advanced Configurations** page for better organization and usability.
 
 - [EVEREST-1312](https://perconadev.atlassian.net/browse/EVEREST-1312): The installation log now displays the same operator names as selected in the wizard for consistency and clarity.
 
