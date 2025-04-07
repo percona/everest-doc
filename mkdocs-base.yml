@@ -203,8 +203,8 @@ nav:
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
         - Backup storage: 
-          - Create backup storage: use/CreateStorage.md
-          - Edit backup storage: use/EditStorage.md
+          - Create backup storage: use/backup_storage/CreateStorage.md
+          - Edit backup storage: use/backup_storage/EditStorage.md
         - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
         - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
         - Create database from backups: use/createBackups/create_new_database.md
