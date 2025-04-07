@@ -4,12 +4,12 @@ Managing backup storage allows you to edit or remove existing S3 storage configu
 
 ## Edit backup storage
 
-To edit a backup storage:
+To edit a backup storage configuration:
 {.power-number}
 
 1. Go to Backup storage settings:
 
-    Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click on the ellipsis (three dots) next to the storage you want to edit.
+    Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click on the ellipsis (three dots) next to the storage you want to modify.
 
 2. Click **Edit**. The **Edit Backup storage** pop-up will open.
 
@@ -20,7 +20,6 @@ To edit a backup storage:
 
 ## Delete backup storage
 
-
 To delete a backup storage:
 {.power-number}
 
@@ -29,7 +28,6 @@ To delete a backup storage:
     Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click on the ellipsis (three dots) next to the storage you want to delete.
 
 2. Click **Delete**. The **Delete storage** confirmation pop-up will open.
-
 
 3. Click **Delete**. The backup storage will be deleted.
 
