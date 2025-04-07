@@ -1,10 +1,5 @@
 # Install Percona Everest using Helm
 
-!!! warning
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
 This section explains how to install Percona Everest using [Helm](https://helm.sh/){:target="_blank"} as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
@@ -12,8 +7,16 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 !!! info "Important"
     If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
 
-## Install Percona Everest and deploy database namespaces
+## Google Container Registry (GCR)
 
+!!! warning "GCR deprecation"
+    [Google Container Registry (GCR) is scheduled to be deprecated](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"} and will officially shut down on **May 20, 2025**. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
+
+**Action required**
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible.
+
+## Install Percona Everest and deploy database namespaces
 Here are the steps to install Percona Everest and deploy additional database namespaces:
 {.power-number}
 
@@ -64,7 +67,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246): 
+        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
                 
             ```sh 
             kubectl get svc/everest -n everest-system

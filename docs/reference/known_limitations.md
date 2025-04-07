@@ -1,6 +1,5 @@
 # Known limitations in Percona Everest
 
-
 This section describes the known limitations associated with Percona Everest:
 
 
@@ -18,9 +17,23 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - Since MongoDB sharding is in Tech Preview, there may be issues with backups and restores. Therefore, using sharded PSMDB clusters in production environments is not recommended.
 
-    1. If your restore fails or is stuck, use this **workaround**: 
+    -  If your restore fails or is stuck, use this **workaround**: 
 
         On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
+
+## Manual storage scaling
+
+- When manually scaling storage in Percona Everest, resource quotas are not automatically validated during the volume expansion process. If the requested storage exceeds the defined quota, the PVC resize operation will fail, leaving the database in the **Resizing Volumes** state.
+
+    To avoid such issues, ensure you verify your namespace's resource quotas before initiating a resize:
+
+    ```sh
+    kubectl describe quota <resource-quota-name> -n <namespace>
+    ```
+
+- If scaling fails for any reason, the database will remain in the **Resizing Volumes** state, and the operation will be continuously retried.
+
+- Consult your CSI driver documentation for important details regarding volume resizing restrictions or limitations. This is essential for ensuring smooth operations.
 
 
 ## Databases
