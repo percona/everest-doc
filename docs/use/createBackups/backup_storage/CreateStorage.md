@@ -38,5 +38,5 @@ To create a backup storage location:
 
 ## Next steps
 
-[Create backups :material-arrow-right:](../use/createBackups/CreateOnDemand.md){.md-button}
-[Enable PITR :material-arrow-right:](../use/createBackups/EnablePITR.md){.md-button}
+[Create backups :material-arrow-right:](../../createBackups/CreateOnDemand.md){.md-button}
+[Enable PITR :material-arrow-right:](../../createBackups/EnablePITR.md){.md-button}
