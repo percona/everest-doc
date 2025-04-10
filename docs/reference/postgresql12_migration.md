@@ -23,6 +23,17 @@ We recommend reviewing the PostgreSQL documentation and choosing the method that
 
 If you're looking for assistance with your migration, don't hesitate to connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
+### Logical Dump and Restore vs. Logical Replication
+
+Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
+
+| **Logical Dump and Restore** | **Logical Replication** |
+|---------------------|----------|
+| Simple and portable| Live sync between old and new cluster   |
+| Suitable for small to medium datasets  | Requires primary keys on tables and schema compatibilit |
+| Requires application downtime during migration   | Minimal downtime|
+
+
 
 ### Logical Dump and Restore
 
@@ -42,7 +53,6 @@ This option is recommended for minimal downtime.
 Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
 
 For comprehensive information, dive deep into the [PostgreSQL documentation for logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
-
 
 
 
