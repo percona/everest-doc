@@ -1,4 +1,4 @@
-# Migrate away from PostgreSQL 12
+# Migrate from PostgreSQL 12
 
 !!! info "Important"
     Percona Everest 1.6.0 has officially discontinued support for PostgreSQL 12. To ensure compatibility, security, and access to new features, it is highly recommended to migrate to PostgreSQL 13 or later.
@@ -15,7 +15,7 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 3. **Install the new version** – Download and install the target PostgreSQL release.
 
 
-## Choose the right migrations option
+## Choose a migration option
 
 When upgrading from PostgreSQL 12, it is essential to choose a migration method that suits your environment. For a smooth transition, consider the following factors during migration:
 
@@ -40,8 +40,8 @@ Two commonly used approaches to migrating a PostgreSQL database are Logical Dump
 | **Setup complexity**      | Simple and portable                      | More complex, involves replication slots |
 | **Best suited for**           | One-time migrations, backups, and moving datasets across versions | Continuous data synchronization |
 | **Downtime Impact**      | Requires application downtime during migration | Minimal downtime |
-| **Primary Keys requirement** | No primary keys required; exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables to ensure row-level replication works efficiently |
-| **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases, meaning table structures (columns, data types, and constraints) must match for replication to function properly |
+| **Primary Keys requirement** | No primary keys required; exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables|
+| **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases |
 | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
 ### Logical Dump and Restore
