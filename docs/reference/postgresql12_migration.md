@@ -12,7 +12,7 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 
 2. **Check Compatibility** - Verify that your extensions and configurations are compatible with the new PostgreSQL version.
 
-3.** Install the new version** – Download and install the target PostgreSQL release.
+3. **Install the new version** – Download and install the target PostgreSQL release.
 
 
 ## Choose the right migrations option
@@ -46,10 +46,10 @@ Two commonly used approaches to migrating a PostgreSQL database are Logical Dump
 
 ### Logical Dump and Restore
 
-This option is recommended for smaller databases and one-time migrations.
+This option is recommended for **smaller databases** and **one-time migrations**.
 {.power-number}
 
-1. Use [pg_dump/pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data.
+1. Use [pg_dump/pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
 
 2. Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into a new cluster.
 
@@ -57,11 +57,11 @@ For comprehensive information, dive deep into the [PostgreSQL documentation on p
 
 ### Logical Replication
 
-This option is recommended for minimal downtime.
+This option is recommended for **minimal downtime**.
 
 Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
 
-For comprehensive information, dive deep into the [PostgreSQL documentation for logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
+For comprehensive information, dive deep into the [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
 
 
