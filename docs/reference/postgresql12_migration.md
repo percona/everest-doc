@@ -27,10 +27,10 @@ If you're looking for assistance with your migration, don't hesitate to connect 
 
 Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
 
-|*Feature*| **Logical Dump and Restore**| **Logical Replication** |
-|---------|----------|-------------------|------------------------|
-| Setup Complexity|Simple and portable| More complex, involves replication slots|
-| Suited for| One-time migrations, backups, and moving datasets across versions.| Ideal for keeping two databases updated continuously. |
+|**Feature**|**Logical Dump and Restore**|**Logical Replication**|
+|---------|----------|-------------------|-----------------------|
+|Setup Complexity|Simple and portable|More complex, involves replication slots|
+| Suited for| One-time migrations, backups, and moving datasets across versions.|Ideal for keeping two databases updated continuously.|
 | Downtime impact| Requires application downtime during migration| | Minimal downtime|
 | Primary keys requirement| Does not require primary keys, as it exports full table data regardless of constraints.|Requires primary keys (or unique indexes) on tables to ensure row-level replication works efficiently.|
 | Schema compatibility| Can work across different schemas, allowing modifications during restoration. Users can adjust schema structure as needed before restoring data.|Requires schema compatibility between source and target databases, meaning table structures (columns, data types, and constraints) must match for replication to function properly.|
