@@ -48,6 +48,7 @@ We are developing a new feature that will allow you to modify these settings dir
 ## Upgrading operators
 
 - When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the **Initializing** state as part of the upgrade process. However, this **Initializing** state does not cause any downtime.
+- Since the PostgreSQL operator does not support major version upgrades, you cannot directly upgrade PostgreSQL 12.19 to 13.16. This limitation also prevents upgrading the PG operator itself. Morever, there is no built-in mechanism for transferring data from PostgreSQL 12.19 to 13.16, making migration a challenge.
 - When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, it is worth noting that single node databases should not be used in production environments.
 
 ## Backups storage
