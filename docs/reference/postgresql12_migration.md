@@ -8,20 +8,28 @@
 Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ensure a smooth transition. Here are the key steps:
 {.power-number}
 
-1. Backup your data - Create a complete backup of your data before upgrading.
+1. **Backup your data** - Create a complete backup of your data before upgrading.
 
-2. Check Compatibility - Verify that your extensions and configurations are compatible with the new PostgreSQL version.
+2. **Check Compatibility** - Verify that your extensions and configurations are compatible with the new PostgreSQL version.
 
-3. Install the new Version – Download and install the target PostgreSQL release.
+3.** Install the new version** – Download and install the target PostgreSQL release.
 
 
-## Migrations options
+## Choose the right migrations option
 
-When upgrading from PostgreSQL 12—it’s important to choose a migration method that suits your environment, data size, downtime tolerance and Kubernetes or cloud-native setup. PostgreSQL offers several migration options. Each method has its own benefits and trade-offs in terms of speed, complexity, and risk.
+When upgrading from PostgreSQL 12, it is essential to choose a migration method that suits your environment. For a smooth transition, consider the following factors during migration:
 
-We recommend reviewing the PostgreSQL documentation and choosing the method that best suits your environment.
+- Data size
 
-If you're looking for assistance with your migration, don't hesitate to connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
+- Downtime tolerance
+
+- Infrastructure (Kubernetes, cloud, on-premise)
+
+PostgreSQL offers several migration options. Each method has its own benefits and trade-offs in terms of speed, complexity, and risk.
+
+Review PostgreSQL documentation to select the best option for your environment.
+
+💡 Need assistance? Connect with the Percona Everest community or consult a Percona Expert. connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
 ### Logical Dump and Restore vs. Logical Replication
 
@@ -29,19 +37,16 @@ Two commonly used approaches to migrating a PostgreSQL database are Logical Dump
 
 | **Feature**              | **Logical Dump and Restore**               | **Logical Replication**               |
 |--------------------------|-------------------------------------------|--------------------------------------|
-| **Setup Complexity**      | Simple and portable                      | More complex, involves replication slots |
-| **Suited for**           | One-time migrations, backups, and moving datasets across versions | Ideal for keeping two databases updated continuously |
+| **Setup complexity**      | Simple and portable                      | More complex, involves replication slots |
+| **Best suited for**           | One-time migrations, backups, and moving datasets across versions | Continuous data synchronization |
 | **Downtime Impact**      | Requires application downtime during migration | Minimal downtime |
-| **Primary Keys Requirement** | Does not require primary keys, as it exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables to ensure row-level replication works efficiently |
-| **Schema Compatibility**  | Can work across different schemas, allowing modifications during restoration. Users can adjust schema structure as needed before restoring data | Requires schema compatibility between source and target databases, meaning table structures (columns, data types, and constraints) must match for replication to function properly |
+| **Primary Keys requirement** | No primary keys required; exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables to ensure row-level replication works efficiently |
+| **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases, meaning table structures (columns, data types, and constraints) must match for replication to function properly |
 | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
-
-
-
 
 ### Logical Dump and Restore
 
-This option is recommended for smaller databases.
+This option is recommended for smaller databases and one-time migrations.
 {.power-number}
 
 1. Use [pg_dump/pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data.
