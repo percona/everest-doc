@@ -99,6 +99,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that provides a clear indication of when a database upgrade is taking place.
 
+- [EVEREST-1912](https://perconadev.atlassian.net/browse/EVEREST-1912): The Storage Class used by a database cluster is now prominently displayed on the database **Overview** page, enhancing visibility and making it easier for users to access configuration details directly within the UI.
 
 ## Bugs
 
@@ -118,6 +119,17 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 - [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was dispalyed.
 
 - [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
+
+- [EVEREST-1985](https://perconadev.atlassian.net/browse/EVEREST-1985): Resolved an issue preventing PITR-based recovery when backup schedules were added after the PostgreSQL database was created.
+
+- [EVEREST-1979](https://perconadev.atlassian.net/browse/EVEREST-1979): Addressed an issue where the database engine upgrade unexpectedly modified the backup schedule time.
+
+- [EVEREST-1959](https://perconadev.atlassian.net/browse/EVEREST-1959): The database version was not displayed when creating a new database from a backup. This issue has been resolved now. 
+
+- [EVEREST-1963](https://perconadev.atlassian.net/browse/EVEREST-1963): The `storageclass` field associated with a database cluster is now non-editable to ensure consistency and prevent unauthorized changes.
+
+- [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration, but it has now been corrected.
+
 
 ## :rocket: Upgrade now
 
