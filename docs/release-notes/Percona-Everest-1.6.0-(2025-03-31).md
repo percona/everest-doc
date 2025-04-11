@@ -134,6 +134,11 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration, but it has now been corrected.
 
+- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now includes support for deploying an **Ingress** resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
+
+### Known limitation
+
+The PostgreSQL 17.2 image and related database cluster components based on PostgreSQL 17 are currently affected by CVE-2025-1094—a vulnerability in the `libpq` PostgreSQL client library. This issue exposes images used by the Operator to SQL injection risks within the PostgreSQL interactive terminal due to improper neutralization of quotes. While images for earlier PostgreSQL versions have already been patched, the updated images for PostgreSQL 17 are expected to be available soon.
 
 ## :rocket: Upgrade now
 
