@@ -130,7 +130,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1959](https://perconadev.atlassian.net/browse/EVEREST-1959): The database version was not displayed when creating a new database from a backup. This issue has been resolved now. 
 
-- [EVEREST-1963](https://perconadev.atlassian.net/browse/EVEREST-1963): The `storageclass` field associated with a database cluster is now non-editable to ensure consistency and prevent unauthorized changes.
+- [EVEREST-1963](https://perconadev.atlassian.net/browse/EVEREST-1963): The `storageclass` field associated with a database cluster is now non-editable to ensure consistency.
 
 - [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration, but it has now been corrected.
 
