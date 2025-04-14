@@ -58,7 +58,7 @@
     Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
 
 
-## Google Container Registry (GCR) 🛑
+## 🛑 Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
     GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
