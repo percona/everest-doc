@@ -82,7 +82,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
 
-    Also, PMM can now be fully configured from the Everest chart. This can be done by specifying options under the `pmmvalues` field. This simplifies deployment management, offering greater flexibility and control for **Helm-based workflows**.
+    Also, PMM can now be fully configured from the Everest chart. This can be done by specifying options under the `pmm` field. This simplifies deployment management, offering greater flexibility and control for **Helm-based workflows**.
 
 
 - [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**.
