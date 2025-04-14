@@ -80,7 +80,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases respectively.
 
-- [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system `namespace, ensuring consistency across releases. As the PMM chart currently lacks support for namespace overrides, it will be deployed right in the designated release `namespace: everest-system.`
+- [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
 
     Also, PMM can now be fully configured from the Everest chart. This can be done by specifying options under the `pmmvalues` field. This simplifies deployment management, offering greater flexibility and control for **Helm-based workflows**.
 
