@@ -134,7 +134,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration but has now been corrected.
 
-- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now includes support for deploying an **Ingress** resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
+- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress **resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
 
 ### Known limitation
 
