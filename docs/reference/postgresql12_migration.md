@@ -10,7 +10,7 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 
 1. **Backup your data** - Create a complete backup of your data before upgrading.
 
-2. **Check Compatibility** - Verify that your extensions and configurations are compatible with the new PostgreSQL version.
+2. **Check Compatibility** - Verify that your configurations are compatible with the new PostgreSQL version.
 
 3. **Install the new version** – Download and install the target PostgreSQL release.
 
