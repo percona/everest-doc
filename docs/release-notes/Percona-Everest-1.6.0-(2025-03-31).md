@@ -19,7 +19,7 @@
 
 ## 🌟 Release highlights
 
-=== 📈 "Manual storage scaling"
+===  " 📈 Manual storage scaling"
 
     ### Scale your storage with ease with Percona Everest 1.6.0
 
@@ -51,7 +51,7 @@
     ![!image](../images/upgrade_database_versions.png)
 
 
-=== ":simple-postgresql: PostgreSQL Operators support"
+=== ":simple-postgresql: Support for PostgreSQL Operators"
 
     ### Support for Percona Operator for PostgreSQL 2.6.0
 
