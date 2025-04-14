@@ -17,9 +17,9 @@
     | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.6.0|
 
 
-## Release highlights
+## 🌟 Release highlights
 
-=== "Manual storage scaling"
+=== 📈 "Manual storage scaling"
 
     ### Scale your storage with ease with Percona Everest 1.6.0
 
@@ -38,7 +38,7 @@
     ![!image](../images/edit_storage_capacity.png)
 
 
-=== "Major database upgrades"
+=== " 🔄 Major database upgrades"
 
     ### Seamless major version upgrades for MongoDB
 
@@ -51,7 +51,7 @@
     ![!image](../images/upgrade_database_versions.png)
 
 
-=== "Operators support"
+=== ":simple-postgresql: PostgreSQL Operators support"
 
     ### Support for Percona Operator for PostgreSQL 2.6.0
 
