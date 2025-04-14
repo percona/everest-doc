@@ -12,7 +12,7 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 
 2. **Check Compatibility** - Verify that your configurations are compatible with the new PostgreSQL version.
 
-3. **Install the new version** – Download and install the target PostgreSQL release.
+3. **Provision a new PostgreSQL database** – Use Percona Everest to deploy a new database with the desired PostgreSQL version.
 
 
 ## Choose a migration option
@@ -22,8 +22,6 @@ When upgrading from PostgreSQL 12, it is essential to choose a migration method 
 - Data size
 
 - Downtime tolerance
-
-- Infrastructure (Kubernetes, cloud, on-premise)
 
 PostgreSQL offers several migration options. Each method has its own benefits and trade-offs in terms of speed, complexity, and risk.
 
