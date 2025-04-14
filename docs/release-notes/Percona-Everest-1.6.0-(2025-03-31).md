@@ -38,7 +38,7 @@
     ![!image](../images/edit_storage_capacity.png)
 
 
-=== " 🔄 Major database upgrades"
+=== "🔄 Major database upgrades"
 
     ### Seamless major version upgrades for MongoDB
 
