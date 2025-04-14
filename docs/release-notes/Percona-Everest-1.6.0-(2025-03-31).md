@@ -145,8 +145,6 @@ The PostgreSQL 17.2 image and related database cluster components based on Postg
     We highly recommend upgrading to PostgreSQL 17.4 for the latest fixes and improved security features.
 
 
-
-
 ## :rocket: Upgrade now
 
 Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
