@@ -114,13 +114,13 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1374](https://perconadev.atlassian.net/browse/EVEREST-1374): We have identified and addressed an inconsistency in the logic governing the naming restrictions for backup storage and monitoring endpoints.
 
-- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): Point-In-Time Recovery (PITR) options were not visible in the UI when no scheduled backups were in place. This occurred even if the most recent backup completed successfully and PITR was enabled. This issue has been resolved now.
+- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): Point-In-Time Recovery (PITR) options were not visible in the UI when no scheduled backups were in place. This occurred even if the most recent backup was completed successfully and PITR was enabled. This issue has been resolved now.
 
-- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763): When modifying the network topology by reducing the configuration from three nodes to a single node, no error message was displayed. This issue has now been resolved, and an error message now appears, indicating that downscaling is not possible.
+- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763): When modifying the network topology by reducing the configuration from three nodes to a single node, no error message was displayed. This issue has been resolved, and an error message now appears, indicating that downscaling is not possible.
 
-- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): Resolved an issue where the PostgreSQL cluster was repeatedly been initialized, leading to backup failures in specific scenarios.
+- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): Resolved an issue where the PostgreSQL cluster was repeatedly initialized, leading to backup failures in specific scenarios.
 
-- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was dispalyed.
+- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was displayed.
 
 - [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
 
@@ -132,7 +132,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1963](https://perconadev.atlassian.net/browse/EVEREST-1963): The `storageclass` field associated with a database cluster is now non-editable to ensure consistency.
 
-- [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration, but it has now been corrected.
+- [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration but has now been corrected.
 
 - [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now includes support for deploying an **Ingress** resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
 
