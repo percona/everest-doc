@@ -29,7 +29,7 @@
 
     - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.  Refer to the [Kubernetes documentation on Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} for more details.
 
-    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. See the [Kubernetes documentation on Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} for more information.
+    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. For more information, see the [Kubernetes documentation on Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} 
 
     **How to modify storage capacity**
 
@@ -63,7 +63,7 @@
 !!! warning "GCR deprecation"
     GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+    All Percona Everest versions prior to 1.4.0 depend on images hosted on the Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
 
 ### Impact
 
@@ -78,7 +78,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 ## New features
 
-- [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases respectively.
+- [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases, respectively.
 
 - [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
 
@@ -101,7 +101,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): Updated the database version upgrade modal to prevent selection of the current version, ensuring only valid upgrade options are available.
 
-- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that provides a clear indication of when a database upgrade is taking place.
+- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that clearly indicates when a database upgrade is taking place.
 
 - [EVEREST-1912](https://perconadev.atlassian.net/browse/EVEREST-1912): The Storage Class used by a database cluster is now prominently displayed on the database **Overview** page, enhancing visibility and making it easier for users to access configuration details directly within the UI.
 
@@ -142,7 +142,7 @@ The PostgreSQL 17.2 image and related database cluster components based on Postg
 
 !!! note
     Support for **PostgreSQL 17.4 is now available**, featuring critical security and stability updates, particularly addressing the CVE identified in version 17.2.
-    
+
     We highly recommend upgrading to PostgreSQL 17.4 for the latest fixes and improved security features.
 
 
