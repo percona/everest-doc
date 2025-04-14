@@ -21,9 +21,9 @@
 
 === "Manual storage scaling"
 
-    ### Maximizing Efficiency with manual storage scaling
+    ### Scale your storage with ease in Percona Everest 1.6.0
 
-    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage. This is particularly useful for handling unexpected workload growth and ensures you can manage increasing database demands while maintaining data security and system stability.
+    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your database, offering greater control over resource allocation as your needs evolve.
     
     **Prerequisites for storage scaling**
 
@@ -139,6 +139,13 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 ### Known limitation
 
 The PostgreSQL 17.2 image and related database cluster components based on PostgreSQL 17 are currently affected by CVE-2025-1094—a vulnerability in the `libpq` PostgreSQL client library. This issue exposes images used by the Operator to SQL injection risks within the PostgreSQL interactive terminal due to improper neutralization of quotes. While images for earlier PostgreSQL versions have already been patched, the updated images for PostgreSQL 17 are expected to be available soon.
+
+!!! note
+    Support for PostgreSQL 17.4 is now available, featuring critical security and stability updates, particularly addressing the CVE identified in version 17.2.
+    We highly recommend upgrading to PostgreSQL 17.4 for the latest fixes and improved security features.
+
+
+
 
 ## :rocket: Upgrade now
 
