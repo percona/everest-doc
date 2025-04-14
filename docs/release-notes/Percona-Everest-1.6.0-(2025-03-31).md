@@ -51,7 +51,7 @@
     ![!image](../images/upgrade_database_versions.png)
 
 
-=== ":simple-postgresql: Support for PostgreSQL Operators"
+=== ":simple-postgresql: PostgreSQL Operators"
 
     ### Support for Percona Operator for PostgreSQL 2.6.0
 
