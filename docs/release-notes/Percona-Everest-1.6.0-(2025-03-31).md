@@ -21,7 +21,7 @@
 
 === "Manual storage scaling"
 
-    ### Scale your storage with ease in Percona Everest 1.6.0
+    ### Scale your storage with ease with Percona Everest 1.6.0
 
     Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your database, offering greater control over resource allocation as your needs evolve.
     
