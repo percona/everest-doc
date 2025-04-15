@@ -21,7 +21,7 @@ By default, Everest uploads PITR logs every minute for MySQL databases and every
 
 ### Prerequisites
 
-Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available S3-compatible location for storing backups. Otherwise, [create a backup location](../CreateStorage.md) so Everest can store PITR artifacts for the database.
+Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available S3-compatible location for storing backups. Otherwise, [create a backup location](../createBackups/backup_storage/CreateStorage.md) so Everest can store PITR artifacts for the database.
 
 To enable PITR:
 {.power-number}

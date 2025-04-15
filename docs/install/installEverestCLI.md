@@ -79,4 +79,4 @@ You can download the latest version of Everest CLI by visiting the latest releas
 
 Start by installing Percona Everest:
 
-[Install Everest :material-arrow-right:](installEverest.md){.md-button}
+[Install Everest :material-arrow-right:](../install/installEverest.md){.md-button}

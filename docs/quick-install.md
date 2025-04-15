@@ -1,17 +1,5 @@
 # Percona Everest quick install guide
 
-!!! warning
-    **Google Container Registry (GCR) Deprecation**
-
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-    **Action required** 
-
-    We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-    For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
-
-
 Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
@@ -61,6 +49,15 @@ Before getting started with Percona Everest, do the following:
         gke-<name>-default-pool-75d48bfc-zl7k   Ready    <none>   11h   v1.26.7-gke.500
         ```
 
+## Google Container Registry (GCR)
+
+!!! warning "GCR deprecation"
+    [Google Container Registry (GCR) is scheduled to be deprecated](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"} and will officially shut down on **May 20, 2025**. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
+
+**Action required**
+
+We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+
 ## Install Percona Everest
 
 To install Percona Everest using Helm follow these steps:
@@ -81,7 +78,7 @@ To install Percona Everest using Helm follow these steps:
     --namespace everest-system \
     --create-namespace
     ```
-    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](../administer/manage_namespaces.md).
+    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
     !!! note
         - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
@@ -114,7 +111,7 @@ Once you have successfully installed Percona Everest, proceed with the following
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246):
+        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
                 
             ```sh 
             kubectl get svc/everest -n everest-system
@@ -125,7 +122,7 @@ Once you have successfully installed Percona Everest, proceed with the following
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
+            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}'
             ```
 
         2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
@@ -160,7 +157,7 @@ Once you have successfully installed Percona Everest, proceed with the following
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
 
 <!-- 
 [Monitor the database with PMM :material-arrow-right:](../use/monitorDBs.md){.md-button}

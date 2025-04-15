@@ -25,7 +25,7 @@ When adding a new monitoring instance, the monitoring stack (kube-state-metrics 
 
 To use monitoring in Percona Everest, you should have a PMM instance up and running.
 
-For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/setting-up/index.html).
+For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/3/quickstart/quickstart.html).
 
 ## Add monitoring endpoint
 
