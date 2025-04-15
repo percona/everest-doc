@@ -47,7 +47,6 @@
 To upgrade your MongoDB database, navigate to the Percona Everest homepage and select the database you wish to upgrade. On the **Overview** page, locate the **DB Details** panel and click **Edit** next to **Basic Information**. Select the desired version and click **Upgrade** to begin the process.
 
 
-
     ![!image](../images/database_upgrade.png)
     
     ![!image](../images/upgrade_database_versions.png)
@@ -55,7 +54,7 @@ To upgrade your MongoDB database, navigate to the Percona Everest homepage and s
 
 === ":simple-postgresql: PostgreSQL Operator"
 
-    ### Support for Percona Operator for PostgreSQL 2.6.0
+    ### Support for PostgreSQL 2.6.0
 
     Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
 
