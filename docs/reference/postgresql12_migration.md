@@ -79,8 +79,9 @@ This option is recommended for **smaller databases** and **one-time migrations**
     - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
 
 📚 Reference
-    - [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
-    - [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
+
+- [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
+- [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
 
 
 ### Logical Replication
