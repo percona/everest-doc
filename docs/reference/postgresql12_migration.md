@@ -31,18 +31,20 @@ Review PostgreSQL documentation to select the best option for your environment.
 
 💡 Need assistance? Connect with the Percona Everest community or consult a Percona Expert. connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
-### Logical Dump and Restore vs. Logical Replication
 
-Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
+??? info "Deciding factors for the type of method to use for migration"
+    ### Logical Dump and Restore vs. Logical Replication
 
-| **Feature**              | **Logical Dump and Restore**               | **Logical Replication**               |
-|--------------------------|-------------------------------------------|--------------------------------------|
-| **Setup complexity**      | Simple and portable                      | More complex, involves replication slots |
-| **Best suited for**           | One-time migrations, backups, and moving datasets across versions | Continuous data synchronization |
-| **Downtime Impact**      | Requires application downtime during migration | Minimal downtime |
-| **Primary Keys requirement** | No primary keys required; exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables|
-| **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases |
-| **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
+    Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
+
+    | **Feature**              | **Logical Dump and Restore**               | **Logical Replication**               |
+    |--------------------------|-------------------------------------------|--------------------------------------|
+    | **Setup complexity**      | Simple and portable                      | More complex, involves replication slots |
+    | **Best suited for**           | One-time migrations, backups, and moving datasets across versions | Continuous data synchronization |
+    | **Downtime Impact**      | Requires application downtime during migration | Minimal downtime |
+    | **Primary Keys requirement** | No primary keys required; exports full table data regardless of constraints | Requires primary keys (or unique indexes) on tables|
+    | **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases |
+    | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
 === "Logical dump and restore"
 
