@@ -46,6 +46,19 @@ Review PostgreSQL documentation to select the best option for your environment.
     | **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases |
     | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
+
+=== "Logical replication"
+
+    ### Logical Replication
+
+    This option is recommended for **minimal downtime**.
+
+    Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
+
+    📚 Learn more
+
+    - [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
+
 === "Logical dump and restore"
 
     ### Logical Dump and Restore
@@ -87,17 +100,7 @@ Review PostgreSQL documentation to select the best option for your environment.
     - [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
     - [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
 
-=== "Logical replication"
 
-    ### Logical Replication
-
-    This option is recommended for **minimal downtime**.
-
-    Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
-
-    📚 Further reading
-
-    - [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
 
 
