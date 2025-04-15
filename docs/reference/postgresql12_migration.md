@@ -10,9 +10,11 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 
 1. **Backup your data** - Create a complete backup of your data before upgrading.
 
-2. **Check Compatibility** - Verify that your configurations are compatible with the new PostgreSQL version.
+2. **Select a target version** - Choose the PostgreSQL version you want to migrate to (e.g., 15 or 16). Select a stable, supported release compatible with Percona Everest's infrastructure requirements.
 
-3. **Provision a new PostgreSQL database** – Use Percona Everest to deploy a new database with the desired PostgreSQL version.
+3. **Check Compatibility** - Verify that your configurations are compatible with the new PostgreSQL version.
+
+4. **Provision a new PostgreSQL database in Percona Everest** – Use Percona Everest to deploy a new database with the desired PostgreSQL version.
 
 
 ## Choose a migration option
@@ -47,9 +49,27 @@ Two commonly used approaches to migrating a PostgreSQL database are Logical Dump
 This option is recommended for **smaller databases** and **one-time migrations**.
 {.power-number}
 
-1. Use [pg_dump/pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
+1. Provision a new PostgreSQl database in Percona Everest.
 
-2. Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into a new cluster.
+
+
+2. Perform a logical dump of the old database
+
+    - Use [pg_dump/pg_dumpall]
+(https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
+
+    ??? example "On the source database (PostgreSQL 12)"
+        ```sh
+        pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
+        ```
+3. Restore data to the new Percona Everest database
+
+    - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
+
+    ??? example "On the target database"
+        ```sh
+        pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
+        ```
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on pg_dump](https://www.postgresql.org/docs/current/backup-dump.html).
 
