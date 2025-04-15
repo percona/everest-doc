@@ -53,7 +53,7 @@ This option is recommended for **smaller databases** and **one-time migrations**
 
 
 
-2. Perform a logical dump of the old database
+2. Perform a logical dump of the old database:
 
     - Use [pg_dump or pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
 
@@ -64,7 +64,7 @@ This option is recommended for **smaller databases** and **one-time migrations**
             pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
             ```
 
-3. Restore data to the new Percona Everest database
+3. Restore data to the new Percona Everest database:
 
     - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
 
@@ -74,6 +74,9 @@ This option is recommended for **smaller databases** and **one-time migrations**
         ```sh
         pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
         ```
+4. Verify post-migration performance:
+
+    - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on pg_dump](https://www.postgresql.org/docs/current/backup-dump.html).
 
