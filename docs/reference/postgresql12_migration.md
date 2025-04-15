@@ -98,7 +98,7 @@ This option is recommended for **minimal downtime**.
 
 2. Set up replication slots and publications on the source:
 
-    - Connect to PG 12 and create a slot:
+    - Connect to PG 12 and create a slot.
 
         ```sql
         SELECT pg_create_logical_replication_slot('my_slot', 'pgoutput');
@@ -106,17 +106,17 @@ This option is recommended for **minimal downtime**.
 
 3. Set up the subscription on the target database:
 
-    - Connect to the new PostgreSQL instance and create a subscription:
+- Connect to the target database and create a subscription.
 
-        ```sql
+        ```
         CREATE SUBSCRIPTION my_sub
-        CONNECTION 'host=<source-host> dbname=<db> user=<user>      password=<password>'
+        CONNECTION 'host=<source-host> dbname=<db> user=<user> password=<password>'
         PUBLICATION my_pub;
         ```
 
 4. Monitor and validate replication:
 
-    - Check the replication status on the subscriber:
+    - Check the replication status on the subscriber.
 
         ```sql
         SELECT * FROM pg_stat_subscription;
