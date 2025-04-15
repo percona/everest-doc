@@ -78,14 +78,16 @@ This option is recommended for **smaller databases** and **one-time migrations**
 
     - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
 
-For comprehensive information, dive deep into the [PostgreSQL documentation on pg_dump](https://www.postgresql.org/docs/current/backup-dump.html).
+📚 Reference
+    - [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
+    - [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
+
 
 ### Logical Replication
 
 This option is recommended for **minimal downtime**.
 
 Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
-
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
