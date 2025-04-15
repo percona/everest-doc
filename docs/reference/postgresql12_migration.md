@@ -34,7 +34,7 @@ Review PostgreSQL documentation to select the best option for your environment.
 Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
 
-??? info " balance_scale: Expand for a detailed comparison between `logical dump and restore` vs `logical replication`"
+??? info " :balance_scale: Expand for a detailed comparison between `logical dump and restore` vs `logical replication`"
 
     ### Logical dump and restore vs. Logical replication
 
