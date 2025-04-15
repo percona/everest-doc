@@ -34,7 +34,7 @@ Review PostgreSQL documentation to select the best option for your environment.
 Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
 
-??? info "Deciding factors for the type of method to use for migration"
+??? info "Migration methods comparison"
     ### Logical Dump and Restore vs. Logical Replication
 
     Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
