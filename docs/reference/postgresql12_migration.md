@@ -90,11 +90,11 @@ This option is recommended for **minimal downtime**.
 
     - Enable logical replication on the source PostgreSQL 12 DB (ensure `wal_level = logical`).
 
-    ```sh
-    wal_level = logical
-    max_replication_slots = 10
-    max_wal_senders = 10
-    ```
+        ```sh
+        wal_level = logical
+        max_replication_slots = 10
+        max_wal_senders = 10
+        ```
 
 2. Set up replication slots and publications on the source:
 
