@@ -40,7 +40,7 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
 
     Two commonly used approaches to migrating a PostgreSQL database are Logical Dump and Restore and Logical Replication. Both methods help move data from one instance to another, but they have different purposes and distinct advantages.
 
-    | **Feature**              | **Logical Dump and Restore**               | **Logical Replication**               |
+    | **Feature**              | **Logical dump and restore**               | **Logical replication**               |
     |--------------------------|-------------------------------------------|--------------------------------------|
     | **Setup complexity**      | Simple and portable                      | More complex, involves replication slots |
     | **Best suited for**           | One-time migrations, backups, and moving datasets across versions | Continuous data synchronization |
@@ -50,9 +50,9 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
     | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
 
-=== "Logical replication"
+=== "Replication"
 
-    ### Logical Replication
+    ### Logical replication
 
     This option is recommended for **minimal downtime**.
 
@@ -62,9 +62,9 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
 
     - [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
-=== "Logical dump and restore"
+=== "Dump and restore"
 
-    ### Logical Dump and Restore
+    ### Logical dump and restore
 
     This option is recommended for **smaller databases** and **one-time migrations**.
     {.power-number}
