@@ -132,6 +132,29 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
+    === "Ingress"
+        
+        1. Run the following command to expose the service:
+
+        ```sh
+        helm install ... --set server.service.type=LoadBalancer # other options are NodePort, ClusterIP
+        ```
+
+        2. Expose Percona Everest using Ingress (supported from Percona Everest v1.6.0):
+
+        ```sh
+        helm install ... --set ingress.enabled=true \
+  --set ingress.ingressClassName=gce # gce is an example for GKE, use correct ingress class name based on your k8s provider
+        ```
+
+        3. Expose Percona Everest using Ingress and TLS (supported from Percona Everest v1.6.0):
+
+        ```sh
+        helm install ... --set ingress.enabled=true \
+  --set ingress.ingressClassName=gce \
+  --set-json ingress.tls='[{"secretName":"example-tls-secret","hosts":["example.com"]}]'
+    ```
+
 
 5. Deploy additional database namespaces:
 
@@ -149,6 +172,10 @@ Here are the steps to install Percona Everest and deploy additional database nam
     !!! note
         -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
         - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
+
+
+
+
 
 ## Configure parameters
 
