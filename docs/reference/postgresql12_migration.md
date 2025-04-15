@@ -44,55 +44,58 @@ Two commonly used approaches to migrating a PostgreSQL database are Logical Dump
 | **Schema compatibility**  | Allows schema modifications before restoration; supports cross-version migration | Requires schema compatibility between source and target databases |
 | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
-### Logical Dump and Restore
+=== "Logical dump and restore"
 
-This option is recommended for **smaller databases** and **one-time migrations**.
-{.power-number}
+    ### Logical Dump and Restore
 
-1. Provision a new PostgreSQl database in Percona Everest.
+    This option is recommended for **smaller databases** and **one-time migrations**.
+    {.power-number}
 
-
-2. Perform a logical dump of the old database:
-
-    - Use [pg_dump or pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
-
-        ??? example "Example: Source database (PostgreSQL 12)"
-            Run the following command on the source database (PostgreSQL 12):
-
-            ```sh
-            pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
-            ```
-
-3. Restore data to the new Percona Everest database:
-
-    - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
-
-        ??? example "Example: Target database"
-            Run the following command on the target PostgreSQL database:
-        
-            ```sh
-            pg_restore -U your_user -h new_db_host -d new_db_name -F c dump_file.dump
-            ```
-
-4. Verify post-migration performance:
-
-    - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
-
-📚 Reference
-
-- [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
-- [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
+    1. Provision a new PostgreSQl database in Percona Everest.
 
 
-### Logical Replication
+    2. Perform a logical dump of the old database:
 
-This option is recommended for **minimal downtime**.
+        - Use [pg_dump or pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
 
-Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
+            ??? example "Example: Source database (PostgreSQL 12)"
+                Run the following command on the source database (PostgreSQL 12):
 
-📚 Further reading
+                ```sh
+                pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
+                ```
 
-- [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
+    3. Restore data to the new Percona Everest database:
+
+        - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
+
+            ??? example "Example: Target database"
+                Run the following command on the target PostgreSQL database:
+            
+                ```sh
+                pg_restore -U your_user -h new_db_host -d new_db_name -F c dump_file.dump
+                ```
+
+    4. Verify post-migration performance:
+
+        - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
+
+    📚 Reference
+
+    - [PostgreSQL pg_dump documentation](https://www.postgresql.org/docs/current/app-pgdump.html)
+    - [PostgreSQL pg_restore documentation](https://www.postgresql.org/docs/current/app-pgrestore.html)
+
+=== "Logical replication"
+
+    ### Logical Replication
+
+    This option is recommended for **minimal downtime**.
+
+    Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
+
+    📚 Further reading
+
+    - [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
 
 
