@@ -213,6 +213,7 @@ nav:
       - Manage clusters: use/cluster-management.md
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
+      - Manual storage scaling: use/manual_storage_scaling.md
       - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
