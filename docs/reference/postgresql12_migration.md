@@ -50,9 +50,7 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
     | **Performance**          | Can be slow for large datasets due to full export/import | More efficient for continuous updates, but may add replication overhead |
 
 
-=== "Replication"
-
-    ### Logical replication
+=== "Logical Replication"
 
     This option is recommended for **minimal downtime**.
 
@@ -62,9 +60,7 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
 
     - [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
-=== "Dump and restore"
-
-    ### Logical dump and restore
+=== "Logical dump and restore"
 
     This option is recommended for **smaller databases** and **one-time migrations**.
     {.power-number}
