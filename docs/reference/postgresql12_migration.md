@@ -52,7 +52,6 @@ This option is recommended for **smaller databases** and **one-time migrations**
 1. Provision a new PostgreSQl database in Percona Everest.
 
 
-
 2. Perform a logical dump of the old database:
 
     - Use [pg_dump or pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
@@ -84,43 +83,8 @@ For comprehensive information, dive deep into the [PostgreSQL documentation on p
 ### Logical Replication
 
 This option is recommended for **minimal downtime**.
-{.power-number}
 
-1. Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
-
-    - Enable logical replication on the source PostgreSQL 12 DB (ensure `wal_level = logical`).
-
-        ```sh
-        wal_level = logical
-        max_replication_slots = 10
-        max_wal_senders = 10
-        ```
-
-2. Set up replication slots and publications on the source:
-
-    - Connect to PG 12 and create a slot.
-
-        ```psql
-        SELECT pg_create_logical_replication_slot('my_slot', 'pgoutput');
-        ```
-
-3. Set up the subscription on the target database:
-
-    - Connect to the target database and create a subscription.
-
-        ```sql
-        CREATE SUBSCRIPTION my_sub
-        CONNECTION 'host=<source-host> dbname=<db> user=<user> password=<password>'
-        PUBLICATION my_pub;
-        ```
-
-4. Monitor and validate replication:
-
-    - Check the replication status on the subscriber.
-
-        ```sql
-        SELECT * FROM pg_stat_subscription;
-        ```
+Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
 
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
