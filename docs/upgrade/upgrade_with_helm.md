@@ -36,7 +36,7 @@ where,
     To resolve this, you can use the `--force-conflicts` flag when applying the CRD:
 
     ```sh
-    kubectl apply --server-side --force-conflicts -f your-crd.yaml
+    kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side --force-conflicts
     ```
     This is generally safe when the CRDs originate from a trusted source, such as a verified Helm chart or operator.
 
