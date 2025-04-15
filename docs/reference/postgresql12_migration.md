@@ -90,29 +90,29 @@ This option is recommended for **minimal downtime**.
 
     - Enable logical replication on the source PostgreSQL 12 DB (ensure `wal_level = logical`).
 
-    ```sh
-    wal_level = logical
-max_replication_slots = 10
-max_wal_senders = 10
-    ```
+        ```sh
+        wal_level = logical
+    max_replication_slots = 10
+    max_wal_senders = 10
+        ```
 
 2. Set up replication slots and publications on the source:
 
     - Connect to PG 12 and create a slot:
 
-    ```sql
-    SELECT pg_create_logical_replication_slot('my_slot', 'pgoutput');
-    ```
+        ```sql
+        SELECT pg_create_logical_replication_slot('my_slot',    'pgoutput');
+        ```
 
 3. Set up the subscription on the target database:
 
     - Connect to the new PostgreSQL instance and create a subscription:
 
-    ```sql
-    CREATE SUBSCRIPTION my_sub
-CONNECTION 'host=<source-host> dbname=<db> user=<user> password=<password>'
-PUBLICATION my_pub;
-    ```
+        ```sql
+        CREATE SUBSCRIPTION my_sub
+    CONNECTION 'host=<source-host> dbname=<db> user=<user> password=    <password>'
+    PUBLICATION my_pub;
+        ```
 
 4. Monitor and validate replication:
 
