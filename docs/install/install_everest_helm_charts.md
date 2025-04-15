@@ -150,9 +150,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             ```sh
             helm install ... --set ingress.enabled=true \
-    --set ingress.ingressClassName=gce \
-    --set-json ingress.tls='[{"secretName":"example-tls-secret","hosts":["example.com"]}]'
-        ```
+            --set ingress.ingressClassName=gce \
+            --set-json ingress.tls='[{"secretName":"example-tls-secret","hosts":["example.com"]}]'
+            ```
 
 
 5. Deploy additional database namespaces:
