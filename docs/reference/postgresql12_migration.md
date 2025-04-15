@@ -72,7 +72,7 @@ This option is recommended for **smaller databases** and **one-time migrations**
             Run the following command on the target PostgreSQL database:
         
             ```sh
-            pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
+            pg_restore -U your_user -h new_db_host -d new_db_name -F c dump_file.dump
             ```
 
 4. Verify post-migration performance:
