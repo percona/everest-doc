@@ -57,15 +57,20 @@ This option is recommended for **smaller databases** and **one-time migrations**
 
     - Use [pg_dump or pg_dumpall](https://www.postgresql.org/docs/current/app-pgdump.html) to **export** your data from PostgreSQL 12.
 
-        ??? example "On the source database (PostgreSQL 12)"
+        ??? example "Example: Source database (PostgreSQL 12)"
+            Run the following command on the source database (PostgreSQL 12):
+
             ```sh
             pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
             ```
+
 3. Restore data to the new Percona Everest database
 
     - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
 
-    ??? example "On the target database"
+    ??? example "Example: Target database"
+        Run the following command on the target PostgreSQL database:
+        
         ```sh
         pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
         ```
