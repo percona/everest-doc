@@ -29,7 +29,9 @@ PostgreSQL offers several migration options. Each method has its own benefits an
 
 Review PostgreSQL documentation to select the best option for your environment.
 
-💡 Need assistance? Connect with the Percona Everest community or consult a Percona Expert. connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
+💡 Need assistance? Connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! 
+
+Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
 
 ??? info "Deciding factors for the type of method to use for migration"
