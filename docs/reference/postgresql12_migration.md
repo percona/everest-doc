@@ -100,9 +100,8 @@ This option is recommended for **minimal downtime**.
 
     - Connect to PG 12 and create a slot.
 
-        ```sql
+        ```psql
         SELECT pg_create_logical_replication_slot('my_slot', 'pgoutput');
-        ```
 
 3. Set up the subscription on the target database:
 
