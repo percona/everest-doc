@@ -34,7 +34,7 @@ Review PostgreSQL documentation to select the best option for your environment.
 Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
 
 
-??? info "Comprehensive analysis of PostgreSQL migration techniques: Expand for a detailed comparison of logical dump, restore, replication, and more →
+??? info "Comprehensive analysis of PostgreSQL migration techniques: Expand for a detailed comparison of logical dump, restore, replication, and more →"
 
     ### Logical dump and restore vs. Logical replication
 
