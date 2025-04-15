@@ -38,7 +38,7 @@
     ![!image](../images/edit_storage_capacity.png)
 
 
-    If you want to explore this topic in greater depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
+    :mag: If you want to explore this topic in greater depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
 
 === "🔄 Major database upgrades"
 
@@ -52,7 +52,7 @@
     
     ![!image](../images/upgrade_database_versions.png)
 
-     For a deep dive into this topic, refer to our [documentation](https://docs.percona.com/everest/upgrade/mongodb_major_upgrades.html).
+     :mag: For a deep dive into this topic, refer to our [documentation](https://docs.percona.com/everest/upgrade/mongodb_major_upgrades.html).
 
 
 === ":simple-postgresql: PostgreSQL Operator"
