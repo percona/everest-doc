@@ -3,7 +3,7 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
-??? info "🔑 Updates at a glance"
+??? info "🔑 Expand to unleash the updates at a glance"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
@@ -37,6 +37,8 @@
 
     ![!image](../images/edit_storage_capacity.png)
 
+
+    For a deep dive into this topic, refer to our [documentation]().
 
 === "🔄 Major database upgrades"
 
