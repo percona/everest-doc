@@ -68,16 +68,16 @@ This option is recommended for **smaller databases** and **one-time migrations**
 
     - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
 
-    ??? example "Example: Target database"
-        Run the following command on the target PostgreSQL database:
+        ??? example "Example: Target database"
+            Run the following command on the target PostgreSQL database:
         
-        ```sh
-        pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
-        ```
+            ```sh
+            pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
+            ```
 
 4. Verify post-migration performance:
 
-        - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
+    - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on pg_dump](https://www.postgresql.org/docs/current/backup-dump.html).
 
@@ -90,11 +90,11 @@ This option is recommended for **minimal downtime**.
 
     - Enable logical replication on the source PostgreSQL 12 DB (ensure `wal_level = logical`).
 
-        ```sh
-        wal_level = logical
+    ```sh
+    wal_level = logical
     max_replication_slots = 10
     max_wal_senders = 10
-        ```
+    ```
 
 2. Set up replication slots and publications on the source:
 
