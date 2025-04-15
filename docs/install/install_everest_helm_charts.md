@@ -143,8 +143,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         2. Expose Percona Everest using Ingress (supported from Percona Everest v1.6.0):
 
             ```sh
-            helm install ... --set ingress.enabled=true \
-    --set ingress.ingressClassName=gce # gce is an example for GKE, use correct ingress class name based on your k8s provider
+            helm install ... --set ingress.enabled=true --set ingress.ingressClassName=gce
             ```
 
         3. Expose Percona Everest using Ingress and TLS (supported from Percona Everest v1.6.0):
