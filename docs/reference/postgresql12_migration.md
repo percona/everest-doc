@@ -90,7 +90,9 @@ This option is recommended for **minimal downtime**.
 
 Use [logical replication](https://www.postgresql.org/docs/current/logical-replication.html) to continuously replicate data from your PostgreSQL 12 cluster into a PostgresQLG 13+ cluster with little to no downtime.
 
-For comprehensive information, dive deep into the [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
+📚 Further reading
+
+- [PostgreSQL documentation on logical replication](https://www.postgresql.org/docs/current/logical-replication.html).
 
 
 
