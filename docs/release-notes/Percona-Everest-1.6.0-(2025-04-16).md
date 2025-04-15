@@ -3,7 +3,7 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
-??? info "🔑 Expand to unleash the updates at a glance"
+??? info "🔑 Expand to unleash the key updates for **Percona Everest 1.6.0**"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
