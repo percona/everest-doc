@@ -74,9 +74,10 @@ This option is recommended for **smaller databases** and **one-time migrations**
         ```sh
         pg_restore -U your_user -h new_db_host -d new_db_name -F c your_db_backup.dump
         ```
+
 4. Verify post-migration performance:
 
-    - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
+        - Run queries to confirm [data integrity](https://www.postgresql.org/docs/current/applevel-consistency.html) and ensure compatibility.
 
 For comprehensive information, dive deep into the [PostgreSQL documentation on pg_dump](https://www.postgresql.org/docs/current/backup-dump.html).
 
