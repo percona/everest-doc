@@ -106,13 +106,13 @@ This option is recommended for **minimal downtime**.
 
 3. Set up the subscription on the target database:
 
-- Connect to the target database and create a subscription.
+    - Connect to the target database and create a subscription.
 
-    ```sql
-    CREATE SUBSCRIPTION my_sub
-    CONNECTION 'host=<source-host> dbname=<db> user=<user> password=<password>'
-    PUBLICATION my_pub;
-    ```
+        ```sql
+        CREATE SUBSCRIPTION my_sub
+        CONNECTION 'host=<source-host> dbname=<db> user=<user> password=<password>'
+        PUBLICATION my_pub;
+        ```
 
 4. Monitor and validate replication:
 
