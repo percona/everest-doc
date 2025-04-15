@@ -28,7 +28,7 @@ where,
     You may encounter an error due to conflicting field ownership, such as:
 
     ```sh
-error: Apply failed with 1 conflict: conflict with "helm" using apiextensions.k8s.io/v1: .spec.versions
+    error: Apply failed with 1 conflict: conflict with  "helm" using apiextensions.k8s.io/v1: .spec.versions
     ```
 
     This typically occurs when multiple tools (e.g., Helm and `kubectl` apply) manage the same Custom Resource Definition (CRD).
@@ -39,10 +39,6 @@ error: Apply failed with 1 conflict: conflict with "helm" using apiextensions.k8
     kubectl apply --server-side --force-conflicts -f your-crd.yaml
     ```
     This is generally safe when the CRDs originate from a trusted source, such as a verified Helm chart or operator.
-
-
-
-
 
 ## Upgrade Helm releases
 
