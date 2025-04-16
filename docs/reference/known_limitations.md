@@ -36,6 +36,20 @@ We are developing a new feature that will allow you to modify these settings dir
 - Consult your CSI driver documentation for important details regarding volume resizing restrictions or limitations. This is essential for ensuring smooth operations.
 
 
+## Manual storage scaling
+
+In previous versions of Percona Everest, users were able to create clusters with decimal storage sizes (for example, 1.2 GiB). However, database operators rounded these values up when provisioning PersistentVolumeClaims (PVCs)—meaning that 1.2 GiB would be provisioned as 2 GiB. Percona Everest would then display the original value in a different unit (such as **1.2 GiB shown as 1288490188800 m**), which caused confusion.
+
+In version 1.6.0, Percona Everest introduces support for scaling up storage. However, when attempting to scale a cluster to a size that does not exceed the larger rounded PVC size (for instance, trying to scale from 1.2 GiB to 2 GiB, which still rounds to 2 GiB), the cluster may become stuck in the **Resizing Volumes** state. This issue affects MySQL and MongoDB clusters; however, **PostgreSQL** clusters are **not impacted**.
+
+**Workaround** 
+
+When scaling storage on clusters created with decimal sizes, make sure the new size exceeds the next whole GiB value (for example, scale from **1.2 GiB to 3 GiB**).
+
+
+
+
+
 ## Databases
 
 - MongoDB 4.4 will no longer be supported, preventing users from upgrading the PSMDB operator if any database is running version 4.4.
