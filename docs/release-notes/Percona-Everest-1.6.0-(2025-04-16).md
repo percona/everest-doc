@@ -63,7 +63,7 @@
     Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
 
-## 🛑 PostgreSQL 12 support dropped in Percona Everest 1.6.0
+## 🛑 Removed support for PostgreSQL 12
 
 Percona Everest 1.6.0 **no longer supports** PostgreSQL 12.
 
