@@ -19,7 +19,7 @@
 
 ## 🌟 Release highlights
 
-===  "📈 Manual storage scaling"
+===  "📈 Storage scaling"
 
     ### Scale your storage with ease with Percona Everest 1.6.0
 
