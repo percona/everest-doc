@@ -146,11 +146,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 Images based on **PostgreSQL 17.2** are affected by [CVE-2025-1094](https://nvd.nist.gov/vuln/detail/CVE-2025-1094) — a critical vulnerability in `libpq` that can lead to SQL injection via the PostgreSQL terminal.
 
-**Current status**
-
-While images for earlier PostgreSQL versions have already been patched, the updated images for PostgreSQL 17 are expected to be available soon.
-
-
 **Resolution**
 
 Support for **PostgreSQL 17.4 is now available**, featuring critical security and stability updates, particularly addressing the CVE identified in version 17.2.
