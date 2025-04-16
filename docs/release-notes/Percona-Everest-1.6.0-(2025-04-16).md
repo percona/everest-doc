@@ -57,9 +57,9 @@
 
 === ":simple-postgresql: PostgreSQL Operator"
 
-    ### Support for PostgreSQL Operator 2.6.0
+    ### Support for PostgreSQL Operator 2.6.0 and PostgreSQL 17
 
-    Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0.
+    Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
 
 ## 🛑 Google Container Registry (GCR)
