@@ -64,7 +64,6 @@
 
 
 ## 🚫 PostgreSQL 12 support dropped in Percona Everest 1.6.0
-
 Percona Everest 1.6.0 **no longer supports** PostgreSQL 12.
 To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
 
