@@ -59,7 +59,7 @@
 
     ### Support for PostgreSQL Operator 2.6.0
 
-    Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
+    Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0.
 
 
 ## 🛑 Google Container Registry (GCR)
