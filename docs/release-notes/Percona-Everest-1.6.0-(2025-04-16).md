@@ -55,7 +55,7 @@
      :mag: For a deep dive into this topic, refer to our [documentation](https://docs.percona.com/everest/upgrade/mongodb_major_upgrades.html).
 
 
-=== ":simple-postgresql: Expanded PostgreSQL support in 1.6.0 "
+=== ":simple-postgresql: Expanded PostgreSQL support"
 
     ### Support for PostgreSQL Operator 2.6.0 and PostgreSQL 17
 
