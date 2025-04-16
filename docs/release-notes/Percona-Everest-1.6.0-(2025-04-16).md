@@ -57,7 +57,7 @@
 
 === ":simple-postgresql: PostgreSQL Operator"
 
-    ### Support for PostgreSQL 2.6.0 Operator
+    ### Support for PostgreSQL Operator 2.6.0
 
     Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0.
 
