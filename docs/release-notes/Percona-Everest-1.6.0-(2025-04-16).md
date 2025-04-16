@@ -88,6 +88,8 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
+- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress **resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
+
 - [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
 
     Also, PMM can now be fully configured from the Everest chart. This can be done by specifying options under the `pmm` field. This simplifies deployment management, offering greater flexibility and control for **Helm-based workflows**.
@@ -137,7 +139,6 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration but has now been corrected.
 
-- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress **resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
 
 ## Known limitation
 
