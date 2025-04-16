@@ -24,6 +24,22 @@ where,
 
 **Next version** - A placeholder for the specific version of Everest. For example, you might replace `<Next version>` with 1.3.0.
 
+!!! note
+    You may encounter an error due to conflicting field ownership, such as:
+
+    ```sh
+    error: Apply failed with 1 conflict: conflict with  "helm" using apiextensions.k8s.io/v1: .spec.versions
+    ```
+
+    This typically occurs when multiple tools (e.g., Helm and `kubectl` apply) manage the same Custom Resource Definition (CRD).
+
+    To resolve this, you can use the `--force-conflicts` flag when applying the CRD:
+
+    ```sh
+    kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side --force-conflicts
+    ```
+    This is generally safe when the CRDs originate from a trusted source, such as a verified Helm chart or operator.
+
 ## Upgrade Helm releases
 
 !!! warning

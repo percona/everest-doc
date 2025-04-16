@@ -149,6 +149,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
       - Percona-Everest 1.5.0 (2025-04-03): release-notes/Percona-Everest-1.5.0-(2025-03-04).md
       - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
       - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
@@ -185,6 +186,7 @@ nav:
     - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
     - Upgrade Percona Everest using CLI: upgrade/upgrade_with_cli.md
     - Upgrade Percona operators: upgrade/upgrade_operators.md
+    - Upgrade database versions: upgrade/mongodb_major_upgrades.md
 
   - Uninstall:
     - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
@@ -212,6 +214,7 @@ nav:
       - Manage clusters: use/cluster-management.md
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
+      - Manual storage scaling: use/manual_storage_scaling.md
       - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
@@ -220,6 +223,7 @@ nav:
   - Reference:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
+      - Migrate from PostgreSQL 12: reference/postgresql12_migration.md
       - Telemetry on Percona Everest: reference/telemetry.md
       - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md
