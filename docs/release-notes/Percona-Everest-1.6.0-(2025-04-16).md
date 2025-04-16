@@ -150,8 +150,7 @@ Images based on **PostgreSQL 17.2** are affected by [CVE-2025-1094](https://nvd.
 
 Support for **PostgreSQL 17.4 is now available**, featuring critical security and stability updates, particularly addressing the CVE identified in version 17.2.
 
-We highly recommend **upgrading to PostgreSQL 17.4** for the latest fixes and improved security features.
-
+We highly recommend upgrading to PostgreSQL 17.4 over 17.2 to benefit from the latest fixes and enhanced security features.
 
 ## :rocket: Upgrade now
 
