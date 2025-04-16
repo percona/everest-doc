@@ -63,11 +63,11 @@
     Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
 
-## 🚫 PostgreSQL 12 support dropped in Percona Everest 1.6.0
+## 🛑 PostgreSQL 12 support dropped in Percona Everest 1.6.0
 
-!!! warning "GCR deprecation"
+!!! warning
     Percona Everest 1.6.0 **no longer supports** PostgreSQL 12.
-To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
+    To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
 
 **Migration Guide:** Follow our [PostgreSQL migration](https://docs.percona.com/everest/reference/postgresql12_migration.html) procedure for a step-by-step guide to a seamless upgrade.
 
