@@ -154,4 +154,6 @@ Images based on **PostgreSQL 17.2** are affected by [CVE-2025-1094](https://nvd.
 
 ## :rocket: Upgrade now
 
-Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. 
+
+:mag: Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
