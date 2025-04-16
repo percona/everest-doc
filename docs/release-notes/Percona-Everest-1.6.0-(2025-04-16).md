@@ -38,7 +38,7 @@
     ![!image](../images/edit_storage_capacity.png)
 
 
-    :mag: If you want to explore this topic in greater depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
+    :mag: If you want to explore this topic in depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
 
 === "🔄 Major database upgrades"
 
