@@ -140,7 +140,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress **resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
 
-### Known limitation
+## Known limitation
 
 **PostgreSQL 17.2 CVE-2025-1094 Vulnerability**
 
