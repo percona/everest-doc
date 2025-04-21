@@ -230,7 +230,7 @@ By default, Microsoft Entra issues access tokens intended for use with Microsoft
 
 - **Audience (aud):** "`00000003-0000-0000-c000-000000000000`" (Microsoft Graph)
 
-**Signature:** Uses a proprietary mechanism that cannot be validated by Percona Everest
+- **Signature:** Uses a proprietary mechanism that cannot be validated by Percona Everest
 
 Microsoft Entra generates access tokens using a proprietary signature mechanism, which Percona Everest cannot validate. This results in signature verification failures when integrating Percona Everest with Entra-generated tokens.
 
@@ -256,5 +256,5 @@ everestctl settings oidc configure \
 !!! note
     Note: Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
 
-With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that we can verify.
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that you can verify.
 
