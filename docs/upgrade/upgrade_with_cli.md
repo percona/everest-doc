@@ -57,17 +57,17 @@ everestctl upgrade
     🚀 Everest has been upgraded to version 1.5.0
     ```
 
-??? info "Versions older than 1.2.0"
+??? info "Expand for upgrade instructions for versions prior to 1.2.0"
 
     ## Upgrade to versions older than v1.2.0
 
     !!! note
         It is recommended that you create backups of your databases prior to upgrading Percona Everest.
 
-    During the upgrade of Percona Everest, only Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
+    During the upgrade of Percona Everest, only Percona Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
     {.power-number}
 
-    1. If you are using everestctl v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
+    1. If you are using `everestctl` v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
 
             kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | tr ',' '\n' | xargs -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
 
@@ -96,7 +96,7 @@ everestctl upgrade
     3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
-??? info "Version 1.2.0"
+??? info "Expand for upgrade instructions for version 1.2.0"
 
     ## Upgrade to Percona Everest 1.2.0
 
