@@ -57,7 +57,7 @@ everestctl upgrade
     🚀 Everest has been upgraded to version 1.5.0
     ```
 
-??? info " Versions older than 1.2.0
+??? info "Versions older than 1.2.0"
 
     ## Upgrade to versions older than v1.2.0
 
@@ -96,9 +96,9 @@ everestctl upgrade
     3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
-??? info " Versions 1.2.0
+??? info "Versions 1.2.0"
 
-    ### Upgrade to Percona Everest 1.2.0
+    ## Upgrade to Percona Everest 1.2.0
 
     When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
