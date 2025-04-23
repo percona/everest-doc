@@ -18,7 +18,7 @@ To upgrade Percona Everest, run the following command:
 everestctl upgrade
 ```
 
-??? example "Upgrade from 1.5.0 to 1.6.0"
+??? example "Example: Upgrade from Percona Everest 1.5.0 to 1.6.0"
     ```sh
     everestctl upgrade
     ```
