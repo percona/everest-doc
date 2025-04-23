@@ -7,12 +7,58 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 
 !!! note
      - It is recommended to install the latest version of the CLI .
-     - You can only upgrade one minor version at a time. For instance, you can upgrade from version 1.0.0 to version 1.1.0 but you cannot directly upgrade from version 1.0.0 to version 1.2.0.  
+     - You can only upgrade one minor version at a time. For instance, you can upgrade from version 1.4.0 to version 1.5.0 but you cannot directly upgrade from version 1.4.0 to version 1.6.0.  
 
 
 ## Upgrade
 
-To upgrade Percona Everest, do the following:
+To upgrade Percona Everest, run the following command:
+
+```sh
+everestctl upgrade
+```
+
+??? example "Upgrade from 1.5.0 to 1.6.0"
+    ```sh
+    everestctl upgrade
+    ```
+
+    Here, we are installing Percona Everest version 1.4.0:
+
+    ```sh
+    everestctl install --version 1.4.0 
+    ❓ Provide database namespaces to be managed by Everest: everest 
+    ❓ Which operators do you want to install?
+    [X] MySQL
+    [X] MongoDB
+    > [X] PostgreSQL
+    ℹ️  Installing Everest version 1.4.0
+
+    ✅  Installing Everest Helm chart
+    ✅  Ensuring Everest API deployment is ready
+    ✅  Ensuring Everest operator deployment is ready
+    ✅  Ensuring OLM components are ready
+    ✅  Ensuring Everest CatalogSource is ready
+    ✅  Ensuring monitoring stack is ready
+    ✅  Provisioning database namespace 'everest'
+
+    🚀 Thank you for installing Everest (v1.4.0)!
+    ```
+
+    Now, we will upgrade to Percona Everest version 1.5.0:
+
+    ```sh
+    everestctl upgrade                
+    ℹ️  Upgrading Everest to version 1.5.0
+
+    ✅  Upgrading Custom Resource Definitions
+    ✅  Upgrading Helm chart
+    ✅  Ensuring Everest API deployment is ready
+    ✅  Ensuring Everest operator deployment is ready
+    ✅  Ensuring Everest CatalogSource is ready
+
+    🚀 Everest has been upgraded to version 1.5.0
+    ```
 
 
 ## Upgrade to versions other than v1.2.0
