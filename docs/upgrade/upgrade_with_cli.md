@@ -154,6 +154,19 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
 ## Uprade to Percona Everest 1.2.0 or earlier
 
+
+
+
+=== "Version 1.2.0"
+    ### Upgrade to Percona Everest 1.2.0
+
+    When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+
+    Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
+
+    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
+
+
 === "Versions prior to 1.2.0"
     ### Upgrade to versions older than 1.2.0
 
@@ -188,17 +201,6 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
             2024-05-03T12:07:26Z    info    upgrade/upgrade.go:406  Waiting for install plan installation of Everest operator to finish     {"component": "upgrade"}
             2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
             ```
-
-
-=== "Version 1.2.0"
-    ### Upgrade to Percona Everest 1.2.0
-
-    When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
-
-    Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
-
-    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
-
 
 ## After your upgrade is complete
 
