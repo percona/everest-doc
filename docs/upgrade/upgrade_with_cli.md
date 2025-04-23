@@ -154,7 +154,7 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 ## Uprade to Percona Everest 1.2.0 or earlier
 
 === "Versions prior to 1.2.0"
-    ### Upgrade to versions older than v1.2.0
+    ### Upgrade to versions older than 1.2.0
 
     !!! note
         It is recommended that you create backups of your databases prior to upgrading Percona Everest.
@@ -190,7 +190,7 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
 
 === "Version 1.2.0"
-    ## Upgrade to Percona Everest 1.2.0
+    ### Upgrade to Percona Everest 1.2.0
 
     When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
