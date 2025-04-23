@@ -57,16 +57,6 @@ everestctl upgrade
     🚀 Everest has been upgraded to version 1.5.0
     ```
 
-??? info "Expand for upgrade instructions for versions prior to 1.2.0"
-
-    
-
-
-??? info "Expand for upgrade instructions for version 1.2.0"
-
-    
-
-
 ## How to address a failed upgrade
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
@@ -161,13 +151,7 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
         kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
-
-## After your upgrade is complete
-
-After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section. 
-
-
-## Uprade to versions prior to Percona Everest 1.2.0 or 1.2.0
+## Uprade to Percona Everest 1.2.0 or earlier
 
 === "Versions prior to 1.2.0"
     ### Upgrade to versions older than v1.2.0
@@ -213,6 +197,13 @@ After upgrading your Percona Everest version, follow the instructions in step 3 
     Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
 
     In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
+
+
+## After your upgrade is complete
+
+After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section. 
+
+
 
 
 
