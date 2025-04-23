@@ -93,8 +93,6 @@ everestctl upgrade
             2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
             ```
 
-    3. After upgrading, refresh the Percona Everest UI to access the new version.
-
 
 ??? info "Expand for upgrade instructions for version 1.2.0"
 
