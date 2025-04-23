@@ -5,9 +5,10 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 
 ## Before you upgrade
 
-!!! note
-     - It is recommended to install the latest version of the CLI .
-     - You can only upgrade one minor version at a time. For instance, you can upgrade from version 1.4.0 to version 1.5.0 but you cannot directly upgrade from version 1.4.0 to version 1.6.0.  
+!!! info "Important"
+    - Percona Everest versions 1.2 and 1.3 can be installed using CLI versions 1.2 and 1.3. From Percona Everest 1.4, installation requires CLI version 1.4 or higher.
+
+    - You can only upgrade one minor version at a time. For instance, you can upgrade from version 1.4.0 to version 1.5.0 but you cannot directly upgrade from version 1.4.0 to version 1.6.0.  
 
 
 ## Upgrade
