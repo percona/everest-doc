@@ -96,7 +96,7 @@ everestctl upgrade
     3. After upgrading, refresh the Percona Everest UI to access the new version.
 
 
-??? info "Versions 1.2.0"
+??? info "Version 1.2.0"
 
     ## Upgrade to Percona Everest 1.2.0
 
@@ -204,7 +204,7 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
 ## After your upgrade is complete
 
-After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverestCLI.md) section. 
+After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section. 
 
 
 
