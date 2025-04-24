@@ -206,7 +206,6 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
             kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
 
-
 ## After your upgrade is complete
 
 After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section to reset the admin password and expose the Percona Everest service.
