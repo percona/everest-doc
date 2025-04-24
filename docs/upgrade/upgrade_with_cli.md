@@ -7,8 +7,8 @@ Percona Everest regularly releases updates that contain bug fixes, security impr
 
 ### Version compatibility
 
-- Percona Everest versions 1.2 and 1.3 can be installed using CLI versions 1.2 and 1.3. 
-- From Percona Everest 1.4, installation requires CLI version 1.4 or higher.
+- For most cases, we recommend installing the latest version of the Percona Everest CLI. 
+- If you're working with older versions, you must use CLI versions 1.2 and 1.3 for Percona Everest 1.2 and 1.3, respectively. However, starting with Percona Everest 1.4, use CLI version 1.4 or higher.
 
 ### Upgrade constraints
 
@@ -46,7 +46,7 @@ everestctl upgrade
 
     🚀 Thank you for installing Everest (v1.4.0)!
     ```
-    
+
     **Now, upgrade to Percona Everest version 1.5.0**
 
     ```sh
