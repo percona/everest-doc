@@ -66,20 +66,7 @@ everestctl upgrade
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
 
-
-
-## Upgrade to Percona Everest 1.2.0 or older versions
-
-=== "Version 1.2.0"
-    ### Upgrade to Percona Everest 1.2.0
-
-    When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
-
-    Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
-
-    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
-
-    ??? info "How to resolve upgrade failures"
+??? info "How to resolve upgrade failures"
 
         ### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
 
@@ -170,6 +157,17 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
             A similar set of steps can also be followed for monitoring configs as well:
 
                 kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
+
+## Upgrade to Percona Everest 1.2.0 or older versions
+
+=== "Version 1.2.0"
+    ### Upgrade to Percona Everest 1.2.0
+
+    When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
+
+    Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
+
+    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.    
 
 === "Versions prior to 1.2.0"
     ### Upgrade to versions older than 1.2.0
