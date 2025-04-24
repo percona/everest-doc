@@ -23,7 +23,7 @@ To upgrade Percona Everest, run the following command:
 everestctl upgrade
 ```
 
-??? example "Example: Upgrade from version 1.5.0 to 1.6.0"
+??? example "Example: Upgrade from version 1.4.0 to 1.5.0"
 
     **Install Percona Everest version 1.4.0**
 
@@ -66,95 +66,7 @@ everestctl upgrade
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
 
-### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
 
-Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
-{.power-number}
-
-1. List the existing backup-storages:
-
-    ```
-    kubectl get backupstorages -n everest-system -oyaml > new-backupstorages.yaml
-    ```
-
-2. Check whether the backup storage has been retrieved.
-
-    ```sh
-    cat new-backupstorages.yaml
-
-    apiVersion: everest.percona.com/v1alpha1
-    kind: BackupStorage
-    metadata:
-    name: s3
-    namespace: everest-system
-    spec:
-    allowedNamespaces:
-    - my-cool-namespace
-    - another-cool-namespace
-    bucket: my-cool-bucket
-    credentialsSecretName: s3
-    description: s3
-    endpointURL: https://s3.us-west-2.amazonaws.com
-    forcePathStyle: false
-    region: us-west-2
-    type: s3
-    verifyTLS: true
-    ```
-
-    !!! note
-        You may see more than one object, depending on the number of objects created.
-
-
-3. Edit `new-backupstorages.yaml` as follows:
-
-    1. For each `BackupStorage` retrieved, create a copy in each namespace specified under `.spec.allowedNamespaces`.
-
-    2. Remove (or unset) `.spec.allowedNamespaces` in each copy of the `BackupStorages` object.
-    
-    3. Ensure that `.metadata` contains only `name` and `namespace`.
-
-    ??? example "Example"
-        ```sh
-        apiVersion: everest.percona.com/v1alpha1
-        kind: BackupStorage
-        metadata:
-        name: s3
-        namespace: my-cool-namespace
-        spec:
-        allowedNamespaces: []
-        bucket: my-cool-bucket
-        credentialsSecretName: s3
-        description: s3
-        endpointURL: https://s3.us-west-2.amazonaws.com
-        forcePathStyle: false
-        region: us-west-2
-        type: s3
-        verifyTLS: true
-        ---
-        apiVersion: everest.percona.com/v1alpha1
-        kind: BackupStorage
-        metadata:
-        name: s3
-        namespace: another-cool-namespace
-        spec:
-        allowedNamespaces: []
-        bucket: my-cool-bucket
-        credentialsSecretName: s3
-        description: s3
-        endpointURL: https://s3.us-west-2.amazonaws.com
-        forcePathStyle: false
-        region: us-west-2
-        type: s3
-        verifyTLS: true
-        ```
-
-4. Create your new backup storages:
-
-        kubectl apply -f new-backupstorages.yaml
-
-    A similar set of steps can also be followed for monitoring configs as well:
-
-        kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
 ## Upgrade to Percona Everest 1.2.0 or older versions
 
@@ -167,6 +79,97 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
     In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
 
+??? info "Upgrade failures"
+
+    ### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
+
+    Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
+    {.power-number}
+
+    1. List the existing backup-storages:
+
+        ```
+        kubectl get backupstorages -n everest-system -oyaml > new-backupstorages.yaml
+        ```
+
+    2. Check whether the backup storage has been retrieved.
+
+        ```sh
+        cat new-backupstorages.yaml
+
+        apiVersion: everest.percona.com/v1alpha1
+        kind: BackupStorage
+        metadata:
+        name: s3
+        namespace: everest-system
+        spec:
+        allowedNamespaces:
+        - my-cool-namespace
+        - another-cool-namespace
+        bucket: my-cool-bucket
+        credentialsSecretName: s3
+        description: s3
+        endpointURL: https://s3.us-west-2.amazonaws.com
+        forcePathStyle: false
+        region: us-west-2
+        type: s3
+        verifyTLS: true
+        ```
+
+        !!! note
+            You may see more than one object, depending on the number of objects created.
+
+
+    3. Edit `new-backupstorages.yaml` as follows:
+
+        1. For each `BackupStorage` retrieved, create a copy in each namespace specified under `.spec.allowedNamespaces`.
+
+        2. Remove (or unset) `.spec.allowedNamespaces` in each copy of the `BackupStorages` object.
+        
+        3. Ensure that `.metadata` contains only `name` and `namespace`.
+
+        ??? example "Example"
+            ```sh
+            apiVersion: everest.percona.com/v1alpha1
+            kind: BackupStorage
+            metadata:
+            name: s3
+            namespace: my-cool-namespace
+            spec:
+            allowedNamespaces: []
+            bucket: my-cool-bucket
+            credentialsSecretName: s3
+            description: s3
+            endpointURL: https://s3.us-west-2.amazonaws.com
+            forcePathStyle: false
+            region: us-west-2
+            type: s3
+            verifyTLS: true
+            ---
+            apiVersion: everest.percona.com/v1alpha1
+            kind: BackupStorage
+            metadata:
+            name: s3
+            namespace: another-cool-namespace
+            spec:
+            allowedNamespaces: []
+            bucket: my-cool-bucket
+            credentialsSecretName: s3
+            description: s3
+            endpointURL: https://s3.us-west-2.amazonaws.com
+            forcePathStyle: false
+            region: us-west-2
+            type: s3
+            verifyTLS: true
+            ```
+
+    4. Create your new backup storages:
+
+            kubectl apply -f new-backupstorages.yaml
+
+        A similar set of steps can also be followed for monitoring configs as well:
+
+            kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
 === "Versions prior to 1.2.0"
     ### Upgrade to versions older than 1.2.0
