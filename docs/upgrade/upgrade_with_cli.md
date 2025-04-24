@@ -79,7 +79,7 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
     In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
 
-    ??? info "Upgrade failures"
+    ??? info "How to resolve upgrade failures"
 
         ### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
 
