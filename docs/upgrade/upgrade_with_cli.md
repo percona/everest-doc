@@ -46,7 +46,7 @@ everestctl upgrade
 
     🚀 Thank you for installing Everest (v1.4.0)!
     ```
-
+    
     **Now, upgrade to Percona Everest version 1.5.0**
 
     ```sh
