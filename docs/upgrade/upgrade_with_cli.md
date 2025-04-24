@@ -156,10 +156,7 @@ Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#naviga
 
         kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml
 
-## Uprade to Percona Everest 1.2.0 or earlier
-
-
-
+## Upgrade to Percona Everest 1.2.0 or older versions
 
 === "Version 1.2.0"
     ### Upgrade to Percona Everest 1.2.0
