@@ -70,16 +70,16 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
     ### Resolving upgrade failures due to the breaking API changes in Percona Everest 1.2.0
 
-        Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
-        {.power-number}
+    Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
+    {.power-number}
 
-        1. List the existing backup-storages:
+    1. List the existing backup-storages:
 
-            ```
-            kubectl get backupstorages -n everest-system -oyaml > new-backupstorages.yaml
-            ```
+        ```
+        kubectl get backupstorages -n everest-system -oyaml > new-backupstorages.yaml
+        ```
 
-        2. Check whether the backup storage has been retrieved.
+    2. Check whether the backup storage has been retrieved.
 
             ```sh
             cat new-backupstorages.yaml
