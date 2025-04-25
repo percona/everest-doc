@@ -1,6 +1,6 @@
 # Session Management
 
-Session management involves managing user sessions with a system to ensure security, efficiency, and continuity. It is generally used in applications that manage user authentication and authorization, such as web services, databases and DBaaS platforms.
+Session management is the process of handling user sessions to keep them secure, efficient, and continuous. It is used in applications that manage user authentication and authorization, such as web services, databases, and DBaaS platforms.
 
 ## Percona Everest authentication methods
 
@@ -15,14 +15,15 @@ Percona Everest supports two authentication methods:
 
 Everest uses access tokens to authenticate users:
 
-- **Built-inauthentication:**  Percona Everest generates and manages the access tokens directly.
+- **Built-in authentication:**  Percona Everest generates and manages the access tokens directly.
 - **External IdP authentication:** The tokens are issued and controlled by the IdP.
 
 Starting with Percona Everest 1.7.0, the access tokens will **now be invalidated** in the following scenarios:
 
-- Once the user is logged out. This is applicable for both built-in and IdP.
+- Once the user has logged out, this applies to both the built-in system and IdP.
 
-- Once the user is deleted. This is applicable for built-in users only. The access token for users from an IdP will remain valid until it expires. Therefore, we recommend setting a short expiration period for these access tokens.
+
+- Once a user is deleted, this only applies to built-in users. The access token for users from an IdP will remain valid until it expires, so we recommend setting a short expiration period for these access tokens.
 
 !!! info " Important"
     For IdP, we recommend using:
