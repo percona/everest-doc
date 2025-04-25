@@ -20,7 +20,7 @@ Everest uses access tokens to authenticate users:
 
 Starting with Percona Everest 1.7.0, the access tokens will **now be invalidated** in the following scenarios:
 
-- O**nce the user has logged out:** This applies to both the built-in users and IdP.
+- **Once the user has logged out:** This applies to both the built-in users and IdP.
 
 
 - **Once a user is deleted:** This only applies to built-in users. The access token for users from an IdP will remain valid until it expires, so we recommend setting a short expiration period for these access tokens.
