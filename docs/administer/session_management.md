@@ -18,7 +18,7 @@ Everest uses access tokens to authenticate users:
 - **Built-in authentication:**  Percona Everest generates and manages the access tokens directly.
 - **External IdP authentication:** The tokens are issued and controlled by the IdP.
 
-Starting with Percona Everest 1.7.0, the access tokens will **now be invalidated** in the following scenarios:
+Starting with **Percona Everest 1.7.0**, the access tokens will **now be invalidated** in the following scenarios:
 
 - **Once the user has logged out:** This applies to both the built-in users and IdP.
 
