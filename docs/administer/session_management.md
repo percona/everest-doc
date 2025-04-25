@@ -11,7 +11,7 @@ Percona Everest supports two authentication methods:
 - [External Identity Provider (IdP) authentication](Idp_integration.md): Suitable for production use and enables integration with systems such as Okta and Azure AD.
 
 
-### How authentication works in Percona Everest
+## How authentication works in Percona Everest
 
 Everest uses access tokens to authenticate users:
 
