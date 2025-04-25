@@ -25,11 +25,11 @@ Starting with Percona Everest 1.7.0, the access tokens will now be invalidated i
 - Once the user is deleted. This is applicable for built-in users only. The access token for users from an IdP will remain valid until it expires. Therefore, we recommend setting a short expiration period for these access tokens.
 
 !!! info " Important"
-    For IdP, we recommend to use:
+    For IdP, we recommend using:
 
-    - Short-lived access tokens (e.g., 5 minutes) to reduce security risks.
-    - Long-lived refresh tokens to enable secure session continuation.
-
+    - Short-lived access tokens (such as 5 minutes)
+    - Long-lived refresh tokens
+        
     For more details, refer to the [Okta guide](https://developer.okta.com/docs/guides/refresh-tokens/main/) on refresh tokens.
 
 
