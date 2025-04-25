@@ -17,53 +17,53 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
 ## Upgrade instructions
 
-To upgrade Percona Everest, run the following command:
+=== "Version 1.3.0 and onwards"
+    ### Upgrade to Percona Everest 1.3.0+
 
-```sh
-everestctl upgrade
-```
-
-??? example "Example: Upgrade from version 1.4.0 to 1.5.0"
-
-    **Install Percona Everest version 1.4.0**
+    To upgrade Percona Everest, run the following command:
 
     ```sh
-    everestctl install --version 1.4.0 
-    ❓ Provide database namespaces to be managed by Everest: everest 
-    ❓ Which operators do you want to install?
-    [X] MySQL
-    [X] MongoDB
-    > [X] PostgreSQL
-    ℹ️  Installing Everest version 1.4.0
-
-    ✅  Installing Everest Helm chart
-    ✅  Ensuring Everest API deployment is ready
-    ✅  Ensuring Everest operator deployment is ready
-    ✅  Ensuring OLM components are ready
-    ✅  Ensuring Everest CatalogSource is ready
-    ✅  Ensuring monitoring stack is ready
-    ✅  Provisioning database namespace 'everest'
-
-    🚀 Thank you for installing Everest (v1.4.0)!
+    everestctl upgrade
     ```
 
-    **Now, upgrade to Percona Everest version 1.5.0**
+    ??? example "Example: Upgrade from version 1.4.0 to 1.5.0"
 
-    ```sh
-    everestctl upgrade                
-    ℹ️  Upgrading Everest to version 1.5.0
+        **Install Percona Everest version 1.4.0**
 
-    ✅  Upgrading Custom Resource Definitions
-    ✅  Upgrading Helm chart
-    ✅  Ensuring Everest API deployment is ready
-    ✅  Ensuring Everest operator deployment is ready
-    ✅  Ensuring Everest CatalogSource is ready
+        ```sh
+        everestctl install --version 1.4.0 
+        ❓ Provide database namespaces to be managed by Everest: everest 
+        ❓ Which operators do you want to install?
+        [X] MySQL
+        [X] MongoDB
+        > [X] PostgreSQL
+        ℹ️  Installing Everest version 1.4.0
 
-    🚀 Everest has been upgraded to version 1.5.0
-    ```
+        ✅  Installing Everest Helm chart
+        ✅  Ensuring Everest API deployment is ready
+        ✅  Ensuring Everest operator deployment is ready
+        ✅  Ensuring OLM components are ready
+        ✅  Ensuring Everest CatalogSource is ready
+        ✅  Ensuring monitoring stack is ready
+        ✅  Provisioning database namespace 'everest'
 
+        🚀 Thank you for installing Everest (v1.4.0)!
+        ```
 
-### Version-specific upgrade instructions
+        **Now, upgrade to Percona Everest version 1.5.0**
+
+        ```sh
+        everestctl upgrade                
+        ℹ️  Upgrading Everest to version 1.5.0
+
+        ✅  Upgrading Custom Resource Definitions
+        ✅  Upgrading Helm chart
+        ✅  Ensuring Everest API deployment is ready
+        ✅  Ensuring Everest operator deployment is ready
+        ✅  Ensuring Everest CatalogSource is ready
+
+        🚀 Everest has been upgraded to version 1.5.0
+        ```
 
 
 === "Version 1.2.0"
