@@ -3,6 +3,13 @@
 The Percona Everest server now supports Transport Layer Security (TLS)  for all incoming connections. TLS **encrypts** client and server communication. This keeps data safe from being **intercepted or changed**. Administrators can configure server certificates and private keys to enable **secure HTTPS access** to the Everest API server. This strengthens security for production environments.
 
 
+## TLS setup with Percona Everest
+
+!!! info "Important"
+    This section provides an example using **Helm**. You can also use the provided options with the Percona Everest CLI by using the flag `—helm.set`.
+
+
+
 
 
 
