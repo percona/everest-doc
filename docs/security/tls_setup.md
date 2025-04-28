@@ -116,12 +116,12 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
     3. Install Percona Everest with your custom certificates:
 
-    ```sh
-    helm install everest-core percona/everest --create-namespace \
-    -n everest-system \
-    --set server.tls.enabled=true \
-    -f values.yaml
-    ```
+        ```sh
+        helm install everest-core percona/everest --create-namespace \
+        -n everest-system \
+        --set server.tls.enabled=true \
+        -f values.yaml
+        ```
 
 
 
