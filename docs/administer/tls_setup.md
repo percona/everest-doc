@@ -5,6 +5,8 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 !!! note
     - When TLS is enabled, the default server port (8080) will only accept `https` traffic, and `http` traffic will be rejected.
     - We do not support redirects from `http` to `https`.
+    - Self-signed certificates aren't trusted by most browsers, so it's best to use a trusted certificate from a Certificate Authority (CA) in production.
+
 
 
 ## TLS setup with Percona Everest
@@ -65,7 +67,10 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 			name: test-selfsigned
     ```
 
-4. Install Percona Everest:
+    Replace **example.com** with your actual domain name. The certificate will be issued by the `test-selfsigned` issuer created earlier.
+
+
+4. Install Percona Everest in the `everest-system` namespace:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
@@ -104,6 +109,8 @@ Here are the steps to set up the Percona Everest server using cert-manager:
                     tls.key: YOUR_PRIVATE_KEY_FILE
                     tls.crt: YOUR_CERTIFICATE_FILE
         ```
+
+        Replace `YOUR_PRIVATE_KEY_FILE` and `YOUR_CERTIFICATE_FILE` with the actual paths to your key and certificate files.
 
     2. Install Percona Everest with your custom certificates:
 
