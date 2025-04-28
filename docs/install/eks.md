@@ -108,7 +108,7 @@ $ eksctl delete cluster --region=<region> --name="<cluster name>"
 The cluster deletion may take time.
 
 !!! warning
-    After deleting the cluster, all data stored in it will be lost!
+    After deleting the cluster, all data stored in it will be lost.
 
 ## Next Steps
 
