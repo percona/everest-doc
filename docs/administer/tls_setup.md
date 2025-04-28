@@ -15,7 +15,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 
 ### Use Cert-manager (recommended)     
 
-#### Pre-requisites**
+#### Pre-requisites
 
 Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
 
@@ -35,14 +35,14 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 2. Create a Self-Signed issuer:
 
 
-        ```sh
-        apiVersion: cert-manager.io/v1
-        kind: ClusterIssuer
-        metadata:
-            name: test-selfsigned
-        spec:
-            selfSigned: {}
-        ```
+    ```sh
+    apiVersion: cert-manager.io/v1
+    kind: ClusterIssuer
+    metadata:
+        name: test-selfsigned
+    spec:
+        selfSigned: {}
+    ```
   
     This will create a `ClusterIssuer` named `test-selfsigned ` that can issue certificates using a self-signed method, without the need for an external Certificate Authority (CA).
 
@@ -51,27 +51,27 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
 3. Create a configuration file named `values.yaml`:
 
-        ```sh
-        server:
-	      tls: 
-		    enabled: true
-		    certificate:
-			create: true
-			domain: example.com
-			issuer:
-				group: cert-manager.io
-				kind: ClusterIssuer 
-				name: test-selfsigned
-        ```
+    ```sh
+    server:
+	tls: 
+	  enabled: true
+	  certificate:
+	  create: true
+	  domain: example.com
+	  issuer:
+			group: cert-manager.io
+			kind: ClusterIssuer 
+			name: test-selfsigned
+    ```
 
 4. Install Percona Everest:
 
-        ```sh
-        helm install everest-core percona/everest --create-namespace \
+    ```sh
+    helm install everest-core percona/everest --create-namespace \
 	-n everest-system \
 	--set server.tls.enabled=true \
 	-f values.yaml
-        ```
+    ```
 
 
 ??? info "Alternative options to set up Percona Everest using TLS"
@@ -106,12 +106,12 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
     2. To install Percona Everest with your custom certificates, use the following command:
 
-        ```sh
-        helm install everest-core percona/everest --create-namespace \
+    ```sh
+    helm install everest-core percona/everest --create-namespace \
     -n everest-system \
     --set server.tls.enabled=true \
     -f values.yaml
-        ```
+    ```
 
 
 
