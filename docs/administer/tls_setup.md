@@ -3,9 +3,9 @@
 The Percona Everest server now supports Transport Layer Security (TLS)  for all incoming connections. TLS **encrypts** client and server communication. This keeps data safe from being **intercepted or changed**. Administrators can configure server certificates and private keys to enable **secure HTTPS access** to the Everest API server. This strengthens security for production environments.
 
 !!! note
-    - When tls is enabled, the default server port (8080) will accept only `https` traffic, and `http` traffic will not be accepted.
-    - We do not support http → https redirects
-    - Generally it is advisable to configure TLS at the LoadBalancer or Ingress level.
+    - When TLS is enabled, the default server port (8080) will only accept `https` traffic, and `http` traffic will be rejected.
+- We do not support redirects from `http` to `https`.
+- Generally, it is advisable to configure TLS at the **Load Balancer** or **Ingress level**.
 
 
 ## TLS setup with Percona Everest
