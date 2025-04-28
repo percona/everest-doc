@@ -195,12 +195,14 @@ nav:
    
   - Administer:
       - User management: administer/manage_users.md
-      - Single sign-on (SSO): administer/Idp_integration.md
-      - Session management: administer/session_management.md
       - Role-based access control: administer/rbac.md
       - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
+  - Security:
+      - Single Sign-On (SSO): security/sso_idp_integration.md
+      - Session Management: security/session_management.md
+      - Transport Layer Security (TLS) support: security/tls_setup.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
