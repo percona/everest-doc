@@ -106,14 +106,14 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
                     tls.crt: YOUR_CERTIFICATE_FILE
         ```
 
-2. To install Percona Everest with your custom certificates, use the following command:
+    2. To install Percona Everest with your custom certificates, use the following command:
 
-    ```sh
-    helm install everest-core percona/everest --create-namespace \
-  -n everest-system \
-  --set server.tls.enabled=true \
-  -f values.yaml
-    ```
+        ```sh
+        helm install everest-core percona/everest --create-namespace \
+    -n everest-system \
+    --set server.tls.enabled=true \
+    -f values.yaml
+        ```
 
 
 
