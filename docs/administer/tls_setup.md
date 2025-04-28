@@ -98,7 +98,9 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     Here are the steps to set up the Percona Everest server using custom certificates:
     {.power-number}
 
-    1. Create a configuration file named `values.yaml`:
+    1. Ensure you have the private key and certificate files available.
+
+    2. Create a configuration file named `values.yaml`:
 
         ```sh
         server:
@@ -112,7 +114,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
         Replace `YOUR_PRIVATE_KEY_FILE` and `YOUR_CERTIFICATE_FILE` with the actual paths to your key and certificate files.
 
-    2. Install Percona Everest with your custom certificates:
+    3. Install Percona Everest with your custom certificates:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
