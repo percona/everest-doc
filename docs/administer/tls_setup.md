@@ -40,9 +40,9 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
         apiVersion: cert-manager.io/v1
         kind: ClusterIssuer
         metadata:
-        name: test-selfsigned
+            name: test-selfsigned
         spec:
-        selfSigned: {}
+            selfSigned: {}
         ```
   
     This will create a `ClusterIssuer` named `test-selfsigned ` that can issue certificates using a self-signed method, without the need for an external Certificate Authority (CA).
