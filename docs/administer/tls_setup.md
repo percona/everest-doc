@@ -14,13 +14,12 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
     This section provides an example using **Helm**. You can also use the provided options with the Percona Everest CLI by using the flag `—helm.set`.
 
 
-
 ==== "Cert-manager (recommended)"
-    ### Use cert-manager
+     ### Use cert-manager
 
-    **Pre-requisites**
+     **Pre-requisites**
 
-    Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
+     Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
 
     Here are the steps to set up the Percona Everest server using cert-manager:
     {.power-number}
