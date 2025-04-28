@@ -1,4 +1,4 @@
-# Install Percona Everest using CLI
+# Install Percona Everest using everestctl
 
 ## Before you start
 
