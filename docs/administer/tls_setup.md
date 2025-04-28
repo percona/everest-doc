@@ -30,7 +30,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
     kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.0/cert-manager.yaml
     ```
 
-        For alternative installation methods, refer to the [documentation](https://cert-manager.io/docs/installation/).
+    For alternative installation methods, refer to the [documentation](https://cert-manager.io/docs/installation/).
 
     2. Create a Self-Signed issuer:
 
@@ -63,8 +63,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 				kind: ClusterIssuer 
 				name: test-selfsigned
         ```
-
-
+        
     4. Install Percona Everest:
 
         ```sh
