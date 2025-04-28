@@ -15,6 +15,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 
 
 ==== "Cert-manager (recommended)"
+     
      ### Use cert-manager
 
      **Pre-requisites**
