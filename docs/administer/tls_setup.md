@@ -19,7 +19,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 
 Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
 
-#### Set up everest using cert-manager
+#### Set up Percona Everest using cert-manager
 
 Here are the steps to set up the Percona Everest server using cert-manager:
 {.power-number}
@@ -32,8 +32,9 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
     For alternative installation methods, refer to the [documentation](https://cert-manager.io/docs/installation/).
 
-2. Create a Self-Signed issuer:
+2. Create a Self-Signed issuer.
 
+    Use the following YAML configuration:
 
     ```sh
     apiVersion: cert-manager.io/v1
@@ -74,7 +75,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```
 
 
-??? info "Alternative options to set up Percona Everest using TLS"
+??? info "Alternative TLS options to set up Percona Everest"
 
     ### Use self-signed certificates
 
@@ -87,9 +88,9 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 	--set server.tls.enabled=true
     ```
 
-    ### Configure TLS with Custom certificates
+    ### Configure TLS with custom certificates
 
-    Here are the steps to set up the Percona Everest server using Custom certificates:
+    Here are the steps to set up the Percona Everest server using custom certificates:
     {.power-number}
 
     1. Create a configuration file named `values.yaml`:
@@ -104,7 +105,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
                     tls.crt: YOUR_CERTIFICATE_FILE
         ```
 
-    2. To install Percona Everest with your custom certificates, use the following command:
+    2. Install Percona Everest with your custom certificates:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
