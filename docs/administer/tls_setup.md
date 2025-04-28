@@ -4,7 +4,7 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 
 !!! note
     - When TLS is enabled, the default server port (8080) will only accept `https` traffic, and `http` traffic will be rejected.
-- We do not support redirects from `http` to `https`.
+    - We do not support redirects from `http` to `https`.
 
 
 ## TLS setup with Percona Everest
