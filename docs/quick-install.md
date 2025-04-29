@@ -154,15 +154,15 @@ Once you have successfully installed Percona Everest, proceed with the following
 
         Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
-=== "Port forwarding with TLS enabled"
-        When TLS is enabled, run the following `kubectl port-forward` command to connect to Percona Everest:
-                
-        ```sh
-        kubectl port-forward svc/everest 8443:443 -n everest-system
-        ``` 
+    === "Port forwarding with TLS enabled"
+            When TLS is enabled, run the following `kubectl port-forward` command to connect to Percona Everest:
+                    
+            ```sh
+            kubectl port-forward svc/everest 8443:443 -n everest-system
+            ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8443](http://127.0.0.1:8443).
-        
+            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8443](http://127.0.0.1:8443).
+
 ## Next steps
 
 [Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
