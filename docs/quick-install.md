@@ -163,7 +163,7 @@ Once you have successfully installed Percona Everest, proceed with the following
         kubectl port-forward svc/everest 8443:443 -n everest-system
         ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8443](http://127.0.0.1:8443).
+        Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
 
         For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](security/tls_setup.md#tls-setup-with-percona-everest).
