@@ -48,7 +48,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     Replace **example.com** with your actual domain name.
 
 
-2. Install Percona Everest in the `everest-system` namespace:
+2. Use these values to install Percona Everest:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
@@ -82,7 +82,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
         ```sh
         server:
-          tls: 
+        tls: 
             enabled: true
             secret:
                 certs:
