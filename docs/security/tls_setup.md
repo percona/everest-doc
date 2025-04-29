@@ -64,7 +64,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 	  issuer:
 			group: cert-manager.io
 			kind: ClusterIssuer 
-			name: test-selfsigned
+			name: your-cluster-issuer
     ```
 
     Replace **example.com** with your actual domain name. The certificate will be issued by the `test-selfsigned` issuer created earlier.
