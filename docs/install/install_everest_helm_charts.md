@@ -146,7 +146,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
 
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](security/tls_setup.md#tls-setup-with-percona-everest).
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 5. Deploy additional database namespaces:
 
