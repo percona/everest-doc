@@ -122,7 +122,7 @@ To install and provision Percona Everest to Kubernetes:
 
 
     === "Node Port"
-        A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
+        A `NodePort` is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
 
         1. Run the following command to change the Everest service type to `NodePort`:
 
@@ -157,7 +157,7 @@ To install and provision Percona Everest to Kubernetes:
         
         4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
-    === "Port Forwarding"
+    === "Port forwarding"
         Run the following command to use `Kubectl port-forward` for connecting to Everest without exposing the service:
                 
         ```sh
@@ -166,7 +166,7 @@ To install and provision Percona Everest to Kubernetes:
 
         To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-    === "Port Forwarding with TLS enabled"
+    === "Port forwarding with TLS enabled"
         When TLS is enabled, run the following `kubectl port-forward` command to connect to Percona Everest:
                 
         ```sh
