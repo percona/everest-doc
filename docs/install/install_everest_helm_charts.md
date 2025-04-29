@@ -127,22 +127,26 @@ Here are the steps to install Percona Everest and deploy additional database nam
         4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
-        Run the following command to use `Kubectl port-forward` for connecting to Everest without exposing the service:
+
+        1. Run the following command to use `Kubectl port-forward` for connecting to Everest without exposing the service:
                 
-        ```sh
-        kubectl port-forward svc/everest 8080:8080 -n everest-system
-        ``` 
+            ```sh
+            kubectl port-forward svc/everest 8080:8080 -n everest-system
+            ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
+            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
 
-        When [TLS is enabled](../security/tls_setup.md), run the following `kubectl port-forward` command to connect to Percona Everest:
-                
-        ```sh
-        kubectl port-forward svc/everest 8443:443 -n everest-system
-        ``` 
+        2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
+                    
+            ```sh
+            kubectl port-forward svc/everest 8443:443 -n everest-system
+            ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8443](http://127.0.0.1:8443).
+            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
+
+
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](security/tls_setup.md#tls-setup-with-percona-everest).
 
 5. Deploy additional database namespaces:
 
