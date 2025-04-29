@@ -35,7 +35,6 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.0/cert-manager.yaml
     ```
 
-
 2. Create a configuration file named `values.yaml`:
 
     ```sh
