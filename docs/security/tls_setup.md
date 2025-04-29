@@ -12,7 +12,7 @@ The Percona Everest server supports Transport Layer Security (TLS)  for all inco
 ## TLS setup with Percona Everest
 
 !!! info "Important"
-    This section provides an example using **Helm**. You can also use the provided options with `everestctl` by using the flag `—helm.set`.
+    This section provides an example using **Helm**. You can also use the provided options with `everestctl` by using the flag `--helm.set`.
 
 
 ### Use Cert-manager (recommended)     
