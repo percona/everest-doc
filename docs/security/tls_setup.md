@@ -82,7 +82,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
         ```sh
         server:
-        tls: 
+          tls: 
             enabled: true
             secret:
                 certs:
