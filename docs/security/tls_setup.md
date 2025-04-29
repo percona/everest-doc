@@ -58,7 +58,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```
 
 
-??? info "Alternative TLS options to set up Percona Everest"
+??? info "Alternative methods for configuring TLS in Percona Everest"
 
     ### Use self-signed certificates
 
