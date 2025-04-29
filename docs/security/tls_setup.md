@@ -29,13 +29,8 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 Here are the steps to set up the Percona Everest server using cert-manager:
 {.power-number}
 
-1. Install cert-manager:
 
-    ```sh
-    kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.0/cert-manager.yaml
-    ```
-
-2. Create a configuration file named `values.yaml`:
+1. Create a configuration file named `values.yaml`:
 
     ```sh
     server:
@@ -53,7 +48,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     Replace **example.com** with your actual domain name.
 
 
-3. Install Percona Everest in the `everest-system` namespace:
+2. Install Percona Everest in the `everest-system` namespace:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
