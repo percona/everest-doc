@@ -174,3 +174,8 @@ To install and provision Percona Everest to Kubernetes:
         ``` 
 
         To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8443](http://127.0.0.1:8443).
+
+
+## Next steps
+
+[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
