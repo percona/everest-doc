@@ -12,14 +12,17 @@ The Percona Everest server now supports Transport Layer Security (TLS)  for all 
 ## TLS setup with Percona Everest
 
 !!! info "Important"
-    This section provides an example using **Helm**. You can also use the provided options with the Percona Everest CLI by using the flag `—helm.set`.
+    This section provides an example using **Helm**. You can also use the provided options with `everestctl` by using the flag `—helm.set`.
 
 
 ### Use Cert-manager (recommended)     
 
 #### Pre-requisites
 
-Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
+- Ensure that [cert-manager](https://cert-manager.io/docs/) has been deployed in your infrastructure.
+
+- Ensure that you have a properly configured **Issuer** or **ClusterIssuer** in place. See the [documentation](https://cert-manager.io/docs/configuration/) for details.
+
 
 #### Set up Percona Everest using cert-manager
 
@@ -31,8 +34,6 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```sh
     kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.0/cert-manager.yaml
     ```
-
-    For alternative installation methods, refer to the [documentation](https://cert-manager.io/docs/installation/).
 
 2. Create a Self-Signed issuer.
 
