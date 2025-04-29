@@ -154,6 +154,7 @@ Once you have successfully installed Percona Everest, proceed with the following
 
         Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
+        **TLS enabled**
 
         When **TLS is enabled**, run the `kubectl port-forward` command to connect to Percona Everest:
                     
