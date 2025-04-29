@@ -36,7 +36,6 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```
 
 
-
 2. Create a configuration file named `values.yaml`:
 
     ```sh
@@ -52,7 +51,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 			name: your-cluster-issuer
     ```
 
-    Replace **example.com** with your actual domain name. The certificate will be issued by the `test-selfsigned` issuer created earlier.
+    Replace **example.com** with your actual domain name.
 
 
 3. Install Percona Everest in the `everest-system` namespace:
