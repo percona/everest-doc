@@ -35,25 +35,9 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.17.0/cert-manager.yaml
     ```
 
-2. Create a Self-Signed issuer.
 
-    Use the following YAML configuration:
 
-    ```sh
-    apiVersion: cert-manager.io/v1
-    kind: ClusterIssuer
-    metadata:
-        name: test-selfsigned
-    spec:
-        selfSigned: {}
-    ```
-  
-    This will create a `ClusterIssuer` named `test-selfsigned ` that can issue certificates using a self-signed method, without the need for an external Certificate Authority (CA).
-
-    !!! note
-        Self-signed issuers are not recommended for production use. We are using a self-signed issuer for simplicity. You can configure additional types of issuers; see the [documentation](https://cert-manager.io/docs/configuration/issuers/) for details.
-
-3. Create a configuration file named `values.yaml`:
+2. Create a configuration file named `values.yaml`:
 
     ```sh
     server:
@@ -71,7 +55,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     Replace **example.com** with your actual domain name. The certificate will be issued by the `test-selfsigned` issuer created earlier.
 
 
-4. Install Percona Everest in the `everest-system` namespace:
+3. Install Percona Everest in the `everest-system` namespace:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
