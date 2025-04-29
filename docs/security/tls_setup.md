@@ -113,7 +113,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
                     tls.crt: YOUR_CERTIFICATE_FILE
         ```
 
-        Replace `YOUR_PRIVATE_KEY_FILE` and `YOUR_CERTIFICATE_FILE` with the actual paths to your key and certificate files.
+        Replace `YOUR_PRIVATE_KEY_FILE` and `YOUR_CERTIFICATE_FILE` with the actual contents of your public and private key files.
 
     3. Install Percona Everest with your custom certificates:
 
