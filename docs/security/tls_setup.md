@@ -35,11 +35,11 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```sh
     server:
 	  tls: 
-	   enabled: true
-	   certificate:
-	     create: true
-	     domain: example.com
-	     issuer:
+	    enabled: true
+	    certificate:
+	      create: true
+	      domain: example.com
+	      issuer:
 			group: cert-manager.io
 			kind: ClusterIssuer 
 			name: your-cluster-issuer
