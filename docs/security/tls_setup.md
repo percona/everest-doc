@@ -1,6 +1,6 @@
 # TLS support for Percona Everest
 
-The Percona Everest server supports Transport Layer Security (TLS)  for all incoming connections. TLS **encrypts** client and server communication. This keeps data safe from being **intercepted or changed**. Administrators can configure server certificates and private keys to enable **secure HTTPS access** to the Everest API server. This strengthens security for production environments.
+Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that communication between clients and the API server is encrypted, protecting data from interception or tampering. Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
 !!! note
     - When TLS is enabled, the default server port (8080) will only accept `https` traffic, and `http` traffic will be rejected.
