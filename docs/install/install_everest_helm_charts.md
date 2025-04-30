@@ -98,7 +98,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                                     port:
                                     number: 8080
                         EOF
-                        ```
+            ```
 
         2. Create the Ingress:
 
