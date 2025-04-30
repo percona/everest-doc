@@ -202,8 +202,8 @@ nav:
   - Security:
       - Single Sign-On (SSO): security/sso_idp_integration.md
       - Session Management: security/session_management.md
-      - Transport Layer Security (TLS) support: security/tls_setup.md
-  
+      - Transport Layer Security (TLS) support: security/tls_setup.md  
+
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
