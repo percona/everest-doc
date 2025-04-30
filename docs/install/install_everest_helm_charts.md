@@ -71,40 +71,40 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     === "Ingress"
 
-       If your Kubernetes cluster has an Ingress controller installed, we can create an Ingress resource pointing to Everest to expose it on port 80. For example:
+        If your Kubernetes cluster has an Ingress controller installed, we can create an Ingress resource pointing to Everest to expose it on port 80. For example:
    
        1. Prepare the Ingress definition
 
-        ```sh
-        tee everest_ingress.yaml <<EOF
-        apiVersion: networking.k8s.io/v1
-        kind: Ingress
-        metadata:
-          name: everest-ingress
-          namespace: percona-everest
-          annotations:
-            kubernetes.io/ingress.allow-http: "true"
-        spec:
-          ingressClassName: nginx
-          rules:
-          - host: everest.percona.com
-            http:
-              paths:
-              - path: /
-                pathType: Prefix
-                backend:
-                  service:
-                    name: everest
-                    port:
-                      number: 8080
-          EOF
-          ```
+            ```sh
+            tee everest_ingress.yaml <<EOF
+            apiVersion: networking.k8s.io/v1
+            kind: Ingress
+            metadata:
+            name: everest-ingress
+            namespace: percona-everest
+            annotations:
+                kubernetes.io/ingress.allow-http: "true"
+            spec:
+            ingressClassName: nginx
+            rules:
+            - host: everest.percona.com
+                http:
+                paths:
+                - path: /
+                    pathType: Prefix
+                    backend:
+                    service:
+                        name: everest
+                        port:
+                        number: 8080
+            EOF
+            ```
 
           2. Create the Ingress
 
-           ```sh
-            kubectl create -f everest_ingress.yaml
-           ```
+            ```sh
+                kubectl create -f everest_ingress.yaml
+            ```
 
           See also [Securing Percona Everest with Ingress and Cert-Manager](https://www.percona.com/blog/securing-percona-everest-with-ingress-and-cert-manager/)
     
