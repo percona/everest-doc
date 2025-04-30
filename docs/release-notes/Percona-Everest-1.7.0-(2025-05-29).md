@@ -1,4 +1,4 @@
-# What's new in Percona Everest 1.6.0
+# What's new in Percona Everest 1.7.0
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
@@ -63,16 +63,6 @@
     Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
 
-## 🛑 Removed support for PostgreSQL 12
-
-Percona Everest 1.6.0 **no longer supports** PostgreSQL 12.
-
-### Action required
-
-To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
-
-**Migration Guide:** Follow our [PostgreSQL migration](https://docs.percona.com/everest/reference/postgresql12_migration.html) procedure for a step-by-step guide to a seamless upgrade.
-
 ## 🛑 Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
@@ -90,78 +80,71 @@ We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soo
     
 For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
+## New Feature
 
-## New features
+- [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605) Select Pod Scheduling Policy in DB creation wizard
 
-- [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases, respectively.
+- [EVEREST-1606](https://perconadev.atlassian.net/browse/EVEREST-1606) Select Pod Scheduling Policy in DB overview tab
 
-- [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**.
+- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607) Navigate to Pod Scheduling Policy from the DB overview tab
 
-- [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
+- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862) \[UI\] Topology diagram view
 
-- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress** resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
+- [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987) Add support for PXC operator v1.17.0
 
-- [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Manage Pod Scheduling Policies
 
-    Also, PMM can now be fully configured from the Everest chart. This can be done by specifying options under the `pmm` field. This simplifies deployment management, offering greater flexibility and control for **Helm-based workflows**.
 
 ## Improvements
 
-- [EVEREST-1202](https://perconadev.atlassian.net/browse/EVEREST-1202): We’ve refined the table header icons by removing the focus state when users click outside for an enhanced UX.
+- [EVEREST-990](https://perconadev.atlassian.net/browse/EVEREST-990) Everest GUI needs to use HTTPS
 
-- [EVEREST-1280](https://perconadev.atlassian.net/browse/EVEREST-1280): We've moved the **Storage class** field to the **Advanced Configurations** page for better organization and usability.
+- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106) Check for user existence on every incoming request
 
-- [EVEREST-1312](https://perconadev.atlassian.net/browse/EVEREST-1312): The installation log now displays the same operator names as selected in the wizard for consistency and clarity.
+- [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180) TLS support for Everest server
 
-- [EVEREST-1711](https://perconadev.atlassian.net/browse/EVEREST-1711): We've enhanced the database creation wizard by removing the final confirmation step, which improves user flow and decreases the number of clicks needed to create a database.
+- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806) \[UI\] Improve Visibility of Proxy Validation Message for MySQL Database Creation 
 
-- [EVEREST-1921](https://perconadev.atlassian.net/browse/EVEREST-1921): Updated the database version upgrade modal to prevent selection of the current version, ensuring only valid upgrade options are available.
+- [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923) Invalidate session for logged out users
 
-- [EVEREST-1930](https://perconadev.atlassian.net/browse/EVEREST-1930): We have introduced a distinct **Upgrading** state that clearly indicates when a database upgrade is taking place.
+- [EVEREST-1931](https://perconadev.atlassian.net/browse/EVEREST-1931) \[UI\] Improve Diagram View: Default Zoom & Search Functionality for DB Cluster Components
 
-- [EVEREST-1912](https://perconadev.atlassian.net/browse/EVEREST-1912): The Storage Class used by a database cluster is now prominently displayed on the database **Overview** page, enhancing visibility and making it easier for users to access configuration details directly within the UI.
+- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946) Add confirmation dialog before performing disk size update
 
 ## Bugs
 
-- [EVEREST-765](https://perconadev.atlassian.net/browse/EVEREST-765): We have fixed an issue that caused Point-In-Time Recovery (PITR) to be disabled after the database was suspended and then resumed.
+- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741) Enabling PITR sometimes displays the database as down
 
-- [EVEREST-1350](https://perconadev.atlassian.net/browse/EVEREST-1350): The UI now displays the IP address along with the netmask, ensuring consistency with the backend format.
+- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
 
+- [EVEREST-1540](https://perconadev.atlassian.net/browse/EVEREST-1540) \[CLI\] Authorization token for a deleted user should be invalidated
 
-- [EVEREST-1374](https://perconadev.atlassian.net/browse/EVEREST-1374): We have identified and addressed an inconsistency in the logic governing the naming restrictions for backup storage and monitoring endpoints.
+- [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623) Haproxy restarts continuously in 5 node mysql database
 
-- [EVEREST-1625](https://perconadev.atlassian.net/browse/EVEREST-1625): Point-In-Time Recovery (PITR) options were not visible in the UI when no scheduled backups were in place. This occurred even if the most recent backup was completed successfully and PITR was enabled. This issue has been resolved now.
+- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651) Creating a new database from backup fails for a mysql database with a long name
 
-- [EVEREST-1763](https://perconadev.atlassian.net/browse/EVEREST-1763): When modifying the network topology by reducing the configuration from three nodes to a single node, no error message was displayed. This issue has been resolved, and an error message now appears, indicating that downscaling is not possible.
+- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700) Database clusters restarted on creation when PMM monitoring enabled
 
-- [EVEREST-1798](https://perconadev.atlassian.net/browse/EVEREST-1798): Resolved an issue where the PostgreSQL cluster was repeatedly initialized, leading to backup failures in specific scenarios.
+- [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754) \[UI\] storage is \(re\)initializing error message displayed
 
-- [EVEREST-1911](https://perconadev.atlassian.net/browse/EVEREST-1911): Fixed an issue where an empty state briefly appeared before the first DB cluster was displayed.
+- [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785) \[BE\] PITR pod gets restarted many times
 
-- [EVEREST-1920](https://perconadev.atlassian.net/browse/EVEREST-1920): Fixed a UI issue where the custom number of nodes for PostgreSQL was not displaying correctly in the cluster overview.
+- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838) The 'Edit' option for PITR is disabled for MySQL and MongoDB clusters, even when PITR is enabled.
 
-- [EVEREST-1985](https://perconadev.atlassian.net/browse/EVEREST-1985): Resolved an issue preventing PITR-based recovery when backup schedules were added after the PostgreSQL database was created.
+- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865) \[UI\] PITR edit info not available for PG db cluster
 
-- [EVEREST-1979](https://perconadev.atlassian.net/browse/EVEREST-1979): Addressed an issue where the database engine upgrade unexpectedly modified the backup schedule time.
+- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890) \[UI\] Number of Proxies changes from 'X' to '1' while creating a mysql db cluster
 
-- [EVEREST-1959](https://perconadev.atlassian.net/browse/EVEREST-1959): The database version was not displayed when creating a new database from a backup. This issue has been resolved now. 
+- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895) \[UI\] PITR time can't be changed from the last successful backup
 
-- [EVEREST-1963](https://perconadev.atlassian.net/browse/EVEREST-1963): The `storageclass` field associated with a database cluster is now non-editable to ensure consistency.
+- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948) \[UI\] Component Age isn't displayed properly
 
-- [EVEREST-1978](https://perconadev.atlassian.net/browse/EVEREST-1978): The PITR location was initially set incorrectly during backup restoration but has now been corrected.
+- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
 
+- [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011) Restore to a mysql database is not working in pxc v1.17.0
 
-## Known limitation
+- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018) Incorrect Everest installation instructions when TLS is enabled
 
-**PostgreSQL 17.2 CVE-2025-1094 Vulnerability**
-
-Images based on **PostgreSQL 17.2** are affected by [CVE-2025-1094](https://nvd.nist.gov/vuln/detail/CVE-2025-1094){:target="_blank"} — a critical vulnerability in `libpq` that can lead to SQL injection via the PostgreSQL terminal.
-
-**Resolution**
-
-Support for **PostgreSQL 17.4 is now available**, featuring critical security and stability updates, particularly addressing the CVE identified in version 17.2.
-
-We strongly recommend using PostgreSQL version 17.4 instead of 17.2 to take advantage of the latest fixes and improved security features.
 
 ## :rocket: Upgrade now
 
