@@ -42,7 +42,7 @@ Decoding the base64 encoded value will yield a YAML that appears as follows:
 
 ## User management commands
 
-This section provides a list of CLI commands for managing users in Percona Everest.
+This section provides a list of `everestctl` commands for managing users in Percona Everest.
 
 ### Retrieve password
 

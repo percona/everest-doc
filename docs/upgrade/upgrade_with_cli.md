@@ -1,14 +1,14 @@
-# Upgrade Percona Everest using the CLI
+# Upgrade Percona Everest using everestctl
 
 Percona Everest regularly releases updates that contain bug fixes, security improvements, and other enhancements to improve the overall performance of your database.
 
 
 ## Before you upgrade
 
-### Percona Everest and CLI version compatibility
+### Percona Everest and everestctl version compatibility
 
-- For most cases, we recommend installing the latest version of the Percona Everest CLI before attempting an upgrade.
-- If you're working with older versions, you must use CLI versions 1.2 and 1.3 for Percona Everest 1.2 and 1.3, respectively. However, starting with Percona Everest 1.4, use CLI version 1.4 or higher.
+- For most cases, we recommend installing the latest version of `everestctl` before attempting an upgrade.
+- If you're working with older versions, you must use `everestctl` versions 1.2 and 1.3 for Percona Everest 1.2 and 1.3, respectively. However, starting with Percona Everest 1.4, use `everestctl` version 1.4 or higher.
 
 ### Upgrade constraints
 
