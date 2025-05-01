@@ -22,6 +22,7 @@
 
 ===  "⎈ Affinity"
 
+
     ### Database Affinity rules for optimized Kubernetes scheduling
     
     The DB Affinity Rules feature provides database administrators with enhanced control over the distribution of database workloads within a Kubernetes cluster. By configuring Kubernetes affinity and anti-affinity rules, you can optimize performance, improve resilience, and utilize resources more efficiently—customized to the architecture and components of each database.
