@@ -35,9 +35,14 @@
     
     These capabilities offer a robust toolkit for defining and maintaining workload distribution strategies across all supported database engines: MySQL, MongoDB, and PostgreSQL.
 
-=== "🔄 Major database upgrades"
+=== "🔐 TLS support"
 
-    ### Seamless major version upgrades for MongoDB
+    ### Improved Security with TLS support
+
+    Starting with Percona Everest 1.7.0, Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that client and API server communication is encrypted, protecting data from interception or tampering. 
+    
+    Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
+
 
     
 
