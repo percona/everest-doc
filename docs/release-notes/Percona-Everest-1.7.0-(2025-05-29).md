@@ -7,7 +7,7 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Manual storage scaling](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Increase the capacity of your storage through manual storage scaling|
+    | **1.**|[Affinity](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Increase the capacity of your storage through manual storage scaling|
     | **2.**|[MongoDB: Major DB updates](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Support for major version upgrades of MongoDB|
     | **3.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17|
     | **4.**|[Removed support for PostgreSQL 12](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#removed-support-for-postgresql-12)|Percona Everest 1.6.0 discontinues support for PostgreSQL 12|
@@ -20,40 +20,25 @@
 
 ## 🌟 Release highlights
 
-===  "📈 Storage scaling"
+===  "⎈ Affinity"
 
-    ### Scale your storage with ease with Percona Everest 1.6.0
-
-    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your database, offering greater control over resource allocation as your needs evolve.
+    ### Database Affinity rules for optimized Kubernetes scheduling
     
-    **Prerequisites for storage scaling**
+    The DB Affinity Rules feature provides database administrators with enhanced control over the distribution of database workloads within a Kubernetes cluster. By configuring Kubernetes affinity and anti-affinity rules, you can optimize performance, improve resilience, and utilize resources more efficiently—customized to the architecture and components of each database.
 
-    - **PersistentVolumeClaim (PVC) volume expansion** - Ensure that the `StorageClass` used by the database’s PersistentVolumeClaim (PVC) supports volume expansion.  Refer to the [Kubernetes documentation on Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/){:target="_blank"} for more details.
+    This feature covers three key areas of affinity rule management throughout the database lifecycle:
 
-    - **Resource quota check** - Verify that your resource quotas allow for the requested storage capacity. For more information, see the [Kubernetes documentation on Storage Resource Quota](https://kubernetes.io/docs/concepts/policy/resource-quotas/#storage-resource-quota){:target="_blank"} 
-
-    **How to modify storage capacity**
-
-    To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
-
-    ![!image](../images/edit_storage_capacity.png)
-
-
-    :mag: If you want to explore this topic in depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
+    - **Reusable Affinity Policies** – Create shared policies that can be reused by many DB clusters.
+    - **Policy selection during database deployment** – Select the appropriate policy during the database creation process.
+    **Affinity management and status monitoring** – Modify affinity settings for specific components in existing cluster, as well as quickly monitor the status from the database overview page.
+    
+    These capabilities offer a robust toolkit for defining and maintaining workload distribution strategies across all supported database engines: MySQL, MongoDB, and PostgreSQL.
 
 === "🔄 Major database upgrades"
 
     ### Seamless major version upgrades for MongoDB
 
-    Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your applications remain secure, performant, and compliant with the latest MongoDB features.
-
-    To upgrade your MongoDB database, navigate to the Percona Everest homepage and select the database you wish to upgrade. On the **Overview** page, locate the **DB Details** panel and click **Edit** next to **Basic Information**. Select the desired version and click **Upgrade** to begin the process.
-
-    ![!image](../images/database_upgrade.png)
     
-    ![!image](../images/upgrade_database_versions.png)
-
-     :mag: For a deep dive into this topic, refer to our [documentation](https://docs.percona.com/everest/upgrade/mongodb_major_upgrades.html).
 
 
 === ":simple-postgresql: Expanded PostgreSQL support"
