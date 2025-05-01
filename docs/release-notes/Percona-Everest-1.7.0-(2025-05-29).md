@@ -52,6 +52,7 @@
 
     This feature is valuable for applications that handle user authentication and authorization, including web services, databases, and Database as a Service (DBaaS) platforms.
 
+
     === " :simple-mysql: Percona XtraBackup Operator (PXC)"
     
     ### Support for Percona XtraBackup Operator 1.17.0
