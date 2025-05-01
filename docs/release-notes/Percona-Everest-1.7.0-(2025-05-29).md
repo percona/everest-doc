@@ -31,7 +31,7 @@
 
     - **Reusable Affinity Policies** – Create shared policies that can be reused by many DB clusters.
     - **Policy selection during database deployment** – Select the appropriate policy during the database creation process.
-    **Affinity management and status monitoring** – Modify affinity settings for specific components in existing cluster, as well as quickly monitor the status from the database overview page.
+    - **Affinity management and status monitoring** – Modify affinity settings for specific components in existing cluster, as well as quickly monitor the status from the database overview page.
     
     These capabilities offer a robust toolkit for defining and maintaining workload distribution strategies across all supported database engines: MySQL, MongoDB, and PostgreSQL.
 
