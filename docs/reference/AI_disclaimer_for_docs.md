@@ -1,4 +1,4 @@
-# Use of Artificial Intelligence (AI) in Percona Everest Documentation
+# Use of Artificial Intelligence (AI) in Percona Everest documentation
 
 
 The writers of this documentation use generative AI in content creation, language refinement, and formatting optimization, especially in the new additions to the documentation.
