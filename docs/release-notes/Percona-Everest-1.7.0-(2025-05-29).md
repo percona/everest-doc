@@ -45,6 +45,7 @@
 
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 === "Session management"
 
 
@@ -55,6 +56,8 @@
 
     Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 =======
+=======
+>>>>>>> Stashed changes
 === "🕒 Session management"
 
     ### Percona Everest 1.7.0: Secure user Access with session management
@@ -68,6 +71,9 @@
     ### Support for Percona XtraBackup Operator 1.17.0
 
     Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
