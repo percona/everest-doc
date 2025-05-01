@@ -44,6 +44,7 @@
     Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
 
+<<<<<<< Updated upstream
 === "Session management"
 
 
@@ -53,6 +54,21 @@
     ### Support for PostgreSQL Operator 2.6.0 and PostgreSQL 17
 
     Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
+=======
+=== "🕒 Session management"
+
+    ### Percona Everest 1.7.0: Secure user Access with session management
+
+    Starting with Percona Everest 1.7.0, we've introduced session management,  which handles user sessions to keep them secure, efficient, and continuous.
+
+    This feature is valuable for applications that handle user authentication and authorization, including web services, databases, and Database as a Service (DBaaS) platforms.
+
+    === " :simple-mysql: Percona XtraBackup Operator (PXC)"
+    
+    ### Support for Percona XtraBackup Operator 1.17.0
+
+    Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
+>>>>>>> Stashed changes
 
 
 ## 🛑 Google Container Registry (GCR)
