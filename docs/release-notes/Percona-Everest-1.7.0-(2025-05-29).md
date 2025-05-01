@@ -44,7 +44,8 @@
     Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
 
-    
+=== "Session management"
+
 
 
 === ":simple-postgresql: Expanded PostgreSQL support"
