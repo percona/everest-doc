@@ -80,7 +80,8 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 ## New Feature
 
-- [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605) Select Pod Scheduling Policy in DB creation wizard
+- [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605): We've introduced a **Pod Scheduling Policy** panel in the **Advanced Configuration** step of the DB cluster creation wizard. This feature allows you to define custom Affinity rules while creating a new DB cluster, providing greater control over pod placement and workload distribution.
+
 
 - [EVEREST-1606](https://perconadev.atlassian.net/browse/EVEREST-1606) Select Pod Scheduling Policy in DB overview tab
 
