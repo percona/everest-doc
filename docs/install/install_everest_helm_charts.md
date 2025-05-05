@@ -176,7 +176,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
 
-        2. When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
+        2. Run the following command to connect to Percona Everest when **Transport Layer Security (TLS) is enabled**:  
                     
             ```sh
             kubectl port-forward svc/everest 8443:443 -n everest-system
