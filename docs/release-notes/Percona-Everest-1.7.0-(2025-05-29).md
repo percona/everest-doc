@@ -92,26 +92,29 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607) Navigate to Pod Scheduling Policy from the DB overview tab
 
-- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862) \[UI\] Topology diagram view
+- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): The **Components** tab now features a new **Topology View **to improve the visibility and management of DB clusters deployed in Percona Everest. This interactive view visually represents the components of the cluster, including pods, services, status, and their relationships.
 
-- [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987) Add support for PXC operator v1.17.0
+- [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
 - [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Manage Pod Scheduling Policies
 
 
 ## Improvements
 
-- [EVEREST-990](https://perconadev.atlassian.net/browse/EVEREST-990) Everest GUI needs to use HTTPS
+- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106): Percona Everest administrators can now delete users created with `everestctl`. Once a user is removed, they can no longer use their access tokens to make requests to the Everest API. This improves security by preventing unauthorized access from former users and allows for better management of user permissions within Percona Everest.
 
-- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106) Check for user existence on every incoming request
+- [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
-- [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180) TLS support for Everest server
+- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring that users receive the correct message when the **Continue** button is disabled.
 
-- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806) \[UI\] Improve Visibility of Proxy Validation Message for MySQL Database Creation 
+- [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923): The Everest API access token now becomes invalid immediately upon logout, preventing unauthorized access to your account.
 
-- [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923) Invalidate session for logged out users
 
-- [EVEREST-1931](https://perconadev.atlassian.net/browse/EVEREST-1931) \[UI\] Improve Diagram View: Default Zoom & Search Functionality for DB Cluster Components
+- [EVEREST-1931](https://perconadev.atlassian.net/browse/EVEREST-1931): We have improved the diagram view for the default zoom and search functionality of DB cluster components in the following ways:
+
+    - **Default Zoom Level**: A predefined zoom level is now set to ensure that all components are visible upon loading.
+    - **Reset View Button**: This button allows you to reset the zoom level and reposition the view to its default settings.
+    - **Search Functionality**: A search bar has been added to the diagram view, similar to the one in the table view, making it easier to locate components.
 
 - [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946) Add confirmation dialog before performing disk size update
 
