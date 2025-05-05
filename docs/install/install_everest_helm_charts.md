@@ -54,16 +54,16 @@ Here are the steps to install Percona Everest and deploy additional database nam
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
-??? info "📦 Install Percona Everest with TLS enabled"
+    ??? info "📦 Install Percona Everest with TLS enabled"
 
-    Install Percona Everest with TLS enabled:
+        Install Percona Everest with TLS enabled:
 
-    ```sh
-    helm install everest-core percona/everest \
-    --namespace everest-system \
-    --create-namespace
-    --set server.tls.enabled=true
-    ```
+        ```sh
+        helm install everest-core percona/everest \
+        --namespace everest-system \
+        --create-namespace
+        --set server.tls.enabled=true
+        ```
 
 3. Once the installation is complete, retrieve the `admin` password. 
 
@@ -80,8 +80,10 @@ Here are the steps to install Percona Everest and deploy additional database nam
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Load Balancer"
+        Use the following commands to change the Everest service type to `LoadBalancer`:
+        {.power-number}
 
-        1. Use the following command to change the Everest service type to `LoadBalancer`:
+        1. Run the following command:
                     
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
@@ -99,7 +101,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:8080/TCP    10s
                 ```
 
-            2. When **TLS is enabled**, run the following command to connect to Percona Everest:       
+        3. Run the following command to connect to Percona Everest When **TLS is enabled**:       
                     
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
