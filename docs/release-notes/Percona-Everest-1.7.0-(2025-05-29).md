@@ -149,10 +149,10 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 
 - [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
 
-- [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011) The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
+- [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
 
-- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018) Now, when installing Percona Everest with TLS enabled, the installation message provides the correct instructions for accessing the user interface.
+- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): Now, when installing Percona Everest with TLS enabled, the installation message provides the correct instructions for accessing the user interface.
 
 
 ## :rocket: Upgrade now
