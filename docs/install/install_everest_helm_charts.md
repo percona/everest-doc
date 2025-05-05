@@ -164,7 +164,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
 
