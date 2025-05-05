@@ -90,7 +90,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
     - This feature allows users to enable the Pod Scheduling Policy for an individual DB cluster after its creation.
     - Once enabled, users can select one of the predefined scheduling policies to influence pod placement according to their workload distribution or fault-tolerance needs.
 
-- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607) Navigate to Pod Scheduling Policy from the DB overview tab
+- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607): Navigate to Pod Scheduling Policy from the DB overview tab
 
 - [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): The **Components** tab now features a new **Topology View **to improve the visibility and management of DB clusters deployed in Percona Everest. This interactive view visually represents the components of the cluster, including pods, services, status, and their relationships.
 
@@ -121,10 +121,10 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Enabling PITR sometimes displays the database as down
 
-- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
+- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): Creating a new postgresql database using backup has no restore information
 
 
-- [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623) Haproxy restarts continuously in 5 node mysql database
+- [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623): Haproxy restarts continuously in 5 node mysql database
 
 - [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed an issue where creating a new MySQL database from a backup would fail if the database name was too long.
 
@@ -134,7 +134,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): The **storage is (re)initializing** error message was displayed on the UI intermittently . We have now resolved the issue.
 
-- [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785) \[BE\] PITR pod gets restarted many times
+- [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): \[BE\] PITR pod gets restarted many times
 
 - [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): 
 Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**," even though PITR was already enabled.
@@ -147,7 +147,7 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 
 - [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The **Age** of the components is now accurately shown on the **Components** panel, ensuring that users can easily view and assess the information they need.
 
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
+- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): \[BE\] Edit monitoring instance does not work
 
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
