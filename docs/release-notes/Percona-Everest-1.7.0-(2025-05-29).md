@@ -143,15 +143,16 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 
 - [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890): During the MySQL DB cluster creation process, the number of proxies changed incorrectly from the user-defined value `(X)` to `1` instead of keeping the specified configuration. We have resolved the issue now.
 
-- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895) \[UI\] PITR time can't be changed from the last successful backup
+- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895): We have fixed an issue where changes to the time range between the last successful backup and the latest Point-in-Time Recovery (PITR) did not save. The system automatically reverted the selection to the latest PITR.
 
-- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948) \[UI\] Component Age isn't displayed properly
+- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The **Age** of the components is now accurately shown on the **Components** panel, ensuring that users can easily view and assess the information they need.
 
 - [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
 
-- [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011) Restore to a mysql database is not working in pxc v1.17.0
+- [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011) The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
-- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018) Incorrect Everest installation instructions when TLS is enabled
+
+- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018) Now, when installing Percona Everest with TLS enabled, the installation message provides the correct instructions for accessing the user interface.
 
 
 ## :rocket: Upgrade now
