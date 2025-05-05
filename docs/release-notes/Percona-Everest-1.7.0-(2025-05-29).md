@@ -116,31 +116,32 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
     - **Reset View Button**: This button allows you to reset the zoom level and reposition the view to its default settings.
     - **Search Functionality**: A search bar has been added to the diagram view, similar to the one in the table view, making it easier to locate components.
 
-- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946) Add confirmation dialog before performing disk size update
 
 ## Bugs
 
-- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741) Enabling PITR sometimes displays the database as down
+- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Enabling PITR sometimes displays the database as down
 
 - [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
 
-- [EVEREST-1540](https://perconadev.atlassian.net/browse/EVEREST-1540) \[CLI\] Authorization token for a deleted user should be invalidated
 
 - [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623) Haproxy restarts continuously in 5 node mysql database
 
-- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651) Creating a new database from backup fails for a mysql database with a long name
+- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed an issue where creating a new MySQL database from a backup would fail if the database name was too long.
 
-- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700) Database clusters restarted on creation when PMM monitoring enabled
+- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700): When PMM monitoring was enabled, the database clusters underwent multiple reconciliation cycles upon creation, which caused unnecessary restarts of all pods. This significantly slowed down the startup times. 
 
-- [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754) \[UI\] storage is \(re\)initializing error message displayed
+    A similar problem arose during the cluster deletion process—before the termination could begin, all pods went through a restart cycle, which delayed the shutdown. We have resolved this issue now.
+
+- [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): The **storage is (re)initializing** error message was displayed on the UI intermittently . We have now resolved the issue.
 
 - [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785) \[BE\] PITR pod gets restarted many times
 
-- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838) The 'Edit' option for PITR is disabled for MySQL and MongoDB clusters, even when PITR is enabled.
+- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): 
+Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**," even though PITR was already enabled.
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865) \[UI\] PITR edit info not available for PG db cluster
+- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): When you hover over the **Edit** option for PostgreSQL schedules in Percona Everest, a tooltip now appears that states, **Point-in-time recovery (PITR) is always enabled for all PostgreSQL schedules and cannot be disabled**. Previously, tooltips were only shown for MySQL and MongoDB schedules.
 
-- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890) \[UI\] Number of Proxies changes from 'X' to '1' while creating a mysql db cluster
+- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890): During the MySQL DB cluster creation process, the number of proxies changed incorrectly from the user-defined value `(X)` to `1` instead of keeping the specified configuration. We have resolved the issue now.
 
 - [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895) \[UI\] PITR time can't be changed from the last successful backup
 
