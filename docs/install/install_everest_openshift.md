@@ -141,7 +141,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
 
     === "Port Forwarding"
 
-        1. Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
+        1. Run the following command to setup a port-forward to the Everest server service:
                 
             ```sh
             kubectl port-forward svc/everest 8080:8080 -n everest-system

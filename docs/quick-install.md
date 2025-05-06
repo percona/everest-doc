@@ -148,7 +148,7 @@ Once you have successfully installed Percona Everest, proceed with the following
     === "Port forwarding"
         The `kubectl port-forward` command in Kubernetes is used to create a temporary connection between your local machine and a specific Kubernetes resource (e.g., a Pod, Service, or Deployment) by forwarding traffic from a local port to a port on the resource. 
         
-        1. Run the following command for connecting to Everest service from your machine without exposing it outside of the K8s cluster:
+        1. Run the following command to setup a port-forward to the Everest server service:
 
                 
             ```sh
