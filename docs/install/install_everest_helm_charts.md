@@ -132,14 +132,15 @@ Here are the steps to install Percona Everest and deploy additional database nam
             ```
 
             ??? example "When TLS is enabled"
-            
+                ```
                 kubectl get svc/everest -n everest-system
                 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
                 everest   NodePort   10.43.139.191   <none>        8443:443/TCP   28m
-            
+                ```
         
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
+        ??? example "Expected output"
             ```sh
             kubectl get nodes -o wide
             NAME                   STATUS   ROLES    AGE   VERSION             
