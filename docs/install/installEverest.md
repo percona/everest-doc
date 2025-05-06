@@ -160,23 +160,23 @@ To install and provision Percona Everest to Kubernetes:
 
         4. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
-        ??? example "Expected output"
+            ??? example "Expected output"
 
-            ```sh
-            kubectl get nodes -o wide
-            NAME                   STATUS   ROLES    AGE   VERSION             
-            INTERNAL-IPEXTERNAL-IP  OS-IMAGE                        KERNEL-VERSION   
-            CONTAINER-RUNTIME
-            gke-everest-test-default-pool-8bbed860-65gx   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.199   34.175.155.135   Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            gke-everest-test-default-pool-8bbed860-pqzb   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.200   34.175.120.50    Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            gke-everest-test-default-pool-8bbed860-s0hg   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.201   34.175.201.246   Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            ```
+                ```sh
+                kubectl get nodes -o wide
+                NAME                   STATUS   ROLES    AGE   VERSION             
+                INTERNAL-IPEXTERNAL-IP  OS-IMAGE                        KERNEL-VERSION   
+                CONTAINER-RUNTIME
+                gke-everest-test-default-pool-8bbed860-65gx   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.199   34.175.155.135   Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                gke-everest-test-default-pool-8bbed860-pqzb   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.200   34.175.120.50    Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                gke-everest-test-default-pool-8bbed860-s0hg   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.201   34.175.201.246   Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                ```
         
         5. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
