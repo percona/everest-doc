@@ -135,14 +135,14 @@ To install and provision Percona Everest to Kubernetes:
 
             ??? example "Expected output"
 
-             ```sh 
-            kubectl get svc/everest -n everest-system
-            ```
+                ```sh 
+                kubectl get svc/everest -n everest-system
+                ```
                 
-            ```
+                ```
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:443/TCP    10s
-            ```
+                ```
 
             This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
 
