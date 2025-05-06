@@ -131,7 +131,7 @@ To install and provision Percona Everest to Kubernetes:
                 
                 ```
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-                everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:443/TCP    10s
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
 
 
