@@ -108,6 +108,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
             ```
 
             ??? example "Expected output"
+                ```sh 
+                kubectl get svc/everest -n everest-system
+                ```
                 ```
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:443/TCP    10s
@@ -181,7 +184,11 @@ Here are the steps to install Percona Everest and deploy additional database nam
                     
             ```sh
             kubectl port-forward svc/everest 8443:443 -n everest-system
-            ``` 
+            ```
+
+             ```sh 
+            kubectl get svc/everest -n everest-system
+            ```
 
             Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
