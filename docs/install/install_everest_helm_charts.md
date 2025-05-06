@@ -65,6 +65,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
         --set server.tls.enabled=true
         ```
 
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+
 3. Once the installation is complete, retrieve the `admin` password. 
 
     ```sh
