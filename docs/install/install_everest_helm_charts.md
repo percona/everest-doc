@@ -103,24 +103,16 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:8080/TCP    10s
                 ```
 
-        3. Run the following command to connect to Percona Everest when **TLS is enabled**:       
-                    
-            ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
-            ```
 
-            ??? example "Expected output"
-                ```sh 
-                kubectl get svc/everest -n everest-system
-                ```
-                ```
+            ??? example "When TLS is enabled"
+
+                ```sh
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-                everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:443/TCP    10s
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       8443:443/TCP    10s
                 ```
 
             This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
 
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
@@ -139,17 +131,12 @@ Here are the steps to install Percona Everest and deploy additional database nam
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        2. Run the following command to change the Everest service type to `NodePort` when **TLS is enabled**
-
-            The following command displays the port assigned by Kubernetes to the everest service, which is `443` in this case.
-
-                `
+            ??? example "When TLS is enabled"
+            
                 kubectl get svc/everest -n everest-system
                 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-                everest   NodePort   10.43.139.191   <none>        8080:443/TCP   28m
+                everest   NodePort   10.43.139.191   <none>        8443:443/TCP   28m
             
-
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
         
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
@@ -179,23 +166,15 @@ Here are the steps to install Percona Everest and deploy additional database nam
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
+        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
+            ??? example "When TLS is enabled"
 
-        2. Run the following command to connect to Percona Everest when **Transport Layer Security (TLS) is enabled**:  
-                    
-            ```sh
-            kubectl port-forward svc/everest 8443:443 -n everest-system
-            ```
-
-             ```sh 
-            kubectl get svc/everest -n everest-system
-            ```
+                ```sh
+            kubectl port-forward svc/everest 8443:443 -n everest-system      ```
 
             Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
-
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 5. Deploy additional database namespaces:
 
