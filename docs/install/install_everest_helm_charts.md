@@ -132,7 +132,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 ```
                 kubectl get svc/everest -n everest-system
                 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-                everest   NodePort   10.43.139.191   <none>        8443:443/TCP   28m
+                everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
                 ```
         
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.

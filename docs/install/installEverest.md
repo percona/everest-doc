@@ -155,7 +155,7 @@ To install and provision Percona Everest to Kubernetes:
                 ```sh
                 kubectl get svc/everest -n everest-system
                 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-                everest   NodePort   10.43.139.191   <none>        8080:443/TCP   28m
+                everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
                 ```            
 
         4. Retrieve the external IP addresses for the kubernetes cluster nodes.
