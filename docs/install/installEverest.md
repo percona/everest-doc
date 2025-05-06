@@ -127,7 +127,7 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       8080:8080/TCP    10s
                 ```
 
-    3. Run the following command to connect to Percona Everest when **TLS is enabled**:       
+        3. Run the following command to connect to Percona Everest when **TLS is enabled**:       
                     
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
