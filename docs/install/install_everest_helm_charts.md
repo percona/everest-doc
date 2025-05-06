@@ -73,9 +73,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
 
-    The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+    - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+    - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
     To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
@@ -167,14 +167,14 @@ Here are the steps to install Percona Everest and deploy additional database nam
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
+            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
-        ??? example "When TLS is enabled"
+            ??? example "When TLS is enabled"
 
-            ```sh
-            kubectl port-forward svc/everest 8443:443 -n everest-system      ```
+                ```sh
+                kubectl port-forward svc/everest 8443:443 -n everest-system      ```
 
-        Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
+            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
 
 5. Deploy additional database namespaces:
