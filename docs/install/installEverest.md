@@ -170,9 +170,7 @@ To install and provision Percona Everest to Kubernetes:
             kubectl get svc/everest -n everest-system
             NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
             everest   NodePort   10.43.139.191   <none>        8080:443/TCP   28m
-            ```
-
-            
+            ```            
 
             For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
