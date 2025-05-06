@@ -78,6 +78,16 @@ To install and provision Percona Everest to Kubernetes:
                 everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
                 ```
         
+        ??? info "🔒 Install Percona Everest with TLS enabled"
+
+                        ```sh
+            everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --set server.tls.enabled=true --skip-wizard
+            ```
+
+
+
+
+
         2. If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
 
             ```sh

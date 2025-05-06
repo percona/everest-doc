@@ -54,7 +54,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
-    ??? info "📦 Install Percona Everest with TLS enabled"
+    ??? info "🔒 Install Percona Everest with TLS enabled"
 
         Install Percona Everest with TLS enabled:
 
