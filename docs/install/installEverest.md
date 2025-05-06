@@ -164,7 +164,19 @@ To install and provision Percona Everest to Kubernetes:
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        3. Retrieve the external IP addresses for the kubernetes cluster nodes.
+        3. Run the following command to change the Everest service type to `NodePort` when **TLS is enabled**
+
+            The following command displays the port assigned by Kubernetes to the everest service, which is `443` in this case.
+
+                ```sh
+                kubectl get svc/everest -n everest-system
+                NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+                everest   NodePort   10.43.139.191   <none>        8080:443/TCP   28m
+                ```
+
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+
+        4. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
             ```sh
             kubectl get nodes -o wide
@@ -182,7 +194,7 @@ To install and provision Percona Everest to Kubernetes:
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        5. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port forwarding"
 
@@ -195,7 +207,7 @@ To install and provision Percona Everest to Kubernetes:
             To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
 
 
-        2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
+        2. Run the following command to connect to Percona Everest When **Transport Layer Security (TLS) is enabled**:
                     
             ```sh
             kubectl port-forward svc/everest 8443:443 -n everest-system
