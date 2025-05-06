@@ -77,7 +77,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
@@ -172,7 +172,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
             ??? example "When TLS is enabled"
 
                 ```sh
-                kubectl port-forward svc/everest 8443:443 -n everest-system      ```
+                kubectl port-forward svc/everest 8443:443 -n everest-system
+                ```
 
             Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
