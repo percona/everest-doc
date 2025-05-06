@@ -108,7 +108,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
                 ```sh
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
-                everest   LoadBalancer   10.43.172.194   34.175.201.246       **8443:443/TCP**    10s
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       8443:443/TCP    10s
                 ```
 
     === "Node Port"
