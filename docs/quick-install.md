@@ -78,6 +78,20 @@ To install Percona Everest using Helm follow these steps:
     --namespace everest-system \
     --create-namespace
     ```
+
+       ??? info "🔒 Install Percona Everest with TLS enabled"
+
+        Install Percona Everest with TLS enabled:
+
+        ```sh
+        helm install everest-core percona/everest \
+        --namespace everest-system \
+        --create-namespace
+        --set server.tls.enabled=true
+        ```
+
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+
     Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
     !!! note
@@ -110,6 +124,13 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
+            
+            ??? example "When TLS is enabled"
+
+                ```sh
+                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
+                ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
                 
