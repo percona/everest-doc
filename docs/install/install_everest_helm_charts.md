@@ -135,7 +135,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
                 ```
         
-        3. Retrieve the external IP addresses for the kubernetes cluster nodes.
+        2. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
             ??? example "Expected output"
                 ```sh
@@ -154,11 +154,11 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 Optimized OS from Google   6.1.100+         containerd://1.7.19
                 ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        3. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
 
-        1. Run the following command to setup a port-forward to the Everest server service:
+        Run the following command to setup a port-forward to the Percona Everest server service:
                 
             ```sh
             kubectl port-forward svc/everest 8080:8080 -n everest-system

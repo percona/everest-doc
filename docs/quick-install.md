@@ -154,6 +154,13 @@ Once you have successfully installed Percona Everest, proceed with the following
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
+            ??? example "When TLS is enabled"
+                    ```
+                    kubectl get svc/everest -n everest-system
+                    NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+                    everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
+                    ```
+
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
             ??? example "Expected output"
@@ -169,7 +176,7 @@ Once you have successfully installed Percona Everest, proceed with the following
     === "Port forwarding"
         The `kubectl port-forward` command in Kubernetes is used to create a temporary connection between your local machine and a specific Kubernetes resource (e.g., a Pod, Service, or Deployment) by forwarding traffic from a local port to a port on the resource. 
         
-        1. Run the following command to setup a port-forward to the Everest server service:
+        1. Run the following command to setup a port-forward to the Percona Everest server service:
 
                 
             ```sh
@@ -178,16 +185,13 @@ Once you have successfully installed Percona Everest, proceed with the following
 
             Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
-        2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
-                    
-            ```sh
-            kubectl port-forward svc/everest 8443:443 -n everest-system
-            ``` 
+            ??? example "When TLS is enabled"
 
-            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
+                ```sh
+                kubectl port-forward svc/everest 8443:443 -n everest-system
+                ```
 
-
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](security/tls_setup.md#tls-setup-with-percona-everest).
+                Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
 
 ## Next steps
 

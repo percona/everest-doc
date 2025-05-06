@@ -182,7 +182,7 @@ To install and provision Percona Everest to Kubernetes:
 
     === "Port forwarding"
 
-        1. Run the following command to setup a port-forward to the Everest server service:
+        Run the following command to setup a port-forward to the Percona Everest server service:
                 
             ```sh
             kubectl port-forward svc/everest 8080:8080 -n everest-system
