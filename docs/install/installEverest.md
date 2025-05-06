@@ -164,15 +164,15 @@ To install and provision Percona Everest to Kubernetes:
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        3. Run the following command to change the Everest service type to `NodePort` when **TLS is enabled**
+        3. Run the following command to change the Everest service type to `NodePort` when **TLS is enabled** . The command displays the port assigned by Kubernetes to the everest service, which is `443` in this case.
 
-            The following command displays the port assigned by Kubernetes to the everest service, which is `443` in this case.
+            
+            
+            kubectl get svc/everest -n everest-system
+            NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)     AGE
+            everest   NodePort   10.43.139.191   <none>        8080:32349/TCP
 
-                ```sh
-                kubectl get svc/everest -n everest-system
-                NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-                everest   NodePort   10.43.139.191   <none>        8080:443/TCP   28m
-                ```
+            
 
             For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
