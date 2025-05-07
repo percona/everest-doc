@@ -96,7 +96,8 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
-- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Manage Pod Scheduling Policies
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have more intuitive control over creating, updating, and deleting **Pod Scheduling Policies**, making workload distribution in Percona Everest more seamless. This enhancement helps optimize resource utilization and improves overall efficiency, ensuring smoother operations and better scheduling flexibility.
+
 
 
 ## Improvements
@@ -121,10 +122,11 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Enabling PITR sometimes displays the database as down
 
-- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): Creating a new postgresql database using backup has no restore information
+- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): When creating a new PostgreSQL database from an existing backup, the resulting database did not include any associated restore information. We have resolved the issue now.
 
 
-- [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623): Haproxy restarts continuously in 5 node mysql database
+- [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623): We have resolved an issue where HAProxy kept restarting in a 5-node MySQL cluster, which caused connection instability and made the database unavailable.
+
 
 - [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed an issue where creating a new MySQL database from a backup would fail if the database name was too long.
 
@@ -147,7 +149,7 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 
 - [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The **Age** of the components is now accurately shown on the **Components** panel, ensuring that users can easily view and assess the information they need.
 
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): \[BE\] Edit monitoring instance does not work
+- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): While editing a monitoring instance, the UI accepted invalid endpoint URLs. This led to frequent restarts for MySQL, MongoDB, and PostgreSQL databases that had scheduled backups and Point-In-Time Recovery (PITR) enabled. We have resolved the issue now.
 
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
