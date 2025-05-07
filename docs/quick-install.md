@@ -155,7 +155,7 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```
 
             ??? example "When TLS is enabled"
-                ```
+                ```sh
                 kubectl get svc/everest -n everest-system
                 NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
                 everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
