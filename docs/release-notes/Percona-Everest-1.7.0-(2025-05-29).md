@@ -1,6 +1,6 @@
-# What's new in Percona Everest 1.7.0
+# 📦 What's new in Percona Everest 1.7.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+🔰 **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "🔑 Expand to unleash the key updates"
