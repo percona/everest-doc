@@ -72,11 +72,11 @@
 
 Percona Everest versions older than 1.4.0 will cease to function after this date.
 
-### Action required
+### ✅ Action required
 
 We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
-For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+📚 More info → Container Registry Deprecation Docs (https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 ## New Feature
 
@@ -120,7 +120,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 ## Bugs
 
-- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Enabling PITR sometimes displays the database as down
+- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Resolved an issue where enabling PITR would sometimes incorrectly display the database as down.
 
 - [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): When creating a new PostgreSQL database from an existing backup, the resulting database did not include any associated restore information. We have resolved the issue now.
 
@@ -128,13 +128,12 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 - [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623): We have resolved an issue where HAProxy kept restarting in a 5-node MySQL cluster, which caused connection instability and made the database unavailable.
 
 
-- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed an issue where creating a new MySQL database from a backup would fail if the database name was too long.
+- [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed a problem where creating a new MySQL database from a backup would fail if the database name exceeded a certain length.
 
-- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700): When PMM monitoring was enabled, the database clusters underwent multiple reconciliation cycles upon creation, which caused unnecessary restarts of all pods. This significantly slowed down the startup times. 
+- [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700): 
+Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconciliation cycles and pod restarts during database cluster creation, which significantly slowed down startup times. A similar issue that occurred during cluster deletion, causing pod restarts before termination, has also been resolved.
 
-    A similar problem arose during the cluster deletion process—before the termination could begin, all pods went through a restart cycle, which delayed the shutdown. We have resolved this issue now.
-
-- [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): The **storage is (re)initializing** error message was displayed on the UI intermittently . We have now resolved the issue.
+- [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): Fixed an issue where the error message **storage is (re)initializing** was displayed on the UI intermittently.
 
 - [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): Resolved an issue with the PITR pod for a one-node MySQL database that restarted multiple times.
 
@@ -154,11 +153,11 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
 
-- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): Now, when installing Percona Everest with TLS enabled, the installation message provides the correct instructions for accessing the user interface.
+- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on how to access the user interface (UI).
 
 
 ## :rocket: Upgrade now
 
 Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. 
 
-:mag: Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📘 Explore our [Uprade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
