@@ -90,7 +90,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
     - This feature allows users to enable the Pod Scheduling Policy for an individual DB cluster after its creation.
     - Once enabled, users can select one of the predefined scheduling policies to influence pod placement according to their workload distribution or fault-tolerance needs.
 
-- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607): Navigate to Pod Scheduling Policy from the DB overview tab
+- [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607): Database administrators can now quickly view the current affinity configuration status directly from the DB Overview tab. Additionally, a direct navigation link to the **Affinity** section in the **Components** tab has been added, allowing administrators to access and modify Kubernetes affinity rules for the database components. 
 
 - [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): The **Components** tab now features a new **Topology View **to improve the visibility and management of DB clusters deployed in Percona Everest. This interactive view visually represents the components of the cluster, including pods, services, status, and their relationships.
 
