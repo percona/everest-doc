@@ -79,9 +79,9 @@ To install Percona Everest using Helm follow these steps:
     --create-namespace
     ```
 
-       ??? info "🔒 Install Percona Everest with TLS enabled"
+    ??? info "🔒 Install Percona Everest with TLS enabled"
 
-            Install Percona Everest with TLS enabled:
+        Install Percona Everest with TLS enabled:
 
             ```sh
             helm install everest-core percona/everest \
@@ -90,7 +90,7 @@ To install Percona Everest using Helm follow these steps:
             --set server.tls.enabled=true
             ```
 
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
     Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
