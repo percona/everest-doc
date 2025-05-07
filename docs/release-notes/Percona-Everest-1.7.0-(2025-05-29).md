@@ -136,7 +136,7 @@ For more details, refer to the [Container Registry Deprecation documentation](ht
 
 - [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): The **storage is (re)initializing** error message was displayed on the UI intermittently . We have now resolved the issue.
 
-- [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): \[BE\] PITR pod gets restarted many times
+- [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): Resolved an issue with the PITR pod for a one-node MySQL database that restarted multiple times.
 
 - [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): 
 Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**," even though PITR was already enabled.
