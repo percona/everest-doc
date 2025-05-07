@@ -81,10 +81,14 @@ To install Percona Everest using Helm follow these steps:
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
 
-        `helm install everest-core percona/everest \
+        Install Percona Everest with TLS enabled:
+
+        ```sh
+        helm install everest-core percona/everest \
         --namespace everest-system \
         --create-namespace
-        --set server.tls.enabled=true`
+        --set server.tls.enabled=true
+        ```
 
 
         For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
