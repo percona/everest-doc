@@ -81,16 +81,16 @@ To install Percona Everest using Helm follow these steps:
 
        ??? info "🔒 Install Percona Everest with TLS enabled"
 
-        Install Percona Everest with TLS enabled:
+            Install Percona Everest with TLS enabled:
 
-        ```sh
-        helm install everest-core percona/everest \
-        --namespace everest-system \
-        --create-namespace
-        --set server.tls.enabled=true
-        ```
+            ```sh
+            helm install everest-core percona/everest \
+            --namespace everest-system \
+            --create-namespace
+            --set server.tls.enabled=true
+            ```
 
-        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
     Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
@@ -155,11 +155,11 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```
 
             ??? example "When TLS is enabled"
-                    ```
-                    kubectl get svc/everest -n everest-system
-                    NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
-                    everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
-                    ```
+                ```
+                kubectl get svc/everest -n everest-system
+                NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+                everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
+                ```
 
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
