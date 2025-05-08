@@ -19,7 +19,7 @@ Percona Everest can be configured to use Transport Layer Security (TLS) for all 
 
 #### Prerequisites
 
-- Ensure that [cert-manager](https://cert-manager.io/docs/){:target="_blank"} has been deployed in your infrastructure.
+- Ensure that [cert-manager](https://cert-manager.io/docs/){:target="_blank"} has been deployed on your Kubernetes cluster.
 
 - Ensure that you have a properly configured **Issuer** or **ClusterIssuer** in place. See the [documentation](https://cert-manager.io/docs/configuration/){:target="_blank"} for details.
 
