@@ -81,7 +81,7 @@ To install and provision Percona Everest to Kubernetes:
             ??? info "🔒 Install Percona Everest with TLS enabled"
 
                 ```sh
-                everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --set server.tls.enabled=true --skip-wizard
+                everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
                 ```
 
                 For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
@@ -203,7 +203,7 @@ To install and provision Percona Everest to Kubernetes:
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ```
 
-            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).                    
+            Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).                    
 
 
 
