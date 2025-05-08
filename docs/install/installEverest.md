@@ -199,7 +199,7 @@ To install and provision Percona Everest to Kubernetes:
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ```
 
-            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).                    
+            Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).                    
 
 
 
