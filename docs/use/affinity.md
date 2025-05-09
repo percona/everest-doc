@@ -1,4 +1,4 @@
-#  Leveraging Affinity in Percona Everest
+#  Leveraging Pod scheduling policies in Percona Everest
 
 !!! info "Important"
     We rely on the Kubernetes scheduler for pod placement and resource management.
