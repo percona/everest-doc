@@ -4,8 +4,6 @@
     Percona Everest relies on the Kubernetes scheduler for pod placement and resource management.
 
 
-
-
 ## Introduction
 
 Percona Everest supports database workload scheduling on Kubernetes by allowing users to define Pod Scheduling Policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
@@ -83,7 +81,7 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 
 
-??? info "📋 Pod ccheduling rule attributes"
+??? info "📋 Custom Pod scheduling rule attributes"
     The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
 
 
