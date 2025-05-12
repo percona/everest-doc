@@ -13,7 +13,7 @@ Percona Everest supports database workload scheduling on Kubernetes by allowing 
 
 ## Understanding Pod scheduling policies within Percona Everest
 
-Pod scheduling policies in Percona Everest decide how components of a database cluster are positioned within a Kubernetes environment. 
+Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of Kubernetes affinity rules applied to the relevant DB cluster components.
 
 By utilizing affinity and anti-affinity rules, you can manage the distribution of pods based on the specific characteristics of nodes (node affinity) and the presence or absence of other pods (pod affinity and anti-affinity).
 
@@ -97,6 +97,8 @@ Here are the steps to configure pod scheduling policies for your database cluste
     | **Operator**      | Logical condition used to evaluate the **Key** and **Values**. Determines how Kubernetes interprets the label match. | **Supported Operators:**<br>- `In` – Matches if the label value is in a specified list<br>- `NotIn` – Matches if not in the list<br>- `Exists` – Matches if the label key exists (regardless of value)<br>- `DoesNotExist` – Matches if the label key does not exist |
     | **Values**        | Specific label values that must match for the rule to apply. Required when using `In` or `NotIn` operators. | **Examples:**<br>- `s2`<br>- `database`<br>- `production`<br>- Custom: `finance`, `cache-tier` |
 
+
+## Default configuration for Pod scheduling policies
 
 
 ## Use cases for affinity
