@@ -130,14 +130,14 @@ The following are the common attributes for a default rule for all the three dat
 Components for the default rules as per the database technology
 
 === ":simple-postgresql: Components"
-    - DB Node
-    - PG Bouncer 
+        - DB Node
+        - PG Bouncer 
  
 
 === ":simple-mongodb: Components"
-    - DB Node
-    - Router
-    - Config server
+        - DB Node
+        - Router
+        - Config server
 
 
 === ":simple-mysql: Components"
