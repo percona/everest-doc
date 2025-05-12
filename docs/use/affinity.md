@@ -128,7 +128,7 @@ The following are the common attributes for a default rule for all the three dat
 
 - Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
 
-The following sections describes the default scheduling rules applied to the various database technologies in Percona Everest.
+Components for the default rules as per the database technology
 
 === ":simple-postgresql: Components"
 
