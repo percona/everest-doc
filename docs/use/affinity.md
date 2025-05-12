@@ -46,9 +46,20 @@ By utilizing affinity and anti-affinity rules, you can manage the distribution o
     📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
 
-## Assign policies to your clusters
+## Assign a pod scheduling policy to your cluster
+
+Scheduling policies can be assigned during cluster creation or updated later to adapt to your evolving infrastructure requirements.
+{.power-number}
+
+1. From the database creation wizard, navigate to **Advanced Configurations** page. From the **Pod scheduling policy**
+section, select the requisite policy from the drop down.
+
+    ![!image](../images/assign_policy.png)
 
 
+2. Click **Continue** till you reach the end of the wizard.
+
+3. Click **Create Database**.
 
 ## Set up pod scheduling rules for your cluster
 
