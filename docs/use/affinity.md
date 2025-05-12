@@ -100,9 +100,9 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 The table below describes the default scheduling rules applied to database components in Percona Everest. 
 
-| **Component**     | **Affinity Type**        | **Preference** | **Topology Key**                    | **Purpose**                                                  |
-|-------------------|--------------------------|----------------|-------------------------------------|--------------------------------------------------------------|
-| **DB Nodes**       | Pod Anti-Affinity        | Required       | `kubernetes.io/hostname`            | Prevents DB nodes from running on the same physical node.    |
+|**DB type**|**Component**| **Affinity Type**| **Preference** | **Topology Key**|**Purpose**|
+|------------|-------------|----------------|---------|--------|-------|----------|
+|**MongoDB**|**DB Nodes**| Pod Anti-Affinity| Required| `kubernetes.io/hostname`| Prevents DB nodes from running on the same physical node.|
 | **Proxy / Router** | Node Affinity            | Preferred      | N/A                                 | Attempts to schedule routers near DB nodes.                  |
 | **Config Servers** | Pod Anti-Affinity        | Required       | `topology.kubernetes.io/zone`       | Spreads config servers across multiple availability zones.   |
 | **All Components** | Node Affinity (Zone)     | Preferred      | `topology.kubernetes.io/zone`       | Balances pod placement across different zones.               |
