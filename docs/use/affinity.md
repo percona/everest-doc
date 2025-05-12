@@ -98,11 +98,60 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 ## Default configuration for Pod scheduling policies
 
-The table below describes the default scheduling rules applied to database components in Percona Everest. 
+The following section describes the default scheduling rules applied to the various database technologies in Percona Everest.
+
+=== ":simple-postgresql: Default policies for PostgreSQL"
+
+    The following are the rules for a default policy for PostgreSQL:
+
+    1. Component: The specific part of the database cluster that the rule applies:
+
+        - DB Node
+        - PG Bouncer 
+
+    2. Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+
+    3. Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
+
+    4. Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule. 
+
+=== ":simple-mongodb: Default policies for MongoDB"
+
+    The following are the rules for a default policy for MongoDB:
+
+        1. Component: The specific part of the database cluster that the rule applies:
+
+            - DB Node
+            - Router
+            - Config server
+
+        2. Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+
+        3. Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
+
+        4. Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
+
+
+=== ":simple-mysql: Default policies for MySQL"
+
+    The following are the rules for a default policy for MongoDB:
+
+        1. Component: The specific part of the database cluster that the rule applies:
+
+            - DB Node
+            - Proxy
+
+        2. Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+
+        3. Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
+
+        4. Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
+
 
 |**DB type**|**Component**| **Affinity Type**| **Preference** | **Topology Key**|**Purpose**|
-|------------|-------------|----------------|---------|--------|-------|----------|
-|**MongoDB**|**DB Nodes**| Pod Anti-Affinity| Required| `kubernetes.io/hostname`| Prevents DB nodes from running on the same physical node.|
+|------------|-------------|----------------|---------|--------|-------|
+|**PostgreSQL**|**DB Nodes/PG Bouncer**|Pod Anti-Affinity: Prevents DB nodes from running on the same physical node.|| Preferred| `kubernetes.io/hostname`| Prevents DB nodes from running on the same physical node.|
+|**PostgreSQL**|**PG Bouncer**| Pod Anti-Affinity| Preffered| `kubernetes.io/hostname`| Prevents DB nodes from running on the same physical node.|
 | **Proxy / Router** | Node Affinity            | Preferred      | N/A                                 | Attempts to schedule routers near DB nodes.                  |
 | **Config Servers** | Pod Anti-Affinity        | Required       | `topology.kubernetes.io/zone`       | Spreads config servers across multiple availability zones.   |
 | **All Components** | Node Affinity (Zone)     | Preferred      | `topology.kubernetes.io/zone`       | Balances pod placement across different zones.               |
