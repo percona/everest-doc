@@ -98,8 +98,6 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 ## Default configuration for Pod scheduling policies
 
-## 📋 Default Pod Scheduling Policy Attributes
-
 The table below describes the default scheduling rules applied to database components in Percona Everest. 
 
 | **Component**     | **Affinity Type**        | **Preference** | **Topology Key**                    | **Purpose**                                                  |
