@@ -13,8 +13,6 @@ Percona Everest supports database workload scheduling on Kubernetes by allowing 
 
 Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of Kubernetes affinity rules applied to the relevant DB cluster components.
 
-By utilizing affinity and anti-affinity rules, you can manage the distribution of pods based on the specific characteristics of nodes (node affinity) and the presence or absence of other pods (pod affinity and anti-affinity).
-
 ??? info "🔗 Types of affinity"
 
     Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
@@ -127,26 +125,21 @@ The following are the common attributes for a default rule for all the three dat
 
 The following sections describes the default scheduling rules applied to the various database technologies in Percona Everest.
 
-=== "Components for :simple-postgresql:"
-
-    - Components: The specific part of the database cluster that the rule applies to:
+=== ":simple-postgresql: Components"
 
         - DB Node
         - PG Bouncer 
  
 
-=== "Components for :simple-mongodb:"
-
-    - Component: The specific part of the database cluster that the rule applies to:
+=== ":simple-mongodb: Components"
 
         - DB Node
         - Router
         - Config server
 
 
-=== "Components for :simple-mysql:"
+=== ":simple-mysql: Components"
 
-    - Component: The specific part of the database cluster that the rule applies to:
         - DB Node
         - Proxy
 
