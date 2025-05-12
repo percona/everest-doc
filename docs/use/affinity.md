@@ -1,7 +1,9 @@
 #  Leveraging Pod scheduling policies in Percona Everest
 
 !!! info "Important"
-    We rely on the Kubernetes scheduler for pod placement and resource management.
+    Percona Everest relies on the Kubernetes scheduler for pod placement and resource management.
+
+
 
 
 ## Introduction
@@ -26,7 +28,7 @@ Pod anti-affinity empowers you to take control of pod placement in your Kubernet
 
 Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
 
-If you're looking to dive deep into pod anti-affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
 
 #### Pod affinity
@@ -35,7 +37,7 @@ Pod affinity enables you to control the placement of pods based on the location 
 
 Kubernetes uses labels, which are key-value pairs, to identify and categorize pods.
 
-If you're looking to dive deep into pod affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
 #### Node affinity
 
@@ -43,7 +45,7 @@ Node affinity determines which nodes a pod can be scheduled on. Based on the lab
 
 Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
 
-If you're looking to dive deep into node affinity, check out the Kubernetes [documentation](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
+📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
 
 ## Set up pod scheduling rules for your cluster
