@@ -87,7 +87,7 @@ Here are the steps to configure pod scheduling policies for your database cluste
     The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
 
 
-    | **Attribute**     | **Description** | **Notes** |
+    | **Attribute**     | **Description** | **Comments** |
     |------------------|-----------------|-----------|
     | **Components**    | The database cluster components the rule applies to:<br>- **DB Node**<br>- **Proxy / Router / PgBouncer**<br>- **Config Server** | - DB Nodes and Proxies are applicable for **MySQL** and **PostgreSQL**.<br>- Config Servers apply to **MongoDB** sharded clusters. |
     | **Priority**      | Defines the distinct level of rule enforcement:<br>- **Preferred**: Percona Everest will *try* to honor the rule but will schedule the pod even if it's not met.<br>- **Required**: The rule *must* be satisfied for the pod to be scheduled. | Use **Preferred** for flexible placement and **Required** for hard constraints. |
