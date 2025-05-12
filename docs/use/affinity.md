@@ -122,11 +122,11 @@ The following sections describes the default scheduling rules applied to the var
 
     The following are the rules for a default policy for MongoDB:
 
-        - Component: The specific part of the database cluster that the rule applies:
+    - Component: The specific part of the database cluster that the rule applies:
 
-            - DB Node
-            - Router
-            - Config server
+        - DB Node
+        - Router
+        - Config server
 
         - Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
@@ -139,9 +139,9 @@ The following sections describes the default scheduling rules applied to the var
 
     The following are the rules for a default policy for MongoDB:
 
-        - Component: The specific part of the database cluster that the rule applies:
-            - DB Node
-            - Proxy
+    - Component: The specific part of the database cluster that the rule applies:
+        - DB Node
+        - Proxy
 
         - Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
