@@ -59,7 +59,11 @@ section, choose a policy from the dropdown.
 
 3. Click **Create Database** to apply the policy.
 
-## Set up Pod scheduling rules for your cluster
+!!! note
+    You need to first [create a policy](#create-pod-scheduling-policy-for-your-cluster) only then it will be visible on the **Pod scheduling policy** section on the **Advanced configurations page**.
+
+
+## Create Pod scheduling policy for your cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
