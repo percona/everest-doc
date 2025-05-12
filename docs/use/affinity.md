@@ -48,32 +48,31 @@ If you're looking to dive deep into node affinity, check out the Kubernetes [doc
 
 ## Set up pod scheduling rules for your cluster
 
-Here are the steps to set up pod cheduling policies for your database clusters:
+Here are the steps to configure pod scheduling policies for your database clusters:
 {.power-number}
 
-1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. You can see the default as well as the custom policies on this page.
+1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
 
 
     ![!image](../images/pod_scheduling_policies.png)
 
 
-2. Click **Create policy**. The **Create policy** pop-up opens.
+2. Click **Create policy**.
 
-3. Enter the **Policy name** and select the technology from the drop-down. Click **Create**.
+3. In the pop-up that appears, enter a **Policy name** and select the **database technology** from the drop-down. Click **Create**.
 
 
+4. Click **Add rule**.
 
-4. Click **Add rule**. The **Add rule** pop-up opens.
+5. A pop-up will appear where you need to enter the following details for the **Rule type** and **Rule details** section:
 
-5. Enter the following information for the **Rule type** and **Rule details** section:
-
-    * Component
-    * Type
-    * Select Preffered/Required
-    * Weight
-    * Topology Key
-    * Key
-    * Operator
+    - **Component** - For example, DB Nodes, Proxies, Config Servers
+    - **Type** - Node Affinity, Pod Affinity, or Pod Anti-Affinity
+    - **Preference** -  Select Preferred or Required
+    - **Weight** - Determines rule priority
+    - **Topology Key **- For example,`topology.kubernetes.io/zone`
+    - **Key** - The node label or pod label key
+    - **Operator** -  For example, **In, NotIn, Exists**
 
     ![!image](../images/affinity_add_rules.png)
 
