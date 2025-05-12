@@ -15,35 +15,35 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 
 By utilizing affinity and anti-affinity rules, you can manage the distribution of pods based on the specific characteristics of nodes (node affinity) and the presence or absence of other pods (pod affinity and anti-affinity).
 
-### Types of affinity
+    === "🔗 Types of affinity"
 
-Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster.
-
-
-#### Pod anti-affinity
-
-Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
-
-Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
-
-📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+    Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
 
 
-#### Pod affinity
+    ### Pod anti-affinity
 
-Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
+    Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
 
-Kubernetes uses labels, which are key-value pairs, to identify and categorize pods.
+    Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
 
-📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+    📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
-#### Node affinity
 
-Node affinity determines which nodes a pod can be scheduled on. Based on the labels assigned to nodes, you can define rules about where a pod should or should not be deployed. 
+    ### Pod affinity
 
-Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
+    Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
 
-📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
+    Kubernetes uses labels, which are key-value pairs, to identify and categorize pods.
+
+    📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+
+    ### Node affinity
+
+    Node affinity determines which nodes a pod can be scheduled on. Based on the labels assigned to nodes, you can define rules about where a pod should or should not be deployed. 
+
+    Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
+
+    📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
 
 ## Set up pod scheduling rules for your cluster
