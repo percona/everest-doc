@@ -63,7 +63,6 @@ section, choose a policy from the dropdown.
     To see your custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page, you must first [create the policy](#create-pod-scheduling-policy-for-your-cluster).
 
 
-
 ## Create Pod scheduling policy for your cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
@@ -131,20 +130,17 @@ The following are the common attributes for a default rule for all the three dat
 Components for the default rules as per the database technology
 
 === ":simple-postgresql: Components"
-
     - DB Node
     - PG Bouncer 
  
 
 === ":simple-mongodb: Components"
-
     - DB Node
     - Router
     - Config server
 
 
 === ":simple-mysql: Components"
-
     - DB Node
     - Proxy
 
