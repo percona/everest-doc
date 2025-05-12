@@ -132,21 +132,21 @@ The following sections describes the default scheduling rules applied to the var
 
 === ":simple-postgresql: Components"
 
-        - DB Node
-        - PG Bouncer 
+    - DB Node
+    - PG Bouncer 
  
 
 === ":simple-mongodb: Components"
 
-        - DB Node
-        - Router
-        - Config server
+    - DB Node
+    - Router
+    - Config server
 
 
 === ":simple-mysql: Components"
 
-        - DB Node
-        - Proxy
+    - DB Node
+    - Proxy
 
 
 ## Use cases for affinity
