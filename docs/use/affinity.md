@@ -105,6 +105,8 @@ The following sections describes the default scheduling rules applied to the var
 
 === ":simple-postgresql: Default policies for PostgreSQL"
 
+    ### Default policies for PostgreSQL clusters
+
     The following are the rules for a default policy for PostgreSQL:
 
     - Component: The specific part of the database cluster that the rule applies:
@@ -128,11 +130,8 @@ The following sections describes the default scheduling rules applied to the var
         - Router
         - Config server
 
-        - Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+    The similar rules apply for Type, Preference and Topology Key for MongoDB as they are applied for PostgreSQL. See [Default configuration policies for PostgreSQL clusters]() section for more details.
 
-        -  Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
-
-        -  Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
 
 
 === ":simple-mysql: Default policies for MySQL"
