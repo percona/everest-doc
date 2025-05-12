@@ -81,8 +81,8 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 
 
-??? info " Attributes for setting up rules for policies
-    The following table provides details about the different attributes involved in setting up affinity rules for your databases.
+??? info " Attributes for setting up rules for policies"
+    The following table provides details about the different attributes involved in setting up pod scheduling rules for your databases.
 
     |**Attributes**    |**Description**  |**Note**  |
     |----------------|-----------------|--------------|
