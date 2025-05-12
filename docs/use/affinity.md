@@ -48,15 +48,37 @@ If you're looking to dive deep into node affinity, check out the Kubernetes [doc
 
 ## Set up pod scheduling rules for your cluster
 
-
-You can set affinity rules in Percona Everest from the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies**. page.
+Here are the steps to set up pod cheduling policies for your database clusters:
 {.power-number}
 
-1. From the Percona Everest home page, navigate through the **Create Database** wizard until you reach the **Advanced Configurations** page.
+1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies**. page. You can see the defualt as well as the custom policies on this page.
 
-2. From the **Advanced Configurations** page, click **Create affinity rule**. The **Add rule** screen will be displayed.
 
-    ![!image](../images/create_affinity.png)
+![!image](../images/pod_scheduling_policies.png)
+
+
+2. Click **Create policy**. The **Create policy** pop-up opens.
+
+3. Enter the **Policy name** and select the technology from the drop-down. Click **Create**.
+
+4. Click **Add rule**. The **Add rule** pop-up opens.
+
+5. Enter the following information for the **Rule type** and **Rule details** section:
+
+    - Component
+    - Type
+    - Select Preffered/Required
+    - Weight
+    - Topology Key
+    - Key
+    - Operator
+
+![!image](../images/affinity_add_rules.png)
+
+
+6. Click **Add**. The required pod scheduling policy will be created.
+
+
 
     
 3. Enter the information on the **Add Rule** screen. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
