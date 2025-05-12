@@ -3,10 +3,17 @@
 !!! info "Important"
     We rely on the Kubernetes scheduler for pod placement and resource management.
 
-Affinity refers to rules that attempt to schedule Pods together or on nodes that meet specific criteria. It promotes the co-location of Pods or assigns Pods to preferred nodes.
 
-Affinity rules provide database administrators with enhanced control over workload distribution in a Kubernetes cluster. By implementing affinity and anti-affinity rules, you can not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
+## Introduction
 
+Percona Everest supports database workload scheduling on Kubernetes by allowing users to define Pod Scheduling Policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
+
+
+## Understanding Pod scheduling policies within Percona Everest
+
+Pod scheduling policies in Percona Everest decide how components of a database cluster are positioned within a Kubernetes environment. 
+
+By utilizing affinity and anti-affinity rules, you can manage the distribution of pods based on the specific characteristics of nodes (node affinity) and the presence or absence of other pods (pod affinity and anti-affinity).
 
 ## Types of affinity
 
