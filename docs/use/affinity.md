@@ -61,9 +61,9 @@ section, select the requisite policy from the drop down.
 
 3. Click **Create Database**.
 
-## Set up pod scheduling rules for your cluster
+## Set up Pod scheduling rules for your cluster
 
-Here are the steps to configure pod scheduling policies for your database clusters:
+Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
 
 1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
