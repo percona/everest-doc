@@ -46,6 +46,10 @@ By utilizing affinity and anti-affinity rules, you can manage the distribution o
     📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
 
+## Assign policies to your clusters
+
+
+
 ## Set up pod scheduling rules for your cluster
 
 Here are the steps to configure pod scheduling policies for your database clusters:
