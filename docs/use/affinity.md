@@ -15,7 +15,7 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 
 By utilizing affinity and anti-affinity rules, you can manage the distribution of pods based on the specific characteristics of nodes (node affinity) and the presence or absence of other pods (pod affinity and anti-affinity).
 
-    === "🔗 Types of affinity"
+=== "🔗 Types of affinity"
 
     Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
 
