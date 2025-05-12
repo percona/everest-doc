@@ -48,7 +48,8 @@ If you're looking to dive deep into node affinity, check out the Kubernetes [doc
 
 ## Set up pod scheduling rules for your cluster
 
-You can set affinity rules in Percona Everest by navigating to <i class="uil uil-cog"></i> **Settings > Pod scheduling policies**. page.
+
+You can set affinity rules in Percona Everest from the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies**. page.
 {.power-number}
 
 1. From the Percona Everest home page, navigate through the **Create Database** wizard until you reach the **Advanced Configurations** page.
