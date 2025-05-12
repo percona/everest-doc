@@ -54,7 +54,7 @@ Here are the steps to set up pod cheduling policies for your database clusters:
 1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. You can see the default as well as the custom policies on this page.
 
 
-![!image](../images/pod_scheduling_policies.png)
+    ![!image](../images/pod_scheduling_policies.png)
 
 
 2. Click **Create policy**. The **Create policy** pop-up opens.
@@ -67,37 +67,33 @@ Here are the steps to set up pod cheduling policies for your database clusters:
 
 5. Enter the following information for the **Rule type** and **Rule details** section:
 
-    - Component
-    - Type
-    - Select Preffered/Required
-    - Weight
-    - Topology Key
-    - Key
-    - Operator
+    * Component
+    * Type
+    * Select Preffered/Required
+    * Weight
+    * Topology Key
+    * Key
+    * Operator
 
-![!image](../images/affinity_add_rules.png)
+    ![!image](../images/affinity_add_rules.png)
 
 
 6. Click **Add**. The required pod scheduling policy will be created.
 
 
 
-    
-3. Enter the information on the **Add Rule** screen. Click **Add rule**. You can view the affinity rule on the components page of the corresponding database.
+??? info " Attributes for setting up rules for policies
+    The following table provides details about the different attributes involved in setting up affinity rules for your databases.
 
-    ![!image](../images/add_rule_affinity.png)
-
-The following table provides details about the different attributes involved in setting up affinity rules for your databases.
-
-|**Attributes**    |**Description**  |**Note**  |
-|----------------|-----------------|--------------|
-|**Components**|<ul><li>DB Node</br><brProxy/Router/PGBouncer</br></br>Config Server</li></ul>|.<br/></br></br></br></br>Applicable for **MySQL and PostgreSQL**.</br></br>Applicable for **MongoDB sharded cluster**|
-|**Priority**|Each type of Affinity can implement two distinct levels of rule enforcement:</br><ul><li>Preffered</br></br></br></br></br></li><li>Required</li></ul>|</br></br>Defines the preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
-|**Weight (1-100)**|It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights.|Weight is only used when the priority is **Preferred**.|
-|**Topology key**|TopologyKey is the field that defines the domain for pod placement. The TopologyKey domain (e.g., zone, hostname) is used to determine the placement of the pods being scheduled relative to other pods that match the label rules.| Node affinity rules do not include a topology key. </br></br>Here are some examples of **topologyKey**:</br><ul><li>kubernetes.io/hostname</li><li>topology.kubernetes.io/zone	</li><li>topology.kubernetes.io/region</li><li>custom node labels (e.g., rack)</li></ul>|
-|**key**|A key in pod affinity is the label assigned to pods, used to define scheduling rules. This label helps the Kubernetes scheduler identify pods and place new pods in relation to them based on affinity or anti-affinity rules.|The key that you set will be a label present in other existing pods within the cluster, affecting whether your pods will be scheduled on the same nodes as those pods.</br></br>Here are some examples of **key**:</br><ul><li>app</li><li>security</li><li>environment</li><li>custom labels (e.g., security, web-store)</li></ul>|
-|**Operator**|The operator field specifies how a label's values match a resource, such as a Pod or node. It establishes the logical condition to determine if a resource satisfies the affinity or anti-affinity rule.</br></br>The following are all logical operators you can use in the operator field:</br><ul><li>**In**: Matches label values in a list</li><li>**NotIn**: Matches label values not in a list.</li><li>**Exists**: Matches when a label key exists, regardless of its value.</li><li>**DoesNotExist**: Matches when a label key does not exist.</li></ul>|When using the **In** and **NotIn** operators, you have to provide the values for the key as well.|
-|**Values**|The values are the specific label values that must match the key for the affinity rule to apply.|Here are some examples for **values**:</br><ul><li>s2</li><li>database</li><li>production</li><li>custom values</li></ul>|
+    |**Attributes**    |**Description**  |**Note**  |
+    |----------------|-----------------|--------------|
+    |**Components**|<ul><li>DB Node</br><brProxy/Router/PGBouncer</br></br>Config Server</li></ul>|.<br/></br></br></br></br>Applicable for **MySQL and PostgreSQL**.</br></br>Applicable for **MongoDB sharded cluster**|
+    |**Priority**|Each type of Affinity can implement two distinct levels of rule enforcement:</br><ul><li>Preffered</br></br></br></br></br></li><li>Required</li></ul>|</br></br>Defines the preferences for Pod scheduling instead of strict requirements. Kubernetes will try to place the Pod according to these preferences, but if they cannot be fulfilled, the Pod will still be scheduled.</br></br>A strict requirement that must be met for a Pod to be scheduled. If the conditions in this field are not met, the Pod will remain unscheduled.|
+    |**Weight (1-100)**|It prioritizes preferred scheduling rules using a numerical value that indicates how strongly Kubernetes should favor specific placement preferences when scheduling Pods. Higher weights signify stronger preferences, meaning Kubernetes will prioritize fulfilling rules with higher weights over those with lower weights.|Weight is only used when the priority is **Preferred**.|
+    |**Topology key**|TopologyKey is the field that defines the domain for pod placement. The TopologyKey domain (e.g., zone, hostname) is used to determine the placement of the pods being scheduled relative to other pods that match the label rules.| Node affinity rules do not include a topology key. </br></br>Here are some examples of **topologyKey**:</br><ul><li>kubernetes.io/hostname</li><li>topology.kubernetes.io/zone	</li><li>topology.kubernetes.io/region</li><li>custom node labels (e.g., rack)</li></ul>|
+    |**key**|A key in pod affinity is the label assigned to pods, used to define scheduling rules. This label helps the Kubernetes scheduler identify pods and place new pods in relation to them based on affinity or anti-affinity rules.|The key that you set will be a label present in other existing pods within the cluster, affecting whether your pods will be scheduled on the same nodes as those pods.</br></br>Here are some examples of **key**:</br><ul><li>app</li><li>security</li><li>environment</li><li>custom labels (e.g., security, web-store)</li></ul>|
+    |**Operator**|The operator field specifies how a label's values match a resource, such as a Pod or node. It establishes the logical condition to determine if a resource satisfies the affinity or anti-affinity rule.</br></br>The following are all logical operators you can use in the operator field:</br><ul><li>**In**: Matches label values in a list</li><li>**NotIn**: Matches label values not in a list.</li><li>**Exists**: Matches when a label key exists, regardless of its value.</li><li>**DoesNotExist**: Matches when a label key does not exist.</li></ul>|When using the **In** and **NotIn** operators, you have to provide the values for the key as well.|
+    |**Values**|The values are the specific label values that must match the key for the affinity rule to apply.|Here are some examples for **values**:</br><ul><li>s2</li><li>database</li><li>production</li><li>custom values</li></ul>|
 
 ## Use cases for affinity
 
