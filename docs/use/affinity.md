@@ -51,7 +51,7 @@ If you're looking to dive deep into node affinity, check out the Kubernetes [doc
 Here are the steps to set up pod cheduling policies for your database clusters:
 {.power-number}
 
-1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies**. page. You can see the defualt as well as the custom policies on this page.
+1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. You can see the default as well as the custom policies on this page.
 
 
 ![!image](../images/pod_scheduling_policies.png)
@@ -60,6 +60,8 @@ Here are the steps to set up pod cheduling policies for your database clusters:
 2. Click **Create policy**. The **Create policy** pop-up opens.
 
 3. Enter the **Policy name** and select the technology from the drop-down. Click **Create**.
+
+
 
 4. Click **Add rule**. The **Add rule** pop-up opens.
 
