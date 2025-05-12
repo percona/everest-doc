@@ -113,7 +113,7 @@ The following are the common items for a default rule for all the three datbase 
 
 The following sections describes the default scheduling rules applied to the various database technologies in Percona Everest.
 
-=== ":simple-postgresql: Default policies for PostgreSQL"
+=== "Default policies for :simple-postgresql:"
 
     - Component: The specific part of the database cluster that the rule applies:
 
@@ -121,7 +121,7 @@ The following sections describes the default scheduling rules applied to the var
         - PG Bouncer 
  
 
-=== ":simple-mongodb: Default policies for MongoDB"
+=== "Default policies for :simple-mongodb:"
 
     - Component: The specific part of the database cluster that the rule applies:
 
@@ -130,9 +130,7 @@ The following sections describes the default scheduling rules applied to the var
         - Config server
 
 
-
-
-=== ":simple-mysql: Default policies for MySQL"
+=== "Default policies for :simple-mysql:"
 
 
     - Component: The specific part of the database cluster that the rule applies:
@@ -140,14 +138,9 @@ The following sections describes the default scheduling rules applied to the var
         - Proxy
 
 
-
-
 ## Use cases for affinity
 
 Here are several detailed use cases for affinity that highlight its diverse applications and the numerous benefits it offers across various contexts.
-
-
-
 
 
 === "Node affinity"
