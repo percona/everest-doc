@@ -49,15 +49,15 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 Scheduling policies can be assigned during cluster creation or updated later to adapt to your evolving infrastructure requirements.
 {.power-number}
 
-1. From the database creation wizard, navigate to **Advanced Configurations** page. From the **Pod scheduling policy**
-section, select the requisite policy from the drop down.
+1. From the database creation wizard, navigate to **Advanced Configurations**. In the **Pod scheduling policy**
+section, choose a policy from the dropdown.
 
     ![!image](../images/assign_policy.png)
 
 
 2. Click **Continue** till you reach the end of the wizard.
 
-3. Click **Create Database**.
+3. Click **Create Database** to apply the policy.
 
 ## Set up Pod scheduling rules for your cluster
 
