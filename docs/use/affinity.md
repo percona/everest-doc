@@ -77,7 +77,7 @@ Here are the steps to configure pod scheduling policies for your database cluste
     ![!image](../images/affinity_add_rules.png)
 
 
-6. Click **Add**. The required pod scheduling policy will be created.
+6. Click **Add** to save the rule. The new pod scheduling policy is now available and can be applied to relevant components.
 
 
 
