@@ -81,8 +81,21 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 
 
-??? info " Attributes for setting up rules for policies"
-    The following table provides details about the different attributes involved in setting up pod scheduling rules for your databases.
+??? info " Pod ccheduling rule attributes"
+    The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
+
+
+    | **Attribute**     | **Description** | **Notes** |
+    |------------------|-----------------|-----------|
+    | **Components**    | The database cluster components the rule applies to. Options include:<br>- **DB Node**<br>- **Proxy / Router / PgBouncer**<br>- **Config Server** | - DB Nodes and Proxies are applicable for **MySQL** and **PostgreSQL**.<br>- Config Servers apply to **MongoDB** sharded clusters. |
+    | **Priority**      | Defines the strictness of the affinity rule. Options:<br>- **Preferred**: Kubernetes will *try* to honor the rule but will schedule the pod even if it's not met.<br>- **Required**: The rule *must* be satisfied for the pod to be scheduled. | Use **Preferred** for flexible placement and **Required** for hard constraints. |
+    | **Weight (1–100)**| Determines the priority of a **Preferred** rule. Higher values indicate stronger preference. | Only applicable to **Preferred** rules. |
+    | **Topology Key**  | Specifies the domain used to group nodes or pods for affinity. Determines the scope (e.g., zone, hostname) for applying scheduling rules. | Not used for **Node Affinity**.<br>**Examples:**<br>- `kubernetes.io/hostname`<br>- `topology.kubernetes.io/zone`<br>- `topology.kubernetes.io/region`<br>- Custom: `rack` |
+    | **Key**           | The pod label key used in **Pod Affinity** or **Anti-Affinity** rules. Helps target specific pods to influence scheduling decisions. | Should match a label present on existing pods in the cluster.<br>**Examples:**<br>- `app`<br>- `security`<br>- `environment`<br>- Custom: `web-store` |
+    | **Operator**      | Logical condition used to evaluate the **Key** and **Values**. Determines how Kubernetes interprets the label match. | **Supported Operators:**<br>- `In` – Matches if the label value is in a specified list<br>- `NotIn` – Matches if not in the list<br>- `Exists` – Matches if the label key exists (regardless of value)<br>- `DoesNotExist` – Matches if the label key does not exist |
+    | **Values**        | Specific label values that must match for the rule to apply. Required when using `In` or `NotIn` operators. | **Examples:**<br>- `s2`<br>- `database`<br>- `production`<br>- Custom: `finance`, `cache-tier` |
+
+
 
     |**Attributes**    |**Description**  |**Note**  |
     |----------------|-----------------|--------------|
