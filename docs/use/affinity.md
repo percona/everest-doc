@@ -83,7 +83,7 @@ Here are the steps to configure pod scheduling policies for your database cluste
 
 
 
-??? info " Pod ccheduling rule attributes"
+??? info "📋 Pod ccheduling rule attributes"
     The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
 
 
