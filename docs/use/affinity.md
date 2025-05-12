@@ -102,38 +102,36 @@ In Percona Everest, the default pod scheduling policies are preconfigured rules 
 
 For example, DB nodes and PG Bouncers are typically configured with pod anti-affinity to avoid co-location on the same node, reducing the risk of simultaneous failure. Similarly, policies may prefer spreading components across zones or hosts using topology keys like `kubernetes.io/hostname` or `topology.kubernetes.io/zone`.
 
-The following are the common items for a default rule for all the three datbase technologies. However, the components change as per the technology:
-
+The following are the common attributes for a default rule for all the three database technologies. However, the components **change** as per the technology:
 
 - Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
-    - Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
+- Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
 
-    - Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
+- Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
 
 The following sections describes the default scheduling rules applied to the various database technologies in Percona Everest.
 
-=== "Default policies for :simple-postgresql:"
+=== "Components for :simple-postgresql:"
 
-    - Component: The specific part of the database cluster that the rule applies:
+    - Components: The specific part of the database cluster that the rule applies to:
 
         - DB Node
         - PG Bouncer 
  
 
-=== "Default policies for :simple-mongodb:"
+=== "Components for :simple-mongodb:"
 
-    - Component: The specific part of the database cluster that the rule applies:
+    - Component: The specific part of the database cluster that the rule applies to:
 
         - DB Node
         - Router
         - Config server
 
 
-=== "Default policies for :simple-mysql:"
+=== "Components for :simple-mysql:"
 
-
-    - Component: The specific part of the database cluster that the rule applies:
+    - Component: The specific part of the database cluster that the rule applies to:
         - DB Node
         - Proxy
 
