@@ -26,7 +26,7 @@ Kubernetes features three primary types of affinity that play a crucial role in 
     📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
 
-=== ### "Pod affinity"
+=== "Pod affinity"
 
     Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
 
@@ -34,7 +34,7 @@ Kubernetes features three primary types of affinity that play a crucial role in 
 
     📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
-=== ### "Node affinity"
+=== "Node affinity"
 
     Node affinity determines which nodes a pod can be scheduled on. Based on the labels assigned to nodes, you can define rules about where a pod should or should not be deployed. 
 
