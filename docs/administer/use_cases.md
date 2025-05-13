@@ -34,7 +34,7 @@ Let's consider a use case that ensures that the scheduler distributes the differ
   ![!image](../images/default_pod_anti_affinity_rule.png)
 
 ??? info "What happens under the hood"
-    It will prefer to place this pod on a node where other pods with `app=backend` are already running.
+    Scheduler will prefer to place this pod on a node where other pods with the label `app=backend` are already running.
 
 
 
