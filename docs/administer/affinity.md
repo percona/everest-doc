@@ -44,7 +44,11 @@ Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
 
 
 
+## Next steps
 
+[Custom Pod scheduling policies :material-arrow-right:](custom_policies.md){.md-button}
+
+[Default Pod scheduling policies :material-arrow-right:](default_policies.md){.md-button}
 
 
 
