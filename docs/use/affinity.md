@@ -110,15 +110,16 @@ In Percona Everest, the default pod scheduling policies are **preset** rules tha
 The following are the common attributes for a default policy for all the three database technologies. However, the components **change** as per the technology:
 
 - **DB cluster Components**
-    - PXC: DB Node and Proxy
-    - PG cluster: DB Node and PG Bouncer
-    - PSMDB - DB Node, Config Server, and Router
+    - **MySQL**: DB Node and Proxy
+    - **PostgreSQL**: DB Node and PG Bouncer
+    - **MongoDB**: DB Node, Config Server, and Router
 
-- **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+- **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**: This ensures that pods of the same component are not co-located on the same node.
 
 - **Preference**: Preferred 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
 
 - **Topology Key**: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
+
 
 ## Use cases for affinity
 
