@@ -28,7 +28,7 @@ If a specific Pod scheduling policy is no longer needed, the Percona Everest Adm
 Here are the steps to delete a Pod scheduling policy:
 {.power-number}
 
-1. 1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
 2. Click on the **ellipsis** (three dots) next to the policy that you want to delete.
 
