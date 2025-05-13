@@ -196,6 +196,7 @@ nav:
   - Administer:
       - User management: administer/manage_users.md
       - Role-based access control: administer/rbac.md
+      - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Pod scheduling policies: 
         - Leverage pod scheduling policies: administer/affinity.md
         - Default Pod scheduling policies: administer/default_policies.md
@@ -203,7 +204,6 @@ nav:
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
         - Manage Pod scheduling policies: administer/manage_pod_scheduling_policies.md
         - Use cases: administer/use_cases.md 
-      - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
   - Security:
