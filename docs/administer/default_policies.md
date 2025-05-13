@@ -17,14 +17,14 @@ The following are the common attributes for a default policy for all the three d
 
 The **Components** for a default policy change as per the technology:
 
-- **MySQL**: DB Node and Proxy
+**MySQL**: DB Node and Proxy
 
-![!image](../images/mysql_default_policy.png)
+  ![!image](../images/mysql_default_policy.png)
 
 
-- **PostgreSQL**: DB Node and PG Bouncer
+**PostgreSQL**: DB Node and PG Bouncer
 
-![!image](../images/pg_default_policy.png)
+  ![!image](../images/pg_default_policy.png)
 
 
 - **MongoDB** 
