@@ -115,9 +115,9 @@ The following are the common attributes for a default policy for all the three d
 
 - **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
-- Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
+- **Preference**: Preferred 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
 
-- Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
+- **Topology Key**: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
 
 ## Use cases for affinity
 
