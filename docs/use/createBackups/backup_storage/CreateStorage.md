@@ -1,6 +1,6 @@
-# Prepare storage location
+# Create backup storage
 
-Before working with backups, create a backup location as a backup destination for creating and storing your backup artifacts.  
+Before working with backups, create a backup storage location as a backup destination for creating and storing your backup artifacts.  
 
 Everest supports S3-compatible backup locations, which means you can use [AWS S3](https://aws.amazon.com/s3/) or any other storage solutions that support S3 API, like [min.io](https://min.io/).
 
@@ -15,7 +15,7 @@ To create a backup storage location:
 
 1. Go to Backup storage settings:
 
-    Navigate to <i class="uil uil-cog"></i> **Settings > Backup storages**, then click **Add Backup storage**.
+    Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Backup storages**. Then click **Add Backup storage**.
 
 2. Fill in the Required Fields:
 
@@ -38,5 +38,5 @@ To create a backup storage location:
 
 ## Next steps
 
-[Create backups :material-arrow-right:](../use/createBackups/CreateOnDemand.md){.md-button}
-[Enable PITR :material-arrow-right:](../use/createBackups/EnablePITR.md){.md-button}
+[Create backups :material-arrow-right:](../../createBackups/CreateOnDemand.md){.md-button}
+[Enable PITR :material-arrow-right:](../../createBackups/EnablePITR.md){.md-button}

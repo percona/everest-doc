@@ -49,7 +49,7 @@ Learn how to manage user accounts in Percona Everest.
 
 Get ready to dive into our APIs and uncover their potential.
 
-[Dive into our APIs :material-arrow-right:](https://percona-everest.readme.io/reference/getkubernetesclusterresources){ .md-button .md-button--primary }
+[Dive into our APIs :material-arrow-right:](https://percona-everest.readme.io){ .md-button .md-button--primary }
 
 </div>
 </div>
