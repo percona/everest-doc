@@ -110,8 +110,9 @@ In Percona Everest, the default pod scheduling policies are **preset** rules tha
 The following are the common attributes for a default policy for all the three database technologies. However, the components **change** as per the technology:
 
 - **DB cluster Components**
-    - PXC and PG cluster - DB Node and Proxy
-    - PSMDB - DB node, Proxy, and Router
+    - PXC: DB Node and Proxy
+    - PG cluster: DB Node and PG Bouncer
+    - PSMDB - DB Node, Config Server, and Router
 
 - **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
