@@ -2,7 +2,7 @@
 
 Percona Everest allows you to define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes.
 
-## Create custom Pod scheduling policy for your cluster
+## Create custom Pod scheduling policy for your DB cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
@@ -43,7 +43,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 6. Click **Add** to save the rule. The new pod scheduling policy is now available and can be applied to relevant components.
 
 
-## Assign pod scheduling policy to a new cluster
+## Assign pod scheduling policy to a new DB cluster
 
 !!! info "Important"
     If RBAC is enabled, Percona Everest only displays Pod Scheduling Policies applicable to the selected DB Engine type for which the user has read access.
@@ -64,9 +64,9 @@ section, choose a policy from the dropdown.
 !!! note
     To see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page, you must first [create the policy](#create-pod-scheduling-policy-for-your-cluster).
 
-## Assign pod scheduling policy to an existing cluster
+## Assign pod scheduling policy to an existing DB cluster
 
-You can assign a Pod scheduling policy for an existing cluster by following these steps:
+You can assign a Pod scheduling policy for an existing DB cluster by following these steps:
 {.power-number}
 
 1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
@@ -79,9 +79,9 @@ You can assign a Pod scheduling policy for an existing cluster by following thes
     ![!image](../images/assign_policy_existing_cluster.png)  
 
 
-## Unassign or change Pod scheduling policy for an existing cluster
+## Unassign or change Pod scheduling policy for an existing DB cluster
 
-You can unassign or change a Pod scheduling policy for an existing cluster by following these steps:
+You can unassign or change a Pod scheduling policy for an existing DB cluster by following these steps:
 {.power-number}
 
 1. Go to the **Overview** page of the cluster you want to modify and click **Edit** in the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
