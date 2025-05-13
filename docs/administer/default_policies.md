@@ -27,11 +27,12 @@ The **Components** for a default policy change as per the technology:
   ![!image](../images/pg_default_policy.png)
 
 
-- **MongoDB** 
-        - DB Node, Config Server, and Router (for sharded cluster) 
-        - DB Node for non-sharded cluster.
+**MongoDB**
 
-    ![!image](../images/default_mongo_policy.png)
+    - DB Node, Config Server, and Router (for sharded cluster) 
+    - DB Node for non-sharded cluster.
+
+  ![!image](../images/default_mongo_policy.png)
 
 
 
