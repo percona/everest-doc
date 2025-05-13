@@ -112,7 +112,9 @@ The following are the common attributes for a default policy for all the three d
 - **DB cluster Components**
     - **MySQL**: DB Node and Proxy
     - **PostgreSQL**: DB Node and PG Bouncer
-    - **MongoDB**: DB Node, Config Server, and Router
+    - **MongoDB** 
+        - DB Node, Config Server, and Router (for sharded cluster) 
+        - DB Node for non-sharded cluster.
 
 - **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**: This ensures that pods of the same component are not co-located on the same node.
 
@@ -120,6 +122,7 @@ The following are the common attributes for a default policy for all the three d
 
 - **Topology Key**: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
 
+    ![!image](../images/default_mongo_policy.png)
 
 ## Use cases for affinity
 
