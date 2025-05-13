@@ -117,33 +117,17 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 In Percona Everest, the default pod scheduling policies are preconfigured rules that help ensure optimal placement of database components across a Kubernetes cluster. These policies use a combination of Kubernetes affinity and anti-affinity rule. 
 
-For example, DB nodes and PG Bouncers are typically configured with pod anti-affinity to avoid co-location on the same node, reducing the risk of simultaneous failure. Similarly, policies may prefer spreading components across zones or hosts using topology keys like `kubernetes.io/hostname` or `topology.kubernetes.io/zone`.
+The following are the common attributes for a default policy for all the three database technologies. However, the components **change** as per the technology:
 
-The following are the common attributes for a default rule for all the three database technologies. However, the components **change** as per the technology:
+- **DB cluster Components**
+    - PXC and PG cluster - DB Node and Proxy
+    - PSMDB - DB node, Proxy, and Router
 
-- Type: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
+- **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
 - Preference: **Preferred** 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
 
 - Topology Key: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
-
-Components for the default rules as per the database technology
-
-=== ":simple-postgresql: Components"
-        - DB Node
-        - PG Bouncer 
- 
-
-=== ":simple-mongodb: Components"
-        - DB Node
-        - Router
-        - Config server
-
-
-=== ":simple-mysql: Components"
-    - DB Node
-    - Proxy
-
 
 ## Use cases for affinity
 
