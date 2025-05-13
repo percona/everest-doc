@@ -2,7 +2,7 @@
 
 Percona Everest allows you to define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes.
 
-## Create custom Pod scheduling policy for your DB cluster
+## Create Pod scheduling policy for your DB cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
