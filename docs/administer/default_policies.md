@@ -2,12 +2,11 @@
 
 In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure optimal placement of database components across a Kubernetes cluster. 
 
-## Need for default Pod scheduling policies
+## Importance of default Pod scheduling policies
 
-Percona Everest Administrators create the default Affinity rules beforehand so that all Everest Users can use them later without the necessity to define custom rules during each DB cluster creation. These Pod Scheduling Policies are defined as per their infrastructure and internal policies. 
+Percona Everest Administrators create the **default Affinity** rules. Thus, the Percona Everest users can use these **predefined** settings without the need to create custom rules for every database cluster they set up. Also, these Pod scheduling policies are defined to align with Percona Everest's infrastructure and internal policies. 
 
-
-## Common attributes
+## Common attributes of default Pod scheduling policies
 
 The following are the common attributes for a default policy for all the three database technologies.
 
@@ -17,7 +16,7 @@ The following are the common attributes for a default policy for all the three d
 
 - **Topology Key**: The topology key `kubernetes.io/hostname` defines the scope of the rule. In this case, it ensures that the anti-affinity is evaluated at the node level, preventing matching pods from being placed on the same node.
  
-##  Components by technology
+##  Components by database technology
 
 The **Components** for a default policy change as per the technology:
 
