@@ -190,6 +190,8 @@ nav:
       - User management: administer/manage_users.md
       - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
+      - Pod scheduling policies: administer/affinity.md
+        - Pod Scheduling Policies with RBAC: rbac_pod_scheduling/affinity.md
       - Namespaces management: administer/manage_namespaces.md
 
   - Use:
@@ -206,7 +208,6 @@ nav:
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
       - Configure database engine: use/db_engine_config.md
-      - Pod scheduling policies: use/affinity.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md

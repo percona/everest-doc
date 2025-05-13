@@ -117,8 +117,6 @@ The following are the common attributes for a default policy for all the three d
 - **Preference**: Preferred 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
 
 - **Topology Key**: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
-
-    ![!image](../images/default_mongo_policy.png)
  
 ###  Components by technology
 
