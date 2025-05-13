@@ -62,6 +62,7 @@ extra_css:
   - css/nocopy.css
   - css/osano.css
   - css/everest.css
+  - css/extra.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
@@ -93,8 +94,8 @@ markdown_extensions:
     custom_checkbox: true
   pymdownx.snippets:
       base_path: ["snippets"]
-      auto_append:
-        - services-banner.md
+#      auto_append:
+#        - services-banner.md
   pymdownx.highlight:
     use_pygments: true
   pymdownx.emoji:
@@ -144,10 +145,13 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 
 nav:
-  - Welcome to Percona Everest: index.md 
+  - Welcome to Percona Everest: index.md
+  - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
-      - Percona-Everest 1.5.0 (2025-02-07): release-notes/Percona-Everest-1.5.0-(2025-02-07).md
+      - Percona-Everest 1.7.0 (2025-05-29): release-notes/Percona-Everest-1.7.0-(2025-05-29).md
+      - Percona-Everest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
+      - Percona-Everest 1.5.0 (2025-04-03): release-notes/Percona-Everest-1.5.0-(2025-03-04).md
       - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
       - Percona-Everest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
       - Percona-Everest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
@@ -176,11 +180,14 @@ nav:
       - install/installEverestCLI.md
     - install/install_everest_helm_charts.md
     - install/installEverest.md
+    - install/install_everest_openshift.md
+
   
   - Upgrade: 
     - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
     - Upgrade Percona Everest using CLI: upgrade/upgrade_with_cli.md
     - Upgrade Percona operators: upgrade/upgrade_operators.md
+    - Upgrade database versions: upgrade/mongodb_major_upgrades.md
 
   - Uninstall:
     - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
@@ -188,20 +195,27 @@ nav:
    
   - Administer:
       - User management: administer/manage_users.md
-      - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
       - Pod scheduling policies: 
         - Introduction: administer/affinity.md
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
         - Manage Pod scheduling policies: administer/manage_pod_scheduling_policies.md
+
+      - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
+  - Security:
+      - Single Sign-On (SSO): security/sso_idp_integration.md
+      - Session Management: security/session_management.md
+      - Transport Layer Security (TLS) support: security/tls_setup.md
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
       - Back up and restore data: 
         - About backups: use/AboutBackups.md
-        - Create storage locations: use/CreateStorage.md
+        - Backup storage: 
+          - Create backup storage: use/createBackups/backup_storage/CreateStorage.md
+          - Edit backup storage: use/createBackups/backup_storage/EditStorage.md
         - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
         - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
         - Create database from backups: use/createBackups/create_new_database.md
@@ -209,6 +223,7 @@ nav:
       - Manage clusters: use/cluster-management.md
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
+      - Manual storage scaling: use/manual_storage_scaling.md
       - Configure database engine: use/db_engine_config.md
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
@@ -217,6 +232,7 @@ nav:
   - Reference:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
+      - Migrate from PostgreSQL 12: reference/postgresql12_migration.md
       - Telemetry on Percona Everest: reference/telemetry.md
       - Migrate to Percona Everest: reference/migration_guide.md
       - Copyright and licensing information: reference/copyright.md

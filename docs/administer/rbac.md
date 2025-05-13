@@ -1,9 +1,6 @@
 # Role-based access control (RBAC)
 
 
-!!! warning "Disclaimer"
-    RBAC is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
-
 Role-based access control (RBAC) restricts access to resources within Percona Everest. It establishes a framework that defines access permissions and privileges according to individual users' roles. With RBAC, only authorized individuals can access specific information or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
 
 !!! warning
@@ -466,6 +463,15 @@ Where:
     policy syntax error - unknown resource name 'non-existent-resource'
     ```
 
+    You can also use the same command with the YAML file path containing the everest-rbac ConfigMap. For example:
+
+    
+    ```sh
+    everestctl settings rbac validate --policy-file ./rbac-config.yaml
+    ```
+
+    
+
 
 ## Test your RBAC policy
 
@@ -508,6 +514,7 @@ Where:
     ```{.text .no-copy}
     Yes
     ```
+
 
 ## Breaking API changes for RBAC
 

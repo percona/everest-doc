@@ -1,6 +1,5 @@
 # Known limitations in Percona Everest
 
-
 This section describes the known limitations associated with Percona Everest:
 
 
@@ -18,9 +17,34 @@ We are developing a new feature that will allow you to modify these settings dir
 
 - Since MongoDB sharding is in Tech Preview, there may be issues with backups and restores. Therefore, using sharded PSMDB clusters in production environments is not recommended.
 
-    1. If your restore fails or is stuck, use this **workaround**: 
+    -  If your restore fails or is stuck, use this **workaround**: 
 
         On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
+
+## Manual storage scaling
+
+- When manually scaling storage in Percona Everest, resource quotas are not automatically validated during the volume expansion process. If the requested storage exceeds the defined quota, the PVC resize operation will fail, leaving the database in the **Resizing Volumes** state.
+
+    To avoid such issues, ensure you verify your namespace's resource quotas before initiating a resize:
+
+    ```sh
+    kubectl describe quota <resource-quota-name> -n <namespace>
+    ```
+
+- If scaling fails for any reason, the database will remain in the **Resizing Volumes** state, and the operation will be continuously retried.
+
+- Consult your CSI driver documentation for important details regarding volume resizing restrictions or limitations. This is essential for ensuring smooth operations.
+
+- In previous versions of Percona Everest, users were able to create clusters with decimal storage sizes (for example, 1.2 GiB). However, database operators rounded these values up when provisioning PersistentVolumeClaims (PVCs)—meaning that 1.2 GiB would be provisioned as 2 GiB. Percona Everest would then display the original value in a different unit (such as **1.2 GiB shown as 1288490188800 m**), which caused confusion.
+
+    In version 1.6.0, Percona Everest introduces support for scaling up storage. However, when attempting to scale a cluster to a size that does not exceed the larger rounded PVC size (for instance, trying to scale from 1.2 GiB to 2 GiB, which still rounds to 2 GiB), the cluster may become stuck in the **Resizing Volumes** state. This issue affects MySQL and MongoDB clusters; however, **PostgreSQL** clusters are **not impacted**.
+
+    **Workaround** 
+
+    When scaling storage on clusters created with decimal sizes, make sure the new size exceeds the next whole GiB value (for example, scale from **1.2 GiB to 3 GiB**).
+
+
+
 
 
 ## Databases
@@ -42,9 +66,13 @@ We are developing a new feature that will allow you to modify these settings dir
 
     2. Delete the finalizer called `delete-pods-in-order`.
 
+- When you delete a PostgreSQL (PG) cluster, the associated backup files will not be automatically removed from S3. Instead, these files will remain in S3 storage. Therefore, you need to manually delete any backup files that you no longer need.
+
+
 ## Upgrading operators
 
 - When you upgrade PostgreSQL operators to version 2.4.1, the database transitions to the **Initializing** state as part of the upgrade process. However, this **Initializing** state does not cause any downtime.
+- Since the PostgreSQL operator does not support major version upgrades, you cannot directly upgrade PostgreSQL 12.19 to 13.16. This limitation also prevents upgrading the PG operator itself. Morever, there is no built-in mechanism for transferring data from PostgreSQL 12.19 to 13.16, making migration a challenge.
 - When you upgrade PXC operators to version 1.15.0, single node MySQL databases will be restarted, resulting in downtime. However, it is worth noting that single node databases should not be used in production environments.
 
 ## Backups storage
@@ -122,9 +150,11 @@ The default **uploadInterval** values for different databases are as follows:
 
 ### PostgreSQL limitation for PITR
 
-When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitation:
+When performing point-in-time recovery (PITR) for PostgreSQL, it is important to consider the following limitations:
 
-You may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the **Restoring** state.
+- The Edit button for PITR in the UI is always disabled for PostgreSQL. However, PITR is automatically enabled once a backup or backup schedule is created.
+
+- You may encounter issues with point-in-time recovery (PITR) when attempting to recover the database after the last transaction. PITR can get stuck in the **Restoring** state.
 
 **Check the timestamp of the last transaction**
 
