@@ -17,10 +17,10 @@ As a Percona Everest Admin, you can allow only specific users to manage Pod Sche
 ??? example "Example"
     Here's an example RBAC policy displays how to grant full access to one user (e.g., alice) and read-only access to others:
 
-        ```sh
-        p, alice, pod-scheduling-policies, *, *
-        p, role:team-dev, pod-scheduling-policies, read, *
-        ```
+    ```sh
+    p, alice, pod-scheduling-policies, *, *
+    p, role:team-dev, pod-scheduling-policies, read, *
+    ```
 
 
 
