@@ -17,7 +17,7 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
 
 
-=== ### "Pod anti-affinity"
+=== "Pod anti-affinity"
 
     Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
 
