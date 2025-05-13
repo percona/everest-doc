@@ -10,5 +10,11 @@ It may be necessary to update the pod scheduling policies over time to add new a
 Here are the steps to update Pod scheduling policy:
 {.power-number}
 
-1. 
+1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+
+2. Click on the policy which you want to update.
+
+3. Click on the **Edit** icon. The **Edit rule** pop-up opens.
+
+4. Make the required changes and click **Save**.
 
