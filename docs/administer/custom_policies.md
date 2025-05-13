@@ -79,6 +79,24 @@ Scheduling policies can be assigned for an existing cluster as follows:
     ![!image](../images/assign_policy_existing_cluster.png)  
 
 
+## Unassign or change Pod scheduling policy for an existing cluster
+
+Po scheduling policies can be unassigned or changed for an existing cluster as follows:
+{.power-number}
+
+1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
+
+2. In the **Pod scheduling policy** section, select the policy which you want to apply for the existing cluster.
+
+3. To unassign all the policies from the cluster, click on **Enable** toggle in the **Pod scheduling policy** section.
+
+
+
+
+
+
+
+
 
 
 
