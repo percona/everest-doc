@@ -12,11 +12,11 @@ Here are the steps to update Pod scheduling policy:
 
 1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
-2. Click on the policy which you want to update.
+2. Select the policy that you want to update.
 
 3. Click on the **Edit** icon. The **Edit rule** pop-up opens.
 
 4. Make the required changes and click **Save**. 
 
-    Percona Everest updates the policy and applies the changes to all the affected database clusters.
+    Percona Everest will update the policy and apply the changes to all the affected database clusters.
 
