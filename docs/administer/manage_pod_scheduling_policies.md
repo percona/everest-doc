@@ -1,0 +1,1 @@
+# Manage Pod scheduling policies in Percona Everest
