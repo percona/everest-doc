@@ -31,9 +31,9 @@ As a Percona Everest Admin, you can allow a particular user to use a specific Po
 ??? example "Example"
     Here's an example RBAC policy that grants limited access to just one user (e.g., bob):
 
-        ```sh
-        p, bob, pod-scheduling-policies, read, pod-scheduling-policy-1
-        ```
+    ```sh
+    p, bob, pod-scheduling-policies, read, pod-scheduling-policy-1
+    ```
 
 
 
