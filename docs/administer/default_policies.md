@@ -29,8 +29,8 @@ The **Components** for a default policy change as per the technology:
 
 **MongoDB**
 
-    - DB Node, Config Server, and Router (for sharded cluster) 
-    - DB Node for non-sharded cluster.
+- DB Node, Config Server, and Router (for sharded cluster) 
+- DB Node for non-sharded cluster.
 
   ![!image](../images/default_mongo_policy.png)
 
