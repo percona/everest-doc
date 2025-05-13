@@ -9,7 +9,7 @@ RBAC policies in Everest apply to the entire Pod Scheduling Policy, including al
     Assigning RBAC permissions to individual affinity rules within a policy is impossible—access is managed at the policy level as a whole.
 
 
-## Use cases
+## Use cases for Pod Scheduling policies with RBAC
 
 ### Limited access to Pod scheduling policy configuration
 As a Percona Everest Admin, you can allow only specific users to manage Pod Scheduling Policies (create, edit, read, and delete) while restricting other users to read-only access. These users can view and apply the existing policies to database clusters but cannot modify or delete them.
