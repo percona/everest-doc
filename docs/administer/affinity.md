@@ -43,26 +43,6 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 
     📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
-
-## Assign a pod scheduling policy to your cluster
-
-Scheduling policies can be assigned during cluster creation or updated later to adapt to your evolving infrastructure requirements.
-{.power-number}
-
-1. From the database creation wizard, navigate to **Advanced Configurations**. In the **Pod scheduling policy**
-section, choose a policy from the dropdown.
-
-    ![!image](../images/assign_policy.png)
-
-
-2. Click **Continue** till you reach the end of the wizard.
-
-3. Click **Create Database** to apply the policy.
-
-!!! note
-    To see your custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page, you must first [create the policy](#create-pod-scheduling-policy-for-your-cluster).
-
-
 ## Create Pod scheduling policy for your cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
@@ -102,6 +82,42 @@ Here are the steps to configure pod scheduling rules for the policies for your d
         | **Values**        | Specific label values that must match for the rule to apply. Required when using `In` or `NotIn` operators. | **Examples:**<br>- `s2`<br>- `database`<br>- `production`<br>- Custom: `finance`, `cache-tier` |
 
 6. Click **Add** to save the rule. The new pod scheduling policy is now available and can be applied to relevant components.
+
+
+## Assign pod scheduling policy to a new cluster
+
+!!! info "Important"
+    If RBAC is enabled, Percona Everest only displays Pod Scheduling Policies applicable to the selected DB Engine type for which the user has read access.
+
+Scheduling policies can be assigned during cluster creation as follows:
+{.power-number}
+
+1. From the database creation wizard, navigate to **Advanced Configurations**. In the **Pod scheduling policy**
+section, choose a policy from the dropdown.
+
+    ![!image](../images/assign_policy.png)
+
+
+2. Click **Continue** till you reach the end of the wizard.
+
+3. Click **Create Database** to apply the policy.
+
+!!! note
+    To see your custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page, you must first [create the policy](#create-pod-scheduling-policy-for-your-cluster).
+
+## Assign pod scheduling policy to an existing cluster
+
+Scheduling policies can be assigned for an existing cluster as follows:
+{.power-number}
+
+1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
+
+2. 
+
+
+
+
+
 
 ## Default configuration for Pod scheduling policies
 
