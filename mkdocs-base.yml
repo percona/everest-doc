@@ -202,7 +202,7 @@ nav:
         - Custom Pod scheduling policies: administer/custom_policies.md
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
         - Manage Pod scheduling policies: administer/manage_pod_scheduling_policies.md
-
+        - Use cases: administer/use_cases.md 
       - RBAC integration with IdP groups: administer/Idp_groups_integration.md
       - Namespaces management: administer/manage_namespaces.md
 
