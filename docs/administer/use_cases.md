@@ -1,4 +1,4 @@
-# Use cases for affinity
+# Use cases for Pod scheduling policies
 
 Here are several detailed use cases for affinity that highlight its diverse applications and the numerous benefits it offers across various contexts.
 
@@ -9,7 +9,7 @@ Let's consider a use case in which workloads are distributed based on performanc
 
 You need to run a workload in the `us-west2 region` for latency optimaztion and to meet specific compliance requirements.
 
-![!image](../images/configure_node_affinity.png)
+    ![!image](../images/configure_node_affinity.png)
 
     ??? info "What happens under the hood"
         - It ensures that the pod is scheduled only on nodes located in the us-west-2 region, as defined by the `topology.kubernetes.io/region` node label.
