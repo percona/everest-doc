@@ -83,20 +83,16 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 5. A pop-up will appear where you need to enter the following details for the **Rule type** and **Rule details** section:
 
-    - **Component** - For example, DB Nodes, Proxies, Config Servers
-    - **Type** - Node Affinity, Pod Affinity, or Pod Anti-Affinity
-    - **Preference** -  Select Preferred or Required
-    - **Weight** - Determines rule priority
-    - **Topology Key **- For example,`topology.kubernetes.io/zone`
-    - **Key** - The node label or pod label key
-    - **Operator** -  For example, **In, NotIn, Exists**
+    - **Component**
+    - **Type**
+    - **Preference**
+    - **Weight**
+    - **Key**
+    - **Operator**
 
     ![!image](../images/affinity_add_rules.png)
 
-
-6. Click **Add** to save the rule. The new pod scheduling policy is now available and can be applied to relevant components.
-
-
+    Refer to the following table for the various attributes for the custom policies.
 
 ??? info "📋 Custom Pod scheduling rule attributes"
     The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
@@ -112,6 +108,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
     | **Operator**      | Logical condition used to evaluate the **Key** and **Values**. Determines how Kubernetes interprets the label match. | **Supported Operators:**<br>- `In` – Matches if the label value is in a specified list<br>- `NotIn` – Matches if not in the list<br>- `Exists` – Matches if the label key exists (regardless of value)<br>- `DoesNotExist` – Matches if the label key does not exist |
     | **Values**        | Specific label values that must match for the rule to apply. Required when using `In` or `NotIn` operators. | **Examples:**<br>- `s2`<br>- `database`<br>- `production`<br>- Custom: `finance`, `cache-tier` |
 
+6. Click **Add** to save the rule. The new pod scheduling policy is now available and can be applied to relevant components.
 
 ## Default configuration for Pod scheduling policies
 
