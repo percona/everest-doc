@@ -83,13 +83,6 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 5. A pop-up will appear where you need to enter the following details for the **Rule type** and **Rule details** section:
 
-    - **Component**
-    - **Type**
-    - **Preference**
-    - **Weight**
-    - **Key**
-    - **Operator**
-
     ![!image](../images/affinity_add_rules.png)
 
     Refer to the following table for the various attributes for the custom policies.
@@ -112,7 +105,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 ## Default configuration for Pod scheduling policies
 
-In Percona Everest, the default pod scheduling policies are preconfigured rules that help ensure optimal placement of database components across a Kubernetes cluster. These policies use a combination of Kubernetes affinity and anti-affinity rule. 
+In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure optimal placement of database components across a Kubernetes cluster. These policies use a combination of Kubernetes affinity and anti-affinity rule. 
 
 The following are the common attributes for a default policy for all the three database technologies. However, the components **change** as per the technology:
 
