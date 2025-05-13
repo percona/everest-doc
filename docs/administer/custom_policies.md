@@ -79,34 +79,6 @@ Scheduling policies can be assigned for an existing cluster as follows:
     ![!image](../images/assign_policy_existing_cluster.png)  
 
 
-## Default configuration for Pod scheduling policies
-
-In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure optimal placement of database components across a Kubernetes cluster. 
-
-
-### Common attributes
-
-The following are the common attributes for a default policy for all the three database technologies.
-
-- **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**: This ensures that pods of the same component are not co-located on the same node.
-
-- **Preference**: Preferred 1 means the scheduler will try to satisfy this rule but won't fail if it cannot
-
-- **Topology Key**: This repeats the Topology Key value and suggests that pods matching this label (`kubernetes.io/hostname`) are evaluated when applying the rule.
- 
-###  Components by technology
-
-The **Components** for a default policy change as per the technology:
-
-- **DB cluster Components**
-    - **MySQL**: DB Node and Proxy
-    - **PostgreSQL**: DB Node and PG Bouncer
-    - **MongoDB** 
-        - DB Node, Config Server, and Router (for sharded cluster) 
-        - DB Node for non-sharded cluster.
-
-    ![!image](../images/default_mongo_policy.png)
-
 
 
 
