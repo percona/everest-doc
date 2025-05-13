@@ -13,12 +13,11 @@ Percona Everest supports database workload scheduling on Kubernetes by allowing 
 
 Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of Kubernetes affinity rules applied to the relevant DB cluster components.
 
-??? info "🔗 Types of affinity"
 
-    Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
+Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
 
 
-    ### Pod anti-affinity
+=== ### "Pod anti-affinity"
 
     Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
 
@@ -27,7 +26,7 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
     📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
 
-    ### Pod affinity
+=== ### "Pod affinity"
 
     Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
 
@@ -35,7 +34,7 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 
     📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
-    ### Node affinity
+=== ### "Node affinity"
 
     Node affinity determines which nodes a pod can be scheduled on. Based on the labels assigned to nodes, you can define rules about where a pod should or should not be deployed. 
 
@@ -43,7 +42,7 @@ Pod Scheduling Policy is a **preset** in Percona Everest that includes a set of 
 
     📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
-## Create Pod scheduling policy for your cluster
+## Create custom Pod scheduling policy for your cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
