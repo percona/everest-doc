@@ -112,11 +112,12 @@ Scheduling policies can be assigned for an existing cluster as follows:
 
 1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
 
-2. 
+2. In the **Pod scheduling policy** section, select the policy from the dropdown.
+
+3. Click **Save**. The chosen pod scheduling policy will now be apple to your cluster.
 
 
-
-
+    ![!image](../images/assign_policy_existing_cluster.png)  
 
 
 ## Default configuration for Pod scheduling policies
