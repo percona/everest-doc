@@ -191,7 +191,7 @@ nav:
       - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
       - Pod scheduling policies: 
-        - Introduction: administer/affinity.md
+        - Leverage pod scheduling policies: administer/affinity.md
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
         - Manage Pod scheduling policies: administer/manage_pod_scheduling_policies.md
       - Namespaces management: administer/manage_namespaces.md
