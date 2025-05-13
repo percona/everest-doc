@@ -17,10 +17,17 @@ The following are the common attributes for a default policy for all the three d
 
 The **Components** for a default policy change as per the technology:
 
-- **DB cluster Components**
-    - **MySQL**: DB Node and Proxy
-    - **PostgreSQL**: DB Node and PG Bouncer
-    - **MongoDB** 
+- **MySQL**: DB Node and Proxy
+
+![!image](../images/mysql_default_policy.png)
+
+
+- **PostgreSQL**: DB Node and PG Bouncer
+
+![!image](../images/pg_default_policy.png)
+
+
+- **MongoDB** 
         - DB Node, Config Server, and Router (for sharded cluster) 
         - DB Node for non-sharded cluster.
 
