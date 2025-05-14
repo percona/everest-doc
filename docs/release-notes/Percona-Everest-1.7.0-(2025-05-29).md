@@ -65,7 +65,7 @@
     
     Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
-    📚 To explore the documentation in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+    📚 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 === "🕒 Session management"
 
@@ -76,7 +76,7 @@
     This feature is valuable for applications that handle user authentication and authorization, including web services, databases, and Database as a Service (DBaaS) platforms.
 
 
-    📚 To explore the documentation in details, see our [documentation](security/session_management.html).
+    📚 For more insights into this topic, see our [documentation](security/session_management.html).
 
 === " :simple-mysql: PXC Operator"
     
