@@ -37,6 +37,29 @@ Kubernetes features three primary types of affinity that play a crucial role in 
 
 - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
 
+    #### Default configuration for Pod scheduling policies
+
+        In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure optimal placement of database components across a Kubernetes cluster. Administrators create the default Affinity rules. Thus, Percona Everest users can use these predefined settings without the need to create custom rules for every database cluster they set up.
+
+        ![!image](../images/default_mongo_policy.png)
+
+        📚 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
+
+    #### Custom Pod scheduling policies
+        You can now define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes. These policies provide fine-grained control over pod distribution Kubernetes affinity rules.
+
+    To create a custom policy, simply define the scheduling rules through the Everest UI, as shown below:
+
+
+        ![!image](../images/affinity_add_rules.png)
+
+        📚 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
+
+
+
+
+
+
 === "🔐 TLS support"
 
     ### Improved Security with TLS support
