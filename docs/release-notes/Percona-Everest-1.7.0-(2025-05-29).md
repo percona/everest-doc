@@ -7,7 +7,7 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Pod Scheduling](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Pod Scheduling for optimized Kubernetes scheduling¶|
+    | **1.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Pod Scheduling for optimized Kubernetes scheduling¶|
     | **2.**|[TLS support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Improved Security with TLS support|
     | **3.**|[Session Management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Secure user access with session management|
     | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona XtraBackup Operator 1.17.0|
@@ -20,20 +20,22 @@
 
 ## 🌟 Release highlights
 
-===  "⎈ Pod scheduling"
+===  "⎈ Pod scheduling policies"
 
 
     ### Pod scheduling policies for optimized Kubernetes scheduling
     
-    The DB Affinity Rules feature provides database administrators with enhanced control over the distribution of database workloads within a Kubernetes cluster. By configuring Kubernetes affinity and anti-affinity rules, you can optimize performance, improve resilience, and utilize resources more efficiently—customized to the architecture and components of each database.
-
-    This feature covers three key areas of affinity rule management throughout the database lifecycle:
-
-    - **Reusable Affinity Policies:** Create shared policies that can be reused by many DB clusters.
-    - **Policy selection during database deployment:** Select the appropriate policy during the database creation process.
-    - **Affinity management and status monitoring:** Modify affinity settings for specific components in existing cluster, as well as quickly monitor the status from the database overview page.
+        We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature supports database workload scheduling on Kubernetes by allowing users to define Pod Scheduling Policies, including Kubernetes Affinity and Anti-Affinity rules. These policies optimize performance and enhance system resilience and ensure that your resources are utilized to their fullest potential.
     
-    These capabilities offer a robust toolkit for defining and maintaining workload distribution strategies across all supported database engines: MySQL, MongoDB, and PostgreSQL.
+    Pod Scheduling Policy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
+
+Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
+
+- [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
+
+- [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
+
+- [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
 
 === "🔐 TLS support"
 
