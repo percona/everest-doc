@@ -23,9 +23,9 @@ These policies use pod labels to identify which pods should not be co-located. T
 
 The **Components** for a default policy change as per the technology:
 
-- **MySQL**: The core component that stores and serves data.
+### Components for MYSQL database
 
-- **DB Node**: Acts as a load balancer and router for DB Nodes.
+- **DB Node**: The core component that stores and serves data.
 
 - **Proxy**: Acts as a load balancer and router for DB Nodes.
 
@@ -35,7 +35,7 @@ The **Components** for a default policy change as per the technology:
   ![!image](../images/mysql_default_policy.png)
 
 
-**PostgreSQL**
+### Components for PostgreSQL database
 
 - **DB Node**: The main PostgreSQL database engine instance.
 - **PG Bouncer**: A lightweight connection pooler for PostgreSQL.
@@ -46,22 +46,21 @@ The **Components** for a default policy change as per the technology:
   ![!image](../images/pg_default_policy.png)
 
 
-**MongoDB sharded cluster**
+### Components for MongoDB database sharded cluster
 
-- DB Node: Stores the actual application data.
-- Config Server: Stores metadata and configuration for the cluster; required for sharding.
-- Router: It routes queries to the correct shard(s).
+- **DB Node:** Stores the actual application data.
+- **Config Server:** Stores metadata and configuration for the cluster; required for sharding.
+- **Router:** It routes queries to the correct shard(s).
 
 
 !!! info "Important"
     This policy Prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
 
-- DB Node for non-sharded cluster.
-
   ![!image](../images/default_mongo_policy.png)
 
-**MongoDB non-sharded cluster**
-- DB Node: Replica set members that handle reads and writes for the full dataset
+### Components for MongoDB database non-sharded cluster
+
+- **DB Node:** Replica set members that handle reads and writes for the full dataset
 
 
 !!! info "Important"
