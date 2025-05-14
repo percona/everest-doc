@@ -30,7 +30,7 @@
     
     Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
-    📚 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+    📘 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 ===  "⎈ Pod scheduling policies"
 
@@ -55,7 +55,7 @@
 
     ![!image](../images/default_mongo_policy.png)
 
-    📚 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
+    📘 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
 
     #### Custom Pod scheduling policies
     You can now define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes. These policies provide fine-grained control over pod distribution Kubernetes affinity rules.
@@ -65,7 +65,7 @@
 
     ![!image](../images/affinity_add_rules.png)
 
-    📚 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
+    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
 === "🕒 Session management"
