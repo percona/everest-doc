@@ -99,7 +99,7 @@ Percona Everest versions older than 1.4.0 will cease to function after this date
 
 ### ✅ Action required
 
-We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
 📚 More info → [Container Registry Deprecation Docs] (https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
