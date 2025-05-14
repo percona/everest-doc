@@ -34,7 +34,7 @@
 
 ===  "⎈ Pod scheduling policies"
 
-    ### Pod scheduling policies for optimized Kubernetes scheduling
+    ### Optimized Pod scheduling for Kubernetes
     
     We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature supports database workload scheduling on Kubernetes by allowing users to define Pod Scheduling Policies, including Kubernetes Affinity and Anti-Affinity rules. These policies optimize performance and enhance system resilience and ensure that your resources are utilized to their fullest potential.
     
