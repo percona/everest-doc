@@ -22,6 +22,10 @@ Here are the steps to update a Pod scheduling policy rule:
 
     Percona Everest will update the policy and apply the changes to all the affected database clusters.
 
+    !!! note
+        When you update the policy rules, the database cluster may restart to apply the new affinity configuration.
+
+
 
 ## Delete pod scheduling policy
 
@@ -39,6 +43,6 @@ Here are the steps to delete a Pod scheduling policy:
 4. Click **Delete**.
 
     !!! note
-        If a policy is assigned to any cluster, you must first unassign it before you can delete the policy.
+        If a policy is assigned to any cluster, you must first [unassign the policy](custom_policies.md#unassign-or-change-pod-scheduling-policy-for-an-existing-db-cluster) before you can delete the policy.
 
 
