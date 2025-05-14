@@ -181,7 +181,7 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 - [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on how to access the user interface (UI).
 
 
-## :rocket: Upgrade now
+## 🚀 Upgrade now
 
 Upgrade to **Percona Everest 1.7.0** to access these new features and improvements. 
 
