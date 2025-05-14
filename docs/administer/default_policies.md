@@ -29,8 +29,7 @@ The **Components** for a default policy change as per the technology:
 
 - **Proxy**: Acts as a load balancer and router for DB Nodes.
 
-!!! info "Important"
-    Default anti-affinity prevents multiple DB Nodes or Proxies of the same cluster from being scheduled on the same node.
+Default anti-affinity prevents multiple DB Nodes or Proxies of the same cluster from being scheduled on the same node.
 
   ![!image](../images/mysql_default_policy.png)
 
