@@ -28,13 +28,14 @@
     
     Pod Scheduling Policy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
 
-    Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
+    ??? info "Affinity types"
+        Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
 
-    - [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
+        - [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
 
-    - [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
+        - [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
 
-    - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
+        - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
 
     #### Default configuration for Pod scheduling policies
 
