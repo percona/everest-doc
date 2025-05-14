@@ -256,5 +256,5 @@ everestctl settings oidc configure \
 !!! note
     Note: Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
 
-With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that you can verify.
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Everest can verify.
 
