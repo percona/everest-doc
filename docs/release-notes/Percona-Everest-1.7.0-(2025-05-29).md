@@ -182,6 +182,6 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 
 ## :rocket: Upgrade now
 
-Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. 
+Upgrade to **Percona Everest 1.7.0** to access these new features and improvements. 
 
 📘 Explore our [Uprade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
