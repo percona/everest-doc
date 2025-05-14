@@ -11,26 +11,26 @@ Percona Everest supports **database workload scheduling** on Kubernetes by allow
 
 ## Understanding Pod scheduling policies
 
-Pod Scheduling Policy is a **preset** in that includes a set of Kubernetes **Affinity** rules that are applied to the appropriate DB cluster components.
+Pod Scheduling Policy is a **preset** that includes a set of Kubernetes **Affinity** rules that are applied to the appropriate DB cluster components.
 
 
-Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a cluster. 
-
-
-### Pod anti-affinity
-
-Pod anti-affinity empowers you to take control of pod placement in your Kubernetes environment. With pod anti-affinity you can prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
-
-Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
-
-📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
-
+Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster. 
 
 ### Pod affinity
 
 Pod affinity enables you to control the placement of pods based on the location of other pods. By using affinity rules, you can ensure that pods are scheduled together (co-located) on the same node, in the same zone, or within any other topological boundary.
 
 Kubernetes uses labels, which are key-value pairs, to identify and categorize pods.
+
+
+### Pod anti-affinity
+
+Pod anti-affinity enables you to prevent certain pods from being scheduled on the same node or within the same topology, such as a zone or region.
+
+Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
+
+📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
+
 
 📚 [Learn more in Kubernetes documentation - Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
 
