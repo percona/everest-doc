@@ -68,8 +68,6 @@
     📚 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-
-
 === "🕒 Session management"
 
     ### Percona Everest 1.7.0: Secure user access with session management
