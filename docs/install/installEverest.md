@@ -127,7 +127,7 @@ To install and provision Percona Everest to Kubernetes:
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
+            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}'
             ```
         2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
 
