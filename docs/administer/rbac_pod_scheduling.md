@@ -1,8 +1,8 @@
 # Pod scheduling policies with RBAC
 
-As an admin in Percona Everest, you can restrict access to configuring or applying specific Pod Scheduling Policies for certain users. To achieve this, you can use Percona Everest's RBAC (Role-Based Access Control) functionality to define access policies.
+As an admin in Percona Everest, you can restrict access to configuring or applying specific Pod scheduling policies for certain users. To achieve this, you can use [Percona Everest's Role-Based Access Control (RBAC)](rbac.md) functionality to define access policies.
 
-RBAC policies in Everest apply to the entire Pod Scheduling Policy, including all the affinity rules defined within it. 
+RBAC policies in Percona Everest apply to the entire Pod scheduling policy, including all the affinity rules defined within it. 
 
 
 !!! note
@@ -30,7 +30,7 @@ As a Percona Everest Admin, you can allow a particular user to use a specific Po
 
 ??? example "Example"
     Here’s an example of RBAC policy that grants limited access to just one user (e.g., bob):
-    
+
     ```sh
     p, bob, pod-scheduling-policies, read, pod-scheduling-policy-1
     ```
