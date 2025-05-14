@@ -23,28 +23,49 @@ These policies use pod labels to identify which pods should not be co-located. T
 
 The **Components** for a default policy change as per the technology:
 
-**MySQL**: DB Node and Proxy
+- **MySQL**: The core component that stores and serves data.
+
+- **DB Node**: Acts as a load balancer and router for DB Nodes.
+
+- **Proxy**: Acts as a load balancer and router for DB Nodes.
+
+!!! info "Important"
+    Default anti-affinity prevents multiple DB Nodes or Proxies of the same cluster from being scheduled on the same node.
 
   ![!image](../images/mysql_default_policy.png)
 
 
-**PostgreSQL**: DB Node and PG Bouncer
+**PostgreSQL**
+
+- **DB Node**: The main PostgreSQL database engine instance.
+- **PG Bouncer**: A lightweight connection pooler for PostgreSQL.
+
+!!! info "Important"
+    The policy ensures separation between DB Nodes and PG Bouncers.
 
   ![!image](../images/pg_default_policy.png)
 
 
-**MongoDB**
+**MongoDB sharded cluster**
 
-- DB Node, Config Server, and Router (for sharded cluster) 
+- DB Node: Stores the actual application data.
+- Config Server: Stores metadata and configuration for the cluster; required for sharding.
+- Router: It routes queries to the correct shard(s).
+
+
+!!! info "Important"
+    This policy Prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
+
 - DB Node for non-sharded cluster.
 
   ![!image](../images/default_mongo_policy.png)
 
+**MongoDB non-sharded cluster**
+- DB Node: Replica set members that handle reads and writes for the full dataset
 
 
-
-
-
+!!! info "Important"
+    This policy ensures that DB Nodes (replica set members) are not placed on the same node.
 
 
 
