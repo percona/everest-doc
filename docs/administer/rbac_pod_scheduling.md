@@ -15,7 +15,7 @@ RBAC policies in Everest apply to the entire Pod Scheduling Policy, including al
 As a Percona Everest Admin, you can allow only specific users to manage Pod Scheduling Policies (create, edit, read, and delete) while restricting other users to read-only access. These users can view and apply the existing policies to database clusters but cannot modify or delete them.
 
 ??? example "Example"
-    Here's an example RBAC policy displays how to grant full access to one user (e.g., alice) and read-only access to others:
+    Here’s an example of RBAC policy displaying how to grant full access to one user (e.g., alice) and read-only access to others:
 
     ```sh
     p, alice, pod-scheduling-policies, *, *
@@ -26,11 +26,11 @@ As a Percona Everest Admin, you can allow only specific users to manage Pod Sche
 
 ### Limited usage of Pod scheduling policy by users
 
-As a Percona Everest Admin, you can allow a particular user to use a specific Pod ccheduling Policy. The rest of the users are not allowed to use this policy at all (that is, they cannot see this policy in the system and cannot assign it to DB clusters that they create or modify).
+As a Percona Everest Admin, you can allow a particular user to use a specific Pod scheduling policy. The rest of the users are not allowed to use this policy at all (that is, they cannot see it in the system and cannot assign it to DB clusters that they create or modify).
 
 ??? example "Example"
-    Here's an example RBAC policy that grants limited access to just one user (e.g., bob):
-
+    Here’s an example of RBAC policy that grants limited access to just one user (e.g., bob):
+    
     ```sh
     p, bob, pod-scheduling-policies, read, pod-scheduling-policy-1
     ```
