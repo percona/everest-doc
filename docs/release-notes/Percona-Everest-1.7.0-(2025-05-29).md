@@ -30,7 +30,7 @@
     
     Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
-    📘 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 ===  "⎈ Pod scheduling policies"
 
@@ -121,7 +121,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
-- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have more intuitive control over creating, updating, and deleting **Pod Scheduling Policies**, making workload distribution in Percona Everest more seamless. This enhancement helps optimize resource utilization and improves overall efficiency, ensuring smoother operations and better scheduling flexibility.
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have more intuitive control over creating, updating, and deleting **Pod Scheduling Policies**, making workload distribution in Percona Everest more seamless. This enhancement helps optimize resource utilization and efficiency, ensuring smoother operations and better scheduling flexibility.
 
 
 
@@ -131,7 +131,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
-- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring that users receive the correct message when the **Continue** button is disabled.
+- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the correct message when the **Continue** button is disabled.
 
 - [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923): The Everest API access token now becomes invalid immediately upon logout, preventing unauthorized access to your account.
 
@@ -163,9 +163,9 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 - [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): Resolved an issue with the PITR pod for a one-node MySQL database that restarted multiple times.
 
 - [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): 
-Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**," even though PITR was already enabled.
+Resolved an issue where users could not edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**, even though PITR was already enabled.
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): When you hover over the **Edit** option for PostgreSQL schedules in Percona Everest, a tooltip now appears that states, **Point-in-time recovery (PITR) is always enabled for all PostgreSQL schedules and cannot be disabled**. Previously, tooltips were only shown for MySQL and MongoDB schedules.
+- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): When you hover over the **Edit** option for PostgreSQL schedules in Percona Everest, a tooltip now appears stating that **Point-in-time recovery (PITR) is always enabled for all PostgreSQL schedules and cannot be disabled**. Previously, tooltips were only shown for MySQL and MongoDB schedules.
 
 - [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890): During the MySQL DB cluster creation process, the number of proxies changed incorrectly from the user-defined value `(X)` to `1` instead of keeping the specified configuration. We have resolved the issue now.
 
@@ -178,11 +178,11 @@ Resolved an issue where users were unable to edit Point-in-Time Recovery (PITR) 
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
 
-- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on how to access the user interface (UI).
+- [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on accessing the user interface (UI).
 
 
 ## 🚀 Upgrade now
 
 Upgrade to **Percona Everest 1.7.0** to access these new features and improvements. 
 
-📘 Explore our [Uprade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📘 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
