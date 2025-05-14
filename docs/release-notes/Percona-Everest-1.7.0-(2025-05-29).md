@@ -20,6 +20,18 @@
 
 ## 🌟 Release highlights
 
+
+=== "🔐 TLS support"
+
+    ### Improved Security with TLS support
+
+    Starting with version 1.7.0, Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that client and API server communication is encrypted, protecting data from interception or tampering.
+ 
+    
+    Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
+
+    📚 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+
 ===  "⎈ Pod scheduling policies"
 
     ### Pod scheduling policies for optimized Kubernetes scheduling
@@ -28,14 +40,14 @@
     
     Pod Scheduling Policy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
 
-    ??? info "Affinity types"
-        Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
 
-        - [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
+    Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
 
-        - [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
+    - [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
 
-        - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
+    - [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
+
+    - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
 
     #### Default configuration for Pod scheduling policies
 
@@ -56,16 +68,7 @@
     📚 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-=== "🔐 TLS support"
 
-    ### Improved Security with TLS support
-
-    Starting with version 1.7.0, Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that client and API server communication is encrypted, protecting data from interception or tampering.
- 
-    
-    Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
-
-    📚 To explore this topic in details, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 === "🕒 Session management"
 
