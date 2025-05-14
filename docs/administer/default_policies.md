@@ -39,10 +39,10 @@ Default anti-affinity prevents multiple DB Nodes or Proxies of the same cluster 
 - **DB Node**: The main PostgreSQL database engine instance.
 - **PG Bouncer**: A lightweight connection pooler for PostgreSQL.
 
-!!! info "Important"
-    The policy ensures separation between DB Nodes and PG Bouncers.
 
-  ![!image](../images/pg_default_policy.png)
+The policy ensures separation between DB Nodes and PG Bouncers.
+
+![!image](../images/pg_default_policy.png)
 
 
 ### Components for MongoDB database sharded cluster
@@ -52,18 +52,15 @@ Default anti-affinity prevents multiple DB Nodes or Proxies of the same cluster 
 - **Router:** It routes queries to the correct shard(s).
 
 
-!!! info "Important"
-    This policy Prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
+This policy Prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
 
-  ![!image](../images/default_mongo_policy.png)
+![!image](../images/default_mongo_policy.png)
 
 ### Components for MongoDB database non-sharded cluster
 
 - **DB Node:** Replica set members that handle reads and writes for the full dataset
 
-
-!!! info "Important"
-    This policy ensures that DB Nodes (replica set members) are not placed on the same node.
+This policy ensures that DB Nodes (replica set members) are not placed on the same node.
 
 
 
