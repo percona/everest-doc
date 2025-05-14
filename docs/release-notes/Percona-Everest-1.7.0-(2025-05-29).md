@@ -55,10 +55,6 @@ Kubernetes features three primary types of affinity that play a crucial role in 
     📚 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-
-
-
-
 === "🔐 TLS support"
 
     ### Improved Security with TLS support
