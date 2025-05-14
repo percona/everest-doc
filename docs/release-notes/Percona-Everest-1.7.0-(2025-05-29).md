@@ -77,7 +77,7 @@
     This feature is valuable for applications that handle user authentication and authorization, including web services, databases, and Database as a Service (DBaaS) platforms.
 
 
-    📚 For more insights into this topic, see our [documentation](security/session_management.html).
+    📘 For more insights into this topic, see our [documentation](security/session_management.html).
 
 === " :simple-mysql: PXC Operator"
     
