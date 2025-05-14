@@ -7,7 +7,7 @@ Percona Everest allows you to define custom Pod scheduling policies to control h
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
 
-1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
+1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
 
 
     ![!image](../images/pod_scheduling_policies.png)
@@ -15,7 +15,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 2. Click **Create policy**.
 
-3. In the pop-up that appears, enter a **Policy name** and select the **database technology** from the drop-down. Click **Create**.
+3. In the pop-up that appears, enter a **Policy name** and select the **database technology** from the dropdown. Click **Create**.
 
 
 4. Click **Add rule**.
@@ -24,7 +24,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
     ![!image](../images/affinity_add_rules.png)
 
-    Refer to the following table for the detailed attributes descriptions.
+    Refer to the following table for the detailed attribute descriptions.
 
     ??? info "📋 Custom Pod scheduling rule attributes"
         The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
@@ -62,7 +62,7 @@ section, choose a policy from the dropdown.
 3. Click **Create Database** to apply the policy.
 
 !!! note
-    To see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page, you must first [create the policy](#create-pod-scheduling-policy-for-your-cluster).
+    You must first [create the policy](#create-pod-scheduling-policy-for-your-cluster) to see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page. 
 
 ## Assign pod scheduling policy to an existing DB cluster
 
@@ -73,7 +73,7 @@ You can assign a Pod scheduling policy for an existing DB cluster by following t
 
 2. In the **Pod scheduling policy** section, select the policy from the dropdown.
 
-3. Click **Save**. The chosen pod scheduling policy will now be apple to your cluster.
+3. Click **Save**. The chosen pod scheduling policy will now be added to your cluster.
 
 
     ![!image](../images/assign_policy_existing_cluster.png)  

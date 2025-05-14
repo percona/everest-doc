@@ -4,13 +4,13 @@ In Percona Everest, the default pod scheduling policies are **preset** rules tha
 
 ## Importance of default Pod scheduling policies
 
-Percona Everest Administrators create the **default Affinity** rules. Thus, the Percona Everest users can use these **predefined** settings without the need to create custom rules for every database cluster they set up. Also, these Pod scheduling policies are defined to align with Percona Everest's infrastructure and internal policies. 
+Percona Everest Administrators create the **default Affinity** rules. Thus, Percona Everest users can use these **predefined** settings without the need to create custom rules for every database cluster they set up. Also, these Pod scheduling policies are defined to align with Percona Everest's infrastructure and internal policies. 
 
 ## Common attributes of default Pod scheduling policies
 
-The following are the common attributes for a default policy for all the three database technologies.
+The following are the common attributes of a default policy for all three database technologies.
 
-- **Type**: The Affinity Type applied, which is **Pod Anti-Affinity**: This ensures that pods of the same component are not co-located on the same node.
+- **Type**: The Affinity Type applied is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
 - **Preference**: **Preferred 1** means the scheduler will try to satisfy this rule but will still schedule the pod even if the condition cannot be met.
 
@@ -19,7 +19,7 @@ The following are the common attributes for a default policy for all the three d
 
 These policies use pod labels to identify which pods should not be co-located. The scheduler will try to honor the rule but will not enforce the separation of pods.
  
-##  Components by database technology
+##  Default policy components by database technology
 
 The **Components** for a default policy change as per the technology:
 
@@ -58,7 +58,7 @@ This policy Prevents multiple replica set members or config servers from failing
 
 ### Components for MongoDB database non-sharded cluster
 
-- **DB Node:** Replica set members that handle reads and writes for the full dataset
+- **DB Node:** Replica set members that handle reads and writes for the complete dataset
 
 This policy ensures that DB Nodes (replica set members) are not placed on the same node.
 
