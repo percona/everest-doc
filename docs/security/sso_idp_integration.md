@@ -1,4 +1,4 @@
-# Percona Everest IdP integration
+# SSO: Percona Everest IdP integration
 
 [Identity Provider (IdP)](https://www.okta.com/identity-101/why-your-company-needs-an-identity-provider/){:target="_blank"} integration connects applications and services with an external identity provider for your organization. This enables centralized authentication and authorization management, improving security and simplifying user access. By leveraging IdP integration, you can ensure that users are securely authenticated and authorized to access various applications and services across your organization.
 
@@ -63,7 +63,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
 ## Configure OIDC on the Percona Everest's side
 
-You can configure OIDC on the Percona Everest's side using `everestctl` in the headless mode or with the wizard.
+You can configure OIDC on the Percona Everest's side using `everestctl` in headless mode or with the wizard.
 
 !!! note "Note"
     You must have obtained the `Issuer URL` and `Client ID` values from the [Configure OIDC on the provider side](#example-oidc-configuration-on-the-provider-side) section.
