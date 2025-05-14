@@ -234,7 +234,7 @@ By default, Microsoft Entra issues access tokens intended for use with Microsoft
 
 Microsoft Entra generates access tokens using a proprietary signature mechanism, which Percona Everest cannot validate. This results in signature verification failures when integrating Percona Everest with Entra-generated tokens.
 
-**Workaround**
+**Solution**
 
 To obtain access tokens that Percona Everest can validate, request tokens explicitly scoped for the registered application in Microsoft Entra using the `<application-client-id>/.default scope`. This ensures:
 
@@ -256,5 +256,5 @@ everestctl settings oidc configure \
 !!! note
     Note: Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
 
-With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Everest can verify.
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Percona Everest can verify.
 
