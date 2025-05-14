@@ -38,16 +38,16 @@
     
     We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature supports database workload scheduling on Kubernetes by allowing users to define Pod Scheduling Policies, including Kubernetes Affinity and Anti-Affinity rules. These policies optimize performance and enhance system resilience and ensure that your resources are utilized to their fullest potential.
     
-    Pod Scheduling Policy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
+    Pod scheduling olicy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
 
 
     Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
 
-    - [Pod affinity](https://docs.percona.com/everest/administer/affinity.html#pod-affinity)
+    - [Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity){:target="_blank"}: Co-locates pods on the same node or topology domain.
 
-    - [Pod anti-affinity](https://docs.percona.com/everest/administer/affinity.html#pod-anti-affinity)
+    - [Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity){:target="_blank"}: Ensures pods are scheduled on different nodes or domains.
 
-    - [Node affinity](https://docs.percona.com/everest/administer/affinity.html#node-affinity)
+    - [Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity){:target="_blank"}: Schedules pods based on node labels and conditions.
 
     #### Default configuration for Pod scheduling policies
 
@@ -101,7 +101,7 @@ Percona Everest versions older than 1.4.0 will cease to function after this date
 
 We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as soon as possible. If you do not upgrade, Percona Everest will no longer function.
     
-📚 For more information, see the [Container Registry Deprecation Docs](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown).
+📚 For more information, see the [Container Registry Deprecation Docs](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 ## New Feature
 
