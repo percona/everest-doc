@@ -10,7 +10,7 @@ It may be necessary to update the pod scheduling rule for policies over time to 
 Here are the steps to update a Pod scheduling policy rule:
 {.power-number}
 
-1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
 2. Select the policy that you want to update.
 
@@ -30,9 +30,9 @@ If a specific Pod scheduling policy is no longer needed, the Percona Everest Adm
 Here are the steps to delete a Pod scheduling policy:
 {.power-number}
 
-1. From the Percona Everest home page navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
-2. Click on the **ellipsis** (three dots) next to the policy that you want to delete.
+2. Click on the **ellipsis** (three dots) next to the policy you want to delete.
 
 3. Click on the **Delete** icon. The **Delete Rule** confirmation pop-up opens.
 
