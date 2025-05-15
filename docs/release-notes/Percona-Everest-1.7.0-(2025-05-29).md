@@ -138,9 +138,9 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, leading to confusion. We have improved this by trimming trailing spaces.
 
-- [EVEREST-1902](https://perconadev.atlassian.net/browse/EVEREST-1902): When adding a **Monitoring Endpoint URLs**, trailing spaces at the end of the URL prevented it from being added. This issue often occurred when copying URL's, leading to confusion. We have improved this by trimming trailing spaces.
+- [EVEREST-1902](https://perconadev.atlassian.net/browse/EVEREST-1902): When adding  Monitoring Endpoint URLs, trailing spaces at the end of the URL prevented them from being added. This issue often occurred when copying URLs, leading to confusion. We have improved this by trimming trailing spaces.
 
-- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly indicates that the Storage Class can only be selected during the creation of a cluster.
+- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly indicates that the Storage Class can only be selected when creating a cluster..
 
 [EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
 
@@ -184,14 +184,14 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 - [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The **Age** of the components is now accurately shown on the **Components** panel, ensuring that users can easily view and assess the information they need.
 
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): While editing a monitoring instance, the UI accepted invalid endpoint URLs. This led to frequent restarts for MySQL, MongoDB, and PostgreSQL databases that had scheduled backups and Point-In-Time Recovery (PITR) enabled. We have resolved the issue now.
+- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): The UI accepted invalid endpoint URLs while editing a monitoring instance. This led to frequent restarts for MySQL, MongoDB, and PostgreSQL databases that had scheduled backups and Point-In-Time Recovery (PITR) enabled. We have resolved the issue now.
 
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
 
 
 - [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on accessing the user interface (UI).
 
-- [EVEREST-1891](https://perconadev.atlassian.net/browse/EVEREST-1891): When trying to create a database from a backup that had the same name as an existing database, there was no validation message or warning. The **Continue** button became unresponsive and did not provide any error message to the user. We have now resolved this issue.
+- [EVEREST-1891](https://perconadev.atlassian.net/browse/EVEREST-1891): When trying to create a database from a backup with the same name as an existing database, there was no validation message or warning. The **Continue** button became unresponsive and did not provide any error message to the user. We have now resolved this issue.
 
 - [EVEREST-1984](https://perconadev.atlassian.net/browse/EVEREST-1984): Resolved an issue where creating multiple backup schedules in PostgreSQL led to an error.
 
