@@ -67,9 +67,9 @@
     📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-=== "🕒 GKE Autopilot clusters"
+=== "☁️ GKE Autopilot clusters"
 
-    ### Deploy Percona Everest with GKE Autopilot
+    ### Deploy Percona Everest on GKE Autopilot
 
      You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
@@ -82,7 +82,7 @@
     - Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
 
 
-    📚 For details on GKE Autopilot, see the [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
+    📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
 === " :simple-mysql: PXC Operator"
     
