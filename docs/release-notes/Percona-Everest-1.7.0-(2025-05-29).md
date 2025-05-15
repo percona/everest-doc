@@ -20,17 +20,22 @@
 
 ## 🌟 Release highlights
 
+=== "☁️ GKE Autopilot clusters"
 
-=== "🔐 TLS support"
+    ### Deploy Percona Everest on GKE Autopilot
 
-    ### Improved Security with TLS support
+     You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
-    Starting with version 1.7.0, Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that client and API server communication is encrypted, protecting data from interception or tampering.
- 
-    
-    Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
+    Here are the benefits of this enhancement:
 
-    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+    - Optimized resource allocation
+    - Streamlined operations
+    - Reduced operational overhead
+    - Simplified cluster management
+    - Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
+
+
+    📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
 ===  "⎈ Pod scheduling policies"
 
@@ -66,23 +71,16 @@
 
     📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
+=== "🔐 TLS support"
 
-=== "☁️ GKE Autopilot clusters"
+    ### Improved Security with TLS support
 
-    ### Deploy Percona Everest on GKE Autopilot
+    Starting with version 1.7.0, Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that client and API server communication is encrypted, protecting data from interception or tampering.
+ 
+    
+    Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
-     You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
-
-    Here are the benefits of this enhancement:
-
-    - Optimized resource allocation
-    - Streamlined operations
-    - Reduced operational overhead
-    - Simplified cluster management
-    - Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
-
-
-    📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
+    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 === " :simple-mysql: PXC Operator"
     
