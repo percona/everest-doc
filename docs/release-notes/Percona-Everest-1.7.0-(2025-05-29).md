@@ -75,14 +75,14 @@
 
     Here are the benefits of this enhancement:
 
-    Optimized resource allocation
-    Streamlined operations
-    Reduced operational overhead
-    Simplified cluster management
-    Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
+    - Optimized resource allocation
+    - Streamlined operations
+    - Reduced operational overhead
+    - Simplified cluster management
+    - Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
 
 
-    📘 For more insights into this topic, see our [documentation](security/session_management.html).
+    📚 For details on GKE Autopilot, see the [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
 === " :simple-mysql: PXC Operator"
     
