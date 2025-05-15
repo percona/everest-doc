@@ -67,13 +67,19 @@
     📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-=== "🕒 Session management"
+=== "🕒 Google Kubernetes Engine (GKE) Autopilot clusters"
 
-    ### Percona Everest 1.7.0: Secure user access with session management
+    ### Deploy Percona Everest with GKE Autopilot
 
-    Starting with Percona Everest 1.7.0, we've introduced session management,  which handles user sessions to keep them secure, efficient, and continuous.
+     You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
-    This feature is valuable for applications that handle user authentication and authorization, including web services, databases, and Database as a Service (DBaaS) platforms.
+    Here are the benefits of this enhancement:
+
+    Optimized resource allocation
+    Streamlined operations
+    Reduced operational overhead
+    Simplified cluster management
+    Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
 
 
     📘 For more insights into this topic, see our [documentation](security/session_management.html).
