@@ -136,6 +136,14 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the correct message when the **Continue** button is disabled.
 
+- [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, leading to confusion. We have improved this by trimming trailing spaces.
+
+- [EVEREST-1902](https://perconadev.atlassian.net/browse/EVEREST-1902): When adding a **Monitoring Endpoint URLs**, trailing spaces at the end of the URL prevented it from being added. This issue often occurred when copying URL's, leading to confusion. We have improved this by trimming trailing spaces.
+
+- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly indicates that the Storage Class can only be selected during the creation of a cluster.
+
+[EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): 
+
 - [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923): The Everest API access token now becomes invalid immediately upon logout, preventing unauthorized access to your account.
 
 
