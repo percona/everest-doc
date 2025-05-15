@@ -142,7 +142,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly indicates that the Storage Class can only be selected during the creation of a cluster.
 
-[EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): 
+[EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
 
 - [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923): The Everest API access token now becomes invalid immediately upon logout, preventing unauthorized access to your account.
 
@@ -190,6 +190,14 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 
 - [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on accessing the user interface (UI).
+
+- [EVEREST-1891](https://perconadev.atlassian.net/browse/EVEREST-1891): When trying to create a database from a backup that had the same name as an existing database, there was no validation message or warning. The **Continue** button became unresponsive and did not provide any error message to the user. We have now resolved this issue.
+
+- [EVEREST-1984](https://perconadev.atlassian.net/browse/EVEREST-1984): Resolved an issue where creating multiple backup schedules in PostgreSQL led to an error.
+
+- [EVEREST-2025](https://perconadev.atlassian.net/browse/EVEREST-2025): Resolved an issue where the **Content-Security-Policy** header included an invalid `connect-src` value if the OIDC issuer URL ended with a trailing slash. The policy is now correctly generated regardless of URL formatting.
+
+    Thanks to @(https://github.com/aurimasniekis) for reporting this issue!
 
 
 ## 🚀 Upgrade now
