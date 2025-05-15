@@ -67,7 +67,7 @@
     📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
 
 
-=== "🕒 Google Kubernetes Engine (GKE) Autopilot clusters"
+=== "🕒 GKE Autopilot clusters"
 
     ### Deploy Percona Everest with GKE Autopilot
 
