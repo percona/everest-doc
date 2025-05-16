@@ -4,7 +4,7 @@ Percona Everest allows you to define custom Pod scheduling policies to control h
 
 ## Manage Pod scheduling policies in Percona Everest
 
-A Percona Everest administrator, or anyone with the necessary RBAC permissions, can edit or delete the Pod Scheduling Policies. It may be necessary to update these policies over time to add new affinity rules, modify existing ones, or remove outdated configurations.
+A Percona Everest administrator, or anyone with the necessary RBAC permissions, can create, edit or delete the Pod scheduling policies. It may be necessary to update these policies over time to add new affinity rules, modify existing ones, or remove outdated configurations.
 
 
 ### Create Pod scheduling policy for your DB cluster
