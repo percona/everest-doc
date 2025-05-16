@@ -49,7 +49,8 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 
 ## Update Pod scheduling rule for a policy
 
-It may be necessary to update the pod scheduling rule for policies over time to add new affinity rules, modify existing ones, or remove outdated configurations.
+!!! warning
+    When you update the policy rules, the database cluster may restart to apply the new affinity configuration.
 
 Here are the steps to update a Pod scheduling policy rule:
 {.power-number}
@@ -66,8 +67,7 @@ Here are the steps to update a Pod scheduling policy rule:
 
     Percona Everest will update the policy and apply the changes to all the affected database clusters.
 
-    !!! note
-        When you update the policy rules, the database cluster may restart to apply the new affinity configuration.
+
 
 
 
