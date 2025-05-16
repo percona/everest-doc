@@ -29,7 +29,6 @@ This feature in Percona Everest aims to achieve the following goals:
 
 The Pod scheduling policy is a **preset** that includes a set of Kubernetes **Affinity** rules that are applied to the appropriate DB cluster components.
 
-
 Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster. 
 
 ### Pod affinity
@@ -60,13 +59,21 @@ Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
 
 📚 [Learn more in Kubernetes documentation - Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity).
 
+## Types of Pod scheduling policies
+
+There are two types of polices in Percona Everest:
+
+- Default Policies - **Predefined** Pod scheduling policies in Percona Everest that come bundled with every Percona Everest deployment.
+- Custom policies - **User-defined** pod scheduling policies created to meet specific requirements.
 
 
 ## Next steps
 
+[Default Pod scheduling policies :material-arrow-right:](default_policies.md){.md-button}
+
 [Custom Pod scheduling policies :material-arrow-right:](custom_policies.md){.md-button}
 
-[Default Pod scheduling policies :material-arrow-right:](default_policies.md){.md-button}
+
 
 
 
