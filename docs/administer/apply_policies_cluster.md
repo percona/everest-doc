@@ -19,7 +19,7 @@ section, choose a policy from the dropdown.
 3. Click **Create Database** to apply the policy.
 
 !!! note
-    You must first [create the policy](#create-pod-scheduling-policy-for-your-cluster) to see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page. 
+    You must first [create the policy](custom_policies.md#create-pod-scheduling-policy-for-your-db-cluster) to see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page. 
 
 ## Apply pod scheduling policy to an existing DB cluster
 
