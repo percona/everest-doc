@@ -9,7 +9,7 @@
 Percona Everest supports **database workload scheduling** on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
 
 !!! note
-    Pod scheduling policies are enabled by default for all the DB clusters.
+    Pod scheduling policies are enabled by default for all the DB clusters (MySQL, PostgreSQL, and MongoDB).
 
 
 ## Why Pod scheduling policies matter?

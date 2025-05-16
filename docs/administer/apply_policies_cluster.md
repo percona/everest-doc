@@ -1,4 +1,4 @@
-# Apply or change Pod scheduling policy for your DB clusters
+# Apply or change Pod scheduling policies for your DB clusters
 
 ## Apply pod scheduling policy to a new DB cluster
 
@@ -23,7 +23,7 @@ section, choose a policy from the dropdown.
 
 ## Apply pod scheduling policy to an existing DB cluster
 
-You can assign a Pod scheduling policy for an existing DB cluster by following these steps:
+You can apply a Pod scheduling policy for an existing DB cluster by following these steps:
 {.power-number}
 
 1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
