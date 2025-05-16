@@ -8,9 +8,6 @@
 
 Percona Everest supports **database workload scheduling** on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
 
-!!! note
-    Pod scheduling policies are enabled by default for all the DB clusters (MySQL, PostgreSQL, and MongoDB).
-
 
 ## Why Pod scheduling policies matter?
 
@@ -51,7 +48,6 @@ Pod anti-affinity prevents certain pods from being scheduled on the same node or
 Like pod affinity, Pod anti-affinity also uses pod labels to identify and match pods that should not be co-located.
 
 📚 [Learn more in Kubernetes documentation - Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity).
-
 
 
 ### Node affinity
