@@ -1,0 +1,84 @@
+# Apply or change Pod scheduling policy for your DB clusters
+
+## Apply pod scheduling policy to a new DB cluster
+
+!!! info "Important"
+    If RBAC is enabled, Percona Everest only displays Pod Scheduling Policies applicable to the selected DB Engine type for which the user has read access.
+
+You can assign a Pod scheduling policy when creating a cluster by following these steps:
+{.power-number}
+
+1. From the database creation wizard, go to **Advanced Configurations** page. In the **Pod scheduling policy**
+section, choose a policy from the dropdown.
+
+    ![!image](../images/assign_policy.png)
+
+
+2. Click **Continue** till you reach the end of the wizard.
+
+3. Click **Create Database** to apply the policy.
+
+!!! note
+    You must first [create the policy](#create-pod-scheduling-policy-for-your-cluster) to see the custom policy in the **Pod scheduling policy** dropdown on the **Advanced Configurations** page. 
+
+## Apply pod scheduling policy to an existing DB cluster
+
+You can assign a Pod scheduling policy for an existing DB cluster by following these steps:
+{.power-number}
+
+1. Go to the **Overview** page of the desired cluster and click **Edit** on the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
+
+2. In the **Pod scheduling policy** section, select the policy from the dropdown.
+
+3. Click **Save**. The chosen pod scheduling policy will now be added to your cluster.
+
+
+    ![!image](../images/assign_policy_existing_cluster.png)  
+
+
+## Change Pod scheduling policy for an existing DB cluster
+
+You can change a Pod scheduling policy for an existing DB cluster by following these steps:
+{.power-number}
+
+1. Go to the **Overview** page of the cluster you want to modify and click **Edit** in the **Advanced configuration** panel. The **Edit advanced configuration** pop-up opens.
+
+2. In the **Pod scheduling policy** section, choose the policy you want to apply to the existing cluster.
+
+3. To remove all the policies from the cluster, turn off the **Enable** toggle in the **Pod scheduling policy **section. This will remove all the policies assigned to the cluster.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
