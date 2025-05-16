@@ -65,11 +65,7 @@ Here are the steps to update a Pod scheduling policy rule:
 
 4. Make the required changes and click **Save**. 
 
-    Percona Everest will update the policy and apply the changes to all the affected database clusters.
-
-
-
-
+    The updated policy will be applied to all the affected database clusters.
 
 ## Delete pod scheduling policy
 
