@@ -21,8 +21,8 @@ This feature in Percona Everest aims to achieve the following goals:
 1. Enable Percona Everest users to utilize the Kubernetes Affinity and Anti-Affinity features when deploying their database clusters.
    
 2. Enable Percona Everest administrators to simplify the complexity of Kubernetes Affinity rules configuration for users:
-   - Administrators can create Affinity presets independently.
-   - Users can then select which Affinity preset they wish to apply to their database cluster.
+    - Administrators can create Affinity presets independently.
+    - Users can then select which Affinity preset they wish to apply to their database cluster.
 
 
 ## Understanding Pod scheduling policies
