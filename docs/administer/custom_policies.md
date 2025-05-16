@@ -38,7 +38,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
         | **Attribute**     | **Description** | **Comments** |
         |------------------|-----------------|-----------|
         | **Components**    | The database cluster components the rule applies to:<br>- **DB Node**<br>- **Proxy / Router / PgBouncer**<br>- **Config Server** | - DB Nodes and Proxies are applicable for **MySQL** and **PostgreSQL**.<br>- Config Servers apply to **MongoDB** sharded clusters. |
-        | **Priority**      | Defines the distinct level of rule enforcement:<br>- **Preferred**: Percona Everest will *try* to honor the rule but will schedule the pod even if it's not met.<br>- **Required**: The rule *must* be satisfied for the pod to be scheduled. | Use **Preferred** for flexible placement and **Required** for hard constraints. |
+        | **Priority**      | Defines the distinct level of rule enforcement:<br>- **Preferred**: Kubernetes will *try* to honor the rule but will schedule the pod even if it's not met.<br>- **Required**: The rule *must* be satisfied for the pod to be scheduled. | Use **Preferred** for flexible placement and **Required** for hard constraints. |
         | **Weight (1–100)**| Determines the priority of a **Preferred** rule. Higher values indicate stronger preference. | Only applicable to **Preferred** rules. |
         | **Topology Key**  | Specifies the domain used to group nodes or pods for affinity. Determines the scope (e.g., zone, hostname) for applying scheduling rules. |**Examples:**<br> `kubernetes.io/hostname`<br>`topology.kubernetes.io/zone`<br> `topology.kubernetes.io/region`<br>Custom: `rack` |
         | **Key**           | The pod label key used in **Pod Affinity** or **Anti-Affinity** rules. Helps target specific pods to influence scheduling decisions. | Should match a label present on existing pods in the cluster.<br>**Examples:**<br>- `app`<br>- `security`<br>- `environment`<br>- Custom: `web-store` |
@@ -92,7 +92,7 @@ Here are the steps to delete a Pod scheduling policy:
 ## Apply pod scheduling policy to a new DB cluster
 
 !!! info "Important"
-    If RBAC is enabled, Percona Everest only displays Pod Scheduling Policies applicable to the selected DB Engine type for which the user has read access.
+    If RBAC is enabled, Percona Everest only displays Pod scheduling policies applicable to the selected DB Engine type for which the user has read access.
 
 You can assign a Pod scheduling policy when creating a cluster by following these steps:
 {.power-number}
