@@ -4,8 +4,7 @@ Percona Everest allows you to define custom Pod scheduling policies to control h
 
 ## Manage Pod scheduling policies in Percona Everest
 
-A Percona Everest administrator, or anyone with the necessary RBAC permissions, can create, edit or delete the Pod scheduling policies. It may be necessary to update these policies over time to add new affinity rules, modify existing ones, or remove outdated configurations.
-
+A Percona Everest administrator or anyone with the necessary RBAC permissions can create, edit, or delete the Pod scheduling policies. Over time, these policies may need to be updated to add new affinity rules, modify existing ones, or remove outdated configurations.
 
 ### Create Pod scheduling policy for your DB cluster
 
@@ -76,14 +75,14 @@ Here are the steps to delete a Pod scheduling policy:
 
 1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
-2. Click on the **ellipsis** (three dots) next to the policy you want to delete.
+2. Click the **ellipsis** (three dots) next to the policy you want to delete.
 
 3. Click on the **Delete** icon. The **Delete Rule** confirmation pop-up opens.
 
 4. Click **Delete**.
 
     !!! note
-        If a policy is applied to any cluster, you must first [remove the policy](apply_policies_cluster.md#change-pod-scheduling-policy-for-an-existing-db-cluster) before you can delete the policy.
+        If a policy is applied to any cluster, you must first [remove the policy](apply_policies_cluster.md#change-pod-scheduling-policy-for-an-existing-db-cluster) before you can delete it.
 
 
 

@@ -11,7 +11,7 @@ Percona Everest supports **database workload scheduling** on Kubernetes by allow
 
 ## Why Pod scheduling policies matter
 
-Database administrators often need control over allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that Percona Everest provides to address this challenge.
+Database administrators often need control over the allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that Percona Everest provides to address this challenge.
 
 ### What Pod scheduling policies feature aims to achieve
 
@@ -22,7 +22,7 @@ This feature in Percona Everest aims to achieve the following goals:
    
 2. Enable Percona Everest administrators to simplify the complexity of Kubernetes Affinity rules configuration for users:
     - Administrators can create Affinity presets independently.
-    - Users can then select which Affinity preset they wish to apply to their database cluster.
+    - Users can then select which Affinity preset to apply to their database cluster.
 
 
 ## Understanding Pod scheduling policies
@@ -30,7 +30,7 @@ This feature in Percona Everest aims to achieve the following goals:
 !!! info "Important"
     Pod scheduling policies do not belong to or are limited by any namespace. In general, they can be used in all namespaces.
 
-The Pod scheduling policy is a **preset** that includes a set of Kubernetes **Affinity** rules that are applied to the appropriate DB cluster components.
+The Pod scheduling policy is **preset** that includes a set of Kubernetes **Affinity** rules applied to the appropriate DB cluster components.
 
 Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster. 
 
@@ -63,7 +63,7 @@ Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
 
 ## Types of Pod scheduling policies
 
-There are two types of polices in Percona Everest:
+There are two types of policies in Percona Everest:
 
 - Default Policies - **Predefined** Pod scheduling policies in Percona Everest that come bundled with every Percona Everest deployment.
 - Custom policies - **User-defined** pod scheduling policies created to meet specific requirements.

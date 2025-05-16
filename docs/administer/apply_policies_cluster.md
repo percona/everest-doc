@@ -24,7 +24,7 @@ section, choose a policy from the dropdown.
 ## Apply pod scheduling policy to an existing DB cluster
 
 !!! warning
-    When you apply a policy to an existing DB cluster, the database cluster may **restart** to apply the new affinity configuration.
+    When you apply a policy to an existing DB cluster, the database cluster may **restart** to use the new affinity configuration.
 
 You can apply a Pod scheduling policy for an existing DB cluster by following these steps:
 {.power-number}
