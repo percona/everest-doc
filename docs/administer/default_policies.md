@@ -65,8 +65,7 @@ This policy prevents multiple replica set members or config servers from failing
 
 - **DB Node:** Replica set members that handle reads and writes for the complete dataset
 
-This policy ensures that DB Nodes (replica set members) are not placed on the same node.
-
+This policy is designed to prefer placement of DB Nodes (replica set members) on separate nodes.
 
 
 
