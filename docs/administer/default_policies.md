@@ -12,7 +12,7 @@ The following are the common attributes of a default policy for all three databa
 
 - **Type**: The Affinity Type applied is **Pod Anti-Affinity**. This ensures that pods of the same component are not co-located on the same node.
 
-- **Preference**: **Preferred 1** means the scheduler will try to satisfy this rule but will still schedule the pod even if the condition cannot be met.
+- **Preference**: **Preferred** means the scheduler will try to satisfy this rule but will still schedule the pod even if the condition cannot be met.
 
 - **Topology Key**: The topology key `kubernetes.io/hostname` defines the scope of the rule. In this case, it ensures that the anti-affinity is evaluated at the node level, preventing matching pods from being placed on the same node.
 
