@@ -134,7 +134,7 @@ You can change a Pod scheduling policy for an existing DB cluster by following t
 
 2. In the **Pod scheduling policy** section, choose the policy you want to apply to the existing cluster.
 
-3. To unassign all the policies from the cluster, turn off the **Enable** toggle in the **Pod scheduling policy **section. This will remove all the policies assigned to the cluster.
+3. To remove all the policies from the cluster, turn off the **Enable** toggle in the **Pod scheduling policy **section. This will remove all the policies assigned to the cluster.
 
 
 
