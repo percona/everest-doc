@@ -7,8 +7,8 @@ Percona Everest users can use these predefined settings without the need to crea
 
 !!! info "Important"
     - The **predefined** Pod scheduling policies in Percona Everest are applied by default with every deployment for new and existing DB clusters based on your database type.
-    - Default policies cannot be modified or deleted.
-    - We recommend using the default pod scheduling policies for most deployments. The default policies are designed to allocate all the DB components to separate Kubernetes nodes, making the DB clusters redundant for fault tolerance.
+    - Default policies **cannot** be modified or deleted.
+    - We **recommend using the default pod scheduling policies** for most deployments. The default policies are designed to allocate all the DB components to separate Kubernetes nodes, making the DB clusters redundant for fault tolerance.
     
 
 ## Common attributes of default Pod scheduling policies

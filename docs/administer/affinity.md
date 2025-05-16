@@ -9,9 +9,9 @@
 Percona Everest supports **database workload scheduling** on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
 
 
-## Why Pod scheduling policies matter?
+## Why Pod scheduling policies matter
 
-Database administrators often want to control the allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that Percona Everest provides to address this challenge.
+Database administrators often need control over allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that Percona Everest provides to address this challenge.
 
 ### What Pod scheduling policies feature aims to achieve
 
