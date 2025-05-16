@@ -4,7 +4,7 @@ In Percona Everest, the default pod scheduling policies are **preset** rules tha
 
 ## Importance of default Pod scheduling policies
 
-Percona Everest Administrators create the **default Affinity** rules. Thus, Percona Everest users can use these **predefined** settings without the need to create custom rules for every database cluster they set up. Also, these Pod scheduling policies are defined to align with Percona Everest's infrastructure and internal policies. 
+The **predefined** Pod scheduling policies in Percona Everest are available by default with every deployment. These Pod scheduling policies are defined to align with Percona Everest's infrastructure and internal policies. Percona Everest users can use these predefined settings without the need to create custom rules for every database cluster they set up. 
 
 ## Common attributes of default Pod scheduling policies
 
