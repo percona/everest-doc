@@ -201,6 +201,7 @@ nav:
         - Leverage pod scheduling policies: administer/affinity.md
         - Default Pod scheduling policies: administer/default_policies.md
         - Custom Pod scheduling policies: administer/custom_policies.md
+        - Apply Pod scheduling policies: administer/apply_policies_cluster.md
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
         - Use cases: administer/use_cases.md 
       - Namespaces management: administer/manage_namespaces.md
