@@ -83,7 +83,7 @@ Here are the steps to delete a Pod scheduling policy:
 4. Click **Delete**.
 
     !!! note
-        If a policy is assigned to any cluster, you must first [remove the policy](custom_policies.md#unassign-or-change-pod-scheduling-policy-for-an-existing-db-cluster) before you can delete the policy.
+        If a policy is applied to any cluster, you must first [remove the policy](apply_policies_cluster.md#change-pod-scheduling-policy-for-an-existing-db-cluster) before you can delete the policy.
 
 
 
