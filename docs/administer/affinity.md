@@ -29,6 +29,8 @@ This feature in Percona Everest aims to achieve the following goals:
 
 The Pod scheduling policy is a **preset** that includes a set of Kubernetes **Affinity** rules that are applied to the appropriate DB cluster components.
 
+Pod scheduling policies do not belong to or are limited by any namespace. In general, they can be used in all namespaces.
+
 Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster. 
 
 ### Pod affinity
