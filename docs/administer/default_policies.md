@@ -57,7 +57,7 @@ The policy ensures separation between DB Nodes and PG Bouncers.
 - **Router:** It routes queries to the correct shard(s).
 
 
-This policy Prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
+This policy prevents multiple replica set members or config servers from failing simultaneously if a node goes down.
 
 ![!image](../images/default_mongo_policy.png)
 
