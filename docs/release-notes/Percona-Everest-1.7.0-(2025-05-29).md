@@ -205,7 +205,9 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 ## Known limitation
 
+When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
 
+📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## 🚀 Upgrade now
 
