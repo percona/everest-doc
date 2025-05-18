@@ -203,6 +203,10 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
 
+## Known limitation
+
+
+
 ## 🚀 Upgrade now
 
 Upgrade to **Percona Everest 1.7.0** to access these new features and improvements. 
