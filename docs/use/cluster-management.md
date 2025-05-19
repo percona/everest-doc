@@ -16,7 +16,7 @@ Cluster management involves the administration and maintenance of database clust
 
     To edit a database cluster, go to the **Overview** page of the desired cluster and click **Edit** on the corresponding widget.
 
-    ![!image](../images/remove_edit_db_wizard.png)
+    ![!image](../images/edit_db_cluster.png)
     
 
 3. [Scaling](../use/scaling.md)
