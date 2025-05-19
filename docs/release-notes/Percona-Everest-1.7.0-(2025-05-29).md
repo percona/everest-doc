@@ -106,7 +106,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
     
 📚 For more information, see the [Container Registry Deprecation Docs](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
-## New Feature
+## New Features
 
 - [EVEREST-1605](https://perconadev.atlassian.net/browse/EVEREST-1605): We've introduced a **Pod Scheduling Policy** panel in the **Advanced Configuration** step of the DB cluster creation wizard. 
 
