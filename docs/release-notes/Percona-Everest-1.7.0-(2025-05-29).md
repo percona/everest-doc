@@ -64,7 +64,7 @@
     📘 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
 
     #### Custom Pod scheduling policies
-    If you need more control, you can define custom Pod Scheduling Policies to manage how database pods are placed across Kubernetes nodes. These policies offer fine-grained control over pod distribution using Kubernetes affinity and anti-affinity rules.
+    If you need more control, you can define custom Pod scheduling policies to manage how database pods are placed across Kubernetes nodes. These policies offer fine-grained control over pod distribution using Kubernetes affinity and anti-affinity rules.
 
     To create a custom policy, configure the scheduling rules via the Everest UI, as shown below:
 
