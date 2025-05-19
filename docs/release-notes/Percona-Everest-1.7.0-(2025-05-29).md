@@ -125,7 +125,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
-- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This enhancement simplifies workload distribution in Percona Everest. It helps to optimize resource utilization and efficiency, ensuring smoother operations and improved scheduling.
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This improvement simplifies workload distribution in Percona Everest. Also, it helps to optimize resource utilization and efficiency, ensuring smoother operations and improved scheduling.
 
 
 
@@ -135,7 +135,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
-- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the correct message when the **Continue** button is disabled.
+- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): Previously, the validation message **The number of proxies must be greater than 1** was hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the accurate message when the **Continue** button is disabled.
 
 - [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, which caused confusion. We have resolved this by removing trailing spaces.
 
