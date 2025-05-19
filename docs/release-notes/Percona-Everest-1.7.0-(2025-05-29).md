@@ -199,7 +199,7 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 - [EVEREST-2025](https://perconadev.atlassian.net/browse/EVEREST-2025): Resolved an issue where the **Content-Security-Policy** header included an invalid `connect-src` value if the OIDC issuer URL ended with a trailing slash. The policy is now correctly generated.
 
-    Thanks to @https://github.com/aurimasniekis for reporting this issue.
+    Thanks to @[aurimasniekis](https://github.com/aurimasniekis) for reporting this issue.
 
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
