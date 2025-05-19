@@ -125,7 +125,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
-- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This improvement simplifies workload distribution in Percona Everest. Also, it helps to optimize resource utilization and efficiency, ensuring smoother operations and improved scheduling.
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This improvement **simplifies workload distribution** in Percona Everest. Also, it helps to **optimize resource utilization** and efficiency, ensuring smoother operations and improved scheduling.
 
 
 
