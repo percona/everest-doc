@@ -49,7 +49,8 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 ## Update Pod scheduling rule for a policy
 
 !!! warning
-    When you update the policy rules and **apply the modified policy**, the database cluster may need to restart to implement the updated affinity configuration.
+    If a user modifies a policy that is already in use by any DB cluster, the rule changes are propagated immediately to all DB clusters using this policy, which may result in restarts of DB pods.
+
 
 Here are the steps to update a Pod scheduling policy rule:
 {.power-number}
