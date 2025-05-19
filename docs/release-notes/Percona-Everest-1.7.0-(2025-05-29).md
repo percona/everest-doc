@@ -144,7 +144,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 - [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly shows that the Storage Class can only be selected during cluster creation.
 
 
-[EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
+- [EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
 
 - [EVEREST-1923](https://perconadev.atlassian.net/browse/EVEREST-1923): The Everest API access token now becomes invalid immediately upon logout, preventing unauthorized access to your account.
 
