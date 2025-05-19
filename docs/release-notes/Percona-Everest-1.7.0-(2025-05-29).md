@@ -156,7 +156,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
     - **Search Functionality**: A search bar has been added to the diagram view, similar to the one in the table view, making it easier to locate components.
 
 
-## Bugs
+## Bug Fixes
 
 - [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Resolved an issue where enabling PITR would sometimes incorrectly display the database as down.
 
