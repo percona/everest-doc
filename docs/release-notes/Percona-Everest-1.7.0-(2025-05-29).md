@@ -131,17 +131,19 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 ## Improvements
 
-- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106): Percona Everest administrators can now delete users created with `everestctl`. Once a user is removed, they can no longer use their access tokens to make requests to the Everest API. This improves security by preventing unauthorized access from former users and allows for better management of user permissions within Percona Everest.
+- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106): Percona Everest administrators can now delete users created with `everestctl`. Once a user is removed, they can no longer use their access tokens to make requests to the Everest API. This improves security by preventing unauthorized access by former users and allows for better user permission management within Percona Everest.
 
 - [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
 - [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): The validation message **The number of proxies must be greater than 1** was previously hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the correct message when the **Continue** button is disabled.
 
-- [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, leading to confusion. We have improved this by trimming trailing spaces.
+- [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, which caused confusion. We have resolved this by removing trailing spaces.
+
 
 - [EVEREST-1902](https://perconadev.atlassian.net/browse/EVEREST-1902): When adding  Monitoring Endpoint URLs, trailing spaces at the end of the URL prevented them from being added. This issue often occurred when copying URLs, leading to confusion. We have improved this by trimming trailing spaces.
 
-- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly indicates that the Storage Class can only be selected when creating a cluster..
+- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly shows that the Storage Class can only be selected during cluster creation.
+
 
 [EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
 
@@ -150,7 +152,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1931](https://perconadev.atlassian.net/browse/EVEREST-1931): We have improved the diagram view for the default zoom and search functionality of DB cluster components in the following ways:
 
-    - **Default Zoom Level**: A predefined zoom level is now set to ensure that all components are visible upon loading.
+    - **Default Zoom Level**: A predefined zoom level is now set to ensure all components are visible upon loading.
     - **Reset View Button**: This button allows you to reset the zoom level and reposition the view to its default settings.
     - **Search Functionality**: A search bar has been added to the diagram view, similar to the one in the table view, making it easier to locate components.
 
@@ -168,7 +170,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 - [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed a problem where creating a new MySQL database from a backup would fail if the database name exceeded a certain length.
 
 - [EVEREST-1700](https://perconadev.atlassian.net/browse/EVEREST-1700): 
-Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconciliation cycles and pod restarts during database cluster creation, which significantly slowed down startup times. A similar issue that occurred during cluster deletion, causing pod restarts before termination, has also been resolved.
+Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconciliation cycles and pod restarts during database cluster creation, significantly slowing down startup times. A similar issue that occurred during cluster deletion, causing pod restarts before termination, has also been resolved.
 
 - [EVEREST-1754](https://perconadev.atlassian.net/browse/EVEREST-1754): Fixed an issue where the error message **storage is (re)initializing** was displayed on the UI intermittently.
 
@@ -198,7 +200,7 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 - [EVEREST-2025](https://perconadev.atlassian.net/browse/EVEREST-2025): Resolved an issue where the **Content-Security-Policy** header included an invalid `connect-src` value if the OIDC issuer URL ended with a trailing slash. The policy is now correctly generated.
 
-    Thanks to @(https://github.com/aurimasniekis) for reporting this issue!
+    Thanks to @https://github.com/aurimasniekis for reporting this issue.
 
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
