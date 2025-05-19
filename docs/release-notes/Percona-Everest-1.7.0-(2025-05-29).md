@@ -41,9 +41,9 @@
 
     ### Optimized Pod scheduling policies in Percona Everest
     
-    We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature supports database workload scheduling on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies optimize performance and enhance system resilience and ensure that your resources are utilized to their fullest potential.
+    We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature supports database workload scheduling on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies optimize performance, enhance system resilience, and ensure that your resources are utilized to their fullest potential.
     
-    Pod scheduling policy is a **preset** that includes a set of Kubernetes Affinity rules that are applied to the appropriate DB cluster components.
+    The Pod scheduling policy is **preset** that includes a set of Kubernetes Affinity rules applied to the appropriate DB cluster components.
 
 
     Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
@@ -57,7 +57,7 @@
     #### Default configuration for Pod scheduling policies
 
     
-    In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure optimal placement of database components across a Kubernetes cluster. These predefined Pod scheduling policies come **bundled with every Percona Everest deployment**. Thus, Percona Everest users can utilize these predefined settings without the need to create custom rules for every database cluster they set up.
+    In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure the optimal placement of database components across a Kubernetes cluster. These predefined Pod scheduling policies come **bundled with every Percona Everest deployment**. Thus, Percona Everest users can utilize these predefined settings without the need to create custom rules for every database cluster they set up.
 
     ![!image](../images/default_mongo_policy.png)
 
@@ -66,7 +66,7 @@
     #### Custom Pod scheduling policies
     If you need more control, you can define custom Pod Scheduling Policies to manage how database pods are placed across Kubernetes nodes. These policies offer fine-grained control over pod distribution using Kubernetes affinity and anti-affinity rules.
 
-    To create a custom policy, simply configure the scheduling rules via the Everest UI, as shown below:
+    To create a custom policy, configure the scheduling rules via the Everest UI, as shown below:
 
     ![!image](../images/affinity_add_rules.png)
 
