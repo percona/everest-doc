@@ -56,7 +56,7 @@ The Components page offers comprehensive information about pods and containers. 
 
    Click the Toggle **Table View** to switch between the **Topology** and **Table** views.
 
-   ![!image](../images/Create components_page_diagram_view.png)
+   ![!image](../images/components_page_diagram_view.png)
 
 ## Backups
 
