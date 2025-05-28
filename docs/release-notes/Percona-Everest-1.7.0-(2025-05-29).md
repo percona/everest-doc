@@ -11,7 +11,7 @@
     | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Pod Scheduling for optimized Kubernetes scheduling¶|
     | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Improved Security with TLS support|
     | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona XtraBackup Operator 1.17.0|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
+    | **5.**|[Breaking Changes](Percona-Everest-1.6.0-%282025-04-16%29.html#breaking-changes)|Learn about the breaking changes introduced in Percona Everest 1.7.0|
     | **6.**|[New features](Percona-Everest-1.6.0-%282025-04-16%29.html#new-features)|Check out the new features introduced in Percona Everest 1.7.0|
     | **7.**|[Improvements](Percona-Everest-1.6.0-%282025-04-16%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.7.0|
     | **8.**|[Bugs](Percona-Everest-1.6.0-%282025-04-16%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.7.0|
@@ -81,22 +81,33 @@
     Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
 
 
-## 🛑 Google Container Registry (GCR)
+## 🛑 Breaking Changes
 
-!!! warning "GCR deprecation"
-    GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
+### Pod Scheduling Policy Migration For GitOps Users
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on the Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+	With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DBCluster` CRD.
+	During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DBCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
+	There is one default scheduling policy for each database type:
+	- **MySQL**: `everest-default-mysql`
+	- **MongoDB**: `everest-default-mongodb`
+	- **PostgreSQL**: `everest-default-postgresql`
 
-### Impact
 
-Percona Everest versions older than 1.4.0 will cease to function after this date.
+### OIDC Integration with Microsoft Entra ID
 
-### ✅ Action required
+	If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
 
-We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as soon as possible. If you do not upgrade, Percona Everest will no longer function.
-    
-📚 For more information, see the [Container Registry Deprecation Docs](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
+	The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
+	Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
+
+```sh
+everestctl settings oidc configure \
+--issuer-url=http://url.com \
+--client-id=<your-app-client-id> \
+--scopes=openid,profile,email,<your-app-client-id>/.default
+```
+
+	📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## New Features
 
