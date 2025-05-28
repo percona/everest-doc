@@ -134,8 +134,6 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 - [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
-- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): Previously, the validation message **The number of proxies must be greater than 1** was hidden within the expandable **Proxies** panel, making it difficult for users to see. This improvement enhances visibility, ensuring users receive the accurate message when the **Continue** button is disabled.
-
 - [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, which caused confusion. We have resolved this by removing trailing spaces.
 
 
@@ -158,13 +156,7 @@ We strongly recommend upgrading to Percona Everest version **1.4.0 or later** as
 
 ## Bug Fixes
 
-- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741): Resolved an issue where enabling PITR would sometimes incorrectly display the database as down.
-
-- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): When creating a new PostgreSQL database from an existing backup, the resulting database did not include any associated restore information. We have resolved the issue now.
-
-
 - [EVEREST-1623](https://perconadev.atlassian.net/browse/EVEREST-1623): We have resolved an issue where HAProxy kept restarting in a 5-node MySQL cluster, which caused connection instability and made the database unavailable.
-
 
 - [EVEREST-1651](https://perconadev.atlassian.net/browse/EVEREST-1651): Fixed a problem where creating a new MySQL database from a backup would fail if the database name exceeded a certain length.
 
@@ -175,21 +167,7 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 
 - [EVEREST-1785](https://perconadev.atlassian.net/browse/EVEREST-1785): Resolved an issue with the PITR pod for a one-node MySQL database that restarted multiple times.
 
-- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): 
-Resolved an issue where users could not edit Point-in-Time Recovery (PITR) settings due to the **Edit** button being disabled. A message stated, **Create a schedule first to enable PITR**, even though PITR was already enabled.
-
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): When you hover over the **Edit** option for PostgreSQL schedules in Percona Everest, a tooltip now appears stating that **Point-in-time recovery (PITR) is always enabled for all PostgreSQL schedules and cannot be disabled**. Previously, tooltips were only shown for MySQL and MongoDB schedules.
-
-- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890): During the MySQL DB cluster creation process, the number of proxies changed incorrectly from the user-defined value `(X)` to `1` instead of keeping the specified configuration. We have resolved the issue now.
-
-- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895): We have fixed an issue where changes to the time range between the last successful backup and the latest Point-in-Time Recovery (PITR) did not save. The system automatically reverted the selection to the latest PITR.
-
-- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The **Age** of the components is now accurately shown on the **Components** panel, ensuring that users can easily view and assess the information they need.
-
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): The UI accepted invalid endpoint URLs while editing a monitoring instance. This led to frequent restarts for MySQL, MongoDB, and PostgreSQL databases that had scheduled backups and Point-In-Time Recovery (PITR) enabled. We have resolved the issue now.
-
 - [EVEREST-2011](https://perconadev.atlassian.net/browse/EVEREST-2011): The restore function for the MySQL database is now working correctly in PXC version 1.17.0.
-
 
 - [EVEREST-2018](https://perconadev.atlassian.net/browse/EVEREST-2018): The TLS installation instructions now accurately guide users on accessing the user interface (UI).
 
@@ -199,7 +177,7 @@ Resolved an issue where users could not edit Point-in-Time Recovery (PITR) setti
 
 - [EVEREST-2025](https://perconadev.atlassian.net/browse/EVEREST-2025): Resolved an issue where the **Content-Security-Policy** header included an invalid `connect-src` value if the OIDC issuer URL ended with a trailing slash. The policy is now correctly generated.
 
-    Thanks to @[aurimasniekis](https://github.com/aurimasniekis) for reporting this issue.
+    Thanks to @[aurimasniekis](https://github.com/aurimasniekis) for reporting and fixing this issue.
 
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
