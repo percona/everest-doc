@@ -85,20 +85,21 @@
 
 ### Pod Scheduling Policy Migration For GitOps Users
 
-	With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DBCluster` CRD.
-	During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DBCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
-	There is one default scheduling policy for each database type:
-	- **MySQL**: `everest-default-mysql`
-	- **MongoDB**: `everest-default-mongodb`
-	- **PostgreSQL**: `everest-default-postgresql`
+With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DBCluster` CRD.
+During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DBCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
+There is one default scheduling policy for each database type:
+
+- **MySQL**: `everest-default-mysql`
+- **MongoDB**: `everest-default-mongodb`
+- **PostgreSQL**: `everest-default-postgresql`
 
 
 ### OIDC Integration with Microsoft Entra ID
 
-	If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
+If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
 
-	The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
-	Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
+The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
+Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
 
 ```sh
 everestctl settings oidc configure \
@@ -107,7 +108,7 @@ everestctl settings oidc configure \
 --scopes=openid,profile,email,<your-app-client-id>/.default
 ```
 
-	📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
+📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## New Features
 
