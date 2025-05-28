@@ -26,14 +26,6 @@
 
      You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
-    Here are the benefits of this enhancement:
-
-    - Optimized resource allocation
-    - Streamlined operations
-    - Reduced operational overhead
-    - Simplified cluster management
-    - Automated scaling and built-in security policies—leveraging Percona Everest’s database management capabilities.
-
 
     📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
