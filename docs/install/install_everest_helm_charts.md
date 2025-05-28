@@ -54,6 +54,18 @@ Here are the steps to install Percona Everest and deploy additional database nam
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
+    ??? info "🔒 Install Percona Everest with TLS enabled"
+
+        Install Percona Everest with TLS enabled:
+
+        ```sh
+        helm install everest-core percona/everest \
+        --namespace everest-system \
+        --create-namespace
+        --set server.tls.enabled=true
+        ```
+
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 3. Once the installation is complete, retrieve the `admin` password. 
 
@@ -61,17 +73,19 @@ Here are the steps to install Percona Everest and deploy additional database nam
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
 
-    The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+    - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-    The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+    - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
     === "Load Balancer"
+        Use the following commands to change the Everest service type to `LoadBalancer`:
+        {.power-number}
 
-        1. Use the following command to change the Everest service type to `LoadBalancer`:
+        1. Run the following command:
                     
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
@@ -90,15 +104,23 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 ```
 
 
+            ??? example "When TLS is enabled"
+
+                ```sh
+                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
+                ```
+
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
+        {.power-number}
 
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
             ```
-        2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
+            The following output displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
 
             ```sh
             kubectl get svc/everest -n everest-system
@@ -106,34 +128,52 @@ Here are the steps to install Percona Everest and deploy additional database nam
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
-        3. Retrieve the external IP addresses for the kubernetes cluster nodes.
-
-            ```sh
-            kubectl get nodes -o wide
-            NAME                   STATUS   ROLES    AGE   VERSION             
-            INTERNAL-IPEXTERNAL-IP  OS-IMAGE                        KERNEL-VERSION   
-            CONTAINER-RUNTIME
-            gke-everest-test-default-pool-8bbed860-65gx   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.199   34.175.155.135   Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            gke-everest-test-default-pool-8bbed860-pqzb   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.200   34.175.120.50    Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            gke-everest-test-default-pool-8bbed860-s0hg   Ready    <none>   3m35s   
-            v1.30.3-gke.1969001   10.204.15.201   34.175.201.246   Container- 
-            Optimized OS from Google   6.1.100+         containerd://1.7.19
-            ```
+            ??? example "When TLS is enabled"
+                ```
+                kubectl get svc/everest -n everest-system
+                NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+                everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
+                ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        2. Retrieve the external IP addresses for the kubernetes cluster nodes.
+
+            ??? example "Expected output"
+                ```sh
+                kubectl get nodes -o wide
+                NAME                   STATUS   ROLES    AGE   VERSION             
+                INTERNAL-IPEXTERNAL-IP  OS-IMAGE                        KERNEL-VERSION   
+                CONTAINER-RUNTIME
+                gke-everest-test-default-pool-8bbed860-65gx   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.199   34.175.155.135   Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                gke-everest-test-default-pool-8bbed860-pqzb   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.200   34.175.120.50    Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                gke-everest-test-default-pool-8bbed860-s0hg   Ready    <none>   3m35s   
+                v1.30.3-gke.1969001   10.204.15.201   34.175.201.246   Container- 
+                Optimized OS from Google   6.1.100+         containerd://1.7.19
+                ```
+        
+        3. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
-        Run the following command to use `Kubectl port-forwarding` for connecting to Everest without exposing the service:
+
+        Run the following command to setup a port-forward to the Percona Everest server service:
                 
         ```sh
-        kubectl port-forward svc/everest 8080:8080 -n everest-system
-        ``` 
+        kubectl port-forward svc/everest 8080:8080 -n everest-system 
+        ```
+         
 
         To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
+
+        ??? example "When TLS is enabled"
+
+            ```sh
+            kubectl port-forward svc/everest 8443:443 -n everest-system
+            ```
+
+            Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).
 
 
 5. Deploy additional database namespaces:
@@ -175,3 +215,8 @@ A few parameters are listed in the following table. For a detailed list of the p
 |`pxc`|bool|true| Installs the Percona XtraDB Cluster operator if set.|
 |everest-db-namespace|`postgresql`|bool|true| Installs the Percona Postgresql Server operator if set.|
 |`psmdb`|bool|true| Installs the Percona Server MongoDB operator if set.|
+
+
+## Next steps
+
+[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
