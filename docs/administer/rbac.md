@@ -144,6 +144,7 @@ This built-in `role:admin` definition is equivalent to the following:
 
 ```sh
 p, role:admin, namespaces, *, *
+p, role:admin, pod-scheduling-policies, *, *
 p, role:admin, database-engines, *, */*
 p, role:admin, database-clusters, *, */*
 p, role:admin, database-cluster-backups, *, */*
