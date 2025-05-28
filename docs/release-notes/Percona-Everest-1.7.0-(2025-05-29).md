@@ -85,14 +85,29 @@
 
 ### Pod Scheduling Policy Migration For GitOps Users
 
-With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DBCluster` CRD.
+With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DatabaseCluster` CRD.
 
-During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DBCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
-There is one default scheduling policy for each database type:
+During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DatabaseCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
+
+The default pod scheduling policies are predefined for each database engine and are as follows:
 
 - **MySQL**: `everest-default-mysql`
 - **MongoDB**: `everest-default-mongodb`
 - **PostgreSQL**: `everest-default-postgresql`
+
+Example of a MySQL `DatabaseCluster` CR manifest with the `podSchedulingPolicyName` field:
+
+```yaml
+apiVersion: everest.percona.com/v1alpha1
+kind: DatabaseCluster
+metadata:
+  name: my-database-cluster
+spec:
+  podSchedulingPolicyName: everest-default-mysql # Specify the default MySQL scheduling policy
+  engine:
+    type: pxc
+  # Other fields...
+```
 
 
 ### OIDC Integration with Microsoft Entra ID
