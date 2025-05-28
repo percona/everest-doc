@@ -86,6 +86,7 @@
 ### Pod Scheduling Policy Migration For GitOps Users
 
 With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DBCluster` CRD.
+
 During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DBCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
 There is one default scheduling policy for each database type:
 
