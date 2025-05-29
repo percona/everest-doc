@@ -78,6 +78,21 @@ To install Percona Everest using Helm follow these steps:
     --namespace everest-system \
     --create-namespace
     ```
+
+    ??? info "🔒 Install Percona Everest with TLS enabled"
+
+        Install Percona Everest with TLS enabled:
+
+        ```sh
+        helm install everest-core percona/everest \
+        --namespace everest-system \
+        --create-namespace
+        --set server.tls.enabled=true
+        ```
+
+
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+
     Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
     !!! note
@@ -110,6 +125,13 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```sh
             kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
             ```
+            
+            ??? example "When TLS is enabled"
+
+                ```sh
+                NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
+                everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
+                ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
                 
@@ -133,6 +155,13 @@ Once you have successfully installed Percona Everest, proceed with the following
             everest   NodePort   10.43.139.191   <none>        8080:32349/TCP   28m
             ```
 
+            ??? example "When TLS is enabled"
+                ```sh
+                kubectl get svc/everest -n everest-system
+                NAME      TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)          AGE
+                everest   NodePort   10.43.139.191   <none>        443:32349/TCP   28m
+                ```
+
         3. Retrieve the external IP addresses for the kubernetes cluster nodes.
 
             ??? example "Expected output"
@@ -145,15 +174,25 @@ Once you have successfully installed Percona Everest, proceed with the following
         
         4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
 
-    === "Port Forwarding"
-        The `kubectl port-forward` command in Kubernetes is used to create a temporary connection between your local machine and a specific Kubernetes resource (e.g., a Pod, Service, or Deployment) by forwarding traffic from a local port to a port on the resource. Run the following command to use `kubectl port-forwarding` for connecting to Everest service from your machine without exposing it outside of the K8s cluster:
+    === "Port forwarding"
+        The `kubectl port-forward` command in Kubernetes is used to create a temporary connection between your local machine and a specific Kubernetes resource (e.g., a Pod, Service, or Deployment) by forwarding traffic from a local port to a port on the resource. 
+        
+        1. Run the following command to setup a port-forward to the Percona Everest server service:
+
                 
-        ```sh
-        kubectl port-forward svc/everest 8080:8080 -n everest-system
-        ``` 
+            ```sh
+            kubectl port-forward svc/everest 8080:8080 -n everest-system
+            ``` 
 
-        Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
+            Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
 
+            ??? example "When TLS is enabled"
+
+                ```sh
+                kubectl port-forward svc/everest 8443:443 -n everest-system
+                ```
+
+                Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).
 
 ## Next steps
 
