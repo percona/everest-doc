@@ -95,7 +95,7 @@ The default pod scheduling policies are predefined for each database engine and 
 - **MongoDB**: `everest-default-mongodb`
 - **PostgreSQL**: `everest-default-postgresql`
 
-??? example "MySQL `DatabaseCluster` CR manifest:
+??? example "MySQL `DatabaseCluster` CR manifest"
 
     Here's an example of DatabaseCluster` CR manifest  with the `podSchedulingPolicyName` field:
 
