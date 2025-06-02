@@ -95,9 +95,9 @@ The default pod scheduling policies are predefined for each database engine and 
 - **MongoDB**: `everest-default-mongodb`
 - **PostgreSQL**: `everest-default-postgresql`
 
-??? example "MySQL `DatabaseCluster` CR manifest"
+??? example "Example: MySQL DatabaseCluster CR manifest"
 
-    Here's an example of DatabaseCluster` CR manifest  with the `podSchedulingPolicyName` field:
+    Here's an example of `DatabaseCluster` CR manifest  with the `podSchedulingPolicyName` field:
 
     ```yaml
     apiVersion: everest.percona.com/v1alpha1
@@ -117,7 +117,7 @@ The default pod scheduling policies are predefined for each database engine and 
 If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
 
 The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
-Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
+Ensure that you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
 
 ```sh
 everestctl settings oidc configure \
