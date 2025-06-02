@@ -81,7 +81,7 @@
     Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
 
 
-## 🛑 Breaking Changes
+## 🛑 Breaking changes
 
 ### Pod scheduling policy migration for GitOps users
 
@@ -112,7 +112,7 @@ The default pod scheduling policies are predefined for each database engine and 
     ```
 
 
-### OIDC Integration with Microsoft Entra ID
+### OIDC integration with Microsoft Entra ID
 
 If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
 
