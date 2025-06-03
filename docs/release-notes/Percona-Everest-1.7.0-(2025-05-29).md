@@ -9,6 +9,7 @@
     ```sh
     kubectl label namespaces everest-system app.kubernetes.io/managed-by-
     ```
+    See, [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section for more details.
 
 ??? info "🔑 Expand to unleash the key updates"
 
