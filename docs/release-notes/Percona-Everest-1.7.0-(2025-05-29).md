@@ -3,6 +3,11 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
+!!! warning "Upgrade Warning: v1.7.0"
+    Some users may encounter [errors]() while upgrading to Percona Everest 1.7.0. However, we do have a [workaround]() for these issues.
+    
+
+
 ??? info "🔑 Expand to unleash the key updates"
 
     |**#**|**Release summary**|**Description**|
