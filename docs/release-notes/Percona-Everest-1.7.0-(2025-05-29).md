@@ -3,7 +3,7 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
-!!! Info "Before you upgrade"
+!!! warning "Before you upgrade"
     Before upgrading to Percona Everest 1.7.0, run the following command:
     ```sh
     kubectl label namespaces everest-system app.kubernetes.io/managed-by-
