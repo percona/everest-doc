@@ -12,7 +12,7 @@ Percona Everest consistently delivers updates that includes bug fixes, security 
 ### Prepare for upgrading to version 1.7.0
 
 
-Before you upgrade to Percona Everest version 1.7.0, run the following command:
+**Before you upgrade** to Percona Everest version 1.7.0, run the following command:
 
 ```sh
 kubectl label namespaces everest-system app.kubernetes.io/managed-by-
