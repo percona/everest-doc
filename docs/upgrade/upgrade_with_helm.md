@@ -9,7 +9,7 @@ Percona Everest consistently delivers updates that includes bug fixes, security 
     - For a safe upgrade, we perform a pre-upgrade hook that runs a series of checks. You can disable this by setting `upgrade.preflightChecks=false`, but doing so means a safe upgrade cannot be assured.
 
 
-### Pre-requisite before you upgrade to version 1.7.0
+### Before you upgrade to version 1.7.0
 
 Run the following command before you upgrade to Percona Everest version 1.7.0:
 
