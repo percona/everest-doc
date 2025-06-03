@@ -7,14 +7,6 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 !!! info "Important"
     If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
 
-## Google Container Registry (GCR)
-
-!!! warning "GCR deprecation"
-    [Google Container Registry (GCR) is scheduled to be deprecated](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"} and will officially shut down on **May 20, 2025**. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-**Action required**
-
-We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible.
 
 ## Install Percona Everest and deploy database namespaces
 
