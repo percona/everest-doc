@@ -52,6 +52,12 @@ The Components page offers comprehensive information about pods and containers. 
 
    ![!image](../images/everest_components_page.png)
 
+   The Components tab also includes an interactive Topology View that improves the visibility and management of DB clusters deployed in Percona Everest. This view visually represents the cluster's components, such as pods and services, along with their status and relationships.
+
+   Click the Toggle **Table View** to switch between the **Topology** and **Table** views.
+
+   ![!image](../images/components_page_diagram_view.png)
+
 ## Backups
 
 The **Backups** tab lists all the backups created for the database. This includes the exact date and time when each backup was taken, providing you with a clear overview of the backup history for the database.

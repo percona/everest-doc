@@ -149,6 +149,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.7.0 (2025-05-29): release-notes/Percona-Everest-1.7.0-(2025-05-29).md
       - Percona-Everest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
       - Percona-Everest 1.5.0 (2025-04-03): release-notes/Percona-Everest-1.5.0-(2025-03-04).md
       - Percona-Everest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
@@ -194,10 +195,21 @@ nav:
    
   - Administer:
       - User management: administer/manage_users.md
-      - Single sign-on (SSO): administer/Idp_integration.md
       - Role-based access control: administer/rbac.md
       - RBAC integration with IdP groups: administer/Idp_groups_integration.md
+      - Pod scheduling policies: 
+        - Leverage pod scheduling policies: administer/affinity.md
+        - Default Pod scheduling policies: administer/default_policies.md
+        - Custom Pod scheduling policies: administer/custom_policies.md
+        - Apply Pod scheduling policies: administer/apply_policies_cluster.md
+        - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
+        - Use cases: administer/use_cases.md 
       - Namespaces management: administer/manage_namespaces.md
+
+  - Security:
+      - Single Sign-On (SSO): security/sso_idp_integration.md
+      - Session Management: security/session_management.md
+      - Transport Layer Security (TLS) support: security/tls_setup.md  
 
   - Use:
       - Database view: use/database_view.md
@@ -226,6 +238,7 @@ nav:
       - Migrate from PostgreSQL 12: reference/postgresql12_migration.md
       - Telemetry on Percona Everest: reference/telemetry.md
       - Migrate to Percona Everest: reference/migration_guide.md
+      - AI usage disclaimer: reference/AI_disclaimer_for_docs.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
 
