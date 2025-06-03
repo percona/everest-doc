@@ -3,6 +3,14 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
+!!! warning "Before you upgrade"
+    Before upgrading to Percona Everest 1.7.0, run the following command:
+
+    ```sh
+    kubectl label namespaces everest-system app.kubernetes.io/managed-by-
+    ```
+    For details, refer to [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
+
 ??? info "🔑 Expand to unleash the key updates"
 
     |**#**|**Release summary**|**Description**|
@@ -205,6 +213,20 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 
 
 ## Known limitation
+
+### Upgrade to v1.7.0 fails with Namespace error
+
+If you installed Percona Everest version prior to 1.4.0 and successively upgraded to version 1.6.0, you may run into issues when upgrading to version 1.7.0.
+
+**Workaround**
+
+Run the following command before you upgrade to Percona Everest version 1.7.0:
+
+```sh
+kubectl label namespaces everest-system app.kubernetes.io/managed-
+```
+
+### Microsoft Entra ID
 
 When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
 
