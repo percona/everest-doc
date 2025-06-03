@@ -17,6 +17,7 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible.
 
 ## Install Percona Everest and deploy database namespaces
+
 Here are the steps to install Percona Everest and deploy additional database namespaces:
 {.power-number}
 
