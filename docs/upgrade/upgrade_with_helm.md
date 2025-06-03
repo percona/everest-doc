@@ -14,7 +14,7 @@ Percona Everest consistently delivers updates that includes bug fixes, security 
 Before you upgrade to Percona Everest version 1.7.0, run the following command:
 
 ```sh
-kubectl label namespaces everest-system app.kubernetes.io/managed-
+kubectl label namespaces everest-system app.kubernetes.io/managed-by-
 ```
 
 ## Upgrade CRDs
