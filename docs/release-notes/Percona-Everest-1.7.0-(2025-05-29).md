@@ -5,6 +5,7 @@
 
 !!! warning "Before you upgrade"
     Before upgrading to Percona Everest 1.7.0, run the following command:
+
     ```sh
     kubectl label namespaces everest-system app.kubernetes.io/managed-by-
     ```
@@ -214,7 +215,7 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 
 ### Upgrade to v1.7.0 fails with Namespace error
 
-All the users who initially installed Percona Everest prior to version v1.4.0 and later upgraded successively up to v1.6.0 might have upgrade issues while upgrading to Percona Everest 1.7.0.
+If you installed Percona Everest version prior 1.4.0 and upgraded successively to version 1.6.0, you may encounter issues when upgrading to 1.7.0.
 
 **Workaround**
 
