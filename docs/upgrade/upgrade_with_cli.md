@@ -17,6 +17,16 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
 ## Upgrade instructions
 
+
+=== "Version 1.7.0"
+    ### Upgrade to Percona Everest 1.7.0
+
+    Before you upgrade Percona Everest to 1.7.0, run the following command:
+
+    ```sh
+    kubectl label namespaces everest-system app.kubernetes.io/managed-
+    ```
+
 === "Version 1.3.0 and onwards"
     ### Upgrade to Percona Everest 1.3.0+
 
