@@ -215,7 +215,7 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 
 ### Upgrade to v1.7.0 fails with Namespace error
 
-If you installed Percona Everest version prior to 1.4.0 and upgraded successively to version 1.6.0, you may encounter issues when upgrading to 1.7.0.
+If you installed Percona Everest version prior to 1.4.0 and successively upgraded to version 1.6.0, you may run into issues when upgrading to version 1.7.0.
 
 **Workaround**
 
