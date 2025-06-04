@@ -60,7 +60,33 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
-3. Once the installation is complete, retrieve the `admin` password. 
+
+3. (Optional) Install Percona Everest and expose it using Ingress:
+
+    If you want to access Percona Everest using Ingress, Update your Helm chart configuration:
+
+    ```sh
+  # -- Enable ingress for Everest server
+  enabled: false
+  # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+  ingressClassName: ""
+  # -- Additional annotations for the ingress resource.
+  annotations: {}
+  # -- List of hosts and their paths for the ingress resource.
+  hosts:
+    - host: chart-example.local
+      paths:
+        - path: /
+          pathType: ImplementationSpecific
+  # -- TLS configuration for the ingress resource.
+  # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+  tls: []
+  #  - secretName: chart-example-tls
+  #    hosts:
+  #      - chart-example.local
+    ```
+
+4. Once the installation is complete, retrieve the `admin` password. 
 
     ```sh
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
@@ -76,6 +102,29 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 
     === "Ingress"
+         In Kubernetes, [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"} is a resource that manages external access to services within a cluster, specifically HTTP and HTTPS traffic.
+
+        **Prerequisites**
+
+        Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+
+        Here are the steps to access Percona Everest through Ingress:
+        {.power-number}
+
+        1. Update your configuration file to enable Ingress for the Percona Everest server  
+
+        ```sh
+
+
+
+    
+
+
+
+
+
+
+
 
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
