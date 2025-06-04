@@ -125,7 +125,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     === "Ingress"
 
-        To access Percona Everest, open your browser and go to: https://everest.example.com.
+        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
         
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
