@@ -22,32 +22,32 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 3. (**Optional**) Access Percona Everest using Ingress:
 
-    - **Prerequisites**
+    - Prerequisites
 
-    Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+        Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
 
-    - To access Percona Everest using Ingress, update your Helm chart configuration:
+    - Update your Helm chart configuration:
 
-    ```sh
-  # -- Enable ingress for Everest server
-  enabled: false
-  # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-  ingressClassName: ""
-  # -- Additional annotations for the ingress resource.
-  annotations: {}
-  # -- List of hosts and their paths for the ingress resource.
-  hosts:
-    - host: chart-example.local
-      paths:
-        - path: /
-          pathType: ImplementationSpecific
-  # -- TLS configuration for the ingress resource.
-  # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-  tls: []
-  #  - secretName: chart-example-tls
-  #    hosts:
-  #      - chart-example.local
-    ```
+        ```sh
+        # -- Enable ingress for Everest server
+        enabled: false
+        # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+        ingressClassName: ""
+        # -- Additional annotations for the ingress resource.
+        annotations: {}
+        # -- List of hosts and their paths for the ingress resource.
+        hosts:
+            - host: chart-example.local
+            paths:
+                - path: /
+                pathType: ImplementationSpecific
+        # -- TLS configuration for the ingress resource.
+        # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+        tls: []
+        #  - secretName: chart-example-tls
+        #    hosts:
+        #      - chart-example.local
+        ```
 
 2. Install Percona Everest and access it via [Ingress]((https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}):
 
