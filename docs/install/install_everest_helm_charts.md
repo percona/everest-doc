@@ -49,12 +49,12 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     ??? info "🔒 Install Percona Everest and access it using Ingress"
 
-        To install Percona Everest and access using Ingress, here are the steps:
-        {.power-number}
-
-        **Prerequisites**
+        **Prerequisite**
 
         Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+
+        To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
+        {.power-number}
 
         1. Update your Helm chart configuration:
 
