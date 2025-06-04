@@ -59,6 +59,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Update your Helm chart configuration:
 
             ```sh
+            ingress:
             # -- Enable ingress for Everest server
             enabled: false
             # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
@@ -68,9 +69,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
             # -- List of hosts and their paths for the ingress resource.
             hosts:
                 - host: chart-example.local
-                paths:
+                  paths:
                     - path: /
-                    pathType: ImplementationSpecific
+                      pathType: ImplementationSpecific
             # -- TLS configuration for the ingress resource.
             # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
             tls: []
