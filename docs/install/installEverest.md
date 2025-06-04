@@ -1,4 +1,4 @@
-# Install Percona Everest using CLI
+# Install Percona Everest using everestctl
 
 ## Before you start
 
@@ -15,7 +15,7 @@ export KUBECONFIG=~/.kube/config
 ## Install Percona Everest
 
 !!! info "Important"
-    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through the CLI, you can:
+    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through `everestctl`, you can:
 
     * Use the `--helm-.set` flag to specify individual parameter values.
     * Provide a values file with the `--helm.values` flag for bulk configuration.
@@ -23,7 +23,7 @@ export KUBECONFIG=~/.kube/config
 To install and provision Percona Everest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [CLI installation documentation](../install/installEverestCLI).
+1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
 
 2. You can install Percona Everest using either the wizard or the headless mode.
 
@@ -84,7 +84,6 @@ To install and provision Percona Everest to Kubernetes:
             ```sh
             everestctl namespaces add <NAMESPACE>
             ```
-
 
 3. Update the password for the `admin` user:
 

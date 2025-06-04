@@ -177,7 +177,7 @@ nav:
       - install/supported_operators_k8s.md
       - install/eks.md
       - install/gke.md
-      - install/installEverestCLI.md
+      - install/install_everestctl.md
     - install/install_everest_helm_charts.md
     - install/installEverest.md
     - install/install_everest_openshift.md
@@ -185,13 +185,13 @@ nav:
   
   - Upgrade: 
     - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
-    - Upgrade Percona Everest using CLI: upgrade/upgrade_with_cli.md
+    - Upgrade Percona Everest using everestctl: upgrade/upgrade_with_cli.md
     - Upgrade Percona operators: upgrade/upgrade_operators.md
     - Upgrade database versions: upgrade/mongodb_major_upgrades.md
 
   - Uninstall:
     - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
-    - Uninstall Percona Everest using CLI: uninstall/uninstallEverest.md
+    - Uninstall Percona Everest everestctl: uninstall/uninstallEverest.md
    
   - Administer:
       - User management: administer/manage_users.md

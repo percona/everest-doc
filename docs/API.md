@@ -4,7 +4,7 @@ Percona Everest provides a set of APIs that enable you to access its features pr
 
 ## Readme.io API documentation
 
-While you can achieve many tasks using either the Percona Everest user interface or CLI, leveraging the API allows for easier integration into your technology infrastructure.
+While you can achieve many tasks using either the Percona Everest user interface or `everestctl`, leveraging the API allows for easier integration into your technology infrastructure.
 
 Check out our API endpoints for Percona Everest, where you can perform a wide range of functions.
 
