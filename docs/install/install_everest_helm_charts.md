@@ -51,7 +51,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         **Prerequisite**
 
-        Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+        - Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
 
         To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
         {.power-number}
