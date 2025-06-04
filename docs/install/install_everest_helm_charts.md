@@ -74,6 +74,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
+
+    === "Ingress"
+
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
         {.power-number}
