@@ -72,8 +72,48 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+4. Access the Everest UI/API using one of the following methods. Everest is deployed with a ClusterIP Service by default.
 
+    === "Ingress"
+
+        If your Kubernetes cluster has an Ingress controller installed, you can create an Ingress resource pointing to Everest to expose it on port 80. For example:
+
+        1. Prepare the Ingress definition:
+
+            ```sh
+            tee everest_ingress.yaml <<EOF
+            apiVersion: networking.k8s.io/v1
+            kind: Ingress
+            metadata:
+            name: everest-ingress
+            namespace: percona-everest
+            annotations:
+                kubernetes.io/ingress.allow-http: "true"
+            spec:
+                        ingressClassName: nginx
+                        rules:
+                        - host: everest.percona.com
+                            http:
+                            paths:
+                            - path: /
+                                pathType: Prefix
+                                backend:
+                                service:
+                                    name: everest
+                                    port:
+                                    number: 8080
+                        EOF
+            ```
+
+        2. Create the Ingress:
+
+            ```sh
+            kubectl create -f everest_ingress.yaml
+            ```
+
+        See also [Securing Percona Everest with Ingress and Cert-Manager](https://www.percona.com/blog/securing-percona-everest-with-ingress-and-cert-manager/)
+
+    
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
         {.power-number}
@@ -169,7 +209,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).
 
 
-5. Deploy additional database namespaces:
+6. Deploy additional database namespaces:
 
     Once Percona Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
 
