@@ -20,49 +20,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
     helm repo update
     ```
 
-3. (**Optional**) Access Percona Everest using Ingress:
-
-    - Prerequisites
-
-        Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
-
-    - Update your Helm chart configuration:
-
-        ```sh
-        # -- Enable ingress for Everest server
-        enabled: false
-        # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-        ingressClassName: ""
-        # -- Additional annotations for the ingress resource.
-        annotations: {}
-        # -- List of hosts and their paths for the ingress resource.
-        hosts:
-            - host: chart-example.local
-            paths:
-                - path: /
-                pathType: ImplementationSpecific
-        # -- TLS configuration for the ingress resource.
-        # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-        tls: []
-        #  - secretName: chart-example-tls
-        #    hosts:
-        #      - chart-example.local
-        ```
-
-2. Install Percona Everest and access it via [Ingress]((https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}):
-
-    ```sh
-    helm --install everest percona/everest \
-    -n everest-system \
-    --set ingress.enabled=true \
-    --set ingress.ingressClassName="" \
-    --set ingress.hosts[0].host=everest.example.com \
-    --set ingress.hosts[0].paths[0].path=/ \
-    --set       ingress.hosts[0].paths[0].pathType=ImplementationSpecific
-     ```
-
-
-2. Install Percona Everest and access it via **LoadBalancer, NodePort or Port forwarding**:
+2. Install Percona Everest:
 
     ```sh
     helm install everest-core percona/everest \
@@ -88,6 +46,50 @@ Here are the steps to install Percona Everest and deploy additional database nam
         ```sh
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
+
+    ??? info "🔒 Install Percona Everest and access it using Ingress"
+
+        To install Percona Everest and access using Ingress, here are the steps:
+        {.power-number}
+
+        - Prerequisites
+
+        Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+
+        1. Update your Helm chart configuration:
+
+            ```sh
+            # -- Enable ingress for Everest server
+            enabled: false
+            # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+            ingressClassName: ""
+            # -- Additional annotations for the ingress resource.
+            annotations: {}
+            # -- List of hosts and their paths for the ingress resource.
+            hosts:
+                - host: chart-example.local
+                paths:
+                    - path: /
+                    pathType: ImplementationSpecific
+            # -- TLS configuration for the ingress resource.
+            # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+            tls: []
+            #  - secretName: chart-example-tls
+            #    hosts:
+            #      - chart-example.local
+            ```
+
+        2. Install Percona Everest:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            --set ingress.enabled=true \
+            --set ingress.ingressClassName="" \
+            --set ingress.hosts[0].host=everest.example.com \
+            --set ingress.hosts[0].paths[0].path=/ \
+            --set       ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+            ```
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
 
