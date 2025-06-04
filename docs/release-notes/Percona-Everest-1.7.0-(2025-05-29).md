@@ -212,7 +212,7 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
 
-## Known limitation
+## Known limitations
 
 ### Upgrade to v1.7.0 fails with Namespace error
 
