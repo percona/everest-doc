@@ -52,7 +52,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         To install Percona Everest and access using Ingress, here are the steps:
         {.power-number}
 
-        - Prerequisites
+        **Prerequisites**
 
         Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
 
@@ -88,7 +88,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             --set ingress.ingressClassName="" \
             --set ingress.hosts[0].host=everest.example.com \
             --set ingress.hosts[0].paths[0].path=/ \
-            --set       ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+            --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
             ```
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
