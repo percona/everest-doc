@@ -38,8 +38,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
-    !!! note
-        PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
+    
+        3. (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
 
         **Example**
 
@@ -51,7 +51,11 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         **Prerequisite**
 
-        - Ensure that you have an Ingress controller (e.g., NGINX) installed in your cluster.
+        - Ensure that you have an Ingress controller (e.g., NGINX) installed and properly configured in your cluster.
+
+        - When using TLS, `everest-tls` secret should contain a valid TLS certificate for your domain.
+
+        **Example**
 
         To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
         {.power-number}
@@ -63,21 +67,21 @@ Here are the steps to install Percona Everest and deploy additional database nam
             # -- Enable ingress for Everest server
             enabled: false
             # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-            ingressClassName: ""
+            ingressClassName: "nginx"
             # -- Additional annotations for the ingress resource.
             annotations: {}
             # -- List of hosts and their paths for the ingress resource.
             hosts:
-                - host: chart-example.local
+                - host: everest.example.com
                   paths:
                     - path: /
                       pathType: ImplementationSpecific
             # -- TLS configuration for the ingress resource.
             # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
             tls: []
-            #  - secretName: chart-example-tls
+            #  - secretName: everest-tls
             #    hosts:
-            #      - chart-example.local
+            #      - everest.example.com
             ```
 
         2. Install Percona Everest:
@@ -91,6 +95,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
             --set ingress.hosts[0].paths[0].path=/ \
             --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
             ```
+            Replace `everest.example.com` with your own domain.
+             
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
 
