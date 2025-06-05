@@ -95,13 +95,13 @@ Here are the steps to install Percona Everest and deploy additional database nam
             ```
             Replace `everest.example.com` with your own domain.
              
-             3. Verify Ingress:
+        3. Verify Ingress:
 
-                ```sh
-                kubectl get ingress -n everest-system
-                ```
+            ```sh
+            kubectl get ingress -n everest-system
+            ```
 
-                Make sure the address provided is valid and that it correctly routes to the Everest service.
+            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
