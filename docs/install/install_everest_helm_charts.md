@@ -39,15 +39,15 @@ Here are the steps to install Percona Everest and deploy additional database nam
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
     
-        3. (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
+3. (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
 
-        **Example**
+    **Example**
 
-        ```sh
-        helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
-        ```
+    ```sh
+    helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
+    ```
 
-    ??? info "🔒 Install Percona Everest and access it using Ingress"
+    ??? info " 🌐 Install Percona Everest and access it using Ingress"
 
         **Prerequisite**
 
@@ -128,10 +128,6 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
-
-    === "Ingress"
-
-        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
         
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
@@ -162,6 +158,11 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
+
+
+    === "Ingress"
+
+        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
