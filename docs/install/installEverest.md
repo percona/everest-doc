@@ -194,7 +194,8 @@ To install and provision Percona Everest to Kubernetes:
 
         To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
-        Replace everest.example.com with your own domain.
+        !!! note
+            Replace everest.example.com with your own domain.
 
 
     === "Node Port"
