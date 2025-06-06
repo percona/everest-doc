@@ -49,9 +49,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         **Prerequisite**
 
-        - Ensure that you have an Ingress controller (e.g., NGINX) installed and properly configured in your cluster.
+        - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
 
-        - When using TLS, `everest-tls` secret should contain a valid TLS certificate for your domain.
+        - If TLS is required on your Ingress endpoint, a Secret containing the TLS certificates
 
         **Example**
 
