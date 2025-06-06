@@ -110,9 +110,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             helm --install everest percona/everest \
             -n everest-system \
             --set-everst-values.yaml
-
-
-
+            ```
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
 
