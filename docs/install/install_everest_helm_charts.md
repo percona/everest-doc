@@ -178,6 +178,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
+        Replace `everest.example.com` with your own domain.
+
+
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
         {.power-number}
