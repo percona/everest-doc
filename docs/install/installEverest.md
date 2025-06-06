@@ -89,8 +89,7 @@ To install and provision Percona Everest to Kubernetes:
         1. Install Percona Everest:
 
             ```sh
-            helm --install everest percona/everest \
-            -n everest-system \
+           everestctl install \
             --helm.set ingress.enabled=true \
             --helm.set ingress.ingressClassName="" \
             --helm.set ingress.hosts[0].host=everest.example.com \
@@ -134,9 +133,7 @@ To install and provision Percona Everest to Kubernetes:
             Install Percona Everest using this file:
 
             ```sh
-            helm --install everest percona/everest \
-            -n everest-system \
-            -f everest-values.yaml
+            everestctl install --helm.values everest-values.yaml
             ```
 
             ??? info "🔒 Install Percona Everest with TLS enabled"
