@@ -69,7 +69,76 @@ To install and provision Percona Everest to Kubernetes:
                 ```
                 everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
                 ```
-        
+
+
+
+    ??? info " 🌐 Install Percona Everest and access it using Ingress"
+
+        **Prerequisite**
+
+        - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
+
+        - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
+
+        **Example**
+
+        To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
+        {.power-number}
+
+
+        1. Install Percona Everest:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            --helm.set ingress.enabled=true \
+            --helm.set ingress.ingressClassName="" \
+            --helm.set ingress.hosts[0].host=everest.example.com \
+            --helm.set ingress.hosts[0].paths[0].path=/ \
+            --helm.set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+            ```
+            Replace `everest.example.com` with your own domain.
+             
+        3. Verify Ingress:
+
+            ```sh
+            kubectl get ingress -n everest-system
+            ```
+
+            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
+
+        ??? example "Example: Custom YAML configuration file"
+
+
+            ```sh
+            ingress:
+            # -- Enable ingress for Everest server
+            enabled: false
+            # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+            ingressClassName: "nginx"
+            # -- Additional annotations for the ingress resource.
+            annotations: {}
+            # -- List of hosts and their paths for the ingress resource.
+            hosts:
+                - host: everest.example.com
+                  paths:
+                    - path: /
+                      pathType: ImplementationSpecific
+            # -- TLS configuration for the ingress resource.
+            # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+            tls: []
+            #  - secretName: everest-tls
+            #    hosts:
+            #      - everest.example.com
+            ```
+            Install Percona Everest using this file:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            -f everest-values.yaml
+            ```
+
             ??? info "🔒 Install Percona Everest with TLS enabled"
 
                 ```sh
