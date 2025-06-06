@@ -104,12 +104,12 @@ Here are the steps to install Percona Everest and deploy additional database nam
             #    hosts:
             #      - everest.example.com
             ```
-            Install Percona Everest:
+            Install Percona Everest using this file:
 
             ```sh
             helm --install everest percona/everest \
             -n everest-system \
-            --set-everest-values.yaml
+            -f everest-values.yaml
             ```
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
