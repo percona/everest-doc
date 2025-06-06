@@ -150,7 +150,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Run the following command:
                     
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).

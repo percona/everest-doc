@@ -181,9 +181,10 @@ Once you have successfully installed Percona Everest, proceed with the following
     === "Load Balancer"
 
         1. Use the following command to change the Everest service type to `LoadBalancer`:
-                    
+                                                
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
             
             ??? example "When TLS is enabled"
