@@ -38,14 +38,79 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
-    !!! note
-        PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
-
-        **Example**
+    
+    - (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
 
         ```sh
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
+
+    ??? info " 🌐 Install Percona Everest and access it using Ingress"
+
+        **Prerequisite**
+
+        - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
+
+        - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
+
+        **Example**
+
+        To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
+        {.power-number}
+
+
+        1. Install Percona Everest:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            --set ingress.enabled=true \
+            --set ingress.ingressClassName="" \
+            --set ingress.hosts[0].host=everest.example.com \
+            --set ingress.hosts[0].paths[0].path=/ \
+            --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+            ```
+            Replace `everest.example.com` with your own domain.
+             
+        3. Verify Ingress:
+
+            ```sh
+            kubectl get ingress -n everest-system
+            ```
+
+            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
+
+        ??? example "Example: Custom YAML configuration file"
+
+
+            ```sh
+            ingress:
+            # -- Enable ingress for Everest server
+            enabled: true
+            # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+            ingressClassName: "nginx"
+            # -- Additional annotations for the ingress resource.
+            annotations: {}
+            # -- List of hosts and their paths for the ingress resource.
+            hosts:
+                - host: everest.example.com
+                  paths:
+                    - path: /
+                      pathType: ImplementationSpecific
+            # -- TLS configuration for the ingress resource.
+            # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+            tls: []
+            #  - secretName: everest-tls
+            #    hosts:
+            #      - everest.example.com
+            ```
+            Install Percona Everest using this file:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            -f everest-values.yaml
+            ```
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
 
@@ -60,7 +125,10 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
-3. Once the installation is complete, retrieve the `admin` password. 
+
+
+
+4. Once the installation is complete, retrieve the `admin` password. 
 
     ```sh
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
@@ -74,6 +142,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
+        
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
         {.power-number}
@@ -81,7 +150,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Run the following command:
                     
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
@@ -103,6 +173,15 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
+
+
+    === "Ingress"
+
+        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
+
+        !!! note
+            Replace `everest.example.com` with your own domain.
+
 
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
