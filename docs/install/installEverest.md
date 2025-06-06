@@ -112,25 +112,26 @@ To install and provision Percona Everest to Kubernetes:
                         # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
                         ingressClassName: "nginx"
                         # -- Additional annotations for the ingress resource.
-                    annotations: {}
-                    # -- List of hosts and their paths for the ingress resource.
-                    hosts:
+                        annotations: {}
+                        # -- List of hosts and their paths for the ingress resource.
+                        hosts:
                         - host: everest.example.com
                         paths:
                             - path: /
                             pathType: ImplementationSpecific
-                    # -- TLS configuration for the ingress resource.
-                    # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-                    tls: []
-                    #  - secretName: everest-tls
-                    #    hosts:
-                    #      - everest.example.com
-                    ```
-                    Install Percona Everest using this file:
+                        # -- TLS configuration for the ingress resource.
+                        # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+                        tls: []
+                        #  - secretName: everest-tls
+                        #    hosts:
+                        #      - everest.example.com
+                        ```
 
-                    ```sh
-                    everestctl install --helm.values everest-values.yaml
-                    ```
+                        Install Percona Everest using this file:
+
+                        ```sh
+                        everestctl install --helm.values everest-values.yaml
+                        ```
 
             ??? info "🔒 Install Percona Everest with TLS enabled"
 
