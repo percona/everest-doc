@@ -90,12 +90,12 @@ To install Percona Everest using Helm follow these steps:
 
             ```sh
             helm --install everest percona/everest \
-            -n everest-system \
-            --set ingress.enabled=true \
-            --set ingress.ingressClassName="" \
-            --set ingress.hosts[0].host=everest.example.com \
-            --set ingress.hosts[0].paths[0].path=/ \
-            --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+              -n everest-system \
+              --set ingress.enabled=true \
+              --set ingress.ingressClassName="" \
+              --set ingress.hosts[0].host=everest.example.com \
+              --set ingress.hosts[0].paths[0].path=/ \
+              --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
             ```
             Replace `everest.example.com` with your own domain.
              
@@ -113,7 +113,7 @@ To install Percona Everest using Helm follow these steps:
             ```sh
             ingress:
             # -- Enable ingress for Everest server
-            enabled: false
+            enabled: true
             # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
             ingressClassName: "nginx"
             # -- Additional annotations for the ingress resource.
