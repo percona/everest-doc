@@ -108,7 +108,7 @@ To install and provision Percona Everest to Kubernetes:
                         ```sh
                         ingress:
                         # -- Enable ingress for Everest server
-                        enabled: false
+                        enabled: true
                         # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
                         ingressClassName: "nginx"
                         # -- Additional annotations for the ingress resource.
