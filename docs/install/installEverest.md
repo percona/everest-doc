@@ -196,6 +196,9 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
 
+    === "Ingress"
+
+        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
     === "Node Port"
         A `NodePort` is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
