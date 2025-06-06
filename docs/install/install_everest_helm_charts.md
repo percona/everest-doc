@@ -51,14 +51,37 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
 
-        - If TLS is required on your Ingress endpoint, a Secret containing the TLS certificates
+        - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
 
         **Example**
 
         To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
         {.power-number}
 
-        1. Update your Helm chart configuration:
+
+        1. Install Percona Everest:
+
+            ```sh
+            helm --install everest percona/everest \
+            -n everest-system \
+            --set ingress.enabled=true \
+            --set ingress.ingressClassName="" \
+            --set ingress.hosts[0].host=everest.example.com \
+            --set ingress.hosts[0].paths[0].path=/ \
+            --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+            ```
+            Replace `everest.example.com` with your own domain.
+             
+        3. Verify Ingress:
+
+            ```sh
+            kubectl get ingress -n everest-system
+            ```
+
+            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
+
+        ??? example "Custom YAML configuration file: everest-values.yaml"
+
 
             ```sh
             ingress:
@@ -81,27 +104,14 @@ Here are the steps to install Percona Everest and deploy additional database nam
             #    hosts:
             #      - everest.example.com
             ```
-
-        2. Install Percona Everest:
+            You can also install Percona Everest using the YAML file as follows:
 
             ```sh
             helm --install everest percona/everest \
             -n everest-system \
-            --set ingress.enabled=true \
-            --set ingress.ingressClassName="" \
-            --set ingress.hosts[0].host=everest.example.com \
-            --set ingress.hosts[0].paths[0].path=/ \
-            --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
-            ```
-            Replace `everest.example.com` with your own domain.
-             
-        3. Verify Ingress:
+            --set-everst-values.yaml
 
-            ```sh
-            kubectl get ingress -n everest-system
-            ```
 
-            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
 
     ??? info "🔒 Install Percona Everest with TLS enabled"
