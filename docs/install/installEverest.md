@@ -105,7 +105,6 @@ To install and provision Percona Everest to Kubernetes:
                     Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
                     ??? example "Example: Custom YAML configuration file"
-
                         ```sh
                         ingress:
                         # -- Enable ingress for Everest server
