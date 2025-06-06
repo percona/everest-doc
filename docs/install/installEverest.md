@@ -70,13 +70,13 @@ To install and provision Percona Everest to Kubernetes:
                 everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
                 ```
 
-        ??? info " 🌐 Install Percona Everest and access it using Ingress"
+            ??? info " 🌐 Install Percona Everest and access it using Ingress"
 
-            **Prerequisite**
+                **Prerequisite**
 
-            - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
+                - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
 
-            - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
+                - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
 
             **Example**
 
@@ -87,12 +87,12 @@ To install and provision Percona Everest to Kubernetes:
             1. Install Percona Everest:
 
                 ```sh
-            everestctl install \
-                --helm.set ingress.enabled=true \
-                --helm.set ingress.ingressClassName="" \
-                --helm.set ingress.hosts[0].host=everest.example.com \
-                --helm.set ingress.hosts[0].paths[0].path=/ \
-                --helm.set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+                everestctl install \
+                  --helm.set ingress.enabled=true \
+                  --helm.set ingress.ingressClassName="" \
+                  --helm.set ingress.hosts[0].host=everest.example.com \
+                  --helm.set ingress.hosts[0].paths[0].path=/ \
+                  --helm.set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
                 ```
                 Replace `everest.example.com` with your own domain.
                 
@@ -104,16 +104,15 @@ To install and provision Percona Everest to Kubernetes:
 
                 Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
-            ??? example "Example: Custom YAML configuration file"
+                ??? example "Example: Custom YAML configuration file"
 
-
-                ```sh
-                ingress:
-                # -- Enable ingress for Everest server
-                enabled: false
-                # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-                ingressClassName: "nginx"
-                # -- Additional annotations for the ingress resource.
+                    ```sh
+                    ingress:
+                    # -- Enable ingress for Everest server
+                    enabled: false
+                    # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+                    ingressClassName: "nginx"
+                    # -- Additional annotations for the ingress resource.
                 annotations: {}
                 # -- List of hosts and their paths for the ingress resource.
                 hosts:
