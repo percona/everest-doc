@@ -80,7 +80,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
-        ??? example "Custom YAML configuration file: everest-values.yaml"
+        ??? example "Example: Custom YAML configuration file"
 
 
             ```sh
@@ -104,7 +104,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             #    hosts:
             #      - everest.example.com
             ```
-            Install Percona Everest using the `YAML` file:
+            Install Percona Everest:
 
             ```sh
             helm --install everest percona/everest \
