@@ -1,4 +1,4 @@
-# Install Percona Everest and expose visa Ingress controller
+# Install Percona Everest and expose via Ingress controller
 
 This section explains how to install Percona Everest using [Helm](https://helm.sh/){:target="_blank"} or  `everestctl` and expose Percona Everest using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}.
 
