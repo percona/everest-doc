@@ -152,18 +152,17 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 === "Install Percona Everest using everesctl"
 
-    Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
-            
+    Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:            
         
-        ```sh
-        export KUBECONFIG=~/.kube/config
-        ```
+    ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
 
-        !!! info "Important"
-            Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through `everestctl`, you can:
+    !!! info "Important"
+        Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through `everestctl`, you can:
         
-            * Use the `--helm-.set` flag to specify individual parameter values.
-            * Provide a values file with the `--helm.values` flag for bulk configuration.
+        * Use the `--helm-.set` flag to specify individual parameter values.
+        * Provide a values file with the `--helm.values` flag for bulk configuration.
         
         To install and provision Percona Everest to Kubernetes:
         {.power-number}
@@ -195,36 +194,34 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
             Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
-                ??? example "Example: Custom YAML configuration file"
-                    ```sh
-                    ingress:
-                    # -- Enable ingress for Everest server
-                    enabled: true
-                    # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-                    ingressClassName: "nginx"
-                    # -- Additional annotations for the ingress resource.
-                    annotations: {}
-                    # -- List of hosts and their paths for the ingress resource.
-                    hosts:
-                    - host: everest.example.com
-                    paths:
-                        - path: /
-                        pathType: ImplementationSpecific
-                        # -- TLS configuration for the ingress resource.
-                        # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-                            tls: []
-                            #  - secretName: everest-tls
-                            #    hosts:
-                            #      - everest.example.com
-                            ```
+            ??? example "Example: Custom YAML configuration file"
+                ```sh
+                ingress:
+                # -- Enable ingress for Everest server
+                enabled: true
+                # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
+                ingressClassName: "nginx"
+                # -- Additional annotations for the ingress resource.
+                annotations: {}
+                # -- List of hosts and their paths for the ingress resource.
+                hosts:
+                - host: everest.example.com
+                paths:
+                    - path: /
+                    pathType: ImplementationSpecific
+                    # -- TLS configuration for the ingress resource.
+                    # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+                        tls: []
+                        #  - secretName: everest-tls
+                        #    hosts:
+                        #      - everest.example.com
+            ```
 
         Install Percona Everest using this file:
 
             ```sh
             everestctl install --helm.values everest-values.yaml
             ```
-        
-
 
         5. Once the installation is complete, retrieve the `admin` password. 
 
