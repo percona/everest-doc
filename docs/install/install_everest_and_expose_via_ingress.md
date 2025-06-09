@@ -7,6 +7,12 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 ## Prerequisites
 
+- `kubeconfig` file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:            
+        
+    ```sh
+    export KUBECONFIG=~/.kube/config
+    ```
+
 - An [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/){:target="_blank"} (e.g., Nginx) installed on your Kubernetes cluster
 
 - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
@@ -148,12 +154,6 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 
 === "Install Percona Everest using everesctl"
-
-    Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:            
-        
-    ```sh
-    export KUBECONFIG=~/.kube/config
-    ```
 
     !!! info "Important"
         Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through `everestctl`, you can:
