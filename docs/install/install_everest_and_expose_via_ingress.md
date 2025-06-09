@@ -11,12 +11,9 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
 
-=== "Install Percona Evrest using Helm"
+=== "Install Percona Everest using Helm"
 
     Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
-
-
-    ## Install Percona Everest and deploy database namespaces
 
     Here are the steps to install Percona Everest and deploy additional database namespaces:
     {.power-number}
