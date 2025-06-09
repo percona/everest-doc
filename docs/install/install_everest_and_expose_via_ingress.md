@@ -164,13 +164,13 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         * Use the `--helm-.set` flag to specify individual parameter values.
         * Provide a values file with the `--helm.values` flag for bulk configuration.
         
-        To install and provision Percona Everest to Kubernetes:
-        {.power-number}
+    To install and provision Percona Everest to Kubernetes:
+    {.power-number}
         
-        1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
+    1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
         
         
-        2. Install Percona Everest:
+    2. Install Percona Everest:
 
             ```sh
             everestctl install \
@@ -181,20 +181,21 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             --helm.set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
             ```
 
-            Replace `everest.example.com` with your own domain.
+        Replace `everest.example.com` with your own domain.
 
-        3. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.   
+    3. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.   
             
 
-        4. Verify Ingress:
+    4. Verify Ingress:
 
-            ```sh
-            kubectl get ingress -n everest-system
-            ```
+        ```sh
+        kubectl get ingress -n everest-system
+        ```
 
-            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
+        Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
 
-            ??? example "Example: Custom YAML configuration file"
+        ??? example "Example: Custom YAML configuration file"
+
                 ```sh
                 ingress:
                 # -- Enable ingress for Everest server
@@ -223,28 +224,28 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             everestctl install --helm.values everest-values.yaml
             ```
 
-        5. Once the installation is complete, retrieve the `admin` password. 
+    5. Once the installation is complete, retrieve the `admin` password. 
 
-            ```sh
-            kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
-            ```
+        ```sh
+        kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
+        ```
 
-            - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+        - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-            - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+        - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-                To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
-        6. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
+    6. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
-            !!! note
-                Replace `everest.example.com` with your own domain.
+        !!! note
+            Replace `everest.example.com` with your own domain.
         
-        7.  If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
+    7.  If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
         
-            ```sh
-            everestctl namespaces add <NAMESPACE>
-            ``` 
+        ```sh
+        everestctl namespaces add <NAMESPACE>
+        ``` 
                 
 
 ## Next steps
