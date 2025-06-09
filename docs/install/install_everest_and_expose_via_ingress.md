@@ -123,7 +123,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-            To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
     5. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
@@ -154,6 +154,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
             
+        
         ```sh
         export KUBECONFIG=~/.kube/config
         ```
