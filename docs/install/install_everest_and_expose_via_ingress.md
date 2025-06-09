@@ -11,9 +11,9 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
 
-    === "Install Percona Evrest using Helm"
+=== "Install Percona Evrest using Helm"
 
-        Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+    Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 
     ## Install Percona Everest and deploy database namespaces
@@ -150,9 +150,9 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 
 
-    === "Install Percona Everest using everesctl"
+=== "Install Percona Everest using everesctl"
 
-        Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
+    Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
             
         
         ```sh
