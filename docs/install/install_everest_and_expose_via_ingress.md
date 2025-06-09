@@ -206,13 +206,13 @@ An Ingress Controller is a Kubernetes component that manages external access to 
                 annotations: {}
                 # -- List of hosts and their paths for the ingress resource.
                 hosts:
-                - host: everest.example.com
-                paths:
-                    - path: /
-                    pathType: ImplementationSpecific
+                  - host: everest.example.com
+                    paths:
+                      - path: /
+                      pathType: ImplementationSpecific
                     # -- TLS configuration for the ingress resource.
                     # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-                        tls: []
+                tls: []
                         #  - secretName: everest-tls
                         #    hosts:
                         #      - everest.example.com
