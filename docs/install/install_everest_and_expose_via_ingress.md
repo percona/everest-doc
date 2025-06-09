@@ -5,7 +5,7 @@ This section explains how to install Percona Everest using [Helm](https://helm.s
 
 An Ingress Controller is a Kubernetes component that manages external access to services within a cluster, usually over HTTP and HTTPS. It is responsible for processing Ingress resources, which are rules that define how traffic should be routed to different services within the cluster.
 
-## Prerequisite to install Percona Evrest and expose via Ingress
+## Prerequisites
 
 - An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
 
