@@ -7,7 +7,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 ## Prerequisites
 
-- An Ingress controller (e.g., Nginx) installed on your Kubernetes cluster
+- An [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/){:target="_blank"} (e.g., Nginx) installed on your Kubernetes cluster
 
 - If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
 
