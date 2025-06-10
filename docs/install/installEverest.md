@@ -34,7 +34,7 @@ To install and provision Percona Everest to Kubernetes:
             ```
             everestctl install --skip-db-namespace
             ```
-        To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
+            To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
     - **Install Percona Everest using the wizard**
@@ -92,8 +92,7 @@ To install and provision Percona Everest to Kubernetes:
     ```
 
     !!! info "Important"
-
-        - You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+        You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
 
     To access detailed information about user management, see the [Manage users in Percona Everest](../administer/manage_users.md) section.
 
