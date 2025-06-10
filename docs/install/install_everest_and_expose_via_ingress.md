@@ -56,12 +56,6 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
                 You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
-        
-        - (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
-
-            ```sh
-            helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
-            ```
 
     3. Verify the Ingress resource:
 
