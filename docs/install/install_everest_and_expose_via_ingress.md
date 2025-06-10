@@ -126,10 +126,10 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-        !!! info "Important"
-            The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+            !!! info "Important"
+                The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+            To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
     5. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
@@ -234,10 +234,10 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         - The default `admin` password is stored in plain text.
         
-        !!! info "Important"
-             It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+            !!! info "Important"
+                It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
-        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+            To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
     6. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
 
