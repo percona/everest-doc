@@ -211,7 +211,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
                       - path: /
                       pathType: ImplementationSpecific
                     # -- TLS configuration for the ingress resource.
-                    # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
+                    # -- Each entry in the list specifies a TLS certificate and the hosts to which it applies.
                 tls: []
                         #  - secretName: everest-tls
                         #    hosts:
@@ -235,11 +235,11 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         - The default `admin` password is stored in plain text.
         
             !!! info "Important"
-                It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+                It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed.  Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
             To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
-    6. To access the Everest UI/API, open your browser and go to: [https://everest.example.com](https://everest.example.com).
+    6. To access the Everest UI/API, open your browser and go to  [https://everest.example.com](https://everest.example.com).
 
         !!! note
             Replace `everest.example.com` with your own domain.
