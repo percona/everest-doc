@@ -7,7 +7,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 ## Prerequisites
 
-- `kubeconfig` file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:            
+- A `kubeconfig` file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:            
         
     ```sh
     export KUBECONFIG=~/.kube/config
@@ -15,7 +15,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 - An [Ingress controller](https://kubernetes.io/docs/concepts/services-networking/ingress-controllers/){:target="_blank"} (e.g., Nginx) installed on your Kubernetes cluster
 
-- If TLS is required on your Ingress endpoint, a **Secret** containing the TLS certificates
+- (Optional but recommended for production) A TLS certificate stored in a Kubernetes Secret.
 
 === "Install Percona Everest using Helm"
 
@@ -31,7 +31,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         helm repo update
         ```
 
-    2. Install Percona Everest:
+    2. Install Percona Everest with **Ingress enabled**:
 
 
                 helm --install everest percona/everest \
@@ -63,7 +63,8 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
             ```
 
-    3. Verify Ingress:
+    3. Verify the Ingress resource:
+
         ```sh
         kubectl get ingress -n everest-system
         ```
@@ -76,30 +77,31 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             ```sh
             ingress:
             # -- Enable ingress for Everest server
-            enabled: true
+              enabled: true
             # -- Ingress class name. This is used to specify which ingress controller should handle this ingress.
-            ingressClassName: "nginx"
+              ingressClassName: "nginx"
             # -- Additional annotations for the ingress resource.
-            annotations: {}
+              annotations: {}
             # -- List of hosts and their paths for the ingress resource.
-            hosts:
+              hosts:
                 - host: everest.example.com
-                paths:
+              paths:
                   - path: /
                   pathType: ImplementationSpecific
             # -- TLS configuration for the ingress resource.
             # -- Each entry in the list specifies a TLS certificate and the hosts it applies to.
-            tls: []
+              tls: []
             #  - secretName: everest-tls
             #    hosts:
             #      - everest.example.com
             ```
-            Install Percona Everest using this file:
+            
+            Install Percona Everest using this `YAML` file:
 
             ```sh
             helm --install everest percona/everest \
-            -n everest-system \
-            -f everest-values.yaml
+              -n everest-system \
+              -f everest-values.yaml
             ```
 
         ??? info "🔒 Install Percona Everest with TLS enabled"
@@ -124,7 +126,8 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-        - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+        !!! info "Important"
+            The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
 
         To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
