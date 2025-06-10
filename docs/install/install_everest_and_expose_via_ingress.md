@@ -71,7 +71,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         Ensure the address provided is valid and correctly routes to the Percona Everest service.
 
-        ??? example "Example: Custom YAML configuration file"
+        ??? example "Example: Using a Helm values file"
 
 
             ```sh
