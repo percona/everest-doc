@@ -223,6 +223,7 @@ nav:
         - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
         - Create database from backups: use/createBackups/create_new_database.md
         - Restore backups: use/RestoreBackup.md
+      - Import external database backups: use/backup_importers.md
       - Manage clusters: use/cluster-management.md
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md
