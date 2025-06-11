@@ -221,7 +221,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
     5. Once the installation is complete, retrieve the `admin` password. 
 
         ```sh
-        kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
+        everestctl accounts initial-admin-password
         ```
 
         - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
