@@ -29,11 +29,11 @@
 
 
 
-=== " :simple-mysql: PXC Operator"
+=== " :simple-mongodb: MongoDB"
     
-    ### Support for Percona XtraBackup Operator 1.17.0
+    ### Support for PSMDB operator v1.20.1
 
-    Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
+    Percona Everest 1.8.0 now includes support for PSMDB operator version 1.20.1.
 
 
 ## 🛑 Breaking Changes
