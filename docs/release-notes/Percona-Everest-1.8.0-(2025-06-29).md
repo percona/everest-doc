@@ -20,59 +20,14 @@
 
 ## 🌟 Release highlights
 
-=== "☁️ GKE Autopilot clusters"
-
-    ### Deploy Percona Everest on GKE Autopilot
+=== "☁️ Database Importers"
 
      You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
 
     📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
-===  "⎈ Pod scheduling policies"
 
-    ### Pod scheduling policies in Percona Everest
-    
-    We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature allows database administrators to manage database workload scheduling on Kubernetes. These policies enhance system resilience and ensure that your resources are utilized to their fullest potential.
-    
-    The Pod scheduling policy is **preset** that includes a set of Kubernetes Affinity rules applied to the appropriate DB cluster components.
-
-
-    Kubernetes features three primary types of affinity that play a crucial role in how pods are scheduled and interact within a DB cluster:
-
-    - [Pod affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity){:target="_blank"}: Co-locates pods on the same node or topology domain.
-
-    - [Pod anti-affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#inter-pod-affinity-and-anti-affinity){:target="_blank"}: Ensures pods are scheduled on different nodes or domains.
-
-    - [Node affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#node-affinity){:target="_blank"}: Schedules pods based on node labels and conditions.
-
-    #### Default configuration for Pod scheduling policies
-
-    
-    In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure the optimal placement of database components across a Kubernetes cluster. These predefined Pod scheduling policies come **bundled with every Percona Everest deployment**. Thus, Percona Everest users can utilize these predefined settings without the need to create custom rules for every database cluster they set up.
-
-    ![!image](../images/default_mongo_policy.png)
-
-    📘 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
-
-    #### Custom Pod scheduling policies
-    If you need more control, you can define custom Pod scheduling policies to manage how database pods are placed across Kubernetes nodes. These policies offer fine-grained control over pod distribution using Kubernetes affinity and anti-affinity rules.
-
-    To create a custom policy, configure the scheduling rules via the Everest UI, as shown below:
-
-    ![!image](../images/affinity_add_rules.png)
-
-    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
-
-=== "🔐 TLS support"
-
-    ### Improved Security with TLS support
-
-    Starting with version 1.7.0, Percona Everest can be set up to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. **TLS encrypts communication between clients and the API server, safeguarding** data from interception or tampering. 
-
-    Administrators can configure server certificates and private keys to enable secure HTTPS access. This enhances the overall security of production environments.
-
-    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
 
 === " :simple-mysql: PXC Operator"
     
