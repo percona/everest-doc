@@ -41,7 +41,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
           --set ingress.hosts[0].host=everest.example.com \
           --set ingress.hosts[0].paths[0].path=/ \
           --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
-          ```  
+        ```  
                 
         !!! note
             Replace `everest.example.com` with your own domain.
