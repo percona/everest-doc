@@ -33,14 +33,13 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
     2. Install Percona Everest with **Ingress enabled**:
 
-
-                helm --install everest percona/everest \
-                -n everest-system \
-                --set ingress.enabled=true \
-                --set ingress.ingressClassName="" \
-                --set ingress.hosts[0].host=everest.example.com \
-                --set ingress.hosts[0].paths[0].path=/ \
-                --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+        helm --install everest percona/everest \
+          -n everest-system \
+          --set ingress.enabled=true \
+          --set ingress.ingressClassName="" \
+          --set ingress.hosts[0].host=everest.example.com \
+          --set ingress.hosts[0].paths[0].path=/ \
+          --set  ingress.hosts[0].paths[0].pathType=ImplementationSpecific
             
                 
         !!! note
@@ -165,16 +164,14 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         
         
     2. Install Percona Everest:
-
         
-            everestctl install \
-            --helm.set ingress.enabled=true \
-            --helm.set ingress.ingressClassName="" \
-            --helm.set ingress.hosts[0].host=everest.example.com \
-            --helm.set ingress.hosts[0].paths[0].path=/ \
-            --helm.set ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+        everestctl install \
+          --helm.set ingress.enabled=true \
+          --helm.set ingress.ingressClassName="" \
+          --helm.set ingress.hosts[0].host=everest.example.com \
+          --helm.set ingress.hosts[0].paths[0].path=/ \
+          --helm.set ingress.hosts[0].paths[0].pathType=ImplementationSpecific
         
-
         Replace `everest.example.com` with your own domain.
 
     3. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.   
