@@ -179,7 +179,6 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
     3. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.   
             
-
     4. Verify Ingress:
 
         ```sh
