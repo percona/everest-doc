@@ -148,8 +148,6 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             -  All database operators are installed in your database namespace by default. You can override this by specifying one or more of the following options: `[dbNamespace.pxc=false, dbNamespace.pg=false, dbNamespace.psmdb=false]`.
             - Installation without chart hooks (i.e, the use of `--no-hooks`) is currently not supported.
 
-
-
 === "Install Percona Everest using everesctl"
 
     !!! info "Important"
@@ -172,7 +170,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
           --helm.set ingress.ingressClassName="" \
           --helm.set ingress.hosts[0].host=everest.example.com \
           --helm.set ingress.hosts[0].paths[0].path=/ \
-          --helm.set ingress.hosts[0].paths[0].pathType=ImplementationSpecific
+          --helm.setingress.hosts[0].paths[0].pathType=ImplementationSpecific
         ```
         
         Replace `everest.example.com` with your own domain.
