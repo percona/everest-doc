@@ -14,7 +14,15 @@ You can then connect to the API via the `http://127.0.0.1:8080 endpoint`.
 
 ### Authentication
 
-Currently, the API only supports authentication via a JWT token. You can obtain this JWT token from the Web UI after logging in. The JWT token is stored in the everestToken variable within the browser's local storage.
+Currently, the API only supports authentication via a JWT token. 
+
+You can obtain this JWT token from the Web UI after logging in. For the built-in Everest users you can also obtain this JWT token by calling the following endpoint:
+
+```sh
+curl --location -s '<EVEREST_HOST>/v1/session' --header 'Content-Type: application/json' --data '{"username": "<YOUR_USERNAME>","password": "<YOUR_PASSWORD>"}' | jq -r .token
+```
+
+
 
 ## Readme.io API documentation
 
