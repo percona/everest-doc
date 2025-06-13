@@ -34,7 +34,7 @@ To install and provision Percona Everest to Kubernetes:
             ```
             everestctl install --skip-db-namespace
             ```
-        To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
+            To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
     - **Install Percona Everest using the wizard**
@@ -69,7 +69,7 @@ To install and provision Percona Everest to Kubernetes:
                 ```
                 everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
                 ```
-        
+
             ??? info "🔒 Install Percona Everest with TLS enabled"
 
                 ```sh
@@ -92,8 +92,7 @@ To install and provision Percona Everest to Kubernetes:
     ```
 
     !!! info "Important"
-
-        - You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
+        You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
 
     To access detailed information about user management, see the [Manage users in Percona Everest](../administer/manage_users.md) section.
 
@@ -105,7 +104,8 @@ To install and provision Percona Everest to Kubernetes:
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            everestctl install \
+            --helm.set service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
@@ -127,15 +127,17 @@ To install and provision Percona Everest to Kubernetes:
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
 
-
     === "Node Port"
         A `NodePort` is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
 
         1. Run the following command to change the Everest service type to `NodePort`:
 
+                    
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}'
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
+
         2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
 
             ```sh

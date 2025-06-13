@@ -180,6 +180,7 @@ nav:
       - install/install_everestctl.md
     - install/install_everest_helm_charts.md
     - install/installEverest.md
+    - install/install_everest_and_expose_via_ingress.md
     - install/install_everest_openshift.md
 
   
