@@ -38,10 +38,10 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     1. Click **Fill details** to provide your Amazon S3 storage details. The **S3 details** page will open. Enter:
 
-        - Bucket name:  Enter the unique name identifying your S3 storage bucket.
-        - Region: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-        - Access key: Enter your AWS Access Key ID (like a username for API access).
-        - Secret key: Enter your AWS Secret Access Key (like a password for secure API access).
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
         
         Click **Save**.
 
