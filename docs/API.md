@@ -10,7 +10,7 @@ The API is accessible on the same host and port as the Percona Everest Web UI. Y
 kubectl port-forward svc/everest 8080:8080 -n everest-system
 ```
 
-You can then connect to the API via the `http://127.0.0.1:8080 endpoint`.
+You can then connect to the API via the `http://127.0.0.1:8080` host.
 
 ### Authentication
 
