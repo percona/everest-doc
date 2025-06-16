@@ -32,9 +32,9 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 1. Log into the Percona Everest UI.
 
-2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(such as MySQL, PostgreSQL, or MongoDB). The **Import info** page will open.
+2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Import info** page will open.
 
-3. On the **Import info** page, choose the data importer from the dropdown. Depending on the importer selected, provide the following details:
+3. On the **Import info** page, choose the data importer from the dropdown. Depending on the importer selected, you will need to provide the following details:
 
     1. Click **Fill details** to provide your Amazon S3 storage details. The **S3 details** page will open. 
     
@@ -51,12 +51,12 @@ Here are the steps to import external database backups using Percona Everest UI:
     2. In the **File directory** section, enter the file path within your S3 bucket where the database backup files are stored. Click **Save**.
 
 
-    3. Provide the **DB credentials** which are basically the key-value pairs for credentials and user secrets. 
+    3. Provide the **DB credentials**, the key-value pairs for credentials, and user secrets. 
 
 
 4. Click **Continue**. You will then see the basic information page for your new database.
 
-5. Enter the information and click on continue till you reach the end of the wizard.
+5. Enter the information and click on continue until you reach the end of the wizard.
 
 Your database backup will now start importing, and you will be notified upon successful completion.
 
