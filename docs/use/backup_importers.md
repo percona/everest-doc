@@ -11,7 +11,7 @@ Many users looking to adopt Percona Everest already have databases or database b
 
 Currently, Percona Everest does not offer a method to import these backups into its database clusters. Thus we need a solution where you can easily import external database backups into Percona Everest clusters.
 
-## Goals
+### Goals
 
 This feature aims to achieve the following goals:
 
@@ -20,4 +20,18 @@ This feature aims to achieve the following goals:
 - Support various backup formats and tools, including logical and physical backups using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
 - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
+
+
+## Understanding DataImporters
+
+
+## How to import external database backups
+
+
+
+
+
+
+
+
 
