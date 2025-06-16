@@ -43,7 +43,7 @@ Here are the steps to import external database backups using Percona Everest UI:
         - Access key: Enter your AWS Access Key ID (like a username for API access).
         - Secret key: Enter your AWS Secret Access Key (like a password for secure API access).
         
-     Click **Save**.
+        Click **Save**.
 
 
     2. In the **File directory** section, enter the file path within your S3 bucket where the database backup files are stored. Click **Save**.
