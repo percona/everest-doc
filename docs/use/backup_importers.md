@@ -25,34 +25,38 @@ This feature aims to achieve the following goals:
 ## Understanding DataImporters
 
 
-## How to import external database backups using Percona Everest UI
+## How to import external database backups using the Percona Everest UI
 
 Here are the steps to import external database backups using Percona Everest UI:
 {.power-number}
 
 1. Log into the Percona Everest UI.
 
-2. On the Percona Everest homepage, click **Import**.  Select the database type that you wish to import. The **Import info** page will then be displayed.
+2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(such as MySQL, PostgreSQL, or MongoDB). The **Import info** page will open.
 
-3. On the **Import info** page, select the available data importer from the drop down and then based on this importer enter the following information:
+3. On the **Import info** page, choose the data importer from the dropdown. Depending on the importer selected, provide the following details:
 
-    1. Click **Fill details** to provide the S3 details. The **S3 details** page will be displayed. Enter the following details such as:
+    1. Click **Fill details** to provide your Amazon S3 storage details. The **S3 details** page will open. Enter:
 
-        - Bucket name: A unique identifier you give to your bucket (storage container) to distinguish it from others.
-        - Region: Specific geographical location (data center) where your data is physically stored.
-        - Access key: Equivalent of a username used for programmatic (API) access to AWS services.
-        - Secret key: Equivalent of a password used for programmatic (API) access to AWS services.
+        - Bucket name:  Enter the unique name identifying your S3 storage bucket.
+        - Region: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - Access key: Enter your AWS Access Key ID (like a username for API access).
+        - Secret key: Enter your AWS Secret Access Key (like a password for secure API access).
         
-        - Click **Save**.
+     Click **Save**.
 
 
-    2. In the **File directory** section and provide the file path (The specific folder path within your S3 storage where your database backup files are stored). Click **Save**.
+    2. In the **File directory** section, enter the file path within your S3 bucket where the database backup files are stored. Click **Save**.
 
 
-    3. Provide the **DB credentials** which are basically the key-value pairs for crendtials and user secrets.    
+    3. Provide the **DB credentials** which are basically the key-value pairs for credentials and user secrets. 
 
 
-4. Click **Continue**.
+4. Click **Continue**. You will then see the basic information page for your new database.
+
+5. Enter the information and click on continue till you reach the end of the wizard.
+
+Your database backup will now start importing, and you will be notified upon successful completion.
 
 
 
