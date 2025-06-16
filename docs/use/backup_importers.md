@@ -13,7 +13,7 @@ Currently, Percona Everest does not offer a method to import these backups into 
 
 ## Goals
 
-This feature focuses on the following goals:
+This feature aims to achieve the following goals:
 
 - Allow you to import backup data stored in external locations like Amazon S3 into Everest-managed database clusters.
 
