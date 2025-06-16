@@ -36,7 +36,9 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 3. On the **Import info** page, choose the data importer from the dropdown. Depending on the importer selected, provide the following details:
 
-    1. Click **Fill details** to provide your Amazon S3 storage details. The **S3 details** page will open. Enter:
+    1. Click **Fill details** to provide your Amazon S3 storage details. The **S3 details** page will open. 
+    
+        Enter:
 
         - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
         - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
