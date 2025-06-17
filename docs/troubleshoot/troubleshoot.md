@@ -10,7 +10,7 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 
 The [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} is a useful resource.
 
-Sources for troubleshooting can differ based on the issue; however, the following areas can provide useful information.
+Depending on the specific issue, you can review different logs for additional information.
 {.power-number}
 
 1. Percona operator logs:
