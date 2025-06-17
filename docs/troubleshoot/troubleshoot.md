@@ -4,9 +4,19 @@
 This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
 
 
+## General troubleshooting  guidelines
+
+Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate.
+
+The [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} is a useful resource.
+
+
+
+
+
 ## Comprehensive installation overview
 
-We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/) to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
+We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/){:target="_blank"} to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
 The main components are:
 
@@ -44,7 +54,7 @@ When you install Percona Everest, the following components are installed:
 
 ### OLM subscription
 
-The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/). OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
+The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/){:target="_blank"}. OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
 
 
 In addition to OLM, Percona Everest consists of these operators:
