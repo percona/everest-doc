@@ -212,15 +212,15 @@ nav:
       - Transport Layer Security (TLS) support: security/tls_setup.md  
 
   - Back up and restore data: 
-    - About backups: use/AboutBackups.md
+    - About backups: backups_and_restore/AboutBackups.md
     - Backup storage: 
-      - Create backup storage: use/createBackups/backup_storage/CreateStorage.md
-      - Edit backup storage: use/createBackups/backup_storage/EditStorage.md
-    - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
-    - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
-    - Create database from backups: use/createBackups/create_new_database.md
-    - Import external database backups: use/backup_importers.md
-    - Restore backups: use/RestoreBackup.md
+      - Create backup storage: backups_and_restore/createBackups/backup_storage/CreateStorage.md
+      - Edit backup storage: backups_and_restore/createBackups/backup_storage/EditStorage.md
+    - Create on-demand and scheduled backups: backups_and_restore/createBackups/CreateOnDemand.md
+    - Enable Point-in-time recovery (PITR): backups_and_restore/createBackups/EnablePITR.md
+    - Create database from backups: backups_and_restore/createBackups/create_new_database.md
+    - Import external database backups: backups_and_restore/backup_importers.md
+    - Restore backups: backups_and_restore/RestoreBackup.md
 
   - Use:
       - Database view: use/database_view.md
