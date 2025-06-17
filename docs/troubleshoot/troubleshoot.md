@@ -52,12 +52,6 @@ Depending on the specific issue, you can review different logs for additional in
     kubectl get events --sort-by=".lastTimestamp"
     ```
 
-
-
-
-
-
-
 ## Comprehensive installation overview
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/){:target="_blank"} to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
@@ -77,6 +71,7 @@ When you install Percona Everest, the following components are installed:
 1. The `olm-operator`, `catalog-operator`, and  `packageserver` gets installed in the `everest-olm` namespace:
 
     Execute the following command, all three deployments should be present in the `everest-olm` namespace
+
 
     ```
     kubectl get deploy -n everest-olm
@@ -153,9 +148,72 @@ In this section, we group all the database (DB) operators together because they 
     percona-postgresql-operator       1/1     1            1           21m
     ```
 
-## Database deployment
+### Database deployment
 
 In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be `PXC`, `PSMDB`, or `PG`.
+
+
+### Backups and restores
+
+#### Backups
+
+Every backup in percona Everest begins with the creation of a `DatabaseClusterBackup (DBB)` `Custom Resource (CR)` that is deployed to a selected namespace. Depending on the chosen engine type, this `DBB` will be converted into the corresponding Custom Resource that can be interpreted by the database operator, such as `pxc-backup`, `psmdb-backup`, or `pg-backup`.
+
+```
+kubectl describe pxc-backup
+kubectl describe psmdb-backup
+kubectl describe pg-backup
+```
+
+#### Restores
+
+Every Restore operation in Everest begins with a `DatabaseClusterRestore (DBR)` Custom Resource (CR) that is deployed in the specified namespace. Based on the selected engine type, this `DBR` will be transformed into the corresponding Custom Resource that can be processed by the database operator, such as `pxc-restore`, `psmdb-restore`, or `pg-restore`.
+
+```sh
+kubectl describe pxc-restore restoreName
+kubectl describe psmdb-restore restoreName 
+kubectl describe pg-restore restoreName
+```
+
+
+## Installation issues
+
+For troubleshooting Percona Everest installation issues using the **everestctl** or the **Helm chart**, the following steps may be helpful:
+{.power-number}
+
+1. Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
+
+    Run the following command to check if the required privileges are granted:
+
+    ```sh
+    kubectl auth can-i
+    ```
+
+2. Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
+
+    To verify the values used during the chart installation, run the following command:
+
+    ```sh
+    helm list -n everest-system
+    NAME  NAMESPACE   REVISION  UPDATED                             	STATUS  	CHART        	APP VERSION
+    everest-core everest-system	1  2025-01-16 16:24:56.577713 +0530 
+    IST	deployed	everest-1.4.0	1.4.0
+    ```
+
+3. As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+
+    For instance, a job is created to approve the installation plan for operators. If there are no resources left in the cluster to run pods, the Helm installation will continue waiting for the specified ``--timeout`` or the default of 5 minutes before failing.
+
+
+
+
+
+
+
+
+
+
+
 
 Example:
 This gives a step by step approach to troubleshoot if something goes wrong with your database deployment:
