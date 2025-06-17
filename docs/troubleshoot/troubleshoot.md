@@ -10,6 +10,50 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 
 The [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} is a useful resource.
 
+Sources for troubleshooting can differ based on the issue; however, the following areas can provide useful information.
+{.power-number}
+
+1. Percona operator logs:
+
+    ```sh
+    kubectl logs -f deploy/everest-operator -n everest-system
+    ```
+
+2. Percona Everest server Logs:
+
+    ```sh
+    kubectl logs -f deploy/everest-server -n everest-system
+    ```
+
+3. Percona operator logs in namespaces. For example in everest namespace:
+
+    ```sh
+    kubectl logs -f deploy/percona-postgresql-operator -n everest
+    kubectl logs -f deploy/percona-server-mongodb-operator -n everest
+    kubectl logs -f deploy/percona-xtradb-cluster-operator -n everest
+    ```
+
+4. Victoria Metrics operator logs for monitoring issues:
+
+    ```sh
+    kubectl logs -f deploy/vm-operator -n everest-monitoring
+    kubectl logs -f deploy/vmagent-everest-monitoring -n everest-monitoring
+    ```
+
+5. Logs of database Pods/Proxy:
+
+    ```sh
+    kubectl logs -f <pod-name of database or proxy> -c <database-container>
+    ```
+
+6. Events (Events are stored only for 60 mins, if there are any events which are older than 60 mins, it will be lost).
+
+    ```sh
+    kubectl get events --sort-by=".lastTimestamp"
+    ```
+
+
+
 
 
 
