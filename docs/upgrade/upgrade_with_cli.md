@@ -30,7 +30,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     !!! note
         This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of Percona Everest and may interfere with the working of `everestctl` during an upgrade.
 
-    ??? example "Versions older than 1.4.0"
+    ??? example "Initially intsalled Percona Everest versions 1.4.0 and onwards"
         You will get the following output:
 
         ```sh
@@ -38,7 +38,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
         namespace/everest-system not labeled
         ```
 
-    ??? example "Versions prior to 1.4.0"
+    ??? example "Initially installed Percona Everest versions prior to 1.4.0"
         You will get the following output:
 
         ```sh
