@@ -32,16 +32,16 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
     For versions, older than 1.4.0, you will get the following output:
 
-        ```sh
-        label "app.kubernetes.io/managed-by" not found.
+ 
+    label "app.kubernetes.io/managed-by" not found.
     namespace/everest-system not labeled
-        ```
+
 
     However, for Percona Everest versions prior to 1.4.0, you will get the following output:
 
-        ```sh
-        namespace/everest-system unlabeled
-        ```
+
+    namespace/everest-system unlabeled
+
 
 === "Version 1.3.0 and onwards"
     ### Upgrade to Percona Everest 1.3.0+
