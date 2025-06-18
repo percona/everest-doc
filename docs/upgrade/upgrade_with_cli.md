@@ -23,26 +23,25 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
     Before you upgrade to Percona Everest 1.7.0, run the following command:
 
-    ```sh
-    kubectl label namespaces everest-system app.kubernetes.io/managed-by-
-    ```
-
-    !!! note
-        This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace.
-
-    For versions, older than 1.4.0, you will get the following output:
-
         ```sh
-        label "app.kubernetes.io/managed-by" not found.
-namespace/everest-system not labeled
+        kubectl label namespaces everest-system app.kubernetes.io/managed-by-
         ```
 
-        However, for Percona Everest versions prior to 1.4.0, you will get the following output:
+        !!! note
+            This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace.
 
-        ```sh
-        namespace/everest-system unlabeled
-        ```
+        For versions, older than 1.4.0, you will get the following output:
 
+            ```sh
+            label "app.kubernetes.io/managed-by" not found.
+    namespace/everest-system not labeled
+            ```
+
+            However, for Percona Everest versions prior to 1.4.0, you will get the following output:
+
+            ```sh
+            namespace/everest-system unlabeled
+            ```
 
 === "Version 1.3.0 and onwards"
     ### Upgrade to Percona Everest 1.3.0+
