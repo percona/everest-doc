@@ -30,7 +30,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     !!! note
         This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of Percona Everest and may interfere with the working of `everestctl` during an upgrade.
 
-        Depending on the version of Percona Everest originally installed, you may see different outputs:
+    Depending on the version of Percona Everest originally installed, you may see different outputs:
 
     ??? example "Percona Everest initially installed versions 1.4.0 and onwards"
         You will get the following output:
