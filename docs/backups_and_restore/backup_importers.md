@@ -24,6 +24,31 @@ This feature aims to achieve the following goals:
 
 ## Understanding DataImporters
 
+### DataImporters overview
+
+A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created everest-managed database cluster.
+
+It defines the following:
+
+- The container to be run for your data restore logic.
+- The database engines it supports.
+- The input configurations it requires (e.g., S3 path, credentials, and custom inputs).
+- Any constraints, such as engine version requirements, that your database cluster must meet.
+
+### Why use a DataImporter?
+
+Every organization utilizes different backup tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. As a result,, Percona Everest **does not enforce** a one-size-fits-all restore mechanism. Instead, with DataImporters, you can write **custom restore logic** specific to the backup tools or formats you prefer, and percona Everest  just executes them for you.
+
+The benefits of using DataImporters are:
+
+- Reusable: You can define it once and use it across various environments.
+
+- Flexible: ou can use any scripting or programming language, as well as any restore tool, to perform imports.
+
+- Extensible: It supports custom backup formats or workflows.
+
+- Decoupled: Percona Everest manages the manages the infrastructure while you focus on the data logic.
+
 
 ## How to import external database backups using the Percona Everest UI
 
