@@ -1,4 +1,4 @@
-# Comprehensive installation overview
+# Percona Everest installation and workflow
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/){:target="_blank"} to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
