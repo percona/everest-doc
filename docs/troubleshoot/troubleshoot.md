@@ -1,5 +1,4 @@
-# Troubleshooting common issues
-
+# Troubleshooting issues
 
 This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
 
@@ -176,7 +175,9 @@ kubectl describe pg-restore restoreName
 ```
 
 
-## Installation issues
+## Resolving common issues in Percona Everest
+
+### Installation issues
 
 For troubleshooting Percona Everest installation issues using the **everestctl** or the **Helm chart**, the following steps may be helpful:
 {.power-number}
@@ -204,7 +205,7 @@ For troubleshooting Percona Everest installation issues using the **everestctl**
 
     For instance, a job is created to approve the installation plan for operators. If there are no resources left in the cluster to run pods, the Helm installation will continue waiting for the specified ``--timeout`` or the default of 5 minutes before failing.
 
-## API/Authentication/frontend issues
+### API/Authentication/frontend issues
 
 To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
 {.power-number}
@@ -235,6 +236,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     ```sh
     kubectl logs -f deploy/everest-operator -n everest-system
     ```
+
 5. If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. Once you have set up the port-forward, access the webpage using `localhost:8080`.
 
 
@@ -242,75 +244,67 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     kubectl port-forward svc/everest 8080:8080
     ```
 
+### Database operation issues
 
-
-
-
-
-
-
-
-
-
-
-
-
-Example:
-This gives a step by step approach to troubleshoot if something goes wrong with your database deployment:
+Here are the common issues related to the database operations:
 {.power-number}
 
-1. Run the following command:
+1. If the `DatabaseCluster` object is not created or has issues, check the `everest-operator` logs:
 
-    ```
-    kubectl get db -n everest
-    NAME        SIZE   READY   STATUS   HOSTNAME                    AGE
-    mysql-7tl   2      2       ready    mysql-7tl-haproxy.everest   6m8s
-
-    kubectl get pxc -n everest
-    NAME        ENDPOINT                    STATUS   PXC   PROXYSQL   HAPROXY   AGE
-    mysql-7tl   mysql-7tl-haproxy.everest   ready    1                1         6m10s
+    ```sh
+    kubectl logs -f deploy/everest-operator -n everest-system
     ```
 
-2. If an issue arises, first investigate these two objects by executing the following commands:
+2. Check the DatabaseCluster object, check status and events. Status should be Ready, if there are any other status than Ready it should be checked. Describing DatabaseClusterObject gives many details about the DB configuration etc
 
+
+    ```sh
+    kubectl get DatabaseCluster <DatabaseCluster-Name>
+
+   kubectl describe DatabaseCluster <DatabaseCluster-Name>
+
+   kubectl get DatabaseCluster <DatabaseCluster-Name> -oyaml
     ```
-    kubectl describe db/mysql-7tl -n everest
-    kubectl describe pxc/mysql-7tl -n everest
+
+
+3. Check the relevant database object like pxc, psmdb, pg and also the operator logs. For example to check pxc object and then check the operator logs:
+
+
+    ```sh
+   kubectl get pxc <database-name>
+
+   kubectl describe pxc <database-name>
+
+   kubectl get pxc <database-name> -oyaml 
+
+   kubectl logs -f deploy/percona-xtradb-cluster-operator
+
+   Change to pxc,psmdb,pg for respective database
     ```
 
-3. If relevant information is not found here, then check the Everest Operator logs as well as the PXC Operator logs:
+4. Check the database pod logs:
 
-    ```
-    kubectl logs pods/everest-operator-controller-manager-5b868c4fcc-rt6rp -n everest-system
-    kubectl logs pods/percona-xtradb-cluster-operator-77c5ffddf6-fv8vg -n everest
-    ```
-            
-    !!! note
-
-        The names of the pods in your deployment may vary. If nothing relevant appears, check the logs for details.
+    ```sh
+  kubectl logs -f <database-pod-name> -c <database-container-name>
+  (container name could be database,pxc,mongo)
+  ```
 
 
-## Backups and restores
 
-### Backups
 
-Every backup in percona Everest begins with the creation of a `DatabaseClusterBackup (DBB)` `Custom Resource (CR)` that is deployed to a selected namespace. Depending on the chosen engine type, this `DBB` will be converted into the corresponding Custom Resource that can be interpreted by the database operator, such as `pxc-backup`, `psmdb-backup`, or `pg-backup`.
 
-```
-kubectl describe pxc-backup
-kubectl describe psmdb-backup
-kubectl describe pg-backup
-```
 
-### Restores
 
-Every Restore operation in Everest begins with a `DatabaseClusterRestore (DBR)` Custom Resource (CR) that is deployed in the specified namespace. Based on the selected engine type, this `DBR` will be transformed into the corresponding Custom Resource that can be processed by the database operator, such as `pxc-restore`, `psmdb-restore`, or `pg-restore`.
 
-```sh
-kubectl describe pxc-restore restoreName
-kubectl describe psmdb-restore restoreName 
-kubectl describe pg-restore restoreName
-```
+
+
+
+
+
+
+
+
+
 
 
 
