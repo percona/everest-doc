@@ -272,15 +272,13 @@ Here are the common issues related to the database operations:
    kubectl describe pxc <database-name>
    kubectl get pxc <database-name> -oyaml 
    kubectl logs -f deploy/percona-xtradb-cluster-operator
-
    # Change to pxc,psmdb,pg for respective database
     ```
 
 4. Check the database pod logs:
 
     ```sh
-  kubectl logs -f <database-pod-name> -c <database-container-name>
-  
+  kubectl logs -f <database-pod-name> -c <database-container-name>  
   (container name could be database,pxc,mongo)
   ```
 
