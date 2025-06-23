@@ -1,4 +1,4 @@
-# Percona Everest installation and workflow
+# Percona Everest installation workflow
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/){:target="_blank"} to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
@@ -29,7 +29,7 @@ When you install Percona Everest, the following components are installed:
     
 2. The `everest-catalog` is installed, which serves as the repository for all the operators that Percona Everest supports. 
 
-    Execute the following command, `everest-catalog` should be present in the `everest-olm` namespace:
+    When you execute the following command, `everest-catalog` should be present in the `everest-olm` namespace:
 
     ```sh
     kubectl get catalogsources -n everest-olm
@@ -39,7 +39,7 @@ When you install Percona Everest, the following components are installed:
 
 ## OLM subscription
 
-The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/){:target="_blank"}. OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a Cluster Service Version (CSV), which installs everything necessary for the operator to function properly.
+The process of installing an operator with OLM (Operator Lifecycle Manager) begins with creating a [subscription](https://olm.operatorframework.io/docs/concepts/crds/subscription/){:target="_blank"}. OLM will reconcile this subscription and generate an installation plan. Once the installation plan is approved, OLM will create a `Cluster Service Version (CSV)`, which installs everything necessary for the operator to function properly.
 
 
 In addition to OLM, Percona Everest consists of these operators:
@@ -96,7 +96,7 @@ In this section, we group all the database (DB) operators together because they 
 
 ## Database deployment
 
-In Everest, every database begins with a DatabaseCluster (DBC) Custom Resource (CR) that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be `PXC`, `PSMDB`, or `PG`.
+In Percona Everest, every database begins with a `DatabaseCluster (DBC)` `Custom Resource (CR)` that is deployed to the chosen namespace. Depending on the selected engine type, this DBC will be converted into a corresponding Custom Resource that can be understood by the database operator, whether it be `PXC`, `PSMDB`, or `PG`.
 
 
 ## Backups and restores
