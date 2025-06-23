@@ -196,7 +196,7 @@ nav:
       - API rate limiting: use/API_rate_limit.md
       
   - Troubleshooting guide:
-      - Installation and component workflow: troubleshoot/installation_overview.md
+      - Installation and components workflow: troubleshoot/installation_overview.md
       - Resolve issues: troubleshoot/troubleshoot.md
       - FAQ: troubleshoot/faq.md
 
