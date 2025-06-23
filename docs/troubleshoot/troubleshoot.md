@@ -72,7 +72,7 @@ When you install Percona Everest, the following components are installed:
     Execute the following command, all three deployments should be present in the `everest-olm` namespace
 
 
-    ```
+    ```sh
     kubectl get deploy -n everest-olm
     NAME               READY   UP-TO-DATE   AVAILABLE   AGE
     olm-operator       1/1     1            1           5m38s
@@ -214,9 +214,8 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
     ```sh
     kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
-    NAME                             READY  STATUS  RESTARTS   AGE
-    everest-server-78699679d4-kgqk5  1/1    Running   0             
-    4d23h
+    NAME                            READY STATUS  RESTARTS AGE
+    everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
 
 2. Check the `everest-server` logs. 
@@ -266,21 +265,20 @@ Here are the common issues related to the database operations:
 
 3. Check the relevant database objects such as PXC, PSMDB, and PG, as well as the operator logs. For instance, check the PXC object followed by the operator logs.
 
-
     ```sh
-   kubectl get pxc <database-name>
-   kubectl describe pxc <database-name>
-   kubectl get pxc <database-name> -oyaml 
-   kubectl logs -f deploy/percona-xtradb-cluster-operator
-   # Change to pxc,psmdb,pg for respective database
+    kubectl get pxc <database-name>
+    kubectl describe pxc <database-name>
+    kubectl get pxc <database-name> -oyaml 
+    kubectl logs -f deploy/percona-xtradb-cluster-operator
+    # Change to pxc,psmdb,pg for respective database
     ```
 
 4. Check the database pod logs:
 
     ```sh
-  kubectl logs -f <database-pod-name> -c <database-container-name>  
-  (container name could be database,pxc,mongo)
-  ```
+    kubectl logs -f <database-pod-name> -c <database-container-name>  
+    (container name could be database,pxc,mongo)
+    ```
 
 
 
