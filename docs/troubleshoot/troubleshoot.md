@@ -206,8 +206,44 @@ For troubleshooting Percona Everest installation issues using the **everestctl**
 
 ## API/Authentication/frontend issues
 
+To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
+{.power-number}
 
-Everest API, Authentication and Frontend issues can be investigated by checking everest-server deployment.
+1. If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
+
+    ```sh
+    kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
+    NAME                             READY  STATUS  RESTARTS   AGE
+    everest-server-78699679d4-kgqk5  1/1    Running   0             
+    4d23h
+    ```
+
+2. Check the `everest-server` logs. 
+
+    ```sh
+    kubectl logs -f deploy/everest-server -n everest-system
+    ```
+
+3. To resolve authentication and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is implemented, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
+
+    ```sh
+    kubectl get configmap everest-rbac -n everest-system
+    ```
+
+4. Check the `everest-operator` logs for any reconciliation errors.
+
+    ```sh
+    kubectl logs -f deploy/everest-operator -n everest-system
+    ```
+5. If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. Once you have set up the port-forward, access the webpage using `localhost:8080`.
+
+
+    ```sh
+    kubectl port-forward svc/everest 8080:8080
+    ```
+
+
+
 
 
 
