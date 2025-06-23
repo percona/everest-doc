@@ -257,14 +257,10 @@ Here are the common issues related to the database operations:
 
 2. Check the `DatabaseCluster` object, verify its status and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
 
-
-
     ```sh
     kubectl get DatabaseCluster <DatabaseCluster-Name>
-
-   kubectl describe DatabaseCluster <DatabaseCluster-Name>
-
-   kubectl get DatabaseCluster <DatabaseCluster-Name> -oyaml
+    kubectl describe DatabaseCluster <DatabaseCluster-Name>
+    kubectl get DatabaseCluster <DatabaseCluster-Name> -oyaml
     ```
 
 
@@ -273,20 +269,18 @@ Here are the common issues related to the database operations:
 
     ```sh
    kubectl get pxc <database-name>
-
    kubectl describe pxc <database-name>
-
    kubectl get pxc <database-name> -oyaml 
-
    kubectl logs -f deploy/percona-xtradb-cluster-operator
 
-   Change to pxc,psmdb,pg for respective database
+   # Change to pxc,psmdb,pg for respective database
     ```
 
 4. Check the database pod logs:
 
     ```sh
   kubectl logs -f <database-pod-name> -c <database-container-name>
+  
   (container name could be database,pxc,mongo)
   ```
 
