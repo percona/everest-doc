@@ -249,13 +249,14 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 Here are the common issues related to the database operations:
 {.power-number}
 
-1. If the `DatabaseCluster` object is not created or has issues, check the `everest-operator` logs:
+1. Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or if there are any issues with it. 
 
     ```sh
     kubectl logs -f deploy/everest-operator -n everest-system
     ```
 
-2. Check the DatabaseCluster object, check status and events. Status should be Ready, if there are any other status than Ready it should be checked. Describing DatabaseClusterObject gives many details about the DB configuration etc
+2. Check the `DatabaseCluster` object, verify its status and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
+
 
 
     ```sh
@@ -267,7 +268,7 @@ Here are the common issues related to the database operations:
     ```
 
 
-3. Check the relevant database object like pxc, psmdb, pg and also the operator logs. For example to check pxc object and then check the operator logs:
+3. Check the relevant database objects such as PXC, PSMDB, and PG, as well as the operator logs. For instance, check the PXC object followed by the operator logs.
 
 
     ```sh
