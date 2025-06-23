@@ -196,6 +196,7 @@ nav:
       - API rate limiting: use/API_rate_limit.md
       
   - Resolve issues:
+      - Comprehensive installation overview: troubleshoot/installation_overview.md
       - Troubleshooting: troubleshoot/troubleshoot.md
       - FAQ: troubleshoot/faq.md
 
