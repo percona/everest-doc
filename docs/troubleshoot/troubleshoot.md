@@ -3,7 +3,7 @@
 This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
 
 
-## General troubleshooting  guidelines
+## General troubleshooting guidelines
 
 Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate.
 
@@ -51,7 +51,7 @@ Depending on the specific issue, you can review different logs for additional in
     kubectl get events --sort-by=".lastTimestamp"
     ```
 
-## Resolving common issues in Percona Everest
+## Troubleshooting key areas
 
 ### Installation issues
 
@@ -81,7 +81,7 @@ For troubleshooting Percona Everest installation issues using the **everestctl**
 
     For instance, a job is created to approve the installation plan for operators. If there are no resources left in the cluster to run pods, the Helm installation will continue waiting for the specified ``--timeout`` or the default of 5 minutes before failing.
 
-### API/Authentication/frontend issues
+### API,Authentication, and frontend issues
 
 To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
 {.power-number}
