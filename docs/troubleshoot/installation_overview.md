@@ -1,4 +1,8 @@
-# Percona Everest installation workflow
+# Percona Everest installation and workflow
+
+This section provides an overview of how Percona Everest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
+
+# Operator Lifecycle Manager (OLM)
 
 We leverage the [Operator Lifecycle Manager (OLM)](https://olm.operatorframework.io/){:target="_blank"} to manage the operators. OLM is deployed explicitly to the `everest-olm` namespace. 
 
