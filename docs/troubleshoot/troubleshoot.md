@@ -214,7 +214,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
     ```sh
     kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
-    
+
     NAME                            READY STATUS  RESTARTS AGE
     everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
@@ -271,6 +271,7 @@ Here are the common issues related to the database operations:
     kubectl describe pxc <database-name>
     kubectl get pxc <database-name> -oyaml 
     kubectl logs -f deploy/percona-xtradb-cluster-operator
+    
     # Change to pxc,psmdb,pg for respective database
     ```
 
@@ -278,6 +279,7 @@ Here are the common issues related to the database operations:
 
     ```sh
     kubectl logs -f <database-pod-name> -c <database-container-name>  
+    
     (container name could be database,pxc,mongo)
     ```
 
