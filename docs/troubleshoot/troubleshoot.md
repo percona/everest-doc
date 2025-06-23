@@ -214,6 +214,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
     ```sh
     kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
+    
     NAME                            READY STATUS  RESTARTS AGE
     everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
