@@ -196,7 +196,7 @@ nav:
       - API rate limiting: use/API_rate_limit.md
       
   - Troubleshooting guide:
-      - Installation and components workflow: troubleshoot/installation_overview.md
+      - Percona Everest installation and components workflow: troubleshoot/installation_overview.md
       - Diagnostics for common issues: troubleshoot/troubleshoot.md
       - FAQ: troubleshoot/faq.md
 
