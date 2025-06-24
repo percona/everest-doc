@@ -197,7 +197,7 @@ nav:
       
   - Troubleshooting guide:
       - Installation and components workflow: troubleshoot/installation_overview.md
-      - Resolve issues: troubleshoot/troubleshoot.md
+      - Diagnostics for common issues: troubleshoot/troubleshoot.md
       - FAQ: troubleshoot/faq.md
 
   - API: API.md
