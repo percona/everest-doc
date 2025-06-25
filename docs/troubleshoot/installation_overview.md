@@ -98,8 +98,10 @@ Here’s the workflow for the database engine in Percona Everest:
 {.power-number}
 
 1. The user installs the everest db namespace chart either as part of initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
-2. [Subscriptions](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace/templates) are created for the operators chosen while installing the helm chart.
+2. [Subscriptions](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace/templates){:target="_blank"} are created for the operators chosen while installing the helm chart.
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
 4. The helm chart creates a kubernetes job called e`verest-operators-installer` that waits for the InstallPlan to be created and approves it.
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that make up the database operator.
-6. The Percona Everest operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service) (check.percona.com) to get the engine versions supported by that operator. For example, [mongod versions supported by PSMDBO v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73)
+6. The Percona Everest operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"}.
+ 
+Check [Percona.com](https://docs.percona.com/){:target="_blank"} to get the engine versions supported by that operator. For example, [mongod versions supported by PSMDBO v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73){:target="_blank"}.
