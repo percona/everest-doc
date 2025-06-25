@@ -4,35 +4,69 @@ This section provides an overview of how Percona Everest is installed, the compo
 
 ## Percona Everest installation workflow
 
-As of v1.4.0, the [CLI installation](https://docs.percona.com/everest/install/installEverest.html) is a wrapper around a couple of helm charts ([everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest) and [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace)) and the installation flow goes as follows:
+Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts ([everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} and [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace)){:target="_blank"}. The installation flow is as follows:
 {.power-number}
 
-1. The everest-core helm chart is installed:
-    1. Deploys OLM components (olm-operator, catalog-operator, package-server) and the everest-catalog to the everest-olm namespace
-    2. Deploys monitoring stack (vm-operator, kube-state-metrics) to the everest-monitoring
-    3. Deploys everest component (everest-server, everest-operator) to the everest-system namespace
-2. The everest-db-namespace chart is installed in the everest namespace (configurable)
-    1. Creates OLM subscriptions for each of the selected DB operators (all by default)
-    2. OLM reconciles the subscriptions and creates an install plan
-    3. A helm hook creates the everest-operators-installer job that waits for the OLM install plan to be created and approves it
-    4. OLM reconciles the approved install plan and creates a cluster-service-version for each DB operator. The CSV includes all manifests needed to install the operator. These manifests are automatically applied by OLM and the operator is installed.
+1. The `everest-core` helm chart is installed:
 
-DB operator namespaces and the operators that get installed there can be configured:
+    This step deploys the core components required for Percona Everest:
 
-- By default, the everest namespace is used and all DB operators (PXC, PSMDB and PG) are installed
-- This step can be skipped completely by setting the --skip-db-namespace
-- The namespace can be configured using the --namespaces flag
-- Multiple DB namespaces can be provisioned at the same time if a comma-separated list is provided in the --namespaces flag. E.g. everestctl install --namespaces n1,n2
+    1. Deploys OLM components into the `everest-olm` namespace:
+    
+        - olm-operator
+        - catalog-operator
+        - package-server
+        - everest-catalog
+
+    2. Deploys monitoring stack to the `everest-monitoring` namespace:
+
+        - vm-operator
+        - kube-state-metrics
+
+    3. Deploys everest component to the `everest-system` namespace:
+
+        - everest-server
+        - everest-operator
+
+2. The `everest-db-namespace` chart is installed in the everest namespace. This chart handles the deployment of database operators using the following workflow:
+
+    1. Creates OLM subscriptions for each of the selected database operators (by default, all supported operators are selected).
+    2. OLM reconciles the subscriptions and creates an install plan for each operator.
+    3. A Helm hook creates the `everest-operators-installer` job that waits for the OLM install plan to be created and approves it once created.
+    4. OLM reconciles the approved install plan and creates a `cluster-service-version` for each database operator. The CSV includes all the manifests needed to install the operator. These manifests are automatically applied by OLM and the operator is installed.
+
+
+### Configurable options 
+
+The database operator namespaces and the operators that get installed can be configured:
+
+- By default, the everest namespace is used and all the database operators (PXC, PSMDB and PG) are installed.
+- You can skip database namespace creation step by using the `--skip-db-namespace` flag.
+- To specify one or more custom namespaces, use the `--namespaces` flag
+Multiple DB namespaces can be provisioned at the same time if a comma-separated list is provided in the --namespaces flag. 
+     
+     ```sh
+    everestctl install --namespaces n1,n2
+    ```
+
 - To skip the installation of some operators, the following flags can be used:
-    - -operator.mongodb=false
-    - -operator.postgresql=false
-    - -operator.xtradb-cluster=false
-- [DB namespaces can be managed](https://docs.percona.com/everest/administer/manage_namespaces.html) after the initial installation with the following commands:
-    - everestctl namespaces add <NAMESPACE>
-    - everestctl namespaces update <NAMESPACE>
-    - everestctl namespaces remove <NAMESPACE>
 
-The [helm installation method](https://docs.percona.com/everest/install/install_everest_helm_charts.html) provides an identical flow to the one described above with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest) for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration).
+    * --operator.mongodb=false
+    * --operator.postgresql=false
+    * --operator.xtradb-cluster=false
+
+### Manage namespaces
+
+You can manage database namespaces after the initial installation using the following commands:
+
+    ```sh
+    everestctl namespaces add <NAMESPACE>
+    everestctl namespaces update <NAMESPACE>
+    everestctl namespaces remove <NAMESPACE>
+    ```
+    For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
+
+The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
 
 
