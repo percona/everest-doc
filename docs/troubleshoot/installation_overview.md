@@ -76,7 +76,6 @@ Here's the database creation workflow in Percona Everest:
 {.power-number}
 
 1. Percona Everest user is authenticated and logged in and a JWT Token is provided.
-
 2. User creates a Database either in frontend UI or everestctl or APl.
 3. Everest API is invoked to create CRD.everest-server creates a custom resource DatabaseCluster.
 4. In the everest-operator reconciliation loop, once the DatabaseCluster object is recognized, an appropriate custom resource for the Database is created, for example if it’s PXC , PerconaXtraDBCluster is created.
@@ -88,7 +87,17 @@ Here's the database creation workflow in Percona Everest:
 
     All the custom resources connected to everest follow a similar flow except the DatabaseEngine .
 
+### Database engine workflow
 
+Here's the database engine workflow in Percona Everest:
+{.power-number}
+
+1. User installs everest db namespace chart either as part of initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
+2. [Subscriptions](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace/templates) are created for the operators chosen while installing the helm chart.
+3. OLM reconciles the Subscriptions and creates an InstallPlan.
+4. The helm chart creates a kubernetes Job called “everest-operators-installer” that waits for the InstallPlan to be created and approves it.
+5. OLM will detect that the InstallPlan has been approved and creates a ClusterServiceVersion and deploys all components that make up the database operator
+6. Everest operator detects the Deployment resource of the database operator and reconciles the DatabaseEngine CR of the corresponding type. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service) (check.percona.com) to get the engine versions supported by that operator. E.g. [mongod versions supported by PSMDBO v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73)
 
 
 
