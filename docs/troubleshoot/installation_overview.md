@@ -45,26 +45,27 @@ The database operator namespaces and the operators that get installed can be con
 - To specify one or more custom namespaces, use the `--namespaces` flag
 Multiple DB namespaces can be provisioned at the same time if a comma-separated list is provided in the --namespaces flag. 
      
-     ```sh
+    ```sh
     everestctl install --namespaces n1,n2
     ```
 
 - To skip the installation of some operators, the following flags can be used:
 
-    * --operator.mongodb=false
-    * --operator.postgresql=false
-    * --operator.xtradb-cluster=false
+    * `--operator.mongodb=false`
+    * `--operator.postgresql=false`
+    * `--operator.xtradb-cluster=false`
 
 ### Manage namespaces
 
 You can manage database namespaces after the initial installation using the following commands:
 
-    ```sh
-    everestctl namespaces add <NAMESPACE>
-    everestctl namespaces update <NAMESPACE>
-    everestctl namespaces remove <NAMESPACE>
-    ```
-    For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
+```sh
+everestctl namespaces add <NAMESPACE>
+everestctl namespaces update <NAMESPACE>
+everestctl namespaces remove <NAMESPACE>
+```
+
+For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
 
 The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
@@ -82,10 +83,10 @@ Here's the database creation workflow in Percona Everest:
 5. Database Operator takes over the task of creating the database and the necessary objects to manage it.
 
 
-!!! note
-    Other actions like creating backup, restore ,monitoring or deleting the objects follows a similar flow except the objects involved are different.
+    !!! note
+        Other actions like creating backup, restore ,monitoring or deleting the objects follows a similar flow except the objects involved are different.
 
-    All the custom resources connected to everest follow a similar flow except the DatabaseEngine .
+        All the custom resources connected to everest follow a similar flow except the DatabaseEngine .
 
 ### Database engine workflow
 
