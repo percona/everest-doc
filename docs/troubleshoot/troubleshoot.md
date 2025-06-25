@@ -9,6 +9,8 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 
 The [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} is a useful resource.
 
+### Important logs and commands
+
 Depending on the specific issue, you can review different logs for additional information.
 {.power-number}
 
@@ -55,7 +57,7 @@ Depending on the specific issue, you can review different logs for additional in
 
 ### Installation issues
 
-For troubleshooting Percona Everest installation issues using the **everestctl** or the **Helm chart**, the following steps may be helpful:
+For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
 {.power-number}
 
 1. Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
@@ -156,7 +158,7 @@ Here are the common issues related to the database operations:
     ```sh
     kubectl logs -f <database-pod-name> -c <database-container-name>  
     
-    (container name could be database,pxc,mongo)
+    # (container name could be database,pxc,mongo)
     ```
 
 
