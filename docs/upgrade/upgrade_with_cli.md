@@ -29,18 +29,6 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     !!! note
         This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of Percona Everest and may interfere with the working of `everestctl` during an upgrade.
 
-    To upgrade Percona Everest, run the following command:
-
-    ```sh
-    everestctl upgrade
-    ```
-
-    You can always check the available options by running:
-
-    ```sh
-    everestctl upgrade --help
-    ```
-
     Depending on the version of Percona Everest originally installed, you may see different outputs:
 
     ??? example "Percona Everest initially installed versions 1.4.0 and onwards"
@@ -57,6 +45,18 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
         ```sh
         namespace/everest-system unlabeled
         ```
+
+    To upgrade Percona Everest, run the following command:
+
+    ```sh
+    everestctl upgrade
+    ```
+
+    You can always check the available options by running:
+
+    ```sh
+    everestctl upgrade --help
+    ```
 
 === "Version 1.3.0 and onwards"
     ### Upgrade to Percona Everest 1.3.0+
@@ -121,10 +121,6 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
 
     In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
-
-    #### How to address a failed upgrade
-
-    If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
 
     ??? info "Resolving upgrade failures due to the breaking API changes"
         Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
@@ -251,6 +247,12 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
             2024-05-03T12:07:26Z    info    upgrade/upgrade.go:406  Waiting for install plan installation of Everest operator to finish     {"component": "upgrade"}
             2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
             ```
+
+
+## How to address a failed upgrade
+
+If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
+
 
 ## After your upgrade is complete
 
