@@ -248,7 +248,6 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
             2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
             ```
 
-
 ## How to address a failed upgrade
 
 If the upgrade fails, you can attempt it again. If the issue persists, [create a GitHub issue](https://docs.github.com/en/issues/tracking-your-work-with-issues/creating-an-issue#creating-an-issue-from-a-repository).
