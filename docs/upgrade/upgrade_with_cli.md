@@ -29,6 +29,18 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     !!! note
         This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of Percona Everest and may interfere with the working of `everestctl` during an upgrade.
 
+    To upgrade Percona Everest, run the following command:
+
+    ```sh
+    everestctl upgrade
+    ```
+
+    You can always check the available options by running:
+
+    ```sh
+    everestctl upgrade --help
+    ```
+
     Depending on the version of Percona Everest originally installed, you may see different outputs:
 
     ??? example "Percona Everest initially installed versions 1.4.0 and onwards"
@@ -97,6 +109,12 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
 === "Version 1.2.0"
     ### Upgrade to Percona Everest 1.2.0
+
+    To upgrade Percona Everest, run the following command:
+
+    ```sh
+    everestctl upgrade
+    ```
 
     When upgrading to 1.2.0 using the CLI command `everestctl upgrade`, all your existing backup storages and monitoring instances will be automatically migrated to the namespaces specified in their `.spec.allowedNamespaces` fields.
 
@@ -231,18 +249,6 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
             2024-05-03T12:07:26Z    info    upgrade/upgrade.go:406  Waiting for install plan installation of Everest operator to finish     {"component": "upgrade"}
             2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
             ```
-
-To upgrade Percona Everest, run the following command:
-
-```sh
-everestctl upgrade
-```
-
-You can always check the available options by running:
-
-```sh
-everestctl upgrade --help
-```
 
 ## After your upgrade is complete
 
