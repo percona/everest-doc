@@ -197,52 +197,52 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
                 kubectl get monitoringconfigs -n everest-monitoring > new-monitoringconfigs.yaml   
 
-    === "Versions prior to 1.2.0"
-        ### Upgrade to versions older than 1.2.0
+=== "Versions prior to 1.2.0"
+    ### Upgrade to versions older than 1.2.0
 
-        !!! note
-            It is recommended that you create backups of your databases prior to upgrading Percona Everest.
+    !!! note
+        It is recommended that you create backups of your databases prior to upgrading Percona Everest.
 
-        During the upgrade of Percona Everest, only Percona Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
-        {.power-number}
+    During the upgrade of Percona Everest, only Percona Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
+    {.power-number}
 
-        1. If you are using `everestctl` v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
+    1. If you are using `everestctl` v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
 
-                kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | tr ',' '\n' | xargs -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
+    kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | tr ',' '\n' | xargs -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
 
-        2. To upgrade Percona Everest, use the following command:
+    2. To upgrade Percona Everest, use the following command:
 
-            ```sh
-            everestctl upgrade
+        ```sh
+        everestctl upgrade
+        ```
+
+        ??? example "Expected output"
             ```
-
-            ??? example "Expected output"
-                ```
-                everestctl upgrade
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:156  Current Everest version is 0.9.1        {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:164  Found available upgrade to Everest version 0.10.0   {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:167  Checking requirements for upgrade to Everest 0.10.0 {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:310  Checking cli version requirements       {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:339  Checking operator requirements in namespace n1  {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:121  Upgrading Percona Catalog to 0.10.0 {"component": "upgrade"}
-                2024-05-03T12:06:47Z    info    upgrade/upgrade.go:130  Waiting for install plan for Everest operator   {"component": "upgrade"}
-                2024-05-03T12:07:14Z    info    upgrade/upgrade.go:139  Upgrading Everest to 0.10.0 in namespace everest-system     {"component": "upgrade"}
-                2024-05-03T12:07:26Z    info    upgrade/upgrade.go:400  Approving install plan install-nv76r for Everest operator       {"component": "upgrade"}
-                2024-05-03T12:07:26Z    info    upgrade/upgrade.go:406  Waiting for install plan installation of Everest operator to finish     {"component": "upgrade"}
-                2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
-                ```
+            everestctl upgrade
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:156  Current Everest version is 0.9.1        {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:164  Found available upgrade to Everest version 0.10.0   {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:167  Checking requirements for upgrade to Everest 0.10.0 {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:310  Checking cli version requirements       {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:339  Checking operator requirements in namespace n1  {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:121  Upgrading Percona Catalog to 0.10.0 {"component": "upgrade"}
+            2024-05-03T12:06:47Z    info    upgrade/upgrade.go:130  Waiting for install plan for Everest operator   {"component": "upgrade"}
+            2024-05-03T12:07:14Z    info    upgrade/upgrade.go:139  Upgrading Everest to 0.10.0 in namespace everest-system     {"component": "upgrade"}
+            2024-05-03T12:07:26Z    info    upgrade/upgrade.go:400  Approving install plan install-nv76r for Everest operator       {"component": "upgrade"}
+            2024-05-03T12:07:26Z    info    upgrade/upgrade.go:406  Waiting for install plan installation of Everest operator to finish     {"component": "upgrade"}
+            2024-05-03T12:07:28Z    info    upgrade/upgrade.go:148  Everest has been upgraded to version 0.10.0 {"component": "upgrade"}
+            ```
 
 To upgrade Percona Everest, run the following command:
 
-    ```sh
-    everestctl upgrade
-    ```
+```sh
+everestctl upgrade
+```
 
 You can always check the available options by running:
 
-    ```sh
-    everestctl upgrade --help
-    ```
+```sh
+everestctl upgrade --help
+```
 
 ## After your upgrade is complete
 
