@@ -82,14 +82,77 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, enter the file path within your S3 bucket where the database backup files are stored. Click **Save**.
 
+        ![!image](../images/importers_mongo_file_path.png)
 
 
-    ??? example "Example"
+        ??? example "Example"
+            Here are the steps to obtain the file path from the AWS CLI
+            
+            1. Run the following commands to get the file path:
+            
+                ```sh
+                aws s3 ls <S3 bucket-name>
+                ```
+
+                Output
+
+                ```sh
+                PRE mongodb-zh5/
+                PRE postgresql-6az/
+                ```
+
+                ```sh
+                aws s3 ls <S3 bucket-name>/mongodb-zh5/
+                ```
+                
+                Output
+
+                ```sh
+                02d0a297-16ca-4b9f-8073-2f16607de3c9/
+                ```
+
+                ```sh
+                aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
+                ```
+
+                Output
+
+                ```sh
+                PRE rs0/
+                ```
+
+                The file path for MongoDB will be:
+
+                /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
 
 
+    3. Provide the **DB credentials**, the key-value pairs for credentials, and user secrets.
 
-    3. Provide the **DB credentials**, the key-value pairs for credentials, and user secrets. 
+        ![!image](../images/importers_mongodb_db_credentials.png)
 
+        ??? example "Example"
+            You can obtain the **DB credentials** as follows using the AWS CLI in a decoded format by running the following command:
+
+            ```sh
+            kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
+            ```
+
+            Output
+
+            ```sh
+            {
+                "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
+                "MONGODB_BACKUP_USER": "backup",
+                "MONGODB_CLUSTER_ADMIN_PASSWORD": "hE1M5Eaut93uWJGCykd",
+                "MONGODB_CLUSTER_ADMIN_USER": "clusterAdmin",
+                "MONGODB_CLUSTER_MONITOR_PASSWORD": "4ICXY35dqCfjZYR2p7",
+                "MONGODB_CLUSTER_MONITOR_USER": "clusterMonitor",
+                "MONGODB_DATABASE_ADMIN_PASSWORD": "5aQbEZEDjhoAWoSbc03",
+                "MONGODB_DATABASE_ADMIN_USER": "databaseAdmin",
+                "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
+                "MONGODB_USER_ADMIN_USER": "userAdmin"
+                }
+            ```
 
 4. Click **Continue**. You will then see the basic information page for your new database.
 
