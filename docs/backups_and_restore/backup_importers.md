@@ -61,7 +61,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 3. Fill in the required details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
-3. On the **Import info** page, choose the data importer from the dropdown. Depending on the importer selected, you will need to provide the details as given in the tabs below:
+3. On the **Import info** page, choose the data importer from the dropdown. Depending on the technology selected, you will need to provide the details as given in the tabs below:
 
 === "MongoDB"
     On the **Import info** page, choose the data importer from the dropdown and provide the following details:
