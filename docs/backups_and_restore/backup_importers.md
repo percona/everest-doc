@@ -140,7 +140,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE rs0/
                 ```
 
-                Thus, the full file path for MongoDB will be:
+                Thus, the full file path for MongoDB should look like this:
 
                 ```
                 /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
@@ -202,7 +202,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ![!image](../images/importers_mongo_file_path.png)
+        ![!image](../images/importers_mysql_file_path.png)
 
 
         ??? example "Example"
@@ -262,7 +262,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 2025-07-01 17:10:36        128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
                 ```
 
-                Thus, the full file path for MongoDB will be:
+                Thus, the full file path for MySQL should look like this:
 
                 ```
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
@@ -278,24 +278,20 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
             ```sh
-            kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
+            kubectl get secret everest-secrets-mysql-wih -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
             ```
 
             Output
 
             ```sh
             {
-                "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
-                "MONGODB_BACKUP_USER": "backup",
-                "MONGODB_CLUSTER_ADMIN_PASSWORD": "hE1M5Eaut93uWJGCykd",
-                "MONGODB_CLUSTER_ADMIN_USER": "clusterAdmin",
-                "MONGODB_CLUSTER_MONITOR_PASSWORD": "4ICXY35dqCfjZYR2p7",
-                "MONGODB_CLUSTER_MONITOR_USER": "clusterMonitor",
-                "MONGODB_DATABASE_ADMIN_PASSWORD": "5aQbEZEDjhoAWoSbc03",
-                "MONGODB_DATABASE_ADMIN_USER": "databaseAdmin",
-                "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
-                "MONGODB_USER_ADMIN_USER": "userAdmin"
-                }
+                "monitor": "hgL3^_P*LE$4,b.Z=",
+                "operator": "480.GqWs&K>!~$Di",
+                "proxyadmin": "tud&9[9gVSMMNt+6pj.",
+                "replication": "q!<76<X}F.S2mA._%w",
+                "root": "_bvt*Ip*@r-JOpz>q@1",
+                "xtrabackup": "icR#jAwr0V-UW##73o"
+            }
             ```
 
     4. Click **Continue** to proceed. You will see the basic information page for your target database.
