@@ -148,7 +148,6 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
 
-        ![!image](../images/importers_mongodb_db_credentials.png)
 
         ??? example "Example"
             Run the following command to decode the credentials stored in the Kubernetes secret:
@@ -174,7 +173,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                 "MONGODB_USER_ADMIN_USER": "userAdmin"
                 }
             ```
-        ![!image](../images/importers_mongo_file_path.png)
+        
+        ![!image](../images/importers_mongodb_db_credentials.png)      
 
 
     4. Click **Continue** to proceed. You will see the basic information page for your target database.
