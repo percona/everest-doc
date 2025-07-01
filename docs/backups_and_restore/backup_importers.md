@@ -83,9 +83,6 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ![!image](../images/importers_mongo_file_path.png)
-
-
         ??? example "Example"
 
             !!! info "Important"
@@ -146,6 +143,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                     /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                     ```
 
+        ![!image](../images/importers_mongo_file_path.png)
+
 
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
 
@@ -175,6 +174,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                 "MONGODB_USER_ADMIN_USER": "userAdmin"
                 }
             ```
+        ![!image](../images/importers_mongo_file_path.png)
+
 
     4. Click **Continue** to proceed. You will see the basic information page for your target database.
 
@@ -182,7 +183,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
-    ![!image](../images/import_complete_mysql.png)
+    ![!image](../images/import_complete_mongodb.png)
 
 
 
