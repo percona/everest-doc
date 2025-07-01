@@ -183,6 +183,7 @@ Here are the steps to import external database backups using Percona Everest UI:
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
 
+
 === "MySQL"
     Provide the details of the file you want to import:
     {.power-number}
@@ -271,7 +272,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
 
-        ![!image](../images/importers_mongodb_db_credentials.png)
+        ![!image](../images/importers_mysql_db_credentials.png)
 
         ??? example "Example"
             Run the following command to decode the credentials stored in the Kubernetes secret:
@@ -299,6 +300,8 @@ Here are the steps to import external database backups using Percona Everest UI:
     5. Enter the information and click on continue until you reach the end of the wizard.
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
+
+       ![!image](../images/import_complete.png)
 
 
 
