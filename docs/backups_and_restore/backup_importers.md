@@ -154,11 +154,11 @@ Here are the steps to import external database backups using Percona Everest UI:
                 }
             ```
 
-4. Click **Continue**. You will then see the basic information page for your new database.
+    4. Click **Continue**. You will then see the basic information page for your new database.
 
-5. Enter the information and click on continue until you reach the end of the wizard.
+    5. Enter the information and click on continue until you reach the end of the wizard.
 
-Your database backup will now start importing, and you will be notified upon successful completion.
+    Your database backup will now start importing, and you will be notified upon successful completion.
 
 
 
