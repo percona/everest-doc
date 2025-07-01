@@ -109,7 +109,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws s3 ls <S3 bucket-name>
                 ```
 
-                Output
+                **Output**
 
                 ```plaintext
                 PRE mongodb-zh5/
@@ -122,7 +122,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/
                 ```
                 
-                Output
+                **Output**
 
                 ```plaintext
                 02d0a297-16ca-4b9f-8073-2f16607de3c9/
@@ -134,14 +134,14 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                 ```
 
-                Output
+                **Output**
 
                 ```sh
                 PRE rs0/
                 ```
 
+                !!! info "Important"
                 Thus, the full file path for MongoDB should look like this:
-
                 ```
                 /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                 ```
@@ -181,6 +181,8 @@ Here are the steps to import external database backups using Percona Everest UI:
     5. Enter the information and click on continue until you reach the end of the wizard.
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
+
+    ![!image](../images/import_complete_mysql.png)
 
 
 
@@ -262,8 +264,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                 2025-07-01 17:10:36        128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
                 ```
 
+                !!! info "Important"
                 Thus, the full file path for MySQL should look like this:
-
                 ```
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
                 ```
