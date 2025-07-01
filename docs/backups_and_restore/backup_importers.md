@@ -177,7 +177,11 @@ Here are the steps to import external database backups using Percona Everest UI:
     Your database backup will now start importing, and you will be notified upon successful completion.
 
 
+=== "MySQL"
+    On the **Import info** page, choose the data importer from the dropdown and provide the following details:
+    {.power-number}
 
+    1. 
 
 
 
