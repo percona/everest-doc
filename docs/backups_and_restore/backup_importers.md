@@ -61,10 +61,11 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 3. Fill in the required details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
-3. On the **Import info** page, choose the data importer from the dropdown. Depending on the technology selected, you will need to provide the details as given in the tabs below:
+3. On the **Import info** page, select the data importer from the dropdown menu. Depending on the chosen database technology, provide the necessary details as given in the tabs below:
+
 
 === "MongoDB"
-    On the **Import info** page, choose the data importer from the dropdown and provide the following details:
+    Enter the following details:
     {.power-number}
 
     1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
@@ -89,9 +90,9 @@ Here are the steps to import external database backups using Percona Everest UI:
             How to find the file path using the AWS CLI:
             {.power-number}
 
-            1. Ensure that you have AWS CLI installed.
+            1. Ensure that the AWS CLI installed and configured.
 
-            2. Set the following using the CLI:
+            2. Configure credentials:
 
                 ```sh
                 [default]
@@ -100,20 +101,20 @@ Here are the steps to import external database backups using Percona Everest UI:
                 ```
 
             
-            3. Run the following command:
+            3. List the top-level folders in the bucket:
             
-                ```sh
+                ```bash
                 aws s3 ls <S3 bucket-name>
                 ```
 
                 Output
 
-                ```sh
+                ```plaintext
                 PRE mongodb-zh5/
                 PRE postgresql-6az/
                 ```
 
-            4. Run the following command:
+            4. List the subfolders inside:
 
                 ```sh
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/
@@ -121,13 +122,13 @@ Here are the steps to import external database backups using Percona Everest UI:
                 
                 Output
 
-                ```sh
+                ```plaintext
                 02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 ```
 
-            5. Run the following command:
+            5. Drill down further:
 
-                ```sh
+                ```bash
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                 ```
 
@@ -139,15 +140,18 @@ Here are the steps to import external database backups using Percona Everest UI:
 
                 Thus, the file path for MongoDB will be:
 
-                `/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/`
+                ```
+                /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
+                ```
 
 
-    3. Provide the **DB credentials**, the key-value pairs for credentials, and user secrets.
+    3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
 
         ![!image](../images/importers_mongodb_db_credentials.png)
 
         ??? example "Example"
-            You can obtain the **DB credentials** as follows using the AWS CLI in a decoded format by running the following command:
+            Run the following command to decode the credentials stored in the Kubernetes secret:
+
 
             ```sh
             kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
@@ -170,11 +174,11 @@ Here are the steps to import external database backups using Percona Everest UI:
                 }
             ```
 
-    4. Click **Continue**. You will then see the basic information page for your new database.
+    4. Click **Continue**. You will see the basic information page for your new database.
 
     5. Enter the information and click on continue until you reach the end of the wizard.
 
-    Your database backup will now start importing, and you will be notified upon successful completion.
+    Your backup import process will now start. You will be notified once the import is successfully completed.
 
 
 === "MySQL"
