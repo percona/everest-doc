@@ -89,7 +89,7 @@ Here are the steps to import external database backups using Percona Everest UI:
         ??? example "Example"
 
             !!! info "Important"
-                You can use the AWS UI to obtain the file path, but in this example we will be using the CLI.
+                You can use the AWS UI to obtain the file path, but in this example we will be using the AWS CLI.
 
             How to find the file path using the AWS CLI:
             {.power-number}
@@ -178,7 +178,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 }
             ```
 
-    4. Click **Continue**. You will see the basic information page for your new database.
+    4. Click **Continue**. You will see the basic information page for your target database.
 
     5. Enter the information and click on continue until you reach the end of the wizard.
 
