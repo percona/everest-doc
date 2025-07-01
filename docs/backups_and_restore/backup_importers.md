@@ -184,11 +184,125 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
 === "MySQL"
-    On the **Import info** page, choose the data importer from the dropdown and provide the following details:
+    Provide the details of the file you want to import:
     {.power-number}
 
-    1. 
+    1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
+    
+        Enter:
 
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+        
+    Click **Save**.
+
+          ![!image](../images/mongodb_s3_details_importers.png)
+
+    2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+
+        ![!image](../images/importers_mongo_file_path.png)
+
+
+        ??? example "Example"
+
+            !!! info "Important"
+                You can retrieve the file path using the AWS Management Console, but in this example, we’ll demonstrate how to find it using the AWS CLI.
+
+            How to find the file path using the AWS CLI:
+            {.power-number}
+
+            1. Ensure that the AWS CLI installed and configured with your credentials.
+
+                ```sh
+                [default]
+                aws_access_key_id = SECRET
+                aws_secret_access_key = SECRET
+                ```
+
+            
+            2. List the folders in the bucket:
+            
+                ```bash
+                aws s3 ls <S3 bucket-name>
+                ```
+
+                Output
+
+                ```plaintext
+                PRE mongodb-zh5/
+                PRE mysql-wih/
+                ```
+
+            4. List the subfolders:
+
+                ```sh
+                aws s3 ls <S3 bucket-name>/mysql-wih/
+                ```
+                
+                Output
+
+                ```plaintext
+                515f9e1b-301d-4b34-b2bd-959713bc70d0/
+                ```
+
+            5. Drill down further:
+
+                ```bash
+                aws s3 ls <S3 bucket-name>/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/
+                ```
+
+                Output
+
+                ```sh
+                PRE mysql-wih-2025-07-01-11:40:18-full.sst_info/
+                PRE mysql-wih-2025-07-01-11:40:18-full/
+                2025-07-01 17:10:49      25765 mysql-wih-2025-07-01-                11:40:18-full.md5
+                2025-07-01 17:10:36        128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
+                ```
+
+                Thus, the full file path for MongoDB will be:
+
+                ```
+                /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
+                ```
+
+
+    3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
+
+        ![!image](../images/importers_mongodb_db_credentials.png)
+
+        ??? example "Example"
+            Run the following command to decode the credentials stored in the Kubernetes secret:
+
+
+            ```sh
+            kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
+            ```
+
+            Output
+
+            ```sh
+            {
+                "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
+                "MONGODB_BACKUP_USER": "backup",
+                "MONGODB_CLUSTER_ADMIN_PASSWORD": "hE1M5Eaut93uWJGCykd",
+                "MONGODB_CLUSTER_ADMIN_USER": "clusterAdmin",
+                "MONGODB_CLUSTER_MONITOR_PASSWORD": "4ICXY35dqCfjZYR2p7",
+                "MONGODB_CLUSTER_MONITOR_USER": "clusterMonitor",
+                "MONGODB_DATABASE_ADMIN_PASSWORD": "5aQbEZEDjhoAWoSbc03",
+                "MONGODB_DATABASE_ADMIN_USER": "databaseAdmin",
+                "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
+                "MONGODB_USER_ADMIN_USER": "userAdmin"
+                }
+            ```
+
+    4. Click **Continue** to proceed. You will see the basic information page for your target database.
+
+    5. Enter the information and click on continue until you reach the end of the wizard.
+
+    Your backup import process will now start. You will be notified once the import is successfully completed.
 
 
 
