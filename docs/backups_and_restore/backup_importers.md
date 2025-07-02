@@ -160,6 +160,9 @@ Here are the steps to import external database backups using Percona Everest UI:
             kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
             ```
 
+            Replace `everest-secrets-mongodb-zh5` with your secret name.
+
+
             Output
 
             ```sh
