@@ -61,7 +61,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 3. Fill in the required details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
-3. Select the data importer from the dropdown on the **Import information** page. Then, follow the steps specific to your database as given below:
+3. Select the data importer from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
 === ":simple-mongodb: MongoDB"
     Provide the details of the file you want to import:
@@ -83,12 +83,10 @@ Here are the steps to import external database backups using Percona Everest UI:
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
         ??? example " Find the file path using AWS CLI"
-            How to find the file path using the AWS CLI:
+            Prerequisites: Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
             {.power-number}
 
-            1. Ensure that the AWS CLI is installed and configured with your credentials.
-
-
+            1. Run the following command:
 
                 ```sh
                 cat > ~/.aws/credentials
