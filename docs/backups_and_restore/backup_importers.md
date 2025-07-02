@@ -313,7 +313,129 @@ Here are the steps to import external database backups using Percona Everest UI:
        ![!image](../images/import_complete.png)
 
 
+=== "PostgreSQL"
+    Provide the details of the file you want to import:
+    {.power-number}
 
+    1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
+    
+        Enter:
+
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+        
+        Click **Save**.
+
+        ![!image](../images/mongodb_s3_details_importers.png)
+
+
+    2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+
+        ![!image](../images/importers_pg_file_path.png)
+
+
+        ??? example "Example"
+
+            !!! info "Important"
+                You can retrieve the file path using the AWS Management Console, but in this example, we’ll demonstrate how to find it using the AWS CLI.
+
+            How to find the file path using the AWS CLI:
+            {.power-number}
+
+            1. Ensure that the AWS CLI installed and configured with your credentials.
+
+                ```sh
+                cat > ~/.aws/credentials
+                [default]
+                aws_access_key_id = SECRET
+                aws_secret_access_key = SECRET
+                ```
+            
+            2. List the folders in the bucket:
+            
+                ```bash
+                aws s3 ls <S3 bucket-name>
+                ```
+
+                Output
+
+                ```plaintext
+                PRE postgresql-nf9/
+                ```
+
+            4. List the subfolders:
+
+                ```sh
+                aws s3 ls <S3 bucket-name>/postgresql-nf9/
+                ```
+                
+                Output
+
+                ```plaintext
+                PRE bd68c303-33eb-4368-b564-2cc4b9c71163/
+                ```
+
+            5. Drill down further:
+
+                ```bash
+                aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/
+                ```
+
+                Output
+
+                ```sh
+                PRE archive/
+                PRE backup/
+                ```
+
+            6. Run the following command:
+
+                ```bash
+                aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
+                ``` 
+
+
+                Output
+
+                ```sh
+                PRE db/
+                ```
+
+            7. Run the following command:  
+
+                ```bash
+                aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
+                ```
+
+
+                Output
+
+                ```sh
+                PRE 20250702-085755F/
+                PRE backup.history/
+                2025-07-02 14:28:53       1174 backup.info
+                2025-07-02 14:28:53       1174 backup.info.copy
+                ```
+
+
+            8. Run the following command:
+
+
+                ```bash
+                aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
+                ```
+
+            
+                !!! note
+                    Thus, the full file path for PostgreSQL should look like this:
+                    ```
+                    /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
+                    ```
+
+
+        
 
 
 
