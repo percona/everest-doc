@@ -390,7 +390,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE backup/
                 ```
 
-            6. Run the following command:
+            6. Go into the backup folder
 
                 ```bash
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
@@ -403,7 +403,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE db/
                 ```
 
-            7. Run the following command:  
+            7. Go deeper into db folder 
 
                 ```bash
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
@@ -418,21 +418,20 @@ Here are the steps to import external database backups using Percona Everest UI:
                 2025-07-02 14:28:53       1174 backup.info
                 2025-07-02 14:28:53       1174 backup.info.copy
                 ```
-
-
-            8. Run the following command:
-
-
-                ```bash
-                aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
-                ```
-
             
                 !!! note
                     Thus, the full file path for PostgreSQL should look like this:
                     ```
-                    /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
+                    postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
                     ```
+
+    3. Click **Continue**. You will see the basic information page for your target database.
+
+    4. Enter the information and click **Continue** until you reach the end of the wizard.
+
+    Your backup import process will now start. You will be notified once the import is successfully completed.
+
+    ![!image](../images/import_complete_postgresql.png.png)
 
 
         
