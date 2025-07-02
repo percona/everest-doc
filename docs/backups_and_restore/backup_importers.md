@@ -431,7 +431,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
-    ![!image](../images/import_complete_postgresql.png.png)
+    ![!image](../images/import_complete_postgresql.png)
 
 
         
