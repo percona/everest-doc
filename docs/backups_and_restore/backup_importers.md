@@ -117,7 +117,6 @@ Here are the steps to import external database backups using Percona Everest UI:
                 # Drill down further
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 
-
                 Output               
                 PRE 2025-07-01T07:13:32Z/
             
