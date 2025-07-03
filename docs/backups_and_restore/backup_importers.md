@@ -128,10 +128,9 @@ Here are the steps to import external database backups using Percona Everest UI:
                 Output
                 PRE rs0/
 
-                !!! note
-                    The **file path** for MongoDB will be:
-                    ```
-                    /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
+                The file path for MongoDB will be:
+
+                /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                 ```
 
         ![!image](../images/importers_mongo_file_path.png)
@@ -181,7 +180,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
 
-=== ":simple-postgresql: MySQL"
+=== ":simple-mysql: MySQL"
     Provide the details of the file you want to import:
     {.power-number}
 
@@ -247,10 +246,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                 2025-07-01 17:10:49      25765 mysql-wih-2025-07-01-                11:40:18-full.md5
                 2025-07-01 17:10:36        128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
 
-
-                !!! note
-                    The full file path for MySQL will be:
-                    /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
+                The full file path for MySQL will be:
+                /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
             ```
 
 
@@ -311,15 +308,13 @@ Here are the steps to import external database backups using Percona Everest UI:
         ![!image](../images/importers_pg_file_path.png)
 
 
-        ??? example "Example"
-
-            !!! info "Important"
-                You can retrieve the file path using the AWS Management Console, but in this example, we’ll demonstrate how to find it using the AWS CLI.
-
-            How to find the file path using the AWS CLI:
+        ??? example "Find the file path using AWS CLI"
+            !!! info "Find the file path using AWS CLI"
+                **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
             {.power-number}
+                        
 
-            1. Ensure that the AWS CLI installed and configured with your credentials.
+            1. Run the following command:
 
                 ```sh
                 cat > ~/.aws/credentials
@@ -328,77 +323,49 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. List the folders in the bucket:
+            2. Step-by-step navigation to obtain the file path:
             
-                ```bash
-                aws s3 ls <S3 bucket-name>
-                ```
-
-                **Output**
-
-                ```plaintext
-                PRE postgresql-nf9/
-                ```
-
-            4. List the subfolders:
-
                 ```sh
+                # List the folders in the bucket
+                aws s3 ls <S3 bucket-name>
+
+                Output=
+                PRE postgresql-nf9/
+
+                # List the subfolders:
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/
-                ```
                 
                 Output
-
-                ```plaintext
                 PRE bd68c303-33eb-4368-b564-2cc4b9c71163/
-                ```
 
-            5. Drill down further:
-
-                ```bash
+                # Drill down further:
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/
-                ```
 
                 Output
-
-                ```sh
                 PRE archive/
                 PRE backup/
-                ```
 
-            6. Go into the backup folder
 
-                ```bash
+                # Go into the backup folder
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
-                ``` 
-
 
                 Output
-
-                ```sh
                 PRE db/
-                ```
 
-            7. Go deeper into db folder 
 
-                ```bash
+                # Go deeper into db folder
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
-                ```
-
 
                 Output
-
-                ```sh
                 PRE 20250702-085755F/
                 PRE backup.history/
                 2025-07-02 14:28:53       1174 backup.info
                 2025-07-02 14:28:53       1174 backup.info.copy
-                ```
+
             
-                !!! note
-                    Thus, the full file path for PostgreSQL should look like this:
-                    ```
+                The full file path for PostgreSQL will be:
                     postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
-                    ```
+                ```
 
     3. Click **Continue**. You will see the basic information page for your target database.
 
