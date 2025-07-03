@@ -146,7 +146,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 ```
 
                 !!! note
-                    The example file path for MongoDB should look like this:
+                    The **example file path** for MongoDB will be:
                     ```
                     /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                     ```
