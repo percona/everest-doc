@@ -230,7 +230,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE 515f9e1b-301d-4b34-b2bd-959713bc70d0/
 
 
-               # Drill down further
+                # Drill down further
                 aws s3 ls <S3 bucket-name>/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/
             
 
