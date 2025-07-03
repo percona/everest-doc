@@ -94,7 +94,6 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_access_key_id = SECRET
                 aws_secret_access_key = SECRET
                 ```
-
             
             2. Step-by-step navigation to obtain the path:
             
@@ -106,14 +105,12 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE mongodb-zh5/
                 PRE postgresql-6az/
             
-
                 # List the subfolders                
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/
                                 
                 Output                
                 PRE 02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 
-
                 # Drill down further
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 
