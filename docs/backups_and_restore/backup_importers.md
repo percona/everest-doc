@@ -176,7 +176,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 === ":simple-mysql: MySQL"
     Provide the details of the file you want to import:
-    {.power-number}
+
 
     1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
     
