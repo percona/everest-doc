@@ -64,7 +64,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 3. Select the data importer from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
 === ":simple-mongodb: MongoDB"
-    Provide the details of the file you want to import:
+    Provide the details of the backup you want to import:
     {.power-number}
 
     1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
@@ -95,7 +95,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Step-by-step navigation to obtain the path:
+            2. Navigate to the file path:
             
                 ```sh
                 # List the folders in the bucket            
@@ -133,7 +133,7 @@ Here are the steps to import external database backups using Percona Everest UI:
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
 
 
-        ??? example "Example"
+        ??? example "Retreive the credentials from Kubernetes secret"
             Run the following command to decode the credentials stored in the Kubernetes secret:
 
 
@@ -175,7 +175,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
 === ":simple-mysql: MySQL"
-    Provide the details of the file you want to import:
+    Provide the details of the backup you want to import:
 
 
     1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
@@ -211,7 +211,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Step-by-step navigation to obtain the file path:
+            2. Navigate to the file path:
             
                 ```sh
                 # List the folders in the bucket
@@ -249,7 +249,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
         ![!image](../images/importers_mysql_db_credentials.png)
 
-        ??? example "Example"
+        ??? example "Retreive the DB credentials from the Kubernetes secrets."
             Run the following command to decode the credentials stored in the Kubernetes secret:
 
 
@@ -317,7 +317,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Step-by-step navigation to obtain the file path:
+            2. Navigate to the file path:
             
                 ```sh
                 # List the folders in the bucket
