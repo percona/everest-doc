@@ -96,57 +96,57 @@ Here are the steps to import external database backups using Percona Everest UI:
                 ```
 
             
-            2. List the folders in the bucket:
+            2. Step-by-step navigation to obtain the path:
             
-                ```bash
+                ```sh
+                # List the folders in the bucket:
+            
                 aws s3 ls <S3 bucket-name>
-                ```
+            
 
                 **Output**
 
-                ```plaintext
+            
                 PRE mongodb-zh5/
                 PRE postgresql-6az/
-                ```
+            
 
-            4. List the subfolders:
+                # List the subfolders:
 
-                ```sh
+                
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/
-                ```
+                
                 
                 **Output**
 
-                ```plaintext
+                
                 PRE 02d0a297-16ca-4b9f-8073-2f16607de3c9/
-                ```
+                
 
-            5. Drill down further:
+                # Drill down further:
 
-                ```bash
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/
-                ```
+                
 
                 **Output**
 
-                ```sh
+                
                 PRE 2025-07-01T07:13:32Z/
-                ```
+            
 
-            6. Dig deeper:
+                # Dig deeper:
 
-                ```sh
+            
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-                ```
+        
 
                 **Output**
 
-                ```sh
                 PRE rs0/
                 ```
 
                 !!! note
-                    The full file path for MongoDB should look like this:
+                    The example file path for MongoDB should look like this:
                     ```
                     /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
                     ```
@@ -364,7 +364,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws s3 ls <S3 bucket-name>
                 ```
 
-                Output
+                **Output**
 
                 ```plaintext
                 PRE postgresql-nf9/
