@@ -246,7 +246,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
                 The full file path for MySQL will be:
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
-            ```
+                ```
 
 
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
