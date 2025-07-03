@@ -128,7 +128,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
                 Output
                 PRE rs0/
-                
+                ```
 
                 !!! note
                     The **example file path** for MongoDB will be:
