@@ -84,7 +84,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
         ??? example "Find the file path using AWS CLI"
             **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-            {.power-number}
+
 
             1. Run the following command:
 
