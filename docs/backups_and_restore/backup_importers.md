@@ -82,8 +82,8 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ??? example " Find the file path using AWS CLI"
-            Prerequisites: Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+        ??? example "Find the file path using AWS CLI"
+            **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
             {.power-number}
 
             1. Run the following command:
@@ -99,7 +99,7 @@ Here are the steps to import external database backups using Percona Everest UI:
             2. Step-by-step navigation to obtain the path:
             
                 ```sh
-                # List the folders in the bucket:            
+                # List the folders in the bucket            
                 aws s3 ls <S3 bucket-name>
             
                 Output           
@@ -107,14 +107,14 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE postgresql-6az/
             
 
-                # List the subfolders:                
+                # List the subfolders                
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/
                                 
                 Output                
                 PRE 02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 
 
-                # Drill down further:
+                # Drill down further
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/
                 
 
@@ -122,19 +122,17 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE 2025-07-01T07:13:32Z/
             
 
-                # Dig deeper:            
+                # Dig deeper            
                 aws s3 ls <S3 bucket-name>/mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
         
-
                 Output
                 PRE rs0/
-                ```
 
                 !!! note
-                    The **example file path** for MongoDB will be:
+                    The **file path** for MongoDB will be:
                     ```
                     /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-                    ```
+                ```
 
         ![!image](../images/importers_mongo_file_path.png)
 
@@ -207,13 +205,11 @@ Here are the steps to import external database backups using Percona Everest UI:
 
         ??? example "Example"
 
-            !!! info "Important"
-                You can retrieve the file path using the AWS Management Console, but in this example, we’ll demonstrate how to find it using the AWS CLI.
-
-            How to find the file path using the AWS CLI:
+            !!! info "Find the file path using AWS CLI"
+                **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
             {.power-number}
 
-            1. Ensure that the AWS CLI installed and configured with your credentials.
+            1. Run the following command:
 
                 ```sh
                 cat > ~/.aws/credentials
@@ -222,51 +218,40 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. List the folders in the bucket:
+            2. Step-by-step navigation to obtain the file path:
             
-                ```bash
+                ```sh
+                # List the folders in the bucket
                 aws s3 ls <S3 bucket-name>
-                ```
+
 
                 Output
-
-                ```plaintext
                 PRE mongodb-zh5/
                 PRE mysql-wih/
-                ```
+                
 
-            4. List the subfolders:
-
-                ```sh
+                # List the subfolders
                 aws s3 ls <S3 bucket-name>/mysql-wih/
-                ```
                 
                 Output
+                PRE 515f9e1b-301d-4b34-b2bd-959713bc70d0/
 
-                ```plaintext
-                515f9e1b-301d-4b34-b2bd-959713bc70d0/
-                ```
 
-            5. Drill down further:
-
-                ```bash
+               # Drill down further
                 aws s3 ls <S3 bucket-name>/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/
-                ```
+            
 
                 Output
-
-                ```sh
                 PRE mysql-wih-2025-07-01-11:40:18-full.sst_info/
                 PRE mysql-wih-2025-07-01-11:40:18-full/
                 2025-07-01 17:10:49      25765 mysql-wih-2025-07-01-                11:40:18-full.md5
                 2025-07-01 17:10:36        128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
-                ```
+
 
                 !!! note
-                    Thus, the full file path for MySQL should look like this:
-                    ```
+                    The full file path for MySQL will be:
                     /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
-                    ```
+            ```
 
 
     3. In the **DB Credentials** section, enter the key-value pairs for for credentials, and user secrets.
