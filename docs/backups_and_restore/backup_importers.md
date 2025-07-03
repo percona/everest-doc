@@ -309,7 +309,7 @@ Here are the steps to import external database backups using Percona Everest UI:
         ??? example "Find the file path using AWS CLI"
             !!! info "Find the file path using AWS CLI"
                 **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-            {.power-number}
+                {.power-number}
                         
 
             1. Run the following command:
@@ -362,7 +362,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
             
                 The full file path for PostgreSQL will be:
-                    postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
+                /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
                 ```
 
     3. Click **Continue**. You will see the basic information page for your target database.
