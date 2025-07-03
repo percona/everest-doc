@@ -237,8 +237,10 @@ Here are the steps to import external database backups using Percona Everest UI:
                 # Output
                 PRE mysql-wih-2025-07-01-11:40:18-full.sst_info/
                 PRE mysql-wih-2025-07-01-11:40:18-full/
-                2025-07-01 17:10:49  25765 mysql-wih-2025-07-01-                11:40:18-full.md5
-                2025-07-01 17:10:36  128 mysql-wih-2025-07-01-                11:40:18-full.sst_info.md5
+                2025-07-01 17:10:49  
+                25765 mysql-wih-2025-07-01-11:40:18-full.md5
+                2025-07-01 17:10:36  
+                128 mysql-wih-2025-07-01-11:40:18-full.sst_info.md5
 
                 The full file path for MySQL will be:
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
