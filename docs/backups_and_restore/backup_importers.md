@@ -200,7 +200,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
             !!! info "Find the file path using AWS CLI"
                 **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-            {.power-number}
+
 
             1. Run the following command:
 
@@ -211,14 +211,14 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Navigate to the file path:
+            2. Navigate your S3 bucket structure:
             
                 ```sh
                 # List the folders in the bucket
                 aws s3 ls <S3 bucket-name>
 
 
-                Output
+                # Output
                 PRE mongodb-zh5/
                 PRE mysql-wih/
                 
@@ -226,7 +226,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 # List the subfolders
                 aws s3 ls <S3 bucket-name>/mysql-wih/
                 
-                Output
+                # Output
                 PRE 515f9e1b-301d-4b34-b2bd-959713bc70d0/
 
 
@@ -234,7 +234,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws s3 ls <S3 bucket-name>/mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/
             
 
-                Output
+                # Output
                 PRE mysql-wih-2025-07-01-11:40:18-full.sst_info/
                 PRE mysql-wih-2025-07-01-11:40:18-full/
                 2025-07-01 17:10:49  25765 mysql-wih-2025-07-01-                11:40:18-full.md5
@@ -305,7 +305,7 @@ Here are the steps to import external database backups using Percona Everest UI:
         ??? example "Find the file path using AWS CLI"
             !!! info "Find the file path using AWS CLI"
                 **Prerequisites:** Ensure that AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
-                {.power-number}
+
                         
 
             1. Run the following command:
@@ -317,25 +317,25 @@ Here are the steps to import external database backups using Percona Everest UI:
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Navigate to the file path:
+            2. Navigate your S3 bucket structure:
             
                 ```sh
                 # List the folders in the bucket
                 aws s3 ls <S3 bucket-name>
 
-                Output=
+                # Output
                 PRE postgresql-nf9/
 
                 # List the subfolders:
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/
                 
-                Output
+                # Output
                 PRE bd68c303-33eb-4368-b564-2cc4b9c71163/
 
                 # Drill down further:
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/
 
-                Output
+                # Output
                 PRE archive/
                 PRE backup/
 
@@ -343,18 +343,18 @@ Here are the steps to import external database backups using Percona Everest UI:
                 # Go into the backup folder
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/
 
-                Output
+                # Output
                 PRE db/
 
 
                 # Go deeper into db folder
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
 
-                Output
+                # Output
                 PRE 20250702-085755F/
                 PRE backup.history/
-                2025-07-02 14:28:53       1174 backup.info
-                2025-07-02 14:28:53       1174 backup.info.copy
+                2025-07-02 14:28:53   1174 backup.info
+                2025-07-02 14:28:53   1174 backup.info.copy
 
             
                 The full file path for PostgreSQL will be:
