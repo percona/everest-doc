@@ -20,12 +20,11 @@
 
 ## 🌟 Release highlights
 
-=== "☁️ Database Importers"
+=== ":material-database-import: Seamlessly import external backups into Percona Everest clusters"
 
-     You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
+Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
 
-    📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
 
 
@@ -96,8 +95,6 @@ everestctl settings oidc configure \
 
 [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806) \[UI\] Improve Visibility of Proxy Validation Message for MySQL Database Creation 
 
-[EVEREST-1889](https://perconadev.atlassian.net/browse/EVEREST-1889) \[UI\] Display Nodes per Shard in Overview page
-
 [EVEREST-1909](https://perconadev.atlassian.net/browse/EVEREST-1909) Prevent duplicate IP/Netmask entries for external access in DB clusters
 
 [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946) Add confirmation dialog before performing disk size update
@@ -115,13 +112,8 @@ everestctl settings oidc configure \
 
 ## Bug Fixes
 
-- [EVEREST-741](https://perconadev.atlassian.net/browse/EVEREST-741) Enabling PITR sometimes displays the database as down
-
-- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
-
 - [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838) The 'Edit' option for PITR is disabled for MySQL and MongoDB clusters, even when PITR is enabled.
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865) \[UI\] PITR edit info not available for PG db cluster
 
 - [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890) \[UI\] Number of Proxies changes from 'X' to '1' while creating a mysql db cluster
 
@@ -133,24 +125,14 @@ everestctl settings oidc configure \
 
 - [EVEREST-2001](https://perconadev.atlassian.net/browse/EVEREST-2001) \[UI\] Resource edit fields \(Disk, CPU, Memory\) behaves inconsistently and becomes difficult to edit when a large value is entered
 
-- [EVEREST-2017](https://perconadev.atlassian.net/browse/EVEREST-2017) Restore to a new PXC cluster is failing when using MinIO storage
-
-- [EVEREST-2019](https://perconadev.atlassian.net/browse/EVEREST-2019) \[CLI\] Cli starts displaying fatal errors after an incorrect command is run
-
-- [EVEREST-2023](https://perconadev.atlassian.net/browse/EVEREST-2023) Inconsistent logic in everest-operator for creating and updating resources
-
 - [EVEREST-2030](https://perconadev.atlassian.net/browse/EVEREST-2030) \[UI\] User not logged out after deletion - UI stays active even though API token is invalidated
+
+- [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037) \[UI\] Policy is being used message is displayed when it is not associated with any db
+
 
 - [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043) \[CLI\] setting pmm.enabled=true results in PMM getting deployed in the \`default\` namespace
 
 - [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052) PMM client getting OOM killed
-
-- [EVEREST-2088](https://perconadev.atlassian.net/browse/EVEREST-2088) Pod scheduling policy changes are not applied if the pod is in Pending status
-
-- [EVEREST-2092](https://perconadev.atlassian.net/browse/EVEREST-2092) Failed to upgrade to 1.7.0 if first installation was older than 1.4.0
-
-- [EVEREST-2093](https://perconadev.atlassian.net/browse/EVEREST-2093) Upgrade to versions >1.7.0 fails on psp recreation
-
 
 
 ## Known limitation
