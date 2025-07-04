@@ -24,10 +24,6 @@
 
 Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
-
-
-
-
 === " :simple-mongodb: MongoDB"
     
     ### Support for PSMDB operator v1.20.1
