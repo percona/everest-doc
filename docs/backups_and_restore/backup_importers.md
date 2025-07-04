@@ -9,13 +9,13 @@ This new feature in Percona Everest enables you to import database **backups sto
 
 Many users looking to adopt Percona Everest already have databases or database backups created with various tools or services, such as AWS RDS, Aurora, or MongoDB Atlas. These backups are often stored in object storage services like Amazon S3. 
 
-Percona Everest does not offer a method for importing these backups into its database clusters. Thus, we need a solution that allows you to import external database backups easily into Percona Everest clusters.
+Percona Everest currently does not provide a method for importing external database backups into its database clusters. We require a solution that enables you to import these backups into Percona Everest clusters.
 
-### Goals
+### Objectives
 
-This feature aims to achieve the following goals:
+This feature can help you to achieve the following objectives:
 
-- Allow you to import backup data stored in external locations like Amazon S3 into Everest-managed database clusters.
+- Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
 
 - Support various backup formats and tools, including logical and physical backups using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
@@ -26,9 +26,7 @@ This feature aims to achieve the following goals:
 
 ### DataImporters overview
 
-A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created everest-managed database cluster.
-
-It defines the following:
+A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created everest-managed database cluster, which defines:
 
 - The container to be run for your data restore logic.
 - The database engines it supports.
@@ -37,13 +35,13 @@ It defines the following:
 
 ### Why use DataImporters?
 
-Organizations utilize different backup tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. As a result, Percona Everest **does not enforce** a one-size-fits-all restore mechanism. Instead, with DataImporters, you can write **custom restore logic** specific to the backup tools or formats you prefer, and Percona Everest executes them for you.
+Organizations use different backup tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. Percona Everest offers multiple restore methods instead of a single standard approach. With DataImporters, you can write **custom restore logic** for your preferred backup tools or formats, and Percona Everest executes them for you.
 
 The benefits of using DataImporters are:
 
 - Reusable: You can define it once and use it across various environments.
 
-- Flexible: You can perform imports using any scripting or programming language and any restore tool.
+- Flexible: You can perform imports using any scripting or programming language and restore tool.
 
 - Extensible: It supports custom backup formats or workflows.
 
@@ -57,9 +55,10 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 1. Log in to the Percona Everest UI.
 
-2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will open.
+2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic Information** page will be displayed.
 
-3. Fill in the required details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
+
+3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
 3. Select the data importer from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
@@ -83,7 +82,7 @@ Here are the steps to import external database backups using Percona Everest UI:
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
         ??? example "Find the file path using AWS CLI"
-            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
 
             1. Run the following command:
@@ -166,7 +165,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     4. Click **Continue** to proceed. You will see the basic information page for your target database.
 
-    5. Enter the information and click on continue until you reach the end of the wizard.
+    5. Enter the information and click continue until you reach the end of the wizard.
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
@@ -306,7 +305,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
         ??? example "Find the file path using AWS CLI"
             !!! info "Find the file path using AWS CLI"
-                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
                         
 
@@ -349,7 +348,7 @@ Here are the steps to import external database backups using Percona Everest UI:
                 PRE db/
 
 
-                # Go deeper into the db folder
+                # Go into the db folder
                 aws s3 ls <S3 bucket-name>/postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/
 
                 # Output
