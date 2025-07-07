@@ -33,6 +33,13 @@ A **DataImporter** is a self-contained, reusable blueprint for importing data in
 - The input configurations it requires (e.g., S3 path, credentials, and custom inputs).
 - Any constraints that your database cluster must meet, such as engine version requirements.
 
+#### DataImporters job
+
+A `DataImporter` job is a Kubernetes job that imports external database backups into a newly created database cluster. A
+`DataImportJob` is a `namespace-scoped` CRD that represents a single execution of a `DataImporter`.
+
+Percona Everest automatically creates a DataImporter job when a user initiates a backup import using a `DataImporter`. This job runs the specified import logic, such as `pg_restore`, `mysqldump`, or `mongorestore`, using the credentials and configuration provided by the user (e.g., S3 bucket, file path, access keys). 
+
 ### Why use DataImporters?
 
 Organizations use different backup tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. Percona Everest offers multiple restore methods instead of a single standard approach. With DataImporters, you can write **custom restore logic** for your preferred backup tools or formats, and Percona Everest executes them.

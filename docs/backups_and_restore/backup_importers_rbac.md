@@ -1,21 +1,14 @@
-# Percona Everest: External cackup import use cases
+# RBAC for external backup imports in Percona Everest
 
-Here are some common scenarios for importing database backups into Percona Everest.
+When importing external backups into Percona Everest, it is essential to consider Role-Based Access Control(RBAC) permissions. This ensures only authorized users have the required permissions to access and manage the data.
 
-## Restore a PostgreSQL cluster from an S3 backup
 
-You have a logical backup of a PostgreSQL database, created using `pg_dump`, stored in an Amazon S3 bucket. You want to use this backup to initialize a new PostgreSQL cluster managed by Percona Everest.
+The following RBAC permissions are supported for `DataImporters`:
 
-## Import a MySQL dump from Google Cloud Storage (GCS)
+|**Resource**| **Read**| **Create**| **Update**|**Delete**|
+|------------|---------|-----------|-----------|----------|
+| `data-importers`|<name>| :x:|:x: | :x:|
+| `data-import-jobs`|<namespace>/<db name>| :x:|:x: | :x:|
 
-You have an existing MySQL dump file saved on Google Cloud Storage and want to import it into a new everest-managed MySQL cluster.
-
-## Migrate from MongoDB Atlas to Percona Everest
-
-You want to migrate from MongoDB Atlas using a `mongodump` export and import it into a MongoDB cluster on Percona Everest.
-
-## Create and share a custom import strategy
-
-You want to develop and reuse a custom data import strategy for your organization and make it available within Percona Everest.
 
 
