@@ -33,7 +33,7 @@ To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role 
 
     | Resource |Action | Scope | Description |
     | ---------| ------|-------|--------------|
-    | `namespaces`| read| `*| You can view all namespaces in the cluster. |                                    |
+    | `namespaces`| read| `*`| You can view all namespaces in the cluster. |                                    |
     | `database-engines` | read   | `a2/*` | You can view the available database engine types within the `a2` namespace.|
     | `database-clusters` | \*     | `a2/*`  | Full access to manage database clusters in the `a2` namespace. |
     | `backup-storages` | read   | `a2/*`| You can view configured external storage targets (e.g., S3, GCS).          |
