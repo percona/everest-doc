@@ -28,6 +28,8 @@ To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role 
     p, role:dbadmin, data-importers, read, everest-percona-pxc-operator
     p, role:dbadmin, data-import-jobs, read, a2/*
 
+For MongoDB and PostgreSQL, it will be everest-percona-psmdb-operator and everest-percona-pg-operator respectively.
+
 
 ??? info "Let’s dive into decoding this!"
 
@@ -39,6 +41,7 @@ To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role 
     | `backup-storages` | read   | `a2/*`| You can view configured external storage targets (e.g., S3, GCS).          |
     | `database-cluster-backups` | \*| `a2/*`| Grants full control over database backups. You can create new backups, restore from existing ones, and delete them as needed.                                             |
     | `monitoring-instances`| read| `a2/*`| You can view monitoring configuration for clusters|
-    | `data-importers` | read | `mysql-importer` | You can view and use a specific `DataImporter` (in this case, mysql-importer) during the backup import workflow. Without this, the importer will not appear in the UI or CLI. |
+    | `data-importers` | read | `mysql-importer` | You can view and use a specific `DataImporter` (in this case, everest-percona-pxc-operator) during the backup import workflow. Without this, the importer will not appear in the UI or CLI. |
     | `data-import-jobs`| read |`a2/*`| View You can monitor the status of import jobs triggered via the `DataImporter`.|
+
 
