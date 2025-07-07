@@ -40,5 +40,5 @@ The following RBAC permissions are supported for `DataImporters` and `DataImport
     | `database-cluster-backups` | \*| `a2/*`| Grants full control over database backups. You can create new backups, restore from existing ones, and delete them as needed.                                             |
     | `monitoring-instances`| read| `a2/*`| You can view monitoring configuration for clusters|
     | `data-importers` | read | `mysql-importer` | You can view and use a specific `DataImporter` (in this case, mysql-importer) during the backup import workflow. Without this, the importer will not appear in the UI or CLI. |
-    | `data-import-jobs`| read | `a2/*`| View You can monitor the status of import jobs triggered via the `DataImporter`. |
+    | `data-import-jobs`| read |`a2/*`| View You can monitor the status of import jobs triggered via the `DataImporter`.|
 
