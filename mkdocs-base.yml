@@ -222,7 +222,7 @@ nav:
     - Import external database backups: 
       - How to import backups in Percona Everest: backups_and_restore/backup_importers.md
       - Use cases: backups_and_restore/use_cases_importers.md 
-      - RBAC permissions: backups_and_restore/RBAC Permissions for DataImporters in Percona Everest.md
+      - RBAC permissions: backups_and_restore/backup_importers_rbac.md
     - Restore backups: backups_and_restore/RestoreBackup.md
 
   - Use:
