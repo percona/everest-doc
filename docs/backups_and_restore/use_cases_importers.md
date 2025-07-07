@@ -9,7 +9,7 @@ A user has a logical backup of their PostgreSQL database (created using pg_dump)
 
 ## Import a MySQL dump from Google Cloud Storage (GCS)
 
- A user has an existing MySQL dump file saved on Google Cloud Storage. They want to spin up a new MySQL cluster into a new everest-managed MySQL cluster.
+A user has an existing MySQL dump file saved on Google Cloud Storage. They want to spin up a new MySQL cluster into a new everest-managed MySQL cluster.
 
 ## Migrate from MongoDB Atlas to Percona Everest
 
