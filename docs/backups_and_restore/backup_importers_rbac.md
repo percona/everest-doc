@@ -11,12 +11,13 @@ The following RBAC permissions are supported for `DataImporters` and `DataImport
 
 |**Resource**| **Read**| **Create**| **Update**|**Delete**|
 |------------|---------|-----------|-----------|----------|
-| `data-importers`|<name>| :x:|:x: | :x:|
-| `data-import-jobs`|<namespace>/<db name>| :x:|:x: | :x:|
+| `data-importers`|[name]| :x:|:x: | :x:|
+| `data-import-jobs`|[namespace]/[db name]| :x:|:x: | :x:|
 
 
-??? example "RBAC Policy for Importing a MySQL Backup"
-    To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role needs the following permissions in the namespace `a2`:
+## Example: RBAC Policy for importing a MySQL backup
+
+To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role needs the following permissions in the namespace `a2`:
 
     ```sh
     p, role:dbadmin, namespaces, read, *
