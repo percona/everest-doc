@@ -1,4 +1,4 @@
-# Use cases: Import external database backups into Percona Everest
+# Percona Everest: External cackup import use cases
 
 Here are some common scenarios for importing database backups into Percona Everest.
 
