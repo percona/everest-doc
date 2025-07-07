@@ -17,7 +17,7 @@ The following RBAC permissions are supported for `DataImporters` and `DataImport
 
 ## Example: RBAC Policy for importing a MySQL backup
 
-To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role needs the following permissions in the namespace `a2`:
+To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role needs the following permissions within the `a2` namespace :
 
     p, role:dbadmin, namespaces, read, *
     p, role:dbadmin, database-engines, read, a2/*
@@ -28,7 +28,8 @@ To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role 
     p, role:dbadmin, data-importers, read, everest-percona-pxc-operator
     p, role:dbadmin, data-import-jobs, read, a2/*
 
-For MongoDB and PostgreSQL, it will be everest-percona-psmdb-operator and everest-percona-pg-operator respectively.
+!!! note
+    For MongoDB and PostgreSQL, the importer names will be `everest-percona-psmdb-operator` and `everest-percona-pg-operator `respectively.
 
 
 ??? info "Let’s dive into decoding this!"
