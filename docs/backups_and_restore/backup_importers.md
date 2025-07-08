@@ -13,7 +13,7 @@ Percona Everest currently does not provide a method for importing external datab
 
 ### Objectives
 
-This feature can help you to achieve the following objectives:
+This feature can help you achieve the following objectives:
 
 - Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
 
@@ -84,6 +84,10 @@ Here are the steps to import external database backups using Percona Everest UI:
         ![!image](../images/mongodb_s3_details_importers.png)
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+
+        !!! info "Important"
+            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+
 
         ??? example "Find the file path using AWS CLI"
             **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
