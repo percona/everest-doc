@@ -24,7 +24,7 @@ This feature can help you achieve the following objectives:
 
 ## Understanding DataImporters
 
-### DataImporters overview
+### What are DataImporters?
 
 A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created everest-managed database cluster, which defines:
 
@@ -33,7 +33,7 @@ A **DataImporter** is a self-contained, reusable blueprint for importing data in
 - The input configurations it requires (e.g., S3 path, credentials, and custom inputs).
 - Any constraints that your database cluster must meet, such as engine version requirements.
 
-#### DataImporters job
+#### What is a DataImporters job?
 
 DataImportJob is a namespace-scoped CRD that represents a single execution of a DataImporter. Percona Everest automatically creates it when a user initiates a backup import using a specified `DataImporter`. Internally, it runs a Kubernetes Job that runs the specified import logic on a newly created `DatabaseCluster`, using the credentials and configuration provided by the user (e.g., S3 bucket, file path, access keys).
 
@@ -53,7 +53,8 @@ The benefits of using DataImporters are:
 
 ## Limitations
 
-There are few limitaions that persist while importing external database backups:
+There are a few limitations to be aware of when importing external database backups:
+
 
 - For certain data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
 
