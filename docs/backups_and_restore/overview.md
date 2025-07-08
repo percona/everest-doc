@@ -1,6 +1,5 @@
-# Import external database backups into Percona Everest
+# Overview: Import external database backups into Percona Everest
 
-## Introduction
 
 This new feature in Percona Everest enables you to import database **backups stored in external object** storage into clusters managed by Percona Everest using an extensible design.
 
@@ -59,10 +58,6 @@ There are a few limitations to be aware of when importing external database back
 - For certain data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
 
 - Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the version of the database managed by Percona Everest.
-
-
-
-
 
 ## How to import external database backups using the Percona Everest UI
 
