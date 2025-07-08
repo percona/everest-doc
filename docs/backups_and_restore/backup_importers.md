@@ -51,6 +51,17 @@ The benefits of using DataImporters are:
 
 - **Decoupled:** Percona Everest manages the infrastructure while you focus on the data logic.
 
+## Limitations
+
+There are few limitaions that persist while importing external database backups:
+
+- For certain data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
+
+- Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the version of the database managed by Percona Everest.
+
+
+
+
 
 ## How to import external database backups using the Percona Everest UI
 
@@ -200,7 +211,9 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ![!image](../images/importers_mysql_file_path.png)
+
+        !!! info "Important"
+            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
 
         ??? example "Example"
@@ -252,6 +265,8 @@ Here are the steps to import external database backups using Percona Everest UI:
                 The full file path for MySQL will be:
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
                 ```
+
+        ![!image](../images/importers_mysql_file_path.png)
 
 
     3. In the **DB Credentials** section, enter the key-value pairs for credentials and user secrets.
@@ -308,7 +323,8 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ![!image](../images/importers_pg_file_path.png)
+        !!! info "Important"
+            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
 
         ??? example "Find the file path using AWS CLI"
@@ -369,6 +385,9 @@ Here are the steps to import external database backups using Percona Everest UI:
                 The full file path for PostgreSQL will be:
                 /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
                 ```
+
+        ![!image](../images/importers_pg_file_path.png)
+
 
     3. Click **Continue**. You will see the basic information page for your target database.
 
