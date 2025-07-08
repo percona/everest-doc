@@ -13,7 +13,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 3. Select the data importer from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
 === ":simple-mongodb: MongoDB"
-     # Import MongoDB backups
+    # Import MongoDB backups
      
      Provide the details of the backup you want to import:
     {.power-number}
@@ -243,7 +243,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
 === ":simple-postgresql: PostgreSQL"
-     # Import PostgreSQL backups
+    # Import PostgreSQL backups
 
     Provide the details of the file you want to import:
     {.power-number}
