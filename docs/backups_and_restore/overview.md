@@ -1,7 +1,7 @@
 # Overview: Import external database backups into Percona Everest
 
 !!! warning "Disclaimer"
-    Importing external database backups into Percona Everest feature in currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
+    Importing external database backups into Percona Everest feature is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
 
 This new feature in Percona Everest enables you to import database **backups stored in external object** storage into clusters managed by Percona Everest using an extensible design.
