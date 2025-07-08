@@ -221,7 +221,7 @@ nav:
     - Create database from backups: backups_and_restore/createBackups/create_new_database.md
     - Import external database backups: 
       - Overview of external database backups: backups_and_restore/overview.md
-      - How to import backups in Percona Everest: backups_and_restore/backup_importers.md
+      - How to import backups in Percona Everest: backups_and_restore/how_to_import_backups.md
       - Use cases: backups_and_restore/use_cases_importers.md 
       - RBAC permissions: backups_and_restore/backup_importers_rbac.md
     - Restore backups: backups_and_restore/RestoreBackup.md
