@@ -3,6 +3,8 @@
 When importing external backups into Percona Everest, it is essential to consider Role-Based Access Control(RBAC) permissions. This ensures only authorized users have the required permissions to access and manage the data.
 
 
+## Required roles and permissions
+
 The following RBAC permissions are supported for `DataImporters` and `DataImportJobs`:
 
 
@@ -15,7 +17,7 @@ The following RBAC permissions are supported for `DataImporters` and `DataImport
 | `data-import-jobs`|[namespace]/[db name]| :x:|:x: | :x:|
 
 
-## Example: RBAC Policy for importing a MySQL backup
+## Example: RBAC policy for importing a MySQL backup
 
 To import a MySQL backup using a `DataImporter`, a user with the `dbadmin` role needs the following permissions within the `a2` namespace :
 
