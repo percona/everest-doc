@@ -36,7 +36,8 @@ Here are the steps to import external database backups using Percona Everest UI:
         !!! info "Important"
             Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-            To verify that the specied path exists, use the AWS CLI:
+            To verify that the specified path exists, you can use the AWS CLI:
+
             ```
             aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
             ```
@@ -161,7 +162,8 @@ Here are the steps to import external database backups using Percona Everest UI:
         !!! info "Important"
             Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-            To verify that the specied path exists, use the AWS CLI:
+            To verify that the specified path exists, you can use the AWS CLI:
+
             ```
             aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
             ```
@@ -279,7 +281,8 @@ Here are the steps to import external database backups using Percona Everest UI:
         !!! info "Important"
             Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-            To verify that the specied path exists, use the AWS CLI:
+            To verify that the specified path exists, you can use the AWS CLI:
+            
             ```
             aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
             ```
