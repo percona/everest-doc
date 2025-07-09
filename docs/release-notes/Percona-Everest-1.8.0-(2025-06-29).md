@@ -71,11 +71,11 @@
 
 - [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908): We have added support for PSMDB operator v1.20.1.
 
-- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068) DataImporter for PGRestore
+- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068): Percona Everest 1.8.0 now enables users to import external PostgreSQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
-- [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069) DataImporter for PXCRestore
+- [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069) Percona Everest 1.8.0 now enables users to import external MySQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
-- [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070) DataImporter for PSMDBRestore
+- [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070) Everest 1.8.0 now enables users to import external MongoDB backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
 
 ## Improvements
