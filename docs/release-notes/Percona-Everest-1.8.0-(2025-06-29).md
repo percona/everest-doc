@@ -69,7 +69,7 @@
 
 ## New Features
 
-- [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908) Add support for PSMDB operator v1.20.1
+- [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908): We have added support for PSMDB operator v1.20.1.
 
 - [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068) DataImporter for PGRestore
 
