@@ -33,7 +33,7 @@
 
     - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
 
-    ## How to import external database backups using the Percona Everest UI
+    ### How to import external database backups using the Percona Everest UI
 
     Here are the steps to import the external backups:
     {.power-number}
