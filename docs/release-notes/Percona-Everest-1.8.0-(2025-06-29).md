@@ -44,19 +44,19 @@
 
     3. On the Import Information page, enter the following:
 
-    - Choose the data importer from the dropdown on the **Import information** page.
+        - Choose the data importer from the dropdown on the **Import information** page.
 
-    - Provide S3 details.
+        - Provide S3 details.
 
-        ![!image](../images/mongodb_s3_details_importers.png)
+            ![!image](../images/mongodb_s3_details_importers.png)
 
-    -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
+        -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        ![!image](../images/importers_mongo_file_path.png)
+            ![!image](../images/importers_mongo_file_path.png)
 
-    -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
+        -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
 
-        ![!image](../images/importers_mongodb_db_credentials.png)
+            ![!image](../images/importers_mongodb_db_credentials.png)
 
     4. Enter the information and click **Continue** until you reach the end of the wizard. Your backup import process will now start. You will be notified once the import is successfully completed.
 
