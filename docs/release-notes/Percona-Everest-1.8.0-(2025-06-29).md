@@ -22,9 +22,9 @@
 
 === ":material-database-import: Seamlessly import external backups into Percona Everest clusters"
 
-Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
+    Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
-    ## Objectives
+    ### Objectives
     This feature can help you achieve the following objectives:
 
     - Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
@@ -56,35 +56,12 @@ Starting with Percona Everest 1.8.0, we are excited to roll out a new feature th
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
-
-
-
-
-
-
-=== " :simple-mongodb: MongoDB"
+=== ":simple-mongodb: MongoDB"
     
-    ### Support for PSMDB operator v1.20.1
+    ## Support for PSMDB operator v1.20.1
 
     Percona Everest 1.8.0 now includes support for PSMDB operator version 1.20.1.
 
-
-
-### OIDC Integration with Microsoft Entra ID
-
-If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
-
-The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
-Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
-
-```sh
-everestctl settings oidc configure \
---issuer-url=http://url.com \
---client-id=<your-app-client-id> \
---scopes=openid,profile,email,<your-app-client-id>/.default
-```
-
-📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## New Features
 
