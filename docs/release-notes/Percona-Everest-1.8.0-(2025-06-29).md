@@ -17,16 +17,16 @@
 
 ## 🌟 Release highlights
 
-=== ":material-database-import: Seamlessly import external backups into Percona Everest clusters"
+=== ":material-database-import: Import external backups into Percona Everest clusters (Technical Preview)"
 
     Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
     ### Objectives
     This feature can help you achieve the following objectives:
 
-    - Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
+    - Import backup data from external storage such as Amazon S3 directly into Percona Everest-managed database clusters.
 
-    - Support various backup formats and tools, including logical and physical backups using pg_dump, mysqldump, mongodump, and more.
+    - Support a wide range of backup formats and tools, including both logical and physical backups created using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
     - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
 
@@ -43,13 +43,19 @@
 
     4. Provide S3 details.
 
+        ![!image](../images/mongodb_s3_details_importers.png)
+
     5. Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
+
+        ![!image](../images/importers_mongo_file_path.png)
 
     6. Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
 
+        ![!image](../images/importers_mongodb_db_credentials.png)
+
     7. Click **Continue** to proceed. You will see the basic information page for your target database.
 
-    8. Enter the information and click continue until you reach the end of the wizard.
+    8. Enter the information and click **Continue** until you reach the end of the wizard.
 
     Your backup import process will now start. You will be notified once the import is successfully completed.
 
