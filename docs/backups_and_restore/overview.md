@@ -58,9 +58,9 @@ The benefits of using DataImporters are:
 There are a few limitations to be aware of when importing external database backups:
 
 
-- For certain data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
+- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
 
-- Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the version of the database managed by Percona Everest.
+- Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
 
 
