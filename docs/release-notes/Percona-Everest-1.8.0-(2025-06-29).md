@@ -1,4 +1,4 @@
-# 📦 What's new in Percona Everest 1.8.0
+# What's new in Percona Everest 1.8.0
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
@@ -23,6 +23,44 @@
 === ":material-database-import: Seamlessly import external backups into Percona Everest clusters"
 
 Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
+
+    ## Objectives
+    This feature can help you achieve the following objectives:
+
+    - Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
+
+    - Support various backup formats and tools, including logical and physical backups using pg_dump, mysqldump, mongodump, and more.
+
+    - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
+
+    ## How to import external database backups using the Percona Everest UI
+
+    Here are the steps to import the external backups:
+    {.power-number}
+
+    1. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
+
+    2. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
+
+    3. Select the data importer from the dropdown on the **Import information** page.
+
+    4. Provide S3 details.
+
+    5. Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
+
+    6. Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
+
+    7. Click **Continue** to proceed. You will see the basic information page for your target database.
+
+    8. Enter the information and click continue until you reach the end of the wizard.
+
+    Your backup import process will now start. You will be notified once the import is successfully completed.
+
+
+
+
+
+
 
 === " :simple-mongodb: MongoDB"
     
