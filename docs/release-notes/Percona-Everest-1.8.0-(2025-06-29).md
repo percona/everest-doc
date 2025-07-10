@@ -60,7 +60,7 @@
 
     4. Enter the information and click **Continue** until you reach the end of the wizard. Your backup import process will now start. You will be notified once the import is successfully completed.
 
-=== ":simple-mongodb: PSMDB operator"
+=== ":simple-mongodb: PSMDB operator update"
     
     ### Support for PSMDB operator v1.20.1
 
@@ -116,7 +116,6 @@
 - [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037): The policy is being used message was incorrectly displayed even when the policy was not associated with any database. This issue has now been resolved.
 
 - [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting pmm.enabled=true caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
-
 
 - [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was getting terminated due to Out of Memory (OOM) errors under certain workloads. This issue has now been resolve.
 
