@@ -344,7 +344,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
             
                 The full file path for PostgreSQL will be:
-                /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/PRE 20250702-085755F/
+                /postgresql-nf9/bd68c303-33eb-4368-b564-2cc4b9c71163/backup/db/20250702-085755F/
                 ```
 
         ![!image](../images/importers_pg_file_path.png)
