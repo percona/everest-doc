@@ -43,9 +43,9 @@
 
     2. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-    3. On the Import Information page, enter the following:
+    3. On the **Import Information** page, enter the following:
 
-        - Choose the data importer from the dropdown on the **Import information** page.
+        - Choose the data importer from the dropdown.
 
         - Provide S3 details.
 
@@ -122,6 +122,8 @@
 
 
 ## Known limitations
+
+
 
 
 ## 🚀 Upgrade now
