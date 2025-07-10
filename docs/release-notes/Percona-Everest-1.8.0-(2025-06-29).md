@@ -80,22 +80,22 @@
 
 ## Improvements
 
-[EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): We have improved the visibility of the proxy validation message when creating a MySQL database.
+- [EVEREST-1806](https://perconadev.atlassian.net/browse/EVEREST-1806): We have improved the visibility of the proxy validation message when creating a MySQL database.
 
-[EVEREST-1909](https://perconadev.atlassian.net/browse/EVEREST-1909): Duplicate IP/Netmask entries for external access are now prevented, ensuring accurate network configurations in database clusters.
+- [EVEREST-1909](https://perconadev.atlassian.net/browse/EVEREST-1909): Duplicate IP/Netmask entries for external access are now prevented, ensuring accurate network configurations in database clusters.
 
-[EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): When editing a database cluster, users might mistakenly enter an incorrect disk size. Since disk downscaling is not supported and resizing triggers a 6-hour lockout (e.g., for MongoDB on EKS), Percona Everest now prompts for confirmation before applying disk size changes.
+- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): When editing a database cluster, users might mistakenly enter an incorrect disk size. Since disk downscaling is not supported and resizing triggers a 6-hour lockout (e.g., for MongoDB on EKS), Percona Everest now prompts for confirmation before applying disk size changes.
 
-[EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring that errors are immediately visible and easier to resolve.
+- [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring that errors are immediately visible and easier to resolve.
 
-[EVEREST-1964](https://perconadev.atlassian.net/browse/EVEREST-1964): The **Edit** action in the upgrade section has been renamed to **Upgrade** to better reflect its purpose, as upgrading is the only supported action in that context.
+- [EVEREST-1964](https://perconadev.atlassian.net/browse/EVEREST-1964): The **Edit** action in the upgrade section has been renamed to **Upgrade** to better reflect its purpose, as upgrading is the only supported action in that context.
 
-[EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): In the Helm upgrade flow, Percona Everest now performs a pre-check to validate CRD compatibility before proceeding with the upgrade. This helps prevent cluster breakage by ensuring that all required Custom Resource Definitions are present and compatible, improving upgrade reliability.
+- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): In the Helm upgrade flow, Percona Everest now performs a pre-check to validate CRD compatibility before proceeding with the upgrade. This helps prevent cluster breakage by ensuring that all required Custom Resource Definitions are present and compatible, improving upgrade reliability.
 
 
-[EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed to give a cleaner look.
+- [EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed to give a cleaner look.
 
-[EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005) \[UI\] Add 'view details' in the actions menu
+- [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005) \[UI\] Add 'view details' in the actions menu
 
 
 ## Bug Fixes
