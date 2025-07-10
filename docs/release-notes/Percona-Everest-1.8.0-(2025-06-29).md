@@ -26,13 +26,11 @@
 
     ### capabilities
 
-    This feature provides the following capabilities:
+    - Import backup data from external storage such as Amazon S3 directly into Percona Everest-managed database clusters.
 
-        - Import backup data from external storage such as Amazon S3 directly into Percona Everest-managed database clusters.
+    - Support a wide range of backup formats and tools, including both logical and physical backups created using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
-        - Support a wide range of backup formats and tools, including both logical and physical backups created using `pg_dump`, `mysqldump`, `mongodump`, and more.
-
-        - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
+    - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
 
     ### How to import external database backups using the Percona Everest UI
 
