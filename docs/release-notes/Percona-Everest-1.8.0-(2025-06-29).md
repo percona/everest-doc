@@ -53,6 +53,8 @@
 
         -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
+            Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
+
             ![!image](../images/importers_mongo_file_path.png)
 
         -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
@@ -123,7 +125,13 @@
 
 ## Known limitations
 
+There are a few limitations to be aware of when importing external database backups:
 
+- Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+
+- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
+
+- Percona Everest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
 
 ## 🚀 Upgrade now
