@@ -95,32 +95,30 @@
 
 - [EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed to give a cleaner look.
 
-- [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005) \[UI\] Add 'view details' in the actions menu
+- [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005): We've added a **View DB status Details** option to the **Actions** menu on the database **Overview** page, providing quicker access to database status and cluster-specific information.
 
 
 ## Bug Fixes
 
-- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838) The 'Edit' option for PITR is disabled for MySQL and MongoDB clusters, even when PITR is enabled.
+- [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): The **Edit** option for Point-in-Time Recovery (PITR) was incorrectly disabled for MySQL and MongoDB clusters, even when PITR was enabled. This issue has now been resolved.
 
 
-- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890) \[UI\] Number of Proxies changes from 'X' to '1' while creating a mysql db cluster
+- [EVEREST-1890](https://perconadev.atlassian.net/browse/EVEREST-1890): During MySQL database cluster creation, the selected number of proxies was incorrectly reset to 1 in the UI. The proxy count now reflects the user's selection accurately.
 
-- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895) \[UI\] PITR time can't be changed from the last successful backup
+- [EVEREST-1895](https://perconadev.atlassian.net/browse/EVEREST-1895): Resolved an issue where the Point-in-Time Recovery (PITR) time could not be adjusted from the last successful backup. Users can now modify the PITR time as intended.
 
-- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948) \[UI\] Component Age isn't displayed properly
+- [EVEREST-1948](https://perconadev.atlassian.net/browse/EVEREST-1948): The component **Age** was previously displayed incorrectly on the **Components** tab. It now reflects the accurate age of each component.
 
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
+- [EVEREST-2001](https://perconadev.atlassian.net/browse/EVEREST-2001): Addressed an issue where the Disk, CPU, and Memory input fields became unresponsive or difficult to edit when large values were entered. Input behavior is now consistent and reliable across all value ranges.
 
-- [EVEREST-2001](https://perconadev.atlassian.net/browse/EVEREST-2001) \[UI\] Resource edit fields \(Disk, CPU, Memory\) behaves inconsistently and becomes difficult to edit when a large value is entered
+- [EVEREST-2030](https://perconadev.atlassian.net/browse/EVEREST-2030): Fixed an issue where users were not logged out after account deletion. The UI remained active even though the API token had been invalidated. The session is now properly terminated upon deletion.
 
-- [EVEREST-2030](https://perconadev.atlassian.net/browse/EVEREST-2030) \[UI\] User not logged out after deletion - UI stays active even though API token is invalidated
+- [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037): The policy is being used message was incorrectly displayed even when the policy was not associated with any database. This issue has now been resolved.
 
-- [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037) \[UI\] Policy is being used message is displayed when it is not associated with any db
+- [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting pmm.enabled=true caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
 
 
-- [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043) \[CLI\] setting pmm.enabled=true results in PMM getting deployed in the \`default\` namespace
-
-- [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052) PMM client getting OOM killed
+- [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was getting terminated due to Out of Memory (OOM) errors under certain workloads. This issue has now been resolve.
 
 
 ## Known limitations
