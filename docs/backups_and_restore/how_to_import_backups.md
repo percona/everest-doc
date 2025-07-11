@@ -42,11 +42,9 @@ Here are the steps to import external database backups using Percona Everest UI:
             aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
             ```
 
-        
-
-
+    
         ??? example "Find the file path using AWS CLI"
-            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
 
             1. Run the following command:
@@ -172,7 +170,7 @@ Here are the steps to import external database backups using Percona Everest UI:
         ??? example "Example"
 
             !!! info "Find the file path using AWS CLI"
-                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, follow the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
 
             1. Run the following command:
@@ -290,7 +288,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
         ??? example "Find the file path using AWS CLI"
             !!! info "Find the file path using AWS CLI"
-                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+                **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
                         
 
