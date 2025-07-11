@@ -54,7 +54,7 @@ The benefits of using DataImporters are:
 - **Decoupled:** Percona Everest manages the infrastructure while you focus on the data logic.
 
 
-Do you want to customize your import process? You can create a custom DataImporter tailored to your specific use case. See the [documentation](https://github.com/percona/everest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
+Do you want to customize your import process? You can create a custom `DataImporter` tailored to your specific use case. See the [documentation](https://github.com/percona/everest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
 
 ## Limitations
 
