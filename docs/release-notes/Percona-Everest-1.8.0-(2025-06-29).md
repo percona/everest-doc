@@ -7,7 +7,7 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external database backups directly into Percona Everest-managed clusters|
+    | **1.**|[Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external database backups directly into clusters managed by Percona Everest|
     | **2.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for PSMDB operator v1.20.1|
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in Percona Everest 1.7.0|
     | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.7.0|
@@ -26,9 +26,9 @@
 
     ### Key features
 
-    - Import database backups from external storage, such as Amazon S3, directly into everest-managed database clusters.
+    - Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
 
-    - Support for a wide range of backup formats and tools, including both logical and physical backups created using `pg_dump`, `mysqldump`, `mongodump`, and others.
+    - Support various backup formats and tools, including logical and physical backups created using `pg_dump`,` mysqldump`, `mongodump`, and others.
 
     - A pluggable and extensible framework that can adapt to various import needs and workflows.
     
@@ -74,11 +74,8 @@
 
 - [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908): We have added support for PSMDB operator v1.20.1.
 
-- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068): Percona Everest 1.8.0 now enables users to import external PostgreSQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
+- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB respectively into clusters managed by Percona Everest using a simplified and extensible DataImporter framework.
 
-- [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069): Percona Everest 1.8.0 now enables users to import external MySQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
-
-- [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Everest 1.8.0 now enables users to import external MongoDB backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
 
 ## Improvements
@@ -89,16 +86,16 @@
 
 - [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): When editing a database cluster, users might mistakenly enter an incorrect disk size. Since disk downscaling is not supported and resizing triggers a 6-hour lockout (e.g., for MongoDB on EKS), Percona Everest now prompts for confirmation before applying disk size changes.
 
-- [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring that errors are immediately visible and easier to resolve.
+- [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring errors are immediately visible and easier to resolve.
 
 - [EVEREST-1964](https://perconadev.atlassian.net/browse/EVEREST-1964): The **Edit** action in the upgrade section has been renamed to **Upgrade** to better reflect its purpose, as upgrading is the only supported action in that context.
 
 - [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): In the Helm upgrade flow, Percona Everest now performs a pre-check to validate CRD compatibility before proceeding with the upgrade. This helps prevent cluster breakage by ensuring that all required Custom Resource Definitions are present and compatible, improving upgrade reliability.
 
 
-- [EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed to give a cleaner look.
+- [EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed for an enhanced UX.
 
-- [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005): We've added a **View DB status Details** option to the **Actions** menu on the database **Overview** page, providing quicker access to database status and cluster-specific information.
+- [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005): We've added a **View DB status Details** option to the **Actions** menu on the **Overview** page, providing quicker access to database status and cluster-specific information.
 
 
 ## Bug Fixes
@@ -116,7 +113,7 @@
 
 - [EVEREST-2030](https://perconadev.atlassian.net/browse/EVEREST-2030): Fixed an issue where users were not logged out after account deletion. The UI remained active even though the API token had been invalidated. The session is now properly terminated upon deletion.
 
-- [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037): The policy is being used message was incorrectly displayed even when the policy was not associated with any database. This issue has now been resolved.
+- [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037): Fixed an issue where the `Policy is being used` message appeared even when the policy was not linked to any database.
 
 - [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting pmm.enabled=true caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
 
