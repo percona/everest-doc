@@ -117,7 +117,7 @@
 
 - [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting pmm.enabled=true caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
 
-- [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was getting terminated due to Out of Memory (OOM) errors under certain workloads. This issue has now been resolve.
+- [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was terminated due to out-of-memory (OOM) errors under specific workloads. This issue has now been resolved.
 
 
 ## Known limitations
@@ -126,7 +126,7 @@ There are a few limitations to be aware of when importing external database back
 
 - Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
+- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure they are accurate.
 
 - Percona Everest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
