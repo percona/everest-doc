@@ -17,7 +17,7 @@ Percona Everest currently does not provide a method for importing external datab
 
 This feature can help you achieve the following objectives:
 
-- Allow you to import backup data stored in external locations like Amazon S3 into everest-managed database clusters.
+- Allow you to import backup data stored in external locations like Amazon S3 into database cluster managed by Percona Everest.
 
 - Support various backup formats and tools, including logical and physical backups using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
@@ -28,7 +28,7 @@ This feature can help you achieve the following objectives:
 
 ### What are DataImporters?
 
-A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created everest-managed database cluster, which defines:
+A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created database cluster managed by Percona Everest. It defines:
 
 - The container to be run for your data restore logic.
 - The database engines it supports.
