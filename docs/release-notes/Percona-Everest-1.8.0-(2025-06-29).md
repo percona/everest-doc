@@ -22,7 +22,7 @@
     !!! warning
         The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-    Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
+    Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
     ### Key features
 
@@ -115,7 +115,7 @@
 
 - [EVEREST-2037](https://perconadev.atlassian.net/browse/EVEREST-2037): Fixed an issue where the `Policy is being used` message appeared even when the policy was not linked to any database.
 
-- [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting pmm.enabled=true caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
+- [EVEREST-2043](https://perconadev.atlassian.net/browse/EVEREST-2043): While running everestctl, setting `pmm.enabled=true` caused PMM to be deployed in the default namespace instead of the everest-system namespace. PMM is now correctly deployed in the everest-system namespace, ensuring consistency with helm install.
 
 - [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was terminated due to out-of-memory (OOM) errors under specific workloads. This issue has now been resolved.
 
