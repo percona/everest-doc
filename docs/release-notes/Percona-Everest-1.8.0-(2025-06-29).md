@@ -74,9 +74,9 @@
 
 - [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068): Percona Everest 1.8.0 now enables users to import external PostgreSQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
-- [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069) Percona Everest 1.8.0 now enables users to import external MySQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
+- [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069): Percona Everest 1.8.0 now enables users to import external MySQL backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
-- [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070) Everest 1.8.0 now enables users to import external MongoDB backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
+- [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Everest 1.8.0 now enables users to import external MongoDB backups into Everest-managed clusters using a streamlined and extensible DataImporter framework.
 
 
 ## Improvements
