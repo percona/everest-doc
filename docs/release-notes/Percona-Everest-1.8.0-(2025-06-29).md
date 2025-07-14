@@ -20,7 +20,7 @@
 === ":material-database-import: Import external backups into Percona Everest clusters"
 
     !!! warning
-        The external backup import feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
+        The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
     Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that enables you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
@@ -61,7 +61,7 @@
 
             ![!image](../images/importers_mongodb_db_credentials.png)
 
-    5. Enter the information and click **Continue** until you reach the end of the wizard. Your backup import process will now start. You will be notified once the import is successfully completed.
+    5. Click **Continue** until you reach the end of the wizard. You will be notified once the import is successfully completed.
 
 === ":simple-mongodb: PSMDB operator update"
     
