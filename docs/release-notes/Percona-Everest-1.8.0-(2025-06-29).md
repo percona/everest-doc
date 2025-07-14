@@ -7,7 +7,7 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external backups into Percona Everest clusters|
+    | **1.**|[Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external database backups directly into Percona Everest-managed clusters|
     | **2.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for PSMDB operator v1.20.1|
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in Percona Everest 1.7.0|
     | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.7.0|
@@ -26,7 +26,7 @@
 
     ### Key features
 
-    - Import database backups from external storage, such as Amazon S3, directly into Percona Everest-managed database clusters.
+    - Import database backups from external storage, such as Amazon S3, directly into everest-managed database clusters.
 
     - Support for a wide range of backup formats and tools, including both logical and physical backups created using `pg_dump`, `mysqldump`, `mongodump`, and others.
 
@@ -37,11 +37,13 @@
     Here are the steps to import the external backups:
     {.power-number}
 
-    1. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
+    1. Navigate to the Percona Everest homepage and click **Import**. 
+    
+    2. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
 
-    2. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
+    3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-    3. On the **Import Information** page, enter the following:
+    4. On the **Import Information** page, enter the following:
 
         - Choose the data importer from the dropdown.
 
@@ -59,7 +61,7 @@
 
             ![!image](../images/importers_mongodb_db_credentials.png)
 
-    4. Enter the information and click **Continue** until you reach the end of the wizard. Your backup import process will now start. You will be notified once the import is successfully completed.
+    5. Enter the information and click **Continue** until you reach the end of the wizard. Your backup import process will now start. You will be notified once the import is successfully completed.
 
 === ":simple-mongodb: PSMDB operator update"
     
