@@ -61,7 +61,7 @@ Do you want to customize your import process? You can create a custom `DataImpor
 There are a few limitations to be aware of when importing external database backups:
 
 
-- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure that they are accurate.
+- Certain import methods require database user credentials that exactly match those from the source system. Since Percona Everest does not validate these credentials, you must ensure they are accurate before starting the import.
 
 - Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
