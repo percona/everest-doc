@@ -32,7 +32,7 @@ Discover how Percona Everest simplifies and streamlines your database management
 
 Explore how our security features are designed to ensure the security of your hosted databases.
 
-[Secure your deployments :material-arrow-right:](administer/Idp_integration.md){ .md-button .md-button--primary }
+[Secure your deployments :material-arrow-right:](security/sso_idp_integration.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
