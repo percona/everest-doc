@@ -74,7 +74,7 @@
 
 - [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908): We have added support for PSMDB operator v1.20.1.
 
-- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB respectively into clusters managed by Percona Everest using a simplified and extensible DataImporter framework.
+- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB, respectively, into clusters managed by Percona Everest using a simplified and extensible DataImporter framework.
 
 
 
@@ -136,6 +136,6 @@ There are a few limitations to be aware of when importing external database back
 
 ## 🚀 Upgrade now
 
-Upgrade to **Percona Everest 1.8.0** to access these new features and improvements. 
+Upgrade to **Percona Everest 1.8.0** to access these new features and improvements.
 
 📘 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
