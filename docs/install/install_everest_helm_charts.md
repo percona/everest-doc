@@ -40,7 +40,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     **Optional installation flags**
 
-    | **Flags**          | **Description**                                                                                      | **Helm flag **                       |
+    | **Flags**          | **Description**                                                                                      |**Helm flag**                       |
 |------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
 | PMM Deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--set pmm.enabled=true` |
 | TLS Enabled      | Enable TLS encryption for secure communication between Everest components.| `--set server.tls.enabled=true`  |
@@ -57,12 +57,12 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
         Install Percona Everest with TLS enabled:
 
-            ```sh
+            
             helm install everest-core percona/everest \
             --namespace everest-system \
             --create-namespace
             --set server.tls.enabled=true
-            ```
+            
 
         For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
