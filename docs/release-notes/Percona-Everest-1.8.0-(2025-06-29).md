@@ -15,59 +15,53 @@
     | **6.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in Percona Everest 1.8.0|
 
 
-## 🌟 Release highlights
+## 🌟 Release highlight
 
-=== ":material-database-import: Import external backups into Percona Everest clusters"
+### Import external backups into Percona Everest clusters
 
-    !!! warning
-        The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
+!!! warning
+    The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-    Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
+Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that simplifies your backup process.
 
-    ### Key features
+#### Key features
 
-    - Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
+- Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
 
-    - Support various backup formats and tools, including logical and physical backups created using `pg_dump`,` mysqldump`, `mongodump`, and others.
+- Support various backup formats and tools, including logical and physical backups created using `pg_dump`,` mysqldump`, `mongodump`, and others.
 
-    - A pluggable and extensible framework that can adapt to various import needs and workflows.
+- A pluggable and extensible framework that can adapt to various import needs and workflows.
     
-    ### How to import external database backups using the Percona Everest UI
+#### How to import external database backups using the Percona Everest UI
 
-    Here are the steps to import the external backups:
-    {.power-number}
+Here are the steps to import the external backups:
+{.power-number}
 
-    1. Navigate to the Percona Everest homepage and click **Import**.
+1. Navigate to the Percona Everest homepage and click **Import**.
     
-    2. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
+2. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
 
-    3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
+3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-    4. On the **Import Information** page, enter the following:
+4. On the **Import Information** page, enter the following:
 
-        - Choose the data importer from the dropdown.
+    - Choose the data importer from the dropdown.
 
-        - Provide S3 details.
+    - Provide S3 details.
 
-            ![!image](../images/mongodb_s3_details_importers.png)
+        ![!image](../images/mongodb_s3_details_importers.png)
 
-        -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
+    -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-            Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
+        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
 
-            ![!image](../images/importers_mongo_file_path.png)
+        ![!image](../images/importers_mongo_file_path.png)
 
-        -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
+    -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
 
-            ![!image](../images/importers_mongodb_db_credentials.png)
+        ![!image](../images/importers_mongodb_db_credentials.png)
 
-    5. Click **Continue** until you reach the end of the wizard. You will be notified once the import is successfully completed.
-
-=== ":simple-mongodb: PSMDB operator update"
-    
-    ### Support for PSMDB operator v1.20.1
-
-    Percona Everest 1.8.0 now includes support for PSMDB operator version 1.20.1.
+5. Click **Continue** until you reach the end of the wizard. You will be notified once the import is successfully completed.
 
 
 ## New Features
@@ -119,7 +113,6 @@
 
 - [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was terminated due to out-of-memory (OOM) errors under specific workloads. This issue has now been resolved.
 
-- [EVEREST-1693]: (https://perconadev.atlassian.net/browse/EVEREST-1693): Fixed an issue where a 1-node MongoDB cluster temporarily entered an error state during initial provisioning.
 
 ## Known limitations
 
