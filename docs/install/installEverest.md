@@ -72,19 +72,19 @@ To install and provision Percona Everest to Kubernetes:
 
             **Optional installation flags**
     
-    | **Flags**          | **Description**                                                                                      | **Helm flag **                       |
-|------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
-| PMM Deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--helm.set pmm.enabled=true ` |
-| TLS Enabled      | Enable TLS encryption for secure communication between Everest components.| `--helm.set server.tls.enabled=true`  |
+            | **Flags**          | **Description**                                                                                      | **Helm flag **                       |
+        |------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
+        | PMM Deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--helm.set pmm.enabled=true ` |
+        | TLS Enabled      | Enable TLS encryption for secure communication between Everest components.| `--helm.set server.tls.enabled=true`  |
 
 
-    ??? example  "Examples"
-        Install with PMM enabled  
-    
+        ??? example  "Examples"
+            Install with PMM enabled  
+        
 
-        ```sh
-        helm install everest-core percona/everest --namespace=everest-system --create-namespace --helm.set pmm.enabled=true
-        ```
+            ```sh
+            helm install everest-core percona/everest --namespace=everest-system --create-namespace --helm.set pmm.enabled=true
+            ```
 
 
             Install Percona Everest with TLS enabled:
