@@ -37,7 +37,7 @@
     Here are the steps to import the external backups:
     {.power-number}
 
-    1. Navigate to the Percona Everest homepage and click **Import**. 
+    1. Navigate to the Percona Everest homepage and click **Import**.
     
     2. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
 
@@ -119,6 +119,7 @@
 
 - [EVEREST-2052](https://perconadev.atlassian.net/browse/EVEREST-2052): The PMM client was terminated due to out-of-memory (OOM) errors under specific workloads. This issue has now been resolved.
 
+- [EVEREST-1693]: (https://perconadev.atlassian.net/browse/EVEREST-1693): Fixed an issue where a 1-node MongoDB cluster temporarily entered an error state during initial provisioning.
 
 ## Known limitations
 
