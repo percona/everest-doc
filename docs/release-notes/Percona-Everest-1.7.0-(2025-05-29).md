@@ -3,6 +3,14 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
+!!! warning "Before you upgrade"
+    Before upgrading to Percona Everest 1.7.0, run the following command:
+
+    ```sh
+    kubectl label namespaces everest-system app.kubernetes.io/managed-by-
+    ```
+    For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
+
 ??? info "🔑 Expand to unleash the key updates"
 
     |**#**|**Release summary**|**Description**|
@@ -10,7 +18,7 @@
     | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters|
     | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
     | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
-    | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraBackup Operator 1.17.0|
+    | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
     | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in Percona Everest 1.7.0|
     | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in Percona Everest 1.7.0|
     | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.7.0|
@@ -76,16 +84,16 @@
 
 === " :simple-mysql: PXC Operator"
     
-    ### Support for Percona XtraBackup Operator 1.17.0
+    ### Support for Percona XtraDB Cluster (PXC) operator 1.17.0
 
     Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
 
 
-## 🛑 Breaking Changes
+## 🛑 Breaking changes
 
-### Pod Scheduling Policy Migration For GitOps Users
+### Pod scheduling policy migration for GitOps users
 
-With the introduction of Pod Scheduling Policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DatabaseCluster` CRD.
+With the introduction of Pod scheduling policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DatabaseCluster` CRD.
 
 During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DatabaseCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
 
@@ -95,27 +103,29 @@ The default pod scheduling policies are predefined for each database engine and 
 - **MongoDB**: `everest-default-mongodb`
 - **PostgreSQL**: `everest-default-postgresql`
 
-Example of a MySQL `DatabaseCluster` CR manifest with the `podSchedulingPolicyName` field:
+??? example "Example: MySQL DatabaseCluster CR manifest"
 
-```yaml
-apiVersion: everest.percona.com/v1alpha1
-kind: DatabaseCluster
-metadata:
-  name: my-database-cluster
-spec:
-  podSchedulingPolicyName: everest-default-mysql # Specify the default MySQL scheduling policy
-  engine:
-    type: pxc
-  # Other fields...
-```
+    Here's an example of `DatabaseCluster` CR manifest  with the `podSchedulingPolicyName` field:
+
+    ```yaml
+    apiVersion: everest.percona.com/v1alpha1
+    kind: DatabaseCluster
+    metadata:
+    name: my-database-cluster
+    spec:
+    podSchedulingPolicyName: everest-default-mysql # Specify the default MySQL scheduling policy
+    engine:
+        type: pxc
+    # Other fields...
+    ```
 
 
-### OIDC Integration with Microsoft Entra ID
+### OIDC integration with Microsoft Entra ID
 
 If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
 
 The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
-Please ensure you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
+Ensure that you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
 
 ```sh
 everestctl settings oidc configure \
@@ -202,7 +212,21 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 - [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
 
-## Known limitation
+## Known limitations
+
+### Upgrade to v1.7.0 fails with Namespace error
+
+If you installed Percona Everest version prior to 1.4.0 and successively upgraded to version 1.6.0, you may run into issues when upgrading to version 1.7.0.
+
+**Workaround**
+
+Run the following command before you upgrade to Percona Everest version 1.7.0:
+
+```sh
+kubectl label namespaces everest-system app.kubernetes.io/managed-
+```
+
+### Microsoft Entra ID
 
 When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
 

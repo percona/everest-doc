@@ -7,16 +7,9 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 !!! info "Important"
     If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
 
-## Google Container Registry (GCR)
-
-!!! warning "GCR deprecation"
-    [Google Container Registry (GCR) is scheduled to be deprecated](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"} and will officially shut down on **May 20, 2025**. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date.
-
-**Action required**
-
-We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible.
 
 ## Install Percona Everest and deploy database namespaces
+
 Here are the steps to install Percona Everest and deploy additional database namespaces:
 {.power-number}
 
@@ -54,23 +47,26 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     ??? example  "Examples"
         Install with PMM enabled  
+    
 
         ```sh
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
-        Install with TLS enabled
 
-        ```sh
-        helm install everest-core percona/everest \
-        --namespace everest-system \
-        --create-namespace
-        --set server.tls.enabled=true
-        ```
+            Install Percona Everest with TLS enabled:
 
-        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+            ```sh
+            helm install everest-core percona/everest \
+            --namespace everest-system \
+            --create-namespace
+            --set server.tls.enabled=true
+            ```
 
-3. Once the installation is complete, retrieve the `admin` password. 
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+
+
+4. Once the installation is complete, retrieve the `admin` password. 
 
     ```sh
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
@@ -84,6 +80,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
+        
     === "Load Balancer"
         Use the following commands to change the Everest service type to `LoadBalancer`:
         {.power-number}
@@ -91,7 +88,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Run the following command:
                     
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "LoadBalancer"}}'
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
@@ -113,6 +111,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 NAME      TYPE           CLUSTER-IP      EXTERNAL-IP     PORT(S)          AGE
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
+
 
     === "Node Port"
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
