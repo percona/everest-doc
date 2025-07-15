@@ -17,6 +17,9 @@ A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It repr
 - The input configurations it requires (e.g., S3 path, credentials, and custom inputs).
 - Any constraints that your database cluster must meet, such as engine version requirements.
 
+!!! note
+    Initially, Percona Everest includes three pre-installed DataImporters, designed to restore external backups created using Percona operators.
+
 ### What is a DataImport job?
 
 `DataImportJob` is a namespace-scoped CRD that represents a single execution of a DataImporter. Percona Everest automatically creates it when a user initiates a backup import using a specified `DataImporter`. Internally, it runs a Kubernetes Job that runs the specified import logic on a newly created `DatabaseCluster`, using the credentials and configuration provided by the user (e.g., S3 bucket, file path, access keys).
