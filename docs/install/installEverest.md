@@ -70,13 +70,37 @@ To install and provision Percona Everest to Kubernetes:
                 everestctl install --namespaces dev,prod --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --skip-wizard
                 ```
 
-            ??? info "🔒 Install Percona Everest with TLS enabled"
+            **Optional installation flags**
+    
+    | **Flags**          | **Description**                                                                                      | **Helm flag **                       |
+|------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
+| PMM Deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--helm.set pmm.enabled=true ` |
+| TLS Enabled      | Enable TLS encryption for secure communication between Everest components.| `--helm.set server.tls.enabled=true`  |
 
-                ```sh
+
+    ??? example  "Examples"
+        Install with PMM enabled  
+    
+
+        ```sh
+        helm install everest-core percona/everest --namespace=everest-system --create-namespace --helm.set pmm.enabled=true
+        ```
+
+
+            Install Percona Everest with TLS enabled:
+
+            ```sh
+            helm install everest-core percona/everest \
+            --namespace everest-system \
+            --create-namespace
+            --helm.set server.tls.enabled=true
+            ```
+
+            ```sh
                 everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
-                ```
+            ```
 
-                For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
         2. If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
