@@ -125,6 +125,8 @@
 
 There are a few limitations to be aware of when importing external database backups:
 
+- Importing backups into **sharded** MongoDB clusters is currently **not supported**. The `DataImporter` for MongoDB only works with non-sharded clusters.
+
 - Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
 - For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure they are accurate.
