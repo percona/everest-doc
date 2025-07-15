@@ -17,7 +17,7 @@ Percona Everest currently does not provide a method for importing external datab
 
 This feature can help you achieve the following objectives:
 
-- Allow you to import backup data stored in external locations like Amazon S3 into database cluster managed by Percona Everest.
+- Allow you to import backup data stored in external storage like Amazon S3 into database cluster managed by Percona Everest.
 
 - Support various backup formats and tools, including logical and physical backups using `pg_dump`, `mysqldump`, `mongodump`, and more.
 
