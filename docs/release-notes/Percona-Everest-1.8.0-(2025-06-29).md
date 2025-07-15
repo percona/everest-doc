@@ -38,7 +38,7 @@ Here are the steps to import the external backups:
 
 1. Navigate to the Percona Everest homepage and click **Import**.
     
-2. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
+2. Select the database type you want to import (MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
@@ -56,7 +56,7 @@ Here are the steps to import the external backups:
 
         ![!image](../images/importers_mongo_file_path.png)
 
-    -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
+    -  Enter the key-value pairs of the user secrets (For MongoDB and MySQL) in the **DB credentials** section.
 
         ![!image](../images/importers_mongodb_db_credentials.png)
 
