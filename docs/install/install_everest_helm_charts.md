@@ -45,7 +45,8 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
-    | Feature          | Description                                                                                      | Helm Flag                        |
+    **Optional installation flags**
+    | **Flags**          | **Description**                                                                                      | **Helm flag **                       |
 |------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
 | PMM Deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--set pmm.enabled=true` |
 | TLS Enabled      | Enable TLS encryption for secure communication between Everest components.| `--set server.tls.enabled=true`  |
