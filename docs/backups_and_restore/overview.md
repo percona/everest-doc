@@ -41,7 +41,7 @@ A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It repr
 
 ### Why use DataImporters?
 
-Organizations use different backup tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. Percona Everest offers multiple restore methods instead of a single standard approach. With DataImporters, you can write **custom restore logic** for your preferred backup tools or formats, and Percona Everest executes them.
+Organizations use different backup/restore tools, such as `pg_dump`, `mysqldump`, `mongodump`, physical snapshots, or vendor-specific tools. While Percona Everest does not natively offer support for such tools, with DataImporters, you can write **custom restore logic** for your preferred backup tools or formats, and Percona Everest executes them.
 
 The benefits of using DataImporters are:
 
