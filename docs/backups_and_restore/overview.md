@@ -53,6 +53,7 @@ Here are some common scenarios for importing database backups into Percona Evere
     You have a logical backup of a PostgreSQL database, created using `pg_dump`, stored in an Amazon S3 bucket. You want to use this backup to initialize a new PostgreSQL cluster managed by Percona Everest.
 
 === "Use case 2"
+    
     ### Import a MySQL dump from Google Cloud Storage (GCS)
 
     You have an existing MySQL dump file saved on Google Cloud Storage and want to import it into a new everest-managed MySQL cluster.
