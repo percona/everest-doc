@@ -65,6 +65,8 @@ There are a few limitations to be aware of when importing external database back
 
 - Percona Everest does not verify the compatibility of imported data with the version of the target `DatabaseCluster`. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
+- Percona Everest 1.8.0 provides limited support for importing physical backups. Due to the lack of encryption key configuration in Percona Everest, successful imports of physical backups cannot be guaranteed. While some cases may work depending on the backup method and environment, full support is not yet officially provided.
+
 
 
         
