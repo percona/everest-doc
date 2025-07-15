@@ -28,7 +28,7 @@ This feature can help you achieve the following objectives:
 
 ### What are DataImporters?
 
-A **DataImporter** is a self-contained, reusable blueprint for importing data into a newly created database cluster managed by Percona Everest. It defines:
+A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It represents a self-contained, reusable blueprint for importing data into a newly created database cluster managed by Percona Everest. It defines:
 
 - The container to be run for your data restore logic.
 - The database engines it supports.
