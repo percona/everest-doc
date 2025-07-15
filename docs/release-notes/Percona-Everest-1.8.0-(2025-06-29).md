@@ -60,7 +60,7 @@ Here are the steps to import the external backups:
 
         ![!image](../images/importers_mongodb_db_credentials.png)
 
-5. Click **Continue** until you reach the end of the wizard.
+5. Click **Continue** until you reach the end of the wizard. The database status will eventually change to **Up**.
 
 
 ## New features
