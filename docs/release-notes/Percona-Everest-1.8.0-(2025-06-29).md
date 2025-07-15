@@ -64,9 +64,7 @@ Here are the steps to import the external backups:
 5. Click **Continue** until you reach the end of the wizard. You will be notified once the import is successfully completed.
 
 
-## New Features
-
-- [EVEREST-1908](https://perconadev.atlassian.net/browse/EVEREST-1908): We have added support for PSMDB operator v1.20.1.
+## New features
 
 - [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB, respectively, into clusters managed by Percona Everest using a simplified and extensible DataImporter framework.
 
@@ -92,7 +90,7 @@ Here are the steps to import the external backups:
 - [EVEREST-2005](https://perconadev.atlassian.net/browse/EVEREST-2005): We've added a **View DB status Details** option to the **Actions** menu on the **Overview** page, providing quicker access to database status and cluster-specific information.
 
 
-## Bug Fixes
+## Bug fixes
 
 - [EVEREST-1838](https://perconadev.atlassian.net/browse/EVEREST-1838): The **Edit** option for Point-in-Time Recovery (PITR) was incorrectly disabled for MySQL and MongoDB clusters, even when PITR was enabled. This issue has now been resolved.
 
