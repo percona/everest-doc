@@ -56,7 +56,7 @@ Here are the steps to import the external backups:
 
         ![!image](../images/importers_mongo_file_path.png)
 
-    -  Enter the key-value pairs and user secrets (For MongoDB and MySQL) in the **DB credentials** section.
+    -  Enter the key-value pairs of the user secrets (For MongoDB and MySQL) in the **DB credentials** section.
 
         ![!image](../images/importers_mongodb_db_credentials.png)
 
