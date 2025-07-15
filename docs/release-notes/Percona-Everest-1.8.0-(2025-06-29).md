@@ -27,7 +27,7 @@ Starting with Percona Everest 1.8.0, we are excited to roll out a new feature th
 
 - Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
 
-- Support various backup formats and tools, including logical and physical backups created using `pg_dump`,` mysqldump`, `mongodump`, and others.
+- Customize the import process using tools like `mongodump`, `pg_dump`, or `mysqldump`.
 
 - A pluggable and extensible framework that can adapt to various import needs and workflows.
     
