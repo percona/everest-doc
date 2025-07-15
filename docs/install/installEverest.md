@@ -89,15 +89,15 @@ To install and provision Percona Everest to Kubernetes:
 
                 Install Percona Everest with TLS enabled:
 
-                
+                ```
                 helm install everest-core percona/everest \
                 --namespace everest-system \
                 --create-namespace
                 --helm.set server.tls.enabled=true
-                
+                ```
 
                 ```sh
-                    everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
+                everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
                 ```
 
                 For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
