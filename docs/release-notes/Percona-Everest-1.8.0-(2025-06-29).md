@@ -65,7 +65,7 @@ Here are the steps to import the external backups:
 
 ## New features
 
-- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB, respectively, into clusters managed by Percona Everest using a simplified and extensible DataImporter framework.
+- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can now import external backups from PostgreSQL, MySQL, and MongoDB, respectively, into clusters managed by Percona Everest using an extensible DataImporter framework.
 
 
 
