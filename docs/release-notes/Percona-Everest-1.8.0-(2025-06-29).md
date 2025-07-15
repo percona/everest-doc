@@ -75,7 +75,7 @@ Here are the steps to import the external backups:
 
 - [EVEREST-1909](https://perconadev.atlassian.net/browse/EVEREST-1909): Duplicate IP/Netmask entries for external access are now prevented, ensuring accurate network configurations in database clusters.
 
-- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): When editing a database cluster, users might mistakenly enter an incorrect disk size. Since disk downscaling is not supported and resizing triggers a 6-hour lockout (e.g., for MongoDB on EKS), Percona Everest now prompts for confirmation before applying disk size changes.
+- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): Since disk resizing is an irreversible operation, Percona Everest now prompts for confirmation before applying disk size changes.
 
 - [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring errors are immediately visible and easier to resolve.
 
