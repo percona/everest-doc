@@ -29,7 +29,7 @@ A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It repr
 - Any constraints that your database cluster must meet, such as engine version requirements.
 
 !!! note
-    Initially, Percona Everest includes three pre-installed DataImporters, designed to restore external backups created using Percona operators.
+    Initially, Percona Everest includes three **pre-installed DataImporters**, designed to restore external backups created using Percona operators.
 
 ### What is a DataImport job?
 
