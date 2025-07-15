@@ -6,24 +6,6 @@
 
 This new feature in Percona Everest enables you to import database **backups stored in external object** storage into clusters managed by Percona Everest using an extensible design.
 
-
-## Why import external database backups?
-
-Many users looking to adopt Percona Everest already have databases or database backups created with various tools or services, such as AWS RDS, Aurora, or MongoDB Atlas. These backups are often stored in object storage services like Amazon S3. 
-
-Percona Everest currently does not provide a method for importing external database backups into its database clusters. We require a solution that enables you to import these backups into Percona Everest clusters.
-
-### Objectives
-
-This feature can help you achieve the following objectives:
-
-- Allow you to import backup data stored in external locations like Amazon S3 into database cluster managed by Percona Everest.
-
-- Support various backup formats and tools, including logical and physical backups using `pg_dump`, `mysqldump`, `mongodump`, and more.
-
-- Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
-
-
 ## Understanding DataImporters
 
 ### What are DataImporters?
