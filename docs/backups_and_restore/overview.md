@@ -60,13 +60,13 @@ Here are some common scenarios for importing database backups into Percona Evere
 === "Use case 3"
 
 ## Migrate from MongoDB Atlas to Percona Everest
-    You want to migrate from MongoDB Atlas using a `mongodump` export and import it into a MongoDB cluster on Percona Everest.
+You want to migrate from MongoDB Atlas using a `mongodump` export and import it into a MongoDB cluster on Percona Everest.
 
 === "Use case 4"
 
-    ## Create and share a custom import strategy
+## Create and share a custom import strategy
 
-    You want to develop and reuse a custom data import strategy for your organization and make it available within Percona Everest.
+You want to develop and reuse a custom data import strategy for your organization and make it available within Percona Everest.
 
 ## Limitations
 
