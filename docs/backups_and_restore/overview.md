@@ -6,6 +6,17 @@
 
 This new feature in Percona Everest enables you to import database **backups stored in external object** storage into clusters managed by Percona Everest using an extensible design.
 
+## Objectives
+
+This feature can help you achieve the following objectives:
+
+- Allow you to import backup data stored in external storage like Amazon S3 into database cluster managed by Percona Everest.
+
+- Allow you to customize the import process using your preferred tools, such as `mongodump`, `pg_dump`, or `mysqldump`.
+
+- Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
+
+
 ## Understanding DataImporters
 
 ### What are DataImporters?
