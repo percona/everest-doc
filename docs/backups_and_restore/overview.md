@@ -65,7 +65,6 @@ You want to migrate from MongoDB Atlas using a `mongodump` export and import it 
 === "Use case 4"
 
 ## Create and share a custom import strategy
-
 You want to develop and reuse a custom data import strategy for your organization and make it available within Percona Everest.
 
 ## Limitations
