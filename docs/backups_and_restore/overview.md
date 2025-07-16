@@ -1,6 +1,6 @@
 # Overview: Import external database backups into Percona Everest
 
-!!! warning
+!!! info "Important"
     The external backup import feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
 
