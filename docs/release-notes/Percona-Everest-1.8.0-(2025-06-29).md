@@ -3,11 +3,13 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
-??? info "🔑 Expand to unleash the key updates"
+??? info "Expand to unleash the key updates"
 
-    |**#**|**Release summary**|**Description**|
+    ## 📋 Release summary
+
+    |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external database backups directly into clusters managed by Percona Everest|
+    | **1.**|[Release highlight: Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Import external database backups directly into clusters managed by Percona Everest|
     | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in Percona Everest 1.8.0|
     | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.8.0|
     | **4.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.8.0|
@@ -125,7 +127,7 @@ There are a few limitations to be aware of when importing external database back
 - Percona Everest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
 
-## 🚀 Upgrade now
+## 🚀 Ready to Upgrade?
 
 Upgrade to **Percona Everest 1.8.0** to access these new features and improvements.
 
