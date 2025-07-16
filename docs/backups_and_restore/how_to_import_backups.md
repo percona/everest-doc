@@ -249,7 +249,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
     5. Enter the information and click on continue until you reach the end of the wizard.
 
-    Your backup import process will now start. You will be notified once the import is successfully completed.
+        Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
 
        ![!image](../images/import_complete.png)
 
