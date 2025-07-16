@@ -30,7 +30,7 @@ You can install Percona Everest using one of the following methods:
 
 * [Helm charts](../install/install_everest_helm_charts.md)
 
-* [Percona Everest CLI](https://docs.percona.com/everest/install/installEverestCLI.html), which connects Percona Everest to your Kubernetes cluster.
+* [everestctl](../install/install_everestctl.md), which connects Percona Everest to your Kubernetes cluster.
 
 
 Once you’ve installed Percona Everest, you can easily log into the Percona Everest UI by following the setup instructions in the next section.
