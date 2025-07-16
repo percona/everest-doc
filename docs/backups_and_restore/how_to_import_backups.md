@@ -10,9 +10,9 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
-3. Select the data importer from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
+3. Select the `DataImporter` from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
-=== ":simple-mongodb: MongoDB"
+=== ":simple-mongodb: MongoDB backups"
     ## Import MongoDB backups
      
      Provide the details of the backup you want to import:
@@ -135,7 +135,7 @@ Here are the steps to import external database backups using Percona Everest UI:
 
 
 
-=== ":simple-mysql: MySQL"
+=== ":simple-mysql: MySQL backups"
     ## Import MySQL backups
 
     Provide the details of the backup you want to import:
@@ -254,7 +254,7 @@ Here are the steps to import external database backups using Percona Everest UI:
        ![!image](../images/import_complete.png)
 
 
-=== ":simple-postgresql: PostgreSQL"
+=== ":simple-postgresql: PostgreSQL backups"
     ## Import PostgreSQL backups
 
     Provide the details of the file you want to import:
