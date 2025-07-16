@@ -64,6 +64,7 @@ Here are the steps to import the external backups:
 
 5. Click **Continue** until you reach the end of the wizard. Once the import is successful, the database status will change to **Up**.
 
+If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/overview.html)
 
 ## New features
 
