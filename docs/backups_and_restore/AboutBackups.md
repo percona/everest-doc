@@ -12,4 +12,4 @@ Everest enables you to create and restore on-demand, scheduled and Point-in-Time
 
 ## Start here
 
-[Prepare a backup storage location :material-arrow-right:](createBackups/backup_storage/CreateStorage.md){.md-button}
+[Prepare a backup storage location :material-arrow-right:](../backups_and_restore/createBackups/backup_storage/CreateStorage.md){.md-button}
