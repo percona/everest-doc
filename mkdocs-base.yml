@@ -149,6 +149,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.8.0 (2025-07-16): release-notes/Percona-Everest-1.8.0-(2025-07-16).md
       - Percona-Everest 1.7.0 (2025-05-29): release-notes/Percona-Everest-1.7.0-(2025-05-29).md
       - Percona-Everest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
       - Percona-Everest 1.5.0 (2025-04-03): release-notes/Percona-Everest-1.5.0-(2025-03-04).md
@@ -212,18 +213,23 @@ nav:
       - Session Management: security/session_management.md
       - Transport Layer Security (TLS) support: security/tls_setup.md  
 
+  - Back up and restore data: 
+    - About backups: backups_and_restore/AboutBackups.md
+    - Backup storage: 
+      - Create backup storage: backups_and_restore/createBackups/backup_storage/CreateStorage.md
+      - Edit backup storage: backups_and_restore/createBackups/backup_storage/EditStorage.md
+    - Create on-demand and scheduled backups: backups_and_restore/createBackups/CreateOnDemand.md
+    - Enable Point-in-time recovery (PITR): backups_and_restore/createBackups/EnablePITR.md
+    - Create database from backups: backups_and_restore/createBackups/create_new_database.md
+    - Import external database backups: 
+      - Overview of external database backups: backups_and_restore/overview.md
+      - How to import backups in Percona Everest: backups_and_restore/how_to_import_backups.md
+      - RBAC permissions: backups_and_restore/backup_importers_rbac.md
+    - Restore backups: backups_and_restore/RestoreBackup.md
+
   - Use:
       - Database view: use/database_view.md
       - Provision a database: use/db_provision.md
-      - Back up and restore data: 
-        - About backups: use/AboutBackups.md
-        - Backup storage: 
-          - Create backup storage: use/createBackups/backup_storage/CreateStorage.md
-          - Edit backup storage: use/createBackups/backup_storage/EditStorage.md
-        - Create on-demand and scheduled backups: use/createBackups/CreateOnDemand.md
-        - Enable Point-in-time recovery (PITR): use/createBackups/EnablePITR.md
-        - Create database from backups: use/createBackups/create_new_database.md
-        - Restore backups: use/RestoreBackup.md
       - Manage clusters: use/cluster-management.md
       - MongoDB sharding: use/mongo_sharding.md
       - Scale database deployment: use/scaling.md

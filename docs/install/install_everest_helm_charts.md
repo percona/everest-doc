@@ -38,25 +38,33 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
             You can override the name of the database namespace by using the `dbNamespace.namespaceOverride` parameter. If you prefer to deploy just the core components, set `dbNamespace.enabled=false`
 
+    **Optional installation flags**
+
+    | **Flags**          | **Description**                                                                                      |**Helm flag**                       |
+|------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
+| PMM deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--set pmm.enabled=true` |
+| TLS enabled      | Enable TLS encryption for secure communication between Percona Everest components.| `--set server.tls.enabled=true`  |
+
+
+    ??? example  "Examples"
+        Install with PMM enabled  
     
-    - (**Optional**) PMM can be deployed as a sub-chart by setting `pmm.enabled=true`. PMM will be automatically deployed within the `everest-system` namespace.
 
         ```sh
         helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
-        ??? info "🔒 Install Percona Everest with TLS enabled"
 
-            Install Percona Everest with TLS enabled:
+        Install Percona Everest with TLS enabled:
 
-            ```sh
+            
             helm install everest-core percona/everest \
             --namespace everest-system \
             --create-namespace
             --set server.tls.enabled=true
-            ```
+            
 
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
 4. Once the installation is complete, retrieve the `admin` password. 
