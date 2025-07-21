@@ -10,24 +10,14 @@ Starting from Percona Everest v1.4.0, the [CLI installation](../install/installE
 
 1. The `everest-core` helm chart is installed:
 
-    This step deploys the core components required for Percona Everest:
+    This step deploys the core components required for Percona Everest. This Helm chart installs all the essential components needed for Everest to function.
 
-    1. OLM Components** are deployed into the `everest-olm` namespace, which includes:
-    
-        - olm-operator
-        - catalog-operator
-        - package-server
-        - everest-catalog
+    | Component category   | Namespace            | Components                                                  |
+    |----------------------|----------------------|-------------------------------------------------------------|
+    | OLM Components       | `everest-olm`        | `olm-operator`, `catalog-operator`, `package-server`, `everest-catalog` |
+    | Monitoring Stack     | `everest-monitoring` | `vm-operator`, `kube-state-metrics`                         |
+    | Everest Components   | `everest-system`     | `everest-server`, `everest-operator`                        |
 
-    2.  **Monitoring Stack** is deployed into the `everest-monitoring` namespace, which includes:
-
-        - vm-operator
-        - kube-state-metrics
-
-    3. **Everest Components** are deployed into the `everest-system` namespace, which includes:
-
-        - everest-server
-        - everest-operator
 
 2. The `everest-db-namespace` chart is installed in the everest namespace. This chart handles the deployment of database operators using the following workflow:
 
@@ -39,23 +29,37 @@ Starting from Percona Everest v1.4.0, the [CLI installation](../install/installE
 
 ### Configurable options 
 
-The database operator namespaces and the operators that get installed can be configured as follows:
+Percona Everest supports customization during installation:
 
-- By default, the `everest` namespace is used, and all the database operators (PXC, PSMDB, and PG) are installed.
-- You can skip the database namespace creation step by using the `--skip-db-namespace` flag.
-- To specify one or more custom namespaces, use the `--namespaces` flag.
+**Namespace configuration**
 
-    You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag. For example: 
+| **Flag**                  | **Description**                                     |
+| --------------------- | ----------------------------------------------- |
+| `--namespaces everest`  | By default, the `everest` namespace is used, and all the database operators (PXC, PSMDB, and PG) are installed. |
+| `--namespaces n1,n2`  | Deploy database operators in custom namespaces. |
+| `--skip-db-namespace` | Skip creation of database namespaces.           |
 
-    ```sh
-    everestctl install --namespaces n1,n2
-    ```
+    !!! note
+        You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag. For example: 
 
-- If you want to skip the installation of certain operators, you can use the following flags:
+        ```sh
+        everestctl install --namespaces n1,n2
+        ```
 
-    * `--operator.mongodb=false`
-    * `--operator.postgresql=false`
-    * `--operator.xtradb-cluster=false`
+
+**Operator installation flags**
+
+If you want to skip the installation of certain operators, you can use the following flags:
+
+    | **Flag**                              | **Description**                          |
+| --------------------------------- | ------------------------------------ |
+| `--operator.mongodb=false`        | Skip installing MongoDB operator.    |
+| `--operator.postgresql=false`     | Skip installing PostgreSQL operator. |
+| `--operator.xtradb-cluster=false` | Skip installing PXC operator.        |
+
+
+    !!! note
+        Multiple namespaces can be configured simultaneously by providing a **comma-separated** list.
 
 ### Manage namespaces
 
