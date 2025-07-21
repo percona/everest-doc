@@ -51,15 +51,15 @@ Percona Everest supports customization during installation:
 
 If you want to skip the installation of certain operators, you can use the following flags:
 
-    | **Flag**                              | **Description**                          |
+| **Flag** | **Description**|
 | --------------------------------- | ------------------------------------ |
 | `--operator.mongodb=false`        | Skip installing MongoDB operator.    |
 | `--operator.postgresql=false`     | Skip installing PostgreSQL operator. |
 | `--operator.xtradb-cluster=false` | Skip installing PXC operator.        |
 
 
-    !!! note
-        Multiple namespaces can be configured simultaneously by providing a **comma-separated** list.
+!!! note
+    Multiple namespaces can be configured simultaneously by providing a **comma-separated** list.
 
 ### Manage namespaces
 
