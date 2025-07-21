@@ -39,12 +39,12 @@ Percona Everest supports customization during installation:
 | `--namespaces n1,n2`  | Deploy database operators in custom namespaces. |
 | `--skip-db-namespace` | Skip creation of database namespaces.           |
 
-    !!! note
-        You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag. For example: 
+!!! note
+    You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag. For example: 
 
-        ```sh
-        everestctl install --namespaces n1,n2
-        ```
+    ```sh
+    everestctl install --namespaces n1,n2
+    ```
 
 
 **Operator installation flags**
