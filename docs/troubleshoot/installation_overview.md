@@ -104,11 +104,11 @@ Here’s the workflow for the database engine in Percona Everest:
 1. The user installs the everest db namespace chart either as part of initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
 2. [Subscriptions](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace/templates){:target="_blank"} are created for the operators chosen while installing the helm chart.
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
-4. The helm chart creates a kubernetes job called e`verest-operators-installer` that waits for the InstallPlan to be created and approves it.
+4. The helm chart creates a kubernetes job called `everest-operators-installer` that waits for the InstallPlan to be created and approves it.
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that make up the database operator.
-6. The Percona Everest operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. 
+6. The Percona operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. 
 
-7. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
+7. During the reconciliation process, the Percona operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
  
 ??? example "Example"
     Check [Percona.com](https://docs.percona.com/){:target="_blank"} to get the engine versions supported by that operator. 
