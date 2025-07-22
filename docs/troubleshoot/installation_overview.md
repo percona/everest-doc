@@ -5,7 +5,7 @@ This section provides an overview of how Percona Everest is installed, the compo
 
 ## Percona Everest installation workflow
 
-Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts ([everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} and [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace)){:target="_blank"}. The installation flow is as follows:
+Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} and [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace){:target="_blank"}. The installation flow is as follows:
 {.power-number}
 
 1. The `everest-core` helm chart is installed:
