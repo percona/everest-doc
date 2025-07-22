@@ -57,10 +57,6 @@ If you want to skip the installation of certain operators, you can use the follo
 | `--operator.postgresql=false`     | Skip installing PostgreSQL operator. |
 | `--operator.xtradb-cluster=false` | Skip installing PXC operator.        |
 
-
-!!! note
-    Multiple namespaces can be configured simultaneously by providing a **comma-separated** list.
-
 ### Manage namespaces
 
 You can manage database namespaces after the initial installation using the following commands:
