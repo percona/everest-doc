@@ -5,21 +5,27 @@ This section provides an overview of how Percona Everest is installed, the compo
 
 ## Percona Everest installation workflow
 
-Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} and [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace){:target="_blank"}. The installation flow is as follows:
+Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts:
+
+- [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} 
+
+- [everest-db-namespace](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace){:target="_blank"}. 
+
+The installation flow is as follows:
 {.power-number}
 
 1. The `everest-core` helm chart is installed:
 
-    This step deploys the core components required for Percona Everest. This Helm chart installs all the essential components needed for Everest to function.
+    This step deploys all the core components required for Percona Everest to function.
 
     | Component category   | Namespace            | Components                                                  |
     |----------------------|----------------------|-------------------------------------------------------------|
-    | OLM Components       | `everest-olm`        | `olm-operator`, `catalog-operator`, `package-server`, `everest-catalog` |
-    | Monitoring Stack     | `everest-monitoring` | `vm-operator`, `kube-state-metrics`                         |
-    | Everest Components   | `everest-system`     | `everest-server`, `everest-operator`                        |
+    | OLM components       | `everest-olm`        | `olm-operator`, `catalog-operator`, `package-server`, `everest-catalog` |
+    | Monitoring stack     | `everest-monitoring` | `vm-operator`, `kube-state-metrics`                         |
+    | Everest components   | `everest-system`     | `everest-server`, `everest-operator`                        |
 
 
-2. The `everest-db-namespace` chart is installed in the everest namespace. This chart handles the deployment of database operators using the following workflow:
+2. The `everest-db-namespace` chart is installed in the `everest` namespace. This chart handles the deployment of database operators using the following workflow:
 
     1. Creates OLM subscriptions for each of the selected database operators (by default, all supported operators are selected).
     2. OLM reconciles the subscriptions and creates an install plan for each operator.
@@ -27,9 +33,9 @@ Starting from Percona Everest v1.4.0, the [CLI installation](../install/installE
     4. OLM reconciles the approved install plan and creates a `cluster-service-version` for each database operator. The CSV includes all the manifests needed to install the operator. OLM automatically applies these manifests, and the operator is installed.
 
 
-### Configurable options 
+### Configurable installation options 
 
-Percona Everest supports customization during installation:
+Percona Everest supports several configuration flags for customizing the installation.
 
 **Namespace configuration**
 
@@ -39,8 +45,8 @@ Percona Everest supports customization during installation:
 | `--namespaces n1,n2`  | Deploy database operators in custom namespaces. |
 | `--skip-db-namespace` | Skip creation of database namespaces.           |
 
-!!! note
-    You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag. For example: 
+??? example "Example"
+    You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag.
 
     ```sh
     everestctl install --namespaces n1,n2
@@ -69,9 +75,7 @@ everestctl namespaces remove [NAMESPACE]
 
 For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
 
-The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. 
-
-Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
+The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
 ## Percona Everest server and operator workflow
 
@@ -102,6 +106,10 @@ Here’s the workflow for the database engine in Percona Everest:
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
 4. The helm chart creates a kubernetes job called e`verest-operators-installer` that waits for the InstallPlan to be created and approves it.
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that make up the database operator.
-6. The Percona Everest operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"}.
+6. The Percona Everest operator detects the deployment resource of the database operator and reconciles the **DatabaseEngine CR** of the corresponding type. 
+
+7. During the reconciliation process, the everest operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
  
-Check [Percona.com](https://docs.percona.com/){:target="_blank"} to get the engine versions supported by that operator. For example, [mongod versions supported by PSMDBO v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73){:target="_blank"}.
+??? example "Example"
+    Check [Percona.com](https://docs.percona.com/){:target="_blank"} to get the engine versions supported by that operator. 
+    For MongoDB, cick [mongod versions supported by PSMDBO v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73){:target="_blank"}.
