@@ -68,24 +68,24 @@ Appropriate privileges may be required depending on the selected components for 
 
 Run the following command to check if the required privileges are granted:
 
-```sh
-kubectl auth can-i
-```
+    ```sh
+    kubectl auth can-i
+    ```
 
 2. **Helm Chart validation**
 
-- Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
+    - Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
 
-    To verify the values used during the chart installation, run the following command:
+        To verify the values used during the chart installation, run the following command:
 
-    ```sh
-    helm list -n everest-system
-    NAME  NAMESPACE   REVISION  UPDATED                             	STATUS  	CHART        	APP VERSION
-    everest-core everest-system	1  2025-01-16 16:24:56.577713 +0530 
-    IST	deployed	everest-1.4.0	1.4.0
-    ```
+        ```sh
+        helm list -n everest-system
+        NAME  NAMESPACE   REVISION  UPDATED                             	STATUS  	CHART        	APP VERSION
+        everest-core everest-system	1  2025-01-16 16:24:56.577713 +0530 
+        IST	deployed	everest-1.4.0	1.4.0
+        ```
 
-- As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+    - As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
 3. **Resource availability**
 
