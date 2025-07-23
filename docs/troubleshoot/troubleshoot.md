@@ -86,7 +86,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
     For instance, a job is created to approve the installation plan for operators. If there are no resources left in the cluster to run pods, the Helm installation will continue waiting for the specified ``--timeout`` or the default of 5 minutes before failing.
 
-### API,Authentication, and frontend issues
+### API, Authentication, and frontend issues
 
 To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
 {.power-number}
