@@ -9,8 +9,7 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 
 - Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for some useful commands.
 
-- Logs and events are your main sources of information when troubleshooting.
-
+- Use logs and events for debugging.
 
 
 ### Important logs and commands
@@ -63,7 +62,7 @@ Depending on the specific issue, you can review different logs for additional in
 For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
 
 
-#### Permissions and Privileges
+**Permissions and privileges**
 
 Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
 
@@ -73,7 +72,7 @@ Run the following command to check if the required privileges are granted:
     kubectl auth can-i
     ```
 
-#### Helm Chart Validation
+**Helm Chart Validation**
 
 - Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
 
@@ -88,7 +87,8 @@ Run the following command to check if the required privileges are granted:
 
 - As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
-#### Resource Availability
+**Resource Availability**
+
 When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default of 5 minutes before failing.
 
 
@@ -97,7 +97,8 @@ When a job is created to approve the installation plan for operators, if the clu
 To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
 {.power-number}
 
-1. If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
+1. **Check everest-server Pod Health**
+    If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
 
     ```sh
     kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
@@ -106,13 +107,14 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
 
-2. Check the `everest-server` logs. 
+2. **Check the `everest-server` logs **
 
     ```sh
     kubectl logs -f deploy/everest-server -n everest-system
     ```
 
-3. To resolve authentication and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is implemented, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
+3. **RBAC validation**
+    To resolve authentication and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is implemented, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
 
     ```sh
     kubectl get configmap everest-rbac -n everest-system
@@ -124,25 +126,31 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     kubectl logs -f deploy/everest-operator -n everest-system
     ```
 
-5. If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. Once you have set up the port-forward, access the webpage using `localhost:8080`.
+5. **Local access via Port Forwarding**
 
+If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. 
 
     ```sh
     kubectl port-forward svc/everest 8080:8080
     ```
+Once you have set up the port-forward, access the webpage using [http://localhost:8080](http://localhost:8080).
 
 ### Database operation issues
 
 Here are the common issues related to the database operations:
 {.power-number}
 
-1. Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or if there are any issues with it. 
+1. **Check the `everest-operator` logs**
+
+    Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or if there are any issues with it. 
 
     ```sh
     kubectl logs -f deploy/everest-operator -n everest-system
     ```
 
-2. Check the `DatabaseCluster` object, verify its status and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
+2. **Check the `DatabaseCluster` object**
+
+    Verify the status of `DatabaseCluster` object and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
 
     ```sh
     kubectl get DatabaseCluster <DatabaseCluster-Name>
@@ -151,7 +159,9 @@ Here are the common issues related to the database operations:
     ```
 
 
-3. Check the relevant database objects such as PXC, PSMDB, and PG, as well as the operator logs. For instance, check the PXC object followed by the operator logs.
+3. **Database objects**
+
+    Check the relevant database objects such as PXC, PSMDB, and PG, as well as the operator logs. For instance, check the PXC object followed by the operator logs.
 
     ```sh
     kubectl get pxc <database-name>
@@ -162,7 +172,7 @@ Here are the common issues related to the database operations:
     # Change to pxc,psmdb,pg for respective database
     ```
 
-4. Check the database pod logs:
+4. **Check the database pod logs**
 
     ```sh
     kubectl logs -f <database-pod-name> -c <database-container-name>  
