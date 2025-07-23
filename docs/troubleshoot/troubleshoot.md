@@ -49,12 +49,12 @@ Depending on the specific issue, you can review different logs for additional in
 
 5. **Kubernetes Events**
 
-    !!! info "Important
+    !!! info "Important"
         Events (Events are stored only for 60 mins, if there are any events which are older than 60 mins, it will be lost).
 
-```sh
-kubectl get events --sort-by=".lastTimestamp"
-```
+    ```sh
+    kubectl get events --sort-by=".lastTimestamp"
+    ```
 
 ## Troubleshooting key areas
 
