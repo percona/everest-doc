@@ -60,19 +60,19 @@ Depending on the specific issue, you can review different logs for additional in
 ### Installation issues
 
 For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
+{.power-number}
 
-
-**Permissions and privileges**
+1. **Permissions and privileges**
 
 Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
 
 Run the following command to check if the required privileges are granted:
 
-    ```sh
-    kubectl auth can-i
-    ```
+```sh
+kubectl auth can-i
+```
 
-**Helm Chart Validation**
+2. **Helm Chart validation**
 
 - Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
 
@@ -87,9 +87,9 @@ Run the following command to check if the required privileges are granted:
 
 - As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
-**Resource Availability**
+3. **Resource availability**
 
-When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default of 5 minutes before failing.
+    When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default of 5 minutes before failing.
 
 
 ### API, Authentication, and frontend issues
@@ -98,6 +98,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 {.power-number}
 
 1. **Check everest-server Pod Health**
+
     If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
 
     ```sh
@@ -107,7 +108,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
 
-2. **Check the `everest-server` logs **
+2. **Check the `everest-server` logs**
 
     ```sh
     kubectl logs -f deploy/everest-server -n everest-system
