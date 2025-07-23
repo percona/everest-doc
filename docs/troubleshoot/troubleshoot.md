@@ -61,9 +61,11 @@ Depending on the specific issue, you can review different logs for additional in
 ### Installation issues
 
 For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
-{.power-number}
 
-1. Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
+
+#### Permissions and Privileges
+
+Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
 
     Run the following command to check if the required privileges are granted:
 
@@ -71,7 +73,9 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
     kubectl auth can-i
     ```
 
-2. Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
+#### Helm Chart Validation
+
+- Verify the installation status of the Helm chart. A properly functioning chart should be in a **Deployed** status. 
 
     To verify the values used during the chart installation, run the following command:
 
@@ -82,9 +86,11 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
     IST	deployed	everest-1.4.0	1.4.0
     ```
 
-3. As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+- As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
-    For instance, a job is created to approve the installation plan for operators. If there are no resources left in the cluster to run pods, the Helm installation will continue waiting for the specified ``--timeout`` or the default of 5 minutes before failing.
+#### Resource Availability
+When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default of 5 minutes before failing.
+
 
 ### API, Authentication, and frontend issues
 
