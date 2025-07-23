@@ -67,7 +67,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
 Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
 
-    Run the following command to check if the required privileges are granted:
+Run the following command to check if the required privileges are granted:
 
     ```sh
     kubectl auth can-i
