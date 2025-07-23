@@ -18,43 +18,43 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 Depending on the specific issue, you can review different logs for additional information.
 {.power-number}
 
-**Everest Core Components**
+1. **Everest Core Components**
 
-1. | Logs        | Command                                                     |
-| ---------------- | ----------------------------------------------------------- |
-| Percona operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
-| Percona Everest server | `kubectl logs -f deploy/everest-server -n everest-system`   |
+    | Logs        | Command                                                     |
+    | ---------------- | ----------------------------------------------------------- |
+    | Percona operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
+    | Percona Everest server | `kubectl logs -f deploy/everest-server -n everest-system`   |
 
-**Database Operators (in Namespaces)**
+2. **Database Operators (in Namespaces)**
 
-2. | Operator type | Namespace | Command                                                             |
-| ------------- | --------- | ------------------------------------------------------------------- |
-| PostgreSQL    | `everest` | `kubectl logs -f deploy/percona-postgresql-operator -n everest`     |
-| MongoDB       | `everest` | `kubectl logs -f deploy/percona-server-mongodb-operator -n everest` |
-| PXC           | `everest` | `kubectl logs -f deploy/percona-xtradb-cluster-operator -n everest` |
+    | Operator type | Namespace | Command                                                             |
+    | ------------- | --------- | ------------------------------------------------------------------- |
+    | PostgreSQL    | `everest` | `kubectl logs -f deploy/percona-postgresql-operator -n everest`     |
+    | MongoDB       | `everest` | `kubectl logs -f deploy/percona-server-mongodb-operator -n everest` |
+    | PXC           | `everest` | `kubectl logs -f deploy/percona-xtradb-cluster-operator -n everest` |
 
-**Monitoring**
+3. **Monitoring**
 
-3. | Component                | Command                                                                   |
-| ------------------------ | ------------------------------------------------------------------------- |
-| VictoriaMetrics Operator | `kubectl logs -f deploy/vm-operator -n everest-monitoring`                |
-| VM Agent                 | `kubectl logs -f deploy/vmagent-everest-monitoring -n everest-monitoring` |
+    | Component                | Command                                                                   |
+    | ------------------------ | ------------------------------------------------------------------------- |
+    | VictoriaMetrics Operator | `kubectl logs -f deploy/vm-operator -n everest-monitoring`                |
+    | VM Agent                 | `kubectl logs -f deploy/vmagent-everest-monitoring -n everest-monitoring` |
 
 
-**Database Pods and Proxies**
+4. **Database Pods and Proxies**
 
     ```sh
     kubectl logs -f <pod-name of database or proxy> -c <database-container>
     ```
 
-6. **Kubernetes Events**
+5. **Kubernetes Events**
 
     !!! info "Important
         Events (Events are stored only for 60 mins, if there are any events which are older than 60 mins, it will be lost).
 
-    ```sh
-    kubectl get events --sort-by=".lastTimestamp"
-    ```
+```sh
+kubectl get events --sort-by=".lastTimestamp"
+```
 
 ## Troubleshooting key areas
 
