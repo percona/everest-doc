@@ -64,9 +64,9 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
 1. **Permissions and privileges**
 
-Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
+    Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
 
-Run the following command to check if the required privileges are granted:
+    Run the following command to check if the required privileges are granted:
 
     ```sh
     kubectl auth can-i
@@ -129,12 +129,12 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
 5. **Local access via Port Forwarding**
 
-If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. 
+    If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. 
 
     ```sh
     kubectl port-forward svc/everest 8080:8080
     ```
-Once you have set up the port-forward, access the webpage using [http://localhost:8080](http://localhost:8080).
+    Once you have set up the port-forward, access the webpage using [http://localhost:8080](http://localhost:8080).
 
 ### Database operation issues
 
