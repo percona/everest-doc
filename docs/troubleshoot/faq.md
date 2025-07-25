@@ -22,7 +22,7 @@ Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deploy
 !!! note
     Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-- Where are Percona Everest backend logs stored?
+### Where are Percona Everest backend logs stored?
 
 You can retrieve the logs from the pods associated with this deployment.
 
@@ -44,6 +44,7 @@ All communication with Everest resources begins with the API.
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
 **Troubleshooting flow**
+
 When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
 
 
