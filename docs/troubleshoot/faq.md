@@ -11,7 +11,7 @@ You can use this resource to query and update the list of supported engine versi
 
 Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1) for usage information.
 
-### Do we have logs of the API calls made?
+## Do we have logs of the API calls made?
 
 Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace.
 
@@ -22,7 +22,7 @@ Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deploy
 !!! note
     Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-### Where are Percona Everest backend logs stored?
+## Where are Percona Everest backend logs stored?
 
 You can retrieve the logs from the pods associated with this deployment.
 
@@ -33,11 +33,11 @@ kubectl logs -f deploy/percona-everest -n everest-system
 ```
 
 
-### How to troubleshoot issues between the UI and the Percona Everest API? 
+## How to troubleshoot issues between the UI and the Percona Everest API? 
 
 You can view these logs in the console of your web browser.
 
-### Should we troubleshoot resources that are not part of the Percona Everest operator image?
+## Should we troubleshoot resources that are not part of the Percona Everest operator image?
 
 All communication with Everest resources begins with the API.
 
@@ -48,7 +48,7 @@ The API is responsible for updating Everest resources, while the Everest operato
 When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
 
 
-### Does Percona Everest deploy PMM servers?
+## Does Percona Everest deploy PMM servers?
 
 Percona Everest doesn't deploy PMM (Percona Monitoring and Management). 
 
