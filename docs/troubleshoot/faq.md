@@ -5,57 +5,59 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
 ## What is DatabaseEngine?
 
-Provide an example of **Database Engine Operations**. Does it manage database operators, such as upgrades, or is it related to Percona Everest resources?
-    
-**Answer:**
-The `DatabaseEngine` is a resource that contains compatible PG/PXC/MongoDB versions for the current Percona Everest version. This information can be retrieved and updated.
+The `DatabaseEngine` is a resource that defines the compatible PG/PXC/MongoDB versions for the current Percona Everest version. 
 
-Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources) for in-depth information.
+You can use this resource to query and update the list of supported engine versions.
+
+Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1) for usage information.
 
 ### Do we have logs of the API calls made?
 
-- Accessing these logs will enable us to confirm whether an API call was initiated for a specific user operation and to identify any errors that may have occurred during that process.
+Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace.
 
-    **Answer:**
-    Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace. 
+- Accessing these logs help us verify whether an API call was initiated for a specific user operation.
 
-    !!! Note
-        Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
+- Identify any errors that may have occurred during that process.
 
-- Where are these logs stored?
+!!! note
+    Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
 
-    **Answer:**
-    You can retrieve the logs from the pods associated with this deployment.
+- Where are Percona Everest backend logs stored?
+
+You can retrieve the logs from the pods associated with this deployment.
+
+To access them, run:
+
+```sh
+kubectl logs -f deploy/percona-everest -n everest-system
+```
 
 
-### Do we have any logs to troubleshoot issues between the front end and the Percona Everest API? 
+### How to troubleshoot issues between the UI and the Percona Everest API? 
 
-**Answer:**
 You can view these logs in the console of your web browser.
 
-### Do we need to troubleshoot any resources that are not part of the Percona Everest operator image?
+### Should we troubleshoot resources that are not part of the Percona Everest operator image?
 
-- Is there a resource that receives API calls and interacts with individual resources that we should check for troubleshooting and logs when issues arise?
+All communication with Everest resources begins with the API.
 
-- Does the Percona Everest API communicate directly with the Percona Everest operator resources? 
+The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
-- Should we correlate the **Percona operator** issue with the corresponding Percona Everest resource and address the problem from that point?
-
-    **Answer:**
-    All communication with Everest resources begins with the API.
-
-    The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
+**Troubleshooting flow**
+When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
 
 
 ### Does Percona Everest deploy PMM servers?
 
-While `MonitorConfig` is present, does this resource interact directly with each `pmm-agent` container on the database pods, deploy new PMM Servers, and modify their configuration?
+Percona Everest doesn't deploy PMM (Percona Monitoring and Management). 
 
-**Answer:**
+Instead, we configure PMM agents in each DB deployment to communicate with an existing PMM server.
 
-Percona Everest doesn't deploy PMM. Instead, we configure PMM agents in each DB deployment to communicate with an existing PMM server.
+The important points are:
 
-When communicating with PMM, we generate an API key to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
+- The `MonitorConfig` resource in Percona Everest manages PMM agent setup.
+
+-  An API key is generated to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
 
 !!! note
     PMM is an external service we support and does not necessarily fit into our architecture.
