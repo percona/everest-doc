@@ -1,6 +1,6 @@
 # Troubleshooting issues
 
-This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and [known limitations](../reference/known_limitations.md) section.
+This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and the [known limitations](../reference/known_limitations.md) section.
 
 
 ## General troubleshooting guidelines
@@ -14,7 +14,7 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 
 ### Important logs and commands
 
-Depending on the specific issue, you can review different logs for additional information.
+You can review different logs for additional information depending on the specific issue.
 {.power-number}
 
 1. **Everest Core Components**
@@ -49,7 +49,7 @@ Depending on the specific issue, you can review different logs for additional in
 5. **Kubernetes Events**
 
     !!! info "Important"
-        Events (Events are stored only for 60 mins, if there are any events which are older than 60 mins, it will be lost).
+        Events (Events are stored only for 60 mins; if there are any events older than 60 minutes, they will be lost).
 
     ```sh
     kubectl get events --sort-by=".lastTimestamp"
@@ -64,7 +64,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
 1. **Permissions and privileges**
 
-    Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any of the components fail, verify that the appropriate privileges are granted.
+    Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any components fail, verify that the appropriate privileges are granted.
 
     Run the following command to check if the required privileges are granted:
 
@@ -85,7 +85,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
         IST	deployed	everest-1.4.0	1.4.0
         ```
 
-    - As there are many components in the Percona Everest installation, installation will fail if any of the **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+    - As the Percona Everest installation has many components, it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
 3. **Resource availability**
 
@@ -97,7 +97,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 To troubleshoot issues with the Percona Everest API, authentication, or frontend, check the everest-server deployment. 
 {.power-number}
 
-1. **Check everest-server Pod Health**
+1. **Check the everest-server Pod health**
 
     If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
 
@@ -115,6 +115,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
     ```
 
 3. **RBAC validation**
+
     To resolve authentication and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is implemented, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
 
     ```sh
@@ -143,7 +144,7 @@ Here are the common issues related to the database operations:
 
 1. **Check the `everest-operator` logs**
 
-    Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or if there are any issues with it. 
+    Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or there are any issues. 
 
     ```sh
     kubectl logs -f deploy/everest-operator -n everest-system
@@ -151,7 +152,7 @@ Here are the common issues related to the database operations:
 
 2. **Check the `DatabaseCluster` object**
 
-    Verify the status of `DatabaseCluster` object and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
+    Verify the status of the `DatabaseCluster` object and events. The status should be **Ready**. If it is anything other than **Ready**, further investigation is required. Describing the `DatabaseCluster` object provides details about the database configuration.
 
     ```sh
     kubectl get DatabaseCluster <DatabaseCluster-Name>
@@ -162,7 +163,7 @@ Here are the common issues related to the database operations:
 
 3. **Database objects**
 
-    Check the relevant database objects such as PXC, PSMDB, and PG, as well as the operator logs. For instance, check the PXC object followed by the operator logs.
+    Check the operator logs and the relevant database objects, such as PXC, PSMDB, and PG. For instance, check the PXC object followed by the operator logs.
 
     ```sh
     kubectl get pxc <database-name>
@@ -170,7 +171,7 @@ Here are the common issues related to the database operations:
     kubectl get pxc <database-name> -oyaml 
     kubectl logs -f deploy/percona-xtradb-cluster-operator
     
-    # Change to pxc,psmdb,pg for respective database
+    # Change to pxc, psmdb, pg for respective database
     ```
 
 4. **Check the database pod logs**
@@ -178,7 +179,7 @@ Here are the common issues related to the database operations:
     ```sh
     kubectl logs -f <database-pod-name> -c <database-container-name>  
     
-    # (container name could be database,pxc,mongo)
+    # (container name could be database, pxc, mongo)
     ```
 
 
