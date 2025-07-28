@@ -13,14 +13,14 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 
 ## Do we have logs of the API calls made?
 
-Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system `namespace.
+Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system` namespace.
 
-- Accessing these logs help us verify whether an API call was initiated for a specific user operation.
+- Accessing these logs helps us verify whether an API call was initiated for a specific user operation.
 
 - Identify any errors that may have occurred during that process.
 
 !!! note
-    Percona Everest logs are crucial for troubleshooting issues where an operation is completed, but the corresponding Everest operator resource hasn't been created for some reason. 
+    Percona Everest logs are crucial for troubleshooting issues where an operation is completed but the corresponding Everest operator resource hasn’t been created.
 
 ## Where are Percona Everest backend logs stored?
 
@@ -35,7 +35,7 @@ kubectl logs -f deploy/percona-everest -n everest-system
 
 ## How to troubleshoot issues between the UI and the Percona Everest API? 
 
-You can view these logs in the console of your web browser.
+You can view these logs in your web browser's console.
 
 ## Should we troubleshoot resources that are not part of the Percona Everest operator image?
 
@@ -45,7 +45,7 @@ The API is responsible for updating Everest resources, while the Everest operato
 
 **Troubleshooting flow**
 
-When debugging, start with the API, then proceed to the Everest operator, and finally examine the individual database operators.
+When debugging, start with the API, proceed to the Everest operator, and examine the individual database operators.
 
 
 ## Does Percona Everest deploy PMM servers?
