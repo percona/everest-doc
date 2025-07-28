@@ -75,7 +75,7 @@ everestctl namespaces remove [NAMESPACE]
 
 For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
 
-The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a full list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
+The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a complete list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
 ## Percona Everest server and operator workflow
 
@@ -84,17 +84,17 @@ The [helm installation method](../install/install_everest_helm_charts.md) provid
 Here's the database creation workflow in Percona Everest:
 {.power-number}
 
-1. The Percona Everest user is authenticated and logged in and a JWT Token is provided.
-2. The user creates a database, either through the frontend UI or `everestctl` or via the APl.
-3. The Percona Everest API is invoked to create a create a **Custom Resource Definition (CRD)**. The Percona Everest server then creates a custom resource `DatabaseCluster`.
-4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example if it’s PXC , `PerconaXtraDBCluster` is created.
+1. The Percona Everest user is authenticated and logged in, and a JWT Token is provided.
+2. The user creates a database through the frontend UI, `everestctl`, or APl.
+3. The Percona Everest API is invoked to create a **Custom Resource Definition (CRD)**. The Percona Everest server then creates a custom resource `DatabaseCluster`.
+4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example, if it’s PXC , `PerconaXtraDBCluster` is created.
 5. The database operator takes over the task of creating the database and the necessary objects to manage it.
 
 
     !!! note
-        Other actions, such as creating backups, restores ,monitoring or deleting the objects follows a similar flow except the objects involved may differ.
+        Other actions, such as creating backups, restoring, monitoring, or deleting objects, have a similar process, although the specific objects involved may differ.
 
-        All the custom resources connected to Percona Everest follow a similar flow except the `DatabaseEngine`.
+        All the custom resources connected to Percona Everest follow a similar flow, except for `the DatabaseEngine`.
 
 ### Database engine workflow
 
