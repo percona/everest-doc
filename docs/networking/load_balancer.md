@@ -1,1 +1,1 @@
-# Load Balancer configuration in Percona Everest
+# Load balancer configuration in Percona Everest
