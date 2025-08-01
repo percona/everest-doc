@@ -1,6 +1,8 @@
 # DataImporter: Percona PSMDB operator
 
-Here are the steps to import external database backups using Percona Everest UI with the `everest-percona-psmdb-operator` importer:
+The `everest-percona-psmdb-operator` DataImporter enables you to import MongoDB backups stored in external S3-compatible storage into clusters by Percona Everest.
+
+This section outlines the step-by-step process for performing the import using the Percona Everest UI.
 {.power-number}
 
 1. Log in to the Percona Everest UI.
@@ -12,12 +14,8 @@ Here are the steps to import external database backups using Percona Everest UI 
 
 3. Select the `DataImporter` from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
 
-## :simple-mongodb: Import MongoDB backups
-     
-Provide the details of the backup you want to import:
-{.power-number}
 
-1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
+4. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
     
     Enter the following:
 
@@ -30,7 +28,7 @@ Provide the details of the backup you want to import:
 
     ![!image](../../images/mongodb_s3_details_importers.png)
 
-2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+5. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
     !!! info "Important"
         Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
@@ -124,9 +122,9 @@ Provide the details of the backup you want to import:
     ![!image](../../images/importers_mongodb_db_credentials.png)      
 
 
-4. Click **Continue** to proceed. You will see the basic information page for your target database.
+6. Click **Continue** to proceed. You will see the basic information page for your target database.
 
-5. Enter the information and click **Continue** until you reach the end of the wizard.
+7. Enter the information and click **Continue** until you reach the end of the wizard.
 
     Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
 
