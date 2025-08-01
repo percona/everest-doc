@@ -90,12 +90,12 @@ This section outlines the step-by-step process for performing the import using t
                 /mysql-wih/515f9e1b-301d-4b34-b2bd-959713bc70d0/mysql-wih-2025-07-01-11:40:18-full/
                 ```
 
-        ![!image](../images/importers_mysql_file_path.png)
+        ![!image](../../images/importers_mysql_file_path.png)
 
 
-    c. In the **DB Credentials** section, enter the key-value pairs of the user secrets.
+    - In the **DB Credentials** section, enter the key-value pairs of the user secrets.
 
-    ![!image](../../images/importers_mysql_db_credentials.png)
+        ![!image](../../images/importers_mysql_db_credentials.png)
 
         ??? example "Retrieve the DB credentials from the Kubernetes secrets"
             Run the following command to decode the credentials stored in the Kubernetes secret:
@@ -123,7 +123,7 @@ This section outlines the step-by-step process for performing the import using t
 
 6. Enter the information and click **Continue** until you reach the end of the wizard.
 
-        Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
+    Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
 
     ![!image](../../images/import_complete.png)
 
