@@ -129,7 +129,7 @@ This section outlines the step-by-step process for performing the import using t
 
     Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
 
-![!image](../../images/import_complete_mongodb.png)
+    ![!image](../../images/import_complete_mongodb.png)
 
 
         
