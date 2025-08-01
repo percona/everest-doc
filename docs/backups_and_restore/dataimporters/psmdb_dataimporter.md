@@ -14,20 +14,18 @@ This section outlines the step-by-step process for performing the import using t
 4. On the **Import information** page, select the data importer from the dropdown and enter the following:
 {.power-number}
 
+    ![!image](../../images/psmdb_dataimporter.png)
 
     a. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open.
-
-    ![!image](../../images/psmdb_dataimporter.png)
- 
     
-    Enter the following:
+        Enter the following:
 
-    - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
-    - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-    - **Access key**: Enter your AWS Access Key ID (like a username for API access).
-    - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
-        
-    Click **Save**.
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+            
+        Click **Save**.
 
     ![!image](../../images/mongodb_s3_details_importers.png)
 
@@ -38,16 +36,16 @@ This section outlines the step-by-step process for performing the import using t
 
         To verify that the specified path exists, you can use the AWS CLI:
 
-            ```
-            aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
-            ```
+        ```
+        aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
+        ```
 
     
     ??? example "Find the file path using AWS CLI"
         **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
 
-            1. Run the following command:
+        1. Run the following command:
 
                 ```sh
                 cat > ~/.aws/credentials
@@ -56,7 +54,7 @@ This section outlines the step-by-step process for performing the import using t
                 aws_secret_access_key = SECRET
                 ```
             
-            2. Navigate your S3 bucket structure:
+        2. Navigate your S3 bucket structure:
             
                 ```sh
                 # List the folders in the bucket            
@@ -95,7 +93,7 @@ This section outlines the step-by-step process for performing the import using t
 
 
     ??? example "Retrieve the credentials from the Kubernetes secret"
-            Run the following command to decode the credentials stored in the Kubernetes secret:
+        Run the following command to decode the credentials stored in the Kubernetes secret:
 
 
             ```sh
