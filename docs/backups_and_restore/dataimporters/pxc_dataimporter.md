@@ -25,7 +25,7 @@ This section outlines the step-by-step process for performing the import using t
         
         Click **Save**.
 
-        ![!image](../images/mongodb_s3_details_importers.png)
+        ![!image](../../images/mongodb_s3_details_importers.png)
 
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
