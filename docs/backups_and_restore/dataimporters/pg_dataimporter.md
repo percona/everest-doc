@@ -20,9 +20,9 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
         - **Access key**: Enter your AWS Access Key ID (like a username for API access).
         - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
         
-       Click **Save**.
+        Click **Save**.
 
-       ![!image](../../images/mongodb_s3_details_importers.png)
+        ![!image](../../images/mongodb_s3_details_importers.png)
 
 
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
