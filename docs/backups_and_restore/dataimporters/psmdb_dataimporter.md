@@ -36,10 +36,9 @@ This section outlines the step-by-step process for performing the import using t
             ```
             aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
             ```
-
-    
-    ??? example "Find the file path using AWS CLI"
-        **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
+   
+        ??? example "Find the file path using AWS CLI"
+            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
 
         1. Run the following command:
@@ -79,7 +78,7 @@ This section outlines the step-by-step process for performing the import using t
                 The file path for MongoDB will be:
                 /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
 
-    ![!image](../../images/importers_mongo_file_path.png)
+        ![!image](../../images/importers_mongo_file_path.png)
 
 
     - In the **DB Credentials** section, enter the key-value pairs of the user secrets.
