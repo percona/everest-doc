@@ -64,10 +64,8 @@ Here are some common scenarios for importing database backups into Percona Evere
     You have a logical backup of a PostgreSQL database, created using `pg_dump`, stored in an Amazon S3 bucket. You want to use this backup to initialize a new PostgreSQL cluster managed by Percona Everest.
 
 
-=== "Migrate from MongoDB Atlas"
+=== "Build your own DataImporter"
 
-    ### Migrate from MongoDB Atlas to Percona Everest
-    You want to migrate from MongoDB Atlas using a `mongodump` export and import it into a MongoDB cluster on Percona Everest.
 
 === "Custom import strategy"
 
