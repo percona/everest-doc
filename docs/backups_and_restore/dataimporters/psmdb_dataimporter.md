@@ -12,6 +12,7 @@ This section outlines the step-by-step process for performing the import using t
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
 4. On the **Import information** page, select the data importer from the dropdown and enter the following:
+{.power-number}
 
     ![!image](../../images/psmdb_dataimporter.png)
 
