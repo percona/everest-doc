@@ -12,16 +12,15 @@ This section outlines the step-by-step process for performing the import using t
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
 
 4. On the **Import information** page, select the data importer from the dropdown and enter the following:
-{.power-number}
 
-   ![!image](../../images/psmdb_dataimporter.png)
+    ![!image](../../images/psmdb_dataimporter.png)
 
-   - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
+    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
            
-    - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
-    - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-    - **Access key**: Enter your AWS Access Key ID (like a username for API access).
-    - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
             
     Click **Save**.
 
