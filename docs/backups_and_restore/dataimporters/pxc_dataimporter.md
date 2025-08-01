@@ -1,4 +1,4 @@
-# Data importer: Percona PXC operator
+# DataImporter: Percona PXC operator
 
 The `everest-percona-pxc-operator` data importer enables you to import MySQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
 
@@ -12,12 +12,11 @@ This section outlines the step-by-step process for performing the import using t
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-4. On the **Import information** page, select the data importer from the dropdown and enter the following:
+4. On the **Import information** page, select the data importer from the dropdown.
 
+    ![!image](../../images/pxc_dataimporter.png)
 
-    a. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
-    
-        Enter:
+    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
 
         - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
         - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
@@ -28,7 +27,7 @@ This section outlines the step-by-step process for performing the import using t
 
         ![!image](../images/mongodb_s3_details_importers.png)
 
-    b. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+    - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
 
         !!! info "Important"
