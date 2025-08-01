@@ -1,4 +1,4 @@
-# Overview: Import external database backups into Percona Everest
+# Import external database backups into Percona Everest
 
 !!! info "Important"
     The external backup import feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
@@ -17,7 +17,7 @@ This feature can help you achieve the following objectives:
 - Provide a pluggable and extensible framework that can adapt to different import needs and workflows.
 
 
-## Understanding DataImporters
+## DataImporters
 
 ### What are DataImporters?
 
@@ -64,10 +64,11 @@ Here are some common scenarios for importing database backups into Percona Evere
     You have a logical backup of a PostgreSQL database, created using `pg_dump`, stored in an Amazon S3 bucket. You want to use this backup to initialize a new PostgreSQL cluster managed by Percona Everest.
 
 
-=== "Migrate from MongoDB Atlas"
+=== "Custom DataImporter"
 
-    ### Migrate from MongoDB Atlas to Percona Everest
-    You want to migrate from MongoDB Atlas using a `mongodump` export and import it into a MongoDB cluster on Percona Everest.
+    ### Build your own DataImporter
+
+    You can create your own `DataImporter` to implement custom restore logic using any language or tool. This allows for seamless integration into the cluster provisioning workflow.
 
 === "Custom import strategy"
 
