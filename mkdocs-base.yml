@@ -225,8 +225,8 @@ nav:
       - DataImporters: 
         - Overview: backups_and_restore/dataimporters/overview.md
         - Percona MongoDB Operator: backups_and_restore/dataimporters/psmdb_dataimporter.md
-        - Percona MySQL Operator: backups_and_restore/pxc_dataimporter.md
-        - Percona PG Operator: backups_and_restore/pg_dataimporter.md
+        - Percona MySQL Operator: backups_and_restore//dataimporters/pxc_dataimporter.md
+        - Percona PG Operator: backups_and_restore//dataimporters/pg_dataimporter.md
       - RBAC permissions: backups_and_restore/backup_importers_rbac.md
     - Restore backups: backups_and_restore/RestoreBackup.md
 
