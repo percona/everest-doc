@@ -1,6 +1,6 @@
 # DataImporter: Percona PostgreSQL operator
 
-Here are the steps to import external database backups using Percona Everest UI:
+The `everest-percona-pg-operator` data importer enables you to import PostgreSQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
 {.power-number}
 
 1. Log in to the Percona Everest UI.
@@ -8,30 +8,25 @@ Here are the steps to import external database backups using Percona Everest UI:
 2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic Information** page will be displayed.
 
 
-3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import info** page.
+3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-3. Select the `DataImporter` from the dropdown on the **Import information** page. Follow the steps below based on the selected database:
+3. Select the `DataImporter` from the dropdown on the **Import information** page. 
 
-## :simple-postgresql: Import PostgreSQL backups
+    ![!image](../../images/pg_dataimporter.png)
 
-Provide the details of the file you want to import:
-{.power-number}
-
-1. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. 
+    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following: 
     
-    Enter:
-
-    - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
-    - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-    - **Access key**: Enter your AWS Access Key ID (like a username for API access).
-    - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+       - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+       - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+       - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+       - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
         
-    Click **Save**.
+      Click **Save**.
 
-    ![!image](../../images/mongodb_s3_details_importers.png)
+     ![!image](../../images/mongodb_s3_details_importers.png)
 
 
-2. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+    - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
     !!! info "Important"
         Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
@@ -110,7 +105,7 @@ Provide the details of the file you want to import:
 
     Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
 
-![!image](../../images/import_complete_postgresql.png)
+    ![!image](../../images/import_complete_postgresql.png)
 
 
         
