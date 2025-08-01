@@ -22,20 +22,20 @@ This section outlines the step-by-step process for performing the import using t
         - **Access key**: Enter your AWS Access Key ID (like a username for API access).
         - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
             
-    Click **Save**.
+        Click **Save**.
 
-    ![!image](../../images/mongodb_s3_details_importers.png)
+        ![!image](../../images/mongodb_s3_details_importers.png)
 
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-    !!! info "Important"
-        Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+        !!! info "Important"
+            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-        To verify that the specified path exists, you can use the AWS CLI:
+            To verify that the specified path exists, you can use the AWS CLI:
 
-        ```
-        aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
-        ```
+            ```
+            aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
+            ```
 
     
     ??? example "Find the file path using AWS CLI"
@@ -84,29 +84,28 @@ This section outlines the step-by-step process for performing the import using t
 
     - In the **DB Credentials** section, enter the key-value pairs of the user secrets.
 
+        ??? example "Retrieve the credentials from the Kubernetes secret"
+            Run the following command to decode the credentials stored in the Kubernetes secret:
 
-    ??? example "Retrieve the credentials from the Kubernetes secret"
-        Run the following command to decode the credentials stored in the Kubernetes secret:
+                kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
 
-            kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
-
-            Replace `everest-secrets-mongodb-zh5` with your secret name.
+                Replace `everest-secrets-mongodb-zh5` with your secret name.
 
 
-            Output
+                Output
 
-            {
-                "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
-                "MONGODB_BACKUP_USER": "backup",
-                "MONGODB_CLUSTER_ADMIN_PASSWORD": "hE1M5Eaut93uWJGCykd",
-                "MONGODB_CLUSTER_ADMIN_USER": "clusterAdmin",
-                "MONGODB_CLUSTER_MONITOR_PASSWORD": "4ICXY35dqCfjZYR2p7",
-                "MONGODB_CLUSTER_MONITOR_USER": "clusterMonitor",
-                "MONGODB_DATABASE_ADMIN_PASSWORD": "5aQbEZEDjhoAWoSbc03",
-                "MONGODB_DATABASE_ADMIN_USER": "databaseAdmin",
-                "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
-                "MONGODB_USER_ADMIN_USER": "userAdmin"
-                }
+                {
+                    "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
+                    "MONGODB_BACKUP_USER": "backup",
+                    "MONGODB_CLUSTER_ADMIN_PASSWORD": "hE1M5Eaut93uWJGCykd",
+                    "MONGODB_CLUSTER_ADMIN_USER": "clusterAdmin",
+                    "MONGODB_CLUSTER_MONITOR_PASSWORD": "4ICXY35dqCfjZYR2p7",
+                    "MONGODB_CLUSTER_MONITOR_USER": "clusterMonitor",
+                    "MONGODB_DATABASE_ADMIN_PASSWORD": "5aQbEZEDjhoAWoSbc03",
+                    "MONGODB_DATABASE_ADMIN_USER": "databaseAdmin",
+                    "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
+                    "MONGODB_USER_ADMIN_USER": "userAdmin"
+                    }
         
     ![!image](../../images/importers_mongodb_db_credentials.png)      
 
