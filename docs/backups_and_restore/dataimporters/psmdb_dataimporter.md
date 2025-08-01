@@ -14,12 +14,10 @@ This section outlines the step-by-step process for performing the import using t
 4. On the **Import information** page, select the data importer from the dropdown and enter the following:
 {.power-number}
 
-![!image](../../images/psmdb_dataimporter.png)
+   ![!image](../../images/psmdb_dataimporter.png)
 
-    a. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open.
-    
-        Enter the following:
-
+    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
+           
         - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
         - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
         - **Access key**: Enter your AWS Access Key ID (like a username for API access).
@@ -29,7 +27,7 @@ This section outlines the step-by-step process for performing the import using t
 
     ![!image](../../images/mongodb_s3_details_importers.png)
 
-    b. In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
+    - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
     !!! info "Important"
         Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
