@@ -64,8 +64,11 @@ Here are some common scenarios for importing database backups into Percona Evere
     You have a logical backup of a PostgreSQL database, created using `pg_dump`, stored in an Amazon S3 bucket. You want to use this backup to initialize a new PostgreSQL cluster managed by Percona Everest.
 
 
-=== "Build your own DataImporter"
+=== "Custom DataImporter"
 
+    ### Build your own DataImporter
+
+    You can create your own `DataImporter` to implement custom restore logic using any language or tool. This allows for seamless integration into the cluster provisioning workflow.
 
 === "Custom import strategy"
 
