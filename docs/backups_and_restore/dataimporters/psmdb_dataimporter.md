@@ -38,17 +38,22 @@ This section outlines the step-by-step process for performing the import using t
             ```
    
         ??? example "Find the file path using AWS CLI"
-            **Prerequisites:** Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
+            **Prerequisites:** 
+            
+            Ensure AWS CLI is installed and configured on your system. To install AWS CLI, refer to the [AWS CLI installation guide](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){:target="_blank"}.
 
             1. Run the following command:
 
+                ```
                 cat > ~/.aws/credentials
                 [default]
                 aws_access_key_id = SECRET
                 aws_secret_access_key = SECRET
-            
+                ```
+
             2. Navigate your S3 bucket structure:
             
+                ```
                 # List the folders in the bucket            
                 aws s3 ls <S3 bucket-name>
             
@@ -76,7 +81,8 @@ This section outlines the step-by-step process for performing the import using t
 
                 The file path for MongoDB will be:
                 /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-
+                ```
+                
         ![!image](../../images/importers_mongo_file_path.png)
 
 
