@@ -14,7 +14,7 @@ This section outlines the step-by-step process for performing the import using t
 4. On the **Import information** page, select the data importer from the dropdown and enter the following:
 {.power-number}
 
-    ![!image](../../images/psmdb_dataimporter.png)
+![!image](../../images/psmdb_dataimporter.png)
 
     a. Click **Fill details** to provide your S3 storage details. The **S3 details** page will open.
     
