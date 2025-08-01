@@ -44,16 +44,13 @@ This section outlines the step-by-step process for performing the import using t
 
         1. Run the following command:
 
-                ```sh
                 cat > ~/.aws/credentials
                 [default]
                 aws_access_key_id = SECRET
                 aws_secret_access_key = SECRET
-                ```
             
         2. Navigate your S3 bucket structure:
             
-                ```sh
                 # List the folders in the bucket            
                 aws s3 ls <S3 bucket-name>
             
@@ -81,9 +78,8 @@ This section outlines the step-by-step process for performing the import using t
 
                 The file path for MongoDB will be:
                 /mongodb-zh5/02d0a297-16ca-4b9f-8073-2f16607de3c9/2025-07-01T07:13:32Z/
-                ```
 
-        ![!image](../../images/importers_mongo_file_path.png)
+    ![!image](../../images/importers_mongo_file_path.png)
 
 
     - In the **DB Credentials** section, enter the key-value pairs of the user secrets.
@@ -92,17 +88,13 @@ This section outlines the step-by-step process for performing the import using t
     ??? example "Retrieve the credentials from the Kubernetes secret"
         Run the following command to decode the credentials stored in the Kubernetes secret:
 
-
-            ```sh
             kubectl get secret everest-secrets-mongodb-zh5 -n everest -o jsonpath="{.data}" | jq 'map_values(@base64d)'
-            ```
 
             Replace `everest-secrets-mongodb-zh5` with your secret name.
 
 
             Output
 
-            ```sh
             {
                 "MONGODB_BACKUP_PASSWORD": "3mBRT5XuJSrMzwhB",
                 "MONGODB_BACKUP_USER": "backup",
@@ -115,7 +107,6 @@ This section outlines the step-by-step process for performing the import using t
                 "MONGODB_USER_ADMIN_PASSWORD": "a9pb12A09pSNchldzq",
                 "MONGODB_USER_ADMIN_USER": "userAdmin"
                 }
-            ```
         
     ![!image](../../images/importers_mongodb_db_credentials.png)      
 
