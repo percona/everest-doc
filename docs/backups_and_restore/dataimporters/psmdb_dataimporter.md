@@ -16,14 +16,14 @@ This section outlines the step-by-step process for performing the import using t
 
    ![!image](../../images/psmdb_dataimporter.png)
 
-    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
+   - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:
            
-        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
-        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
-        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+    - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+    - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+    - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+    - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
             
-        Click **Save**.
+    Click **Save**.
 
     ![!image](../../images/mongodb_s3_details_importers.png)
 
@@ -87,7 +87,7 @@ This section outlines the step-by-step process for performing the import using t
         ![!image](../../images/importers_mongo_file_path.png)
 
 
-    c. In the **DB Credentials** section, enter the key-value pairs of the user secrets.
+    - In the **DB Credentials** section, enter the key-value pairs of the user secrets.
 
 
     ??? example "Retrieve the credentials from the Kubernetes secret"
