@@ -10,16 +10,15 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-3. Select the `DataImporter` from the dropdown on the **Import information** page. 
+4. Select the `DataImporter` from the dropdown on the **Import information** page. 
 
     ![!image](../../images/pg_dataimporter.png)
 
-    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following: 
-    
-       - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
-       - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
-       - **Access key**: Enter your AWS Access Key ID (like a username for API access).
-       - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
+    - Click **Fill details** to provide your S3 storage details. The **S3 details** page will open. Enter the following:     
+        - **Bucket name**:  Enter the unique name identifying your S3 storage bucket.
+        - **Region**: Select the geographical AWS region where your bucket is hosted (e.g., us-east-1, eu-west-1)
+        - **Access key**: Enter your AWS Access Key ID (like a username for API access).
+        - **Secret key**: Enter your AWS Secret Access Key (like a password for secure API access).
         
       Click **Save**.
 
@@ -28,14 +27,14 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
 
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
-    !!! info "Important"
-        Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+        !!! info "Important"
+            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-        To verify that the specified path exists, you can use the AWS CLI:
+            To verify that the specified path exists, you can use the AWS CLI:
             
-            ```
-            aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
-            ```
+        ```
+        aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
+        ```
 
 
     ??? example "Find the file path using AWS CLI"
