@@ -32,9 +32,10 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
 
             To verify that the specified path exists, you can use the AWS CLI:
             
-        ```
-        aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
-        ```
+            ```
+            aws s3 ls s3://<bucket-name>/<path-to-backup> --region <region>
+            ```
+        
 
 
     ??? example "Find the file path using AWS CLI"
@@ -103,7 +104,7 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
 4. Enter the information and click **Continue** until you reach the end of the wizard.
 
     Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
-    
+
 
     ![!image](../../images/import_complete_postgresql.png)
 
