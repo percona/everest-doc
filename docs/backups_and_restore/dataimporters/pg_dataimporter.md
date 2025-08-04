@@ -7,11 +7,9 @@ The `everest-percona-pg-operator` data importer allows you to import backups tak
 
 These are the prerequisites to import external database backups using Percona Everest UI:
 
-- PostgreSQL backups stored in an accessible S3-compatible storage bucket
+- Backup taken using the Percona PostgreSQL operator stored in an S3-compatible storage bucket
 
-- AWS credentials (Access Key and Secret Key)
-
-- Kubernetes secrets containing MongoDB user credentials.
+- Credentials to access the S3 bucket (AccessKeyID and SecretAccessKey)
 
 
 ## How to import external PostgreSQL backups using the Percona Everest UI
