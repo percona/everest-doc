@@ -1,4 +1,4 @@
-# DataImporter: Percona Operator for MySQL
+# DataImporter: Percona Operator for MySQL (XtraDB)
 
 The `everest-percona-pxc-operator` dataimporter allows you to import backups taken using the Percona Operator for MySQL (XtraDB).
 
