@@ -1,6 +1,6 @@
 # DataImporter: Percona Operator for MongoDB
 
-The `everest-percona-psmdb-operator` DataImporter enables you to import MongoDB backups stored in external S3-compatible storage into clusters managed by Percona Everest.
+The `everest-percona-psmdb-operator` data importer allows you to import backups taken using the Percona Operator for MongoDB.
 
 
 ##  Prerequisites
