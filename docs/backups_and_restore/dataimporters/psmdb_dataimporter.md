@@ -7,7 +7,7 @@ The `everest-percona-psmdb-operator` data importer allows you to import backups 
 
 - Backup taken using the Percona MongoDB Operator stored in an S3-compatible storage bucket
 - Credentials to access the S3 bucket (`AccessKeyID` and `SecretAccessKey`)
-- System user credentials from the source cluster
+- System user credentials from the source cluster. For more details, refer to the [Percona Operator for MySQL system user documentation]( https://docs.percona.com/percona-operator-for-mysql/pxc/users.html?h=user#system-users){:target="_blank"}.
 
 
 ## How to import external MongoDB backups using the Percona Everest UI
