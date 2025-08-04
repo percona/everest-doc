@@ -20,3 +20,4 @@ Kubernetes LoadBalancer configurations differ across cloud providers. To streaml
 | **NodePort**| In Kubernetes, a service type that exposes your application by opening a specific port on each node in the cluster.|
 | **Percona Everest User**  | A user of Percona Everest who manages database clusters.  |
 | **Percona Everest Admin** | A user with full permissions to configure and maintain Percona Everest.|
+
