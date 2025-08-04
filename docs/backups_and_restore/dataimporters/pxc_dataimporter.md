@@ -1,7 +1,6 @@
 # DataImporter: Percona Operator for MySQL
 
-The `everest-percona-pxc-operator` data importer enables you to import MySQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
-
+The `everest-percona-pxc-operator` dataimporter allows you to import backups taken using the Percona Operator for MySQL (XtraDB).
 
 ##  Prerequisites
 
