@@ -5,7 +5,7 @@ The `everest-percona-pg-operator` data importer enables you to import PostgreSQL
 
 ##  Prerequisites
 
-These are the prerequisites for import external database backups using Percona Everest UI:
+These are the prerequisites to import external database backups using Percona Everest UI:
 
 - PostgreSQL backups stored in an accessible S3-compatible storage bucket
 
