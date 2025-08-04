@@ -8,3 +8,15 @@ In Percona Everest, you can access the database clusters using `ClusterIP` for i
 ## Why use LoadBalancer?
 
 Kubernetes LoadBalancer configurations differ across cloud providers. To streamline this, Percona Everest provides a flexible mechanism that allows administrators to create reusable and provider-specific LoadBalancer configurations.
+
+
+## Understanding some important terms
+
+| **Term**                  | **Definition**                                                                                                                                            |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **ClusterIP** | In Kubernetes, a service type that exposes an application on a virtual IP address within the cluster. |
+| **LoadBalancer**| In Kubernetes, a service type that exposes your application to the internet using a cloud provider’s load balancing infrastructure.|
+| **Load Balancer Config**  | A preset in Percona Everest that contains a set of key-value pairs representing annotations applied to the appropriate LoadBalancer.|
+| **NodePort**| In Kubernetes, a service type that exposes your application by opening a specific port on each node in the cluster.|
+| **Percona Everest User**  | A user of Percona Everest who manages database clusters.  |
+| **Percona Everest Admin** | A user with full permissions to configure and maintain Percona Everest.|
