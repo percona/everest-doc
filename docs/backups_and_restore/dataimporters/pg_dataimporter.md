@@ -16,7 +16,7 @@ These are the prerequisites to import external database backups using Percona Ev
 
 ## How to import external PostgreSQL backups using the Percona Everest UI
 
-This section outlines the step-by-step process for performing the import using the Percona Everest UI.
+This section outlines the step-by-step process for importing backups using the Percona Everest UI.
 {.power-number}
 
 1. Log in to the Percona Everest UI.

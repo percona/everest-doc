@@ -1,11 +1,11 @@
-# DataImporter: Percona PXC operator
+# DataImporter: Percona Operator for MySQL
 
 The `everest-percona-pxc-operator` data importer enables you to import MySQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
 
 
 ##  Prerequisites
 
-These are the prerequisites for import external database backups using Percona Everest UI:
+These are the prerequisites to import external database backups using Percona Everest UI:
 
 - MySQL backups stored in an accessible S3-compatible storage bucket
 
@@ -16,17 +16,17 @@ These are the prerequisites for import external database backups using Percona E
 
 ## How to import external MySQL backups using the Percona Everest UI
 
-This section outlines the step-by-step process for performing the import using the Percona Everest UI.
+This section outlines the step-by-step process for importing backups using the Percona Everest UI.
 {.power-number}
 
 1. Log in to the Percona Everest UI.
 
-2. From the Percona Everest homepage, click **Import**. Select the database as **MySQL**. The **Basic Information** page will be displayed.
+2. From the Percona Everest homepage, click **Import**. Select the database as **MySQL**. The **Basic Information** page will then be displayed.
 
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
 
-4. On the **Import information** page, select the data importer from the dropdown.
+4. Select the data importer from the dropdown on the **Import information** page.
 
     ![!image](../../images/pxc_dataimporter.png)
 
@@ -136,7 +136,7 @@ This section outlines the step-by-step process for performing the import using t
 
 6. Enter the information and click **Continue** until you reach the end of the wizard.
 
-    Your backup import process will now start. Once the import is successful, the database status will eventually change to **Up**.
+    Your backup import process will now start. Once the import is successful, the database status will change to **Up**.
 
     ![!image](../../images/import_complete.png)
 
