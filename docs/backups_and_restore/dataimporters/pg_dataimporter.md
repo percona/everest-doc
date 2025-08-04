@@ -1,6 +1,6 @@
 # DataImporter: Percona Operator for PostgreSQL
 
-The `everest-percona-pg-operator` data importer allows you to import backups taken using the Percona PostgreSQL Operator.
+The `everest-percona-pg-operator` dataimporter allows you to import backups taken using the Percona PostgreSQL Operator.
 {.power-number}
 
 ##  Prerequisites
