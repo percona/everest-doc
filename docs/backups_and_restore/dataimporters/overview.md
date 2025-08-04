@@ -21,6 +21,9 @@ This feature can help you achieve the following objectives:
 
 ### What are DataImporters?
 
+!!! info "Important"
+    Initially, Percona Everest includes three **pre-installed DataImporters** (everest-percona-pg-operator, everest-percona-pxc-operator, and everest-percona-psmdb-operator), designed to restore external backups created using Percona operators.
+
 A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It represents a self-contained, reusable blueprint for importing data into a newly created database cluster managed by Percona Everest. It defines:
 
 - The container to be run for your data restore logic.
@@ -28,8 +31,7 @@ A **DataImporter** is a cluster-scoped CRD (Custom Resource Definition). It repr
 - The input configurations it requires (e.g., S3 path, credentials, and custom inputs).
 - Any constraints that your database cluster must meet, such as engine version requirements.
 
-!!! note
-    Initially, Percona Everest includes three **pre-installed DataImporters**, designed to restore external backups created using Percona operators.
+
 
 ### What is a DataImport job?
 
