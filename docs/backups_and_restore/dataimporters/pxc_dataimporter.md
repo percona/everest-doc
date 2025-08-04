@@ -2,6 +2,20 @@
 
 The `everest-percona-pxc-operator` data importer enables you to import MySQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
 
+
+##  Prerequisites
+
+These are the prerequisites for import external database backups using Percona Everest UI:
+
+- MySQL backups stored in an accessible S3-compatible storage bucket
+
+- AWS credentials (Access Key and Secret Key)
+
+- Kubernetes secrets containing MongoDB user credentials.
+
+
+## How to import external MySQL backups using the Percona Everest UI
+
 This section outlines the step-by-step process for performing the import using the Percona Everest UI.
 {.power-number}
 
@@ -28,7 +42,6 @@ This section outlines the step-by-step process for performing the import using t
         ![!image](../../images/mongodb_s3_details_importers.png)
 
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
-
 
         !!! info "Important"
             Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
