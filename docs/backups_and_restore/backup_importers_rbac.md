@@ -8,7 +8,7 @@ When importing external backups into Percona Everest, it is essential to conside
 The following RBAC permissions are supported for `DataImporters` and `DataImportJobs`:
 
 
-!!! warning "Important"
+!!! info "Important"
     :x: Represents an action that's not supported by the Percona Everest API.
 
 |**Resource**| **Read**| **Create**| **Update**|**Delete**|
