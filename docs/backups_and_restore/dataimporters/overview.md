@@ -72,6 +72,8 @@ Here are some common scenarios for importing database backups into Percona Evere
 
     You can create your own `DataImporter` to implement custom restore logic using any language or tool. This allows for seamless integration into the cluster provisioning workflow.
 
+    See the [documentation](https://github.com/percona/everest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
+
 === "Custom import strategy"
 
     ### Create and share a custom import strategy

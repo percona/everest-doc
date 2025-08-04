@@ -23,7 +23,7 @@
 !!! info "Technical Preview"
     The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import backups using the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
+Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups using the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)** into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
 
 #### Key features
 
