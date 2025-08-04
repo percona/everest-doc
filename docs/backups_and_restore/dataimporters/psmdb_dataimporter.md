@@ -7,11 +7,9 @@ The `everest-percona-psmdb-operator` DataImporter enables you to import MongoDB 
 
 These are the prerequisites to import external database backups using Percona Everest UI:
 
-- MongoDB backups stored in an accessible S3-compatible storage bucket
-
-- AWS credentials (Access Key and Secret Key)
-
-- Kubernetes secrets containing MongoDB user credentials.
+- Backup taken using the Percona MongoDB Operator stored in an S3-compatible storage bucket
+- Credentials to access the S3 bucket (AccessKeyID and SecretAccessKey)
+- System user credentials from the source cluster
 
 
 ## How to import external MongoDB backups using the Percona Everest UI
