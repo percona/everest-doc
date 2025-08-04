@@ -7,7 +7,7 @@ The `everest-percona-pg-operator` data importer allows you to import backups tak
 
 - Backup taken using the Percona PostgreSQL operator stored in an S3-compatible storage bucket
 
-- Credentials to access the S3 bucket (AccessKeyID and SecretAccessKey)
+- Credentials to access the S3 bucket (`AccessKeyID` and `SecretAccessKey`)
 
 
 ## How to import external PostgreSQL backups using the Percona Everest UI
