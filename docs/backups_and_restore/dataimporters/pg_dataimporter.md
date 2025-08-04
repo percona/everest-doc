@@ -1,6 +1,6 @@
 # DataImporter: Percona Operator for PostgreSQL
 
-The `everest-percona-pg-operator` data importer enables you to import PostgreSQL backups stored in external S3-compatible storage into clusters managed by Percona Everest.
+The `everest-percona-pg-operator` data importer allows you to import backups taken using the Percona PostgreSQL Operator.
 {.power-number}
 
 ##  Prerequisites
