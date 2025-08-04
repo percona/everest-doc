@@ -7,6 +7,4 @@ In Percona Everest, you can access the database clusters using `ClusterIP` for i
 
 ## Why use LoadBalancer?
 
-Kubernetes LoadBalancer configurations vary between cloud providers. Percona Everest offers a flexible mechanism that allows administrators to create reusable, provider-specific LoadBalancer configurations to address this.
-
-
+Kubernetes LoadBalancer configurations differ across cloud providers. To streamline this, Percona Everest provides a flexible mechanism that allows administrators to create reusable and provider-specific LoadBalancer configurations.
