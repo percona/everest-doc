@@ -54,7 +54,7 @@ Here are the steps to import the external backups:
 
     -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
+        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html) for details on the correct file path format.
 
         ![!image](../images/importers_mongo_file_path.png)
 
