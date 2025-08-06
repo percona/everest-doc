@@ -139,6 +139,25 @@ After setting up your OIDC configuration, you can verify the functionality by vi
 ![!image](../images/sso_login.png)
 
 
+## Percona Everest OIDC configuration for Microsoft Entra
+
+When configuring Everest's OIDC settings via `everestctl`, ensure you specify the correct scope:
+
+```sh
+everestctl settings oidc configure \
+--issuer-url=http://url.com \
+--client-id=<your-app-client-id> \
+--scopes=openid,profile,email,<your-app-client-id>/.default
+```
+
+!!! note
+    Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
+
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Percona Everest can verify.
+
+For a detailed explanation, see the [OIDC integration limitations with Microsoft Entra](../reference/known_limitations.md#oidc-integration-with-microsoft-entra).
+
+
 
 
 
