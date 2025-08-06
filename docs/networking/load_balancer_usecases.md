@@ -7,8 +7,6 @@ Percona Everest administrators create load balancer configurations suitable for 
 
 **Key characteristics:**
 
-The following are the characteristics of load balancer configs:
-
 -  Load balancer config has a globally unique name across the entire Percona Everest deployment.
 
 - It can be applied to the Proxy component of any supported database Engine.
