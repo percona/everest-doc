@@ -143,7 +143,7 @@ After setting up your OIDC configuration, you can verify the functionality by vi
 
 When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
 
-**Problem**
+### Limitations of default Microsoft Entra access tokens
 
 By default, Microsoft Entra issues access tokens intended for use with Microsoft's own APIs (e.g., Microsoft Graph). These tokens have the following characteristics:
 
@@ -153,7 +153,7 @@ By default, Microsoft Entra issues access tokens intended for use with Microsoft
 
 Microsoft Entra generates access tokens using a proprietary signature mechanism, which Percona Everest cannot validate. This results in signature verification failures when integrating Percona Everest with Entra-generated tokens.
 
-**Solution**
+### How to obtain valid tokens for Percona Everest
 
 To obtain access tokens that Percona Everest can validate, request tokens explicitly scoped for the registered application in Microsoft Entra using the `<application-client-id>/.default scope`. This ensures:
 
@@ -161,7 +161,7 @@ To obtain access tokens that Percona Everest can validate, request tokens explic
 
 - **Signature:** Standard JWT, verifiable using the issuer's public keys
 
-**Everest Configuration**
+### Everest Configuration
 
 When configuring Everest's OIDC settings via `everestctl`, ensure you specify the correct scope:
 
