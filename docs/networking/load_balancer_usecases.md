@@ -18,6 +18,7 @@ The following are the characteristics of load balancer configs:
 - It consists of a set of key-value pairs representing annotations that need to be applied to the appropriate load balancer.
 
 
+After all required values are configured, the Percona Everest administrator saves the configuration to make it available for use throughout the platform.
 
 
 
