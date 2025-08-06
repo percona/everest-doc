@@ -1,7 +1,9 @@
 # Load balancer use cases
 
 
-## Create load balancer configs
+## Load balancer configs
+
+### Creat load balancer configs
 
 Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to utilize them later without having to define rules for each database cluster creation.
 
@@ -17,6 +19,13 @@ Percona Everest administrators create load balancer configurations suitable for 
 
 
 After all required values are configured, the Percona Everest administrator saves the configuration to make it available for use throughout the platform.
+
+
+## Role-based access control (RBAC) policies
+
+### Protect load balancer config with RBAC policies
+
+
 
 
 
