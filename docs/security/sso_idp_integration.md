@@ -139,6 +139,45 @@ After setting up your OIDC configuration, you can verify the functionality by vi
 ![!image](../images/sso_login.png)
 
 
+## OIDC integration with Microsoft Entra
+
+When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
+
+**Problem**
+
+By default, Microsoft Entra issues access tokens intended for use with Microsoft's own APIs (e.g., Microsoft Graph). These tokens have the following characteristics:
+
+- **Audience (aud):** "`00000003-0000-0000-c000-000000000000`" (Microsoft Graph)
+
+- **Signature:** Uses a proprietary mechanism that cannot be validated by Percona Everest
+
+Microsoft Entra generates access tokens using a proprietary signature mechanism, which Percona Everest cannot validate. This results in signature verification failures when integrating Percona Everest with Entra-generated tokens.
+
+**Solution**
+
+To obtain access tokens that Percona Everest can validate, request tokens explicitly scoped for the registered application in Microsoft Entra using the `<application-client-id>/.default scope`. This ensures:
+
+- **Audience (aud):** Set to your application's client ID
+
+- **Signature:** Standard JWT, verifiable using the issuer's public keys
+
+**Everest Configuration**
+
+When configuring Everest's OIDC settings via `everestctl`, ensure you specify the correct scope:
+
+```sh
+everestctl settings oidc configure \
+--issuer-url=http://url.com \
+--client-id=<your-app-client-id> \
+--scopes=openid,profile,email,<your-app-client-id>/.default
+```
+
+!!! note
+    Note: Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
+
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Percona Everest can verify.
+
+
 
 
 
