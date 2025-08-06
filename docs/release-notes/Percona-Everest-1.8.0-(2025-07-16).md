@@ -27,7 +27,7 @@ Starting with Percona Everest 1.8.0, we are excited to roll out a new feature th
 
 #### Key features
 
-- Import database backups using the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by Percona Everest.
+- Import database backups of clusters managed by the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by Percona Everest.
 
 - Customize the import process using tools like `mongodump`, `pg_dump`, or `mysqldump`.
 
