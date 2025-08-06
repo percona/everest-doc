@@ -23,11 +23,11 @@
 !!! info "Technical Preview"
     The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
+Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
 
 #### Key features
 
-- Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
+- Import database backups of clusters managed by the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by Percona Everest.
 
 - Customize the import process using tools like `mongodump`, `pg_dump`, or `mysqldump`.
 
@@ -54,7 +54,7 @@ Here are the steps to import the external backups:
 
     -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
+        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html) for details on the correct file path format.
 
         ![!image](../images/importers_mongo_file_path.png)
 
@@ -64,7 +64,7 @@ Here are the steps to import the external backups:
 
 5. Click **Continue** until you reach the end of the wizard. Once the import is successful, the database status will change to **Up**.
 
-If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/overview.html).
+If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html).
 
 ## New features
 
