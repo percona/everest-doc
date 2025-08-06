@@ -161,7 +161,7 @@ To obtain access tokens that Percona Everest can validate, request tokens explic
 
 - **Signature:** Standard JWT, verifiable using the issuer's public keys
 
-### Everest Configuration
+### Percona Everest OIDC configuration for Microsoft Entra
 
 When configuring Everest's OIDC settings via `everestctl`, ensure you specify the correct scope:
 
