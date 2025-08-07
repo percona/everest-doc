@@ -78,6 +78,20 @@ Here are some common scenarios for importing database backups into Percona Evere
 
 There are a few limitations to be aware of when importing external database backups:
 
+- This feature **only** supports backups created **using Percona Operators**. Backups created by other tools directly in an S3 bucket are not supported.
+
+    ??? example "Example"
+
+        **Supported**
+
+        - Backups created via Percona Operator for MySQL or MongoDB
+        - Stored in S3-compatible object storage
+
+        **Unsupported**
+
+        - Backups taken by third-party tools
+        - Direct uploads to S3 without using Percona Operator
+
 - Percona Everest 1.8.0 **does not guarantee** successful imports for physical backups because it lacks an encryption key configuration. Although some cases may work depending on the backup method and environment, there is currently no official support for this feature.
 
 - Certain import methods require database user credentials that exactly match those from the source system. Since Percona Everest does not validate these credentials, you must ensure they are **accurate** before starting the import.
