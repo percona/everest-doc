@@ -58,7 +58,7 @@ In the **Load Balancer Configuration** section, the user can choose the specific
     Only one load balancer config can be applied to a load balancer at any given time.
 
 
-## Apply and manage load balancer config to an existing database cluster
+## Apply load balancer config to an existing database cluster
 
 Users may want to change the Load Balancer Config applied to an existing Load Balancer. This can be done by clicking **Edit** in the **Advanced Configuration** section of the DB cluster **Overview** page.
 
@@ -75,6 +75,25 @@ After selecting a new Load Balancer Config, the user can save the changes:
         This change does not trigger a database restart.
 
 - If the user cancels the changes, no updates are applied.
+
+
+!!! note
+    Only one load balancer config can be applied to a load balancer at any given time.
+
+
+## Manage Load Balancer Config
+
+As infrastructure requirements or usage patterns change, there may be a need to modify or remove existing Load Balancer Configurations. Percona Everest enables administrators, as well as any users with the appropriate RBAC permissions, to update or delete Load Balancer Configurations directly from the Percona Everest UI.
+
+
+### Modify Load Balancer Config
+
+A Percona Everest Admin may need to adjust a Load Balancer Config by adding, modifying, or removing annotations.
+
+### Delete Load Balancer Config
+
+When a Load Balancer Config is no longer needed, Percona Everest admin can delete the Load Balancer Config.
+
 
 
 
