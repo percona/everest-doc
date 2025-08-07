@@ -1,9 +1,7 @@
 # Load balancer use cases
 
 
-## Load balancer configs
-
-### Creat load balancer configs
+## Create load balancer configs
 
 Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to utilize them later without having to define rules for each database cluster creation.
 
@@ -21,9 +19,30 @@ Percona Everest administrators create load balancer configurations suitable for 
 After all required values are configured, the Percona Everest administrator saves the configuration to make it available for use throughout the platform.
 
 
-## Role-based access control (RBAC) policies
+## Restrict access to load balancer configs with Role-based access control (RBAC) policies
 
-### Protect load balancer config with RBAC policies
+The Percona Everest administrator can limit access to specific load balancer configs, including the ability to apply or modify them. This is achieved using Percona Everest’s RBAC (Role-Based Access Control) system.
+
+**Key characteristics:**
+
+- RBAC policies apply to the entire load balancer configuration, including all key-value pairs in the template.
+
+- It is not possible to assign access control to individual key-value pairs within a specific load balancer configuration.
+
+### Restrict usage of load balancer configs
+
+The Percona Everest administrator can manage (**create/edit/read/delete**) load balancer config for specific Percona Everest users only. The rest of the users can only **read** load balancer config content and can apply existing configs when provisioning database clusters, but cannot modify them.
+
+To achieve this, the following RBAC policy is defined:
+
+```sh
+p, alice, load-balancer-configs, *, *
+p, role:team-dev, load-balancer-configs, read, *
+
+```
+
+
+
 
 
 
