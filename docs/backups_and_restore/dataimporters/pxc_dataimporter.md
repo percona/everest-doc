@@ -4,7 +4,7 @@ The `everest-percona-pxc-operator` dataimporter allows you to import backups tak
 
 ##  Prerequisites
 
-- Backup taken only using the Percona Operator for MySQL (XtraDB)stored in an S3-compatible storage bucket. Backups created by other tools directly in an S3 bucket are not supported.
+- Backups taken **only** using the Percona Operator for MySQL (XtraDB) stored in an S3-compatible storage bucket.
 
     !!! note
         Backups created by other tools directly in an S3 bucket are not supported.

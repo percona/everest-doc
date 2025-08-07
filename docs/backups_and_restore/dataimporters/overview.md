@@ -84,8 +84,8 @@ There are a few limitations to be aware of when importing external database back
 
         **Supported**
 
-        - Backups created via Percona Operator for MySQL or MongoDB
-        - Stored in S3-compatible object storage
+        - Backups created via Percona Operator for MySQL, PostgreSQL, or MongoDB
+        - Stored in S3-compatible storage
 
         **Unsupported**
 
