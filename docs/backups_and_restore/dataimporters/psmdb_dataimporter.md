@@ -5,7 +5,11 @@ The `everest-percona-psmdb-operator` data importer allows you to import backups 
 
 ##  Prerequisites
 
-- Backup taken using the Percona MongoDB Operator stored in an S3-compatible storage bucket
+- Backup taken **only** using the Percona MongoDB Operator stored in an S3-compatible storage bucket
+
+    !!! note
+        Backups created by other tools directly in an S3 bucket are not supported.
+
 - Credentials to access the S3 bucket (`AccessKeyID` and `SecretAccessKey`)
 - System user credentials from the source cluster. For more details, refer to the [Percona Operator for MongoDB user documentation](  https://docs.percona.com/percona-operator-for-mongodb/users.html?h=user#system-users){:target="_blank"}.
 
