@@ -5,7 +5,10 @@ The `everest-percona-pg-operator` dataimporter allows you to import backups take
 
 ##  Prerequisites
 
-- Backup taken using the Percona PostgreSQL operator stored in an S3-compatible storage bucket
+- Backup taken **only** using the Percona PostgreSQL operator stored in an S3-compatible storage bucket
+
+    !!! note
+        Backups created by other tools directly in an S3 bucket are not supported.
 
 - Credentials to access the S3 bucket (`AccessKeyID` and `SecretAccessKey`)
 
