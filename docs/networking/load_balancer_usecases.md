@@ -41,7 +41,17 @@ p, role:team-dev, load-balancer-configs, read, *
 
 ```
 
+## Apply load balancer config to a new database cluster
 
+While creating a new database cluster, a user can expose it using the load balancer and apply the load balancer Configuration to it.
+
+Percona Everest UI provides an additional **Load Balancer Configuration** panel on the **Advanced Configuration** step of the DB cluster creation wizard. This panel appears when the selected **Exposure method** is load Balancer. 
+
+In the **Load Balancer Configuration** section, the user can choose the specific load balancer configuration they wish to apply. 
+
+- **If RBAC is disabled:** The system will display all existing load balancer configurations.
+
+- **If RBAC is enabled:** The system will only show the load balancer configurations that the user has permission to access (with **read** permissions).
 
 
 
