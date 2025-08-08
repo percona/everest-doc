@@ -95,6 +95,17 @@ A Percona Everest Admin may need to adjust a Load Balancer Config by adding, mod
 When a Load Balancer Config is no longer needed, Percona Everest admin can delete the Load Balancer Config.
 
 
+##  Expose database clusters via NodePort
+
+!!! info "Important"
+    NodePort is intended primarily for development and testing. As it opens a static port on every Kubernetes node, it is not recommended for production workloads.
+
+Percona Everest users can expose a database cluster using the NodePort. This method makes the service accessible on a static port on each node in the cluster.
+
+Percona Everest users can use it to expose new as well as existing clusters.
+
+
+
 
 
 
