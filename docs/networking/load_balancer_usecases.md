@@ -1,5 +1,7 @@
 # Load balancer use cases
 
+This section outlines the use cases around managing Load balancer configurations.
+
 
 ## Create load balancer configs
 
