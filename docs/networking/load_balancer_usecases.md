@@ -77,8 +77,8 @@ After selecting a new Load Balancer Config, the user can save the changes:
 - If the user cancels the changes, no updates are applied.
 
 
-!!! note
-    Only one load balancer config can be applied to a load balancer at any given time.
+    !!! note
+        Only one load balancer config can be applied to a load balancer at any given time.
 
 
 ## Manage Load Balancer Config
