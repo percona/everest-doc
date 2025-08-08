@@ -5,7 +5,7 @@ This section outlines the use cases around managing Load balancer configurations
 
 ## Create load balancer configs
 
-Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to utilize them later without having to define rules for each database cluster creation.
+Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to use them later without having to define rules for each database cluster creation.
 
 **Key characteristics:**
 
@@ -23,7 +23,7 @@ After all required values are configured, the Percona Everest administrator save
 
 ## Restrict access to load balancer configs with Role-based access control (RBAC) policies
 
-The Percona Everest administrator can limit access to specific load balancer configs, including the ability to apply or modify them. This is achieved using Percona Everest’s RBAC (Role-Based Access Control) system.
+For security, the Percona Everest administrator can limit access to specific load balancer configs, including the ability to apply or modify them. This is achieved using Percona Everest’s RBAC (Role-Based Access Control) system.
 
 **Key characteristics:**
 
@@ -99,8 +99,8 @@ When a Load Balancer Config is no longer needed, Percona Everest admin can delet
 
 ##  Expose database clusters via NodePort
 
-!!! info "Important"
-    NodePort is intended primarily for development and testing. As it opens a static port on every Kubernetes node, it is not recommended for production workloads.
+!!! warning
+    NodePort is intended primarily for development and testing environments only. As it opens a static port on every Kubernetes node, it is not recommended for production workloads.
 
 Percona Everest users can expose a database cluster using the NodePort. This method makes the service accessible on a static port on each node in the cluster.
 
