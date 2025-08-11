@@ -1,3 +1,3 @@
-# Creating and Managing Load Balancer Configurations
+# Creating and managing load balancer configuration
 
 
