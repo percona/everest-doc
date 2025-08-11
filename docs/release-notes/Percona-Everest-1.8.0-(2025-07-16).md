@@ -4,7 +4,7 @@
 
 
 !!! warning
-    Single Sign-On (SSO) authentication with Microsoft Entra ID **may not function** in Percona Everest 1.8.0. To ensure it functions properly, upgrade to **version 1.8.1**.
+    Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in Percona Everest 1.8.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
 
 ??? info "Expand to unleash the key updates"
