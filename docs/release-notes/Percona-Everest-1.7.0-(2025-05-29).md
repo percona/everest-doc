@@ -11,7 +11,7 @@
         ```
         For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
 
-    - Single Sign-On (SSO) authentication with Microsoft Entra ID **may not function** in Percona Everest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
+    - Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in Percona Everest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
 ??? info "🔑 Expand to unleash the key updates"
 
