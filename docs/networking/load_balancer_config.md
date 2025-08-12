@@ -12,6 +12,7 @@ Here's how you can create load balancer config:
 
 3. Click **Create configuration** and a pop-up opens.
 
-4. Enter the desired **Configuration name** and click **Create**. You will be taken back to the **Load balancer configuration** page.
+4. Enter the desired **Configuration name** and click **Create**. You will be taken back to the **Load balancer configuration** page and you can see the configuration that you created.
 
-5.  
+5. Click on the created configuration and enter the Key and Value in the input fields. To add new Key Value pairs click **Add new**. Click **Save configuration**.
+
