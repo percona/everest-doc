@@ -215,9 +215,9 @@ nav:
       - Transport Layer Security (TLS) support: security/tls_setup.md  
 
   - Networking:
-      - LoadBalancer: networking/load_balancer.md
-      - LoadBalancer usecases: networking/load_balancer_usecases.md
-      - LoadBalancer usecases: networking/load_balancer_config.md
+      - Load balancer overview: networking/load_balancer.md
+      - Load balancer usecases: networking/load_balancer_usecases.md
+      - Load balancer Configuration: networking/load_balancer_config.md
 
 
   - Back up and restore data: 
