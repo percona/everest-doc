@@ -1,4 +1,4 @@
-# Creating and managing load balancer configuration
+# Creating and managing load balancer configurations
 
 
 ## How to create and manage load balancer config
@@ -8,13 +8,15 @@ Here's how you can create load balancer config:
 
 1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
 
-2. Click **Configure** on the **Load balancer configuration** section. The **Load balancer configuration** page will open.
+2. In the **Load balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
 
-3. Click **Create configuration** and a pop-up opens.
+3. Click **Create configuration**. A pop-up window appears.
 
-4. Enter the desired **Configuration name** and click **Create**. You will be taken back to the **Load balancer configuration** page and you can see the configuration that you created.
+4. Enter the desired **Configuration name** and click **Create**. You will return to the **Load balancer configuration** page, where your new configuration is listed.
 
-5. Click on the created configuration and enter the Key and Value in the input fields. To add new Key Value pairs click **Add new**. Click **Save configuration**.
+5. Click the newly created configuration to open it. Add one or more Key–value pairs in the provided fields. To add new Key–value pairs click **Add new**. 
+
+6. Click **Save configuration**.
 
 ### Manage load balancer config
 
@@ -22,7 +24,7 @@ Here's how you can edit and delete the load balancer config:
 
 
 
-## Advanced configuration for load balancer
+## Configuring load balancer for external database access
 
 You can enable a database cluster available outside of Kubernetes network as while creating a new database cluster as follows:
 {.power-number}
