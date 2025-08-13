@@ -217,6 +217,7 @@ nav:
   - Networking:
       - LoadBalancer: networking/load_balancer.md
       - LoadBalancer usecases: networking/load_balancer_usecases.md
+      - LoadBalancer usecases: networking/load_balancer_config.md
 
 
   - Back up and restore data: 
