@@ -39,10 +39,14 @@ You can enable a database cluster available outside of Kubernetes network as whi
 
 6. Select the required Load balancer configuration from the dropdown.
 
-7. Enter the trusted IP addresses to restrict access.
+7. Enter the trusted IP addresses to restrict access in the **Source range** field.
 
     !!! note
         Leaving this blank will expose the datase to all the IP addresses which is not recommended.
+
+8. To add more than one Source range for IP address, click Add new. Enter the specific IP address.
+
+
 
 
 
