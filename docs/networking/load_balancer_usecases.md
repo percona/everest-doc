@@ -3,7 +3,7 @@
 This section outlines the use cases around managing Load balancer configurations.
 
 
-## Create load balancer configs
+## Create load balancer configuration
 
 Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to use them later without having to define rules for each database cluster creation.
 
