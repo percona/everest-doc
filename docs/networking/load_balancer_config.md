@@ -19,8 +19,13 @@ Here's how you can create load balancer config:
 ### Manage load balancer config
 
 Here's how you can edit and delete the load balancer config:
-{.power-number}
 
 
-1. 
+
+## Advanced configuration for load balancer
+
+
+
+
+
 
