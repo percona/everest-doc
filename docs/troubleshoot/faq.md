@@ -13,7 +13,7 @@ Refer to our [API documentation](https://percona-everest.readme.io/reference/get
 
 ## Do we have logs of the API calls made?
 
-Yes, the Percona Everest backend has logs. It runs as a `percona-everest` deployment within the `everest-system` namespace.
+Yes, the Percona Everest backend has logs. It runs as a `everest-server` deployment within the `everest-system` namespace.
 
 - Accessing these logs helps us verify whether an API call was initiated for a specific user operation.
 
