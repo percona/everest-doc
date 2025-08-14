@@ -35,7 +35,11 @@ kubectl logs -f deploy/percona-everest -n everest-system
 
 ## How to troubleshoot issues between the UI and the Percona Everest API? 
 
-You can view these logs in your web browser's console.
+You can view the logs by running the following command:
+
+```sh
+kubectl logs -f deploy/percona-everest -n everest-system
+```
 
 ## Should we troubleshoot resources that are not part of the Percona Everest operator image?
 
