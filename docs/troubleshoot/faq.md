@@ -5,7 +5,7 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
 ## What is DatabaseEngine?
 
-The `DatabaseEngine` is a resource that defines the compatible PG/PXC/MongoDB versions for the current Percona Everest version. 
+The `DatabaseEngine` is a resource that represents the installed engines (MySQL, MongoDB, PostgreSQL). Each `DatabaseEngine` indicates the operator version that's currently installed and defines the compatible engine versions for that operator. 
 
 You can use this resource to query and update the list of supported engine versions.
 
