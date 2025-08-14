@@ -124,7 +124,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
 5. **Local access via Port Forwarding**
 
-    If you experience any access issues or lag in the Percona Everest frontend or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. 
+    If you experience any access issues or lag in the Percona Everest UI or API, try port-forwarding to the service and check the latency compared to accessing it via a LoadBalancer or NodePort. 
 
     ```sh
     kubectl port-forward svc/everest 8080:8080
