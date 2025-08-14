@@ -116,7 +116,7 @@ To troubleshoot issues with the Percona Everest API, authentication, or frontend
 
 3. **RBAC validation**
 
-    To resolve authentication and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is implemented, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
+    To resolve authorization and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is enabled, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
 
     ```sh
     kubectl get configmap everest-rbac -n everest-system
