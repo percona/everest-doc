@@ -1,6 +1,6 @@
 # Load balancer use cases
 
-This section outlines the use cases around managing Load balancer configurations.
+This section outlines the use cases around managing load balancer configurations.
 
 
 ## Create load balancer configuration
@@ -64,34 +64,34 @@ In the **Load Balancer Configuration** section, the user can choose the specific
 !!! info "Important"
     Only one load balancer config can be applied to a load balancer at any given time.
 
-Users may want to change the Load Balancer Config applied to an existing Load Balancer. This can be done by clicking **Edit** in the **Advanced Configuration** section of the DB cluster **Overview** page.
+Users may want to change the load Balancer Config applied to an existing load Balancer. This can be done by clicking **Edit** in the **Advanced Configuration** section of the DB cluster **Overview** page.
 
-Within the Load Balancer Configuration section, users can select a different config:
+Within the load Balancer Configuration section, users can select a different config:
 
-- If RBAC is disabled: All existing Load Balancer Configs are visible.
-- If RBAC is enabled: Only the Load Balancer Configs the user has read access to will be displayed.
+- If RBAC is disabled: All existing load Balancer Configs are visible.
+- If RBAC is enabled: Only the load Balancer Configs the user has read access to will be displayed.
 
-After selecting a new Load Balancer Config, the user can save the changes:
+After selecting a new load Balancer Config, the user can save the changes:
 
-- If a new config is selected, the system applies it to the Load Balancer.
+- If a new config is selected, the system applies it to the load balancer.
 
     !!! note
         This change does not trigger a database restart.
 
 - If the user cancels the changes, no updates are applied.
 
-## Manage Load Balancer Config
+## Manage load Balancer Config
 
-As infrastructure requirements or usage patterns change, there may be a need to modify or remove existing Load Balancer Configurations. Percona Everest enables administrators, as well as any users with the appropriate RBAC permissions, to update or delete Load Balancer Configurations directly from the Percona Everest UI.
+As infrastructure requirements or usage patterns change, there may be a need to modify or remove existing load Balancer Configurations. Percona Everest enables administrators, as well as any users with the appropriate RBAC permissions, to update or delete load Balancer Configurations directly from the Percona Everest UI.
 
 
-### Modify Load Balancer Config
+### Modify load Balancer Config
 
-A Percona Everest Admin may need to adjust a Load Balancer Config by adding, modifying, or removing annotations.
+A Percona Everest Admin may need to adjust a load Balancer Config by adding, modifying, or removing annotations.
 
-### Delete Load Balancer Config
+### Delete load Balancer Config
 
-When a Load Balancer Config is no longer needed, Percona Everest admin can delete the Load Balancer Config.
+When a load Balancer Config is no longer needed, Percona Everest admin can delete the load Balancer Config.
 
 
 ##  Expose database clusters via NodePort
