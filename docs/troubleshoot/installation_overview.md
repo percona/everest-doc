@@ -42,7 +42,6 @@ Percona Everest supports several configuration flags for customizing the install
 | **Flag**                  | **Description**                                     |
 | --------------------- | ----------------------------------------------- |
 | `--namespaces everest`  | By default, the `everest` namespace is used, and all the database operators (PXC, PSMDB, and PG) are installed. |
-| `--namespaces n1,n2`  | Deploy database operators in custom namespaces. |
 | `--skip-db-namespace` | Skip creation of database namespaces.           |
 
 ??? example "Example"
