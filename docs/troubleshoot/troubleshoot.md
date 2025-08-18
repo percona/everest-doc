@@ -106,7 +106,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
         This behavior is not confined to jobs alone. If the cluster lacks sufficient resources, any component may remain in a **Pending** state.
 
 
-### UI, API and Authorization issues
+### UI, API and authorization issues
 
 To troubleshoot issues with the Percona Everest UI, API, or authorization, check the everest-server deployment. 
 {.power-number}
