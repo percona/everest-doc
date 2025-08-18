@@ -65,4 +65,4 @@ The important points are:
 -  An API key is generated to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
 
 !!! note
-    PMM is an external service we support and does not necessarily fit into our architecture.
+    PMM is an external service we support.

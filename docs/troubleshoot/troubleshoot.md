@@ -1,6 +1,6 @@
 # Troubleshooting issues
 
-This section is your go-to resource for tackling common issues and finding solutions. For additional troubleshooting tips and known issues, see the Percona Everest [Release Notes](../release-notes/release_notes_index.md) and the [known limitations](../reference/known_limitations.md) section.
+This section is your go-to resource for tackling common issues and finding solutions. For known issues, see the [known limitations](../reference/known_limitations.md) section.
 
 
 ## General troubleshooting guidelines
@@ -89,7 +89,19 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
 3. **Resource availability**
 
-    When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default of 5 minutes before failing.
+    When a job is created to approve the installation plan for operators, if the cluster has no available resources to run pods, the Helm installation will wait for the specified `--timeout` or the default 5 minutes before failing. 
+    
+    In such cases, check if any pod is stuck in the **Pending** state due to insufficient resources:
+
+    ```sh
+    kubectl get pods -A --field-selector=status.phase=Pending
+    ```
+
+    !!! note
+        This behavior is not confined to jobs alone. If the cluster lacks sufficient resources, any component may remain in a **Pending** state.
+
+
+
 
 
 ### UI, API and Authorization issues
