@@ -20,8 +20,6 @@ Yes, the Percona Everest backend has logs. It runs as a `everest-server` deploym
 !!! note
     Percona Everest logs are crucial for troubleshooting issues where an operation is completed but the corresponding Everest operator resource hasn’t been created.
 
-## Where are Percona Everest backend logs stored?
-
 You can retrieve the logs from the pods associated with this deployment.
 
 To access them, run:
@@ -41,7 +39,7 @@ kubectl logs -f deploy/percona-everest -n everest-system
 
 ## How do I find out which component is not working properly?
 
-All communication with Everest resources begins with the API.
+All communication with Percona Everest resources begins with the API.
 
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
@@ -58,7 +56,7 @@ Instead, we configure PMM agents in each DB deployment to communicate with an ex
 
 The important points are:
 
-- The `MonitorConfig` resource in Percona Everest manages PMM agent setup.
+- `MonitoringConfig` contains all necessary details to connect to the PMM Server, including URL and API key.
 
 -  An API key is generated to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
 

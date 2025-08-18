@@ -32,6 +32,9 @@ You can review different logs for additional information depending on the specif
     | MongoDB       | `everest` | `kubectl logs -f deploy/percona-server-mongodb-operator -n everest` |
     | PXC           | `everest` | `kubectl logs -f deploy/percona-xtradb-cluster-operator -n everest` |
 
+    !!! note
+        Update the namespace (`-n <namespace>`) in your commands if your database clusters are deployed in a namespace other than the default one.
+
 3. **Monitoring**
 
     | Component                | Command                                                                   |
@@ -99,9 +102,6 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
     !!! note
         This behavior is not confined to jobs alone. If the cluster lacks sufficient resources, any component may remain in a **Pending** state.
-
-
-
 
 
 ### UI, API and Authorization issues
