@@ -9,7 +9,7 @@ For known issues, see the [known limitations](../reference/known_limitations.md)
 
 Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate.
 
-- Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for some useful commands.
+- Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for commonly used commands to inspect and troubleshoot Kubernetes resources when working with Percona Everest.
 
 - Use logs and events for debugging.
 
