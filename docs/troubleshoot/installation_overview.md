@@ -60,7 +60,7 @@ If you want to skip the installation of certain operators, you can use the follo
 | --------------------------------- | ------------------------------------ |
 | `--operator.mongodb=false`        | Skip installing MongoDB operator.    |
 | `--operator.postgresql=false`     | Skip installing PostgreSQL operator. |
-| `--operator.xtradb-cluster=false` | Skip installing PXC operator.        |
+| `--operator.mysql=false`          | Skip installing PXC operator.        |
 
 ### Manage namespaces
 
