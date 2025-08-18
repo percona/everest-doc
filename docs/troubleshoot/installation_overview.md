@@ -93,7 +93,7 @@ Here's the database creation workflow in Percona Everest:
     !!! note
         Other actions, such as creating backups, restoring, monitoring, or deleting objects, have a similar process, although the specific objects involved may differ.
 
-        All the custom resources connected to Percona Everest follow a similar flow, except for `the DatabaseEngine`.
+        All the custom resources connected to Percona Everest follow a similar flow, except for the `DatabaseEngine`.
 
 ### Database engine workflow
 
