@@ -105,7 +105,7 @@ Here’s the workflow for the database engine in Percona Everest:
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
 4. The Helm chart creates a Kubernetes job called `everest-operators-installer` that waits for the `InstallPlan` to be created and approves it.
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that comprise  the database operator.
-6. The Percona operator detects the database operator's deployment resource and reconciles the **DatabaseEngine CR** of the corresponding type. 
+6. The Percona Everest operator detects the database operator's deployment resource and reconciles the **DatabaseEngine CR** of the corresponding type. 
 
 7. During reconciliation, the Percona operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
  
