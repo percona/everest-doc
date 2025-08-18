@@ -107,7 +107,7 @@ Here’s the workflow for the database engine in Percona Everest:
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that comprise  the database operator.
 6. The Percona Everest operator detects the database operator's deployment resource and reconciles the **DatabaseEngine CR** of the corresponding type. 
 
-7. During reconciliation, the Percona operator detects the installed version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
+7. During reconciliation, the Percona Everest operator detects the installed database operator version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
  
     ??? example "Example"
         Check [Percona's Version Service](http://check.percona.com/){:target="_blank"} to get the engine versions supported by that operator. 
