@@ -1,6 +1,8 @@
 # Troubleshooting issues
 
-This section is your go-to resource for tackling common issues and finding solutions. For known issues, see the [known limitations](../reference/known_limitations.md) section.
+This section is your go-to resource for tackling common issues and finding solutions. 
+
+For known issues, see the [known limitations](../reference/known_limitations.md) section.
 
 
 ## General troubleshooting guidelines

@@ -7,7 +7,7 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
 The `DatabaseEngine` is a resource that represents the installed engines (MySQL, MongoDB, PostgreSQL). Each `DatabaseEngine` indicates the operator version that's currently installed and defines the compatible engine versions for that operator. 
 
-Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1) for usage information.
+Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1){:target="_blank"} for usage information.
 
 ## Do we have logs of the API calls made?
 
@@ -43,16 +43,18 @@ All communication with Percona Everest resources begins with the API.
 
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
-**Troubleshooting flow**
+### Troubleshooting flow
 
 When debugging, start with the API, proceed to the Everest operator, and examine the individual database operators.
 
 
 ## Does Percona Everest deploy PMM servers?
 
-Percona Everest doesn't deploy PMM (Percona Monitoring and Management). However, you can deploy a PMM server while installing everest. You just need to set `pmm.enabled=true`.
+Percona Everest doesn't deploy PMM (Percona Monitoring and Management). However, you can deploy a PMM server while installing everest. You just need to set `pmm.enabled=true`. 
 
-The following table shows the [configurable parameters](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration) of Percona Everest chart and their default values.
+We configure PMM agents in each DB deployment to communicate with an existing PMM server.
+
+The following table shows the [configurable parameters](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"} of Percona Everest chart and their default values.
 
 The important points are:
 
