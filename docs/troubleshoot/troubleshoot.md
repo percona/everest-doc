@@ -23,7 +23,7 @@ You can review different logs for additional information depending on the specif
 
     | Logs        | Command                                                     |
     | ---------------- | ----------------------------------------------------------- |
-    | Percona operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
+    | Percona Everest operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
     | Percona Everest server | `kubectl logs -f deploy/everest-server -n everest-system`   |
 
 2. **Database Operators (in Namespaces)**
