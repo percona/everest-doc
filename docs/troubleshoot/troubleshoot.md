@@ -45,7 +45,7 @@ You can review different logs for additional information depending on the specif
     | VM Agent                 | `kubectl logs -f deploy/vmagent-everest-monitoring -n everest-monitoring` |
 
 
-4. **Database Pods and Proxies**
+4. **Database and Proxy Pods**
 
     ```sh
     kubectl logs -f <pod-name of database or proxy> -c <database-container>
