@@ -50,9 +50,9 @@ When debugging, start with the API, proceed to the Everest operator, and examine
 
 ## Does Percona Everest deploy PMM servers?
 
-Percona Everest doesn't deploy PMM (Percona Monitoring and Management). 
+Percona Everest doesn't deploy PMM (Percona Monitoring and Management). However, you can deploy a PMM server while installing everest. You just need to set `pmm.enabled=true`.
 
-Instead, we configure PMM agents in each DB deployment to communicate with an existing PMM server.
+The following table shows the [configurable parameters](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration) of Percona Everest chart and their default values.
 
 The important points are:
 
