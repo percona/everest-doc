@@ -100,7 +100,7 @@ Here's the database creation workflow in Percona Everest:
 Here’s the workflow for the database engine in Percona Everest:
 {.power-number}
 
-1. The user installs the `everest-db` namespace chart either as part of the initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
+1. The user installs the `everest-db-namespace` chart either as part of the initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
 2. [Subscriptions](https://github.com/percona/percona-helm-charts/tree/main/charts/everest/charts/everest-db-namespace/templates){:target="_blank"} are created for the operators chosen while installing the Helm chart.
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
 4. The Helm chart creates a Kubernetes job called `everest-operators-installer` that waits for the `InstallPlan` to be created and approves it.
