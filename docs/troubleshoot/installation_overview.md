@@ -72,7 +72,7 @@ everestctl namespaces update [NAMESPACE]
 everestctl namespaces remove [NAMESPACE]
 ```
 
-For detailed information on managing namespaces, see the [Namespaces management](../administer/manage_namespaces.md) section.
+For detailed information on managing namespaces, see the [Namespaces management](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces){:target="_blank"} section.
 
 The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a complete list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
