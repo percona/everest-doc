@@ -14,7 +14,7 @@ Starting from Percona Everest v1.4.0, the [CLI installation](../install/installE
 The installation flow is as follows:
 {.power-number}
 
-1. The `everest-core` helm chart is installed:
+1. The `everest-core` helm chart is installed in the `everest-system` namespace:
 
     This step deploys all the core components required for Percona Everest to function.
 
