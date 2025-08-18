@@ -39,7 +39,7 @@ You can view the logs by running the following command:
 kubectl logs -f deploy/percona-everest -n everest-system
 ```
 
-## Should we troubleshoot resources that are not part of the Percona Everest operator image?
+## How do I find out which component is not working properly?
 
 All communication with Everest resources begins with the API.
 
