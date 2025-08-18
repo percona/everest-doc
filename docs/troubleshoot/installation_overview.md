@@ -85,7 +85,7 @@ Here's the database creation workflow in Percona Everest:
 
 1. The Percona Everest user is authenticated and logged in, and a JWT Token is provided.
 2. The user creates a database through the frontend UI, `everestctl`, or APl.
-3. The Percona Everest API is invoked to create a **Custom Resource Definition (CRD)**. The Percona Everest server then creates a custom resource `DatabaseCluster`.
+3. The Percona Everest API is invoked to create a new database. The Percona Everest server then creates a `DatabaseCluster` custom resource on the kubernetes cluster.
 4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example, if it’s PXC , `PerconaXtraDBCluster` is created.
 5. The database operator takes over the task of creating the database and the necessary objects to manage it.
 
