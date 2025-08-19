@@ -69,13 +69,29 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
 1. **Permissions and privileges**
 
-    Appropriate privileges may be required depending on the selected components for installation. For instance, if OLM is to be installed, `cluster-admin` privileges are required. If any components fail, verify that the appropriate privileges are granted.
+    Installing database operators and their dependencies may require appropriate privileges. 
+
+    For instance, installing the **Operator Lifecycle Manager (OLM)** or creating **CustomResourceDefinitions (CRDs)**  requires `cluster-admin` privileges.
+
+    If you encounter failures during installation, ensure your user account has the appropriate permissions. 
+
+    !!! note
+	    Application teams frequently encounter problems when installing operators due to **insufficient privileges**.
 
     Run the following command to check if the required privileges are granted:
 
     ```sh
-    kubectl auth can-i
+    kubectl auth can-i <verb> <resource> --namespace <namespace>
     ```
+
+    To verify if you can create CRDs, run the following command:
+
+    ```
+    kubectl auth can-i create crd
+    ```
+
+    Ensure that your cluster administrator grants the required privileges before you **retry** the installation.
+
 
 2. **Helm Chart validation**
 
