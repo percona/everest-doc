@@ -111,6 +111,7 @@ Here’s the workflow for the database engine in Percona Everest:
  
     ??? example "Example"
         Check [Percona's Version Service](http://check.percona.com/){:target="_blank"} to get the engine versions supported by that operator. 
+        
         To check which MongoDB versions are supported by PSMDB operator v1.19.0, visit:
         
         🔗 [Supported MongoDB versions – PSMDB Operator v1.19.0](https://github.com/Percona-Lab/percona-version-service/blob/09867dc07b553e452df2330e50185d98b68ed90a/sources/operator.1.19.0.psmdb-operator.json#L7-L73){:target="_blank"}.
