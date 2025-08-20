@@ -103,7 +103,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
         ```sh
         helm list -n everest-system
-        NAME  NAMESPACE   REVISION  UPDATED                             	STATUS  	CHART        	APP VERSION
+        NAME  NAMESPACE   REVISION  UPDATED                             	    STATUS CHART  APP VERSION
         everest-core everest-system	1  2025-01-16 16:24:56.577713 +0530 
         IST	deployed	everest-1.4.0	1.4.0
         ```
