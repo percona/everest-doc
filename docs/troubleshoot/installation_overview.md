@@ -5,7 +5,7 @@ This section provides an overview of how Percona Everest is installed, the compo
 
 ## Percona Everest installation workflow
 
-Starting from Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around the helm charts:
+Starting with Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around two helm charts:
 
 - [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} 
 
@@ -41,8 +41,8 @@ Percona Everest supports several configuration flags for customizing the install
 
 | **Flag**                  | **Description**                                     |
 | --------------------- | ----------------------------------------------- |
-| `--namespaces everest`  | By default, the `everest` namespace is used, and all the database operators (PXC, PSMDB, and PG) are installed. |
-| `--skip-db-namespace` | Skip creation of database namespaces.           |
+| `--namespaces everest`  | Uses the default `everest` namespace and installs all supported operators (PXC, PSMDB, and PG).|
+| `--skip-db-namespace` | Skips creation of database namespaces.           |
 
 ??? example "Example"
     You can provision multiple database namespaces simultaneously by providing a comma-separated list with the `--namespaces` flag.
