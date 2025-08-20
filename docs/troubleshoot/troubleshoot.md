@@ -14,7 +14,7 @@ Before troubleshooting, it's important to understand how Percona Everest works a
 - Use logs and events for debugging.
 
 
-### Important logs and commands
+### Key logs and commands
 
 You can review different logs for additional information depending on the specific issue.
 {.power-number}
@@ -71,7 +71,9 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
     Installing database operators and their dependencies may require appropriate privileges. 
 
-    For instance, installing the **Operator Lifecycle Manager (OLM)** or creating **CustomResourceDefinitions (CRDs)**  requires `cluster-admin` privileges.
+     - Percona Everest installation may require `cluster-admin` privileges for:
+        - **Operator Lifecycle Manager (OLM)**
+        - **CustomResourceDefinitions (CRDs)**
 
     If you encounter failures during installation, ensure your user account has the appropriate permissions. 
 
