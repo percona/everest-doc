@@ -129,7 +129,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 To troubleshoot issues with the Percona Everest UI, API, or authorization, check the everest-server deployment. 
 {.power-number}
 
-1. **Check the everest-server Pod health**
+1. **Check everest-server Pod health**
 
     If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
 
@@ -140,7 +140,7 @@ To troubleshoot issues with the Percona Everest UI, API, or authorization, check
     everest-server-78699679d4-kgqk5 1/1   Running  0       4d23h
     ```
 
-2. **Check the `everest-server` logs**
+2. **Check `everest-server` logs**
 
     ```sh
     kubectl logs -f deploy/everest-server -n everest-system
