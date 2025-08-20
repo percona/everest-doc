@@ -106,7 +106,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
         IST	deployed	everest-1.4.0	1.4.0
         ```
 
-    - As the Percona Everest installation has many components, it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+    - The Percona Everest installation has many components, so it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
 3. **Resource availability**
 
@@ -168,7 +168,7 @@ Here are the common issues related to the database operations:
 
 1. **Check the `everest-operator` logs**
 
-    Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or there are any issues. 
+    Check the `everest-operator` logs if the `DatabaseCluster` object has not been created or if there are any issues. 
 
     ```sh
     kubectl logs -f deploy/everest-operator -n everest-system
