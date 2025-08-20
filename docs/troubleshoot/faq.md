@@ -9,7 +9,7 @@ The `DatabaseEngine` is a resource that represents the installed engines (MySQL,
 
 Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1){:target="_blank"} for usage information.
 
-## Does Percona Everest log API calls?
+## Does Percona Everest provide logs for API calls?
 
 Yes, the Percona Everest backend has logs. It runs as an `everest-server` deployment within the `everest-system` namespace.
 
@@ -37,7 +37,7 @@ You can view the logs by running the following command:
 kubectl logs -f deploy/percona-everest -n everest-system
 ```
 
-## How to find out which component is not working?
+## How to identify which component is not working?
 
 All communication with Percona Everest resources begins with the API.
 
