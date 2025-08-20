@@ -23,7 +23,8 @@ Yes, the Percona Everest backend has logs. It runs as an `everest-server` deploy
 - Identify any errors that may have occurred during that process.
 
 !!! note
-    Percona Everest logs are crucial for troubleshooting issues where an operation has completed, but the corresponding Everest operator resource was not created.
+    Percona Everest logs are essential for troubleshooting issues when an operation is **completed**, but the corresponding Everest operator resource **fails to be created**.
+
 
 You can retrieve the logs from the pods associated with this deployment.
 
