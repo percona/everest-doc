@@ -5,7 +5,12 @@ This section outlines the most frequently asked questions (FAQs) about Percona E
 
 ## What is DatabaseEngine?
 
-The `DatabaseEngine` is a resource that represents the installed engines (MySQL, MongoDB, PostgreSQL). Each `DatabaseEngine` indicates the operator version currently installed and defines the compatible engine versions for that operator. 
+The `DatabaseEngine` is a resource that represents the installed engines (MySQL, MongoDB, PostgreSQL). 
+
+Each `DatabaseEngine` indicates:
+
+- The operator version currently installed.
+- Compatible engine versions supported by that operator. 
 
 Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1){:target="_blank"} for usage information.
 
