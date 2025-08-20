@@ -83,16 +83,16 @@ The [helm installation method](../install/install_everest_helm_charts.md) provid
 Here's the database creation workflow in Percona Everest:
 {.power-number}
 
-1. The Percona Everest user is authenticated and logged in, and a JWT Token is provided.
-2. The user creates a database through the frontend UI, or APl.
+1. The Percona Everest user is authenticated and logged in, and a `JWT Token` is provided.
+2. The user creates a database via the Percona Everest UI, or APl.
 3. The Percona Everest API is invoked to create a new database. The Percona Everest server then creates a `DatabaseCluster` custom resource on the kubernetes cluster.
 4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example, if it’s MySQL, `PerconaXtraDBCluster` is created.
 5. The database operator takes over the task of creating the database and the necessary objects to manage it.
 
 
     !!! note
-        Other actions, such as creating backups, restoring, monitoring, or deleting objects, have a similar process, although the specific objects involved may differ.
-
+        Similar workflows apply to backups, restores, monitoring, and deletions, although the object types may vary.
+                
         All the custom resources connected to Percona Everest follow a similar flow, except for the `DatabaseEngine`.
 
 ### Database engine workflow
