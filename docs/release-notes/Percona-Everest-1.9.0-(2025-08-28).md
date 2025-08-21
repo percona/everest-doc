@@ -36,7 +36,8 @@
 
 - [EVEREST-2114](https://perconadev.atlassian.net/browse/EVEREST-2114): The search and filter options now always remain visible on the left side, ensuring a consistent layout and easier navigation.
 
-- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We've added a **show password** toggle to the **PMM monitoring endpoint** form, which indicates whether the correct password has been entered.
+- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We have added a s**how password** toggle in the **PMM monitoring endpoint** form. This feature helps us verify if we have entered the correct password.
+
 
 
 ## Bug fixes
