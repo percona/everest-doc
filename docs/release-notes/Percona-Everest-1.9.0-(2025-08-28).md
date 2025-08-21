@@ -18,6 +18,9 @@
 
 ## 🌟 Release highlights
 
+### 🌐 Load Balancer configuration in Percona Everest
+
+
 ## New features
 
 - [EVEREST-1521](https://perconadev.atlassian.net/browse/EVEREST-1521) Network configuration changes
