@@ -23,19 +23,21 @@
 
 ## New features
 
-- [EVEREST-1521](https://perconadev.atlassian.net/browse/EVEREST-1521) Network configuration changes
 
-- [EVEREST-548](https://perconadev.atlassian.net/browse/EVEREST-548) Customize service annotations
+- [EVEREST-548](https://perconadev.atlassian.net/browse/EVEREST-548): Starting with Percona Everest 1.9.0, we have added support for managing `LoadBalancerConfigs`, which simplifies how service annotations are applied to database clusters.
 
 ## Improvements
 
-- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002) \[Helm Upgrade Flow\] Pre-check and validate CRD compatibility before Helm upgrade to prevent cluster breakage
+- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): Percona Everest now includes a pre-check mechanism to validate the compatibility of **Custom Resource Definitions (CRDs)** before upgrading. This enhancement helps prevent upgrade failures due to CRD mismatches, ensuring a smoother upgrade process.
 
-- [EVEREST-2101](https://perconadev.atlassian.net/browse/EVEREST-2101) \[UI\] Limit "Add New" button functionality on External Access to prevent blank fields
+- [EVEREST-2101](https://perconadev.atlassian.net/browse/EVEREST-2101): The behavior of the **Add New** button in the **External Access** section has been improved. Now, you can only add a new field after filling in the previously created field with a value.
 
-- [EVEREST-2114](https://perconadev.atlassian.net/browse/EVEREST-2114) \[UI\] Move table actions to the left when disabled
+    This enhancement ensures users complete the required information before adding more entries, reducing unnecessary blank fields and improving the overall user experience.
 
-- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165) \[UI\] Add "show password" toggle in PMM monitoring endpoint form
+- [EVEREST-2114](https://perconadev.atlassian.net/browse/EVEREST-2114): The search and filter options now always remain visible on the left side, ensuring a consistent layout and easier navigation.
+
+- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We've added a **show password** toggle to the **PMM monitoring endpoint** form, which indicates whether the correct password has been entered.
+
 
 ## Bug fixes
 
