@@ -44,20 +44,22 @@
 
 - [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): When creating a new PostgreSQL database using Point-in-Time Recovery (PITR), the restore page previously displayed no information after the database was restored. This issue has been resolved, and the restore page now correctly shows the restore details
 
-
 - [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): We have fixed an issue that allowed users to enter invalid monitoring endpoint URLs when editing a monitoring instance, due to a lack of proper validation. This caused databases (MySQL, MongoDB, and PostgreSQL) with scheduled backups and Point-in-Time Recovery (PITR) enabled to restart unexpectedly. Also, it failed to verify the username and password, even for valid URLs.
 
-- [EVEREST-2017](https://perconadev.atlassian.net/browse/EVEREST-2017) Restore to a new PXC cluster is failing when using MinIO storage
+- [EVEREST-2017](https://perconadev.atlassian.net/browse/EVEREST-2017): Previously, restoring a backup from one cluster to a new cluster using MinIO storage with Percona XtraDB Cluster (PXC) failed. This issue has been fixed. Backups stored in MinIO can now be successfully restored to new clusters.
 
-- [EVEREST-2031](https://perconadev.atlassian.net/browse/EVEREST-2031) \[UI\] Create policy page becomes bigger when displaying an error message
+- [EVEREST-2031](https://perconadev.atlassian.net/browse/EVEREST-2031): The **Create Policy** page previously expanded when an error message was shown. We've resolved the issue now, and it displays errors without affecting the page layout.
 
-- [EVEREST-2092](https://perconadev.atlassian.net/browse/EVEREST-2092) Failed to upgrade to 1.7.0 if first installation was older than 1.4.0
+- [EVEREST-2092](https://perconadev.atlassian.net/browse/EVEREST-2092): Upgrades using `everestctl` failed when the initial installation was older than version 1.4.0 and had been successively upgraded to version 1.7.0. The issue has now been resolved.
 
-- [EVEREST-2097](https://perconadev.atlassian.net/browse/EVEREST-2097) \[UI\] Topology Diagram View - Misaligned text in DB cluster component cards \(Restart info appears outside the box\)
 
-- [EVEREST-2105](https://perconadev.atlassian.net/browse/EVEREST-2105) \[UI\] Creating a db from backup does not display an error on Basic Information page if the original db name has a long name
+- [EVEREST-2097](https://perconadev.atlassian.net/browse/EVEREST-2097): In the **Topology Diagram** view, the restart information on database cluster cards was misaligned and appeared outside the component card, disrupting the visual layout. This issue has been resolved, and the information now displays correctly within the card.
 
-- [EVEREST-2142](https://perconadev.atlassian.net/browse/EVEREST-2142) \[UI\] DB Credentials Not Auto-Updated After Creation \(PostgreSQL\)
+
+- [EVEREST-2105](https://perconadev.atlassian.net/browse/EVEREST-2105): When creating a database from a backup, if the original database name was too long, no error message was displayed on the Basic Information page. Now, a clear message will appear on the Basic Information page if the name exceeds the allowed length.
+
+
+- [EVEREST-2142](https://perconadev.atlassian.net/browse/EVEREST-2142): When creating a PostgreSQL database, the **Host** field was updating automatically, but the **Username**, **Password**, and **Connection URL** fields remained empty until the page was manually refreshed. This issue has now been resolved, and all connection details automatically populate once the database is created.
 
 - [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148) \[operator\] can't create a DB from a backup if the users secret of the original DB doesn't follow the naming convention
 
