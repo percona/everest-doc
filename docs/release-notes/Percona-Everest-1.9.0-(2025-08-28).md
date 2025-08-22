@@ -42,9 +42,10 @@
 
 ## Bug fixes
 
-- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
+- [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012): When creating a new PostgreSQL database using Point-in-Time Recovery (PITR), the restore page previously displayed no information after the database was restored. This issue has been resolved, and the restore page now correctly shows the restore details
 
-- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
+
+- [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961): We have fixed an issue that allowed users to enter invalid monitoring endpoint URLs when editing a monitoring instance, due to a lack of proper validation. This caused databases (MySQL, MongoDB, and PostgreSQL) with scheduled backups and Point-in-Time Recovery (PITR) enabled to restart unexpectedly. Also, it failed to verify the username and password, even for valid URLs.
 
 - [EVEREST-2017](https://perconadev.atlassian.net/browse/EVEREST-2017) Restore to a new PXC cluster is failing when using MinIO storage
 
