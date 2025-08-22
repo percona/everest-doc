@@ -44,8 +44,6 @@
 
 - [EVEREST-1012](https://perconadev.atlassian.net/browse/EVEREST-1012) Creating a new postgresql database using backup has no restore information
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865) \[UI\] PITR edit info not available for PG db cluster
-
 - [EVEREST-1961](https://perconadev.atlassian.net/browse/EVEREST-1961) \[BE\] Edit monitoring instance does not work
 
 - [EVEREST-2017](https://perconadev.atlassian.net/browse/EVEREST-2017) Restore to a new PXC cluster is failing when using MinIO storage
@@ -58,19 +56,11 @@
 
 - [EVEREST-2105](https://perconadev.atlassian.net/browse/EVEREST-2105) \[UI\] Creating a db from backup does not display an error on Basic Information page if the original db name has a long name
 
-- [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109) PITR remains disabled for PostgreSQL DB cluster after creating on-demand or scheduled backups
-
-- [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135) \[Data Importer\] S3 field accepts invalid formats and Verify TLS is unchecked by default
-
 - [EVEREST-2142](https://perconadev.atlassian.net/browse/EVEREST-2142) \[UI\] DB Credentials Not Auto-Updated After Creation \(PostgreSQL\)
 
 - [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148) \[operator\] can't create a DB from a backup if the users secret of the original DB doesn't follow the naming convention
 
-- [EVEREST-2150](https://perconadev.atlassian.net/browse/EVEREST-2150) \[RBAC\] 'Restore from a backup' option is visible and functional even with read-only permissions for DB clusters
-
 - [EVEREST-2153](https://perconadev.atlassian.net/browse/EVEREST-2153) Import secrets do not get deleted if database is deleted during import
-
-- [EVEREST-2191](https://perconadev.atlassian.net/browse/EVEREST-2191) \[UI\] Active schedules and Create backup button are displayed on the left side
 
 - [EVEREST-2202](https://perconadev.atlassian.net/browse/EVEREST-2202) Import fails when the instance name is more than 16 characters
 
@@ -84,9 +74,12 @@
 
 - [EVEREST-2214](https://perconadev.atlassian.net/browse/EVEREST-2214) everestctl upgrade error
 
-- [EVEREST-2158](https://perconadev.atlassian.net/browse/EVEREST-2158) \[UI\] \[RBAC\] 'Restore from a backup' option is visible and functional even with read-only permissions for DB clusters
+- [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216) [UI] Pod Scheduling Policy field resets to enabled after clicking Continue or Previous
 
-- [EVEREST-2159](https://perconadev.atlassian.net/browse/EVEREST-2159) \[BE\] \[RBAC\] 'Restore from a backup' option is visible and functional even with read-only permissions for DB clusters
+- [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100) [UI] Save button disabled with no error when editing cluster with duplicate IP/Netmask after Everest upgrade
+
+- [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096) Multiple issues with External Access field behavior, validation, and usability during cluster creation and editing
+
 
 
 ## 🚀 Ready to Upgrade?
