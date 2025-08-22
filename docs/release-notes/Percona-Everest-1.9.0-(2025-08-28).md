@@ -52,14 +52,13 @@
 
 - [EVEREST-2092](https://perconadev.atlassian.net/browse/EVEREST-2092): Upgrades using `everestctl` failed when the initial installation was older than version 1.4.0 and had been successively upgraded to version 1.7.0. The issue has now been resolved.
 
-
 - [EVEREST-2097](https://perconadev.atlassian.net/browse/EVEREST-2097): In the **Topology Diagram** view, the restart information on database cluster cards was misaligned and appeared outside the component card, disrupting the visual layout. This issue has been resolved, and the information now displays correctly within the card.
 
 - [EVEREST-2105](https://perconadev.atlassian.net/browse/EVEREST-2105): When creating a database from a backup, if the original database name was too long, no error message was displayed on the Basic Information page. Now, a clear message will appear on the Basic Information page if the name exceeds the allowed length.
 
 - [EVEREST-2142](https://perconadev.atlassian.net/browse/EVEREST-2142): When creating a PostgreSQL database, the **Host** field was updating automatically, but the **Username**, **Password**, and **Connection URL** fields remained empty until the page was manually refreshed. This issue has now been resolved, and all connection details automatically populate once the database is created.
 
-- [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148) \[operator\] can't create a DB from a backup if the users secret of the original DB doesn't follow the naming convention
+- [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148): [Operator] Fixed an issue where creating a database from a backup failed if the original database's user secret did not conform to the required naming convention.
 
 - [EVEREST-2153](https://perconadev.atlassian.net/browse/EVEREST-2153) Import secrets do not get deleted if database is deleted during import
 
