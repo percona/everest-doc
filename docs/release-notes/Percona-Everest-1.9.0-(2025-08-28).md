@@ -60,21 +60,23 @@
 
 - [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148): [Operator] Fixed an issue where creating a database from a backup failed if the original database's user secret did not conform to the required naming convention.
 
-- [EVEREST-2153](https://perconadev.atlassian.net/browse/EVEREST-2153) Import secrets do not get deleted if database is deleted during import
+- [EVEREST-2153](https://perconadev.atlassian.net/browse/EVEREST-2153): Fixed a bug where imported secrets were not deleted if the database was removed during the import process.
 
-- [EVEREST-2202](https://perconadev.atlassian.net/browse/EVEREST-2202) Import fails when the instance name is more than 16 characters
+- [EVEREST-2202](https://perconadev.atlassian.net/browse/EVEREST-2202): Previously, database imports failed if the database name exceeded 16 characters. The issue has been resolved now.
 
-- [EVEREST-2206](https://perconadev.atlassian.net/browse/EVEREST-2206) SSO is disabled as soon as we upgrade from 1.6.0 to 1.7.0
+- [EVEREST-2206](https://perconadev.atlassian.net/browse/EVEREST-2206): Resolved an issue that caused Single Sign-On (SSO) to be disabled after upgrading from version 1.6.0 to 1.7.0.
 
-- [EVEREST-2207](https://perconadev.atlassian.net/browse/EVEREST-2207) Strange behaviour noted while upgrading Everest.
 
-- [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211) Postgresql database doesn't come up and crashes after PITR
+- [EVEREST-2207](https://perconadev.atlassian.net/browse/EVEREST-2207): Resolved an issue that prevented the successful upgrade of Percona Everest.
 
-- [EVEREST-2212](https://perconadev.atlassian.net/browse/EVEREST-2212) PMM-Client request a lot of memory when enabling the monitoring for any instance.
 
-- [EVEREST-2214](https://perconadev.atlassian.net/browse/EVEREST-2214) everestctl upgrade error
+- [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211): Previously, PostgreSQL databases would fail to start and crash after performing a Point-in-Time Recovery (PITR). This issue has been resolved, and PostgreSQL now starts up and operates normally after a PITR restoration.
 
-- [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216) [UI] Pod Scheduling Policy field resets to enabled after clicking Continue or Previous
+- [EVEREST-2212](https://perconadev.atlassian.net/browse/EVEREST-2212): The PMM Client previously consumed excessive memory when monitoring was enabled for any database instance. The issue has been resolved now.
+
+- [EVEREST-2214](https://perconadev.atlassian.net/browse/EVEREST-2214): Percona Everest upgrades previously failed if the `everest-system` and `everest-monitoring` namespaces had the label `app.kubernetes.io/managed-by=everest`. The issue has been resolved now.
+
+- [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216): Fixed an issue that caused the Pod Scheduling Policy field to reset to enabled after clicking the **Continue** or **Previous** buttons.
 
 - [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100) [UI] Save button disabled with no error when editing cluster with duplicate IP/Netmask after Everest upgrade
 
