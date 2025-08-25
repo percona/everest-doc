@@ -9,7 +9,7 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#import-external-backups-into-percona-everest-clusters)|Import external database backups directly into clusters managed by Percona Everest|
+    | **1.**|[Release highlight: Load Balancer configuration in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#import-external-backups-into-percona-everest-clusters)|Import external database backups directly into clusters managed by Percona Everest|
     | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#new-features)|Check out the new features introduced in Percona Everest 1.9.0|
     | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.8.0|
     | **4.**|[Bug fixes](Percona-Everest-1.8.0-%282025-07-16%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.9.0|
@@ -19,6 +19,8 @@
 ## 🌟 Release highlights
 
 ### 🌐 Load Balancer configuration in Percona Everest
+
+
 
 
 ## New features
