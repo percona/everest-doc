@@ -78,10 +78,9 @@
 
 - [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216): Fixed an issue that caused the Pod Scheduling Policy field to reset to enabled after clicking the **Continue** or **Previous** buttons.
 
-- [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100) [UI] Save button disabled with no error when editing cluster with duplicate IP/Netmask after Everest upgrade
+- [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100): After upgrading Everest, editing a cluster with a duplicate IP/Netmask disabled the Save button without displaying an error message. The issue has been resolved now.
 
-- [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096) Multiple issues with External Access field behavior, validation, and usability during cluster creation and editing
-
+- [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096): Addressed multiple issues with the External Access field's behavior, validation, and usability during cluster creation and editing.
 
 
 ## 🚀 Ready to Upgrade?
