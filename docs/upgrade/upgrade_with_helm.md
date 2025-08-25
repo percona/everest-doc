@@ -32,9 +32,9 @@ helm upgrade --install everest-crds \
     --take-ownership
 ```
 
-??? info "Upgrading a Helm version older than 3.17.0"
-
-    If you are using a Helm version older than 3.17.0, the `--take-ownership` flag will not be available. This flag is required only when upgrading from Percona Everest 1.8.0. If you do not include this flag, you may encounter the following error.
+??? info "Upgrading Helm when using versions older than 3.17.0"
+    
+    If you upgrade from **Percona Everest 1.8.0 ** and use a Helm version **older than 3.17.0**, the `-take-ownership` flag will not be available. If you do not include this flag, you may encounter the following validation errors related to missing ownership metadata:
 
     ```
     invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm";
@@ -42,6 +42,8 @@ helm upgrade --install everest-crds \
     annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "everest-system"
     ```
 
+    **Workaround for Helm < 3.17.0**
+    
     If you **must** use a Helm version **older than 3.17.0**, you can manually simulate the behavior of ``--take-ownership`` by adding the required labels and annotations to the Everest CRDs:
 
     ```
