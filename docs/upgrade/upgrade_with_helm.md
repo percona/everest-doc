@@ -25,29 +25,33 @@ In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need t
 To update the CRDs, run the following command:
 
 ```sh
-VERSION=<Next version>
-kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side
+helm repo update
+helm upgrade --install everest-crds \
+    percona/everest-crds \
+    --namespace everest-system
+    --take-ownership
 ```
 
-where,
 
-**Next version** - A placeholder for the specific version of Everest. For example, you might replace `<Next version>` with 1.3.0.
-
-!!! note
-    You may encounter an error due to conflicting field ownership, such as:
+!!! info "Important"
+    If you are using a Helm version older than 3.17.0, the `--take-ownership` flag will not be available. This flag is required only when upgrading from Percona Everest 1.8.0. If you do not include this flag, you may encounter the following error.
 
     ```sh
-    error: Apply failed with 1 conflict: conflict with  "helm" using apiextensions.k8s.io/v1: .spec.versions
+    invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm";
+annotation validation error: missing key "meta.helm.sh/release-name": must be set to "everest-crds";
+annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "everest-system"
     ```
 
-    This typically occurs when multiple tools (e.g., Helm and `kubectl` apply) manage the same Custom Resource Definition (CRD).
-
-    To resolve this, you can use the `--force-conflicts` flag when applying the CRD:
+    If you **must** use a Helm version **older than 3.17.0**, you can manually simulate the behavior of ``--take-ownership`` by adding the required labels and annotations to the Everest CRDs:
 
     ```sh
-    kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side --force-conflicts
+    CRDS=(databaseclusters.everest.percona.com databaseengines.everest.percona.com databaseclusterbackups.everest.percona.com databaseclusterrestores.everest.percona.com backupstorages.everest.percona.com monitoringconfigs.everest.percona.com)
+kubectl label crds "${CRDS[@]}" app.kubernetes.io/managed-by=Helm --overwrite
+kubectl annotate crds "${CRDS[@]}" meta.helm.sh/release-name=everest-crds
+kubectl annotate crds "${CRDS[@]}" meta.helm.sh/release-namespace=everest-system
     ```
-    This is generally safe when the CRDs originate from a trusted source, such as a verified Helm chart or operator.
+
+    This ensures the CRDs are correctly recognized as managed by Helm, avoiding validation issues during the upgrade.
 
 ## Upgrade Helm releases
 
