@@ -21,6 +21,15 @@
 ### 🌐 Load Balancer configuration in Percona Everest
 
 
+Provisioning external access to Kubernetes clusters can be challenging, since cloud providers like AWS, GCP, and Azure each have their own annotations and configurations for LoadBalancers. As a result, users often have to manually adjust settings for each environment, leading to a lack of a unified approach.
+
+Percona Everest simplifies the process by enabling administrators to define reusable LoadBalancer configurations. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
+
+✅ Consistency across cloud and on-prem environments
+🔄 Reduced manual effort when provisioning external access
+🌍 Flexibility to support multiple cloud providers with a unified approach
+
+
 
 
 ## New features
