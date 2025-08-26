@@ -37,7 +37,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
     3. On the **Create a new app integration page**, set the following:
         
         - Sign-in method - **OIDC - OpenID Connect**
-        - **Application type** - **Signle-Page Application**, and click **Next**.
+        - **Application type** - **Single-Page Application**, and click **Next**.
 
         ![!image](../images/OKTA_admin_console.png)
 
@@ -49,17 +49,24 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         c. Sign-out redirect URIs - `<EVEREST_URL>`
 
-        d. Click **Save**.
-
-        e. Copy the `clientID` of the created app.
-
-        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
-
         !!! note "Note"
             Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
         ![!image](../images/sso_aap_integration.png)
 
+        d. Click **Save**.
+
+        e. Copy the `clientID` of the created app.
+
+        ![!image](../images/okta_client-id.png)
+
+        f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
+
+
+        ![!image](../images/okta_url.png)
+
+        !!! note
+            The values shown are for demonstration purposes only. Replace them with your **actual Okta configuration**.
 
 
 ## Configure OIDC on the Percona Everest's side
