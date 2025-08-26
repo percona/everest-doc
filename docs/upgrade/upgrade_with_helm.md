@@ -20,7 +20,7 @@ kubectl label namespaces everest-system app.kubernetes.io/managed-by-
 
 ## Upgrade CRDs
 
-In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need to manually upgrade the CRDs.
+In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need to upgrade the CRDs manually.
 
 To update the CRDs, run the following command:
 
