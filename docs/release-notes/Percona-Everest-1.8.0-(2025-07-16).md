@@ -127,6 +127,9 @@ There are a few limitations to be aware of when importing external database back
 
 - Percona Everest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by Percona Everest.
 
+- To upgrade from Percona Everest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm version 3.17.0 or later**. If you upgrade with an older version of Helm, the upgrade may fail due to CRD ownership validation errors. However, you can manually add the Helm labels and annotations to the Percona Everest CRDs to avoid this issue. For detailed steps on this process ,refer to our [documentation](). 
+
+
 
 ## 🚀 Ready to Upgrade?
 
