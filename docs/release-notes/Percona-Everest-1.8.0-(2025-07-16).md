@@ -117,7 +117,11 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 ## Known limitations
 
-There are a few limitations to be aware of when importing external database backups:
+### Helm upgrade requirement for Percona Everest 1.8.0
+
+- To upgrade from Percona Everest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the Percona Everest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
+
+### Limitations for DataImporters
 
 - Importing backups into **sharded** MongoDB clusters is currently **not supported**. The `DataImporter` for MongoDB only works with non-sharded clusters.
 
