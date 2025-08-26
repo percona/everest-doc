@@ -49,6 +49,9 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         c. Sign-out redirect URIs - `<EVEREST_URL>`
 
+        !!! note "Note"
+            Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
+
         ![!image](../images/sso_aap_integration.png)
 
         d. Click **Save**.
@@ -59,8 +62,6 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
 
-        !!! note "Note"
-            Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
 
         ![!image](../images/okta_url.png)
 
