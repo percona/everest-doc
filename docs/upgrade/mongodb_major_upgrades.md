@@ -4,7 +4,6 @@
     If you encounter an issue while upgrading your database version, there is **no option to roll back**. In this case, you must **manually diagnose and resolve** the problem.
 
 
-
 ## MongoDB: Major version upgrades
 
 Starting with Percona Everest 1.6.0, you can upgrade your MongoDB database major versions, allowing upgrades with minimal downtime and disruption.
