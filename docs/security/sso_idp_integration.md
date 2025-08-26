@@ -49,6 +49,8 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         c. Sign-out redirect URIs - `<EVEREST_URL>`
 
+        ![!image](../images/sso_aap_integration.png)
+
         d. Click **Save**.
 
         e. Copy the `clientID` of the created app.
@@ -59,9 +61,6 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         !!! note "Note"
             Okta allows the use of HTTP for development purposes and in cases where the Admin explicitly permits it.
-
-        ![!image](../images/sso_aap_integration.png)
-
 
         ![!image](../images/okta_url.png)
 
