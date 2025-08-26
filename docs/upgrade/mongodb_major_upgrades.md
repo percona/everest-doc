@@ -1,7 +1,8 @@
 # Database engine upgrades
 
 !!! warning
-     If an issue arises when upgrading your database engine, there is **no rollback option**. In that situation, you must **manually diagnose and resolve** the issue.
+    If you encounter an issue while upgrading your database engine, there is **no option to roll back**. In this case, you must **manually diagnose and resolve** the problem.
+
 
 
 ## MongoDB: Major version upgrades
