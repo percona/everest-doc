@@ -32,7 +32,7 @@ helm upgrade --install everest-crds \
     --take-ownership
 ```
 
-### Upgrading Helm when using versions older than 3.17.0
+### Upgrading with Helm versions prior to 3.17.0
     
 If you upgrade from **Percona Everest 1.8.0** and use a Helm version **older than 3.17.0**, the `-take-ownership` flag will not be available. If you do not include this flag, you may encounter the following validation errors related to missing ownership metadata:
 
