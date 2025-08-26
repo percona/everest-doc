@@ -38,7 +38,7 @@ If you upgrade from **Percona Everest 1.8.0** and use a Helm version **older tha
 
 ```
 invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm";
-annotation validation error: missing key                 "meta.helm.sh/release-name": must be set to "everest-crds";
+annotation validation error: missing key "meta.helm.sh/release-name": must be set to "everest-crds";
 annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "everest-system"
 ```
 
