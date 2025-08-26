@@ -53,6 +53,8 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         e. Copy the `clientID` of the created app.
 
+        ![!image](../images/okta_client-id.png)
+
         f. Navigate to **Security → API → Authorization Servers** and copy the `issuerURL` you’d like to use for the Everest authorization. 
 
         !!! note "Note"
@@ -61,7 +63,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
         ![!image](../images/sso_aap_integration.png)
 
 
-        ![!image](../images/okta.png)
+        ![!image](../images/okta_url.png)
 
 
 ## Configure OIDC on the Percona Everest's side
