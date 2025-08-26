@@ -61,6 +61,8 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
         ![!image](../images/sso_aap_integration.png)
 
 
+        ![!image](../images/okta.png)
+
 
 ## Configure OIDC on the Percona Everest's side
 
