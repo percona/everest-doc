@@ -1,13 +1,15 @@
-# MongoDB: Major version upgrades
+# Database engine upgrades
 
 !!! warning
     When upgrading Percona Everest, if an issue arises, there is **no rollback option**. In that situation, you must **manually diagnose and resolve** the issue before attempting the upgrade again.
 
 
+## MongoDB: Major version upgrades
+
 Starting with Percona Everest 1.6.0, you can upgrade your MongoDB database major versions, allowing upgrades with minimal downtime and disruption.
 
-!!! note
-    PostgreSQL and MySQL support only minor engine upgrades.
+!!! info "Important"
+    PostgreSQL and MySQL support only **minor** engine upgrades.
 
 ## Before you upgrade
 
