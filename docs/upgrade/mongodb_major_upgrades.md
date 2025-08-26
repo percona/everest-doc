@@ -1,7 +1,7 @@
 # Database engine upgrades
 
 !!! warning
-    If you encounter an issue while upgrading your database engine, there is **no option to roll back**. In this case, you must **manually diagnose and resolve** the problem.
+    If you encounter an issue while upgrading your database version, there is **no option to roll back**. In this case, you must **manually diagnose and resolve** the problem.
 
 
 
