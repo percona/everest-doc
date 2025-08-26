@@ -65,6 +65,9 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
 
         ![!image](../images/okta_url.png)
 
+        !!! note
+            The values shown are for demonstration purposes only. Replace them with your **actual Okta configuration**.
+
 
 ## Configure OIDC on the Percona Everest's side
 
