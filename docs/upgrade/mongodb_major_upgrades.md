@@ -1,7 +1,7 @@
 # Database engine upgrades
 
 !!! warning
-    When upgrading Percona Everest, if an issue arises, there is **no rollback option**. In that situation, you must **manually diagnose and resolve** the issue before attempting the upgrade again.
+     If an issue arises when upgrading your database engine, there is **no rollback option**. In that situation, you must **manually diagnose and resolve** the issue.
 
 
 ## MongoDB: Major version upgrades
