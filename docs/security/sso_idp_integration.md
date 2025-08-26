@@ -37,7 +37,7 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
     3. On the **Create a new app integration page**, set the following:
         
         - Sign-in method - **OIDC - OpenID Connect**
-        - **Application type** - **Signle-Page Application**, and click **Next**.
+        - **Application type** - **Single-Page Application**, and click **Next**.
 
         ![!image](../images/OKTA_admin_console.png)
 
