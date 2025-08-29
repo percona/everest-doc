@@ -1,6 +1,6 @@
-# Load balancer use cases
+# Load balancer scenarios
 
-This section outlines the use cases around managing load balancer configurations.
+This section outlines the various scenarios around managing load balancer configurations.
 
 
 ## Create load balancer configuration
