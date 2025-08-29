@@ -8,11 +8,26 @@ Here's how you can create load balancer config:
 
 1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
 
-2. In the **Load balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
+    ![!image](../images/policies_page.png)
+
+2. In the **Load Balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
+
+    ![!image](../images/load_balancer_config_page.png)
 
 3. Click **Create configuration**. A pop-up window appears.
 
-4. Enter the desired **Configuration name** and click **Create**. You will return to the **Load balancer configuration** page, where your new configuration is listed.
+    ![!image](../images/create_config_load_balancer.png)
+
+4. Enter the desired **Configuration name** and click **Create**.  enter the key and value for your load balancer configuration.
+
+5. Enter the key and value for your load balancer configuration.
+
+    ![!image](../images/key_value_load_balancer.png)
+
+    !!! note
+        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer service implementation of your cloud provider.
+
+
 
 5. Click the newly created configuration to open it. Add one or more Key–value pairs in the provided fields. To add new Key–value pairs click **Add new**. 
 
