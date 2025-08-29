@@ -27,6 +27,17 @@ Here's how you can create load balancer config:
     !!! note
         The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer service implementation of your cloud provider.
 
+    ??? example "Examples of keys and values used for Load balancer configuration"
+
+        service.beta.kubernetes.io/aws-load-balancer-type: "nlb"                    # Use Network Load Balancer (NLB)
+        service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"        # Internet-facing vs. internal
+        service.beta.kubernetes.io/aws-load-balancer-internal: "true"                   # Internal LB
+        service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:..."        # Attach ACM SSL cert
+        service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"                   # SSL termination ports
+        service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
+
+
+
 
 
 5. Click the newly created configuration to open it. Add one or more Key–value pairs in the provided fields. To add new Key–value pairs click **Add new**. 
