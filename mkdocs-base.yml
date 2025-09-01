@@ -150,6 +150,7 @@ nav:
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
       - Percona-Everest 1.9.0 (2025-08-16): release-notes/Percona-Everest-1.9.0-(2025-08-16).md
+      - Percona-Everest 1.8.1 (2025-08-11): release-notes/Percona-Everest-1.8.1-(2025-08-11).md
       - Percona-Everest 1.8.0 (2025-07-16): release-notes/Percona-Everest-1.8.0-(2025-07-16).md
       - Percona-Everest 1.7.0 (2025-05-29): release-notes/Percona-Everest-1.7.0-(2025-05-29).md
       - Percona-Everest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
@@ -222,10 +223,13 @@ nav:
     - Create on-demand and scheduled backups: backups_and_restore/createBackups/CreateOnDemand.md
     - Enable Point-in-time recovery (PITR): backups_and_restore/createBackups/EnablePITR.md
     - Create database from backups: backups_and_restore/createBackups/create_new_database.md
-    - Import external database backups: 
-      - Overview of external database backups: backups_and_restore/overview.md
-      - How to import backups in Percona Everest: backups_and_restore/how_to_import_backups.md
-      - RBAC permissions: backups_and_restore/backup_importers_rbac.md
+    - Import external database backups:
+        - Overview: backups_and_restore/dataimporters/overview.md 
+        - DataImporters: 
+          - Percona MongoDB Operator: backups_and_restore/dataimporters/psmdb_dataimporter.md
+          - Percona MySQL Operator: backups_and_restore/dataimporters/pxc_dataimporter.md
+          - Percona PostgreSQL Operator: backups_and_restore/dataimporters/pg_dataimporter.md
+        - RBAC permissions: backups_and_restore/backup_importers_rbac.md
     - Restore backups: backups_and_restore/RestoreBackup.md
 
   - Use:
