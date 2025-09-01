@@ -36,10 +36,6 @@ Here's how you can create load balancer config:
         service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"                   # SSL termination ports
         service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
 
-5. To add new Key–value pairs for the load balancer configuration, click **Add new**.
-
-6. To delete any Key–value pair for the load balancer configuration, click on delete.
-
 6. Click **Save configuration**.
 
 7. To check the newly created load balancer configuration, click **Back to Load Balancer configuration**.
@@ -50,6 +46,20 @@ Here's how you can create load balancer config:
 
 Here's how you can edit and delete the load balancer config:
 
+1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
+
+
+2. In the **Load Balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
+
+3. To add new Key–value pairs for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
+
+4. Enter the key-value pair and click **Save configuration**.
+
+5. To delete any Key–value pair for the load balancer configuration, click on the delete button.
+
+6. To modify the key-value pair, click **Edit configuration** which appears after creating a new configuration.
+
+    ![!image](../images/edit_loadbalancer_configuration.png)
 
 
 ## Configuring load balancer for external database access
