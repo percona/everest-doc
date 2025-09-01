@@ -56,13 +56,13 @@ Here's how you can edit and delete the load balancer config:
 3. To add new Key–value pairs for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
 
 
-4. Enter the key-value pair and click **Save configuration**.
+4. Enter the annonations (key-value) pair and click **Save configuration**.
 
-5. To delete any Key–value pair for the load balancer configuration, click on the delete button.
+5. To delete any annonations for the load balancer configuration, click on the delete button.
 
     ![!image](../images/delete_loadbalancer_configuration.png)
 
-6. To modify the key-value pair, click **Edit configuration** which appears after creating a new configuration.
+6. To modify the annonations, click **Edit configuration** which appears after creating a new configuration.
 
     ![!image](../images/edit_loadbalancer_configuration.png)
 
