@@ -77,6 +77,8 @@ You can expose a database cluster available outside of Kubernetes network while 
 
 5. Select **Load balancer** as the **Exposure method** from the dropdown.
 
+    ![!image](../images/exposure_method_loadbalancer.png)
+
 6. Select the desired **Load balancer configuration** from the dropdown.
 
 7. (Optional) In the **Source range** field, enter trusted IP addresses to restrict access.
