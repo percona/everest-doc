@@ -84,7 +84,7 @@ You can expose a database cluster available outside of Kubernetes network while 
     !!! note
         Leaving the **Source range** blank will expose the database to all the IP addresses, which is not recommended.
 
-8. To add multiple Source ranges, click Add new. Enter the specific IP addresses seperately.
+8. To add multiple Source ranges, click **Add new**. Enter the specific IP addresses seperately.
 
 
 
