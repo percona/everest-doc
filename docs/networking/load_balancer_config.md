@@ -29,33 +29,38 @@ Here's how you can create load balancer config:
 
     ??? example "Examples of keys and values used for Load balancer configuration"
 
+        ```sh
         service.beta.kubernetes.io/aws-load-balancer-type: "nlb"                    # Use Network Load Balancer (NLB)
         service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"        # Internet-facing vs. internal
         service.beta.kubernetes.io/aws-load-balancer-internal: "true"                   # Internal LB
         service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:..."        # Attach ACM SSL cert
         service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"                   # SSL termination ports
         service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
+        ```
 
 6. Click **Save configuration**.
 
-7. To check the newly created load balancer configuration, click **Back to Load Balancer configuration**.
+7. To check the newly created load balancer configuration, click **Back to Load Balancer Configuration**.
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-### Manage load balancer config
+### Manage load balancer configuration
 
 Here's how you can edit and delete the load balancer config:
+{.power-number}
 
 1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
-
 
 2. In the **Load Balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
 
 3. To add new Key–value pairs for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
 
+
 4. Enter the key-value pair and click **Save configuration**.
 
 5. To delete any Key–value pair for the load balancer configuration, click on the delete button.
+
+    ![!image](../images/delete_loadbalancer_configuration.png)
 
 6. To modify the key-value pair, click **Edit configuration** which appears after creating a new configuration.
 
