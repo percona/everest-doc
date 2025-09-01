@@ -1,9 +1,9 @@
 # Creating and managing load balancer configurations
 
 
-## How to create and manage load balancer config
+## Create load balancer configuration
 
-Here's how you can create load balancer config:
+Here's how you can create load balancer configuration:
 {.power-number}
 
 1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
@@ -44,7 +44,7 @@ Here's how you can create load balancer config:
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-### Manage load balancer configuration
+## Manage load balancer configuration
 
 Here's how you can edit and delete the load balancer config:
 {.power-number}
