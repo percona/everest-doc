@@ -18,9 +18,9 @@ Here's how you can create load balancer config:
 
     ![!image](../images/create_config_load_balancer.png)
 
-4. Enter the desired **Configuration name** and click **Create**.  enter the key and value for your load balancer configuration.
+4. Enter the desired **Configuration name** and click **Create**.
 
-5. Enter the key and value for your load balancer configuration.
+5. Enter the key and value for your load balancer configuration. 
 
     ![!image](../images/key_value_load_balancer.png)
 
@@ -36,13 +36,15 @@ Here's how you can create load balancer config:
         service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"                   # SSL termination ports
         service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
 
+5. To add new Key–value pairs for the load balancer configuration, click **Add new**.
 
-
-
-
-5. Click the newly created configuration to open it. Add one or more Key–value pairs in the provided fields. To add new Key–value pairs click **Add new**. 
+6. To delete any Key–value pair for the load balancer configuration, click on delete.
 
 6. Click **Save configuration**.
+
+7. To check the newly created load balancer configuration, click **Back to Load Balancer configuration**.
+
+    ![!image](../images/new_created_load_balancer_configurations.png)
 
 ### Manage load balancer config
 
