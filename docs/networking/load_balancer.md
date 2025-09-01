@@ -2,12 +2,18 @@
 
 ## Overview
 
-In Percona Everest, you can access the database clusters using `ClusterIP` for internal access and `Load balancer` for external access. Starting with Percona Everest 1.9.0, `NodePort` has been introduced, enabling you to access database clusters directly through the node IP and designated static ports.
-
+Provisioning external access to Kubernetes clusters can be challenging, since cloud providers like AWS, GCP, and Azure each have their own annotations and configurations for LoadBalancers. As a result, users often have to manually adjust settings for each environment, leading to a lack of a unified approach.
 
 ## Why use load balancer?
 
-Kubernetes LoadBalancer configurations differ across cloud providers. To streamline this, Percona Everest provides a flexible mechanism that allows administrators to create reusable and provider-specific LoadBalancer configurations.
+Percona Everest simplifies the process by enabling administrators to define reusable LoadBalancer configurations. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
+
+- Consistency across cloud and on-prem environments
+
+- Reduced manual effort when provisioning external access
+
+- Flexibility to support multiple cloud providers with a unified approach
+
 
 
 ## Understanding some key terms
