@@ -216,8 +216,8 @@ nav:
 
   - Networking:
       - Load balancer overview: networking/load_balancer.md
-      - Load balancer usecases: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
+      - Load balancer scenarios: networking/load_balancer_scenarios.md
 
 
   - Back up and restore data: 
