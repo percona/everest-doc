@@ -1,12 +1,12 @@
 # Creating and managing load balancer configurations
 
 
-## Create load balancer configuration
+## Create a load balancer configuration
 
 Here's how you can create load balancer configuration:
 {.power-number}
 
-1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
     ![!image](../images/policies_page.png)
 
@@ -18,14 +18,14 @@ Here's how you can create load balancer configuration:
 
     ![!image](../images/create_config_load_balancer.png)
 
-4. Enter the desired **Configuration name** and click **Create**.
+4. Enter a **Configuration name** and click **Create**.
 
-5. Enter the key and value for your load balancer configuration. 
+5. Enter the annotations (key-value pairs) for your load balancer configuration. 
 
     ![!image](../images/key_value_load_balancer.png)
 
     !!! note
-        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer service implementation of your cloud provider.
+        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
 
     ??? example "Examples of keys and values used for Load balancer configuration"
 
@@ -40,43 +40,43 @@ Here's how you can create load balancer configuration:
 
 6. Click **Save configuration**.
 
-7. To check the newly created load balancer configuration, click **Back to Load Balancer Configuration**.
+7. To view the newly created load balancer configuration, click **Back to Load Balancer Configuration**.
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-## Manage load balancer configuration
+## Manage load balancer configurations
 
-Here's how you can edit and delete the load balancer config:
+Here's how you can edit and delete the load balancer configuration:
 {.power-number}
 
-1.  Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
-2. In the **Load Balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
+2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. To add new Key–value pairs for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
+3. To add new annotations for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
 
 
-4. Enter the annonations (key-value) pair and click **Save configuration**.
+4. Enter the annonations and click **Save configuration**.
 
-5. To delete any annonations for the load balancer configuration, click on the delete button.
+5. To delete annonations for the load balancer configuration, click the delete button next to it.
 
     ![!image](../images/delete_loadbalancer_configuration.png)
 
-6. To modify the annonations, click **Edit configuration** which appears after creating a new configuration.
+6. To modify the annonations, click **Edit configuration**.
 
     ![!image](../images/edit_loadbalancer_configuration.png)
 
 
 ## Configuring load balancer for external database access
 
-You can expose a database cluster available outside of Kubernetes network while creating it:
+You can expose a database cluster outside of the Kubernetes network during database creation:
 {.power-number}
 
 1. Log into the Percona Everest UI.
 
-2. On the Percona Everest homepage, click **Create database**. The menu for the different database types will open. Select the database that you wish to provision.
+2. On the Percona Everest homepage, click **Create database**. Select the database that you wish to provision.
 
-3. Continue through the setup pages until you reach the **Advanced Configurations** page.
+3. Continue through the setup until you reach the **Advanced Configurations** page.
 
 4. In the **Enable External Access** section, turn the toggle **ON**. 
 
@@ -88,11 +88,11 @@ You can expose a database cluster available outside of Kubernetes network while 
 
 7. (Optional) In the **Source range** field, enter trusted IP addresses to restrict access.
 
+    - To add multiple Source ranges, click **Add new**. Enter the specific IP addresses seperately.
+
+
     !!! note
-        Leaving the **Source range** blank will expose the database to all the IP addresses, which is not recommended.
-
-8. To add multiple Source ranges, click **Add new**. Enter the specific IP addresses seperately.
-
+        Leaving the **Source range** blank will expose the database to all the IP addresses (0.0.0.0/0). This is not recommended for production environments.
 
 
 
