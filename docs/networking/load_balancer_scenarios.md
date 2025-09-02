@@ -40,7 +40,6 @@ To achieve this, the following RBAC policy is defined:
 ```sh
 p, alice, load-balancer-configs, *, *
 p, role:team-dev, load-balancer-configs, read, *
-
 ```
 
 ## Apply load balancer config to a new database cluster
