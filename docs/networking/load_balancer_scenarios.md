@@ -92,9 +92,17 @@ As infrastructure requirements or usage patterns change, there may be a need to 
 
 A Percona Everest Admin may need to adjust a load Balancer config by adding, modifying, or removing annotations.
 
-### Delete load Balancer Config
+### Delete load balancer configuration
 
-When a load Balancer Config is no longer needed, Percona Everest admin can delete the load Balancer Config.
+When a load Balancer configuration is no longer needed, Percona Everest admin can delete the load balancer configuration.
+
+
+## Next steps
+
+[Creating and managing load balancer configurations :material-arrow-right:](../networking/load_balancer_config.md){.md-button}
+
+
+
 
 
 
