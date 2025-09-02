@@ -65,11 +65,11 @@ For more information, see the [Creating and managing load balancer configuration
 
 Users may want to change the load Balancer config applied to an existing load Balancer.
 
-   ![!image](../images/edit_loadbalancer_configuration.png)
+   ![!image](../images/new_created_load_balancer_configurations.png)
 
    For detailed information, see the [Manage load balancer configurations](load_balancer_config.md#manage-load-balancer-configurations) section.
 
-Within the load Balancer Configuration section, users can select a different config:
+Within the **load Balancer configuration** section, users can select a different config:
 
 - If RBAC is disabled: All existing load Balancer Configs are visible.
 - If RBAC is enabled: Only the load Balancer Configs the user has read access to will be displayed.
