@@ -5,7 +5,7 @@ This section outlines the various scenarios around managing load balancer config
 
 ## Create load balancer configuration
 
-Percona Everest administrators create load balancer configurations suitable for their infrastructure in advance, allowing all Percona Everest users to use them later without having to define rules for each database cluster creation.
+Percona Everest administrators can predefine load balancer configurations suitable for their infrastructure, allowing all Percona Everest users to use them later without having to define rules for each database cluster creation.
 
 **Key characteristics:**
 
@@ -50,13 +50,13 @@ p, role:team-dev, load-balancer-configs, read, *
 
 While creating a new database cluster, a user can expose it using the load balancer and apply the load balancer configuration to it.
 
-Percona Everest UI provides an additional **Load Balancer Configuration** panel on the **Advanced Configuration** step of the DB cluster creation wizard. This panel appears when the selected **Exposure method** is load Balancer. 
-
-In the **Load Balancer Configuration** section, the user can choose the specific load balancer configuration they wish to apply. 
+  ![!image](../images/load_balancer_config_page.png)
 
 - **If RBAC is disabled:** The system will display all existing load balancer configurations.
 
 - **If RBAC is enabled:** The system will only show the load balancer configurations that the user has permission to access (with **read** permissions).
+
+For more information, see the [Creating and managing load balancer configurations](load_balancer_config.md#create-a-load-balancer-configuration) section.
 
 
 ## Apply load balancer config to an existing database cluster
@@ -64,14 +64,18 @@ In the **Load Balancer Configuration** section, the user can choose the specific
 !!! info "Important"
     Only one load balancer config can be applied to a load balancer at any given time.
 
-Users may want to change the load Balancer Config applied to an existing load Balancer. This can be done by clicking **Edit** in the **Advanced Configuration** section of the DB cluster **Overview** page.
+Users may want to change the load Balancer config applied to an existing load Balancer.
+
+   ![!image](../images/edit_loadbalancer_configuration.png)
+
+   For detailed information, see the [Manage load balancer configurations](load_balancer_config.md#manage-load-balancer-configurations) section.
 
 Within the load Balancer Configuration section, users can select a different config:
 
 - If RBAC is disabled: All existing load Balancer Configs are visible.
 - If RBAC is enabled: Only the load Balancer Configs the user has read access to will be displayed.
 
-After selecting a new load Balancer Config, the user can save the changes:
+After selecting a new load Balancer config, the user can save the changes:
 
 - If a new config is selected, the system applies it to the load balancer.
 
@@ -87,21 +91,11 @@ As infrastructure requirements or usage patterns change, there may be a need to 
 
 ### Modify load Balancer Config
 
-A Percona Everest Admin may need to adjust a load Balancer Config by adding, modifying, or removing annotations.
+A Percona Everest Admin may need to adjust a load Balancer config by adding, modifying, or removing annotations.
 
 ### Delete load Balancer Config
 
 When a load Balancer Config is no longer needed, Percona Everest admin can delete the load Balancer Config.
-
-
-##  Expose database clusters via NodePort
-
-!!! warning
-    NodePort is intended primarily for development and testing environments only. As it opens a static port on every Kubernetes node, it is not recommended for production workloads.
-
-Percona Everest users can expose a database cluster using the NodePort. This method makes the service accessible on a static port on each node in the cluster.
-
-Percona Everest users can use it to expose new as well as existing clusters.
 
 
 
