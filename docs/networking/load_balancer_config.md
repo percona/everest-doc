@@ -53,7 +53,7 @@ Here's how you can edit and delete the load balancer configuration:
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. To add new annotations for an existing load balancer configuration, click on the specific load balancer configuration and click **Add new**.
+3. To add new annotations for an existing load balancer configuration, click on the specific configuration and click **Add new**.
 
 4. Enter the annotations and click **Save configuration**.
 
@@ -71,7 +71,7 @@ Here's how you can edit and delete the load balancer configuration:
 You can expose a database cluster outside of the Kubernetes network during database creation:
 {.power-number}
 
-1. Log into the Percona Everest UI.
+1. Log in to the Percona Everest UI.
 
 2. On the Percona Everest homepage, click **Create database**. Select the database that you wish to provision.
 
@@ -87,7 +87,7 @@ You can expose a database cluster outside of the Kubernetes network during datab
 
 7. (Optional) In the **Source range** field, enter trusted IP addresses to restrict access.
 
-    - To add multiple Source ranges, click **Add new**. Enter the specific IP addresses seperately.
+    - To add multiple Source ranges, click **Add new**. Enter the specific IP addresses separately.
 
 
     !!! note
