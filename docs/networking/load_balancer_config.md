@@ -3,10 +3,10 @@
 
 ## Create a load balancer configuration
 
-Here's how you can create load balancer configuration:
+Here's how you can create a load balancer configuration:
 {.power-number}
 
-1.  Navigate to Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
     ![!image](../images/policies_page.png)
 
@@ -40,29 +40,28 @@ Here's how you can create load balancer configuration:
 
 6. Click **Save configuration**.
 
-7. To view the newly created load balancer configuration, click **Back to Load Balancer Configuration**.
+7. Click **Back to Load Balancer Configuration** to view the newly created load balancer configuration.
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-## Manage load balancer configurations
+## Manage load balancer configuration
 
 Here's how you can edit and delete the load balancer configuration:
 {.power-number}
 
-1.  Navigate to Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. To add new annotations for an existing load balancer configuration, click on the specific load balancer configuration click **Add new**.
+3. To add new annotations for an existing load balancer configuration, click on the specific load balancer configuration and click **Add new**.
 
+4. Enter the annotations and click **Save configuration**.
 
-4. Enter the annonations and click **Save configuration**.
-
-5. To delete annonations for the load balancer configuration, click the delete button next to it.
+5. To delete annotations for the load balancer configuration, click the delete button next to it.
 
     ![!image](../images/delete_loadbalancer_configuration.png)
 
-6. To modify the annonations, click **Edit configuration**.
+6. To modify the annotations, click **Edit configuration**.
 
     ![!image](../images/edit_loadbalancer_configuration.png)
 
