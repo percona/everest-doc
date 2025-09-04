@@ -51,6 +51,8 @@ Percona Everest simplifies the process by enabling administrators to define reus
 - [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We have added a s**how password** toggle in the **PMM monitoring endpoint** form. This feature helps us verify if we have entered the correct password.
 
 
+- [EVEREST-2244](https://perconadev.atlassian.net/browse/EVEREST-2244): Load balancer config field changes
+
 
 ## Bug fixes
 
