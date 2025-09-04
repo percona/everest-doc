@@ -66,6 +66,11 @@ Percona Everest simplifies the process by enabling administrators to define reus
 
 - [EVEREST-2092](https://perconadev.atlassian.net/browse/EVEREST-2092): Upgrades using `everestctl` failed when the initial installation was older than version 1.4.0 and had been successively upgraded to version 1.7.0. The issue has now been resolved.
 
+- [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096): 
+
+
+- [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100):
+
 - [EVEREST-2097](https://perconadev.atlassian.net/browse/EVEREST-2097): In the **Topology Diagram** view, the restart information on database cluster cards was misaligned and appeared outside the component card, disrupting the visual layout. This issue has been resolved, and the information now displays correctly within the card.
 
 - [EVEREST-2105](https://perconadev.atlassian.net/browse/EVEREST-2105): When creating a database from a backup, if the original database name was too long, no error message was displayed on the Basic Information page. Now, a clear message will appear on the Basic Information page if the name exceeds the allowed length.
