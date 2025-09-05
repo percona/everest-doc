@@ -97,6 +97,18 @@ Percona Everest simplifies the process by enabling administrators to define reus
 
 - [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216): Fixed an issue that caused the Pod Scheduling Policy field to reset to enabled after clicking the **Continue** or **Previous** buttons.
 
+- - [EVEREST-2217](https://perconadev.atlassian.net/browse/EVEREST-2217):
+
+- [EVEREST-2224](https://perconadev.atlassian.net/browse/EVEREST-2224) Remove selectableFields from PodSchedulingPolicy CRD
+
+- [EVEREST-2240]https://perconadev.atlassian.net/browse/EVEREST-2240: 
+
+- [EVEREST-2242](https://perconadev.atlassian.net/browse/EVEREST-2242) \[UI\] Change enable external access information to select load balancer and appropriate configuration
+
+- [EVEREST-2243](https://perconadev.atlassian.net/browse/EVEREST-2243) \[UI\] For eks cluster the eks-default load balancer config should be selected after enabling external access
+
+- 
+
 - [EVEREST-2100](https://perconadev.atlassian.net/browse/EVEREST-2100): After upgrading Everest, editing a cluster with a duplicate IP/Netmask disabled the Save button without displaying an error message. The issue has been resolved now.
 
 - [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096): Addressed multiple issues with the External Access field's behavior, validation, and usability during cluster creation and editing.
