@@ -103,9 +103,8 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
 
         ```sh
         helm list -n everest-system
-        NAME  NAMESPACE  REVISION  UPDATED                             	       STATUS CHART  APP VERSION
-        everest-core everest-system	1  2025-01-16 16:24:56.577713 +0530 
-        IST	deployed	everest-1.4.0	1.4.0
+        NAME            NAMESPACE         REVISION    UPDATED                                 STATUS      CHART            APP VERSION
+        everest-core    everest-system    1           2025-01-16 16:24:56.577713 +0530 IST    deployed    everest-1.4.0    1.4.0
         ```
 
     - The Percona Everest installation has many components, so it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
