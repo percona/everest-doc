@@ -1,4 +1,4 @@
-# Frequently asked questions (FAQ)
+# Percona Everest: Frequently asked questions (FAQ)
 
 This section outlines the most frequently asked questions (FAQs) about Percona Everest.
 
