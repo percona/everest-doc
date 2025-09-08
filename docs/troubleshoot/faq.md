@@ -3,7 +3,7 @@
 This section outlines the most frequently asked questions (FAQs) about Percona Everest.
 
 
-## What is DatabaseEngine?
+## What is a DatabaseEngine?
 
 The `DatabaseEngine` is a resource that represents the installed engines (MySQL, MongoDB, PostgreSQL). 
 
@@ -43,13 +43,13 @@ You can view the logs by running the following command:
 kubectl logs -f deploy/percona-everest -n everest-system
 ```
 
-## How to identify which component is not working?
+## How to identify which component is failing?
 
 All communication with Percona Everest resources begins with the API.
 
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
-### Troubleshooting flow
+### Recommended troubleshooting flow
 
 When debugging, start with the API, proceed to the Everest operator, and examine the individual database operators.
 
@@ -62,7 +62,7 @@ We configure PMM agents in each DB deployment to communicate with an existing PM
 
 The following table shows the [configurable parameters](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"} of Percona Everest chart and their default values.
 
-The important points are:
+### Monitoring configuration highlights:
 
 - `MonitoringConfig` contains all necessary details to connect to the PMM Server, including URL and API key.
 
