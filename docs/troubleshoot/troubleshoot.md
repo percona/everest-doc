@@ -1,4 +1,4 @@
-# Troubleshooting issues
+# Percona Everest: Troubleshooting and diagnostics
 
 This section is your go-to resource for tackling common issues and finding solutions. 
 
