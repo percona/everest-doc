@@ -69,4 +69,4 @@ The following table shows the [configurable parameters](https://github.com/perco
 -  An API key is generated to facilitate data transmission. This API key allows us to configure monitoring endpoints for individual database operators, enabling them to send data to PMM.
 
 !!! note
-    PMM is an external service we support.
+    PMM is an external service supported by Percona Everest.
