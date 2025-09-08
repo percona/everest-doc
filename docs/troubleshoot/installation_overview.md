@@ -58,7 +58,7 @@ If you want to skip the installation of certain operators, you can use the follo
 
 | **Flag** | **Description**|
 | --------------------------------- | ------------------------------------ |
-| `--operator.mongodb=false`        | Skip installing MongoDB operator.    |
+| `--operator.mongodb=false`        | Skip installing the MongoDB operator.    |
 | `--operator.postgresql=false`     | Skip installing PostgreSQL operator. |
 | `--operator.mysql=false`          | Skip installing PXC operator.        |
 
@@ -84,8 +84,8 @@ Here's the database creation workflow in Percona Everest:
 {.power-number}
 
 1. The Percona Everest user is authenticated and logged in, and a `JWT Token` is provided.
-2. The user creates a database via the Percona Everest UI, or APl.
-3. The Percona Everest API is invoked to create a new database. The Percona Everest server then creates a `DatabaseCluster` custom resource on the kubernetes cluster.
+2. The user creates a database via the Percona Everest UI or API.
+3. The Percona Everest API is invoked to create a new database. The Percona Everest server then creates a `DatabaseCluster` custom resource on the Kubernetes cluster.
 4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example, if it’s MySQL, `PerconaXtraDBCluster` is created.
 5. The database operator takes over the task of creating the database and the necessary objects to manage it.
 
