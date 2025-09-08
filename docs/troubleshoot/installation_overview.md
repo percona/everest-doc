@@ -3,7 +3,7 @@
 This section provides an overview of how Percona Everest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
 
 
-## Percona Everest installation workflow
+## Installation workflow
 
 Starting with Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around two helm charts:
 
@@ -76,7 +76,7 @@ For detailed information on managing namespaces, see the [Namespaces management]
 
 The [helm installation method](../install/install_everest_helm_charts.md) provides an identical flow to the one described above, with similar configuration options. Refer to the [helm chart documentation](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} for a complete list of available [configuration options](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"}.
 
-## Percona Everest server and operator workflow
+## Server and operator workflow
 
 ### Database creation workflow
 
