@@ -78,12 +78,12 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
 
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
-            ```sh
-           helm install percona-everest percona/everest \
-  --set service.type=LoadBalancer
+            ```
+            helm install percona-everest percona/everest \
+            --set service.type=LoadBalancer
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is [http://34.175.201.246](http://34.175.201.246).
+        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
                 
             ```sh 
             kubectl get svc/everest -n everest-system
@@ -97,6 +97,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
 
 
     === "Node Port"
+
         A NodePort is a service that makes a specific port accessible on all nodes within the cluster. It enables external traffic to reach services running within the Kubernetes cluster by assigning a static port to each node's IP address.
 
         1. Run the following command to change the Everest service type to `NodePort`:
@@ -130,7 +131,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is [http://34.175.155.135:32349](http://34.175.155.135:32349). Nevertheless, you have the option to use any node IP specified in the above steps.
+        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
 
@@ -140,7 +141,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address [http://127.0.0.1:8080](http://127.0.0.1:8080).
+            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
 
 
         2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
@@ -149,7 +150,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ``` 
 
-            Percona Everest will be available at [http://127.0.0.1:8443](http://127.0.0.1:8443).
+            Percona Everest will be available at `http://127.0.0.1:8443`.
 
 
             For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
