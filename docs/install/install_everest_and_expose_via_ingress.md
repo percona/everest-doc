@@ -125,7 +125,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
             To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
-    5. To access the Everest UI/API, open your browser and go to [https://everest.example.com](https://everest.example.com).
+    5. To access the Everest UI/API, open your browser and go to `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.
@@ -231,7 +231,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
             To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
 
-    6. To access the Everest UI/API, open your browser and go to  [https://everest.example.com](https://everest.example.com).
+    6. To access the Everest UI/API, open your browser and go to  `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.
