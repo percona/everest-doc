@@ -3,6 +3,10 @@
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
+!!! warning
+    Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in Percona Everest 1.8.0. To ensure it functions properly, upgrade to **version 1.8.1**.
+
+
 ??? info "Expand to unleash the key updates"
 
     ## 📋 Release summary
@@ -23,11 +27,11 @@
 !!! info "Technical Preview"
     The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly import database backups from external object storage into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
+Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
 
 #### Key features
 
-- Import database backups from external storage, such as Amazon S3, directly into database clusters managed by Percona Everest.
+- Import database backups of clusters managed by the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by Percona Everest.
 
 - Customize the import process using tools like `mongodump`, `pg_dump`, or `mysqldump`.
 
@@ -54,7 +58,7 @@ Here are the steps to import the external backups:
 
     -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/how_to_import_backups.html) for details on the correct file path format.
+        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html) for details on the correct file path format.
 
         ![!image](../images/importers_mongo_file_path.png)
 
@@ -64,7 +68,7 @@ Here are the steps to import the external backups:
 
 5. Click **Continue** until you reach the end of the wizard. Once the import is successful, the database status will change to **Up**.
 
-If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/overview.html).
+If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html).
 
 ## New features
 
@@ -117,7 +121,11 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 ## Known limitations
 
-There are a few limitations to be aware of when importing external database backups:
+### Helm upgrade requirement for Percona Everest 1.8.0
+
+- To upgrade from Percona Everest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the Percona Everest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
+
+### Limitations for DataImporters
 
 - Importing backups into **sharded** MongoDB clusters is currently **not supported**. The `DataImporter` for MongoDB only works with non-sharded clusters.
 
