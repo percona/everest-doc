@@ -201,7 +201,7 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```
     === "Ingress"
 
-        To access Percona Everest, open your browser and go to: [https://everest.example.com](https://everest.example.com).
+        To access Percona Everest, open your browser and go to: `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.
@@ -252,7 +252,7 @@ Once you have successfully installed Percona Everest, proceed with the following
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-            Percona Everest will be available at [http://127.0.0.1:8080](http://127.0.0.1:8080). This method is mostly useful for testing purposes. 
+            Percona Everest will be available at `http://127.0.0.1:8080`. This method is mostly useful for testing purposes. 
 
             ??? example "When TLS is enabled"
 
@@ -260,7 +260,7 @@ Once you have successfully installed Percona Everest, proceed with the following
                 kubectl port-forward svc/everest 8443:443 -n everest-system
                 ```
 
-                Percona Everest will be available at [https://127.0.0.1:8443](https://127.0.0.1:8443).
+                Percona Everest will be available at `https://127.0.0.1:8443`.
 
 ## Next steps
 
