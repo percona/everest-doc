@@ -89,7 +89,7 @@ To install Percona Everest using Helm follow these steps:
         1. Install Percona Everest:
 
             ```sh
-            helm --install everest percona/everest \
+            helm install everest percona/everest \
               -n everest-system \
               --set ingress.enabled=true \
               --set ingress.ingressClassName="" \
@@ -134,7 +134,7 @@ To install Percona Everest using Helm follow these steps:
             Install Percona Everest using this file:
 
             ```sh
-            helm --install everest percona/everest \
+            helm install everest percona/everest \
             -n everest-system \
             -f everest-values.yaml
             ```
