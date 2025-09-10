@@ -243,6 +243,7 @@ nav:
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
   - API: API.md
+  - Percona Everest operator CRD usage guide: crd_guide.md
   - Reference:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
