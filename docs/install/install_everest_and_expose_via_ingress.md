@@ -34,7 +34,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
     2. Install Percona Everest with **Ingress enabled**:
 
         ```sh
-        helm --install everest percona/everest \
+        helm install everest percona/everest \
           -n everest-system \
           --set ingress.enabled=true \
           --set ingress.ingressClassName="" \
@@ -93,7 +93,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             Install Percona Everest using this `YAML` file:
 
             ```sh
-            helm --install everest percona/everest \
+            helm install everest percona/everest \
               -n everest-system \
               -f everest-values.yaml
             ```
