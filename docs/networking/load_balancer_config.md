@@ -66,6 +66,10 @@ Here's how you can edit the load balancer configuration:
     ![!image](../images/edit_loadbalancer_configuration.png)
 
 
+    !!! note
+        **eks-default** is the default load configuration and cannot be edited.
+
+
 ## Delete load balancer configuration
 
 Here's how you can delete the load balancer configuration:
@@ -82,6 +86,9 @@ Here's how you can delete the load balancer configuration:
 5. Enter the **Config name** in the text box and click **Delete**.
 
     ![!image](../images/del_load_balancer_config.png)
+
+    !!! note
+        **eks-default** is the default load configuration and cannot be deleted.
 
 ## Configuring load balancer for external database access
 
