@@ -10,7 +10,7 @@ Here's how you can create a load balancer configuration:
 
     ![!image](../images/policies_page.png)
 
-2. In the **Load Balancer configuration** section, click **Configure**. The **Load balancer configuration** page opens.
+2. In the **Load Balancer Configuration** section, click **Configure**. The **Load Balancer Configuration** page opens.
 
     ![!image](../images/load_balancer_config_page.png)
 
@@ -20,7 +20,11 @@ Here's how you can create a load balancer configuration:
 
 4. Enter a **Configuration name** and click **Create**.
 
-5. Enter the annotations (key-value pairs) for your load balancer configuration. 
+5. Click **Add new**.
+
+    ![!image](../images/loadbalancer_add_new_config.png)
+
+6. Enter the annotations (key-value pairs) for your load balancer configuration. 
 
     ![!image](../images/key_value_load_balancer.png)
 
@@ -38,9 +42,9 @@ Here's how you can create a load balancer configuration:
         service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
         ```
 
-6. Click **Save configuration**.
+7. Click **Save configuration**.
 
-7. Click **Back to Load Balancer Configuration** to view the newly created load balancer configuration.
+8. Click **Back** to view the newly created load balancer configuration.
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
