@@ -69,9 +69,6 @@ Here's how you can edit and delete the load balancer configuration:
 
     ![!image](../images/delete_loadbalancer_configuration.png)
 
-
-
-
 ## Configuring load balancer for external database access
 
 You can expose a database cluster outside of the Kubernetes network during database creation:
