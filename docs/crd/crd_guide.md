@@ -7,7 +7,7 @@ This guide will walk you through the CRDs provided by the Percona Everest operat
 
 ## When to use CRDs
 
-We recommend using the Percona Everest UI or API for most operations. 
+We **recommend** using the **Percona Everest UI or API** for most operations. 
 
 The Perocna Everest UI/API provides the following benefits:
 
