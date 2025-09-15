@@ -31,15 +31,16 @@ Percona Everest simplifies the process by enabling administrators to define reus
 
 
 === "Standardized configurations"
-    Reuse the same `LoadBalancerConfig` across multiple clusters for consistency, that is ideal for organizations with strict networking policies.
+     Reuse a predefined `LoadBalancerConfig` across multiple clusters to ensure consistent networking behavior. This is useful for organizations with strict compliance or networking policies.
 
 === "Developer and application access"
     Provide developers or applications outside the Kubernetes cluster with direct endpoints to connect without extra tunneling or port forwarding.
 
 === "Quick environment provisioning"
-    Enable Database-as-a-Service (DBaaS) users to spin up clusters with external access in one step, without waiting on platform teams to patch services manually.
+    Enable Database-as-a-Service (DBaaS) users to quickly create clusters with external access in a single step, eliminating the need for platform teams to manually patch services.
 
-=== "Enterprise governance"
-    Administrators can set default LoadBalancer configurations, such as eks-default on AWS, while still allowing users to define their own settings.
+
+=== "Admin defined LoadBalancer policies"
+    Administrators can set default LoadBalancer configurations, such as `eks-default` on AWS, while allowing users to define their own settings.
 
 
