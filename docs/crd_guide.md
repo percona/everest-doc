@@ -5,7 +5,7 @@ The Percona **Everest operator** is a crucial component of Percona. It provides 
 This guide will walk you through the CRDs provided by the Percona Everest operator and how to use them effectively.
 
 
-## When to Use CRDs
+## When to use CRDs
 
 We recommend using the Percona Everest UI or API for most operations. 
 
