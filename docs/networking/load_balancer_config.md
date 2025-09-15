@@ -94,9 +94,7 @@ You can expose a database cluster outside of the Kubernetes network during datab
 
 3. Continue through the setup until you reach the **Advanced Configurations** page.
 
-4. In the **Enable External Access** section, turn the toggle **ON**. 
-
-5. Select **Load balancer** as the **Exposure method** from the dropdown.
+4. In the **Enable External Access** section, select **Load balancer** as the **Exposure method** from the dropdown.
 
     ![!image](../images/exposure_method_loadbalancer.png)
 
@@ -109,6 +107,8 @@ You can expose a database cluster outside of the Kubernetes network during datab
 
     !!! note
         Leaving the **Source range** blank will expose the database to all the IP addresses (0.0.0.0/0). This is not recommended for production environments.
+
+8. Click **Continue** until you reach the end of the wizard, and then click **create database**.
 
 
 
