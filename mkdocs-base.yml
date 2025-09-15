@@ -246,6 +246,8 @@ nav:
 
   - Percona Everest operator CRD: 
       - Overview: crd/crd_guide.md
+      - Database cluster management: crd/database_cluster_management.md
+
       
   - Reference:
       - Breaking API changes: api_rbac.md
