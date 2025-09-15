@@ -30,6 +30,56 @@ Percona Everest simplifies the process by enabling administrators to define reus
 
 - 🌍 Flexibility to support multiple cloud providers with a unified approach
 
+#### How to create a load balancer configuration
+
+Here’s how you can create a load balancer configuration:
+{.power-number}
+
+1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+
+    ![!image](../images/policies_page.png)
+
+2. In the **Load Balancer Configuration** section, click **Configure**. The **Load Balancer Configuration** page opens.
+
+    ![!image](../images/load_balancer_config_page.png)
+
+3. Click **Create configuration**. A pop-up window appears.
+
+    ![!image](../images/create_config_load_balancer.png)
+
+4. Enter a **Configuration name** and click **Create**.
+
+5. Click **Add new**.
+
+    ![!image](../images/loadbalancer_add_new_config.png)
+
+6. Enter the annotations (key-value pairs) for your load balancer configuration. 
+
+    ![!image](../images/key_value_load_balancer.png)
+
+    !!! note
+        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
+
+    ??? example "Examples of keys and values used for Load balancer configuration"
+
+        ```sh
+        service.beta.kubernetes.io/aws-load-balancer-type: "nlb"                    # Use Network Load Balancer (NLB)
+        service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"        # Internet-facing vs. internal
+        service.beta.kubernetes.io/aws-load-balancer-internal: "true"                   # Internal LB
+        service.beta.kubernetes.io/aws-load-balancer-ssl-cert: "arn:aws:acm:..."        # Attach ACM SSL cert
+        service.beta.kubernetes.io/aws-load-balancer-ssl-ports: "443"                   # SSL termination ports
+        service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
+        ```
+
+7. Click **Save configuration**.
+
+8. Click **Back** to view the newly created load balancer configuration.
+
+    ![!image](../images/new_created_load_balancer_configurations.png)
+
+
+
+
 
 ## New features
 
