@@ -145,9 +145,7 @@ Here’s how you can create a load balancer configuration:
 
 - [EVEREST-2096](https://perconadev.atlassian.net/browse/EVEREST-2096): Addressed multiple issues with the External Access field's behavior, validation, and usability during cluster creation and editing.
 
-- (EVEREST-2228)[https://perconadev.atlassian.net/browse/EVEREST-2228]: 
-
-Previously, installing Everest on OpenShift caused the Operator Lifecycle Manager (OLM) CRDs from the Helm chart to overwrite existing OLM CRDs on the cluster, leading to unexpected behavior and compatibility issues. The issue has been resolved now.
+- [EVEREST-2228](https://perconadev.atlassian.net/browse/EVEREST-2228): Previously, installing Everest on OpenShift caused the Operator Lifecycle Manager (OLM) CRDs from the Helm chart to overwrite existing OLM CRDs on the cluster, leading to unexpected behavior and compatibility issues. The issue has been resolved now.
 
 
 ## 🚀 Ready to Upgrade?
