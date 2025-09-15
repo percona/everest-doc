@@ -27,3 +27,19 @@ Percona Everest simplifies the process by enabling administrators to define reus
 | **Percona Everest user** | A user of Percona Everest who manages database clusters. |
 | **Percona Everest admin** | A user with full permissions to configure and maintain Percona Everest.|
 
+## Use cases for load balancer configuration
+
+
+=== "Standardized configurations"
+    Reuse the same `LoadBalancerConfig` across multiple clusters for consistency, that is ideal for organizations with strict networking policies.
+
+=== "Developer and application access"
+    Provide developers or applications outside the Kubernetes cluster with direct endpoints to connect without extra tunneling or port forwarding.
+
+=== "Quick environment provisioning"
+    Enable Database-as-a-Service (DBaaS) users to spin up clusters with external access in one step, without waiting on platform teams to patch services manually.
+
+=== "Enterprise governance"
+    Administrators can set default LoadBalancer configurations, such as eks-default on AWS, while still allowing users to define their own settings.
+
+
