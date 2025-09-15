@@ -57,19 +57,19 @@ Here's how you can edit and delete the load balancer configuration:
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. To add new annotations or for an existing load balancer configuration, click on the specific configuration and click **Edit configuration**.
+3. To add new annotations or for an existing load balancer configuration, click on the specific configuration you want to update and click **Edit configuration**.
 
-4. Enter the annotations and click **Save configuration**.
+4. Click **Add new** and add the annotations. Click **Save configuration**.
 
 5. To modify an existing configuration, click on the specific configuration and click **Edit configuration**. Modify the annotations and click **Save configuration**.
+
+    ![!image](../images/edit_loadbalancer_configuration.png)
 
 6. To delete annotations for the load balancer configuration, click the delete button next to it.
 
     ![!image](../images/delete_loadbalancer_configuration.png)
 
-7. To modify the annotations, click **Edit configuration**.
 
-    ![!image](../images/edit_loadbalancer_configuration.png)
 
 
 ## Configuring load balancer for external database access
