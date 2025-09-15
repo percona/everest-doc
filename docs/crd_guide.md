@@ -5,17 +5,18 @@ The Percona **Everest operator** is a crucial component of Percona. It provides 
 This guide will walk you through the CRDs provided by the Percona Everest operator and how to use them effectively.
 
 
-!!! info "Recommendation"
-    We recommend using the Percona Everest UI or API for most operations. 
+## When to Use CRDs
 
-    The Perocna Everest UI/API provides the following benefits:
+We recommend using the Percona Everest UI or API for most operations. 
 
-    - Built-in validation and guardrails
-    - A complete DBaaS-like experience
-    - Simplified management of complex operations
-    - Enhanced security and access control
+The Perocna Everest UI/API provides the following benefits:
+
+- Built-in validation and guardrails
+- A complete DBaaS-like experience
+- Simplified management of complex operations
+- Enhanced security and access control
     
-    Use CRDs directly only when you need fine-grained control or are integrating with other Kubernetes tools.
+Use CRDs directly only when you need fine-grained control or are integrating with other Kubernetes tools.
 
 
 
