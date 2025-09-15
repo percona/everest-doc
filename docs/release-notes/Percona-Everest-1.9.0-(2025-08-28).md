@@ -35,25 +35,25 @@ Percona Everest simplifies the process by enabling administrators to define reus
 Here’s how you can create a load balancer configuration:
 {.power-number}
 
-1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+1. Open **Policies** 
 
-    ![!image](../images/policies_page.png)
-
-2. In the **Load Balancer Configuration** section, click **Configure**. The **Load Balancer Configuration** page opens.
+    - Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**, then open the **Load Balancer Configuration** section.
 
     ![!image](../images/load_balancer_config_page.png)
 
-3. Click **Create configuration**. A pop-up window appears.
+2. Create configuration
+
+    - Click **Create configuration**.
+
+    - Enter a **Configuration name** and click **Create**.
 
     ![!image](../images/create_config_load_balancer.png)
 
-4. Enter a **Configuration name** and click **Create**.
+3. Add Annotations
 
-5. Click **Add new**.
+    - Click **Add new,** then enter the required annotations (key-value pairs).
 
     ![!image](../images/loadbalancer_add_new_config.png)
-
-6. Enter the annotations (key-value pairs) for your load balancer configuration. 
 
     ![!image](../images/key_value_load_balancer.png)
 
@@ -71,9 +71,9 @@ Here’s how you can create a load balancer configuration:
         service.beta.kubernetes.io/aws-load-balancer-backend-protocol: "http"        # Protocol between LB and pods
         ```
 
-7. Click **Save configuration**.
+4. Save configuration
 
-8. Click **Back** to view the newly created load balancer configuration.
+    - Click **Save configuration**, then go **Back** to view the newly created load balancer configuration.
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
