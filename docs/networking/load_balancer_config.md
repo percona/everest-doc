@@ -50,7 +50,7 @@ Here's how you can create a load balancer configuration:
 
 ## Manage load balancer configuration
 
-Here's how you can edit and delete the load balancer configuration:
+Here's how you can edit the load balancer configuration:
 {.power-number}
 
 1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
@@ -65,9 +65,23 @@ Here's how you can edit and delete the load balancer configuration:
 
     ![!image](../images/edit_loadbalancer_configuration.png)
 
-6. To delete annotations for the load balancer configuration, click the delete button next to it.
 
-    ![!image](../images/delete_loadbalancer_configuration.png)
+## Delete load balancer configuration
+
+Here's how you can delete the load balancer configuration:
+{.power-number}
+
+1. Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies** 
+
+2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
+
+3. Click on the ellipsis next to the load balancer configuration that you want to delete.
+
+4. Click on **Delete**. A confirmation pop-up will be displayed for deleting the load balancer configuration.
+
+5. Enter the **Config name** in the text box and click **Delete**.
+
+    ![!image](../images/del_load_balancer_config.png)
 
 ## Configuring load balancer for external database access
 
