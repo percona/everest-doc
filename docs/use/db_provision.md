@@ -87,14 +87,20 @@ To provision a new database:
 
 8. Click **Continue**. The **Advanced Configurations** page will be displayed.
 
-9. On the **Advanced Configurations** page, you can select the following:
+9. On the Advanced Configurations page, you can fine-tune the following settings:
 
-    - Storage: Define the type and performance of storage for your database
-    - Pod scheduling policy: Enable and configure a scheduling policy to control how pods are placed across nodes.
-    - Exposure method: Choose how the database is exposed (e.g., ClusterIP or LoadBalancer).
-    - Database engine parameters: Enable and customize advanced engine parameters for fine-tuned control.
+    - **Storage**: Select the storage class for your database.
 
-For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
+    - **Pod scheduling policy**: Enable and configure rules that define how pods are distributed across nodes.
+    - **Exposure method**: Choose how the database is exposed:
+    
+        -  **Cluster IP** for internal access within the Kubernetes cluster
+        
+        - **Load Balancer** for external access outside the Kubernetes cluster
+        
+    - **Database engine parameters**: Enable and customize advanced engine parameters for fine-tuned control.
+
+    For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
 
 10. Click **Continue**. The **Monitoring** page will be displayed.
 
