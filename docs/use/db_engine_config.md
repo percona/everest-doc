@@ -10,7 +10,7 @@ To configure your database engine in Percona Everest:
 
 1. From the Percona Everest main page, navigate to **Create database > Advanced Configurations** page.
 
-2. Select the **Exposure Method** as **Cluster IP** or **Load balancer**.
+2. Select the **Exposure Method** as either **Cluster IP** or **Load balancer**.
 
 
     !!! note alert alert-primary "Note"
