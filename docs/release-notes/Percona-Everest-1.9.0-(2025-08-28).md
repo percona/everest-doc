@@ -93,7 +93,6 @@ Here’s how you can create a load balancer configuration:
 
 - [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We have added a s**how password** toggle in the **PMM monitoring endpoint** form. This feature helps us verify if we have entered the correct password.
 
-
 - [EVEREST-2244](https://perconadev.atlassian.net/browse/EVEREST-2244): Load balancer config field changes
 
 
