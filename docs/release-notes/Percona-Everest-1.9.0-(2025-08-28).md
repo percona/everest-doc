@@ -79,7 +79,6 @@ Here’s how you can create a load balancer configuration:
 
 ## New features
 
-
 - [EVEREST-548](https://perconadev.atlassian.net/browse/EVEREST-548): Starting with Percona Everest 1.9.0, we have added support for managing `LoadBalancerConfigs`, simplifying how service annotations are applied to database clusters.
 
 ## Improvements
