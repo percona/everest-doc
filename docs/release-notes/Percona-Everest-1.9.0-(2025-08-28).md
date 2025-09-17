@@ -77,10 +77,6 @@ Here’s how you can create a load balancer configuration:
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-
-
-
-
 ## New features
 
 
