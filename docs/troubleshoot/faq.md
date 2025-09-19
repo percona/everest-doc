@@ -1,6 +1,6 @@
 # Percona Everest: Frequently asked questions (FAQ)
 
-This section outlines the most frequently asked questions (FAQs) about Percona Everest.
+This page outlines the most frequently asked questions (FAQs) about Percona Everest.
 
 
 ## What is a DatabaseEngine?
@@ -26,9 +26,7 @@ Yes, the Percona Everest backend has logs. It runs as an `everest-server` deploy
     Percona Everest logs are essential for troubleshooting issues when an operation is **completed**, but the corresponding Everest operator resource **fails to be created**.
 
 
-You can retrieve the logs from the pods associated with this deployment.
-
-To access them, run:
+Run the following command to retrieve the logs from the pods associated with the deployment:
 
 ```sh
 kubectl logs -f deploy/percona-everest -n everest-system
@@ -49,7 +47,7 @@ All communication with Percona Everest resources begins with the API.
 
 The API is responsible for updating Everest resources, while the Everest operator continues to create resources for the corresponding database operators. 
 
-### Recommended troubleshooting flow
+## Recommended troubleshooting flow
 
 When debugging, start with the API, proceed to the Everest operator, and examine the individual database operators.
 
