@@ -2,12 +2,13 @@
 
 This section is your go-to resource for tackling common issues and finding solutions. 
 
-For known issues, see the [known limitations](../reference/known_limitations.md) section.
+For limitations, see the [known limitations](../reference/known_limitations.md) section.
 
 
 ## General troubleshooting guidelines
 
-Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate.
+Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate. You can refer to the [Kubernetes concepts guide](https://kubernetes.io/docs/concepts/)
+ for background. This context will help you interpret Everest’s behavior when debugging.
 
 - Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for commonly used commands to inspect and troubleshoot Kubernetes resources when working with Percona Everest.
 
@@ -122,6 +123,8 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
     !!! note
         This behavior is not confined to jobs alone. If the cluster lacks sufficient resources, any component may remain in a **Pending** state.
 
+For detailed information on the installation process, see [Installation overview](../troubleshoot/installation_overview.md)
+
 
 ### UI, API and authorization issues
 
@@ -184,7 +187,6 @@ Here are the common issues related to the database operations:
     kubectl describe DatabaseCluster <DatabaseCluster-Name>
     kubectl get DatabaseCluster <DatabaseCluster-Name> -oyaml
     ```
-
 
 3. **Database objects**
 
