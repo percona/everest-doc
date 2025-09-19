@@ -1,6 +1,6 @@
 # Percona Everest installation and workflow
 
-This section provides an overview of how Percona Everest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
+This page provides an overview of how Percona Everest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
 
 
 ## Installation workflow
@@ -29,7 +29,7 @@ The installation flow is as follows:
 
     1. Creates OLM subscriptions for the selected database operators (by default, all supported operators are selected).
     2. OLM reconciles the subscriptions and creates an install plan for each operator.
-    3. A Helm hook creates the `everest-operators-installer` job that waits for the OLM install plan to be created and approves it once created.
+    3. A Helm hook creates the `everest-operators-installer` job that waits for the OLM install plan to be created and approves the plan once created.
     4. OLM reconciles the approved install plan, creates a `cluster-service-version` (CSV) for each database operator, and applies the manifests from the CSV to install the operator. The CSV includes all the manifests needed to install the operator.
 
 
