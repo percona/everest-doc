@@ -5,7 +5,7 @@ This section provides an overview of how Percona Everest is installed, the compo
 
 ## Installation workflow
 
-Starting with Percona Everest v1.4.0, the [CLI installation](../install/installEverest.md) is a wrapper around two helm charts:
+Starting with Percona Everest v1.4.0, the [everestctl](../install/installEverest.md) is a wrapper around two helm charts:
 
 - [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} 
 
@@ -27,10 +27,10 @@ The installation flow is as follows:
 
 2. The `everest-db-namespace` chart is installed in the `everest` namespace. This chart handles the deployment of database operators using the following workflow:
 
-    1. Creates OLM subscriptions for each of the selected database operators (by default, all supported operators are selected).
+    1. Creates OLM subscriptions for the selected database operators (by default, all supported operators are selected).
     2. OLM reconciles the subscriptions and creates an install plan for each operator.
     3. A Helm hook creates the `everest-operators-installer` job that waits for the OLM install plan to be created and approves it once created.
-    4. OLM reconciles the approved install plan and creates a `cluster-service-version` for each database operator. The CSV includes all the manifests needed to install the operator. OLM automatically applies these manifests, and the operator is installed.
+    4. OLM reconciles the approved install plan, creates a `cluster-service-version` (CSV) for each database operator, and applies the manifests from the CSV to install the operator. The CSV includes all the manifests needed to install the operator.
 
 
 ### Configurable installation options 
