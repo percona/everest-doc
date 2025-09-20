@@ -159,7 +159,7 @@ To install and provision Percona Everest to Kubernetes:
                     
             ```sh
             helm install percona-everest percona/everest \
-            --set service.type=LoadBalancer
+            --set service.type=NodePort
             ```
 
         2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
