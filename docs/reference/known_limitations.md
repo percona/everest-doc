@@ -12,9 +12,9 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Load balancer configuration
 
-- Once annotations are added to a service by the database operators, they cannot be fully removed.
+- Once annotations are added to a service by the database operators, they cannot be entirely removed.
 
-- After a Load Balancer Configuration (LBC) has been applied, users cannot revert to the `-No Configuration-` option.
+- After applying a Load Balancer Configuration (LBC), you cannot revert to the `-No Configuration-` option.
 
 - If a service is changed from **LoadBalancer** to **ClusterIP**, the previously applied annotations remain on the service.
 
