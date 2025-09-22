@@ -52,8 +52,6 @@ Here’s how you can create a load balancer configuration:
 
     - Click **Add new,** then enter the required annotations (key-value pairs).
 
-    ![!image](../images/loadbalancer_add_new_config.png)
-
     ![!image](../images/key_value_load_balancer.png)
 
     !!! note
@@ -140,6 +138,10 @@ Here’s how you can create a load balancer configuration:
 
 - [EVEREST-2228](https://perconadev.atlassian.net/browse/EVEREST-2228): Previously, installing Everest on OpenShift caused the Operator Lifecycle Manager (OLM) CRDs from the Helm chart to overwrite existing OLM CRDs on the cluster, leading to unexpected behavior and compatibility issues. The issue has been resolved now.
 
+
+## Known limitations
+
+To learn about the specific limitations regarding Load Balancer configurations, check out the dedicated section on [Load Balancer Limitations](../reference/known_limitations.md#load-balancer-configuration).
 
 ## 🚀 Ready to Upgrade?
 
