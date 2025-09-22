@@ -1,5 +1,8 @@
 # Creating and managing load balancer configurations
 
+!!! info
+    Before you begin, take a moment to explore the important limitations of [load balancer configuration](../reference/known_limitations.md#load-balancer-configuration).
+
 
 ## Create a load balancer configuration
 
@@ -91,7 +94,7 @@ Here's how you can delete the load balancer configuration:
         **eks-default** is the default load balancer configuration and cannot be deleted.
 
 
-## Exposing your database cluster
+## Expose your database cluster
 
 Use the comparison table below to determine whether to expose your database in Percona Everest using `ClusterIP` or `Load balancer`.
 
@@ -106,7 +109,7 @@ Use the comparison table below to determine whether to expose your database in P
 | **Limitations**          | No external access possible.                                      | Inherits all the [limitations for load balancer configuration](../reference/known_limitations.md##load-balancer-configuration). |
 
 
-## Configuring load balancer for external database access
+## Configure load balancer for external database access
 
 You can expose a database cluster outside of the Kubernetes network during database creation:
 {.power-number}
@@ -137,6 +140,8 @@ You can expose a database cluster outside of the Kubernetes network during datab
         Leaving the **Source range** blank will expose the database to all the IP addresses (0.0.0.0/0). This is not recommended for production environments.
 
 8. Click **Continue** until you reach the end of the wizard, and then click **create database**.
+
+
 
 
 
