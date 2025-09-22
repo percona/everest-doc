@@ -18,7 +18,7 @@ However, not all the many combinations of K8s distributions and K8s versions mig
 |:----------------------|:-------------------|:----------------------------------------|
 | Google GKE            | 1.30 - 1.32        | Fully tested and certified              |
 | Amazon EKS            | 1.30 - 1.32        | Fully tested and certified              |
-| OpenShift             | 4.15 - 4.18        | Fully tested and certified              |
+| OpenShift             | 4.16 - 4.18        | Fully tested and certified              |
 | Azure AKS             | -                  | Works but not fully certified yet       |
 | DigitalOcean          | -                  | Works but not fully certified yet       |
 | Vanilla K8s (kubeadm) | -                  | Works but not fully certified yet       |
