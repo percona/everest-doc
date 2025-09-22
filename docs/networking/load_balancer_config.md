@@ -1,6 +1,6 @@
 # Creating and managing load balancer configurations
 
-!!! info
+!!! info "Important"
     Before you begin, take a moment to explore the important limitations of [load balancer configuration](../reference/known_limitations.md#load-balancer-configuration).
 
 
