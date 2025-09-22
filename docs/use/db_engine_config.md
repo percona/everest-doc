@@ -14,7 +14,7 @@ To configure your database engine in Percona Everest:
 
 3. From the **Load balancer configuration** drop-down, choose the configuration you want to apply. Click **Add new** to add the IP addresses in the **Source Range** field.
 
-If you’re looking to dive deeper into setting up your load balancer, check out our comprehensive guide on [Load balancer configuration](../networking/load_balancer_config.md).
+    If you’re looking to dive deeper into setting up your load balancer, check out our comprehensive guide on [Load balancer configuration](../networking/load_balancer_config.md).
 
 
     !!! note alert alert-primary "Note"
