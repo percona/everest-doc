@@ -90,6 +90,22 @@ Here's how you can delete the load balancer configuration:
     !!! note
         **eks-default** is the default load balancer configuration and cannot be deleted.
 
+
+## Exposing your database cluster
+
+Use the comparison table below to determine whether to expose your database in Percona Everest using `ClusterIP` or `Load balancer`.
+
+
+| **Criteria**               | **ClusterIP**                                                     | **Load balancer**                                                                                                                                 |
+| ------------------------ | ----------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Purpose**              | Keeps the database accessible only inside the Kubernetes cluster. | Makes the database accessible from outside the cluster.                                                                                          |
+| **Accessibility**        | Available only to in-cluster pods and services.                   | Available to external clients through a cloud or external load balancer.                                                                         |
+| **Best suited for**      | Applications that run within the same cluster as the database.    | Applications, monitoring tools, or clients that need external connectivity.                                                                      |
+| **Security**             | Safer by default since access stays internal.                     | Requires strict access controls (network masks, firewalls) to avoid unauthorized access.                                                         |
+| **Load balancer configuration** | Not supported.                                                    | Allows you apply custom annotations to control load balancer behavior.                                                                   |
+| **Limitations**          | No external access possible.                                      | Inherits all the [limitations for load balancer configuration](../reference/known_limitations.md##load-balancer-configuration) |
+
+
 ## Configuring load balancer for external database access
 
 You can expose a database cluster outside of the Kubernetes network during database creation:
