@@ -1,7 +1,7 @@
 # What's new in Percona Everest 1.9.0
 
 !!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in your Percona Everest operations, follow the steps outlined in this [blogpost](https://github.com/percona/everest/discussions/1663).
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [blogpost](https://github.com/percona/everest/discussions/1663).
 
 ➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
