@@ -60,7 +60,7 @@ Here's how you can edit the load balancer configuration:
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. To add new annotations or for an existing load balancer configuration, click on the specific configuration you want to update and click **Edit configuration**.
+3. To add new annotations or for an existing load balancer configuration, click on the configuration you want to update and click **Edit configuration**.
 
 4. Click **Add new** and add the annotations. Click **Save configuration**.
 
@@ -82,7 +82,7 @@ Here's how you can delete the load balancer configuration:
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
-3. Click on the ellipsis next to the load balancer configuration that you want to delete.
+3. Click on the ellipsis next to the load balancer configuration you want to delete.
 
 4. Click on **Delete**. A confirmation pop-up will be displayed for deleting the load balancer configuration.
 
@@ -105,7 +105,7 @@ Use the comparison table below to determine whether to expose your database in P
 | **Accessibility**        | Available only to in-cluster pods and services.                   | Available to external clients through a cloud or external load balancer.                                                                         |
 | **Best suited for**      | Applications that run within the same cluster as the database.    | Applications, monitoring tools, or clients that need external connectivity.                                                                      |
 | **Security**             | Keeps access internal by default, reducing exposure.                     | Requires strict access controls to prevent unauthorized access.                                                         |
-| **Load balancer configuration** | Not supported.                                                    | Allows you apply custom annotations to control load balancer behavior.                                                                   |
+| **Load balancer configuration** | Not supported.                                                    | Allows you to apply custom annotations to control load balancer behavior.                                                                   |
 | **Limitations**          | No external access possible.                                      | Inherits all the [limitations for load balancer configuration](../reference/known_limitations.md##load-balancer-configuration). |
 
 
@@ -139,7 +139,7 @@ You can expose a database cluster outside of the Kubernetes network during datab
     !!! note
         Leaving the **Source range** blank will expose the database to all the IP addresses (0.0.0.0/0). This is not recommended for production environments.
 
-8. Click **Continue** until you reach the end of the wizard, and then click **create database**.
+8. Click **Continue** until you reach the end of the wizard, and then click **Create database**.
 
 
 
