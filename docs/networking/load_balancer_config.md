@@ -103,7 +103,7 @@ Use the comparison table below to determine whether to expose your database in P
 | **Best suited for**      | Applications that run within the same cluster as the database.    | Applications, monitoring tools, or clients that need external connectivity.                                                                      |
 | **Security**             | Keeps access internal by default, reducing exposure.                     | Requires strict access controls to prevent unauthorized access.                                                         |
 | **Load balancer configuration** | Not supported.                                                    | Allows you apply custom annotations to control load balancer behavior.                                                                   |
-| **Limitations**          | No external access possible.                                      | Inherits all the [limitations for load balancer configuration](../reference/known_limitations.md##load-balancer-configuration) |
+| **Limitations**          | No external access possible.                                      | Inherits all the [limitations for load balancer configuration](../reference/known_limitations.md##load-balancer-configuration). |
 
 
 ## Configuring load balancer for external database access
@@ -126,6 +126,12 @@ You can expose a database cluster outside of the Kubernetes network during datab
 7. (Optional) In the **Source range** field, enter trusted IP addresses to restrict access.
 
     - To add multiple Source ranges, click **Add new**. Enter the specific IP addresses separately.
+
+    - You must always provide a CIDR block (for example, 203.0.113.25/32 to allow only one IP, or 203.0.113.0/24 to allow an entire subnet).
+
+    - Without a network mask (/xx), the configuration is invalid.
+
+    -   Using restrictive IP ranges reduces the risk of unauthorized access and data breaches.
 
 
     !!! note
