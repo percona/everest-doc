@@ -133,7 +133,6 @@ You can expose a database cluster outside of the Kubernetes network during datab
 
     -   Using restrictive IP ranges reduces the risk of unauthorized access and data breaches.
 
-
     !!! note
         Leaving the **Source range** blank will expose the database to all the IP addresses (0.0.0.0/0). This is not recommended for production environments.
 
