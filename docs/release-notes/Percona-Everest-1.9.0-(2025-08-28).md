@@ -141,7 +141,7 @@ Here’s how you can create a load balancer configuration:
 
 ## Known limitations
 
-To learn about the specific limitations regarding Load Balancer configurations, check out the dedicated section on [Load Balancer Limitations](../reference/known_limitations.md#load-balancer-configuration).
+To learn about the specific limitations regarding Load Balancer configuration, check out the dedicated section on [Load Balancer limitations](../reference/known_limitations.md#load-balancer-configuration).
 
 ## 🚀 Ready to Upgrade?
 
