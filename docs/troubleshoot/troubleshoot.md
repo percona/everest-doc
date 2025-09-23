@@ -67,7 +67,10 @@ You can review different logs for additional information depending on the specif
 
 !!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 =======
+=======
+>>>>>>> Stashed changes
     Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in Percona Everest operations, follow the steps given below.
 
 #### Why this matters?
@@ -108,6 +111,9 @@ Execute the following commands according to your operating system.
 
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 
 
