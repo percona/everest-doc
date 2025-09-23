@@ -1,6 +1,6 @@
 # Percona Everest: Troubleshooting and diagnostics
 
-This section is your go-to resource for tackling common issues and finding solutions. 
+This page is your go-to resource for tackling common issues and finding solutions. 
 
 For limitations, see the [known limitations](../reference/known_limitations.md) section.
 
@@ -66,11 +66,6 @@ You can review different logs for additional information depending on the specif
 ### Percona Everest and Bitnami Container Catalog changes
 
 !!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
     Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in Percona Everest operations, follow the steps given below.
 
 #### Why this matters?
@@ -108,14 +103,6 @@ Execute the following commands according to your operating system.
     ```
 
 === "<i class="fab fa-windows"></i> Windows"
-
-
-
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
-
 
 ### Installation issues
 
