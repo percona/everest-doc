@@ -65,7 +65,7 @@ You can review different logs for additional information depending on the specif
 
 ### Percona Everest and Bitnami Container Catalog changes
 
-
+!!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
 
 
 ### Installation issues
