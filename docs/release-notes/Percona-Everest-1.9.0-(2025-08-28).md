@@ -91,7 +91,7 @@ Here’s how you can create a load balancer configuration:
 
 - [EVEREST-2114](https://perconadev.atlassian.net/browse/EVEREST-2114): The search and filter options now always remain visible on the left side, ensuring a consistent layout and easier navigation.
 
-- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We have added a s**how password** toggle in the **PMM monitoring endpoint** form. This feature helps us verify if we have entered the correct password.
+- [EVEREST-2165](https://perconadev.atlassian.net/browse/EVEREST-2165): We have added a **show password** toggle in the **PMM monitoring endpoint** form. This feature helps us verify if we have entered the correct password.
 
 - [EVEREST-2244](https://perconadev.atlassian.net/browse/EVEREST-2244): Load balancer config field changes
 
