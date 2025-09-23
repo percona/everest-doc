@@ -1,8 +1,5 @@
 # Install everestctl
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
-
 !!! info "Important"
     Installing `everestctl` is only necessary if you want to use it to install Percona Everest using `everestctl`; it is **not** required if you prefer to install Percona Everest with Helm.
 
