@@ -20,7 +20,7 @@
 
 ## 🌟 Release highlights
 
-### 🌐 Load Balancer configuration in Percona Everest
+### 🌐 Load balancer configuration in Percona Everest
 
 Provisioning external access to Kubernetes clusters can be challenging, since cloud providers like AWS, GCP, and Azure each have their own annotations and configurations for LoadBalancers. As a result, users often have to manually adjust settings for each environment, leading to a lack of a unified approach.
 
@@ -144,7 +144,7 @@ Here’s how you can create a load balancer configuration:
 
 ## Known limitations
 
-To learn about the specific limitations regarding Load Balancer configuration, check out the dedicated section on [Load Balancer limitations](../reference/known_limitations.md#load-balancer-configuration).
+To learn about the specific limitations regarding Load Balancer configuration, check out the dedicated section on [Load balancer limitations](../reference/known_limitations.md#load-balancer-configuration).
 
 ## 🚀 Ready to Upgrade?
 
