@@ -63,6 +63,11 @@ You can review different logs for additional information depending on the specif
 
 ## Troubleshooting key areas
 
+### Percona Everest and Bitnami Container Catalog changes
+
+
+
+
 ### Installation issues
 
 For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
@@ -208,7 +213,6 @@ Here are the common issues related to the database operations:
     
     # (container name could be database, pxc, mongo)
     ```
-
 
 
 
