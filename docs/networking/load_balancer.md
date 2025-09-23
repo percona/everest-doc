@@ -39,7 +39,3 @@ Percona Everest simplifies the process by enabling administrators to define reus
     Enable Database-as-a-Service (DBaaS) users to quickly create clusters with external access in a single step, eliminating the need for platform teams to manually patch services.
 
 
-=== "Admin defined LoadBalancer policies"
-    Administrators can set default LoadBalancer configurations, such as `eks-default` on AWS, while allowing users to define their own settings.
-
-
