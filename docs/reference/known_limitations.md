@@ -9,6 +9,19 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
+
+## Load balancer configuration
+
+- Once annotations are added to a service by the database operators, they cannot be entirely removed.
+
+- After applying a Load Balancer Configuration (LBC), you cannot revert to the `-No Configuration-` option.
+
+- If a service is changed from **LoadBalancer** to **ClusterIP**, the previously applied annotations remain on the service.
+
+- When you apply a new Load Balancer configuration, all existing annotations in the service are replaced by those defined in the selected Load Balancer configuration.
+
+
+
 ## MongoDB sharding
 
 - Once MongoDB sharding is enabled, it cannot be disabled.
