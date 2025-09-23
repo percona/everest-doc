@@ -83,7 +83,7 @@ Here’s how you can create a load balancer configuration:
 
 ## Improvements
 
-- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): Percona Everest now includes a pre-check mechanism to validate the compatibility of **Custom Resource Definitions (CRDs)** before upgrading. This enhancement helps prevent upgrade failures due to CRD mismatches, ensuring a smoother upgrade process.
+- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): Upgrading via Helm now requires manually upgrading the CRDs first before upgrading Percona Everest.
 
 - [EVEREST-2101](https://perconadev.atlassian.net/browse/EVEREST-2101): The behavior of the **Add New** button in the **External Access** section has been improved. Now, you can only add a new field after filling in the previously created field with a value.
 
