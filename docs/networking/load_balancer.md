@@ -28,14 +28,13 @@ Percona Everest simplifies the process by enabling administrators to define reus
 
 ## Use cases for load balancer configuration
 
+### Standardized configurations
 
-=== "Standardized configurations"
-     Reuse a predefined `LoadBalancerConfig` across multiple clusters to ensure consistent networking behavior. This is useful for organizations with strict compliance or networking policies.
+Reuse a predefined `LoadBalancerConfig` across multiple clusters to ensure consistent networking behavior. This is useful for organizations with strict compliance or networking policies.
 
-=== "Developer and application access"
-    Provide developers or applications outside the Kubernetes cluster with direct endpoints to connect without extra tunneling or port forwarding.
 
-=== "Quick environment provisioning"
-    Enable Database-as-a-Service (DBaaS) users to quickly create clusters with external access in a single step, eliminating the need for platform teams to manually patch services.
+### Quick environment provisioning
+
+Enable Database-as-a-Service (DBaaS) users to quickly create clusters with external access in a single step, eliminating the need for platform teams to manually patch services.
 
 
