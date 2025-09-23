@@ -114,7 +114,7 @@ Here’s how you can create a load balancer configuration:
 
 - [EVEREST-2142](https://perconadev.atlassian.net/browse/EVEREST-2142): When creating a PostgreSQL database, the **Host** field was updating automatically, but the **Username**, **Password**, and **Connection URL** fields remained empty until the page was manually refreshed. This issue has now been resolved, and all connection details automatically populate once the database is created.
 
-- [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148): [Operator] Fixed an issue where creating a database from a backup failed if the original database's user secret did not conform to the required naming convention.
+- [EVEREST-2148](https://perconadev.atlassian.net/browse/EVEREST-2148): Fixed an issue where creating a database from a backup failed if the original database's user secret did not conform to the required naming convention.
 
 - [EVEREST-2153](https://perconadev.atlassian.net/browse/EVEREST-2153): Fixed a bug where imported secrets were not deleted if the database was removed during the import process.
 
