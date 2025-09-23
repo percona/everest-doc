@@ -84,7 +84,7 @@ If no action is taken, install, update, or uninstall operations will fail after 
 
 The `everestctl` CLI caches previous chart versions, which can lead to issues even after upgrading Percona Everest. By clearing the cache and upgrading your charts if necessary, you ensure that all future operations are safe.
 
-Please execute the following commands based on your operating system.
+Please execute the following commands based on the operating system you are using:
 
 Execute the following commands according to your operating system.
 
@@ -102,7 +102,17 @@ Execute the following commands according to your operating system.
     rm -rf "$HOME/Library/Caches/everestctl"
     ```
 
-=== "<:material-microsoft-windows: Windows"
+=== ":material-microsoft-windows: Windows (in PowerShell)"
+    ```sh
+    Remove-Item "$env:LocalAppData/everestctl" -Recurse -Force
+    ```
+
+=== "Plan 9"
+    ```sh
+    rm -r "$home/lib/cache/everestctl"
+    ```
+
+
 
 
 
