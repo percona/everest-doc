@@ -215,6 +215,12 @@ nav:
       - Session Management: security/session_management.md
       - Transport Layer Security (TLS) support: security/tls_setup.md  
 
+  - Networking:
+      - Load balancer overview: networking/load_balancer.md
+      - Load balancer scenarios: networking/load_balancer_scenarios.md
+      - Configure load balancer: networking/load_balancer_config.md
+
+
   - Back up and restore data: 
     - About backups: backups_and_restore/AboutBackups.md
     - Backup storage: 
