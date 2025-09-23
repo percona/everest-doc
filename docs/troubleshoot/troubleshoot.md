@@ -88,7 +88,7 @@ Please execute the following commands based on your operating system.
 
 Execute the following commands according to your operating system.
 
-=== "🐧 Linux"
+=== ":fontawesome-brands-linux: Linux"
     ```sh
     rm -rf "$XDG_CACHE_HOME/everestctl"
 
@@ -102,7 +102,9 @@ Execute the following commands according to your operating system.
     rm -rf "$HOME/Library/Caches/everestctl"
     ```
 
-=== "<i class="fab fa-windows"></i> Windows"
+=== "<:material-microsoft-windows: Windows"
+
+
 
 ### Installation issues
 
