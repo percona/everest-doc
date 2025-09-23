@@ -3,14 +3,19 @@
 Percona Everest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
 
 
-## Configure database engine for new DB cluster
+## Configure database engine for new database cluster
 
 To configure your database engine in Percona Everest:
 {.power-number}
 
 1. From the Percona Everest main page, navigate to **Create database > Advanced Configurations** page.
 
-2. To enable external access beyond the Kubernetes cluster network, turn on the toggle.
+2. Select the **Exposure Method** as either **Cluster IP** or **Load balancer**.
+
+3. From the **Load balancer configuration** drop-down, choose the configuration you want to apply. Click **Add new** to add the IP addresses in the **Source Range** field.
+
+    If you’re looking to dive deeper into setting up your load balancer, check out our comprehensive guide on [Load balancer configuration](../networking/load_balancer_config.md).
+
 
     !!! note alert alert-primary "Note"
         - Enabling remote access to your database can lead to serious security risks such as unauthorized access, data breaches, and compliance violations.
@@ -19,7 +24,7 @@ To configure your database engine in Percona Everest:
     
     ![!image](../images/everest_adv_config_ip_source.png)
 
-3. Click **Add new** to add the IP addresses in the **Source Range** field.
+
 4. You can optimize your database's performance using **Database Engine Parameters** on the **Advanced configurations** page.
 5. Enable Database engine parameters by using the toggle.
 6. Configure specific values to optimize performance, security, and functionality according to your requirements by entering the values in the text box.

@@ -1,5 +1,8 @@
 # Upgrade Percona Everest using Helm
 
+!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+
 Percona Everest consistently delivers updates that includes bug fixes, security enhancements, and various improvements designed to optimize the overall performance of your database.
 
 ## Before you upgrade
@@ -20,34 +23,40 @@ kubectl label namespaces everest-system app.kubernetes.io/managed-by-
 
 ## Upgrade CRDs
 
-In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need to manually upgrade the CRDs.
+In Helm v3, CRDs are not updated automatically during a Helm upgrade. You need to upgrade the CRDs manually.
 
 To update the CRDs, run the following command:
 
 ```sh
-VERSION=<Next version>
-kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side
+helm repo update
+helm upgrade --install everest-crds \
+    percona/everest-crds \
+    --namespace everest-system
+    --take-ownership
 ```
 
-where,
+### Upgrading with Helm versions prior to 3.17.0
+    
+If you upgrade from **Percona Everest 1.8.0** and use a Helm version **older than 3.17.0**, the `--take-ownership` flag will not be available. Without this flag, you may encounter the following validation errors related to missing ownership metadata:
 
-**Next version** - A placeholder for the specific version of Everest. For example, you might replace `<Next version>` with 1.3.0.
+```
+invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm";
+annotation validation error: missing key "meta.helm.sh/release-name": must be set to "everest-crds";
+annotation validation error: missing key "meta.helm.sh/release-namespace": must be set to "everest-system"
+```
 
-!!! note
-    You may encounter an error due to conflicting field ownership, such as:
+#### Workaround for Helm versions older than 3.17.0
 
-    ```sh
-    error: Apply failed with 1 conflict: conflict with  "helm" using apiextensions.k8s.io/v1: .spec.versions
-    ```
+If you **must** use a Helm version **older than 3.17.0**, you can manually simulate the behavior of ``--take-ownership`` by adding the required labels and annotations to the Everest CRDs:
 
-    This typically occurs when multiple tools (e.g., Helm and `kubectl` apply) manage the same Custom Resource Definition (CRD).
+```
+CRDS=(databaseclusters.everest.percona.com              databaseengines.everest.percona.com databaseclusterbackups.everest.percona.com databaseclusterrestores.everest.percona.com backupstorages.everest.percona.com monitoringconfigs.everest.percona.com)
+kubectl label crds "${CRDS[@]}" app.kubernetes.io/managed-by=Helm --overwrite
+kubectl annotate crds "${CRDS[@]}" meta.helm.sh/release-name=everest-crds
+kubectl annotate crds "${CRDS[@]}" meta.helm.sh/release-namespace=everest-system
+```
 
-    To resolve this, you can use the `--force-conflicts` flag when applying the CRD:
-
-    ```sh
-    kubectl apply -k "https://github.com/percona/everest-operator/config/crd?ref=v$VERSION" --server-side --force-conflicts
-    ```
-    This is generally safe when the CRDs originate from a trusted source, such as a verified Helm chart or operator.
+This ensures the CRDs are correctly recognized as managed by Helm, avoiding validation issues during the upgrade.
 
 ## Upgrade Helm releases
 

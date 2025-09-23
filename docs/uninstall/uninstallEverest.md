@@ -1,5 +1,8 @@
 # Uninstall Percona Everest using everestctl
 
+!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+
 !!! info "important"
     If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
 
