@@ -21,7 +21,7 @@ Percona Everest simplifies the process by enabling administrators to define reus
 | **Term**                  | **Definition**                                                                                                                                            |
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ClusterIP** | In Kubernetes, a service type that exposes an application on a virtual IP address within the cluster. |
-| **Load balancer**| In Kubernetes, a service type that exposes your application to the internet using a cloud provider’s load balancing infrastructure.|
+| **LoadBalancer**| In Kubernetes, a service type that exposes your application to the internet using a cloud provider’s load balancing infrastructure.|
 | **Load balancer Config**  | A preset in Percona Everest that contains a set of key-value pairs representing annotations applied to the appropriate LoadBalancer.|
 | **NodePort**| In Kubernetes, a service type that exposes your application by opening a specific port on each node in the cluster.|
 | **Percona Everest user** | A user of Percona Everest who manages database clusters. |
