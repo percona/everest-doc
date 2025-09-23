@@ -1,5 +1,8 @@
 # Upgrade Percona Everest using Helm
 
+!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+
 Percona Everest consistently delivers updates that includes bug fixes, security enhancements, and various improvements designed to optimize the overall performance of your database.
 
 ## Before you upgrade
