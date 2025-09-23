@@ -11,11 +11,11 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Load Balancer configuration in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-08-28%29.html#load-balancer-configuration-in-percona-everest)|Define reusable LoadBalancer configurations in Percona Everest.
-    | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-08-28%29.html#new-features)|Check out the new features introduced in Percona Everest 1.9.0|
-    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-08-28%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.9.0|
-    | **4.**|[Bug fixes](https://docs.percona.com/everest/release-notes/release-notes/Percona-Everest-1.9.0-%282025-08-28%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.9.0|
-    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-08-28%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.9.0|
+    | **1.**|[Release highlight: Load Balancer configuration in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#release-highlights#load-balancer-configuration-in-percona-everest)|Define reusable LoadBalancer configurations in Percona Everest.
+    | **2.**|[New features](https://docs.percona.com/everest/release-notes/PPercona-Everest-1.9.0-%282025-09-23%29.html#release-highlights#new-features)|Check out the new features introduced in Percona Everest 1.9.0|
+    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#release-highlights#improvements)|Discover all the enhancements featured in Percona Everest 1.9.0|
+    | **4.**|[Bug fixes](https://docs.percona.com/everest/release-notes/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.9.0|
+    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.9.0|
 
 
 ## 🌟 Release highlights
