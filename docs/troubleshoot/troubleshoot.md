@@ -66,6 +66,49 @@ You can review different logs for additional information depending on the specif
 ### Percona Everest and Bitnami Container Catalog changes
 
 !!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
+<<<<<<< Updated upstream
+=======
+    Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in Percona Everest operations, follow the steps given below.
+
+#### Why this matters?
+
+Bitnami is restructuring its container catalog. Starting **September 29, 2025**, most images (including bitnami) will move to a legacy repository.
+
+Percona Everest relies on `bitnami` for:
+
+- The everest-operators-installer job during installation and namespace provisioning
+
+- Cleanup jobs (e.g., pre-delete, csv-cleanup, psp-cleanup) during uninstallation
+
+If no action is taken, install, update, or uninstall operations will fail after **September 29, 2025**.
+
+#### Mandatory fix
+
+The `everestctl` CLI caches previous chart versions, which can lead to issues even after upgrading Percona Everest. By clearing the cache and upgrading your charts if necessary, you ensure that all future operations are safe.
+
+Please execute the following commands based on your operating system.
+
+Execute the following commands according to your operating system.
+
+=== "🐧 Linux"
+    ```sh
+    rm -rf "$XDG_CACHE_HOME/everestctl"
+
+    # Or if $XDG_CACHE_HOME is not set:
+
+    rm -rf "$HOME/.cache/everestctl"
+    ```
+
+=== " macOS"
+    ```sh
+    rm -rf "$HOME/Library/Caches/everestctl"
+    ```
+
+=== "<i class="fab fa-windows"></i> Windows"
+
+
+
+>>>>>>> Stashed changes
 
 
 ### Installation issues
