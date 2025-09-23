@@ -13,7 +13,7 @@ Percona Everest administrators can predefine load balancer configurations suitab
 
 - It can be applied to the Proxy component of any supported database Engine.
 
-- It is not associated with a specific namespace, so the same configuration must be applied across all namespaces managed by Percona Everest.
+- It is not associated with a specific namespace, so the resource is cluster-scoped.
 
 - It consists of a set of **key-value** pairs representing **annotations** that need to be applied to the appropriate load balancer.
 
@@ -32,6 +32,8 @@ For security, the Percona Everest administrator can limit access to specific loa
 - It is not possible to assign access control to individual key-value pairs within a specific load balancer configuration.
 
 ### Restrict usage of load balancer configs
+
+Here’s the **most common Role-Based Access Control (RBAC)** scenario for LoadBalancer configuration and how you can set it up:
 
 The Percona Everest administrator can manage (**create/edit/read/delete**) load balancer configuration for specific Percona Everest users only. The rest of the users can only **read** load balancer config content and can apply existing configs when provisioning database clusters, but cannot modify them.
 
