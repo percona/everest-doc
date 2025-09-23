@@ -96,7 +96,7 @@ Here's how you can delete the load balancer configuration:
 
 ## Expose your database cluster
 
-Use the comparison table below to determine whether to expose your database in Percona Everest using `ClusterIP` or `Load balancer`.
+Use the comparison table below to determine whether to expose your database in Percona Everest using `ClusterIP` or `LoadBalancer`.
 
 
 | **Criteria**               | **ClusterIP**                                                     | **Load balancer**                                                                                                                                 |
