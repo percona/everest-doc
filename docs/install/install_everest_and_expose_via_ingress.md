@@ -1,5 +1,8 @@
 # Install Percona Everest and expose via Ingress controller
 
+!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+
 This section explains how to install Percona Everest using [Helm](https://helm.sh/){:target="_blank"} or  `everestctl` and expose Percona Everest using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}.
 
 
