@@ -68,15 +68,17 @@ You can review different logs for additional information depending on the specif
 !!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
     Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in Percona Everest operations, follow the steps given below.
 
-#### Why this matters?
+#### What’s changing with Bitnami?
 
-Bitnami is restructuring its container catalog. Starting **September 29, 2025**, most images (including bitnami) will move to a legacy repository.
 
-Percona Everest relies on `bitnami` for:
+Bitnami is [restructuring its container catalog](https://github.com/bitnami/containers/issues/83267). Starting **September 29, 2025**, most images (including bitnami) will move to a legacy repository.
 
-- The everest-operators-installer job during installation and namespace provisioning
+Percona Everest is affected because it depends on the `bitnami/kubectl` image for several critical tasks:
 
-- Cleanup jobs (e.g., pre-delete, csv-cleanup, psp-cleanup) during uninstallation
+
+- The `everest-operators-installer` job during installation and namespace provisioning
+
+- Cleanup jobs like `pre-delete`, `csv-cleanup`, and `psp-cleanup` during uninstallation
 
 If no action is taken, install, update, or uninstall operations will fail after **September 29, 2025**.
 
@@ -111,6 +113,138 @@ Execute the following commands according to your operating system.
     ```sh
     rm -r "$home/lib/cache/everestctl"
     ```
+
+#### If you’re on Percona Everest v1.8.1 or earlier
+
+You must **manually update your Helm charts** to use the new image. If you are on v1.9.0 or later, you **can skip these steps**.
+{.power-number}
+
+
+1. List all installed Percona Everest charts. Find all Helm releases for both the `everest` and `everest-db-namespace` charts. 
+
+    !!! note 
+        Make sure that you note the release name, namespace, and app version for each one.
+
+    ```sh
+    helm list --all-namespaces | grep everest
+    a1          a1              1  2025-09-18         16:46:31.130925768 +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
+everest        everest          1  2025-09-18 16:45:15.362666552 +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
+everest-system everest-system   1  2025-09-18 16:44:45.138480161 +0100 WEST   deployed        everest-1.8.1                   1.8.1
+    ```
+
+2. Upgrade the main Percona Everest chart (e.g., `everest-system`) using its specific details:
+
+    ```sh
+    helm upgrade everest-system percona/everest \
+    --reuse-values \
+    --namespace everest-system \
+    --version 1.8.1
+    Release "everest-system" has been upgraded. Happy Helming!
+    NAME: everest-system
+    LAST DEPLOYED: Thu Sep 18 16:52:18 2025
+    NAMESPACE: everest-system
+    STATUS: deployed
+    REVISION: 2
+    TEST SUITE: None
+    NOTES: Everest has been successfully upgraded to version 1.8.1!
+    ```
+
+3. Upgrade the database namespace charts. Execute the helm upgrade command for each `everest-db-namespace `chart identified in **step 1**.
+
+    ```sh
+    helm upgrade a1 percona/everest-db-namespace \
+    --reuse-values \
+    --namespace a1 \
+    --version 1.8.1
+    Release "a1" has been upgraded. Happy Helming!
+    NAME: a1
+    LAST DEPLOYED: Thu Sep 18 16:52:45 2025
+    NAMESPACE: a1
+    STATUS: deployed
+    REVISION: 2
+    TEST SUITE: None
+    ```
+
+    ```sh
+    helm upgrade everest percona/everest-db-namespace \
+    --reuse-values \
+    --namespace everest \
+    --version 1.8.1
+    Release "everest" has been upgraded. Happy Helming!
+    NAME: everest
+    LAST DEPLOYED: Thu Sep 18 16:53:02 2025
+    NAMESPACE: everest
+    STATUS: deployed
+    REVISION: 2
+    TEST SUITE: None
+    ```
+4. Restart Everest Operator.
+
+    ```sh
+    kubectl -n everest-system rollout restart deploy/everest-operator
+    ```
+
+#### Troubleshooting after Sept 29 2025
+
+##### Scenario 1: Installation or namespace provisioning stuck
+
+If your `everestctl` install, `everestctl namespaces add`, or `everestctl namespaces update` command is stalled, showing a status like this:
+
+    ```sh
+    ℹ️ Installing Everest version 1.8.1
+
+    ✅ Installing Everest Helm chart
+    ✅ Ensuring Everest API deployment is ready
+    ✅ Ensuring Everest operator deployment is ready
+    ✅ Ensuring OLM components are ready
+    ✅ Ensuring monitoring stack is ready
+    ∙∙● Provisioning database namespace 'everest'
+
+    Esc/Ctrl+c quit
+    ```
+    
+Follow these steps to fix the problem:
+{.power-number}
+
+1. Open a new terminal and leave the stalled process running.
+
+2. Verify the stuck Helm release. 
+
+    Confirm the `everest-db-namespace` chart is in a **pending-install** state. 
+    
+    !!! note 
+        Make sure to note the release name and namespace from the output. In this example, it’s `everest` in the `everest namespace`.
+
+        ```sh
+        helm list --all-namespaces --pending
+        NAME       NAMESPACE      REVISION            UPDATED                                STATUS          CHART                           APP VERSION
+        everest    everest        1          2025-09-18 16:12:36.237739864 +0100 WEST   pending-install everest-db-namespace-1.8.1      1.8.1
+        ```
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
