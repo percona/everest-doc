@@ -184,7 +184,7 @@ everest-system everest-system   1  2025-09-18 16:44:45.138480161 +0100 WEST   de
     kubectl -n everest-system rollout restart deploy/everest-operator
     ```
 
-#### Troubleshooting after Sept 29 2025
+#### Troubleshooting after Sept 29, 2025
 
 ##### Scenario 1: Installation or namespace provisioning stuck
 
@@ -220,6 +220,67 @@ Follow these steps to fix the problem:
         NAME       NAMESPACE      REVISION            UPDATED                                STATUS          CHART                           APP VERSION
         everest    everest        1          2025-09-18 16:12:36.237739864 +0100 WEST   pending-install everest-db-namespace-1.8.1      1.8.1
         ```
+
+3. Confirm the cause. 
+
+    Check the **pod status** to ensure the problem is an `ImagePullBackOff` for the `bitnami/kubectl:latest` image.
+
+    ```sh
+    kubectl get pod -l job-name=everest-operators-installer --all-namespaces -o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'
+    NAME       NAMESPACE  IMAGE              WAITING_REASON
+    everest-operators-installer-rllfg everest    bitnami/kubectl:latest      ImagePullBackOff
+    ```
+
+4. Delete the stuck job.
+
+   ```sh
+   kubectl delete job everest-operators-installer -n everest
+    job.batch "everest-operators-installer" deleted from everest namespace
+    ```
+
+5. Check that the installation continues. 
+
+    The original `everestctl` command should now proceed. 
+    
+    !!! note
+        Make sure to note the **APP VERSION** of your Helm release, as you will need it in the next step.
+
+    ```sh
+    helm list -n everest
+    NAME  NAMESPACE   REVISION UPDATED                                  
+    STATUS          CHART                           APP VERSION
+    everest    everest        1          2025-09-18 16:12:36.237739864 
+    +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
+    ```
+
+6. Upgrade the Helm release. Use the release name, namespace, and **APP VERSION** from the previous steps to upgrade the chart.
+
+    ```sh
+    helm upgrade everest percona/everest-db-namespace \
+    --reuse-values \
+    --namespace everest \
+    --version 1.8.1
+    Release "everest" has been upgraded. Happy Helming!
+    NAME: everest
+    LAST DEPLOYED: Thu Sep 18 16:18:50 2025
+    NAMESPACE: everest
+    STATUS: deployed
+    REVISION: 2
+    TEST SUITE: None
+    ```
+
+7. Restart Everest Operator.
+
+    ```sh
+    kubectl -n everest-system rollout restart deploy/everest-operator
+    ```
+
+8. Your immediate issue is now resolved. Make sure to complete the steps in the [Mandatory Fix](../troubleshoot/troubleshoot.md#mandatory-fix) section if you haven’t already, to avoid this problem in the future.
+
+
+
+
+
 
 
         
