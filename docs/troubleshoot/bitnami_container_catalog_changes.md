@@ -196,7 +196,7 @@ Follow these steps to fix the problem:
     ```sh
     helm list -n everest
     NAME  NAMESPACE   REVISION UPDATED                                  
-    STATUS          CHART                           APP VERSION
+    STATUS          CHART        APP VERSION
     everest    everest        1          2025-09-18 16:12:36.237739864 
     +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
     ```
@@ -252,7 +252,7 @@ Follow these steps to fix the problem:
     !!! note
         Make sure to note the `release name `and `namespace`.
 
-     ```sh
+    ```sh
      helm list --all-namespaces --uninstalling
     NAME       NAMESPACE      REVISION                           
     UPDATED    STATUS       CHART              APP VERSION
