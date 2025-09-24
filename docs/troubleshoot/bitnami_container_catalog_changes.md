@@ -158,7 +158,7 @@ Follow these steps to fix the problem:
 
 2. Verify the stuck Helm release. 
 
-    Confirm the `everest-db-namespace` chart is in a **pending-install** state. 
+    Check if the `everest-db-namespace` chart is in the `pending-install` state. 
     
     !!! note 
         Make sure to note the release name and namespace from the output. In this example, it’s `everest` in the `everest namespace`.
