@@ -281,13 +281,13 @@ Follow these steps to fix the problem:
         Make sure to note the pod and the container name.
 
     ```sh
-    kubectl get pod -l job-name=everest-helm-pre-delete-hook-288662 --      all-namespaces -o custom-               
-    NAME NAMESPACE        CONTAINER_NAME                            
-    IMAGE          WAITING_REASON
-    everest-helm-pre-delete-hook-288662-dlddp      everest        
-    everest-helm-pre-delete-hook    bitnami/kubectl:latest      
-    ImagePullBackOff
-    ```
+    kubectl get pod -l job-name=everest-helm-pre-delete-hook-288662 --all-namespaces \
+    -o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,CONTAINER_NAME:.spec.containers[0].name,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'  
+
+    NAME                                         	NAMESPACE	CONTAINER_NAME                	IMAGE                 	WAITING_REASON  
+    everest-helm-pre-delete-hook-288662-dlddp    	everest  	everest-helm-pre-delete-hook 	bitnami/kubectl:latest	ImagePullBackOff
+    ``` 
+
 
 5. Patch the pod. 
 
