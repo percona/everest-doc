@@ -70,7 +70,6 @@ You can review different logs for additional information depending on the specif
 
 #### What’s changing with Bitnami?
 
-
 Bitnami is [restructuring its container catalog](https://github.com/bitnami/containers/issues/83267). Starting **September 29, 2025**, most images (including bitnami) will move to a legacy repository.
 
 Percona Everest is affected because it depends on the `bitnami/kubectl` image for several critical tasks:
