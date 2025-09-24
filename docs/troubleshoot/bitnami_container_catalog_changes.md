@@ -61,8 +61,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     !!! note 
         Make sure that you note the release name, namespace, and app version for each one.
 
-    
-    ??? example "Output"
+
         ```sh
         helm list --all-namespaces | grep everest
         a1          a1              1  2025-09-18         
@@ -139,17 +138,17 @@ You must **manually update your Helm charts** to use the new image. If you are o
 
 If the `everestctl install`, `everestctl namespaces add`, or `everestctl namespaces update` command hangs and displays output similar to the following:
 
-    ```
-    ℹ️ Installing Everest version 1.8.1
+```
+ℹ️ Installing Everest version 1.8.1
 
-    ✅ Installing Everest Helm chart
-    ✅ Ensuring Everest API deployment is ready
-    ✅ Ensuring Everest operator deployment is ready
-    ✅ Ensuring OLM components are ready
-    ✅ Ensuring monitoring stack is ready
-    ∙∙● Provisioning database namespace 'everest'
-    Esc/Ctrl+c quit
-    ```
+✅ Installing Everest Helm chart
+✅ Ensuring Everest API deployment is ready
+✅ Ensuring Everest operator deployment is ready
+✅ Ensuring OLM components are ready
+✅ Ensuring monitoring stack is ready
+∙∙● Provisioning database namespace 'everest'
+Esc/Ctrl+c quit
+```
     
 Follow these steps to fix the problem:
 {.power-number}
