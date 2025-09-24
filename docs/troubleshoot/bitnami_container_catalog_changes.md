@@ -219,7 +219,7 @@ Follow these steps to fix the problem:
     TEST SUITE: None
     ```
 
-7. Restart Everest Operator.
+7. Restart the Percona Everest Operator.
 
     ```sh
     kubectl -n everest-system rollout restart deploy/everest-operator
@@ -309,7 +309,7 @@ Follow these steps to fix the problem:
 
 6. Repeat as needed. The uninstallation should now progress, but it might get stuck again on other cleanup jobs like `psp-cleanup`. Repeat steps 3-5, identifying and patching any new stuck jobs until the uninstallation completes.
 
-7. Your immediate issue is now resolved. Make sure to complete the steps in the [Mandatory Fix](../troubleshoot/troubleshoot.md#mandatory-fix) section if you haven’t already, to avoid this problem in the future.
+7. Your issue is now resolved. To prevent this problem in the future, complete the steps outlined in the [Mandatory Fix](../troubleshoot/troubleshoot.md#mandatory-fix) section if you have not done so already.
 
 
 
