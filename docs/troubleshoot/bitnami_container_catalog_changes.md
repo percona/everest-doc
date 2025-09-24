@@ -201,7 +201,9 @@ Follow these steps to fix the problem:
     +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
     ```
 
-6. Upgrade the Helm release. Use the release name, namespace, and **APP VERSION** from the previous steps to upgrade the chart.
+6. Upgrade the Helm release. 
+
+    Use the release name, namespace, and **APP VERSION** from the previous steps to upgrade the chart.
 
     ```sh
     helm upgrade everest percona/everest-db-namespace \
@@ -223,7 +225,7 @@ Follow these steps to fix the problem:
     kubectl -n everest-system rollout restart deploy/everest-operator
     ```
 
-8. Your immediate issue is now resolved. Make sure to complete the steps in the [Mandatory Fix](../troubleshoot/troubleshoot.md#mandatory-fix) section if you haven’t already, to avoid this problem in the future.
+8. Your issue is now resolved. To prevent this problem in the future, complete the steps outlined in the [Mandatory Fix](../troubleshoot/troubleshoot.md#mandatory-fix) section if you have not done so already.
 
 
 ### Scenario 2: Uninstallation is stuck
@@ -247,7 +249,8 @@ Follow these steps to fix the problem:
 
 2. Verify the stuck Helm release. 
 
-    Confirm the everest-db-namespace chart is in an **uninstalling** state. 
+    Check the status of the `everest-db-namespace` chart. It should be in an **uninstalling** state.
+
     
     !!! note
         Make sure to note the `release name `and `namespace`.
@@ -256,7 +259,7 @@ Follow these steps to fix the problem:
      helm list --all-namespaces --uninstalling
     NAME       NAMESPACE      REVISION                           
     UPDATED    STATUS       CHART              APP VERSION
-    everest    everest        1          2025-09-18 16:37:49.047308243 +0100 WEST   uninstalling everest-db-namespace-1.8.1      1.8.1
+    everest    everest        1          2025-09-18                16:37:49.047308243 +0100 WEST   uninstalling everest-db-namespace-1.8.1      1.8.1
     ```
 
 3. Identify the stuck job. 
@@ -275,7 +278,8 @@ Follow these steps to fix the problem:
 
 4. Confirm the cause. 
 
-    Check the pod to ensure it’s an `ImagePullBackOff` for the `bitnami/kubectl:latest` image. 
+    Verify the pod to confirm that it is in an `ImagePullBackOff` state for the `bitnami/kubectl:latest` image.
+ 
     
     !!! note
         Make sure to note the pod and the container name.
@@ -288,7 +292,6 @@ Follow these steps to fix the problem:
     everest-helm-pre-delete-hook    bitnami/kubectl:latest      
     ImagePullBackOff
     ```
-
 
 5. Patch the pod. 
 
