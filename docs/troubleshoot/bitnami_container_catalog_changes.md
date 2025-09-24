@@ -76,7 +76,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
         16:44:45.138480161 
         +0100 WEST   deployed        everest    1.8.1                   
         1.8.1
-    ```
+        ```
 
 2. Upgrade the main Percona Everest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
