@@ -167,9 +167,11 @@ Follow these steps to fix the problem:
     Check the **pod status** to ensure the problem is an `ImagePullBackOff` for the `bitnami/kubectl:latest` image.
 
     ```sh
-    kubectl get pod -l job-name=everest-operators-installer --all-namespaces -o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'
-    NAME       NAMESPACE  IMAGE              WAITING_REASON
-    everest-operators-installer-rllfg everest  bitnami/kubectl:latest      ImagePullBackOff
+    kubectl get pod -l job-name=everest-operators-installer --all-namespaces \
+-o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'  
+
+    NAME                                 	NAMESPACE	IMAGE                 	WAITING_REASON  
+everest-operators-installer-rllfg    	everest  	bitnami/kubectl:latest	ImagePullBackOff
     ```
 
 4. Delete the stuck job.
