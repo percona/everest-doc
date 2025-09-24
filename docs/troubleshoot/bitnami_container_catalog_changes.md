@@ -283,10 +283,10 @@ Follow these steps to fix the problem:
     ```sh
     kubectl get pod -l job-name=everest-helm-pre-delete-hook-288662 --      all-namespaces -o custom-               
     NAME NAMESPACE        CONTAINER_NAME                            
-     IMAGE                       WAITING_REASON
+    IMAGE          WAITING_REASON
     everest-helm-pre-delete-hook-288662-dlddp      everest        
-     everest-helm-pre-delete-hook    bitnami/kubectl:latest      
-      ImagePullBackOff
+    everest-helm-pre-delete-hook    bitnami/kubectl:latest      
+    ImagePullBackOff
     ```
 
 
