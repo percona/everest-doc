@@ -62,20 +62,21 @@ You must **manually update your Helm charts** to use the new image. If you are o
         Make sure that you note the release name, namespace, and app version for each one.
 
 
-        ```sh
-        helm list --all-namespaces | grep everest
-        a1          a1              1  2025-09-18         
-        16:46:31.130925768 +0100 WEST   deployed        everest-        db- 
-        namespace-1.8.1      1.8.1
-        everest        everest          1  2025-09-              18               
-        16:45:15.362666552 
-        +0100 WEST   deployed        everest-db-namespace-1.8.1      
-        1.8.1
-        everest-system everest-system   1  2025-09-18 
-        16:44:45.138480161 
-        +0100 WEST   deployed        everest    1.8.1                   
-        1.8.1
-        ```
+    ```sh
+    helm list --all-namespaces | grep everest
+    a1          a1              1  2025-09-18         
+    16:46:31.130925768 +0100 WEST deployed everest-       
+    db- 
+    namespace-1.8.1      1.8.1
+    everest   everest   1  2025-09-18               
+    16:45:15.362666552 
+    +0100 WEST   deployed        everest-db-namespace-1.8.1      
+    1.8.1
+    everest-system everest-system   1  2025-09-18 
+    16:44:45.138480161 
+    +0100 WEST   deployed   everest    1.8.1                   
+    1.8.1
+    ```
 
 2. Upgrade the main Percona Everest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
@@ -162,11 +163,11 @@ Follow these steps to fix the problem:
     !!! note 
         Make sure to note the release name and namespace from the output. In this example, it’s `everest` in the `everest namespace`.
 
-        ```sh
-        helm list --all-namespaces --pending
-        NAME       NAMESPACE      REVISION            UPDATED                                STATUS          CHART                           APP VERSION
-        everest    everest        1          2025-09-18 16:12:36.237739864 +0100 WEST   pending-install everest-db-namespace-1.8.1      1.8.1
-        ```
+    ```sh
+    helm list --all-namespaces --pending
+    NAME  NAMESPACE  REVISION          UPDATED                                STATUS          CHART                           APP VERSION
+    everest    everest        1          2025-09-18 16:12:36.237739864 +0100 WEST   pending-install everest-db-namespace-1.8.1      1.8.1
+    ```
 
 3. Confirm the cause. 
 
@@ -175,7 +176,7 @@ Follow these steps to fix the problem:
     ```sh
     kubectl get pod -l job-name=everest-operators-installer --all-namespaces -o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'
     NAME       NAMESPACE  IMAGE              WAITING_REASON
-    everest-operators-installer-rllfg everest    bitnami/kubectl:latest      ImagePullBackOff
+    everest-operators-installer-rllfg everest  bitnami/kubectl:latest      ImagePullBackOff
     ```
 
 4. Delete the stuck job.
