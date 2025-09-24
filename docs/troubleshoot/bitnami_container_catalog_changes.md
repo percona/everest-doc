@@ -186,9 +186,9 @@ Follow these steps to fix the problem:
       job.batch "everest-operators-installer" deleted from everest namespace
       ```
 
-5. Check that the installation continues. 
+5. Verify that the installation is still in progress.
 
-    The original `everestctl` command should now proceed. 
+    The original `everestctl` command should now continue executing. 
     
     !!! note
         Make sure to note the **APP VERSION** of your Helm release, as you will need it in the next step.
