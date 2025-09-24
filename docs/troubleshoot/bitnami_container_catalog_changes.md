@@ -54,7 +54,9 @@ You must **manually update your Helm charts** to use the new image. If you are o
 {.power-number}
 
 
-1. List all installed Percona Everest charts. Find all Helm releases for both the `everest` and `everest-db-namespace` charts. 
+1. List all installed Percona Everest charts. 
+
+    Find all Helm releases for both the `everest` and `everest-db-namespace` charts. 
 
     !!! note 
         Make sure that you note the release name, namespace, and app version for each one.
@@ -64,13 +66,17 @@ You must **manually update your Helm charts** to use the new image. If you are o
     a1          a1              1  2025-09-18         
     16:46:31.130925768 +0100 WEST   deployed        everest-db- 
      namespace-1.8.1      1.8.1
-    everest        everest          1  2025-09-18 16:45:15.362666552 
-    +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
-    everest-system everest-system   1  2025-09-18 16:44:45.138480161 
-    +0100 WEST   deployed        everest-1.8.1                   1.8.1
+    everest        everest          1  2025-09-18               
+     16:45:15.362666552 
+    +0100 WEST   deployed        everest-db-namespace-1.8.1      
+     1.8.1
+    everest-system everest-system   1  2025-09-18 
+     16:44:45.138480161 
+    +0100 WEST   deployed        everest-1.8.1                   
+     1.8.1
     ```
 
-2. Upgrade the main Percona Everest chart (e.g., `everest-system`) using its specific details:
+2. Upgrade the main Percona Everest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
     ```sh
     helm upgrade everest-system percona/everest \
@@ -84,10 +90,13 @@ You must **manually update your Helm charts** to use the new image. If you are o
     STATUS: deployed
     REVISION: 2
     TEST SUITE: None
-    NOTES: Everest has been successfully upgraded to version 1.8.1!
+    NOTES: Everest has been successfully upgraded to version    
+    1.8.1!
     ```
 
-3. Upgrade the database namespace charts. Execute the helm upgrade command for each `everest-db-namespace `chart identified in **step 1**.
+3. Upgrade the database namespace charts. 
+
+    Execute the helm upgrade command for each `everest-db-namespace `chart identified in **step 1**.
 
     ```sh
     helm upgrade a1 percona/everest-db-namespace \
@@ -116,7 +125,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     REVISION: 2
     TEST SUITE: None
     ```
-4. Restart Everest Operator.
+4. Restart the Everest Operator.
 
     ```sh
     kubectl -n everest-system rollout restart deploy/everest-operator
@@ -126,9 +135,9 @@ You must **manually update your Helm charts** to use the new image. If you are o
 
 ### Scenario 1: Installation or namespace provisioning stuck
 
-If your `everestctl` install, `everestctl namespaces add`, or `everestctl namespaces update` command is stalled, showing a status like this:
+If the `everestctl install`, `everestctl namespaces add`, or `everestctl namespaces update` command hangs and displays output similar to the following:
 
-    ```sh
+    ```
     ℹ️ Installing Everest version 1.8.1
 
     ✅ Installing Everest Helm chart
@@ -137,7 +146,6 @@ If your `everestctl` install, `everestctl namespaces add`, or `everestctl namesp
     ✅ Ensuring OLM components are ready
     ✅ Ensuring monitoring stack is ready
     ∙∙● Provisioning database namespace 'everest'
-
     Esc/Ctrl+c quit
     ```
     
