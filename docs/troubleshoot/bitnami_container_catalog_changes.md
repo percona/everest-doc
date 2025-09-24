@@ -63,19 +63,12 @@ You must **manually update your Helm charts** to use the new image. If you are o
 
 
     ```sh
-    helm list --all-namespaces | grep everest
-    a1          a1              1  2025-09-18         
-    16:46:31.130925768 +0100 WEST deployed everest-       
-    db- 
-    namespace-1.8.1      1.8.1
-    everest   everest   1  2025-09-18               
-    16:45:15.362666552 
-    +0100 WEST   deployed        everest-db-namespace-1.8.1      
-    1.8.1
-    everest-system everest-system   1  2025-09-18 
-    16:44:45.138480161 
-    +0100 WEST   deployed   everest    1.8.1                   
-    1.8.1
+    helm list --all-namespaces | grep everest  
+
+    NAME          	NAMESPACE     	REVISION	UPDATED                                	STATUS  	CHART                         	APP VERSION  
+    a1            	a1            	1       	2025-09-18 16:46:31.130925768 +0100 WEST	deployed	everest-db-namespace-1.8.1    	1.8.1  
+    everest       	everest       	1       	2025-09-18 16:45:15.362666552 +0100 WEST	deployed	everest-db-namespace-1.8.1    	1.8.1  
+    everest-system	everest-system	1       	2025-09-18 16:44:45.138480161 +0100 WEST	deployed	everest-1.8.1                 	1.8.1  
     ```
 
 2. Upgrade the main Percona Everest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
