@@ -168,11 +168,12 @@ Follow these steps to fix the problem:
 
     ```sh
     kubectl get pod -l job-name=everest-operators-installer --all-namespaces \
--o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'  
+    -o custom-columns='NAME:.metadata.name,NAMESPACE:.metadata.namespace,IMAGE:.spec.containers[0].image,WAITING_REASON:.status.containerStatuses[0].state.waiting.reason'  
 
     NAME                                 	NAMESPACE	IMAGE                 	WAITING_REASON  
-everest-operators-installer-rllfg    	everest  	bitnami/kubectl:latest	ImagePullBackOff
-    ```
+    everest-operators-installer-rllfg    	everest  	bitnami/kubectl:latest	ImagePullBackOff
+    ```  
+
 
 4. Delete the stuck job.
 
