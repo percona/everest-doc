@@ -296,10 +296,8 @@ Follow these steps to fix the problem:
         Make sure to replace the pod and container names with your custom names.
 
     ```sh
-    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n     
-    everest -p '{"spec":{"containers":[{"name":"everest-helm-pre- 
-    delete-hook","image":"percona/everest-helmtools:0.0.1"}]}}'
-     pod/everest-helm-pre-delete-hook-288662-dlddp patched
+    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n everest -p '{"spec":{"containers":[{"name":"everest-helm-pre-delete-hook","image":"percona/everest-helmtools:0.0.1"}]}}'
+    pod/everest-helm-pre-delete-hook-288662-dlddp patched
     ```
 
 6. Repeat as needed. The uninstallation should now progress, but it might get stuck again on other cleanup jobs like `psp-cleanup`. Repeat steps 3-5, identifying and patching any new stuck jobs until the uninstallation completes.
