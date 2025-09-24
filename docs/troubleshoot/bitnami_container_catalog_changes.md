@@ -157,9 +157,9 @@ Follow these steps to fix the problem:
         Make sure to note the release name and namespace from the output. In this example, it’s `everest` in the `everest namespace`.
 
     ```sh
-    helm list --all-namespaces --pending
-    NAME  NAMESPACE  REVISION          UPDATED                                STATUS          CHART                           APP VERSION
-    everest    everest        1          2025-09-18 16:12:36.237739864 +0100 WEST   pending-install everest-db-namespace-1.8.1      1.8.1
+    helm list --all-namespaces --pending  
+    NAME    	NAMESPACE	REVISION	    UPDATED                                	STATUS          	CHART                         	APP VERSION  
+    everest 	everest  	1       	2025-09-18 16:12:36.237739864 +0100 WEST	pending-install	everest-db-namespace-1.8.1    	1.8.1  
     ```
 
 3. Confirm the cause. 
