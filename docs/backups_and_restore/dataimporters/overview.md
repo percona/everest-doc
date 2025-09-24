@@ -78,7 +78,8 @@ Here are some common scenarios for importing database backups into Percona Evere
 
 There are a few limitations to be aware of when importing external database backups:
 
-- This feature **only** supports backups created **using Percona Operators**. Backups created by other tools directly in an S3 bucket are not supported.
+- Percona Everest currently ships with a set of importers that can only import backups created using Percona operators. However, the data importers feature provides a generic framework for creating your own importer, enabling you to import backups in any format.
+
 
     ??? example "Example"
 
