@@ -252,11 +252,11 @@ Follow these steps to fix the problem:
         Make sure to note the `release name `and `namespace`.
 
     ```sh
-     helm list --all-namespaces --uninstalling
-    NAME       NAMESPACE      REVISION                           
-    UPDATED    STATUS       CHART              APP VERSION
-    everest    everest        1          2025-09-18                16:37:49.047308243 +0100 WEST   uninstalling everest-db-namespace-1.8.1      1.8.1
+    helm list --all-namespaces --uninstalling
+    NAME       NAMESPACE   REVISION   UPDATED                                 STATUS        CHART                        APP VERSION
+    everest    everest     1          2025-09-18 16:37:49.047308243 +0100 WEST uninstalling  everest-db-namespace-1.8.1  1.8.1
     ```
+
 
 3. Identify the stuck job. 
 
@@ -265,12 +265,12 @@ Follow these steps to fix the problem:
     !!! note
         Make sure to note the job’s name.
     
-     ```sh
-     kubectl get jobs -n everest
-     NAME                                  STATUS    COMPLETIONS   DURATION   AGE
-     everest-helm-pre-delete-hook-288662   Running   0/1             
-      25s        25s
-      ```   
+    ```sh
+    kubectl get jobs -n everest
+    NAME                                  STATUS    COMPLETIONS   DURATION   AGE
+    everest-helm-pre-delete-hook-288662   Running   0/1           25s        25s
+    ```
+
 
 4. Confirm the cause. 
 
