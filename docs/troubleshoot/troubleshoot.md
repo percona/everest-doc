@@ -127,9 +127,13 @@ You must **manually update your Helm charts** to use the new image. If you are o
 
     ```sh
     helm list --all-namespaces | grep everest
-    a1          a1              1  2025-09-18         16:46:31.130925768 +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
-everest        everest          1  2025-09-18 16:45:15.362666552 +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
-everest-system everest-system   1  2025-09-18 16:44:45.138480161 +0100 WEST   deployed        everest-1.8.1                   1.8.1
+    a1          a1              1  2025-09-18         
+    16:46:31.130925768 +0100 WEST   deployed        everest-db- 
+     namespace-1.8.1      1.8.1
+    everest        everest          1  2025-09-18 16:45:15.362666552 
+    +0100 WEST   deployed        everest-db-namespace-1.8.1      1.8.1
+    everest-system everest-system   1  2025-09-18 16:44:45.138480161 
+    +0100 WEST   deployed        everest-1.8.1                   1.8.1
     ```
 
 2. Upgrade the main Percona Everest chart (e.g., `everest-system`) using its specific details:
@@ -233,10 +237,10 @@ Follow these steps to fix the problem:
 
 4. Delete the stuck job.
 
-   ```sh
-   kubectl delete job everest-operators-installer -n everest
-    job.batch "everest-operators-installer" deleted from everest namespace
-    ```
+      ```sh
+      kubectl delete job everest-operators-installer -n everest
+      job.batch "everest-operators-installer" deleted from everest namespace
+      ```
 
 5. Check that the installation continues. 
 
