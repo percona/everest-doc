@@ -31,7 +31,7 @@ To update the CRDs, run the following command:
 helm repo update
 helm upgrade --install everest-crds \
     percona/everest-crds \
-    --namespace everest-system
+    --namespace everest-system \
     --take-ownership
 ```
 
