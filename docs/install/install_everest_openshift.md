@@ -157,4 +157,4 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}

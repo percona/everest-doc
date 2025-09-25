@@ -229,4 +229,4 @@ To install and provision Percona Everest to Kubernetes:
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
