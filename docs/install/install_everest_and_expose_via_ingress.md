@@ -245,4 +245,4 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
