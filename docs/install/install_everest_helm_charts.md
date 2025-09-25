@@ -222,4 +222,4 @@ A few parameters are listed in the following table. For a detailed list of the p
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
