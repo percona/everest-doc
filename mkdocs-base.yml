@@ -249,6 +249,13 @@ nav:
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
+      
+  - Troubleshooting guide:
+      - Installation workflow and components : troubleshoot/installation_overview.md
+      - Diagnostics for common issues: troubleshoot/troubleshoot.md
+      - Percona Everest and Bitnami Container Catalog Changes: troubleshoot/bitnami_container_catalog_changes.md
+      - Frequently asked questions (FAQ): troubleshoot/faq.md
+
   - API: API.md
   - Reference:
       - Breaking API changes: api_rbac.md
@@ -259,6 +266,7 @@ nav:
       - AI usage disclaimer: reference/AI_disclaimer_for_docs.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
+
 
   - Contribute: contribute.md
 
