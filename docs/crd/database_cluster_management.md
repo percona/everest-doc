@@ -127,8 +127,20 @@ kubectl get dbengine percona-postsgresql-operator -n <your namespace> -o jsonpat
     Operator upgrades must be performed through the UI or API, not directly via Kubernetes.
 
 
+### Exposing your database
 
+You can expose your database service either internally or externally:
 
+```sh
+spec:
+  proxy:
+    type: haproxy  # or: pgbouncer, proxysql, mongos
+    expose:
+      type: external
+      ipSourceRanges:  # Optional IP whitelist
+        - "10.0.0.0/24"
+    replicas: 2
+```
 
 
 
