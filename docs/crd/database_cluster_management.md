@@ -5,39 +5,40 @@ At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and m
 
 ??? example "Example: Basic database cluster"
     ```
-    yaml
     apiVersion: everest.percona.com/v1alpha1
-kind: DatabaseCluster
-metadata:
-  labels:
-    clusterName: my-database-cluster
-  name: my-database-cluster
-spec:
-  backup:
+    kind: DatabaseCluster
+    metadata:
+      name: my-database-cluster
+      labels:
+        clusterName: my-database-cluster
+    spec:
+    backup:
     pitr:
       enabled: false
-  engine:
-    replicas: 1
-    resources:
-      cpu: "1"
-      memory: 2G
-    storage:
-      class: standard-rwo
-      size: 25Gi
-    type: postgresql # Can be pxc, psmdb, postgresql
-    userSecretsName: everest-secrets-my-database-cluster
-    version: "17.4"
-  monitoring:
-    resources: {}
-  proxy:
+    engine:
+      type: postgresql   # Can be: postgresql, pxc, psmdb
+      version: "17.4"
+      replicas: 1
+      resources:
+        cpu: "1"
+        memory: 2G
+      storage:
+        class: standard-rwo
+        size: 25Gi
+        userSecretsName: everest-secrets-my-database-cluster
+      monitoring:
+        resources: {}
+    proxy:
+      type: pgbouncer
+      replicas: 1
+      resources:
+        cpu: "1"
+        memory: 30M
     expose:
       type: internal
-    replicas: 1
-    resources:
-      cpu: "1"
-      memory: 30M
-    type: pgbouncer
     ```
+
+    
 
 ## Supported database engine types
 
@@ -124,7 +125,7 @@ kubectl get dbengine percona-postsgresql-operator -n <your namespace> -o jsonpat
 
 !!! note
     Operator upgrades must be performed through the UI or API, not directly via Kubernetes.
-    
+
 
 
 
