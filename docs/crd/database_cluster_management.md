@@ -50,6 +50,29 @@ Percona Everest supports three database engines:
 - Percona Server for MongoDB
 
 
+### DatabaseEngine CRD
+
+The DatabaseEngine Custom Resource Definition (CRD) manages the lifecycle of database engines in your Kubernetes cluster. 
+
+It handles the following:
+
+- Operator installation
+- Upgrades
+- Version management
+
+
+??? example "Example: DatabaseEngine CRD"
+    ```
+    apiVersion: everest.percona.com/v1alpha1
+    kind: DatabaseEngine
+    metadata:
+      name: percona-postgresql-operator
+    spec:
+      type: postgresql
+    ```
+
+
+
 
 
 
