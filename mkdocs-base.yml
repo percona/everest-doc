@@ -246,8 +246,9 @@ nav:
 
   - Percona Everest operator CRD: 
       - Overview: crd/crd_guide.md
-      - Database cluster management: crd/database_cluster_management.md
-      - Backup storage configuration: crd/backup_storage_config.md
+      - Manage database clusters: crd/database_cluster_management.md
+      - Configure backup storage: crd/backup_storage_config.md
+      - Configure monitoring: crd/crd_monitoring.md
 
       
   - Reference:
