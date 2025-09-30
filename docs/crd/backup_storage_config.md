@@ -91,6 +91,75 @@ A backup typically progresses through these states:
 - **Failed**: Backup failed
 
 
+### Restore from a backup
+
+You can restore from a backup in two ways:
+{.power-number} 
+
+1. Restore from a `DatabaseClusterBackup`.
+
+    ```sh
+    apiVersion: everest.percona.com/v1alpha1
+    kind: DatabaseClusterRestore
+    metadata:
+    name: restore-from-backup
+    spec:
+    dbClusterName: my-database-cluster
+    dataSource:
+        dbClusterBackupName: my-database-cluster-backup
+    ```
+
+2. Restore to a **new database cluster**.
+
+    To restore a backup to a new database cluster, create a new `DatabaseCluster` with the `dataSource` field that references the backup:
+
+    ```sh
+    apiVersion: everest.percona.com/v1alpha1
+    kind: DatabaseCluster
+    metadata:
+    name: restored-database
+    namespace: default
+    spec:
+    # .. hidden
+    dataSource:
+        dbClusterBackupName: backup-name-here  # Name of the backup to restore from
+    ```
+
+!!! info "Important"
+    - The new cluster must use the same type and version of database engine as the backup. 
+    - The storage size of the new cluster should be at least as large as that of the original cluster. 
+    - The new cluster will be created in the same namespace as the backup. 
+    - Other configurations, such as proxy settings and monitoring, may differ from those of the original cluster.
 
 
+### Perform Point-in-Time Recovery (PITR)
+
+You can perform a point-in-time recovery to restore your database to a specific moment in time.
+
+```sh
+apiVersion: everest.percona.com/v1alpha1
+kind: DatabaseClusterRestore
+metadata:
+  name: pitr-restore
+spec:
+  dbClusterName: my-database
+  dataSource:
+    dbClusterBackupName: base-backup
+    pitr:
+      type: date
+      date: "2024-04-11T15:30:00Z"  # UTC timestamp
+```
+
+Monitor the restore status:
+
+```sh
+kubectl get dbrestore restore-from-backup -o jsonpath='{.status}'
+```
+
+The restore will typically go through these states:
+
+- **Starting**: Initial restore preparation
+- **Restoring**: Restore in progress
+- **Succeeded**: Restore completed successfully
+- **Failed**: Restore failed
 
