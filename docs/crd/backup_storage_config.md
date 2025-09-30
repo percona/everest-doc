@@ -1,4 +1,4 @@
-# Backup Storage Configuration
+# Backup storage configuration
 
 
 The Percona **Everest operator** is a crucial component of Percona. It provides a set of CRDs and easy-to-use abstractions to manage your databases declaratively. 
