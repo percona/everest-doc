@@ -39,6 +39,22 @@ Here are the steps to configure monitoring for your database clusters:
     verifyTLS: true  # Optional: verify TLS certificates
     ```
 
+3. Enable Monitoring for a DatabaseCluster.
+
+    ```sh
+    spec:
+  monitoring:
+    monitoringConfigName: "my-monitoring-config"
+    resources:
+      limits:
+        cpu: "200m"
+        memory: "200Mi"
+      requests:
+        cpu: "100m"
+        memory: "100Mi"
+    ```
+    
+
 
 
 
