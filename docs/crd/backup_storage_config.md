@@ -1,4 +1,4 @@
-# Backup storage configuration
+# Configure backup storage
 
 Before configuring backups, you must set up a backup storage location.
 {.power-number} 
@@ -52,8 +52,43 @@ Before configuring backups, you must set up a backup storage location.
         uploadIntervalSec: 300  # 5 minutes
     ```
 
+## Manual backups and restores
+
+In addition to scheduled backups, you can create manual backups and perform restores using the `DatabaseClusterBackup` and `DatabaseClusterRestore` CRDs.
 
 
+### Create a manual backup
+
+Define a `DatabaseClusterBackup` object:
+
+
+```sh
+apiVersion: everest.percona.com/v1alpha1
+kind: DatabaseClusterBackup
+metadata:
+  labels:
+    clusterName: my-database-cluster
+  name: my-database-cluster-backup
+spec:
+  backupStorageName: my-s3-backup-storage
+  dbClusterName: my-database-cluster
+```
+
+Monitor the backup status:
+
+```sh
+kubectl get dbbackup manual-backup-2024-04-11 -o jsonpath='{.status}'
+```
+
+A backup typically progresses through these states:
+
+- **Starting**: Initial backup preparation
+
+- **Running**: Backup in progress
+
+- **Succeeded**: Backup completed successfully
+
+- **Failed**: Backup failed
 
 
 
