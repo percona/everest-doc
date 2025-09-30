@@ -1,4 +1,4 @@
-# Managing database clusters with CRD
+# Manage database clusters with CRD
 
 At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and manages database clusters.
 
