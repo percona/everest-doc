@@ -1,7 +1,7 @@
 # Status monitoring
 
 
-You can monitor the status of your database cluster by runing the following command:
+You can monitor the status of your database cluster by running the following command:
 
 ```sh
 kubectl get databasecluster <cluster-name> -o jsonpath='{.status}'
