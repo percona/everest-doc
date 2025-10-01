@@ -43,15 +43,15 @@ Here are the steps to configure monitoring for your database clusters:
 
     ```sh
     spec:
-  monitoring:
-    monitoringConfigName: "my-monitoring-config"
-    resources:
-      limits:
-        cpu: "200m"
-        memory: "200Mi"
-      requests:
-        cpu: "100m"
-        memory: "100Mi"
+      monitoring:
+        monitoringConfigName: "my-monitoring-config"
+        resources:
+          limits:
+            cpu: "200m"
+            memory: "200Mi"
+          requests:
+            cpu: "100m"
+            memory: "100Mi"
     ```
     
 
