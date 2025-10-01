@@ -9,7 +9,7 @@ This guide will walk you through the CRDs provided by the Percona Everest operat
 
 We **recommend** using the **Percona Everest UI or API** for most operations. 
 
-The Perocna Everest UI/API provides the following benefits:
+The Percona Everest UI/API provides the following benefits:
 
 - Built-in validation and guardrails
 - A complete DBaaS-like experience
