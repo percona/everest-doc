@@ -33,10 +33,10 @@ Here are the steps to configure monitoring for your database clusters:
     spec:
         type: pmm
         credentialsSecretName: pmm-credentials
-    pmm:
-        url: "https://pmm.example.com"
-        image: "percona/pmm-client:2.41.0"  # Optional: specify PMM client version
-    verifyTLS: true  # Optional: verify TLS certificates
+        pmm:
+            url: "https://pmm.example.com"
+            image: "percona/pmm-client:2.41.0"  # Optional: specify PMM client version
+        verifyTLS: true  # Optional: verify TLS certificates
     ```
 
 3. Enable Monitoring for a DatabaseCluster.
