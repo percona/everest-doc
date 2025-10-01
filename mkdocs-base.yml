@@ -249,6 +249,7 @@ nav:
       - Manage database clusters: crd/database_cluster_management.md
       - Configure backup storage: crd/backup_storage_config.md
       - Configure monitoring: crd/crd_monitoring.md
+      - DatabaseCluster examples: crd/dbcluster_examples.md
 
       
   - Reference:
