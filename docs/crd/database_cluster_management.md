@@ -97,7 +97,7 @@ Each version can have one of these statuses:
 To check the available versions and their status:
 
 ```
-kubectl get dbengine percona-postsgresql-operator -n <your namespace> -o jsonpath='{.status.availableVersions}'
+kubectl get dbengine percona-postgresql-operator -n <your namespace> -o jsonpath='{.status.availableVersions}'
 ```
 
 ??? example "Example: DatabaseEngine with both spec and status"
