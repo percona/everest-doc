@@ -250,6 +250,7 @@ nav:
       - Configure backup storage: crd/backup_storage_config.md
       - Configure monitoring: crd/crd_monitoring.md
       - DatabaseCluster examples: crd/dbcluster_examples.md
+      - Troubleshooting database cluster issues: crd/troubleshooting_dbcluster_issues.md
 
       
   - Reference:
