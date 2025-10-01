@@ -13,7 +13,7 @@ If your database cluster isn’t behaving as expected, start with these checks:
 2. Check the operator logs.
 
     ```
-    kubectl logs -n <operator-namespace> deployment/everest-operator-controller-manager -n everest-system
+    kubectl logs -n <operator-namespace> deployment/everest-operator-controller-manager
     ```
 
 
