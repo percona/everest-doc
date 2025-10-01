@@ -252,7 +252,6 @@ nav:
       - DatabaseCluster examples: crd/dbcluster_examples.md
       - Troubleshooting database cluster issues: crd/troubleshooting_dbcluster_issues.md
 
-      
   - Reference:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
