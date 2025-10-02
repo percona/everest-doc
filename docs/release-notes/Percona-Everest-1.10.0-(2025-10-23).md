@@ -41,15 +41,19 @@
 
 ## New features
 
+- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239) Support for Split-Horizon DNS for MongoDB
+
+- [EVEREST-2179](https://perconadev.atlassian.net/browse/EVEREST-2179) Support NodePort exposure type
+
 - [EVEREST-2009](https://perconadev.atlassian.net/browse/EVEREST-2009) Add support for PG operator v2.7.0
 
 - [EVEREST-2173](https://perconadev.atlassian.net/browse/EVEREST-2173) Add support for PSMDB operator v1.21.0
 
 - [EVEREST-2174](https://perconadev.atlassian.net/browse/EVEREST-2174) Add support for PXC operator v1.18.0
 
-- [EVEREST-2179](https://perconadev.atlassian.net/browse/EVEREST-2179) Support NodePort exposure type
 
-- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239) Support for Split-Horizon DNS for MongoDB
+
+
 
 
 ## Improvements
