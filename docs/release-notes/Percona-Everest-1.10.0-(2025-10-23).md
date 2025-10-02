@@ -52,10 +52,6 @@
 - [EVEREST-2174](https://perconadev.atlassian.net/browse/EVEREST-2174) Add support for PXC operator v1.18.0
 
 
-
-
-
-
 ## Improvements
 
 - [EVEREST-1853](https://perconadev.atlassian.net/browse/EVEREST-1853) Add support for PMM v3
