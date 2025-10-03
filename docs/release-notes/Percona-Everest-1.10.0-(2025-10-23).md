@@ -69,33 +69,40 @@
 
 ## Bug fixes
 
-- [EVEREST-1741](https://perconadev.atlassian.net/browse/EVEREST-1741) \[UI\] Deleting a database changes the color of Actions to blue
+- [EVEREST-1741](https://perconadev.atlassian.net/browse/EVEREST-1741): Fixed an issue where deleting a database changed the **Actions** menu's background color to blue.
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865) \[UI\] PITR edit info not available for PG db cluster
 
-- [EVEREST-1947](https://perconadev.atlassian.net/browse/EVEREST-1947) \[UI\] Copy URL Connection to Clipboard Button Not Working in DB Details View
+- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): Resolved an issue where **Point-in-Time Recovery (PITR) details** were not displayed when editing PostgreSQL database clusters.
 
-- [EVEREST-2023](https://perconadev.atlassian.net/browse/EVEREST-2023) Inconsistent logic in everest-operator for creating and updating resources
+- [EVEREST-1947](https://perconadev.atlassian.net/browse/EVEREST-1947): Fixed an issue where the **Copy URL to Clipboard** button in the database details view was not working. Users can now successfully copy the connection URL.
 
-- [EVEREST-2104](https://perconadev.atlassian.net/browse/EVEREST-2104) Restore gets stuck in Restoring status if the backup is deleted
 
-- [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109) PITR remains disabled for PostgreSQL DB cluster after creating on-demand or scheduled backups
+- [EVEREST-2023](https://perconadev.atlassian.net/browse/EVEREST-2023): The `everest operator` showed inconsistent behavior in handling resource creation and updates. This issue has now been resolved.
 
-- [EVEREST-2121](https://perconadev.atlassian.net/browse/EVEREST-2121) Keep backups storage data during database deletion is not working
 
-- [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135) \[Data Importer\] S3 field accepts invalid formats and Verify TLS is unchecked by default
+- [EVEREST-2104](https://perconadev.atlassian.net/browse/EVEREST-2104): The restore operations were previously stuck in the **Restoring** state when the associated backup was deleted. This issue has now been resolved, and restores fail gracefully, providing a clear error message.
 
-- [EVEREST-2163](https://perconadev.atlassian.net/browse/EVEREST-2163) \[UI\] Pod scheduling policy is not displayed in Edit advanced configuration if it doesn't have any rules
 
-- [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211) Postgresql database doesn't come up and crashes after PITR
+- [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109): Point-in-Time Recovery (PITR) now correctly activates for PostgreSQL clusters after creating on-demand or scheduled backups, addressing the previous issue where it remained disabled.
 
-- [EVEREST-2235](https://perconadev.atlassian.net/browse/EVEREST-2235) \[operator\] specifying an invalid .spec.engine.version in DatabaseCluster CRD crashes Everest Operator
+- [EVEREST-2121](https://perconadev.atlassian.net/browse/EVEREST-2121): Resolved an issue where backup data was deleted along with the database cluster, even when the delete data option was unchecked. Backup storage now remains intact, ensuring data safety and recoverability.
 
-- [EVEREST-2237](https://perconadev.atlassian.net/browse/EVEREST-2237) \[UI\] DB overview page crashes when creation is done via CRD
 
-- [EVEREST-2258](https://perconadev.atlassian.net/browse/EVEREST-2258) \[UI\] Connection URL does not get updated after enabling load balancer
+- [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135): Addressed an issue where the S3 bucket field accepted incorrect formats and the **Verify TLS** option was unchecked by default. Input validation now ensures the correct S3 formats, and TLS verification is enabled by default.
 
-- [EVEREST-2259](https://perconadev.atlassian.net/browse/EVEREST-2259) \[UI\] Auto-update Connection URL field when changing the expose type
+
+- [EVEREST-2163](https://perconadev.atlassian.net/browse/EVEREST-2163): The Pod Scheduling Policy now appears in the **Edit Advanced Configuration** view even when no rules are defined.
+
+- [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211): PostgreSQL databases now start successfully following a Point-in-Time Recovery (PITR). Previously, clusters would crash after a PITR operation.
+
+
+- [EVEREST-2235](https://perconadev.atlassian.net/browse/EVEREST-2235): Specifying an invalid `.spec.engine.version` in a `DatabaseCluster` CRD no longer crashes the Percona Everest Operator. Invalid versions are now handled gracefully with proper validation and error reporting.
+
+- [EVEREST-2237](https://perconadev.atlassian.net/browse/EVEREST-2237): Creating a database via **CRD** without specifying monitoring resources no longer causes the **Overview** page to crash. The page now loads correctly even if monitoring resources are omitted.
+
+- [EVEREST-2258](https://perconadev.atlassian.net/browse/EVEREST-2258): When editing the database and enabling the load balancer, the **Host** field was updated after a few seconds, but the **Connection URL** did not update. We have resolved the issue now.
+
+
 
 - [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278) Browser get stuck after SSO token expires until we clear cookies
 
