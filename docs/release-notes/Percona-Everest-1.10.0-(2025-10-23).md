@@ -62,7 +62,7 @@
 
 - [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302): Menu informational sections are now displayed as plain text. They no longer behave like actions (clickable or hoverable), improving clarity and reducing user confusion.
 
-- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **LoadBalancer** has been renamed to **LoadBalancer** to align with other service types such as **ClusterIP** and **NodePort**.
+- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **LoadBalancer** has been renamed to **LoadBalancer** to align with other service types, such as **ClusterIP** and **NodePort**.
 
 - [EVEREST-2323](https://perconadev.atlassian.net/browse/EVEREST-2323): The DB Importers UI now displays credentials in the same order as they appear in Kubernetes secrets and documentation, ensuring a consistent workflow across CLI, docs, and UI.
 
@@ -104,12 +104,12 @@
 
 
 
-- [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without needing to clear their browser cookies.
+- [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
 
 
 - [EVEREST-2290](https://perconadev.atlassian.net/browse/EVEREST-2290): The **Add New **button in Load balancer config is now disabled until the previous annotation row is filled when creating or editing the load balancer configuration, thereby improving the user experience.
 
-- [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a Load balancer config now clearly states it can only be deleted if not linked to any database, ensuring no impact on the existing databases.
+- [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a Load balancer config now clearly states that it can only be deleted if it is not linked to any database, ensuring no impact on the existing databases.
 
 - [EVEREST-2324](https://perconadev.atlassian.net/browse/EVEREST-2324): Fixed an issue where the `everestctl upgrade` command did not permit upgrading to the next patch version if a newer minor release is available.
 
