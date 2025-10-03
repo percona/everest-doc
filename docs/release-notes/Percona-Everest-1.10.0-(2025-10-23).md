@@ -60,11 +60,11 @@
 
 - [EVEREST-2236](https://perconadev.atlassian.net/browse/EVEREST-2236) Expose proxy vars in helm values
 
-- [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302) \[UI\] Menu info sections should not be clickable
+- [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302): Menu informational sections are now displayed as plain text. They no longer behave like actions (clickable or hoverable), improving clarity and reducing user confusion.
 
-- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318) \[UI\] Rename Load balancer to LoadBalancer 
+- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **LoadBalancer** has been renamed to **LoadBalancer** to align with other service types such as **ClusterIP** and **NodePort**.
 
-- [EVEREST-2323](https://perconadev.atlassian.net/browse/EVEREST-2323) \[UI\] UI order of DB Importer credentials does not match secret retrieval
+- [EVEREST-2323](https://perconadev.atlassian.net/browse/EVEREST-2323): The DB Importers UI now displays credentials in the same order as they appear in Kubernetes secrets and documentation, ensuring a consistent workflow across CLI, docs, and UI.
 
 
 ## Bug fixes
