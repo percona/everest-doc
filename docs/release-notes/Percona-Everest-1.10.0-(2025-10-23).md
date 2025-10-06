@@ -53,7 +53,7 @@
 
 ## Improvements
 
-- [EVEREST-1853](https://perconadev.atlassian.net/browse/EVEREST-1853): Percona Everest now integrates with Percona Monitoring and Management v3, giving you access to the latest monitoring, alerting, and performance insights. PMM v2 remains supported for backward compatibility.
+- [EVEREST-1853](https://perconadev.atlassian.net/browse/EVEREST-1853): Percona Everest now supports Percona Monitoring and Management (PMM) v3, giving you access to the latest monitoring, alerting, and performance insights. PMM v2 remains supported for backward compatibility.
 
 - [EVEREST-1889](https://perconadev.atlassian.net/browse/EVEREST-1889): The **Overview → Resources** section now displays the number of nodes per shard, providing a clearer understanding of resource allocation in sharded deployments at a glance.
 
