@@ -39,17 +39,17 @@ Before configuring backups, you must set up a backup storage location.
 
     ```sh
     spec:
-    backup:
+      backup:
         schedules:
-        - name: "daily-backup"
+          - name: "daily-backup"
             enabled: true
             schedule: "0 0 * * *"  # Daily at midnight
             retentionCopies: 7
             backupStorageName: "my-s3-backup-storage"
         pitr:  # Point-in-Time Recovery
-        enabled: true
-        backupStorageName: "my-s3-backup-storage"
-        uploadIntervalSec: 300  # 5 minutes
+          enabled: true
+          backupStorageName: "my-s3-backup-storage"
+          uploadIntervalSec: 300  # 5 minutes
     ```
 
 ## Manual backups and restores
