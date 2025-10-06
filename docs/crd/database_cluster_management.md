@@ -34,8 +34,8 @@ At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and m
       resources:
         cpu: "1"
         memory: 30M
-    expose:
-      type: internal
+      expose:
+        type: internal
     ```
 
     
