@@ -102,10 +102,10 @@ You can restore from a backup in two ways:
     apiVersion: everest.percona.com/v1alpha1
     kind: DatabaseClusterRestore
     metadata:
-    name: restore-from-backup
+      name: restore-from-backup
     spec:
-    dbClusterName: my-database-cluster
-    dataSource:
+      dbClusterName: my-database-cluster
+      dataSource:
         dbClusterBackupName: my-database-cluster-backup
     ```
 
