@@ -94,7 +94,7 @@ spec:
 ## Percona XtraDB cluster
 
 
-```sh
+```yaml
 apiVersion: everest.percona.com/v1alpha1
 kind: DatabaseCluster
 metadata:
