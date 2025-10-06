@@ -12,11 +12,11 @@ At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and m
       labels:
         clusterName: my-database-cluster
     spec:
-    backup:
-    pitr:
-      enabled: false
-    engine:
-      type: postgresql   # Can be: postgresql, pxc, psmdb
+      backup:
+      pitr:
+        enabled: false
+      engine:
+        type: postgresql   # Can be: postgresql, pxc, psmdb
       version: "17.4"
       replicas: 1
       resources:
