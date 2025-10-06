@@ -26,8 +26,8 @@ At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and m
         class: standard-rwo
         size: 25Gi
       userSecretsName: everest-secrets-my-database-cluster
-      monitoring:
-        resources: {}
+    monitoring:
+      resources: {}
     proxy:
       type: pgbouncer
       replicas: 1
