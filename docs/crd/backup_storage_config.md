@@ -120,8 +120,8 @@ You can restore from a backup in two ways:
     name: restored-database
     namespace: default
     spec:
-    # .. hidden
-    dataSource:
+      # .. hidden
+      dataSource:
         dbClusterBackupName: backup-name-here  # Name of the backup to restore from
     ```
 
