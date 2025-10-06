@@ -16,7 +16,7 @@ If your database cluster isn’t behaving as expected, start with these checks:
     kubectl logs -n <operator-namespace> deployment/everest-operator-controller-manager
     ```
 
-The table below summarizes **frequent issues, their possible causes, and how to resolve them**. 
+The table below summarizes **frequent issues**, their **possible causes**, and **how to resolve them**. 
 
 | Issue                          | Possible Cause                                   | How to Check / Fix                                                                 | Resolution                                                                 |
 |--------------------------------|--------------------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------|
