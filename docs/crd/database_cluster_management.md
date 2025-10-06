@@ -17,7 +17,7 @@ At the core of Percona Everest is the `DatabaseCluster CRD`, which defines and m
           enabled: false
       engine:
         type: postgresql   # Can be: postgresql, pxc, psmdb
-      version: "17.4"
+        version: "17.4"
       replicas: 1
       resources:
         cpu: "1"
