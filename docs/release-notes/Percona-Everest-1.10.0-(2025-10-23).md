@@ -60,7 +60,7 @@
 
 - [EVEREST-2236](https://perconadev.atlassian.net/browse/EVEREST-2236) Expose proxy vars in helm values
 
-- [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302): Menu informational sections are now displayed as plain text. They no longer behave like actions (clickable or hoverable), improving clarity and reducing user confusion.
+- [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302): Menu informational sections are now displayed as plain text. They no longer behave like actions (clickable or hoverable), improving clarity and reducing confusion.
 
 - [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **LoadBalancer** has been renamed to **LoadBalancer** to align with other service types, such as **ClusterIP** and **NodePort**.
 
@@ -72,7 +72,7 @@
 - [EVEREST-1741](https://perconadev.atlassian.net/browse/EVEREST-1741): Fixed an issue where deleting a database changed the **Actions** menu's background color to blue.
 
 
-- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): Resolved an issue where **Point-in-Time Recovery (PITR) details** were not displayed when editing PostgreSQL database clusters.
+- [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): **Point-in-Time Recovery (PITR) details** are now displayed correctly when editing PostgreSQL database clusters.
 
 - [EVEREST-1947](https://perconadev.atlassian.net/browse/EVEREST-1947): Fixed an issue where the **Copy URL to Clipboard** button in the database details view was not working. Users can now successfully copy the connection URL.
 
