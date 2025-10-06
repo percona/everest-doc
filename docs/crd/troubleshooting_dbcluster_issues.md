@@ -26,24 +26,3 @@ The table below summarizes **frequent issues**, their **possible causes**, and *
 | Monitoring not working          | Missing or invalid PMM credentials               | ```kubectl get monitoringconfig -n <namespace>```<br>```kubectl describe monitoringconfig <name> -n <namespace>``` | Recreate the PMM secret with valid base64-encoded credentials. |
 | Proxy not starting              | Wrong proxy type or insufficient resources       | ```kubectl get pods -n <namespace>```<br>```kubectl describe pod <proxy-pod> -n <namespace>``` | Correct the proxy type in spec and/or increase CPU/memory requests. |
 | Upgrade stuck in upgrading      | Incompatible engine version                      | ```kubectl describe databasecluster <cluster-name> -n <namespace>``` | Use a supported engine version for in-place upgrades or recreate cluster with the new version. |
-
-
- 
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
