@@ -18,14 +18,14 @@ At the core of Percona Everest is the `DatabaseCluster` CRD, which defines and m
       engine:
         type: postgresql   # Can be: postgresql, pxc, psmdb
         version: "17.4"
-      replicas: 1
-      resources:
-        cpu: "1"
-        memory: 2G
-      storage:
-        class: standard-rwo
-        size: 25Gi
-      userSecretsName: everest-secrets-my-database-cluster
+        replicas: 1
+        resources:
+          cpu: "1"
+          memory: 2G
+        storage:
+          class: standard-rwo
+          size: 25Gi
+        userSecretsName: everest-secrets-my-database-cluster
     monitoring:
       resources: {}
     proxy:
