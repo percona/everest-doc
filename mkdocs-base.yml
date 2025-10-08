@@ -220,6 +220,8 @@ nav:
       - Load balancer overview: networking/load_balancer.md
       - Load balancer scenarios: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
+      - Split-Horizon DNS: networking/split_horizon_dns.md
+
 
 
   - Back up and restore data: 
