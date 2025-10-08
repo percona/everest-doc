@@ -51,7 +51,7 @@ theme:
     - content.tabs.link
     - content.code.copy
     - navigation.tracking
-    - content.action.edit
+#    - content.action.edit
     - content.action.view
 
 extra_css:
