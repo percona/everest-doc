@@ -223,6 +223,7 @@ nav:
       - Split-Horizon DNS for Percona Operator for MongoDB: 
         - Overview: networking/split-horizon_dns.md
         - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
+        - Percona Everest Operator changes: networking/split-horizon_everest_operator_changes.md
 
 
 
