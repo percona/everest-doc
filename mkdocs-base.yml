@@ -222,7 +222,7 @@ nav:
       - Configure load balancer: networking/load_balancer_config.md
       - Split-Horizon DNS for Percona Operator for MongoDB: 
         - Overview: networking/split_horizon_dns.md
-        - Split-Horizon DNS scenarios: networking/ssplit-horizon_scenarios.md
+        - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
 
 
 
