@@ -34,3 +34,12 @@ Before you begin, make sure you:
 - Understand [Split-Horizon DNS](https://en.wikipedia.org/wiki/Split-horizon_DNS octicons-link-external-16:) feature in computer networks.
 
 - Understand [Split-Horizon DNS](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns) feature in Percona Operator for MongoDB.
+
+
+These concepts are essential for correctly configuring external domain access to exposed Pods in Percona Everest.
+
+
+
+
+
+
