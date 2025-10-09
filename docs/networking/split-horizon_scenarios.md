@@ -53,7 +53,6 @@ To implement this, the Percona Everest administrator creates an RBAC policy:
 p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
 ```
 
-
 ## Apply Split-Horizon DNS config to new database cluster
 
 !!! info "important"
