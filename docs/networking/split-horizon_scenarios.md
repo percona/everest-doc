@@ -23,7 +23,32 @@ The following applies to Split-Horizon DNS configs:
 | **Base domain name**          | Domain name suffix used for generating full domain names for each Pod in the Replica Set. This field is also used as the **Split-Horizon DNS config** name. |
 | **TLS certificates**          | TLS certificate files for the provided base domain. See [instructions](https://docs.percona.com/percona-operator-for-mongodb/tls-manual.html#__tabbed_1_1). <br>- `cert.pem` - certificate<br>- `cert-key.pem` - certificate key<br>- `ca.pem` - certificate authority file |
 
-Once all values are entered, Percona Everest administrator saves the configuration in the system. 
+Once all values are entered, Percona Everest administrator saves the configuration in the system.
 
 
+## Protect Split-Horizon DNS config with RBAC
 
+A Percona Everest administrator may want to restrict access to the Split-Horizon DNS configuration or the ability to apply a specific Split-Horizon DNS config for certain Percona Everest users. To do this, the administrator uses Percona Everest RBAC to define policies that limit access to the selected instances. These RBAC policies apply to the entire Split-Horizon DNS configuration.
+
+### Limit access to Split-Horizon DNS config
+
+A Percona Everest administrator may want to allow specific users (for example, Alice) to fully manage (create, edit, read, delete) Split-Horizon DNS configurations.
+Other users can only read the Split-Horizon DNS configs and use them in database clusters, but cannot make any changes.
+
+To implement this, the Percona Everest administrator creates an RBAC policy:
+
+```sh
+p, alice, engine-features/split-horizon-dns-config, *, */*
+p, role:team-dev, engine-features/split-horizon-dns-config, read, */*
+```
+
+### Limit usage of Split-Horizon DNS config by users
+
+A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompany.com` in namespace `ns-1`).
+All other users are not allowed to use this config at all. That is, they cannot see it in the system and cannot assign it to any database clusters they create or modify.
+
+To implement this, the Percona Everest administrator creates an RBAC policy:
+
+```sh
+p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
+```
