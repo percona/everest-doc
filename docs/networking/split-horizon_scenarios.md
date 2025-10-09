@@ -59,7 +59,7 @@ p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
     - Only one **Split-Horizon DNS config** can be applied to one database Cluster.
     - **Split-Horizon DNS** feature can be enabled only if **Sharding** is disabled.
 
-When creating a new Percona Operator for MongoDB cluster, a user can choose to enable the Split-Horizon DNS feature.
+When creating a new Percona Operator for MongoDB cluster, you can choose to enable the Split-Horizon DNS feature.
 
 The system provides an additional **Split-Horizon DNS** panel on the **Advanced Configuration** step of the database cluster creation wizard. By default, the Split-Horizon DNS feature toggle is disabled.
 
@@ -68,5 +68,27 @@ For detailed instructions on applying a Split-Horizon DNS config to a new databa
 ### Apply Split-Horizon DNS config to an existing database cluster
 
 !!! info "important"
-    - Only one Split-Horizon DNS config can be applied to one database Cluster.
+    - Only one Split-Horizon DNS config can be applied to one database cluster.
     - Enabling or disabling the Split-Horizon DNS feature **does not trigger a restart** of the Percona Operator for MongoDB  cluster.
+
+You may want to enable the Split-Horizon DNS feature on an existing Percona Operator for MongoDB cluster. The system provides an additional **Split-Horizon DNS** panel in the 88 section of the database cluster overview page.
+
+For detailed instructions on applying a Split-Horizon DNS config to an existing database cluster, see the section [link].
+
+
+## Update Split-Horizon DNS config
+
+In certain situations, a specific Split-Horizon DNS configuration may need modifications, such as altering the base domain name or uploading new Transport Layer Security (TLS) certificates. A Percona Everest administrator, or any user with the necessary Role-Based Access Control (RBAC) permissions, can update the Split-Horizon DNS configuration.
+
+
+For detailed instructions on updating a Split-Horizon DNS config, see the section [link].
+
+
+
+## Delete Split-Horizon DNS config
+
+If a particular Split-Horizon DNS config is no longer needed, the Percona Everest administrator can choose to delete it.
+
+For detailed instructions on deleting a Split-Horizon DNS config, see the section [link].
+
+
