@@ -52,3 +52,16 @@ To implement this, the Percona Everest administrator creates an RBAC policy:
 ```sh
 p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
 ```
+
+
+## Apply Split-Horizon DNS config to new database cluster
+
+!!! info "important"
+    - Only one **Split-Horizon DNS config** can be applied to one database Cluster.
+    - **Split-Horizon DNS** feature can be enabled only if **Sharding** is disabled.
+
+When creating a new Percona Operator for MongoD cluster, a user can choose to enable the Split-Horizon DNS feature.
+
+The system provides an additional **Split-Horizon DNS** panel on the **Advanced Configuration** step of the database cluster creation wizard. By default, the Split-Horizon DNS feature toggle is disabled.
+
+For detailed instructions on applying a Split-Horizon DNS config to a new database cluster, see the section [link].
