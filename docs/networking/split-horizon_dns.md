@@ -16,6 +16,6 @@ This is useful in scenarios such as:
 
 - Providing temporary or alternative domain names for direct Pod access without impacting the default DNS configuration.
 
-The [Percona Server for MongoDB and its operator](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns) already support Split-Horizon DNS.
+The [Percona Server for MongoDB and its operator :octicons-link-external-16:](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns) already support Split-Horizon DNS.
 
 
