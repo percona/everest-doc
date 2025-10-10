@@ -1,4 +1,9 @@
-# Split-Horizon DNS Percona Everest Operator changes
+# Split-Horizon DNS config Custom Resource Definition (CRD)
+
+
+
+
+
 
 
 
