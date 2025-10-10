@@ -134,6 +134,17 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
     .spec.secrets.ssl = SplitHorizonDNSConfig.spec.tls.secretName
     ```
 
+### Handling updates to SplitHorizonDNSConfig
+
+The Operator watches for changes in `SplitHorizonDNSConfig` and:
+{.power-number}
+
+1. Fetches all `DatabaseCluster` objects in the same namespace where:
+
+    ```sh                       DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName == SplitHorizonDNSConfig.metadata.name
+    ```
+
+2. Applies updated values automatically to all associated Percona Operator for MongoDB cluster resources.
 
 
 
