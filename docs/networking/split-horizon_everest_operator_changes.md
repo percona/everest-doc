@@ -81,10 +81,28 @@ Once a new `SplitHorizonDNSConfig` object is created, the Percona Everest operat
     - If `.spec.tls.certificate.*` is provided, create a secret named `.spec.tls.secretName` if it does not already exist, and copy the certificate values from `.spec.tls.certificate.*` into that secret.
 
 
+### DatabaseCluster CR extension
+
+The `DatabaseCluster` CR is extended with an optional field `.spec.engineFeatures.psmdb.split-horizon-dns`.
+
+The default value is **nil**, indicating that the Split-Horizon DNS feature will not be applied to the Percona Operator for the MongoDB cluster.
 
 
-
-
+??? example "Example"
+    ```yaml
+    apiVersion: everest.percona.com/v1alpha1
+    kind: DatabaseCluster
+    metadata:
+        name: psmdb-4d5
+        namespace: ns-1
+    spec:
+        engine:
+            type: psmdb
+            userSecretsName: everest-secrets-psmdb-4d5
+        engineFeatures:
+            psmdb:
+                splitHorizonDnsConfigName: mycompany.com
+    ```
 
 
 
