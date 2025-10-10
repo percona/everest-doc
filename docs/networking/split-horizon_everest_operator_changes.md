@@ -50,8 +50,15 @@ spec:
 | `.spec.tls.certificate.keyFile`       | Base64-encoded TLS private key file.                                         |
 | `.spec.tls.certificate.caCertFile`    | Base64-encoded CA certificate file (`ca.crt`).                               |
 
+## Allowed TLS configuration options
 
+When creating the Custom Resource (CR), provide one of the following combinations:
 
+- `.spec.tls.secretName` only – Use this option if a TLS certificate already exists and should be re-used.
+
+- `.spec.tls.secretName + .spec.tls.certificate.*` – In this case, the values from `.spec.tls.certificate.*` will be copied into a newly created Secret named `.spec.tls.secretName.` 
+
+    Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
 
 
