@@ -78,7 +78,7 @@ Once a new `SplitHorizonDNSConfig` object is created, the Percona Everest operat
 
     - If .spec.tls.certificate.* is not provided, ensure a secret with name `.spec.tls.secretName` exists in the same namespace and is of type TLS.
 
-    - If `.spec.tls.certificate.*` is provided, create a secret with name `.spec.tls.secretName` if it does not already exist, and copy the certificate values from `.spec.tls.certificate.*` into it.
+    - If `.spec.tls.certificate.*` is provided, create a secret named `.spec.tls.secretName` if it does not already exist, and copy the certificate values from `.spec.tls.certificate.*` into that secret.
 
 
 
