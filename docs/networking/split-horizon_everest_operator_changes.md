@@ -63,6 +63,23 @@ When creating the Custom Resource (CR), provide one of the following combination
 !!! note
     does not validate whether the provided TLS certificate matches the specified base domain name.
 
+## Split-Horizon DNS configuration handling in Percona Everest Operator
+
+### SplitHorizonDNSConfig CR handling
+
+Once a new `SplitHorizonDNSConfig` object is created, the Percona Everest operator will handle it as follows:
+{.power-number}
+
+1. Validation
+    - Validate that the field `.spec.baseDomainNameSuffix `contains a valid domain name.
+    - Verify that `.spec.tls.secretName` is provided. This can either reference an existing secret or will be used to create a new one.
+
+2. TLS secret management
+
+    - If .spec.tls.certificate.* is not provided, ensure a secret with name `.spec.tls.secretName` exists in the same namespace and is of type TLS.
+
+    - If `.spec.tls.certificate.*` is provided, create a secret with name `.spec.tls.secretName` if it does not already exist, and copy the certificate values from `.spec.tls.certificate.*` into it.
+
 
 
 
