@@ -61,7 +61,7 @@ When creating the Custom Resource (CR), provide one of the following combination
     Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
 !!! note
-    does not validate whether the provided TLS certificate matches the specified base domain name.
+    Percona Everest does not validate whether the provided TLS certificate matches the specified base domain name.
 
 ## Split-Horizon DNS configuration handling in Percona Everest Operator
 
@@ -140,9 +140,8 @@ The Operator watches for changes in `SplitHorizonDNSConfig` and:
 {.power-number}
 
 1. Fetches all `DatabaseCluster` objects in the same namespace where:
-
-    ```sh                       DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName == SplitHorizonDNSConfig.metadata.name
-    ```
+                            
+    `DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName == SplitHorizonDNSConfig.metadata.name`
 
 2. Applies updated values automatically to all associated Percona Operator for MongoDB cluster resources.
 
