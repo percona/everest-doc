@@ -125,6 +125,14 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
         rs0-1-psmdb-4d5-ns-1.mycompany.com
         ```
 
+3. Set the generated domain names in the upstream Percona Operator for MongoDB CR as described in this [document :octicons-link-external-16:](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns).
+
+
+4. Set the TLS secret for the Percona Operator for MongoDB cluster:
+
+    ```yaml
+    .spec.secrets.ssl = SplitHorizonDNSConfig.spec.tls.secretName
+    ```
 
 
 
