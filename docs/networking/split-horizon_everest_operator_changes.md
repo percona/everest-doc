@@ -104,6 +104,27 @@ The default value is **nil**, indicating that the Split-Horizon DNS feature will
                 splitHorizonDnsConfigName: mycompany.com
     ```
 
+### Handling splitHorizonDnsConfigName in DatabaseCluster
+
+When a DatabaseCluster object includes the optional field `spec.engineFeatures.psmdb.splitHorizonDnsConfigName`, the Percona Everest Operator performs the following steps:
+{.power-number}
+
+1. Fetch the `SplitHorizonDNSConfig` CR whose name matches `DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName`.
+
+2. Extract `.spec.baseDomainNameSuffix` from the `SplitHorizonDNSConfig` CR and generate additional domain names for each pod in `ReplicaSet` using template:
+
+    ```sh
+    <ReplicaSet number>-<pod number>-<db cluster name>-<namespace>.<base domain>
+    ```
+
+    ??? example "Examples"
+        ```sh
+        rs0-0-psmdb-4d5-ns-1.mycompany.com
+        ```
+        ```sh
+        rs0-1-psmdb-4d5-ns-1.mycompany.com
+        ```
+
 
 
 
