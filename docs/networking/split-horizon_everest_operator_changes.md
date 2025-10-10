@@ -1,4 +1,4 @@
-# Split-Horizon DNS Percona Everest Operator Changes
+# Split-Horizon DNS Percona Everest Operator changes
 
 
 
