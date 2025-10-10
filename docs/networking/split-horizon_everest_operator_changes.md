@@ -140,7 +140,6 @@ The Operator watches for changes in `SplitHorizonDNSConfig` and:
 {.power-number}
 
 1. Fetches all `DatabaseCluster` objects in the same namespace where:
-                            
                                `DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName == SplitHorizonDNSConfig.metadata.name`
 
 2. Applies updated values automatically to all associated Percona Operator for MongoDB cluster resources.
