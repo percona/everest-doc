@@ -29,4 +29,27 @@ kubectl get node -o wide
     Some Kubernetes providers may require additional firewall rules to allow external NodePort access. Check your provider’s documentation.
 
 
+## Retrieving NODE_PORT
+
+Run the following command to identify the NodePort assigned to your database service:
+
+```sh
+kubectl get svc -n DB_NAMESPACE | grep '^DB_NAME' | grep NodePort | awk '{print $5}' | grep -oE '[0-9]+/TCP'`
+```
+
+Replace:
+
+- `DB_NAME` with the name of your database service
+- `DB_NAMESPACE` with the namespace of your database
+
+
+??? example "Example"
+    ```sh
+    kubectl get svc -n ns1 | grep '^mongodb-123' | grep NodePort | awk '{print $5}' | grep -oE '[0-9]+/TCP'
+    ```
+
+    **Output**
+    `30179/TCP`
+
+    This indicates that the database can be accessed on port **30179** on any node listed in the [Node IP section](../networking/nodeport_support.md#retrieving-node_ip).
 
