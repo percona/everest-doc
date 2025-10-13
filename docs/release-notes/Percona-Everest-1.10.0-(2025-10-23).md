@@ -119,6 +119,6 @@
 
 ## 🚀 Ready to Upgrade?
 
-Upgrade to **Percona Everest 1..0** to access these new features and improvements.
+Upgrade to **Percona Everest 1.10.0** to access these new features and improvements.
 
 📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
