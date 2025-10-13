@@ -61,7 +61,7 @@
 
 - [EVEREST-2302](https://perconadev.atlassian.net/browse/EVEREST-2302): Menu informational sections are now displayed as plain text. They no longer behave like actions (clickable or hoverable), improving clarity and reducing confusion.
 
-- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **LoadBalancer** has been renamed to **LoadBalancer** to align with other service types, such as **ClusterIP** and **NodePort**.
+- [EVEREST-2318](https://perconadev.atlassian.net/browse/EVEREST-2318): The dropdown option **Load Balancer** has been renamed to **LoadBalancer** to align with other service types, such as **ClusterIP** and **NodePort**.
 
 - [EVEREST-2323](https://perconadev.atlassian.net/browse/EVEREST-2323): The DB Importers UI now displays credentials in the same order as they appear in Kubernetes secrets and documentation, ensuring a consistent workflow across CLI, docs, and UI.
 
