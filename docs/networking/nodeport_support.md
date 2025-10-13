@@ -14,15 +14,17 @@
 
 
 
-## Benefits of using NodePort
+## Why use NodePort?
+
+Here are the benefits of using NodePort:
 
 - NodePort is straightforward to configure and requires minimal setup.
 
-- Useful for quick testing or exposing services without a full Ingress or LoadBalancer setup.
+- It is useful for quick testing or exposing services without a full Ingress or LoadBalancer setup.
 
 - Allows clients to access a service directly using `NODE_IP:NODE_PORT`.
 
-- Useful for development, debugging, or custom environments where service routing is limited.
+- It is useful for development, debugging, or custom environments where service routing is limited.
 
 
 ## Retrieving NODE_IP
