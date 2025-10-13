@@ -13,6 +13,18 @@
     - NodePort is suitable for development, testing, or custom environments where advanced service routing is not configured.
 
 
+
+## Benefits of using NodePort
+
+- NodePort is straightforward to configure and requires minimal setup.
+
+- Useful for quick testing or exposing services without a full Ingress or LoadBalancer setup.
+
+- Allows clients to access a service directly using `NODE_IP:NODE_PORT`.
+
+- Useful for development, debugging, or custom environments where service routing is limited.
+
+
 ## Retrieving NODE_IP
 
 Run the following command to identify the `NodePort` assigned to your database service:
