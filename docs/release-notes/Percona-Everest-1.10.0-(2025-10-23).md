@@ -38,7 +38,19 @@
     - Providing temporary or alternative domain names for direct Pod access without impacting the default DNS configuration.
 
 === "NodePort exposure type"
-    ### Support NodePort exposure type
+    ### Direct database access via NodePort
+    [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)  is a Kubernetes service type that enables access to a database using NODE_IP:NODE_PORT. With NodePort, each node in the cluster opens a port that redirects incoming requests to the database.
+    
+    ### Why use NodePort?
+    Here are the benefits of using NodePort:
+
+    - NodePort is straightforward to configure and requires minimal setup.
+
+    - It is useful for quick testing or exposing services without a full Ingress or LoadBalancer setup.
+
+    - Allows clients to access a service directly using `NODE_IP:NODE_PORT`.
+
+    - It is useful for development, debugging, or custom environments where service routing is limited.
 
 === "Operators support"
     ### Operators support
