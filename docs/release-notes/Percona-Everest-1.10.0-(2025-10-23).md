@@ -40,7 +40,7 @@
 === "NodePort exposure type"
     ### Direct database access via NodePort
     [NodePort](https://kubernetes.io/docs/concepts/services-networking/service/#type-nodeport)  is a Kubernetes service type that enables access to a database using NODE_IP:NODE_PORT. With NodePort, each node in the cluster opens a port that redirects incoming requests to the database.
-    
+
     ### Why use NodePort?
     Here are the benefits of using NodePort:
 
