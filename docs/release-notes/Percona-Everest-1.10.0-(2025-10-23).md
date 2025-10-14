@@ -24,18 +24,20 @@
 
 ## 🌟 Release highlights
 
+=== "Split-Horizon DNS for MongoDB"
+    ### Support for Split-Horizon DNS for MongoDB
 
-### Support for Split-Horizon DNS for MongoDB
+=== "NodePort exposure type"
+    ### Support NodePort exposure type
 
-### Support NodePort exposure type
+=== "Operators support"
+    ### Operators support
 
-### Operators support
+    - Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
 
-- Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
+    - Percona Everest now supports Percona Server for MongoDB Operator v1.21.0.
 
-- Percona Everest now supports Percona Server for MongoDB Operator v1.21.0.
-
-- Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
+    - Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
 
 
 ## New features
