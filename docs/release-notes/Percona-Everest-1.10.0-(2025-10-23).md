@@ -28,7 +28,7 @@
     ### Seamless access with Split-Horizon DNS for MongoDB
     Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.  This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
 
-    ### Why Split-Horizon DNS matters?¶
+    ### Why Split-Horizon DNS matters?
     Database administrators may sometimes need to expose ReplicaSet Pods in a Percona Operator for MongoDB cluster so they can connect to them directly. This applies both inside and outside the Kubernetes environment, using custom domain names instead of the default ones generated during cluster creation.
 
     This is useful in scenarios such as:
