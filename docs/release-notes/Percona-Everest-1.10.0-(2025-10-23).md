@@ -127,7 +127,7 @@
 
 - [EVEREST-2258](https://perconadev.atlassian.net/browse/EVEREST-2258): When editing the database and enabling the load balancer, the **Host** field was updated after a few seconds, but the **Connection URL** did not update. We have resolved the issue now.
 
-
+- [EVEREST-2259](https://perconadev.atlassian.net/browse/EVEREST-2259): Resolved an issue where the **Connection URL** field did not update after enabling the Load Balancer while editing a database. The field now correctly refreshes to reflect the new Load Balancer endpoint once the Host value updates.
 
 - [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
 
@@ -137,6 +137,8 @@
 - [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a Load balancer config now clearly states that it can only be deleted if it is not linked to any database, ensuring no impact on the existing databases.
 
 - [EVEREST-2324](https://perconadev.atlassian.net/browse/EVEREST-2324): Fixed an issue where the `everestctl upgrade` command did not permit upgrading to the next patch version if a newer minor release is available.
+
+- [EVEREST-2333](https://perconadev.atlassian.net/browse/EVEREST-2333): Fixed an issue where the documentation link for PITR limitations redirected to an incorrect page.
 
 
 
