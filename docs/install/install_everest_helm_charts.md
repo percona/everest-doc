@@ -23,7 +23,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 2. Install Percona Everest:
 
     ```sh
-    helm install everest-core percona/everest \
+    helm install percona-everest percona/everest \
     --namespace everest-system \
     --create-namespace
     ```
@@ -51,14 +51,14 @@ Here are the steps to install Percona Everest and deploy additional database nam
     
 
         ```sh
-        helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
+        helm install percona-everest percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
 
         Install Percona Everest with TLS enabled:
 
             
-            helm install everest-core percona/everest \
+            helm install percona-everest percona/everest \
             --namespace everest-system \
             --create-namespace
             --set server.tls.enabled=true
@@ -90,7 +90,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
                     
             ```sh
             helm install percona-everest percona/everest \
-            --set service.type=LoadBalancer
+            --set server.service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
