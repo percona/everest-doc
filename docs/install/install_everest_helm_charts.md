@@ -89,8 +89,10 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Run the following command:
                     
             ```sh
-            helm install percona-everest percona/everest \
-            --set service.type=LoadBalancer
+            helm upgrade everest-core percona/everest \
+            --namespace everest-system \
+            --reuse-values \
+            --set server.service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
@@ -121,7 +123,10 @@ Here are the steps to install Percona Everest and deploy additional database nam
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-            kubectl patch svc/everest -n everest-system -p '{"spec": {"type": "NodePort"}}
+            helm upgrade everest-core percona/everest \
+            --namespace everest-system \
+            --reuse-values \
+            --set server.service.type=NodePort
             ```
             The following output displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
 
