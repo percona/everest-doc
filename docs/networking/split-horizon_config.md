@@ -28,7 +28,6 @@ Here's how you can configure a split-horizon DNS for MongoDB
 
 5. Click **Create**.
 
-
 8. Click **Back to all policies** to view the newly created split-horizon configuration.
 
 
