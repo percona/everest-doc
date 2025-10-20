@@ -1,6 +1,5 @@
 # Configure split-horizon DNS
 
-
 Here's how you can configure a split-horizon DNS for MongoDB
 {.power-number}
 
