@@ -224,6 +224,7 @@ nav:
         - Overview: networking/split-horizon_dns.md
         - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
         - Split-Horizon DNS config Custom Resource Definition (CRD): networking/split-horizon_everest_operator_changes.md
+        - configure Split-Horizon DNS: networking/split-horizon_config.md
 
 
 
