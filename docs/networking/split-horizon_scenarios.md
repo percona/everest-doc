@@ -71,7 +71,8 @@ For detailed instructions on applying a Split-Horizon DNS config to a new databa
     - Only one Split-Horizon DNS config can be applied to one database cluster.
     - Enabling or disabling the Split-Horizon DNS feature **does not trigger a restart** of the Percona Operator for MongoDB  cluster.
 
-You may want to enable the Split-Horizon DNS feature on an existing Percona Operator for MongoDB cluster. The system provides an additional **Split-Horizon DNS** panel in the 88 section of the database cluster overview page.
+You can enable the Split-Horizon DNS feature for an existing Percona Operator for MongoDB cluster.
+The **Split-Horizon DNS** panel is available in the **Database  Overview** page.
 
 For detailed instructions on applying a Split-Horizon DNS config to an existing database cluster, see the section [link].
 
