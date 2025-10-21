@@ -43,13 +43,13 @@ p, role:team-dev, engine-features/split-horizon-dns-config, read, */*
 
 ### Limit usage of Split-Horizon DNS config by users
 
-A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompany.com` in namespace `ns-1`).
+A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompanydns` in namespace `ns-1`).
 All other users are not allowed to use this config at all. That is, they cannot see it in the system and cannot assign it to any database clusters they create or modify.
 
 To implement this, the Percona Everest administrator creates an RBAC policy:
 
 ```sh
-p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
+p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompanydns
 ```
 
 ## Apply Split-Horizon DNS config to new database cluster
