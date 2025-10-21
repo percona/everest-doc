@@ -3,7 +3,7 @@
 
 ## Create Split-Horizon DNS config
 
-The Percona Everest administrator sets up a set of additional base domains and assigns TLS certificates to them in advance. This allows all Percona Everest users to access these domains later without needing to define custom additional domain names each time they create a Percona Operator for MongoDB cluster. To facilitate this, Percona Everest offers the option to create a Split-Horizon DNS configuration that defines the necessary relationships.
+The Percona Everest administrator sets up a set of base domains and creates TLS certificates for them in advance. This allows all Percona Everest users to use these domains later without needing to define custom domain names each time they create a MongoDB cluster. To facilitate this, Percona Everest offers the option to create a Split-Horizon DNS configuration that defines the necessary relationships.
 
 The following applies to Split-Horizon DNS configs:
 
@@ -18,7 +18,6 @@ The following applies to Split-Horizon DNS configs:
 | Configuration Parameter      | Description                                                                                                         |
 |-------------------------------|---------------------------------------------------------------------------------------------------------------------|
 | **Name**                      | Each **Split-Horizon DNS config** has a unique name within the selected namespace.                                   |
-| **Applicable Engine**         | Can be applied to **Percona Operator for MongoDB** Engine only. Other database engines do not support this feature.                        |
 | **Namespace**                 | Kubernetes namespace that this config is applicable to. Defined by the user during config creation.                 |
 | **Base domain name**          | Domain name suffix used for generating full domain names for each Pod in the Replica Set. This field is also used as the **Split-Horizon DNS config** name. |
 | **TLS certificates**          | TLS certificate files for the provided base domain. See [instructions](https://docs.percona.com/percona-operator-for-mongodb/tls-manual.html#__tabbed_1_1). <br>- `cert.pem` - certificate<br>- `cert-key.pem` - certificate key<br>- `ca.pem` - certificate authority file |
@@ -44,13 +43,13 @@ p, role:team-dev, engine-features/split-horizon-dns-config, read, */*
 
 ### Limit usage of Split-Horizon DNS config by users
 
-A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompany.com` in namespace `ns-1`).
+A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompanydns` in namespace `ns-1`).
 All other users are not allowed to use this config at all. That is, they cannot see it in the system and cannot assign it to any database clusters they create or modify.
 
 To implement this, the Percona Everest administrator creates an RBAC policy:
 
 ```sh
-p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompany.com
+p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompanydns
 ```
 
 ## Apply Split-Horizon DNS config to new database cluster
