@@ -21,6 +21,8 @@ brew install cfssl
 
 ## Generate a Self-Signed CA
 
+To generate a self-signed CA certificate, run the following script:
+
 ```bash
 #!/bin/bash
 set -e  # Stop execution if any command fails
@@ -78,26 +80,26 @@ openssl x509 -in ca.pem -noout -text
 ```
 
 ??? info "What happens under the hood"
-        This is what the script does:
-        {.power-number}
+    This is what the script does:
+    {.power-number}
 
-        1. Creates a CA configuration file (ca-config.json)
+    1. Creates a CA configuration file (ca-config.json)
 
-            - Sets the signing profile ca
-            - Defines expiry (8760 hours = 1 year)
-            - Defines allowed usages:
-            - cert sign, digital signature
+        - Sets the signing profile ca
+        - Defines expiry (8760 hours = 1 year)
+        - Defines allowed usages:
+        - cert sign, digital signature
 
-        2. Generates the CA certificate and key using CFSSL
+    2. Generates the CA certificate and key using CFSSL
 
-            - Uses cfssl gencert -initca to initialize a new CA
-            - Sets the Common Name to Root CA
-            - Sets Organization to PSMDB
-            - Creates a 2048-bit RSA key
-                - Writes output files:
-                - ca.pem — CA certificate
-                - ca-key.pem — CA private key
-                - ca.csr — certificate signing request
+        - Uses cfssl gencert -initca to initialize a new CA
+        - Sets the Common Name to Root CA
+        - Sets Organization to PSMDB
+        - Creates a 2048-bit RSA key
+            - Writes output files:
+            - ca.pem — CA certificate
+            - ca-key.pem — CA private key
+            - ca.csr — certificate signing request
 
 
 
