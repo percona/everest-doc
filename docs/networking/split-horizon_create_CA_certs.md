@@ -27,11 +27,6 @@ To generate a self-signed CA certificate, run the following script:
 #!/bin/bash
 set -e  # Stop execution if any command fails
 
-# ---------------------------------------
-# Step 1: Create the CA configuration
-# ---------------------------------------
-# This file defines the certificate usage and expiry settings.
-# Adjust the "expiry" value if you need a longer or shorter validity period.
 
 cat > ca-config.json <<EOF
 {
@@ -46,15 +41,6 @@ cat > ca-config.json <<EOF
 }
 EOF
 
-# ---------------------------------------
-# Step 2: Generate the Root CA certificate and key
-# ---------------------------------------
-# This creates:
-#   - ca.pem      : CA certificate
-#   - ca-key.pem  : CA private key
-#   - ca.csr      : Certificate Signing Request
-#
-# Modify the values below to match your organization or security requirements.
 
 cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
 {
@@ -70,10 +56,6 @@ cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
   }
 }
 EOF
-
-# ---------------------------------------
-# Step 3: Display certificate details
-# ---------------------------------------
 
 echo "Root CA certificate generated successfully:"
 openssl x509 -in ca.pem -noout -text
