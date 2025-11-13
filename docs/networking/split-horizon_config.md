@@ -17,7 +17,6 @@ Here's how you can configure a split-horizon DNS for MongoDB
 
 
 4. Enter the following:
-
     
     - **Name**: The desired name for your Split-Horizon policy.
     - **Namespace**: The Kubernetes namespace where you want to create the policy.
@@ -28,14 +27,14 @@ Here's how you can configure a split-horizon DNS for MongoDB
     - **key**: Upload your Private key file. The private key pairs with the TLS certificate and is used to establish encrypted connections.
     - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
 
-5. Click **Create**. Your Split-Horizon policy will be created.
+5. Click **Create**. Your Split-Horizon DNS policy will be created.
 
     ![!image](../images/split-horizon-policies.png)
 
 
 ## Edit split-horizon DNS policy
 
-Here's how you can edit a split-horizon DNS for MongoDB
+Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 {.power-number}
 
 1. Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
@@ -44,15 +43,15 @@ Here's how you can edit a split-horizon DNS for MongoDB
 
 3. Click on the ellipsis (three dots) next to the `Split-Horizon DNS` policy which you want to edit and click **Edit**. The **Edit configuration** pop-up opens.
 
-    ![!image](../images/split-horizon-edit configuration.png)
+    ![!image](../images/split-horizon-edit-policies.png)
 
     !!! note
-        You cn only edit a Split-Horizon DNS policy if it is not being used by any cluster.
+        You can only edit a Split-Horizon DNS policy if it is not being used by any cluster.
 
 4. Edit the Split-Horizon DNS policy.
 
     !!! note
-    - You can only edit the **Domain, Ca cert, and Ca key** fields. 
+        You can only edit the **Domain, Ca cert, and Ca key** fields. 
 
 5. Click **Save**.
 
