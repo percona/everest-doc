@@ -1,4 +1,4 @@
-# Configure split-horizon DNS
+# Creating and managing split-horizon DNS configurations
 
 Here's how you can configure a split-horizon DNS for MongoDB
 {.power-number}
@@ -75,9 +75,9 @@ Here's how you can edit a split-horizon DNS for MongoDB
 
     ![!image](../images/split-horizon-delete_configuration_confirmation.png)
 
-5. Enter the **Config name** in the text box and click **Delete**.
+5. Enter the **Config name** in the text box and click **Delete**. Your Split-Horizon DNS policy will be deleted.
 
-    ![!image](../images/split-horizon-delete config_box.png)
+    ![!image](../images/split-horizon-delete%20config_box.png)
 
 
 
