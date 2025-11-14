@@ -24,10 +24,11 @@ To configure your database engine in Percona Everest:
     
     ![!image](../images/everest_adv_config_ip_source.png)
 
+4. From the Split-Horizon DNS section, switch the toggle to ON and then select the desired Split-Horizon DNS policy from the dropdown.
 
-4. You can optimize your database's performance using **Database Engine Parameters** on the **Advanced configurations** page.
-5. Enable Database engine parameters by using the toggle.
-6. Configure specific values to optimize performance, security, and functionality according to your requirements by entering the values in the text box.
+5. You can optimize your database's performance using **Database Engine Parameters** on the **Advanced configurations** page.
+6. Enable Database engine parameters by using the toggle.
+7. Configure specific values to optimize performance, security, and functionality according to your requirements by entering the values in the text box.
 
     ![!image](../images/everest_adv_config.png)
 
