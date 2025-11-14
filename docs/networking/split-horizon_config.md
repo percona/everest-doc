@@ -84,6 +84,29 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
     ![!image](../images/split-horizon-delete%20config_box.png)
 
 
+## Configure Split-Horizon DNS policy for your MongoDB cluster
+
+You can Configure Split-Horizon DNS policy for your MongoDB cluster during database creation:
+{.power-number}
+
+1. Log in to the Percona Everest UI.
+
+2. On the Percona Everest homepage, click **Create database**. Select the database that you wish to provision.
+
+3. Continue through the setup until you reach the **Advanced Configurations** page.
+
+4. In the **Split-Horizon DNS** section, enable it by turning the toggle ON.
+    
+
+6. Select the desired **Split-Horizon DNS** policy from the dropdown.
+
+    ![!image](../images/Split_horizon_DNS_toggle_on.png)
+
+8. Click **Continue** until you reach the end of the wizard, and then click **Create database**.
+
+
+
+
 
 
 
