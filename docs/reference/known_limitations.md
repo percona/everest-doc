@@ -10,6 +10,49 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
 
+## Split-Horizon DNS
+
+### Split-Horizon DNS limitations for Percona Operator for MongoDB
+
+Percona Operator for MongoDB has the following limitations when the Split-Horizon DNS feature is enabled for a specific database cluster:
+
+- Connecting to ReplicaSet Pods with additional domains is only allowed if the client uses TLS certificates.
+
+- Duplicate domain names in Horizons for a particular database cluster are not permitted by Percona Operator for MongoDB.
+
+- Using IP addresses in Horizons is not permitted for Percona Operator for MongoDB.
+
+- Horizons **must** be set for **all Pods** of a ReplicaSet or not set at all.
+
+### Split-Horizon DNS limitations for Percona Everest
+
+Here are the limitations for Percona Everest:
+
+- Split-Horizon DNS feature is supported only by Percona Operator for MongoDB engine. 
+
+- You cannot the enable the Split-Horizon DNS feature for existing Percona Operator for MongoDB clusters. You can only enable when creating a new Percona Operator for MongoDB cluster. 
+
+- You cannot enable Split-Horizon DNS if **Sharding is enabled** for a specific Percona Operator for MongoDB cluster. Support for sharded clusters will be included in future releases.
+
+- You cannot disable Split-Horizon DNS feature once you enable it.
+
+- You cannot change the Split-Horizon domains or certificates for an existing cluster.
+
+- Only one Split-Horizon DNS configuration can be applied to a Percona Operator for MongoDB cluster.
+
+- Percona Everest does not allow you to manually set custom domain names for each pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each pod in the ReplicaSet following this pattern: 
+
+   `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`.  
+   
+   ```sh
+   For example:  
+   - my-db-cluster-rs0-0-default.mycompany.com  
+   - my-db-cluster-rs0-1-default.mycompany.com 
+   ```
+
+- Percona Everest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The Percona Everest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names. 
+    Percona Everest will provide the Admin with a list of domain names and the corresponding private/public IPs allocated by Kubernetes or the cloud provider.
+
 ## Load balancer configuration
 
 - Once annotations are added to a service by the database operators, they cannot be entirely removed.
