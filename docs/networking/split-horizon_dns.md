@@ -30,7 +30,9 @@ Before you begin, make sure you:
 These concepts are essential for correctly configuring external domain access to exposed Pods in Percona Everest.
 
 
+## Limitations of Split-Horizon DNS
 
+Some limitations apply when using Split-Horizon DNS. See the [detailed limitations](../reference/known_limitations.md#split-horizon-dns) section for more information.
 
 
 
