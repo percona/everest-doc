@@ -99,12 +99,14 @@ To provision a new database:
 
     - **Split-Horizon DNS**: Enable it by turning the toggle ON. Select the desired Split-Horizon DNS policy from the dropdown.
 
-    For in-depth information, see the [configure Split-Horizon DNS policy](../networking/split-horizon_config.md#configure-split-horizon-dns-policy-for-your-mongodb-cluster) section.
+        ![!image](../images/assign_split_horizon_dns_policy.png)
+
+        For in-depth information, see the [configure Split-Horizon DNS policy](../networking/split-horizon_config.md#configure-split-horizon-dns-policy-for-your-mongodb-cluster) section.
 
         
     - **Database engine parameters**: Enable and customize advanced engine parameters for fine-tuned control.
 
-    For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
+        For in-depth information, see the [configure database engine](../use/db_engine_config.md) section.
 
 10. Click **Continue**. The **Monitoring** page will be displayed.
 
