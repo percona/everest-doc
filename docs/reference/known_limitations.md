@@ -42,15 +42,15 @@ Here are the limitations for Percona Everest:
 
 - Percona Everest does not allow you to manually set custom domain names for each pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each pod in the ReplicaSet following this pattern: 
 
-   `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`.  
+    `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`  
    
-   ```sh
-   For example:  
-   - my-db-cluster-rs0-0-default.mycompany.com  
-   - my-db-cluster-rs0-1-default.mycompany.com 
-   ```
+    ??? example "Example"  
+        - my-db-cluster-rs0-0-default.mycompany.com  
+        - my-db-cluster-rs0-1-default.mycompany.com 
 
-- Percona Everest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The Percona Everest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names. 
+
+- Percona Everest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The Percona Everest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names.
+
     Percona Everest will provide the Admin with a list of domain names and the corresponding private/public IPs allocated by Kubernetes or the cloud provider.
 
 ## Load balancer configuration
