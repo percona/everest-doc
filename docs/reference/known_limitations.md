@@ -20,7 +20,7 @@ Percona Operator for MongoDB has the following limitations when the Split-Horizo
 
 - Duplicate domain names in Horizons for a particular database cluster are not permitted by Percona Operator for MongoDB.
 
-- Using IP addresses in Horizons is not permitted for Percona Operator for MongoDB.
+- IP addresses cannot be used in Horizons.
 
 - Horizons **must** be set for **all Pods** of a ReplicaSet or not set at all.
 
