@@ -12,7 +12,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Split-Horizon DNS
 
-### Split-Horizon DNS limitations for Percona Operator for MongoDB
+### Limitations for Percona Operator for MongoDB
 
 Percona Operator for MongoDB has the following limitations when the Split-Horizon DNS feature is enabled for a specific database cluster:
 
@@ -24,7 +24,7 @@ Percona Operator for MongoDB has the following limitations when the Split-Horizo
 
 - Horizons **must** be set for **all Pods** of a ReplicaSet or not set at all.
 
-### Split-Horizon DNS limitations for Percona Everest
+### Limitations for Percona Everest
 
 Here are the limitations for Percona Everest:
 
