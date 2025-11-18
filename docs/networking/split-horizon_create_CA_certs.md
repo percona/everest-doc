@@ -47,7 +47,7 @@ cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
   "CN": "Root CA",
   "names": [
     {
-      "O": "PSMDB"                           # Organization Name
+      "O": "PSMDB"   # Organization Name
     }
   ],
   "key": {
