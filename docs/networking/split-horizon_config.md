@@ -1,6 +1,6 @@
 # Creating and managing Split-Horizon DNS configurations
 
-Here's how you can create, edit, and delete Split-Horizon DNS configuration for your MongoDB cluster in Percona Everest.
+Here's how you can create, edit, and delete Split-Horizon DNS configuration for your Percona Operator for MongoDB cluster in Percona Everest.
 
 
 ## Create a Split-Horizon DNS Policy
@@ -27,8 +27,8 @@ Follow these steps to create a new Split-Horizon DNS policy:
     - **Namespace**: The Kubernetes namespace where you want to create the policy.
     - **Domain**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
     - **Certificate**: Upload your **Transport Layer Security 
-    (TSL)** certificate. 
-    For information on how to obtain a TSL certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
+    (TLS)** certificate. 
+    For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
     - **key**: Upload your Private key file. The private key pairs with the TLS certificate and is used to establish encrypted connections.
     - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
 
@@ -63,7 +63,7 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 
 ## Delete a Split-Horizon DNS policy
 
- Here's how you can delete an existing Split-Horizon DNS policy for MongoDB cluster:
+ Here's how you can delete an existing Split-Horizon DNS policy for a MongoDB cluster:
 {.power-number}
 
 1. Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
@@ -86,7 +86,7 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 
 ## Configure Split-Horizon DNS policy for your MongoDB cluster
 
-You can Configure Split-Horizon DNS policy for your MongoDB cluster during database creation:
+You can configure Split-Horizon DNS policy for your MongoDB cluster during database creation:
 {.power-number}
 
 1. Log in to the Percona Everest UI.
