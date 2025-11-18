@@ -1,6 +1,5 @@
 # Split-Horizon DNS config Custom Resource Definition (CRD)
 
-
 To configure Split-Horizon DNS, Percona Everest Operator introduces a new Custom Resource Definition (CRD):
 
 ```yaml
@@ -22,7 +21,7 @@ spec:
   ...
 ```
 
-The following CRD provides information on Split-Horizon DNS parameters necessary for configuring this feature in Percona Operator for MongoDB clusters.
+The following CRD provides information on Split-Horizon DNS parameters necessary for configuring this feature in Percona Server for MongoDB clusters.
 
 ```yaml
 apiVersion: engine-features.everest.percona.com/v1alpha1
@@ -85,7 +84,7 @@ Once a new `SplitHorizonDNSConfig` object is created, the Percona Everest operat
 
 The `DatabaseCluster` CR is extended with an optional field `.spec.engineFeatures.psmdb.split-horizon-dns`.
 
-The default value is **nil**, indicating that the Split-Horizon DNS feature will not be applied to the Percona Operator for the MongoDB cluster.
+The default value is **nil**, indicating that the Split-Horizon DNS feature will not be applied to the Percona Server for MongoDB cluster.
 
 
 ??? example "Example"
@@ -125,14 +124,38 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
         rs0-1-psmdb-4d5-ns-1.mycompany.com
         ```
 
-3. Set the generated domain names in the upstream Percona Operator for MongoDB CR as described in this [document :octicons-link-external-16:](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns).
-
-
-4. Set the TLS secret for the Percona Operator for MongoDB cluster:
+3. Set the TLS secret for the Percona Server for MongoDB cluster:
 
     ```yaml
     .spec.secrets.ssl = SplitHorizonDNSConfig.spec.tls.secretName
     ```
+
+4. Set into upstream Percona Server for MongoDB CR:
+
+  ```sh
+  apiVersion: psmdb.percona.com/v1
+  kind: PerconaServerMongoDB
+  metadata:
+    name: mongodb-8nr
+    namespace: everest
+  spec:
+    secrets:
+      ssl: mongodb-8nr-sh-cert // <- new secret that contains generated TLS certificate
+      sslInternal: mongodb-8nr-ssl-internal
+      ...
+    replsets:
+      - name: rs0
+      size: 3
+      splitHorizons:
+        mongodb-8nr-rs0-0:
+          external: mongodb-8nr-rs0-0-everest.mycompany.com // <- generated split-horizon domain for Pod 0 in ReplicaSet 0
+        mongodb-8nr-rs0-1:
+          external: mongodb-8nr-rs0-1-everest.mycompany.com <- generated split-horizon domain for Pod 1 in ReplicaSet 0
+        mongodb-8nr-rs0-2:
+          external: mongodb-8nr-rs0-2-everest.mycompany.com <- generated split-horizon domain for Pod 2 in ReplicaSet 0
+  ```  
+
+
 
 ### Handling updates to SplitHorizonDNSConfig
 
@@ -142,7 +165,7 @@ The Operator watches for changes in `SplitHorizonDNSConfig` and:
 1. Fetches all `DatabaseCluster` objects in the same namespace where:
                                `DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName == SplitHorizonDNSConfig.metadata.name`
 
-2. Applies updated values automatically to all associated Percona Operator for MongoDB cluster resources.
+2. Applies updated values automatically to all associated Percona Server for MongoDB cluster resources.
 
 
 
