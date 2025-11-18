@@ -3,7 +3,9 @@
 
 ## Create Split-Horizon DNS config
 
-The Percona Everest administrator sets up a set of base domains and creates TLS certificates for them in advance. This allows all Percona Everest users to use these domains later without needing to define custom domain names each time they create a MongoDB cluster. To facilitate this, Percona Everest offers the option to create a Split-Horizon DNS configuration that defines the necessary relationships.
+A Percona Everest administrator can create a set of base domains and generate the necessary TLS certificates in advance. This allows all Percona Everest users to use these domains later without the need to define custom domain names each time they create a MongoDB cluster.
+
+Percona Everest provides an interface to create a Split-Horizon DNS configuration that defines the necessary relationships and stores them for future use.
 
 The following applies to Split-Horizon DNS configs:
 
@@ -82,7 +84,6 @@ In certain situations, a specific Split-Horizon DNS configuration may need modif
 
 
 For detailed instructions on updating a Split-Horizon DNS config, see the section [link].
-
 
 
 ## Delete Split-Horizon DNS config
