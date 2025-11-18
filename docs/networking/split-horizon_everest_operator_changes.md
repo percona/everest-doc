@@ -155,11 +155,9 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
           external: mongodb-8nr-rs0-2-everest.mycompany.com <- generated split-horizon domain for Pod 2 in ReplicaSet 0
   ```  
 
-
-
 ### Handling updates to SplitHorizonDNSConfig
 
-The Operator watches for changes in `SplitHorizonDNSConfig` and:
+The Percona Everest Operator watches for changes in `SplitHorizonDNSConfig` and:
 {.power-number}
 
 1. Fetches all `DatabaseCluster` objects in the same namespace where:
