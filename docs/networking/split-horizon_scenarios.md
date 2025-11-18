@@ -78,18 +78,18 @@ The **Split-Horizon DNS** panel is available in the **Database  Overview** page.
 For detailed instructions on applying a Split-Horizon DNS config to an existing database cluster, see the section [link].
 
 
-## Update Split-Horizon DNS config
+## Edit Split-Horizon DNS config
 
 In certain situations, a specific Split-Horizon DNS configuration may need modifications, such as altering the base domain name or uploading new Transport Layer Security (TLS) certificates. A Percona Everest administrator, or any user with the necessary Role-Based Access Control (RBAC) permissions, can update the Split-Horizon DNS configuration.
 
 
-For detailed instructions on updating a Split-Horizon DNS config, see the section [link].
+For detailed instructions on updating a Split-Horizon DNS config, see [edit split-horizon DNS policy](split-horizon_config.md#edit-split-horizon-dns-policy).
 
 
 ## Delete Split-Horizon DNS config
 
 If a particular Split-Horizon DNS config is no longer needed, the Percona Everest administrator can choose to delete it.
 
-For detailed instructions on deleting a Split-Horizon DNS config, see the section [link].
+For detailed instructions on deleting a Split-Horizon DNS config, see [delete split-horizon DNS policy](split-horizon_config.md#delete-a-split-horizon-dns-policy).
 
 
