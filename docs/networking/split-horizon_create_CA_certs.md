@@ -62,7 +62,7 @@ openssl x509 -in ca.pem -noout -text
 ```
 
 ??? info "What happens under the hood"
-    This is what the script does:
+    The script automates the creation of a Certificate Authority (CA) using CFSSL. Here’s what it does step by step:
     {.power-number}
 
     1. Creates a CA configuration file (ca-config.json)
