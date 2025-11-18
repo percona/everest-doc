@@ -12,27 +12,15 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Split-Horizon DNS
 
-### Limitations for Percona Operator for MongoDB
-
-Percona Operator for MongoDB has the following limitations when the Split-Horizon DNS feature is enabled for a specific database cluster:
-
-- Connecting to ReplicaSet Pods with additional domains is only allowed if the client uses TLS certificates.
-
-- Duplicate domain names in Horizons for a particular database cluster are not permitted by Percona Operator for MongoDB.
-
-- IP addresses cannot be used in Horizons.
-
-- Horizons **must** be set for **all Pods** of a ReplicaSet or not set at all.
-
 ### Limitations for Percona Everest
 
 Here are the limitations for Percona Everest:
 
-- Split-Horizon DNS feature is supported only by Percona Operator for MongoDB engine. 
+- Split-Horizon DNS feature is supported only by Percona Server for MongoDB engine. 
 
-- You cannot the enable the Split-Horizon DNS feature for existing Percona Operator for MongoDB clusters. You can only enable when creating a new Percona Operator for MongoDB cluster. 
+- You cannot the enable the Split-Horizon DNS feature for existing Percona Server for MongoDB clusters. You can only enable when creating a new Percona Server for MongoDB cluster. 
 
-- You cannot enable Split-Horizon DNS if **Sharding is enabled** for a specific Percona Operator for MongoDB cluster. Support for sharded clusters will be included in future releases.
+- You cannot enable Split-Horizon DNS if **Sharding is enabled** for a specific Percona Server for MongoDB cluster. Support for sharded clusters will be included in future releases.
 
 - You cannot disable Split-Horizon DNS feature once you enable it.
 
