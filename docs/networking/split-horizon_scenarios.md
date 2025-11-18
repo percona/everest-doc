@@ -57,7 +57,7 @@ p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompanydns
 ## Apply Split-Horizon DNS config to new database cluster
 
 !!! info "important"
-    - Only one **Split-Horizon DNS config** can be applied to one database Cluster.
+    - Only one **Split-Horizon DNS config** can be applied to one database cluster.
     - **Split-Horizon DNS** feature can be enabled only if **Sharding** is disabled.
 
 When creating a new cluster for Percona Server for MongoDB, you can choose to enable the Split-Horizon DNS feature.
