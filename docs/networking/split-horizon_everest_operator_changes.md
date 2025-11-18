@@ -40,7 +40,7 @@ spec:
       caCertFile: <base64 encoded ca.crt file content>
 ```
 
-**Fields in `SplitHorizonDNSConfig.spec**
+**Fields in `SplitHorizonDNSConfig.spec`**
 
 | Field                                | Description                                                                 |
 |--------------------------------------|-----------------------------------------------------------------------------|
@@ -54,7 +54,7 @@ spec:
 
 When creating the Custom Resource (CR), provide one of the following combinations:
 
-- `.spec.tls.secretName` only – Use this option if a TLS certificate already exists and should be re-used.
+- `.spec.tls.secretName` only – Use this option if a TLS certificate already exists and should be reused.
 
 - `.spec.tls.secretName + .spec.tls.certificate.*` – In this case, the values from `.spec.tls.certificate.*` will be copied into a newly created Secret named `.spec.tls.secretName.` 
 
@@ -71,7 +71,7 @@ Once a new `SplitHorizonDNSConfig` object is created, the Percona Everest operat
 {.power-number}
 
 1. Validation
-    - Validate that the field `.spec.baseDomainNameSuffix `contains a valid domain name.
+    - Validate that the field `.spec.baseDomainNameSuffix' contains a valid domain name.
     - Verify that `.spec.tls.secretName` is provided. This can either reference an existing secret or will be used to create a new one.
 
 2. TLS secret management
@@ -111,7 +111,7 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
 
 1. Fetch the `SplitHorizonDNSConfig` CR whose name matches `DatabaseCluster.spec.engineFeatures.psmdb.splitHorizonDnsConfigName`.
 
-2. Extract `.spec.baseDomainNameSuffix` from the `SplitHorizonDNSConfig` CR and generate additional domain names for each pod in `ReplicaSet` using template:
+2. Extract `.spec.baseDomainNameSuffix` from the `SplitHorizonDNSConfig` CR and generate additional domain names for each pod in the `ReplicaSet` using template:
 
     ```sh
     <ReplicaSet number>-<pod number>-<db cluster name>-<namespace>.<base domain>
