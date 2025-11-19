@@ -55,7 +55,7 @@ When creating the Custom Resource (CR), provide one of the following combination
 
 - `.spec.baseDomainNameSuffix`,`.spec.tls.secretName` and `.spec.tls.certificate.*` – In this case, the values from `.spec.tls.certificate.*` will be copied into a newly created Secret named `.spec.tls.secretName.` 
 
-  If such secret already exists, it will be updated with values from `.spec.tls.certificate.* `.
+  If such secret already exists, it will be updated with values from `.spec.tls.certificate.*`.
 
     Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
