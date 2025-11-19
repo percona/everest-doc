@@ -12,8 +12,6 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Split-Horizon DNS
 
-### Limitations for Percona Everest
-
 Here are the limitations for Percona Everest:
 
 - Split-Horizon DNS feature is supported only by Percona Server for MongoDB engine. 
