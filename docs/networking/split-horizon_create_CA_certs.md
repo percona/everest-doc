@@ -52,7 +52,7 @@ cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
   ],
   "key": {
     "algo": "rsa",
-    "size": 2048                             # Increase to 4096 for stronger security
+    "size": 2048    # Increase to 4096 for stronger security
   }
 }
 EOF
