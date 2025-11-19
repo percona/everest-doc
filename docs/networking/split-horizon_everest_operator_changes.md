@@ -6,10 +6,10 @@ To configure Split-Horizon DNS, Percona Everest Operator introduces a new Custom
 apiVersion: apiextensions.k8s.io/v1
 kind: CustomResourceDefinition
 metadata:
-  name: split-horizon-dns-config.engine-features.everest.percona.com
+  name: splithorizondnsconfigs.enginefeatures.everest.percona.com
   ...
 spec:
-  group: engine-features.everest.percona.com
+  group: enginefeatures.everest.percona.com
   names:
     kind: SplitHorizonDNSConfig
     listKind: SplitHorizonDNSConfigList
@@ -17,26 +17,25 @@ spec:
     singular: splithorizondnsconfig
     shortNames:
     - splitdns
-  scope: Namespace
+  scope: Namespaced
   ...
 ```
 
 The following CRD provides information on Split-Horizon DNS parameters necessary for configuring this feature in Percona Server for MongoDB clusters.
 
 ```yaml
-apiVersion: engine-features.everest.percona.com/v1alpha1
+apiVersion: enginefeatures.everest.percona.com/v1alpha1
 kind: SplitHorizonDNSConfig
 metadata:
-  name: mycompany.com
-  namespace: ns-1
+  name: my-shdc
+  namespace: everest
 spec:
   baseDomainNameSuffix: mycompany.com
   tls:
-    secretName: <secret that holds TLS certs if already exists>
+    secretName: my-shdc-secret
     certificate:
-      certFile: <base64 encoded crt file content>
-      keyFile: <base64 encoded key file content>
-      caCertFile: <base64 encoded ca.crt file content>
+      ca.crt: <base64 encoded ca.crt file content>
+      ca.key: <base64 encoded ca-key.pem file content>
 ```
 
 **Fields in `SplitHorizonDNSConfig.spec`**
@@ -45,17 +44,18 @@ spec:
 |--------------------------------------|-----------------------------------------------------------------------------|
 | `.spec.baseDomainNameSuffix`          | Domain name suffix used for generating full Pod hostnames in the Replica Set. |
 | `.spec.tls.secretName`                | Name of the Kubernetes secret that contains the TLS certificate.             |
-| `.spec.tls.certificate.certFile`      | Base64-encoded TLS certificate file (`.crt`).                                |
-| `.spec.tls.certificate.keyFile`       | Base64-encoded TLS private key file.                                         |
-| `.spec.tls.certificate.caCertFile`    | Base64-encoded CA certificate file (`ca.crt`).                               |
+| `spec.tls.certificate.tls.ca.crt` | base64 encoded `ca.pem` file |
+| `.spec.tls.certificate.tls.ca.key`|base64 encoded `ca-key.pem` file content.|
 
 ## Allowed TLS configuration options
 
 When creating the Custom Resource (CR), provide one of the following combinations:
 
-- `.spec.tls.secretName` only – Use this option if a TLS certificate already exists and should be reused.
+- `.spec.baseDomainNameSuffix` and `.spec.tls.secretName` only – Use this option if a secret with TLS CA certificate already exists and should be reused.
 
-- `.spec.tls.secretName + .spec.tls.certificate.*` – In this case, the values from `.spec.tls.certificate.*` will be copied into a newly created Secret named `.spec.tls.secretName.` 
+- `.spec.baseDomainNameSuffix`,`.spec.tls.secretName` and `.spec.tls.certificate.*` – In this case, the values from `.spec.tls.certificate.*` will be copied into a newly created Secret named `.spec.tls.secretName.` 
+
+  If such secret already exists, it will be updated with values from `.spec.tls.certificate.* `.
 
     Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
@@ -148,7 +148,7 @@ When a DatabaseCluster object includes the optional field `spec.engineFeatures.p
       size: 3
       splitHorizons:
         mongodb-8nr-rs0-0:
-          external: mongodb-8nr-rs0-0-everest.mycompany.com // <- generated split-horizon domain for Pod 0 in ReplicaSet 0
+          external: mongodb-8nr-rs0-0-everest.mycompany.com // <-   generated split-horizon domain for Pod 0 in ReplicaSet 0
         mongodb-8nr-rs0-1:
           external: mongodb-8nr-rs0-1-everest.mycompany.com <- generated split-horizon domain for Pod 1 in ReplicaSet 0
         mongodb-8nr-rs0-2:
