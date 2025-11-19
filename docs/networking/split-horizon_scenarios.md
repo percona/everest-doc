@@ -40,8 +40,8 @@ Other users can only read the Split-Horizon DNS configs and use them in database
 To implement this, the Percona Everest administrator creates an RBAC policy:
 
 ```sh
-p, alice, engine-features/split-horizon-dns-config, *, */*
-p, role:team-dev, engine-features/split-horizon-dns-config, read, */*
+p, alice, enginefeatures/split-horizon-dns-configs, *, */*
+p, role:team-dev, enginefeatures/split-horizon-dns-configs, read, */*
 ```
 
 ### Limit usage of Split-Horizon DNS config by users
@@ -52,7 +52,7 @@ All other users are not permitted to use this configuration. That is, they canno
 To implement this, the Percona Everest administrator creates an RBAC policy:
 
 ```sh
-p, bob, engine-features/split-horizon-dns-config, read, ns-1/mycompanydns
+p, bob, enginefeatures/split-horizon-dns-configs, read, ns-1/mycompany.com
 ```
 
 ## Apply Split-Horizon DNS config to new database cluster
@@ -68,7 +68,7 @@ The system provides an additional **Split-Horizon DNS** panel on the **Advanced 
 For detailed instructions on applying a Split-Horizon DNS config to a new database cluster, see the section [configure Split-Horizon DNS policy for a new database cluster](split-horizon_config.md#configure-split-horizon-dns-policy-for-your-mongodb-cluster).
 
 
-## Edit Split-Horizon DNS config
+## Update Split-Horizon DNS config
 
 In certain situations, a specific Split-Horizon DNS configuration may need modifications, such as altering the base domain name or uploading new Transport Layer Security (TLS) certificates. A Percona Everest administrator, or any user with the necessary Role-Based Access Control (RBAC) permissions, can update the Split-Horizon DNS configuration.
 
