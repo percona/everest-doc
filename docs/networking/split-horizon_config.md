@@ -39,7 +39,8 @@ Follow these steps to create a new Split-Horizon DNS policy:
 ## Edit split-horizon DNS policy
 
 !!! info "Important"
-    You can edit a Split-Horizon DNS policy only if it is not associated with any active cluster.
+    - You can edit a Split-Horizon DNS policy only if it is not associated with any active cluster.
+    - You can only edit the **Domain, Ca cert, and Ca key** fields. 
 
 Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 {.power-number}
@@ -52,10 +53,7 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 
     ![!image](../images/split-horizon-edit-policies.png)
 
-4. Update the desired fields.
-
-    !!! note
-        You can only edit the **Domain, Ca cert, and Ca key** fields. 
+4. Update the desired fields.        
 
 5. Click **Save** to apply the changes.
 
