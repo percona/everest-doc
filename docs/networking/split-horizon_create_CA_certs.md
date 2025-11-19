@@ -33,7 +33,7 @@ cat > ca-config.json <<EOF
   "signing": {
     "profiles": {
       "ca": {
-        "expiry": "8760h",                  # 1 year validity
+        "expiry": "8760h",   # 1 year validity
         "usages": ["cert sign", "digital signature"]
       }
     }
@@ -52,7 +52,7 @@ cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
   ],
   "key": {
     "algo": "rsa",
-    "size": 2048                             # Increase to 4096 for stronger security
+    "size": 2048    # Increase to 4096 for stronger security
   }
 }
 EOF

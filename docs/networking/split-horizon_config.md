@@ -3,7 +3,7 @@
 Here's how you can create, edit, and delete Split-Horizon DNS configuration for your Percona Operator for MongoDB cluster in Percona Everest.
 
 
-## Create a Split-Horizon DNS Policy
+## Create a Split-Horizon DNS Config
 
 Follow these steps to create a new Split-Horizon DNS policy:
 {.power-number}
