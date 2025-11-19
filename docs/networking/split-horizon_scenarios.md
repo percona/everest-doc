@@ -65,6 +65,9 @@ When creating a new cluster for Percona Server for MongoDB, you can choose to en
 
 The system provides an additional **Split-Horizon DNS** panel on the **Advanced Configuration** step of the database cluster creation wizard. By default, the Split-Horizon DNS feature toggle is disabled.
 
+
+![!image](../images/assign_split_horizon_dns_policy.png)
+
 For detailed instructions on applying a Split-Horizon DNS config to a new database cluster, see the section [configure Split-Horizon DNS policy for a new database cluster](split-horizon_config.md#configure-split-horizon-dns-policy-for-your-mongodb-cluster).
 
 
