@@ -29,7 +29,7 @@ Follow these steps to create a new Split-Horizon DNS policy:
     - **Certificate**: Upload your **Transport Layer Security 
     (TLS)** certificate. 
     For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
-    - **key**: Upload your Private key file. The private key pairs with the TLS certificate and is used to establish encrypted connections.
+    - **Ca key**: Upload your CA Private key file.
     - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
 
 5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
