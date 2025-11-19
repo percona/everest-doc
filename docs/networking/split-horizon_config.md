@@ -38,6 +38,9 @@ Follow these steps to create a new Split-Horizon DNS policy:
 
 ## Edit split-horizon DNS policy
 
+!!! info "Important"
+    You can edit a Split-Horizon DNS policy only if it is not associated with any active cluster.
+
 Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 {.power-number}
 
@@ -48,9 +51,6 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 3. Click the ellipsis **(⋮)** next to the Split-Horizon DNS policy you want to modify and select **Edit**. The **Edit configuration** pop-up opens.
 
     ![!image](../images/split-horizon-edit-policies.png)
-
-    !!! note
-        You can edit a Split-Horizon DNS policy only if it is not associated with any active cluster.
 
 4. Update the desired fields.
 
