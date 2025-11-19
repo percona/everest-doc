@@ -23,7 +23,7 @@ Follow these steps to create a new Split-Horizon DNS policy:
     
     - **Name**: The desired name for your Split-Horizon policy.
     - **Namespace**: The Kubernetes namespace where you want to create the policy.
-    - **Domain**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
+    - **Domain name suffix**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
     - **Certificate**: Upload your **Transport Layer Security 
     (TLS)** certificate. 
     For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
@@ -90,7 +90,6 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
 
 !!! info "Important"
     Split-Horizon DNS is currently applicable only to non-sharded clusters.
-
 
 You can configure Split-Horizon DNS policy for your MongoDB cluster during database creation:
 {.power-number}
