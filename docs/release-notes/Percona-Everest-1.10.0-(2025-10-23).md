@@ -49,12 +49,12 @@
 
 ## New features
 
-- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Support for Split-Horizon DNS for MongoDB
-
-- [EVEREST-2179](https://perconadev.atlassian.net/browse/EVEREST-2179) Support NodePort exposure type
+- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.
 
 - [EVEREST-2009](https://perconadev.atlassian.net/browse/EVEREST-2009): Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
-- [EVEREST-2173](https://perconadev.atlassian.net/browse/EVEREST-2173): Percona Everest now supports Percona Server for MongoDB Operator v1.21.0.
+
+- [EVEREST-2173](https://perconadev.atlassian.net/browse/EVEREST-2173): Percona Everest now supports Percona Operator for MongoDB 
+v1.21.0.
 
 - [EVEREST-2174](https://perconadev.atlassian.net/browse/EVEREST-2174): Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
 
@@ -77,9 +77,6 @@
 
 ## Bug fixes
 
-- [EVEREST-1741](https://perconadev.atlassian.net/browse/EVEREST-1741): Fixed an issue where deleting a database changed the **Actions** menu's background color to blue.
-
-
 - [EVEREST-1865](https://perconadev.atlassian.net/browse/EVEREST-1865): **Point-in-Time Recovery (PITR) details** are now displayed correctly when editing PostgreSQL database clusters.
 
 - [EVEREST-1947](https://perconadev.atlassian.net/browse/EVEREST-1947): Fixed an issue where the **Copy URL to Clipboard** button in the database details view was not working. Users can now successfully copy the connection URL.
@@ -88,20 +85,13 @@
 - [EVEREST-2023](https://perconadev.atlassian.net/browse/EVEREST-2023): The `everest operator` showed inconsistent behavior in handling resource creation and updates. This issue has now been resolved.
 
 
-- [EVEREST-2104](https://perconadev.atlassian.net/browse/EVEREST-2104): The restore operations were previously stuck in the **Restoring** state when the associated backup was deleted. This issue has now been resolved, and restores fail gracefully, providing a clear error message.
-
-
 - [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109): Point-in-Time Recovery (PITR) now correctly activates for PostgreSQL clusters after creating on-demand or scheduled backups, addressing the previous issue where it remained disabled.
-
-- [EVEREST-2121](https://perconadev.atlassian.net/browse/EVEREST-2121): Resolved an issue where backup data was deleted along with the database cluster, even when the delete data option was unchecked. Backup storage now remains intact, ensuring data safety and recoverability.
 
 
 - [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135): Addressed an issue where the S3 bucket field accepted incorrect formats and the **Verify TLS** option was unchecked by default. Input validation now ensures the correct S3 formats, and TLS verification is enabled by default.
 
 
 - [EVEREST-2163](https://perconadev.atlassian.net/browse/EVEREST-2163): The Pod Scheduling Policy now appears in the **Edit Advanced Configuration** view even when no rules are defined.
-
-- [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211): PostgreSQL databases now start successfully following a Point-in-Time Recovery (PITR). Previously, clusters would crash after a PITR operation.
 
 
 - [EVEREST-2235](https://perconadev.atlassian.net/browse/EVEREST-2235): Specifying an invalid `.spec.engine.version` in a `DatabaseCluster` CRD no longer crashes the Percona Everest Operator. Invalid versions are now handled gracefully with proper validation and error reporting.
@@ -123,7 +113,7 @@
 
 - [EVEREST-2333](https://perconadev.atlassian.net/browse/EVEREST-2333): Fixed an issue where the documentation link for PITR limitations redirected to an incorrect page.
 
-
+- [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after its metadata was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
 
 ## Known limitations
 
