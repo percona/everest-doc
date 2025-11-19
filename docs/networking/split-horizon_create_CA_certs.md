@@ -56,9 +56,6 @@ cat <<EOF | cfssl gencert -initca -profile=ca - | cfssljson -bare ca
   }
 }
 EOF
-
-echo "Root CA certificate generated successfully:"
-openssl x509 -in ca.pem -noout -text
 ```
 
 ??? info "What happens under the hood"
