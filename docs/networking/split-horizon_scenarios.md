@@ -22,7 +22,7 @@ The following applies to Split-Horizon DNS configs:
 | **Name**                      | Each **Split-Horizon DNS config** has a unique name within the selected namespace.                                   |
 | **Namespace**                 | Kubernetes namespace to which this config is applicable. Defined by the user during config creation.                 |
 | **Base domain name**          | Domain name suffix used for generating full domain names for each Pod in the Replica Set. This field is also used as the **Split-Horizon DNS config** name. |
-| **CA TLS certificates**  |TLS CA files (certificate and key) that will be used by Percona Everest for generating TLS certificates for Split-Horizon domains.|
+| **CA TLS certificates**  |TLS CA files (certificate and key) that will be used by Percona Everest for generating TLS certificates for Split-Horizon domains. For instructions on generating CA certificates, refer to [Generate CA certificates](split-horizon_create_CA_certs.md)|
 | **Secret name**  |Kubernetes secret that shall be used for storing TLS CA files.</br> You may create this secret on your own in advance that holds the CA cert and key and refer to it during Split-Horizon DNS Config creation.|
 
 Once all values are entered, the Percona Everest administrator saves the configuration in the system.
