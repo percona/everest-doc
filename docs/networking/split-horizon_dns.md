@@ -1,4 +1,5 @@
-# Split-Horizon DNS feature for Percona Operator for MongoDB
+# Split-Horizon DNS feature for Percona Server for MongoDB
+
 
 ## Introduction
 
