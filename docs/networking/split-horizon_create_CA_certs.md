@@ -33,7 +33,7 @@ cat > ca-config.json <<EOF
   "signing": {
     "profiles": {
       "ca": {
-        "expiry": "8760h",                  # 1 year validity
+        "expiry": "8760h",   # 1 year validity
         "usages": ["cert sign", "digital signature"]
       }
     }
