@@ -75,9 +75,6 @@
 
     - Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
 
-    
-
-
 ## New features
 
 - [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.
