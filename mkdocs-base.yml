@@ -63,15 +63,17 @@ extra_css:
   - css/osano.css
   - css/everest.css
   - css/extra.css
+  - css/rating.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
   - js/promptremover.js
   - js/consent.js
+  - js/rating.js
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2024 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2025 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -109,6 +111,10 @@ plugins:
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
+  git-committers:
+    enabled: !ENV [CI, false]
+    repository: percona/everest-doc
+    branch: "main" 
   meta-descriptions:
     export_csv: false
     quiet: false
