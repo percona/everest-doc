@@ -141,6 +141,8 @@ v1.21.0.
 
 ## Known limitations
 
+Some limitations apply when using Split-Horizon DNS. For more details, refer to the [limitations section](../reference/known_limitations.md#split-horizon-dns)
+
 
 ## 🚀 Ready to Upgrade?
 
