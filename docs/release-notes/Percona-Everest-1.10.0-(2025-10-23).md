@@ -8,7 +8,7 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Support Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
+    | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
     | **2.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in Percona Everest 1.10.0|
     | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.10.0|
@@ -18,14 +18,16 @@
 
 ## 🌟 Release highlights
 
-=== "Operators support"
-    ### Operators support
+=== "Operators"
+    ### Updated Operators Support
 
-    - Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
+    Percona Everest now supports:
 
-    - Percona Everest now supports Percona Server for MongoDB Operator v1.21.0.
+    - Percona PostgreSQL Operator v2.7.0.
 
-    - Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
+    - Percona Server for MongoDB Operator v1.21.0.
+
+    - Percona XtraDB Cluster Operator v1.18.0.
 
 
 === "🛰 Split-Horizon DNS for Percona Server for MongoDB"
