@@ -21,8 +21,8 @@
 
 ## 🌟 Release highlights
 
-=== "Split-Horizon DNS for MongoDB"
-    ### Seamless access with Split-Horizon DNS for MongoDB
+=== "Split-Horizon DNS for Percona Server for MongoDB"
+    ### Seamless access with Split-Horizon DNS for Percona Server for MongoDB
     Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.  This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
 
     ### Why Split-Horizon DNS matters?
@@ -33,6 +33,37 @@
     - Performing maintenance tasks, like copying data from one ReplicaSet to another cluster.
 
     - Providing temporary or alternative domain names for direct Pod access without impacting the default DNS configuration.
+
+    ### How to create a Split-Horizon DNS config
+
+        Follow these steps to create a new Split-Horizon DNS policy:
+        {.power-number}
+        
+        1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
+        
+            ![!image](../images/policies_page.png)
+        
+        2. In the **Split-Horizon DNS** section, click **Configure**. The **Split-Horizon DNS** page opens.
+        
+            ![!image](../images/split-horizon_config_page.png)
+        
+        3. Click **Create configuration**. A pop-up window appears.
+                
+        4. Enter the following:
+            
+            - **Name**: The desired name for your Split-Horizon policy.
+            - **Namespace**: The Kubernetes namespace where you want to create the policy.
+            - **Domain name suffix**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
+            - **Certificate**: Upload your **Transport Layer Security 
+            (TLS)** certificate. 
+            For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
+            - **Secret name**: Kubernetes Secret that stores the TLS certificate and private key associated with a particular domain.
+            - **Ca key**: Upload your CA private key file.
+            - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
+        
+        5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
+        
+            ![!image](../images/create_config_split-horizon.png)
 
 
 === "Operators support"
