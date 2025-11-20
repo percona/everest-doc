@@ -73,7 +73,7 @@
 
 ## New features
 
-- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.
+- [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Added Split-Horizon DNS support for Percona Server for MongoDB (PSMDB).
 
 - [EVEREST-2009](https://perconadev.atlassian.net/browse/EVEREST-2009): Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
 
