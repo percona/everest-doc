@@ -18,7 +18,7 @@
 
 ## 🌟 Release highlights
 
-=== "Operators"
+=== "⚙️ Operators"
     ### Updated Operators Support
 
     Percona Everest now supports:
