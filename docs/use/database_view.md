@@ -42,6 +42,9 @@ The Overview tab provides a comprehensive view of all the essential database det
 - Resources used by the database
 - External access and monitoring status
 - Information about host, port, and credentials
+- Pod scheduling policy
+- Load balancer config
+- Split-Horizon DNS
 
 ![!image](../images/database_details.png)
 
