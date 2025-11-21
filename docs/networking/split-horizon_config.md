@@ -62,8 +62,6 @@ Here's how you can edit a Split-Horizon DNS policy for your MongoDB cluster:
     You can delete a Split-Horizon DNS config only if it is not used by any active cluster.
 
  Here's how you can delete an existing Split-Horizon DNS policy for a MongoDB cluster:
-
-
 {.power-number}
 
 1. Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
