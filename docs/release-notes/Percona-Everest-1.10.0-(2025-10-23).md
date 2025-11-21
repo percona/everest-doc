@@ -13,7 +13,7 @@
     | **3.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in Percona Everest 1.10.0|
     | **4.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.10.0|
     | **5.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.10.0|
-    | **6.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.9.0|
+    | **6.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.10.0|
 
 
 ## 🌟 Release highlights
@@ -32,7 +32,7 @@
 
 === "🛰 Split-Horizon DNS for Percona Server for MongoDB"
     ### Seamless access with Split-Horizon DNS for Percona Server for MongoDB
-    Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**.  This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
+    Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**. This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
 
     ### Why Split-Horizon DNS matters?
     Database administrators may sometimes need to expose ReplicaSet Pods in a Percona Operator for MongoDB cluster so they can connect to them directly. This applies both inside and outside the Kubernetes environment, using custom domain names instead of the default ones generated during cluster creation.
@@ -51,14 +51,12 @@
         
         ![!image](../images/policies_page.png)
         
-    2. In the **Split-Horizon DNS** section, click **Configure**. The **Split-Horizon DNS** page opens.
+    2. In the **Split-Horizon DNS** section, click **Configure**. 
         
         ![!image](../images/split-horizon_config_page.png)
         
-    3. Click **Create configuration**. A pop-up window appears.
-                
-    4. Enter the following:
-            
+    3. Click **Create configuration** and enter the following:
+                            
         - **Name**: The desired name for your Split-Horizon policy.
         - **Namespace**: The Kubernetes namespace where you want to create the policy.
         - **Domain name suffix**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
@@ -69,8 +67,6 @@
         
     5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
         
-        ![!image](../images/create_config_split-horizon.png)
-
 ## New features
 
 - [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Added Split-Horizon DNS support for Percona Server for MongoDB (PSMDB).
@@ -141,7 +137,7 @@ v1.21.0.
 
 ## Known limitations
 
-Some limitations apply when using Split-Horizon DNS. For more details, refer to the [limitations section](../reference/known_limitations.md#split-horizon-dns)
+Some limitations apply when using Split-Horizon DNS. For more details, refer to the [limitations section](../reference/known_limitations.md#split-horizon-dns).
 
 
 ## 🚀 Ready to Upgrade?
