@@ -57,7 +57,7 @@ When creating the Custom Resource (CR), provide one of the following combination
 
   If such secret already exists, it will be updated with values from `.spec.tls.certificate.*`.
 
-    Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
+  Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
 !!! note
     Percona Everest does not validate whether the provided TLS certificate matches the specified base domain name.
