@@ -44,7 +44,7 @@
     - Providing temporary or alternative domain names for direct Pod access without impacting the default DNS configuration.
 
     ### How to create a Split-Horizon DNS config
-    Follow these steps to create a new Split-Horizon DNS policy:
+    Follow these steps to create a new Split-Horizon DNS configuration:
     {.power-number}
         
     1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
