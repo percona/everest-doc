@@ -109,6 +109,8 @@ You can configure Split-Horizon DNS policy for your MongoDB cluster during datab
 9. To view the Domain Names and IP Addresses generated for Split-Horizon DNS, open the **Overview** page of the desired database cluster and click the **eye icon** next to **Split-Horizon DNS**. The Domains tab opens. Percona Everest displays all generated domains along with their associated private and public IP addresses.
 
 
+    ![!image](../images/split-horizon_dns_eye_icon.png)
+
     ![!image](../images/domains_and_IP_addresses.png)
 
 
