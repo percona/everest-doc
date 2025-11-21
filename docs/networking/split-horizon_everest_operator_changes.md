@@ -44,8 +44,8 @@ spec:
 |--------------------------------------|-----------------------------------------------------------------------------|
 | `.spec.baseDomainNameSuffix`          | Domain name suffix used for generating full Pod hostnames in the Replica Set. |
 | `.spec.tls.secretName`                | Name of the Kubernetes secret that contains the TLS certificate.             |
-| `spec.tls.certificate.tls.ca.crt` | base64 encoded `ca.pem` file |
-| `.spec.tls.certificate.tls.ca.key`|base64 encoded `ca-key.pem` file content.|
+| `spec.tls.certificate.ca.crt` | base64 encoded `ca.pem` file |
+| `.spec.tls.certificate.ca.key`|base64 encoded `ca-key.pem` file content.|
 
 ## Allowed TLS configuration options
 
