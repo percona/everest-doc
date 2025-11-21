@@ -16,7 +16,7 @@ Here are the limitations for Percona Everest:
 
 - Split-Horizon DNS feature is supported only by Percona Server for MongoDB engine. 
 
-- You cannot the enable the Split-Horizon DNS feature for existing Percona Server for MongoDB clusters. You can only enable when creating a new Percona Server for MongoDB cluster. 
+- You cannot enable the Split-Horizon DNS feature for existing Percona Server for MongoDB clusters. You can only enable when creating a new Percona Server for MongoDB cluster. 
 
 - You cannot enable Split-Horizon DNS if **Sharding is enabled** for a specific Percona Server for MongoDB cluster. Support for sharded clusters will be included in future releases.
 
