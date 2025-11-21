@@ -24,12 +24,10 @@ Follow these steps to create a new Split-Horizon DNS policy:
     - **Name**: The desired name for your Split-Horizon policy.
     - **Namespace**: The Kubernetes namespace where you want to create the policy.
     - **Domain name suffix**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
-    - **Certificate**: Upload your **Transport Layer Security 
-    (TLS)** certificate. 
-    For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
-    - **Secret name**: Kubernetes Secret that stores the TLS certificate and private key associated with a particular domain.
-    - **Ca key**: Upload your CA private key file.
-    - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
+    - **TLS**
+        - **Secret name**: Kubernetes Secret that stores the TLS certificate and private key associated with a particular domain.
+        - **Ca key**: Upload your CA private key file.
+        - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
 
 5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
 
