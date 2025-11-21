@@ -26,7 +26,7 @@ Here are the limitations for Percona Everest:
 
 - Only one Split-Horizon DNS configuration can be applied to a Percona Server for MongoDB cluster.
 
-- Percona Everest does not allow you to manually set custom domain names for each pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each pod in the ReplicaSet following this pattern: 
+- Percona Everest does not allow you to manually set custom domain names for each Pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each Pod in the ReplicaSet following this pattern: 
 
     `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`  
    
