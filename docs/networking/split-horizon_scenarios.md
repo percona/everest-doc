@@ -1,4 +1,4 @@
-# Split-Horizon DNS scerarios
+# Split-Horizon DNS scenarios
 
 
 ## Create Split-Horizon DNS config
