@@ -118,8 +118,6 @@ v1.21.0.
 
 - [EVEREST-2237](https://perconadev.atlassian.net/browse/EVEREST-2237): Creating a database via **CRD** without specifying monitoring resources no longer causes the **Overview** page to crash. The page now loads correctly even if monitoring resources are omitted.
 
-- [EVEREST-2258](https://perconadev.atlassian.net/browse/EVEREST-2258): When editing the database and enabling the load balancer, the **Host** field was updated after a few seconds, but the **Connection URL** did not update. We have resolved the issue now.
-
 - [EVEREST-2259](https://perconadev.atlassian.net/browse/EVEREST-2259): Resolved an issue where the **Connection URL** field did not update after enabling the Load Balancer while editing a database. The field now correctly refreshes to reflect the new Load Balancer endpoint once the Host value updates.
 
 - [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
