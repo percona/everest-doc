@@ -126,7 +126,7 @@ v1.21.0.
 
 - [EVEREST-2333](https://perconadev.atlassian.net/browse/EVEREST-2333): Fixed an issue where the documentation link for PITR limitations redirected to an incorrect page.
 
-- [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after its metadata was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
+- [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after it was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
 
 ## Known limitations
 
