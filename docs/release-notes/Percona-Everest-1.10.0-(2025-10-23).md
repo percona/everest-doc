@@ -103,8 +103,7 @@ v1.21.0.
 - [EVEREST-2023](https://perconadev.atlassian.net/browse/EVEREST-2023): The `everest operator` showed inconsistent behavior in handling resource creation and updates. This issue has now been resolved.
 
 
-- [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109): Point-in-Time Recovery (PITR) now correctly activates for PostgreSQL clusters after creating on-demand or scheduled backups, addressing the previous issue where it remained disabled.
-
+- [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109): Resolved a UI issue that incorrectly showed Point-in-Time Recovery (PITR) for PostgreSQL clusters as disabled after creating on-demand or scheduled backups. PITR was operating correctly, and this update ensures its status is now displayed accurately.
 
 - [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135): Addressed an issue where the S3 bucket field accepted incorrect formats and the **Verify TLS** option was unchecked by default. Input validation now ensures the correct S3 formats, and TLS verification is enabled by default.
 
