@@ -128,6 +128,8 @@ v1.21.0.
 
 - [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after it was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
 
+- [EVEREST-2366](https://perconadev.atlassian.net/browse/EVEREST-2366): Fixed an issue where the Helm installation command failed to install Percona Everest.
+
 ## Known limitations
 
 Some limitations apply when using Split-Horizon DNS. For more details, refer to the [limitations section](../reference/known_limitations.md#split-horizon-dns).
