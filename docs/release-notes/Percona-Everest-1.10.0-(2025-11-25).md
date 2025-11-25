@@ -8,14 +8,14 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
-    | **2.**|[Percona Monitoring and Management (PMM) 3](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Percona Everest 1.10.0 now supports PMM 3. |
-    | **3.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
-    | **4.**|[MySQL 8.4](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Percona Everest 1.10.0 now supports MySQL 8.4. |
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in Percona Everest 1.10.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.10.0|
-    | **7.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.10.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.10.0|
+    | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-25%29.html#seamless-access-with-split-horizon-dns-for-percona-server-for-mongodb)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
+    | **2.**|[MySQL 8.4](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-25%29.html#support-for-mysql-84)|Percona Everest 1.10.0 now supports MySQL 8.4. |
+    | **3.**|[Percona Monitoring and Management (PMM) 3](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-25%29.html#support-for-pmm-3)|Percona Everest 1.10.0 now supports PMM 3. |
+    | **4.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-25%29.html#updated-operators-support)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
+    | **5.**|[New features](https://docs.percona.com/everest/release-notes//Percona-Everest-1.10.0-%282025-11-25%29.html#new-features)|Check out the new features introduced in Percona Everest 1.10.0|
+    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-25%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.10.0|
+    | **7.**|[Bug fixes](Percona-Everest-1.10.0-%282025-11-25%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.10.0|
+    | **8.**|[Known limitations](Percona-Everest-1.10.0-%282025-11-25%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.10.0|
 
 
 ## 🌟 Release highlights
@@ -56,6 +56,8 @@
         - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
         
     5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
+
+    
 
 === "🐬 MySQL 8.4"
     ### Support for MySQL 8.4
