@@ -22,8 +22,7 @@
 
 === "🐬 MySQL 8.4"
     ### Support for MySQL 8.4
-   Percona Everest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
-
+    Percona Everest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
 
 === "🛰 Split-Horizon DNS for Percona Server for MongoDB"
     ### Seamless access with Split-Horizon DNS for Percona Server for MongoDB
@@ -62,7 +61,7 @@
         
     5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
 
-=== "PMM 3"
+=== "📊 PMM 3"
     ### Support for PMM 3
     Percona Everest 1.10.0 now supports Percona Monitoring and Management (PMM) 3, enhancing observability and performance insights for database clusters. This ensures improved monitoring capabilities utilizing the latest features and architecture of PMM.
 
