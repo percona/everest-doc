@@ -25,18 +25,6 @@
    Percona Everest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
 
 
-=== "⚙️ Operators"
-    ### Updated Operators Support
-
-    Percona Everest now supports:
-
-    - Percona PostgreSQL Operator v2.7.0.
-
-    - Percona Server for MongoDB Operator v1.21.0.
-
-    - Percona XtraDB Cluster Operator v1.18.0.
-
-
 === "🛰 Split-Horizon DNS for Percona Server for MongoDB"
     ### Seamless access with Split-Horizon DNS for Percona Server for MongoDB
     Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**. This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
@@ -73,6 +61,22 @@
         - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
         
     5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
+
+=== "PMM 3"
+    ### Support for PMM 3
+    Percona Everest 1.10.0 now supports Percona Monitoring and Management (PMM) 3, enhancing observability and performance insights for database clusters. This ensures improved monitoring capabilities utilizing the latest features and architecture of PMM.
+
+
+=== "⚙️ Operators"
+    ### Updated Operators Support
+
+    Percona Everest now supports:
+
+    - Percona PostgreSQL Operator v2.7.0.
+
+    - Percona Server for MongoDB Operator v1.21.0.
+
+    - Percona XtraDB Cluster Operator v1.18.0.
         
 ## New features
 
