@@ -20,6 +20,11 @@
 
 ## 🌟 Release highlights
 
+=== "🐬 MySQL 8.4"
+    ### Support for MySQL 8.4
+   Percona Everest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
+
+
 === "⚙️ Operators"
     ### Updated Operators Support
 
