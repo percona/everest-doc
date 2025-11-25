@@ -57,7 +57,7 @@
         
     5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
 
-    Explore the full capabilities of this feature in our detailed [documentation](https://docs.percona.com/everest/networking/split-horizon_scenarios.html).
+    📘 Explore the full capabilities of this feature in our detailed [documentation](https://docs.percona.com/everest/networking/split-horizon_scenarios.html).
 
 === "🐬 MySQL 8.4"
     ### Support for MySQL 8.4
