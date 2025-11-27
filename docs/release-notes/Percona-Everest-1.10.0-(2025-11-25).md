@@ -50,12 +50,11 @@
         - **Name**: The desired name for your Split-Horizon policy.
         - **Namespace**: The Kubernetes namespace where you want to create the policy.
         - **Domain name suffix**: A domain represents how your database endpoint is identified (for example, mydb.everest.local).
-        - **Certificate**: Upload your **Transport Layer Security (TLS)** certificate. For information on how to obtain a TLS certificate, refer to the [TLS Certificate page](split-horizon_create_CA_certs.md).
         - **Secret name**: Kubernetes Secret that stores the TLS certificate and private key associated with a particular domain.
         - **Ca key**: Upload your CA private key file.
         - **Ca cert**: Upload your Certificate Authority (CA) Certificate. A CA certificate is the root or intermediate certificate from the Certificate Authority (CA) that signed your TLS certificate. It helps clients verify that your database’s certificate is valid and trustworthy.
         
-    5. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
+    4. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
 
     📘 Explore the full capabilities of this feature in our detailed [documentation](https://docs.percona.com/everest/networking/split-horizon_scenarios.html).
 
@@ -142,6 +141,8 @@ v1.21.0.
 - [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after it was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
 
 - [EVEREST-2366](https://perconadev.atlassian.net/browse/EVEREST-2366): Fixed an issue where the Helm installation command failed to install Percona Everest.
+
+- [EVEREST-1693](https://perconadev.atlassian.net/browse/EVEREST-1693): Resolved an issue where single-node MongoDB clusters temporarily entered an error state during initial provisioning.
 
 ## Known limitations
 
