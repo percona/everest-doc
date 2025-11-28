@@ -25,7 +25,7 @@
     Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**. This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
 
     ### Why Split-Horizon DNS matters?
-    Database administrators may sometimes need to expose ReplicaSet Pods in a Percona Operator for MongoDB cluster so they can connect to them directly. This applies both inside and outside the Kubernetes environment, using custom domain names instead of the default ones generated during cluster creation.
+    Database administrators may sometimes need to expose ReplicaSet Pods in a Percona Operator for a MongoDB cluster so they can connect to them directly. This applies both inside and outside the Kubernetes environment, using custom domain names instead of the default ones generated during cluster creation.
 
     This is useful in scenarios such as:
 
@@ -117,7 +117,7 @@ v1.21.0.
 
 - [EVEREST-2109](https://perconadev.atlassian.net/browse/EVEREST-2109): Resolved a UI issue that incorrectly showed Point-in-Time Recovery (PITR) for PostgreSQL clusters as disabled after creating on-demand or scheduled backups. PITR was operating correctly, and this update ensures its status is now displayed accurately.
 
-- [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135): Addressed an issue where the S3 bucket field accepted incorrect formats and the **Verify TLS** option was unchecked by default. Input validation now ensures the correct S3 formats, and TLS verification is enabled by default.
+- [EVEREST-2135](https://perconadev.atlassian.net/browse/EVEREST-2135): Addressed an issue where the S3 bucket field accepted incorrect formats, and the **Verify TLS** option was unchecked by default. Input validation now ensures the correct S3 formats, and TLS verification is enabled by default.
 
 
 - [EVEREST-2163](https://perconadev.atlassian.net/browse/EVEREST-2163): The Pod Scheduling Policy now appears in the **Edit Advanced Configuration** view even when no rules are defined.
