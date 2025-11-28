@@ -10,6 +10,35 @@ Refrain from changing the password of administrative users (e.g., root, monitor,
 We are developing a new feature that will allow you to modify these settings directly from the user interface (UI).
 
 
+## Split-Horizon DNS
+
+Here are the limitations for Percona Everest:
+
+- Split-Horizon DNS feature is supported only by Percona Server for MongoDB engine. 
+
+- You cannot enable the Split-Horizon DNS feature for existing Percona Server for MongoDB clusters. You can only enable when creating a new Percona Server for MongoDB cluster. 
+
+- You cannot enable Split-Horizon DNS if **Sharding is enabled** for a specific Percona Server for MongoDB cluster. Support for sharded clusters will be included in future releases.
+
+- You cannot disable Split-Horizon DNS feature once you enable it.
+
+- You cannot change the Split-Horizon domains or certificates for an existing cluster.
+
+- Only one Split-Horizon DNS configuration can be applied to a Percona Server for MongoDB cluster.
+
+- Percona Everest does not allow you to manually set custom domain names for each Pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each Pod in the ReplicaSet following this pattern: 
+
+    `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`  
+   
+    ??? example "Example"  
+        - my-db-cluster-rs0-0-default.mycompany.com  
+        - my-db-cluster-rs0-1-default.mycompany.com 
+
+
+- Percona Everest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The Percona Everest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names.
+
+    Percona Everest will provide the Admin with a list of domain names and the corresponding private/public IPs allocated by Kubernetes or the cloud provider.
+
 ## Load balancer configuration
 
 - Once annotations are added to a service by the database operators, they cannot be entirely removed.

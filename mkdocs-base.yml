@@ -155,6 +155,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest 1.10.0 (2025-11-28): release-notes/Percona-Everest-1.10.0-(2025-11-28).md
       - Percona-Everest 1.9.0 (2025-09-23): release-notes/Percona-Everest-1.9.0-(2025-09-23).md
       - Percona-Everest 1.8.1 (2025-08-11): release-notes/Percona-Everest-1.8.1-(2025-08-11).md
       - Percona-Everest 1.8.0 (2025-07-16): release-notes/Percona-Everest-1.8.0-(2025-07-16).md
@@ -225,6 +226,13 @@ nav:
       - Load balancer overview: networking/load_balancer.md
       - Load balancer scenarios: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
+      - Split-Horizon DNS for Percona Server for MongoDB: 
+        - Overview: networking/split-horizon_dns.md
+        - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
+        - Split-Horizon DNS config Custom Resource Definition (CRD): networking/split-horizon_everest_CRD.md
+        - Generate CA certificates: networking/split-horizon_create_CA_certs.md
+        - Configure Split-Horizon DNS: networking/split-horizon_config.md
+
 
 
   - Back up and restore data: 
