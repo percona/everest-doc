@@ -132,7 +132,7 @@ v1.21.0.
 - [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
 
 
-- [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a Load balancer config now clearly states that it can only be deleted if it is not linked to any database, ensuring no impact on the existing databases.
+- [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a load balancer config now clearly states that it can only be deleted if it is not linked to any database, ensuring no impact on the existing databases.
 
 - [EVEREST-2324](https://perconadev.atlassian.net/browse/EVEREST-2324): Fixed an issue where the `everestctl upgrade` command did not permit upgrading to the next patch version if a newer minor release is available.
 
