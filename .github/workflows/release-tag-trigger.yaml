@@ -15,9 +15,9 @@ jobs:
           RELEASE_TAG=${GITHUB_REF#refs/tags/}
           echo "New tag created: $RELEASE_TAG"
           
-          # Extract version number from tag (e.g., v1.15.0 -> 1.15)
-          VERSION=$(echo "$RELEASE_TAG" | sed -E 's/^v?([0-9]+\.[0-9]+).*/\1/')
-          
+          # Extract version number from tag (e.g., v1.15.0 -> 1.15.0)
+          VERSION=$(echo "$RELEASE_TAG" | sed -E 's/^v?([0-9]+\.[0-9]+\.[0-9]+).*/\1/')
+        
           # Trigger workflow dispatch in openeverest.github.io
           curl -X POST \
             -H "Authorization: token ${{ secrets.EVEREST_WEBSITE_TOKEN }}" \
