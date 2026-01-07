@@ -220,7 +220,7 @@ nav:
       - Load balancer overview: networking/load_balancer.md
       - Load balancer scenarios: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
-      - Support NodePort exposure: networking/nodeport_support.md 
+      - NodePort exposure: networking/nodeport_support.md 
 
   - Back up and restore data: 
     - About backups: backups_and_restore/AboutBackups.md
