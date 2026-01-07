@@ -117,8 +117,8 @@ You can restore from a backup in two ways:
     apiVersion: everest.percona.com/v1alpha1
     kind: DatabaseCluster
     metadata:
-    name: restored-database
-    namespace: default
+      name: restored-database
+      namespace: default
     spec:
       # .. hidden
       dataSource:
