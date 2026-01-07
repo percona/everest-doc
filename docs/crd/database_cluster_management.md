@@ -30,7 +30,7 @@ At the core of Percona Everest is the `DatabaseCluster` CRD, which defines and m
         resources: {}
       proxy:
         expose:
-          type: internal
+          type: ClusterIP
         replicas: 1
         resources:
           cpu: "1"
@@ -130,14 +130,14 @@ kubectl get dbengine percona-postgresql-operator -n <your namespace> -o jsonpath
 
 ### Exposing your database
 
-You can expose your database service either internally or externally:
+You can expose your database service either through a LoadBalancer or NodePort service type.
 
 ```sh
 spec:
   proxy:
     type: haproxy  # or: pgbouncer, proxysql, mongos
     expose:
-      type: external
+      type: LoadBalancer # or: NodePort
       ipSourceRanges:  # Optional IP whitelist
         - "10.0.0.0/24"
     replicas: 2
