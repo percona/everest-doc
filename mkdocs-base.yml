@@ -51,7 +51,7 @@ theme:
     - content.tabs.link
     - content.code.copy
     - navigation.tracking
-    - content.action.edit
+#    - content.action.edit
     - content.action.view
 
 extra_css:
@@ -63,15 +63,17 @@ extra_css:
   - css/osano.css
   - css/everest.css
   - css/extra.css
+  - css/rating.css
 
 extra_javascript:
   #  - js/lightgallery.min.js
   - js/promptremover.js
   - js/consent.js
+  - js/rating.js
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2024 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2025 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -109,6 +111,10 @@ plugins:
   search:
     separator: '[\s\-,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   git-revision-date: {}
+  git-committers:
+    enabled: !ENV [CI, false]
+    repository: percona/everest-doc
+    branch: "main" 
   meta-descriptions:
     export_csv: false
     quiet: false
@@ -149,7 +155,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
-      - Percona-Everest 1.10.0 (2025-10-23): release-notes/Percona-Everest-1.10.0-(2025-10-23).md
+      - Percona-Everest 1.10.0 (2025-11-28): release-notes/Percona-Everest-1.10.0-(2025-11-28).md
       - Percona-Everest 1.9.0 (2025-09-23): release-notes/Percona-Everest-1.9.0-(2025-09-23).md
       - Percona-Everest 1.8.1 (2025-08-11): release-notes/Percona-Everest-1.8.1-(2025-08-11).md
       - Percona-Everest 1.8.0 (2025-07-16): release-notes/Percona-Everest-1.8.0-(2025-07-16).md
@@ -221,6 +227,12 @@ nav:
       - Load balancer scenarios: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
       - NodePort exposure: networking/nodeport_support.md 
+      - Split-Horizon DNS for Percona Server for MongoDB: 
+        - Overview: networking/split-horizon_dns.md
+        - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
+        - Split-Horizon DNS config Custom Resource Definition (CRD): networking/split-horizon_everest_CRD.md
+        - Generate CA certificates: networking/split-horizon_create_CA_certs.md
+        - Configure Split-Horizon DNS: networking/split-horizon_config.md
 
   - Back up and restore data: 
     - About backups: backups_and_restore/AboutBackups.md
@@ -250,6 +262,13 @@ nav:
       - Monitoring: use/monitor_endpoints.md
       - Multiple namepaces: use/multi-namespaces.md
       - API rate limiting: use/API_rate_limit.md
+      
+  - Troubleshooting guide:
+      - Installation workflow and components : troubleshoot/installation_overview.md
+      - Diagnostics for common issues: troubleshoot/troubleshoot.md
+      - Percona Everest and Bitnami Container Catalog Changes: troubleshoot/bitnami_container_catalog_changes.md
+      - Frequently asked questions (FAQ): troubleshoot/faq.md
+
   - API: API.md
   - Reference:
       - Breaking API changes: api_rbac.md
@@ -260,6 +279,7 @@ nav:
       - AI usage disclaimer: reference/AI_disclaimer_for_docs.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
+
 
   - Contribute: contribute.md
 

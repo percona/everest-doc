@@ -86,18 +86,11 @@ To install and provision Percona Everest to Kubernetes:
         
 
                 ```sh
-                helm install everest-core percona/everest --namespace=everest-system --create-namespace --helm.set pmm.enabled=true
+                everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set pmm.enabled=true --skip-wizard
                 ```
 
 
                 Install Percona Everest with TLS enabled:
-
-                ```
-                helm install everest-core percona/everest \
-                --namespace everest-system \
-                --create-namespace
-                --helm.set server.tls.enabled=true
-                ```
 
                 ```sh
                 everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
@@ -131,8 +124,10 @@ To install and provision Percona Everest to Kubernetes:
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
             ```sh
-            everestctl install \
-            --helm.set service.type=LoadBalancer
+            helm upgrade everest-system percona/everest \
+            --namespace everest-system \
+            --reuse-values \
+            --set server.service.type=LoadBalancer
             ```
                     
         2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
@@ -161,8 +156,10 @@ To install and provision Percona Everest to Kubernetes:
 
                     
             ```sh
-            helm install percona-everest percona/everest \
-            --set service.type=NodePort
+            helm upgrade everest-system percona/everest \
+            --namespace everest-system \
+            --reuse-values \
+            --set server.service.type=NodePort
             ```
 
         2. The following command displays the port assigned by Kubernetes to the everest service, which is `32349` in this case.
@@ -229,4 +226,4 @@ To install and provision Percona Everest to Kubernetes:
 
 ## Next steps
 
-[Provision a database :material-arrow-right:](use/db_provision.md){.md-button}
+[Provision a database :material-arrow-right:](../use/db_provision.md){.md-button}
