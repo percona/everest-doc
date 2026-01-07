@@ -121,7 +121,7 @@ kubectl get dbengine percona-postgresql-operator -n <your namespace> -o jsonpath
         "15.0.0": unavailable
       pendingUpgrades:
         - from: 1.3.0
-        to: 1.4.0
+          to: 1.4.0
     ```
 
 !!! note
