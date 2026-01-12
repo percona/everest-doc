@@ -1,6 +1,6 @@
-# TLS support for Percona Everest
+# TLS support for OpenEverest
 
-Percona Everest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that communication between clients and the API server is encrypted, protecting data from interception or tampering. Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
+OpenEverest can be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. TLS ensures that communication between clients and the API server is encrypted, protecting data from interception or tampering. Administrators can configure server certificates and private keys to enable **secure HTTPS access**, enhancing the overall security posture for production environments.
 
 !!! note
     - When TLS is enabled, the default server port (8080) will only accept `https` traffic, and `http` traffic will be rejected.
@@ -9,7 +9,7 @@ Percona Everest can be configured to use Transport Layer Security (TLS) for all 
 
 
 
-## TLS setup with Percona Everest
+## TLS setup with OpenEverest
 
 !!! info "Important"
     This section provides an example using **Helm**. You can also use the provided options with `everestctl` by using the flag `--helm.set`.
@@ -24,9 +24,9 @@ Percona Everest can be configured to use Transport Layer Security (TLS) for all 
 - Ensure that you have a properly configured **Issuer** or **ClusterIssuer** in place. See the [documentation](https://cert-manager.io/docs/configuration/){:target="_blank"} for details.
 
 
-#### Set up Percona Everest using cert-manager
+#### Set up OpenEverest using cert-manager
 
-Here are the steps to set up the Percona Everest server using cert-manager:
+Here are the steps to set up the OpenEverest server using cert-manager:
 {.power-number}
 
 
@@ -48,7 +48,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     Replace **example.com** with your actual domain name.
 
 
-2. Install Percona Everest using the above values:
+2. Install OpenEverest using the above values:
 
     ```sh
     helm install everest-core percona/everest --create-namespace \
@@ -57,7 +57,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
     ```
 
 
-??? info "Alternative methods for configuring TLS in Percona Everest"
+??? info "Alternative methods for configuring TLS in OpenEverest"
 
     ### Use self-signed certificates
 
@@ -72,7 +72,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
     ### Configure TLS with custom certificates
 
-    Here are the steps to set up the Percona Everest server using custom certificates:
+    Here are the steps to set up the OpenEverest server using custom certificates:
     {.power-number}
 
     1. Prepare your certificate public key (`tls.crt`) and private key (`tls.key`) files. 
@@ -91,7 +91,7 @@ Here are the steps to set up the Percona Everest server using cert-manager:
 
         Replace `YOUR_PRIVATE_KEY_FILE` and `YOUR_CERTIFICATE_FILE` with the actual contents of your public and private key files.
 
-    3. Install Percona Everest using the above values:
+    3. Install OpenEverest using the above values:
 
         ```sh
         helm install everest-core percona/everest --create-namespace \

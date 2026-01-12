@@ -1,39 +1,39 @@
-# What's new in Percona Everest 0.10.0
+# What's new in OpenEverest 0.10.0
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 Version 0.10.0 introduces the following changes:
 
 
 ## Release highlights
 
-### Simplified Percona Everest upgrades
+### Simplified OpenEverest upgrades
 
 !!! warning "Important"
     - You need to download CLI version >=0.10.0 for the upgrade command to work.
-    - Upgrade works only if you have Percona Everest version 0.9.0 or higher installed. 
+    - Upgrade works only if you have OpenEverest version 0.9.0 or higher installed. 
 
-We're thrilled to announce that you can now upgrade your Percona Everest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your Everest to the latest version.
+We're thrilled to announce that you can now upgrade your OpenEverest instance using our Command Line Interface (CLI). The CLI upgrade process is simple and straightforward, enabling you to quickly upgrade your Everest to the latest version.
 
 You can only upgrade one minor version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0.
 
-For more information on upgrading Percona Everest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
+For more information on upgrading OpenEverest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
 
 
 ### Streamlining traffic management with API rate limiting
 
-Starting with Percona Everest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
+Starting with OpenEverest 0.10.0 version, we have introduced a new feature called **API rate limiting**. 
 
 API rate limiting is one of the key aspects of managing API's. With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
 
-The default rate limit for Percona Everest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html).
+The default rate limit for OpenEverest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html).
 
 
 ### Added control for TLS certificate validation
 
-With the release of Percona Everest 0.10.0, you can add backup storages and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
+With the release of OpenEverest 0.10.0, you can add backup storages and monitoring instances without verifying the Transport Layer Security (TLS) certificate. TLS certificate verifies the server's certificate chain and hostname, ensuring its authenticity.
 
 When using a self-signed TLS certificate, the TLS certificate validation will fail as the certificate has not been issued by a trusted authority. To overcome this issue, you may need to skip the TLS certificate validation. 
 
@@ -44,11 +44,11 @@ Skipping certificate validation is recommended only when there is no need to ens
 
 ## New features and improvements
 
-- [EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with Percona Everest 0.10.0, you can upgrade your Percona Everest instance using the CLI (everestctl).
+- [EVEREST-793](https://perconadev.atlassian.net/browse/EVEREST-793) - Starting with OpenEverest 0.10.0, you can upgrade your OpenEverest instance using the CLI (everestctl).
 
 - [EVEREST-396](https://perconadev.atlassian.net/browse/EVEREST-396) - You can now add monitoring instances without verifying the TLS certificates. 
 
-- [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with Percona Everest 0.10.0, we have introduced a new feature called **API rate limiting**. With this you can set a threshold for the number of requests your API can receive within a specific period.
+- [EVEREST-964](https://perconadev.atlassian.net/browse/EVEREST-964) - Starting with OpenEverest 0.10.0, we have introduced a new feature called **API rate limiting**. With this you can set a threshold for the number of requests your API can receive within a specific period.
 
 - [EVEREST-935](https://perconadev.atlassian.net/browse/EVEREST-935) - Previously, the **cancel** button was disabled while editing anything in the wizard. This button is now enabled.
 
@@ -79,7 +79,7 @@ Skipping certificate validation is recommended only when there is no need to ens
 
 - [EVEREST-921](https://perconadev.atlassian.net/browse/EVEREST-921) - We have resolved an issue that prevented users from logging in immediately after logging out.
 
-- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall Percona Everest, an error occurred which prevented the uninstallation process from completing successfully. The issue has now been resolved.
+- [EVEREST-947](https://perconadev.atlassian.net/browse/EVEREST-947) - While attempting to uninstall OpenEverest, an error occurred which prevented the uninstallation process from completing successfully. The issue has now been resolved.
 
 - [EVEREST-948](https://perconadev.atlassian.net/browse/EVEREST-948) - The actionable **Alert** button was not visible in the dark theme. The issue has been resolved now.
 

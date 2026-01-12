@@ -1,19 +1,19 @@
-# Welcome to Percona Everest
+# Welcome to OpenEverest
 
-We are excited to welcome you to Percona Everest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
+We are excited to welcome you to OpenEverest, designed to demonstrate the core capabilities of our new open source cloud-native database platform!
 
 
-## Why Percona Everest?
+## Why OpenEverest?
 
-Percona Everest is the first open-source platform for automated database provisioning and management. It supports multiple database technologies and can be hosted on any Kubernetes infrastructure, in the cloud or on-premises.
+OpenEverest is the first open-source platform for automated database provisioning and management. It supports multiple database technologies and can be hosted on any Kubernetes infrastructure, in the cloud or on-premises.
 
 ![!image](images/Percona_Everest_docs.png)
   
-## Ready to test drive Percona Everest?
+## Ready to test drive OpenEverest?
 
 Let's start by enabling you to deploy an automated private DBaaS, eliminating vendor lock-in and complex in-house platform development. 
 
-[Percona Everest quickstart guide:material-arrow-right:](quick-install.md){.md-button }  [Manage your first cluster :material-arrow-right:](use/db_provision.md){.md-button }
+[OpenEverest quickstart guide:material-arrow-right:](quick-install.md){.md-button }  [Manage your first cluster :material-arrow-right:](use/db_provision.md){.md-button }
 
 
 Refer to our documentation, and you'll be set up in no time.
@@ -22,9 +22,9 @@ Refer to our documentation, and you'll be set up in no time.
 
 ### :material-telescope: Discover { .title }
 
-Discover how Percona Everest simplifies and streamlines your database management and provisioning.
+Discover how OpenEverest simplifies and streamlines your database management and provisioning.
 
-[Discover Percona Everest :material-arrow-right:](features.md){ .md-button .md-button--primary }
+[Discover OpenEverest :material-arrow-right:](features.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
@@ -38,14 +38,14 @@ Explore how our security features are designed to ensure the security of your ho
 
 ### :material-frequently-asked-questions: Troubleshooting { .title }
 
-Dive into our troubleshooting section designed to guide you through common issues you may encounter while using Percona Everest.
+Dive into our troubleshooting section designed to guide you through common issues you may encounter while using OpenEverest.
 
 [Troubleshoot :material-arrow-right:](troubleshoot/troubleshoot.md){ .md-button .md-button--primary }
 
 </div><div data-banner markdown>
 
 
-### :material-api: Percona Everest API { .title }
+### :material-api: OpenEverest API { .title }
 
 Get ready to dive into our APIs and uncover their potential.
 

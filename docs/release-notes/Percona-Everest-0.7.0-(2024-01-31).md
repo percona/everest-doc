@@ -1,14 +1,14 @@
-# What's new in Percona Everest 0.7.0
+# What's new in OpenEverest 0.7.0
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 Version 0.7.0 introduces the following changes:
 
 ## Point-in-Time Recovery (PITR) for MongoDB databases
 
-We're expanding Percona Everest's PITR capabilities to include MongoDB databases.
+We're expanding OpenEverest's PITR capabilities to include MongoDB databases.
 
 You can now also restore MongoDB databases to specific points in time within the same cluster. This gives you more control over your MongoDB environments and more options for data recovery.
 
@@ -25,9 +25,9 @@ To seamlessly resume PITR after a restore, make sure to run a new full backup. T
 
 ## Monitoring
 
-Percona Everest now comes with monitoring capabilities that will help ensure your database infrastructure is always reliable and secure. 
+OpenEverest now comes with monitoring capabilities that will help ensure your database infrastructure is always reliable and secure. 
 
-Here's what you'll get out of Percona Everest monitoring:
+Here's what you'll get out of OpenEverest monitoring:
 
 - Database availability and uptime tracking
 - Insights into your database performance

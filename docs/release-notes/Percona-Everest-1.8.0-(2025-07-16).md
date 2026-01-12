@@ -1,10 +1,10 @@
-# What's new in Percona Everest 1.8.0
+# What's new in OpenEverest 1.8.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 !!! warning
-    Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in Percona Everest 1.8.0. To ensure it functions properly, upgrade to **version 1.8.1**.
+    Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in OpenEverest 1.8.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
 
 ??? info "Expand to unleash the key updates"
@@ -13,36 +13,36 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Dataimporters in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#import-external-backups-into-percona-everest-clusters)|Import external database backups directly into clusters managed by Percona Everest|
-    | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#new-features)|Check out the new features introduced in Percona Everest 1.8.0|
-    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.8.0|
-    | **4.**|[Bug fixes](Percona-Everest-1.8.0-%282025-07-16%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.8.0|
-    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.8.0|
+    | **1.**|[Release highlight: Dataimporters in OpenEverest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#import-external-backups-into-openeverest-clusters)|Import external database backups directly into clusters managed by OpenEverest|
+    | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#new-features)|Check out the new features introduced in OpenEverest 1.8.0|
+    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.8.0|
+    | **4.**|[Bug fixes](Percona-Everest-1.8.0-%282025-07-16%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.8.0|
+    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.8.0-%282025-07-16%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.8.0|
 
 
 ## 🌟 Release highlights
 
-### :material-database-import: Import external backups into Percona Everest clusters
+### :material-database-import: Import external backups into OpenEverest clusters
 
 !!! info "Technical Preview"
-    The **external backup import** feature in Percona Everest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
+    The **external backup import** feature in OpenEverest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-Starting with Percona Everest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by Percona Everest. This feature leverages an extensible framework that streamlines your backup process.
+Starting with OpenEverest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by OpenEverest. This feature leverages an extensible framework that streamlines your backup process.
 
 #### Key features
 
-- Import database backups of clusters managed by the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by Percona Everest.
+- Import database backups of clusters managed by the Percona Operators for MongoDB, MySQL (XtraDB), and PostgreSQL into database clusters managed by OpenEverest.
 
 - Customize the import process using tools like `mongodump`, `pg_dump`, or `mysqldump`.
 
 - A pluggable and extensible framework that can adapt to various import needs and workflows.
     
-#### How to import external database backups using the Percona Everest UI
+#### How to import external database backups using the OpenEverest UI
 
 Here are the steps to import the external backups:
 {.power-number}
 
-1. Navigate to the Percona Everest homepage and click **Import**.
+1. Navigate to the OpenEverest homepage and click **Import**.
     
 2. Select the database type you want to import (MySQL, PostgreSQL, or MongoDB). The **Basic information** page will be displayed.
 
@@ -72,7 +72,7 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 ## New features
 
-- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with Percona Everest 1.8.0, you can import external backups created using the Percona Operators for PostgreSQL, MySQL, and MongoDB into clusters managed by Percona Everest.
+- [EVEREST-2068](https://perconadev.atlassian.net/browse/EVEREST-2068), [EVEREST-2069](https://perconadev.atlassian.net/browse/EVEREST-2069), [EVEREST-2070](https://perconadev.atlassian.net/browse/EVEREST-2070): Starting with OpenEverest 1.8.0, you can import external backups created using the Percona Operators for PostgreSQL, MySQL, and MongoDB into clusters managed by OpenEverest.
 
     While the default DataImporters are designed explicitly for backups compatible with Percona Operators, the DataImporters framework is flexible and extensible. This allows you to customize your import process using any backup and restore tools you prefer, such as `pg_dump`, `mysqldump`, `mongodump`, and others.
 
@@ -83,13 +83,13 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 - [EVEREST-1909](https://perconadev.atlassian.net/browse/EVEREST-1909): Duplicate IP/Netmask entries for external access are now prevented, ensuring accurate network configurations in database clusters.
 
-- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): Since disk resizing is an irreversible operation, Percona Everest now prompts for confirmation before applying disk size changes.
+- [EVEREST-1946](https://perconadev.atlassian.net/browse/EVEREST-1946): Since disk resizing is an irreversible operation, OpenEverest now prompts for confirmation before applying disk size changes.
 
-- [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, Percona Everest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring errors are immediately visible and easier to resolve.
+- [EVEREST-1958](https://perconadev.atlassian.net/browse/EVEREST-1958): When you revisit a wizard step, OpenEverest now automatically expands any collapsed section that contains fields with validation errors. This enhances usability by ensuring errors are immediately visible and easier to resolve.
 
 - [EVEREST-1964](https://perconadev.atlassian.net/browse/EVEREST-1964): The **Edit** action in the upgrade section has been renamed to **Upgrade** to better reflect its purpose, as upgrading is the only supported action in that context.
 
-- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): In the Helm upgrade flow, Percona Everest now performs a pre-check to validate CRD compatibility before proceeding with the upgrade. This helps prevent cluster breakage by ensuring that all required Custom Resource Definitions are present and compatible, improving upgrade reliability.
+- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): In the Helm upgrade flow, OpenEverest now performs a pre-check to validate CRD compatibility before proceeding with the upgrade. This helps prevent cluster breakage by ensuring that all required Custom Resource Definitions are present and compatible, improving upgrade reliability.
 
 
 - [EVEREST-2003](https://perconadev.atlassian.net/browse/EVEREST-2003): The expandable section in the **Database Overview** page has been removed for an enhanced UX.
@@ -121,23 +121,23 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 ## Known limitations
 
-### Helm upgrade requirement for Percona Everest 1.8.0
+### Helm upgrade requirement for OpenEverest 1.8.0
 
-- To upgrade from Percona Everest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the Percona Everest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
+- To upgrade from OpenEverest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the OpenEverest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
 
 ### Limitations for DataImporters
 
 - Importing backups into **sharded** MongoDB clusters is currently **not supported**. The `DataImporter` for MongoDB only works with non-sharded clusters.
 
-- Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+- OpenEverest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
-- For some data import methods, you must provide database user credentials that match those of the source database. Percona Everest does not validate these credentials, so ensure they are accurate.
+- For some data import methods, you must provide database user credentials that match those of the source database. OpenEverest does not validate these credentials, so ensure they are accurate.
 
-- Percona Everest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by Percona Everest.
+- OpenEverest does not verify the compatibility of imported data with the version of the target DatabaseCluster. Ensure that the backup is compatible with the database version managed by OpenEverest.
 
 
 ## 🚀 Ready to Upgrade?
 
-Upgrade to **Percona Everest 1.8.0** to access these new features and improvements.
+Upgrade to **OpenEverest 1.8.0** to access these new features and improvements.
 
 📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.

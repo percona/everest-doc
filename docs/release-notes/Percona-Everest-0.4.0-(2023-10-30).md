@@ -1,8 +1,8 @@
-# What's new in Percona Everest 0.4.0
+# What's new in OpenEverest 0.4.0
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source private database-as-a-service that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 ## Release highlights
 
@@ -30,7 +30,7 @@ For more information about working with backups, see [Back up and restore databa
 
 ### Option to provide anonymous usage statistics enabled
 
-In creating Percona Everest, we've leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet user needs.
+In creating OpenEverest, we've leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet user needs.
 
 With our latest release, we're adding in product telemetry to fill-in the gaps in our understanding of how users are actually using Everest, and ultimately ensure that we're building the best-in-class cloud-native database platform for the open-source community.
 

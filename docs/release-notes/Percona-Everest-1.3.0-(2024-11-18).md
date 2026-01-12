@@ -1,6 +1,6 @@
-# What's new in Percona Everest 1.3.0
+# What's new in OpenEverest 1.3.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "Release summary at a glance"
@@ -8,15 +8,15 @@
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
     | **1.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
-    | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in Percona Everest: Optimize your MongoDB databases with sharding|
+    | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in OpenEverest: Optimize your MongoDB databases with sharding|
     | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
-    | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in Percona Everest|
+    | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in OpenEverest|
     | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in Percona Everest 1.3.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.3.0|
-    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from Percona Everest 1.3.0|
-    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.3.0|
-    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.3.0|
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.3.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.3.0|
+    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from OpenEverest 1.3.0|
+    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.3.0|
+    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.3.0|
 
 
 ## Release highlights
@@ -26,16 +26,16 @@
 
     ### Capability to configure proxy nodes and define their resource limits
 
-    Starting with Percona Everest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
+    Starting with OpenEverest 1.3.0, we have introduced a new feature that permits you to customize the number of proxies and their resources, including the allocation of CPU and RAM for each proxy. This feature mirrors the existing capability to customize the number of database engine replicas and allocate resources to them.
 
-    With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your Percona Everest deployments.
+    With this feature, you now have more flexibility to customize the resources allocated to proxies according to your needs, thus providing more control over your OpenEverest deployments.
 
 
     ![!image](../images/proxies_resources.png)
 
 === "MongoDB sharding"
 
-    ### Optimize MongoDB with sharding in Percona Everest
+    ### Optimize MongoDB with sharding in OpenEverest
 
     !!! warning
          - Sharding is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and not in production environments.
@@ -43,7 +43,7 @@
 
         - If you reshard or unshard a collection, create a new backup to avoid data inconsistency and restore failure.
 
-    We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in Percona Everest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with Percona Everest.
+    We're excited to announce that we've achieved another milestone with the implementation of MongoDB sharding in OpenEverest 1.3.0. You can now harness the benefits of sharding for your MongoDB databases with OpenEverest.
 
     [Sharding  :octicons-link-external-16:](https://docs.mongodb.com/manual/reference/glossary/#term-sharding) is used for horizontal database scaling. It distributes a database horizontally across multiple nodes or servers, known as **shards**. Each shard manages a portion of the data, forming a sharded cluster, which enables MongoDB to handle large datasets and high user concurrency effectively.
 
@@ -66,7 +66,7 @@
     ### Database status at a glance
 
 
-    Starting with Percona Everest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view** page.
+    Starting with OpenEverest version 1.3.0, you can now quickly monitor the status of your databases right from the database details page for your specific database. This feature saves you time by enabling you to keep an eye on your databases without having to switch to the **database view** page.
 
 
     ![!image](../images/display_db_details.png)
@@ -76,7 +76,7 @@
 
     ### Support for PSMDB Operator v1.17.0
 
-    Starting with Percona Everest 1.3.0, we are thrilled to announce that we have added support for PSMDB Operator v1.17.0.
+    Starting with OpenEverest 1.3.0, we are thrilled to announce that we have added support for PSMDB Operator v1.17.0.
 
 
 ## Google Container Registry (GCR)
@@ -84,19 +84,19 @@
 !!! warning "GCR deprecation"
     GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+    All OpenEverest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
 
 ### Impact of GCR deprecation
 
-Percona Everest versions older than 1.4.0 will cease to function after this date.
+OpenEverest versions older than 1.4.0 will cease to function after this date.
 
 ### Action required
 
-We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+We strongly recommend upgrading to OpenEverest version 1.4.0 or later as soon as possible. If you do not upgrade, OpenEverest will no longer function.
 
 ## New features
 
-- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in Percona Everest 1.3.0. Now, you can leverage sharding for your MongoDB databases with Percona Everest.
+- [EVEREST-1303](https://perconadev.atlassian.net/browse/EVEREST-1303): We have introduced MongoDB sharding in OpenEverest 1.3.0. Now, you can leverage sharding for your MongoDB databases with OpenEverest.
 
 - [EVEREST-777](https://perconadev.atlassian.net/browse/EVEREST-777): Previously, you could only customize the database engine replicas and their resources. Now, you have the ability to customize the number of proxy replicas and their resources, including CPU and RAM, during the database creation.
 
@@ -104,7 +104,7 @@ We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soo
 - [EVEREST-1310](https://perconadev.atlassian.net/browse/EVEREST-1310): Previously, you could only customize the database engine replicas and their resources. Now, you have the ability to customize the number of proxy replicas and their resources, including CPU and RAM, while editing the database.
 
 
-- [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239): Starting with Percona Everest, we’ve added support for PSMDB Operator v1.17.0.
+- [EVEREST-1239](https://perconadev.atlassian.net/browse/EVEREST-1239): Starting with OpenEverest, we’ve added support for PSMDB Operator v1.17.0.
 
 
 ## Improvements
@@ -115,21 +115,21 @@ We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soo
 
 - [EVEREST-1211](https://perconadev.atlassian.net/browse/EVEREST-1211) - You can now easily edit your resources directly from the **Overview** page. There’s no longer a need to navigate the entire database wizard, saving you time and simplifying the process.
 
-- [EVEREST-1459](https://perconadev.atlassian.net/browse/EVEREST-1459) - We have added a link to **Percona Support** on the Percona Everest home page, making it easier for you to contact support if needed.
+- [EVEREST-1459](https://perconadev.atlassian.net/browse/EVEREST-1459) - We have added a link to **Percona Support** on the OpenEverest home page, making it easier for you to contact support if needed.
 
 
-- [EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) - To make your experience with Percona Everest even smoother, we've added convenient links right on the login page. Discover everything from **Support** and a **Quickstart guide** to our **Forum**, the **K8s Squad program**, and our **GitHub** repository.
+- [EVEREST-1460](https://perconadev.atlassian.net/browse/EVEREST-1460) - To make your experience with OpenEverest even smoother, we've added convenient links right on the login page. Discover everything from **Support** and a **Quickstart guide** to our **Forum**, the **K8s Squad program**, and our **GitHub** repository.
 
 
 - [EVEREST-1470](https://perconadev.atlassian.net/browse/EVEREST-1470) - The `rbac validate` command has been enhanced to accept the `ConfigMap` YAML file. This enables you to validate role-based access control (RBAC) configurations by leveraging the structured data provided in a `ConfigMap` format.
 
 - [EVEREST-1533](https://perconadev.atlassian.net/browse/EVEREST-1533) - Users with read-only permissions for a namespace, including all database engines and database clusters within that namespace, currently cannot access the **Upgrade** option in the user interface. This restriction prevents them from viewing upgrade prerequisites, such as the versions of database clusters that may need to be upgraded.
 
-    However, starting with Percona Everest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
+    However, starting with OpenEverest 1.3.0, the **Upgrade** button is clickable for these users. This enables them to view details about the upgrade plan, including any necessary changes for the database clusters, which can help inform administrators about required preparations. However, the option to upgrade the operator remains unclickable for users without the upgrade permissions.
 
 ## Deprecated API endpoints
 
-This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and removed from v1.3.0:
+This is the list of the API endpoints deprecated in OpenEverest v1.2.0 and removed from v1.3.0:
 
 
 |**No**|**API endpoints**|**Method**|
@@ -158,10 +158,10 @@ This is the list of the API endpoints deprecated in Percona Everest v1.2.0 and r
 - [EVEREST-1399](https://perconadev.atlassian.net/browse/EVEREST-1399) The Resource per node now correctly shows the preset value set when creating the database. Before, the value set during and after database creation did not match.
 
 
-- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - We resolved an issue where a user not included in the RBAC configuration (lacking permissions) could access certain information on Percona Everest.
+- [EVEREST-1407](https://perconadev.atlassian.net/browse/EVEREST-1407) - We resolved an issue where a user not included in the RBAC configuration (lacking permissions) could access certain information on OpenEverest.
 
 
-- [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the Percona Everest GUI. This issue has now been resolved.
+- [EVEREST-1430](https://perconadev.atlassian.net/browse/EVEREST-1430) - We encountered a problem that prevented us from navigating back to the namespace settings page after upgrading the database operator in the OpenEverest GUI. This issue has now been resolved.
 
 - [EVEREST-1444](https://perconadev.atlassian.net/browse/EVEREST-1444) - The **Create database** wizard now correctly displays an error if the user does not have database-engines permissions. Also, if the user doesn’t have access to at least one database engine, then that namespace doesn't show up on the list.
 
@@ -195,7 +195,7 @@ If users do not have the necessary permissions to perform an action, you can now
 - [EVEREST-1526](https://perconadev.atlassian.net/browse/EVEREST-1526) - We resolved an issue where users lacking backup storage permissions could create a DB cluster with a backup schedule using a storage location.
 
 
-- [EVEREST-1532](https://perconadev.atlassian.net/browse/EVEREST-1532) - The option to upgrade an operator is absent on the Percona Everest UI when the database engine name is included in the RBAC policy.
+- [EVEREST-1532](https://perconadev.atlassian.net/browse/EVEREST-1532) - The option to upgrade an operator is absent on the OpenEverest UI when the database engine name is included in the RBAC policy.
 
 
 - [EVEREST-1541](https://perconadev.atlassian.net/browse/EVEREST-1541) - We fixed an issue where the custom number of nodes was not functioning during the setup of MySQL databases.

@@ -1,29 +1,29 @@
-# What's new in Percona Everest 0.8.0
+# What's new in OpenEverest 0.8.0
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source cloud native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source cloud native database platform that helps developers deploy code faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 Version 0.8.0 introduces the following changes:
 
 ## Beta release
 
-We're excited to announce that Percona Everest is now in Beta!
+We're excited to announce that OpenEverest is now in Beta!
 
-Under development for the past six months and in testing since October 2023, we're now taking Percona Everest public, making it open for anyone who wants to explore our Cloud Native database platform.
+Under development for the past six months and in testing since October 2023, we're now taking OpenEverest public, making it open for anyone who wants to explore our Cloud Native database platform.
 
 Be an early adopter and join us in driving its progress!
 
 ## Release highlights
 
-### Breaking change in Percona Everest 0.8.0
+### Breaking change in OpenEverest 0.8.0
 
 !!! warning
-    Percona Everest introduces a breaking change that prevents you from directly upgrading to version 0.8.0.
+    OpenEverest introduces a breaking change that prevents you from directly upgrading to version 0.8.0.
 
-Before installing Percona Everest version 0.8.0, make sure to remove any previous version from your system. After uninstalling the previous version, you can install Percona Everest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
+Before installing OpenEverest version 0.8.0, make sure to remove any previous version from your system. After uninstalling the previous version, you can install OpenEverest 0.8.0 using the [Quick Installation script](../quickstart-guide/qs-overview.md) or the [manual installation procedure](../install/SetupPrereqs.md).
 
-To uninstall the previous version of Percona Everest:
+To uninstall the previous version of OpenEverest:
 {.power-number}
 
 1. Identify the namespace:
@@ -35,7 +35,7 @@ To uninstall the previous version of Percona Everest:
 2. Uninstall Everest:
 
     !!! warning "Important"
-        To uninstall Percona Everest, use the uninstall command with the old CLI binary.
+        To uninstall OpenEverest, use the uninstall command with the old CLI binary.
 
     ```sh
     everestctl uninstall
@@ -97,9 +97,9 @@ To uninstall the previous version of Percona Everest:
 
 ### Multiple namespaces
 
-Starting with Percona Everest 0.8.0, we have introduced a new feature called **Multiple namespaces**. With this feature, you can create separate groups of resources within a single cluster. Namespaces enable you to partition your clusters logically, organizing and managing the resources effectively without impacting the other resources in the same cluster.
+Starting with OpenEverest 0.8.0, we have introduced a new feature called **Multiple namespaces**. With this feature, you can create separate groups of resources within a single cluster. Namespaces enable you to partition your clusters logically, organizing and managing the resources effectively without impacting the other resources in the same cluster.
 
-To view the list of configured namespaces, navigate to <i class="uil uil-cog"></i> **Settings > Namespaces** on the Percona Everest UI.
+To view the list of configured namespaces, navigate to <i class="uil uil-cog"></i> **Settings > Namespaces** on the OpenEverest UI.
 
 ![!image](../images/everest_multinamespaces.png)
 
@@ -107,7 +107,7 @@ To gain a deeper understanding of this feature, refer to our comprehensive [docu
 
 ### Support for scheduled backups for PostgreSQL
 
-We’re expanding Percona Everest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostgreSQL as well.
+We’re expanding OpenEverest’s schedule backup functionality to include PostgreSQL databases. This enables you to run automatic backups at predefined times for PostgreSQL as well.
 
 ![!image](../images/PostreSQL_Backups.png)
 
@@ -125,7 +125,7 @@ However, due to a limitation on the PostgreSQL Operator, you cannot add more tha
 ## Bugs fixed
 
 - [EVEREST-802](https://perconadev.atlassian.net/browse/EVEREST-802) - When editing a MongoDB database, the **Storage location** field on the **Backups** page is now disabled to prevent changes to the current location. This limitation stems from a restriction in Everest, which currently restricts MongoDB databases to utilizing a single storage location for backups.
-- [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - While reinstalling Percona Everest, the login token was not displayed. To log in to Percona Everest, the token from the previous installation had to be used. We have resolved the issue, and now uninstalling Percona Everest removes the token also, which means that a new token will be generated upon subsequent installation.
+- [EVEREST-814](https://perconadev.atlassian.net/browse/EVEREST-814) - While reinstalling OpenEverest, the login token was not displayed. To log in to OpenEverest, the token from the previous installation had to be used. We have resolved the issue, and now uninstalling OpenEverest removes the token also, which means that a new token will be generated upon subsequent installation.
 - [EVEREST-827](https://perconadev.atlassian.net/browse/EVEREST-827) - When trying to set up a fourth scheduled backup for PostgreSQL databases, Everest now notifies that initiating another backup is not possible when three backup schedules are already in place. This restriction is due to a current limitation on the PostgreSQL Operator, which does not allow more than three backup schedules for the PostgreSQL databases.
 - [EVEREST-822](https://perconadev.atlassian.net/browse/EVEREST-822) - Fixed an issue that sometimes occurred when restoring a Postgresql database from a backup.
 - [EVEREST-826](https://perconadev.atlassian.net/browse/EVEREST-826)  - When initiating an on-demand backup for PostgreSQL databases, Everest would incorrectly perform incremental backups instead of conducting a full backup. This issue is now fixed.

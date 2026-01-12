@@ -1,7 +1,7 @@
 # Install everestctl
 
 !!! info "Important"
-    Installing `everestctl` is only necessary if you want to use it to install Percona Everest using `everestctl`; it is **not** required if you prefer to install Percona Everest with Helm.
+    Installing `everestctl` is only necessary if you want to use it to install OpenEverest using `everestctl`; it is **not** required if you prefer to install OpenEverest with Helm.
 
 You can download the latest version of `everestctl` visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest){:target="_blank"}.
 
@@ -77,6 +77,6 @@ You can download the latest version of `everestctl` visiting the latest release 
 
 ## Next steps
 
-Start by installing Percona Everest:
+Start by installing OpenEverest:
 
 [Install Everest :material-arrow-right:](../install/installEverest.md){.md-button}

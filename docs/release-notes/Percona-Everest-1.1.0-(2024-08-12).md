@@ -1,14 +1,14 @@
-# What's new in Percona Everest 1.1.0
+# What's new in OpenEverest 1.1.0
 
 !!! warning
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of OpenEverest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to OpenEverest version 1.4.0 as soon as possible. If you do not upgrade, OpenEverest will no longer function.
     
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
 Version 1.1.0 introduces the following changes:
 
@@ -26,7 +26,7 @@ Version 1.1.0 introduces the following changes:
 ## Release highlights
 
 !!! info "Important"
-    Percona Everest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
+    OpenEverest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
 
 
 ### Enhancements for PostgreSQL disaster recovery
@@ -63,7 +63,7 @@ Here's how it works:
 
 - [EVEREST-1259](https://perconadev.atlassian.net/browse/EVEREST-1259) - We've implemented a rate limiter to control how many API requests you can make within a set time frame. If you exceed this limit on the login page, you'll receive an error message.
 
-- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) --Starting with Percona Everest 1.1.0, you can now upgrade the database version directly from the **Namespaces** page, skipping the need to use the edit DB wizard.
+- [EVEREST-1134](https://perconadev.atlassian.net/browse/EVEREST-1134) --Starting with OpenEverest 1.1.0, you can now upgrade the database version directly from the **Namespaces** page, skipping the need to use the edit DB wizard.
 
 - [EVEREST-1153](https://perconadev.atlassian.net/browse/EVEREST-1153) - We've improved the CLI experience for install, upgrade, and uninstall commands by streamlining it with concise loading animations and spinners.
 
@@ -72,24 +72,24 @@ Here's how it works:
 - [EVEREST-1196](https://perconadev.atlassian.net/browse/EVEREST-1196) - We've added a confirmation dialog that appears when you try to exit the wizard using the side navigation.
 
 
-- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across Percona Everest for a consistent look.
+- [EVEREST-1070](https://perconadev.atlassian.net/browse/EVEREST-1070) - We've updated the **restore** icon across OpenEverest for a consistent look.
 
 - [EVEREST-247](https://perconadev.atlassian.net/browse/EVEREST-247) - We've updated the Postgresql database icon on the UI for better clarity and visibility.
 
 ### Backups and schedules
 
-- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with Percona Everest 1.1.0, you can no longer initiate an on-demand backup while another backup is in progress. This change helps maintain data integrity and minimizes potential impact on database performance.
+- [EVEREST-1092](https://perconadev.atlassian.net/browse/EVEREST-1092) - Starting with OpenEverest 1.1.0, you can no longer initiate an on-demand backup while another backup is in progress. This change helps maintain data integrity and minimizes potential impact on database performance.
 
-- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  In Percona Everest 1.1.0, you're limited to using a maximum of three different backup storages for PostgreSQL, including those used in existing backup schedules. This restriction ensures reliable backup restoration.
+- [EVEREST-1220](https://perconadev.atlassian.net/browse/EVEREST-1220) -  In OpenEverest 1.1.0, you're limited to using a maximum of three different backup storages for PostgreSQL, including those used in existing backup schedules. This restriction ensures reliable backup restoration.
 
 - [EVEREST-1071](https://perconadev.atlassian.net/browse/EVEREST-1071)- We've introduced a **Deleting** state that remains active until all resources associated with the backup are fully removed.
 
 - [EVEREST-1214](https://perconadev.atlassian.net/browse/EVEREST-1214) - We've made it easier to manage backup schedules by removing the restriction on deleting PostgreSQL schedules.
 
 
-- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with Percona Everest 1.1.0, you cannot edit the region and bucket for the existing backup storage.
+- [EVEREST-1223](https://perconadev.atlassian.net/browse/EVEREST-1223) - Starting with OpenEverest 1.1.0, you cannot edit the region and bucket for the existing backup storage.
 
-- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with Percona Everest 1.1.0, you cannot create backup storages with the same bucket, region, and URL. 
+- [EVEREST-1226](https://perconadev.atlassian.net/browse/EVEREST-1226) - Starting with OpenEverest 1.1.0, you cannot create backup storages with the same bucket, region, and URL. 
 
 - [EVEREST-1229](https://perconadev.atlassian.net/browse/EVEREST-1229) - For a better user experience, you can now see which backup storage is being used for both on-demand backups and schedules.
 
@@ -104,7 +104,7 @@ Here's how it works:
 
 - [EVEREST-1181](https://perconadev.atlassian.net/browse/EVEREST-1181) - The option to upgrade the major version of the database engine for MongoDB and PostgreSQL is now correctly disabled in the database edit section, reflecting the intended functionality.
 
-- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - The issue causing an error during namespace deletion while uninstalling Percona Everest has been resolved.
+- [EVEREST-859](https://perconadev.atlassian.net/browse/EVEREST-859) - The issue causing an error during namespace deletion while uninstalling OpenEverest has been resolved.
 
 
 - [EVEREST-1074](https://perconadev.atlassian.net/browse/EVEREST-1074) - The backup page performance is now optimized for adding and editing backup.
@@ -117,7 +117,7 @@ Here's how it works:
 
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The restore page now correctly updates the restore information. 
 
-- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by Percona Everest. The issue has been resolved now.
+- [EVEREST-1244](https://perconadev.atlassian.net/browse/EVEREST-1244) - While attempting to restore a database, there was a discrepancy between the messages indicating the status of the restoration process and the actual actions being taken by OpenEverest. The issue has been resolved now.
 
 - [EVEREST-307](https://perconadev.atlassian.net/browse/EVEREST-307) - CLI errors now display more user-friendly messages without exceptions and stack traces.
 

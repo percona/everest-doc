@@ -1,12 +1,12 @@
-# Install Percona Everest on Openshift
+# Install OpenEverest on Openshift
 
-This section explains how to install Percona Everest using Openshift.
+This section explains how to install OpenEverest using Openshift.
 
 
 
-## Install Percona Everest
+## Install OpenEverest
 
-Here are the steps to install Percona Everest with OpenShift compatibility enabled:
+Here are the steps to install OpenEverest with OpenShift compatibility enabled:
 {.power-number}
 
 1. Run the following command:
@@ -70,7 +70,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
 
     The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
-    To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+    To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
@@ -131,7 +131,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
             Optimized OS from Google   6.1.100+         containerd://1.7.19
             ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
+        4. To launch the OpenEverest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
 
@@ -141,19 +141,19 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-            To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
+            To launch the OpenEverest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
 
 
-        2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to Percona Everest:       
+        2. (**Recommended**) When **Transport Layer Security (TLS) is enabled**, run the following command to connect to OpenEverest:       
                     
             ```sh
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ``` 
 
-            Percona Everest will be available at `http://127.0.0.1:8443`.
+            OpenEverest will be available at `http://127.0.0.1:8443`.
 
 
-            For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+            For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
 
 ## Next steps
 

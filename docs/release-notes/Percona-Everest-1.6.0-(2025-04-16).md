@@ -1,6 +1,6 @@
-# What's new in Percona Everest 1.6.0
+# What's new in OpenEverest 1.6.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "🔑 Expand to unleash the key updates"
@@ -10,21 +10,21 @@
     | **1.**|[Manual storage scaling](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Increase the capacity of your storage through manual storage scaling|
     | **2.**|[MongoDB: Major DB updates](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Support for major version upgrades of MongoDB|
     | **3.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17|
-    | **4.**|[Removed support for PostgreSQL 12](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#removed-support-for-postgresql-12)|Percona Everest 1.6.0 discontinues support for PostgreSQL 12|
+    | **4.**|[Removed support for PostgreSQL 12](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#removed-support-for-postgresql-12)|OpenEverest 1.6.0 discontinues support for PostgreSQL 12|
     | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
-    | **6.**|[New features](Percona-Everest-1.6.0-%282025-04-16%29.html#new-features)|Check out the new features introduced in Percona Everest 1.6.0|
-    | **7.**|[Improvements](Percona-Everest-1.6.0-%282025-04-16%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.6.0|
-    | **8.**|[Bugs](Percona-Everest-1.6.0-%282025-04-16%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.6.0|
-    | **9.**|[Known limitation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#known-limitation)|Discover all the known limitations in Percona Everest 1.6.0|
+    | **6.**|[New features](Percona-Everest-1.6.0-%282025-04-16%29.html#new-features)|Check out the new features introduced in OpenEverest 1.6.0|
+    | **7.**|[Improvements](Percona-Everest-1.6.0-%282025-04-16%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.6.0|
+    | **8.**|[Bugs](Percona-Everest-1.6.0-%282025-04-16%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.6.0|
+    | **9.**|[Known limitation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.6.0-%282025-04-16%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.6.0|
 
 
 ## 🌟 Release highlights
 
 ===  "📈 Storage scaling"
 
-    ### Scale your storage with ease with Percona Everest 1.6.0
+    ### Scale your storage with ease with OpenEverest 1.6.0
 
-    Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your database, offering greater control over resource allocation as your needs evolve.
+    Starting with OpenEverest 1.6.0, you can leverage manual storage scaling to increase the capacity of your database, offering greater control over resource allocation as your needs evolve.
     
     **Prerequisites for storage scaling**
 
@@ -34,7 +34,7 @@
 
     **How to modify storage capacity**
 
-    To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
+    To increase the DISK for a database, go to the OpenEverest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
 
     ![!image](../images/edit_storage_capacity.png)
 
@@ -45,9 +45,9 @@
 
     ### Seamless major version upgrades for MongoDB
 
-    Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your applications remain secure, performant, and compliant with the latest MongoDB features.
+    OpenEverest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**. This enhancement ensures your applications remain secure, performant, and compliant with the latest MongoDB features.
 
-    To upgrade your MongoDB database, navigate to the Percona Everest homepage and select the database you wish to upgrade. On the **Overview** page, locate the **DB Details** panel and click **Edit** next to **Basic Information**. Select the desired version and click **Upgrade** to begin the process.
+    To upgrade your MongoDB database, navigate to the OpenEverest homepage and select the database you wish to upgrade. On the **Overview** page, locate the **DB Details** panel and click **Edit** next to **Basic Information**. Select the desired version and click **Upgrade** to begin the process.
 
     ![!image](../images/database_upgrade.png)
     
@@ -60,16 +60,16 @@
 
     ### Support for PostgreSQL Operator 2.6.0 and PostgreSQL 17
 
-    Percona Everest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
+    OpenEverest 1.6.0 now includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
 
 ## 🛑 Removed support for PostgreSQL 12
 
-Percona Everest 1.6.0 **no longer supports** PostgreSQL 12.
+OpenEverest 1.6.0 **no longer supports** PostgreSQL 12.
 
 ### Action required
 
-To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
+To upgrade to OpenEverest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
 
 **Migration Guide:** Follow our [PostgreSQL migration](https://docs.percona.com/everest/reference/postgresql12_migration.html) procedure for a step-by-step guide to a seamless upgrade.
 
@@ -78,28 +78,28 @@ To upgrade to Percona Everest 1.6.0, you must first migrate your clusters to a s
 !!! warning "GCR deprecation"
     GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on the Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+    All OpenEverest versions prior to 1.4.0 depend on images hosted on the Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
 
 ### Impact
 
-Percona Everest versions older than 1.4.0 will cease to function after this date.
+OpenEverest versions older than 1.4.0 will cease to function after this date.
 
 ### Action required
 
-We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+We strongly recommend upgrading to OpenEverest version 1.4.0 or later as soon as possible. If you do not upgrade, OpenEverest will no longer function.
     
 For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
 ## New features
 
-- [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with Percona Everest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases, respectively.
+- [EVEREST-1870](https://perconadev.atlassian.net/browse/EVEREST-1870), [EVEREST-1871](https://perconadev.atlassian.net/browse/EVEREST-1871), [EVEREST-1872](https://perconadev.atlassian.net/browse/EVEREST-1872): Starting with OpenEverest 1.6.0, you can leverage manual storage scaling to increase the capacity of your storage for MySQL, MongoDB, and PostgreSQL databases, respectively.
 
-- [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): Percona Everest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**.
+- [EVEREST-1841](https://perconadev.atlassian.net/browse/EVEREST-1841): OpenEverest 1.6.0 introduces support for major version upgrades of MongoDB, enabling you to upgrade your databases with **minimal downtime and disruption**.
 
-- [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : Percona Everest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
+- [EVEREST-1843](https://perconadev.atlassian.net/browse/EVEREST-1843) : OpenEverest 1.6.0 includes support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17.
 
-- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress** resource to expose the Percona Everest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the Percona Everest UI and APIs.
+- [EVEREST-1986](https://perconadev.atlassian.net/browse/EVEREST-1986): The Helm chart now supports deploying an **Ingress** resource to expose the OpenEverest server externally. This enhancement enables seamless integration with ingress controllers (e.g., NGINX) to manage access to the OpenEverest UI and APIs.
 
 - [EVEREST-1852](https://perconadev.atlassian.net/browse/EVEREST-1852): PMM can now be deployed as a sub-chart by setting `pmm.enabled=true`. As the PMM chart currently lacks support for namespace overrides, it will be deployed in the designated release namespace: `everest-system`.
 
@@ -165,6 +165,6 @@ We strongly recommend using PostgreSQL version 17.4 instead of 17.2 to take adva
 
 ## :rocket: Upgrade now
 
-Upgrade to **Percona Everest 1.6.0** to access these new features and improvements. 
+Upgrade to **OpenEverest 1.6.0** to access these new features and improvements. 
 
 :mag: Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.

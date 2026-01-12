@@ -1,10 +1,10 @@
-# Manage users in Percona Everest
+# Manage users in OpenEverest
 
-Percona Everest provides user management capabilities, enabling you to securely log in through either the Percona Everest UI or the API.
+OpenEverest provides user management capabilities, enabling you to securely log in through either the OpenEverest UI or the API.
 
-Local user management involves administering Percona Everest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
+Local user management involves administering OpenEverest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
-When you install Percona Everest, an `admin` user is automatically created, granting full access to the system.
+When you install OpenEverest, an `admin` user is automatically created, granting full access to the system.
 
 !!! note alert alert-primary "Note"
 
@@ -42,7 +42,7 @@ Decoding the base64 encoded value will yield a YAML that appears as follows:
 
 ## User management commands
 
-This section provides a list of `everestctl` commands for managing users in Percona Everest.
+This section provides a list of `everestctl` commands for managing users in OpenEverest.
 
 ### Retrieve password
 
@@ -95,13 +95,13 @@ You will be prompted to enter the password for this user.
 
 !!! info "Important"
 
-    For Percona Everest versions 1.0.0 and later, new users have full access to the system. However, once RBAC support is in place, an admin user will be able to manage permissions for users, granting them fine-grained control over database resources.
+    For OpenEverest versions 1.0.0 and later, new users have full access to the system. However, once RBAC support is in place, an admin user will be able to manage permissions for users, granting them fine-grained control over database resources.
 
 For detailed information on granting permissions to new users, see [assign permissions to a new user](rbac.md#assign-users-to-a-group-and-grant-them-permissions) section.
 
 ### List the users
 
-To list all the users in Percona Everest:
+To list all the users in OpenEverest:
 
 ```sh
 everestctl accounts list
@@ -118,7 +118,7 @@ everestctl accounts delete -u <username>
 
 ## JSON Web Token (JWT) and keys
 
-When you log in from the UI, Percona Everest issues a JSON Web Token to authenticate the requests. By default, this token is valid for **24** hours, after which you are expected to log in again.
+When you log in from the UI, OpenEverest issues a JSON Web Token to authenticate the requests. By default, this token is valid for **24** hours, after which you are expected to log in again.
 
 
 !!! info "Important"

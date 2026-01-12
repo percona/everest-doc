@@ -1,15 +1,15 @@
-# Percona Everest quick install guide
+# OpenEverest quick install guide
 
-Helm simplifies the installation of Percona Everest. With this guide, you'll be up and running with Percona Everest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
+Helm simplifies the installation of OpenEverest. With this guide, you'll be up and running with OpenEverest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
 Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
-    If you prefer an alternative method, you can [install Percona Everest using everestctl](install/installEverest.md).
+    If you prefer an alternative method, you can [install OpenEverest using everestctl](install/installEverest.md).
 
 ## Prerequisites
 
-Before getting started with Percona Everest, do the following:
+Before getting started with OpenEverest, do the following:
 {.power-number}
 
 1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm){:target="_blank"}.
@@ -20,9 +20,9 @@ Before getting started with Percona Everest, do the following:
      
     !!! note alert alert-primary "Note"
 
-        Percona Everest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
+        OpenEverest assists with installing all the necessary operators and required packages, but does not deploy a Kubernetes cluster.
 
-       We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
+       We recommend setting up OpenEverest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE).
          
       [Create EKS cluster :material-arrow-right:](install/eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](install/gke.md){.md-button}
 
@@ -50,9 +50,9 @@ Before getting started with Percona Everest, do the following:
         ```
 
 
-## Install Percona Everest
+## Install OpenEverest
 
-To install Percona Everest using Helm follow these steps:
+To install OpenEverest using Helm follow these steps:
 {.power-number}
 
 1. Add the Percona Helm repository.
@@ -62,7 +62,7 @@ To install Percona Everest using Helm follow these steps:
     helm repo update
     ```
 
-2. Install Percona Everest.
+2. Install OpenEverest.
 
 
     ```sh
@@ -72,7 +72,7 @@ To install Percona Everest using Helm follow these steps:
     ```
 
 
-    ??? info " 🌐 Install Percona Everest and access it using Ingress"
+    ??? info " 🌐 Install OpenEverest and access it using Ingress"
 
         **Prerequisite**
 
@@ -82,11 +82,11 @@ To install Percona Everest using Helm follow these steps:
 
         **Example**
 
-        To install Percona Everest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
+        To install OpenEverest and access using [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/#what-is-ingress){:target="_blank"}, here are the steps:
         {.power-number}
 
 
-        1. Install Percona Everest:
+        1. Install OpenEverest:
 
             ```sh
             helm install everest percona/everest \
@@ -105,7 +105,7 @@ To install Percona Everest using Helm follow these steps:
             kubectl get ingress -n everest-system
             ```
 
-            Make sure the address provided is valid and that it correctly routes to the Percona Everest service.
+            Make sure the address provided is valid and that it correctly routes to the OpenEverest service.
 
         ??? example "Example: Custom YAML configuration file"
 
@@ -131,7 +131,7 @@ To install Percona Everest using Helm follow these steps:
             #    hosts:
             #      - everest.example.com
             ```
-            Install Percona Everest using this file:
+            Install OpenEverest using this file:
 
             ```sh
             helm install everest percona/everest \
@@ -139,9 +139,9 @@ To install Percona Everest using Helm follow these steps:
             -f everest-values.yaml
             ```
 
-    ??? info "🔒 Install Percona Everest with TLS enabled"
+    ??? info "🔒 Install OpenEverest with TLS enabled"
 
-        Install Percona Everest with TLS enabled:
+        Install OpenEverest with TLS enabled:
 
         ```sh
         helm install everest-core percona/everest \
@@ -151,18 +151,18 @@ To install Percona Everest using Helm follow these steps:
         ```
 
 
-        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+        For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
 
-    Once Percona Everest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
+    Once OpenEverest is running successfully, you can create additional database namespaces. For detailed information, refer to the section on [namespace management](administer/manage_namespaces.md).
 
     !!! note
         - If `dbNamespace.namespaceOverride` is set, the specified namespace will be provisioned instead of the default `everest` namespace.
         - If `dbNamespace.enabled=false` is set, no namespaces will be provisioned. You can provision namespaces later with the `everestctl namespaces add <NAMESPACE>` command.
-        - If you installed Percona Everest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
+        - If you installed OpenEverest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
 
 ## Post-installation steps
 
-Once you have successfully installed Percona Everest, proceed with the following steps:
+Once you have successfully installed OpenEverest, proceed with the following steps:
 {.power-number}
 
 1. Retrieve the `admin` password.
@@ -174,7 +174,7 @@ Once you have successfully installed Percona Everest, proceed with the following
     !!! note
         The default admin password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
-    For information on user management, see the section [manage users in Percona Everest](administer/manage_users.md).
+    For information on user management, see the section [manage users in OpenEverest](administer/manage_users.md).
 
 2.  Access the Everest UI/API using one of the following options, as the `everest` Service is not exposed with an external IP by default:
 
@@ -201,7 +201,7 @@ Once you have successfully installed Percona Everest, proceed with the following
             ```
     === "Ingress"
 
-        To access Percona Everest, open your browser and go to: `https://everest.example.com`.
+        To access OpenEverest, open your browser and go to: `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.
@@ -240,19 +240,19 @@ Once you have successfully installed Percona Everest, proceed with the following
                 gke-everest-test-default-pool-8bbed860-s0hg   Ready    <none>   3m35s v1.30.3-gke.1969001   10.204.15.201   34.175.201.246   Container-Optimized OS from Google   6.1.100+       containerd://1.7.19
                 ```
         
-        4. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
+        4. To launch the OpenEverest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port forwarding"
         The `kubectl port-forward` command in Kubernetes is used to create a temporary connection between your local machine and a specific Kubernetes resource (e.g., a Pod, Service, or Deployment) by forwarding traffic from a local port to a port on the resource. 
         
-        1. Run the following command to setup a port-forward to the Percona Everest server service:
+        1. Run the following command to setup a port-forward to the OpenEverest server service:
 
                 
             ```sh
             kubectl port-forward svc/everest 8080:8080 -n everest-system
             ``` 
 
-            Percona Everest will be available at `http://127.0.0.1:8080`. This method is mostly useful for testing purposes. 
+            OpenEverest will be available at `http://127.0.0.1:8080`. This method is mostly useful for testing purposes. 
 
             ??? example "When TLS is enabled"
 
@@ -260,7 +260,7 @@ Once you have successfully installed Percona Everest, proceed with the following
                 kubectl port-forward svc/everest 8443:443 -n everest-system
                 ```
 
-                Percona Everest will be available at `https://127.0.0.1:8443`.
+                OpenEverest will be available at `https://127.0.0.1:8443`.
 
 ## Next steps
 

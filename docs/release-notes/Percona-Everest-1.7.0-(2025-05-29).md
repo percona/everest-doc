@@ -1,49 +1,49 @@
-# 📦 What's new in Percona Everest 1.7.0
+# 📦 What's new in OpenEverest 1.7.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 !!! warning "Before you upgrade"
-    - Before upgrading to Percona Everest 1.7.0, run the following command:
+    - Before upgrading to OpenEverest 1.7.0, run the following command:
 
         ```sh
         kubectl label namespaces everest-system app.kubernetes.io/managed-by-
         ```
         For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
 
-    - Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in Percona Everest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
+    - Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in OpenEverest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
 ??? info "🔑 Expand to unleash the key updates"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters|
+    | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters|
     | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
     | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
     | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
-    | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in Percona Everest 1.7.0|
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in Percona Everest 1.7.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.7.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.7.0|
-    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in Percona Everest 1.7.0|
+    | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in OpenEverest 1.7.0|
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in OpenEverest 1.7.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.7.0|
+    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.7.0|
+    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.7.0|
 
 
 ## 🌟 Release highlights
 
 === "☁️ GKE Autopilot clusters"
 
-    ### Deploy Percona Everest on GKE Autopilot
+    ### Deploy OpenEverest on GKE Autopilot
 
-     You can now install Percona Everest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
+     You can now install OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters. GKE Autopilot provides a fully managed Kubernetes environment, where Google automatically handles node provisioning, scaling, and security. 
 
 
     📚 Learn more about GKE Autopilot in the official [documentation](https://cloud.google.com/kubernetes-engine/docs/concepts/autopilot-overview){:target="_blank"}.
 
 ===  "⎈ Pod scheduling policies"
 
-    ### Pod scheduling policies in Percona Everest
+    ### Pod scheduling policies in OpenEverest
     
-    We are thrilled to introduce Pod scheduling policies for Percona Everest. This feature allows database administrators to manage database workload scheduling on Kubernetes. These policies enhance system resilience and ensure that your resources are utilized to their fullest potential.
+    We are thrilled to introduce Pod scheduling policies for OpenEverest. This feature allows database administrators to manage database workload scheduling on Kubernetes. These policies enhance system resilience and ensure that your resources are utilized to their fullest potential.
     
     The Pod scheduling policy is **preset** that includes a set of Kubernetes Affinity rules applied to the appropriate DB cluster components.
 
@@ -59,7 +59,7 @@
     #### Default configuration for Pod scheduling policies
 
     
-    In Percona Everest, the default pod scheduling policies are **preset** rules that help ensure the optimal placement of database components across a Kubernetes cluster. These predefined Pod scheduling policies come **bundled with every Percona Everest deployment**. Thus, Percona Everest users can utilize these predefined settings without the need to create custom rules for every database cluster they set up.
+    In OpenEverest, the default pod scheduling policies are **preset** rules that help ensure the optimal placement of database components across a Kubernetes cluster. These predefined Pod scheduling policies come **bundled with every OpenEverest deployment**. Thus, OpenEverest users can utilize these predefined settings without the need to create custom rules for every database cluster they set up.
 
     ![!image](../images/default_mongo_policy.png)
 
@@ -78,7 +78,7 @@
 
     ### Improved Security with TLS support
 
-    Starting with version 1.7.0, Percona Everest can be set up to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. **TLS encrypts communication between clients and the API server, safeguarding** data from interception or tampering. 
+    Starting with version 1.7.0, OpenEverest can be set up to use Transport Layer Security (TLS) for all incoming connections to the Everest API server. **TLS encrypts communication between clients and the API server, safeguarding** data from interception or tampering. 
 
     Administrators can configure server certificates and private keys to enable secure HTTPS access. This enhances the overall security of production environments.
 
@@ -88,16 +88,16 @@
     
     ### Support for Percona XtraDB Cluster (PXC) operator 1.17.0
 
-    Percona Everest 1.7.0 now includes support for PXC Operator version 1.17.0.
+    OpenEverest 1.7.0 now includes support for PXC Operator version 1.17.0.
 
 
 ## 🛑 Breaking changes
 
 ### Pod scheduling policy migration for GitOps users
 
-With the introduction of Pod scheduling policies in Percona Everest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DatabaseCluster` CRD.
+With the introduction of Pod scheduling policies in OpenEverest 1.7.0, a new field named `podSchedulingPolicyName` has been added to the `spec` section of the `DatabaseCluster` CRD.
 
-During the upgrade process to Percona Everest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your Percona Everest deployment, you must manually add the `podSchedulingPolicyName` field to your `DatabaseCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
+During the upgrade process to OpenEverest 1.7.0, we run a migration script to apply the default scheduling policies to existing DB clusters. However, if you are using GitOps to manage your OpenEverest deployment, you must manually add the `podSchedulingPolicyName` field to your `DatabaseCluster` CR manifests to ensure that the default scheduling policies are applied correctly.
 
 The default pod scheduling policies are predefined for each database engine and are as follows:
 
@@ -124,7 +124,7 @@ The default pod scheduling policies are predefined for each database engine and 
 
 ### OIDC integration with Microsoft Entra ID
 
-If you are using Microsoft Entra ID as your OIDC provider for Percona Everest, please be aware of a breaking change in the way access tokens are validated. 
+If you are using Microsoft Entra ID as your OIDC provider for OpenEverest, please be aware of a breaking change in the way access tokens are validated. 
 
 The access tokens issued by Microsoft Entra ID must now include the `aud` claim with the value set to the correct application identifier. This can be achieved by requesting the `<your-app-client-id>/.default` scope when obtaining the access token.
 Ensure that you configure Everest's OIDC settings requesting the correct scope to avoid any disruptions in your authentication flow:
@@ -152,26 +152,26 @@ everestctl settings oidc configure \
 
 - [EVEREST-1607](https://perconadev.atlassian.net/browse/EVEREST-1607): Database administrators can now quickly view the current affinity configuration status directly from the DB Overview tab. Additionally, a direct navigation link to the **Affinity** section in the **Components** tab has been added, allowing administrators to access and modify Kubernetes affinity rules for the database components. 
 
-- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): The **Components** tab now features a new **Topology View **to improve the visibility and management of DB clusters deployed in Percona Everest. This interactive view visually represents the components of the cluster, including pods, services, status, and their relationships.
+- [EVEREST-1862](https://perconadev.atlassian.net/browse/EVEREST-1862): The **Components** tab now features a new **Topology View **to improve the visibility and management of DB clusters deployed in OpenEverest. This interactive view visually represents the components of the cluster, including pods, services, status, and their relationships.
 
 - [EVEREST-1987](https://perconadev.atlassian.net/browse/EVEREST-1987): We have added support for PXC operator v1.17.0.
 
-- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This improvement **simplifies workload distribution** in Percona Everest. Also, it helps to **optimize resource utilization** and efficiency, ensuring smoother operations and improved scheduling.
+- [EVEREST-1998](https://perconadev.atlassian.net/browse/EVEREST-1998) Database administrators now have increased control over creating, updating, and deleting Pod Scheduling Policies. This improvement **simplifies workload distribution** in OpenEverest. Also, it helps to **optimize resource utilization** and efficiency, ensuring smoother operations and improved scheduling.
 
 
 
 ## Improvements
 
-- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106): Percona Everest administrators can now delete users created with `everestctl`. Once a user is removed, they can no longer use their access tokens to make requests to the Everest API. This improves security by preventing unauthorized access by former users and allows for better user permission management within Percona Everest.
+- [EVEREST-1106](https://perconadev.atlassian.net/browse/EVEREST-1106): OpenEverest administrators can now delete users created with `everestctl`. Once a user is removed, they can no longer use their access tokens to make requests to the Everest API. This improves security by preventing unauthorized access by former users and allows for better user permission management within OpenEverest.
 
-- [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): Percona Everest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
+- [EVEREST-1180](https://perconadev.atlassian.net/browse/EVEREST-1180): OpenEverest can now be configured to use Transport Layer Security (TLS) for all incoming connections to the Everest API server.
 
 - [EVEREST-1901](https://perconadev.atlassian.net/browse/EVEREST-1901): When adding a **Backup Bucket**, trailing spaces at the end of the bucket name prevented it from being added. This issue often occurred when copying names, which caused confusion. We have resolved this by removing trailing spaces.
 
 
 - [EVEREST-1902](https://perconadev.atlassian.net/browse/EVEREST-1902): When adding  Monitoring Endpoint URLs, trailing spaces at the end of the URL prevented them from being added. This issue often occurred when copying URLs, leading to confusion. We have improved this by trimming trailing spaces.
 
-- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the Percona Everest UI, but the message stated that it could be changed based on performance needs. The UI now clearly shows that the Storage Class can only be selected during cluster creation.
+- [EVEREST-1974](https://perconadev.atlassian.net/browse/EVEREST-1974): The **Storage Class** field was previously non-editable when modifying a DB cluster in the OpenEverest UI, but the message stated that it could be changed based on performance needs. The UI now clearly shows that the Storage Class can only be selected during cluster creation.
 
 
 - [EVEREST-1914](https://perconadev.atlassian.net/browse/EVEREST-1914): Focus state is now correctly removed when users click outside of an input field on the UI. This enhances usability by ensuring that input fields no longer appear active after focus is lost.
@@ -211,18 +211,18 @@ Fixed an issue where enabling PMM monitoring led to multiple unnecessary reconci
 
     Thanks to @[aurimasniekis](https://github.com/aurimasniekis) for reporting and fixing this issue.
 
-- [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused Percona Everest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
+- [EVEREST-343](https://perconadev.atlassian.net/browse/EVEREST-343): Resolved an issue that caused OpenEverest installation to fail on Google Kubernetes Engine (GKE) Autopilot clusters.
 
 
 ## Known limitations
 
 ### Upgrade to v1.7.0 fails with Namespace error
 
-If you installed Percona Everest version prior to 1.4.0 and successively upgraded to version 1.6.0, you may run into issues when upgrading to version 1.7.0.
+If you installed OpenEverest version prior to 1.4.0 and successively upgraded to version 1.6.0, you may run into issues when upgrading to version 1.7.0.
 
 **Workaround**
 
-Run the following command before you upgrade to Percona Everest version 1.7.0:
+Run the following command before you upgrade to OpenEverest version 1.7.0:
 
 ```sh
 kubectl label namespaces everest-system app.kubernetes.io/managed-
@@ -230,12 +230,12 @@ kubectl label namespaces everest-system app.kubernetes.io/managed-
 
 ### Microsoft Entra ID
 
-When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
+When integrating Microsoft Entra ID as your OIDC provider for OpenEverest, it's essential to ensure that the access tokens issued are compatible with OpenEverest's token validation logic.
 
 📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## 🚀 Upgrade now
 
-Upgrade to **Percona Everest 1.7.0** to access these new features and improvements. 
+Upgrade to **OpenEverest 1.7.0** to access these new features and improvements. 
 
 📘 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.

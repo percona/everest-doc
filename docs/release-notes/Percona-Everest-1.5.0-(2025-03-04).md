@@ -1,29 +1,29 @@
-# What's new in Percona Everest 1.5.0
+# What's new in OpenEverest 1.5.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 
 ??? info "🔑 Updates at a glance"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Role-based access control (RBAC) Generally Available (GA)](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with Percona Everest 1.5.0 |
+    | **1.**|[Role-based access control (RBAC) Generally Available (GA)](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with OpenEverest 1.5.0 |
     | **2.**|[RBAC: Integration with IdP groups](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
     | **3.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
     | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in Percona Everest 1.5.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.5.0|
-    | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in Percona Everest 1.5.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.5.0|
+    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in OpenEverest 1.5.0|
+    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.5.0|
+    | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.5.0|
+    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.5.0|
 
 
 ## Release highlights
 
 === "RBAC GA"
 
-    ### Percona Everest: RBAC is now GA
+    ### OpenEverest: RBAC is now GA
 
-    We’re delighted to announce the General Availability of RBAC in Percona Everest 1.5.0.
+    We’re delighted to announce the General Availability of RBAC in OpenEverest 1.5.0.
 
     With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
@@ -37,7 +37,7 @@
 
     ### Streamlining RBAC with enhanced IdP group integration
 
-    Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in Percona Everest RBAC, you must set up the **groups** claim in your IdP provider configuration.
+    Starting with OpenEverest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in OpenEverest RBAC, you must set up the **groups** claim in your IdP provider configuration.
 
 
     Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
@@ -64,32 +64,32 @@
 
     ### Support for PSMDB 1.19.1 and PXC 1.16.1
 
-    Starting with Percona Everest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC Operator v1.16.1.
+    Starting with OpenEverest 1.5.0, we are thrilled to announce that we have added support for PSMDB Operator v1.19.1 and PXC Operator v1.16.1.
 
 ## Google Container Registry (GCR)
 
 !!! warning "GCR deprecation"
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **March 18, 2025**.
+    All OpenEverest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **March 18, 2025**.
 
     GCR is set to be **deprecated**, with its official shutdown scheduled for **May 20, 2025**.
 
-    All Percona Everest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
+    All OpenEverest versions prior to 1.4.0 depend on images hosted on Google Container Registry (GCR). These images will become unavailable after the shutdown date: **May 20, 2025**.
     
 ### Impact of GCR deprecation
 
-Percona Everest versions older than 1.4.0 will cease to function after this date.
+OpenEverest versions older than 1.4.0 will cease to function after this date.
 
 ### Action required
 
-We strongly recommend upgrading to Percona Everest version 1.4.0 or later as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+We strongly recommend upgrading to OpenEverest version 1.4.0 or later as soon as possible. If you do not upgrade, OpenEverest will no longer function.
     
 For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
 ## New features
 
-- [EVEREST-1799](https://perconadev.atlassian.net/browse/EVEREST-1799): Starting with Percona Everest 1.5.0, you can now assign RBAC policies to user groups obtained from an external IDP. This change simplifies permissions management for external users without the need for unique **sub IDs**. 
+- [EVEREST-1799](https://perconadev.atlassian.net/browse/EVEREST-1799): Starting with OpenEverest 1.5.0, you can now assign RBAC policies to user groups obtained from an external IDP. This change simplifies permissions management for external users without the need for unique **sub IDs**. 
 
 - [EVEREST-1547](https://perconadev.atlassian.net/browse/EVEREST-1547): After performing an Everest upgrade, you will now receive a notification indicating that the upgrade has been completed. You can then access all the new features by clicking the **Reload** button.
 
@@ -119,10 +119,10 @@ The `everestctl version` command has been updated to provide  information about 
 
 - [EVEREST-1794](https://perconadev.atlassian.net/browse/EVEREST-1794): We have improved the description of the help text for the `--keep-namespace` flag in the `everestctl namespaces remove` command. Previously, the flag did not clearly explain that it retains the namespace in Kubernetes while only removing everest-managed resources, which led to confusion.
 
-- [EVEREST-1795](https://perconadev.atlassian.net/browse/EVEREST-1795): When attempting to update a namespace using `everestctl` that was created with `kubectl` (not managed by Percona Everest), the error message was unclear. It did not provide actionable steps for the user to resolve the issue. We have improved the error message to give more insights into the issue.
+- [EVEREST-1795](https://perconadev.atlassian.net/browse/EVEREST-1795): When attempting to update a namespace using `everestctl` that was created with `kubectl` (not managed by OpenEverest), the error message was unclear. It did not provide actionable steps for the user to resolve the issue. We have improved the error message to give more insights into the issue.
 
 
-- [EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190): You can now easily find out which account you’re using to log into Everest by clicking the Profile button. This button shows the user's name or email address used to log into Percona Everest.
+- [EVEREST-1190](https://perconadev.atlassian.net/browse/EVEREST-1190): You can now easily find out which account you’re using to log into Everest by clicking the Profile button. This button shows the user's name or email address used to log into OpenEverest.
 
 
 ## Bugs
@@ -134,7 +134,7 @@ The `everestctl version` command has been updated to provide  information about 
 Now, when you create/edit the database cluster with sharding enabled for PSMDB, it will display the correct resources required for the specified number of shards.
 
 - [EVEREST-1537](https://perconadev.atlassian.net/browse/EVEREST-1537):
-We have resolved an issue that caused Percona Everest uninstallation to fail when attempting to delete database clusters due to a timeout.
+We have resolved an issue that caused OpenEverest uninstallation to fail when attempting to delete database clusters due to a timeout.
 
 
 - [EVEREST-1581](https://perconadev.atlassian.net/browse/EVEREST-1581): The database remained in a **Deleting** state despite all components being deleted. The issue has now been resolved.
@@ -155,7 +155,7 @@ We have resolved an issue that caused Percona Everest uninstallation to fail whe
 
 - [EVEREST-1758](https://perconadev.atlassian.net/browse/EVEREST-1758): The **Create Database** button on the UI was inaccessible until the page was manually refreshed after adding a namespace using the `everestctl namespaces add` command. The issue has been resolved now.
 
-- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): We have added a mechanism to prevent a given CLI version from installing incompatible Percona Everest versions.
+- [EVEREST-1729](https://perconadev.atlassian.net/browse/EVEREST-1729): We have added a mechanism to prevent a given CLI version from installing incompatible OpenEverest versions.
 
 - [EVEREST-1735](https://perconadev.atlassian.net/browse/EVEREST-1735): We have fixed an issue where incorrect information appeared on the **PITR Edit** button when PITR was enabled.
 
@@ -208,7 +208,7 @@ Use the date picker to select the desired date and time for PITR restore.
 
 ## :rocket: Upgrade now
 
-Upgrade to **Percona Everest 1.5.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+Upgrade to **OpenEverest 1.5.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
 
 
 

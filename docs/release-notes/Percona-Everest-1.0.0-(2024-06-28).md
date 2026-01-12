@@ -1,23 +1,23 @@
-# What's new in Percona Everest 1.0.0
+# What's new in OpenEverest 1.0.0
 
 !!! warning
-    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of Percona Everest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to Percona Everest version 1.4.0 as soon as possible. If you do not upgrade, Percona Everest will no longer function.
+    Google Container Registry (GCR) is scheduled to be deprecated and will officially shut down on March 18, 2025. All versions of OpenEverest prior to 1.4.0 depend on images hosted on GCR, meaning that downloading those images will fail after the shutdown date. We strongly recommend upgrading to OpenEverest version 1.4.0 as soon as possible. If you do not upgrade, OpenEverest will no longer function.
     
     For more details, refer to the [Container Registry Deprecation documentation](https://cloud.google.com/artifact-registry/docs/transition/prepare-gcr-shutdown){:target="_blank"}.
 
 
-We proudly announce that Percona Everest has officially hit the **general availability (GA)** milestone with the release of version 1.0.0.
+We proudly announce that OpenEverest has officially hit the **general availability (GA)** milestone with the release of version 1.0.0.
 
-To begin your journey with Percona Everest, check out the [Quickstart Guide for Percona Everest](../quickstart-guide/quick-install.md).
+To begin your journey with OpenEverest, check out the [Quickstart Guide for OpenEverest](../quickstart-guide/quick-install.md).
 
-Percona Everest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
+OpenEverest is an open source cloud native database platform that helps provision and manage databases faster, scale deployments rapidly, and reduce database administration overhead. Plus, you can regain control over your data, database configuration, and DBaaS costs.
 
-## Upgrading to Percona Everest 1.0.0
+## Upgrading to OpenEverest 1.0.0
 
 !!! info "Important"
-    Despite being a major version upgrade, we fully support upgrading from Percona Everest 0.10.1 to 1.0.0.
+    Despite being a major version upgrade, we fully support upgrading from OpenEverest 0.10.1 to 1.0.0.
 
-Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to Percona Everest 1.0.0.
+Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to OpenEverest 1.0.0.
 
 ## Release highlights
 
@@ -38,22 +38,22 @@ For a deep dive into this feature, see our comprehensive [documentation](https:/
 
 ## User management
 
-Percona Everest 1.0.0 introduces user management features, enabling you to securely log in to the platform through either the Percona Everest user interface or the API. So, get ready for a more secure and user-friendly experience with this update.
+OpenEverest 1.0.0 introduces user management features, enabling you to securely log in to the platform through either the OpenEverest user interface or the API. So, get ready for a more secure and user-friendly experience with this update.
 		
-Local user management involves administering Percona Everest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
+Local user management involves administering OpenEverest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
 If you’re looking for in-depth insights into this feature, see our [documentation](https://docs.percona.com/everest/administer/manage_users.html).
 
 
 ## IdP integration for enhanced security
 
-Starting with Percona Everest 1.0.0, you can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access. By tapping into IdP integration, you can ensure that users are authenticated and authorized securely.
+Starting with OpenEverest 1.0.0, you can now integrate your OpenEverest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access. By tapping into IdP integration, you can ensure that users are authenticated and authorized securely.
 
-Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol){:target="_blank"} (OIDC) Protocol to integrate with external Identity Providers (IdP).
+OpenEverest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol){:target="_blank"} (OIDC) Protocol to integrate with external Identity Providers (IdP).
 
 ![!image](../images/sso_login.png)
 
-To integrate IdP with Percona Everest, first [install Percona Everest](../install/installEverest.md) and then [configure OIDC](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [Percona Everest side](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-percona-everest-side).
+To integrate IdP with OpenEverest, first [install OpenEverest](../install/installEverest.md) and then [configure OIDC](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [OpenEverest side](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-openeverest-side).
 
 To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/administer/Idp_integration.html).
 
@@ -67,11 +67,11 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 ## New features
 
-- [EVEREST-816](https://perconadev.atlassian.net/browse/EVEREST-816) - Starting with Percona Everest 1.0.0, you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
+- [EVEREST-816](https://perconadev.atlassian.net/browse/EVEREST-816) - Starting with OpenEverest 1.0.0, you can now upgrade database operators and all their components across any namespace with just a single click using our intuitive UI.
 
-- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your Percona Everest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
+- [EVEREST-1087](https://perconadev.atlassian.net/browse/EVEREST-1087) - You can now integrate your OpenEverest instance using an external identity provider (IdP). This enables centralized authentication and authorization management, streamlining and simplifying user access.
 
-- [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with Percona Everest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
+- [EVEREST-1025](https://perconadev.atlassian.net/browse/EVEREST-1025) - We introduced the user management feature with OpenEverest 1.0.0, enabling you to securely log in to the platform through either the user interface or the API.
 
 - [EVEREST-974](https://perconadev.atlassian.net/browse/EVEREST-974) - Everest now supports editing the DB Engine version after a cluster has been created. However, it's important to note the following restrictions:
 
@@ -80,7 +80,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 - [EVEREST-1069](https://perconadev.atlassian.net/browse/EVEREST-1069) - We've recently introduced a new page - the components page. This page provides detailed information about the pods and containers, including their status, type, age, and more.
 
-- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with Percona Everest 1.0.0, you can restore your database from a full backup or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
+- [EVEREST-866](https://perconadev.atlassian.net/browse/EVEREST-866) - Starting with OpenEverest 1.0.0, you can restore your database from a full backup or using the PITR. However, if you choose a backup other than the latest backup, the PITR option becomes unavailable.
 
 - [EVEREST-872](https://perconadev.atlassian.net/browse/EVEREST-872) - When deleting a backup, you can now choose to delete the data from the backup storage as well.
 
@@ -92,15 +92,15 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 ## Improvements
 
-- [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - Percona Everest now validates scheduled backups if another backup is already scheduled for the same time and location.
+- [EVEREST-909](https://perconadev.atlassian.net/browse/EVEREST-909) - OpenEverest now validates scheduled backups if another backup is already scheduled for the same time and location.
 
 
-- [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) - Starting with Percona Everest 1.0.0, you now have the option to create multiple backup schedules using the wizard.
+- [EVEREST-924](https://perconadev.atlassian.net/browse/EVEREST-924) - Starting with OpenEverest 1.0.0, you now have the option to create multiple backup schedules using the wizard.
 
 
 - [EVEREST-931](https://perconadev.atlassian.net/browse/EVEREST-931) - When you go through a wizard, return to a specific step, and delete something from a mandatory field, the editing functionality is now disabled.
 
-- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) - Starting with Percona Everest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
+- [EVEREST-1055](https://perconadev.atlassian.net/browse/EVEREST-1055) - Starting with OpenEverest 1.0.0, we have introduced a new **deleting** state. This state will persist until all resources associated with the database have been removed.
 
 - [EVEREST-953](https://perconadev.atlassian.net/browse/EVEREST-953) - For an improved user interface (UI) experience, we have consolidated backups and PITR on the same page.
 
@@ -138,7 +138,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 - [EVEREST-1050](https://perconadev.atlassian.net/browse/EVEREST-1050) - The information about the restores was not correctly updated on the restores page. The issue has been fixed now.
 
 
-- [EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled Percona Everest despite the user selecting `no`.
+- [EVEREST-1143](https://perconadev.atlassian.net/browse/EVEREST-1143) - Resolved an issue where `everestctl uninstall` command uninstalled OpenEverest despite the user selecting `no`.
 
 
 - [EVEREST-1145](https://perconadev.atlassian.net/browse/EVEREST-1145) - The issue with enabling external access to a DB running in EKS, where the provisioned LB was of the **classic** type instead of the required network type **NLB**, has been fixed.
@@ -146,7 +146,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 ## Known limitations
 
-Check out the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html) section for in-depth details about the constraints of Percona Everest.
+Check out the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html) section for in-depth details about the constraints of OpenEverest.
 
 
 

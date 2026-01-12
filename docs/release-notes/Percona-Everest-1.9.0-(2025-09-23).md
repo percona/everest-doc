@@ -1,9 +1,9 @@
-# What's new in Percona Everest 1.9.0
+# What's new in OpenEverest 1.9.0
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+!!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 ??? info "Expand to unleash the key updates"
 
@@ -11,20 +11,20 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Load Balancer configuration in Percona Everest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-percona-everest)|Define reusable LoadBalancer configurations in Percona Everest.
-    | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in Percona Everest 1.9.0|
-    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.9.0|
-    | **4.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.9.0|
-    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.9.0|
+    | **1.**|[Release highlight: Load Balancer configuration in OpenEverest](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-openeverest)|Define reusable LoadBalancer configurations in OpenEverest.
+    | **2.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in OpenEverest 1.9.0|
+    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.9.0|
+    | **4.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.9.0|
+    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.9.0|
 
 
 ## 🌟 Release highlights
 
-### 🌐 Load balancer configuration in Percona Everest
+### 🌐 Load balancer configuration in OpenEverest
 
 Provisioning external access to Kubernetes clusters can be challenging, since cloud providers like AWS, GCP, and Azure each have their own annotations and configurations for LoadBalancers. As a result, users often have to manually adjust settings for each environment, leading to a lack of a unified approach.
 
-Percona Everest simplifies the process by enabling administrators to define **reusable LoadBalancer configurations**. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
+OpenEverest simplifies the process by enabling administrators to define **reusable LoadBalancer configurations**. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
 
 - ✅ Consistency across cloud and on-prem environments
 
@@ -39,7 +39,7 @@ Here’s how you can create a load balancer configuration:
 
 1. **Open Policies** 
 
-    - Navigate to the Percona Everest home page, go to <i class="uil uil-cog"></i> **Settings > Policies**, and open the **Load Balancer Configuration** section.
+    - Navigate to the OpenEverest home page, go to <i class="uil uil-cog"></i> **Settings > Policies**, and open the **Load Balancer Configuration** section.
 
     ![!image](../images/load_balancer_config_page.png)
 
@@ -58,7 +58,7 @@ Here’s how you can create a load balancer configuration:
     ![!image](../images/key_value_load_balancer.png)
 
     !!! note
-        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
+        The **key** and **value** in a Load Balancer configuration for OpenEverest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
 
     ??? example "Examples of keys and values used for Load balancer configuration"
 
@@ -82,11 +82,11 @@ To explore load balancer configuration in detail, check out our comprehensive [d
 
 ## New features
 
-- [EVEREST-548](https://perconadev.atlassian.net/browse/EVEREST-548): Starting with Percona Everest 1.9.0, we have added support for managing `LoadBalancerConfigs`, simplifying how service annotations are applied to database clusters.
+- [EVEREST-548](https://perconadev.atlassian.net/browse/EVEREST-548): Starting with OpenEverest 1.9.0, we have added support for managing `LoadBalancerConfigs`, simplifying how service annotations are applied to database clusters.
 
 ## Improvements
 
-- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): Upgrading via Helm now requires manually upgrading the CRDs first before upgrading Percona Everest.
+- [EVEREST-2002](https://perconadev.atlassian.net/browse/EVEREST-2002): Upgrading via Helm now requires manually upgrading the CRDs first before upgrading OpenEverest.
 
 - [EVEREST-2101](https://perconadev.atlassian.net/browse/EVEREST-2101): The behavior of the **Add New** button in the **External Access** section has been improved. Now, you can only add a new field after filling in the previously created field with a value.
 
@@ -126,14 +126,14 @@ To explore load balancer configuration in detail, check out our comprehensive [d
 - [EVEREST-2206](https://perconadev.atlassian.net/browse/EVEREST-2206): Resolved an issue that caused Single Sign-On (SSO) to be disabled after upgrading from version 1.6.0 to 1.7.0.
 
 
-- [EVEREST-2207](https://perconadev.atlassian.net/browse/EVEREST-2207): Resolved an issue that prevented the successful upgrade of Percona Everest.
+- [EVEREST-2207](https://perconadev.atlassian.net/browse/EVEREST-2207): Resolved an issue that prevented the successful upgrade of OpenEverest.
 
 
 - [EVEREST-2211](https://perconadev.atlassian.net/browse/EVEREST-2211): Previously, PostgreSQL databases would fail to start and crash after performing a Point-in-Time Recovery (PITR). This issue has been resolved, and PostgreSQL now starts up and operates normally after a PITR restoration.
 
 - [EVEREST-2212](https://perconadev.atlassian.net/browse/EVEREST-2212): The PMM Client previously consumed excessive memory when monitoring was enabled for any database instance. The issue has been resolved now.
 
-- [EVEREST-2214](https://perconadev.atlassian.net/browse/EVEREST-2214): Percona Everest upgrades previously failed if the `everest-system` and `everest-monitoring` namespaces had the label `app.kubernetes.io/managed-by=everest`. The issue has been resolved now.
+- [EVEREST-2214](https://perconadev.atlassian.net/browse/EVEREST-2214): OpenEverest upgrades previously failed if the `everest-system` and `everest-monitoring` namespaces had the label `app.kubernetes.io/managed-by=everest`. The issue has been resolved now.
 
 - [EVEREST-2216](https://perconadev.atlassian.net/browse/EVEREST-2216): Fixed an issue that caused the Pod Scheduling Policy field to reset to enabled after clicking the **Continue** or **Previous** buttons.
 
@@ -151,6 +151,6 @@ To learn about the specific limitations regarding Load Balancer configuration, c
 
 ## 🚀 Ready to Upgrade?
 
-Upgrade to **Percona Everest 1.9.0** to access these new features and improvements.
+Upgrade to **OpenEverest 1.9.0** to access these new features and improvements.
 
 📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.

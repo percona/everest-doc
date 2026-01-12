@@ -1,10 +1,10 @@
-# Percona Everest API
+# OpenEverest API
 
-Percona Everest provides a set of APIs that enable you to access its features programmatically. These APIs provide a convenient and efficient way for developers to interact with the various functionalities of Percona Everest. 
+OpenEverest provides a set of APIs that enable you to access its features programmatically. These APIs provide a convenient and efficient way for developers to interact with the various functionalities of OpenEverest. 
 
 ## Using the API
 
-The API is accessible on the same host and port as the Percona Everest Web UI. You can find detailed information about connecting to the Percona Everest Web UI in the [installation guides](install/installEverest). For instance, if you are connecting to your Percona Everest instance using port forwarding:
+The API is accessible on the same host and port as the OpenEverest Web UI. You can find detailed information about connecting to the OpenEverest Web UI in the [installation guides](install/installEverest). For instance, if you are connecting to your OpenEverest instance using port forwarding:
 
 ```sh
 kubectl port-forward svc/everest 8080:8080 -n everest-system
@@ -26,10 +26,10 @@ curl --location -s '<EVEREST_HOST>/v1/session' --header 'Content-Type: applicati
 
 ## Readme.io API documentation
 
-While you can achieve many tasks using either the Percona Everest user interface or `everestctl`, leveraging the API allows for easier integration into your technology infrastructure.
+While you can achieve many tasks using either the OpenEverest user interface or `everestctl`, leveraging the API allows for easier integration into your technology infrastructure.
 
-Check out our API endpoints for Percona Everest, where you can perform a wide range of functions.
+Check out our API endpoints for OpenEverest, where you can perform a wide range of functions.
 
-To access the API documentation, click [Percona Everest API](https://percona-everest.readme.io/){:target="_blank"}.
+To access the API documentation, click [OpenEverest API](https://percona-everest.readme.io/){:target="_blank"}.
 
 

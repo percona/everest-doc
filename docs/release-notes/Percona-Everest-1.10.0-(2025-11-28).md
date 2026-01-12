@@ -1,6 +1,6 @@
-# What's new in Percona Everest 1.10.0
+# What's new in OpenEverest 1.10.0
 
-➡️ **New to Percona Everest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
 
 ??? info "Expand to unleash the key updates"
 
@@ -9,20 +9,20 @@
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
     | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_1)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
-    | **2.**|[MySQL 8.4](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_2)|Percona Everest 1.10.0 now supports MySQL 8.4. |
-    | **3.**|[Percona Monitoring and Management (PMM) 3](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_3)|Percona Everest 1.10.0 now supports PMM 3. |
+    | **2.**|[MySQL 8.4](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_2)|OpenEverest 1.10.0 now supports MySQL 8.4. |
+    | **3.**|[Percona Monitoring and Management (PMM) 3](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_3)|OpenEverest 1.10.0 now supports PMM 3. |
     | **4.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#__tabbed_1_4)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#new-features)|Check out the new features introduced in Percona Everest 1.10.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#improvements)|Discover all the enhancements featured in Percona Everest 1.10.0|
-    | **7.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#bug-fixes)|Find out about all the bugs fixed in Percona Everest 1.10.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#known-limitations)|Discover all the known limitations in Percona Everest 1.10.0|
+    | **5.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#new-features)|Check out the new features introduced in OpenEverest 1.10.0|
+    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.10.0|
+    | **7.**|[Bug fixes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.10.0|
+    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.10.0-%282025-11-28%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.10.0|
 
 
 ## 🌟 Release highlights
 
 === "🛰 Split-Horizon DNS"
     ### Seamless access with Split-Horizon DNS for Percona Server for MongoDB
-    Starting with Percona Everest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**. This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
+    Starting with OpenEverest 1.10.0, we've rolled out a new feature: **Split-Horizon DNS for Percona Server for MongoDB (PSMDB)**. This feature  enables database administrators to expose ReplicaSet Pods with custom domain names, both inside and outside the Kubernetes cluster, without conflicting with the default DNS configuration.
 
     ### Why Split-Horizon DNS matters?
     Database administrators may sometimes need to expose ReplicaSet Pods in a Percona Operator for a MongoDB cluster so they can connect to them directly. This applies both inside and outside the Kubernetes environment, using custom domain names instead of the default ones generated during cluster creation.
@@ -37,7 +37,7 @@
     Follow these steps to create a new Split-Horizon DNS configuration:
     {.power-number}
         
-    1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
+    1.  Navigate to the OpenEverest home page and go to <i class="uil uil-cog"></i> **Settings > Policies & configurations**.
         
         ![!image](../images/policies_page.png)
         
@@ -60,18 +60,18 @@
 
 === "🐬 MySQL 8.4"
     ### Support for MySQL 8.4
-    Percona Everest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
+    OpenEverest 1.10.0 now supports the deployment of MySQL 8.4 clusters. This update allows you to benefit from the latest MySQL version, including enhanced performance, security updates, and an extended lifecycle.
 
 
 === "📊 PMM 3"
     ### Support for PMM 3
-    Percona Everest 1.10.0 now supports Percona Monitoring and Management (PMM) 3, enhancing observability and performance insights for database clusters. This ensures improved monitoring capabilities utilizing the latest features and architecture of PMM.
+    OpenEverest 1.10.0 now supports Percona Monitoring and Management (PMM) 3, enhancing observability and performance insights for database clusters. This ensures improved monitoring capabilities utilizing the latest features and architecture of PMM.
 
 
 === "⚙️ Operators"
     ### Updated Operators Support
 
-    Percona Everest now supports:
+    OpenEverest now supports:
 
     - Percona PostgreSQL Operator v2.7.0.
 
@@ -83,17 +83,17 @@
 
 - [EVEREST-2239](https://perconadev.atlassian.net/browse/EVEREST-2239): Added Split-Horizon DNS support for Percona Server for MongoDB (PSMDB).
 
-- [EVEREST-2009](https://perconadev.atlassian.net/browse/EVEREST-2009): Percona Everest now supports Percona PostgreSQL Operator v2.7.0.
+- [EVEREST-2009](https://perconadev.atlassian.net/browse/EVEREST-2009): OpenEverest now supports Percona PostgreSQL Operator v2.7.0.
 
-- [EVEREST-2173](https://perconadev.atlassian.net/browse/EVEREST-2173): Percona Everest now supports Percona Operator for MongoDB 
+- [EVEREST-2173](https://perconadev.atlassian.net/browse/EVEREST-2173): OpenEverest now supports Percona Operator for MongoDB 
 v1.21.0.
 
-- [EVEREST-2174](https://perconadev.atlassian.net/browse/EVEREST-2174): Percona Everest now supports Percona XtraDB Cluster Operator v1.18.0.
+- [EVEREST-2174](https://perconadev.atlassian.net/browse/EVEREST-2174): OpenEverest now supports Percona XtraDB Cluster Operator v1.18.0.
 
 
 ## Improvements
 
-- [EVEREST-1853](https://perconadev.atlassian.net/browse/EVEREST-1853): Percona Everest now supports Percona Monitoring and Management (PMM) v3, giving you access to the latest monitoring, alerting, and performance insights. PMM v2 remains supported for backward compatibility.
+- [EVEREST-1853](https://perconadev.atlassian.net/browse/EVEREST-1853): OpenEverest now supports Percona Monitoring and Management (PMM) v3, giving you access to the latest monitoring, alerting, and performance insights. PMM v2 remains supported for backward compatibility.
 
 - [EVEREST-1889](https://perconadev.atlassian.net/browse/EVEREST-1889): The **Overview → Resources** section now displays the number of nodes per shard, providing a clearer understanding of resource allocation in sharded deployments at a glance.
 
@@ -123,13 +123,13 @@ v1.21.0.
 - [EVEREST-2163](https://perconadev.atlassian.net/browse/EVEREST-2163): The Pod Scheduling Policy now appears in the **Edit Advanced Configuration** view even when no rules are defined.
 
 
-- [EVEREST-2235](https://perconadev.atlassian.net/browse/EVEREST-2235): Specifying an invalid `.spec.engine.version` in a `DatabaseCluster` CRD no longer crashes the Percona Everest Operator. Invalid versions are now handled gracefully with proper validation and error reporting.
+- [EVEREST-2235](https://perconadev.atlassian.net/browse/EVEREST-2235): Specifying an invalid `.spec.engine.version` in a `DatabaseCluster` CRD no longer crashes the OpenEverest Operator. Invalid versions are now handled gracefully with proper validation and error reporting.
 
 - [EVEREST-2237](https://perconadev.atlassian.net/browse/EVEREST-2237): Creating a database via **CRD** without specifying monitoring resources no longer causes the **Overview** page to crash. The page now loads correctly even if monitoring resources are omitted.
 
 - [EVEREST-2259](https://perconadev.atlassian.net/browse/EVEREST-2259): Resolved an issue where the **Connection URL** field did not update after enabling the Load Balancer while editing a database. The field now correctly refreshes to reflect the new Load Balancer endpoint once the Host value updates.
 
-- [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): Percona Everest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
+- [EVEREST-2278](https://perconadev.atlassian.net/browse/EVEREST-2278): OpenEverest now correctly manages SSO token expiration, enabling users to continue without clearing their browser cookies.
 
 
 - [EVEREST-2311](https://perconadev.atlassian.net/browse/EVEREST-2311): The warning for deleting a load balancer config now clearly states that it can only be deleted if it is not linked to any database, ensuring no impact on the existing databases.
@@ -140,7 +140,7 @@ v1.21.0.
 
 - [EVEREST-2362](https://perconadev.atlassian.net/browse/EVEREST-2362): Fixed an issue where a completed restore operation would reappear daily in the **Restores** tab with an incorrect status after it was manually deleted. Although the cluster functioned normally, the UI continued to show the restore as ongoing.
 
-- [EVEREST-2366](https://perconadev.atlassian.net/browse/EVEREST-2366): Fixed an issue where the Helm installation command failed to install Percona Everest.
+- [EVEREST-2366](https://perconadev.atlassian.net/browse/EVEREST-2366): Fixed an issue where the Helm installation command failed to install OpenEverest.
 
 - [EVEREST-1693](https://perconadev.atlassian.net/browse/EVEREST-1693): Resolved an issue where single-node MongoDB clusters temporarily entered an error state during initial provisioning.
 
@@ -151,6 +151,6 @@ Some limitations apply when using Split-Horizon DNS. For more details, refer to 
 
 ## 🚀 Ready to Upgrade?
 
-Upgrade to **Percona Everest 1.10.0** to access these new features and improvements.
+Upgrade to **OpenEverest 1.10.0** to access these new features and improvements.
 
 📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
