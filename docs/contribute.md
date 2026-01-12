@@ -1,6 +1,6 @@
 # Contributing guide
 
-Thank you for deciding to contribute and help us improve Percona Everest! We also contribute to other open source projects and communities! Let’s make technology better!
+Thank you for deciding to contribute and help us improve Open Everest! We also contribute to other open source projects and communities! Let’s make technology better!
 
 By contributing, you agree to the [Percona Community code of conduct](https://percona.community/contribute/coc/){:target="_blank"}.
 
@@ -13,7 +13,7 @@ We welcome all kinds of contributions so here's how you can get involved:
 
 ## Submit a bug report or feature request
 
-If you find a bug in Percona Everest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com){:target="_blank"}. 
+If you find a bug in OpenEverest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com){:target="_blank"}. 
 Start by searching the open topics for a similar report. If you find that someone else has already reported the same issue, you can upvote that report to increase its visibility.
 
 If there is no existing report, submit a report following these steps:
@@ -23,15 +23,15 @@ If there is no existing report, submit a report following these steps:
 
 2. Create a report that:      
       *  describes the steps to reproduce the issue
-      *  includes the version of Percona Everest, your environment, and so on
+      *  includes the version of OpenEverest, your environment, and so on
       *  has not been reported already 
       *  is scoped to a single bug
 
-## Contribute to Percona Everest code
+## Contribute to OpenEverest code
 
 If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/everest/blob/main/CONTRIBUTING.md).
 
-## Contribute to Percona Everest documentation
+## Contribute to OpenEverest documentation
 
 Found a typo or didn't find what you needed? Here's how you can contribute to the documentation:
 {.power-number}
