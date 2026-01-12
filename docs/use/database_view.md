@@ -1,6 +1,6 @@
 # Database view
 
-The database view in Percona Everest provides an interface to view and provision your databases. With the database view, you can keep a close eye on all your databases and their status and perform tasks such as backup and restore.
+The database view in OpenEverest provides an interface to view and provision your databases. With the database view, you can keep a close eye on all your databases and their status and perform tasks such as backup and restore.
 
 
    ![!image](../images/database_view.png)
@@ -12,11 +12,11 @@ Click on the individual database and select the ellipsis menu (...). This will a
  -  **Restart the database** - Restarting your database can improve the performance of your database and enable you to apply recent configuration changes. 
     
 
- - **Create database from a backup** - With Percona Everest, you have the ability to create a database from a backup. 
+ - **Create database from a backup** - With OpenEverest, you have the ability to create a database from a backup. 
     
     For more in-depth instructions on how to create a database from a backup, refer to the [create a database from a backup ](createBackups/create_new_database.md).
 
- - **Restore database from a backup** - With Percona Everest, you have the ability to restore your database from a backup. 
+ - **Restore database from a backup** - With OpenEverest, you have the ability to restore your database from a backup. 
     
     For more in-depth instructions on how to restore a database, refer to the [restore a database from a backup](RestoreBackup.md) section.
 
@@ -55,7 +55,7 @@ The Components page offers comprehensive information about pods and containers. 
 
    ![!image](../images/everest_components_page.png)
 
-   The Components tab also includes an interactive Topology View that improves the visibility and management of DB clusters deployed in Percona Everest. This view visually represents the cluster's components, such as pods and services, along with their status and relationships.
+   The Components tab also includes an interactive Topology View that improves the visibility and management of DB clusters deployed in OpenEverest. This view visually represents the cluster's components, such as pods and services, along with their status and relationships.
 
    Click the Toggle **Table View** to switch between the **Topology** and **Table** views.
 

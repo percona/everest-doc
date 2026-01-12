@@ -1,6 +1,6 @@
 # Scale database deployment
 
-Manual scaling in Percona Everest allows for easy adjustment of database capacity and performance to meet the changing demands.
+Manual scaling in OpenEverest allows for easy adjustment of database capacity and performance to meet the changing demands.
 
 ## Vertical scaling
             
@@ -8,7 +8,7 @@ Vertical scaling is essential for addressing increased workloads or performance 
         
 - **Scale up**
 
-    You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.       
+    You can vertically scale up your OpenEverest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.       
     
     **Example**
         
@@ -27,7 +27,7 @@ Vertical scaling is essential for addressing increased workloads or performance 
 
 ## Horizontal scaling
 
-To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance, availability, and database resilience.
+To scale OpenEverest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance, availability, and database resilience.
 
 ![!image](../images/everest_scale_horizontally.png)
 
@@ -42,7 +42,7 @@ To scale Percona Everest horizontally, add database nodes to the existing cluste
 To scale your database instances:
 {.power-number}
 
-1. From the Percona Everest homepage, select the database you wish to scale. The **Overview** page will then be displayed.
+1. From the OpenEverest homepage, select the database you wish to scale. The **Overview** page will then be displayed.
 2. Navigate to the **Resources** widget and click **Edit**. This will open the **Edit Topology** screen.
 3. Select the **Number of nodes**. 
 4. Select the **Resources per node**. When selecting the **Resources per node**, the threshold values are automatically populated in the CPU, MEMORY, and DISK fields.

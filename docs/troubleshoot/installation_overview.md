@@ -1,11 +1,11 @@
-# Percona Everest installation and workflow
+# OpenEverest installation and workflow
 
-This page provides an overview of how Percona Everest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
+This page provides an overview of how OpenEverest is installed, the components involved, and the workflow, from operator installation to database provisioning, backups, and restores.
 
 
 ## Installation workflow
 
-Starting with Percona Everest v1.4.0, the [everestctl](../install/installEverest.md) is a wrapper around two helm charts:
+Starting with OpenEverest v1.4.0, the [everestctl](../install/installEverest.md) is a wrapper around two helm charts:
 
 - [everest-core](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} 
 
@@ -16,7 +16,7 @@ The installation flow is as follows:
 
 1. The `everest-core` helm chart is installed in the `everest-system` namespace:
 
-    This step deploys all the core components required for Percona Everest to function.
+    This step deploys all the core components required for OpenEverest to function.
 
     | Component category   | Namespace            | Components                                                  |
     |----------------------|----------------------|-------------------------------------------------------------|
@@ -35,7 +35,7 @@ The installation flow is as follows:
 
 ### Configurable installation options 
 
-Percona Everest supports several configuration flags for customizing the installation.
+OpenEverest supports several configuration flags for customizing the installation.
 
 **Namespace configuration**
 
@@ -80,12 +80,12 @@ The [helm installation method](../install/install_everest_helm_charts.md) provid
 
 ### Database creation workflow
 
-Here's the database creation workflow in Percona Everest:
+Here's the database creation workflow in OpenEverest:
 {.power-number}
 
-1. The Percona Everest user is authenticated and logged in, and a `JWT Token` is provided.
-2. The user creates a database via the Percona Everest UI or API.
-3. The Percona Everest API is invoked to create a new database. The Percona Everest server then creates a `DatabaseCluster` custom resource on the Kubernetes cluster.
+1. The OpenEverest user is authenticated and logged in, and a `JWT Token` is provided.
+2. The user creates a database via the OpenEverest UI or API.
+3. The OpenEverest API is invoked to create a new database. The OpenEverest server then creates a `DatabaseCluster` custom resource on the Kubernetes cluster.
 4. In the `everest-operator` reconciliation loop, once the `DatabaseCluster` object is recognized, an appropriate custom resource for the database is created, for example, if it’s MySQL, `PerconaXtraDBCluster` is created.
 5. The database operator takes over the task of creating the database and the necessary objects to manage it.
 
@@ -93,11 +93,11 @@ Here's the database creation workflow in Percona Everest:
     !!! note
         Similar workflows apply to **backups, restores, monitoring, and deletions,** although the object types may vary.
                 
-        All custom resources in Percona Everest follow this flow, **except for** the `DatabaseEngine`.
+        All custom resources in OpenEverest follow this flow, **except for** the `DatabaseEngine`.
 
 ### Database engine workflow
 
-Here’s the workflow for the database engine in Percona Everest:
+Here’s the workflow for the database engine in OpenEverest:
 {.power-number}
 
 1. You can install the `everest-db-namespace` chart either as part of the initial installation or as a [separate step](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#4-deploy-additional-database-namespaces).
@@ -105,9 +105,9 @@ Here’s the workflow for the database engine in Percona Everest:
 3. OLM **reconciles the Subscriptions** and creates an **InstallPlan**.
 4. The Helm chart creates a Kubernetes job called `everest-operators-installer` that waits for the `InstallPlan` to be created and approves it.
 5. OLM detects that the **InstallPlan** has been approved and creates a `ClusterServiceVersion`, deploying all components that comprise  the database operator.
-6. The Percona Everest operator detects the database operator's deployment resource and reconciles the **DatabaseEngine CR** of the corresponding type. 
+6. The OpenEverest operator detects the database operator's deployment resource and reconciles the **DatabaseEngine CR** of the corresponding type. 
 
-7. During reconciliation, the Percona Everest operator detects the installed database operator version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
+7. During reconciliation, the OpenEverest operator detects the installed database operator version and queries [Percona’s Version Service](https://github.com/Percona-Lab/percona-version-service){:target="_blank"} to fetch supported engine versions.
  
     ??? example "Example"
         Check [Percona's Version Service](http://check.percona.com/){:target="_blank"} to get the engine versions supported by that operator. 

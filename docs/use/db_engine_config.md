@@ -1,14 +1,14 @@
 # Configure database engine 
 
-Percona Everest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
+OpenEverest provides configuration settings and options, which are essential for tailoring the database behavior and performance to meet the needs of various applications. You can fine-tune your database operations using these settings and options, thus increasing efficiency and productivity.
 
 
 ## Configure database engine for new database cluster
 
-To configure your database engine in Percona Everest:
+To configure your database engine in OpenEverest:
 {.power-number}
 
-1. From the Percona Everest main page, navigate to **Create database > Advanced Configurations** page.
+1. From the OpenEverest main page, navigate to **Create database > Advanced Configurations** page.
 
 2. Select the **Exposure Method** as either **Cluster IP** or **Load balancer**.
 
@@ -61,10 +61,10 @@ To configure your database engine in Percona Everest:
 
 ## Configure database engine for an existing DB cluster
 
-To update your database engine in Percona Everest for an existing DB cluster:
+To update your database engine in OpenEverest for an existing DB cluster:
 {.power-number}
 
-1. Go to the Percona Everest home page and click on the database for which you want to update the database engine. The **Overview** page will be displayed.
+1. Go to the OpenEverest home page and click on the database for which you want to update the database engine. The **Overview** page will be displayed.
 
 2. On the **Advanced configuration** widget, click **Edit**. The **Edit advanced configuration** screen will be displayed.
 

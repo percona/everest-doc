@@ -1,17 +1,17 @@
-# Upgrade Percona Everest using everestctl
+# Upgrade OpenEverest using everestctl
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+!!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
 
-Percona Everest regularly releases updates that contain bug fixes, security improvements, and other enhancements to improve the overall performance of your database.
+OpenEverest regularly releases updates that contain bug fixes, security improvements, and other enhancements to improve the overall performance of your database.
 
 
 ## Before you upgrade
 
-### Percona Everest and everestctl version compatibility
+### OpenEverest and everestctl version compatibility
 
 - For most cases, we recommend installing the latest version of `everestctl` before attempting an upgrade.
-- If you're working with older versions, you must use `everestctl` versions 1.2 and 1.3 for Percona Everest 1.2 and 1.3, respectively. However, starting with Percona Everest 1.4, use `everestctl` version 1.4 or higher.
+- If you're working with older versions, you must use `everestctl` versions 1.2 and 1.3 for OpenEverest 1.2 and 1.3, respectively. However, starting with OpenEverest 1.4, use `everestctl` version 1.4 or higher.
 
 ### Upgrade constraints
 
@@ -21,20 +21,20 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 ## Upgrade instructions
 
 === "Version 1.7.0"
-    ### Upgrade to Percona Everest 1.7.0
+    ### Upgrade to OpenEverest 1.7.0
 
-    Before you upgrade to Percona Everest 1.7.0, run the following command:
+    Before you upgrade to OpenEverest 1.7.0, run the following command:
 
     ```sh
     kubectl label namespaces everest-system app.kubernetes.io/managed-by-
     ```
 
     !!! note
-        This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of Percona Everest and may interfere with the working of `everestctl` during an upgrade.
+        This command removes the label `app.kubernetes.io/managed-by` from the `everest-system` namespace. This label was used in earlier versions of OpenEverest and may interfere with the working of `everestctl` during an upgrade.
 
-    Depending on the version of Percona Everest originally installed, you may see different outputs:
+    Depending on the version of OpenEverest originally installed, you may see different outputs:
 
-    ??? example "Percona Everest initially installed versions 1.4.0 and onwards"
+    ??? example "OpenEverest initially installed versions 1.4.0 and onwards"
         You will get the following output:
 
         ```sh
@@ -42,14 +42,14 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
         namespace/everest-system not labeled
         ```
 
-    ??? example "Percona Everest initially installed versions prior to 1.4.0"
+    ??? example "OpenEverest initially installed versions prior to 1.4.0"
         You will get the following output:
 
         ```sh
         namespace/everest-system unlabeled
         ```
 
-    To upgrade Percona Everest, run the following command:
+    To upgrade OpenEverest, run the following command:
 
     ```sh
     everestctl upgrade
@@ -62,9 +62,9 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     ```
 
 === "Version 1.3.0 and onwards"
-    ### Upgrade to Percona Everest 1.3.0+
+    ### Upgrade to OpenEverest 1.3.0+
 
-    To upgrade Percona Everest, run the following command:
+    To upgrade OpenEverest, run the following command:
 
     ```sh
     everestctl upgrade
@@ -72,7 +72,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
     ??? example "Example: Upgrade from version 1.4.0 to 1.5.0"
 
-        **Install Percona Everest version 1.4.0**
+        **Install OpenEverest version 1.4.0**
 
         ```sh
         everestctl install --version 1.4.0 
@@ -94,7 +94,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
         🚀 Thank you for installing Everest (v1.4.0)!
         ```
 
-        **Now, upgrade to Percona Everest version 1.5.0**
+        **Now, upgrade to OpenEverest version 1.5.0**
 
         ```sh
         everestctl upgrade                
@@ -111,9 +111,9 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
 
 === "Version 1.2.0"
-    ### Upgrade to Percona Everest 1.2.0
+    ### Upgrade to OpenEverest 1.2.0
 
-    To upgrade Percona Everest, run the following command:
+    To upgrade OpenEverest, run the following command:
 
     ```sh
     everestctl upgrade
@@ -123,10 +123,10 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
 
     Following the upgrade, your databases should not experience any downtime. Your backup, restore, and monitoring functionalities should continue to operate normally. 
 
-    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in Percona Everest 1.2.0](#how-to-address-a-failed-upgrade) section.
+    In the unlikely event that your upgrade fails, and you need to manually migrate these resources, follow the steps in [how to resolve upgrade failures in OpenEverest 1.2.0](#how-to-address-a-failed-upgrade) section.
 
     ??? info "Resolving upgrade failures due to the breaking API changes"
-        Percona Everest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
+        OpenEverest 1.2.0 includes some [breaking API changes](../api_rbac.md#navigating-the-breaking-api-changes-for-rbac). While all your resources will be migrated automatically, in the unlikely event that your upgrade fails and you need to manually migrate these resources, follow the steps below:
         {.power-number}
 
         1. List the existing backup-storages:
@@ -218,9 +218,9 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
     ### Upgrade to versions older than 1.2.0
 
     !!! note
-        It is recommended that you create backups of your databases prior to upgrading Percona Everest.
+        It is recommended that you create backups of your databases prior to upgrading OpenEverest.
 
-    During the upgrade of Percona Everest, only Percona Everest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
+    During the upgrade of OpenEverest, only OpenEverest and Everest operator are upgraded, whereas the database operators, database clusters and backups remain unchanged.
     {.power-number}
 
     1. If you are using `everestctl` v1.1.0 or newer to upgrade from a version prior to v1.0.0, you need to execute the following command:
@@ -229,7 +229,7 @@ You can **only upgrade one minor version** at a time. For instance, you can upgr
         kubectl get deployments everest-operator-controller-manager -n everest-system -o jsonpath='{.spec.template.spec.containers[?(@.name=="manager")].env[?(@.name=="DB_NAMESPACES")].value}' | tr ',' '\n' | xargs -I {} kubectl label namespaces {} app.kubernetes.io/managed-by=everest
         ```
 
-    2. To upgrade Percona Everest, use the following command:
+    2. To upgrade OpenEverest, use the following command:
 
         ```sh
         everestctl upgrade
@@ -258,7 +258,7 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
 ## After your upgrade is complete
 
-After upgrading your Percona Everest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section to reset the admin password and expose the Percona Everest service.
+After upgrading your OpenEverest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section to reset the admin password and expose the OpenEverest service.
 
 
 
