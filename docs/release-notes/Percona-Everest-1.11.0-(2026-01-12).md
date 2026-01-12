@@ -54,6 +54,12 @@
 - [EVEREST-2290](https://perconadev.atlassian.net/browse/EVEREST-2290): Fixed an issue where the "Add New" button for key/value annotations in Load Balancer Configs could be clicked multiple times without filling in the previous row. Users must now complete the current row before adding another.
 
 
+## Known limitations
+
+### PostgreSQL backup conflict with first storage
+
+When adding the first backup storage to a PostgreSQL cluster that was created without any backup schedules, the first backup requested may show as failed due to a conflict with an automatic backup that is taken when the storage is initially added. Despite the failed status, a successful backup is actually created and available in the backup storage.
+
 ## 🚀 Ready to Upgrade?
 
 Upgrade to **Percona Everest 1.11.0** to access these new features and improvements.
