@@ -1,6 +1,6 @@
 # Contributing guide
 
-Thank you for deciding to contribute and help us improve Open Everest! We also contribute to other open source projects and communities! Let’s make technology better!
+Thank you for deciding to contribute and help us improve OpenEverest! We also contribute to other open source projects and communities! Let’s make technology better!
 
 By contributing, you agree to the [OpenEverest code of conduct](https://github.com/openeverest/governance/blob/main/CODE_OF_CONDUCT.md){:target="_blank"}.
 
