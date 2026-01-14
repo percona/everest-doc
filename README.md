@@ -1,14 +1,14 @@
 
-# Percona Everest Documentation
+# OpenEverest Documentation
 [![render](https://img.shields.io/badge/everest--doc-render-Green)](https://everest-doc.onrender.com/)
-[![Build](https://github.com/percona/everest-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/percona/everest-doc/actions/workflows/build.yml)
+[![Build](https://github.com/openeverest/everest-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/openeverest/everest-doc/actions/workflows/build.yml)
 
 
-This repo holds the source files for the official [Everest technical documentation].
+This repo holds the source files for the official [OpenEverest technical documentation].
 
 To contribute to that documentation, you can:
 
-- **report a general problem** -- open a [Jira] issue.
+- **report a general problem** -- create a [GitHub](https://github.com/openeverest/everest-doc/issues) issue in this repository.
 
 - **fix a problem yourself** -- Use the _Edit this page_ link to take you to the Markdown source file for that page. Make your changes (you'll have to fork the repo unless you're Percona staff) and submit a PR which we'll review and adjust where necessary before merging and publishing. If the changes are more than a few lines, you might want to build the website locally to see how it looks in context. That's what the rest of this README covers.
 
@@ -18,11 +18,11 @@ We use [MkDocs] to convert [Markdown] files into a static HTML website (or [PDF]
 
 The documentation source files are in the `docs` directory. (Other files in this repo are explained in [Directories and files](#directories-and-files).)
 
-Before you start, it helps to know what [Git], [Python] and [Docker](https://docs.docker.com/get-docker/) are, what [Markdown] is and how to write it, and how to install and use those things on the command line. (If you don't, consider opening a [Jira] issue instead.)
+Before you start, it helps to know what [Git], [Python] and [Docker](https://docs.docker.com/get-docker/) are, what [Markdown] is and how to write it, and how to install and use those things on the command line.
 
 ## Building the documentation
 
-If you'd like to have a local copy of Everest documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
+If you'd like to have a local copy of OpenEverest documentation, or are thinking about contributing, it helps if you can build the documentation to see how it will look when published. The easiest way is to use Docker, as this avoids having to install MkDocs and its dependencies.
 
 ### With Docker
 
@@ -80,7 +80,7 @@ View the site at <http://0.0.0.0:8000>
 
 _How to create a PDF version of the documentation._
 
-1. (For Percona staff) If building for a release of PMM, edit `mkdocs-base.yml` and change:
+1. (For Maintainers) If building for a release of PMM, edit `mkdocs-base.yml` and change:
 
    - The release number in `plugins.with-pdf.output_path`
    - The release number and date in `plugins.with-pdf.cover_subtitle`
@@ -133,7 +133,7 @@ _How to create a PDF version of the documentation._
 
 - `requirements.txt`: Python package dependencies.
 
-- `variables.yml`: Values used throughout the Markdown, including the current Everest version/release number.
+- `variables.yml`: Values used throughout the Markdown, including the current OpenEverest version/release number.
 
 - `.spelling`: Words regarded as correct by `mdspell` (See [Spelling and grammar](#spelling-and-grammar).)
 
@@ -199,7 +199,7 @@ To enable it for local builds, uncomment the line with `htmlproofer` in the `plu
 [Docker]: https://docs.docker.com/get-docker/
 
 [mike]: https://github.com/jimporter/mike
-[GitHub actions]: https://github.com/percona/everest-doc/actions
+[GitHub actions]: https://github.com/openeverest/everest-doc/actions
 [ImageMagick]: https://imagemagick.org/script/download.php
 [composite]: https://imagemagick.org/script/composite.php
 [Node.js]: https://nodejs.org/en/download/
