@@ -2,7 +2,7 @@
 
 Helm simplifies the installation of OpenEverest. With this guide, you'll be up and running with OpenEverest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
-OpenEverest Helm charts can be found in [openeverest/openeverest](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+OpenEverest Helm charts can be found in [percona/percona-helm-charts](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
     If you prefer an alternative method, you can [install OpenEverest using everestctl](install/installEverest.md).
@@ -58,7 +58,7 @@ To install OpenEverest using Helm follow these steps:
 1. Add the OpenEverest Helm repository.
 
     ```sh
-    helm repo add openeverest https://openeverest.github.io/openeverest/
+    helm repo add percona https://percona.github.io/percona-helm-charts/
     helm repo update
     ```
 
@@ -134,7 +134,7 @@ To install OpenEverest using Helm follow these steps:
             Install OpenEverest using this file:
 
             ```sh
-            helm install openeverest openeverest/openeverest \
+            helm install percona-everest percona/everest \
             -n everest-system \
             -f everest-values.yaml
             ```
@@ -183,7 +183,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                                                 
             ```sh
-            helm install openeverest openeverest/openeverest \
+            helm install percona-everest percona/everest \
             --set service.type=LoadBalancer
             ```
             
