@@ -154,7 +154,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
             OpenEverest will be available at `http://127.0.0.1:8443`.
 
 
-            For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
+            For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 ## Next steps
 

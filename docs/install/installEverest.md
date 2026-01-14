@@ -96,7 +96,7 @@ To install and provision OpenEverest to Kubernetes:
                 everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
                 ```
 
-                For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
+                For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
         2. If you skip adding the namespaces while installing OpenEverest, you can add them later using the following command.

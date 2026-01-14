@@ -109,7 +109,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             --set server.tls.enabled=true
             ```
 
-            For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
+            For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
     4. Once the installation is complete, retrieve the `admin` password. 

@@ -64,7 +64,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
             --set server.tls.enabled=true
             
 
-        For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-openeverest).
+        For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
 4. Once the installation is complete, retrieve the `admin` password. 
@@ -89,7 +89,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command:
                     
             ```sh
-             helm upgrade everest-core percona/everest \
+           helm upgrade everest-core percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=LoadBalancer
@@ -123,7 +123,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-             helm upgrade everest-core percona/everest \
+           helm upgrade everest-core percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=NodePort
