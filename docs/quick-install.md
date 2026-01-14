@@ -2,7 +2,7 @@
 
 Helm simplifies the installation of OpenEverest. With this guide, you'll be up and running with OpenEverest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
-OpenEverest Helm charts can be found in [openeverest/openeverest]( https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} repository in Github.
+OpenEverest Helm charts can be found in [openeverest/openeverest](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
     If you prefer an alternative method, you can [install OpenEverest using everestctl](install/installEverest.md).
@@ -66,7 +66,7 @@ To install OpenEverest using Helm follow these steps:
 
 
     ```sh
-    helm install everest-core openeverest/openeverest \
+    helm install everest-core percona/everest \
     --namespace everest-system \
     --create-namespace
     ```
@@ -89,7 +89,7 @@ To install OpenEverest using Helm follow these steps:
         1. Install OpenEverest:
 
             ```sh
-            helm install everest openeverest/openeverest \
+            helm install everest percona/everest \
               -n everest-system \
               --set ingress.enabled=true \
               --set ingress.ingressClassName="" \
@@ -144,7 +144,7 @@ To install OpenEverest using Helm follow these steps:
         Install OpenEverest with TLS enabled:
 
         ```sh
-        helm install everest-core openeverest/openeverest \
+        helm install everest-core percona/everest \
         --namespace everest-system \
         --create-namespace
         --set server.tls.enabled=true

@@ -12,7 +12,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
 1. Run the following command:
 
     ```sh
-    helm install everest-core openeverest/openeverest \
+    helm install everest-core percona/everest \
         --namespace everest-system \
         --create-namespace \
         --set compatibility.openshift=true \
@@ -53,7 +53,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
 
     ```sh
     helm install everest \
-        openeverest/everest-db-namespace \
+        percona/everest-db-namespace \
         --create-namespace \
         --namespace everest \
         --set compatibility.openshift=true

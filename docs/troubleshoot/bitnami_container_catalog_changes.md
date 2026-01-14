@@ -94,7 +94,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     Execute the helm upgrade command for each `everest-db-namespace `chart identified in **step 1**.
 
     ```sh
-    helm upgrade a1 openeverest/everest-db-namespace \
+    helm upgrade a1 percona/everest-db-namespace \
     --reuse-values \
     --namespace a1 \
     --version 1.8.1
@@ -108,7 +108,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     ```
 
     ```sh
-    helm upgrade everest openeverest/everest-db-namespace \
+    helm upgrade everest percona/everest-db-namespace \
     --reuse-values \
     --namespace everest \
     --version 1.8.1
@@ -201,7 +201,7 @@ Follow these steps to fix the problem:
     Use the release name, namespace, and **APP VERSION** from the previous steps to upgrade the chart.
 
     ```sh
-    helm upgrade everest openeverest/everest-db-namespace \
+    helm upgrade everest percona/everest-db-namespace \
     --reuse-values \
     --namespace everest \
     --version 1.8.1

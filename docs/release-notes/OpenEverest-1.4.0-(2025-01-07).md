@@ -25,7 +25,7 @@
 
     We are excited to announce the launch of Helm charts in OpenEverest 1.4.0. [Helm charts](https://helm.sh/) simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
-    OpenEverest Helm charts can be found in [openeverest/openeverest]( https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} repository in Github.
+    OpenEverest Helm charts can be found in [openeverest/openeverest]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
     If you are looking to get started with OpenEverest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
 
