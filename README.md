@@ -4,7 +4,7 @@
 [![Build](https://github.com/openeverest/everest-doc/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/openeverest/everest-doc/actions/workflows/build.yml)
 
 
-This repo holds the source files for the official [OpenEverest technical documentation].
+This repo holds the source files for the official [OpenEverest technical documentation](https://openeverest.io/documentation/current/).
 
 To contribute to that documentation, you can:
 
