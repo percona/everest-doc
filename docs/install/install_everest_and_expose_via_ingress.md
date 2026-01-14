@@ -19,7 +19,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
 === "Install OpenEverest using Helm"
 
-    Percona Helm charts are in the [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository on GitHub.
+    Percona Helm charts are in the [percona/percona-helm-charts]( https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} repository on GitHub.
 
     Here are the steps to install OpenEverest and deploy additional database namespaces:
     {.power-number}
@@ -34,7 +34,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
     2. Install OpenEverest with **Ingress enabled**:
 
         ```sh
-        helm install everest percona/everest \
+        helm install everest openeverest/openeverest \
           -n everest-system \
           --set ingress.enabled=true \
           --set ingress.ingressClassName="" \
@@ -93,7 +93,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             Install OpenEverest using this `YAML` file:
 
             ```sh
-            helm install everest percona/everest \
+            helm install everest openeverest/openeverest \
               -n everest-system \
               -f everest-values.yaml
             ```
@@ -103,7 +103,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
             Install OpenEverest with TLS enabled:
 
             ```sh
-            helm install everest-core percona/everest \
+            helm install everest-core openeverest/openeverest \
             --namespace everest-system \
             --create-namespace
             --set server.tls.enabled=true
@@ -139,7 +139,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         ```sh
         helm install everest \
-        percona/everest-db-namespace \
+        openeverest/openeverest-db-namespace \
         --create-namespace \
         --namespace <DB namespace>
         ```
@@ -151,7 +151,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 === "Install OpenEverest using everesctl"
 
     !!! info "Important"
-        Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install OpenEverest. To configure chart parameters during installation through `everestctl`, you can:
+        Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} to install OpenEverest. To configure chart parameters during installation through `everestctl`, you can:
         
         * Use the `--helm-.set` flag to specify individual parameter values.
         * Provide a values file with the `--helm.values` flag for bulk configuration.
@@ -159,7 +159,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
     To install and provision OpenEverest to Kubernetes:
     {.power-number}
         
-    1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision OpenEverest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
+    1. Download the latest release of [everestctl](https://github.com/openeverest/openeverest/releases/latest){:target="_blank"} to provision OpenEverest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
         
         
     2. Install OpenEverest:

@@ -7,16 +7,16 @@
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
-    | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in OpenEverest: Optimize your MongoDB databases with sharding|
-    | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
-    | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in OpenEverest|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.3.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.3.0|
-    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from OpenEverest 1.3.0|
-    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.3.0|
-    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.3.0|
+    | **1.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
+    | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in OpenEverest: Optimize your MongoDB databases with sharding|
+    | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
+    | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in OpenEverest|
+    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.3.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.3.0|
+    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from OpenEverest 1.3.0|
+    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.3.0|
+    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.3.0|
 
 
 ## Release highlights

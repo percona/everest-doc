@@ -3,7 +3,7 @@
 !!! info "Important"
     Installing `everestctl` is only necessary if you want to use it to install OpenEverest using `everestctl`; it is **not** required if you prefer to install OpenEverest with Helm.
 
-You can download the latest version of `everestctl` visiting the latest release page in [this repository](https://github.com/percona/everest/releases/latest){:target="_blank"}.
+You can download the latest version of `everestctl` visiting the latest release page in [this repository](https://github.com/openeverest/openeverest/releases/latest){:target="_blank"}.
 
 
 === "Linux and WSL"
@@ -14,7 +14,7 @@ You can download the latest version of `everestctl` visiting the latest release 
     1. Download the latest version of `everestctl`.
 
         ```sh
-        curl -sSL -o everestctl-linux-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-linux-amd64
+        curl -sSL -o everestctl-linux-amd64 https://github.com/openeverest/openeverest/releases/latest/download/everestctl-linux-amd64
         ```
 
     2. Install `everestctl` binary to /usr/local/bin/.
@@ -37,7 +37,7 @@ You can download the latest version of `everestctl` visiting the latest release 
     1. Download the latest version of `everestctl` for Apple Silicon.
 
         ```sh
-        curl -sSL -o everestctl-darwin-arm64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-arm64
+        curl -sSL -o everestctl-darwin-arm64 https://github.com/openeverest/openeverest/releases/latest/download/everestctl-darwin-arm64
         ```
 
     2. Install `everestctl` binary to /usr/local/bin/.
@@ -60,7 +60,7 @@ You can download the latest version of `everestctl` visiting the latest release 
     1. Download the latest version of `everestctl` for Intel CPUs.
 
         ```sh
-        curl -sSL -o everestctl-darwin-amd64 https://github.com/percona/everest/releases/latest/download/everestctl-darwin-amd64
+        curl -sSL -o everestctl-darwin-amd64 https://github.com/openeverest/openeverest/releases/latest/download/everestctl-darwin-amd64
         ```
 
     2. Install `everestctl` binary to /usr/local/bin/.

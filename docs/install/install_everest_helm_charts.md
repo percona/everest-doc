@@ -2,7 +2,7 @@
 
 This section explains how to install OpenEverest using [Helm](https://helm.sh/){:target="_blank"} as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
-Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+OpenEverest Helm charts can be found in [openeverest/openeverest]( https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Important"
     If you installed OpenEverest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
@@ -13,17 +13,17 @@ Percona Helm charts can be found in [percona/percona-helm-charts]( https://githu
 Here are the steps to install OpenEverest and deploy additional database namespaces:
 {.power-number}
 
-1. Add the Percona Helm repository:
+1. Add the OpenEverest Helm repository:
 
     ```sh
-    helm repo add percona https://percona.github.io/percona-helm-charts/
+    helm repo add openeverest https://openeverest.github.io/openeverest/
     helm repo update
     ```
 
 2. Install OpenEverest:
 
     ```sh
-    helm install everest-core percona/everest \
+    helm install everest-core openeverest/openeverest \
     --namespace everest-system \
     --create-namespace
     ```
@@ -51,14 +51,14 @@ Here are the steps to install OpenEverest and deploy additional database namespa
     
 
         ```sh
-        helm install everest-core percona/everest --namespace=everest-system --create-namespace --set pmm.enabled=true
+        helm install everest-core openeverest/openeverest --namespace=everest-system --create-namespace --set pmm.enabled=true
         ```
 
 
         Install OpenEverest with TLS enabled:
 
             
-            helm install everest-core percona/everest \
+            helm install everest-core openeverest/openeverest \
             --namespace everest-system \
             --create-namespace
             --set server.tls.enabled=true
@@ -89,7 +89,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command:
                     
             ```sh
-            helm upgrade everest-core percona/everest \
+            helm upgrade everest-core openeverest/openeverest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=LoadBalancer
@@ -123,7 +123,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-            helm upgrade everest-core percona/everest \
+            helm upgrade everest-core openeverest/openeverest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=NodePort
@@ -192,7 +192,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
 
     ```sh
     helm install everest \
-    percona/everest-db-namespace \
+    openeverest/everest-db-namespace \
     --create-namespace \
     --namespace <DB namespace>
     ```
@@ -205,10 +205,10 @@ Here are the steps to install OpenEverest and deploy additional database namespa
 
 You can customize various parameters in the OpenEverest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
 
-A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
+A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/openeverest/openeverest/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
 
 
-**percona/everest chart**
+**openeverest/everest chart**
 
 |**Key**|**Type**|**Default**|**Description**|
 |------|---------|-----------|---------------|
@@ -216,7 +216,7 @@ A few parameters are listed in the following table. For a detailed list of the p
 |`server.oidc`|object|{}|OIDC configuration for Everest.</br></br> These settings are applied only during installation. To modify the settings after installation, you have to manually update the everest-settings `ConfigMap`.|
 
 
-**percona/everest-db-namespace subchart**
+**openeverest/everest-db-namespace subchart**
 
 |**Key**|**Type**|**Default**|**Description**|
 |-------|--------|-----------|---------------

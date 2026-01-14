@@ -26,7 +26,7 @@ Version 1.1.0 introduces the following changes:
 ## Release highlights
 
 !!! info "Important"
-    OpenEverest 1.1.0 comes with its own set of [limitations](Percona-Everest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
+    OpenEverest 1.1.0 comes with its own set of [limitations](OpenEverest-1.1.0-(2024-08-12).md#known-limitations) that you should be aware of.
 
 
 ### Enhancements for PostgreSQL disaster recovery
@@ -136,7 +136,7 @@ If you have multiple storages with the same bucket, URL, and region, you won’t
 To check whether your existing Everest installation has any backup storages using the same bucket, region, and endpoint URL, execute the following command:
 
 ```sh
-curl -sS "https://raw.githubusercontent.com/percona/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
+curl -sS "https://raw.githubusercontent.com/openeverest/everest-doc/main/tools/bin/check-duplicated-storages.sh" | bash
 ```
 
 

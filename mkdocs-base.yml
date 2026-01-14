@@ -6,8 +6,8 @@ site_author: OpenEverest LLC
 site_url: ""
 copyright: OpenEverest LLC, &#169; 2025
 use_directory_urls: false
-repo_name: percona/everest-doc
-repo_url: https://github.com/percona/everest-doc
+repo_name: openeverest/everest-doc
+repo_url: https://github.com/openeverest/everest-doc
 edit_uri: edit/main/docs/
 
 theme:
@@ -73,7 +73,7 @@ extra_javascript:
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2025 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://openeverest.io/">OpenEverest LLC</a> and/or its affiliates © 2026 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -113,7 +113,7 @@ plugins:
   git-revision-date: {}
   git-committers:
     enabled: !ENV [CI, false]
-    repository: percona/everest-doc
+    repository: openeverest/everest-doc
     branch: "main" 
   meta-descriptions:
     export_csv: false
@@ -155,29 +155,29 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
-      - OpenEverest 1.10.0 (2025-11-28): release-notes/Percona-Everest-1.10.0-(2025-11-28).md
-      - OpenEverest 1.9.0 (2025-09-23): release-notes/Percona-Everest-1.9.0-(2025-09-23).md
-      - OpenEverest 1.8.1 (2025-08-11): release-notes/Percona-Everest-1.8.1-(2025-08-11).md
-      - OpenEverest 1.8.0 (2025-07-16): release-notes/Percona-Everest-1.8.0-(2025-07-16).md
-      - OpenEverest 1.7.0 (2025-05-29): release-notes/Percona-Everest-1.7.0-(2025-05-29).md
-      - OpenEverest 1.6.0 (2025-04-16): release-notes/Percona-Everest-1.6.0-(2025-04-16).md
-      - OpenEverest 1.5.0 (2025-04-03): release-notes/Percona-Everest-1.5.0-(2025-03-04).md
-      - OpenEverest 1.4.0 (2025-01-07): release-notes/Percona-Everest-1.4.0-(2025-01-07).md
-      - OpenEverest 1.3.0 (2024-11-18): release-notes/Percona-Everest-1.3.0-(2024-11-18).md
-      - OpenEverest 1.2.0 (2024-10-01): release-notes/Percona-Everest-1.2.0-(2024-10-01).md
-      - OpenEverest 1.1.1 (2024-08-22): release-notes/Percona-Everest-1.1.1-(2024-08-22).md
-      - OpenEverest 1.1.0 (2024-08-12): release-notes/Percona-Everest-1.1.0-(2024-08-12).md
-      - OpenEverest 1.0.1 (2024-07-08): release-notes/Percona-Everest-1.0.1-(2024-07-08).md
-      - OpenEverest 1.0.0 (2024-06-28): release-notes/Percona-Everest-1.0.0-(2024-06-28).md
-      - OpenEverest 0.10.1 (2024-05-23): release-notes/Percona-Everest-0.10.1-(2024-05-23).md
-      - OpenEverest 0.10.0 (2024-05-03): release-notes/Percona-Everest-0.10.0-(2024-05-03).md
-      - OpenEverest 0.9.1 (2024-04-02): release-notes/Percona-Everest-0.9.1-(2024-04-02).md
-      - OpenEverest 0.9.0 (2024-04-01): release-notes/Percona-Everest-0.9.0-(2024-04-01).md
-      - OpenEverest 0.8.0 (2024-02-22): release-notes/Percona-Everest-0.8.0-(2024-02-22).md
-      - OpenEverest 0.7.0 (2024-01-31): release-notes/Percona-Everest-0.7.0-(2024-01-31).md
-      - OpenEverest 0.6.0 (2024-01-11): release-notes/Percona-Everest-0.6.0-(2024-01-11).md
-      - OpenEverest 0.5.0 (2023-11-28): release-notes/Percona-Everest-0.5.0-(2023-11-28).md      
-      - OpenEverest 0.4.0 (2023-10-30): release-notes/Percona-Everest-0.4.0-(2023-10-30).md      
+      - OpenEverest 1.10.0 (2025-11-28): release-notes/OpenEverest-1.10.0-(2025-11-28).md
+      - OpenEverest 1.9.0 (2025-09-23): release-notes/OpenEverest-1.9.0-(2025-09-23).md
+      - OpenEverest 1.8.1 (2025-08-11): release-notes/OpenEverest-1.8.1-(2025-08-11).md
+      - OpenEverest 1.8.0 (2025-07-16): release-notes/OpenEverest-1.8.0-(2025-07-16).md
+      - OpenEverest 1.7.0 (2025-05-29): release-notes/OpenEverest-1.7.0-(2025-05-29).md
+      - OpenEverest 1.6.0 (2025-04-16): release-notes/OpenEverest-1.6.0-(2025-04-16).md
+      - OpenEverest 1.5.0 (2025-04-03): release-notes/OpenEverest-1.5.0-(2025-03-04).md
+      - OpenEverest 1.4.0 (2025-01-07): release-notes/OpenEverest-1.4.0-(2025-01-07).md
+      - OpenEverest 1.3.0 (2024-11-18): release-notes/OpenEverest-1.3.0-(2024-11-18).md
+      - OpenEverest 1.2.0 (2024-10-01): release-notes/OpenEverest-1.2.0-(2024-10-01).md
+      - OpenEverest 1.1.1 (2024-08-22): release-notes/OpenEverest-1.1.1-(2024-08-22).md
+      - OpenEverest 1.1.0 (2024-08-12): release-notes/OpenEverest-1.1.0-(2024-08-12).md
+      - OpenEverest 1.0.1 (2024-07-08): release-notes/OpenEverest-1.0.1-(2024-07-08).md
+      - OpenEverest 1.0.0 (2024-06-28): release-notes/OpenEverest-1.0.0-(2024-06-28).md
+      - OpenEverest 0.10.1 (2024-05-23): release-notes/OpenEverest-0.10.1-(2024-05-23).md
+      - OpenEverest 0.10.0 (2024-05-03): release-notes/OpenEverest-0.10.0-(2024-05-03).md
+      - OpenEverest 0.9.1 (2024-04-02): release-notes/OpenEverest-0.9.1-(2024-04-02).md
+      - OpenEverest 0.9.0 (2024-04-01): release-notes/OpenEverest-0.9.0-(2024-04-01).md
+      - OpenEverest 0.8.0 (2024-02-22): release-notes/OpenEverest-0.8.0-(2024-02-22).md
+      - OpenEverest 0.7.0 (2024-01-31): release-notes/OpenEverest-0.7.0-(2024-01-31).md
+      - OpenEverest 0.6.0 (2024-01-11): release-notes/OpenEverest-0.6.0-(2024-01-11).md
+      - OpenEverest 0.5.0 (2023-11-28): release-notes/OpenEverest-0.5.0-(2023-11-28).md      
+      - OpenEverest 0.4.0 (2023-10-30): release-notes/OpenEverest-0.4.0-(2023-10-30).md      
   - Features: features.md
   - Quickstart guide: quick-install.md
     

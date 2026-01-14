@@ -1,7 +1,7 @@
 # Uninstall OpenEverest using Helm
 
 !!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
 !!! info "important"
     If you installed OpenEverest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.

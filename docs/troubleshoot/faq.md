@@ -29,7 +29,7 @@ Yes, the OpenEverest backend has logs. It runs as an `everest-server` deployment
 Run the following command to retrieve the logs from the pods associated with the deployment:
 
 ```sh
-kubectl logs -f deploy/percona-everest -n everest-system
+kubectl logs -f deploy/openeverest -n everest-system
 ```
 
 
@@ -38,7 +38,7 @@ kubectl logs -f deploy/percona-everest -n everest-system
 You can view the logs by running the following command:
 
 ```sh
-kubectl logs -f deploy/percona-everest -n everest-system
+kubectl logs -f deploy/openeverest -n everest-system
 ```
 
 ## How to identify which component is failing?
@@ -58,7 +58,7 @@ OpenEverest doesn't deploy PMM (Percona Monitoring and Management). However, you
 
 We configure PMM agents in each DB deployment to communicate with an existing PMM server.
 
-The following table shows the [configurable parameters](https://github.com/percona/percona-helm-charts/tree/main/charts/everest#configuration){:target="_blank"} of OpenEverest chart and their default values.
+The following table shows the [configurable parameters](https://github.com/openeverest/openeverest/tree/main/charts/everest#configuration){:target="_blank"} of OpenEverest chart and their default values.
 
 ### Monitoring configuration highlights:
 

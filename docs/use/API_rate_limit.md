@@ -32,7 +32,7 @@ To customize the API rate limiting:
 1. Run the following command:
 
     ```
-    kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+    kubectl -n everest-system patch deployment openeverest --type strategic -p 'spec:
       strategy:
         rollingUpdate:
           maxSurge: 0
@@ -53,7 +53,7 @@ To customize the API rate limiting:
 
     Replace 200 with the desired value.
 
-2. After executing the previous command, `percona-everest` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
+2. After executing the previous command, `openeverest` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
       ```
       kubectl port-forward svc/everest 8080:8080 -n everest-system

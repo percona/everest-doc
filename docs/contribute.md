@@ -13,15 +13,17 @@ We welcome all kinds of contributions so here's how you can get involved:
 
 ## Submit a bug report or feature request
 
-If you find a bug in OpenEverest, you can submit a report via the [Percona  Everest Community Forum](https://forums.percona.com){:target="_blank"}. 
-Start by searching the open topics for a similar report. If you find that someone else has already reported the same issue, you can upvote that report to increase its visibility.
+If you find a bug in OpenEverest, you can submit a report via [GitHub Issues](https://github.com/openeverest/openeverest/issues){:target="_blank"}. 
+Start by searching the open issues for a similar report. If you find that someone else has already reported the same issue, you can upvote that report to increase its visibility.
 
 If there is no existing report, submit a report following these steps:
 {.power-number}
 
-1. Sign in to [Percona Everest Forum](https://forums.percona.com){:target="_blank"}. You will need to create an account if you do not have one.
+1. Sign in to [GitHub](https://github.com){:target="_blank"}. You will need to create an account if you do not have one.
 
-2. Create a report that:      
+2. Go to the [OpenEverest Issues page](https://github.com/openeverest/openeverest/issues){:target="_blank"} and click **New issue**.
+
+3. Create a report that:      
       *  describes the steps to reproduce the issue
       *  includes the version of OpenEverest, your environment, and so on
       *  has not been reported already 
@@ -29,7 +31,7 @@ If there is no existing report, submit a report following these steps:
 
 ## Contribute to OpenEverest code
 
-If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/percona/everest/blob/main/CONTRIBUTING.md).
+If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/openeverest/governance/blob/main/CODE_OF_CONDUCT.md).
 
 ## Contribute to OpenEverest documentation
 

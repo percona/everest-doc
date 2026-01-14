@@ -7,15 +7,15 @@
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_1)|Simplify your OpenEverest deployments with Helm|
-    | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
-    | **3.**|[Improved edit database flow](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_3)|Improved edit database flow for a more streamlined user experience|
-    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for [Percona Operator for MongoDB v1.18.0](https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"} (PSMDB) and [Percona Operator for PostgreSQL v2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"} (PG)|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.4.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.4.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.4.0|
-    | **.9**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.4.0|
+    | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_1)|Simplify your OpenEverest deployments with Helm|
+    | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
+    | **3.**|[Improved edit database flow](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_3)|Improved edit database flow for a more streamlined user experience|
+    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for [Percona Operator for MongoDB v1.18.0](https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"} (PSMDB) and [Percona Operator for PostgreSQL v2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"} (PG)|
+    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.4.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.4.0|
+    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.4.0|
+    | **.9**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.4.0|
 
 
 ## Release highlights

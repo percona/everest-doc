@@ -1,7 +1,7 @@
 # Install OpenEverest using everestctl
 
 !!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
 ## Before you start
 
@@ -18,7 +18,7 @@ export KUBECONFIG=~/.kube/config
 ## Install OpenEverest
 
 !!! info "Important"
-    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install OpenEverest. To configure chart parameters during installation through `everestctl`, you can:
+    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} to install OpenEverest. To configure chart parameters during installation through `everestctl`, you can:
 
     * Use the `--helm-.set` flag to specify individual parameter values.
     * Provide a values file with the `--helm.values` flag for bulk configuration.
@@ -26,7 +26,7 @@ export KUBECONFIG=~/.kube/config
 To install and provision OpenEverest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision OpenEverest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
+1. Download the latest release of [everestctl](https://github.com/openeverest/openeverest/releases/latest){:target="_blank"} to provision OpenEverest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
 
 2. You can install OpenEverest using either the wizard or the headless mode.
 
@@ -124,7 +124,7 @@ To install and provision OpenEverest to Kubernetes:
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
             ```sh
-            helm upgrade everest-system percona/everest \
+            helm upgrade everest-system openeverest/openeverest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=LoadBalancer
@@ -156,7 +156,7 @@ To install and provision OpenEverest to Kubernetes:
 
                     
             ```sh
-            helm upgrade everest-system percona/everest \
+            helm upgrade everest-system openeverest/openeverest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=NodePort

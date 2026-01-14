@@ -20,7 +20,7 @@ Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want 
 To disable telemetry run:
 
 ```sh
-kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+kubectl -n everest-system patch deployment openeverest --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0
@@ -40,7 +40,7 @@ kubectl -n everest-system patch deployment percona-everest --type strategic -p '
 If you want to enable telemetry again:
 
 ```sh
-kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+kubectl -n everest-system patch deployment openeverest --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0

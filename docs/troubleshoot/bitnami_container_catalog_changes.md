@@ -74,7 +74,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
 2. Upgrade the main OpenEverest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
     ```sh
-    helm upgrade everest-system percona/everest \
+    helm upgrade everest-system openeverest/openeverest \
     --reuse-values \
     --namespace everest-system \
     --version 1.8.1
@@ -94,7 +94,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     Execute the helm upgrade command for each `everest-db-namespace `chart identified in **step 1**.
 
     ```sh
-    helm upgrade a1 percona/everest-db-namespace \
+    helm upgrade a1 openeverest/everest-db-namespace \
     --reuse-values \
     --namespace a1 \
     --version 1.8.1
@@ -108,7 +108,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     ```
 
     ```sh
-    helm upgrade everest percona/everest-db-namespace \
+    helm upgrade everest openeverest/everest-db-namespace \
     --reuse-values \
     --namespace everest \
     --version 1.8.1
@@ -201,7 +201,7 @@ Follow these steps to fix the problem:
     Use the release name, namespace, and **APP VERSION** from the previous steps to upgrade the chart.
 
     ```sh
-    helm upgrade everest percona/everest-db-namespace \
+    helm upgrade everest openeverest/everest-db-namespace \
     --reuse-values \
     --namespace everest \
     --version 1.8.1
@@ -290,13 +290,13 @@ Follow these steps to fix the problem:
 
 5. Patch the pod. 
 
-    Replace the `bitnami/kubectl` image with the new `percona/everest-helmtools:0.0.1` image. 
+    Replace the `bitnami/kubectl` image with the new `openeverest/openeverest-helmtools:0.0.1` image. 
     
     !!! note
         Make sure to replace the pod and container names with your custom names.
 
     ```sh
-    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n everest -p '{"spec":{"containers":[{"name":"everest-helm-pre-delete-hook","image":"percona/everest-helmtools:0.0.1"}]}}'
+    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n everest -p '{"spec":{"containers":[{"name":"everest-helm-pre-delete-hook","image":"openeverest/openeverest-helmtools:0.0.1"}]}}'
     pod/everest-helm-pre-delete-hook-288662-dlddp patched
     ```
 

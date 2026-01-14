@@ -12,7 +12,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
 1. Run the following command:
 
     ```sh
-    helm install everest-core percona/everest \
+    helm install everest-core openeverest/openeverest \
         --namespace everest-system \
         --create-namespace \
         --set compatibility.openshift=true \
@@ -52,7 +52,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
 
     ```sh
     helm install everest \
-        percona/everest-db-namespace \
+        openeverest/everest-db-namespace \
         --create-namespace \
         --namespace everest \
         --set compatibility.openshift=true
@@ -79,7 +79,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
             ```
-            helm install percona-everest percona/everest \
+            helm install openeverest openeverest/openeverest \
             --set service.type=LoadBalancer
             ```
                     

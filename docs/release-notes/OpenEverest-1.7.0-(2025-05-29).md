@@ -9,7 +9,7 @@
         ```sh
         kubectl label namespaces everest-system app.kubernetes.io/managed-by-
         ```
-        For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
+        For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
 
     - Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in OpenEverest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
@@ -17,15 +17,15 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters|
-    | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
-    | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
-    | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
-    | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in OpenEverest 1.7.0|
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in OpenEverest 1.7.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.7.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.7.0|
-    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/Percona-Everest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.7.0|
+    | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters|
+    | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
+    | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
+    | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
+    | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in OpenEverest 1.7.0|
+    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in OpenEverest 1.7.0|
+    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.7.0|
+    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.7.0|
+    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.7.0|
 
 
 ## 🌟 Release highlights

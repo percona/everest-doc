@@ -1,7 +1,7 @@
 # Upgrade OpenEverest using Helm
 
 !!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
 OpenEverest consistently delivers updates that includes bug fixes, security enhancements, and various improvements designed to optimize the overall performance of your database.
 
@@ -30,7 +30,7 @@ To update the CRDs, run the following command:
 ```sh
 helm repo update
 helm upgrade --install everest-crds \
-    percona/everest-crds \
+    openeverest/everest-crds \
     --namespace everest-system \
     --take-ownership
 ```
@@ -69,7 +69,7 @@ To upgrade OpenEverest using Helm, run the following commands:
 1. Upgrade the Helm release for Everest (core components).
 
     ```sh
-    helm upgrade everest-core percona/everest --namespace everest-system --version "$VERSION"      
+    helm upgrade everest-core openeverest/openeverest --namespace everest-system --version "$VERSION"      
     ```
 
     where,
@@ -79,7 +79,7 @@ To upgrade OpenEverest using Helm, run the following commands:
 2. Upgrade the Helm release for the database namespace (if applicable):
 
     ```sh
-    helm upgrade everest percona/everest-db-namespace --namespace <DB namespace> --version "$VERSION"
+    helm upgrade everest openeverest/everest-db-namespace --namespace <DB namespace> --version "$VERSION"
     ```
 
     where,

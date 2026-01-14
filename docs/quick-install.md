@@ -2,7 +2,7 @@
 
 Helm simplifies the installation of OpenEverest. With this guide, you'll be up and running with OpenEverest in no time. However, we also have a comprehensive [installation guide](install/install_everest_helm_charts.md) that covers all possibilities.
 
-Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+OpenEverest Helm charts can be found in [openeverest/openeverest]( https://github.com/openeverest/openeverest/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Alternative installation method"
     If you prefer an alternative method, you can [install OpenEverest using everestctl](install/installEverest.md).
@@ -55,10 +55,10 @@ Before getting started with OpenEverest, do the following:
 To install OpenEverest using Helm follow these steps:
 {.power-number}
 
-1. Add the Percona Helm repository.
+1. Add the OpenEverest Helm repository.
 
     ```sh
-    helm repo add percona https://percona.github.io/percona-helm-charts/
+    helm repo add openeverest https://openeverest.github.io/openeverest/
     helm repo update
     ```
 
@@ -66,7 +66,7 @@ To install OpenEverest using Helm follow these steps:
 
 
     ```sh
-    helm install everest-core percona/everest \
+    helm install everest-core openeverest/openeverest \
     --namespace everest-system \
     --create-namespace
     ```
@@ -89,7 +89,7 @@ To install OpenEverest using Helm follow these steps:
         1. Install OpenEverest:
 
             ```sh
-            helm install everest percona/everest \
+            helm install everest openeverest/openeverest \
               -n everest-system \
               --set ingress.enabled=true \
               --set ingress.ingressClassName="" \
@@ -134,7 +134,7 @@ To install OpenEverest using Helm follow these steps:
             Install OpenEverest using this file:
 
             ```sh
-            helm install everest percona/everest \
+            helm install openeverest openeverest/openeverest \
             -n everest-system \
             -f everest-values.yaml
             ```
@@ -144,7 +144,7 @@ To install OpenEverest using Helm follow these steps:
         Install OpenEverest with TLS enabled:
 
         ```sh
-        helm install everest-core percona/everest \
+        helm install everest-core openeverest/openeverest \
         --namespace everest-system \
         --create-namespace
         --set server.tls.enabled=true
@@ -183,7 +183,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                                                 
             ```sh
-            helm install percona-everest percona/everest \
+            helm install openeverest openeverest/openeverest \
             --set service.type=LoadBalancer
             ```
             
