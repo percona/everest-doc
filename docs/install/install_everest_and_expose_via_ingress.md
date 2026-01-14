@@ -139,7 +139,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
         ```sh
         helm install everest \
-        openeverest/openeverest-db-namespace \
+        openeverest/everest-db-namespace \
         --create-namespace \
         --namespace <DB namespace>
         ```
