@@ -13,7 +13,7 @@ Version 0.9.1 introduces the following changes:
 !!! warning
     OpenEverest introduces a breaking change that prevents you from directly upgrading to version 0.9.1.
 
-To install OpenEverest 0.9.1, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the command:
+To install OpenEverest 0.9.1, make sure to [uninstall](../install/uninstallEverest.html) any previous versions by running the command:
 
     everestctl uninstall
 

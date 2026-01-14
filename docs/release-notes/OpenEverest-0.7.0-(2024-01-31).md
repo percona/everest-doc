@@ -36,4 +36,4 @@ Here's what you'll get out of OpenEverest monitoring:
 
  ![!image](../images/everest_select_endpoint.png)
 
-If you're looking for in-depth insights into this feature, refer to our comprehensive [documentation](https://docs.percona.com/everest/use/monitor_endpoints.html).
+If you're looking for in-depth insights into this feature, refer to our comprehensive [documentation](../use/monitor_endpoints.html).

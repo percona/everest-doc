@@ -1,21 +1,21 @@
 # What's new in OpenEverest 1.6.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 ??? info "🔑 Expand to unleash the key updates"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Manual storage scaling](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Increase the capacity of your storage through manual storage scaling|
-    | **2.**|[MongoDB: Major DB updates](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Support for major version upgrades of MongoDB|
-    | **3.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17|
-    | **4.**|[Removed support for PostgreSQL 12](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#removed-support-for-postgresql-12)|OpenEverest 1.6.0 discontinues support for PostgreSQL 12|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
+    | **1.**|[Manual storage scaling](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_1)|Increase the capacity of your storage through manual storage scaling|
+    | **2.**|[MongoDB: Major DB updates](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_2)|Support for major version upgrades of MongoDB|
+    | **3.**|[Operator Upgrades](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#__tabbed_1_3)|Support for Percona Operator for PostgreSQL 2.6.0 and PostgreSQL 17|
+    | **4.**|[Removed support for PostgreSQL 12](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#removed-support-for-postgresql-12)|OpenEverest 1.6.0 discontinues support for PostgreSQL 12|
+    | **5.**|[Google Container Registry (GCR) deprecation](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
     | **6.**|[New features](OpenEverest-1.6.0-%282025-04-16%29.html#new-features)|Check out the new features introduced in OpenEverest 1.6.0|
     | **7.**|[Improvements](OpenEverest-1.6.0-%282025-04-16%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.6.0|
     | **8.**|[Bugs](OpenEverest-1.6.0-%282025-04-16%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.6.0|
-    | **9.**|[Known limitation](https://docs.percona.com/everest/release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.6.0|
+    | **9.**|[Known limitation](../release-notes/OpenEverest-1.6.0-%282025-04-16%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.6.0|
 
 
 ## 🌟 Release highlights
@@ -39,7 +39,7 @@
     ![!image](../images/edit_storage_capacity.png)
 
 
-    :mag: If you want to explore this topic in depth, check out our detailed [documentation](https://docs.percona.com/everest/use/manual_storage_scaling.html)!
+    :mag: If you want to explore this topic in depth, check out our detailed [documentation](../use/manual_storage_scaling.html)!
 
 === "🔄 Major database upgrades"
 
@@ -53,7 +53,7 @@
     
     ![!image](../images/upgrade_database_versions.png)
 
-     :mag: For a deep dive into this topic, refer to our [documentation](https://docs.percona.com/everest/upgrade/mongodb_major_upgrades.html).
+     :mag: For a deep dive into this topic, refer to our [documentation](../upgrade/mongodb_major_upgrades.html).
 
 
 === ":simple-postgresql: Expanded PostgreSQL support"
@@ -71,7 +71,7 @@ OpenEverest 1.6.0 **no longer supports** PostgreSQL 12.
 
 To upgrade to OpenEverest 1.6.0, you must first migrate your clusters to a supported PostgreSQL version (13 or higher).
 
-**Migration Guide:** Follow our [PostgreSQL migration](https://docs.percona.com/everest/reference/postgresql12_migration.html) procedure for a step-by-step guide to a seamless upgrade.
+**Migration Guide:** Follow our [PostgreSQL migration](../reference/postgresql12_migration.html) procedure for a step-by-step guide to a seamless upgrade.
 
 ## 🛑 Google Container Registry (GCR)
 
@@ -167,4 +167,4 @@ We strongly recommend using PostgreSQL version 17.4 instead of 17.2 to take adva
 
 Upgrade to **OpenEverest 1.6.0** to access these new features and improvements. 
 
-:mag: Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+:mag: Explore our [documentation](../upgrade/upgrade_with_helm.html) for the upgrade steps.

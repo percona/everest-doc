@@ -1,6 +1,6 @@
 # What's new in OpenEverest 1.8.1
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 ## Fixed issue
@@ -11,4 +11,4 @@
 
 Upgrade to **OpenEverest 1.8.1** to access these new features and improvements.
 
-📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📖 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

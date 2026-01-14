@@ -1,20 +1,20 @@
 # What's new in OpenEverest 1.5.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 ??? info "🔑 Updates at a glance"
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Role-based access control (RBAC) Generally Available (GA)](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with OpenEverest 1.5.0 |
-    | **2.**|[RBAC: Integration with IdP groups](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
-    | **3.**|[Operators support](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
-    | **4.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in OpenEverest 1.5.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.5.0|
-    | **7.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.5.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.5.0|
+    | **1.**|[Role-based access control (RBAC) Generally Available (GA)](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_1)|RBAC is now GA with OpenEverest 1.5.0 |
+    | **2.**|[RBAC: Integration with IdP groups](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_2)|Assign RBAC policies to user groups obtained from an external IdP|
+    | **3.**|[Operators support](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#__tabbed_1_3)|Support for PXC operator 1.16.1 and PSMDB operator 1.19.1|
+    | **4.**|[Google Container Registry (GCR) deprecation](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**|
+    | **5.**|[New features](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#new-features)|Check out the new features introduced in OpenEverest 1.5.0|
+    | **6.**|[Improvements](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.5.0|
+    | **7.**|[Bugs](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.5.0|
+    | **8.**|[Known limitations](../release-notes/OpenEverest-1.5.0-%282025-03-04%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.5.0|
 
 
 ## Release highlights
@@ -27,11 +27,11 @@
 
     With RBAC, only authorized individuals can access specific resources or perform certain actions based on their assigned roles. This update introduces:
 
-    - [Granular access management](https://docs.percona.com/everest/administer/rbac.html): Allocate roles with detailed permissions to ensure precise access control.
+    - [Granular access management](../administer/rbac.html): Allocate roles with detailed permissions to ensure precise access control.
 
-    - [Enhanced security](https://docs.percona.com/everest/administer/Idp_integration.html): Restrict access to authorized users and teams only.
+    - [Enhanced security](../administer/Idp_integration.html): Restrict access to authorized users and teams only.
 
-    - [Enhanced IdP integration](https://docs.percona.com/everest/administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
+    - [Enhanced IdP integration](../administer/Idp_groups_integration.html): Integrate with your Identity Provider to streamline the authentication process and effectively manage the assignment of user roles.
 
 === "RBAC with enhanced IdP"
 
@@ -40,7 +40,7 @@
     Starting with OpenEverest 1.5.0, you can now assign RBAC policies to user groups obtained from the external IDP. This enhancement simplifies permissions management for external users without the need for unique **sub IDs**. To use IdP groups in OpenEverest RBAC, you must set up the **groups** claim in your IdP provider configuration.
 
 
-    Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
+    Configure your Identity Provider (IdP) to provide the user's groups claim by following our [documentation](../administer/Idp_groups_integration.html).
 
     To retrieve the IdP groups, you need to include the `groups` scope by specifying the following fields:
 
@@ -57,7 +57,7 @@
     |**email**|Grants access to the user’s email address and its verification status.|
         |**groups**|Grants access to obtain information about the user’s group memberships.|
 
-    :mag: To explore further, dive into our [documentation](https://docs.percona.com/everest/administer/Idp_groups_integration.html).
+    :mag: To explore further, dive into our [documentation](../administer/Idp_groups_integration.html).
 
 
 === "Operators support"
@@ -208,7 +208,7 @@ Use the date picker to select the desired date and time for PITR restore.
 
 ## :rocket: Upgrade now
 
-Upgrade to **OpenEverest 1.5.0** to access these new features and improvements. Explore our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+Upgrade to **OpenEverest 1.5.0** to access these new features and improvements. Explore our [documentation](../upgrade/upgrade_with_helm.html) for the upgrade steps.
 
 
 

@@ -1,6 +1,6 @@
 # What's new in OpenEverest 1.10.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 ??? info "Expand to unleash the key updates"
 
@@ -8,14 +8,14 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_1)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
-    | **2.**|[MySQL 8.4](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_2)|OpenEverest 1.10.0 now supports MySQL 8.4. |
-    | **3.**|[Percona Monitoring and Management (PMM) 3](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_3)|OpenEverest 1.10.0 now supports PMM 3. |
-    | **4.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_4)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
-    | **5.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#new-features)|Check out the new features introduced in OpenEverest 1.10.0|
-    | **6.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.10.0|
-    | **7.**|[Bug fixes](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.10.0|
-    | **8.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.10.0|
+    | **1.**|[Split-Horizon DNS for Percona Server for MongoDB ](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_1)| Enable database administrators to use custom domain names to expose ReplicaSet Pods, both inside and outside the Kubernetes cluster, without conflicting with the default DNS settings.|
+    | **2.**|[MySQL 8.4](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_2)|OpenEverest 1.10.0 now supports MySQL 8.4. |
+    | **3.**|[Percona Monitoring and Management (PMM) 3](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_3)|OpenEverest 1.10.0 now supports PMM 3. |
+    | **4.**|[Operator upgrades](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#__tabbed_1_4)|Support for Percona Operator for MongoDB v1.21.0, Percona Operator for MySQL based on Percona XtraDB Cluster v1.18.0, and Percona PostgreSQL Operator v2.7.0 |
+    | **5.**|[New features](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#new-features)|Check out the new features introduced in OpenEverest 1.10.0|
+    | **6.**|[Improvements](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.10.0|
+    | **7.**|[Bug fixes](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.10.0|
+    | **8.**|[Known limitations](../release-notes/OpenEverest-1.10.0-%282025-11-28%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.10.0|
 
 
 ## 🌟 Release highlights
@@ -56,7 +56,7 @@
         
     4. Click **Create**. Your Split-Horizon DNS policy will be created and appears in the configuration list.
 
-    📘 Explore the full capabilities of this feature in our detailed [documentation](https://docs.percona.com/everest/networking/split-horizon_scenarios.html).
+    📘 Explore the full capabilities of this feature in our detailed [documentation](../networking/split-horizon_scenarios.html).
 
 === "🐬 MySQL 8.4"
     ### Support for MySQL 8.4
@@ -153,4 +153,4 @@ Some limitations apply when using Split-Horizon DNS. For more details, refer to 
 
 Upgrade to **OpenEverest 1.10.0** to access these new features and improvements.
 
-📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📖 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

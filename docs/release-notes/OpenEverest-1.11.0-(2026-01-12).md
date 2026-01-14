@@ -1,6 +1,6 @@
 # What's new in OpenEverest 1.11.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 ??? info "Expand to unleash the key updates"
 
@@ -8,13 +8,13 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[NodePort Service Type for DatabaseClusters](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_1)|Expose DatabaseClusters via NodePort service type, allowing external access to database clusters through specific node ports.|
-    | **2.**|[PostgreSQL 18.1](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_2)|OpenEverest 1.11.0 now supports PostgreSQL 18.1.|
-    | **3.**|[Operator upgrades](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_3)|Support for Percona PostgreSQL Operator v2.8.2.|
-    | **4.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#new-features)|Check out the new features introduced in OpenEverest 1.11.0|
-    | **5.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.11.0|
-    | **6.**|[Bug fixes](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.11.0|
-    | **7.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.11.0|
+    | **1.**|[NodePort Service Type for DatabaseClusters](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_1)|Expose DatabaseClusters via NodePort service type, allowing external access to database clusters through specific node ports.|
+    | **2.**|[PostgreSQL 18.1](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_2)|OpenEverest 1.11.0 now supports PostgreSQL 18.1.|
+    | **3.**|[Operator upgrades](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#__tabbed_1_3)|Support for Percona PostgreSQL Operator v2.8.2.|
+    | **4.**|[New features](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#new-features)|Check out the new features introduced in OpenEverest 1.11.0|
+    | **5.**|[Improvements](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.11.0|
+    | **6.**|[Bug fixes](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.11.0|
+    | **7.**|[Known limitations](../release-notes/OpenEverest-1.11.0-%282026-01-12%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.11.0|
 
 
 ## 🌟 Release highlights
@@ -23,7 +23,7 @@
     ### Expose DatabaseClusters via NodePort Service Type
     OpenEverest now supports exposing DatabaseClusters via the NodePort service type, allowing external access when LoadBalancer services aren't available. Use NodePort with appropriate network controls and avoid exposing clusters directly to the public internet.
 
-    📘 For detailed instructions and best practices, refer to our [documentation](https://docs.percona.com/everest/networking/nodeport_support.html).
+    📘 For detailed instructions and best practices, refer to our [documentation](../networking/nodeport_support.html).
 
 === "🐘 PostgreSQL 18.1"
     ### Support for PostgreSQL 18.1
@@ -64,4 +64,4 @@ When adding the first backup storage to a PostgreSQL cluster that was created wi
 
 Upgrade to **OpenEverest 1.11.0** to access these new features and improvements.
 
-📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📖 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

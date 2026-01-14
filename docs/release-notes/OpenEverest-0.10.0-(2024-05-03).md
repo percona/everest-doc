@@ -19,7 +19,7 @@ We're thrilled to announce that you can now upgrade your OpenEverest instance us
 
 You can only upgrade one minor version at a time. For instance, you can upgrade from version 0.9.0 to version 0.10.0.
 
-For more information on upgrading OpenEverest, see our [documentation](https://docs.percona.com/everest/upgrade_with_cli.html).
+For more information on upgrading OpenEverest, see our [documentation](../upgrade_with_cli.html).
 
 
 ### Streamlining traffic management with API rate limiting
@@ -28,7 +28,7 @@ Starting with OpenEverest 0.10.0 version, we have introduced a new feature calle
 
 API rate limiting is one of the key aspects of managing API's. With this you can set a threshold for the number of requests your API can receive within a specific period. This means you can take control and regulate the incoming traffic, mitigating the risk of server overload or abuse. 
 
-The default rate limit for OpenEverest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/use/API_rate_limit.html).
+The default rate limit for OpenEverest is 100 requests per second. However, you can customize these limits according to your usage patterns and requirements. To dive deep into this feature, see our comprehensive [documentation](../use/API_rate_limit.html).
 
 
 ### Added control for TLS certificate validation

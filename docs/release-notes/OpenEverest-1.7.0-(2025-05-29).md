@@ -1,6 +1,6 @@
 # 📦 What's new in OpenEverest 1.7.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 !!! warning "Before you upgrade"
@@ -9,7 +9,7 @@
         ```sh
         kubectl label namespaces everest-system app.kubernetes.io/managed-by-
         ```
-        For details, refer to the [Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
+        For details, refer to the [Known limitations](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#upgrade-to-v170-fails-with-namespace-error) section.
 
     - Single Sign-On (SSO) authentication with Microsoft Entra ID **does not function** in OpenEverest 1.7.0. To ensure it functions properly, upgrade to **version 1.8.1**.
 
@@ -17,15 +17,15 @@
 
     |**#**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[GKE Autopilot clusters](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters|
-    | **2.**|[Pod Scheduling policies](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
-    | **3.**|[TLS support](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
-    | **4.**|[Operator Upgrades](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
-    | **5.**|[Breaking Changes](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in OpenEverest 1.7.0|
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in OpenEverest 1.7.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.7.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.7.0|
-    | **9.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.7.0|
+    | **1.**|[GKE Autopilot clusters](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_1)|Deploy OpenEverest on Google Kubernetes Engine (GKE) Autopilot clusters|
+    | **2.**|[Pod Scheduling policies](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_2)|Pod Scheduling for optimized Kubernetes scheduling¶|
+    | **3.**|[TLS support](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_3)|Improved Security with TLS support|
+    | **4.**|[Operator Upgrades](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#__tabbed_1_4)|Support for Percona XtraDB Cluster (PXC) operator|
+    | **5.**|[Breaking Changes](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#breaking-changes)|Learn about the breaking changes introduced in OpenEverest 1.7.0|
+    | **6.**|[New features](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#new-features)|Check out the new features introduced in OpenEverest 1.7.0|
+    | **7.**|[Improvements](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.7.0|
+    | **8.**|[Bugs](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.7.0|
+    | **9.**|[Known limitations](../release-notes/OpenEverest-1.7.0-%282025-05-29%29.html#known-limitation)|Discover all the known limitations in OpenEverest 1.7.0|
 
 
 ## 🌟 Release highlights
@@ -63,7 +63,7 @@
 
     ![!image](../images/default_mongo_policy.png)
 
-    📘 To dive deep into this topic, see our [documentation](https://docs.percona.com/everest/administer/default_policies.html).
+    📘 To dive deep into this topic, see our [documentation](../administer/default_policies.html).
 
     #### Custom Pod scheduling policies
     If you need more control, you can define custom Pod scheduling policies to manage how database pods are placed across Kubernetes nodes. These policies offer fine-grained control over pod distribution using Kubernetes affinity and anti-affinity rules.
@@ -72,7 +72,7 @@
 
     ![!image](../images/affinity_add_rules.png)
 
-    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/administer/custom_policies.html).
+    📘 To explore this topic in detail, see our [documentation](../administer/custom_policies.html).
 
 === "🔐 TLS support"
 
@@ -82,7 +82,7 @@
 
     Administrators can configure server certificates and private keys to enable secure HTTPS access. This enhances the overall security of production environments.
 
-    📘 To explore this topic in detail, see our [documentation](https://docs.percona.com/everest/security/tls_setup.html).
+    📘 To explore this topic in detail, see our [documentation](../security/tls_setup.html).
 
 === " :simple-mysql: PXC Operator"
     
@@ -136,7 +136,7 @@ everestctl settings oidc configure \
 --scopes=openid,profile,email,<your-app-client-id>/.default
 ```
 
-📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
+📘 For detailed information, see our [documentation](../reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## New Features
 
@@ -232,10 +232,10 @@ kubectl label namespaces everest-system app.kubernetes.io/managed-
 
 When integrating Microsoft Entra ID as your OIDC provider for OpenEverest, it's essential to ensure that the access tokens issued are compatible with OpenEverest's token validation logic.
 
-📘 For detailed information, see our [documentation](https://docs.percona.com/everest/reference/known_limitations.html#oidc-integration-with-microsoft-entra).
+📘 For detailed information, see our [documentation](../reference/known_limitations.html#oidc-integration-with-microsoft-entra).
 
 ## 🚀 Upgrade now
 
 Upgrade to **OpenEverest 1.7.0** to access these new features and improvements. 
 
-📘 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📘 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

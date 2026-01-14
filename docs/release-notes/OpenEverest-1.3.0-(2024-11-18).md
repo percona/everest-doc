@@ -1,22 +1,22 @@
 # What's new in OpenEverest 1.3.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 ??? info "Release summary at a glance"
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**  |[Configure proxy nodes](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
-    | **2.**  |[MongoDB Sharding](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in OpenEverest: Optimize your MongoDB databases with sharding|
-    | **3.**  |[Database status](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
-    | **4.**  |[PSMDB Operator v1.17.0 support](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in OpenEverest|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.3.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.3.0|
-    | **8.**|[Deprecated APIs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from OpenEverest 1.3.0|
-    | **9.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.3.0|
-    | **10.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.3.0|
+    | **1.**  |[Configure proxy nodes](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_1)|Configure proxy nodes and define their resource limits|
+    | **2.**  |[MongoDB Sharding](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_2)|Introducing **sharding** in OpenEverest: Optimize your MongoDB databases with sharding|
+    | **3.**  |[Database status](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_3)|Check your database status from the database details page|
+    | **4.**  |[PSMDB Operator v1.17.0 support](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#__tabbed_1_4)|Support for PSMDB Operator v1.17.0 in OpenEverest|
+    | **5.**|[Google Container Registry (GCR) deprecation](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
+    | **6.**|[New features](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.3.0|
+    | **7.**|[Improvements](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.3.0|
+    | **8.**|[Deprecated APIs](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#deprecated-api-endpoints)|Discover all the Deprecated APIs from OpenEverest 1.3.0|
+    | **9.**|[Bugs](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.3.0|
+    | **10.**|[Known limitations](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.3.0|
 
 
 ## Release highlights
@@ -59,7 +59,7 @@
 
     ![!image](../images/enable_sharding.png)
 
-    If you're looking to dive deeper into MongoDB sharding, check out the [documentation](https://docs.percona.com/everest/use/mongo_sharding.html).
+    If you're looking to dive deeper into MongoDB sharding, check out the [documentation](../use/mongo_sharding.html).
 
 === "Database status"
 
@@ -217,12 +217,12 @@ You can check the reason for these failures by running the following command:
 
 
 !!! info "Important"
-    We have compiled a list of  a list of [workarounds](https://docs.percona.com/everest/reference/known_limitations.html#workarounds-for-psmdb-backup-failures) to ensure that your backups function properly again.
+    We have compiled a list of  a list of [workarounds](../reference/known_limitations.html#workarounds-for-psmdb-backup-failures) to ensure that your backups function properly again.
 
 
 ### MongoDB sharding
 
-There are a few limitations related to MongoDB sharding. See our [limitations](https://docs.percona.com/everest/reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
+There are a few limitations related to MongoDB sharding. See our [limitations](../reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
 
 
 

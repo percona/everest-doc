@@ -17,7 +17,7 @@ OpenEverest is an open source cloud native database platform that helps provisio
 !!! info "Important"
     Despite being a major version upgrade, we fully support upgrading from OpenEverest 0.10.1 to 1.0.0.
 
-Check out our comprehensive [documentation](https://docs.percona.com/everest/upgrade_with_cli.html) for all the details on how to upgrade to OpenEverest 1.0.0.
+Check out our comprehensive [documentation](../upgrade_with_cli.html) for all the details on how to upgrade to OpenEverest 1.0.0.
 
 ## Release highlights
 
@@ -33,7 +33,7 @@ Moreover, before initiating the upgrade process, Everest provides a comprehensiv
 
 ![!image](../images/operator_upgrade_pending.png)
 
-For a deep dive into this feature, see our comprehensive [documentation](https://docs.percona.com/everest/upgrade_operators.html).
+For a deep dive into this feature, see our comprehensive [documentation](../upgrade_operators.html).
 
 
 ## User management
@@ -42,7 +42,7 @@ OpenEverest 1.0.0 introduces user management features, enabling you to securely 
 		
 Local user management involves administering OpenEverest users to ensure secure access to database resources. This encompasses tasks such as creating and deleting users, updating their passwords, etc.
 
-If you’re looking for in-depth insights into this feature, see our [documentation](https://docs.percona.com/everest/administer/manage_users.html).
+If you’re looking for in-depth insights into this feature, see our [documentation](../administer/manage_users.html).
 
 
 ## IdP integration for enhanced security
@@ -53,9 +53,9 @@ OpenEverest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/
 
 ![!image](../images/sso_login.png)
 
-To integrate IdP with OpenEverest, first [install OpenEverest](../install/installEverest.md) and then [configure OIDC](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [OpenEverest side](https://docs.percona.com/everest/administer/Idp_integration.html#configure-oidc-on-openeverest-side).
+To integrate IdP with OpenEverest, first [install OpenEverest](../install/installEverest.md) and then [configure OIDC](../administer/Idp_integration.html#configure-oidc-on-the-providerss-side) on the IdP's side as well as the [OpenEverest side](../administer/Idp_integration.html#configure-oidc-on-openeverest-side).
 
-To explore the depths of this feature, delve into our [documentation](https://docs.percona.com/everest/administer/Idp_integration.html).
+To explore the depths of this feature, delve into our [documentation](../administer/Idp_integration.html).
 
 
 ## All new components page
@@ -146,7 +146,7 @@ We're always striving to enhance user experience, and we're excited to announce 
 
 ## Known limitations
 
-Check out the [known limitations](https://docs.percona.com/everest/reference/known_limitations.html) section for in-depth details about the constraints of OpenEverest.
+Check out the [known limitations](../reference/known_limitations.html) section for in-depth details about the constraints of OpenEverest.
 
 
 

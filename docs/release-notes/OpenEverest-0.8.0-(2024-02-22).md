@@ -103,7 +103,7 @@ To view the list of configured namespaces, navigate to <i class="uil uil-cog"></
 
 ![!image](../images/everest_multinamespaces.png)
 
-To gain a deeper understanding of this feature, refer to our comprehensive [documentation](https://docs.percona.com/everest/use/multi-namespaces.html).
+To gain a deeper understanding of this feature, refer to our comprehensive [documentation](../use/multi-namespaces.html).
 
 ### Support for scheduled backups for PostgreSQL
 

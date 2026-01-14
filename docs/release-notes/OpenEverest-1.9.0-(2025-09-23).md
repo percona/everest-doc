@@ -3,7 +3,7 @@
 !!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
     Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 ??? info "Expand to unleash the key updates"
 
@@ -11,11 +11,11 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Load Balancer configuration in OpenEverest](https://docs.percona.com/everest/release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-openeverest)|Define reusable LoadBalancer configurations in OpenEverest.
-    | **2.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in OpenEverest 1.9.0|
-    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.9.0|
-    | **4.**|[Bug fixes](https://docs.percona.com/everest/release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.9.0|
-    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.9.0|
+    | **1.**|[Release highlight: Load Balancer configuration in OpenEverest](../release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#load-balancer-configuration-in-openeverest)|Define reusable LoadBalancer configurations in OpenEverest.
+    | **2.**|[New features](../release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#new-features)|Check out the new features introduced in OpenEverest 1.9.0|
+    | **3.**|[Improvements](../release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.9.0|
+    | **4.**|[Bug fixes](../release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.9.0|
+    | **5.**|[Known limitations](../release-notes/OpenEverest-1.9.0-%282025-09-23%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.9.0|
 
 
 ## 🌟 Release highlights
@@ -77,7 +77,7 @@ Here’s how you can create a load balancer configuration:
 
     ![!image](../images/new_created_load_balancer_configurations.png)
 
-To explore load balancer configuration in detail, check out our comprehensive [documentation](https://docs.percona.com/everest/networking/load_balancer.html).
+To explore load balancer configuration in detail, check out our comprehensive [documentation](../networking/load_balancer.html).
 
 
 ## New features
@@ -153,4 +153,4 @@ To learn about the specific limitations regarding Load Balancer configuration, c
 
 Upgrade to **OpenEverest 1.9.0** to access these new features and improvements.
 
-📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📖 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

@@ -61,11 +61,11 @@ To begin your journey with OpenEverest, check out the [Quickstart Guide for Open
 
     Here's a breakdown of the key concepts in RBAC:
 
-    - [Roles](https://docs.percona.com/everest/administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within OpenEverest.
+    - [Roles](../administer/rbac.html#default-role) - Roles are a set of permissions that allow users to access and carry out various tasks within OpenEverest.
 
-    - [RBAC resources and privileges](https://docs.percona.com/everest/administer/rbac.html#rbac-resources-and-permissions): Resources are the entities or objects within OpenEverest that require controlled access. Privileges specify the particular actions that a role is able to perform on a resource.
+    - [RBAC resources and privileges](../administer/rbac.html#rbac-resources-and-permissions): Resources are the entities or objects within OpenEverest that require controlled access. Privileges specify the particular actions that a role is able to perform on a resource.
 
-    - [Policy definition](https://docs.percona.com/everest/administer/rbac.html#policy-definition-in-rbac): RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC.
+    - [Policy definition](../administer/rbac.html#policy-definition-in-rbac): RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC.
 
 
         The policy definition in OpenEverest is:
@@ -74,7 +74,7 @@ To begin your journey with OpenEverest, check out the [Quickstart Guide for Open
         p, <subject>, <resource-type>, <action>, <resource-name>
         ```
 
-    - [Role assignment](https://docs.percona.com/everest/administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within OpenEverest is crucial for the roles to be effective.
+    - [Role assignment](../administer/rbac.html#assigning-roles-to-users): Assigning specific roles to individual users within OpenEverest is crucial for the roles to be effective.
 
         The syntax for assigning a role is as follows:
 
@@ -82,7 +82,7 @@ To begin your journey with OpenEverest, check out the [Quickstart Guide for Open
         g, username, rolename
         ```
 
-    Explore our comprehensive [documentation](https://docs.percona.com/everest/administer/rbac.html) for everything you need to know about RBAC.
+    Explore our comprehensive [documentation](../administer/rbac.html) for everything you need to know about RBAC.
 
 === "Operator upgrades"
 

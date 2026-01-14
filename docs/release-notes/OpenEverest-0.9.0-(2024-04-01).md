@@ -14,7 +14,7 @@ Version 0.9.0 introduces the following changes:
 !!! warning
     OpenEverest introduces a breaking change that prevents you from directly upgrading to version 0.9.0.
 
-To install OpenEverest 0.9.0, make sure to [uninstall](https://docs.percona.com/everest/install/uninstallEverest.html) any previous versions by running the command:
+To install OpenEverest 0.9.0, make sure to [uninstall](../install/uninstallEverest.html) any previous versions by running the command:
 
     everestctl uninstall
 
@@ -24,7 +24,7 @@ We've taken a step forward in enhancing OpenEverest's point-in-time (PITR) capab
 
 You can now restore your databases to specific points in time within the same cluster as well as a new cluster. This gives you more control over your database environments and more options for data recovery.
 
-If you're looking for in-depth insights into this feature, refer to the sections [Create new database from a point-in-time recovery](https://docs.percona.com/everest/use/createBackups/create_new_database.html#create-a-new-database-from-pitr) and [Restore to a point-in-time recovery](https://docs.percona.com/everest/use/RestoreBackup.html#restore-to-a-point-in-time-recovery) in our documentation.
+If you're looking for in-depth insights into this feature, refer to the sections [Create new database from a point-in-time recovery](../use/createBackups/create_new_database.html#create-a-new-database-from-pitr) and [Restore to a point-in-time recovery](../use/RestoreBackup.html#restore-to-a-point-in-time-recovery) in our documentation.
 
 ![!image](../images/create_db_from_pitr.png)
 
@@ -32,7 +32,7 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 ## New features and improvements
 
-- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618), [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with OpenEverest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL and MongoDB databases. If you're looking to explore this feature further, see our comprehensive [documentation](https://docs.percona.com/everest/use/createBackups/create_new_database.html).
+- [EVEREST-618](https://perconadev.atlassian.net/browse/EVEREST-618), [EVEREST-620](https://perconadev.atlassian.net/browse/EVEREST-620) - Starting with OpenEverest 0.9.0, you can now create a new database using point-in-time recovery for your MySQL and MongoDB databases. If you're looking to explore this feature further, see our comprehensive [documentation](../use/createBackups/create_new_database.html).
 
 - [EVEREST-914](https://perconadev.atlassian.net/browse/EVEREST-914) - We have added a Kubernetes cluster ID to the VMAgent configuration, enabling you to use the same PMM instance to monitor multiple Kubernetes clusters.
 
@@ -46,7 +46,7 @@ If you're looking for in-depth insights into this feature, refer to the sections
 
 - [EVEREST-619](https://perconadev.atlassian.net/browse/EVEREST-619) - Starting with OpenEverest 0.9.0, you can now create a new database using point-in-time recovery for your PostgreSQL databases.
 
-- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the OpenEverest UI to inform users about the [limitations of PostgreSQL](https://docs.percona.com/everest/use/createBackups/EnablePITR.html#limitation-for-postgresql) for PITR. 
+- [EVEREST-896](https://perconadev.atlassian.net/browse/EVEREST-896) - We have added a warning on the OpenEverest UI to inform users about the [limitations of PostgreSQL](../use/createBackups/EnablePITR.html#limitation-for-postgresql) for PITR. 
 
 ## Bugs fixed
 

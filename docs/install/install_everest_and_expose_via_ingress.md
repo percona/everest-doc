@@ -121,7 +121,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
             !!! info "Important"
-                The default `admin` password is stored in plain text. It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found in [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+                The default `admin` password is stored in plain text. It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found in [everestctl installation guide](../install/installEverestCLI.html#__tabbed_1_1).
 
             To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
@@ -227,7 +227,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         - The default `admin` password is stored in plain text.
         
             !!! info "Important"
-                It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed.  Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+                It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed.  Instructions for installing `everestctl` can be found at [everestctl installation guide](../install/installEverestCLI.html#__tabbed_1_1).
 
             To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 

@@ -1,21 +1,21 @@
 # What's new in OpenEverest 1.4.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 ??? info "🔑 Updates at a glance"
 
     |**Sr. No**|**Release summary**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Helm charts](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_1)|Simplify your OpenEverest deployments with Helm|
-    | **2.**|[Namespace management](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
-    | **3.**|[Improved edit database flow](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_3)|Improved edit database flow for a more streamlined user experience|
-    | **4.**|[Operators support](https://docs.percona.com/everest/release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for [Percona Operator for MongoDB v1.18.0](https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"} (PSMDB) and [Percona Operator for PostgreSQL v2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"} (PG)|
-    | **5.**|[Google Container Registry (GCR) deprecation](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
-    | **6.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.4.0|
-    | **7.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.4.0|
-    | **8.**|[Bugs](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.4.0|
-    | **.9**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.4.0|
+    | **1.**|[Helm charts](../release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_1)|Simplify your OpenEverest deployments with Helm|
+    | **2.**|[Namespace management](../release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_2)|Manage your namespaces with new everestctl commands|
+    | **3.**|[Improved edit database flow](../release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_3)|Improved edit database flow for a more streamlined user experience|
+    | **4.**|[Operators support](../release-notes/OpenEverest-1.4.0-%282025-01-07%29.html#__tabbed_1_4)|Support for [Percona Operator for MongoDB v1.18.0](https://docs.percona.com/percona-operator-for-mongodb/RN/Kubernetes-Operator-for-PSMONGODB-RN1.18.0.html){:target="_blank"} (PSMDB) and [Percona Operator for PostgreSQL v2.5.0](https://docs.percona.com/percona-operator-for-postgresql/2.0/ReleaseNotes/Kubernetes-Operator-for-PostgreSQL-RN2.5.0.html){:target="_blank"} (PG)|
+    | **5.**|[Google Container Registry (GCR) deprecation](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#google-container-registry-gcr)|Deprecation of GCR starting **May 20, 2025**| 
+    | **6.**|[New features](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#new-features)|Check out the new features introduced in OpenEverest 1.4.0|
+    | **7.**|[Improvements](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.4.0|
+    | **8.**|[Bugs](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#bugs)|Find out about all the bugs fixed in OpenEverest 1.4.0|
+    | **.9**|[Known limitations](../release-notes/OpenEverest-1.3.0-%282024-11-18%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.4.0|
 
 
 ## Release highlights
@@ -27,9 +27,9 @@
 
     OpenEverest Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
-    If you are looking to get started with OpenEverest using Helm, check out our comprehensive [documentation](https://docs.percona.com/everest/install/install_everest_helm_charts.html).
+    If you are looking to get started with OpenEverest using Helm, check out our comprehensive [documentation](../install/install_everest_helm_charts.html).
 
-    Additionally, check our [Upgrade](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) and [Uninstall](https://docs.percona.com/everest/uninstall/uninstall_everest_helm.html) sections to find out how to upgrade or uninstall your OpenEverest instances using Helm.    
+    Additionally, check our [Upgrade](../upgrade/upgrade_with_helm.html) and [Uninstall](../uninstall/uninstall_everest_helm.html) sections to find out how to upgrade or uninstall your OpenEverest instances using Helm.    
 
 === "Namespaces management"
 
@@ -40,11 +40,11 @@
 
     Starting with OpenEverest 1.4.0, we have introduced new `everestctl` commands to manage your namespaces. These commands enable you to:
         
-    - [Add new namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#add-new-namespaces)
-    - [Update existing namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#update-namespaces)
-    - [Delete any used namespaces](https://docs.percona.com/everest/administer/manage_namespaces.html#delete-namespaces)
+    - [Add new namespaces](../administer/manage_namespaces.html#add-new-namespaces)
+    - [Update existing namespaces](../administer/manage_namespaces.html#update-namespaces)
+    - [Delete any used namespaces](../administer/manage_namespaces.html#delete-namespaces)
 
-    For a deep dive into managing namespaces for provisioning DB namespaces in OpenEverest, refer to our [documentation](https://docs.percona.com/everest/administer/manage_namespaces.html).
+    For a deep dive into managing namespaces for provisioning DB namespaces in OpenEverest, refer to our [documentation](../administer/manage_namespaces.html).
 
 === "Improved edit database flow"
 

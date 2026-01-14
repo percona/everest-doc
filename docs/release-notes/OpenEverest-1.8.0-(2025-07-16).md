@@ -1,6 +1,6 @@
 # What's new in OpenEverest 1.8.0
 
-➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](https://docs.percona.com/everest/quick-install.html).
+➡️ **New to OpenEverest?** Get started with our [Quickstart Guide](../quick-install.html).
 
 
 !!! warning
@@ -13,11 +13,11 @@
 
     |**#**|**Category**|**Description**|
     |---------|---------------------|---------|
-    | **1.**|[Release highlight: Dataimporters in OpenEverest](https://docs.percona.com/everest/release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#import-external-backups-into-openeverest-clusters)|Import external database backups directly into clusters managed by OpenEverest|
-    | **2.**|[New features](https://docs.percona.com/everest/release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#new-features)|Check out the new features introduced in OpenEverest 1.8.0|
-    | **3.**|[Improvements](https://docs.percona.com/everest/release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.8.0|
+    | **1.**|[Release highlight: Dataimporters in OpenEverest](../release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#import-external-backups-into-openeverest-clusters)|Import external database backups directly into clusters managed by OpenEverest|
+    | **2.**|[New features](../release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#new-features)|Check out the new features introduced in OpenEverest 1.8.0|
+    | **3.**|[Improvements](../release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#improvements)|Discover all the enhancements featured in OpenEverest 1.8.0|
     | **4.**|[Bug fixes](OpenEverest-1.8.0-%282025-07-16%29.html#bug-fixes)|Find out about all the bugs fixed in OpenEverest 1.8.0|
-    | **5.**|[Known limitations](https://docs.percona.com/everest/release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.8.0|
+    | **5.**|[Known limitations](../release-notes/OpenEverest-1.8.0-%282025-07-16%29.html#known-limitations)|Discover all the known limitations in OpenEverest 1.8.0|
 
 
 ## 🌟 Release highlights
@@ -27,7 +27,7 @@
 !!! info "Technical Preview"
     The **external backup import** feature in OpenEverest is currently in **Technical Preview**. Early adopters are advised to use this feature only for testing purposes and **not in production environments**.
 
-Starting with OpenEverest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](https://docs.percona.com/everest/backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](https://docs.percona.com/everest/backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](https://docs.percona.com/everest/backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by OpenEverest. This feature leverages an extensible framework that streamlines your backup process.
+Starting with OpenEverest 1.8.0, we are excited to roll out a new feature that allows you to directly **import backups of clusters managed by the Percona Operators for [MongoDB](../backups_and_restore/dataimporters/psmdb_dataimporter.html), [MySQL (XtraDB)](../backups_and_restore/dataimporters/pxc_dataimporter.html), and [PostgreSQL](../backups_and_restore/dataimporters/pg_dataimporter.html)**, into clusters managed by OpenEverest. This feature leverages an extensible framework that streamlines your backup process.
 
 #### Key features
 
@@ -58,7 +58,7 @@ Here are the steps to import the external backups:
 
     -  Specify the **File Directory** path within your S3 bucket where the backup files are stored. Click **Save**.
 
-        Refer to the [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html) for details on the correct file path format.
+        Refer to the [documentation](../backups_and_restore/dataimporters/overview.html) for details on the correct file path format.
 
         ![!image](../images/importers_mongo_file_path.png)
 
@@ -68,7 +68,7 @@ Here are the steps to import the external backups:
 
 5. Click **Continue** until you reach the end of the wizard. Once the import is successful, the database status will change to **Up**.
 
-If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](https://docs.percona.com/everest/backups_and_restore/dataimporters/overview.html).
+If you're looking to dive deeper into this feature, don't miss out on our comprehensive [documentation](../backups_and_restore/dataimporters/overview.html).
 
 ## New features
 
@@ -123,7 +123,7 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 ### Helm upgrade requirement for OpenEverest 1.8.0
 
-- To upgrade from OpenEverest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the OpenEverest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
+- To upgrade from OpenEverest 1.8.0, you have to use the `--take-ownership` flag, which is available only in **Helm CLI v3.17.0 or later**. If you need to upgrade with an older version of the Helm CLI, the upgrade may fail due to CRD ownership validation errors. However, you can **manually add the required labels and annotations to the OpenEverest CRDs** to avoid this issue. For detailed steps on this process, refer to our [documentation](../upgrade/upgrade_with_helm.html#workaround-for-helm-versions-older-than-3170). 
 
 ### Limitations for DataImporters
 
@@ -140,4 +140,4 @@ If you're looking to dive deeper into this feature, don't miss out on our compre
 
 Upgrade to **OpenEverest 1.8.0** to access these new features and improvements.
 
-📖 Explore our [Upgrade section](https://docs.percona.com/everest/upgrade/upgrade_with_helm.html) for the upgrade steps.
+📖 Explore our [Upgrade section](../upgrade/upgrade_with_helm.html) for the upgrade steps.

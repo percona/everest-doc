@@ -36,7 +36,7 @@ If one shard (or server) fails, the remaining shards can continue to operate, en
 !!! warning
     - Once you have a sharded collection, ensure you take a new backup to avoid data inconsistency and potential restoration failures.
 
-    - There are a few more limitations related to MongoDB sharding. See the [limitations](https://docs.percona.com/everest/reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
+    - There are a few more limitations related to MongoDB sharding. See the [limitations](../reference/known_limitations.html#mongodb-sharding) section for details about these limitations.
 
 
 To create a sharded cluster:
