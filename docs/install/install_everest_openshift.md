@@ -17,6 +17,7 @@ Here are the steps to install Percona Everest with OpenShift compatibility enabl
         --create-namespace \
         --set compatibility.openshift=true \
         --set dbNamespace.compatibility.openshift=true \
+        --set olm.install=false \
         --set kube-state-metrics.securityContext.enabled=false \
         --set kube-state-metrics.rbac.create=false
     ```

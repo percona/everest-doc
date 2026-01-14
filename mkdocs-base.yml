@@ -4,7 +4,7 @@ site_name: Percona Everest
 site_description: Documentation
 site_author: Percona LLC
 site_url: ""
-copyright: Percona LLC, &#169; 2025
+copyright: OpenEverest, &#169; 2026
 use_directory_urls: false
 repo_name: percona/everest-doc
 repo_url: https://github.com/percona/everest-doc
@@ -73,7 +73,7 @@ extra_javascript:
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2025 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.openeverest.io/">OpenEverest</a> © 2026 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -155,6 +155,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest-1.11.0-(2026-01-12): release-notes/Percona-Everest-1.11.0-(2026-01-12).md
       - Percona-Everest 1.10.0 (2025-11-28): release-notes/Percona-Everest-1.10.0-(2025-11-28).md
       - Percona-Everest 1.9.0 (2025-09-23): release-notes/Percona-Everest-1.9.0-(2025-09-23).md
       - Percona-Everest 1.8.1 (2025-08-11): release-notes/Percona-Everest-1.8.1-(2025-08-11).md
@@ -214,7 +215,7 @@ nav:
         - Custom Pod scheduling policies: administer/custom_policies.md
         - Apply Pod scheduling policies: administer/apply_policies_cluster.md
         - Pod Scheduling Policies with RBAC: administer/rbac_pod_scheduling.md
-        - Use cases: administer/use_cases.md 
+        - Use cases: administer/use_cases.md
       - Namespaces management: administer/manage_namespaces.md
 
   - Security:
@@ -226,14 +227,13 @@ nav:
       - Load balancer overview: networking/load_balancer.md
       - Load balancer scenarios: networking/load_balancer_scenarios.md
       - Configure load balancer: networking/load_balancer_config.md
+      - NodePort exposure: networking/nodeport_support.md 
       - Split-Horizon DNS for Percona Server for MongoDB: 
         - Overview: networking/split-horizon_dns.md
         - Split-Horizon DNS scenarios: networking/split-horizon_scenarios.md
         - Split-Horizon DNS config Custom Resource Definition (CRD): networking/split-horizon_everest_CRD.md
         - Generate CA certificates: networking/split-horizon_create_CA_certs.md
         - Configure Split-Horizon DNS: networking/split-horizon_config.md
-
-
 
   - Back up and restore data: 
     - About backups: backups_and_restore/AboutBackups.md
@@ -271,6 +271,15 @@ nav:
       - Frequently asked questions (FAQ): troubleshoot/faq.md
 
   - API: API.md
+
+  - Percona Everest operator CRD: 
+      - Overview: crd/crd_guide.md
+      - Manage database clusters: crd/database_cluster_management.md
+      - Configure backup storage: crd/backup_storage_config.md
+      - Configure monitoring: crd/crd_monitoring.md
+      - DatabaseCluster examples: crd/dbcluster_examples.md
+      - Troubleshooting database cluster issues: crd/troubleshooting_dbcluster_issues.md
+  
   - Reference:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
