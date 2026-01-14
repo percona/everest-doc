@@ -36,7 +36,7 @@ With our latest release, we're adding in product telemetry to fill-in the gaps i
 
 Participation in this anonymous program is optional, and you can opt-out if prefer not to share any information.
 
-Read Linux Foundation [privacy policy](https://lfprojects.org/policies/privacy-policy/) and [telemetry documentation](../reference/telemetry.md) to learn more.
+Read our [privacy statement](https://www.percona.com/privacy-policy#h.e34c40q8sb1a) and [telemetry documentation](../reference/telemetry.md) to learn more.
 
 ### Enhanced UX for backup creation
 
