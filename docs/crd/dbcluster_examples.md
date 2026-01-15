@@ -134,7 +134,7 @@ spec:
 ```
 
 
-You can find these and more manifests in the [examples directory](https://github.com/percona/everest-operator/tree/main/docs/examples)
+You can find these and more manifests in the [examples directory](https://github.com/openeverest/openeverest-operator/tree/main/docs/examples)
 
 
 

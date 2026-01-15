@@ -29,10 +29,7 @@ PostgreSQL offers several migration options. Each method has its own benefits an
 
 Review PostgreSQL documentation to select the best option for your environment.
 
-💡 Need assistance? Connect with [OpenEverest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! 
-
-Alternatively, you can always [Talk to a Percona Expert](../get-help.md#openeverest-experts).
-
+💡 Need assistance? Connect with [OpenEverest support](https://openeverest.io/support){:target="_blank"}! 
 
 ??? info " :balance_scale: Expand for a detailed comparison between `logical dump and restore` vs `logical replication`"
 

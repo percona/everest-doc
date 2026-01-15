@@ -52,7 +52,8 @@ The benefits of using DataImporters are:
 - **Decoupled:** OpenEverest manages the infrastructure while you focus on the data logic.
 
 
-Do you want to customize your import process? You can create a custom `DataImporter` tailored to your specific use case. See the [documentation](https://github.com/percona/everest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
+Do you want to customize your import process? You can create a custom `DataImporter` tailored to your specific use case. See the [documentation](https://github.com/openeverest/openeverest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
+TODO
 
 
 ## Use cases
@@ -72,7 +73,7 @@ Here are some common scenarios for importing database backups into OpenEverest.
 
     You can create your own `DataImporter` to implement custom restore logic using any language or tool. This allows for seamless integration into the cluster provisioning workflow.
 
-    See the [documentation](https://github.com/percona/everest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
+    See the [documentation](https://github.com/openeverest/openeverest-operator/blob/main/docs/guides/build_your_own_dataimporter.md){:target="_blank"} for detailed instructions.
 
 ## Limitations
 

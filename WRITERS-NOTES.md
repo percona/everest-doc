@@ -6,9 +6,7 @@
 
 ## Admonitions
 
-Admonitions use a combined MkDocs/Bootstrap definition to get acceptable and similar rendering on both Percona.com (Drupal-based) and Render.com.
-
-Percona.com uses Bootstrap 4. Admonitions are styled as [Alerts](https://getbootstrap.com/docs/4.0/components/alerts/).
+Admonitions use MkDocs/Bootstrap definition for consistent rendering across different platforms (Drupal-based) and Render.com.
 
 Material for MkDocs theme: https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types
 
@@ -81,7 +79,7 @@ Anything that has the potential to damage or compromise a user's data or system.
 
 ### Tip
 
-Use for tips, hints, non-essential but useful advice. Note that `tip` renders badly in Percona.com. `hint` is better and looks the same as `tip` in Material theme.
+Use for tips, hints, non-essential but useful advice. We use `hint` as it provides consistent rendering across different themes and platforms.
 
 ```txt
 !!! hint alert alert-success "Tip"
@@ -178,9 +176,9 @@ Use HTML for icons:
 
 Custom (in-house design) icons are defined as SVG code in `variables.yml`.
 
-| Usage              | Description  | Used where                   |
-| ------------------ | ------------ | ---------------------------- |
-| `{{icon.percona}}` | Percona logo | Wherever home icon is needed |
+| Usage              | Description       | Used where                   |
+| ------------------ | ----------------- | ---------------------------- |
+| `{{icon.percona}}` | OpenEverest logo  | Wherever home icon is needed |
 
 ## Symbols
 

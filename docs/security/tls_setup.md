@@ -51,7 +51,7 @@ Here are the steps to set up the OpenEverest server using cert-manager:
 2. Install OpenEverest using the above values:
 
     ```sh
-    helm install everest-core openeverest/openeverest --create-namespace \
+    helm install everest-core percona/everest --create-namespace \
 	-n everest-system \
 	-f values.yaml
     ```
@@ -65,7 +65,7 @@ Here are the steps to set up the OpenEverest server using cert-manager:
      
 
     ```sh
-    helm install everest-core openeverest/openeverest --create-namespace \
+    helm install everest-core percona/everest --create-namespace \
 	-n everest-system \
 	--set server.tls.enabled=true
     ```
@@ -94,7 +94,7 @@ Here are the steps to set up the OpenEverest server using cert-manager:
     3. Install OpenEverest using the above values:
 
         ```sh
-        helm install everest-core openeverest/openeverest --create-namespace \
+        helm install everest-core percona/everest --create-namespace \
         -n everest-system \
         -f values.yaml
         ```

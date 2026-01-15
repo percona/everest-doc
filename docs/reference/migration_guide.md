@@ -12,7 +12,8 @@ Here are some key differences between OpenEverest and PMM DBaaS:
 
 1. OpenEverest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
-2. Percona `everestctl` is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
+TODO
+2. OpenEverest `everestctl` is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
 
 3. OpenEverest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
 
@@ -103,7 +104,7 @@ To migrate from PMM DBaaS to OpenEverest:
 
     !!! note alert alert-primary "Note"
         - The restoration won't be available for you in the web UI, you'll need to refer to the corresponding operator's documentation for instructions on how to do this.
-
+        TODO
             -  For [PXC](https://docs.percona.com/percona-operator-for-mysql/pxc/backups-restore.html){:target="_blank"}
             -  For [PSMDB](https://docs.percona.com/percona-operator-for-mongodb/backups-restore.html){:target="_blank"}
             -  For [PostgreSQL](https://docs.percona.com/percona-operator-for-postgresql/2.0/backups-restore.html){:target="_blank"}

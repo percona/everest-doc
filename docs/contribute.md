@@ -31,18 +31,18 @@ If there is no existing report, submit a report following these steps:
 
 ## Contribute to OpenEverest code
 
-If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/openeverest/governance/blob/main/CODE_OF_CONDUCT.md).
+If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/openeverest/openeverest/blob/main/CONTRIBUTING.md).
 
 ## Contribute to OpenEverest documentation
 
 Found a typo or didn't find what you needed? Here's how you can contribute to the documentation:
 {.power-number}
 
-1. **Request a doc change through a Jira issue**. If you’ve spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don’t have time nor desire to fix it yourself - let us know about it.
+1. **Request a doc change through a GitHub issue**. If you've spotted a doc issue (a typo, broken links, inaccurate instructions, etc.) but don't have time or desire to fix it yourself - let us know about it.
 
-	- Click the **Jira** link in the contact us section. This opens the [Jira issue tracker](https://perconadev.atlassian.net/jira/software/c/projects/EVEREST/boards/65).
-	- Sign in (create a Jira account if you don’t have one) and click **Create** to create an issue.
-	- Describe the issue you have detected in the Summary, Description, Steps To Reproduce, Affects Version fields.
+	- Go to the [OpenEverest documentation repository issues page](https://github.com/openeverest/everest-doc/issues){:target="_blank"}.
+	- Sign in to GitHub (create an account if you don't have one) and click **New issue**.
+	- Describe the issue you have detected, including steps to reproduce, affected version, and any relevant details.
 
 2. **Contribute to documentation directly**. 
 
@@ -65,7 +65,7 @@ Found a typo or didn't find what you needed? Here's how you can contribute to th
 	     * Select the **Create a new branch for this commit and start a pull request** option.
 	     * Click **Propose changes**.
 
-    * GitHub creates a branch and a commit for your changes. It loads a new page on which you can open a pull request to Percona. The page shows the base branch - the one you offer your changes for, your commit message and a diff - a visual representation of your changes against the original page. This allows you to make a last-minute review. When you are ready, click the **Create pull request** button.
+    * GitHub creates a branch and a commit for your changes. It loads a new page on which you can open a pull request to OpenEverest. The page shows the base branch - the one you offer your changes for, your commit message and a diff - a visual representation of your changes against the original page. This allows you to make a last-minute review. When you are ready, click the **Create pull request** button.
     
     * Someone from our team reviews the pull request and if everything is correct, merges it into the documentation. Then it gets published on the site.
 
