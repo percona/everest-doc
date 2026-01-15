@@ -2,7 +2,7 @@
 # Used as base - look for .yml files with INHERIT
 site_name: OpenEverest
 site_description: Documentation
-site_author: OpenEverest LLC
+site_author: OpenEverest
 site_url: ""
 copyright: OpenEverest, &#169; 2026
 use_directory_urls: false
