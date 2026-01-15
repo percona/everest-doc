@@ -13,14 +13,14 @@ The `everest-percona-pg-operator` dataimporter allows you to import backups take
 - Credentials to access the S3 bucket (`AccessKeyID` and `SecretAccessKey`)
 
 
-## How to import external PostgreSQL backups using the Percona Everest UI
+## How to import external PostgreSQL backups using the OpenEverest UI
 
-This section outlines the step-by-step process for importing backups using the Percona Everest UI.
+This section outlines the step-by-step process for importing backups using the OpenEverest UI.
 {.power-number}
 
-1. Log in to the Percona Everest UI.
+1. Log in to the OpenEverest UI.
 
-2. From the Percona Everest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic Information** page will be displayed.
+2. From the OpenEverest homepage, click **Import**. Select the database type you want to import(MySQL, PostgreSQL, or MongoDB). The **Basic Information** page will be displayed.
 
 
 3. Fill in the details on the **Basic information** page and click **Continue**. This will take you to the **Import information** page.
@@ -43,7 +43,7 @@ This section outlines the step-by-step process for importing backups using the P
     - In the **File directory** section, specify the path within your S3 bucket where the backup files are stored. Click **Save**.
 
         !!! info "Important"
-            Percona Everest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
+            OpenEverest does not validate file paths or verify the existence of files in the specified storage buckets. Make sure that the backup directory path is correct and accessible.
 
             To verify that the specified path exists, you can use the AWS CLI:
             

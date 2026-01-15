@@ -1,26 +1,26 @@
-#  Leveraging Pod scheduling policies in Percona Everest
+#  Leveraging Pod scheduling policies in OpenEverest
 
 !!! info "Important"
-    Percona Everest relies on the Kubernetes scheduler for pod placement and resource management.
+    OpenEverest relies on the Kubernetes scheduler for pod placement and resource management.
 
 
 ## Introduction
 
-Percona Everest supports **database workload scheduling** on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
+OpenEverest supports **database workload scheduling** on Kubernetes by allowing users to define Pod scheduling policies, including Kubernetes Affinity and Anti-Affinity rules. These policies not only optimize performance and enhance system resilience but also ensure that your resources are utilized to their fullest potential.
 
 
 ## Why Pod scheduling policies matter
 
-Database administrators often need control over the allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that Percona Everest provides to address this challenge.
+Database administrators often need control over the allocation of database workloads across Kubernetes clusters. This is important for enhancing performance, improving resource management, or ensuring high availability based on deployment needs. This section describes a solution that OpenEverest provides to address this challenge.
 
 ### What Pod scheduling policies feature aims to achieve
 
-This feature in Percona Everest aims to achieve the following goals:
+This feature in OpenEverest aims to achieve the following goals:
 {.power-number}
 
-1. Enable Percona Everest users to utilize the Kubernetes Affinity and Anti-Affinity features when deploying their database clusters.
+1. Enable OpenEverest users to utilize the Kubernetes Affinity and Anti-Affinity features when deploying their database clusters.
    
-2. Enable Percona Everest administrators to simplify the complexity of Kubernetes Affinity rules configuration for users:
+2. Enable OpenEverest administrators to simplify the complexity of Kubernetes Affinity rules configuration for users:
     - Administrators can create Affinity presets independently.
     - Users can then select which Affinity preset to apply to their database cluster.
 
@@ -63,9 +63,9 @@ Nodes in a Kubernetes cluster have labels that consist of **key-value** pairs.
 
 ## Types of Pod scheduling policies
 
-There are two types of policies in Percona Everest:
+There are two types of policies in OpenEverest:
 
-- Default Policies - **Predefined** Pod scheduling policies in Percona Everest that come bundled with every Percona Everest deployment.
+- Default Policies - **Predefined** Pod scheduling policies in OpenEverest that come bundled with every OpenEverest deployment.
 - Custom policies - **User-defined** pod scheduling policies created to meet specific requirements.
 
 

@@ -1,9 +1,9 @@
 <!-- Determine classes -->
 {% set class = "md-header" %}
 {% if "navigation.tabs.sticky" in features %}
-  {% set class = class ~ " md-header--shadow md-header--lifted" %}
+{% set class = class ~ " md-header--shadow md-header--lifted" %}
 {% elif "navigation.tabs" not in features %}
-  {% set class = class ~ " md-header--shadow" %}
+{% set class = class ~ " md-header--shadow" %}
 {% endif %}
 
 <!-- Header -->
@@ -12,33 +12,25 @@
   <!-- Super Nav -->
   <div class="superNav">
     <div class="md-header__inner md-grid">
-      <a href="https://docs.percona.com/percona-everest/" title="Percona Everest Documentation home page">
+      <a href="https://openeverest.io/docs/" title="OpenEverest Documentation home page">
         <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
           <mask id="a" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="24" height="24">
-            <path d="M0 0h24v24H0z"/>
+            <path d="M0 0h24v24H0z" />
           </mask>
           <g mask="url(#a)">
-            <path d="m7.825 13 5.6 5.6L12 20l-8-8 8-8 1.425 1.4-5.6 5.6H20v2H7.825Z"/>
+            <path d="m7.825 13 5.6 5.6L12 20l-8-8 8-8 1.425 1.4-5.6 5.6H20v2H7.825Z" />
           </g>
         </svg>
-        <span>Percona Everest Documentation</span>
+        <span>OpenEverest Documentation</span>
       </a>
     </div>
   </div>
 
-  <nav
-    class="md-header__inner md-grid"
-    aria-label="{{ lang.t('header') }}"
-  >
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
 
     <!-- Link to home -->
-    <a
-      href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}"
-      title="{{ config.site_name | e }}"
-      class="md-header__button md-logo"
-      aria-label="{{ config.site_name }}"
-      data-md-component="logo"
-    >
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}"
+      class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
       {% include "partials/logo.html" %}
     </a>
 
@@ -59,9 +51,9 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             {% if page.meta and page.meta.title %}
-              {{ page.meta.title }}
+            {{ page.meta.title }}
             {% else %}
-              {{ page.title }}
+            {{ page.title }}
             {% endif %}
           </span>
         </div>
@@ -70,45 +62,44 @@
 
     <!-- Color palette toggle -->
     {% if config.theme.palette %}
-      {% if not config.theme.palette is mapping %}
-        {% include "partials/palette.html" %}
-      {% endif %}
+    {% if not config.theme.palette is mapping %}
+    {% include "partials/palette.html" %}
+    {% endif %}
     {% endif %}
 
     <!-- User preference: color palette -->
     {% if not config.theme.palette is mapping %}
-      {% include "partials/javascripts/palette.html" %}
+    {% include "partials/javascripts/palette.html" %}
     {% endif %}
 
     <!-- Site language selector -->
     {% if config.extra.alternate %}
-      {% include "partials/alternate.html" %}
+    {% include "partials/alternate.html" %}
     {% endif %}
 
     <!-- Button to open search modal -->
     {% if "material/search" in config.plugins %}
-      <label class="md-header__button md-icon" for="__search">
-        {% set icon = config.theme.icon.search or "material/magnify" %}
-        {% include ".icons/" ~ icon ~ ".svg" %}
-      </label>
+    <label class="md-header__button md-icon" for="__search">
+      {% set icon = config.theme.icon.search or "material/magnify" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
 
-      <!-- Search interface -->
-      {% include "partials/search.html" %}
+    <!-- Search interface -->
+    {% include "partials/search.html" %}
     {% endif %}
 
     <!-- Repository information -->
     {% if config.repo_url %}
-      <div class="md-header__source">
-        {% include "partials/source.html" %}
-      </div>
+    <div class="md-header__source">
+      {% include "partials/source.html" %}
+    </div>
     {% endif %}
   </nav>
 
   <!-- Navigation tabs (sticky) -->
   {% if "navigation.tabs.sticky" in features %}
-    {% if "navigation.tabs" in features %}
-      {% include "partials/tabs.html" %}
-    {% endif %}
+  {% if "navigation.tabs" in features %}
+  {% include "partials/tabs.html" %}
+  {% endif %}
   {% endif %}
 </header>
-  

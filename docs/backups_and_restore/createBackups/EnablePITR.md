@@ -9,7 +9,7 @@ PITR complements on-demand and scheduled backup strategies by providing finer ba
 
 Restoring databases up to a specific moment in time involves retrieving data from a backup snapshot and replaying all subsequent events that occurred until a specified moment using log slices.
 
-When PITR and backups are enabled (either on-demand or scheduled), Percona Everest starts capturing successive database logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR logs.
+When PITR and backups are enabled (either on-demand or scheduled), OpenEverest starts capturing successive database logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR logs.
 
 Since Everest saves logs and streams them into your storage between scheduled task runs, scheduling frequent backups is not necessary. You can use the available logs in your storage to restore a backup to any moment between snapshots.
 

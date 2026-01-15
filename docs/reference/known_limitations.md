@@ -1,6 +1,6 @@
-# Known limitations in Percona Everest
+# Known limitations in OpenEverest
 
-This section describes the known limitations associated with Percona Everest:
+This section describes the known limitations associated with OpenEverest:
 
 
 ## Passwords
@@ -12,7 +12,7 @@ We are developing a new feature that will allow you to modify these settings dir
 
 ## Split-Horizon DNS
 
-Here are the limitations for Percona Everest:
+Here are the limitations for OpenEverest:
 
 - Split-Horizon DNS feature is supported only by Percona Server for MongoDB engine. 
 
@@ -26,7 +26,7 @@ Here are the limitations for Percona Everest:
 
 - Only one Split-Horizon DNS configuration can be applied to a Percona Server for MongoDB cluster.
 
-- Percona Everest does not allow you to manually set custom domain names for each Pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). Percona Everest will automatically generate domain names and TLS certificates for each Pod in the ReplicaSet following this pattern: 
+- OpenEverest does not allow you to manually set custom domain names for each Pod in a ReplicaSet. Instead, you must provide a base domain (e.g., mycompany.com). OpenEverest will automatically generate domain names and TLS certificates for each Pod in the ReplicaSet following this pattern: 
 
     `<DB cluster name>-rs-0-<pod number>-<namespace>.<base domain>`  
    
@@ -35,9 +35,9 @@ Here are the limitations for Percona Everest:
         - my-db-cluster-rs0-1-default.mycompany.com 
 
 
-- Percona Everest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The Percona Everest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names.
+- OpenEverest is not responsible for managing DNS configuration (i.e., the resolution of domain names). The OpenEverest Admin must properly configure their DNS server to bind the ReplicaSet's private/public IPs to the generated domain names, allowing external applications to access the ReplicaSet pods via these domain names.
 
-    Percona Everest will provide the Admin with a list of domain names and the corresponding private/public IPs allocated by Kubernetes or the cloud provider.
+    OpenEverest will provide the Admin with a list of domain names and the corresponding private/public IPs allocated by Kubernetes or the cloud provider.
 
 ## Load balancer configuration
 
@@ -61,11 +61,11 @@ Here are the limitations for Percona Everest:
 
     -  If your restore fails or is stuck, use this **workaround**: 
 
-        On the Percona Everest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
+        On the OpenEverest UI, navigate to the **Restores** tab, locate the latest restore object, click `...`, and delete it. Then, attempt to restore it again.
 
 ## Manual storage scaling
 
-- When manually scaling storage in Percona Everest, resource quotas are not automatically validated during the volume expansion process. If the requested storage exceeds the defined quota, the PVC resize operation will fail, leaving the database in the **Resizing Volumes** state.
+- When manually scaling storage in OpenEverest, resource quotas are not automatically validated during the volume expansion process. If the requested storage exceeds the defined quota, the PVC resize operation will fail, leaving the database in the **Resizing Volumes** state.
 
     To avoid such issues, ensure you verify your namespace's resource quotas before initiating a resize:
 
@@ -77,9 +77,9 @@ Here are the limitations for Percona Everest:
 
 - Consult your CSI driver documentation for important details regarding volume resizing restrictions or limitations. This is essential for ensuring smooth operations.
 
-- In previous versions of Percona Everest, users were able to create clusters with decimal storage sizes (for example, 1.2 GiB). However, database operators rounded these values up when provisioning PersistentVolumeClaims (PVCs)—meaning that 1.2 GiB would be provisioned as 2 GiB. Percona Everest would then display the original value in a different unit (such as **1.2 GiB shown as 1288490188800 m**), which caused confusion.
+- In previous versions of OpenEverest, users were able to create clusters with decimal storage sizes (for example, 1.2 GiB). However, database operators rounded these values up when provisioning PersistentVolumeClaims (PVCs)—meaning that 1.2 GiB would be provisioned as 2 GiB. OpenEverest would then display the original value in a different unit (such as **1.2 GiB shown as 1288490188800 m**), which caused confusion.
 
-    In version 1.6.0, Percona Everest introduces support for scaling up storage. However, when attempting to scale a cluster to a size that does not exceed the larger rounded PVC size (for instance, trying to scale from 1.2 GiB to 2 GiB, which still rounds to 2 GiB), the cluster may become stuck in the **Resizing Volumes** state. This issue affects MySQL and MongoDB clusters; however, **PostgreSQL** clusters are **not impacted**.
+    In version 1.6.0, OpenEverest introduces support for scaling up storage. However, when attempting to scale a cluster to a size that does not exceed the larger rounded PVC size (for instance, trying to scale from 1.2 GiB to 2 GiB, which still rounds to 2 GiB), the cluster may become stuck in the **Resizing Volumes** state. This issue affects MySQL and MongoDB clusters; however, **PostgreSQL** clusters are **not impacted**.
 
     **Workaround** 
 
@@ -119,7 +119,7 @@ The backup storage you choose for your initial backup schedule will be used for 
 
 ## On-demand backups
 
-Let's delve into the limitations of on-demand backups in Percona Everest.
+Let's delve into the limitations of on-demand backups in OpenEverest.
 
 ### PostgreSQL limitations for on-demand backups
 
@@ -156,12 +156,12 @@ In the following table, we have compiled a list of workarounds to ensure that yo
 |----------|-----------|-------------|--------------------|
 | **1**|**No downtime**  |Delete the locks |**1.** Connect to your MongoDB database. </br></br> **2.** Run the command: `db.getSiblingDB("admin").pbmLock.find()` to see the list of database locks. If the list is empty, the scenario is not applicable. </br></br> **3.** If the list was not empty, run the command`db.pbmLock.deleteMany({})`. </br></br> **4.** Run another backup. If the backup still fails, check the workaround 2.|
 | **2**|**Shorter downtime**  |Restart config server (sharded clusters only) |**1.** Get the list of config server pods:`kubectl get po -n <YOUR_NAMESPACE> -l app.kubernetes.io/component=cfg,app.kubernetes.io/instance=<YOUR_DB_CLUSTER_NAME>`. </br></br> **2.** For each pod name in the list, run `kubectl delete pod <POD_NAME> -n <YOUR_NAMESPACE>` </br></br> **3.** Wait until your database cluster is up. </br></br> **4.** Run another bakckup. If the backup still fails, check workaround 3.|
-| **3**|**Longer downtime**|Restart the DB server |**1.** On Percona Everest UI, click **Actions >> Restart**. </br></br> **2.** When the database cluster is up, take another backup.|
+| **3**|**Longer downtime**|Restart the DB server |**1.** On OpenEverest UI, click **Actions >> Restart**. </br></br> **2.** When the database cluster is up, take another backup.|
 
 
 ## Scheduled backups
 
-Let's explore the constraints of scheduled backups in Percona Everest.
+Let's explore the constraints of scheduled backups in OpenEverest.
 
 ### PostgreSQL Limitations for schedules
 
@@ -264,7 +264,7 @@ You can follow these steps if your database cluster is stuck in the **Restoring*
 
 ## OIDC integration with Microsoft Entra
 
-When integrating Microsoft Entra ID as your OIDC provider for Percona Everest, it's essential to ensure that the access tokens issued are compatible with Percona Everest's token validation logic.
+When integrating Microsoft Entra ID as your OIDC provider for OpenEverest, it's essential to ensure that the access tokens issued are compatible with OpenEverest's token validation logic.
 
 **Problem**
 
@@ -272,13 +272,13 @@ By default, Microsoft Entra issues access tokens intended for use with Microsoft
 
 - **Audience (aud):** "`00000003-0000-0000-c000-000000000000`" (Microsoft Graph)
 
-- **Signature:** Uses a proprietary mechanism that cannot be validated by Percona Everest
+- **Signature:** Uses a proprietary mechanism that cannot be validated by OpenEverest
 
-Microsoft Entra generates access tokens using a proprietary signature mechanism, which Percona Everest cannot validate. This results in signature verification failures when integrating Percona Everest with Entra-generated tokens.
+Microsoft Entra generates access tokens using a proprietary signature mechanism, which OpenEverest cannot validate. This results in signature verification failures when integrating OpenEverest with Entra-generated tokens.
 
 **Solution**
 
-To obtain access tokens that Percona Everest can validate, request tokens explicitly scoped for the registered application in Microsoft Entra using the `<application-client-id>/.default scope`. This ensures:
+To obtain access tokens that OpenEverest can validate, request tokens explicitly scoped for the registered application in Microsoft Entra using the `<application-client-id>/.default scope`. This ensures:
 
 - **Audience (aud):** Set to your application's client ID
 
@@ -298,5 +298,5 @@ everestctl settings oidc configure \
 !!! note
     Note: Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
 
-With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Percona Everest can verify.
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that OpenEverest can verify.
 

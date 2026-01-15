@@ -4,13 +4,13 @@ You can now assign RBAC policies to user groups from an external IDP. This updat
 
 During the SSO authentication, if the group’s scope is requested but the Identity Provider (IdP) lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
 
-A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission. To use IdP groups in Percona Everest RBAC, you would need to set up the groups claim in your IdP provider configuration.
+A user will be authorized to perform an operation if either their subject or any of the groups they belong to has the required permission. To use IdP groups in OpenEverest RBAC, you would need to set up the groups claim in your IdP provider configuration.
 
 ## OKTA
 
 Once you successfully establish an Identity Provider (IdP) [integration with Okta](Idp_integration.md#configure-oidc-on-the-provider-side), the `issuerURL` in this configuration identifies your API server, serving as a unique identifier for your server within Okta. Additionally, you will have a client application, referred to as the Application integration, which is represented by the `clientID`. This setup allows for secure communication and authentication between your application and Okta's services.
 
-To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP provider settings. Here are the steps to configure the groups claim:
+To use IdP groups in OpenEverest RBAC, set up the groups claim in your IdP provider settings. Here are the steps to configure the groups claim:
 {.power-number}
 
 1. Navigate to **Security > API**.
@@ -71,7 +71,7 @@ To use IdP groups in Percona Everest RBAC, set up the groups claim in your IdP p
     3. Click **Create Rule**.
 
 
-## Configure Percona Everest to fetch groups from IdP
+## Configure OpenEverest to fetch groups from IdP
 
 During the SSO authentication, if the group's scope is requested but the Identity Provider (IdP), like Okta, lacks the necessary groups claim configuration or does not support it by default, SSO could fail or not function as expected.
 

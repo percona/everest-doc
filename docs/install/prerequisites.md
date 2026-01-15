@@ -1,12 +1,12 @@
 # Prerequisites
 
-Before getting started with Percona Everest, we recommend that you:
+Before getting started with OpenEverest, we recommend that you:
 {.power-number}
 
 
-1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm) to install Percona Everest using Helm.
+1. Install [Helm v3  :octicons-link-external-16:](https://docs.helm.sh/using_helm/#installing-helm) to install OpenEverest using Helm.
 
-2. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq) to install Percona Everest using Helm.
+2. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq) to install OpenEverest using Helm.
 
 3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
 
@@ -23,28 +23,28 @@ Before getting started with Percona Everest, we recommend that you:
         ```
 
 
-## Before you install Percona Everest
+## Before you install OpenEverest
 
-You can install Percona Everest using one of the following methods:
+You can install OpenEverest using one of the following methods:
 
 
 * [Helm charts](../install/install_everest_helm_charts.md)
 
-* [everestctl](../install/install_everestctl.md), which connects Percona Everest to your Kubernetes cluster.
+* [everestctl](../install/install_everestctl.md), which connects OpenEverest to your Kubernetes cluster.
 
 
-Once you’ve installed Percona Everest, you can easily log into the Percona Everest UI by following the setup instructions in the next section.
+Once you’ve installed OpenEverest, you can easily log into the OpenEverest UI by following the setup instructions in the next section.
 
 !!! important
-    Percona Everest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a publicly accessible Kubernetes cluster.
+    OpenEverest assists with installing all the necessary operators and required packages, but does not currently help with spinning up a publicly accessible Kubernetes cluster.
 
-We recommend setting up Percona Everest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE). Percona Everest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.
+We recommend setting up OpenEverest on the Amazon Elastic Kubernetes Service (EKS) or Google Kubernetes Engine (GKE). OpenEverest may not work as expected on local Kubernetes installations (minikube, kind, k3d, or similar products) due to network issues.
    
 [Create EKS cluster :material-arrow-right:](eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](gke.md){.md-button}
 
 
 ## Next steps
 
-Start by installing Percona Everest:
+Start by installing OpenEverest:
 
-[Install Percona Everest :material-arrow-right:](installEverest.md){.md-button}
+[Install OpenEverest :material-arrow-right:](installEverest.md){.md-button}

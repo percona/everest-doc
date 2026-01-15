@@ -3,9 +3,9 @@
 
 ## Create Split-Horizon DNS config
 
-A Percona Everest administrator can create a set of base domains and generate the necessary TLS certificates in advance. This allows all Percona Everest users to use these domains later without the need to define custom domain names each time they create a Percona Server for MongoDB cluster.
+A OpenEverest administrator can create a set of base domains and generate the necessary TLS certificates in advance. This allows all OpenEverest users to use these domains later without the need to define custom domain names each time they create a Percona Server for MongoDB cluster.
 
-Percona Everest provides an interface to create a Split-Horizon DNS configuration that defines the necessary relationships and stores them for future use.
+OpenEverest provides an interface to create a Split-Horizon DNS configuration that defines the necessary relationships and stores them for future use.
 
 The following applies to Split-Horizon DNS configs:
 
@@ -22,22 +22,22 @@ The following applies to Split-Horizon DNS configs:
 | **Name**                      | Each **Split-Horizon DNS config** has a unique name within the selected namespace.                                   |
 | **Namespace**                 | Kubernetes namespace to which this config is applicable. Defined by the user during config creation.                 |
 | **Base domain name**          | Domain name suffix used for generating full domain names for each Pod in the Replica Set. This field is also used as the **Split-Horizon DNS config** name. |
-| **CA TLS certificates**  |TLS CA files (certificate and key) that will be used by Percona Everest for generating TLS certificates for Split-Horizon domains. For instructions on generating CA certificates, refer to [Generate CA certificates](split-horizon_create_CA_certs.md)|
+| **CA TLS certificates**  |TLS CA files (certificate and key) that will be used by OpenEverest for generating TLS certificates for Split-Horizon domains. For instructions on generating CA certificates, refer to [Generate CA certificates](split-horizon_create_CA_certs.md)|
 | **Secret name**  |Kubernetes secret that shall be used for storing TLS CA files.</br> You may create this secret on your own in advance that holds the CA cert and key and refer to it during Split-Horizon DNS Config creation.|
 
-Once all values are entered, the Percona Everest administrator saves the configuration in the system.
+Once all values are entered, the OpenEverest administrator saves the configuration in the system.
 
 
 ## Protect Split-Horizon DNS config with RBAC
 
-A Percona Everest administrator may want to restrict access to the Split-Horizon DNS configuration or the ability to apply a specific Split-Horizon DNS configuration for certain Percona Everest users. To achieve this, the administrator utilizes Percona Everest RBAC to define policies that restrict access to the selected instances. These RBAC policies apply to the entire Split-Horizon DNS configuration.
+A OpenEverest administrator may want to restrict access to the Split-Horizon DNS configuration or the ability to apply a specific Split-Horizon DNS configuration for certain OpenEverest users. To achieve this, the administrator utilizes OpenEverest RBAC to define policies that restrict access to the selected instances. These RBAC policies apply to the entire Split-Horizon DNS configuration.
 
 ### Limit access to Split-Horizon DNS config
 
-A Percona Everest administrator may want to allow specific users (for example, Alice) to fully manage (create, edit, read, delete) Split-Horizon DNS configurations.
+A OpenEverest administrator may want to allow specific users (for example, Alice) to fully manage (create, edit, read, delete) Split-Horizon DNS configurations.
 Other users can only read the Split-Horizon DNS configs and use them in database clusters, but cannot make any changes.
 
-To implement this, the Percona Everest administrator creates an RBAC policy:
+To implement this, the OpenEverest administrator creates an RBAC policy:
 
 ```sh
 p, alice, enginefeatures/split-horizon-dns-configs, *, */*
@@ -46,10 +46,10 @@ p, role:team-dev, enginefeatures/split-horizon-dns-configs, read, */*
 
 ### Limit usage of Split-Horizon DNS config by users
 
-A Percona Everest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompanydns` in namespace `ns-1`).
+A OpenEverest administrator may want to allow a specific user (for example, bob) to use a particular Split-Horizon DNS config (for example, `mycompanydns` in namespace `ns-1`).
 All other users are not permitted to use this configuration. That is, they cannot see it in the system and cannot assign it to any database clusters they create or modify.
 
-To implement this, the Percona Everest administrator creates an RBAC policy:
+To implement this, the OpenEverest administrator creates an RBAC policy:
 
 ```sh
 p, bob, enginefeatures/split-horizon-dns-configs, read, ns-1/mycompany.com
@@ -73,7 +73,7 @@ For detailed instructions on applying a Split-Horizon DNS config to a new databa
 
 ## Update Split-Horizon DNS config
 
-In certain situations, a specific Split-Horizon DNS configuration may need modifications, such as altering the base domain name or uploading new Transport Layer Security (TLS) certificates. A Percona Everest administrator, or any user with the necessary Role-Based Access Control (RBAC) permissions, can update the Split-Horizon DNS configuration.
+In certain situations, a specific Split-Horizon DNS configuration may need modifications, such as altering the base domain name or uploading new Transport Layer Security (TLS) certificates. A OpenEverest administrator, or any user with the necessary Role-Based Access Control (RBAC) permissions, can update the Split-Horizon DNS configuration.
 
 
 For detailed instructions on updating a Split-Horizon DNS config, see [edit split-horizon DNS policy](split-horizon_config.md#edit-split-horizon-dns-policy).
@@ -81,7 +81,7 @@ For detailed instructions on updating a Split-Horizon DNS config, see [edit spli
 
 ## Delete Split-Horizon DNS config
 
-If a particular Split-Horizon DNS config is no longer needed, the Percona Everest administrator can choose to delete it.
+If a particular Split-Horizon DNS config is no longer needed, the OpenEverest administrator can choose to delete it.
 
 For detailed instructions on deleting a Split-Horizon DNS config, see [delete split-horizon DNS policy](split-horizon_config.md#delete-a-split-horizon-dns-policy).
 

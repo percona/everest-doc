@@ -1,6 +1,6 @@
 # Manage database clusters with CRD
 
-At the core of Percona Everest is the `DatabaseCluster` CRD, which defines and manages database clusters.
+At the core of OpenEverest is the `DatabaseCluster` CRD, which defines and manages database clusters.
 
 
 ??? example "Example: Basic database cluster"
@@ -43,7 +43,7 @@ At the core of Percona Everest is the `DatabaseCluster` CRD, which defines and m
 
 ## Supported database engine types
 
-Percona Everest supports three database engines:
+OpenEverest supports three database engines:
 
 - Percona Distribution for PostgreSQL
 

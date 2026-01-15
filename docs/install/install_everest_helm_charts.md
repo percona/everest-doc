@@ -1,26 +1,26 @@
-# Install Percona Everest using Helm
+# Install OpenEverest using Helm
 
-This section explains how to install Percona Everest using [Helm](https://helm.sh/){:target="_blank"} as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
+This section explains how to install OpenEverest using [Helm](https://helm.sh/){:target="_blank"} as an alternative to `everestctl`. Helm charts simplify the deployment process by packaging all necessary resources and configurations, making them ideal for automating and managing installations in Kubernetes environments.
 
-Percona Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
+OpenEverest Helm charts can be found in [percona/percona-helm-charts]( https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} repository in Github.
 
 !!! info "Important"
-    If you installed Percona Everest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
+    If you installed OpenEverest using Helm, make sure to uninstall it exclusively through Helm for a seamless removal.
 
 
-## Install Percona Everest and deploy database namespaces
+## Install OpenEverest and deploy database namespaces
 
-Here are the steps to install Percona Everest and deploy additional database namespaces:
+Here are the steps to install OpenEverest and deploy additional database namespaces:
 {.power-number}
 
-1. Add the Percona Helm repository:
+1. Add the OpenEverest Helm repository:
 
     ```sh
     helm repo add percona https://percona.github.io/percona-helm-charts/
     helm repo update
     ```
 
-2. Install Percona Everest:
+2. Install OpenEverest:
 
     ```sh
     helm install everest-core percona/everest \
@@ -32,7 +32,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         The command does the following:
         {.power-number}
 
-        1. Deploys the Percona Everest components in the `everest-system` namespace. Currently, specifying a different namespace for Percona Everest is not supported.
+        1. Deploys the OpenEverest components in the `everest-system` namespace. Currently, specifying a different namespace for OpenEverest is not supported.
 
         2. Deploys a new namespace called `everest` for your databases and the database operators.
 
@@ -43,7 +43,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
     | **Flags**          | **Description**                                                                                      |**Helm flag**                       |
 |------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
 | PMM deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--set pmm.enabled=true` |
-| TLS enabled      | Enable TLS encryption for secure communication between Percona Everest components.| `--set server.tls.enabled=true`  |
+| TLS enabled      | Enable TLS encryption for secure communication between OpenEverest components.| `--set server.tls.enabled=true`  |
 
 
     ??? example  "Examples"
@@ -55,7 +55,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
         ```
 
 
-        Install Percona Everest with TLS enabled:
+        Install OpenEverest with TLS enabled:
 
             
             helm install everest-core percona/everest \
@@ -64,7 +64,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
             --set server.tls.enabled=true
             
 
-        For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+        For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
 4. Once the installation is complete, retrieve the `admin` password. 
@@ -75,9 +75,9 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
     - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
-    - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](https://docs.percona.com/everest/install/installEverestCLI.html#__tabbed_1_1).
+    - The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found at [everestctl installation guide](../install/installEverestCLI.html#__tabbed_1_1).
 
-        To access detailed information on user management, see the [manage users in Percona Everest](../administer/manage_users.md#update-the-password) section.
+        To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
 
@@ -162,18 +162,18 @@ Here are the steps to install Percona Everest and deploy additional database nam
                 Optimized OS from Google   6.1.100+         containerd://1.7.19
                 ```
         
-        3. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
+        3. To launch the OpenEverest UI and create your first database cluster, go to the IP address/port found in step 1 and 3 (if TLS is enabled). In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
 
     === "Port Forwarding"
 
-        Run the following command to setup a port-forward to the Percona Everest server service:
+        Run the following command to setup a port-forward to the OpenEverest server service:
                 
         ```sh
         kubectl port-forward svc/everest 8080:8080 -n everest-system 
         ```
          
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
+        To launch the OpenEverest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
 
         ??? example "When TLS is enabled"
 
@@ -181,12 +181,12 @@ Here are the steps to install Percona Everest and deploy additional database nam
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ```
 
-            Percona Everest will be available at `https://127.0.0.1:8443`.
+            OpenEverest will be available at `https://127.0.0.1:8443`.
 
 
 5. Deploy additional database namespaces:
 
-    Once Percona Everest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
+    Once OpenEverest is successfully running, you can create additional database namespaces using the `everest-db-namespace` Helm chart. 
 
     If you set `dbNamespaces.enabled=false` in **step 2**, you can deploy a database namespace with the following command:
 
@@ -203,7 +203,7 @@ Here are the steps to install Percona Everest and deploy additional database nam
 
 ## Configure parameters
 
-You can customize various parameters in the Percona Everest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
+You can customize various parameters in the OpenEverest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
 
 A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
 

@@ -1,18 +1,18 @@
 # Manage clusters
 
-Cluster management involves the administration and maintenance of database clusters. Here's an overview of Percona Everest cluster management.
+Cluster management involves the administration and maintenance of database clusters. Here's an overview of OpenEverest cluster management.
 {.power-number}
 
 1. [Database provisioning](../use/db_provision.md)
     
-    Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform. 
+    Provisioning a database instance involves setting up and configuring a database instance on the OpenEverest platform. 
 
     ![!image](../images/database_view.png)
 
 
 2. Editing the database clusters
 
-    Editing a cluster in a Percona Everest typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs.
+    Editing a cluster in a OpenEverest typically involves making configuration changes to an existing database cluster to adapt it to your evolving needs.
 
     To edit a database cluster, go to the **Overview** page of the desired cluster and click **Edit** on the corresponding widget.
 
@@ -21,7 +21,7 @@ Cluster management involves the administration and maintenance of database clust
 
 3. [Scaling](../use/scaling.md)
 
-    Scaling in Percona Everest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale Percona Everest vertically and horizontally.
+    Scaling in OpenEverest involves adjusting the capacity and performance of your database instances to meet changing application demands. You can scale OpenEverest vertically and horizontally.
 
     To scale your database cluster, go to the **Overview** page of the desired cluster. Click on **Edit** in the **Resources** widget. This will open the **Edit Topology** screen. Make the necessary changes to the settings and then click **Save**.
     
@@ -38,7 +38,7 @@ Cluster management involves the administration and maintenance of database clust
         
         * Scale up
 
-            You can vertically scale up your Percona Everest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.
+            You can vertically scale up your OpenEverest instance by modifying its configuration to a higher performance tier. This involves increasing the memory and/or CPU threshold.
 
         * Scale down               
         
@@ -46,21 +46,21 @@ Cluster management involves the administration and maintenance of database clust
 
     * Horizontal scaling
 
-        To scale Percona Everest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
+        To scale OpenEverest horizontally, add database nodes to the existing cluster. These nodes share the workload, distributing queries and transactions more evenly, which can lead to improved performance.
 
 4. [Manual storage scaling](../use/manual_storage_scaling.md)
 
     You can increase the storage capacity of your S3-compatible storage through manual storage scaling. This feature enables you to adapt to rising data demands, providing more flexibility in managing growing database workloads while ensuring system stability and data security.
 
-    To increase the DISK for a database, go to the Percona Everest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
+    To increase the DISK for a database, go to the OpenEverest home page and select your desired database. Then, navigate to **Overview > Resources > Edit** and enter the new value for **DISK** (in Gi).
 
     ![!image](../images/edit_storage_capacity.png)
 
 5. [Back up and restore](../use/AboutBackups.md)
 
-    Back up and restore are critical aspects of managing and maintaining databases in Percona Everest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
+    Back up and restore are critical aspects of managing and maintaining databases in OpenEverest. Implementing robust backup and recovery strategies is crucial for preserving the integrity and availability of data and ensuring seamless business operations.
 
-    With the Percona Everest platform, you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
+    With the OpenEverest platform, you can generate backups on demand, create new databases using pre-existing backups, and restore backups to existing database clusters.
 
     
     ![!image](../images/database_backups.png)

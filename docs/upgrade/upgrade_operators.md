@@ -1,6 +1,6 @@
 # Upgrade database operators
 
-Starting with Percona Everest 1.2.0, the intuitive UI allows you to upgrade all the database operators and their components in any namespace with a single click.
+Starting with OpenEverest 1.2.0, the intuitive UI allows you to upgrade all the database operators and their components in any namespace with a single click.
 
 ## Before you upgrade
 
@@ -16,10 +16,10 @@ Before upgrading a database operator, Everest presents a list of tasks that need
 
 ## Upgrade
 
-To upgrade database operators via the Percona Everest UI:
+To upgrade database operators via the OpenEverest UI:
 {.power-number}
 
-1. Log in to the Percona Everest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. You will see all the database operators installed in that namespace.
+1. Log in to the OpenEverest UI and navigate to <i class="uil uil-cog"></i> **Settings > Namespaces**. You will see all the database operators installed in that namespace.
 
 
 3. Once the upgrade for the database operators becomes available, you can initiate the upgrade process by clicking on **Upgrade**.

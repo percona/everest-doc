@@ -1,17 +1,17 @@
 # Custom Pod scheduling policies
 
-Percona Everest allows you to define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes.
+OpenEverest allows you to define custom Pod scheduling policies to control how database pods are placed on Kubernetes nodes.
 
-## Manage Pod scheduling policies in Percona Everest
+## Manage Pod scheduling policies in OpenEverest
 
-A Percona Everest administrator or anyone with the necessary RBAC permissions can create, edit, or delete the Pod scheduling policies. Over time, these policies may need to be updated to add new affinity rules, modify existing ones, or remove outdated configurations.
+A OpenEverest administrator or anyone with the necessary RBAC permissions can create, edit, or delete the Pod scheduling policies. Over time, these policies may need to be updated to add new affinity rules, modify existing ones, or remove outdated configurations.
 
 ### Create Pod scheduling policy for your DB cluster
 
 Here are the steps to configure pod scheduling rules for the policies for your database clusters:
 {.power-number}
 
-1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
+1. From the OpenEverest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page. Here, you can view both default and custom policies.
 
 
     ![!image](../images/pod_scheduling_policies.png)
@@ -31,7 +31,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
     Refer to the following table for the detailed attribute descriptions.
 
     ??? info "📋 Custom Pod scheduling rule attributes"
-        The table below describes the key attributes used to define pod scheduling rules in Percona Everest:
+        The table below describes the key attributes used to define pod scheduling rules in OpenEverest:
 
 
         | **Attribute**     | **Description** | **Comments** |
@@ -55,7 +55,7 @@ Here are the steps to configure pod scheduling rules for the policies for your d
 Here are the steps to update a Pod scheduling policy rule:
 {.power-number}
 
-1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+1. From the OpenEverest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
 2. Select the policy that you want to update.
 
@@ -69,12 +69,12 @@ Here are the steps to update a Pod scheduling policy rule:
 
 ## Delete pod scheduling policy
 
-If a specific Pod scheduling policy is no longer needed, the Percona Everest Administrator or anyone with the proper permissions can delete it.
+If a specific Pod scheduling policy is no longer needed, the OpenEverest Administrator or anyone with the proper permissions can delete it.
 
 Here are the steps to delete a Pod scheduling policy:
 {.power-number}
 
-1. From the Percona Everest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
+1. From the OpenEverest home page, navigate to the <i class="uil uil-cog"></i> **Settings > Pod scheduling policies** page.
 
 2. Click the **ellipsis** (three dots) next to the policy you want to delete.
 

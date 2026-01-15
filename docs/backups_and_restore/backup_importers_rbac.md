@@ -1,6 +1,6 @@
-# RBAC for external backup imports in Percona Everest
+# RBAC for external backup imports in OpenEverest
 
-When importing external backups into Percona Everest, it is essential to consider Role-Based Access Control(RBAC) permissions. This ensures only authorized users have the required permissions to access and manage the data.
+When importing external backups into OpenEverest, it is essential to consider Role-Based Access Control(RBAC) permissions. This ensures only authorized users have the required permissions to access and manage the data.
 
 
 ## Required roles and permissions
@@ -9,7 +9,7 @@ The following RBAC permissions are supported for `DataImporters` and `DataImport
 
 
 !!! info "Important"
-    :x: Represents an action that's not supported by the Percona Everest API.
+    :x: Represents an action that's not supported by the OpenEverest API.
 
 |**Resource**| **Read**| **Create**| **Update**|**Delete**|
 |------------|---------|-----------|-----------|----------|

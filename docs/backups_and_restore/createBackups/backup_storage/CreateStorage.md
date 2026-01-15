@@ -15,7 +15,7 @@ To create a backup storage location:
 
 1. Go to Backup storage settings:
 
-    Navigate to Percona Everest home page and select <i class="uil uil-cog"></i> **Settings > Backup storages**. Then click **Add Backup storage**.
+    Navigate to OpenEverest home page and select <i class="uil uil-cog"></i> **Settings > Backup storages**. Then click **Add Backup storage**.
 
 2. Fill in the Required Fields:
 

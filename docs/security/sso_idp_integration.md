@@ -1,13 +1,13 @@
-# SSO: Percona Everest IdP integration
+# SSO: OpenEverest IdP integration
 
 
 [Identity Provider (IdP)](https://www.okta.com/identity-101/why-your-company-needs-an-identity-provider/){:target="_blank"} integration connects applications and services with an external identity provider for your organization. This enables centralized authentication and authorization management, improving security and simplifying user access. By leveraging IdP integration, you can ensure that users are securely authenticated and authorized to access various applications and services across your organization.
 
-Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol){:target="_blank"} (OIDC) Protocol to integrate with external Identity Providers (IdP).
+OpenEverest uses [OpenID Connect](https://auth0.com/docs/authenticate/protocols/openid-connect-protocol){:target="_blank"} (OIDC) Protocol to integrate with external Identity Providers (IdP).
 
 
 !!! note "Note"
-    To integrate IdP with Percona Everest, first, [install Percona Everest](../install/installEverest.md) and then [configure OIDC](#configure-oidc-on-the-provider-side) on the IdP's side as well as the [Percona Everest side](#configure-oidc-on-percona-everest-side).
+    To integrate IdP with OpenEverest, first, [install OpenEverest](../install/installEverest.md) and then [configure OIDC](#configure-oidc-on-the-provider-side) on the IdP's side as well as the [OpenEverest side](#configure-oidc-on-openeverest-side).
 
 ## Configure OIDC on the provider side
 
@@ -19,7 +19,7 @@ Percona Everest uses [OpenID Connect](https://auth0.com/docs/authenticate/protoc
     * Sign-out redirect URIs should point to `<EVEREST_URL>`.
  
         !!! info "Important" 
-            IdP providers often require a secure connection (HTTPS). Therefore, the provider might require your `<EVEREST_URL>` to be based on HTTPS. If your provider requires this, consider adding a reverse proxy in front of Percona Everest to provide such functionality.
+            IdP providers often require a secure connection (HTTPS). Therefore, the provider might require your `<EVEREST_URL>` to be based on HTTPS. If your provider requires this, consider adding a reverse proxy in front of OpenEverest to provide such functionality.
 
 ### Example: OIDC configuration on the provider side
 
@@ -69,9 +69,9 @@ Other popular IdPs include Microsoft Azure Active Directory, Auth0, Google Ident
             The values shown are for demonstration purposes only. Replace them with your **actual Okta configuration**.
 
 
-## Configure OIDC on the Percona Everest's side
+## Configure OIDC on the OpenEverest's side
 
-You can configure OIDC on the Percona Everest's side using `everestctl` in headless mode or with the wizard.
+You can configure OIDC on the OpenEverest's side using `everestctl` in headless mode or with the wizard.
 
 !!! note "Note"
     You must have obtained the `Issuer URL` and `Client ID` values from the [Configure OIDC on the provider side](#example-oidc-configuration-on-the-provider-side) section.
@@ -124,9 +124,9 @@ To configure OIDC using the wizard, run the following command:
     
         The Everest user should not directly interact with the `everest-settings` ConfigMap. Use the `everestctl` command to set up the OIDC config.
 
-    2. **Restart Percona Everest**
+    2. **Restart OpenEverest**
 
-        OIDC configuration must be in place for Percona Everest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the Percona Everest API Server needs to be restarted.
+        OIDC configuration must be in place for OpenEverest to start the API Server, allowing the server to utilize the OIDC provider's validation. This means that after setting up the OIDC configuration, the OpenEverest API Server needs to be restarted.
 
         The `everestctl` command typically takes approximately 15 seconds to execute. It waits for the Everest Deployment to be up again before exiting successfully.
 
@@ -135,18 +135,18 @@ To configure OIDC using the wizard, run the following command:
 
             - The restart only impacts the Everest UI and API. Database clusters are not affected.
 
-            - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access Percona Everest UI and API, you will need to set it up again.
+            - The restart results in the loss of the port-forwarding connection. If you had port-forwarding enabled on your machine to access OpenEverest UI and API, you will need to set it up again.
 
 
 ## Testing IdP integration
 
-After setting up your OIDC configuration, you can verify the functionality by visiting the Percona Everest login page and attempting to log in using Single Sign-On (SSO).
+After setting up your OIDC configuration, you can verify the functionality by visiting the OpenEverest login page and attempting to log in using Single Sign-On (SSO).
 
 
 ![!image](../images/sso_login.png)
 
 
-## Percona Everest OIDC configuration for Microsoft Entra
+## OpenEverest OIDC configuration for Microsoft Entra
 
 When configuring Everest's OIDC settings via `everestctl`, ensure you specify the correct scope:
 
@@ -160,7 +160,7 @@ everestctl settings oidc configure \
 !!! note
     Replace `<your-app-client-id>` with your actual Microsoft Entra application (client) ID, and ensure the issuer-url points to the correct tenant.
 
-With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that Percona Everest can verify.
+With this configuration, the access token will include `"aud": "<your-app-client-id>"`, and it will have a valid signature that OpenEverest can verify.
 
 For a detailed explanation, see the [OIDC integration limitations with Microsoft Entra](../reference/known_limitations.md#oidc-integration-with-microsoft-entra).
 

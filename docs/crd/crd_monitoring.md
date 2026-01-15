@@ -1,6 +1,6 @@
 # Configure monitoring
 
-Percona Everest integrates with Percona Monitoring and Management (PMM) to monitor your database clusters.
+OpenEverest integrates with Percona Monitoring and Management (PMM) to monitor your database clusters.
 
 !!! info "Important"
     To enable monitoring, you must first create a `MonitoringConfig` that defines your PMM connection and credentials.

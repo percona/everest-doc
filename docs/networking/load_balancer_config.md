@@ -9,7 +9,7 @@
 Here's how you can create a load balancer configuration:
 {.power-number}
 
-1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to the OpenEverest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
     ![!image](../images/policies_page.png)
 
@@ -32,7 +32,7 @@ Here's how you can create a load balancer configuration:
     ![!image](../images/key_value_load_balancer.png)
 
     !!! note
-        The **key** and **value** in a Load Balancer configuration for Percona Everest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
+        The **key** and **value** in a Load Balancer configuration for OpenEverest are derived from your Kubernetes environment and the load balancer implementation by your cloud provider.
 
     ??? example "Examples of keys and values used for Load balancer configuration"
 
@@ -56,7 +56,7 @@ Here's how you can create a load balancer configuration:
 Here's how you can edit the load balancer configuration:
 {.power-number}
 
-1.  Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
+1.  Navigate to the OpenEverest home page and go to <i class="uil uil-cog"></i> **Settings > Policies**.
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
@@ -78,7 +78,7 @@ Here's how you can edit the load balancer configuration:
 Here's how you can delete the load balancer configuration:
 {.power-number}
 
-1. Navigate to the Percona Everest home page and go to <i class="uil uil-cog"></i> **Settings > Policies** 
+1. Navigate to the OpenEverest home page and go to <i class="uil uil-cog"></i> **Settings > Policies** 
 
 2. In the **Load Balancer configuration** section, click **Configure**. The list of existing configurations appears.
 
@@ -96,7 +96,7 @@ Here's how you can delete the load balancer configuration:
 
 ## Expose your database cluster
 
-Use the comparison table below to determine whether to expose your database in Percona Everest using `ClusterIP` or `LoadBalancer`.
+Use the comparison table below to determine whether to expose your database in OpenEverest using `ClusterIP` or `LoadBalancer`.
 
 
 | **Criteria**               | **ClusterIP**                                                     | **Load balancer**                                                                                                                                 |
@@ -114,9 +114,9 @@ Use the comparison table below to determine whether to expose your database in P
 You can expose a database cluster outside of the Kubernetes network during database creation:
 {.power-number}
 
-1. Log in to the Percona Everest UI.
+1. Log in to the OpenEverest UI.
 
-2. On the Percona Everest homepage, click **Create database**. Select the database that you wish to provision.
+2. On the OpenEverest homepage, click **Create database**. Select the database that you wish to provision.
 
 3. Continue through the setup until you reach the **Advanced Configurations** page.
 

@@ -1,6 +1,6 @@
 # Split-Horizon DNS config Custom Resource Definition (CRD)
 
-To configure Split-Horizon DNS, Percona Everest Operator introduces a new Custom Resource Definition (CRD):
+To configure Split-Horizon DNS, OpenEverest Operator introduces a new Custom Resource Definition (CRD):
 
 ```yaml
 apiVersion: apiextensions.k8s.io/v1
@@ -60,7 +60,7 @@ When creating the Custom Resource (CR), provide one of the following combination
   Afterwards, the `.spec.tls.certificate.*` values will be removed for security reasons.
 
 !!! note
-    Percona Everest does not validate whether the provided TLS certificate matches the specified base domain name.
+    OpenEverest does not validate whether the provided TLS certificate matches the specified base domain name.
 
 
 

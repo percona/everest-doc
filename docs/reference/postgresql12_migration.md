@@ -1,7 +1,7 @@
 # Migrate from PostgreSQL 12
 
 !!! info "Important"
-    Percona Everest 1.6.0 has officially discontinued support for PostgreSQL 12. To ensure compatibility, security, and access to new features, it is highly recommended to migrate to PostgreSQL 13 or later.
+    OpenEverest 1.6.0 has officially discontinued support for PostgreSQL 12. To ensure compatibility, security, and access to new features, it is highly recommended to migrate to PostgreSQL 13 or later.
 
 ## Preparation before migration
 
@@ -10,11 +10,11 @@ Before migrating from PostgreSQL 12, it's important to prepare thoroughly to ens
 
 1. **Backup your data** - Create a complete backup of your data before upgrading.
 
-2. **Select a target version** - Choose the PostgreSQL version you want to migrate to (e.g., 15 or 16). Select a stable, supported release compatible with Percona Everest's infrastructure requirements.
+2. **Select a target version** - Choose the PostgreSQL version you want to migrate to (e.g., 15 or 16). Select a stable, supported release compatible with OpenEverest's infrastructure requirements.
 
 3. **Check Compatibility** - Verify that your configurations are compatible with the new PostgreSQL version.
 
-4. **Provision a new PostgreSQL database in Percona Everest** – Use Percona Everest to deploy a new database with the desired PostgreSQL version.
+4. **Provision a new PostgreSQL database in OpenEverest** – Use OpenEverest to deploy a new database with the desired PostgreSQL version.
 
 
 ## Choose a migration option
@@ -29,10 +29,7 @@ PostgreSQL offers several migration options. Each method has its own benefits an
 
 Review PostgreSQL documentation to select the best option for your environment.
 
-💡 Need assistance? Connect with [Percona Everest community](https://forums.percona.com/t/welcome-to-perconas-community-forum/7){:target="_blank"}! 
-
-Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-experts).
-
+💡 Need assistance? Connect with [OpenEverest support](https://openeverest.io/support){:target="_blank"}! 
 
 ??? info " :balance_scale: Expand for a detailed comparison between `logical dump and restore` vs `logical replication`"
 
@@ -65,7 +62,7 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
     This option is recommended for **smaller databases** and **one-time migrations**.
     {.power-number}
 
-    1. Provision a new PostgreSQl database in Percona Everest.
+    1. Provision a new PostgreSQl database in OpenEverest.
 
 
     2. Perform a logical dump of the old database:
@@ -79,9 +76,9 @@ Alternatively, you can always [Talk to a Percona Expert](../get-help.md#percona-
                 pg_dump -Fc -h <old-db-host> -U <user> <db_name> -f dump_file.dump
                 ```
 
-    3. Restore data to the new Percona Everest database:
+    3. Restore data to the new OpenEverest database:
 
-        - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created Percona Everest cluster.
+        - Use [pg_restore](https://www.postgresql.org/docs/current/app-pgrestore.html) or [psql](https://www.postgresql.org/docs/current/app-psql.html) to import data into the newly created OpenEverest cluster.
 
             ??? example "Example: Target database"
                 Run the following command on the target PostgreSQL database:

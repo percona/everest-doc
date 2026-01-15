@@ -3,7 +3,7 @@
 INHERIT: mkdocs-base.yml
 
 
-site_url: https://docs.percona.com/everest/
+site_url: https://openeverest.io/documentation/
 
 
 #Google Analytics configuration 

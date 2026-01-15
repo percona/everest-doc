@@ -1,6 +1,6 @@
 # Namespaces management
 
-The management of namespaces plays a vital role in efficiently organizing and allocating resources within Percona Everest.
+The management of namespaces plays a vital role in efficiently organizing and allocating resources within OpenEverest.
 
 ## Add new namespaces
 
@@ -18,14 +18,14 @@ The command supports the following flags:
 
 `--operator.xtradb-cluster=<bool>`
 
-`--take-ownership` - Allows Percona Everest to manage an existing Kubernetes namespace by adding the necessary labels. Without this flag, Percona Everest will attempt to create the namespace and throw an error if it already exists. Use this flag to take over an existing namespace.
+`--take-ownership` - Allows OpenEverest to manage an existing Kubernetes namespace by adding the necessary labels. Without this flag, OpenEverest will attempt to create the namespace and throw an error if it already exists. Use this flag to take over an existing namespace.
 
 ??? example "Example"
     ```sh
     everestctl namespaces add development --operator.postgresql=false
     ✓ Installing namespace 'development'
     ```
-    In the above command, we did not specify the MongoDB and MySQL operators.       Therefore, by default, Percona Everest assumes these operators are true and will add them.
+    In the above command, we did not specify the MongoDB and MySQL operators.       Therefore, by default, OpenEverest assumes these operators are true and will add them.
 
     ```sh
     everestctl namespaces add production
@@ -70,7 +70,7 @@ You can run the following command for deleting namespaces:
 everestctl namespaces remove [NAMESPACE]
 ```
 
-- This command deletes only the specified namespace, as long as it is managed by Percona Everest.
+- This command deletes only the specified namespace, as long as it is managed by OpenEverest.
 
 - Setting `--keep-namespace` deletes all resources within the namespace (e.g., operators, DatabaseClusters, BackupStorages) while preserving the namespace itself. Use this option to clean up the namespace without removing it.
 

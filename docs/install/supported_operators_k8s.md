@@ -1,6 +1,6 @@
 # Supported operators and K8s clusters
 
-Percona Everest provides support for various operators and Kubernetes clusters. The following is a list of the specific operators and Kubernetes clusters that are compatible with Percona Everest:
+OpenEverest provides support for various operators and Kubernetes clusters. The following is a list of the specific operators and Kubernetes clusters that are compatible with OpenEverest:
 
 ## Operators
 
@@ -10,7 +10,7 @@ Percona Everest provides support for various operators and Kubernetes clusters. 
 
 ## k8s clusters
 
-Percona Everest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
+OpenEverest works on most of the cloud K8s and on most of the on-prem vanilla K8s.
 
 However, not all the many combinations of K8s distributions and K8s versions might be fully tested and certified. Refer to the matrix below and [reach out to us](SetupPrereqs.md#get-expert-help) should you have any questions.
 

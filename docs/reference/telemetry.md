@@ -1,6 +1,6 @@
-# Telemetry on Percona Everest
+# Telemetry on OpenEverest
 
-In creating Percona Everest, we leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet your needs.
+In creating OpenEverest, we leveraged our years of experience in open-source database development, and collaborated closely with the Percona community through interviews to ensure our new product will meet your needs.
 
 Product telemetry fills-in the gaps in our understanding of how you are actually using Everest, to help us build the best-in-class cloud-native database platform for the open-source community.
 
@@ -20,7 +20,7 @@ Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want 
 To disable telemetry run:
 
 ```sh
-kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+kubectl -n everest-system patch deployment everest-server --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0
@@ -40,7 +40,7 @@ kubectl -n everest-system patch deployment percona-everest --type strategic -p '
 If you want to enable telemetry again:
 
 ```sh
-kubectl -n everest-system patch deployment percona-everest --type strategic -p 'spec:
+kubectl -n everest-system patch deployment everest-server --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0
