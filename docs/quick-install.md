@@ -183,7 +183,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                                                 
             ```sh
-            helm install everest percona/everest \
+            helm install percona-everest percona/everest \
             --set service.type=LoadBalancer
             ```
             
