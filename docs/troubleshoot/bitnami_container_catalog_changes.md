@@ -74,7 +74,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
 2. Upgrade the main OpenEverest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
     ```sh
-    helm upgrade everest-system openeverest/openeverest \
+    helm upgrade everest-system percona/everest \
     --reuse-values \
     --namespace everest-system \
     --version 1.8.1
@@ -296,7 +296,7 @@ Follow these steps to fix the problem:
         Make sure to replace the pod and container names with your custom names.
 
     ```sh
-    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n everest -p '{"spec":{"containers":[{"name":"everest-helm-pre-delete-hook","image":"openeverest/openeverest-helmtools:0.0.1"}]}}'
+    kubectl patch pod everest-helm-pre-delete-hook-288662-dlddp -n everest -p '{"spec":{"containers":[{"name":"everest-helm-pre-delete-hook","image":"percona/everest-helmtools:0.0.1"}]}}'
     pod/everest-helm-pre-delete-hook-288662-dlddp patched
     ```
 

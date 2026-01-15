@@ -89,7 +89,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command:
                     
             ```sh
-           helm upgrade everest-core percona/everest \
+            helm upgrade everest-core percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=LoadBalancer
@@ -123,7 +123,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
         1. Run the following command to change the Everest service type to `NodePort`:
 
             ```sh
-           helm upgrade everest-core percona/everest \
+            helm upgrade everest-core percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=NodePort
@@ -205,7 +205,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
 
 You can customize various parameters in the OpenEverest Helm charts for your deployment to meet your specific needs. Refer to the [Helm documentation](https://helm.sh/docs/chart_best_practices/values/){:target="_blank"} to discover how to configure these parameters.
 
-A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/openeverest/openeverest/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
+A few parameters are listed in the following table. For a detailed list of the parameters, see the [README](https://github.com/percona/percona-helm-charts/blob/main/charts/everest/README.md#configuration){:target="_blank"}.
 
 
 **percona/everest chart**

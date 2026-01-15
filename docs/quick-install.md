@@ -134,7 +134,7 @@ To install OpenEverest using Helm follow these steps:
             Install OpenEverest using this file:
 
             ```sh
-            helm install percona-everest percona/everest \
+            helm install everest percona/everest \
             -n everest-system \
             -f everest-values.yaml
             ```
@@ -183,7 +183,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                                                 
             ```sh
-            helm install percona-everest percona/everest \
+            helm install everest percona/everest \
             --set service.type=LoadBalancer
             ```
             

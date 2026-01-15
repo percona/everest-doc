@@ -176,8 +176,8 @@ Use HTML for icons:
 
 Custom (in-house design) icons are defined as SVG code in `variables.yml`.
 
-| Usage              | Description       | Used where                   |
-| ------------------ | ----------------- | ---------------------------- |
+| Usage | Description | Used where |
+| :---: | :---: | :---: |
 | `{{icon.percona}}` | OpenEverest logo  | Wherever home icon is needed |
 
 ## Symbols

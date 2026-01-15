@@ -124,7 +124,7 @@ To install and provision OpenEverest to Kubernetes:
         1. Use the following command to change the Everest service type to `LoadBalancer`:
                     
             ```sh
-            helm upgrade everest-system openeverest/openeverest \
+            helm upgrade everest-system percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=LoadBalancer
@@ -156,7 +156,7 @@ To install and provision OpenEverest to Kubernetes:
 
                     
             ```sh
-            helm upgrade everest-system openeverest/openeverest \
+            helm upgrade everest-system percona/everest \
             --namespace everest-system \
             --reuse-values \
             --set server.service.type=NodePort
