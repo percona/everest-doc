@@ -44,16 +44,15 @@ To customize the API rate limiting:
             podAntiAffinity: {}
           containers:
             - name: everest
-              env:
-                - name: API_REQUESTS_RATE_LIMIT
-                  value: "200" 
-                - name: CREATE_SESSION_RATE_LIMIT
-                  value: "3"' 
-    ```
+    kubectl -n everest-system patch deployment everest-server --type strategic -p 'spec:
+     strategy:
+       rollingUpdate:
+         maxSurge: 0
+@@ -53,7 +53,7 @@
 
-    Replace 200 with the desired value.
+   Replace 200 with the desired value.
 
-2. After executing the previous command, `openeverest` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
+2. After executing the previous command, the `everest-server` pod will restart automatically. If you had port-forwarding running, it would exit, and you'll need to rerun it.
 
       ```
       kubectl port-forward svc/everest 8080:8080 -n everest-system
