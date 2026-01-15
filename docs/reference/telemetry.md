@@ -40,7 +40,7 @@ kubectl -n everest-system patch deployment everest-server --type strategic -p 's
 If you want to enable telemetry again:
 
 ```sh
-kubectl -n everest-system patch deployment openeverest --type strategic -p 'spec:
+kubectl -n everest-system patch deployment everest-server --type strategic -p 'spec:
   strategy:
     rollingUpdate:
       maxSurge: 0
