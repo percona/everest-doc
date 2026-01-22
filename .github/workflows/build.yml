@@ -30,13 +30,9 @@ jobs:
           test -f requirements.txt && pip install -r requirements.txt
 
       - name: Configure git
-        env:
-          ROBOT_TOKEN: ${{ secrets.ROBOT_TOKEN }}
         run: |
           git config user.name "GitHub Action"
           git config user.email "github-action@users.noreply.github.com"
-          git config user.password "${ROBOT_TOKEN}"
-          echo "GIT_USER=percona-platform-robot:${ROBOT_TOKEN}" >> $GITHUB_ENV
 
       # Builds Material-themed static web site in 'preview' branch
       - name: Build a themed site
