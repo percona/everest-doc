@@ -5,7 +5,7 @@ Some of the key features of OpenEverest are:
 ## Deployments
 
 - **Multi-cloud deployments**: OpenEverest enables you to transcend the limitations of a single cloud provider. Deploy your databases in the Kubernetes cluster, to ensure redundancy, high availability, and data sovereignty.
-- **Multiple open source database support**: OpenEverest offers managed solutions for Percona's open source databases, including PostgreSQL, MySQL, and MongoDB.
+- **Multiple open source database support**: OpenEverest supports multiple database technologies and can be hosted on any Kubernetes infrastructure, in the cloud or on-premises.
 - **Private deployments and DIY**: OpenEverest provides complete control over your database environment, ensuring the privacy and security of your data. Private deployments enable you to customize every aspect of your database setup using a do-it-yourself approach.
 
 ## Database provisioning
