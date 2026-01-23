@@ -1,27 +1,47 @@
-# Get help from Percona
+# Join the Community & Get Support
 
-Our documentation guides are packed with information, but they can’t cover everything you need to know about Percona Everest. They also won’t cover every scenario you might come across. Don’t be afraid to try things out and ask questions when you get stuck.
+OpenEverest is supported by an ecosystem of contributors, users, and professional service providers. Whether you are looking to collaborate with the community, seeking peer-to-peer technical advice, or requiring enterprise-grade professional support, there are several ways to engage with the project.
 
-## Percona's Community Forum
+---
 
-Be a part of a space where you can tap into a wealth of knowledge from other database enthusiasts and experts who work with Percona’s software every day. While our service is entirely free, keep in mind that response times can vary depending on the complexity of the question. You are engaging with people who genuinely love solving database challenges.
+### 💬 Ask Questions
+Need a quick answer or want to chat with other users? Join our real-time discussions on the **CNCF Slack**.
 
-We recommend visiting our [Community Forum](https://forums.percona.com/c/percona-everest/81){:target="_blank"}. It’s an excellent place for discussions, technical insights, and support around Percona database software. If you’re new and feeling a bit unsure, our [FAQ](https://forums.percona.com/faq){:target="_blank"} and [Guide for New Users](https://forums.percona.com/t/faq-guide-for-new-users/8562){:target="_blank"} ease you in.
+* **Slack Channel:** [#openeverest-users](https://cloud-native.slack.com/archives/C09RRGZL2UX)
 
-If you have thoughts, feedback, or ideas, the community team would like to hear from you at [Any ideas on how to make the forum better?](https://forums.percona.com/t/any-ideas-on-how-to-make-the-forum-better/11522){:target="blank"}. We’re always excited to connect and improve everyone's experience.
+### 📅 Community Meetings
+Join us every two weeks for live updates, demos, and open Q&A with the OpenEverest team and contributors. It’s the best way to stay up to date with the roadmap and meet the people behind the project.
 
-## Percona experts
+* [View Meeting Schedule & Minutes](https://github.com/openeverest#openeverest-community-meetings)
 
-Percona experts bring years of experience in tackling tough database performance issues and design challenges.
+---
 
-<div data-tf-live="01JKGYBNQ9NH2HGC8YSH8K2CN8"></div><script src="//embed.typeform.com/next/embed.js"></script>
-We understand your challenges when managing complex database environments. That's why we offer various services to help you simplify your operations and achieve your goals.
+### 🛠 Contribute
+OpenEverest is open source and thrives on community contributions. No contribution is too small — whether it's code, documentation, or website improvements. All projects are **Apache 2.0 licensed**.
 
-| Service                    | Description                                                                                                                                                           |
-|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 24/7 Expert Support        | Our dedicated team of database experts is available 24/7 to assist you with any database issues. We provide flexible support plans tailored to your specific needs.   |
-| Hands-On Database Management | Our managed services team can take over the day-to-day management of your database infrastructure, freeing up your time to focus on other priorities.               |
-| Expert Consulting          | Our experienced consultants provide guidance on database topics like architecture design, migration planning, performance optimization, and security best practices.  |
-| Comprehensive Training     | Our training programs help your team develop skills to manage databases effectively, offering virtual and in-person courses.                                          |
+| Area | Description | Link |
+| :--- | :--- | :--- |
+| **Code** | Improve the OpenEverest platform engine, APIs, or CLI. | [openeverest/openeverest](https://github.com/openeverest/openeverest) |
+| **Documentation** | Help improve user guides, installation docs, or reference materials. | [openeverest/everest-doc](https://github.com/openeverest/everest-doc) |
+| **Blog & Website** | Fix typos, suggest new content, or redesign pages. | [openeverest/openeverest.github.io](https://github.com/openeverest/openeverest.github.io) |
 
-We're here to help you every step of the way. Whether you need a quick fix or a long-term partnership, we're ready to provide your expertise and support.
+> **Note:** We welcome PRs and issues! Please check our contribution guidelines in each repository before getting started.
+
+---
+
+### 🐞 Report Issues
+Found a bug or have a feature idea? We use GitHub to track everything.
+
+* [Open an Issue](https://github.com/openeverest/openeverest/issues)
+* [Start a Discussion](https://github.com/openeverest/openeverest/discussions)
+
+---
+
+### 🏢 Commercial Support & Services
+While the community is a great resource for general questions, many organizations require guaranteed SLAs, 24/7 technical assistance, or hands-on consulting for mission-critical production environments.
+
+A variety of companies provide professional services and commercial software built around OpenEverest to help you meet compliance, security, and operational requirements.
+
+👉 **[Visit the OpenEverest Support Page](https://openeverest.io/support)**
+
+*Visit this page to find vendors offering architecture design, migration planning, managed services, and comprehensive training.*
