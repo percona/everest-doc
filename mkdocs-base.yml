@@ -273,7 +273,7 @@ nav:
 
   - API: API.md
 
-  - Percona Everest operator CRD: 
+  - OpenEverest operator CRD: 
       - Overview: crd/crd_guide.md
       - Manage database clusters: crd/database_cluster_management.md
       - Configure backup storage: crd/backup_storage_config.md
