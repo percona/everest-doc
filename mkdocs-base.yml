@@ -4,7 +4,7 @@ site_name: Percona Everest
 site_description: Documentation
 site_author: Percona LLC
 site_url: ""
-copyright: Percona LLC, &#169; 2025
+copyright: OpenEverest, &#169; 2026
 use_directory_urls: false
 repo_name: percona/everest-doc
 repo_url: https://github.com/percona/everest-doc
@@ -73,7 +73,7 @@ extra_javascript:
 
 #Copyright
 copyright: >
-  <a href="https://www.percona.com/about">Percona LLC</a> and/or its affiliates © 2025 — <a href="#__consent">Cookie Consent</a>
+  <a href="https://www.openeverest.io/">OpenEverest</a> © 2026 — <a href="#__consent">Cookie Consent</a>
 
 #Extensions
 markdown_extensions:
@@ -134,7 +134,7 @@ plugins:
     cover_subtitle: version (Date, Year)
 
     author: "Everest Team"
-    cover_logo: docs/images/Percona_Logo_Color.png
+    cover_logo: docs/images/open-everest-logo.png
     enabled_if_env: ENABLE_PDF_EXPORT
   # Check links - but extends build time significantly
   # https://pypi.org/project/mkdocs-htmlproofer-plugin/
@@ -155,6 +155,7 @@ nav:
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
+      - Percona-Everest-1.12.0-(2026-01-19): release-notes/Percona-Everest-1.12.0-(2026-01-19).md
       - Percona-Everest-1.11.0-(2026-01-12): release-notes/Percona-Everest-1.11.0-(2026-01-12).md
       - Percona-Everest 1.10.0 (2025-11-28): release-notes/Percona-Everest-1.10.0-(2025-11-28).md
       - Percona-Everest 1.9.0 (2025-09-23): release-notes/Percona-Everest-1.9.0-(2025-09-23).md
