@@ -290,7 +290,7 @@ Follow these steps to fix the problem:
 
 5. Patch the pod. 
 
-    Replace the `bitnami/kubectl` image with the new `openeverest/openeverest-helmtools:0.0.1` image. 
+    Replace the `bitnami/kubectl` image with the new `percona/everest-helmtools:0.0.1` image. 
     
     !!! note
         Make sure to replace the pod and container names with your custom names.
