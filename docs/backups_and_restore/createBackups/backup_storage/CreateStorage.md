@@ -6,7 +6,7 @@ Everest supports S3-compatible backup locations, which means you can use [AWS S3
 
 !!! caution alert alert-warning "Important"
 
-     - Currently, Everest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.
+     - Currently, OpenEverest does not support S3 buckets with S3 Object Lock. Make sure your backup destination you are registering does not have S3 Object Lock enabled.
 
      - Make sure you have read/write/delete permissions to the S3 bucket.
 

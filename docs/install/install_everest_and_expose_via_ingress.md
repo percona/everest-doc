@@ -63,7 +63,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         kubectl get ingress -n everest-system
         ```
 
-        Ensure the address provided is valid and correctly routes to the OpenEverest service.
+        Ensure the address provided is valid and correctly routes to the Everest service.
 
         ??? example "Example: Using a Helm values file"
 
@@ -118,14 +118,14 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
         ```
 
-        - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+        - The default username for logging into the OpenEverest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
             !!! info "Important"
                 The default `admin` password is stored in plain text. It is highly recommended that the password be updated using `everestctl` to ensure that the passwords are hashed. Instructions for installing `everestctl` can be found in [everestctl installation guide](../install/installEverestCLI.html#__tabbed_1_1).
 
             To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
-    5. To access the Everest UI/API, open your browser and go to `https://everest.example.com`.
+    5. To access the OpenEverest UI/API, open your browser and go to `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.
@@ -184,7 +184,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         kubectl get ingress -n everest-system
         ```
 
-        Make sure the address provided is valid and that it correctly routes to the OpenEverest service.
+        Make sure the address provided is valid and that it correctly routes to the Everest service.
 
         ??? example "Example: Custom YAML configuration file"
 
@@ -222,7 +222,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         everestctl accounts initial-admin-password
         ```
 
-        - The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+        - The default username for logging into the OpenEverest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
         - The default `admin` password is stored in plain text.
         
@@ -231,7 +231,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
 
             To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
-    6. To access the Everest UI/API, open your browser and go to  `https://everest.example.com`.
+    6. To access the OpenEverest UI/API, open your browser and go to  `https://everest.example.com`.
 
         !!! note
             Replace `everest.example.com` with your own domain.

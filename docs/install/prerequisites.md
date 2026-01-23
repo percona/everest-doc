@@ -8,7 +8,7 @@ Before getting started with OpenEverest, we recommend that you:
 
 2. Install [yq :octicons-link-external-16:](https://github.com/mikefarah/yq) to install OpenEverest using Helm.
 
-3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
+3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, OpenEverest uses the kubeconfig file available under *~/.kube/config*. Run the following command:
 
     ```sh
     kubectl get nodes

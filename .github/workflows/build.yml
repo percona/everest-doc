@@ -1,4 +1,4 @@
-name: Build Everest Docs (1.x)
+name: Build OpenEverest Docs (1.x)
 
 on:
   push:

@@ -1,5 +1,5 @@
 ---
-name: Everest <version>
+name: OpenEverest <version>
 about: Release Notes Template for Everest
 ---
 

@@ -26,7 +26,7 @@ Before getting started with OpenEverest, do the following:
          
       [Create EKS cluster :material-arrow-right:](install/eks.md){.md-button}  [Create GKE cluster :material-arrow-right:](install/gke.md){.md-button}
 
-3. Verify that you have access to the Kubernetes cluster that you want to use with Everest. By default, Everest uses the kubeconfig file available under `~/.kube/config`. 
+3. Verify that you have access to the Kubernetes cluster that you want to use with OpenEverest. By default, OpenEverest uses the kubeconfig file available under `~/.kube/config`. 
 
      If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable:
     
@@ -105,7 +105,7 @@ To install OpenEverest using Helm follow these steps:
             kubectl get ingress -n everest-system
             ```
 
-            Make sure the address provided is valid and that it correctly routes to the OpenEverest service.
+            Make sure the address provided is valid and that it correctly routes to the Everest service.
 
         ??? example "Example: Custom YAML configuration file"
 
@@ -176,7 +176,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
 
     For information on user management, see the section [manage users in OpenEverest](administer/manage_users.md).
 
-2.  Access the Everest UI/API using one of the following options, as the `everest` Service is not exposed with an external IP by default:
+2.  Access the OpenEverest UI/API using one of the following options, as the `everest` Service is not exposed with an external IP by default:
 
     === "Load Balancer"
 
@@ -194,7 +194,7 @@ Once you have successfully installed OpenEverest, proceed with the following ste
                 everest   LoadBalancer   10.43.172.194   34.175.201.246       443:8080/TCP    10s
                 ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
+        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch OpenEverest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
                 
             ```sh 
             kubectl get svc/everest -n everest-system
