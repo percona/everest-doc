@@ -32,7 +32,7 @@ To customize the API rate limiting:
 1. Run the following command:
 
     ```
-    kubectl -n everest-system patch deployment openeverest --type strategic -p 'spec:
+    kubectl -n everest-system patch deployment everest-server --type strategic -p 'spec:
       strategy:
         rollingUpdate:
           maxSurge: 0
