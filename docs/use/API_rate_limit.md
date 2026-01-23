@@ -48,7 +48,11 @@ To customize the API rate limiting:
      strategy:
        rollingUpdate:
          maxSurge: 0
-@@ -53,7 +53,7 @@
+              env:
+                - name: API_REQUESTS_RATE_LIMIT
+                  value: "200" 
+                - name: CREATE_SESSION_RATE_LIMIT
+                  value: "3"' 
 
    Replace 200 with the desired value.
 
