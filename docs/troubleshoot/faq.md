@@ -38,7 +38,7 @@ kubectl logs -f deploy/everest-server -n everest-system
 You can view the logs by running the following command:
 
 ```sh
-kubectl logs -f deploy/openeverest -n everest-system
+kubectl logs -f deploy/everest-server -n everest-system
 ```
 
 ## How to identify which component is failing?
