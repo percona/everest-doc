@@ -29,7 +29,7 @@ Yes, the OpenEverest backend has logs. It runs as an `everest-server` deployment
 Run the following command to retrieve the logs from the pods associated with the deployment:
 
 ```sh
-kubectl logs -f deploy/openeverest -n everest-system
+kubectl logs -f deploy/everest-server -n everest-system
 ```
 
 
