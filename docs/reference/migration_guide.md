@@ -12,7 +12,6 @@ Here are some key differences between OpenEverest and PMM DBaaS:
 
 1. OpenEverest has a separate and configurable namespace for running operators and database clusters, whereas PMM/DBaaS uses a default namespace.
 
-TODO
 2. OpenEverest `everestctl` is a tool that helps you install and configure operators and monitoring features, whereas this function was previously handled by PMM.
 
 3. OpenEverest has revamped its backup/restore feature, which means that old backups/restores cannot be used.
