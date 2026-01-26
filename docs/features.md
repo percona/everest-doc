@@ -11,8 +11,8 @@ Some of the key features of OpenEverest are:
 ## Database provisioning
 
 * **[Horizontal and vertical scaling](use/scaling.md)**: OpenEverest enables you to adapt to your application's demands using horizontal scaling for multi-node deployments or vertical scaling for single-node setups. With OpenEverest, you have the power to manage resources and ensure your databases are performing at their best.
-* **Database storage class support**: OpenEverest tailors your storage needs efficiently by leveraging its database storage class support. Furthermore, it allocates resources efficiently while maintaining optimal performance and cost.    
-* **[Disaster recovery capabilities](use/createBackups/CreateOnDemand.md)**: OpenEverest prioritizes data protection with a comprehensive disaster recovery suite. Create on-demand backups, seamlessly restore existing databases, or create new ones from backups to ensure that your data is protected.
+* **Database storage class support**: OpenEverest tailors your storage needs efficiently by leveraging its database storage class support. Furthermore, it allocates resources efficiently while maintaining optimal performance and cost.
+* **[Disaster recovery capabilities](backups_and_restore/createBackups/CreateOnDemand.md)**: OpenEverest prioritizes data protection with a comprehensive disaster recovery suite. Create on-demand backups, seamlessly restore existing databases, or create new ones from backups to ensure that your data is protected.
 * **[Advanced configuration options](use/db_engine_config.md)**: OpenEverest gives fine-grained control of your database environment with advanced configuration features. You can manage external access permissions and optimize your database engine configuration.
 
 ## Database management
