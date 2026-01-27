@@ -28,4 +28,11 @@
     fill: currentColor;
     vertical-align: middle;
   }
-  
+  /* Tracking pixel - hidden but loads for analytics */
+  .tracking-pixel {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+  }
