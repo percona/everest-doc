@@ -258,7 +258,7 @@ If the upgrade fails, you can attempt it again. If the issue persists, [create a
 
 ## After your upgrade is complete
 
-After upgrading your OpenEverest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section to reset the admin password and expose the Everest service.
+After upgrading your OpenEverest version, follow the instructions in step 3 and step 4 of the [installation](../install/installEverest.md) section to reset the admin password and expose the `everest` service.
 
 
 
