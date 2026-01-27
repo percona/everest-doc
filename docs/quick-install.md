@@ -105,7 +105,7 @@ To install OpenEverest using Helm follow these steps:
             kubectl get ingress -n everest-system
             ```
 
-            Make sure the address provided is valid and that it correctly routes to the Everest service.
+            Make sure the address provided is valid and that it correctly routes to the `everest` service.
 
         ??? example "Example: Custom YAML configuration file"
 
