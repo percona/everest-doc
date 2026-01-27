@@ -95,7 +95,7 @@ Here are the steps to install OpenEverest and deploy additional database namespa
             --set server.service.type=LoadBalancer
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch OpenEverest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
+        2. Retrieve the external IP address for the `everest` service. This is the address where you can then launch OpenEverest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
                 
             ```sh 
             kubectl get svc/everest -n everest-system
