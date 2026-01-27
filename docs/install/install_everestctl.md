@@ -79,4 +79,4 @@ You can download the latest version of `everestctl` visiting the latest release 
 
 Start by installing OpenEverest:
 
-[Install Everest :material-arrow-right:](../install/installEverest.md){.md-button}
+[Install OpenEverest :material-arrow-right:](../install/installEverest.md){.md-button}

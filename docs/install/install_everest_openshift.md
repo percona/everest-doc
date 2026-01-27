@@ -67,13 +67,13 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
     kubectl get secret everest-accounts -n everest-system -o jsonpath='{.data.users\.yaml}' | base64 --decode  | yq '.admin.passwordHash'
     ```
 
-    The default username for logging into the Everest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
+    The default username for logging into the OpenEverest UI is `admin`. You can set a different default admin password by using the `server.initialAdminPassword` parameter during installation.
 
     The default `admin` password is stored in plain text. It is highly recommended to update the password using `everestctl` to ensure that the passwords are hashed.
 
     To access detailed information on user management, see the [manage users in OpenEverest](../administer/manage_users.md#update-the-password) section.
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+4. Access the OpenEverest UI/API using one of the following options for exposing it, as OpenEverest is not exposed with an external IP by default:
 
     === "Load Balancer"
 
@@ -84,7 +84,7 @@ Here are the steps to install OpenEverest with OpenShift compatibility enabled:
             --set service.type=LoadBalancer
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
+        2. Retrieve the external IP address for the `everest` service. This is the address where you can then launch OpenEverest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
                 
             ```sh 
             kubectl get svc/everest -n everest-system

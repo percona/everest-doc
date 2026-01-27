@@ -5,7 +5,7 @@
 
 ## Before you start
 
-Before running the commands in the **Installation** section, note that Everest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
+Before running the commands in the **Installation** section, note that OpenEverest will search for the kubeconfig file in the `~/.kube/config` path. If your file is located elsewhere, use the export command below to set the `KUBECONFIG` environment variable: 
     
 ```sh
 export KUBECONFIG=~/.kube/config
@@ -117,7 +117,7 @@ To install and provision OpenEverest to Kubernetes:
     To access detailed information about user management, see the [Manage users in OpenEverest](../administer/manage_users.md) section.
 
 
-4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
+4. Access the OpenEverest UI/API using one of the following options for exposing it, as OpenEverest is not exposed with an external IP by default:
 
     === "Load Balancer"
 
@@ -130,7 +130,7 @@ To install and provision OpenEverest to Kubernetes:
             --set server.service.type=LoadBalancer
             ```
                     
-        2. Retrieve the external IP address for the Everest service. This is the address where you can then launch Everest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
+        2. Retrieve the external IP address for the `everest` service. This is the address where you can then launch OpenEverest at the end of the installation procedure. In this example, the external IP address used is `http://34.175.201.246`.
                 
             ```sh 
             kubectl get svc/everest -n everest-system

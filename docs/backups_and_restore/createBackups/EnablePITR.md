@@ -9,19 +9,19 @@ PITR complements on-demand and scheduled backup strategies by providing finer ba
 
 Restoring databases up to a specific moment in time involves retrieving data from a backup snapshot and replaying all subsequent events that occurred until a specified moment using log slices.
 
-When PITR and backups are enabled (either on-demand or scheduled), OpenEverest starts capturing successive database logs at predefined intervals. As soon as the initial full backup is available, Everest can start restoring the database from these PITR logs.
+When PITR and backups are enabled (either on-demand or scheduled), OpenEverest starts capturing successive database logs at predefined intervals. As soon as the initial full backup is available, OpenEverest can start restoring the database from these PITR logs.
 
-Since Everest saves logs and streams them into your storage between scheduled task runs, scheduling frequent backups is not necessary. You can use the available logs in your storage to restore a backup to any moment between snapshots.
+Since OpenEverest saves logs and streams them into your storage between scheduled task runs, scheduling frequent backups is not necessary. You can use the available logs in your storage to restore a backup to any moment between snapshots.
 
 ## PITR upload intervals
 
-By default, Everest uploads PITR logs every minute for MySQL databases and every ten minutes for MongoDB databases. If you wish to adjust these default intervals, you can easily do so through the Everest API.
+By default, OpenEverest uploads PITR logs every minute for MySQL databases and every ten minutes for MongoDB databases. If you wish to adjust these default intervals, you can easily do so through the OpenEverest API.
 
 ## Enable Point-in-time recovery
 
 ### Prerequisites
 
-Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available S3-compatible location for storing backups. Otherwise, [create a backup location](../createBackups/backup_storage/CreateStorage.md) so Everest can store PITR artifacts for the database.
+Before enabling PITR, go to <i class="uil uil-cog"></i> **Settings > Backup Storages** and check that you have an available S3-compatible location for storing backups. Otherwise, [create a backup location](../createBackups/backup_storage/CreateStorage.md) so OpenEverest can store PITR artifacts for the database.
 
 To enable PITR:
 {.power-number}
@@ -29,7 +29,7 @@ To enable PITR:
 === "When creating a new database"
 
 
-    1. On the Everest homepage, click **Create database** to display the database creation wizard.
+    1. On the OpenEverest homepage, click **Create database** to display the database creation wizard.
     2. Fill in the details of your database on the first steps of the wizard.
     3. Navigate to the **Backups** page, and make sure to enable and configure a backup schedule. 
     4. Click **Next** to go to the **Point-in-time recovery (PITR)** page where you can enable PITR and specify a location for storing the PITR backups and logs. 

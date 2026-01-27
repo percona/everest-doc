@@ -44,7 +44,7 @@ Where:
 
 **subject**: Refers to the name of the role or user. For example, `role:admin` or `admin`
 
-**resource-type**: Refers to the type of Everest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
+**resource-type**: Refers to the type of OpenEverest resource, such as `namespaces`, `database-clusters`, `database-engines`, etc.
 
 For in-depth information on the actions that a subject can perform, see the [resources and permissions](#rbac-resources-and-permissions) section.
 

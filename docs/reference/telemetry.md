@@ -8,13 +8,13 @@ Participation in this **anonymous** program is optional, and you can opt-out if 
 
 ## What information is collected
 
-Currently, Everest only collects information about the database technology used (MySQL, Mongo, PostgreSQL). Future releases will cover additional metrics.
+Currently, OpenEverest only collects information about the database technology used (MySQL, Mongo, PostgreSQL). Future releases will cover additional metrics.
 
 Rest assured, access to the raw data is rigorously controlled, and individual user identification within the dataset is impossible. The data is thoroughly anonymized and cannot be traced back to any specific user.
 
 ## Disable telemetry
 
-Starting with Everest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to **TRUE**:
+Starting with OpenEverest 0.4.1, telemetry is enabled by default. If you don't want to send usage data to Percona, you can set the **DISABLE_TELEMETRY** environment variable to **TRUE**:
 {.power-number}
 
 To disable telemetry run:

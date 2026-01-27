@@ -126,7 +126,7 @@ When you log in from the UI, OpenEverest issues a JSON Web Token to authenticate
     Since JWT authentication is stateless, it is currently impossible to explicitly revoke specific tokens. Therefore, even a deleted user may continue to request the API as long as they have a valid token.
 
 
-The Everest API uses the RSA algorithm to sign and verify the JWT. The RSA key pair used for this is automatically generated upon installation and stored in the `everest-jwt` Secret in the `everest-system` namespace.
+The OpenEverest API uses the RSA algorithm to sign and verify the JWT. The RSA key pair used for this is automatically generated upon installation and stored in the `everest-jwt` Secret in the `everest-system` namespace.
 
         apiVersion: v1
         data:

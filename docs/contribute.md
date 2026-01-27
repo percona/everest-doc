@@ -31,7 +31,7 @@ If there is no existing report, submit a report following these steps:
 
 ## Contribute to OpenEverest code
 
-If you’d like to submit a code patch, follow the [Contributing guide in Everest code repository](https://github.com/openeverest/openeverest/blob/main/CONTRIBUTING.md).
+If you’d like to submit a code patch, follow the [Contributing guide in OpenEverest code repository](https://github.com/openeverest/openeverest/blob/main/CONTRIBUTING.md).
 
 ## Contribute to OpenEverest documentation
 
