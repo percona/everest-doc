@@ -63,7 +63,7 @@ An Ingress Controller is a Kubernetes component that manages external access to 
         kubectl get ingress -n everest-system
         ```
 
-        Ensure the address provided is valid and correctly routes to the Everest service.
+        Ensure the address provided is valid and correctly routes to the `everest` service.
 
         ??? example "Example: Using a Helm values file"
 
