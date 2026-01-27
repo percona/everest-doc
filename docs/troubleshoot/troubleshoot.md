@@ -1,4 +1,4 @@
-# Percona Everest: Troubleshooting and diagnostics
+# OpenEverest: Troubleshooting and diagnostics
 
 This page is your go-to resource for tackling common issues and finding solutions. 
 
@@ -7,10 +7,10 @@ For limitations, see the [known limitations](../reference/known_limitations.md) 
 
 ## General troubleshooting guidelines
 
-Before troubleshooting, it's important to understand how Percona Everest works at a high level. Understanding how it works can help narrow down potential areas to investigate. You can refer to the [Kubernetes concepts guide](https://kubernetes.io/docs/concepts/)
+Before troubleshooting, it's important to understand how OpenEverest works at a high level. Understanding how it works can help narrow down potential areas to investigate. You can refer to the [Kubernetes concepts guide](https://kubernetes.io/docs/concepts/)
  for background. This context will help you interpret Everest’s behavior when debugging.
 
-- Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for commonly used commands to inspect and troubleshoot Kubernetes resources when working with Percona Everest.
+- Refer to the [kubectl quick reference](https://kubernetes.io/docs/reference/kubectl/quick-reference/){:target="_blank"} for commonly used commands to inspect and troubleshoot Kubernetes resources when working with OpenEverest.
 
 - Use logs and events for debugging.
 
@@ -24,8 +24,8 @@ You can review different logs for additional information depending on the specif
 
     | Logs        | Command                                                     |
     | ---------------- | ----------------------------------------------------------- |
-    | Percona Everest operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
-    | Percona Everest server | `kubectl logs -f deploy/everest-server -n everest-system`   |
+    | OpenEverest operator| `kubectl logs -f deploy/everest-operator -n everest-system` |
+    | OpenEverest server | `kubectl logs -f deploy/everest-server -n everest-system`   |
 
 2. **Database Operators (in Namespaces)**
 
@@ -66,14 +66,14 @@ You can review different logs for additional information depending on the specif
 
 ### Installation issues
 
-For troubleshooting Percona Everest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
+For troubleshooting OpenEverest installation issues using **everestctl** or the **Helm chart**, the following steps may be helpful:
 {.power-number}
 
 1. **Permissions and privileges**
 
     Installing database operators and their dependencies may require appropriate privileges. 
 
-     - Percona Everest installation may require `cluster-admin` privileges for:
+     - OpenEverest installation may require `cluster-admin` privileges for:
         - **Operator Lifecycle Manager (OLM)**
         - **CustomResourceDefinitions (CRDs)**
 
@@ -109,7 +109,7 @@ For troubleshooting Percona Everest installation issues using **everestctl** or 
         everest-core    everest-system    1           2025-01-16 16:24:56.577713 +0530 IST    deployed    everest-1.4.0    1.4.0
         ```
 
-    - The Percona Everest installation has many components, so it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
+    - The OpenEverest installation has many components, so it will fail if any **subcomponent installations fail**. Check the relevant namespace where components are installed, along with the logs and events.
 
 3. **Resource availability**
 
@@ -129,12 +129,12 @@ For detailed information on the installation process, see [Installation overview
 
 ### UI, API and authorization issues
 
-To troubleshoot issues with the Percona Everest UI, API, or authorization, check the everest-server deployment. 
+To troubleshoot issues with the OpenEverest UI, API, or authorization, check the everest-server deployment. 
 {.power-number}
 
 1. **Check everest-server Pod health**
 
-    If the Percona Everest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
+    If the OpenEverest API is not working, check the status of the everest-server pod, specifically its **Status** and **Restarts**.
 
     ```sh
     kubectl get po -l app.kubernetes.io/name=everest-server -n everest-system
@@ -151,7 +151,7 @@ To troubleshoot issues with the Percona Everest UI, API, or authorization, check
 
 3. **RBAC validation**
 
-    To resolve authorization and access issues, check the Percona Everest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is enabled, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
+    To resolve authorization and access issues, check the OpenEverest server logs. If [Role-Based Access Control (RBAC)](../administer/rbac.md) is enabled, [validate](../administer/administer/rbac.md#validate-your-rbac-policy) or [check the permissions](../administer/rbac.md#test-your-rbac-policy) using `everestctl`.
 
     ```sh
     kubectl get configmap everest-rbac -n everest-system
@@ -159,7 +159,7 @@ To troubleshoot issues with the Percona Everest UI, API, or authorization, check
 
 5. **Local access via Port Forwarding**
 
-    If you experience any access issues or lag in the Percona Everest UI or API, try port-forwarding to the service and check the latency compared to accessing it via a **LoadBalancer** or **NodePort**. 
+    If you experience any access issues or lag in the OpenEverest UI or API, try port-forwarding to the service and check the latency compared to accessing it via a **LoadBalancer** or **NodePort**. 
 
     ```sh
     kubectl port-forward svc/everest 8080:8080

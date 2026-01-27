@@ -1,9 +1,9 @@
-# Upgrade Percona Everest using Helm
+# Upgrade OpenEverest using Helm
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+!!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
-Percona Everest consistently delivers updates that includes bug fixes, security enhancements, and various improvements designed to optimize the overall performance of your database.
+OpenEverest consistently delivers updates that includes bug fixes, security enhancements, and various improvements designed to optimize the overall performance of your database.
 
 ## Before you upgrade
 
@@ -15,7 +15,7 @@ Percona Everest consistently delivers updates that includes bug fixes, security 
 ### Prepare for upgrading to version 1.7.0
 
 
-**Before you upgrade** to Percona Everest version 1.7.0, run the following command:
+**Before you upgrade** to OpenEverest version 1.7.0, run the following command:
 
 ```sh
 kubectl label namespaces everest-system app.kubernetes.io/managed-by-
@@ -37,7 +37,7 @@ helm upgrade --install everest-crds \
 
 ### Upgrading with Helm versions prior to 3.17.0
     
-If you upgrade from **Percona Everest 1.8.0** and use a Helm version **older than 3.17.0**, the `--take-ownership` flag will not be available. Without this flag, you may encounter the following validation errors related to missing ownership metadata:
+If you upgrade from **OpenEverest 1.8.0** and use a Helm version **older than 3.17.0**, the `--take-ownership` flag will not be available. Without this flag, you may encounter the following validation errors related to missing ownership metadata:
 
 ```
 invalid ownership metadata; label validation error: missing key "app.kubernetes.io/managed-by": must be set to "Helm";
@@ -63,18 +63,18 @@ This ensures the CRDs are correctly recognized as managed by Helm, avoiding vali
 !!! warning
     When using `helm upgrade`, specifying `--set` (or other equivalent flags) causes Helm to revert all other values to the defaults defined in the chart. To avoid this issue, either include the `--reuse-values` flag or provide the complete set of values, including those used during the installation.
 
-To upgrade Percona Everest using Helm, run the following commands:
+To upgrade OpenEverest using Helm, run the following commands:
 {.power-number}
 
 1. Upgrade the Helm release for Everest (core components).
 
     ```sh
-    helm upgrade everest-core percona/everest --namespace everest-system --version "$VERSION"      
+    helm upgrade everest-core percona/everest --namespace everest-system --version "$VERSION"       
     ```
 
     where,
 
-    **VERSION** is the Percona Everest version you wish to upgrade to.
+    **VERSION** is the OpenEverest version you wish to upgrade to.
 
 2. Upgrade the Helm release for the database namespace (if applicable):
 
@@ -84,6 +84,6 @@ To upgrade Percona Everest using Helm, run the following commands:
 
     where,
 
-    **VERSION** is the Percona Everest version you wish to upgrade to.
+    **VERSION** is the OpenEverest version you wish to upgrade to.
 
     **DB namespace** is the namespace you wish to upgrade.

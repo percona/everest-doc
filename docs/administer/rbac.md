@@ -1,7 +1,7 @@
 # Role-based access control (RBAC)
 
 
-Role-based access control (RBAC) restricts access to resources within Percona Everest. It establishes a framework that defines access permissions and privileges according to individual users' roles. With RBAC, only authorized individuals can access specific information or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across Percona Everest.
+Role-based access control (RBAC) restricts access to resources within OpenEverest. It establishes a framework that defines access permissions and privileges according to individual users' roles. With RBAC, only authorized individuals can access specific information or perform certain actions based on their assigned roles. This method improves security by minimizing the risk of unauthorized access and helps manage permissions more efficiently across OpenEverest.
 
 !!! warning
     RBAC will not work if you have configured Single sign-on (SSO) and your identity provider (IdP) is Microsoft Entra.
@@ -9,7 +9,7 @@ Role-based access control (RBAC) restricts access to resources within Percona Ev
 
 ## How to enable RBAC
 
-To enable or disable RBAC in Percona Everest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
+To enable or disable RBAC in OpenEverest, you can use a configuration flag that allows switching between RBAC-enabled and RBAC-disabled modes. By default, RBAC is disabled.
 
 !!! info "Important"
     The RBAC configuration is stored in a `ConfigMap` named `everest-rbac` within the `everest-system` namespace.
@@ -30,10 +30,10 @@ metadata:
 
 ## Policy definition in RBAC
 
-RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within Percona Everest.
+RBAC policies are the rules and guidelines that define how roles, permissions, and users are managed within RBAC. These policies ensure that users have appropriate access to resources based on their roles within OpenEverest.
 
 
-The policy definition in Percona Everest is:
+The policy definition in OpenEverest is:
 
 
 ```sh
@@ -70,10 +70,10 @@ Below is a comprehensive table outlining the permissions available for various *
 
 
     !!! warning "Important"
-        :x: Represents an action that's not supported by the Percona Everest API.
+        :x: Represents an action that's not supported by the OpenEverest API.
 
 
-    **Table: Permissions for the various resources in Percona Everest**
+    **Table: Permissions for the various resources in OpenEverest**
 
     |**Resource**| **Read**| **Create**| **Update**|**Delete**|
     |------------|---------|-----------|-----------|----------|
@@ -131,14 +131,14 @@ Below is a comprehensive table outlining the permissions available for various *
 
 ## Roles in RBAC
 
-In Role-Based Access Control (RBAC), a Role is a set of permissions that define what actions (like read, write, update, delete) can be performed on specific resources within Percona Everest. In RBAC, roles are assigned to users, allowing them to interact with the resources according to the permissions defined by their roles.
+In Role-Based Access Control (RBAC), a Role is a set of permissions that define what actions (like read, write, update, delete) can be performed on specific resources within OpenEverest. In RBAC, roles are assigned to users, allowing them to interact with the resources according to the permissions defined by their roles.
 
 !!! note
     It is recommended to prefix role names with **role:** to prevent confusion between role names and user names.
 
 ### Built-in role
 
-In Percona Everest, the only predefined role is `role:admin`. A user with this role has unrestricted access to Percona Everest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
+In OpenEverest, the only predefined role is `role:admin`. A user with this role has unrestricted access to OpenEverest. However, the RBAC (Role-Based Access Control) configuration can define and allocate specific roles based on individual requirements and access privileges.
 
 This built-in `role:admin` definition is equivalent to the following:
 
@@ -314,7 +314,7 @@ In this section, we will explore some examples that demonstrate how to create po
 
 ## More insights into backups and restore policies
 
-Let's dive into different backup and restore policies for Percona Everest.
+Let's dive into different backup and restore policies for OpenEverest.
 
 ### Read only role for a single namespace
 
@@ -379,7 +379,7 @@ In order for roles to take effect, they need to be assigned to users. The syntax
 g, username, rolename
 ```
 
-A new user in Percona Everest will initially have **no** permissions. To grant permissions, you must edit your RBAC configuration stored in the `everest-rbac` `ConfigMap` in the `everest-system` namespace:
+A new user in OpenEverest will initially have **no** permissions. To grant permissions, you must edit your RBAC configuration stored in the `everest-rbac` `ConfigMap` in the `everest-system` namespace:
 
 
 ```sh
@@ -435,7 +435,7 @@ everestctl settings rbac validate --policy-file <file_path>
 
 Where:
 
-`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
+`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing OpenEverest installation, that is, under RBAC `ConfigMap`.
 
 ??? Example "Policy validation"
 
@@ -487,7 +487,7 @@ everestctl settings rbac can --policy-file <file_path>
 
 Where:
 
-`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing Percona Everest installation, that is, under RBAC `ConfigMap`.
+`policy-file` is an optional flag that takes the **policy file** path. If you do not specify the path to this file, it will look for the configuration file inside your existing OpenEverest installation, that is, under RBAC `ConfigMap`.
 
 
 ??? Example "Test your policy"
@@ -519,7 +519,7 @@ Where:
 
 ## Breaking API changes for RBAC
 
-Starting from Percona Everest v1.2.0, breaking changes are being implemented to the API for `monitoring-instances` and `backup-storages `resources. Explore further by checking out the section on [Breaking API changes](../api_rbac.md) for a deep dive into this topic.
+Starting from OpenEverest v1.2.0, breaking changes are being implemented to the API for `monitoring-instances` and `backup-storages `resources. Explore further by checking out the section on [Breaking API changes](../api_rbac.md) for a deep dive into this topic.
 
 
 

@@ -1,6 +1,6 @@
 # DatabaseCluster examples
 
-Here are some sample configurations for various database engines supported by Percona Everest.
+Here are some sample configurations for various database engines supported by OpenEverest.
 
 
 ## PostgreSQL cluster
@@ -134,7 +134,7 @@ spec:
 ```
 
 
-You can find these and more manifests in the [examples directory](https://github.com/percona/everest-operator/tree/main/docs/examples)
+You can find these and more manifests in the [examples directory](https://github.com/openeverest/openeverest-operator/tree/main/docs/examples)
 
 
 

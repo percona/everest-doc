@@ -3,7 +3,7 @@
 ## Apply pod scheduling policy to a new DB cluster
 
 !!! info "Important"
-    If RBAC is enabled, Percona Everest only displays Pod scheduling policies applicable to the selected DB Engine type for which the user has read access.
+    If RBAC is enabled, OpenEverest only displays Pod scheduling policies applicable to the selected DB Engine type for which the user has read access.
 
 You can apply a Pod scheduling policy when creating a cluster by following these steps:
 {.power-number}

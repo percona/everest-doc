@@ -1,12 +1,12 @@
 # Monitoring
 
-Percona Everest provides monitoring capabilities with PMM to maintain a reliable and secure database infrastructure.
+OpenEverest provides monitoring capabilities with PMM to maintain a reliable and secure database infrastructure.
 
 
 !!! info "Important"
     Currently only PMM v2.x is supported. Support for PMM v3.x is planned for future releases.
 
-Here are some key benefits you'll get with monitoring of Percona Everest:
+Here are some key benefits you'll get with monitoring of OpenEverest:
 
 - Database availability and uptime tracking
 - Insights into your database performance
@@ -23,16 +23,16 @@ When adding a new monitoring instance, the monitoring stack (kube-state-metrics 
 
 ## Prerequisites
 
-To use monitoring in Percona Everest, you should have a PMM instance up and running.
+To use monitoring in OpenEverest, you should have a PMM instance up and running.
 
 For information on installing PMM, see the [documentation](https://docs.percona.com/percona-monitoring-and-management/3/quickstart/quickstart.html).
 
 ## Add monitoring endpoint
 
-To add monitoring in Percona Everest from the UI:
+To add monitoring in OpenEverest from the UI:
 {.power-number}
 
-1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**. The **Add monitoring endpoint** dialogue box opens.
+1. From the OpenEverest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**. The **Add monitoring endpoint** dialogue box opens.
 
 2. On the **Add monitoring endpoint screen**, enter a name for the monitoring instance.
 
@@ -56,7 +56,7 @@ You can enable monitoring for your cluster while creating the database.
 To enable monitoring for your database cluster, follow these steps:
 {.power-number}
 
-1. From the Percona Everest Home page, click **Create Database**. The **Create Database** wizard opens.
+1. From the OpenEverest Home page, click **Create Database**. The **Create Database** wizard opens.
 
 2. Navigate till you reach the **Monitoring** page.
 
@@ -75,7 +75,7 @@ You can enable monitoring for your cluster even after the database has been crea
 To enable monitoring for your database cluster, follow these steps:
 {.power-number}
 
-1. Navigate to the Percona Everest homepage and choose the database cluster you want to monitor.
+1. Navigate to the OpenEverest homepage and choose the database cluster you want to monitor.
 
 2. Navigate to the **Overview** page and look for the **Monitoring** panel. Click on **Edit**.
 
@@ -128,10 +128,10 @@ Here’s how to monitor your databases using PMM:
 
 ## Edit monitoring endpoint
 
-To edit a monitoring endpoint from the Percona Everest UI:
+To edit a monitoring endpoint from the OpenEverest UI:
 {.power-number}
 
-1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**.
+1. From the OpenEverest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**.
 
 2. Click on the ellipsis (three dots) next to the endpoint you need to edit.
 
@@ -148,10 +148,10 @@ To edit a monitoring endpoint from the Percona Everest UI:
 
 ## Delete monitoring endpoint
 
-To delete a monitoring endpoint from the Percona Everest UI:
+To delete a monitoring endpoint from the OpenEverest UI:
 {.power-number}
 
-1. From the Percona Everest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**.
+1. From the OpenEverest Homepage, navigate to <i class="uil uil-cog"></i> **Settings > Monitoring endpoints**.
 
 
 2. Click on the ellipsis (three dots) next to the endpoint you need to delete.

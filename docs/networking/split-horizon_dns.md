@@ -16,7 +16,7 @@ This is useful in scenarios such as:
 
 - Allow database administrators to assign custom domain names to the exposed Pods.
 
-- Provide Percona Everest users with the capability to obtain connection URLs for the exposed Pods using external domains.
+- Provide OpenEverest users with the capability to obtain connection URLs for the exposed Pods using external domains.
 
 
 ## Prerequisites
@@ -28,7 +28,7 @@ Before you begin, make sure you:
 - Understand [Split-Horizon DNS](https://docs.percona.com/percona-operator-for-mongodb/expose.html#exposing-replica-set-with-split-horizon-dns){:target="_blank"} feature in Percona Server for MongoDB.
 
 
-These concepts are essential for correctly configuring external domain access to exposed Pods in Percona Everest.
+These concepts are essential for correctly configuring external domain access to exposed Pods in OpenEverest.
 
 
 ## Limitations of Split-Horizon DNS

@@ -10,7 +10,7 @@ To contribute to that documentation, you can:
 
 - **report a general problem** -- create a [GitHub](https://github.com/openeverest/everest-doc/issues) issue in this repository.
 
-- **fix a problem yourself** -- Use the _Edit this page_ link to take you to the Markdown source file for that page. Make your changes (you'll have to fork the repo unless you're Percona staff) and submit a PR which we'll review and adjust where necessary before merging and publishing. If the changes are more than a few lines, you might want to build the website locally to see how it looks in context. That's what the rest of this README covers.
+- **fix a problem yourself** -- Use the _Edit this page_ link to take you to the Markdown source file for that page. Make your changes (you'll have to fork the repo unless you're OpenEverest staff) and submit a PR which we'll review and adjust where necessary before merging and publishing. If the changes are more than a few lines, you might want to build the website locally to see how it looks in context. That's what the rest of this README covers.
 
 ## Introduction
 
@@ -129,7 +129,7 @@ _How to create a PDF version of the documentation._
 
   - `theme`:
 
-    - `main.html`: MkDocs template for HTML published on percona.com.
+    - `main.html`: MkDocs template for HTML published on https://openeverest.io/docs/
 
 - `requirements.txt`: Python package dependencies.
 
@@ -148,7 +148,7 @@ _How to create a PDF version of the documentation._
 ## Version switching
 
 
-A [GitHub actions] workflow runs `mike` which in turn runs `mkdocs`. The HTML is committed and pushed to the `publish` branch. The whole branch is then copied (by an internal Percona Jenkins job) to our web server.
+A [GitHub actions] workflow runs `mike` which in turn runs `mkdocs`. The HTML is committed and pushed to the `publish` branch. The whole branch is then copied (by an OpenEverest team) to https://openeverest.io
 
 
 

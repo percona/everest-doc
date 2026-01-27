@@ -1,6 +1,6 @@
 # Provision a database
 
-Provisioning a database instance involves setting up and configuring a database instance on the Percona Everest platform.
+Provisioning a database instance involves setting up and configuring a database instance on the OpenEverest platform.
 
 
 !!! warning
@@ -14,9 +14,9 @@ Provisioning a database instance involves setting up and configuring a database 
 To provision a new database:
 {.power-number}
 
-1. Log into the Percona Everest UI.
+1. Log into the OpenEverest UI.
 
-2. On the Percona Everest homepage, click **Create Database**. The menu for the different database types will open. Select the database that you wish to provision. The **Basic Information** page will then be displayed.
+2. On the OpenEverest homepage, click **Create Database**. The menu for the different database types will open. Select the database that you wish to provision. The **Basic Information** page will then be displayed.
 
      ![!image](../images/everest_db_provision.png)
 

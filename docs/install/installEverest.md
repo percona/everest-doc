@@ -1,7 +1,7 @@
-# Install Percona Everest using everestctl
+# Install OpenEverest using everestctl
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+!!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
 ## Before you start
 
@@ -12,23 +12,23 @@ export KUBECONFIG=~/.kube/config
 ```
 
 !!! info "Important"
-    If you installed Percona Everest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
+    If you installed OpenEverest using `everestctl`, make sure to uninstall it exclusively through `everestctl` for a seamless removal.
 
 
-## Install Percona Everest
+## Install OpenEverest
 
 !!! info "Important"
-    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install Percona Everest. To configure chart parameters during installation through `everestctl`, you can:
+    Starting from version 1.4.0, `everestctl` now uses the [Helm chart](https://github.com/percona/percona-helm-charts/tree/main/charts/everest){:target="_blank"} to install OpenEverest. To configure chart parameters during installation through `everestctl`, you can:
 
     * Use the `--helm-.set` flag to specify individual parameter values.
     * Provide a values file with the `--helm.values` flag for bulk configuration.
 
-To install and provision Percona Everest to Kubernetes:
+To install and provision OpenEverest to Kubernetes:
 {.power-number}
 
-1. Download the latest release of [everestctl](https://github.com/percona/everest/releases/latest){:target="_blank"} to provision Percona Everest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
+1. Download the latest release of [everestctl](https://github.com/openeverest/openeverest/releases/latest){:target="_blank"} to provision OpenEverest. For detailed installation instructions, see [everestctl installation documentation](../install/install_everestctl.md).
 
-2. You can install Percona Everest using either the wizard or the headless mode.
+2. You can install OpenEverest using either the wizard or the headless mode.
 
     !!! note        
         * If you do not specify a namespace, the `everest` namespace gets provisioned by default.
@@ -40,7 +40,7 @@ To install and provision Percona Everest to Kubernetes:
             To explore namespaces management in details, refer to the section on [namespace management](../administer/manage_namespaces.md).
 
 
-    - **Install Percona Everest using the wizard**
+    - **Install OpenEverest using the wizard**
         {.power-number}
 
         1. Run the following command.
@@ -48,15 +48,15 @@ To install and provision Percona Everest to Kubernetes:
             everestctl install
             ```
 
-        2. Enter the specific names for the namespaces you want Percona Everest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-percona-everest) namespaces are restricted and cannot be used for deploying databases.
+        2. Enter the specific names for the namespaces you want OpenEverest to manage, separating each name with a comma. [These](../use/multi-namespaces.md#default-namespaces-in-openeverest) namespaces are restricted and cannot be used for deploying databases.
 
-        3.  If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
+        3.  If you skip adding the namespaces while installing OpenEverest, you can add them later using the following command.
 
             ```sh
             everestctl namespaces add <NAMESPACE>
             ``` 
 
-    - **Install Percona Everest using the headless mode**
+    - **Install OpenEverest using the headless mode**
         {.power-number}
 
         1. Run the following command. You can set multiple namepaces in the headless mode. Replace `<namespace-name>` with the desired name for your namespace.
@@ -78,7 +78,7 @@ To install and provision Percona Everest to Kubernetes:
             | **Flags**          | **Description**                                                                                      |**Helm flag**                       |
         |------------------|--------------------------------------------------------------------------------------------------|----------------------------------|
         | PMM deployment | Deploy Percona Monitoring and Management (PMM) as a sub-chart. PMM will be automatically deployed within the `everest-system` namespace. | `--helm.set pmm.enabled=true ` |
-        | TLS enabled      | Enable TLS encryption for secure communication between Percona Everest components.| `--helm.set server.tls.enabled=true`  |
+        | TLS enabled      | Enable TLS encryption for secure communication between OpenEverest components.| `--helm.set server.tls.enabled=true`  |
 
 
             ??? example  "Examples"
@@ -90,16 +90,16 @@ To install and provision Percona Everest to Kubernetes:
                 ```
 
 
-                Install Percona Everest with TLS enabled:
+                Install OpenEverest with TLS enabled:
 
                 ```sh
                 everestctl install --namespaces <namespace-name1>,<namespace-name2> --operator.mongodb=true --operator.postgresql=true --operator.mysql=true --helm.set server.tls.enabled=true --skip-wizard
                 ```
 
-                For comprehensive instructions on enabling TLS for Percona Everest, see the section [TLS setup with Percona Everest](../security/tls_setup.md#tls-setup-with-percona-everest).
+                For comprehensive instructions on enabling TLS for OpenEverest, see the section [TLS setup with OpenEverest](../security/tls_setup.md#tls-setup-with-percona-everest).
 
 
-        2. If you skip adding the namespaces while installing Percona Everest, you can add them later using the following command.
+        2. If you skip adding the namespaces while installing OpenEverest, you can add them later using the following command.
 
             ```sh
             everestctl namespaces add <NAMESPACE>
@@ -114,7 +114,7 @@ To install and provision Percona Everest to Kubernetes:
     !!! info "Important"
         You can retrieve the automatically generated password by running the `everestctl accounts initial-admin-password` command. However, this password isn't stored securely.
 
-    To access detailed information about user management, see the [Manage users in Percona Everest](../administer/manage_users.md) section.
+    To access detailed information about user management, see the [Manage users in OpenEverest](../administer/manage_users.md) section.
 
 
 4. Access the Everest UI/API using one of the following options for exposing it, as Everest is not exposed with an external IP by default:
@@ -197,7 +197,7 @@ To install and provision Percona Everest to Kubernetes:
                 Optimized OS from Google   6.1.100+         containerd://1.7.19
                 ```
         
-        5. To launch the Percona Everest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
+        5. To launch the OpenEverest UI and create your first database cluster, go to the IP address/port found in steps 2 and 3. In this example, the external IP address used is `http://34.175.155.135:32349`. Nevertheless, you have the option to use any node IP specified in the above steps.
 
             !!! note
                 If TLS is enabled, the external IP address will be `https://34.175.155.135:32349`.
@@ -205,13 +205,13 @@ To install and provision Percona Everest to Kubernetes:
 
     === "Port forwarding"
 
-        Run the following command to setup a port-forward to the Percona Everest server service:
+        Run the following command to setup a port-forward to the OpenEverest server service:
                 
         ```sh
         kubectl port-forward svc/everest 8080:8080 -n everest-system
         ``` 
 
-        To launch the Percona Everest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
+        To launch the OpenEverest UI and create your first database cluster, go to your localhost IP address `http://127.0.0.1:8080`.
 
 
         ??? example "When TLS is enabled"
@@ -220,7 +220,7 @@ To install and provision Percona Everest to Kubernetes:
             kubectl port-forward svc/everest 8443:443 -n everest-system
             ```
 
-            Percona Everest will be available at `https://127.0.0.1:8443`.                    
+            OpenEverest will be available at `https://127.0.0.1:8443`.                    
 
 
 

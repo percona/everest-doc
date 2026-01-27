@@ -1,13 +1,13 @@
-# Percona Everest and Bitnami Container Catalog changes
+# OpenEverest and Bitnami Container Catalog changes
 
 !!! warning "ACTION REQUIRED: Bitnami Container Catalog changes impact"
-    Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in Percona Everest operations, follow the steps given below.
+    Bitnami is restructuring its container catalog on September 29, 2025. To avoid potential failures in OpenEverest operations, follow the steps given below.
 
 ## What’s changing with Bitnami?
 
 Bitnami is [restructuring its container catalog](https://github.com/bitnami/containers/issues/83267). Starting **September 29, 2025**, most images (including bitnami) will move to a legacy repository.
 
-Percona Everest is affected because it depends on the `bitnami/kubectl` image for several critical tasks:
+OpenEverest is affected because it depends on the `bitnami/kubectl` image for several critical tasks:
 
 
 - The `everest-operators-installer` job during installation and namespace provisioning
@@ -18,7 +18,7 @@ If no action is taken, install, update, or uninstall operations will fail after 
 
 ## Mandatory fix
 
-The `everestctl` CLI caches previous chart versions, which can lead to issues even after upgrading Percona Everest. By clearing the cache and upgrading your charts if necessary, you ensure that all future operations are safe.
+The `everestctl` CLI caches previous chart versions, which can lead to issues even after upgrading OpenEverest. By clearing the cache and upgrading your charts if necessary, you ensure that all future operations are safe.
 
 Please execute the following commands based on the operating system you are using:
 
@@ -48,13 +48,13 @@ Execute the following commands according to your operating system.
     rm -r "$home/lib/cache/everestctl"
     ```
 
-## If you’re on Percona Everest v1.8.1 or earlier
+## If you’re on OpenEverest v1.8.1 or earlier
 
 You must **manually update your Helm charts** to use the new image. If you are on v1.9.0 or later, you **can skip these steps**.
 {.power-number}
 
 
-1. List all installed Percona Everest charts. 
+1. List all installed OpenEverest charts. 
 
     Find all Helm releases for both the `everest` and `everest-db-namespace` charts. 
 
@@ -71,7 +71,7 @@ You must **manually update your Helm charts** to use the new image. If you are o
     everest-system	everest-system	1       	2025-09-18 16:44:45.138480161 +0100 WEST	deployed	everest-1.8.1                 	1.8.1  
     ```
 
-2. Upgrade the main Percona Everest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
+2. Upgrade the main OpenEverest chart (for example, the `everest-system` release) with its corresponding release name, namespace, and version:
 
     ```sh
     helm upgrade everest-system percona/everest \
@@ -214,7 +214,7 @@ Follow these steps to fix the problem:
     TEST SUITE: None
     ```
 
-7. Restart the Percona Everest Operator.
+7. Restart the OpenEverest Operator.
 
     ```sh
     kubectl -n everest-system rollout restart deploy/everest-operator

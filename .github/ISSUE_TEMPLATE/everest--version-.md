@@ -5,9 +5,9 @@ about: Release Notes Template for Everest
 
 | **Release date:** | [Month DD, YYYY]                                                      |
 | ----------------- | --------------------------------------------------------------------- |
-| **Installation:** | [Installing Everest](https://www.percona.com/software/pmm/quickstart) |
+| **Installation:** | [Installing OpenEverest](../quick-install.html) |
 
-Everest is an open source cloud-native database platform for MySQL, PostgreSQL, and MongoDB.
+OpenEverest is an open source cloud-native database platform.
 
 !!! caution alert alert-warning "Important/Caution"
 Crucial points that need emphasis:
@@ -33,35 +33,35 @@ Add more subsections for more release highlights.
 
 ## New Features
 
-- List of new features with a comprehensive description of the feature and link to the JIRA ticket.
+- List of new features with a comprehensive description of the feature and link to the GitHub issue.
 
   Example:
 
-  [EVEREST-XXXX](https://jira.percona.com/browse/EVEREST-XXXX) - Comprehensive description.
+  [#XXX](https://github.com/openeverest/everest/issues/XXX) - Comprehensive description.
 
 ## Improvements
 
-- ​​List of improvements with a comprehensive description and link to the JIRA ticket.
+- ​​List of improvements with a comprehensive description and link to the GitHub issue.
 
   Example:
 
-  [EVEREST-XXXX](https://jira.percona.com/browse/EVEREST-XXXX) - Comprehensive description.
+  [#XXX](https://github.com/openeverest/everest/issues/XXX) - Comprehensive description.
 
 ## Bugs Fixed
 
-- ​​List of bugs with a comprehensive description and link to the JIRA ticket.
+- ​​List of bugs with a comprehensive description and link to the GitHub issue.
 
   Example:
 
-  [EVEREST-XXXX](https://jira.percona.com/browse/EVEREST-XXXX) - Comprehensive description.
+  [#XXX](https://github.com/openeverest/everest/issues/XXX) - Comprehensive description.
 
 ## Known issues
 
-- ​List of known issues with a comprehensive description and link to the JIRA ticket.
+- ​List of known issues with a comprehensive description and link to the GitHub issue.
 
   Example:
 
-  [EVEREST-XXXX](https://jira.percona.com/browse/EVEREST-XXXX) - Comprehensive description.
+  [#XXX](https://github.com/openeverest/everest/issues/XXX) - Comprehensive description.
 
   **Solution**
 

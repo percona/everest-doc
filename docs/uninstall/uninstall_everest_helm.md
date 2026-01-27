@@ -1,10 +1,10 @@
-# Uninstall Percona Everest using Helm
+# Uninstall OpenEverest using Helm
 
-!!! warning "ACTION REQUIRED: Percona Everest and Bitnami Container Catalog changes"
-    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in Percona Everest operations, follow the steps outlined in this [post](https://github.com/percona/everest/discussions/1663).
+!!! warning "ACTION REQUIRED: OpenEverest and Bitnami Container Catalog changes"
+    Bitnami is **restructuring** its container catalog on **September 29, 2025**. To avoid potential failures in OpenEverest operations, follow the steps outlined in this [post](https://github.com/openeverest/openeverest/discussions/1663).
 
 !!! info "important"
-    If you installed Percona Everest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
+    If you installed OpenEverest using `helm` and need to uninstall it, make sure to uninstall it exclusively through `helm` for seamless removal.
 
 ## Uninstall the database namespaces
 
@@ -20,9 +20,9 @@ kubectl delete ns <DBNamespace>
     This runs a chart hook that cleans up your database resources. Although it is not recommended, you can skip this step by specifying `cleanupOnUninstall=false`.
 
 
-## Uninstall Percona Everest
+## Uninstall OpenEverest
 
-To uninstall Percona Everest, follow these steps:
+To uninstall OpenEverest, follow these steps:
 {.power-number}
 
 1. Run the following command:
@@ -57,7 +57,7 @@ Besides the operators mentioned above, you must have installed at least one of t
 
 Below is a list of CRDs for different operators.
 
-=== "CRDs of operators installed with Percona Everest"
+=== "CRDs of operators installed with OpenEverest"
 
     ??? example "OLM operator"
         ```

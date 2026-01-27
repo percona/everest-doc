@@ -1,4 +1,4 @@
-# Load balancer configuration in Percona Everest
+# Load balancer configuration in OpenEverest
 
 ## Overview
 
@@ -6,7 +6,7 @@ Provisioning external access to Kubernetes clusters can be challenging, since cl
 
 ## Why use load balancer?
 
-Percona Everest simplifies the process by enabling administrators to define reusable load balancer configurations. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
+OpenEverest simplifies the process by enabling administrators to define reusable load balancer configurations. This includes cloud provider-specific settings that can be applied consistently across clusters, ensuring:
 
 - Consistency across cloud and on-prem environments
 
@@ -22,9 +22,9 @@ Percona Everest simplifies the process by enabling administrators to define reus
 | ------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **ClusterIP** | In Kubernetes, a service type that exposes an application on a virtual IP address within the cluster. |
 | **LoadBalancer**| In Kubernetes, a service type that exposes your application to the internet using a cloud provider’s load balancing infrastructure.|
-| **Load balancer Config**  | A preset in Percona Everest that contains a set of key-value pairs representing annotations applied to the appropriate LoadBalancer.|
-| **Percona Everest user** | A user of Percona Everest who manages database clusters. |
-| **Percona Everest admin** | A user with full permissions to configure and maintain Percona Everest.|
+| **Load balancer Config**  | A preset in OpenEverest that contains a set of key-value pairs representing annotations applied to the appropriate LoadBalancer.|
+| **OpenEverest user** | A user of OpenEverest who manages database clusters. |
+| **OpenEverest admin** | A user with full permissions to configure and maintain OpenEverest.|
 
 ## Use cases for load balancer configuration
 

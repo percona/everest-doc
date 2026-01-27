@@ -1,13 +1,13 @@
 # MkDocs configuration
 # Used as base - look for .yml files with INHERIT
-site_name: Percona Everest
+site_name: OpenEverest
 site_description: Documentation
-site_author: Percona LLC
+site_author: OpenEverest
 site_url: ""
 copyright: OpenEverest, &#169; 2026
 use_directory_urls: false
-repo_name: percona/everest-doc
-repo_url: https://github.com/percona/everest-doc
+repo_name: openeverest/everest-doc
+repo_url: https://github.com/openeverest/everest-doc
 edit_uri: edit/main/docs/
 
 theme:
@@ -113,7 +113,7 @@ plugins:
   git-revision-date: {}
   git-committers:
     enabled: !ENV [CI, false]
-    repository: percona/everest-doc
+    repository: openeverest/everest-doc
     branch: "main" 
   meta-descriptions:
     export_csv: false
@@ -151,7 +151,7 @@ extra:
 # Common navigation for percona.com, render.com and PDF
 
 nav:
-  - Welcome to Percona Everest: index.md
+  - Welcome to OpenEverest: index.md
   - get-help.md
   - Release Notes:
       - Release notes index: release-notes/release_notes_index.md
@@ -197,14 +197,14 @@ nav:
 
   
   - Upgrade: 
-    - Upgrade Percona Everest using Helm: upgrade/upgrade_with_helm.md
-    - Upgrade Percona Everest using everestctl: upgrade/upgrade_with_cli.md
-    - Upgrade Percona operators: upgrade/upgrade_operators.md
+    - Upgrade OpenEverest using Helm: upgrade/upgrade_with_helm.md
+    - Upgrade OpenEverest using everestctl: upgrade/upgrade_with_cli.md
+    - Upgrade OpenEverest operators: upgrade/upgrade_operators.md
     - Upgrade database versions: upgrade/mongodb_major_upgrades.md
 
   - Uninstall:
-    - Uninstall Percona Everest using Helm: uninstall/uninstall_everest_helm.md
-    - Uninstall Percona Everest everestctl: uninstall/uninstallEverest.md
+    - Uninstall OpenEverest using Helm: uninstall/uninstall_everest_helm.md
+    - Uninstall OpenEverest using everestctl: uninstall/uninstallEverest.md
    
   - Administer:
       - User management: administer/manage_users.md
@@ -268,12 +268,12 @@ nav:
   - Troubleshooting guide:
       - Installation workflow and components : troubleshoot/installation_overview.md
       - Diagnostics for common issues: troubleshoot/troubleshoot.md
-      - Percona Everest and Bitnami Container Catalog Changes: troubleshoot/bitnami_container_catalog_changes.md
+      - OpenEverest and Bitnami Container Catalog Changes: troubleshoot/bitnami_container_catalog_changes.md
       - Frequently asked questions (FAQ): troubleshoot/faq.md
 
   - API: API.md
 
-  - Percona Everest operator CRD: 
+  - OpenEverest operator CRD: 
       - Overview: crd/crd_guide.md
       - Manage database clusters: crd/database_cluster_management.md
       - Configure backup storage: crd/backup_storage_config.md
@@ -285,8 +285,8 @@ nav:
       - Breaking API changes: api_rbac.md
       - Limitations: reference/known_limitations.md
       - Migrate from PostgreSQL 12: reference/postgresql12_migration.md
-      - Telemetry on Percona Everest: reference/telemetry.md
-      - Migrate to Percona Everest: reference/migration_guide.md
+      - Telemetry on OpenEverest: reference/telemetry.md
+      - Migrate to OpenEverest: reference/migration_guide.md
       - AI usage disclaimer: reference/AI_disclaimer_for_docs.md
       - Copyright and licensing information: reference/copyright.md
       - Trademark and copyright policy: reference/trademark-policy.md
