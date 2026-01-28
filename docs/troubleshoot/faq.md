@@ -12,7 +12,7 @@ Each `DatabaseEngine` indicates:
 - The operator version currently installed.
 - Compatible engine versions supported by that operator. 
 
-Refer to our [API documentation](https://percona-everest.readme.io/reference/getkubernetesclusterresources-1){:target="_blank"} for usage information.
+Refer to our [API documentation](https://openeverest.io/docs/api/#/operations/getKubernetesClusterResources){:target="_blank"} for usage information.
 
 ## Does OpenEverest provide logs for API calls?
 

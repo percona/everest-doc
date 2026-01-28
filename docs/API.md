@@ -30,6 +30,6 @@ While you can achieve many tasks using either the OpenEverest user interface or 
 
 Check out our API endpoints for OpenEverest, where you can perform a wide range of functions.
 
-To access the API documentation, click [OpenEverest API](https://percona-everest.readme.io/){:target="_blank"}.
+To access the API documentation, click [OpenEverest API](https://openeverest.io/docs/api/){:target="_blank"}.
 
 
