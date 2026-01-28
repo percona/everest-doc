@@ -30,7 +30,7 @@ The APIs have been updated with the following modifications:
 
         ```/v1/namespaces/{namespace}/backup-storages```
 
-        Check out the [API](https://percona-everest.readme.io/reference/getkubernetesclusterresources) documentation for more details.
+        Check out the [API](https://openeverest.io/docs/api/#/operations/getKubernetesClusterResources) documentation for more details.
 
 - The `.spec.allowedNamespaces` field has been deprecated. Access control for these resources is now managed through the RBAC policy.
 

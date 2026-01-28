@@ -49,7 +49,7 @@ Dive into our troubleshooting section designed to guide you through common issue
 
 Get ready to dive into our APIs and uncover their potential.
 
-[Dive into our APIs :material-arrow-right:](https://percona-everest.readme.io){ .md-button .md-button--primary }
+[Dive into our APIs :material-arrow-right:](https://openeverest.io/docs/api/){ .md-button .md-button--primary }
 
 </div>
 </div>
